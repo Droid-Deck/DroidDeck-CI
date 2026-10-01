@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790855592526,
+  "generatedAt": 1790857497180,
   "stable": {
     "tag": "0.2.0",
     "title": "DroidDeck 0.2.0 (beta)",
@@ -102,6 +102,55 @@
     }
   },
   "tests": [
+    {
+      "tag": "pr-123",
+      "title": "fix: keep touch scrolling the Steam interface when the client finds no controller at start",
+      "summary": "Discord (agent475929, POCO F5, no built-in controller, controller set to Steam Deck): touch in Steam takes taps but won't scroll. The interface used to scroll by touch. Switching the controller to Xbox 360 fixes it.",
+      "commit": "65733c23a1cf943d1d827841b02deb5423f9e992",
+      "pr": 123,
+      "version": null,
+      "versionCode": 9,
+      "publishedAt": 1790857438000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-123",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.123-65733c2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-123/DroidDeck-PR.123-65733c2.apk",
+          "size": 30856006,
+          "sha256": "766137706ef6881e4b1ba6fc23ce4cafb15e79ebdc2c5006587700fa3fc52ba3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.123-65733c2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-123/DroidDeck-PR.123-65733c2-pubg.apk",
+          "size": 30856006,
+          "sha256": "f163acc06e04a5bbe5894ca36337a0771f1f298e5973765471c1ff8b94477caf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.123-65733c2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-123/DroidDeck-PR.123-65733c2-antutu.apk",
+          "size": 30856006,
+          "sha256": "dba48ef68f4b2a87779a4953c9e009805ef720b07dbbf7ef55678687ec344bfb",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.123-65733c2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-123/DroidDeck-PR.123-65733c2-ludashi.apk",
+          "size": 30856006,
+          "sha256": "65fc41f676b2b2147181fb93f93e8c5d2d5cdccc52f8fad28458302622262692",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-119",
       "title": "fix: give the guest a short XDGRUNTIMEDIR so gamescope starts with the app on adopted storage",
