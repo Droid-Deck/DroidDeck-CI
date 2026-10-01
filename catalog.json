@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790824943663,
+  "generatedAt": 1790825069234,
   "stable": {
     "tag": "0.2.0",
     "title": "DroidDeck 0.2.0 (beta)",
@@ -106,19 +106,46 @@
       "tag": "pr-93",
       "title": "fix: report Adreno 840v2 as the A840 the runtime's Turnip knows",
       "summary": "Retail SM8850 phones report their GPU as Adreno840v2, chipid 0x44050A21. The linuxfs-r9 runtime's glibc Turnip (Mesa 26.2.2) only lists the A840 as 0xffff44050A31, so with the Linux driver on runtime default a Steam session dies about 150 ms after the guest starts:",
-      "commit": "93382ff2419b84fb1ec50d913d67c80d86e3687e",
+      "commit": "a999fbdb3807b866c77d8e0e2ed8bcfbcbf28b90",
       "pr": 93,
       "version": null,
       "versionCode": 9,
-      "publishedAt": 1790775107000,
+      "publishedAt": 1790825048000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-93",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.93-93382ff.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-93/DroidDeck-PR.93-93382ff.apk",
-          "size": 30716742,
-          "sha256": "18cdea8f8f0dffb4d5156dd5b1cbdcfa840aef2f7b1fbdbfa1c68e87b9a13f93",
+          "name": "DroidDeck-PR.93-a999fbd.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-93/DroidDeck-PR.93-a999fbd.apk",
+          "size": 30851910,
+          "sha256": "62739d35f0e7a2136ce566b2c0cd6747e7233e7c8f167f8772635a6a9e4d7d55",
           "packageName": "com.droiddeck.launcher",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.93-a999fbd-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-93/DroidDeck-PR.93-a999fbd-pubg.apk",
+          "size": 30851910,
+          "sha256": "7df84077143021cf16b1294ccf671addae737d6977b64671a03e713cce0f3671",
+          "packageName": "com.tencent.ig",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.93-a999fbd-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-93/DroidDeck-PR.93-a999fbd-antutu.apk",
+          "size": 30851910,
+          "sha256": "2b9cadfe39dba64476e7bff76a14bc5ff6c7bf5ba396f9bbe6103262a58bfe2c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.93-a999fbd-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-93/DroidDeck-PR.93-a999fbd-ludashi.apk",
+          "size": 30851910,
+          "sha256": "7ba0eb85952959d094896165f2ea7ad5c1c1e2acca59db966ac60d72176e4313",
+          "packageName": "com.ludashi.benchmark",
           "versionCode": 9,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         }
