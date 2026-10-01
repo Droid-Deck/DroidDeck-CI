@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790852547076,
+  "generatedAt": 1790852585298,
   "stable": {
     "tag": "0.2.0",
     "title": "DroidDeck 0.2.0 (beta)",
@@ -101,5 +101,55 @@
       }
     }
   },
-  "tests": []
+  "tests": [
+    {
+      "tag": "pr-119",
+      "title": "fix: give the guest a short XDGRUNTIMEDIR so gamescope starts with the app on adopted storage",
+      "summary": "With the app on an SD card formatted as internal (adopted) storage, a Steam session dies about 4 s after Play Steam, at \"Starting the display and audio\". Reported on Discord by an AYN Thor user. Their session log shows:",
+      "commit": "c96f2d107066d8f09d6e7c5ea196888554314ac2",
+      "pr": 119,
+      "version": null,
+      "versionCode": 9,
+      "publishedAt": 1790852559000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-119",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.119-c96f2d1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-119/DroidDeck-PR.119-c96f2d1.apk",
+          "size": 30851910,
+          "sha256": "c8b66389b12afdba381ed4950a2c84d3a1ca90d41876f929fa54e9490106ae39",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.119-c96f2d1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-119/DroidDeck-PR.119-c96f2d1-pubg.apk",
+          "size": 30851910,
+          "sha256": "0a9ab8db77b8ca7006164b908c976e0a1d41a40bd1b6b7493bef177c85ab5737",
+          "packageName": "com.tencent.ig",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.119-c96f2d1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-119/DroidDeck-PR.119-c96f2d1-antutu.apk",
+          "size": 30851910,
+          "sha256": "eed81aca9530de8da9a09fbefb339870828b4bf188fec67b99d36bf4900603ea",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.119-c96f2d1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-119/DroidDeck-PR.119-c96f2d1-ludashi.apk",
+          "size": 30851910,
+          "sha256": "968662f58f271232bc53f33978395a2b6c43842d22c4a1d6035445ec1ea55572",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    }
+  ]
 }
