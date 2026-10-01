@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790871671747,
+  "generatedAt": 1790873085116,
   "stable": {
     "tag": "0.2.0",
     "title": "DroidDeck 0.2.0 (beta)",
@@ -102,6 +102,55 @@
     }
   },
   "tests": [
+    {
+      "tag": "pr-127",
+      "title": "fix: keep the performance overlay running and fed under an enforcing SELinux policy",
+      "summary": "Under an enforcing SELinux policy (every retail phone; the Thor with \"force SELinux\" on), the Deck-mode performance overlay disappeared. mangoapp crashed on start:",
+      "commit": "48054a86ab9be4d70b7970c5dac900e83f0778bf",
+      "pr": 127,
+      "version": null,
+      "versionCode": 9,
+      "publishedAt": 1790873057000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-127",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.127-48054a8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-127/DroidDeck-PR.127-48054a8.apk",
+          "size": 30868294,
+          "sha256": "66b910f3806bcfc73ea4781bd0be723a0bc1538bc549726a8eedd0c3d1394ebd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.127-48054a8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-127/DroidDeck-PR.127-48054a8-pubg.apk",
+          "size": 30868294,
+          "sha256": "1352c90993cb8b12fcd5620632310a2ce4662f07a1e29d2a74fad84615102908",
+          "packageName": "com.tencent.ig",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.127-48054a8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-127/DroidDeck-PR.127-48054a8-antutu.apk",
+          "size": 30868294,
+          "sha256": "93285030bb02a775126f1a6dd76555224d66ef843e60108bc76c6ce5b32987e8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.127-48054a8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-127/DroidDeck-PR.127-48054a8-ludashi.apk",
+          "size": 30868294,
+          "sha256": "d497bbecb2165b9d8e815abd82e077068d6792ff1c74e9eff39d2663758f8371",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-119",
       "title": "fix: give the guest a short XDGRUNTIMEDIR so gamescope starts with the app on adopted storage",
