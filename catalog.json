@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790861140081,
+  "generatedAt": 1790863596677,
   "stable": {
     "tag": "0.2.0",
     "title": "DroidDeck 0.2.0 (beta)",
@@ -102,6 +102,55 @@
     }
   },
   "tests": [
+    {
+      "tag": "pr-125",
+      "title": "feat: log controller, touch-mode and pad-ring evidence for input reports",
+      "summary": "Discord (sgtcrisean, POCO 25102PCBEG, PR #123 build, controller set to Steam Deck): touch and the Deck controller don't work at the same time; with Xbox 360 both are fine. Their logs couldn't say why:",
+      "commit": "baebf5019742a09c50dc4716b6e7db58d6cbfbfa",
+      "pr": 125,
+      "version": null,
+      "versionCode": 9,
+      "publishedAt": 1790863568000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-125",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.125-baebf50.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-125/DroidDeck-PR.125-baebf50.apk",
+          "size": 30856006,
+          "sha256": "1929d1920288d8f72c68e8abf9f7c061e58796c9375f5131589f75c7e1465ea6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.125-baebf50-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-125/DroidDeck-PR.125-baebf50-pubg.apk",
+          "size": 30856006,
+          "sha256": "9feb3eed9ac605a8bfb7d79a0483c9805d6efc5b13d12011f3aca5cb411413e3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.125-baebf50-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-125/DroidDeck-PR.125-baebf50-antutu.apk",
+          "size": 30856006,
+          "sha256": "d35c7812855f9afca5d4fa102bf0da3d3718783b0f5895dcbe2328200a2136e3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.125-baebf50-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-125/DroidDeck-PR.125-baebf50-ludashi.apk",
+          "size": 30856006,
+          "sha256": "150fcbf88740dad28818b5069f8709d3c69c6715f90a155ebea34bd6e848687a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-119",
       "title": "fix: give the guest a short XDGRUNTIMEDIR so gamescope starts with the app on adopted storage",
