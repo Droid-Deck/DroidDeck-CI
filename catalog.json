@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790905345664,
+  "generatedAt": 1790905898629,
   "stable": {
     "tag": "0.2.0",
     "title": "DroidDeck 0.2.0 (beta)",
@@ -101,55 +101,5 @@
       }
     }
   },
-  "tests": [
-    {
-      "tag": "pr-138",
-      "title": "fix: keep Steam-installed second-library games out of non-Steam shortcuts",
-      "summary": "Since the owned-games import (#62), the second-library scan treats every folder in <library>/steamapps/common as an added game, even ones Steam installed itself with an appmanifest.acf beside them. A game only avoids becoming a non-Steam shortcut once the ownership snapshot confirms it. When the ownership check hasn't run or failed, or the game was installed after the last check, Steam's own",
-      "commit": "32a5e83b88e6c256beb8eedde90fc3a3cfeabdf3",
-      "pr": 138,
-      "version": null,
-      "versionCode": 9,
-      "publishedAt": 1790905326000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-138",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.138-32a5e83.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-138/DroidDeck-PR.138-32a5e83.apk",
-          "size": 31015924,
-          "sha256": "b1659b4586dd67740276caed0b769fc1ac74ec48473af5f52de3f1ff5f54ee64",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 9,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.138-32a5e83-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-138/DroidDeck-PR.138-32a5e83-pubg.apk",
-          "size": 31015924,
-          "sha256": "621d4ffc3519532747d2fdb1f84db8470c0523b4e05c9098dbfc3e6d830d9d0a",
-          "packageName": "com.tencent.ig",
-          "versionCode": 9,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.138-32a5e83-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-138/DroidDeck-PR.138-32a5e83-antutu.apk",
-          "size": 31015924,
-          "sha256": "4ad4ce1b70c868084ee5b56c74e49f01d11d3c14c6bb5536c9d79a56c646f39d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 9,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.138-32a5e83-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-138/DroidDeck-PR.138-32a5e83-ludashi.apk",
-          "size": 31015924,
-          "sha256": "375c1c131fee21738770ee719a9713be6a9fe53c5109e4440f2f7cdd258dbc37",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 9,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    }
-  ]
+  "tests": []
 }
