@@ -2,18 +2,55 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790893747567,
+  "generatedAt": 1790904323123,
   "stable": {
-    "tag": "gamescope-3.16.29-p5",
-    "title": "gamescope-3.16.29-p5",
-    "summary": "gamescope 3.16.29 with tools/gamescope/patches; staged by the apk over /usr/local/bin/gamescope. sha256 188144e5564e020d0bc485a1f4f90e1c5fd61d0d1d6dd29db21e8b019036a5c6",
-    "commit": "542d31daf03d2239837a3e64698f9db6abde7135",
+    "tag": "0.2.0",
+    "title": "DroidDeck 0.2.0 (beta)",
+    "summary": "Valve's native ARM64 Steam client on your Android handheld. Windows games run through Valve's ARM64 Proton and FEX, and an optional Linux desktop brings emulators along.",
+    "commit": "197fc3f16384e2b06f7f7ef364fa1de5fbeff375",
     "pr": 0,
     "version": "0.2.0",
     "versionCode": 9,
-    "publishedAt": 1790880788000,
-    "url": "https://github.com/Droid-Deck/DroidDeck/releases/tag/gamescope-3.16.29-p5",
-    "apks": {}
+    "publishedAt": 1790565601000,
+    "url": "https://github.com/Droid-Deck/DroidDeck/releases/tag/0.2.0",
+    "apks": {
+      "com.droiddeck.launcher": {
+        "name": "DroidDeck-0.2.0.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck/releases/download/0.2.0/DroidDeck-0.2.0.apk",
+        "size": 30458018,
+        "sha256": "04baac660d721a32b26bbb21fc308c29245ef14f82b87e41d688091b47b7f3fe",
+        "packageName": "com.droiddeck.launcher",
+        "versionCode": 9,
+        "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+      },
+      "com.tencent.ig": {
+        "name": "DroidDeck-0.2.0-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck/releases/download/0.2.0/DroidDeck-0.2.0-pubg.apk",
+        "size": 30458018,
+        "sha256": "48ba502105bc1a6ad0976a307703d7317c41a59701ea30c179ee20d3e8dff6c8",
+        "packageName": "com.tencent.ig",
+        "versionCode": 9,
+        "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+      },
+      "com.antutu.benchmark.full": {
+        "name": "DroidDeck-0.2.0-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck/releases/download/0.2.0/DroidDeck-0.2.0-antutu.apk",
+        "size": 30458018,
+        "sha256": "f878179c453181e974efa1b1e6f29f7e65eed48ce814ad4b8963d085eb1fd622",
+        "packageName": "com.antutu.benchmark.full",
+        "versionCode": 9,
+        "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+      },
+      "com.ludashi.benchmark": {
+        "name": "DroidDeck-0.2.0-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck/releases/download/0.2.0/DroidDeck-0.2.0-ludashi.apk",
+        "size": 30458018,
+        "sha256": "8a9eff900dea17ad073903231ffe1d60e0efcb00c1f69056858bc5e867ee79b9",
+        "packageName": "com.ludashi.benchmark",
+        "versionCode": 9,
+        "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+      }
+    }
   },
   "preview": {
     "tag": "main-1c161a7",
@@ -64,5 +101,55 @@
       }
     }
   },
-  "tests": []
+  "tests": [
+    {
+      "tag": "pr-139",
+      "title": "fix: find the stable app release and accept fork builds when signing PR test builds",
+      "summary": "Signed PR test builds were failing on every path:",
+      "commit": "17ef33ee31121d9af8a74a9fd1e85ab7cb871850",
+      "pr": 139,
+      "version": null,
+      "versionCode": 9,
+      "publishedAt": 1790904298000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-139",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.139-17ef33e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-139/DroidDeck-PR.139-17ef33e.apk",
+          "size": 31015924,
+          "sha256": "a44c4dcdc49208b7a6af2cc1721fb08019d5ae6ded18777d74f237bdd844fb8b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.139-17ef33e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-139/DroidDeck-PR.139-17ef33e-pubg.apk",
+          "size": 31015924,
+          "sha256": "f056d584ffd3b7e1fb4f62a22600b98cf1f34673abb5949fe6dc585245d4634a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.139-17ef33e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-139/DroidDeck-PR.139-17ef33e-antutu.apk",
+          "size": 31015924,
+          "sha256": "c354a7ba59f100e66bbf372de7ec2f74bbea8b77c0ba5d166797379a41cefd5a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.139-17ef33e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-139/DroidDeck-PR.139-17ef33e-ludashi.apk",
+          "size": 31015924,
+          "sha256": "24e5d870035bf8a7088d0bc95d96925446d0836f4642099d2affc24d2068d2a8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 9,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    }
+  ]
 }
