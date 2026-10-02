@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790948744287,
+  "generatedAt": 1790952906393,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -102,6 +102,55 @@
     }
   },
   "tests": [
+    {
+      "tag": "pr-146",
+      "title": "Fix Deck controller discovery across sysfs layouts",
+      "summary": "Steam Deck controllers now enumerate when a device lacks the native hidraw class, preserving other sysfs classes and adding discovery logs; validated on Thor and in PRoot/udev regression checks.",
+      "commit": "8dfc48d58b648a11c5788acd2327421331eb90dd",
+      "pr": 146,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1790952876000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-146",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.146-8dfc48d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-146/DroidDeck-PR.146-8dfc48d.apk",
+          "size": 31388716,
+          "sha256": "1051d004467199efbb436172d180f069a98fa2d7a7c48ae03ed26561b85644a1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.146-8dfc48d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-146/DroidDeck-PR.146-8dfc48d-pubg.apk",
+          "size": 31388716,
+          "sha256": "d75106a222fe50df150dc3057f7eedd626c5e761350def4edc2bafbacac46f15",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.146-8dfc48d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-146/DroidDeck-PR.146-8dfc48d-antutu.apk",
+          "size": 31388716,
+          "sha256": "c17f97ae0f7d3a37dfff9e07098790a8fb7f2b4a77edd2efd3181620a64f448b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.146-8dfc48d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-146/DroidDeck-PR.146-8dfc48d-ludashi.apk",
+          "size": 31388716,
+          "sha256": "fb207585fc4f536ddc933dd9e8769fd8f7848837469f570d340b373a9ecdb047",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-133",
       "title": "Keep the 16:9 stretch (#63) working in Steam Deck mode",
