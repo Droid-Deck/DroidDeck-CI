@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790948692166,
+  "generatedAt": 1790948744287,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -102,6 +102,55 @@
     }
   },
   "tests": [
+    {
+      "tag": "pr-133",
+      "title": "Keep the 16:9 stretch (#63) working in Steam Deck mode",
+      "summary": "With Stretch 16:9 games to a narrower screen (#63) on, games still get bars when Steam Deck mode is on, which #101 made the default for new installs. In Deck mode the client writes GAMESCOPENEWSCALINGSCALER = 0 (Auto) on the root window. gamescope follows that over the -S stretch it was started with, and Auto fits the 16:9 picture with bars. The QAM can't fix it either: without STE",
+      "commit": "b4d588d9add1f46f30bb149cc6b6f12a470fec8e",
+      "pr": 133,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1790948719000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-133",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.133-b4d588d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-133/DroidDeck-PR.133-b4d588d.apk",
+          "size": 31384620,
+          "sha256": "8f594810d9e4d6d85623c5ea0045a8d990c2b1fb67b6b694dc47bb7b0b6ad99c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.133-b4d588d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-133/DroidDeck-PR.133-b4d588d-pubg.apk",
+          "size": 31384620,
+          "sha256": "72fac1a9a0e8023d5f6ade85e408201e2d17a57b39d70062483ab2eb8131a7d9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.133-b4d588d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-133/DroidDeck-PR.133-b4d588d-antutu.apk",
+          "size": 31384620,
+          "sha256": "09044941e0c122766bb5d4316ee845bbd33e45174632d3422208ed1ccc980833",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.133-b4d588d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-133/DroidDeck-PR.133-b4d588d-ludashi.apk",
+          "size": 31384620,
+          "sha256": "a15119180005dd3ae364de70e1cfbc5771be3e79131b87c2928f64ffb711ecbe",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-128",
       "title": "Expose the compositor's upscaler (FSR 1 / GSR / NIS) as a session setting",
