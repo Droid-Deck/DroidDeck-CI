@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790972638351,
+  "generatedAt": 1790977515924,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -102,6 +102,55 @@
     }
   },
   "tests": [
+    {
+      "tag": "pr-151",
+      "title": "Add Android clipboard text paste into Steam sessions",
+      "summary": "Adds Android clipboard text paste into DroidDeck Steam sessions, verified on Thor by typing and copying in a native Android editor and pasting into Steam; screenshots and validation are in docs/testing/android-clipboard.md.",
+      "commit": "86207f9d0e473ccf32936bcb84a47af80e52ae09",
+      "pr": 151,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1790977485000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-151",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.151-86207f9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-151/DroidDeck-PR.151-86207f9.apk",
+          "size": 31409290,
+          "sha256": "e0ebee791e1ec472ada6c0fc2c6f46c236e9393eeba4b59e4ae5604ed6d08061",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.151-86207f9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-151/DroidDeck-PR.151-86207f9-pubg.apk",
+          "size": 31409290,
+          "sha256": "442cf7015b2e746655c7c6cac3dbb3c4b2fae224f702ae1fe89983c1a92d2b35",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.151-86207f9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-151/DroidDeck-PR.151-86207f9-antutu.apk",
+          "size": 31409290,
+          "sha256": "b3ddb48125614e69a5426bd57700012c01ae7378687dd4f1ddf463b28a430bf7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.151-86207f9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-151/DroidDeck-PR.151-86207f9-ludashi.apk",
+          "size": 31409290,
+          "sha256": "6530dbfa62a8c9508f4497d79c44f8b787bcd187bed47f6f86a59750f898499b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-146",
       "title": "Preserve native HID discovery and add Deck controller diagnostics",
