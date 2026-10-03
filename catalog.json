@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791052460280,
+  "generatedAt": 1791053844271,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-156",
+      "title": "Add standard session picture in picture",
+      "summary": "Adds manual and optional automatic PiP with standard Android controls and Thor second-screen restoration, with no mute or custom suspend actions; the signed release build, 121 unit tests, and Steam/desktop PiP checks passed on Thor.",
+      "commit": "46ee6bb761e91de291dd5cc6be869ca6066c9d0c",
+      "pr": 156,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1791053816000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-156",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.156-46ee6bb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-46ee6bb.apk",
+          "size": 31450343,
+          "sha256": "651508417e00ee7b13b4134af7ea5297a87ce04e85f3889cc2463df16d1a745b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.156-46ee6bb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-46ee6bb-pubg.apk",
+          "size": 31450343,
+          "sha256": "06b71a7559dc0adf347a335a52baa60aa73fcee9a66c8f66fc0f34398082ad64",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.156-46ee6bb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-46ee6bb-antutu.apk",
+          "size": 31450343,
+          "sha256": "15d52c60a5ce27c83015f1b4789f259bf426f89aea14cad9c4d52bcab15153a6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.156-46ee6bb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-46ee6bb-ludashi.apk",
+          "size": 31450343,
+          "sha256": "aa9ce19575eb53c41d658090f375ed7f89a45e29dcc750fd211a6ed89043ebd5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-168",
       "title": "Start .NET and Godot games under FEX without per-game setup",
       "summary": "Games built on .NET 7+ (CoreCLR) or Godot 4 currently fail on DroidDeck with the default settings, e.g. Slay the Spire 2 (#154): a black screen after the Steam logo, then back to the library.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-168/DroidDeck-PR.168-3d306f7-ludashi.apk",
           "size": 31442151,
           "sha256": "e215e86d4db2b0ba5dac7249c65a78eb6eecba6bacaf0ae548ab14a3aacb1fb6",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-156",
-      "title": "Add session picture in picture",
-      "summary": "Adds session picture in picture with optional automatic entry, suspend/resume, manual mute, and Thor second-screen hiding/restoration; 113 unit tests and Steam/desktop checks passed on Thor, while lint is blocked by an existing Compose detector crash and running-game audio remains untested.",
-      "commit": "4955eeb772ae2a52df2b7639de5820e6d902f5bd",
-      "pr": 156,
-      "version": null,
-      "versionCode": 10,
-      "publishedAt": 1791043729000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-156",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.156-4955eeb.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-4955eeb.apk",
-          "size": 31442375,
-          "sha256": "5a1a77e9fc1b693e656fef6729048ca20afd9508a5426758712d1edb2bb0903b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.156-4955eeb-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-4955eeb-pubg.apk",
-          "size": 31442375,
-          "sha256": "b57fd2a23236fe96915a8073dcf6d94e00563d595e06ec5f9f7d514e38bbff08",
-          "packageName": "com.tencent.ig",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.156-4955eeb-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-4955eeb-antutu.apk",
-          "size": 31442375,
-          "sha256": "31cb0dfaeeb9a53b43890dfd9112e3b8d74ebab1ce0889f37ad1a1e8af512f02",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.156-4955eeb-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-4955eeb-ludashi.apk",
-          "size": 31442375,
-          "sha256": "f39fe7cacab23adbacbd34727b46ec85ba50fb0620faddfdcc7db83c737073a6",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 10,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
