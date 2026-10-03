@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791043797356,
+  "generatedAt": 1791048987836,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -101,6 +101,68 @@
       }
     }
   },
+  "recentPreviews": [
+    {
+      "commit": "f3600fa618d8d0174ca35fbf41710df2c946fb1e",
+      "title": "Add game launcher shortcuts",
+      "summary": "Adds canonical game launch links, Android home shortcuts, and ACTIONCREATESHORTCUT support for installed and added games.",
+      "publishedAt": 1791043766000
+    },
+    {
+      "commit": "255c64551ec7d5a810da622d918eb88ffdccb231",
+      "title": "Expose the compositor's upscaler (FSR 1 / GSR / NIS) as a session setting",
+      "summary": "The compositor already ships the spatial upscalers from the X11 renderer: effectschain.c has FSR 1 (EASU+RCAS), Snapdragon GSR and its quality variant, NIS, and RCAS sharpen, plus a sharpness slider. They're reachable through WaylandCompositor.nativeSetUpscaler / nativeSetUpscaleSharpness, but nothing has called them since the Winlator-era drawer was removed. So the scene is always enlarged",
+      "publishedAt": 1790998449000
+    },
+    {
+      "commit": "2b481ba2501b3eb727592ae3308441463bdd03e3",
+      "title": "Fix Steam idle sleep and Android session wake",
+      "summary": "Restore Steam\u2019s main screen after idle sleep by bridging login1 sleep/wake notifications to Android session pause/resume, verified on Thor with the one-minute timer, Android lifecycle transitions, all three suspend policies, four D-Bus recovery tests, and a signed release build.",
+      "publishedAt": 1790992127000
+    },
+    {
+      "commit": "69f99ade42695f7fb5fababd4bc758d222085988",
+      "title": "Fix Deck controller discovery on older handheld kernels",
+      "summary": "Recover missing statx mount IDs from fdinfo for Steam's Deck controller discovery on older kernels, scoped to libudev/libsystemd with inode verification and a one-time log; the reduced fix passed a signed local build, Thor handshake, and compatibility, error, and descriptor checks.",
+      "publishedAt": 1790991572000
+    },
+    {
+      "commit": "7b20b70c6bb55163be0bfc255e981b7a322bc2c9",
+      "title": "Add Android clipboard text paste into Steam sessions",
+      "summary": "Adds Android clipboard text paste into DroidDeck Steam sessions, verified on Thor by typing and copying in a native Android editor and pasting into Steam; screenshots and validation are in docs/testing/android-clipboard.md.",
+      "publishedAt": 1790978026000
+    },
+    {
+      "commit": "3404bbc128f3d206bed8afbd0f7259c5ddf4c5c0",
+      "title": "Show Android Wi-Fi and cellular networks in Steam BPM",
+      "summary": "Expose Android Wi-Fi and cellular connections to Steam BPM, including Wi-Fi names and nearby networks when Location access is available, with generic Wi-Fi status as the fallback.",
+      "publishedAt": 1790972605000
+    },
+    {
+      "commit": "39618e68622a945b34d617b89cb5bae5bbcbacda",
+      "title": "Add quick toggle for on-screen controls",
+      "summary": "Add a persistent on-screen button to hide or restore the full controller overlay.",
+      "publishedAt": 1790967684000
+    },
+    {
+      "commit": "eec3428f7895d8168a77f65b5de4b5897aedd796",
+      "title": "Release 0.3.0: version bump, Deck mode for everyone, release notes and media, Updates page fix",
+      "summary": "Bumps the app to 0.3.0 and adds its release notes, moves every install to Deck mode once, and fixes the Updates page saying \"Update available\" for a build Android would refuse.",
+      "publishedAt": 1790919894000
+    },
+    {
+      "commit": "761b62914fc03859f61c4918fffc0a81cf27d3dc",
+      "title": "UI cleanup for 0.3.0: motion, focus ring, copy and game environment editor",
+      "summary": "UI and UX cleanup ahead of 0.3.0: motion, focus, copy and a few rough screens. The version is not bumped here.",
+      "publishedAt": 1790915335000
+    },
+    {
+      "commit": "5c9e68376983d69d38a99c475a8f408ea14098e6",
+      "title": "fix: keep Steam-installed second-library games out of non-Steam shortcuts",
+      "summary": "Since the owned-games import (#62), the second-library scan treats every folder in <library>/steamapps/common as an added game, even ones Steam installed itself with an appmanifest.acf beside them. A game only avoids becoming a non-Steam shortcut once the ownership snapshot confirms it. When the ownership check hasn't run or failed, or the game was installed after the last check, Steam's own",
+      "publishedAt": 1790906171000
+    }
+  ],
   "tests": [
     {
       "tag": "pr-156",
