@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1790992152667,
+  "generatedAt": 1790995889541,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -102,6 +102,55 @@
     }
   },
   "tests": [
+    {
+      "tag": "pr-156",
+      "title": "Add session picture in picture",
+      "summary": "Adds session picture in picture with optional automatic entry, suspend/resume, manual mute, and Thor second-screen hiding/restoration; 113 unit tests and Steam/desktop checks passed on Thor, while lint is blocked by an existing Compose detector crash and running-game audio remains untested.",
+      "commit": "c300b2159cf50170b9604cfb3b6673b2bd85cdd5",
+      "pr": 156,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1790995860000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-156",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.156-c300b21.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-c300b21.apk",
+          "size": 31438279,
+          "sha256": "40c042b712b19337a0d3ee538c65bcd0b353a14e8d947790eaa5f3371c491ba5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.156-c300b21-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-c300b21-pubg.apk",
+          "size": 31438279,
+          "sha256": "41d398f25cb8faaadf5f04e7cb7b0bbf023aa486a242da813afc72ddc590f76c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.156-c300b21-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-c300b21-antutu.apk",
+          "size": 31438279,
+          "sha256": "3e64f82a2c5f02ae347026e9c55fa00b79bdc5f84d5603021887d72c14096ce5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.156-c300b21-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-156/DroidDeck-PR.156-c300b21-ludashi.apk",
+          "size": 31438279,
+          "sha256": "de903e87d7c66b3b671be73593822e809f9a8bbf693c90522a9fae901f086601",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-133",
       "title": "Keep the 16:9 stretch (#63) working in Steam Deck mode",
