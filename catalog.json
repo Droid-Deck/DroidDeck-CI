@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791055906613,
+  "generatedAt": 1791060615315,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-179",
+      "title": "Add game file exports and sync for Android frontends",
+      "summary": "Adds per-game launch files and optional library folder sync for Android frontends, validated on wireless Thor with Cocoon cold/warm launches, safe sync and rejection checks, and 130 passing release tests.",
+      "commit": "a42cbb3f156064c7bdaa9133f812057ac0c46a2e",
+      "pr": 179,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1791060591000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-179",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.179-a42cbb3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-179/DroidDeck-PR.179-a42cbb3.apk",
+          "size": 31446247,
+          "sha256": "50f9a25a37ed7dcd010af5c5b2b11fd0153f823ef690f2ed4db0d482a8263619",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.179-a42cbb3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-179/DroidDeck-PR.179-a42cbb3-pubg.apk",
+          "size": 31446247,
+          "sha256": "c484b0ff23694e42b51f2144430a920fa67c3b639b75e253b710720509a76185",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.179-a42cbb3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-179/DroidDeck-PR.179-a42cbb3-antutu.apk",
+          "size": 31446247,
+          "sha256": "aa2d284c2800bf8cf399f2fc1614116a306674ac6f4b49b2153b53fa70ebe298",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.179-a42cbb3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-179/DroidDeck-PR.179-a42cbb3-ludashi.apk",
+          "size": 31446247,
+          "sha256": "6acc554398c2cc65d4d51da137502ca93b0e1ecf4e0090fe3d350c3d9e59232b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-168",
       "title": "Start .NET and Godot games under FEX without per-game setup",
