@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791050974091,
+  "generatedAt": 1791052460280,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-67fb338",
-    "title": "Show Preview update history",
-    "summary": "The Preview status card shows recent published changes below the update action and counts builds behind only when the installed CI Preview commit can be matched unambiguously, verified with a release build and simulated-history screenshots on Thor.",
-    "commit": "67fb338e5d4e04ff30bb78b47d534c39ad5a801a",
+    "tag": "main-b04900b",
+    "title": "Fix black screen after resuming Steam sessions",
+    "summary": "\u2022 prevent the Steam login1 suspend callback from blocking during a synchronous D-Bus flush\n\u2022 publish the host sleep request only after the suspend signal and method reply have been transmitted asynchronously\n\u2022 recover the handshake if the asynchronous flush fails\n\u2022 cover suspend after the login1 service has been frozen and resumed",
+    "commit": "b04900b1b27bd2c3f1dc50f5dc0d973ef13454a8",
     "pr": 0,
     "version": null,
     "versionCode": 10,
-    "publishedAt": 1791049260000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-67fb338",
+    "publishedAt": 1791052439000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b04900b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-67fb338.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-67fb338/DroidDeck-main-67fb338.apk",
+        "name": "DroidDeck-main-b04900b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b04900b/DroidDeck-main-b04900b.apk",
         "size": 31442151,
-        "sha256": "924f4af03ca1c4b61eb12239516bbf37850f35ab961fa8b2e0a8a8e58f5bde1c",
+        "sha256": "7a3d222791084eb95665d8625686463980af580336a043452d87b29f99b284c6",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-67fb338-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-67fb338/DroidDeck-main-67fb338-pubg.apk",
+        "name": "DroidDeck-main-b04900b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b04900b/DroidDeck-main-b04900b-pubg.apk",
         "size": 31442151,
-        "sha256": "6dedec09d02dcffe52a572dd8bc85d9a86de4cce21ec9f20acd8b8dc0282ed6b",
+        "sha256": "45c37e3aa132ea0cc2b0664f8da11b75eb8df67e202cbaf09f29e197ebd7a88c",
         "packageName": "com.tencent.ig",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-67fb338-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-67fb338/DroidDeck-main-67fb338-antutu.apk",
+        "name": "DroidDeck-main-b04900b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b04900b/DroidDeck-main-b04900b-antutu.apk",
         "size": 31442151,
-        "sha256": "884acc75328c08080bd80ba7a163c23dc4236c7890d47425aec1a0177ebb5942",
+        "sha256": "7266788fcbb04c35649cb0ddd4c7db086ae19669fb76853606a297b59488b0c2",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-67fb338-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-67fb338/DroidDeck-main-67fb338-ludashi.apk",
+        "name": "DroidDeck-main-b04900b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b04900b/DroidDeck-main-b04900b-ludashi.apk",
         "size": 31442151,
-        "sha256": "3b06b64c8a3a2eb243d4f0672b14213adcab5fc7d881f454c0ebd64291bf2e6d",
+        "sha256": "7fa8707a867bf68bcecbd2138bcc7590d54a9a7fb7a6706d2528fe830f73a54a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b04900b1b27bd2c3f1dc50f5dc0d973ef13454a8",
+      "title": "Fix black screen after resuming Steam sessions",
+      "summary": "\u2022 prevent the Steam login1 suspend callback from blocking during a synchronous D-Bus flush\n\u2022 publish the host sleep request only after the suspend signal and method reply have been transmitted asynchronously\n\u2022 recover the handshake if the asynchronous flush fails\n\u2022 cover suspend after the login1 service has been frozen and resumed",
+      "publishedAt": 1791052439000
+    },
     {
       "commit": "67fb338e5d4e04ff30bb78b47d534c39ad5a801a",
       "title": "Show Preview update history",
@@ -155,12 +161,6 @@
       "title": "Release 0.3.0: version bump, Deck mode for everyone, release notes and media, Updates page fix",
       "summary": "Bumps the app to 0.3.0 and adds its release notes, moves every install to Deck mode once, and fixes the Updates page saying \"Update available\" for a build Android would refuse.",
       "publishedAt": 1790919894000
-    },
-    {
-      "commit": "761b62914fc03859f61c4918fffc0a81cf27d3dc",
-      "title": "UI cleanup for 0.3.0: motion, focus ring, copy and game environment editor",
-      "summary": "UI and UX cleanup ahead of 0.3.0: motion, focus, copy and a few rough screens. The version is not bumped here.",
-      "publishedAt": 1790915335000
     }
   ],
   "tests": [
