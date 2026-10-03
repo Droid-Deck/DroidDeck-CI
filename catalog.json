@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791054807133,
+  "generatedAt": 1791055906613,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e60eae3",
-    "title": "Add standard session picture in picture",
-    "summary": "Adds manual and optional automatic PiP with standard Android controls and Thor second-screen restoration, with no mute or custom suspend actions; the signed release build, 121 unit tests, and Steam/desktop PiP checks passed on Thor.",
-    "commit": "e60eae36460dead7d9db948e9fe00523515413bd",
+    "tag": "main-705a5e7",
+    "title": "Give protonfixes a readable /proc/sys/fs/file-max",
+    "summary": "GE-Proton and proton-cachyos run protonfixes before every game, and it opens /proc/sys/fs/file-max, which Android denies to apps. The PermissionError aborts the launch, so no game starts with those tools. The session now binds a stand-in with the 64-bit kernel default, the same way it already does for the other /proc files Android hides.",
+    "commit": "705a5e7b2a4c742f3d91e7c55533fb58cf12538a",
     "pr": 0,
     "version": null,
     "versionCode": 10,
-    "publishedAt": 1791054783000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e60eae3",
+    "publishedAt": 1791055882000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-705a5e7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e60eae3.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e60eae3/DroidDeck-main-e60eae3.apk",
+        "name": "DroidDeck-main-705a5e7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-705a5e7/DroidDeck-main-705a5e7.apk",
         "size": 31450343,
-        "sha256": "08b6edec9d72ac1a2e830a28bfbe4ca6c093b8b9904babf621438272a88e3f95",
+        "sha256": "e20ad5c7051d623ee299c4ef94214279b1280a1c0b4e4de91eb92ee7c72ac742",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e60eae3-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e60eae3/DroidDeck-main-e60eae3-pubg.apk",
+        "name": "DroidDeck-main-705a5e7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-705a5e7/DroidDeck-main-705a5e7-pubg.apk",
         "size": 31450343,
-        "sha256": "2f5f669c4800dc2e4a9b43d7fbcd71126f20bed92e9dc353e4083a335ecc055a",
+        "sha256": "1ac929bd40fda396134fdb53b0f7cd64a5833ddcc553b58f808871692ad5bc3f",
         "packageName": "com.tencent.ig",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e60eae3-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e60eae3/DroidDeck-main-e60eae3-antutu.apk",
+        "name": "DroidDeck-main-705a5e7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-705a5e7/DroidDeck-main-705a5e7-antutu.apk",
         "size": 31450343,
-        "sha256": "841c36313b87d51fea102851b8fe300ea79b302720df0eb132877b1ce7565c15",
+        "sha256": "12759ca16372e44642150e788f04904af0991235df63eeb9a5d731b211670513",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e60eae3-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e60eae3/DroidDeck-main-e60eae3-ludashi.apk",
+        "name": "DroidDeck-main-705a5e7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-705a5e7/DroidDeck-main-705a5e7-ludashi.apk",
         "size": 31450343,
-        "sha256": "190e542f4d41a204e5dd94b7ca4e4952895172f349f0d5ad3746054ee9bfd293",
+        "sha256": "4e289718e03a3d81fa5ef4a635787c2bbc3d5d563d9312ba547e2506c7d90ff6",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "705a5e7b2a4c742f3d91e7c55533fb58cf12538a",
+      "title": "Give protonfixes a readable /proc/sys/fs/file-max",
+      "summary": "GE-Proton and proton-cachyos run protonfixes before every game, and it opens /proc/sys/fs/file-max, which Android denies to apps. The PermissionError aborts the launch, so no game starts with those tools. The session now binds a stand-in with the 64-bit kernel default, the same way it already does for the other /proc files Android hides.",
+      "publishedAt": 1791055882000
+    },
     {
       "commit": "e60eae36460dead7d9db948e9fe00523515413bd",
       "title": "Add standard session picture in picture",
@@ -155,12 +161,6 @@
       "title": "Show Android Wi-Fi and cellular networks in Steam BPM",
       "summary": "Expose Android Wi-Fi and cellular connections to Steam BPM, including Wi-Fi names and nearby networks when Location access is available, with generic Wi-Fi status as the fallback.",
       "publishedAt": 1790972605000
-    },
-    {
-      "commit": "39618e68622a945b34d617b89cb5bae5bbcbacda",
-      "title": "Add quick toggle for on-screen controls",
-      "summary": "Add a persistent on-screen button to hide or restore the full controller overlay.",
-      "publishedAt": 1790967684000
     }
   ],
   "tests": [
