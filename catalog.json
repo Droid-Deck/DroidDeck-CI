@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791054384393,
+  "generatedAt": 1791054807133,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b04900b",
-    "title": "Fix black screen after resuming Steam sessions",
-    "summary": "\u2022 prevent the Steam login1 suspend callback from blocking during a synchronous D-Bus flush\n\u2022 publish the host sleep request only after the suspend signal and method reply have been transmitted asynchronously\n\u2022 recover the handshake if the asynchronous flush fails\n\u2022 cover suspend after the login1 service has been frozen and resumed",
-    "commit": "b04900b1b27bd2c3f1dc50f5dc0d973ef13454a8",
+    "tag": "main-e60eae3",
+    "title": "Add standard session picture in picture",
+    "summary": "Adds manual and optional automatic PiP with standard Android controls and Thor second-screen restoration, with no mute or custom suspend actions; the signed release build, 121 unit tests, and Steam/desktop PiP checks passed on Thor.",
+    "commit": "e60eae36460dead7d9db948e9fe00523515413bd",
     "pr": 0,
     "version": null,
     "versionCode": 10,
-    "publishedAt": 1791052439000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b04900b",
+    "publishedAt": 1791054783000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e60eae3",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b04900b.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b04900b/DroidDeck-main-b04900b.apk",
-        "size": 31442151,
-        "sha256": "7a3d222791084eb95665d8625686463980af580336a043452d87b29f99b284c6",
+        "name": "DroidDeck-main-e60eae3.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e60eae3/DroidDeck-main-e60eae3.apk",
+        "size": 31450343,
+        "sha256": "08b6edec9d72ac1a2e830a28bfbe4ca6c093b8b9904babf621438272a88e3f95",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b04900b-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b04900b/DroidDeck-main-b04900b-pubg.apk",
-        "size": 31442151,
-        "sha256": "45c37e3aa132ea0cc2b0664f8da11b75eb8df67e202cbaf09f29e197ebd7a88c",
+        "name": "DroidDeck-main-e60eae3-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e60eae3/DroidDeck-main-e60eae3-pubg.apk",
+        "size": 31450343,
+        "sha256": "2f5f669c4800dc2e4a9b43d7fbcd71126f20bed92e9dc353e4083a335ecc055a",
         "packageName": "com.tencent.ig",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b04900b-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b04900b/DroidDeck-main-b04900b-antutu.apk",
-        "size": 31442151,
-        "sha256": "7266788fcbb04c35649cb0ddd4c7db086ae19669fb76853606a297b59488b0c2",
+        "name": "DroidDeck-main-e60eae3-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e60eae3/DroidDeck-main-e60eae3-antutu.apk",
+        "size": 31450343,
+        "sha256": "841c36313b87d51fea102851b8fe300ea79b302720df0eb132877b1ce7565c15",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b04900b-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b04900b/DroidDeck-main-b04900b-ludashi.apk",
-        "size": 31442151,
-        "sha256": "7fa8707a867bf68bcecbd2138bcc7590d54a9a7fb7a6706d2528fe830f73a54a",
+        "name": "DroidDeck-main-e60eae3-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e60eae3/DroidDeck-main-e60eae3-ludashi.apk",
+        "size": 31450343,
+        "sha256": "190e542f4d41a204e5dd94b7ca4e4952895172f349f0d5ad3746054ee9bfd293",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e60eae36460dead7d9db948e9fe00523515413bd",
+      "title": "Add standard session picture in picture",
+      "summary": "Adds manual and optional automatic PiP with standard Android controls and Thor second-screen restoration, with no mute or custom suspend actions; the signed release build, 121 unit tests, and Steam/desktop PiP checks passed on Thor.",
+      "publishedAt": 1791054783000
+    },
     {
       "commit": "b04900b1b27bd2c3f1dc50f5dc0d973ef13454a8",
       "title": "Fix black screen after resuming Steam sessions",
@@ -155,12 +161,6 @@
       "title": "Add quick toggle for on-screen controls",
       "summary": "Add a persistent on-screen button to hide or restore the full controller overlay.",
       "publishedAt": 1790967684000
-    },
-    {
-      "commit": "eec3428f7895d8168a77f65b5de4b5897aedd796",
-      "title": "Release 0.3.0: version bump, Deck mode for everyone, release notes and media, Updates page fix",
-      "summary": "Bumps the app to 0.3.0 and adds its release notes, moves every install to Deck mode once, and fixes the Updates page saying \"Update available\" for a build Android would refuse.",
-      "publishedAt": 1790919894000
     }
   ],
   "tests": [
