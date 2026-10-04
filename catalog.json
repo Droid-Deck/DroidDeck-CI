@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791146555453,
+  "generatedAt": 1791149229519,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-229",
+      "title": "perf(storage): use verified truncate fallback for SD allocation",
+      "summary": "When fallocate(mode 0) is unsupported, use ftruncate only after a per-library probe confirms that extension reserves its blocks; otherwise preserve the original error.",
+      "commit": "4628ae4c92cc5813013537165a0e95886e6de904",
+      "pr": 229,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1791149203000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-229",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.229-4628ae4.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-4628ae4.apk",
+          "size": 36949090,
+          "sha256": "f84fb67a5fa9276920a4a53ef385deea5aab18c910a8aefb601cf768613df134",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.229-4628ae4-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-4628ae4-pubg.apk",
+          "size": 36949090,
+          "sha256": "b38e4bdd4aff9f927051291ebb55644ad54795e1a31f355c0f446b47e4404b7c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.229-4628ae4-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-4628ae4-antutu.apk",
+          "size": 36949090,
+          "sha256": "ed70fdd1876e3f09d7b9fe4d53bff2586fb52cd55d98ee6d904c8db526334dbc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.229-4628ae4-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-4628ae4-ludashi.apk",
+          "size": 36949090,
+          "sha256": "5a7c963efd5a20d7494263d2dc77977ef0493c0fb5e27731717feb329d01db6e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-221",
       "title": "perf(storage): speed up Steam FUSE lookups",
       "summary": "Avoid slow case-only FUSE lookups and reuse complete directory listings as callers read them. Partial lookups return immediately, and directory scans no longer hold the shared cache lock over disk I/O.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-233/DroidDeck-PR.233-5c67652-ludashi.apk",
           "size": 36944994,
           "sha256": "9965de9382dbc732930f29219b29cd5aaa2af63a1dd86868f47ec3fbc92e82bd",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-229",
-      "title": "perf(storage): use verified truncate fallback for SD allocation",
-      "summary": "When fallocate(mode 0) is unsupported, use ftruncate only after a per-library probe confirms that extension reserves its blocks; otherwise preserve the original error.",
-      "commit": "df9734f0caf2984d5a1374b058d15fe658271db1",
-      "pr": 229,
-      "version": null,
-      "versionCode": 10,
-      "publishedAt": 1791142790000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-229",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.229-df9734f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-df9734f.apk",
-          "size": 36949090,
-          "sha256": "5257b3923cbf567c3ca874131c596a55164d2c60d80b5a7fde06dfac3345842c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.229-df9734f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-df9734f-pubg.apk",
-          "size": 36949090,
-          "sha256": "78270a82a4ae59c2c8e6838b2043f1e2c37bf7518352195991257ae74a8e203d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.229-df9734f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-df9734f-antutu.apk",
-          "size": 36949090,
-          "sha256": "92ffaa86cae4c3d0a00e6e884d69c6b6e4f15245496a9f84f6bc96c0dc48fe9b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.229-df9734f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-df9734f-ludashi.apk",
-          "size": 36949090,
-          "sha256": "983e1dbbf3f80df047dac3873c20a229b43a2ad0bee9a66bac16d4aa63c0e9c7",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 10,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
