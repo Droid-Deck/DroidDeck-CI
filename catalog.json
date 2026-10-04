@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791086633850,
+  "generatedAt": 1791088230424,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9e54e09",
-    "title": "Restore 500 ms Back double-press window",
-    "summary": "Restore the in-session Back double-press window from 300 ms to 500 ms; validated with compileDebugKotlin and git diff --check.",
-    "commit": "9e54e094fbdd049a9ec5450932f7b416f2ed8e51",
+    "tag": "main-5da3cf6",
+    "title": "Fix automatic Picture in Picture after session handoffs",
+    "summary": "Preserve first-frame readiness across session handoffs so automatic Picture in Picture works in Steam and gamescope, verified with a release build, 144 passing unit tests, and repeated Home/swipe transitions on the AYN Thor.",
+    "commit": "5da3cf673c8d1494a541af5402cf494f27337be6",
     "pr": 0,
     "version": null,
     "versionCode": 10,
-    "publishedAt": 1791085510000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9e54e09",
+    "publishedAt": 1791088203000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5da3cf6",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9e54e09.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9e54e09/DroidDeck-main-9e54e09.apk",
+        "name": "DroidDeck-main-5da3cf6.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5da3cf6/DroidDeck-main-5da3cf6.apk",
         "size": 31470924,
-        "sha256": "082cea533dd78f801f69b6aadb5a8a1b7f57793dbcf6a232ada7bbf98bbdf25a",
+        "sha256": "a5339f3199418ad8b2f177cee4ceb81e7843e1785286c11e75a54a8b22e1da54",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9e54e09-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9e54e09/DroidDeck-main-9e54e09-pubg.apk",
+        "name": "DroidDeck-main-5da3cf6-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5da3cf6/DroidDeck-main-5da3cf6-pubg.apk",
         "size": 31470924,
-        "sha256": "28d4857232e44fefa8b4e6d77f46373c48bb80b20b9ac266b4f39576bd5ac008",
+        "sha256": "36d101d7f9cb33bc03bd5afbdaca1f52540007695c3cba62d0729f93bb33b52c",
         "packageName": "com.tencent.ig",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9e54e09-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9e54e09/DroidDeck-main-9e54e09-antutu.apk",
+        "name": "DroidDeck-main-5da3cf6-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5da3cf6/DroidDeck-main-5da3cf6-antutu.apk",
         "size": 31470924,
-        "sha256": "516421eadff7d05e741096811434df33db4fe34552c9dde83b3abbfe7f37a3d9",
+        "sha256": "327192eae599eb4d989c95e4c0ff3550abee2ddd148b58748740e389f58c7a40",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9e54e09-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9e54e09/DroidDeck-main-9e54e09-ludashi.apk",
+        "name": "DroidDeck-main-5da3cf6-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5da3cf6/DroidDeck-main-5da3cf6-ludashi.apk",
         "size": 31470924,
-        "sha256": "9a4977bb2bc1efc54f23aa89ed186d7ffd1eda002278b4519549da53c42782dd",
+        "sha256": "43ed4fd27dc2a366efd00a1e5f56d017a917a0905d2a8e2085d513951fbda443",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "5da3cf673c8d1494a541af5402cf494f27337be6",
+      "title": "Fix automatic Picture in Picture after session handoffs",
+      "summary": "Preserve first-frame readiness across session handoffs so automatic Picture in Picture works in Steam and gamescope, verified with a release build, 144 passing unit tests, and repeated Home/swipe transitions on the AYN Thor.",
+      "publishedAt": 1791088203000
+    },
     {
       "commit": "9e54e094fbdd049a9ec5450932f7b416f2ed8e51",
       "title": "Restore 500 ms Back double-press window",
@@ -155,12 +161,6 @@
       "title": "Fix black screen after resuming Steam sessions",
       "summary": "\u2022 prevent the Steam login1 suspend callback from blocking during a synchronous D-Bus flush\n\u2022 publish the host sleep request only after the suspend signal and method reply have been transmitted asynchronously\n\u2022 recover the handshake if the asynchronous flush fails\n\u2022 cover suspend after the login1 service has been frozen and resumed",
       "publishedAt": 1791052439000
-    },
-    {
-      "commit": "67fb338e5d4e04ff30bb78b47d534c39ad5a801a",
-      "title": "Show Preview update history",
-      "summary": "The Preview status card shows recent published changes below the update action and counts builds behind only when the installed CI Preview commit can be matched unambiguously, verified with a release build and simulated-history screenshots on Thor.",
-      "publishedAt": 1791049260000
     }
   ],
   "tests": [
