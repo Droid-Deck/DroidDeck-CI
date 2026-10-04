@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791082831149,
+  "generatedAt": 1791083077618,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c535f6e",
-    "title": "Empty library intro",
-    "summary": "",
-    "commit": "c535f6ef6e1c6f7adf24838db69598a84a2416df",
+    "tag": "main-e7b6876",
+    "title": "Add the droiddeck-esync pack pipeline",
+    "summary": "Builds esync packs for new Valve, GE and CachyOS Proton 11 releases on arm64 runners, smoke-tests them against stock with esstress, and on main publishes each pack and a signed index as non-latest releases. A watcher checks Steam and the GE/CachyOS releases every 20 minutes and starts a build for new ones. The app side lands separately with feat/userspace-esync-ntsync.",
+    "commit": "e7b6876877243ca27dafe0d584f74684573138c8",
     "pr": 0,
     "version": null,
     "versionCode": 10,
-    "publishedAt": 1791081155000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c535f6e",
+    "publishedAt": 1791083049000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e7b6876",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c535f6e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c535f6e/DroidDeck-main-c535f6e.apk",
+        "name": "DroidDeck-main-e7b6876.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7b6876/DroidDeck-main-e7b6876.apk",
         "size": 31470924,
-        "sha256": "8f0de281d61e673960b94d3c8e5b8dc1fba26a4ea48f1b56d0a3abaf61d760c1",
+        "sha256": "88cc7d289f011641cc8014f35eb4b181dbb5b0c22ecaf28eeb69eaf0d9b6a7fb",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c535f6e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c535f6e/DroidDeck-main-c535f6e-pubg.apk",
+        "name": "DroidDeck-main-e7b6876-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7b6876/DroidDeck-main-e7b6876-pubg.apk",
         "size": 31470924,
-        "sha256": "b26313a6962d790eb11b631b70f2f345366850dd0f4619a52517956f4ebf9966",
+        "sha256": "8554928ca3a0621b673b80fcd8470dc6283015c1802dc0c8e2ca9db5a7e43b9c",
         "packageName": "com.tencent.ig",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c535f6e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c535f6e/DroidDeck-main-c535f6e-antutu.apk",
+        "name": "DroidDeck-main-e7b6876-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7b6876/DroidDeck-main-e7b6876-antutu.apk",
         "size": 31470924,
-        "sha256": "e2ebd40cd96180b16d8f5d875abf46b25172021a8676901ff5ebc7c30e98e4ef",
+        "sha256": "fa84c79b07d1fbb749575d829f851d369c996670af33cf64e6a7af3f8e2207e8",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c535f6e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c535f6e/DroidDeck-main-c535f6e-ludashi.apk",
+        "name": "DroidDeck-main-e7b6876-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7b6876/DroidDeck-main-e7b6876-ludashi.apk",
         "size": 31470924,
-        "sha256": "733ebcda397b460cf822d34c69b48cf99f97539b73e4e1b0f5abf000b296bb48",
+        "sha256": "29d87e6150e886694e36efe7ae78ae8e132659189b4701389bef7371bcdc0706",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e7b6876877243ca27dafe0d584f74684573138c8",
+      "title": "Add the droiddeck-esync pack pipeline",
+      "summary": "Builds esync packs for new Valve, GE and CachyOS Proton 11 releases on arm64 runners, smoke-tests them against stock with esstress, and on main publishes each pack and a signed index as non-latest releases. A watcher checks Steam and the GE/CachyOS releases every 20 minutes and starts a build for new ones. The app side lands separately with feat/userspace-esync-ntsync.",
+      "publishedAt": 1791083049000
+    },
     {
       "commit": "c535f6ef6e1c6f7adf24838db69598a84a2416df",
       "title": "Empty library intro",
@@ -155,12 +161,6 @@
       "title": "Expose the compositor's upscaler (FSR 1 / GSR / NIS) as a session setting",
       "summary": "The compositor already ships the spatial upscalers from the X11 renderer: effectschain.c has FSR 1 (EASU+RCAS), Snapdragon GSR and its quality variant, NIS, and RCAS sharpen, plus a sharpness slider. They're reachable through WaylandCompositor.nativeSetUpscaler / nativeSetUpscaleSharpness, but nothing has called them since the Winlator-era drawer was removed. So the scene is always enlarged",
       "publishedAt": 1790998449000
-    },
-    {
-      "commit": "2b481ba2501b3eb727592ae3308441463bdd03e3",
-      "title": "Fix Steam idle sleep and Android session wake",
-      "summary": "Restore Steam\u2019s main screen after idle sleep by bridging login1 sleep/wake notifications to Android session pause/resume, verified on Thor with the one-minute timer, Android lifecycle transitions, all three suspend policies, four D-Bus recovery tests, and a signed release build.",
-      "publishedAt": 1790992127000
     }
   ],
   "tests": [
