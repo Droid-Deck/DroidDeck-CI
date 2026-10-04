@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791149229519,
+  "generatedAt": 1791150074848,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-221",
+      "title": "perf(storage): use verified native SD library paths",
+      "summary": "Fresh Steam installs on Android's shared-storage path repeatedly scan growing asset directories. On Thor, listing the same completed directory took 501 ms through FUSE and 2.3 ms through the native exFAT path in a process running with the app's normal UID and groups.",
+      "commit": "7962c19283bfb0f18a5c7672e08a879814a3d5a1",
+      "pr": 221,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1791150049000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-221",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.221-7962c19.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-7962c19.apk",
+          "size": 36944994,
+          "sha256": "e34d9e4e8582da64433608da563ac1fe96959dd61e76e1f2d371966bac5ba0df",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.221-7962c19-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-7962c19-pubg.apk",
+          "size": 36944994,
+          "sha256": "a29772c95d1e537a5f90618f347e8736e9b09e12492af27476d85ab7e6f676f6",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.221-7962c19-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-7962c19-antutu.apk",
+          "size": 36944994,
+          "sha256": "29b2dfa933432988e3e5ebe62c18c78b181b245312301fdde2c6a7fc6fc3f178",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.221-7962c19-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-7962c19-ludashi.apk",
+          "size": 36944994,
+          "sha256": "3ac11fd19afc9f13d2ad43f21692e5cb1410a9fe2f3a416786ba0bd035a83e55",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-229",
       "title": "perf(storage): use verified truncate fallback for SD allocation",
       "summary": "When fallocate(mode 0) is unsupported, use ftruncate only after a per-library probe confirms that extension reserves its blocks; otherwise preserve the original error.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-4628ae4-ludashi.apk",
           "size": 36949090,
           "sha256": "5a7c963efd5a20d7494263d2dc77977ef0493c0fb5e27731717feb329d01db6e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-221",
-      "title": "perf(storage): speed up Steam FUSE lookups",
-      "summary": "Avoid slow case-only FUSE lookups and reuse complete directory listings as callers read them. Partial lookups return immediately, and directory scans no longer hold the shared cache lock over disk I/O.",
-      "commit": "4fc21622033249aa288368f7df57a8173bb21f12",
-      "pr": 221,
-      "version": null,
-      "versionCode": 10,
-      "publishedAt": 1791146526000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-221",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.221-4fc2162.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-4fc2162.apk",
-          "size": 36953186,
-          "sha256": "8f60a214dc921804799673fd38193fbed9c5867145c3e1b5deee892dd4328dd1",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.221-4fc2162-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-4fc2162-pubg.apk",
-          "size": 36953186,
-          "sha256": "bb17a83e646f17994694f176419b31a7ed033bf32906ef452cb199e01796fc2b",
-          "packageName": "com.tencent.ig",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.221-4fc2162-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-4fc2162-antutu.apk",
-          "size": 36953186,
-          "sha256": "739506f143a19a06eff3fafed710324fc8d1ac36d6acc187decf6caa8b6cec7d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.221-4fc2162-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-4fc2162-ludashi.apk",
-          "size": 36953186,
-          "sha256": "d3390e4298be189df2e6a1623df4c1b66416be1e8b00e23ecc1f68b7ab03cc62",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 10,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
