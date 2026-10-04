@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791091934353,
+  "generatedAt": 1791102872399,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-197",
+      "title": "ESync, FSync, NTSync + OpenNow + FEX for Desktop Apps",
+      "summary": "This PR includes\n\u2022 ESync, FSync, NTSync\n\u2022 OpenNow app fixes\n\u2022 FEX fixes for x86-64 Desktop Apps\n\u2022 Brand Fixing in Source\n\u2022 Additional Performance Fixes",
+      "commit": "edfa5e53bc5f8af94fe40ab95845c27263da5040",
+      "pr": 197,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1791102843000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-197",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.197-edfa5e5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-197/DroidDeck-PR.197-edfa5e5.apk",
+          "size": 36641720,
+          "sha256": "24f47908bcbec25ebb340e1d3cd873a52111f6130d6a61cbe6fd63773d482749",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.197-edfa5e5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-197/DroidDeck-PR.197-edfa5e5-pubg.apk",
+          "size": 36641720,
+          "sha256": "cc845d392b46a29707da8e24199f04aef19e601abff06b63f0a8f9d137e736a1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.197-edfa5e5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-197/DroidDeck-PR.197-edfa5e5-antutu.apk",
+          "size": 36641720,
+          "sha256": "bb2291e1519dc21c51b485d85683f97172e303d2680386a639c52b283553a2b9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.197-edfa5e5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-197/DroidDeck-PR.197-edfa5e5-ludashi.apk",
+          "size": 36641720,
+          "sha256": "16a0557817d47b8bda9e754ebb53c19e65b7b78079d6d615d098adb3bb0c90cb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-198",
       "title": "Effects page in the session menu: scaling modes, screen effects and texture filtering",
       "summary": "The compositor has carried the post chain for a while - colour grade, CAS, fake HDR, debanding, FXAA, toon, CRT and NTSC, with nine scaling modes (waylandcomp/src/effectschain.c) - but nothing in the app called it. This adds a fifth page to the session menu, Effects, between Display and Controls:",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-158/DroidDeck-PR.158-0186273-ludashi.apk",
           "size": 31483316,
           "sha256": "e0f6b9b0a446af5b02c33f1764aead12219f400481759eaa92c7ce8eedf341b6",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-197",
-      "title": "ESync, FSync, NTSync + OpenNow + FEX for Desktop Apps",
-      "summary": "This PR includes\n\u2022 ESync, FSync, NTSync\n\u2022 OpenNow app fixes\n\u2022 FEX fixes for x86-64 Desktop Apps\n\u2022 Brand Fixing in Source\n\u2022 Additional Performance Fixes",
-      "commit": "9bc4eca6461ccbc698eecc4811c79b0a015ec9dc",
-      "pr": 197,
-      "version": null,
-      "versionCode": 10,
-      "publishedAt": 1791089744000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-197",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.197-9bc4eca.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-197/DroidDeck-PR.197-9bc4eca.apk",
-          "size": 36633426,
-          "sha256": "08ac13f24491767cad821f05770f14afc352b5d0cfb139173896ae824a4abc07",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.197-9bc4eca-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-197/DroidDeck-PR.197-9bc4eca-pubg.apk",
-          "size": 36633426,
-          "sha256": "c3751e089df4d4076d95f6de7c9165723f568743203ac4906a49e8dd43796647",
-          "packageName": "com.tencent.ig",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.197-9bc4eca-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-197/DroidDeck-PR.197-9bc4eca-antutu.apk",
-          "size": 36633426,
-          "sha256": "27d1db814d09980f9d312144c2b5108ee7a1881584ac887a5bce913fffd11073",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.197-9bc4eca-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-197/DroidDeck-PR.197-9bc4eca-ludashi.apk",
-          "size": 36633426,
-          "sha256": "ff73a170b163231ad1fd92e12713111a2a89f6378c26c90b38a5867c3aa34848",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 10,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
