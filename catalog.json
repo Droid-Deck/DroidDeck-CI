@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791142810529,
+  "generatedAt": 1791144432768,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-233",
+      "title": "Keep the second library and Games folders visible to the fast path",
+      "summary": "The fast path only kept the first 64 binds and silently dropped the rest. A second library adds about 36 binds: the library itself and private overrides for compatdata, shadercache and each Proton, runtime and FEX depot, under both /mnt/droiddeck-sd and the legacy /mnt/bannerlator-sd. With one chosen, a session has 96 binds.",
+      "commit": "5c6765233ae5405d7bd4c1b29f20c9e8343a1fed",
+      "pr": 233,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1791144402000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-233",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.233-5c67652.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-233/DroidDeck-PR.233-5c67652.apk",
+          "size": 36944994,
+          "sha256": "30bc51ef809070ddb0c1bef91eced50fed50b0d7ad95c37d31e3795c89692990",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.233-5c67652-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-233/DroidDeck-PR.233-5c67652-pubg.apk",
+          "size": 36944994,
+          "sha256": "565886a54398bc1f0627d2cb103a943680f44b2bedba23fdec77705f5f7f9be4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.233-5c67652-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-233/DroidDeck-PR.233-5c67652-antutu.apk",
+          "size": 36944994,
+          "sha256": "d55fb4f811b4f506f0d84373599f034daa2eb33abfc64be89beca4d8ee0b169c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.233-5c67652-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-233/DroidDeck-PR.233-5c67652-ludashi.apk",
+          "size": 36944994,
+          "sha256": "9965de9382dbc732930f29219b29cd5aaa2af63a1dd86868f47ec3fbc92e82bd",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-229",
       "title": "perf(storage): use verified truncate fallback for SD allocation",
