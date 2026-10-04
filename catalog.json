@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791116709220,
+  "generatedAt": 1791129950868,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-221",
+      "title": "Fix Steam preallocation on external SD",
+      "summary": "Steam allocation on removable FUSE libraries can spend minutes in repeated case-correction scans; safely fast-path case-only FUSE probes and cache short-lived Steam directory listings with metadata invalidation.",
+      "commit": "14031c691179d6898876decadb9ffd9eda33a60a",
+      "pr": 221,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1791129917000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-221",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.221-14031c6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-14031c6.apk",
+          "size": 31573428,
+          "sha256": "71441b3e93d381712a051177fb8dd00f09a7a7583ace107a066d50e849542217",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.221-14031c6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-14031c6-pubg.apk",
+          "size": 31573428,
+          "sha256": "62df903b20fa1adc6228a51c35636b44a72f2ce1bcf1ed9992053c6ddcdb2a3e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.221-14031c6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-14031c6-antutu.apk",
+          "size": 31573428,
+          "sha256": "e0a7d2097b083496026331dd9a3734de4663f72cc63863cf17b1ab8af2785f3b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.221-14031c6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-221/DroidDeck-PR.221-14031c6-ludashi.apk",
+          "size": 31573428,
+          "sha256": "6a5470ee78675c4e0c6ce5b46ce81dd4fafc6daed68257576564de4d02634f39",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-197",
       "title": "ESync, FSync, NTSync + OpenNow + FEX for Desktop Apps",
