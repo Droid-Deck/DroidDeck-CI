@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791137671546,
+  "generatedAt": 1791138820899,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-225",
+      "title": "Fetch the Steam client again when it never shows up",
+      "summary": "A client stopped part way through updating itself can be left unable to draw anything. Its files and our install stamp are still on disk, so the installer never looked at it again and every session sat on \"Waiting for Steam\" with nothing retried.",
+      "commit": "0b5908d6d63080f625b51bab3439e2e68466631e",
+      "pr": 225,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1791138794000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-225",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.225-0b5908d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-225/DroidDeck-PR.225-0b5908d.apk",
+          "size": 36949090,
+          "sha256": "9521546951632858a11a38f92c6c3c64959d8bdc3e96868818e4d887ab83fb5c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.225-0b5908d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-225/DroidDeck-PR.225-0b5908d-pubg.apk",
+          "size": 36949090,
+          "sha256": "b961b14c6a983c0e10ebbfc1cb620e5ce6bc7f609b4c796c8b2aff5b62f73962",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.225-0b5908d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-225/DroidDeck-PR.225-0b5908d-antutu.apk",
+          "size": 36949090,
+          "sha256": "15fd8171ff3648311762d50907fec26cff4c19ae98f32de0c28975ba5cad089e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.225-0b5908d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-225/DroidDeck-PR.225-0b5908d-ludashi.apk",
+          "size": 36949090,
+          "sha256": "cebdde6f852d645f0497c981de170a934484c41ef9d0514f27bbc4c0276ff895",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-221",
       "title": "Fix Steam preallocation on external SD",
