@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791133297968,
+  "generatedAt": 1791136248412,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3858a69",
-    "title": "Start fresh installs on droiddeck-esync",
-    "summary": "In the Valheim and PEAK runs esync used the least CPU per frame. fsync stays available, and esync still hands a Proton build without a pack to droiddeck-fsync until its pack is published. A sync someone already picked is kept.",
-    "commit": "3858a6986714bed91867f84657ff65391566c432",
+    "tag": "main-6dc7452",
+    "title": "Start every title with a Valve pick on the Compatible Proton",
+    "summary": "The client runs in Steam Deck mode, where a title's \"Default\" is not the \"0\" mapping but Valve's own pick for it: the Steam Deck compatibility recommendedruntime (proton-stable, a pinned Proton, or native for the Steam Linux Runtime) or an appmappings entry in the SteamPlay manifests. A title the session had not mapped yet - not installed, or installed while the client was running on a build wit",
+    "commit": "6dc74523c3f12fc0daccd807ebd8230b882b07fa",
     "pr": 0,
     "version": null,
     "versionCode": 10,
-    "publishedAt": 1791133272000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3858a69",
+    "publishedAt": 1791136218000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6dc7452",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3858a69.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3858a69/DroidDeck-main-3858a69.apk",
+        "name": "DroidDeck-main-6dc7452.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6dc7452/DroidDeck-main-6dc7452.apk",
         "size": 36940898,
-        "sha256": "e79ed02baa18f089add6518871d5de13353f4f90ac7dedd15e58dc9559ef4a8d",
+        "sha256": "4ccb49c911e3abe2538a4d18b0991e646eddce6181e716f742682d254bdd8fcb",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3858a69-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3858a69/DroidDeck-main-3858a69-pubg.apk",
+        "name": "DroidDeck-main-6dc7452-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6dc7452/DroidDeck-main-6dc7452-pubg.apk",
         "size": 36940898,
-        "sha256": "3b63820d9571f8d895dba2bd51ff6f2f41ef6d6fa065187448e65115405b44d1",
+        "sha256": "8597e34fbb0a6ff76627d7634afe36269d2eacac21d192df8952b8d2e42c2fa7",
         "packageName": "com.tencent.ig",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3858a69-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3858a69/DroidDeck-main-3858a69-antutu.apk",
+        "name": "DroidDeck-main-6dc7452-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6dc7452/DroidDeck-main-6dc7452-antutu.apk",
         "size": 36940898,
-        "sha256": "e691b627cc7bbad7e3321770f63367b11731dde5abdcf6b9299bc2b79a3ab204",
+        "sha256": "3638863bd063a643e44f25babe1b985f465d90712c158001ea5687f9bb980348",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3858a69-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3858a69/DroidDeck-main-3858a69-ludashi.apk",
+        "name": "DroidDeck-main-6dc7452-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6dc7452/DroidDeck-main-6dc7452-ludashi.apk",
         "size": 36940898,
-        "sha256": "0ea9c1bce5b67eaa84472fd69fb6b7d4e74badf6a46f6db498d1ab40beffb1b5",
+        "sha256": "acda5294c25bf610d597fa592eadc02c40585b9057c218ea966bd9c778c70548",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6dc74523c3f12fc0daccd807ebd8230b882b07fa",
+      "title": "Start every title with a Valve pick on the Compatible Proton",
+      "summary": "The client runs in Steam Deck mode, where a title's \"Default\" is not the \"0\" mapping but Valve's own pick for it: the Steam Deck compatibility recommendedruntime (proton-stable, a pinned Proton, or native for the Steam Linux Runtime) or an appmappings entry in the SteamPlay manifests. A title the session had not mapped yet - not installed, or installed while the client was running on a build wit",
+      "publishedAt": 1791136218000
+    },
     {
       "commit": "3858a6986714bed91867f84657ff65391566c432",
       "title": "Start fresh installs on droiddeck-esync",
@@ -155,12 +161,6 @@
       "title": "Add Touch Off and compact session menu shortcuts",
       "summary": "Add a persistent Touch Off option that ignores game-picture touches while preserving Android controls, and move Steam Home and Quick Access into compact pills beside Stop; release build succeeds and user will complete device QA.",
       "publishedAt": 1791088973000
-    },
-    {
-      "commit": "5da3cf673c8d1494a541af5402cf494f27337be6",
-      "title": "Fix automatic Picture in Picture after session handoffs",
-      "summary": "Preserve first-frame readiness across session handoffs so automatic Picture in Picture works in Steam and gamescope, verified with a release build, 144 passing unit tests, and repeated Home/swipe transitions on the AYN Thor.",
-      "publishedAt": 1791088203000
     }
   ],
   "tests": [
