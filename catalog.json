@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791083077618,
+  "generatedAt": 1791083156490,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e7b6876",
-    "title": "Add the droiddeck-esync pack pipeline",
-    "summary": "Builds esync packs for new Valve, GE and CachyOS Proton 11 releases on arm64 runners, smoke-tests them against stock with esstress, and on main publishes each pack and a signed index as non-latest releases. A watcher checks Steam and the GE/CachyOS releases every 20 minutes and starts a build for new ones. The app side lands separately with feat/userspace-esync-ntsync.",
-    "commit": "e7b6876877243ca27dafe0d584f74684573138c8",
+    "tag": "main-eb9ca4a",
+    "title": "Remove redundant in-session Desktop button",
+    "summary": "Remove the redundant in-session Desktop button now that Steam switching works, with the release build passing and the signed update verified on the AYN Thor.",
+    "commit": "eb9ca4ab6b41235db968a562c3b44e129bc97e14",
     "pr": 0,
     "version": null,
     "versionCode": 10,
-    "publishedAt": 1791083049000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e7b6876",
+    "publishedAt": 1791083124000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-eb9ca4a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e7b6876.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7b6876/DroidDeck-main-e7b6876.apk",
+        "name": "DroidDeck-main-eb9ca4a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eb9ca4a/DroidDeck-main-eb9ca4a.apk",
         "size": 31470924,
-        "sha256": "88cc7d289f011641cc8014f35eb4b181dbb5b0c22ecaf28eeb69eaf0d9b6a7fb",
+        "sha256": "ba430f7a2c8fb2b1bb8637ac7e0e84f8497537030b2e2bb6c38b3bed3914cdba",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e7b6876-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7b6876/DroidDeck-main-e7b6876-pubg.apk",
+        "name": "DroidDeck-main-eb9ca4a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eb9ca4a/DroidDeck-main-eb9ca4a-pubg.apk",
         "size": 31470924,
-        "sha256": "8554928ca3a0621b673b80fcd8470dc6283015c1802dc0c8e2ca9db5a7e43b9c",
+        "sha256": "464ed441f595a162f2861219926f5c0087ee1381a882e8b5af96494247210115",
         "packageName": "com.tencent.ig",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e7b6876-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7b6876/DroidDeck-main-e7b6876-antutu.apk",
+        "name": "DroidDeck-main-eb9ca4a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eb9ca4a/DroidDeck-main-eb9ca4a-antutu.apk",
         "size": 31470924,
-        "sha256": "fa84c79b07d1fbb749575d829f851d369c996670af33cf64e6a7af3f8e2207e8",
+        "sha256": "bbae859575a2b4cabbea230d3695200b55f22d4a18e2e19da47a9bed5aaee8bf",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e7b6876-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7b6876/DroidDeck-main-e7b6876-ludashi.apk",
+        "name": "DroidDeck-main-eb9ca4a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eb9ca4a/DroidDeck-main-eb9ca4a-ludashi.apk",
         "size": 31470924,
-        "sha256": "29d87e6150e886694e36efe7ae78ae8e132659189b4701389bef7371bcdc0706",
+        "sha256": "a61e35b46bc46f230cc515c5465430328b8d7c611ab55e4beb6c8a268680aebb",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "eb9ca4ab6b41235db968a562c3b44e129bc97e14",
+      "title": "Remove redundant in-session Desktop button",
+      "summary": "Remove the redundant in-session Desktop button now that Steam switching works, with the release build passing and the signed update verified on the AYN Thor.",
+      "publishedAt": 1791083124000
+    },
     {
       "commit": "e7b6876877243ca27dafe0d584f74684573138c8",
       "title": "Add the droiddeck-esync pack pipeline",
@@ -155,12 +161,6 @@
       "title": "Add game launcher shortcuts",
       "summary": "Adds canonical game launch links, Android home shortcuts, and ACTIONCREATESHORTCUT support for installed and added games.",
       "publishedAt": 1791043766000
-    },
-    {
-      "commit": "255c64551ec7d5a810da622d918eb88ffdccb231",
-      "title": "Expose the compositor's upscaler (FSR 1 / GSR / NIS) as a session setting",
-      "summary": "The compositor already ships the spatial upscalers from the X11 renderer: effectschain.c has FSR 1 (EASU+RCAS), Snapdragon GSR and its quality variant, NIS, and RCAS sharpen, plus a sharpness slider. They're reachable through WaylandCompositor.nativeSetUpscaler / nativeSetUpscaleSharpness, but nothing has called them since the Winlator-era drawer was removed. So the scene is always enlarged",
-      "publishedAt": 1790998449000
     }
   ],
   "tests": [
