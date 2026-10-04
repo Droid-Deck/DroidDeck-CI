@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791077681665,
+  "generatedAt": 1791079742567,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f5e204e",
-    "title": "Add game file exports and sync for Android frontends",
-    "summary": "Adds per-game launch files, Steam game icons, and optional library folder sync for Android frontends, validated on wireless Thor with Cocoon icons and cold/warm launches, safe sync and rejection checks, and 131 passing release tests.",
-    "commit": "f5e204eb1d39d1e2732c75a9bc6b0c030b990f8b",
+    "tag": "main-db2e1d7",
+    "title": "Fix runtime removal and first-run Steam setup",
+    "summary": "Prevent Play from racing runtime removal, show progress beneath the runtime row, install Steam from the selected channel, refresh and verify required helpers, and initialize UI scaling once while preserving user choices; covered by regression tests and Thor QA.",
+    "commit": "db2e1d7da2fd6bdaf526c720357abc0d22259909",
     "pr": 0,
     "version": null,
     "versionCode": 10,
-    "publishedAt": 1791077659000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f5e204e",
+    "publishedAt": 1791079684000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-db2e1d7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f5e204e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5e204e/DroidDeck-main-f5e204e.apk",
-        "size": 31446247,
-        "sha256": "65c73764f2e8c632d811eee79a331d5138cd41f59082427b9b24d39e9cf7d22a",
+        "name": "DroidDeck-main-db2e1d7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-db2e1d7/DroidDeck-main-db2e1d7.apk",
+        "size": 31450444,
+        "sha256": "f28febfac778f67cd3edcd8bcc752d40f4ecde7021a2f39bf4176c0975ac8ccd",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f5e204e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5e204e/DroidDeck-main-f5e204e-pubg.apk",
-        "size": 31446247,
-        "sha256": "abab2b4c0959cbb1d88fc830ecab0c18581b21baa4e395bbe79950004d56d657",
+        "name": "DroidDeck-main-db2e1d7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-db2e1d7/DroidDeck-main-db2e1d7-pubg.apk",
+        "size": 31450444,
+        "sha256": "25bc2606409c836252789703ec821070a67ed33ff7a31c6d90a43d0c21a683df",
         "packageName": "com.tencent.ig",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f5e204e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5e204e/DroidDeck-main-f5e204e-antutu.apk",
-        "size": 31446247,
-        "sha256": "79384039255f615cba6d8d6d4d736915273eb548400f3d944e4b4ccdb57d1ee2",
+        "name": "DroidDeck-main-db2e1d7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-db2e1d7/DroidDeck-main-db2e1d7-antutu.apk",
+        "size": 31450444,
+        "sha256": "b7dd1fbe68be67253f03a656591223e2190b14eedfe7b8a7068e809e0efa8051",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f5e204e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5e204e/DroidDeck-main-f5e204e-ludashi.apk",
-        "size": 31446247,
-        "sha256": "dffbbd073fca0b70236009cd0172bae3a57b1dc3373bb4b289c4dfc7df9504d1",
+        "name": "DroidDeck-main-db2e1d7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-db2e1d7/DroidDeck-main-db2e1d7-ludashi.apk",
+        "size": 31450444,
+        "sha256": "8297cfa346cbbacf8616a1c7ab7acc182fd15a24371bed410b3ae4038a7fd332",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "db2e1d7da2fd6bdaf526c720357abc0d22259909",
+      "title": "Fix runtime removal and first-run Steam setup",
+      "summary": "Prevent Play from racing runtime removal, show progress beneath the runtime row, install Steam from the selected channel, refresh and verify required helpers, and initialize UI scaling once while preserving user choices; covered by regression tests and Thor QA.",
+      "publishedAt": 1791079684000
+    },
     {
       "commit": "f5e204eb1d39d1e2732c75a9bc6b0c030b990f8b",
       "title": "Add game file exports and sync for Android frontends",
@@ -155,12 +161,6 @@
       "title": "Fix Deck controller discovery on older handheld kernels",
       "summary": "Recover missing statx mount IDs from fdinfo for Steam's Deck controller discovery on older kernels, scoped to libudev/libsystemd with inode verification and a one-time log; the reduced fix passed a signed local build, Thor handshake, and compatibility, error, and descriptor checks.",
       "publishedAt": 1790991572000
-    },
-    {
-      "commit": "7b20b70c6bb55163be0bfc255e981b7a322bc2c9",
-      "title": "Add Android clipboard text paste into Steam sessions",
-      "summary": "Adds Android clipboard text paste into DroidDeck Steam sessions, verified on Thor by typing and copying in a native Android editor and pasting into Steam; screenshots and validation are in docs/testing/android-clipboard.md.",
-      "publishedAt": 1790978026000
     }
   ],
   "tests": [
