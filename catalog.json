@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791154344509,
+  "generatedAt": 1791154567698,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-230",
+      "title": "Centralize settings in a searchable hub while retaining Updates",
+      "summary": "DroidDeck configuration was spread across Setup, Components, mode settings and the session drawer. This change replaces Setup with a searchable Settings hub, keeps Updates as a separate launcher tab, and preserves specialist managers and existing preference owners without a migration.",
+      "commit": "cd4f02d0b06974723133de7ddd07aa50ffa876ef",
+      "pr": 230,
+      "version": null,
+      "versionCode": 10,
+      "publishedAt": 1791154544000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-230",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.230-cd4f02d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-230/DroidDeck-PR.230-cd4f02d.apk",
+          "size": 37006434,
+          "sha256": "22fe57cbf2895940f9f3ccb977fcca5289525e1d949539df9d8dfbb7905271d8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.230-cd4f02d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-230/DroidDeck-PR.230-cd4f02d-pubg.apk",
+          "size": 37006434,
+          "sha256": "a25f757a996f257d7a6b52294222c0c6dfd91fa5e98ce3424a9998e1f6c9d14b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.230-cd4f02d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-230/DroidDeck-PR.230-cd4f02d-antutu.apk",
+          "size": 37006434,
+          "sha256": "94360237a8415698eeffeb01dd23d6cc925125516b4241cc8f09da19aac71678",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.230-cd4f02d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-230/DroidDeck-PR.230-cd4f02d-ludashi.apk",
+          "size": 37006434,
+          "sha256": "711b354a889335d3c82958a2b3c4042bd612ef1c5095a77b7a52d046bbde82c9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 10,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-240",
       "title": "docs: record Thor Steam SD allocation findings",
       "summary": "Record the Thor SD allocation investigation and selected source-log excerpts so follow-up work can use the measured results and their limits.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-240/DroidDeck-PR.240-044002b-ludashi.apk",
           "size": 36944994,
           "sha256": "280ce0b9c1ec1330d4a82c2fc62e882b59af75055aaa204fafc1fc5c7b61a520",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-230",
-      "title": "Centralize settings in a searchable hub while retaining Updates",
-      "summary": "DroidDeck configuration was spread across Setup, Components, mode settings and the session drawer. This change replaces Setup with a searchable Settings hub, keeps Updates as a separate launcher tab, and preserves specialist managers and existing preference owners without a migration.",
-      "commit": "bf1448787259f798dac7ee0de34e07dc34e11dc4",
-      "pr": 230,
-      "version": null,
-      "versionCode": 10,
-      "publishedAt": 1791153515000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-230",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.230-bf14487.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-230/DroidDeck-PR.230-bf14487.apk",
-          "size": 37006434,
-          "sha256": "b5a2a7d6be7ea2ef6f11c9afe6748b27502dc981d2a2bb118fa52dd9a9daffdf",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.230-bf14487-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-230/DroidDeck-PR.230-bf14487-pubg.apk",
-          "size": 37006434,
-          "sha256": "bebef0591186bd6f3d0b2de30c692322acd0d865c7dd870b0c5cc111deeb0689",
-          "packageName": "com.tencent.ig",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.230-bf14487-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-230/DroidDeck-PR.230-bf14487-antutu.apk",
-          "size": 37006434,
-          "sha256": "4dfb03a99c0184e5b925069537c2ebc66ed2fdb73d87e828fbbee7e6024c3b1d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 10,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.230-bf14487-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-230/DroidDeck-PR.230-bf14487-ludashi.apk",
-          "size": 37006434,
-          "sha256": "370ecb3ea6b62f0c2395fbbb1bd3462346c07fb18b9577e14e89f0c738ca4b89",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 10,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
