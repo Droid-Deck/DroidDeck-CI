@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791218694406,
+  "generatedAt": 1791219013604,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-06e06b9",
-    "title": "Fix MangoHud double-counting battery power and remaining life",
-    "summary": "DroidDeck exposed Android's aggregate battery twice, as BAT0 and BAT1. MangoHud discovered both supplies and counted the same battery twice, inflating wattage and estimated remaining lifetime while Steam's QAM estimate stayed accurate. Export only BAT1 and remove the legacy BAT0 directory when each session starts. This applies to every device using the battery bridge without vendor-specific calibr",
-    "commit": "06e06b9673be9b875c4537bbc79c576d397a66d7",
+    "tag": "main-9f46c7a",
+    "title": "Force game windows fullscreen: off by default",
+    "summary": "With Force game windows fullscreen on, a game running at a resolution other than the screen's (DiRT 3 defaults to 1280x720) fights gamescope's --force-windows-fullscreen: every forced resize makes it rebuild its swapchain and the picture flickers between its own size and full screen \u2014 696 swapchain rebuilds in a 4-minute DiRT 3 session on the Pocket FIT. Many games start at such a default",
+    "commit": "9f46c7a50b6f583e0040040882a025d4e7813491",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791213210000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-06e06b9",
+    "publishedAt": 1791218978000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9f46c7a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-06e06b9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06e06b9/DroidDeck-main-06e06b9.apk",
-        "size": 36977762,
-        "sha256": "f4da96ca84b0759b15c2b1c1f88584dd82f28fbbd9c511d19500a6e21727cb63",
+        "name": "DroidDeck-main-9f46c7a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f46c7a/DroidDeck-main-9f46c7a.apk",
+        "size": 36981858,
+        "sha256": "239894769bce03e01f1e9eadc76076b327dcd9bfb8e09c381b3003a7aacbb940",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-06e06b9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06e06b9/DroidDeck-main-06e06b9-pubg.apk",
-        "size": 36977762,
-        "sha256": "62bbf61601932223ff7955f421501801cafdd559de718425d6bd990511d44885",
+        "name": "DroidDeck-main-9f46c7a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f46c7a/DroidDeck-main-9f46c7a-pubg.apk",
+        "size": 36981858,
+        "sha256": "7c1de6b57b53cf3f1c9910ad951b07ae5d1b70e2ed4e038c3d4bc9487379b0e2",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-06e06b9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06e06b9/DroidDeck-main-06e06b9-antutu.apk",
-        "size": 36977762,
-        "sha256": "92fbc730bf9cc3bc11f51412c55f5a2b75b9d30734a10ac8c609f7c950b6f660",
+        "name": "DroidDeck-main-9f46c7a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f46c7a/DroidDeck-main-9f46c7a-antutu.apk",
+        "size": 36981858,
+        "sha256": "a5d8fce063f14a3253927fdf232dc332f74711d42033333f2a940b82e8bb5fea",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-06e06b9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06e06b9/DroidDeck-main-06e06b9-ludashi.apk",
-        "size": 36977762,
-        "sha256": "7b9407c2c336f0cba4e18f9ada471a3d07cab2dddf751743531c4effdb762777",
+        "name": "DroidDeck-main-9f46c7a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f46c7a/DroidDeck-main-9f46c7a-ludashi.apk",
+        "size": 36981858,
+        "sha256": "22b961094265a762e76ac3595c74b122edeb0809873ee7202c137605fcaeb63a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9f46c7a50b6f583e0040040882a025d4e7813491",
+      "title": "Force game windows fullscreen: off by default",
+      "summary": "With Force game windows fullscreen on, a game running at a resolution other than the screen's (DiRT 3 defaults to 1280x720) fights gamescope's --force-windows-fullscreen: every forced resize makes it rebuild its swapchain and the picture flickers between its own size and full screen \u2014 696 swapchain rebuilds in a 4-minute DiRT 3 session on the Pocket FIT. Many games start at such a default",
+      "publishedAt": 1791218978000
+    },
     {
       "commit": "06e06b9673be9b875c4537bbc79c576d397a66d7",
       "title": "Fix MangoHud double-counting battery power and remaining life",
@@ -155,12 +161,6 @@
       "title": "Start every title with a Valve pick on the Compatible Proton",
       "summary": "The client runs in Steam Deck mode, where a title's \"Default\" is not the \"0\" mapping but Valve's own pick for it: the Steam Deck compatibility recommendedruntime (proton-stable, a pinned Proton, or native for the Steam Linux Runtime) or an appmappings entry in the SteamPlay manifests. A title the session had not mapped yet - not installed, or installed while the client was running on a build wit",
       "publishedAt": 1791136218000
-    },
-    {
-      "commit": "3858a6986714bed91867f84657ff65391566c432",
-      "title": "Start fresh installs on droiddeck-esync",
-      "summary": "In the Valheim and PEAK runs esync used the least CPU per frame. fsync stays available, and esync still hands a Proton build without a pack to droiddeck-fsync until its pack is published. A sync someone already picked is kept.",
-      "publishedAt": 1791133272000
     }
   ],
   "tests": [
