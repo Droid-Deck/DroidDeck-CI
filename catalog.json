@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791200057309,
+  "generatedAt": 1791200323729,
   "stable": {
     "tag": "0.3.0",
     "title": "DroidDeck 0.3.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-eaa4a7a",
-    "title": "Clarify display settings and organize in-session controls",
-    "summary": "Steam session settings now use the same tab bar as Components, grouping controls under Display, Controls, Games, Audio, Session, and Steam, with touch and LB/RB navigation.",
-    "commit": "eaa4a7a0472abc211364c3286f78dd9c48c463e1",
+    "tag": "main-472bb28",
+    "title": "Fix controller rings on linked data dirs, route rumble to the controller, capture the mouse for pointer locks",
+    "summary": "Fixes #166, fixes #219, fixes #153. May also fix #175 and #226; those need a retest on this build.",
+    "commit": "472bb28c8841d6cec4ddf06407530e6034ec00ee",
     "pr": 0,
     "version": null,
     "versionCode": 10,
-    "publishedAt": 1791171482000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-eaa4a7a",
+    "publishedAt": 1791200291000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-472bb28",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-eaa4a7a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eaa4a7a/DroidDeck-main-eaa4a7a.apk",
+        "name": "DroidDeck-main-472bb28.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-472bb28/DroidDeck-main-472bb28.apk",
         "size": 36977762,
-        "sha256": "2a6980a2c9a379feadc75d367252f7cbab6625bd77e3d597562222caa229ca38",
+        "sha256": "3831a3199687af1c9d77b28712005f896ce0d31ef30cc88dc51fae549df017d2",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-eaa4a7a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eaa4a7a/DroidDeck-main-eaa4a7a-pubg.apk",
+        "name": "DroidDeck-main-472bb28-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-472bb28/DroidDeck-main-472bb28-pubg.apk",
         "size": 36977762,
-        "sha256": "4cb316719c81ae3b2a5d79e8a8ad44d243212863788a885b2b204f11932a0b3e",
+        "sha256": "29b0da55a7fe4e3e18c9209c6b5f0a308f776fe9b3e5ff827e22d8a96befb9c5",
         "packageName": "com.tencent.ig",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-eaa4a7a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eaa4a7a/DroidDeck-main-eaa4a7a-antutu.apk",
+        "name": "DroidDeck-main-472bb28-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-472bb28/DroidDeck-main-472bb28-antutu.apk",
         "size": 36977762,
-        "sha256": "1b650d57756694225a5ad5b7943210b765b2b940acb252a0bc6c8073c9be80ea",
+        "sha256": "13b47d8165bed197ea5e5534c2541da52f10eae8bea92c44b6100cfabd5077f8",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-eaa4a7a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eaa4a7a/DroidDeck-main-eaa4a7a-ludashi.apk",
+        "name": "DroidDeck-main-472bb28-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-472bb28/DroidDeck-main-472bb28-ludashi.apk",
         "size": 36977762,
-        "sha256": "d949ad68b566866911d6bbce76c00436db0312d2d93316d34687c485a84fb7c8",
+        "sha256": "081c35aae4b3ddcc235cdb4f9ab8bba954c037626b13b240145446122dc54f9a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 10,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "472bb28c8841d6cec4ddf06407530e6034ec00ee",
+      "title": "Fix controller rings on linked data dirs, route rumble to the controller, capture the mouse for pointer locks",
+      "summary": "Fixes #166, fixes #219, fixes #153. May also fix #175 and #226; those need a retest on this build.",
+      "publishedAt": 1791200291000
+    },
     {
       "commit": "eaa4a7a0472abc211364c3286f78dd9c48c463e1",
       "title": "Clarify display settings and organize in-session controls",
@@ -155,12 +161,6 @@
       "title": "Start .NET and Godot games under FEX without per-game setup",
       "summary": "Games built on .NET 7+ (CoreCLR) or Godot 4 currently fail on DroidDeck with the default settings, e.g. Slay the Spire 2 (#154): a black screen after the Steam logo, then back to the library.",
       "publishedAt": 1791116700000
-    },
-    {
-      "commit": "b0d7fc01d8ac4691bbfba599f20b15226fe5b710",
-      "title": "Add opt-in Steam storage diagnostics",
-      "summary": "Adds bounded allocation and storage timing diagnostics to session Share logs without changing allocation behavior.",
-      "publishedAt": 1791116653000
     }
   ],
   "tests": [
