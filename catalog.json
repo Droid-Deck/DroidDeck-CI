@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791219013604,
+  "generatedAt": 1791219187991,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9f46c7a",
-    "title": "Force game windows fullscreen: off by default",
-    "summary": "With Force game windows fullscreen on, a game running at a resolution other than the screen's (DiRT 3 defaults to 1280x720) fights gamescope's --force-windows-fullscreen: every forced resize makes it rebuild its swapchain and the picture flickers between its own size and full screen \u2014 696 swapchain rebuilds in a 4-minute DiRT 3 session on the Pocket FIT. Many games start at such a default",
-    "commit": "9f46c7a50b6f583e0040040882a025d4e7813491",
+    "tag": "main-0607bb0",
+    "title": "Fix Xwayland dma-buf leak: close Zink's emulated GEM handles on KGSL",
+    "summary": "With Force game windows fullscreen on, a game whose own resolution differs from the screen (DiRT 3 at 1280x720) fights gamescope over its window size and recreates its swapchain many times a second. Every old swapchain image stayed alive inside Xwayland: ~2,000 buffers / 6+ GB in about 15 s, then Android's low-memory killer closed the session and background apps. The memory was only returned w",
+    "commit": "0607bb0b3a3b1dc08665cbf0618db0993b3988f3",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791218978000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9f46c7a",
+    "publishedAt": 1791219159000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0607bb0",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9f46c7a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f46c7a/DroidDeck-main-9f46c7a.apk",
+        "name": "DroidDeck-main-0607bb0.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0607bb0/DroidDeck-main-0607bb0.apk",
         "size": 36981858,
-        "sha256": "239894769bce03e01f1e9eadc76076b327dcd9bfb8e09c381b3003a7aacbb940",
+        "sha256": "2ac9e3a2f24ebf8cb3eb8d991def2c789d5c646e4ac2ca7a06fb930b86e87602",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9f46c7a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f46c7a/DroidDeck-main-9f46c7a-pubg.apk",
+        "name": "DroidDeck-main-0607bb0-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0607bb0/DroidDeck-main-0607bb0-pubg.apk",
         "size": 36981858,
-        "sha256": "7c1de6b57b53cf3f1c9910ad951b07ae5d1b70e2ed4e038c3d4bc9487379b0e2",
+        "sha256": "62e823bb1033eca68526a9ca226e0fcb903a1008e38c60cb01218f77a8e42dcb",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9f46c7a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f46c7a/DroidDeck-main-9f46c7a-antutu.apk",
+        "name": "DroidDeck-main-0607bb0-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0607bb0/DroidDeck-main-0607bb0-antutu.apk",
         "size": 36981858,
-        "sha256": "a5d8fce063f14a3253927fdf232dc332f74711d42033333f2a940b82e8bb5fea",
+        "sha256": "e542462eb63ce256b96e0109ebe9463078db74f5a4ec7bc8536697164a0e77cd",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9f46c7a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f46c7a/DroidDeck-main-9f46c7a-ludashi.apk",
+        "name": "DroidDeck-main-0607bb0-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0607bb0/DroidDeck-main-0607bb0-ludashi.apk",
         "size": 36981858,
-        "sha256": "22b961094265a762e76ac3595c74b122edeb0809873ee7202c137605fcaeb63a",
+        "sha256": "6297dbf57e48d936aea83db6336edf2fbf264205253846ea7761adce83c19602",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0607bb0b3a3b1dc08665cbf0618db0993b3988f3",
+      "title": "Fix Xwayland dma-buf leak: close Zink's emulated GEM handles on KGSL",
+      "summary": "With Force game windows fullscreen on, a game whose own resolution differs from the screen (DiRT 3 at 1280x720) fights gamescope over its window size and recreates its swapchain many times a second. Every old swapchain image stayed alive inside Xwayland: ~2,000 buffers / 6+ GB in about 15 s, then Android's low-memory killer closed the session and background apps. The memory was only returned w",
+      "publishedAt": 1791219159000
+    },
     {
       "commit": "9f46c7a50b6f583e0040040882a025d4e7813491",
       "title": "Force game windows fullscreen: off by default",
@@ -155,12 +161,6 @@
       "title": "Add Decky plugin ZIP import",
       "summary": "Add Decky plugin ZIP import with verified remote binaries, identity-based replacement, loader settings parity, and the shared toggle focus ring.",
       "publishedAt": 1791137650000
-    },
-    {
-      "commit": "6dc74523c3f12fc0daccd807ebd8230b882b07fa",
-      "title": "Start every title with a Valve pick on the Compatible Proton",
-      "summary": "The client runs in Steam Deck mode, where a title's \"Default\" is not the \"0\" mapping but Valve's own pick for it: the Steam Deck compatibility recommendedruntime (proton-stable, a pinned Proton, or native for the Steam Linux Runtime) or an appmappings entry in the SteamPlay manifests. A title the session had not mapped yet - not installed, or installed while the client was running on a build wit",
-      "publishedAt": 1791136218000
     }
   ],
   "tests": [
