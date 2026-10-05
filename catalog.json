@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791223291411,
+  "generatedAt": 1791226095284,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0607bb0",
-    "title": "Fix Xwayland dma-buf leak: close Zink's emulated GEM handles on KGSL",
-    "summary": "With Force game windows fullscreen on, a game whose own resolution differs from the screen (DiRT 3 at 1280x720) fights gamescope over its window size and recreates its swapchain many times a second. Every old swapchain image stayed alive inside Xwayland: ~2,000 buffers / 6+ GB in about 15 s, then Android's low-memory killer closed the session and background apps. The memory was only returned w",
-    "commit": "0607bb0b3a3b1dc08665cbf0618db0993b3988f3",
+    "tag": "main-e7cbba3",
+    "title": "sign-apk: rename the agent provider's authority for the other packages",
+    "summary": "Since #279, no PR test build has been published. PR Release Publish fails while signing the pubg, ludashi and antutu packages with:",
+    "commit": "e7cbba37d1d263d89848901082e73fca9075fa38",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791219159000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0607bb0",
+    "publishedAt": 1791226065000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e7cbba3",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0607bb0.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0607bb0/DroidDeck-main-0607bb0.apk",
-        "size": 36981858,
-        "sha256": "2ac9e3a2f24ebf8cb3eb8d991def2c789d5c646e4ac2ca7a06fb930b86e87602",
+        "name": "DroidDeck-main-e7cbba3.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7cbba3/DroidDeck-main-e7cbba3.apk",
+        "size": 36994146,
+        "sha256": "008c1fcf67d640b92063d72e1ab65b5a95f73f5434e3d5da79d154d9824b5de4",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0607bb0-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0607bb0/DroidDeck-main-0607bb0-pubg.apk",
-        "size": 36981858,
-        "sha256": "62e823bb1033eca68526a9ca226e0fcb903a1008e38c60cb01218f77a8e42dcb",
+        "name": "DroidDeck-main-e7cbba3-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7cbba3/DroidDeck-main-e7cbba3-pubg.apk",
+        "size": 36994146,
+        "sha256": "8a7c3fde8a6a889d563eef3ef5a93324ef0b9fa70bca3e2bb5ae65cfdd0958fe",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0607bb0-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0607bb0/DroidDeck-main-0607bb0-antutu.apk",
-        "size": 36981858,
-        "sha256": "e542462eb63ce256b96e0109ebe9463078db74f5a4ec7bc8536697164a0e77cd",
+        "name": "DroidDeck-main-e7cbba3-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7cbba3/DroidDeck-main-e7cbba3-antutu.apk",
+        "size": 36994146,
+        "sha256": "1012f03fd3722e07519e30ca954916a1b2ad5bd8bd7bff6e5cd9428895ceadcf",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0607bb0-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0607bb0/DroidDeck-main-0607bb0-ludashi.apk",
-        "size": 36981858,
-        "sha256": "6297dbf57e48d936aea83db6336edf2fbf264205253846ea7761adce83c19602",
+        "name": "DroidDeck-main-e7cbba3-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e7cbba3/DroidDeck-main-e7cbba3-ludashi.apk",
+        "size": 36994146,
+        "sha256": "0c055fd46e398914c84408b89aadd23e096c55353c073633e6109dc5b0d3ad5b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e7cbba37d1d263d89848901082e73fca9075fa38",
+      "title": "sign-apk: rename the agent provider's authority for the other packages",
+      "summary": "Since #279, no PR test build has been published. PR Release Publish fails while signing the pubg, ludashi and antutu packages with:",
+      "publishedAt": 1791226065000
+    },
     {
       "commit": "0607bb0b3a3b1dc08665cbf0618db0993b3988f3",
       "title": "Fix Xwayland dma-buf leak: close Zink's emulated GEM handles on KGSL",
@@ -155,12 +161,6 @@
       "title": "docs: record Thor Steam SD allocation findings",
       "summary": "Record the Thor SD allocation investigation and selected source-log excerpts so follow-up work can use the measured results and their limits.",
       "publishedAt": 1791159683000
-    },
-    {
-      "commit": "26cb9e2f038cdbab4cdc8670d2f64c18d1d90875",
-      "title": "Add Decky plugin ZIP import",
-      "summary": "Add Decky plugin ZIP import with verified remote binaries, identity-based replacement, loader settings parity, and the shared toggle focus ring.",
-      "publishedAt": 1791137650000
     }
   ],
   "tests": [
