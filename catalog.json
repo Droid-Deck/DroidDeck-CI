@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791216411274,
+  "generatedAt": 1791218437461,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-275",
+      "title": "Fix Xwayland dma-buf leak: close Zink's emulated GEM handles on KGSL",
+      "summary": "With Force game windows fullscreen on, a game whose own resolution differs from the screen (DiRT 3 at 1280x720) fights gamescope over its window size and recreates its swapchain many times a second. Every old swapchain image stayed alive inside Xwayland: ~2,000 buffers / 6+ GB in about 15 s, then Android's low-memory killer closed the session and background apps. The memory was only returned w",
+      "commit": "a480d749e98c420685f07514bc925710c8341894",
+      "pr": 275,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791218394000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-275",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.275-a480d74.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-275/DroidDeck-PR.275-a480d74.apk",
+          "size": 36981858,
+          "sha256": "49aa4a432ea7233e9e825a85f1776b7da2699ee0dc7d5059a79be14dbf03d4ec",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.275-a480d74-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-275/DroidDeck-PR.275-a480d74-pubg.apk",
+          "size": 36981858,
+          "sha256": "696758f3f8ef3e6d1fe096012b603e1f9c6c97439ff5968d50623b7625c2ef2c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.275-a480d74-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-275/DroidDeck-PR.275-a480d74-antutu.apk",
+          "size": 36981858,
+          "sha256": "2f87e7bc39bc496b4901857a943ecec2965e0ae1bbe5be0de358b153a25acc88",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.275-a480d74-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-275/DroidDeck-PR.275-a480d74-ludashi.apk",
+          "size": 36981858,
+          "sha256": "af96286ed744ab5ec14acaeb9c4b985c4153e22dcde17cd575c4d56997d6b83e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-221",
       "title": "perf(storage): use verified native SD library paths",
