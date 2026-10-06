@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791314338845,
+  "generatedAt": 1791314685640,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-906009a",
-    "title": "fix: share session logs in about a second instead of re-scrubbing them",
-    "summary": "Tapping Share logs (Setup \u2192 Session, or the session drawer) seemed to do nothing. The share sheet did appear, but 10\u201326 s later on the AYN Thor, with no feedback in between.",
-    "commit": "906009a33a132671b1d43a2d6fb6e25c11756b9d",
+    "tag": "main-1e877fa",
+    "title": "fix: give each new session the current screen's output size",
+    "summary": "On the AYN Thor, a Steam session on the bottom screen (1240x1080, Match screen) showed the client as a 16:9 band with bars above and below.",
+    "commit": "1e877fa602a2accc093dc17fa03023fa552c9ff0",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791313122000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-906009a",
+    "publishedAt": 1791314649000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1e877fa",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-906009a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-906009a/DroidDeck-main-906009a.apk",
+        "name": "DroidDeck-main-1e877fa.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e877fa/DroidDeck-main-1e877fa.apk",
         "size": 37597576,
-        "sha256": "9429a2738d60076829607cf097a731fb88cdf44bd0427a4c9a116bd2dbe61d2f",
+        "sha256": "6a02ec1e95ade339762a3b39b4d40c60d584e19f8dd12582dc37070b93a1074a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-906009a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-906009a/DroidDeck-main-906009a-pubg.apk",
+        "name": "DroidDeck-main-1e877fa-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e877fa/DroidDeck-main-1e877fa-pubg.apk",
         "size": 37597576,
-        "sha256": "448a87e61bebb5e4270a029b651fea7c1c0101792e90f18bb338b94d0e63ac81",
+        "sha256": "42dfef2802f357d25e4d60ef9c84148e99a50d13c37ff0e7c08d38e906e5316b",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-906009a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-906009a/DroidDeck-main-906009a-antutu.apk",
+        "name": "DroidDeck-main-1e877fa-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e877fa/DroidDeck-main-1e877fa-antutu.apk",
         "size": 37597576,
-        "sha256": "36db65fb75bc25a6602d003926e523fe0da4b2efb6fd1da1d0b8d58c80f9ddb7",
+        "sha256": "bac608473efd40bea18ec1ba327aa2ca506aeea0c49696be1d613f4030a3b4aa",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-906009a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-906009a/DroidDeck-main-906009a-ludashi.apk",
+        "name": "DroidDeck-main-1e877fa-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e877fa/DroidDeck-main-1e877fa-ludashi.apk",
         "size": 37597576,
-        "sha256": "eb0d10adfd79007c322b3336b002f89b16a5ae896b5cf191e4bb802bc0411106",
+        "sha256": "023683129fd5cd44f419ce098d4752f091577d1c7abc7bd426f8f41380281527",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1e877fa602a2accc093dc17fa03023fa552c9ff0",
+      "title": "fix: give each new session the current screen's output size",
+      "summary": "On the AYN Thor, a Steam session on the bottom screen (1240x1080, Match screen) showed the client as a 16:9 band with bars above and below.",
+      "publishedAt": 1791314649000
+    },
     {
       "commit": "906009a33a132671b1d43a2d6fb6e25c11756b9d",
       "title": "fix: share session logs in about a second instead of re-scrubbing them",
@@ -155,12 +161,6 @@
       "title": "Force SSBS for Proton games (libssbs.so), switch under FEX preset",
       "summary": "Wine's arm64 signal code resumes threads from a Windows CONTEXT whose Cpsr never carries PSTATE.SSBS (bit 12), so after a signal return the thread runs with speculative store bypass disabled \u2014 slower on cores such as Oryon (reports of large gains on Snapdragon 8 Elite, e.g. Fallout: New Vegas). Sonicadvance1's forcessbs.diff fixes it inside ntdll; Bannerlator ships it in its own Wine bu",
       "publishedAt": 1791293649000
-    },
-    {
-      "commit": "a1b01a04a83f90c9517ef386698afef48f8eb180",
-      "title": "Added support for Adreno 6xx devices",
-      "summary": "Adds (experimental) support for Adreno 6xx series. Turnip on those chips does not expose storageBuffer8BitAccess, so Proton's shipped DXVK 3 refuses to start DirectX 11 games.",
-      "publishedAt": 1791292439000
     }
   ],
   "tests": [
