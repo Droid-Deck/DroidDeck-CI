@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791298631179,
+  "generatedAt": 1791300079679,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-330",
+      "title": "fix: hold flood edges at the page edge once reached",
+      "summary": "The blue flood (Play, and the red Stop in the session drawer) sometimes left a sliver of the page showing on the left or right, flickering in and out, before the next screen took over. It didn't happen every time.",
+      "commit": "2bb2be6151ac4f313e024bf0fceba60bd197d3f8",
+      "pr": 330,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791300032000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-330",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.330-2bb2be6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-330/DroidDeck-PR.330-2bb2be6.apk",
+          "size": 37272919,
+          "sha256": "1bdb820384c686484179a3b339a7463fa2c88ff1a2892c2be721b71f67557b66",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.330-2bb2be6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-330/DroidDeck-PR.330-2bb2be6-pubg.apk",
+          "size": 37272919,
+          "sha256": "ba83e991c97c15775fcd0a4d7d2de54b7bba0cdf344ba8e1db667ed5943f442a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.330-2bb2be6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-330/DroidDeck-PR.330-2bb2be6-antutu.apk",
+          "size": 37272919,
+          "sha256": "282ec74e4ca639be1ee5452646719a43063e755c53775a643f8fcb2c5346b7de",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.330-2bb2be6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-330/DroidDeck-PR.330-2bb2be6-ludashi.apk",
+          "size": 37272919,
+          "sha256": "78d4e7af8d1383212f047c80b03e4772d97e30b1630d62d5ea7b09e051aee15c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-305",
       "title": "fix: catch KGSL GEMCLOSE at ioctl instead of exporting drmIoctl",
