@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791294055631,
+  "generatedAt": 1791295950657,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-287",
+      "title": "Windows components for Steam and added games; no more redist installer prompts",
+      "summary": "\u2022 Added games get a bare Proton prefix (DiRT 3 needed OpenAL32.dll and exited on every Proton).\n\u2022 Steam titles: on first launch the client runs the game's CommonRedist installers in the prefix. On ARM64 Proton the x64 VC++ 2015-2022 bundle stops with \"Microsoft Visual C++ 2015-2022 Redistributable (arm64) is required\" (reported on an AYN Odin 2 Portal Max), others hang under FEX. An Odin 3 bundle shows the client running the install-script evaluator for three new titles while their Stea",
+      "commit": "e73ee804b0d3914c7a3eb9b5428da80599b0625f",
+      "pr": 287,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791295910000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-287",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.287-e73ee80.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-287/DroidDeck-PR.287-e73ee80.apk",
+          "size": 37272919,
+          "sha256": "146b715f545b92b0cbd307e05297ddff157e38883756ebdfa52ade66d0696e3c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.287-e73ee80-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-287/DroidDeck-PR.287-e73ee80-pubg.apk",
+          "size": 37272919,
+          "sha256": "66ee1510b7fc30a95caa9f810034a993d955692f03e2a6b28e57eb734fb669bb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.287-e73ee80-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-287/DroidDeck-PR.287-e73ee80-antutu.apk",
+          "size": 37272919,
+          "sha256": "39703986c87fd3af307416bbf53725e5819abec79d27167ffe6914b267e94d3c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.287-e73ee80-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-287/DroidDeck-PR.287-e73ee80-ludashi.apk",
+          "size": 37272919,
+          "sha256": "6bb0e0ef30beae45f963b4192fe1a2a5934bd95064a41b696fb7cf235a654e7b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-305",
       "title": "test: isolate the #275 judder (drmIoctl interposed, GEMCLOSE not released)",
       "summary": "This is a diagnostic build. It is not a fix, so don't merge it.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-302/DroidDeck-PR.302-7f5e128-ludashi.apk",
           "size": 37141678,
           "sha256": "428fada7880032800209d9939b1df1ce950bbb44dce4e0e2af71e308e9cd387f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-287",
-      "title": "Windows components for Steam and added games; no more redist installer prompts",
-      "summary": "\u2022 Added games get a bare Proton prefix (DiRT 3 needed OpenAL32.dll and exited on every Proton).\n\u2022 Steam titles: on first launch the client runs the game's CommonRedist installers in the prefix. On ARM64 Proton the x64 VC++ 2015-2022 bundle stops with \"Microsoft Visual C++ 2015-2022 Redistributable (arm64) is required\" (reported on an AYN Odin 2 Portal Max), others hang under FEX. An Odin 3 bundle shows the client running the install-script evaluator for three new titles while their Stea",
-      "commit": "e2175e931f3d386a86066e2407ebad6a17d8d07b",
-      "pr": 287,
-      "version": null,
-      "versionCode": 11,
-      "publishedAt": 1791244312000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-287",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.287-e2175e9.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-287/DroidDeck-PR.287-e2175e9.apk",
-          "size": 37235908,
-          "sha256": "a55cc851bbbf8319e52a627a83760bbedecb9f15f5948264c1d931b99e5ddd5f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.287-e2175e9-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-287/DroidDeck-PR.287-e2175e9-pubg.apk",
-          "size": 37235908,
-          "sha256": "8fb209f4b1c034bfb57cb7cb0f602551efc842894e71894f63521c2ad31adc86",
-          "packageName": "com.tencent.ig",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.287-e2175e9-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-287/DroidDeck-PR.287-e2175e9-antutu.apk",
-          "size": 37235908,
-          "sha256": "4dd4e7b5173dbb5bb7db364f12c4788153292fbbbaf63d236321ed447b005bfa",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.287-e2175e9-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-287/DroidDeck-PR.287-e2175e9-ludashi.apk",
-          "size": 37235908,
-          "sha256": "7540b32399f1c2707b46e34b98c0244af2f5360df298db906535aada8edb6e35",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
