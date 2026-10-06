@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791298131415,
+  "generatedAt": 1791298631179,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-bc01b77",
-    "title": "Force SSBS for Proton games (libssbs.so), switch under FEX preset",
-    "summary": "Wine's arm64 signal code resumes threads from a Windows CONTEXT whose Cpsr never carries PSTATE.SSBS (bit 12), so after a signal return the thread runs with speculative store bypass disabled \u2014 slower on cores such as Oryon (reports of large gains on Snapdragon 8 Elite, e.g. Fallout: New Vegas). Sonicadvance1's forcessbs.diff fixes it inside ntdll; Bannerlator ships it in its own Wine bu",
-    "commit": "bc01b77752de682b344d2ec575f78aafe7fe4a14",
+    "tag": "main-d61af96",
+    "title": "Windows components for Steam and added games; no more redist installer prompts",
+    "summary": "\u2022 Added games get a bare Proton prefix (DiRT 3 needed OpenAL32.dll and exited on every Proton).\n\u2022 Steam titles: on first launch the client runs the game's CommonRedist installers in the prefix. On ARM64 Proton the x64 VC++ 2015-2022 bundle stops with \"Microsoft Visual C++ 2015-2022 Redistributable (arm64) is required\" (reported on an AYN Odin 2 Portal Max), others hang under FEX. An Odin 3 bundle shows the client running the install-script evaluator for three new titles while their Stea",
+    "commit": "d61af961c1eafe720ed348218f55fdef18e9cf3e",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791293649000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bc01b77",
+    "publishedAt": 1791298595000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d61af96",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-bc01b77.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc01b77/DroidDeck-main-bc01b77.apk",
-        "size": 37154037,
-        "sha256": "7bd0ab71b1e25de907deec2d4a11b254e250f6d4757434b36e210c93ef47f01e",
+        "name": "DroidDeck-main-d61af96.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d61af96/DroidDeck-main-d61af96.apk",
+        "size": 37285207,
+        "sha256": "ce301e636e97deb0108fb07bee1f8569846132b9cf496be9cda2aa91bce50f2a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-bc01b77-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc01b77/DroidDeck-main-bc01b77-pubg.apk",
-        "size": 37154037,
-        "sha256": "60cb8a82ec322bbc2ecb85f55062e4c1849ec7f77a4b662991916d3b1041692e",
+        "name": "DroidDeck-main-d61af96-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d61af96/DroidDeck-main-d61af96-pubg.apk",
+        "size": 37285207,
+        "sha256": "6a1bf62eb1a6993273464c075c4bbb093bf6db13da6fb350af2d20878025cacc",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-bc01b77-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc01b77/DroidDeck-main-bc01b77-antutu.apk",
-        "size": 37154037,
-        "sha256": "25d30c65b3ce3b54b9839a6626d9ac7fc50c5e49160c05f5f64ac9fa909b603e",
+        "name": "DroidDeck-main-d61af96-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d61af96/DroidDeck-main-d61af96-antutu.apk",
+        "size": 37285207,
+        "sha256": "2e9ca4d0552e3ab7f138441dce29e252369b93e0438c02c938e05cdef2efe049",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-bc01b77-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc01b77/DroidDeck-main-bc01b77-ludashi.apk",
-        "size": 37154037,
-        "sha256": "7974b6aa4d1e22f315a7b075c69d584b2943e59f6f9b59512ab2f81a0739f247",
+        "name": "DroidDeck-main-d61af96-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d61af96/DroidDeck-main-d61af96-ludashi.apk",
+        "size": 37285207,
+        "sha256": "1666a7489b9daed8d9f59ac1498197fb05c78a9d71fe84a4c5e2feb1e9ffd2e9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d61af961c1eafe720ed348218f55fdef18e9cf3e",
+      "title": "Windows components for Steam and added games; no more redist installer prompts",
+      "summary": "\u2022 Added games get a bare Proton prefix (DiRT 3 needed OpenAL32.dll and exited on every Proton).\n\u2022 Steam titles: on first launch the client runs the game's CommonRedist installers in the prefix. On ARM64 Proton the x64 VC++ 2015-2022 bundle stops with \"Microsoft Visual C++ 2015-2022 Redistributable (arm64) is required\" (reported on an AYN Odin 2 Portal Max), others hang under FEX. An Odin 3 bundle ",
+      "publishedAt": 1791298595000
+    },
     {
       "commit": "bc01b77752de682b344d2ec575f78aafe7fe4a14",
       "title": "Force SSBS for Proton games (libssbs.so), switch under FEX preset",
@@ -155,12 +161,6 @@
       "title": "Fix Xwayland dma-buf leak: close Zink's emulated GEM handles on KGSL",
       "summary": "With Force game windows fullscreen on, a game whose own resolution differs from the screen (DiRT 3 at 1280x720) fights gamescope over its window size and recreates its swapchain many times a second. Every old swapchain image stayed alive inside Xwayland: ~2,000 buffers / 6+ GB in about 15 s, then Android's low-memory killer closed the session and background apps. The memory was only returned w",
       "publishedAt": 1791219159000
-    },
-    {
-      "commit": "9f46c7a50b6f583e0040040882a025d4e7813491",
-      "title": "Force game windows fullscreen: off by default",
-      "summary": "With Force game windows fullscreen on, a game running at a resolution other than the screen's (DiRT 3 defaults to 1280x720) fights gamescope's --force-windows-fullscreen: every forced resize makes it rebuild its swapchain and the picture flickers between its own size and full screen \u2014 696 swapchain rebuilds in a 4-minute DiRT 3 session on the Pocket FIT. Many games start at such a default",
-      "publishedAt": 1791218978000
     }
   ],
   "tests": [
