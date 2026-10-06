@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791250526472,
+  "generatedAt": 1791251153165,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-119d24b",
-    "title": "Keep the 16:9 stretch (#63) working in Steam Deck mode",
-    "summary": "With Stretch 16:9 games to a narrower screen (#63) on, games still get bars when Steam Deck mode is on, which #101 made the default for new installs. In Deck mode the client writes GAMESCOPENEWSCALINGSCALER = 0 (Auto) on the root window. gamescope follows that over the -S stretch it was started with, and Auto fits the 16:9 picture with bars. The QAM can't fix it either: without STE",
-    "commit": "119d24bf6b197c1bf32f54abbdf1f986bf6b2851",
+    "tag": "main-d3c0d25",
+    "title": "Return frontend-launched sessions to Android Home",
+    "summary": "Return intent-launched game sessions to Android\u2019s default Home frontend on exit while preserving DroidDeck\u2019s return behavior for games launched from its Games tab.",
+    "commit": "d3c0d258b714b8d7638c4c52ecd7c7e00972983d",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791250499000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-119d24b",
+    "publishedAt": 1791251130000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d3c0d25",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-119d24b.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-119d24b/DroidDeck-main-119d24b.apk",
+        "name": "DroidDeck-main-d3c0d25.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d3c0d25/DroidDeck-main-d3c0d25.apk",
         "size": 37145774,
-        "sha256": "9310de6f40581a9eec15041aa6353f2f7d301861656d4658eae4cc93eb5a3a9d",
+        "sha256": "9141cf7a5af847b500142527613c4ad19eebd1d634eea095a08ed71df9a96337",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-119d24b-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-119d24b/DroidDeck-main-119d24b-pubg.apk",
+        "name": "DroidDeck-main-d3c0d25-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d3c0d25/DroidDeck-main-d3c0d25-pubg.apk",
         "size": 37145774,
-        "sha256": "3ac5875ce87f9c25eb04b163e043c4671bfd40ca10660a85604bca190e028d1d",
+        "sha256": "e3b94433fea6ef93d58e2ed4439d62af794caa2aa27400239034661377e52aa4",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-119d24b-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-119d24b/DroidDeck-main-119d24b-antutu.apk",
+        "name": "DroidDeck-main-d3c0d25-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d3c0d25/DroidDeck-main-d3c0d25-antutu.apk",
         "size": 37145774,
-        "sha256": "eeab995a8873f3216ab0948dca3e87878abd5755a1ec2cb9e21c6d3e00b3602a",
+        "sha256": "62bacb714b61528a2737c8fafb041e020e109ac3eb10f7a5be7b7154e06b6874",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-119d24b-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-119d24b/DroidDeck-main-119d24b-ludashi.apk",
+        "name": "DroidDeck-main-d3c0d25-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d3c0d25/DroidDeck-main-d3c0d25-ludashi.apk",
         "size": 37145774,
-        "sha256": "5a8e6ca3654e842fc0aa02ad89f2ed85505539eb1876fd73558882b15fd5238d",
+        "sha256": "508edcb84f263f8cc8622c68d5398aac81a9c6ac0b1e81b77635f816b9a8235e",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d3c0d258b714b8d7638c4c52ecd7c7e00972983d",
+      "title": "Return frontend-launched sessions to Android Home",
+      "summary": "Return intent-launched game sessions to Android\u2019s default Home frontend on exit while preserving DroidDeck\u2019s return behavior for games launched from its Games tab.",
+      "publishedAt": 1791251130000
+    },
     {
       "commit": "119d24bf6b197c1bf32f54abbdf1f986bf6b2851",
       "title": "Keep the 16:9 stretch (#63) working in Steam Deck mode",
@@ -155,12 +161,6 @@
       "title": "Fix controller rings on linked data dirs, route rumble to the controller, capture the mouse for pointer locks",
       "summary": "Fixes #166, fixes #219, fixes #153. May also fix #175 and #226; those need a retest on this build.",
       "publishedAt": 1791200291000
-    },
-    {
-      "commit": "eaa4a7a0472abc211364c3286f78dd9c48c463e1",
-      "title": "Clarify display settings and organize in-session controls",
-      "summary": "Steam session settings now use the same tab bar as Components, grouping controls under Display, Controls, Games, Audio, Session, and Steam, with touch and LB/RB navigation.",
-      "publishedAt": 1791171482000
     }
   ],
   "tests": [
