@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791310975810,
+  "generatedAt": 1791311047508,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-352",
+      "title": "fix: share session logs in about a second instead of re-scrubbing them",
+      "summary": "Tapping Share logs (Setup \u2192 Session, or the session drawer) seemed to do nothing. The share sheet did appear, but 10\u201326 s later on the AYN Thor, with no feedback in between.",
+      "commit": "e855c8a54d2f465eb34b6bf44cacb8ef4b9c7961",
+      "pr": 352,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791311009000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-352",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.352-e855c8a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-e855c8a.apk",
+          "size": 37593480,
+          "sha256": "739876132b7b9ba3c90bdb09738e24e9e758104232d63a4ddb92ec3abbb823c3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.352-e855c8a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-e855c8a-pubg.apk",
+          "size": 37593480,
+          "sha256": "6d8f705d3280da95484eb33f0e90f89c1d9cdb532fcdaffb26ed5699465c55b2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.352-e855c8a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-e855c8a-antutu.apk",
+          "size": 37593480,
+          "sha256": "1b4dfb884cf0b66472626c46385fb02445ed7a4f1db581c8967f6beb968915af",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.352-e855c8a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-e855c8a-ludashi.apk",
+          "size": 37593480,
+          "sha256": "5a02d99a02e0087178f1914835cb93b9e77c0db4077b804d7d3078a7e296f586",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-338",
       "title": "Fix Audio Crackling on Pulse & DirectAudio",
