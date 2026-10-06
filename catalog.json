@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791286637484,
+  "generatedAt": 1791286966026,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-320",
+      "title": "Added support for Adreno 6xx devices",
+      "summary": "Adds (experimental) support for Adreno 6xx series. Turnip on those chips does not expose storageBuffer8BitAccess, so Proton's shipped DXVK 3 refuses to start DirectX 11 games.",
+      "commit": "f03bee605051aeee03219a0f0057c2f969a8ca2f",
+      "pr": 320,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791286928000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-320",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.320-f03bee6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-320/DroidDeck-PR.320-f03bee6.apk",
+          "size": 37149870,
+          "sha256": "0a25f1337493eb84c758c0856fe5865be310927427ce626ea6d38d0b52b1040e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.320-f03bee6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-320/DroidDeck-PR.320-f03bee6-pubg.apk",
+          "size": 37149870,
+          "sha256": "e56e931ad124a472f17fffbc541e24a6c98d106d4ab701b7afa60f08b9649bd3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.320-f03bee6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-320/DroidDeck-PR.320-f03bee6-antutu.apk",
+          "size": 37149870,
+          "sha256": "8a3ec7fd25bb1eab7354db1d6554b240d5571294908a3a70c8976ea023f7a6ee",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.320-f03bee6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-320/DroidDeck-PR.320-f03bee6-ludashi.apk",
+          "size": 37149870,
+          "sha256": "f609dc2819e8be2ddaa44a8639c587cfb717fd5da79a68cfaae11cc0e7f5a1c4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-305",
       "title": "fix: avoid reusing retired KGSL GEM handles",
