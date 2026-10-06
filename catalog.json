@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791260174422,
+  "generatedAt": 1791260581067,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b80d5db",
-    "title": "ci: require isolated version bumps",
-    "summary": "Require any PR that changes versionCode or versionName to contain only those version lines in app/build.gradle. This keeps PR test builds from consuming the next Android version code alongside unrelated code.",
-    "commit": "b80d5db176d25f04ee3d45e85f4671b857369dd3",
+    "tag": "main-b44235c",
+    "title": "Add Native Steam background sleep and automatic wake",
+    "summary": "Add an opt-in Native background behavior for Steam sessions. When the screen turns off or the session is fully hidden, notify Steam of system sleep, allow 1.5 seconds for preparation, then freeze the guest and audio. Returning automatically completes the wake handshake. Visible PiP keeps running; dismissing PiP retains and suspends the session.",
+    "commit": "b44235c495fa6458aa438c9ba3be06562e5d1a3c",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791257610000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b80d5db",
+    "publishedAt": 1791260541000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b44235c",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b80d5db.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b80d5db/DroidDeck-main-b80d5db.apk",
+        "name": "DroidDeck-main-b44235c.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b44235c/DroidDeck-main-b44235c.apk",
         "size": 37145774,
-        "sha256": "309fc2850f734093422f57fb457b4906d2f75ced63f146c3c7361ece299222cc",
+        "sha256": "cfc0c302e6f0a70ba4009a97d9806e12fdbfc917b222fd69063184478f5b58c0",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b80d5db-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b80d5db/DroidDeck-main-b80d5db-pubg.apk",
+        "name": "DroidDeck-main-b44235c-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b44235c/DroidDeck-main-b44235c-pubg.apk",
         "size": 37145774,
-        "sha256": "5a16c29e4f38d199d194e42c454449e44448b8166afc4652f5307ca8134b8e94",
+        "sha256": "da1544d53ff7bd23f9f3130631169edca9da0dddffacc462728946042147563d",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b80d5db-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b80d5db/DroidDeck-main-b80d5db-antutu.apk",
+        "name": "DroidDeck-main-b44235c-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b44235c/DroidDeck-main-b44235c-antutu.apk",
         "size": 37145774,
-        "sha256": "8613cea7e3fd97406f649090dd5f07d85aa7f536cbebe03765d5a9a9a790c98d",
+        "sha256": "1881b3af1bf7b75c076dc1e59c1466f6b57be8d746718e8c99e9e8b31711d556",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b80d5db-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b80d5db/DroidDeck-main-b80d5db-ludashi.apk",
+        "name": "DroidDeck-main-b44235c-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b44235c/DroidDeck-main-b44235c-ludashi.apk",
         "size": 37145774,
-        "sha256": "17989fe52a94a6b66e356d22c39095554beb9f5489a77b03abe137e0ae5fe677",
+        "sha256": "bdfba64aa688e7c8964852b6082edead69f5bea3f959defd8bca01818a511fcb",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b44235c495fa6458aa438c9ba3be06562e5d1a3c",
+      "title": "Add Native Steam background sleep and automatic wake",
+      "summary": "Add an opt-in Native background behavior for Steam sessions. When the screen turns off or the session is fully hidden, notify Steam of system sleep, allow 1.5 seconds for preparation, then freeze the guest and audio. Returning automatically completes the wake handshake. Visible PiP keeps running; dismissing PiP retains and suspends the session.",
+      "publishedAt": 1791260541000
+    },
     {
       "commit": "b80d5db176d25f04ee3d45e85f4671b857369dd3",
       "title": "ci: require isolated version bumps",
@@ -155,12 +161,6 @@
       "title": "Compact Steam, Desktop, and Setup settings headers",
       "summary": "Settings headers used multiple rows, reducing the space available for settings on handheld screens. Steam and Desktop now place Back and the LB/RB tab strip on one row without a page title; Desktop groups its settings into Display, Controls, and Session tabs. Setup places its title and tabs on one row and removes the summary status badge.",
       "publishedAt": 1791211205000
-    },
-    {
-      "commit": "31ea194f3db0ff8d6b86eef0614442418ccf309a",
-      "title": "Prepare 0.3.1 release",
-      "summary": "Bump DroidDeck to 0.3.1 (version code 11) and add grouped release notes with verified PR links and author credits, without screenshots or a new-contributors footer.",
-      "publishedAt": 1791201119000
     }
   ],
   "tests": [
