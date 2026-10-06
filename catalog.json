@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791293129768,
+  "generatedAt": 1791293323723,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-328",
-      "title": "Force SSBS for Proton games (libssbs.so), switch under FEX preset",
-      "summary": "Wine's arm64 signal code resumes threads from a Windows CONTEXT whose Cpsr never carries PSTATE.SSBS (bit 12), so after a signal return the thread runs with speculative store bypass disabled \u2014 slower on cores such as Oryon (reports of large gains on Snapdragon 8 Elite, e.g. Fallout: New Vegas). Sonicadvance1's forcessbs.diff fixes it inside ntdll; Bannerlator ships it in its own Wine bu",
-      "commit": "9bfbd345ab2be0e58bbe6c048fdb1ca17236170d",
-      "pr": 328,
-      "version": null,
-      "versionCode": 11,
-      "publishedAt": 1791293088000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-328",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.328-9bfbd34.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-328/DroidDeck-PR.328-9bfbd34.apk",
-          "size": 37154037,
-          "sha256": "2d6bfdb85029257b20f98239a7b1fe05b4710870037f2632109f5892b6de3fe0",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.328-9bfbd34-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-328/DroidDeck-PR.328-9bfbd34-pubg.apk",
-          "size": 37154037,
-          "sha256": "26e185d033507863f7b9e97ee57cbe529309e400cfbdb175c6be1debafc1fbbb",
-          "packageName": "com.tencent.ig",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.328-9bfbd34-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-328/DroidDeck-PR.328-9bfbd34-antutu.apk",
-          "size": 37154037,
-          "sha256": "4c4a14c97506eae7695d801331fc9eecb56b64bc11aed5bf308312104e5d2cd7",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.328-9bfbd34-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-328/DroidDeck-PR.328-9bfbd34-ludashi.apk",
-          "size": 37154037,
-          "sha256": "7a93ba90f99dae4e5489df20c44100dfb4138fc376041727714c494ab2d21a81",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-305",
       "title": "fix: avoid reusing retired KGSL GEM handles",
