@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791307677618,
+  "generatedAt": 1791308735983,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-343",
+      "title": "Fast path: hold every bind, so added games start in their own folder",
+      "summary": "Added games (Games folders) start in C:\\windows instead of their own folder. Every launch logs:",
+      "commit": "3677324851cd549313b7310c6e35040bb3b59af8",
+      "pr": 343,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791308695000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-343",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.343-3677324.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-343/DroidDeck-PR.343-3677324.apk",
+          "size": 37285207,
+          "sha256": "0b378965a59d9b92adc02a4adfe34e073580f0ee67ef82c4d640559bc34bfd58",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.343-3677324-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-343/DroidDeck-PR.343-3677324-pubg.apk",
+          "size": 37285207,
+          "sha256": "7dd700369f74030e9489eed067ac18527a0760b3eba5b040e7c785874a9daf65",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.343-3677324-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-343/DroidDeck-PR.343-3677324-antutu.apk",
+          "size": 37285207,
+          "sha256": "61edd62bd581920a89d7543b26ac1160bc65cd622d838f499b226a14f2a4a9a5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.343-3677324-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-343/DroidDeck-PR.343-3677324-ludashi.apk",
+          "size": 37285207,
+          "sha256": "e1d2bcec2499c26ba4585e2e05220a8bb39296d877032c5be58077fa3d810f26",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-338",
       "title": "Fix Audio Crackling on Pulse & DirectAudio",
