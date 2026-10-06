@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791302885176,
+  "generatedAt": 1791303168996,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ffaa906",
-    "title": "fix: catch KGSL GEMCLOSE at ioctl instead of exporting drmIoctl",
-    "summary": "NMS on an Adreno 840 has judder that looks like old frames being replayed. #302 (a straight revert of #275) is smooth; main is not.",
-    "commit": "ffaa906cd1bccc1eff1c263ec83d305cdb49f92f",
+    "tag": "main-c636eea",
+    "title": "fix: hold flood edges at the page edge once reached",
+    "summary": "The blue flood (Play, and the red Stop in the session drawer) sometimes left a sliver of the page showing on the left or right, flickering in and out, before the next screen took over. It didn't happen every time.",
+    "commit": "c636eea355bf45f9013ee02676b8490e6968dd65",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791302380000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ffaa906",
+    "publishedAt": 1791303122000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c636eea",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ffaa906.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffaa906/DroidDeck-main-ffaa906.apk",
-        "size": 37272919,
-        "sha256": "f62ad4c417105b7690c169c950f4e628c2d97445c7aac2a52b9a67a43e82168a",
+        "name": "DroidDeck-main-c636eea.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c636eea/DroidDeck-main-c636eea.apk",
+        "size": 37277015,
+        "sha256": "5f8f4d20b0f3529d5843f7ceeb4b42a9768c6bb537bc8b7cd75b7d91158d02e9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ffaa906-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffaa906/DroidDeck-main-ffaa906-pubg.apk",
-        "size": 37272919,
-        "sha256": "76ca1fde50b8455d08cc076c17252c89af0fd0e93bea8907a1be213619b75962",
+        "name": "DroidDeck-main-c636eea-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c636eea/DroidDeck-main-c636eea-pubg.apk",
+        "size": 37277015,
+        "sha256": "e8430a876f152b065ba63f00d3d980501d0cd6f15f5c1cec7345217781225370",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ffaa906-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffaa906/DroidDeck-main-ffaa906-antutu.apk",
-        "size": 37272919,
-        "sha256": "c4f9aa7c1a1c149869d15198dab974e29f576bbc7c0bc8ad4476a9db551f2410",
+        "name": "DroidDeck-main-c636eea-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c636eea/DroidDeck-main-c636eea-antutu.apk",
+        "size": 37277015,
+        "sha256": "bd51a8cccf4d114c550909932195ba513521399a34528d59c2260e0d05b7a80b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ffaa906-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffaa906/DroidDeck-main-ffaa906-ludashi.apk",
-        "size": 37272919,
-        "sha256": "96301322cb8a9ea31e94d8a4e1b840a6a279c8955baa7740cf3b509603f429a7",
+        "name": "DroidDeck-main-c636eea-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c636eea/DroidDeck-main-c636eea-ludashi.apk",
+        "size": 37277015,
+        "sha256": "f86fd4b053d5ca3bfa8b7c587a0b4e5d82a5bd1818820ae0dce7f4b5789c84c5",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c636eea355bf45f9013ee02676b8490e6968dd65",
+      "title": "fix: hold flood edges at the page edge once reached",
+      "summary": "The blue flood (Play, and the red Stop in the session drawer) sometimes left a sliver of the page showing on the left or right, flickering in and out, before the next screen took over. It didn't happen every time.",
+      "publishedAt": 1791303122000
+    },
     {
       "commit": "ffaa906cd1bccc1eff1c263ec83d305cdb49f92f",
       "title": "fix: catch KGSL GEMCLOSE at ioctl instead of exporting drmIoctl",
@@ -155,12 +161,6 @@
       "title": "Device details on the GPU card; Adreno model and SoC name when the kernel leaves them out",
       "summary": "On an AYANEO Pocket FIT (Adreno 750) the Components page showed \"Adreno\" and warned \"Below tested hardware (Adreno 725 and newer): it may not run\". Its kernel names the GPU Adreno33v2 (KGSL gpumodel), GpuInfo needs a three-digit model, and Android's SoC model is blank \u2014 so the model was unknown and the card fell back to the untested warning. Handhelds often leave these fields empt",
       "publishedAt": 1791247048000
-    },
-    {
-      "commit": "e7cbba37d1d263d89848901082e73fca9075fa38",
-      "title": "sign-apk: rename the agent provider's authority for the other packages",
-      "summary": "Since #279, no PR test build has been published. PR Release Publish fails while signing the pubg, ludashi and antutu packages with:",
-      "publishedAt": 1791226065000
     }
   ],
   "tests": [
