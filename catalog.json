@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791308735983,
+  "generatedAt": 1791308790560,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-344",
+      "title": "feat: run Steam sessions on two Xwayland servers as SteamOS does",
+      "summary": "Steam sessions run the client and every game on one Xwayland server, at the session's size. Steam's per-game Game Resolution therefore can't resize the game's display, so a game drawing at its own size fights Force game windows fullscreen. On the AYN Thor, Alan Wake's American Nightmare with Force fullscreen on reached about 1,500 dma-bufs in Xwayland, and the low-memory killer ended the s",
+      "commit": "4fc13c14b62fe4a48bf45773f8014939a53d425a",
+      "pr": 344,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791308759000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-344",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.344-4fc13c1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-344/DroidDeck-PR.344-4fc13c1.apk",
+          "size": 37277015,
+          "sha256": "3b6b90d82eb4ccc4e5ea1ba3a53020a42bffade2b02caf247f9daab6026e768e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.344-4fc13c1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-344/DroidDeck-PR.344-4fc13c1-pubg.apk",
+          "size": 37277015,
+          "sha256": "a918192cc50780f1556eb7a005ed28faa1504ec19831eb59ca6d931b0fe94953",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.344-4fc13c1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-344/DroidDeck-PR.344-4fc13c1-antutu.apk",
+          "size": 37277015,
+          "sha256": "82d2ef5f429ee4ca93f863c7fcab961769ddab842717a33a6bd7458d2d384cc7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.344-4fc13c1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-344/DroidDeck-PR.344-4fc13c1-ludashi.apk",
+          "size": 37277015,
+          "sha256": "9b940ec7d356536e8fe59d14e781e0129937e363f1043a5e47d89f84778143c1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-343",
       "title": "Fast path: hold every bind, so added games start in their own folder",
