@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791250148309,
+  "generatedAt": 1791250526472,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-2a90551",
-    "title": "Device details on the GPU card; Adreno model and SoC name when the kernel leaves them out",
-    "summary": "On an AYANEO Pocket FIT (Adreno 750) the Components page showed \"Adreno\" and warned \"Below tested hardware (Adreno 725 and newer): it may not run\". Its kernel names the GPU Adreno33v2 (KGSL gpumodel), GpuInfo needs a three-digit model, and Android's SoC model is blank \u2014 so the model was unknown and the card fell back to the untested warning. Handhelds often leave these fields empt",
-    "commit": "2a905510d5c25b7eb6d4fe4a3265e5375bd6f923",
+    "tag": "main-119d24b",
+    "title": "Keep the 16:9 stretch (#63) working in Steam Deck mode",
+    "summary": "With Stretch 16:9 games to a narrower screen (#63) on, games still get bars when Steam Deck mode is on, which #101 made the default for new installs. In Deck mode the client writes GAMESCOPENEWSCALINGSCALER = 0 (Auto) on the root window. gamescope follows that over the -S stretch it was started with, and Auto fits the 16:9 picture with bars. The QAM can't fix it either: without STE",
+    "commit": "119d24bf6b197c1bf32f54abbdf1f986bf6b2851",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791247048000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2a90551",
+    "publishedAt": 1791250499000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-119d24b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-2a90551.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2a90551/DroidDeck-main-2a90551.apk",
-        "size": 37141678,
-        "sha256": "c611a87f4d49d024ebaf685d233e99e512c9eda304b12efb7f684567c2a55c3d",
+        "name": "DroidDeck-main-119d24b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-119d24b/DroidDeck-main-119d24b.apk",
+        "size": 37145774,
+        "sha256": "9310de6f40581a9eec15041aa6353f2f7d301861656d4658eae4cc93eb5a3a9d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-2a90551-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2a90551/DroidDeck-main-2a90551-pubg.apk",
-        "size": 37141678,
-        "sha256": "e0128d66ad97f4d27fa0bcdbd77ec354ee1687b6d143f779dd075467de27c733",
+        "name": "DroidDeck-main-119d24b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-119d24b/DroidDeck-main-119d24b-pubg.apk",
+        "size": 37145774,
+        "sha256": "3ac5875ce87f9c25eb04b163e043c4671bfd40ca10660a85604bca190e028d1d",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-2a90551-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2a90551/DroidDeck-main-2a90551-antutu.apk",
-        "size": 37141678,
-        "sha256": "5c844f145d74098f8ab26aad6f7c9e9ea0e4ae449fe7181aa18b8d64e99a5921",
+        "name": "DroidDeck-main-119d24b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-119d24b/DroidDeck-main-119d24b-antutu.apk",
+        "size": 37145774,
+        "sha256": "eeab995a8873f3216ab0948dca3e87878abd5755a1ec2cb9e21c6d3e00b3602a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-2a90551-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2a90551/DroidDeck-main-2a90551-ludashi.apk",
-        "size": 37141678,
-        "sha256": "bd6b72c5c3220cbf5daff50e4f1008d45db33329a4f5a5722177110d1ed014ca",
+        "name": "DroidDeck-main-119d24b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-119d24b/DroidDeck-main-119d24b-ludashi.apk",
+        "size": 37145774,
+        "sha256": "5a8e6ca3654e842fc0aa02ad89f2ed85505539eb1876fd73558882b15fd5238d",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "119d24bf6b197c1bf32f54abbdf1f986bf6b2851",
+      "title": "Keep the 16:9 stretch (#63) working in Steam Deck mode",
+      "summary": "With Stretch 16:9 games to a narrower screen (#63) on, games still get bars when Steam Deck mode is on, which #101 made the default for new installs. In Deck mode the client writes GAMESCOPENEWSCALINGSCALER = 0 (Auto) on the root window. gamescope follows that over the -S stretch it was started with, and Auto fits the 16:9 picture with bars. The QAM can't fix it either: without STE",
+      "publishedAt": 1791250499000
+    },
     {
       "commit": "2a905510d5c25b7eb6d4fe4a3265e5375bd6f923",
       "title": "Device details on the GPU card; Adreno model and SoC name when the kernel leaves them out",
@@ -155,12 +161,6 @@
       "title": "Clarify display settings and organize in-session controls",
       "summary": "Steam session settings now use the same tab bar as Components, grouping controls under Display, Controls, Games, Audio, Session, and Steam, with touch and LB/RB navigation.",
       "publishedAt": 1791171482000
-    },
-    {
-      "commit": "4fa467c800354f6759ed64fde8cbaa15765af080",
-      "title": "Fetch the Steam client again when it never shows up",
-      "summary": "A client stopped part way through updating itself can be left unable to draw anything. Its files and our install stamp are still on disk, so the installer never looked at it again and every session sat on \"Waiting for Steam\" with nothing retried.",
-      "publishedAt": 1791164372000
     }
   ],
   "tests": [
