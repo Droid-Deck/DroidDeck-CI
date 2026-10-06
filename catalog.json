@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791308958307,
+  "generatedAt": 1791309355602,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-bf221ff",
-    "title": "fix: resolution presets keep the panel shape at 720p, 900p and 1080p",
-    "summary": "\u2022 Resolution presets are now heights: 720p (default), 900p, 1080p. Each uses the panel's shape, is never narrower than 16:9 and never taller than the panel.\n\u2022 Unchanged: Match screen (exact panel), Custom, and any fixed size already saved.\n\u2022 The device report shows the resolved size next to the choice, e.g. 720p (1608x720).",
-    "commit": "bf221ffbbd689d63212eff43e67e284557cf52a7",
+    "tag": "main-3278afa",
+    "title": "Fast path: hold every bind, so added games start in their own folder",
+    "summary": "Added games (Games folders) start in C:\\windows instead of their own folder. Every launch logs:",
+    "commit": "3278afaa1af7fe9b43420e621752f2e9c27e05ef",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791307552000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bf221ff",
+    "publishedAt": 1791309315000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3278afa",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-bf221ff.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf221ff/DroidDeck-main-bf221ff.apk",
+        "name": "DroidDeck-main-3278afa.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3278afa/DroidDeck-main-3278afa.apk",
         "size": 37277015,
-        "sha256": "5523285c3f56bd80dc9368f489f84513c71b8c04c6f3ec692b8a9404056e80d4",
+        "sha256": "96db682bb4080f186d35f38f5237e8d25222de7b71e2c40a9a18a0181650214f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-bf221ff-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf221ff/DroidDeck-main-bf221ff-pubg.apk",
+        "name": "DroidDeck-main-3278afa-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3278afa/DroidDeck-main-3278afa-pubg.apk",
         "size": 37277015,
-        "sha256": "ea9b177eb8a11edb1cc3c72e62be1e1fea17c3250f1922e3196c99791e20205c",
+        "sha256": "fe31f8a09c40c68acdddac8a35e595dfbe6da0f56e6bfdaf17671816921165cb",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-bf221ff-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf221ff/DroidDeck-main-bf221ff-antutu.apk",
+        "name": "DroidDeck-main-3278afa-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3278afa/DroidDeck-main-3278afa-antutu.apk",
         "size": 37277015,
-        "sha256": "eb9696d4b12692742f66c63d2866608146ae5e1df4fdf220fe142d64dba2bb4e",
+        "sha256": "a21edc2f499f0705ef6dc772a1e57ba0f132c9e6d195320910697a93750af5fc",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-bf221ff-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf221ff/DroidDeck-main-bf221ff-ludashi.apk",
+        "name": "DroidDeck-main-3278afa-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3278afa/DroidDeck-main-3278afa-ludashi.apk",
         "size": 37277015,
-        "sha256": "6ac8f9fbbeecefcfeb44d491b9c1f19c2ca5eae825d1d91538c49490d03a2bcf",
+        "sha256": "487aa464c65c8e9531c9f970c10bd22710e5bedb80ad339b62aa157c74751185",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "3278afaa1af7fe9b43420e621752f2e9c27e05ef",
+      "title": "Fast path: hold every bind, so added games start in their own folder",
+      "summary": "Added games (Games folders) start in C:\\windows instead of their own folder. Every launch logs:",
+      "publishedAt": 1791309315000
+    },
     {
       "commit": "bf221ffbbd689d63212eff43e67e284557cf52a7",
       "title": "fix: resolution presets keep the panel shape at 720p, 900p and 1080p",
@@ -155,12 +161,6 @@
       "title": "Return frontend-launched sessions to Android Home",
       "summary": "Return intent-launched game sessions to Android\u2019s default Home frontend on exit while preserving DroidDeck\u2019s return behavior for games launched from its Games tab.",
       "publishedAt": 1791251130000
-    },
-    {
-      "commit": "119d24bf6b197c1bf32f54abbdf1f986bf6b2851",
-      "title": "Keep the 16:9 stretch (#63) working in Steam Deck mode",
-      "summary": "With Stretch 16:9 games to a narrower screen (#63) on, games still get bars when Steam Deck mode is on, which #101 made the default for new installs. In Deck mode the client writes GAMESCOPENEWSCALINGSCALER = 0 (Auto) on the root window. gamescope follows that over the -S stretch it was started with, and Auto fits the 16:9 picture with bars. The QAM can't fix it either: without STE",
-      "publishedAt": 1791250499000
     }
   ],
   "tests": [
