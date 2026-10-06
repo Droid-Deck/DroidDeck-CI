@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791293323723,
+  "generatedAt": 1791293679952,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a1b01a0",
-    "title": "Added support for Adreno 6xx devices",
-    "summary": "Adds (experimental) support for Adreno 6xx series. Turnip on those chips does not expose storageBuffer8BitAccess, so Proton's shipped DXVK 3 refuses to start DirectX 11 games.",
-    "commit": "a1b01a04a83f90c9517ef386698afef48f8eb180",
+    "tag": "main-bc01b77",
+    "title": "Force SSBS for Proton games (libssbs.so), switch under FEX preset",
+    "summary": "Wine's arm64 signal code resumes threads from a Windows CONTEXT whose Cpsr never carries PSTATE.SSBS (bit 12), so after a signal return the thread runs with speculative store bypass disabled \u2014 slower on cores such as Oryon (reports of large gains on Snapdragon 8 Elite, e.g. Fallout: New Vegas). Sonicadvance1's forcessbs.diff fixes it inside ntdll; Bannerlator ships it in its own Wine bu",
+    "commit": "bc01b77752de682b344d2ec575f78aafe7fe4a14",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791292439000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a1b01a0",
+    "publishedAt": 1791293649000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bc01b77",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a1b01a0.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a1b01a0/DroidDeck-main-a1b01a0.apk",
-        "size": 37149870,
-        "sha256": "4bb532a56666c6f9d9b5f2851df47d9ef9621fba12bb9749d2f8cc8e751c0b54",
+        "name": "DroidDeck-main-bc01b77.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc01b77/DroidDeck-main-bc01b77.apk",
+        "size": 37154037,
+        "sha256": "7bd0ab71b1e25de907deec2d4a11b254e250f6d4757434b36e210c93ef47f01e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a1b01a0-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a1b01a0/DroidDeck-main-a1b01a0-pubg.apk",
-        "size": 37149870,
-        "sha256": "f6cd78b05f9a67df11fd1f321087d1f4084898be911afa6bc38d8d98f2a0a1dd",
+        "name": "DroidDeck-main-bc01b77-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc01b77/DroidDeck-main-bc01b77-pubg.apk",
+        "size": 37154037,
+        "sha256": "60cb8a82ec322bbc2ecb85f55062e4c1849ec7f77a4b662991916d3b1041692e",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a1b01a0-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a1b01a0/DroidDeck-main-a1b01a0-antutu.apk",
-        "size": 37149870,
-        "sha256": "70ec519c20449cb9ddacadecc0fd6ea93a3e3945a17892a3dc252cb8fb2efe95",
+        "name": "DroidDeck-main-bc01b77-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc01b77/DroidDeck-main-bc01b77-antutu.apk",
+        "size": 37154037,
+        "sha256": "25d30c65b3ce3b54b9839a6626d9ac7fc50c5e49160c05f5f64ac9fa909b603e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a1b01a0-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a1b01a0/DroidDeck-main-a1b01a0-ludashi.apk",
-        "size": 37149870,
-        "sha256": "c90a0e2bc03e587d672ddada65ffb4f5a2fef12ffc7511930c4d5f141318ae1b",
+        "name": "DroidDeck-main-bc01b77-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc01b77/DroidDeck-main-bc01b77-ludashi.apk",
+        "size": 37154037,
+        "sha256": "7974b6aa4d1e22f315a7b075c69d584b2943e59f6f9b59512ab2f81a0739f247",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bc01b77752de682b344d2ec575f78aafe7fe4a14",
+      "title": "Force SSBS for Proton games (libssbs.so), switch under FEX preset",
+      "summary": "Wine's arm64 signal code resumes threads from a Windows CONTEXT whose Cpsr never carries PSTATE.SSBS (bit 12), so after a signal return the thread runs with speculative store bypass disabled \u2014 slower on cores such as Oryon (reports of large gains on Snapdragon 8 Elite, e.g. Fallout: New Vegas). Sonicadvance1's forcessbs.diff fixes it inside ntdll; Bannerlator ships it in its own Wine bu",
+      "publishedAt": 1791293649000
+    },
     {
       "commit": "a1b01a04a83f90c9517ef386698afef48f8eb180",
       "title": "Added support for Adreno 6xx devices",
@@ -155,12 +161,6 @@
       "title": "Force game windows fullscreen: off by default",
       "summary": "With Force game windows fullscreen on, a game running at a resolution other than the screen's (DiRT 3 defaults to 1280x720) fights gamescope's --force-windows-fullscreen: every forced resize makes it rebuild its swapchain and the picture flickers between its own size and full screen \u2014 696 swapchain rebuilds in a 4-minute DiRT 3 session on the Pocket FIT. Many games start at such a default",
       "publishedAt": 1791218978000
-    },
-    {
-      "commit": "06e06b9673be9b875c4537bbc79c576d397a66d7",
-      "title": "Fix MangoHud double-counting battery power and remaining life",
-      "summary": "DroidDeck exposed Android's aggregate battery twice, as BAT0 and BAT1. MangoHud discovered both supplies and counted the same battery twice, inflating wattage and estimated remaining lifetime while Steam's QAM estimate stayed accurate. Export only BAT1 and remove the legacy BAT0 directory when each session starts. This applies to every device using the battery bridge without vendor-specific calibr",
-      "publishedAt": 1791213210000
     }
   ],
   "tests": [
