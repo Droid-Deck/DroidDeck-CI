@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791304873037,
+  "generatedAt": 1791306399733,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-337",
+      "title": "fix: resolution presets keep the panel shape at 720p, 900p and 1080p",
+      "summary": "\u2022 Resolution presets are now heights: 720p (default), 900p, 1080p. Each uses the panel's shape, is never narrower than 16:9 and never taller than the panel.\n\u2022 Unchanged: Match screen (exact panel), Custom, and any fixed size already saved.\n\u2022 The device report shows the resolved size next to the choice, e.g. 720p (1608x720).",
+      "commit": "cfe1559c8b383f2cdc78488ce344939505af62f2",
+      "pr": 337,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791306368000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-337",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.337-cfe1559.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-337/DroidDeck-PR.337-cfe1559.apk",
+          "size": 37277015,
+          "sha256": "50a508314c9d09ff725be11a0bf8ae1249bdb448cbcc88142ca4f1fb209db5a9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.337-cfe1559-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-337/DroidDeck-PR.337-cfe1559-pubg.apk",
+          "size": 37277015,
+          "sha256": "eccc27aaa30db680f8529c2f7f3f9d026652a4734c2fa2b74eb37f8dcbee6a0b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.337-cfe1559-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-337/DroidDeck-PR.337-cfe1559-antutu.apk",
+          "size": 37277015,
+          "sha256": "6f9f394cc1480a13cc31829762cabf0768826b386fb046449ea46733d08b5422",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.337-cfe1559-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-337/DroidDeck-PR.337-cfe1559-ludashi.apk",
+          "size": 37277015,
+          "sha256": "cb68f83809b097bbecd715d55d8afa34b79fd244c8b425474387bf9f10bf82c3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-284",
       "title": "Language setting and translations: Spanish, Japanese, Korean, Chinese; Steam follows it (#187)",
