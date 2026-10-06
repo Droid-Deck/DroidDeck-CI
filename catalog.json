@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791309570147,
+  "generatedAt": 1791309770351,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3278afa",
-    "title": "Fast path: hold every bind, so added games start in their own folder",
-    "summary": "Added games (Games folders) start in C:\\windows instead of their own folder. Every launch logs:",
-    "commit": "3278afaa1af7fe9b43420e621752f2e9c27e05ef",
+    "tag": "main-9d09893",
+    "title": "feat: run Steam sessions on two Xwayland servers as SteamOS does",
+    "summary": "Steam sessions run the client and every game on one Xwayland server, at the session's size. Steam's per-game Game Resolution therefore can't resize the game's display, so a game drawing at its own size fights Force game windows fullscreen. On the AYN Thor, Alan Wake's American Nightmare with Force fullscreen on reached about 1,500 dma-bufs in Xwayland, and the low-memory killer ended the s",
+    "commit": "9d0989374bf18df556d1022e46193c16159da3a0",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791309315000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3278afa",
+    "publishedAt": 1791309726000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9d09893",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3278afa.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3278afa/DroidDeck-main-3278afa.apk",
+        "name": "DroidDeck-main-9d09893.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d09893/DroidDeck-main-9d09893.apk",
         "size": 37277015,
-        "sha256": "96db682bb4080f186d35f38f5237e8d25222de7b71e2c40a9a18a0181650214f",
+        "sha256": "41f0dbb7d6330098ceccc997d26d28cb3889759a72dcc49ed9b08e873a25e1ab",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3278afa-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3278afa/DroidDeck-main-3278afa-pubg.apk",
+        "name": "DroidDeck-main-9d09893-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d09893/DroidDeck-main-9d09893-pubg.apk",
         "size": 37277015,
-        "sha256": "fe31f8a09c40c68acdddac8a35e595dfbe6da0f56e6bfdaf17671816921165cb",
+        "sha256": "652111bbadfa61991fe874fa5de0fb582aa75f1963452f0609e7f90b6e18f2f3",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3278afa-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3278afa/DroidDeck-main-3278afa-antutu.apk",
+        "name": "DroidDeck-main-9d09893-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d09893/DroidDeck-main-9d09893-antutu.apk",
         "size": 37277015,
-        "sha256": "a21edc2f499f0705ef6dc772a1e57ba0f132c9e6d195320910697a93750af5fc",
+        "sha256": "8fc69151225a1c7d13fedd540caee38f86c0479a0d81bba5b06bb6d759ba3d05",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3278afa-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3278afa/DroidDeck-main-3278afa-ludashi.apk",
+        "name": "DroidDeck-main-9d09893-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d09893/DroidDeck-main-9d09893-ludashi.apk",
         "size": 37277015,
-        "sha256": "487aa464c65c8e9531c9f970c10bd22710e5bedb80ad339b62aa157c74751185",
+        "sha256": "8d7108f064047d9bb9c2abf995137fc7bdf1d114189426bbb7194ba16e2de5ce",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9d0989374bf18df556d1022e46193c16159da3a0",
+      "title": "feat: run Steam sessions on two Xwayland servers as SteamOS does",
+      "summary": "Steam sessions run the client and every game on one Xwayland server, at the session's size. Steam's per-game Game Resolution therefore can't resize the game's display, so a game drawing at its own size fights Force game windows fullscreen. On the AYN Thor, Alan Wake's American Nightmare with Force fullscreen on reached about 1,500 dma-bufs in Xwayland, and the low-memory killer ended the s",
+      "publishedAt": 1791309726000
+    },
     {
       "commit": "3278afaa1af7fe9b43420e621752f2e9c27e05ef",
       "title": "Fast path: hold every bind, so added games start in their own folder",
@@ -155,12 +161,6 @@
       "title": "ci: require isolated version bumps",
       "summary": "Require any PR that changes versionCode or versionName to contain only those version lines in app/build.gradle. This keeps PR test builds from consuming the next Android version code alongside unrelated code.",
       "publishedAt": 1791257610000
-    },
-    {
-      "commit": "d3c0d258b714b8d7638c4c52ecd7c7e00972983d",
-      "title": "Return frontend-launched sessions to Android Home",
-      "summary": "Return intent-launched game sessions to Android\u2019s default Home frontend on exit while preserving DroidDeck\u2019s return behavior for games launched from its Games tab.",
-      "publishedAt": 1791251130000
     }
   ],
   "tests": [
