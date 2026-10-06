@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791311157200,
+  "generatedAt": 1791311439582,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-352",
+      "title": "fix: share session logs in about a second instead of re-scrubbing them",
+      "summary": "Tapping Share logs (Setup \u2192 Session, or the session drawer) seemed to do nothing. The share sheet did appear, but 10\u201326 s later on the AYN Thor, with no feedback in between.",
+      "commit": "aa77c68d4caa8180837075f4343a72f95104dd7d",
+      "pr": 352,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791311407000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-352",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.352-aa77c68.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-aa77c68.apk",
+          "size": 37597576,
+          "sha256": "67220b83fbb4e96aa5e3f5479f59ccfa53a626887d7117f56f2e49945408bb2f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.352-aa77c68-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-aa77c68-pubg.apk",
+          "size": 37597576,
+          "sha256": "eadd0d33fd7d8c5396cdf0c27bf15c177ae700f710b48ce0628d81795b82e7f9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.352-aa77c68-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-aa77c68-antutu.apk",
+          "size": 37597576,
+          "sha256": "12f71aebe76a7cc660608c3e853ac7601f7295bb3f16376fc377b91b5c3b1fd1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.352-aa77c68-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-aa77c68-ludashi.apk",
+          "size": 37597576,
+          "sha256": "a3c7f83a39c759dd036b35c570d53752cad97fee4a7298b7ad05f2e4b74781fa",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-335",
       "title": "Add Steam background download mode",
       "summary": "Adds an optional Downloads background behavior for Steam sessions. This allows an active Steam download to continue while DroidDeck is hidden or the screen is off, then suspends the session after download progress stops.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-335/DroidDeck-PR.335-9c75e64-ludashi.apk",
           "size": 37289303,
           "sha256": "7aab06ab7642be2e152d18ae066cd6b263df38b03f9e74b032e03c9bb7701a7e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-352",
-      "title": "fix: share session logs in about a second instead of re-scrubbing them",
-      "summary": "Tapping Share logs (Setup \u2192 Session, or the session drawer) seemed to do nothing. The share sheet did appear, but 10\u201326 s later on the AYN Thor, with no feedback in between.",
-      "commit": "e855c8a54d2f465eb34b6bf44cacb8ef4b9c7961",
-      "pr": 352,
-      "version": null,
-      "versionCode": 11,
-      "publishedAt": 1791311009000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-352",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.352-e855c8a.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-e855c8a.apk",
-          "size": 37593480,
-          "sha256": "739876132b7b9ba3c90bdb09738e24e9e758104232d63a4ddb92ec3abbb823c3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.352-e855c8a-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-e855c8a-pubg.apk",
-          "size": 37593480,
-          "sha256": "6d8f705d3280da95484eb33f0e90f89c1d9cdb532fcdaffb26ed5699465c55b2",
-          "packageName": "com.tencent.ig",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.352-e855c8a-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-e855c8a-antutu.apk",
-          "size": 37593480,
-          "sha256": "1b4dfb884cf0b66472626c46385fb02445ed7a4f1db581c8967f6beb968915af",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.352-e855c8a-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-352/DroidDeck-PR.352-e855c8a-ludashi.apk",
-          "size": 37593480,
-          "sha256": "5a02d99a02e0087178f1914835cb93b9e77c0db4077b804d7d3078a7e296f586",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
