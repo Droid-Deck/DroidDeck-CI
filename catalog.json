@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791307234803,
+  "generatedAt": 1791307483799,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-283",
+      "title": "Guest fonts: Chinese, Japanese and Korean text in Steam and the desktop (#118, #206, #249)",
+      "summary": "Fixes #118, fixes #206, fixes #249. These are the same bug: the Linux runtime ships only DejaVu and Adwaita, so Steam draws Chinese (#118, #249) and Korean (#206) text as boxes, and Japanese and Thai too.",
+      "commit": "ddea65fdd13429a34862ab25e368519693c95a06",
+      "pr": 283,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791307450000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-283",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.283-ddea65f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-283/DroidDeck-PR.283-ddea65f.apk",
+          "size": 37277015,
+          "sha256": "3d8186c9c7e47929bd2a63bb386fe2386ca6967322eb1af1476d67cf352ef214",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.283-ddea65f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-283/DroidDeck-PR.283-ddea65f-pubg.apk",
+          "size": 37277015,
+          "sha256": "2d23a874b84e9b52220eddbff842f86bc638585baa48fa6426ebed06de4098a7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.283-ddea65f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-283/DroidDeck-PR.283-ddea65f-antutu.apk",
+          "size": 37277015,
+          "sha256": "2e3e8ad3167e0598c60500685923879844886561ba317eaabca5b59485ce077b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.283-ddea65f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-283/DroidDeck-PR.283-ddea65f-ludashi.apk",
+          "size": 37277015,
+          "sha256": "a60c9f63877f2f52c090b9bce7e46fc09b021dafdf6a54df70784f196211f7f9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-284",
       "title": "Language setting and translations: Spanish, Japanese, Korean, Chinese; Steam follows it (#187)",
