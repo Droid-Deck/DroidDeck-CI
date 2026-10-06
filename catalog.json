@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791315335853,
+  "generatedAt": 1791315818022,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-359",
+      "title": "perf(storage): opt-in skip of Steam's space reservation on the SD library",
+      "summary": "Built on main alone. It doesn't depend on #221 or #229. Replaces the closed #358.",
+      "commit": "40461caf4aa747fb70f6c2133c63a59206447c23",
+      "pr": 359,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791315786000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-359",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.359-40461ca.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-359/DroidDeck-PR.359-40461ca.apk",
+          "size": 37609864,
+          "sha256": "f4976b696f40be3c6a2557d1bb661420f50ffd082016a141aba66f6a5d2fd55f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.359-40461ca-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-359/DroidDeck-PR.359-40461ca-pubg.apk",
+          "size": 37609864,
+          "sha256": "9aa46dcac88be886cdf875ec5f7e05b63ec3e40780e5109da22e89654978b52e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.359-40461ca-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-359/DroidDeck-PR.359-40461ca-antutu.apk",
+          "size": 37609864,
+          "sha256": "2c73829e90046ce4ab993f3fd56069cfcdf4eacde03a5f475af82fd05fdf0318",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.359-40461ca-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-359/DroidDeck-PR.359-40461ca-ludashi.apk",
+          "size": 37609864,
+          "sha256": "917b71966a1f43a8e712ca02a754bf4177c673819c682aada33a0466539e72f3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-335",
       "title": "Add Steam background download mode",
