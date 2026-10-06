@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791298031106,
+  "generatedAt": 1791298131415,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -166,47 +166,47 @@
   "tests": [
     {
       "tag": "pr-305",
-      "title": "test: isolate the #275 judder (drmIoctl interposed, GEMCLOSE not released)",
-      "summary": "This is a diagnostic build. It is not a fix, so don't merge it.",
-      "commit": "a26a0e6a2867dc2ef9c3c32e18e589e5595b9197",
+      "title": "fix: catch KGSL GEMCLOSE at ioctl instead of exporting drmIoctl",
+      "summary": "NMS on an Adreno 840 has judder that looks like old frames being replayed. #302 (a straight revert of #275) is smooth; main is not.",
+      "commit": "bb1e893221abeda11687bf2dece1f902c6f0f1c8",
       "pr": 305,
       "version": null,
       "versionCode": 11,
-      "publishedAt": 1791294021000,
+      "publishedAt": 1791298104000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-305",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.305-a26a0e6.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-305/DroidDeck-PR.305-a26a0e6.apk",
+          "name": "DroidDeck-PR.305-bb1e893.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-305/DroidDeck-PR.305-bb1e893.apk",
           "size": 37158133,
-          "sha256": "8e1a56636eb16685978b3c55a6d7731cb7dfad4e84cf310b892f51996adc16bd",
+          "sha256": "6aff29db9836f3435047bf169bd2eeed6de596f9bbd08f574c56a8c3e6624931",
           "packageName": "com.droiddeck.launcher",
           "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.tencent.ig": {
-          "name": "DroidDeck-PR.305-a26a0e6-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-305/DroidDeck-PR.305-a26a0e6-pubg.apk",
+          "name": "DroidDeck-PR.305-bb1e893-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-305/DroidDeck-PR.305-bb1e893-pubg.apk",
           "size": 37158133,
-          "sha256": "63ca32bbb321a7ade1bb9dac2769ec073bc7524bffc691b8b987a96acb39b82e",
+          "sha256": "142d4700f39793f7bc83ca28d8934c6d5fb8489dc525b797bb093434eefa143d",
           "packageName": "com.tencent.ig",
           "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.305-a26a0e6-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-305/DroidDeck-PR.305-a26a0e6-antutu.apk",
+          "name": "DroidDeck-PR.305-bb1e893-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-305/DroidDeck-PR.305-bb1e893-antutu.apk",
           "size": 37158133,
-          "sha256": "1045479effff1044750668d92e87e3e7dd199a6275e1e289bc31b67d4f4d4588",
+          "sha256": "af56669b7ebea6a698edebabd1f60d981b7802398ab5882cb0ef2aea65d47e17",
           "packageName": "com.antutu.benchmark.full",
           "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.305-a26a0e6-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-305/DroidDeck-PR.305-a26a0e6-ludashi.apk",
+          "name": "DroidDeck-PR.305-bb1e893-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-305/DroidDeck-PR.305-bb1e893-ludashi.apk",
           "size": 37158133,
-          "sha256": "6a967a16eaf6ee11e7e4b2d462643801cfbab5bc0be422bbdf9629d9670ec1d5",
+          "sha256": "4b6bbca6e2b7ae2fc1c5a8f57ed268ce9c8362c563deb60d647a4f91b5dca18a",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
