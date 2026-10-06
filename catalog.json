@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791311047508,
+  "generatedAt": 1791311157200,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-335",
+      "title": "Add Steam background download mode",
+      "summary": "Adds an optional Downloads background behavior for Steam sessions. This allows an active Steam download to continue while DroidDeck is hidden or the screen is off, then suspends the session after download progress stops.",
+      "commit": "9c75e6448d7d843dedb069c43e7cacd8b0bb5dd9",
+      "pr": 335,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791311112000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-335",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.335-9c75e64.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-335/DroidDeck-PR.335-9c75e64.apk",
+          "size": 37289303,
+          "sha256": "d46366848718248e8b8cd439d51939dbc6a0eb9c8649b21aba1fd93630b6ebc5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.335-9c75e64-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-335/DroidDeck-PR.335-9c75e64-pubg.apk",
+          "size": 37289303,
+          "sha256": "9a5996c757b2f603b70bd06b4a16a7d1751950d2e6c4a945f4ab89cdf97dd465",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.335-9c75e64-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-335/DroidDeck-PR.335-9c75e64-antutu.apk",
+          "size": 37289303,
+          "sha256": "fd0158508a5761e58ab742289ffbc20a57421700a08cfc51e41345ff996f72f9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.335-9c75e64-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-335/DroidDeck-PR.335-9c75e64-ludashi.apk",
+          "size": 37289303,
+          "sha256": "7aab06ab7642be2e152d18ae066cd6b263df38b03f9e74b032e03c9bb7701a7e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-352",
       "title": "fix: share session logs in about a second instead of re-scrubbing them",
