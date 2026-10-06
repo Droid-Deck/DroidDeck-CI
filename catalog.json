@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791251153165,
+  "generatedAt": 1791254858878,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-302",
+      "title": "test: revert 275",
+      "summary": "Reverts #275 on top of current origin/main (d3c0d258) to compare session behavior without the KGSL GEMCLOSE fix. Keep this PR open for testing and the automatically published release-signed APK.",
+      "commit": "7f5e128a2540ff089018f3972ce769753aa377cb",
+      "pr": 302,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791254832000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-302",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.302-7f5e128.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-302/DroidDeck-PR.302-7f5e128.apk",
+          "size": 37141678,
+          "sha256": "b60d6f715dae83d8bca978235c8ae1cb599a66b891f961f031bb78c3538c2221",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.302-7f5e128-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-302/DroidDeck-PR.302-7f5e128-pubg.apk",
+          "size": 37141678,
+          "sha256": "9b05fdd1434e9c786d2b1821fb1c6ae823d9e3a3e0636ffaa3a59cbf0919e08d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.302-7f5e128-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-302/DroidDeck-PR.302-7f5e128-antutu.apk",
+          "size": 37141678,
+          "sha256": "25e6acf1c7b00f7688f170b2164ddbde05fa2d7fdc04ec7df158a9108a808b77",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.302-7f5e128-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-302/DroidDeck-PR.302-7f5e128-ludashi.apk",
+          "size": 37141678,
+          "sha256": "428fada7880032800209d9939b1df1ce950bbb44dce4e0e2af71e308e9cd387f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-287",
       "title": "Windows components for Steam and added games; no more redist installer prompts",
