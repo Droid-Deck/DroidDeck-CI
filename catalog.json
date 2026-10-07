@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791341230422,
+  "generatedAt": 1791344420529,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-374",
+      "title": "Draw Steam's CJK and Thai text with the device's fonts",
+      "summary": "With System default on a phone set to Chinese (also Japanese or Korean), Steam opens in that language, but every character is drawn as a box.",
+      "commit": "eede96f1217d37f37c2a49c19fc6af9bd4dafb95",
+      "pr": 374,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791344379000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-374",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.374-eede96f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-374/DroidDeck-PR.374-eede96f.apk",
+          "size": 38154731,
+          "sha256": "11d399746a229e5423152575a93a003720230694ef3c6fba1e42c16e3292c4bd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.374-eede96f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-374/DroidDeck-PR.374-eede96f-pubg.apk",
+          "size": 38154731,
+          "sha256": "1d92d3eb056f45435352e733bb33de3fa9ebd7db00fd520f2e6bd4607d9ff352",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.374-eede96f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-374/DroidDeck-PR.374-eede96f-antutu.apk",
+          "size": 38154731,
+          "sha256": "068d7cdddbb2d45d218ed36afd5b6b7aaa3097fd1bfdf09156a6929101ed25c6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.374-eede96f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-374/DroidDeck-PR.374-eede96f-ludashi.apk",
+          "size": 38154731,
+          "sha256": "b046a6ba0a4ea1d787b4781f50c21230b81d54e11494b95566873eabf698a4dc",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-372",
       "title": "fix: revert gamescope patch 0113 now that games run on their own Xwayland",
