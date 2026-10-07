@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791380340807,
+  "generatedAt": 1791380386205,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6d04849",
-    "title": "Make Games folders Steam libraries and skip the zero-filled reservation",
-    "summary": "\u2022 Installs to an SD card or USB drive sat at Reserving space (#186, and the reservation stall in #164). Steam preallocates every download, and Android's FUSE storage refuses fallocate, so Steam falls back to ftruncate:\n\u2022 exFAT zero-fills the whole file through FUSE before the download starts. SteamWorld Dig took about 3.5 minutes just to reserve.\n\u2022 NTFS answers EPERM, and Steam cancels the install as \"not enough disk space\".\n\u2022 A Games folder chosen in Settings \u2192 Games was only scanned for imports; Steam could not install into it.\n\u2022 With the card or drive removed, games mapped to it were still listed and offered as broken installs.",
-    "commit": "6d0484941e19b1769f21b488dec52071274d3872",
+    "tag": "main-453f6f5",
+    "title": "Keep the shortcut settings changed in Steam",
+    "summary": "Change an added game's shortcut in Steam's Properties (Target, Start In, launch options, name), exit Steam and open it again: the paths and name are back to what DroidDeck wrote.",
+    "commit": "453f6f518015dc00b1d0eb716182f94ed31005f5",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791380314000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6d04849",
+    "publishedAt": 1791380352000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-453f6f5",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6d04849.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d04849/DroidDeck-main-6d04849.apk",
-        "size": 38179307,
-        "sha256": "ff5611ddf2784d9c38be6c0310deed978901d4180fde0c7ecd4e384997651dde",
+        "name": "DroidDeck-main-453f6f5.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-453f6f5/DroidDeck-main-453f6f5.apk",
+        "size": 38183403,
+        "sha256": "14f2346c1a8fb3183e5f6818416e9689014444096e144d6677b088685f6ccbb0",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6d04849-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d04849/DroidDeck-main-6d04849-pubg.apk",
-        "size": 38179307,
-        "sha256": "c5ed3e95221f817c09fb1bee8d3d5b76df104cd1abd5a4195833939659ef08ad",
+        "name": "DroidDeck-main-453f6f5-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-453f6f5/DroidDeck-main-453f6f5-pubg.apk",
+        "size": 38183403,
+        "sha256": "98e19b9037b199aa58fcddb3897dce22285704f9b5fdb0a2fd2d78be7f64d016",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6d04849-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d04849/DroidDeck-main-6d04849-antutu.apk",
-        "size": 38179307,
-        "sha256": "a78296f5caa40378b23f936b50f1849001831aa43a5702e81fa7f76d96ef3dfa",
+        "name": "DroidDeck-main-453f6f5-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-453f6f5/DroidDeck-main-453f6f5-antutu.apk",
+        "size": 38183403,
+        "sha256": "5631020d82fe23844c883c7a4e4627ec0ad67211f3bebf28843793173ac8d471",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6d04849-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d04849/DroidDeck-main-6d04849-ludashi.apk",
-        "size": 38179307,
-        "sha256": "7d33050da1043ba29fb68f0d8973785d422ff5e6553007796b7bcd25de51b54f",
+        "name": "DroidDeck-main-453f6f5-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-453f6f5/DroidDeck-main-453f6f5-ludashi.apk",
+        "size": 38183403,
+        "sha256": "6b510607376630955ca1af5a8ded84f2d047951df7ebc9bc6f5aa3dab48cdba3",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "453f6f518015dc00b1d0eb716182f94ed31005f5",
+      "title": "Keep the shortcut settings changed in Steam",
+      "summary": "Change an added game's shortcut in Steam's Properties (Target, Start In, launch options, name), exit Steam and open it again: the paths and name are back to what DroidDeck wrote.",
+      "publishedAt": 1791380352000
+    },
     {
       "commit": "6d0484941e19b1769f21b488dec52071274d3872",
       "title": "Make Games folders Steam libraries and skip the zero-filled reservation",
@@ -155,12 +161,6 @@
       "title": "l10n: move hard-coded UI text into string resources (#212)",
       "summary": "Fixes #212.",
       "publishedAt": 1791338780000
-    },
-    {
-      "commit": "adc86fc7df825918ba740693066407769fbdb65e",
-      "title": "Fix Audio Crackling on Pulse & DirectAudio",
-      "summary": "",
-      "publishedAt": 1791321358000
     }
   ],
   "tests": [
