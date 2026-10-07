@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791383743342,
+  "generatedAt": 1791383843277,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-396",
+      "title": "Add Compose previews across DroidDeck UI",
+      "summary": "Add Android Studio previews so UI contributors can adjust DroidDeck layouts without starting a game session or Linux runtime. The debug source set provides 68 screen/state previews using production composables, shared sample data, and handheld, compact, portrait, and large-text configurations. Coverage includes the launcher/library, settings, downloads, session menus, dialogs, and file manager.",
+      "commit": "a1078cb12f77dcb7a2dffec23318b412d5e40d29",
+      "pr": 396,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791383804000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-396",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.396-a1078cb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-396/DroidDeck-PR.396-a1078cb.apk",
+          "size": 38191595,
+          "sha256": "1a3645089544122cddfed854c18ab418df114038ae4f76819bbf34116f23258e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.396-a1078cb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-396/DroidDeck-PR.396-a1078cb-pubg.apk",
+          "size": 38191595,
+          "sha256": "30713153d153941e9bcdd7836b8388dd5d233bb0433677370068f959fc689760",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.396-a1078cb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-396/DroidDeck-PR.396-a1078cb-antutu.apk",
+          "size": 38191595,
+          "sha256": "0bf171f1cffd1b827af6a2b2dce1b2e5ff052d085cc2d969902ace8eae6a95ae",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.396-a1078cb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-396/DroidDeck-PR.396-a1078cb-ludashi.apk",
+          "size": 38191595,
+          "sha256": "885c24f4fe172ec57b982132b0614da348e05e7b54a143dc22a25acef66205fc",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-395",
       "title": "Return to the launcher when a front-end game closes",
