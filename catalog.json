@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791380386205,
+  "generatedAt": 1791383743342,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-395",
+      "title": "Return to the launcher when a front-end game closes",
+      "summary": "When a game started from DroidDeck's Games tab (or from another launcher's link) closes, DroidDeck now ends the Steam session cleanly and takes you back to where you launched it, instead of leaving you in Big Picture.",
+      "commit": "799ecfb2679a7f4a20bc366b998cb5d5d4d8fb16",
+      "pr": 395,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791383705000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-395",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.395-799ecfb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-799ecfb.apk",
+          "size": 38199787,
+          "sha256": "e133da51d4271b65243b59bf7452a66c48db9f4f4df44bf75c56bb06f6a25466",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.395-799ecfb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-799ecfb-pubg.apk",
+          "size": 38199787,
+          "sha256": "eab3039169ab6399240559841cf9cb71b846fb87487fd05a29817d5e422c565f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.395-799ecfb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-799ecfb-antutu.apk",
+          "size": 38199787,
+          "sha256": "34a9b62614f5bfb615d62b491c792dee5e1f62f1147f80fa91180104682408da",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.395-799ecfb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-799ecfb-ludashi.apk",
+          "size": 38199787,
+          "sha256": "ac8756a6129be73c1d125f91145e08fdd9d9d1c8425cd12be36d74173cb229ff",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-389",
       "title": "Land taps and the pointer on what is drawn under them",
