@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791368761418,
+  "generatedAt": 1791369136709,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ef38c97",
-    "title": "Draw Steam's CJK and Thai text with the device's fonts",
-    "summary": "With System default on a phone set to Chinese (also Japanese or Korean), Steam opens in that language, but every character is drawn as a box.",
-    "commit": "ef38c975b994bb131eb327454c836c0ea84efd20",
+    "tag": "main-bf17ce1",
+    "title": "fix: revert gamescope patch 0113 now that games run on their own Xwayland",
+    "summary": "Typing does nothing in the text box Steam shows over a game, the \"Please enter text / Submit\" dialog a game opens through Steam's text-input API. This happens with both the Android keyboard and DroidDeck's on-screen keyboard. Typing in Steam's own search bar still works. Reported on a Galaxy Z Fold7 on nightly (two Xwayland servers), with a screen recording and logs.",
+    "commit": "bf17ce1151e76c9f134200b02c13180af2ab5b00",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791354604000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ef38c97",
+    "publishedAt": 1791369101000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bf17ce1",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ef38c97.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ef38c97/DroidDeck-main-ef38c97.apk",
+        "name": "DroidDeck-main-bf17ce1.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf17ce1/DroidDeck-main-bf17ce1.apk",
         "size": 38167019,
-        "sha256": "e0de456b73450abf8c9186b2c8383be281b45f91081b12bb6e5bc23d5aae24b2",
+        "sha256": "df80a4854f6131e421a0586015e06ee9b38436be21ab73b5dd8685e3dfe4626c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ef38c97-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ef38c97/DroidDeck-main-ef38c97-pubg.apk",
+        "name": "DroidDeck-main-bf17ce1-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf17ce1/DroidDeck-main-bf17ce1-pubg.apk",
         "size": 38167019,
-        "sha256": "166884dad66938eded53d442df3fcbd83ff8befebc5794dd6a2746a5c8048495",
+        "sha256": "463d42364323ba87b5fbf057d5dd7684ba1d759fbe70c79f9bee803305e39e38",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ef38c97-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ef38c97/DroidDeck-main-ef38c97-antutu.apk",
+        "name": "DroidDeck-main-bf17ce1-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf17ce1/DroidDeck-main-bf17ce1-antutu.apk",
         "size": 38167019,
-        "sha256": "090dc0c7e68b79632b9c5c8362333c3cba992a12c11d413a514d4e1e73029af6",
+        "sha256": "9a75e67e9ae546a5f22424499446390dd8313f912ce2c0e6671bb81765aa82c6",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ef38c97-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ef38c97/DroidDeck-main-ef38c97-ludashi.apk",
+        "name": "DroidDeck-main-bf17ce1-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf17ce1/DroidDeck-main-bf17ce1-ludashi.apk",
         "size": 38167019,
-        "sha256": "d5dbac4d9f2da1915f5eee3e64696b8c4adf2f9998af2d457ae824212b045b57",
+        "sha256": "e1fceab495e81ce3a5956dd4378bb46f019b6637784b8f3eb318b87638175260",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bf17ce1151e76c9f134200b02c13180af2ab5b00",
+      "title": "fix: revert gamescope patch 0113 now that games run on their own Xwayland",
+      "summary": "Typing does nothing in the text box Steam shows over a game, the \"Please enter text / Submit\" dialog a game opens through Steam's text-input API. This happens with both the Android keyboard and DroidDeck's on-screen keyboard. Typing in Steam's own search bar still works. Reported on a Galaxy Z Fold7 on nightly (two Xwayland servers), with a screen recording and logs.",
+      "publishedAt": 1791369101000
+    },
     {
       "commit": "ef38c975b994bb131eb327454c836c0ea84efd20",
       "title": "Draw Steam's CJK and Thai text with the device's fonts",
@@ -155,12 +161,6 @@
       "title": "feat: run Steam sessions on two Xwayland servers as SteamOS does",
       "summary": "Steam sessions run the client and every game on one Xwayland server, at the session's size. Steam's per-game Game Resolution therefore can't resize the game's display, so a game drawing at its own size fights Force game windows fullscreen. On the AYN Thor, Alan Wake's American Nightmare with Force fullscreen on reached about 1,500 dma-bufs in Xwayland, and the low-memory killer ended the s",
       "publishedAt": 1791309726000
-    },
-    {
-      "commit": "3278afaa1af7fe9b43420e621752f2e9c27e05ef",
-      "title": "Fast path: hold every bind, so added games start in their own folder",
-      "summary": "Added games (Games folders) start in C:\\windows instead of their own folder. Every launch logs:",
-      "publishedAt": 1791309315000
     }
   ],
   "tests": [
