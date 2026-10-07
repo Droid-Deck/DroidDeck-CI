@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791371141676,
+  "generatedAt": 1791371930456,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-388",
+      "title": "Make Games folders Steam libraries and skip the zero-filled reservation",
+      "summary": "\u2022 Installs to an SD card or USB drive sat at Reserving space (#186, and the reservation stall in #164). Steam preallocates every download, and Android's FUSE storage refuses fallocate, so Steam falls back to ftruncate:\n\u2022 exFAT zero-fills the whole file through FUSE before the download starts. SteamWorld Dig took about 3.5 minutes just to reserve.\n\u2022 NTFS answers EPERM, and Steam cancels the install as \"not enough disk space\".\n\u2022 A Games folder chosen in Settings \u2192 Games was only scanned for imports; Steam could not install into it.\n\u2022 With the card or drive removed, games mapped to it were still listed and offered as broken installs.",
+      "commit": "3139051b79fd4a25a11022649b3669d5165fa8e3",
+      "pr": 388,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791371888000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-388",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.388-3139051.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-388/DroidDeck-PR.388-3139051.apk",
+          "size": 38179307,
+          "sha256": "14a6a58976a93b769f6064958caed0cac7d1e414db4ce9c1375c7eecb5f1572c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.388-3139051-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-388/DroidDeck-PR.388-3139051-pubg.apk",
+          "size": 38179307,
+          "sha256": "23d7db0511b4cd8d0a0dfa6dbb6c72dad95be52ccf3f5d027fbc4593fe745d68",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.388-3139051-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-388/DroidDeck-PR.388-3139051-antutu.apk",
+          "size": 38179307,
+          "sha256": "4419d43ac87036e36c46c0f361d449d642156a0063e51564e6a8b88390320c56",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.388-3139051-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-388/DroidDeck-PR.388-3139051-ludashi.apk",
+          "size": 38179307,
+          "sha256": "b41da35ec45310c483781799cf7a6030213f81fda6272acea6c2a7564ece7bc8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-370",
       "title": "feat: add a Steam settings toggle for running games on their own Xwayland",
