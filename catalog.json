@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791401534703,
+  "generatedAt": 1791401582246,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-375",
+      "title": "Fix click landing beside the cursor when the picture is letterboxed (#237)",
+      "summary": "Fixes #237.",
+      "commit": "2afcc17caeab9d88d60b142c0f6ae5bad12e2058",
+      "pr": 375,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791401541000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-375",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.375-2afcc17.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-375/DroidDeck-PR.375-2afcc17.apk",
+          "size": 38167019,
+          "sha256": "a75bf6a348d5b391ea5561ab5ffe89bf74d3f489543b867680e56fe71998067d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.375-2afcc17-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-375/DroidDeck-PR.375-2afcc17-pubg.apk",
+          "size": 38167019,
+          "sha256": "a0beaa052be59ac92288dc2542b0b02b389824ed83f7c52729c1a29609944149",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.375-2afcc17-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-375/DroidDeck-PR.375-2afcc17-antutu.apk",
+          "size": 38167019,
+          "sha256": "27cb7b08a8fd84575aadb4e71550e8339c059bcbf3850dca58e3a96bcb2ab77f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.375-2afcc17-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-375/DroidDeck-PR.375-2afcc17-ludashi.apk",
+          "size": 38167019,
+          "sha256": "a909bee9fd3c65116fdb917720c58577c67a9abbb807f66c0ba2d3d991bdc10a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-404",
       "title": "Add Steam Controller support over Bluetooth LE",
@@ -354,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-389/DroidDeck-PR.389-e10c7d5-ludashi.apk",
           "size": 38183403,
           "sha256": "c8188397506910758789fb69c766e22036f0e5111c88a627689449ea9f9f6199",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-370",
-      "title": "feat: add a Steam settings toggle for running games on their own Xwayland",
-      "summary": "Adds a Two Xwayland servers toggle under Steam settings \u2192 Client. It's on by default, so nothing changes unless someone turns it off.",
-      "commit": "408233b8e523b03fb733034b04329d53bd25fbd4",
-      "pr": 370,
-      "version": null,
-      "versionCode": 11,
-      "publishedAt": 1791339425000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-370",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.370-408233b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-370/DroidDeck-PR.370-408233b.apk",
-          "size": 38163016,
-          "sha256": "5c05d0df40c78fa415a801986961e4d8ac2bcf3ab4aa50034dbe72daf218e68e",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.370-408233b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-370/DroidDeck-PR.370-408233b-pubg.apk",
-          "size": 38163016,
-          "sha256": "e82c1fd4fb14a119e6371a688c9c23a2e3c07fdb2b2e708c40ac8dfc3fa7977d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.370-408233b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-370/DroidDeck-PR.370-408233b-antutu.apk",
-          "size": 38163016,
-          "sha256": "c096dfae863de85a85e7fe950db9c45c6a365363555764651e775a0bee03192b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.370-408233b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-370/DroidDeck-PR.370-408233b-ludashi.apk",
-          "size": 38163016,
-          "sha256": "604127238eda19c38796125ef587d6a324b1f58930515f9f7ec2dca574573419",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
