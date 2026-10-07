@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791374109035,
+  "generatedAt": 1791374383518,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-206c8a8",
-    "title": "Add Steam background download mode",
-    "summary": "Adds an opt-in Steam background-download toggle. It allows active Steam downloads to continue while DroidDeck is hidden or the screen is off, without introducing a separate suspend policy.",
-    "commit": "206c8a88462a7400635c24b8de53dc8b34454b50",
+    "tag": "main-a78d5cb",
+    "title": "Let Steam draw at the session's full size above 1080p",
+    "summary": "Fixes the 1080p preset and Match screen coming up 16:9 on panels wider than 16:9 (2340x1080 reported on Discord; #309 has 1080p and Match screen \"stuck at 1920x1080\").",
+    "commit": "a78d5cb600d3ffd24c0352b7aa696af1d633148c",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791369808000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-206c8a8",
+    "publishedAt": 1791374345000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a78d5cb",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-206c8a8.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-206c8a8/DroidDeck-main-206c8a8.apk",
+        "name": "DroidDeck-main-a78d5cb.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a78d5cb/DroidDeck-main-a78d5cb.apk",
         "size": 38171115,
-        "sha256": "83e420f41e7e07af1781f5c1a396e13d5d43f1d69dba12eeab142974a38a0274",
+        "sha256": "7e36d47880fe1a505cdef5fe31ed31b018573b7d3d1ca7dbd2dc8387fb70293a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-206c8a8-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-206c8a8/DroidDeck-main-206c8a8-pubg.apk",
+        "name": "DroidDeck-main-a78d5cb-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a78d5cb/DroidDeck-main-a78d5cb-pubg.apk",
         "size": 38171115,
-        "sha256": "745a0767a6d3f7d7cb5ba38b8af1e231ce275d85075b0bd8f39aec174a24bc81",
+        "sha256": "4e564f1d378750c8053b2c887c47e8a31ed06e160efacdca0b1e3ff77070ac16",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-206c8a8-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-206c8a8/DroidDeck-main-206c8a8-antutu.apk",
+        "name": "DroidDeck-main-a78d5cb-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a78d5cb/DroidDeck-main-a78d5cb-antutu.apk",
         "size": 38171115,
-        "sha256": "ce2c1fbf3ecf885a6683e6f38c7c405afe40cbc239528a9cf20e2184efe9d211",
+        "sha256": "328ca23ba74d509097085004c45946acb0ada8ce50eac8464d6a591cc791efd0",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-206c8a8-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-206c8a8/DroidDeck-main-206c8a8-ludashi.apk",
+        "name": "DroidDeck-main-a78d5cb-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a78d5cb/DroidDeck-main-a78d5cb-ludashi.apk",
         "size": 38171115,
-        "sha256": "eb195e144c9faac4a9b90401dda621d376276e1c669649540cbf6aaebde5a6a8",
+        "sha256": "c9849b006a61e0c66b5d387e60bf2d5559ecea73d7352080f196d6d84e3e92f1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a78d5cb600d3ffd24c0352b7aa696af1d633148c",
+      "title": "Let Steam draw at the session's full size above 1080p",
+      "summary": "Fixes the 1080p preset and Match screen coming up 16:9 on panels wider than 16:9 (2340x1080 reported on Discord; #309 has 1080p and Match screen \"stuck at 1920x1080\").",
+      "publishedAt": 1791374345000
+    },
     {
       "commit": "206c8a88462a7400635c24b8de53dc8b34454b50",
       "title": "Add Steam background download mode",
@@ -155,12 +161,6 @@
       "title": "fix: share session logs in about a second instead of re-scrubbing them",
       "summary": "Tapping Share logs (Setup \u2192 Session, or the session drawer) seemed to do nothing. The share sheet did appear, but 10\u201326 s later on the AYN Thor, with no feedback in between.",
       "publishedAt": 1791313122000
-    },
-    {
-      "commit": "08559a02f8b0d965117ea1f923919533cda0cd8b",
-      "title": "Windows components: install .msi packages (XNA, PhysX, GFWL, MSXML...) without running them",
-      "summary": "Windows components can now install Windows Installer packages (.msi) right in the menu, like the DLL-copy components: flip the switch, it downloads and installs. These were all greyed out as \"needs a Windows installer\":",
-      "publishedAt": 1791310868000
     }
   ],
   "tests": [
