@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791401649283,
+  "generatedAt": 1791401692396,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -501,55 +501,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-359/DroidDeck-PR.359-40461ca-ludashi.apk",
           "size": 37609864,
           "sha256": "917b71966a1f43a8e712ca02a754bf4177c673819c682aada33a0466539e72f3",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-229",
-      "title": "perf(storage): use verified truncate fallback for SD allocation",
-      "summary": "When fallocate(mode 0) is unsupported, use ftruncate only after a per-library probe confirms that extension reserves its blocks; otherwise preserve the original error. The posixfallocate wrapper tries the kernel operation first so glibc cannot enter its byte-at-a-time emulation on that verified library. Diagnostics remain optional. Identify removable storage from its configured Android path",
-      "commit": "76825f3d052aafcf1f9184862962a7c95781c190",
-      "pr": 229,
-      "version": null,
-      "versionCode": 11,
-      "publishedAt": 1791214749000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-229",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.229-76825f3.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-76825f3.apk",
-          "size": 36981858,
-          "sha256": "281395af6d99fa06da4d105467b6c8874cbe98781023384ceeccc8d4b0f6f944",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.229-76825f3-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-76825f3-pubg.apk",
-          "size": 36981858,
-          "sha256": "20aa7a1b7d5fcea0fb309a245bd63d0148bebddc2110996e499c6fbde7a5c20e",
-          "packageName": "com.tencent.ig",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.229-76825f3-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-76825f3-antutu.apk",
-          "size": 36981858,
-          "sha256": "f0e160fff25fb3208a26cb4c5ac175b67ad53c1826f9fd676cbc6abd0db0cc1a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.229-76825f3-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-229/DroidDeck-PR.229-76825f3-ludashi.apk",
-          "size": 36981858,
-          "sha256": "5ab385cc22d6201dfa5d0bc5ac108fa6cb55998849519e01324a24c3290ca410",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
