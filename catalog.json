@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791371930456,
+  "generatedAt": 1791372024446,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-389",
+      "title": "Land taps and the pointer on what is drawn under them",
+      "summary": "When the session's output is a different shape from the panel and Stretch is off, taps and the pointer land away from what is under them (#256, #237). Examples are 16:9 on a 16:10 or 4:3 screen, or a fixed resolution on a tall phone. A tap is right at the centre and drifts toward the edges, by up to a bar's height.",
+      "commit": "e10c7d567ecd7ec471334b909287c460ac091266",
+      "pr": 389,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791371976000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-389",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.389-e10c7d5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-389/DroidDeck-PR.389-e10c7d5.apk",
+          "size": 38183403,
+          "sha256": "36a4f59a927116de6a6d212b0b42bae5d9e287c340559fcbd8ff66890b5df9d9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.389-e10c7d5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-389/DroidDeck-PR.389-e10c7d5-pubg.apk",
+          "size": 38183403,
+          "sha256": "590c4d19c7268a7de69ec87f1ead8103da8a1e4d3e803ae8a5a058b09f396b2a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.389-e10c7d5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-389/DroidDeck-PR.389-e10c7d5-antutu.apk",
+          "size": 38183403,
+          "sha256": "6d08aba53956b6ab305bad1289accd0985f78498117bc24a4b67311b31625008",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.389-e10c7d5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-389/DroidDeck-PR.389-e10c7d5-ludashi.apk",
+          "size": 38183403,
+          "sha256": "c8188397506910758789fb69c766e22036f0e5111c88a627689449ea9f9f6199",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-388",
       "title": "Make Games folders Steam libraries and skip the zero-filled reservation",
