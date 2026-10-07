@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791379991534,
+  "generatedAt": 1791380340807,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cf47910",
-    "title": "File manager: the Linux system's root under Storage",
-    "summary": "The file manager's Storage list (the left rail and the drive drop-down) gets a Linux system entry that opens the root of the Linux system the sessions run in: the app's files/linuxfs, which the desktop sees as /.",
-    "commit": "cf4791088194de6d981d323e12fcf9f34e830361",
+    "tag": "main-6d04849",
+    "title": "Make Games folders Steam libraries and skip the zero-filled reservation",
+    "summary": "\u2022 Installs to an SD card or USB drive sat at Reserving space (#186, and the reservation stall in #164). Steam preallocates every download, and Android's FUSE storage refuses fallocate, so Steam falls back to ftruncate:\n\u2022 exFAT zero-fills the whole file through FUSE before the download starts. SteamWorld Dig took about 3.5 minutes just to reserve.\n\u2022 NTFS answers EPERM, and Steam cancels the install as \"not enough disk space\".\n\u2022 A Games folder chosen in Settings \u2192 Games was only scanned for imports; Steam could not install into it.\n\u2022 With the card or drive removed, games mapped to it were still listed and offered as broken installs.",
+    "commit": "6d0484941e19b1769f21b488dec52071274d3872",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791375409000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cf47910",
+    "publishedAt": 1791380314000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6d04849",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cf47910.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf47910/DroidDeck-main-cf47910.apk",
-        "size": 38175211,
-        "sha256": "f0eb5a5848154d259c1516944c6bc28b5c0eb97b66fa82a2f533c986e6ef4a10",
+        "name": "DroidDeck-main-6d04849.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d04849/DroidDeck-main-6d04849.apk",
+        "size": 38179307,
+        "sha256": "ff5611ddf2784d9c38be6c0310deed978901d4180fde0c7ecd4e384997651dde",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cf47910-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf47910/DroidDeck-main-cf47910-pubg.apk",
-        "size": 38175211,
-        "sha256": "bfb4a017ff094ccc8f9274e5491c80dbb682893c6fb59c9339138e5bcb773861",
+        "name": "DroidDeck-main-6d04849-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d04849/DroidDeck-main-6d04849-pubg.apk",
+        "size": 38179307,
+        "sha256": "c5ed3e95221f817c09fb1bee8d3d5b76df104cd1abd5a4195833939659ef08ad",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cf47910-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf47910/DroidDeck-main-cf47910-antutu.apk",
-        "size": 38175211,
-        "sha256": "9dd50edddcd65987b1b8d3aefb461a13a71cecb1e2edef3105096bd7d71504cf",
+        "name": "DroidDeck-main-6d04849-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d04849/DroidDeck-main-6d04849-antutu.apk",
+        "size": 38179307,
+        "sha256": "a78296f5caa40378b23f936b50f1849001831aa43a5702e81fa7f76d96ef3dfa",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cf47910-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf47910/DroidDeck-main-cf47910-ludashi.apk",
-        "size": 38175211,
-        "sha256": "4f947fa4770b84b7bb5e5e07e74f5de71a816b36c218e18f206531fc4be97f73",
+        "name": "DroidDeck-main-6d04849-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d04849/DroidDeck-main-6d04849-ludashi.apk",
+        "size": 38179307,
+        "sha256": "7d33050da1043ba29fb68f0d8973785d422ff5e6553007796b7bcd25de51b54f",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6d0484941e19b1769f21b488dec52071274d3872",
+      "title": "Make Games folders Steam libraries and skip the zero-filled reservation",
+      "summary": "\u2022 Installs to an SD card or USB drive sat at Reserving space (#186, and the reservation stall in #164). Steam preallocates every download, and Android's FUSE storage refuses fallocate, so Steam falls back to ftruncate:\n\u2022 exFAT zero-fills the whole file through FUSE before the download starts. SteamWorld Dig took about 3.5 minutes just to reserve.\n\u2022 NTFS answers EPERM, and Steam cancels the install",
+      "publishedAt": 1791380314000
+    },
     {
       "commit": "cf4791088194de6d981d323e12fcf9f34e830361",
       "title": "File manager: the Linux system's root under Storage",
@@ -155,12 +161,6 @@
       "title": "Fix Audio Crackling on Pulse & DirectAudio",
       "summary": "",
       "publishedAt": 1791321358000
-    },
-    {
-      "commit": "1e877fa602a2accc093dc17fa03023fa552c9ff0",
-      "title": "fix: give each new session the current screen's output size",
-      "summary": "On the AYN Thor, a Steam session on the bottom screen (1240x1080, Match screen) showed the client as a 16:9 band with bars above and below.",
-      "publishedAt": 1791314649000
     }
   ],
   "tests": [
