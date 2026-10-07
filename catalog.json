@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791339462646,
+  "generatedAt": 1791341230422,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-372",
+      "title": "fix: revert gamescope patch 0113 now that games run on their own Xwayland",
+      "summary": "Typing does nothing in the text box Steam shows over a game, the \"Please enter text / Submit\" dialog a game opens through Steam's text-input API. This happens with both the Android keyboard and DroidDeck's on-screen keyboard. Typing in Steam's own search bar still works. Reported on a Galaxy Z Fold7 on nightly (two Xwayland servers), with a screen recording and logs.",
+      "commit": "3212a434d7911531272cd7ff38acca4525c0c69d",
+      "pr": 372,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791341200000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-372",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.372-3212a43.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-372/DroidDeck-PR.372-3212a43.apk",
+          "size": 38167019,
+          "sha256": "44f7ba4526fd1272d89b9347143f031c932717cb7bedd4c0bde4e8bc01dcac45",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.372-3212a43-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-372/DroidDeck-PR.372-3212a43-pubg.apk",
+          "size": 38167019,
+          "sha256": "8153dce9bc74c0b99ea672f97013b6e8861813bfd282f602f55e0615daee5713",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.372-3212a43-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-372/DroidDeck-PR.372-3212a43-antutu.apk",
+          "size": 38167019,
+          "sha256": "a04786ac3a65b1cebc162ba1912ab80c7f9a2af2e3bcb6613ffad3b2897db451",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.372-3212a43-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-372/DroidDeck-PR.372-3212a43-ludashi.apk",
+          "size": 38167019,
+          "sha256": "d1e954fdde371e12af77762a064374c2651f330ebaf98702bac98fd2523781ec",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-370",
       "title": "feat: add a Steam settings toggle for running games on their own Xwayland",
