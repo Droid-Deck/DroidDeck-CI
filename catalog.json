@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791383843277,
+  "generatedAt": 1791394952765,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-401",
+      "title": "fix: backport upstream gamescope fix for games left behind Steam's loading screen",
+      "summary": "Some Proton games open behind Steam on two Xwayland servers: the screen stays on Steam's black loading screen with ABORT GAME while the game runs and plays sound underneath. Reported on Discord for Skyrim SE and A Plague Tale: Innocence (RM11 Pro), and Burnout Paradise Remastered (RedMagic Astra 2). It is intermittent: Skyrim reproduced on the AYN Thor about once in six launches, on the first",
+      "commit": "b56bf6287ecaf97d14cda0cbfcee5a9a79bc5f47",
+      "pr": 401,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791394896000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-401",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.401-b56bf62.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-401/DroidDeck-PR.401-b56bf62.apk",
+          "size": 38195691,
+          "sha256": "5140a8f3e19dc53c194847c0a325b903d23f085bd5ac672f0f22bc843fe8e9d8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.401-b56bf62-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-401/DroidDeck-PR.401-b56bf62-pubg.apk",
+          "size": 38195691,
+          "sha256": "f9ad7743c6bca8d01cb216afc3a7c0af0a9be95482d4185957cc0fcb6e81f290",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.401-b56bf62-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-401/DroidDeck-PR.401-b56bf62-antutu.apk",
+          "size": 38195691,
+          "sha256": "0a482b0992a625b1eb3e545e5f451696df9aab13586fff73f94def60f6e348b5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.401-b56bf62-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-401/DroidDeck-PR.401-b56bf62-ludashi.apk",
+          "size": 38195691,
+          "sha256": "d886c5a3512f82799a024842b5a15eaf5005b11476472847011060ff662a2e5b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-396",
       "title": "Add Compose previews across DroidDeck UI",
