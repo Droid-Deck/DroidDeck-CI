@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791372024446,
+  "generatedAt": 1791372919673,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-391",
+      "title": "Let Steam draw at the session's full size above 1080p",
+      "summary": "Fixes the 1080p preset and Match screen coming up 16:9 on panels wider than 16:9 (2340x1080 reported on Discord; #309 has 1080p and Match screen \"stuck at 1920x1080\").",
+      "commit": "39b0b321986f38291d6307bb97245508fd562faa",
+      "pr": 391,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791372881000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-391",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.391-39b0b32.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-391/DroidDeck-PR.391-39b0b32.apk",
+          "size": 38183403,
+          "sha256": "ed9cfa1ba7935541d561104a4cdd18c2c6e21419a2b7c35c58139c1160c63b83",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.391-39b0b32-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-391/DroidDeck-PR.391-39b0b32-pubg.apk",
+          "size": 38183403,
+          "sha256": "8b96e28a63f4d4666015479859c888d4938c58b1c7e7c517e36f0d4d944a22d5",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.391-39b0b32-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-391/DroidDeck-PR.391-39b0b32-antutu.apk",
+          "size": 38183403,
+          "sha256": "67788c3bb59bd90831878eda58ce1d3c33e2a16724d69d69394b0ffae23f5652",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.391-39b0b32-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-391/DroidDeck-PR.391-39b0b32-ludashi.apk",
+          "size": 38183403,
+          "sha256": "43af512f3bd8c7127641fbae02761113988ac6d2132aa0a9e564cad37e31c1cf",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-389",
       "title": "Land taps and the pointer on what is drawn under them",
