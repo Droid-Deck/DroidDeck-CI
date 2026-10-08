@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791474262999,
+  "generatedAt": 1791474512362,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-442",
+      "title": "Add opt-in zRAM compression for the Steam client while a game runs",
+      "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
+      "commit": "a6ac06cd126ba66378fbadaeeaa51de023133e31",
+      "pr": 442,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791474452000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-442",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.442-a6ac06c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-a6ac06c.apk",
+          "size": 38261407,
+          "sha256": "2afd46308cbf4fac1f90e65de9c520796c5e0daa4a3177c0bd7d6b503ba5cc5c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.442-a6ac06c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-a6ac06c-pubg.apk",
+          "size": 38261407,
+          "sha256": "dc638b4ac69bf8d37393b1c92191a4a534ff3c76e5a35103514981fed574c611",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.442-a6ac06c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-a6ac06c-antutu.apk",
+          "size": 38261407,
+          "sha256": "6dc8bc13c117abc3ddaa2050769983943957e71e3fd857f3505f94959e94c818",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.442-a6ac06c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-a6ac06c-ludashi.apk",
+          "size": 38261407,
+          "sha256": "f290cf7e1c968cd436d8ecb575ff53b7fbdbdc8a15722a6b54118cb5da3d09a9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-439",
       "title": "DirectAudio from its own release: driver set per Proton interface (CachyOS fix), the Steam client's own DirectAudio sink, binaries out of tree",
