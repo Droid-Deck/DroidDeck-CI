@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791423556270,
+  "generatedAt": 1791423857978,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9310d19",
-    "title": "fix: backport upstream gamescope fix for games left behind Steam's loading screen",
-    "summary": "Some Proton games open behind Steam on two Xwayland servers: the screen stays on Steam's black loading screen with ABORT GAME while the game runs and plays sound underneath. Reported on Discord for Skyrim SE and A Plague Tale: Innocence (RM11 Pro), and Burnout Paradise Remastered (RedMagic Astra 2). It is intermittent: Skyrim reproduced on the AYN Thor about once in six launches, on the first",
-    "commit": "9310d198570e756cfccc9f09eece00e5fa7871e1",
+    "tag": "main-e070bd7",
+    "title": "fix: read droiddeck-env from ps",
+    "summary": "Move env var target to private storage",
+    "commit": "e070bd72e06ba691b48d58615b24119074be710d",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791401784000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9310d19",
+    "publishedAt": 1791423821000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e070bd7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9310d19.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9310d19/DroidDeck-main-9310d19.apk",
-        "size": 38183403,
-        "sha256": "84ff3ef4e9803ae85d6c05e22f138f3fe1de99c14b405a33d477cf92ea4b7682",
+        "name": "DroidDeck-main-e070bd7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e070bd7/DroidDeck-main-e070bd7.apk",
+        "size": 38195691,
+        "sha256": "94506b961b32577389ffc2269bf0e6d25139c4da46c65fed49999e57e7b1ced0",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9310d19-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9310d19/DroidDeck-main-9310d19-pubg.apk",
-        "size": 38183403,
-        "sha256": "5bca04df86fbb63bf30c06272ec6c9e7887b8d7c48da0203d22718905b61a2e0",
+        "name": "DroidDeck-main-e070bd7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e070bd7/DroidDeck-main-e070bd7-pubg.apk",
+        "size": 38195691,
+        "sha256": "268fe77f0ff950c21729a36541b53db069b4cd602051d9d2d6bb8eec65bfcdfe",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9310d19-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9310d19/DroidDeck-main-9310d19-antutu.apk",
-        "size": 38183403,
-        "sha256": "bacee56447ee03965ae53e5f3f4121e115409cabb89171fe128eb23ae61eee8e",
+        "name": "DroidDeck-main-e070bd7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e070bd7/DroidDeck-main-e070bd7-antutu.apk",
+        "size": 38195691,
+        "sha256": "23ef07294596fff49318e97eb45dd581c2cb6807bda444bf5f74079a62929be8",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9310d19-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9310d19/DroidDeck-main-9310d19-ludashi.apk",
-        "size": 38183403,
-        "sha256": "ac1f2a0187685412c9bec9106364b5cced3d53f8e2c119571791a26270e173e6",
+        "name": "DroidDeck-main-e070bd7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e070bd7/DroidDeck-main-e070bd7-ludashi.apk",
+        "size": 38195691,
+        "sha256": "15ab7eb3e53fda966ffba52a6af05ffe45e20d56144ee442183c799a5fc9613a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e070bd72e06ba691b48d58615b24119074be710d",
+      "title": "fix: read droiddeck-env from ps",
+      "summary": "Move env var target to private storage",
+      "publishedAt": 1791423821000
+    },
     {
       "commit": "9310d198570e756cfccc9f09eece00e5fa7871e1",
       "title": "fix: backport upstream gamescope fix for games left behind Steam's loading screen",
@@ -155,12 +161,6 @@
       "title": "Draw Steam's CJK and Thai text with the device's fonts",
       "summary": "With System default on a phone set to Chinese (also Japanese or Korean), Steam opens in that language, but every character is drawn as a box.",
       "publishedAt": 1791354604000
-    },
-    {
-      "commit": "61953c4f7b11725fb315efa8c10ce2635bdef48d",
-      "title": "File manager: up/back from any start folder, plus a \"..\" up row",
-      "summary": "Opening the File Manager at a specific folder (a game's Game files button, Proton prefix, the saves folder, or the file picker reopening at its last folder) left you stuck there:\n\u2022 the \u2190 up arrow was greyed out,\n\u2022 the Back gesture closed the screen instead of going up a folder.",
-      "publishedAt": 1791346290000
     }
   ],
   "tests": [
