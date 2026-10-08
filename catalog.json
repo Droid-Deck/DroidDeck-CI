@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791473144075,
+  "generatedAt": 1791474262999,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-439",
+      "title": "DirectAudio from its own release: driver set per Proton interface (CachyOS fix), the Steam client's own DirectAudio sink, binaries out of tree",
+      "summary": "Supersedes #434 (same change, squashed to one commit on current main).",
+      "commit": "c74056d8598074121d11a9a23773d2fce1d083c0",
+      "pr": 439,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791474203000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-439",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.439-c74056d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-c74056d.apk",
+          "size": 38282261,
+          "sha256": "d09b4a61d125f49dbb1b68f73ce999e25ad285b8685a186586c70669fdfe2e00",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.439-c74056d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-c74056d-pubg.apk",
+          "size": 38282261,
+          "sha256": "8703bf6d43be3c26c6de3a3fe95e05460961dfb1de59be2d4323061c188c2fc9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.439-c74056d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-c74056d-antutu.apk",
+          "size": 38282261,
+          "sha256": "3252cbab3be4eb2da15d518dce0ac7833def9e47783e85d8d868e6fc19f84e16",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.439-c74056d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-c74056d-ludashi.apk",
+          "size": 38282261,
+          "sha256": "98355c3cf1a121914b050ade38549dd907ef563919e20ef3c481a3ac314bc630",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-389",
       "title": "Land taps and the pointer on what is drawn under them",
       "summary": "When the session's output is a different shape from the panel and Stretch is off, taps and the pointer land away from what is under them (#256, #237). Examples are 16:9 on a 16:10 or 4:3 screen, or a fixed resolution on a tall phone. A tap is right at the centre and drifts toward the edges, by up to a bar's height.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-389/DroidDeck-PR.389-4412eb4-ludashi.apk",
           "size": 38253215,
           "sha256": "809d30b12cf12f5aa4bce02f117830090b319034570cd589f22544c865ab070b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-439",
-      "title": "DirectAudio from its own release: driver set per Proton interface (CachyOS fix), the Steam client's own DirectAudio sink, binaries out of tree",
-      "summary": "Supersedes #434 (same change, squashed to one commit on current main).",
-      "commit": "18602befa29af0143f36b11e706017d5eb0cabcd",
-      "pr": 439,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791472825000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-439",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.439-18602be.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-18602be.apk",
-          "size": 38282261,
-          "sha256": "76445c9a973407a9fa4e7c52b1535e85e4e4a6e2876cbef6363ea11c25942198",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.439-18602be-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-18602be-pubg.apk",
-          "size": 38282261,
-          "sha256": "847cfa813abc29c7969fe07427eaf86a642d07291f6a50591f31c4078e153000",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.439-18602be-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-18602be-antutu.apk",
-          "size": 38282261,
-          "sha256": "eeaa4959fd737ac805f1633fe3bc9486d20285631ad23a241e5e510cfc97ec76",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.439-18602be-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-18602be-ludashi.apk",
-          "size": 38282261,
-          "sha256": "19bc6dd75ea9ab115038ff2a1d258e80a536d06e0e5215c9c57c3a3829ec2919",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
