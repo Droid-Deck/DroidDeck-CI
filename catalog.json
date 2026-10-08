@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791432671814,
+  "generatedAt": 1791432852714,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-7e81668",
-    "title": "Polish Spanish translation",
-    "summary": "Merges current main and updates five Spanish strings for clearer Nightlies, overlay, and Wi-Fi discovery wording.",
-    "commit": "7e81668de2be2f0bcea52202523c8d8a8f0af63b",
+    "tag": "main-7c08cb5",
+    "title": "Share font defaults across runtime sessions",
+    "summary": "Run fontconfig setup before Steam, gamescope, and the desktop in every Linux runtime session. The shared helper links the runtime's default rules and writes DroidDeck's DejaVu aliases to an owned 65-droiddeck-default-fonts.conf; the existing Android font directory bind and language-specific CJK/Thai fallback rules remain in place.",
+    "commit": "7c08cb58ae5dca6c3bd2a5c1757e4ba5978df61c",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791432636000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7e81668",
+    "publishedAt": 1791432826000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7c08cb5",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-7e81668.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7e81668/DroidDeck-main-7e81668.apk",
-        "size": 38224453,
-        "sha256": "e7336fa2e16818db2081a06498a7d13d20aa3082a97b5ca19810167b259e2029",
+        "name": "DroidDeck-main-7c08cb5.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c08cb5/DroidDeck-main-7c08cb5.apk",
+        "size": 38212255,
+        "sha256": "a96e481c74e7f055b47b6d882d53328c20c06f20f5518ac6db969243e020649b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-7e81668-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7e81668/DroidDeck-main-7e81668-pubg.apk",
-        "size": 38224453,
-        "sha256": "cdd398d300b039aa1b1342d8369571db491de5c104a7222c2bd3c948683046b2",
+        "name": "DroidDeck-main-7c08cb5-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c08cb5/DroidDeck-main-7c08cb5-pubg.apk",
+        "size": 38212255,
+        "sha256": "ac5062df99502133dbec048b20f64c400b1ab376e66636037f261006968ec2e2",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-7e81668-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7e81668/DroidDeck-main-7e81668-antutu.apk",
-        "size": 38224453,
-        "sha256": "2596398215e0d182898fdc3c82e63678ea9e10157d7aa82adba92afaf07166ae",
+        "name": "DroidDeck-main-7c08cb5-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c08cb5/DroidDeck-main-7c08cb5-antutu.apk",
+        "size": 38212255,
+        "sha256": "efb455b35d8653fbd8e351b16d4ac87dff82cc3bd506bf685aa8da510ac98ae1",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-7e81668-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7e81668/DroidDeck-main-7e81668-ludashi.apk",
-        "size": 38224453,
-        "sha256": "d631320ebeea0aed58fa2126ec3881bf2e2591761246d5aa0f1ca4baf4fed817",
+        "name": "DroidDeck-main-7c08cb5-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c08cb5/DroidDeck-main-7c08cb5-ludashi.apk",
+        "size": 38212255,
+        "sha256": "3afc2d91e1f4f00bda3325a5fbe2e38bf319650564df404f2ae304a4f20c3dd4",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,18 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "7c08cb58ae5dca6c3bd2a5c1757e4ba5978df61c",
+      "title": "Share font defaults across runtime sessions",
+      "summary": "Run fontconfig setup before Steam, gamescope, and the desktop in every Linux runtime session. The shared helper links the runtime's default rules and writes DroidDeck's DejaVu aliases to an owned 65-droiddeck-default-fonts.conf; the existing Android font directory bind and language-specific CJK/Thai fallback rules remain in place.",
+      "publishedAt": 1791432826000
+    },
+    {
+      "commit": "343a516e1a84933897989ff88913d5d739a31204",
+      "title": "Update Russian translation",
+      "summary": "Adds 99 Russian translations for strings still present in the current English resources and improves existing Russian copy. Incorporates current-main behavior for automatic storage selection and second-library imports, and clarifies frame-limit and Steam native-suspend descriptions.",
+      "publishedAt": 1791432818000
+    },
     {
       "commit": "7e81668de2be2f0bcea52202523c8d8a8f0af63b",
       "title": "Polish Spanish translation",
@@ -149,18 +161,6 @@
       "title": "File manager: the Linux system's root under Storage",
       "summary": "The file manager's Storage list (the left rail and the drive drop-down) gets a Linux system entry that opens the root of the Linux system the sessions run in: the app's files/linuxfs, which the desktop sees as /.",
       "publishedAt": 1791375409000
-    },
-    {
-      "commit": "a78d5cb600d3ffd24c0352b7aa696af1d633148c",
-      "title": "Let Steam draw at the session's full size above 1080p",
-      "summary": "Fixes the 1080p preset and Match screen coming up 16:9 on panels wider than 16:9 (2340x1080 reported on Discord; #309 has 1080p and Match screen \"stuck at 1920x1080\").",
-      "publishedAt": 1791374345000
-    },
-    {
-      "commit": "206c8a88462a7400635c24b8de53dc8b34454b50",
-      "title": "Add Steam background download mode",
-      "summary": "Adds an opt-in Steam background-download toggle. It allows active Steam downloads to continue while DroidDeck is hidden or the screen is off, without introducing a separate suspend policy.",
-      "publishedAt": 1791369808000
     }
   ],
   "tests": [
