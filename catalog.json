@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791477757637,
+  "generatedAt": 1791481322985,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-446",
+      "title": "feat: install Flatpak apps from a .flatpak file",
+      "summary": "Flathub no longer carries some apps (OpenNOW, for one), which ship as a single .flatpak bundle instead. The Desktop page's Add dialog could only install from Flathub; now its Flatpak tab also takes a .flatpak file.",
+      "commit": "b14e26a858290d3d3792a877ced976ebaac1a28b",
+      "pr": 446,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791481268000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-446",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.446-b14e26a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-446/DroidDeck-PR.446-b14e26a.apk",
+          "size": 38278165,
+          "sha256": "729d9a4131ae4ab7c920ca587926bb455bc7aca47e02f84f506e692d8968ba72",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.446-b14e26a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-446/DroidDeck-PR.446-b14e26a-pubg.apk",
+          "size": 38278165,
+          "sha256": "3288effad68fa722dbc0a2706c7fcf8c9909317cbed7c1d7d505ca0716445238",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.446-b14e26a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-446/DroidDeck-PR.446-b14e26a-antutu.apk",
+          "size": 38278165,
+          "sha256": "02d5da8a17970180dd5dc3524c05063e7fa06b88785818e57f8b6da7900bfd73",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.446-b14e26a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-446/DroidDeck-PR.446-b14e26a-ludashi.apk",
+          "size": 38278165,
+          "sha256": "f1d127233968781c595f7bba19dc2d1e01a466fc77fb0ee99d6b3e14d53bbf6a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-442",
       "title": "Add opt-in zRAM compression for the Steam client while a game runs",
