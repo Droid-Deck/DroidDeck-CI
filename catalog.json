@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791493432402,
+  "generatedAt": 1791498405358,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-431",
+      "title": "Steam's touch controller as on-screen controls (beta)",
+      "summary": "Adds Touch controls: Steam (beta) to the session drawer. In a Steam session it replaces DroidDeck's on-screen pad with Steam's own touch controller, the one the Steam Link apps use. Bindings, action sets, per-game touch configs, Valve's templates, official and community configs and Steam Cloud sync are all Steam's. DroidDeck draws the controls and feeds the controller's input. Off by default.",
+      "commit": "1bd561531aaf4e8c70948e7ba41f6c5832a17c41",
+      "pr": 431,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791498367000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-431",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.431-1bd5615.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-1bd5615.apk",
+          "size": 38364181,
+          "sha256": "e628c0c2e962f992f61de44d33375184ecedf52b22c71129b1f2385de645e4b7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.431-1bd5615-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-1bd5615-pubg.apk",
+          "size": 38364181,
+          "sha256": "daeae6ee77ae6edbdfd8935f331b78a78382843dad995ebeab7c08e9c152eba7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.431-1bd5615-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-1bd5615-antutu.apk",
+          "size": 38364181,
+          "sha256": "4ddbce9f399ec562b8a391dde8a6e2e7152df1e362122ebede4b059aa7a023e6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.431-1bd5615-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-1bd5615-ludashi.apk",
+          "size": 38364181,
+          "sha256": "fcdf2e257c8c3746be381e3c3c74c67a323ccfce2b9b4e9e41cfc2252f48d385",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-454",
       "title": "fix: proot fast path hands opendir of a directory symlink to proot",
       "summary": "A guest opendir() (Python os.listdir/os.scandir, ls, \u2026) of a path whose last component is a symlink to a directory failed with ENOTDIR whenever the proot fast path was active.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-942bdf9-ludashi.apk",
           "size": 38298809,
           "sha256": "39eb837a3c6c815dbc1550accc47982d210e689c9e19a2ed85501ee28716be72",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-431",
-      "title": "Steam's touch controller as on-screen controls (beta)",
-      "summary": "Adds Touch controls: Steam (beta) to the session drawer. In a Steam session it replaces DroidDeck's on-screen pad with Steam's own touch controller, the one the Steam Link apps use. Bindings, action sets, per-game touch configs, Valve's templates, official and community configs and Steam Cloud sync are all Steam's. DroidDeck draws the controls and feeds the controller's input. Off by default.",
-      "commit": "64d72913faa40872b86d2bff916792fbed33648e",
-      "pr": 431,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791491612000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-431",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.431-64d7291.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-64d7291.apk",
-          "size": 38351893,
-          "sha256": "19e13e235dd5357582701b4d282ca9d09bdbc279260ab182523768b1eccd879f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.431-64d7291-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-64d7291-pubg.apk",
-          "size": 38351893,
-          "sha256": "b907474f20af59be95725b80299174b7a52c4bd2b565f02bad2500d092db3322",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.431-64d7291-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-64d7291-antutu.apk",
-          "size": 38351893,
-          "sha256": "13ceae6a7d3c58a69efe727eaadc4c00b1b87fb15340b4d5b932561248478c1a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.431-64d7291-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-64d7291-ludashi.apk",
-          "size": 38351893,
-          "sha256": "e7e26b723c880436ab3fbb66fb1bd60debcaa1efb92c582ea83afa8c1a1edebb",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
