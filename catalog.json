@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791433139025,
+  "generatedAt": 1791433557159,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-400",
+      "title": "Launch the executable a Store package declares",
+      "summary": "Store and GDK folders name their game in MicrosoftGame.config or appxmanifest.xml. Picking the top-level Unreal bootstrap instead failed with \"CreateProcess() returned 2\" when the Store had renamed the shipping exe.",
+      "commit": "d03426e959278e57f332f6f28b7231fd23eb0977",
+      "pr": 400,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791433521000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-400",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.400-d03426e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-d03426e.apk",
+          "size": 38183403,
+          "sha256": "f444bee799cd605a22612a464193acab3e0c46f5e0dce6be4ba60665dbb561df",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.400-d03426e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-d03426e-pubg.apk",
+          "size": 38183403,
+          "sha256": "abfb37426c814006c29793b95ca12cae1de4bff8042050ecdb4283da058bacbf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.400-d03426e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-d03426e-antutu.apk",
+          "size": 38183403,
+          "sha256": "80cf94742f323eb27357efd115916e84927d8ba4b5879017b5c8c5cf07537131",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.400-d03426e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-d03426e-ludashi.apk",
+          "size": 38183403,
+          "sha256": "66403b865e0e7aaa360ddb49de2ff7a2a1c9039c79237a36aae4932202169773",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-410",
       "title": "fix: keep Steam's directory listings on FUSE libraries",
       "summary": "Before it creates, moves or deletes a content file the Steam client lists the whole destination directory about ten times to match names case-insensitively. On Android's FUSE storage every listing goes through the media provider, so reserving space grew quadratically with the number of files: 33 minutes for Haunted Paws Demo (3,938 files) in a Games folder.",
@@ -172,7 +221,7 @@
       "pr": 410,
       "version": null,
       "versionCode": 11,
-      "publishedAt": 1791427342000,
+      "publishedAt": 1791433520000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-410",
       "apks": {
         "com.droiddeck.launcher": {
