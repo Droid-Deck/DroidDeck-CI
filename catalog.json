@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791463859737,
+  "generatedAt": 1791464264682,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-679948e",
-    "title": "Include PR descriptions and queue catalog updates",
-    "summary": "",
-    "commit": "679948e792ee51514d0c2944b575541d6288b71b",
+    "tag": "main-6e2966b",
+    "title": "fix: keep Steam's directory listings on FUSE libraries",
+    "summary": "Before it creates, moves or deletes a content file the Steam client lists the whole destination directory about ten times to match names case-insensitively. On Android's FUSE storage every listing goes through the media provider, so reserving space grew quadratically with the number of files: 33 minutes for Haunted Paws Demo (3,938 files) in a Games folder.",
+    "commit": "6e2966be4339415efbcc7b6dd1bda38dba9d154a",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791435162000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-679948e",
+    "publishedAt": 1791464209000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6e2966b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-679948e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-679948e/DroidDeck-main-679948e.apk",
-        "size": 38224543,
-        "sha256": "e42e3476aadd475ce9fa2fd5c569ac11a96200aa88e38c80fe3abeca1b8099d8",
+        "name": "DroidDeck-main-6e2966b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e2966b/DroidDeck-main-6e2966b.apk",
+        "size": 38253215,
+        "sha256": "819fe014abd156da291b6f0a915969c00878fbf3e64d163b0b3626e6332b9b43",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-679948e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-679948e/DroidDeck-main-679948e-pubg.apk",
-        "size": 38224543,
-        "sha256": "83d7c828714d5cacad3f81d55a67b8c4eb64aa5a3c94902aa876d77f7d67d509",
+        "name": "DroidDeck-main-6e2966b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e2966b/DroidDeck-main-6e2966b-pubg.apk",
+        "size": 38253215,
+        "sha256": "296535bedab26e111bc23c95ad29015edd18b8696e4e41c8ac7d215a1b3190ef",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-679948e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-679948e/DroidDeck-main-679948e-antutu.apk",
-        "size": 38224543,
-        "sha256": "0ff6586d1711f6f325505d4ca5e7000ddbb209651a86956d42fae9b640cdefcf",
+        "name": "DroidDeck-main-6e2966b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e2966b/DroidDeck-main-6e2966b-antutu.apk",
+        "size": 38253215,
+        "sha256": "73b5a999bc0fbcbf35f0a0781b03e13a6bbfa535d9a38d409db1cadd23565c67",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-679948e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-679948e/DroidDeck-main-679948e-ludashi.apk",
-        "size": 38224543,
-        "sha256": "4923025579db0b6d43139f6fa9dd397c4784e68789577f7beef8c2f6b75a36a9",
+        "name": "DroidDeck-main-6e2966b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e2966b/DroidDeck-main-6e2966b-ludashi.apk",
+        "size": 38253215,
+        "sha256": "2cfe520820a1d3366ea3f0120171e8ead6bf872c62df9e2f8471528f64ce3c96",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6e2966be4339415efbcc7b6dd1bda38dba9d154a",
+      "title": "fix: keep Steam's directory listings on FUSE libraries",
+      "summary": "Before it creates, moves or deletes a content file the Steam client lists the whole destination directory about ten times to match names case-insensitively. On Android's FUSE storage every listing goes through the media provider, so reserving space grew quadratically with the number of files: 33 minutes for Haunted Paws Demo (3,938 files) in a Games folder.",
+      "publishedAt": 1791464209000
+    },
     {
       "commit": "679948e792ee51514d0c2944b575541d6288b71b",
       "title": "Include PR descriptions and queue catalog updates",
@@ -155,12 +161,6 @@
       "title": "fix: read droiddeck-env from ps",
       "summary": "Move env var target to private storage",
       "publishedAt": 1791423821000
-    },
-    {
-      "commit": "9310d198570e756cfccc9f09eece00e5fa7871e1",
-      "title": "fix: backport upstream gamescope fix for games left behind Steam's loading screen",
-      "summary": "Some Proton games open behind Steam on two Xwayland servers: the screen stays on Steam's black loading screen with ABORT GAME while the game runs and plays sound underneath. Reported on Discord for Skyrim SE and A Plague Tale: Innocence (RM11 Pro), and Burnout Paradise Remastered (RedMagic Astra 2). It is intermittent: Skyrim reproduced on the AYN Thor about once in six launches, on the first",
-      "publishedAt": 1791401784000
     }
   ],
   "tests": [
