@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791483718323,
+  "generatedAt": 1791486370973,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-431",
+      "title": "Steam's touch controller as on-screen controls (beta)",
+      "summary": "Adds Touch controls: Steam (beta) to the session drawer. In a Steam session it replaces DroidDeck's on-screen pad with Steam's own touch controller, the one the Steam Link apps use. Bindings, action sets, per-game touch configs, Valve's templates, official and community configs and Steam Cloud sync are all Steam's. DroidDeck draws the controls and feeds the controller's input. Off by default.",
+      "commit": "1b31899896901b834252ad1ebc5f54910f9a8685",
+      "pr": 431,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791486328000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-431",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.431-1b31899.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-1b31899.apk",
+          "size": 38351893,
+          "sha256": "d673f80d2b28957f5001750b3eab464cb9fcda5193f834909e3b2d41cc6277b9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.431-1b31899-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-1b31899-pubg.apk",
+          "size": 38351893,
+          "sha256": "4ce4ad844c5375c8b0895590e64710720fde7d53b083065d55db40c8ddcea2ba",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.431-1b31899-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-1b31899-antutu.apk",
+          "size": 38351893,
+          "sha256": "e738b138b6cafb94c9387d876f86a056c70419b2a9c20555c9df625b00b236d6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.431-1b31899-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-1b31899-ludashi.apk",
+          "size": 38351893,
+          "sha256": "6310773a2d1507e2373a309e390b7f46947db66c2e1ed4e0c5ee32f43526faea",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-442",
       "title": "Add opt-in zRAM compression for the Steam client while a game runs",
       "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
@@ -209,55 +258,6 @@
           "sha256": "f290cf7e1c968cd436d8ecb575ff53b7fbdbdc8a15722a6b54118cb5da3d09a9",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-431",
-      "title": "Steam's touch controller as on-screen controls (beta)",
-      "summary": "Adds Touch controls: Steam (beta) to the session drawer. In a Steam session it replaces DroidDeck's on-screen pad with Steam's own touch controller, the one the Steam Link apps use. Bindings, action sets, per-game touch configs, Valve's templates, official and community configs and Steam Cloud sync are all Steam's. DroidDeck draws the controls and feeds the controller's input. Off by default.",
-      "commit": "38a84a8e8f48142ba5e17f02528651176f120692",
-      "pr": 431,
-      "version": null,
-      "versionCode": 11,
-      "publishedAt": 1791466076000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-431",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.431-38a84a8.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-38a84a8.apk",
-          "size": 38326943,
-          "sha256": "3a6f0b4e4049c039501e33cc45e33bdd9bddbc197926d1227bd5daa14a48ac27",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.431-38a84a8-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-38a84a8-pubg.apk",
-          "size": 38326943,
-          "sha256": "5f4496b5b6381356a309c2208df2158ebc5bedc056eaad25be44746e978f9659",
-          "packageName": "com.tencent.ig",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.431-38a84a8-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-38a84a8-antutu.apk",
-          "size": 38326943,
-          "sha256": "7820c7f7077ba0c0074c1f35cb4f0fa90dfd34cf2f0171e4698e3281984462db",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.431-38a84a8-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-38a84a8-ludashi.apk",
-          "size": 38326943,
-          "sha256": "0f2afefa7fc405bcffe7b730b926089f6b36c7e560d8855cfb92772adc9fd3f7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         }
       }
