@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791435196754,
+  "generatedAt": 1791456441926,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-431",
+      "title": "Steam's touch controller as on-screen controls (beta)",
+      "summary": "Adds Touch controls: Steam (beta) to the session drawer. In a Steam session it replaces DroidDeck's on-screen pad with Steam's own touch controller, the one the Steam Link apps use. Bindings, action sets, per-game touch configs, Valve's templates, official and community configs and Steam Cloud sync are all Steam's. DroidDeck draws the controls and feeds the controller's input. Off by default.",
+      "commit": "e637a2e0bd10219be3367827b33860b780a757cc",
+      "pr": 431,
+      "version": null,
+      "versionCode": 11,
+      "publishedAt": 1791456399000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-431",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.431-e637a2e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-e637a2e.apk",
+          "size": 38290079,
+          "sha256": "e2de2c4aa6b7052858987ffcf49e4629e1919d705df6c14f04bcc5bdb585d5c9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.431-e637a2e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-e637a2e-pubg.apk",
+          "size": 38290079,
+          "sha256": "44d6204098a023fadf0f7c8e001a38adc9de16be75748754698e7a8d9c2f2335",
+          "packageName": "com.tencent.ig",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.431-e637a2e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-e637a2e-antutu.apk",
+          "size": 38290079,
+          "sha256": "0d32987f59e29ed950d30c47d76faa9711ad8b755670f18c39d3c06ca70c660e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.431-e637a2e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-431/DroidDeck-PR.431-e637a2e-ludashi.apk",
+          "size": 38290079,
+          "sha256": "a084d7b65cb7eec773462d0b64370de577f7077293bee97c48301d7d53da0cac",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 11,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-410",
       "title": "fix: keep Steam's directory listings on FUSE libraries",
