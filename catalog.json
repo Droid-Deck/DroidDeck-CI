@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791434915469,
+  "generatedAt": 1791435196754,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e0fc836",
-    "title": "Fix PR build report lookup",
+    "tag": "main-679948e",
+    "title": "Include PR descriptions and queue catalog updates",
     "summary": "",
-    "commit": "e0fc8362b85f020204e8be903abd649778ecedaa",
+    "commit": "679948e792ee51514d0c2944b575541d6288b71b",
     "pr": 0,
     "version": null,
     "versionCode": 11,
-    "publishedAt": 1791434390000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e0fc836",
+    "publishedAt": 1791435162000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-679948e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e0fc836.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e0fc836/DroidDeck-main-e0fc836.apk",
+        "name": "DroidDeck-main-679948e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-679948e/DroidDeck-main-679948e.apk",
         "size": 38224543,
-        "sha256": "3ae5033a45d0f0584add2b040e0b741bdde3736699625c7adc44b4b3b3f0a28f",
+        "sha256": "e42e3476aadd475ce9fa2fd5c569ac11a96200aa88e38c80fe3abeca1b8099d8",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e0fc836-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e0fc836/DroidDeck-main-e0fc836-pubg.apk",
+        "name": "DroidDeck-main-679948e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-679948e/DroidDeck-main-679948e-pubg.apk",
         "size": 38224543,
-        "sha256": "33c7fe8466ae9a3708a8de47539e4ddd169c9baa73c5a9d301f8ef390e7a7c58",
+        "sha256": "83d7c828714d5cacad3f81d55a67b8c4eb64aa5a3c94902aa876d77f7d67d509",
         "packageName": "com.tencent.ig",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e0fc836-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e0fc836/DroidDeck-main-e0fc836-antutu.apk",
+        "name": "DroidDeck-main-679948e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-679948e/DroidDeck-main-679948e-antutu.apk",
         "size": 38224543,
-        "sha256": "6a3a60b359faec3dcdab16f026e0255344039b074d7d63d0cabcbdd93913482f",
+        "sha256": "0ff6586d1711f6f325505d4ca5e7000ddbb209651a86956d42fae9b640cdefcf",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e0fc836-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e0fc836/DroidDeck-main-e0fc836-ludashi.apk",
+        "name": "DroidDeck-main-679948e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-679948e/DroidDeck-main-679948e-ludashi.apk",
         "size": 38224543,
-        "sha256": "e6a5b704346a6da1fd088ef7abce16cec888b81f46377e0bf761b95ad92a3213",
+        "sha256": "4923025579db0b6d43139f6fa9dd397c4784e68789577f7beef8c2f6b75a36a9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 11,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "679948e792ee51514d0c2944b575541d6288b71b",
+      "title": "Include PR descriptions and queue catalog updates",
+      "summary": "",
+      "publishedAt": 1791435162000
+    },
     {
       "commit": "e0fc8362b85f020204e8be903abd649778ecedaa",
       "title": "Fix PR build report lookup",
@@ -155,12 +161,6 @@
       "title": "fix: backport upstream gamescope fix for games left behind Steam's loading screen",
       "summary": "Some Proton games open behind Steam on two Xwayland servers: the screen stays on Steam's black loading screen with ABORT GAME while the game runs and plays sound underneath. Reported on Discord for Skyrim SE and A Plague Tale: Innocence (RM11 Pro), and Burnout Paradise Remastered (RedMagic Astra 2). It is intermittent: Skyrim reproduced on the AYN Thor about once in six launches, on the first",
       "publishedAt": 1791401784000
-    },
-    {
-      "commit": "4454a6d39a7770eaab6b31241f24b308d79c12fe",
-      "title": "fix: keep Updates channels and status side by side",
-      "summary": "This lowers the cutoff to 600dp: the Thor is side by side again, and very narrow phones still stack.",
-      "publishedAt": 1791395682000
     }
   ],
   "tests": [
