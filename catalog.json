@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791475193560,
+  "generatedAt": 1791475905539,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-439",
+      "title": "DirectAudio from its own release: driver set per Proton interface (CachyOS fix), the Steam client's own DirectAudio sink, binaries out of tree",
+      "summary": "Supersedes #434 (same change, squashed to one commit on current main).",
+      "commit": "0855ab9bd9ac6f403082cf903b7a91a8f251a4e6",
+      "pr": 439,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791475869000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-439",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.439-0855ab9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-0855ab9.apk",
+          "size": 38274069,
+          "sha256": "1b2dee94a6e5016280a50f179ff6f1b98a4dbfb87a57e5c556d46f6d81bc35e3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.439-0855ab9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-0855ab9-pubg.apk",
+          "size": 38274069,
+          "sha256": "e56bf68094371ae55078664d7dac9c91be521b6f7cfbb7e1b3dd006a18128fff",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.439-0855ab9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-0855ab9-antutu.apk",
+          "size": 38274069,
+          "sha256": "d3e5f860568ce90be0e872f5b4508635850bd62117f2a922bc75645c380d8cb4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.439-0855ab9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-0855ab9-ludashi.apk",
+          "size": 38274069,
+          "sha256": "d72fbfe0a1b1884097422365c9785784ca2a21c59f2c5f42131da4930f5e3014",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-442",
       "title": "Add opt-in zRAM compression for the Steam client while a game runs",
       "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-a6ac06c-ludashi.apk",
           "size": 38261407,
           "sha256": "f290cf7e1c968cd436d8ecb575ff53b7fbdbdc8a15722a6b54118cb5da3d09a9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-439",
-      "title": "DirectAudio from its own release: driver set per Proton interface (CachyOS fix), the Steam client's own DirectAudio sink, binaries out of tree",
-      "summary": "Supersedes #434 (same change, squashed to one commit on current main).",
-      "commit": "c74056d8598074121d11a9a23773d2fce1d083c0",
-      "pr": 439,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791474203000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-439",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.439-c74056d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-c74056d.apk",
-          "size": 38282261,
-          "sha256": "d09b4a61d125f49dbb1b68f73ce999e25ad285b8685a186586c70669fdfe2e00",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.439-c74056d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-c74056d-pubg.apk",
-          "size": 38282261,
-          "sha256": "8703bf6d43be3c26c6de3a3fe95e05460961dfb1de59be2d4323061c188c2fc9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.439-c74056d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-c74056d-antutu.apk",
-          "size": 38282261,
-          "sha256": "3252cbab3be4eb2da15d518dce0ac7833def9e47783e85d8d868e6fc19f84e16",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.439-c74056d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-439/DroidDeck-PR.439-c74056d-ludashi.apk",
-          "size": 38282261,
-          "sha256": "98355c3cf1a121914b050ade38549dd907ef563919e20ef3c481a3ac314bc630",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
