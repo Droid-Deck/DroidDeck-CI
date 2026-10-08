@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791422313475,
+  "generatedAt": 1791423556270,
   "stable": {
     "tag": "0.3.1",
     "title": "DroidDeck 0.3.1",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-413",
-      "title": "fix: read droiddeck-env from the app's own files, not Download",
-      "summary": "Download/droiddeck-env was added to the Steam session's environment as written. Download is shared storage: any app with storage access can create or edit that file. A library-loading variable there (LDPRELOAD, VKICDFILENAMES, PATH, ...) would load that app's code inside DroidDeck's sandbox, next to the Steam client's saved login.",
-      "commit": "4d1a53ff68974e62aeb1e12caf64274b28ea4a3a",
-      "pr": 413,
-      "version": null,
-      "versionCode": 11,
-      "publishedAt": 1791422274000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-413",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.413-4d1a53f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-413/DroidDeck-PR.413-4d1a53f.apk",
-          "size": 38183403,
-          "sha256": "cd658386e71c7b2fdcacd13e2d0013b8787c42b453be604ffd0265008c32dd63",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.413-4d1a53f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-413/DroidDeck-PR.413-4d1a53f-pubg.apk",
-          "size": 38183403,
-          "sha256": "598531a421f3ecd1fc90993f2d08d8d8172bb24249eedaa39193112aa31c1fe2",
-          "packageName": "com.tencent.ig",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.413-4d1a53f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-413/DroidDeck-PR.413-4d1a53f-antutu.apk",
-          "size": 38183403,
-          "sha256": "c13c9eb35942097b208091a5a644a7c0419df2d676c8bee21bf57a2c57be7af5",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.413-4d1a53f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-413/DroidDeck-PR.413-4d1a53f-ludashi.apk",
-          "size": 38183403,
-          "sha256": "d4589bbf1263048c78baf4a6b652b0e539f9571a273e49b3360634af4e09f880",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-410",
       "title": "fix: keep Steam's directory listings on FUSE libraries",
