@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791571129527,
+  "generatedAt": 1791571838615,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-38e3fa2",
-    "title": "Logs: every log in app-private storage, shared as one scrubbed zip",
-    "summary": "Moves every DroidDeck log out of the public Download/DroidDeck folder into the app's private files/logs. Every existing \"Share logs\" action now bundles them into one zip that goes through a final scrub. One squashed commit over current main.",
-    "commit": "38e3fa2a33299a6b67127c34354c77981a610886",
+    "tag": "main-6e5932c",
+    "title": "Stores: seal the GOG, Epic and Amazon sign-in files with an Android Keystore key",
+    "summary": "The stores' sign-ins (files/stores/<store>/credentials.json: access and refresh tokens, account id and name) were plain JSON. Other Android apps could not read them, but every program in the Linux session (games, mods, Flatpak apps) runs as the app uid and could. This seals them with AES-256-GCM under a non-exportable AndroidKeyStore key (StrongBox when available), so the session only ever sees",
+    "commit": "6e5932cb682ebdec4c36ae253e839c52ab2376e7",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791567318000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-38e3fa2",
+    "publishedAt": 1791571788000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6e5932c",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-38e3fa2.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38e3fa2/DroidDeck-main-38e3fa2.apk",
+        "name": "DroidDeck-main-6e5932c.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e5932c/DroidDeck-main-6e5932c.apk",
         "size": 41387469,
-        "sha256": "8ba7b1fccf179ac9a9c17f6a8db596921a288814c8504094cb4a956b61fcb90e",
+        "sha256": "92e021f8739518689e0c207e053a5e69f52f5116855df45e4198625aeae44357",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-38e3fa2-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38e3fa2/DroidDeck-main-38e3fa2-pubg.apk",
+        "name": "DroidDeck-main-6e5932c-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e5932c/DroidDeck-main-6e5932c-pubg.apk",
         "size": 41387469,
-        "sha256": "6ffe0b50dd90364c126db3f36118eb748036eb0550eb6e8cf731491dc6d4e8ee",
+        "sha256": "5853d386ee9f1d29da94ace969380992f2a3cddec179e02546d27f455ce049d8",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-38e3fa2-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38e3fa2/DroidDeck-main-38e3fa2-antutu.apk",
+        "name": "DroidDeck-main-6e5932c-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e5932c/DroidDeck-main-6e5932c-antutu.apk",
         "size": 41387469,
-        "sha256": "fbce544a7d924e8691a430eefad0a1ad8aeb6a4484978d8122388cc3643331af",
+        "sha256": "addcc9a7ce05653a72f640de26d1ca6a8e8803e4d60426eae371e4ad5d01294b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-38e3fa2-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38e3fa2/DroidDeck-main-38e3fa2-ludashi.apk",
+        "name": "DroidDeck-main-6e5932c-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e5932c/DroidDeck-main-6e5932c-ludashi.apk",
         "size": 41387469,
-        "sha256": "f548ae2609b2c67bcd895054a41da28aca58ddf78d60c946994c8cc823fd7e25",
+        "sha256": "88ee0cfac69a70c7c1b9945195d0de821c090de9baf012fe16233ce85ac658e7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6e5932cb682ebdec4c36ae253e839c52ab2376e7",
+      "title": "Stores: seal the GOG, Epic and Amazon sign-in files with an Android Keystore key",
+      "summary": "The stores' sign-ins (files/stores/<store>/credentials.json: access and refresh tokens, account id and name) were plain JSON. Other Android apps could not read them, but every program in the Linux session (games, mods, Flatpak apps) runs as the app uid and could. This seals them with AES-256-GCM under a non-exportable AndroidKeyStore key (StrongBox when available), so the session only ever sees",
+      "publishedAt": 1791571788000
+    },
     {
       "commit": "38e3fa2a33299a6b67127c34354c77981a610886",
       "title": "Logs: every log in app-private storage, shared as one scrubbed zip",
@@ -155,12 +161,6 @@
       "title": "Desktop: Firefox skips shared-memory seals again (Android 16 tab crash)",
       "summary": "This restores the one line, next to the other MOZ exports the desktop already sets, with the original comment. No other change.",
       "publishedAt": 1791503500000
-    },
-    {
-      "commit": "134fa167fea3b3dd8a08152b3507b3afaefdfc35",
-      "title": "feat: install Flatpak apps from a .flatpak file",
-      "summary": "Flathub no longer carries some apps (OpenNOW, for one), which ship as a single .flatpak bundle instead. The Desktop page's Add dialog could only install from Flathub; now its Flatpak tab also takes a .flatpak file.",
-      "publishedAt": 1791483674000
     }
   ],
   "tests": [
