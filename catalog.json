@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791515764583,
+  "generatedAt": 1791516135934,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a76ba69",
-    "title": "fix: runtime removal never strands an undeletable leftover",
-    "summary": "Removing the Linux runtime could fail with \"Removal incomplete\" and leave the user stuck: Play, reinstalling and retrying the removal all failed the same way.",
-    "commit": "a76ba69217592bb9444928919bf2319197da340c",
+    "tag": "main-c101a45",
+    "title": "perf: fast path answers Steam's pre-2.33 stat calls and stays off without the patched proot",
+    "summary": "Steam's \"Reserving Space\" step on the SD card took close to an hour for a large game: Like a Dragon: Pirate Yakuza in Hawaii, about 4,400 files. The zero-filling fix in #388 is working (the reserved files stay at 0 bytes), but every file still cost about 0.45 s.",
+    "commit": "c101a451e3824ddebdc62d2d2f2d743aa96c3a81",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791510354000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a76ba69",
+    "publishedAt": 1791516098000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c101a45",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a76ba69.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a76ba69/DroidDeck-main-a76ba69.apk",
+        "name": "DroidDeck-main-c101a45.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c101a45/DroidDeck-main-c101a45.apk",
         "size": 38278165,
-        "sha256": "5c6d37edee4e9b5d0372515c0930c3a111ef5d73f1f0c9df535acf1a4fb3b3fc",
+        "sha256": "98f39c174513ba6e168f1ddddaac5d34be881e67d33715bda96e19df6b727aa9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a76ba69-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a76ba69/DroidDeck-main-a76ba69-pubg.apk",
+        "name": "DroidDeck-main-c101a45-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c101a45/DroidDeck-main-c101a45-pubg.apk",
         "size": 38278165,
-        "sha256": "ccf0c29428ce420b4f6703d14f5e976444f0c925f3e6f2149ada8379f12a81d3",
+        "sha256": "c2c234316580c2466849de02bde2618717e8f8e6f3b3aac1e4c9255754e45255",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a76ba69-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a76ba69/DroidDeck-main-a76ba69-antutu.apk",
+        "name": "DroidDeck-main-c101a45-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c101a45/DroidDeck-main-c101a45-antutu.apk",
         "size": 38278165,
-        "sha256": "645ffe16c5fc6379c71a96254809c0933b2e188c197d18b5d45040ab18fac59f",
+        "sha256": "e0c922a6eb829150ff3f61d7ca1c327d4df3985bee7234f06c7529edc535459e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a76ba69-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a76ba69/DroidDeck-main-a76ba69-ludashi.apk",
+        "name": "DroidDeck-main-c101a45-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c101a45/DroidDeck-main-c101a45-ludashi.apk",
         "size": 38278165,
-        "sha256": "469399dc35ec9d877772307d585ba0c2af17d09476fdc2798a10743226fae814",
+        "sha256": "66ff59d0d8f1cd31494892dcbf5ad47684c6eb84c977bb82f1e63d66cbee42ff",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c101a451e3824ddebdc62d2d2f2d743aa96c3a81",
+      "title": "perf: fast path answers Steam's pre-2.33 stat calls and stays off without the patched proot",
+      "summary": "Steam's \"Reserving Space\" step on the SD card took close to an hour for a large game: Like a Dragon: Pirate Yakuza in Hawaii, about 4,400 files. The zero-filling fix in #388 is working (the reserved files stay at 0 bytes), but every file still cost about 0.45 s.",
+      "publishedAt": 1791516098000
+    },
     {
       "commit": "a76ba69217592bb9444928919bf2319197da340c",
       "title": "fix: runtime removal never strands an undeletable leftover",
@@ -155,12 +161,6 @@
       "title": "Include PR descriptions and queue catalog updates",
       "summary": "",
       "publishedAt": 1791435162000
-    },
-    {
-      "commit": "e0fc8362b85f020204e8be903abd649778ecedaa",
-      "title": "Fix PR build report lookup",
-      "summary": "",
-      "publishedAt": 1791434390000
     }
   ],
   "tests": [
