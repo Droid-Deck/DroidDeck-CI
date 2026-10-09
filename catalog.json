@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791544444326,
+  "generatedAt": 1791544741824,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c101a45",
-    "title": "perf: fast path answers Steam's pre-2.33 stat calls and stays off without the patched proot",
-    "summary": "Steam's \"Reserving Space\" step on the SD card took close to an hour for a large game: Like a Dragon: Pirate Yakuza in Hawaii, about 4,400 files. The zero-filling fix in #388 is working (the reserved files stay at 0 bytes), but every file still cost about 0.45 s.",
-    "commit": "c101a451e3824ddebdc62d2d2f2d743aa96c3a81",
+    "tag": "main-fd6d6b7",
+    "title": "fix: proot fast path hands opendir of a directory symlink to proot",
+    "summary": "A guest opendir() (Python os.listdir/os.scandir, ls, \u2026) of a path whose last component is a symlink to a directory failed with ENOTDIR whenever the proot fast path was active.",
+    "commit": "fd6d6b7c46ea5db8db8dd3d8f82f281460523a70",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791516098000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c101a45",
+    "publishedAt": 1791544708000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fd6d6b7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c101a45.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c101a45/DroidDeck-main-c101a45.apk",
+        "name": "DroidDeck-main-fd6d6b7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd6d6b7/DroidDeck-main-fd6d6b7.apk",
         "size": 38278165,
-        "sha256": "98f39c174513ba6e168f1ddddaac5d34be881e67d33715bda96e19df6b727aa9",
+        "sha256": "f0fdf05a1b802809a73cb6172936b027ba7a9d558471cfd2601db16357246ed0",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c101a45-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c101a45/DroidDeck-main-c101a45-pubg.apk",
+        "name": "DroidDeck-main-fd6d6b7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd6d6b7/DroidDeck-main-fd6d6b7-pubg.apk",
         "size": 38278165,
-        "sha256": "c2c234316580c2466849de02bde2618717e8f8e6f3b3aac1e4c9255754e45255",
+        "sha256": "f34dd07cd600611d120bfd23cd6935df6bdd455327623e1a129d9588b45d7b3b",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c101a45-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c101a45/DroidDeck-main-c101a45-antutu.apk",
+        "name": "DroidDeck-main-fd6d6b7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd6d6b7/DroidDeck-main-fd6d6b7-antutu.apk",
         "size": 38278165,
-        "sha256": "e0c922a6eb829150ff3f61d7ca1c327d4df3985bee7234f06c7529edc535459e",
+        "sha256": "91a3ca5af4cef05e095a8727e64c24a0515382a63865e8424299eb3e54d571c0",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c101a45-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c101a45/DroidDeck-main-c101a45-ludashi.apk",
+        "name": "DroidDeck-main-fd6d6b7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd6d6b7/DroidDeck-main-fd6d6b7-ludashi.apk",
         "size": 38278165,
-        "sha256": "66ff59d0d8f1cd31494892dcbf5ad47684c6eb84c977bb82f1e63d66cbee42ff",
+        "sha256": "7cc96b2d29240a492f5a629f6c1791fb1b121f4db915901bc0449d301bdf04e7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "fd6d6b7c46ea5db8db8dd3d8f82f281460523a70",
+      "title": "fix: proot fast path hands opendir of a directory symlink to proot",
+      "summary": "A guest opendir() (Python os.listdir/os.scandir, ls, \u2026) of a path whose last component is a symlink to a directory failed with ENOTDIR whenever the proot fast path was active.",
+      "publishedAt": 1791544708000
+    },
     {
       "commit": "c101a451e3824ddebdc62d2d2f2d743aa96c3a81",
       "title": "perf: fast path answers Steam's pre-2.33 stat calls and stays off without the patched proot",
@@ -149,18 +155,6 @@
       "title": "Draft 0.3.2 release notes",
       "summary": "Adds the draft user-facing release notes for DroidDeck 0.3.2.",
       "publishedAt": 1791470860000
-    },
-    {
-      "commit": "6e2966be4339415efbcc7b6dd1bda38dba9d154a",
-      "title": "fix: keep Steam's directory listings on FUSE libraries",
-      "summary": "Before it creates, moves or deletes a content file the Steam client lists the whole destination directory about ten times to match names case-insensitively. On Android's FUSE storage every listing goes through the media provider, so reserving space grew quadratically with the number of files: 33 minutes for Haunted Paws Demo (3,938 files) in a Games folder.",
-      "publishedAt": 1791464209000
-    },
-    {
-      "commit": "679948e792ee51514d0c2944b575541d6288b71b",
-      "title": "Include PR descriptions and queue catalog updates",
-      "summary": "",
-      "publishedAt": 1791435162000
     }
   ],
   "tests": [
