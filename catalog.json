@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791510004815,
+  "generatedAt": 1791510406718,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-d06caf9",
-    "title": "Desktop: Firefox skips shared-memory seals again (Android 16 tab crash)",
-    "summary": "This restores the one line, next to the other MOZ exports the desktop already sets, with the original comment. No other change.",
-    "commit": "d06caf98387a5f150b200dfa3a78302b325be0ff",
+    "tag": "main-a76ba69",
+    "title": "fix: runtime removal never strands an undeletable leftover",
+    "summary": "Removing the Linux runtime could fail with \"Removal incomplete\" and leave the user stuck: Play, reinstalling and retrying the removal all failed the same way.",
+    "commit": "a76ba69217592bb9444928919bf2319197da340c",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791503500000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d06caf9",
+    "publishedAt": 1791510354000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a76ba69",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-d06caf9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d06caf9/DroidDeck-main-d06caf9.apk",
+        "name": "DroidDeck-main-a76ba69.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a76ba69/DroidDeck-main-a76ba69.apk",
         "size": 38278165,
-        "sha256": "a095e0ef630a8e159dc57d7651a498a63664c41db828a07dc384b010c6af1836",
+        "sha256": "5c6d37edee4e9b5d0372515c0930c3a111ef5d73f1f0c9df535acf1a4fb3b3fc",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-d06caf9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d06caf9/DroidDeck-main-d06caf9-pubg.apk",
+        "name": "DroidDeck-main-a76ba69-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a76ba69/DroidDeck-main-a76ba69-pubg.apk",
         "size": 38278165,
-        "sha256": "ef5503478da1b660058d4064021325069235d0d9d06ed96a769c44f08f7341c8",
+        "sha256": "ccf0c29428ce420b4f6703d14f5e976444f0c925f3e6f2149ada8379f12a81d3",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-d06caf9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d06caf9/DroidDeck-main-d06caf9-antutu.apk",
+        "name": "DroidDeck-main-a76ba69-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a76ba69/DroidDeck-main-a76ba69-antutu.apk",
         "size": 38278165,
-        "sha256": "bf239ce14d17c72d44fdb4dc55dd535283116d5b2c74c0736cb15105beaa8e64",
+        "sha256": "645ffe16c5fc6379c71a96254809c0933b2e188c197d18b5d45040ab18fac59f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-d06caf9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d06caf9/DroidDeck-main-d06caf9-ludashi.apk",
+        "name": "DroidDeck-main-a76ba69-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a76ba69/DroidDeck-main-a76ba69-ludashi.apk",
         "size": 38278165,
-        "sha256": "ee58838a978ea78b34bccb438bec4539ea6be0e5276423d71897e311183c1476",
+        "sha256": "469399dc35ec9d877772307d585ba0c2af17d09476fdc2798a10743226fae814",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a76ba69217592bb9444928919bf2319197da340c",
+      "title": "fix: runtime removal never strands an undeletable leftover",
+      "summary": "Removing the Linux runtime could fail with \"Removal incomplete\" and leave the user stuck: Play, reinstalling and retrying the removal all failed the same way.",
+      "publishedAt": 1791510354000
+    },
     {
       "commit": "d06caf98387a5f150b200dfa3a78302b325be0ff",
       "title": "Desktop: Firefox skips shared-memory seals again (Android 16 tab crash)",
@@ -155,12 +161,6 @@
       "title": "Fix PR build report lookup",
       "summary": "",
       "publishedAt": 1791434390000
-    },
-    {
-      "commit": "9d8ff9615fc87172a6887f805d1b24aa341fbe54",
-      "title": "Separate PR build announcements",
-      "summary": "",
-      "publishedAt": 1791433815000
     }
   ],
   "tests": [
