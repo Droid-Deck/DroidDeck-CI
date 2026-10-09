@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791545117535,
+  "generatedAt": 1791545209668,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-fd6d6b7",
-    "title": "fix: proot fast path hands opendir of a directory symlink to proot",
-    "summary": "A guest opendir() (Python os.listdir/os.scandir, ls, \u2026) of a path whose last component is a symlink to a directory failed with ENOTDIR whenever the proot fast path was active.",
-    "commit": "fd6d6b7c46ea5db8db8dd3d8f82f281460523a70",
+    "tag": "main-0a96767",
+    "title": "Desktop: keep the session when the big cores cannot be pinned",
+    "summary": "On a Galaxy Z Fold8 the desktop session ended right after starting the desktop, twice in a row, with nothing else in session.log:",
+    "commit": "0a9676765728ffc9de4d408578359cb2dfba99d4",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791544708000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fd6d6b7",
+    "publishedAt": 1791545173000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0a96767",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-fd6d6b7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd6d6b7/DroidDeck-main-fd6d6b7.apk",
-        "size": 38278165,
-        "sha256": "f0fdf05a1b802809a73cb6172936b027ba7a9d558471cfd2601db16357246ed0",
+        "name": "DroidDeck-main-0a96767.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a96767/DroidDeck-main-0a96767.apk",
+        "size": 38282261,
+        "sha256": "e03847abc6ef3d4d7d94b23b2ae76c14a927ad8fa7423f85fc61c3bd44c1135c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-fd6d6b7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd6d6b7/DroidDeck-main-fd6d6b7-pubg.apk",
-        "size": 38278165,
-        "sha256": "f34dd07cd600611d120bfd23cd6935df6bdd455327623e1a129d9588b45d7b3b",
+        "name": "DroidDeck-main-0a96767-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a96767/DroidDeck-main-0a96767-pubg.apk",
+        "size": 38282261,
+        "sha256": "89b1181ac61eab81fce47933908b423b1a35bed62220e43cbefd53ebf997d2ac",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-fd6d6b7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd6d6b7/DroidDeck-main-fd6d6b7-antutu.apk",
-        "size": 38278165,
-        "sha256": "91a3ca5af4cef05e095a8727e64c24a0515382a63865e8424299eb3e54d571c0",
+        "name": "DroidDeck-main-0a96767-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a96767/DroidDeck-main-0a96767-antutu.apk",
+        "size": 38282261,
+        "sha256": "05f34e75f9766a2e954a23763d52f01f7626217a269205e018b2aed3383d830b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-fd6d6b7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd6d6b7/DroidDeck-main-fd6d6b7-ludashi.apk",
-        "size": 38278165,
-        "sha256": "7cc96b2d29240a492f5a629f6c1791fb1b121f4db915901bc0449d301bdf04e7",
+        "name": "DroidDeck-main-0a96767-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a96767/DroidDeck-main-0a96767-ludashi.apk",
+        "size": 38282261,
+        "sha256": "adde47a19df44a2351be0f6ccda4cab7d1e35873154e8acbca93fdcc9872f10a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0a9676765728ffc9de4d408578359cb2dfba99d4",
+      "title": "Desktop: keep the session when the big cores cannot be pinned",
+      "summary": "On a Galaxy Z Fold8 the desktop session ended right after starting the desktop, twice in a row, with nothing else in session.log:",
+      "publishedAt": 1791545173000
+    },
     {
       "commit": "fd6d6b7c46ea5db8db8dd3d8f82f281460523a70",
       "title": "fix: proot fast path hands opendir of a directory symlink to proot",
