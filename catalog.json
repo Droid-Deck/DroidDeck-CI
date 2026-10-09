@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791511062537,
+  "generatedAt": 1791514153887,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-466",
+      "title": "perf: fast path answers Steam's pre-2.33 stat calls and stays off without the patched proot",
+      "summary": "Steam's \"Reserving Space\" step on the SD card took close to an hour for a large game: Like a Dragon: Pirate Yakuza in Hawaii, about 4,400 files. The zero-filling fix in #388 is working (the reserved files stay at 0 bytes), but every file still cost about 0.45 s.",
+      "commit": "644dcc009935647732a6cdc00ff05b77c0039f4a",
+      "pr": 466,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791514117000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-466",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.466-644dcc0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-466/DroidDeck-PR.466-644dcc0.apk",
+          "size": 38278165,
+          "sha256": "4a32161c2c0ebe667830172bf44e0958df8e219c9cafb4b6637ce929e3013d71",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.466-644dcc0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-466/DroidDeck-PR.466-644dcc0-pubg.apk",
+          "size": 38278165,
+          "sha256": "bb146b9fe7451ce2fb5d16ff1d8a585bd0e3df75353f3d17a85437b53b879e36",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.466-644dcc0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-466/DroidDeck-PR.466-644dcc0-antutu.apk",
+          "size": 38278165,
+          "sha256": "d60938b26569257feb7e6f9b6e62a9fa67901fb808801bf1c68bda4100027267",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.466-644dcc0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-466/DroidDeck-PR.466-644dcc0-ludashi.apk",
+          "size": 38278165,
+          "sha256": "31ea0e07b20532dcf16ce51f6b120242c9a82de86e071485c415d00d142b1203",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-431",
       "title": "Steam's touch controller as on-screen controls (beta)",
