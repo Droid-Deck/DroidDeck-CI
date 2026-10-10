@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791652821723,
+  "generatedAt": 1791652928161,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-489",
+      "title": "Rumble: reliable controller motors, Deck haptics, optional Razer Kishi USB rumble; Kishi L4/R4 as Deck back grips",
+      "summary": "\ufeffFixes the rumble part of #219 / follow-up to #242. Reported in the DroidDeck Discord #bug-reports forum (Kishi V3 Pro on a Galaxy S26 Ultra), with logs there.",
+      "commit": "fd31b9a4ef262ac772d79b484473532bc9f25541",
+      "pr": 489,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791652907000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-489",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.489-fd31b9a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-489/DroidDeck-PR.489-fd31b9a.apk",
+          "size": 46119503,
+          "sha256": "a897d62f6d1899430f221f9c4e52c4b35863cf0354d0b7502c321771dd8933ec",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.489-fd31b9a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-489/DroidDeck-PR.489-fd31b9a-pubg.apk",
+          "size": 46119503,
+          "sha256": "51362f857c4db4ba7bdaaf2d4c654e790f3c24bfef3140d5c8aded6da11eb7fe",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.489-fd31b9a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-489/DroidDeck-PR.489-fd31b9a-antutu.apk",
+          "size": 46119503,
+          "sha256": "1cd2ae0bfd22de6ffcce0f22198fd8af72c65db666efb4ed8f29b74ea3e6a2b7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.489-fd31b9a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-489/DroidDeck-PR.489-fd31b9a-ludashi.apk",
+          "size": 46119503,
+          "sha256": "5d248044764cd0aed064893920b40b224e2baa0e723bcb035afb7675f307f5a6",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-363",
+      "title": "Choose the Steam account the next session starts as",
+      "summary": "Lets the user pick which of the accounts Steam already remembers the next Steam session signs in as, from Setup \u2192 Steam account. Asked for by many users (GameNative has a similar option). Accounts are added inside Steam itself, not in DroidDeck's settings: Steam menu \u2192 Power \u2192 Change Account \u2192 Add Account.",
+      "commit": "3034e11646f7238b6f6859687118cf36e4111388",
+      "pr": 363,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791652891000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-363",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.363-3034e11.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-363/DroidDeck-PR.363-3034e11.apk",
+          "size": 46103217,
+          "sha256": "cff9ac0773b68341d363fc3c367506b085fe2af1e10ec8fe7b211e024a53782b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.363-3034e11-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-363/DroidDeck-PR.363-3034e11-pubg.apk",
+          "size": 46103217,
+          "sha256": "a41a939f30d3395caf6e673a4d29fc5240045c11075212f3092de5109850182d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.363-3034e11-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-363/DroidDeck-PR.363-3034e11-antutu.apk",
+          "size": 46103217,
+          "sha256": "131daacf5f820b90ffe1ba3de1e143766221501a1329a4ac11789190acf1a5af",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.363-3034e11-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-363/DroidDeck-PR.363-3034e11-ludashi.apk",
+          "size": 46103217,
+          "sha256": "a6049d226d4f869530946ff976ad0fd32202c419fc88384d4c4b062d3bbb300a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-384",
       "title": "Controller: optional Select button that opens the Steam menu",
