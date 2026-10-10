@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791662883738,
+  "generatedAt": 1791663156180,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-542",
+      "title": "Games: old Games folders become entries, not Steam libraries",
+      "summary": "Follow-up to #492. Games folders saved before the revamp were still registered as Steam libraries (GameStorage.gamesFolderLibraries() while Second library is Automatic). Steam's Install dialog therefore offered extra rows like \"Games (Internal shared storage)\" and \"Games (android)\". #492 had removed the settings section with the Forget button, so users had no way to get rid of them.",
+      "commit": "f87c88c15cfd54a7255209a5a3e6f34bc860e4ac",
+      "pr": 542,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791663128000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-542",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.542-f87c88c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-542/DroidDeck-PR.542-f87c88c.apk",
+          "size": 46119503,
+          "sha256": "e7599e11d2b77902c341f5f70e61aa529670e341e222ed206f917dde2da7caa9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.542-f87c88c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-542/DroidDeck-PR.542-f87c88c-pubg.apk",
+          "size": 46119503,
+          "sha256": "60e49bd45841390bb5ad49f6e8e6954a8bdda553ff4047e7770bf8187708cda3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.542-f87c88c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-542/DroidDeck-PR.542-f87c88c-antutu.apk",
+          "size": 46119503,
+          "sha256": "4948f5e7855e5f681da45ef1f6bede20dc2a80d464cdf0d2d969c0d3366c4f6b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.542-f87c88c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-542/DroidDeck-PR.542-f87c88c-ludashi.apk",
+          "size": 46119503,
+          "sha256": "c04c420fceca5d4fda7272f498b4b3760eb0ad213348e9dd53904ebae1945e9e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-404",
       "title": "Add Steam Controller support over Bluetooth LE",
