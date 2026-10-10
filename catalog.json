@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791666136742,
+  "generatedAt": 1791668067602,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-546",
+      "title": "refactor: Steam always runs in Deck mode on the Deck beta branch",
+      "summary": "Deck mode and the steamdeckpublicbeta branch have been the default for a while, and turning either off no longer helps anyone. This removes both options and the code behind them, so every Steam session runs the way almost everyone already runs it.",
+      "commit": "c1cdfd9cffdff6ad44a5acea2f69a6f1cc9c92ec",
+      "pr": 546,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791668031000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-546",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.546-c1cdfd9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-546/DroidDeck-PR.546-c1cdfd9.apk",
+          "size": 46127695,
+          "sha256": "9676da39b01f56833b504a9fc0c9a1ef1adea0dda5694348e92a86d0df1e278c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.546-c1cdfd9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-546/DroidDeck-PR.546-c1cdfd9-pubg.apk",
+          "size": 46127695,
+          "sha256": "885b8181e2353b8b48243c47c8563840241ea5ee52916f16db425696ae395c5f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.546-c1cdfd9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-546/DroidDeck-PR.546-c1cdfd9-antutu.apk",
+          "size": 46127695,
+          "sha256": "a1ceb5cbbc7d0f579bc04ee8104d82abe1aec4d4a1c4067a38d86a4d6ad245d6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.546-c1cdfd9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-546/DroidDeck-PR.546-c1cdfd9-ludashi.apk",
+          "size": 46127695,
+          "sha256": "be4c481640c0b05753d40c0e02eb61730e393fba9ffd48da2ccd41ad4d26226b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-449",
       "title": "feat: add persistent per-game compatibility profiles",
