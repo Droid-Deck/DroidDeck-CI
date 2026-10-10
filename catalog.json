@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791657445683,
+  "generatedAt": 1791657492884,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-fad52ec",
-    "title": "Terminal: release createSubprocess's JNI local references, and the cwd chars against cwd",
-    "summary": "createSubprocess took one local reference per argv and envp element and never released it, so they all stayed until the call returned. ART aborts at 512 (local reference table overflow (max=512)) and both loops share the table, so a long argument list plus a large environment could reach it. Fixes #507.",
-    "commit": "fad52ec1259a9365e128ca65ab2e985e37ce8e19",
+    "tag": "main-d22e458",
+    "title": "fix(audio): avoid InputStream.readAllBytes() for Android 12 compatibility",
+    "summary": "In PulseAudioComponent.java, pactl() calls InputStream.readAllBytes(). While available in desktop Java 9+, on Android this method was only introduced in API level 33 (Android 13)).\nSince DroidDeck targets minSdkVersion 26, devices on Android 12 or earlier (API 26\u201332, such as the LG V50s ThinQ) crash when starting a session:\nFATAL EXCEPTION: pulse-sink-guard\njava.lang.NoSuchMethodError: No virtual method readAllBytes()[B in class Ljava/io/InputStream;\nat com.droiddeck.launcher.audio.PulseAudioComponent.pactl(PulseAudioComponent.java:227)",
+    "commit": "d22e458d642a4f093eb7a3f44ca242b12959caf8",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791657401000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fad52ec",
+    "publishedAt": 1791657433000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d22e458",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-fad52ec.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fad52ec/DroidDeck-main-fad52ec.apk",
+        "name": "DroidDeck-main-d22e458.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d22e458/DroidDeck-main-d22e458.apk",
         "size": 46111311,
-        "sha256": "5054649a18b40116d20c7ddaba64aa50cd175a394406aa0ea05baeae1fbf6338",
+        "sha256": "12e3c39b9d8f770bfb6692638ebd87240a1205772015426766630bd6adb290a9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-fad52ec-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fad52ec/DroidDeck-main-fad52ec-pubg.apk",
+        "name": "DroidDeck-main-d22e458-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d22e458/DroidDeck-main-d22e458-pubg.apk",
         "size": 46111311,
-        "sha256": "695bf2cdb2ff6dfffe8e96cd26a8e45583512f1797228c239bbc7fe0b6fd86ab",
+        "sha256": "c35297367551b8a0fcda1bf0fa2504b8627bbddcbbf6ae90d1004fb4aa68d2da",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-fad52ec-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fad52ec/DroidDeck-main-fad52ec-antutu.apk",
+        "name": "DroidDeck-main-d22e458-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d22e458/DroidDeck-main-d22e458-antutu.apk",
         "size": 46111311,
-        "sha256": "bd7c1f44ddf1e8ff0848e3d82d9144ac20096fb71ead1387d8ca81cd03bdbb9c",
+        "sha256": "d44a7fcc48529bbc30d477e52cd5eb1748529193de2946945c2668056b88ed71",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-fad52ec-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fad52ec/DroidDeck-main-fad52ec-ludashi.apk",
+        "name": "DroidDeck-main-d22e458-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d22e458/DroidDeck-main-d22e458-ludashi.apk",
         "size": 46111311,
-        "sha256": "8820d8cb4b927e95ba4158c4480d4e87fa6a414a6af03568fdae85b44e0ccf03",
+        "sha256": "9af553184e1945d07f9ed191b02abaacabeb613dcaf70b4910a3f5ee3de026a8",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d22e458d642a4f093eb7a3f44ca242b12959caf8",
+      "title": "fix(audio): avoid InputStream.readAllBytes() for Android 12 compatibility",
+      "summary": "In PulseAudioComponent.java, pactl() calls InputStream.readAllBytes(). While available in desktop Java 9+, on Android this method was only introduced in API level 33 (Android 13)).\nSince DroidDeck targets minSdkVersion 26, devices on Android 12 or earlier (API 26\u201332, such as the LG V50s ThinQ) crash when starting a session:\nFATAL EXCEPTION: pulse-sink-guard\njava.lang.NoSuchMethodError: No virtual ",
+      "publishedAt": 1791657433000
+    },
     {
       "commit": "fad52ec1259a9365e128ca65ab2e985e37ce8e19",
       "title": "Terminal: release createSubprocess's JNI local references, and the cwd chars against cwd",
@@ -155,12 +161,6 @@
       "title": "Odin 3: skip the low-latency Wi-Fi lock, whose WLAN firmware hang reboots the device",
       "summary": "Fixes #509.",
       "publishedAt": 1791645262000
-    },
-    {
-      "commit": "416eb41d8dce81f7f33feb99129035506b116090",
-      "title": "feat(desktop): add desktop uninstall and legacy LXQt cleanup",
-      "summary": "Adds retryable desktop uninstall and legacy LXQt cleanup that preserve user data and shared dependencies, verified on Thor through interruption/retry, 604 MiB reclaimed, Steam/melonDS launches and KDE reinstall, with 437 Android tests and the Linux tool suite passing.",
-      "publishedAt": 1791644850000
     }
   ],
   "tests": [
