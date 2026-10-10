@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791665594942,
+  "generatedAt": 1791666041066,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-abbcb8e",
-    "title": "Games: old Games folders become entries, not Steam libraries",
-    "summary": "Follow-up to #492. Games folders saved before the revamp were still registered as Steam libraries (GameStorage.gamesFolderLibraries() while Second library is Automatic). Steam's Install dialog therefore offered extra rows like \"Games (Internal shared storage)\" and \"Games (android)\". #492 had removed the settings section with the Forget button, so users had no way to get rid of them.",
-    "commit": "abbcb8e3ad3461d148675a347557cfe9000edb4e",
+    "tag": "main-90690d1",
+    "title": "Read the package catalogs from Droid-Deck/DroidDeck-Components",
+    "summary": "The Windows components catalog, the desktop and emulator packages, the Linux runtime and the Steam seed now live on the organisation's components repository (Droid-Deck/DroidDeck-Components PR: catalogs with rewritten links; releases mirrored, vendor-fetched and built by CI, nothing uploaded by hand). This changes the four catalog URLs the app reads and the test bases; nothing else. Merge after th",
+    "commit": "90690d1c5c960548ab1e74dc322164f50915c9d4",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791664016000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-abbcb8e",
+    "publishedAt": 1791666016000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-90690d1",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-abbcb8e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abbcb8e/DroidDeck-main-abbcb8e.apk",
+        "name": "DroidDeck-main-90690d1.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-90690d1/DroidDeck-main-90690d1.apk",
         "size": 46119503,
-        "sha256": "90388bf618801962b8e2f1cbf964fd1e5af39facb6e5795fd7a9c5652fe36104",
+        "sha256": "4dffdafed7727355cf18a6226e56f8bae79ee8a3b16cdd3997482db270540f9b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-abbcb8e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abbcb8e/DroidDeck-main-abbcb8e-pubg.apk",
+        "name": "DroidDeck-main-90690d1-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-90690d1/DroidDeck-main-90690d1-pubg.apk",
         "size": 46119503,
-        "sha256": "e5cd85d5962bd673afe7c504da1c549821257e0b46d68db94def855eb7b12e04",
+        "sha256": "d59225db08046afe0412f93df66dc2d414cc17b2f0533eb7fce61b0b0eccc2b2",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-abbcb8e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abbcb8e/DroidDeck-main-abbcb8e-antutu.apk",
+        "name": "DroidDeck-main-90690d1-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-90690d1/DroidDeck-main-90690d1-antutu.apk",
         "size": 46119503,
-        "sha256": "14e13fb1e7f78b8701441b51206d200157350b4b83137eaea33b07cee611e106",
+        "sha256": "9070968d09020b6ac9cd9648724875992a41b8abac053e3de4c21e21cc7d93d3",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-abbcb8e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abbcb8e/DroidDeck-main-abbcb8e-ludashi.apk",
+        "name": "DroidDeck-main-90690d1-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-90690d1/DroidDeck-main-90690d1-ludashi.apk",
         "size": 46119503,
-        "sha256": "33240ef7c3eeea6f8414403c9b43510ccb354639edff5b46743c2a9133d6da47",
+        "sha256": "fb88395d53f0f2dd75ec57ec25de58ac7fcc937143039dd56315216ed890edea",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "90690d1c5c960548ab1e74dc322164f50915c9d4",
+      "title": "Read the package catalogs from Droid-Deck/DroidDeck-Components",
+      "summary": "The Windows components catalog, the desktop and emulator packages, the Linux runtime and the Steam seed now live on the organisation's components repository (Droid-Deck/DroidDeck-Components PR: catalogs with rewritten links; releases mirrored, vendor-fetched and built by CI, nothing uploaded by hand). This changes the four catalog URLs the app reads and the test bases; nothing else. Merge after th",
+      "publishedAt": 1791666016000
+    },
     {
       "commit": "abbcb8e3ad3461d148675a347557cfe9000edb4e",
       "title": "Games: old Games folders become entries, not Steam libraries",
@@ -155,12 +161,6 @@
       "title": "Controller: optional Select button that opens the Steam menu",
       "summary": "Adds an off-by-default option in Setup \u2192 Controller that makes the physical Select button open the Steam menu in a session instead of View/Select.",
       "publishedAt": 1791657856000
-    },
-    {
-      "commit": "d22e458d642a4f093eb7a3f44ca242b12959caf8",
-      "title": "fix(audio): avoid InputStream.readAllBytes() for Android 12 compatibility",
-      "summary": "In PulseAudioComponent.java, pactl() calls InputStream.readAllBytes(). While available in desktop Java 9+, on Android this method was only introduced in API level 33 (Android 13)).\nSince DroidDeck targets minSdkVersion 26, devices on Android 12 or earlier (API 26\u201332, such as the LG V50s ThinQ) crash when starting a session:\nFATAL EXCEPTION: pulse-sink-guard\njava.lang.NoSuchMethodError: No virtual ",
-      "publishedAt": 1791657433000
     }
   ],
   "tests": [
