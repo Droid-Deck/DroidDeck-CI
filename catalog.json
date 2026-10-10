@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791602081639,
+  "generatedAt": 1791602374122,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-497",
+      "title": "CI: host the Debian image the preloads build in on a release of this repo",
+      "summary": "The x86 preloads step pulled debian:bullseye from a public registry mirror on every build whose preload cache missed. Those mirrors rate-limit GitHub's shared runner addresses, and the pull failed two builds in one hour tonight (toomanyrequests: Rate exceeded). Debian 11 is frozen upstream (archive.debian.org), so there is nothing to track: the image is a one-time snapshot.",
+      "commit": "782f41db7163025df1c2efe39b06766a64218d7d",
+      "pr": 497,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791602329000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-497",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.497-782f41d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-497/DroidDeck-PR.497-782f41d.apk",
+          "size": 41777230,
+          "sha256": "6d5c42641e6e0fcaaad08a2c13a5f1bdc7c4db90462792bcecb52d87c20a5aca",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.497-782f41d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-497/DroidDeck-PR.497-782f41d-pubg.apk",
+          "size": 41777230,
+          "sha256": "c3fdbdaf3e061253e2c213530e1d808b8e8fdb4178bb2fa2fdf0195878548fbd",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.497-782f41d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-497/DroidDeck-PR.497-782f41d-antutu.apk",
+          "size": 41777230,
+          "sha256": "87995f8fc2cd8babcd417bdda9fe6fcd2e168a2b38c9725d92eaa289ab9b9ad8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.497-782f41d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-497/DroidDeck-PR.497-782f41d-ludashi.apk",
+          "size": 41777230,
+          "sha256": "508ae424e2ea4ad816b9a1260c5601f4de3199e2c978a7cda2a86b2607e47c0f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-449",
       "title": "feat: add persistent per-game compatibility profiles",
