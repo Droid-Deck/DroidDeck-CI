@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791602518521,
+  "generatedAt": 1791602998100,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9b90386",
-    "title": "Windows components: install from a recording of the installer's result",
-    "summary": "A catalog entry may now carry a snapshot link: a recording of what the component's own setup program leaves in a prefix, made once in Wine by winlator-contents' tools/snapshot/record.py (The412Banner/winlator-contents PR, which must land first since the app reads the catalog from main). With one, the setup program never runs here.",
-    "commit": "9b90386e73b83ac5b43a64831b150c7852c18e38",
+    "tag": "main-a229d19",
+    "title": "CI: host the Debian image the preloads build in on a release of this repo",
+    "summary": "The x86 preloads step pulled debian:bullseye from a public registry mirror on every build whose preload cache missed. Those mirrors rate-limit GitHub's shared runner addresses, and the pull failed two builds in one hour tonight (toomanyrequests: Rate exceeded). Debian 11 is frozen upstream (archive.debian.org), so there is nothing to track: the image is a one-time snapshot.",
+    "commit": "a229d196bbad8f9abf85ec1c1ff94e937e6b1564",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791601480000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9b90386",
+    "publishedAt": 1791602971000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a229d19",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9b90386.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9b90386/DroidDeck-main-9b90386.apk",
+        "name": "DroidDeck-main-a229d19.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a229d19/DroidDeck-main-a229d19.apk",
         "size": 41777230,
-        "sha256": "a524513834d0ad1dcff96c2ae41e76f885ac903f5d1ca85fe62a18f2c38017a6",
+        "sha256": "4287d6309d74c4149680145c1ed3f3ed5b2b6c3909d076ee063740f1caeac356",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9b90386-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9b90386/DroidDeck-main-9b90386-pubg.apk",
+        "name": "DroidDeck-main-a229d19-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a229d19/DroidDeck-main-a229d19-pubg.apk",
         "size": 41777230,
-        "sha256": "9616d8646871e35443c3576dd10f1febbba4fecbf5e0b4d4343db88a5e881a3c",
+        "sha256": "95913c2192251e38906701a5b702ff226882dfdd98cb260de1829238c9fe253a",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9b90386-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9b90386/DroidDeck-main-9b90386-antutu.apk",
+        "name": "DroidDeck-main-a229d19-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a229d19/DroidDeck-main-a229d19-antutu.apk",
         "size": 41777230,
-        "sha256": "79eed5d5b5f84510b30a24a1c47f6be956d0fd8de3c766d8cc996bc30c4c4460",
+        "sha256": "b4e1c97ae322393888efd4548e7545a3ed3fd752e915be3eb418e3821fd6331d",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9b90386-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9b90386/DroidDeck-main-9b90386-ludashi.apk",
+        "name": "DroidDeck-main-a229d19-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a229d19/DroidDeck-main-a229d19-ludashi.apk",
         "size": 41777230,
-        "sha256": "f2a6ba6561bb685442a2cda7512efac45e544a98a4fd77111809a6f31753fbe5",
+        "sha256": "90b8edd105a0b75f13de907c5bb736520b41b9ae9c7539111ea1542f15eee358",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a229d196bbad8f9abf85ec1c1ff94e937e6b1564",
+      "title": "CI: host the Debian image the preloads build in on a release of this repo",
+      "summary": "The x86 preloads step pulled debian:bullseye from a public registry mirror on every build whose preload cache missed. Those mirrors rate-limit GitHub's shared runner addresses, and the pull failed two builds in one hour tonight (toomanyrequests: Rate exceeded). Debian 11 is frozen upstream (archive.debian.org), so there is nothing to track: the image is a one-time snapshot.",
+      "publishedAt": 1791602971000
+    },
     {
       "commit": "9b90386e73b83ac5b43a64831b150c7852c18e38",
       "title": "Windows components: install from a recording of the installer's result",
@@ -155,12 +161,6 @@
       "title": "Windows components: lay out installer .exe wrappers without running them",
       "summary": "The components page could only take .msi packages apart, so most catalog entries that ship an installer .exe sat under \"Need a Windows installer\": every VC++ runtime, .NET Framework 4.0 to 4.8, the .NET Core/5+ desktop runtimes. This teaches droiddeck-msi-install to open those wrappers and lay out the packages inside exactly as it does today for an .msi: files into the component folder, re",
       "publishedAt": 1791564248000
-    },
-    {
-      "commit": "7c946db440aa3396dba8039f59a30388b2034d8f",
-      "title": "Stores: GOG, Epic Games and Amazon Games \u2014 libraries, installs, cloud saves",
-      "summary": "A Stores section in the rail, under Games. It's gated by Setup \u203a Stores \u203a \"Show Stores in the rail\" and is off by default. It has sign-in, library and storefront for GOG, Epic Games and Amazon Games, plus one download queue. Installed games are registered in the Steam client as non-Steam games, so they launch through Steam and droiddeck-proton. Overlay, Steam Input and Remote Play Together w",
-      "publishedAt": 1791559013000
     }
   ],
   "tests": [
