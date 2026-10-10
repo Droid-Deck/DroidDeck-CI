@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791633345049,
+  "generatedAt": 1791636146106,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-442",
+      "title": "Add opt-in zRAM compression for the Steam client while a game runs",
+      "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
+      "commit": "7c0743641c8a6014b3f2b9a39967bad1f9503f30",
+      "pr": 442,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791636118000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-442",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.442-7c07436.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-7c07436.apk",
+          "size": 41785422,
+          "sha256": "914055dbe19b3156d8e327859e98b61b8ba3b4127b7472e3134792c313f3e12b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.442-7c07436-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-7c07436-pubg.apk",
+          "size": 41785422,
+          "sha256": "6badbc9f827dc00cb8c65843e8bfe17ec099a87be920410ce4c6b30b05c03e1a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.442-7c07436-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-7c07436-antutu.apk",
+          "size": 41785422,
+          "sha256": "eaf22bba0878527d666a0c70475786ccd16fe2f0fa28b32d734124c9c07506f2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.442-7c07436-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-7c07436-ludashi.apk",
+          "size": 41785422,
+          "sha256": "6fed011bf75c213c9346caf63c32fc9306d385eeaf1843bece356da04ab6cded",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-493",
+      "title": "feat(desktop): add desktop uninstall and legacy LXQt cleanup",
+      "summary": "Adds retryable desktop uninstall and legacy LXQt cleanup that preserve user data and shared dependencies, verified on Thor through interruption/retry, 604 MiB reclaimed, Steam/melonDS launches and KDE reinstall, with 437 Android tests and the Linux tool suite passing.",
+      "commit": "30ed24f4a0ebe88897e519ee3c0f3fd8367e11d7",
+      "pr": 493,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791636104000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-493",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.493-30ed24f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-493/DroidDeck-PR.493-30ed24f.apk",
+          "size": 46086735,
+          "sha256": "8d5f93d54a146aac3421ac5c5d0b9170b6ec60b27f4ff6e85a656ad48bc924f8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.493-30ed24f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-493/DroidDeck-PR.493-30ed24f-pubg.apk",
+          "size": 46086735,
+          "sha256": "c50fd0852fbc6f851260f9e7d0bc3111b901462bfab6133aa896d2c50868c527",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.493-30ed24f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-493/DroidDeck-PR.493-30ed24f-antutu.apk",
+          "size": 46086735,
+          "sha256": "3119afb1d25d057ec8ade7f95b259ea58a717937535533e4f1e7148b4640f137",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.493-30ed24f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-493/DroidDeck-PR.493-30ed24f-ludashi.apk",
+          "size": 46086735,
+          "sha256": "3b4c7b18d6217b5f9ee78cf41afa53dc596c30b763e32332a3d9155bd55e8814",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-500",
       "title": "fix(amazon): sync library with nile's headers and registered serial",
       "summary": "Signed-in Amazon accounts showed no games. The entitlements call now matches nile, the reference client that works:",
@@ -305,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-942bdf9-ludashi.apk",
           "size": 38298809,
           "sha256": "39eb837a3c6c815dbc1550accc47982d210e689c9e19a2ed85501ee28716be72",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-442",
-      "title": "Add opt-in zRAM compression for the Steam client while a game runs",
-      "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
-      "commit": "a6ac06cd126ba66378fbadaeeaa51de023133e31",
-      "pr": 442,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791474452000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-442",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.442-a6ac06c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-a6ac06c.apk",
-          "size": 38261407,
-          "sha256": "2afd46308cbf4fac1f90e65de9c520796c5e0daa4a3177c0bd7d6b503ba5cc5c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.442-a6ac06c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-a6ac06c-pubg.apk",
-          "size": 38261407,
-          "sha256": "dc638b4ac69bf8d37393b1c92191a4a534ff3c76e5a35103514981fed574c611",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.442-a6ac06c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-a6ac06c-antutu.apk",
-          "size": 38261407,
-          "sha256": "6dc8bc13c117abc3ddaa2050769983943957e71e3fd857f3505f94959e94c818",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.442-a6ac06c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-a6ac06c-ludashi.apk",
-          "size": 38261407,
-          "sha256": "f290cf7e1c968cd436d8ecb575ff53b7fbdbdc8a15722a6b54118cb5da3d09a9",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
