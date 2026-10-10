@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791673732819,
+  "generatedAt": 1791673818605,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-549",
+      "title": "Desktop: run programs, scripts and AppImages; Switch to Desktop without Deck mode",
+      "summary": "The KDE desktop now runs programs the way SteamOS's desktop mode does: double-click or a terminal starts Windows programs, Linux programs (with or without an extension), AppImages and scripts, each the right way.",
+      "commit": "613f7588edce24ba4f8251ad6060a0a7e3f02592",
+      "pr": 549,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791673787000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-549",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.549-613f758.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-549/DroidDeck-PR.549-613f758.apk",
+          "size": 46177031,
+          "sha256": "a40d13eb600a02e51d7a9a46dc5a1a2815de70ae771a98629bc78d8591302942",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.549-613f758-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-549/DroidDeck-PR.549-613f758-pubg.apk",
+          "size": 46177031,
+          "sha256": "4b70d7e2c91a7dee9484ea03e49fa4c7dafe5950bfa738c66403bdd8207062ba",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.549-613f758-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-549/DroidDeck-PR.549-613f758-antutu.apk",
+          "size": 46177031,
+          "sha256": "166d0fd9494e0e9bfa13b4fd1df7adf6911345c3281260e70af444c9cf8f4443",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.549-613f758-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-549/DroidDeck-PR.549-613f758-ludashi.apk",
+          "size": 46177031,
+          "sha256": "3bc0170f4b54c95852927fe45e2052092451f62d84c9ca55f48d07a71855da4b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-548",
       "title": "fix(ui): a page only drains into its control when that control comes back",
       "summary": "A page opened from a control (the cog beside Play, the Desktop card's cog) always drew back into that control's old bounds on the way out, even when something else was coming in. Two cases looked broken:",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-551/DroidDeck-PR.551-13017c6-ludashi.apk",
           "size": 46140066,
           "sha256": "3aafbb8b8cdfa1e602095ad2ff1c7f12e615bdd87b94e09993878129e05bf03e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-549",
-      "title": "Desktop: run programs, scripts and AppImages; Switch to Desktop without Deck mode",
-      "summary": "The KDE desktop now runs programs the way SteamOS's desktop mode does: double-click or a terminal starts Windows programs, Linux programs (with or without an extension), AppImages and scripts, each the right way.",
-      "commit": "f4db16070f521e9a54563c8fc219fe92547d52ad",
-      "pr": 549,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791670403000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-549",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.549-f4db160.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-549/DroidDeck-PR.549-f4db160.apk",
-          "size": 46156551,
-          "sha256": "830b3a3e4a8234f17906fd88335776273d7dec97d8b22deb7e8352839b4c51fe",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.549-f4db160-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-549/DroidDeck-PR.549-f4db160-pubg.apk",
-          "size": 46156551,
-          "sha256": "2a5bb29ac435cc87e958e9aa8e12a851a66946dd20d4da900542de48dfb4ff0b",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.549-f4db160-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-549/DroidDeck-PR.549-f4db160-antutu.apk",
-          "size": 46156551,
-          "sha256": "0c963b5d6541d82996c4ceeff93435b300936c4a1da4d0ca7671fc350cea0364",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.549-f4db160-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-549/DroidDeck-PR.549-f4db160-ludashi.apk",
-          "size": 46156551,
-          "sha256": "7b87da44592c7cea4def5d17a139408d0a88092f4964dcf36bfbcdb7a9c9474e",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
