@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791594806774,
+  "generatedAt": 1791595810803,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-495",
+      "title": "Windows components: install from a recording of the installer's result",
+      "summary": "A catalog entry may now carry a snapshot link: a recording of what the component's own setup program leaves in a prefix, made once in Wine by winlator-contents' tools/snapshot/record.py (The412Banner/winlator-contents PR, which must land first since the app reads the catalog from main). With one, the setup program never runs here.",
+      "commit": "b5c7b588fd4b8d7131957babec0e56dcba9cfaec",
+      "pr": 495,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791595770000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-495",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.495-b5c7b58.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-495/DroidDeck-PR.495-b5c7b58.apk",
+          "size": 41777230,
+          "sha256": "a64e1683485f3fc2476d24bb733b6e4b66f84fe4f98e8f12bd25a79636185a2a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.495-b5c7b58-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-495/DroidDeck-PR.495-b5c7b58-pubg.apk",
+          "size": 41777230,
+          "sha256": "359f77eeebf0a2ecd83767cfeaca57141b90ef285462478b008d478c2a325959",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.495-b5c7b58-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-495/DroidDeck-PR.495-b5c7b58-antutu.apk",
+          "size": 41777230,
+          "sha256": "c2bb22137d1ed2d16a1e16b45eee8c9b04b4b8be45974652a48aa957d1d5bd29",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.495-b5c7b58-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-495/DroidDeck-PR.495-b5c7b58-ludashi.apk",
+          "size": 41777230,
+          "sha256": "3c59bc17a7ca476d4f305e58e61ac826e570a680cc95491b00abc1cfe2638b88",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-449",
       "title": "feat: add persistent per-game compatibility profiles",
