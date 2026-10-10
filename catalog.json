@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791644421428,
+  "generatedAt": 1791644808213,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8ac5556",
-    "title": "Windows components: Access 2000 runtime installs here (an MSI inside a 7-Zip-openable wrapper)",
-    "summary": "The recorder hung twice on art2kmin.exe because it is not a setup program at all: a wrapper 7-Zip opens, holding Setup.exe + Data1.msi. The MSI engine already lays such wrappers out (--unpack \u2192 packages inside), so the entry only had to leave the setup-program list. The catalog is untouched.",
-    "commit": "8ac555664ad1b079019d00af3348125d0de0c7c1",
+    "tag": "main-6e0d456",
+    "title": "fix(amazon): sync library with nile's headers and registered serial",
+    "summary": "Signed-in Amazon accounts showed no games. The entitlements call now matches nile, the reference client that works:",
+    "commit": "6e0d456dd7d250e8ac56798fba8db2e4057da275",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791610634000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8ac5556",
+    "publishedAt": 1791644764000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6e0d456",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8ac5556.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ac5556/DroidDeck-main-8ac5556.apk",
+        "name": "DroidDeck-main-6e0d456.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e0d456/DroidDeck-main-6e0d456.apk",
         "size": 41777230,
-        "sha256": "49ddd681163f1c78c27329a238884f2bb5e7337215dbb71eb4c1bb3f8d30e13d",
+        "sha256": "8df7dab368b4d90f66026d9aaae1d8272f010818cecc7c37e2c15b80e86d5194",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8ac5556-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ac5556/DroidDeck-main-8ac5556-pubg.apk",
+        "name": "DroidDeck-main-6e0d456-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e0d456/DroidDeck-main-6e0d456-pubg.apk",
         "size": 41777230,
-        "sha256": "674e1845fbace9b2d811f8e105deeb5db6669b8be7ee6d6b286b11ea6a244b06",
+        "sha256": "2e7808061e20e46406ff556f0957be524720ffce42eac7868f158965cf8f5f8d",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8ac5556-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ac5556/DroidDeck-main-8ac5556-antutu.apk",
+        "name": "DroidDeck-main-6e0d456-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e0d456/DroidDeck-main-6e0d456-antutu.apk",
         "size": 41777230,
-        "sha256": "b727d4aa584a3ec53ea6b01623601cf2c403dfe8135730f1cf0f50f9bb722e97",
+        "sha256": "4f7d8c730afda42983c6c11338b5e63516806cab4beeb732381e2a60115e4be2",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8ac5556-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ac5556/DroidDeck-main-8ac5556-ludashi.apk",
+        "name": "DroidDeck-main-6e0d456-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e0d456/DroidDeck-main-6e0d456-ludashi.apk",
         "size": 41777230,
-        "sha256": "1c6f5511c869d786254ff6adc9b9d053769784269d00c0bea57f2827c066c9e7",
+        "sha256": "9cc8780e76c8de5d73d3802a82df6563004c899a80b8f31383b250fd252bb9e8",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6e0d456dd7d250e8ac56798fba8db2e4057da275",
+      "title": "fix(amazon): sync library with nile's headers and registered serial",
+      "summary": "Signed-in Amazon accounts showed no games. The entitlements call now matches nile, the reference client that works:",
+      "publishedAt": 1791644764000
+    },
     {
       "commit": "8ac555664ad1b079019d00af3348125d0de0c7c1",
       "title": "Windows components: Access 2000 runtime installs here (an MSI inside a 7-Zip-openable wrapper)",
@@ -155,12 +161,6 @@
       "title": "fix(desktop): address KDE feedback and keep local builds in sync with CI",
       "summary": "Restore KDE scaling, Android paste, hybrid keyboard input, Steam desktop UI, GTK close buttons, Steam library Places in Dolphin and melonDS window defaults, and make local APK builds prepare and verify the same runtime inputs as CI.",
       "publishedAt": 1791582245000
-    },
-    {
-      "commit": "b213ae77b4d274ceeb12230c4696b37b6cb106e5",
-      "title": "feat(stores): bring the launcher's motion to the stores pages",
-      "summary": "Brings the Stores section in line with the motion the rest of the launcher already has. No new primitives: it's the Play flood, PageFlood, the focus ring's glide and End session's step-out, applied to the store pages.",
-      "publishedAt": 1791572439000
     }
   ],
   "tests": [
