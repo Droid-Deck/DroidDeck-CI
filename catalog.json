@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791645560110,
+  "generatedAt": 1791652663447,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-453",
+      "title": "feat: DroidDeck Proton (Auto) with per-game recipes and a community library",
+      "summary": "Adds DroidDeck Proton (Auto): one more Steam compatibility tool, built on Valve's ARM64 Proton Experimental, that assembles a per-game Proton at launch from a recipe. Experimental, GE, Cachy and the Components page behave as before.",
+      "commit": "e28baecc0c57f7d0e61d99c17e66ac98356b4696",
+      "pr": 453,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791652624000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-453",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.453-e28baec.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-e28baec.apk",
+          "size": 46107379,
+          "sha256": "50c626bd61c243e109b3ede07cb027d8df24c5ea330714f991878ffee72dfecb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.453-e28baec-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-e28baec-pubg.apk",
+          "size": 46107379,
+          "sha256": "7970c46a7ff4b81f062644f5230c5bf65896bd93cc0efdfdc2dd378165654c5e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.453-e28baec-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-e28baec-antutu.apk",
+          "size": 46107379,
+          "sha256": "dfd889b5b8ff728e6390746072558a28b299762fbf20fce63522876e4e46c46e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.453-e28baec-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-e28baec-ludashi.apk",
+          "size": 46107379,
+          "sha256": "89d5c9d78fde9ad37298629293399e192de3a1160d5d1b7a54687131d62d9d32",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-400",
+      "title": "Launch the executable a Store package declares",
+      "summary": "Store and GDK folders name their game in MicrosoftGame.config or appxmanifest.xml. Picking the top-level Unreal bootstrap instead failed with \"CreateProcess() returned 2\" when the Store had renamed the shipping exe.",
+      "commit": "09ebec867f1c73cc832ef57c9440c48f29e2d2c2",
+      "pr": 400,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791652520000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-400",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.400-09ebec8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-09ebec8.apk",
+          "size": 46090831,
+          "sha256": "d3d3c5164aeb8ba6ee4c2c8d9f13dd5cf80117d6cc197d4732c454d95b9f9a54",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.400-09ebec8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-09ebec8-pubg.apk",
+          "size": 46090831,
+          "sha256": "5f0ad5c02330324d347339ec1223814e0e97fb9a78f6264e09cd73ca71557372",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.400-09ebec8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-09ebec8-antutu.apk",
+          "size": 46090831,
+          "sha256": "3b034b7a79574113121a744f6c36115bb7d661c0793fdfd87a37a7faf67b3902",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.400-09ebec8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-09ebec8-ludashi.apk",
+          "size": 46090831,
+          "sha256": "e215b19632bf4cdf762bed88832197d53d69a83887a2183194c92c512b8cadc2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-442",
       "title": "Add opt-in zRAM compression for the Steam client while a game runs",
       "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
@@ -263,55 +361,6 @@
       }
     },
     {
-      "tag": "pr-453",
-      "title": "feat: DroidDeck Proton (Auto) with per-game recipes and a community library",
-      "summary": "Adds DroidDeck Proton (Auto): one more Steam compatibility tool, built on Valve's ARM64 Proton Experimental, that assembles a per-game Proton at launch from a recipe. Experimental, GE, Cachy and the Components page behave as before.",
-      "commit": "942bdf94e0e4ff8a5f8778dcaee18f894fe15716",
-      "pr": 453,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791493015000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-453",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.453-942bdf9.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-942bdf9.apk",
-          "size": 38298809,
-          "sha256": "af6919dc0184b41de173ae6dde2e170e86ebedd8112919506093fcc7041c2fbd",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.453-942bdf9-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-942bdf9-pubg.apk",
-          "size": 38298809,
-          "sha256": "fce65ba4de26f96a2506a1ce2341ab646a7930307adf3cf513d2c7b6a14662df",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.453-942bdf9-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-942bdf9-antutu.apk",
-          "size": 38298809,
-          "sha256": "31e50c923c207dee27dfa004def53219b465cf0c7157545f3229f64733e7161b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.453-942bdf9-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-453/DroidDeck-PR.453-942bdf9-ludashi.apk",
-          "size": 38298809,
-          "sha256": "39eb837a3c6c815dbc1550accc47982d210e689c9e19a2ed85501ee28716be72",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-407",
       "title": "Unfolded deck controls",
       "summary": "Add a touch gamepad under the game on an unfolded foldable",
@@ -354,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-407/DroidDeck-PR.407-c3c1dc6-ludashi.apk",
           "size": 38265503,
           "sha256": "e6d9bd986ee3878f64240d68079b14d3974e0613548772bbb9210789bfc2e6e3",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-400",
-      "title": "Launch the executable a Store package declares",
-      "summary": "Store and GDK folders name their game in MicrosoftGame.config or appxmanifest.xml. Picking the top-level Unreal bootstrap instead failed with \"CreateProcess() returned 2\" when the Store had renamed the shipping exe.",
-      "commit": "d03426e959278e57f332f6f28b7231fd23eb0977",
-      "pr": 400,
-      "version": null,
-      "versionCode": 11,
-      "publishedAt": 1791434873000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-400",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.400-d03426e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-d03426e.apk",
-          "size": 38183403,
-          "sha256": "f444bee799cd605a22612a464193acab3e0c46f5e0dce6be4ba60665dbb561df",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.400-d03426e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-d03426e-pubg.apk",
-          "size": 38183403,
-          "sha256": "abfb37426c814006c29793b95ca12cae1de4bff8042050ecdb4283da058bacbf",
-          "packageName": "com.tencent.ig",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.400-d03426e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-d03426e-antutu.apk",
-          "size": 38183403,
-          "sha256": "80cf94742f323eb27357efd115916e84927d8ba4b5879017b5c8c5cf07537131",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.400-d03426e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-400/DroidDeck-PR.400-d03426e-ludashi.apk",
-          "size": 38183403,
-          "sha256": "66403b865e0e7aaa360ddb49de2ff7a2a1c9039c79237a36aae4932202169773",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
