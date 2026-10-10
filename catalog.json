@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791663606142,
+  "generatedAt": 1791664041251,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-fe60b3c",
-    "title": "Add global manual landscape orientation setting",
-    "summary": "With my controller I have my phone on reverse landscape orientation and when rotation changes I have trouble turning it back. This adds setting for that",
-    "commit": "fe60b3c279b565282e33c8e7aa3d7899340996bf",
+    "tag": "main-abbcb8e",
+    "title": "Games: old Games folders become entries, not Steam libraries",
+    "summary": "Follow-up to #492. Games folders saved before the revamp were still registered as Steam libraries (GameStorage.gamesFolderLibraries() while Second library is Automatic). Steam's Install dialog therefore offered extra rows like \"Games (Internal shared storage)\" and \"Games (android)\". #492 had removed the settings section with the Forget button, so users had no way to get rid of them.",
+    "commit": "abbcb8e3ad3461d148675a347557cfe9000edb4e",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791663262000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fe60b3c",
+    "publishedAt": 1791664016000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-abbcb8e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-fe60b3c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fe60b3c/DroidDeck-main-fe60b3c.apk",
+        "name": "DroidDeck-main-abbcb8e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abbcb8e/DroidDeck-main-abbcb8e.apk",
         "size": 46119503,
-        "sha256": "70f74e33c576f8e1cb34b892841b1ff45645071ebca3a8f076132403ee7af901",
+        "sha256": "90388bf618801962b8e2f1cbf964fd1e5af39facb6e5795fd7a9c5652fe36104",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-fe60b3c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fe60b3c/DroidDeck-main-fe60b3c-pubg.apk",
+        "name": "DroidDeck-main-abbcb8e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abbcb8e/DroidDeck-main-abbcb8e-pubg.apk",
         "size": 46119503,
-        "sha256": "b974fc67710fdf3c81169a05ce02ecfed354c669456a67b170165d069796ed12",
+        "sha256": "e5cd85d5962bd673afe7c504da1c549821257e0b46d68db94def855eb7b12e04",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-fe60b3c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fe60b3c/DroidDeck-main-fe60b3c-antutu.apk",
+        "name": "DroidDeck-main-abbcb8e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abbcb8e/DroidDeck-main-abbcb8e-antutu.apk",
         "size": 46119503,
-        "sha256": "c771a6958fd661c68da3ac24d7f69e2c37739f0b74a657680246b564fb95079b",
+        "sha256": "14e13fb1e7f78b8701441b51206d200157350b4b83137eaea33b07cee611e106",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-fe60b3c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fe60b3c/DroidDeck-main-fe60b3c-ludashi.apk",
+        "name": "DroidDeck-main-abbcb8e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abbcb8e/DroidDeck-main-abbcb8e-ludashi.apk",
         "size": 46119503,
-        "sha256": "598d9ec9a7fd2e28fa335af6c63150e207aa9de742206661f335bc8d670f7651",
+        "sha256": "33240ef7c3eeea6f8414403c9b43510ccb354639edff5b46743c2a9133d6da47",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "abbcb8e3ad3461d148675a347557cfe9000edb4e",
+      "title": "Games: old Games folders become entries, not Steam libraries",
+      "summary": "Follow-up to #492. Games folders saved before the revamp were still registered as Steam libraries (GameStorage.gamesFolderLibraries() while Second library is Automatic). Steam's Install dialog therefore offered extra rows like \"Games (Internal shared storage)\" and \"Games (android)\". #492 had removed the settings section with the Forget button, so users had no way to get rid of them.",
+      "publishedAt": 1791664016000
+    },
     {
       "commit": "fe60b3c279b565282e33c8e7aa3d7899340996bf",
       "title": "Add global manual landscape orientation setting",
@@ -155,12 +161,6 @@
       "title": "fix(audio): avoid InputStream.readAllBytes() for Android 12 compatibility",
       "summary": "In PulseAudioComponent.java, pactl() calls InputStream.readAllBytes(). While available in desktop Java 9+, on Android this method was only introduced in API level 33 (Android 13)).\nSince DroidDeck targets minSdkVersion 26, devices on Android 12 or earlier (API 26\u201332, such as the LG V50s ThinQ) crash when starting a session:\nFATAL EXCEPTION: pulse-sink-guard\njava.lang.NoSuchMethodError: No virtual ",
       "publishedAt": 1791657433000
-    },
-    {
-      "commit": "fad52ec1259a9365e128ca65ab2e985e37ce8e19",
-      "title": "Terminal: release createSubprocess's JNI local references, and the cwd chars against cwd",
-      "summary": "createSubprocess took one local reference per argv and envp element and never released it, so they all stayed until the call returned. ART aborts at 512 (local reference table overflow (max=512)) and both loops share the table, so a long argument list plus a large environment could reach it. Fixes #507.",
-      "publishedAt": 1791657401000
     }
   ],
   "tests": [
