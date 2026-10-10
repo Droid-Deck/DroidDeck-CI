@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791655860024,
+  "generatedAt": 1791656687026,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-435",
+      "title": "fix: preserve keyboard input on composite devices",
+      "summary": "Fixes #422",
+      "commit": "035b24d5fc973e15e7a44b0d6a5a3608951bf271",
+      "pr": 435,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791656643000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-435",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.435-035b24d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-435/DroidDeck-PR.435-035b24d.apk",
+          "size": 46111311,
+          "sha256": "859029d966cd9dcd8135fabda09db5c70435c942d17f1313f3b98737079ec045",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.435-035b24d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-435/DroidDeck-PR.435-035b24d-pubg.apk",
+          "size": 46111311,
+          "sha256": "12dd1097f8004771e9619710ccefab4c988576be0495a2cd17dce2d7b777947b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.435-035b24d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-435/DroidDeck-PR.435-035b24d-antutu.apk",
+          "size": 46111311,
+          "sha256": "10606e6fa909bbca0f038d550105a0d51cb1369b2bf52429fc395717f0a942ea",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.435-035b24d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-435/DroidDeck-PR.435-035b24d-ludashi.apk",
+          "size": 46111311,
+          "sha256": "5783a2aa8f758d2eae5299cfc95256d369d9a348aa9a1e9c55126edce10edcee",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-529",
       "title": "Performance: idle front end, proot stops, launch-time passes and log collection",
       "summary": "Bottlenecks found profiling the front end, proot and five games (Palworld, Cyberpunk 2077, PEAK, Mortal Kombat X, Mortal Kombat 1) on a RedMagic, each fixed and measured against main.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-529/DroidDeck-PR.529-05f396d-ludashi.apk",
           "size": 46119503,
           "sha256": "6ec296ee326fc9f415d3a855a364f143e28170bd17366ebd05007e1cfde79434",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-435",
-      "title": "fix: preserve keyboard input on composite devices",
-      "summary": "Fixes #422",
-      "commit": "035b24d5fc973e15e7a44b0d6a5a3608951bf271",
-      "pr": 435,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791653237000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-435",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.435-035b24d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-435/DroidDeck-PR.435-035b24d.apk",
-          "size": 46090831,
-          "sha256": "5c9b3df8ed72456651950e1d476df754ba604566a9dc00c54e0f4c5265fd0c82",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.435-035b24d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-435/DroidDeck-PR.435-035b24d-pubg.apk",
-          "size": 46090831,
-          "sha256": "849a15bf72ea6c9b3027320c9cc35a0e11a6432fd2c5e76998f851340e41d934",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.435-035b24d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-435/DroidDeck-PR.435-035b24d-antutu.apk",
-          "size": 46090831,
-          "sha256": "fc096ded8a247d741d81429f43e2252991ca392296f5f340c89bb3fb2d576bef",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.435-035b24d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-435/DroidDeck-PR.435-035b24d-ludashi.apk",
-          "size": 46090831,
-          "sha256": "69598c9f94f62cfd01e030a73f0d1b2452c26e29316276b99e84954469917163",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
