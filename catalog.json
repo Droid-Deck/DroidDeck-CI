@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791602998100,
+  "generatedAt": 1791603132966,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-500",
+      "title": "fix(amazon): sync library with nile's headers and registered serial",
+      "summary": "Signed-in Amazon accounts showed no games. The entitlements call now matches nile, the reference client that works:",
+      "commit": "82f7c27130e04c6e3e7b6789bab7f8f3af64007f",
+      "pr": 500,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791603092000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-500",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.500-82f7c27.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-500/DroidDeck-PR.500-82f7c27.apk",
+          "size": 41777230,
+          "sha256": "45034bd122fd6160554e956dac0c734ea49cd27d1e27cb4ff6e9d669eeaa81c0",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.500-82f7c27-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-500/DroidDeck-PR.500-82f7c27-pubg.apk",
+          "size": 41777230,
+          "sha256": "2aad33794ae450cf351267b2b7ce5c4c103965e20f861fdbd3527c87bcb18f9b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.500-82f7c27-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-500/DroidDeck-PR.500-82f7c27-antutu.apk",
+          "size": 41777230,
+          "sha256": "71ce4f0891c2e2b5b231bafd6517b41b7474aeb5f31596e6eeaa3778a6816dd1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.500-82f7c27-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-500/DroidDeck-PR.500-82f7c27-ludashi.apk",
+          "size": 41777230,
+          "sha256": "92dead1fd55af2b3c0c17a3182be297cebec877565e0f45ef5eb2fed6b9380a2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-449",
       "title": "feat: add persistent per-game compatibility profiles",
