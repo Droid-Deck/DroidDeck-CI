@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791672682660,
+  "generatedAt": 1791673270505,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-548",
+      "title": "fix(ui): a page only drains into its control when that control comes back",
+      "summary": "A page opened from a control (the cog beside Play, the Desktop card's cog) always drew back into that control's old bounds on the way out, even when something else was coming in. Two cases looked broken:",
+      "commit": "18bf76769464a288d7ebf8c956b2651d179b622d",
+      "pr": 548,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791673236000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-548",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.548-18bf767.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-18bf767.apk",
+          "size": 46254671,
+          "sha256": "9cd67e8c875e4640152a274b56a115852ace8cfff6b22156d4519514c771a49b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.548-18bf767-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-18bf767-pubg.apk",
+          "size": 46254671,
+          "sha256": "542f2a486fc818a9d68619f2e2f8c25ac412d1bcdb03e05e05d992e205582770",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.548-18bf767-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-18bf767-antutu.apk",
+          "size": 46254671,
+          "sha256": "60e28592edd46ae9dc89c2e95fcf1c01254c2c46910ed0aeef3c77f5f8415200",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.548-18bf767-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-18bf767-ludashi.apk",
+          "size": 46254671,
+          "sha256": "444337de150618a4789a0d9411391260bcd597a1f85e1433c65c0c2613217e14",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-551",
       "title": "FEX: preload the fault report only where x86 loaders look",
       "summary": "Every x86 program started through FEX printed this, once per process:",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-551/DroidDeck-PR.551-13017c6-ludashi.apk",
           "size": 46140066,
           "sha256": "3aafbb8b8cdfa1e602095ad2ff1c7f12e615bdd87b94e09993878129e05bf03e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-548",
-      "title": "fix(ui): a page only drains into its control when that control comes back",
-      "summary": "A page opened from a control (the cog beside Play, the Desktop card's cog) always drew back into that control's old bounds on the way out, even when something else was coming in. Two cases looked broken:",
-      "commit": "68fbcd6f39a8e735067883e219da1f17343efa4f",
-      "pr": 548,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791672017000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-548",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.548-68fbcd6.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-68fbcd6.apk",
-          "size": 46209615,
-          "sha256": "62f154fdae7acd9ff7b6c366d91d7acf578f2d7bf8ef987398bbe51219947f2a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.548-68fbcd6-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-68fbcd6-pubg.apk",
-          "size": 46209615,
-          "sha256": "566d3423fc125d85fcdad95ccbdcb0132a6fcac73df43f843034c60cbc3f9872",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.548-68fbcd6-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-68fbcd6-antutu.apk",
-          "size": 46209615,
-          "sha256": "12e7179fa10a2b14f507a41e2318daf34803fadb5d07ccaa24fdca3a58f20c88",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.548-68fbcd6-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-68fbcd6-ludashi.apk",
-          "size": 46209615,
-          "sha256": "212c7ec45144213252134b0efd202115fb48737f97d621fdfc331545047331ad",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -403,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-449/DroidDeck-PR.449-04eaea2-ludashi.apk",
           "size": 46185039,
           "sha256": "adb2697d682aca119bab44e8e82d395e1de46a9a26ae2ac23861459b6bd9b6aa",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-529",
-      "title": "Performance: idle front end, proot stops, launch-time passes and log collection",
-      "summary": "Bottlenecks found profiling the front end, proot and five games (Palworld, Cyberpunk 2077, PEAK, Mortal Kombat X, Mortal Kombat 1) on a RedMagic, each fixed and measured against main.",
-      "commit": "05f396d25e816c1de1ef3718a2d7c7799cf7ecc1",
-      "pr": 529,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791654461000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-529",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.529-05f396d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-529/DroidDeck-PR.529-05f396d.apk",
-          "size": 46119503,
-          "sha256": "89eeae6b811d163c8a6c45943dee3820fc5768bc1626606b3d3744ae0213c557",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.529-05f396d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-529/DroidDeck-PR.529-05f396d-pubg.apk",
-          "size": 46119503,
-          "sha256": "38c55a0edcc61c2fa866f215c7be8f162549984d21d9857f799dc7ee951d9019",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.529-05f396d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-529/DroidDeck-PR.529-05f396d-antutu.apk",
-          "size": 46119503,
-          "sha256": "1d18a664f58b3c3e5f669eb77278e7e435d69368475ac909757a54d40c4fb30c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.529-05f396d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-529/DroidDeck-PR.529-05f396d-ludashi.apk",
-          "size": 46119503,
-          "sha256": "6ec296ee326fc9f415d3a855a364f143e28170bd17366ebd05007e1cfde79434",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
