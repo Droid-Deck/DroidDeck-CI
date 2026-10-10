@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791656850577,
+  "generatedAt": 1791656955796,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-534",
+      "title": "Read the phone's motion sensors only while Steam asks for them",
+      "summary": "On my S23 Ultra (Snapdragon 8 Gen 2), the session's pad-motion thread used 5\u20137% of a core\nduring gameplay, even in games that don't use gyro.",
+      "commit": "37cf617358c4eee48c87b9a538da44bf9188ffe4",
+      "pr": 534,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791656891000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-534",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.534-37cf617.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-534/DroidDeck-PR.534-37cf617.apk",
+          "size": 46115407,
+          "sha256": "fbc4943db6145eff806d632b5e3170ad76d7a8e704245390b51b5e49bf13e7d4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.534-37cf617-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-534/DroidDeck-PR.534-37cf617-pubg.apk",
+          "size": 46115407,
+          "sha256": "37da60f464210702fea299a04740ef0e937748644bda0be6e0e2d5643815ab7e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.534-37cf617-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-534/DroidDeck-PR.534-37cf617-antutu.apk",
+          "size": 46115407,
+          "sha256": "a9717888c9fe90a8680f0ebcb5a42d68b328b998769580434ede2e1343b12ba7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.534-37cf617-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-534/DroidDeck-PR.534-37cf617-ludashi.apk",
+          "size": 46115407,
+          "sha256": "a58071b90809dbeac70925a059159b1aa8619d8262391ce7c3e1f3b8b48850c8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-527",
       "title": "Terminal: release createSubprocess's JNI local references, and the cwd chars against cwd",
