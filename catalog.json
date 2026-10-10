@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791657700701,
+  "generatedAt": 1791657907330,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-d22e458",
-    "title": "fix(audio): avoid InputStream.readAllBytes() for Android 12 compatibility",
-    "summary": "In PulseAudioComponent.java, pactl() calls InputStream.readAllBytes(). While available in desktop Java 9+, on Android this method was only introduced in API level 33 (Android 13)).\nSince DroidDeck targets minSdkVersion 26, devices on Android 12 or earlier (API 26\u201332, such as the LG V50s ThinQ) crash when starting a session:\nFATAL EXCEPTION: pulse-sink-guard\njava.lang.NoSuchMethodError: No virtual method readAllBytes()[B in class Ljava/io/InputStream;\nat com.droiddeck.launcher.audio.PulseAudioComponent.pactl(PulseAudioComponent.java:227)",
-    "commit": "d22e458d642a4f093eb7a3f44ca242b12959caf8",
+    "tag": "main-c23c436",
+    "title": "Controller: optional Select button that opens the Steam menu",
+    "summary": "Adds an off-by-default option in Setup \u2192 Controller that makes the physical Select button open the Steam menu in a session instead of View/Select.",
+    "commit": "c23c43650240e7fd7cd2f21d2ae9c1dab33dba98",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791657433000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d22e458",
+    "publishedAt": 1791657856000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c23c436",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-d22e458.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d22e458/DroidDeck-main-d22e458.apk",
+        "name": "DroidDeck-main-c23c436.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c23c436/DroidDeck-main-c23c436.apk",
         "size": 46111311,
-        "sha256": "12e3c39b9d8f770bfb6692638ebd87240a1205772015426766630bd6adb290a9",
+        "sha256": "a3978aa51a08fd5ad2ee810185865f65e694581659ae82437b78ef22388b3149",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-d22e458-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d22e458/DroidDeck-main-d22e458-pubg.apk",
+        "name": "DroidDeck-main-c23c436-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c23c436/DroidDeck-main-c23c436-pubg.apk",
         "size": 46111311,
-        "sha256": "c35297367551b8a0fcda1bf0fa2504b8627bbddcbbf6ae90d1004fb4aa68d2da",
+        "sha256": "15523955a8ce42b5a7458ea783caf243b10b436c77067a5d7dab754ae93a27c2",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-d22e458-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d22e458/DroidDeck-main-d22e458-antutu.apk",
+        "name": "DroidDeck-main-c23c436-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c23c436/DroidDeck-main-c23c436-antutu.apk",
         "size": 46111311,
-        "sha256": "d44a7fcc48529bbc30d477e52cd5eb1748529193de2946945c2668056b88ed71",
+        "sha256": "e7670d7d4031188994d3b9e01d0bfbb7ec076aa999596e61b5887c5beaf7d856",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-d22e458-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d22e458/DroidDeck-main-d22e458-ludashi.apk",
+        "name": "DroidDeck-main-c23c436-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c23c436/DroidDeck-main-c23c436-ludashi.apk",
         "size": 46111311,
-        "sha256": "9af553184e1945d07f9ed191b02abaacabeb613dcaf70b4910a3f5ee3de026a8",
+        "sha256": "965b117fd9904b76ba5b7c9fe3f8d88117b21aab4c428ee83c450fee8e54bae8",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c23c43650240e7fd7cd2f21d2ae9c1dab33dba98",
+      "title": "Controller: optional Select button that opens the Steam menu",
+      "summary": "Adds an off-by-default option in Setup \u2192 Controller that makes the physical Select button open the Steam menu in a session instead of View/Select.",
+      "publishedAt": 1791657856000
+    },
     {
       "commit": "d22e458d642a4f093eb7a3f44ca242b12959caf8",
       "title": "fix(audio): avoid InputStream.readAllBytes() for Android 12 compatibility",
@@ -155,12 +161,6 @@
       "title": "Controller editor: snap controls into line while dragging",
       "summary": "When trying to change the layout of the controller buttons, I found it hard to line up groups of buttons like the shoulder buttons or start/select on a tourch screen. This PR adds a feature to the layout editor where it now snaps a dragged button into line with the others.",
       "publishedAt": 1791645533000
-    },
-    {
-      "commit": "f4678935c489bc2c103dc782c8718d1577825dd5",
-      "title": "Odin 3: skip the low-latency Wi-Fi lock, whose WLAN firmware hang reboots the device",
-      "summary": "Fixes #509.",
-      "publishedAt": 1791645262000
     }
   ],
   "tests": [
@@ -256,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-424/DroidDeck-PR.424-4900fab-ludashi.apk",
           "size": 46111311,
           "sha256": "983f446c1f0726f1a5db6787256bfb9c3e2723b1ef60a07ca5cc9a4235418dd9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-534",
-      "title": "Read the phone's motion sensors only while Steam asks for them",
-      "summary": "On my S23 Ultra (Snapdragon 8 Gen 2), the session's pad-motion thread used 5\u20137% of a core\nduring gameplay, even in games that don't use gyro.",
-      "commit": "37cf617358c4eee48c87b9a538da44bf9188ffe4",
-      "pr": 534,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791656891000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-534",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.534-37cf617.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-534/DroidDeck-PR.534-37cf617.apk",
-          "size": 46115407,
-          "sha256": "fbc4943db6145eff806d632b5e3170ad76d7a8e704245390b51b5e49bf13e7d4",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.534-37cf617-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-534/DroidDeck-PR.534-37cf617-pubg.apk",
-          "size": 46115407,
-          "sha256": "37da60f464210702fea299a04740ef0e937748644bda0be6e0e2d5643815ab7e",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.534-37cf617-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-534/DroidDeck-PR.534-37cf617-antutu.apk",
-          "size": 46115407,
-          "sha256": "a9717888c9fe90a8680f0ebcb5a42d68b328b998769580434ede2e1343b12ba7",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.534-37cf617-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-534/DroidDeck-PR.534-37cf617-ludashi.apk",
-          "size": 46115407,
-          "sha256": "a58071b90809dbeac70925a059159b1aa8619d8262391ce7c3e1f3b8b48850c8",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
