@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791654019296,
+  "generatedAt": 1791654061659,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9743ac3",
-    "title": "Windows components: leave out the OpenAL setup program, a twin of the DLL copy that installs here",
-    "summary": "oalinst runs OpenAL's NSIS setup, which only copies OpenAL32 and wrapoal; oalinstdll copies the same DLLs and installs here. The setup entry joins the list the page leaves out. With the catalog's 15 recordings, the waiting section now holds WebView2 alone. The catalog is untouched.",
-    "commit": "9743ac3abc0aaf4632b8af9f6aa9e44e43290d8c",
+    "tag": "main-41f68ef",
+    "title": "Fix launcher fullscreen around display cutouts",
+    "summary": "Fixes #209.",
+    "commit": "41f68ef1a11846aaaf81058b4faaae504ef612e4",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791653969000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9743ac3",
+    "publishedAt": 1791654006000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-41f68ef",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9743ac3.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9743ac3/DroidDeck-main-9743ac3.apk",
+        "name": "DroidDeck-main-41f68ef.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41f68ef/DroidDeck-main-41f68ef.apk",
         "size": 46107215,
-        "sha256": "50b255afccc6a52c029b3725e1f783491e7367b450b1d2d5140045e65d2d0896",
+        "sha256": "8c82690d5af6dccb4b3490289f0da03ad6be2e3bea3109b41d9b18afd702f80a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9743ac3-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9743ac3/DroidDeck-main-9743ac3-pubg.apk",
+        "name": "DroidDeck-main-41f68ef-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41f68ef/DroidDeck-main-41f68ef-pubg.apk",
         "size": 46107215,
-        "sha256": "469398629f75a07264d783765d811d57e37a4d89977cab2012f837b252e9f61e",
+        "sha256": "d4b8cecabca1b01d0d598a5702d0e2163c7c008f2256ef37c69a54744d8483f2",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9743ac3-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9743ac3/DroidDeck-main-9743ac3-antutu.apk",
+        "name": "DroidDeck-main-41f68ef-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41f68ef/DroidDeck-main-41f68ef-antutu.apk",
         "size": 46107215,
-        "sha256": "be01249df25fc50d1520609a35ce3efa446f5409cd7fc0f58a62278553410fc2",
+        "sha256": "c54d98f7723bd4ee20f6909b0cd03c85b8b16b6b18af9f69531f19d7bb47e1e3",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9743ac3-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9743ac3/DroidDeck-main-9743ac3-ludashi.apk",
+        "name": "DroidDeck-main-41f68ef-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41f68ef/DroidDeck-main-41f68ef-ludashi.apk",
         "size": 46107215,
-        "sha256": "97e8f72aed56308891e0aa4c9548e87866cff73a3d85e98bd304efa2af765750",
+        "sha256": "528289362989f32210be6c1f5f47fe037334a373d1bbeb59d35bc16aecb3ecd9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "41f68ef1a11846aaaf81058b4faaae504ef612e4",
+      "title": "Fix launcher fullscreen around display cutouts",
+      "summary": "Fixes #209.",
+      "publishedAt": 1791654006000
+    },
     {
       "commit": "9743ac3abc0aaf4632b8af9f6aa9e44e43290d8c",
       "title": "Windows components: leave out the OpenAL setup program, a twin of the DLL copy that installs here",
@@ -155,12 +161,6 @@
       "title": "CI: re-pin the Debian image and stop the publish workflow replacing it",
       "summary": "Main's first build after #497 failed the hosted image's checksum and fell back to the registry pull (it passed, through the fallback). Cause: the publish workflow still had a push trigger on its branch, which fired again on the rebase before the merge and overwrote debian-bullseye.tar.zst with a freshly compressed copy, whose checksum differs from the pinned one.",
       "publishedAt": 1791605308000
-    },
-    {
-      "commit": "a229d196bbad8f9abf85ec1c1ff94e937e6b1564",
-      "title": "CI: host the Debian image the preloads build in on a release of this repo",
-      "summary": "The x86 preloads step pulled debian:bullseye from a public registry mirror on every build whose preload cache missed. Those mirrors rate-limit GitHub's shared runner addresses, and the pull failed two builds in one hour tonight (toomanyrequests: Rate exceeded). Debian 11 is frozen upstream (archive.debian.org), so there is nothing to track: the image is a one-time snapshot.",
-      "publishedAt": 1791602971000
     }
   ],
   "tests": [
