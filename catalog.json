@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791657993376,
+  "generatedAt": 1791658097142,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6489232",
-    "title": "Fix NativeAOT GC region range defaults",
-    "summary": "Games built with older NativeAOT runtimes can fail at startup because those runtimes reject the 0x prefix in DOTNETGCRegionRange. Using 800000000 keeps the intended 32 GiB limit, and CoreCLR accepts it too.",
-    "commit": "648923259809723bae7992eeeaf5c6d15df149b8",
+    "tag": "main-bc50de3",
+    "title": "Fix CPU temperature showing 0\u00b0C in the performance overlay",
+    "summary": "Since #494 the performance overlay showed the CPU temperature as 0\u00b0C on my S23 Ultra (Snapdragon 8 Gen 2).",
+    "commit": "bc50de3b5546ad093c8b636288563d2793ca7ef4",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791657952000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6489232",
+    "publishedAt": 1791658066000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bc50de3",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6489232.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6489232/DroidDeck-main-6489232.apk",
+        "name": "DroidDeck-main-bc50de3.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc50de3/DroidDeck-main-bc50de3.apk",
         "size": 46111311,
-        "sha256": "334a002c78958c9d3ffbe00e93b94c73514941c5566336641c0ead871c2c44f4",
+        "sha256": "704152ef1a349a398a3cff6a77a77b9e2ce908175f98efdfc5157c098c5c298b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6489232-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6489232/DroidDeck-main-6489232-pubg.apk",
+        "name": "DroidDeck-main-bc50de3-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc50de3/DroidDeck-main-bc50de3-pubg.apk",
         "size": 46111311,
-        "sha256": "c2e07668e8d4f06c6e0a9eb7036b98ec31d517846298ccc33e022aa0aafdfa15",
+        "sha256": "a0af42b60536769a04a0ce7de4cd8015b287dd3f38fcd39ca36e66a0b123e257",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6489232-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6489232/DroidDeck-main-6489232-antutu.apk",
+        "name": "DroidDeck-main-bc50de3-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc50de3/DroidDeck-main-bc50de3-antutu.apk",
         "size": 46111311,
-        "sha256": "9b97b2a0af3677e45d9afaf87329bfb290f59709af7487c6bb37785e85e26044",
+        "sha256": "1e799f9502867070ebaa5038df636fa33b890f88ac4cf5c960fc4262e9e1f46a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6489232-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6489232/DroidDeck-main-6489232-ludashi.apk",
+        "name": "DroidDeck-main-bc50de3-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc50de3/DroidDeck-main-bc50de3-ludashi.apk",
         "size": 46111311,
-        "sha256": "d65498b83d5644d38bbac2a5722774d9e17cf79c50ea297ba0c50766d3c32b30",
+        "sha256": "baf73e8b68789db73619d85210e3c69b9cb18baa0b3b66c673885cffb9381409",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bc50de3b5546ad093c8b636288563d2793ca7ef4",
+      "title": "Fix CPU temperature showing 0\u00b0C in the performance overlay",
+      "summary": "Since #494 the performance overlay showed the CPU temperature as 0\u00b0C on my S23 Ultra (Snapdragon 8 Gen 2).",
+      "publishedAt": 1791658066000
+    },
     {
       "commit": "648923259809723bae7992eeeaf5c6d15df149b8",
       "title": "Fix NativeAOT GC region range defaults",
@@ -155,12 +161,6 @@
       "title": "Windows components: leave out the OpenAL setup program, a twin of the DLL copy that installs here",
       "summary": "oalinst runs OpenAL's NSIS setup, which only copies OpenAL32 and wrapoal; oalinstdll copies the same DLLs and installs here. The setup entry joins the list the page leaves out. With the catalog's 15 recordings, the waiting section now holds WebView2 alone. The catalog is untouched.",
       "publishedAt": 1791653969000
-    },
-    {
-      "commit": "ca6cfcd1937bbf836b6a37bcc5e12085cae01853",
-      "title": "Unfolded deck controls",
-      "summary": "Add a touch gamepad under the game on an unfolded foldable",
-      "publishedAt": 1791653476000
     }
   ],
   "tests": [
