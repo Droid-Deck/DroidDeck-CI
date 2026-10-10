@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791654505845,
+  "generatedAt": 1791654848245,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0043cef",
-    "title": "Rumble: don't restart the vibrator on every force-feedback packet",
-    "summary": "Fixes #511.",
-    "commit": "0043cefab5cdbe17826d267af113a4c196b0500c",
+    "tag": "main-c1c22df",
+    "title": "Launch the executable a Store package declares",
+    "summary": "Store and GDK folders name their game in MicrosoftGame.config or appxmanifest.xml. Picking the top-level Unreal bootstrap instead failed with \"CreateProcess() returned 2\" when the Store had renamed the shipping exe.",
+    "commit": "c1c22dfd37bd679b3110b21fd2d646b30c465871",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791654155000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0043cef",
+    "publishedAt": 1791654815000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c1c22df",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0043cef.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0043cef/DroidDeck-main-0043cef.apk",
+        "name": "DroidDeck-main-c1c22df.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c1c22df/DroidDeck-main-c1c22df.apk",
         "size": 46111311,
-        "sha256": "362e2081f44de6dec16d6d0d44c9c7be5b222f1b6b23b64a000a49dd48f3cd41",
+        "sha256": "755613df33406b5e94523003568c2c0bebfbc703cb4e123d95e1a508fae228fa",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0043cef-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0043cef/DroidDeck-main-0043cef-pubg.apk",
+        "name": "DroidDeck-main-c1c22df-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c1c22df/DroidDeck-main-c1c22df-pubg.apk",
         "size": 46111311,
-        "sha256": "b2639e5c465858ff4195dd4ed418be02ae4d9eb662f96b5e00e519edfb843f21",
+        "sha256": "1e41ce1b0f41fd1e332dfad3cd0e60781e63ee13f4f7d35735d2c4521793357c",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0043cef-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0043cef/DroidDeck-main-0043cef-antutu.apk",
+        "name": "DroidDeck-main-c1c22df-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c1c22df/DroidDeck-main-c1c22df-antutu.apk",
         "size": 46111311,
-        "sha256": "d1aeec8682ee5ad8bd1452769548eb74b74d16230604b163c511de8659d27907",
+        "sha256": "68e5133b92ff9a235b5130484210d5fac7c111abd2d4e4ed2fac134ba80f9519",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0043cef-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0043cef/DroidDeck-main-0043cef-ludashi.apk",
+        "name": "DroidDeck-main-c1c22df-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c1c22df/DroidDeck-main-c1c22df-ludashi.apk",
         "size": 46111311,
-        "sha256": "d952442d419870521827c3577a794ef3195ca352f06a02e6336ee582fc1ee2b9",
+        "sha256": "db1cd9573d53261b7202dbb8a9b91d18ac210136b078b24c621c8fb1cbcfbc40",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c1c22dfd37bd679b3110b21fd2d646b30c465871",
+      "title": "Launch the executable a Store package declares",
+      "summary": "Store and GDK folders name their game in MicrosoftGame.config or appxmanifest.xml. Picking the top-level Unreal bootstrap instead failed with \"CreateProcess() returned 2\" when the Store had renamed the shipping exe.",
+      "publishedAt": 1791654815000
+    },
     {
       "commit": "0043cefab5cdbe17826d267af113a4c196b0500c",
       "title": "Rumble: don't restart the vibrator on every force-feedback packet",
@@ -155,12 +161,6 @@
       "title": "Windows components: Access 2000 runtime installs here (an MSI inside a 7-Zip-openable wrapper)",
       "summary": "The recorder hung twice on art2kmin.exe because it is not a setup program at all: a wrapper 7-Zip opens, holding Setup.exe + Data1.msi. The MSI engine already lays such wrappers out (--unpack \u2192 packages inside), so the entry only had to leave the setup-program list. The catalog is untouched.",
       "publishedAt": 1791610634000
-    },
-    {
-      "commit": "4bf4e53ecf0b6b79be977db8a0a159976637b5e1",
-      "title": "Build: verify the runtime inputs only after the session scripts are staged",
-      "summary": "Main's build at 3d50e6b1 failed with Missing or changed runtime input: assets/linuxfs/usr/local/bin/droiddeck-netmanager. org.gradle.parallel is on and nothing ordered verifyRuntimeInputs after stageSessionScripts, which re-copies the session scripts into the asset tree, so the check hashed a file mid-copy. The log shows the two tasks within a tenth of a second of each other. First time",
-      "publishedAt": 1791607591000
     }
   ],
   "tests": [
