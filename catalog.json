@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791658231954,
+  "generatedAt": 1791658290429,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0579e68",
-    "title": "fix: preserve keyboard input on composite devices",
-    "summary": "Fixes #422",
-    "commit": "0579e688baa4304077ea7f80b9d98df4c47895cb",
+    "tag": "main-c115916",
+    "title": "Read the phone's motion sensors only while Steam asks for them",
+    "summary": "On my S23 Ultra (Snapdragon 8 Gen 2), the session's pad-motion thread used 5\u20137% of a core\nduring gameplay, even in games that don't use gyro.",
+    "commit": "c115916962c839d1d03186e73ee4a3231d56c27a",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791658179000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0579e68",
+    "publishedAt": 1791658257000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c115916",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0579e68.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0579e68/DroidDeck-main-0579e68.apk",
+        "name": "DroidDeck-main-c115916.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c115916/DroidDeck-main-c115916.apk",
         "size": 46115407,
-        "sha256": "bb5beb554bf9acb8ca1c9ddf455dcbd683ced83e507cf32c2e2e4e3813c5132f",
+        "sha256": "2939296adfd4e93bb9edaeec72d0ebbee7a1f64e01fe7d03ef0c39b1cf051c2c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0579e68-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0579e68/DroidDeck-main-0579e68-pubg.apk",
+        "name": "DroidDeck-main-c115916-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c115916/DroidDeck-main-c115916-pubg.apk",
         "size": 46115407,
-        "sha256": "7615ae2f3150bea09090c9b08281ef9cbf4b900f04d560c104cdfbfee032ece5",
+        "sha256": "571825de8a47ed7159da1ebf55889d97c41a61e8b86a5125b601762dad7b24c8",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0579e68-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0579e68/DroidDeck-main-0579e68-antutu.apk",
+        "name": "DroidDeck-main-c115916-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c115916/DroidDeck-main-c115916-antutu.apk",
         "size": 46115407,
-        "sha256": "15a0e5066bf614c2e279a6e708b934fac4a15266463c1b266322e1532038eabf",
+        "sha256": "4f1b5368ebe2e2835db20dbe022d198d9cd3f330fb6f77546bfc8e66ab4ac99c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0579e68-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0579e68/DroidDeck-main-0579e68-ludashi.apk",
+        "name": "DroidDeck-main-c115916-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c115916/DroidDeck-main-c115916-ludashi.apk",
         "size": 46115407,
-        "sha256": "6c0d38501dfa3c34a5a7d7add97944196af5eb7480ef9dc3b91905ff5060b9b0",
+        "sha256": "fdc6ed441ea81966ed2dc866527f246be8990fb70b6d59b31aa62e3d7e1444e5",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c115916962c839d1d03186e73ee4a3231d56c27a",
+      "title": "Read the phone's motion sensors only while Steam asks for them",
+      "summary": "On my S23 Ultra (Snapdragon 8 Gen 2), the session's pad-motion thread used 5\u20137% of a core\nduring gameplay, even in games that don't use gyro.",
+      "publishedAt": 1791658257000
+    },
     {
       "commit": "0579e688baa4304077ea7f80b9d98df4c47895cb",
       "title": "fix: preserve keyboard input on composite devices",
@@ -155,12 +161,6 @@
       "title": "Rumble: don't restart the vibrator on every force-feedback packet",
       "summary": "Fixes #511.",
       "publishedAt": 1791654155000
-    },
-    {
-      "commit": "41f68ef1a11846aaaf81058b4faaae504ef612e4",
-      "title": "Fix launcher fullscreen around display cutouts",
-      "summary": "Fixes #209.",
-      "publishedAt": 1791654006000
     }
   ],
   "tests": [
