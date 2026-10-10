@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791604845349,
+  "generatedAt": 1791605345006,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a229d19",
-    "title": "CI: host the Debian image the preloads build in on a release of this repo",
-    "summary": "The x86 preloads step pulled debian:bullseye from a public registry mirror on every build whose preload cache missed. Those mirrors rate-limit GitHub's shared runner addresses, and the pull failed two builds in one hour tonight (toomanyrequests: Rate exceeded). Debian 11 is frozen upstream (archive.debian.org), so there is nothing to track: the image is a one-time snapshot.",
-    "commit": "a229d196bbad8f9abf85ec1c1ff94e937e6b1564",
+    "tag": "main-846b20f",
+    "title": "CI: re-pin the Debian image and stop the publish workflow replacing it",
+    "summary": "Main's first build after #497 failed the hosted image's checksum and fell back to the registry pull (it passed, through the fallback). Cause: the publish workflow still had a push trigger on its branch, which fired again on the rebase before the merge and overwrote debian-bullseye.tar.zst with a freshly compressed copy, whose checksum differs from the pinned one.",
+    "commit": "846b20f78aa9e5a037c8fd4a989777ff097e90f5",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791602971000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a229d19",
+    "publishedAt": 1791605308000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-846b20f",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a229d19.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a229d19/DroidDeck-main-a229d19.apk",
+        "name": "DroidDeck-main-846b20f.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-846b20f/DroidDeck-main-846b20f.apk",
         "size": 41777230,
-        "sha256": "4287d6309d74c4149680145c1ed3f3ed5b2b6c3909d076ee063740f1caeac356",
+        "sha256": "06e0a584ca8ce01eb3a560a2ddbed057f7f73c8b4cb3cee1023c38c61006dcee",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a229d19-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a229d19/DroidDeck-main-a229d19-pubg.apk",
+        "name": "DroidDeck-main-846b20f-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-846b20f/DroidDeck-main-846b20f-pubg.apk",
         "size": 41777230,
-        "sha256": "95913c2192251e38906701a5b702ff226882dfdd98cb260de1829238c9fe253a",
+        "sha256": "58421647e2cf373c4ac04227c873a47f15e9f53beffa44da80bef124fabfb86e",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a229d19-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a229d19/DroidDeck-main-a229d19-antutu.apk",
+        "name": "DroidDeck-main-846b20f-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-846b20f/DroidDeck-main-846b20f-antutu.apk",
         "size": 41777230,
-        "sha256": "b4e1c97ae322393888efd4548e7545a3ed3fd752e915be3eb418e3821fd6331d",
+        "sha256": "ff3b0dd3c2e25e1cfc577555a579fd3beb033177795b8144a78a4ff762d7662b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a229d19-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a229d19/DroidDeck-main-a229d19-ludashi.apk",
+        "name": "DroidDeck-main-846b20f-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-846b20f/DroidDeck-main-846b20f-ludashi.apk",
         "size": 41777230,
-        "sha256": "90b8edd105a0b75f13de907c5bb736520b41b9ae9c7539111ea1542f15eee358",
+        "sha256": "56a3fae6a01d592a63f453f469fd4c3e18ec5d2b6ffbfb18d1405e21f89f3ccb",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "846b20f78aa9e5a037c8fd4a989777ff097e90f5",
+      "title": "CI: re-pin the Debian image and stop the publish workflow replacing it",
+      "summary": "Main's first build after #497 failed the hosted image's checksum and fell back to the registry pull (it passed, through the fallback). Cause: the publish workflow still had a push trigger on its branch, which fired again on the rebase before the merge and overwrote debian-bullseye.tar.zst with a freshly compressed copy, whose checksum differs from the pinned one.",
+      "publishedAt": 1791605308000
+    },
     {
       "commit": "a229d196bbad8f9abf85ec1c1ff94e937e6b1564",
       "title": "CI: host the Debian image the preloads build in on a release of this repo",
@@ -155,12 +161,6 @@
       "title": "Logs: every log in app-private storage, shared as one scrubbed zip",
       "summary": "Moves every DroidDeck log out of the public Download/DroidDeck folder into the app's private files/logs. Every existing \"Share logs\" action now bundles them into one zip that goes through a final scrub. One squashed commit over current main.",
       "publishedAt": 1791567318000
-    },
-    {
-      "commit": "8e1a676f1957d1fbd3e3491e74b6e77269821aab",
-      "title": "Windows components: lay out installer .exe wrappers without running them",
-      "summary": "The components page could only take .msi packages apart, so most catalog entries that ship an installer .exe sat under \"Need a Windows installer\": every VC++ runtime, .NET Framework 4.0 to 4.8, the .NET Core/5+ desktop runtimes. This teaches droiddeck-msi-install to open those wrappers and lay out the packages inside exactly as it does today for an .msi: files into the component folder, re",
-      "publishedAt": 1791564248000
     }
   ],
   "tests": [
