@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791656794399,
+  "generatedAt": 1791656850577,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,153 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-527",
+      "title": "Terminal: release createSubprocess's JNI local references, and the cwd chars against cwd",
+      "summary": "createSubprocess took one local reference per argv and envp element and never released it, so they all stayed until the call returned. ART aborts at 512 (local reference table overflow (max=512)) and both loops share the table, so a long argument list plus a large environment could reach it. Fixes #507.",
+      "commit": "3a19d433457a4601545fcd7d1f7ee6628916a30f",
+      "pr": 527,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791656799000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-527",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.527-3a19d43.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-527/DroidDeck-PR.527-3a19d43.apk",
+          "size": 46111311,
+          "sha256": "6962a5fd387f1b8b430b96515fa8075ce6738fdde3665bdba5e6fc9e40f68b78",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.527-3a19d43-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-527/DroidDeck-PR.527-3a19d43-pubg.apk",
+          "size": 46111311,
+          "sha256": "427a4fb46c3f04ab8bcf382ccb005aebdd7d280e92e386db7de1ab983e0d5f5f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.527-3a19d43-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-527/DroidDeck-PR.527-3a19d43-antutu.apk",
+          "size": 46111311,
+          "sha256": "c34a0ba92186fd2acc44f7846c86d4690089d739fae58947741babd3e2755474",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.527-3a19d43-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-527/DroidDeck-PR.527-3a19d43-ludashi.apk",
+          "size": 46111311,
+          "sha256": "fa2ed88fd1479ebf13f81d704987c7b743ad31b20c9476d2c1335b31517d7171",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-531",
+      "title": "fix(audio): avoid InputStream.readAllBytes() for Android 12 compatibility",
+      "summary": "In PulseAudioComponent.java, pactl() calls InputStream.readAllBytes(). While available in desktop Java 9+, on Android this method was only introduced in API level 33 (Android 13)).\nSince DroidDeck targets minSdkVersion 26, devices on Android 12 or earlier (API 26\u201332, such as the LG V50s ThinQ) crash when starting a session:\nFATAL EXCEPTION: pulse-sink-guard\njava.lang.NoSuchMethodError: No virtual method readAllBytes()[B in class Ljava/io/InputStream;\nat com.droiddeck.launcher.audio.PulseAudioComponent.pactl(PulseAudioComponent.java:227)",
+      "commit": "312aa60ec1fa5d94e905ca4e186f91d181a7e7d5",
+      "pr": 531,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791656767000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-531",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.531-312aa60.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-531/DroidDeck-PR.531-312aa60.apk",
+          "size": 46111311,
+          "sha256": "bd25b7589fa18928d0b3072504a87047c211510d57cfcd99e9d7f3d4e2a18ae3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.531-312aa60-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-531/DroidDeck-PR.531-312aa60-pubg.apk",
+          "size": 46111311,
+          "sha256": "f23eed441246de7748fa0045546c95401708825892ce062310954456c6965916",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.531-312aa60-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-531/DroidDeck-PR.531-312aa60-antutu.apk",
+          "size": 46111311,
+          "sha256": "9ce5fa7ba65e92038aca5b51252acfc59e37bfc20961c04c1244a42e4b4de8be",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.531-312aa60-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-531/DroidDeck-PR.531-312aa60-ludashi.apk",
+          "size": 46111311,
+          "sha256": "f504ba7093b298f3786693f6eb1cc91156ad719e2eb4a51d9eba5255e5e0a4a1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-516",
+      "title": "Fix CPU temperature showing 0\u00b0C in the performance overlay",
+      "summary": "Since #494 the performance overlay showed the CPU temperature as 0\u00b0C on my S23 Ultra (Snapdragon 8 Gen 2).",
+      "commit": "96516c7af5acc8514b3fbdfce46387d5ac13861d",
+      "pr": 516,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791656766000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-516",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.516-96516c7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-516/DroidDeck-PR.516-96516c7.apk",
+          "size": 46111311,
+          "sha256": "6cefe2d963a8896e2c9728f8f19509dd3a275bb7ca57d60cd27faac9d1614a44",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.516-96516c7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-516/DroidDeck-PR.516-96516c7-pubg.apk",
+          "size": 46111311,
+          "sha256": "3d587d6ee88f83f31470936f610cdcbe2a654ca51ec4c3fa8a581c6bfe54b2ac",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.516-96516c7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-516/DroidDeck-PR.516-96516c7-antutu.apk",
+          "size": 46111311,
+          "sha256": "f436da84880d78b34f8a91a6c268a7e4cddf237725969213633466ada6eb41c4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.516-96516c7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-516/DroidDeck-PR.516-96516c7-ludashi.apk",
+          "size": 46111311,
+          "sha256": "37cdc43fe7d7ffd5ddc499955b47b84ccd529a855d49a07081f81ab7f84affc8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-385",
       "title": "Fix NativeAOT GC region range defaults",
