@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791603961649,
+  "generatedAt": 1791604845349,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-501",
-      "title": "CI: re-pin the Debian image and stop the publish workflow replacing it",
-      "summary": "Main's first build after #497 failed the hosted image's checksum and fell back to the registry pull (it passed, through the fallback). Cause: the publish workflow still had a push trigger on its branch, which fired again on the rebase before the merge and overwrote debian-bullseye.tar.zst with a freshly compressed copy, whose checksum differs from the pinned one.",
-      "commit": "8009086c447d6b8650a1f34a4b477c1d42c31036",
-      "pr": 501,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791603927000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-501",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.501-8009086.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-501/DroidDeck-PR.501-8009086.apk",
-          "size": 41777230,
-          "sha256": "ddc09c1d0c5b6891d50e00150c781c5f2cb6aa4bb657aeed5f47b41330e97de9",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.501-8009086-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-501/DroidDeck-PR.501-8009086-pubg.apk",
-          "size": 41777230,
-          "sha256": "84950d1134a5b13109c0c498f99275f92496c2aa266cf05c67763911d62489a7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.501-8009086-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-501/DroidDeck-PR.501-8009086-antutu.apk",
-          "size": 41777230,
-          "sha256": "bb3e0d68f7c630f8cc7c5e1a2da8e5f059d836841eac6255ea8e5dda2f62d169",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.501-8009086-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-501/DroidDeck-PR.501-8009086-ludashi.apk",
-          "size": 41777230,
-          "sha256": "68080da8382b0468c9ac22ef790f28524c84d137e9936522b49cbfc0815d1d6e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-500",
       "title": "fix(amazon): sync library with nile's headers and registered serial",
