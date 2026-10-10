@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791607638635,
+  "generatedAt": 1791610672145,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4bf4e53",
-    "title": "Build: verify the runtime inputs only after the session scripts are staged",
-    "summary": "Main's build at 3d50e6b1 failed with Missing or changed runtime input: assets/linuxfs/usr/local/bin/droiddeck-netmanager. org.gradle.parallel is on and nothing ordered verifyRuntimeInputs after stageSessionScripts, which re-copies the session scripts into the asset tree, so the check hashed a file mid-copy. The log shows the two tasks within a tenth of a second of each other. First time",
-    "commit": "4bf4e53ecf0b6b79be977db8a0a159976637b5e1",
+    "tag": "main-8ac5556",
+    "title": "Windows components: Access 2000 runtime installs here (an MSI inside a 7-Zip-openable wrapper)",
+    "summary": "The recorder hung twice on art2kmin.exe because it is not a setup program at all: a wrapper 7-Zip opens, holding Setup.exe + Data1.msi. The MSI engine already lays such wrappers out (--unpack \u2192 packages inside), so the entry only had to leave the setup-program list. The catalog is untouched.",
+    "commit": "8ac555664ad1b079019d00af3348125d0de0c7c1",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791607591000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4bf4e53",
+    "publishedAt": 1791610634000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8ac5556",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4bf4e53.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4bf4e53/DroidDeck-main-4bf4e53.apk",
+        "name": "DroidDeck-main-8ac5556.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ac5556/DroidDeck-main-8ac5556.apk",
         "size": 41777230,
-        "sha256": "fc4c514349f16f359446d515cb4c06c9df2f3572ee29da9acee702c2e936a2ff",
+        "sha256": "49ddd681163f1c78c27329a238884f2bb5e7337215dbb71eb4c1bb3f8d30e13d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4bf4e53-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4bf4e53/DroidDeck-main-4bf4e53-pubg.apk",
+        "name": "DroidDeck-main-8ac5556-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ac5556/DroidDeck-main-8ac5556-pubg.apk",
         "size": 41777230,
-        "sha256": "033186b7e117b2ae978315ea2e7d4f5de5a17badaeba4c0ca0761e4f319a1384",
+        "sha256": "674e1845fbace9b2d811f8e105deeb5db6669b8be7ee6d6b286b11ea6a244b06",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4bf4e53-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4bf4e53/DroidDeck-main-4bf4e53-antutu.apk",
+        "name": "DroidDeck-main-8ac5556-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ac5556/DroidDeck-main-8ac5556-antutu.apk",
         "size": 41777230,
-        "sha256": "8f29344d022564ce43bab80f314ff76fbd3e803ab3f97d2b483ebd83e00eea0a",
+        "sha256": "b727d4aa584a3ec53ea6b01623601cf2c403dfe8135730f1cf0f50f9bb722e97",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4bf4e53-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4bf4e53/DroidDeck-main-4bf4e53-ludashi.apk",
+        "name": "DroidDeck-main-8ac5556-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ac5556/DroidDeck-main-8ac5556-ludashi.apk",
         "size": 41777230,
-        "sha256": "bf8214510566aa614c8715e7de88e79dd86164ee5b5158fed3f6602d6e5ba6ac",
+        "sha256": "1c6f5511c869d786254ff6adc9b9d053769784269d00c0bea57f2827c066c9e7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8ac555664ad1b079019d00af3348125d0de0c7c1",
+      "title": "Windows components: Access 2000 runtime installs here (an MSI inside a 7-Zip-openable wrapper)",
+      "summary": "The recorder hung twice on art2kmin.exe because it is not a setup program at all: a wrapper 7-Zip opens, holding Setup.exe + Data1.msi. The MSI engine already lays such wrappers out (--unpack \u2192 packages inside), so the entry only had to leave the setup-program list. The catalog is untouched.",
+      "publishedAt": 1791610634000
+    },
     {
       "commit": "4bf4e53ecf0b6b79be977db8a0a159976637b5e1",
       "title": "Build: verify the runtime inputs only after the session scripts are staged",
@@ -155,12 +161,6 @@
       "title": "feat(stores): bring the launcher's motion to the stores pages",
       "summary": "Brings the Stores section in line with the motion the rest of the launcher already has. No new primitives: it's the Play flood, PageFlood, the focus ring's glide and End session's step-out, applied to the store pages.",
       "publishedAt": 1791572439000
-    },
-    {
-      "commit": "6e5932cb682ebdec4c36ae253e839c52ab2376e7",
-      "title": "Stores: seal the GOG, Epic and Amazon sign-in files with an Android Keystore key",
-      "summary": "The stores' sign-ins (files/stores/<store>/credentials.json: access and refresh tokens, account id and name) were plain JSON. Other Android apps could not read them, but every program in the Linux session (games, mods, Flatpak apps) runs as the app uid and could. This seals them with AES-256-GCM under a non-exportable AndroidKeyStore key (StrongBox when available), so the session only ever sees",
-      "publishedAt": 1791571788000
     }
   ],
   "tests": [
