@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791668067602,
+  "generatedAt": 1791670310825,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-548",
+      "title": "fix(ui): a page only drains into its control when that control comes back",
+      "summary": "A page opened from a control (the cog beside Play, the Desktop card's cog) always drew back into that control's old bounds on the way out, even when something else was coming in. Two cases looked broken:",
+      "commit": "adc3369975426bbad3ba67a21e8cfe2662754b94",
+      "pr": 548,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791670275000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-548",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.548-adc3369.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-adc3369.apk",
+          "size": 46139983,
+          "sha256": "daa100fe254a3b2447b5865b22846e3a7d14b3af5ab259b2c6e499602fc875dd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.548-adc3369-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-adc3369-pubg.apk",
+          "size": 46139983,
+          "sha256": "ad92909829f0d4fde5f9e2cbfa4850b95a997febf7f57de25eac4b2642e8c51c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.548-adc3369-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-adc3369-antutu.apk",
+          "size": 46139983,
+          "sha256": "7b0ebe7f6f570162a287a41bd7a5dfc3d2a62fff785c389e1cf14fad58294a75",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.548-adc3369-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-adc3369-ludashi.apk",
+          "size": 46139983,
+          "sha256": "eaa7d90394d1f111ad50353153b22fdda54a1e2f266f3642d4d9b5419a22a3a9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-546",
       "title": "refactor: Steam always runs in Deck mode on the Deck beta branch",
