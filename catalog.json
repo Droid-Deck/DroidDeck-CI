@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791657121738,
+  "generatedAt": 1791657445683,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-1b7cb41",
-    "title": "Windows components: leave out WebView2, which only Microsoft's installer can lay out",
-    "summary": "WebView2's files sit in a container no extractor opens (the 145 MB standalone installer's payload is an LZMA resource holding Microsoft's own pack of 2,318 files with no readable directory) and may not be hosted, so a recording cannot source them. Installing it means running Microsoft's installer inside the prefix, which no runtime here does yet. The entry joins the list the page leaves out; with",
-    "commit": "1b7cb4179dcb3edd0b2e9e86403f0b40270c145e",
+    "tag": "main-fad52ec",
+    "title": "Terminal: release createSubprocess's JNI local references, and the cwd chars against cwd",
+    "summary": "createSubprocess took one local reference per argv and envp element and never released it, so they all stayed until the call returned. ART aborts at 512 (local reference table overflow (max=512)) and both loops share the table, so a long argument list plus a large environment could reach it. Fixes #507.",
+    "commit": "fad52ec1259a9365e128ca65ab2e985e37ce8e19",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791655816000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1b7cb41",
+    "publishedAt": 1791657401000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fad52ec",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-1b7cb41.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b7cb41/DroidDeck-main-1b7cb41.apk",
+        "name": "DroidDeck-main-fad52ec.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fad52ec/DroidDeck-main-fad52ec.apk",
         "size": 46111311,
-        "sha256": "3e8a5b73affab942cf55bfdadbeb4035f870a3b4ce8e2d04398be588257b0af6",
+        "sha256": "5054649a18b40116d20c7ddaba64aa50cd175a394406aa0ea05baeae1fbf6338",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-1b7cb41-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b7cb41/DroidDeck-main-1b7cb41-pubg.apk",
+        "name": "DroidDeck-main-fad52ec-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fad52ec/DroidDeck-main-fad52ec-pubg.apk",
         "size": 46111311,
-        "sha256": "95204e77581904d83a5c80821509f2d20078c07a0a1eed601bd04bb8e3dcb293",
+        "sha256": "695bf2cdb2ff6dfffe8e96cd26a8e45583512f1797228c239bbc7fe0b6fd86ab",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-1b7cb41-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b7cb41/DroidDeck-main-1b7cb41-antutu.apk",
+        "name": "DroidDeck-main-fad52ec-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fad52ec/DroidDeck-main-fad52ec-antutu.apk",
         "size": 46111311,
-        "sha256": "7cfc715ef792157dfe361f29c6db5b6a07bae6346c3977a1bbc6de85747e4231",
+        "sha256": "bd7c1f44ddf1e8ff0848e3d82d9144ac20096fb71ead1387d8ca81cd03bdbb9c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-1b7cb41-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b7cb41/DroidDeck-main-1b7cb41-ludashi.apk",
+        "name": "DroidDeck-main-fad52ec-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fad52ec/DroidDeck-main-fad52ec-ludashi.apk",
         "size": 46111311,
-        "sha256": "e8d90e5b9d99379ac19da50ea346ab0c864d7ec1a1c0b38deaef35ca8286f09d",
+        "sha256": "8820d8cb4b927e95ba4158c4480d4e87fa6a414a6af03568fdae85b44e0ccf03",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "fad52ec1259a9365e128ca65ab2e985e37ce8e19",
+      "title": "Terminal: release createSubprocess's JNI local references, and the cwd chars against cwd",
+      "summary": "createSubprocess took one local reference per argv and envp element and never released it, so they all stayed until the call returned. ART aborts at 512 (local reference table overflow (max=512)) and both loops share the table, so a long argument list plus a large environment could reach it. Fixes #507.",
+      "publishedAt": 1791657401000
+    },
     {
       "commit": "1b7cb4179dcb3edd0b2e9e86403f0b40270c145e",
       "title": "Windows components: leave out WebView2, which only Microsoft's installer can lay out",
@@ -155,12 +161,6 @@
       "title": "feat(desktop): add desktop uninstall and legacy LXQt cleanup",
       "summary": "Adds retryable desktop uninstall and legacy LXQt cleanup that preserve user data and shared dependencies, verified on Thor through interruption/retry, 604 MiB reclaimed, Steam/melonDS launches and KDE reinstall, with 437 Android tests and the Linux tool suite passing.",
       "publishedAt": 1791644850000
-    },
-    {
-      "commit": "6e0d456dd7d250e8ac56798fba8db2e4057da275",
-      "title": "fix(amazon): sync library with nile's headers and registered serial",
-      "summary": "Signed-in Amazon accounts showed no games. The entitlements call now matches nile, the reference client that works:",
-      "publishedAt": 1791644764000
     }
   ],
   "tests": [
