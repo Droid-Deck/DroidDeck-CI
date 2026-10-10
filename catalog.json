@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791644808213,
+  "generatedAt": 1791644877576,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6e0d456",
-    "title": "fix(amazon): sync library with nile's headers and registered serial",
-    "summary": "Signed-in Amazon accounts showed no games. The entitlements call now matches nile, the reference client that works:",
-    "commit": "6e0d456dd7d250e8ac56798fba8db2e4057da275",
+    "tag": "main-416eb41",
+    "title": "feat(desktop): add desktop uninstall and legacy LXQt cleanup",
+    "summary": "Adds retryable desktop uninstall and legacy LXQt cleanup that preserve user data and shared dependencies, verified on Thor through interruption/retry, 604 MiB reclaimed, Steam/melonDS launches and KDE reinstall, with 437 Android tests and the Linux tool suite passing.",
+    "commit": "416eb41d8dce81f7f33feb99129035506b116090",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791644764000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6e0d456",
+    "publishedAt": 1791644850000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-416eb41",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6e0d456.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e0d456/DroidDeck-main-6e0d456.apk",
-        "size": 41777230,
-        "sha256": "8df7dab368b4d90f66026d9aaae1d8272f010818cecc7c37e2c15b80e86d5194",
+        "name": "DroidDeck-main-416eb41.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-416eb41/DroidDeck-main-416eb41.apk",
+        "size": 46086735,
+        "sha256": "874de49b2e80b01d45234699babf4e311002e298c4db5daea79d36dcd4a009dd",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6e0d456-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e0d456/DroidDeck-main-6e0d456-pubg.apk",
-        "size": 41777230,
-        "sha256": "2e7808061e20e46406ff556f0957be524720ffce42eac7868f158965cf8f5f8d",
+        "name": "DroidDeck-main-416eb41-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-416eb41/DroidDeck-main-416eb41-pubg.apk",
+        "size": 46086735,
+        "sha256": "6c2c677ddd4cf3acfb606c28d558b55c3d0b9e7fb26b861324281784c28bd5d0",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6e0d456-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e0d456/DroidDeck-main-6e0d456-antutu.apk",
-        "size": 41777230,
-        "sha256": "4f7d8c730afda42983c6c11338b5e63516806cab4beeb732381e2a60115e4be2",
+        "name": "DroidDeck-main-416eb41-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-416eb41/DroidDeck-main-416eb41-antutu.apk",
+        "size": 46086735,
+        "sha256": "92462aa868277f9e8f0dd9434294730bcf7b22df607e2dafd57eb21a56d9c2d4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6e0d456-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6e0d456/DroidDeck-main-6e0d456-ludashi.apk",
-        "size": 41777230,
-        "sha256": "9cc8780e76c8de5d73d3802a82df6563004c899a80b8f31383b250fd252bb9e8",
+        "name": "DroidDeck-main-416eb41-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-416eb41/DroidDeck-main-416eb41-ludashi.apk",
+        "size": 46086735,
+        "sha256": "de682102c2e3b63a33e08e3e82032cf7e287f3bc7a3b143b487d726c443bba8d",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "416eb41d8dce81f7f33feb99129035506b116090",
+      "title": "feat(desktop): add desktop uninstall and legacy LXQt cleanup",
+      "summary": "Adds retryable desktop uninstall and legacy LXQt cleanup that preserve user data and shared dependencies, verified on Thor through interruption/retry, 604 MiB reclaimed, Steam/melonDS launches and KDE reinstall, with 437 Android tests and the Linux tool suite passing.",
+      "publishedAt": 1791644850000
+    },
     {
       "commit": "6e0d456dd7d250e8ac56798fba8db2e4057da275",
       "title": "fix(amazon): sync library with nile's headers and registered serial",
@@ -155,12 +161,6 @@
       "title": "Games: revamped add games feature",
       "summary": "Adding and managing your own (non-Steam) games moves out of the Steam \u2699 settings into the Games tab and works like Steam's own Properties for a non-Steam game: one place to add, fix and remove, with as little to do as possible.",
       "publishedAt": 1791590310000
-    },
-    {
-      "commit": "e0a7ce4f88bde3e547c9891461df7c6d91d68d4c",
-      "title": "fix(desktop): address KDE feedback and keep local builds in sync with CI",
-      "summary": "Restore KDE scaling, Android paste, hybrid keyboard input, Steam desktop UI, GTK close buttons, Steam library Places in Dolphin and melonDS window defaults, and make local APK builds prepare and verify the same runtime inputs as CI.",
-      "publishedAt": 1791582245000
     }
   ],
   "tests": [
