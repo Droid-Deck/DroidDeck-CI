@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791748928765,
+  "generatedAt": 1791749035697,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-587",
+      "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
+      "summary": "A user's first Steam setup never finished on an Honor Pad (Snapdragon 6 Gen 1, metered Wi-Fi with a 14 Mbit/s link). Their log stops at downloading Steam: binslinuxarm64linuxarm64 (2/17). The log was shared 31 s into the session, so nothing had failed yet. The way the download works explains why it never got further.",
+      "commit": "bd36f6f6911272a8781cb1e76d540bb3d94b31bd",
+      "pr": 587,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791748985000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-587",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.587-bd36f6f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-bd36f6f.apk",
+          "size": 46422973,
+          "sha256": "819a3e5ef770295c55338dc6fb15b96aefa6ce065fa7c8f21313f5af3bd5a1d8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.587-bd36f6f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-bd36f6f-pubg.apk",
+          "size": 46422973,
+          "sha256": "1f3f017e389b68422920202fdd70c2495c91f7eadb3a50cd0b6148304a34f915",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.587-bd36f6f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-bd36f6f-antutu.apk",
+          "size": 46422973,
+          "sha256": "a08a557db1fba4e6fe795495636e9940ece518978289986f476861f129044fc9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.587-bd36f6f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-bd36f6f-ludashi.apk",
+          "size": 46422973,
+          "sha256": "b6d94ded7ced129005f7a3310b6bde48e847c7aabd13b00bc91b6daa83b9cc23",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-588",
       "title": "DroidDeck-Proton as a Proton source, and update checks for every source",
       "summary": "What\n\u2022 Setup \u203a Proton versions: DroidDeck-Proton (The412Banner/DroidDeck-Proton) added as a third source beside GE-Proton and proton-cachyos. It uses the GE-style aarch64 tarball and sha512 file, and is also accepted as droiddeck by droiddeck-proton-extra / the session queue. steam-compatibility adopts it like any other extra, so Steam lists it as \"DroidDeck-Proton 11-7.5 (Compatible)\".\n\u2022 Update checks for all three sources: the newest full release is looked up at app start and when the page opens, at most every 6 h; when offline, the last answer is kept. A newer release shows \"Update available \u2192 <tag>\" with Update. Updating installs the new build beside the old one, and the old one stays until it is removed with \"Remove old \u2026 versions\", because games are mapped to it by name\n\u2022 Installed builds are ordered by version number, not by name, so 11-9 comes before 11-10 (maxByOrNull { it.name } picked 11-9). The release tag each build was installed from is now recorded. Prereleases and drafts are skipped.\n\u2022 Removing an installed Proton removes that exact build, not always the newest.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-588/DroidDeck-PR.588-7150320-ludashi.apk",
           "size": 46422874,
           "sha256": "a5402de6a54de995a132885797f327f7ebe9e2393bcdcdf0f25ce442f91e7b31",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-587",
-      "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
-      "summary": "A user's first Steam setup never finished on an Honor Pad (Snapdragon 6 Gen 1, metered Wi-Fi with a 14 Mbit/s link). Their log stops at downloading Steam: binslinuxarm64linuxarm64 (2/17). The log was shared 31 s into the session, so nothing had failed yet. The way the download works explains why it never got further.",
-      "commit": "98e9043dd0eeb7422d9002cb498f600e83d96e8c",
-      "pr": 587,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791744904000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-587",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.587-98e9043.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-98e9043.apk",
-          "size": 46271322,
-          "sha256": "e775f4405bf416d19265b5aaeeab7fdceaf0dc516ca1d7c92c8f573bcb7f479a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.587-98e9043-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-98e9043-pubg.apk",
-          "size": 46271322,
-          "sha256": "da668b53497e2257a582306b84781dfebb35d5f55b4ee1b3e14a019e1b099283",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.587-98e9043-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-98e9043-antutu.apk",
-          "size": 46271322,
-          "sha256": "1bab957cedf9e6625a09ce264945ab3117a41c3eb0447bdac49243930673fa4b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.587-98e9043-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-98e9043-ludashi.apk",
-          "size": 46271322,
-          "sha256": "b7ce942ee6f444735eb2f6f3f29dc771f20e01726abf92dd46c75ea6fa0ec5b1",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
