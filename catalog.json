@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791699430262,
+  "generatedAt": 1791702529860,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-566",
+      "title": "perf: Steam's web helper runs its GPU, audio and zygote work inside one process",
+      "summary": "Cuts Steam's web helper from 8 processes to 4 by running its GPU process, audio service and zygotes inside the browser process. This lowers the session's count against Android's child-process limit. On the Thor, under identical conditions, the whole session went from 41 to 37 processes; the web helper's memory went from ~1.4 GB to ~1.14 GB RSS.",
+      "commit": "fc4f022850307a788f3c58b6e9eda3ad4289e329",
+      "pr": 566,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791702490000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-566",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.566-fc4f022.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-566/DroidDeck-PR.566-fc4f022.apk",
+          "size": 46271322,
+          "sha256": "40b1b52289274a9eab4e17d8c0bd5bec3bd8a3abb5757c30b230bec20e3b32e6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.566-fc4f022-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-566/DroidDeck-PR.566-fc4f022-pubg.apk",
+          "size": 46271322,
+          "sha256": "1f0b72310308aba9dd6b70f107a4ac94446011e15de601ed9bbb10b4bd04ab80",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.566-fc4f022-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-566/DroidDeck-PR.566-fc4f022-antutu.apk",
+          "size": 46271322,
+          "sha256": "16d0c9b4fb91b8ea89b25963d3aa923e3a42ff40df86b820e147b6e2d4abbbc0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.566-fc4f022-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-566/DroidDeck-PR.566-fc4f022-ludashi.apk",
+          "size": 46271322,
+          "sha256": "d4ecfb5a1b6421acbdb5c9c80525c251889249862a5bb9aae16fc3016e8410f1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-564",
       "title": "feat: target Android API 36",
