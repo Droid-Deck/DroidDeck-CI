@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791746031784,
+  "generatedAt": 1791747735217,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-588",
+      "title": "DroidDeck-Proton as a Proton source, and update checks for every source",
+      "summary": "What\n\u2022 Setup \u203a Proton versions: DroidDeck-Proton (The412Banner/DroidDeck-Proton) added as a third source beside GE-Proton and proton-cachyos. It uses the GE-style aarch64 tarball and sha512 file, and is also accepted as droiddeck by droiddeck-proton-extra / the session queue. steam-compatibility adopts it like any other extra, so Steam lists it as \"DroidDeck-Proton 11-7.5 (Compatible)\".\n\u2022 Update checks for all three sources: the newest full release is looked up at app start and when the page opens, at most every 6 h; when offline, the last answer is kept. A newer release shows \"Update available \u2192 <tag>\" with Update. Updating installs the new build beside the old one, and the old one stays until it is removed with \"Remove old \u2026 versions\", because games are mapped to it by name\n\u2022 Installed builds are ordered by version number, not by name, so 11-9 comes before 11-10 (maxByOrNull { it.name } picked 11-9). The release tag each build was installed from is now recorded. Prereleases and drafts are skipped.\n\u2022 Removing an installed Proton removes that exact build, not always the newest.",
+      "commit": "715032062d6246d4ed4fb30ba131191e9cec2a31",
+      "pr": 588,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791747682000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-588",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.588-7150320.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-588/DroidDeck-PR.588-7150320.apk",
+          "size": 46422874,
+          "sha256": "b2b6c89cf85aca421fdcc2f661b8ec6646ee52acf8c2616fcb0e6eeafe3e7641",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.588-7150320-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-588/DroidDeck-PR.588-7150320-pubg.apk",
+          "size": 46422874,
+          "sha256": "3ce0dd35b2a563c10a2e117c29132fa4303d5da3135fa373783b9c38920f73f7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.588-7150320-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-588/DroidDeck-PR.588-7150320-antutu.apk",
+          "size": 46422874,
+          "sha256": "1b47aa82544ed206e3a4b38620e2f6b1b449d7de6de3361966e33fe9de917b1b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.588-7150320-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-588/DroidDeck-PR.588-7150320-ludashi.apk",
+          "size": 46422874,
+          "sha256": "a5402de6a54de995a132885797f327f7ebe9e2393bcdcdf0f25ce442f91e7b31",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-587",
       "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
