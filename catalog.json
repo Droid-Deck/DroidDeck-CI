@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791738977921,
+  "generatedAt": 1791742821304,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-548",
+      "title": "Carry the stores' motion and layout into Steam settings, Components, Setup, Flathub and Desktop",
+      "summary": "Takes the motion vocabulary from the stores work and applies it, with a layout pass, to the parts of the app still on older patterns. One commit per phase, in order.",
+      "commit": "b9d4ad2b0afbe53b2772742e4c33efedb2d53bc6",
+      "pr": 548,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791742784000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-548",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.548-b9d4ad2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-b9d4ad2.apk",
+          "size": 46418778,
+          "sha256": "8657db010207af32bcb5f2a061d26e8996c7e77fc7f3b0a422f36777482cdf35",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.548-b9d4ad2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-b9d4ad2-pubg.apk",
+          "size": 46418778,
+          "sha256": "766cd7416d408f54c76b388ccce9378c6a9390536899fbb71c9ca14f81127821",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.548-b9d4ad2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-b9d4ad2-antutu.apk",
+          "size": 46418778,
+          "sha256": "aa5d77bfdc45c74aa09fda6b8d47e02057d5e43bd955a3cf0cb1a7a8052cdd6a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.548-b9d4ad2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-b9d4ad2-ludashi.apk",
+          "size": 46418778,
+          "sha256": "10b5b02aed345af9e9a2919238755740bb50b1104b7dd1ccb05757413f8669ed",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-585",
       "title": "Red Dead Redemption 2: launches again, no screensaver over games, hidden launcher held to one core, /tmp cleaned",
@@ -403,55 +452,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-556/DroidDeck-PR.556-a0e4844-ludashi.apk",
           "size": 46259218,
           "sha256": "8dc249acc01840b0a2abe1c2c4034260c4b982fe46008a3a85f8e49edd0368b9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-548",
-      "title": "fix(ui): a page only drains into its control when that control comes back",
-      "summary": "A page opened from a control (the cog beside Play, the Desktop card's cog) always drew back into that control's old bounds on the way out, even when something else was coming in. Two cases looked broken:",
-      "commit": "18bf76769464a288d7ebf8c956b2651d179b622d",
-      "pr": 548,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791673236000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-548",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.548-18bf767.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-18bf767.apk",
-          "size": 46254671,
-          "sha256": "9cd67e8c875e4640152a274b56a115852ace8cfff6b22156d4519514c771a49b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.548-18bf767-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-18bf767-pubg.apk",
-          "size": 46254671,
-          "sha256": "542f2a486fc818a9d68619f2e2f8c25ac412d1bcdb03e05e05d992e205582770",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.548-18bf767-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-18bf767-antutu.apk",
-          "size": 46254671,
-          "sha256": "60e28592edd46ae9dc89c2e95fcf1c01254c2c46910ed0aeef3c77f5f8415200",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.548-18bf767-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-548/DroidDeck-PR.548-18bf767-ludashi.apk",
-          "size": 46254671,
-          "sha256": "444337de150618a4789a0d9411391260bcd597a1f85e1433c65c0c2613217e14",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
