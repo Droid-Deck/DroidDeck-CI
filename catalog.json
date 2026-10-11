@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791685518109,
+  "generatedAt": 1791688766349,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-557",
+      "title": "fix: the Steam Controller's hidraw node reaches the input shim again",
+      "summary": "The fix registers the descriptor (watchfd) when the Steam Controller node opens and unregisters it (unwatchfd) if setup fails, matching the Deck and touch nodes.",
+      "commit": "60cba0d567b28eb24de3fd58d7eb81bde794ea8f",
+      "pr": 557,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791688730000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-557",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.557-60cba0d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-557/DroidDeck-PR.557-60cba0d.apk",
+          "size": 46242650,
+          "sha256": "3dd5903176ccb1569cafb534a58d79411b8695e8b78fc420444e70a425683235",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.557-60cba0d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-557/DroidDeck-PR.557-60cba0d-pubg.apk",
+          "size": 46242650,
+          "sha256": "02d8f6c8fac8a5afd37c5b071c8a429598e0f61b6906fb8e6e19c23842827b09",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.557-60cba0d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-557/DroidDeck-PR.557-60cba0d-antutu.apk",
+          "size": 46242650,
+          "sha256": "595ed657c46a853c9b7974238fa35e116edb5d5e2593f0827b185591c3be8abd",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.557-60cba0d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-557/DroidDeck-PR.557-60cba0d-ludashi.apk",
+          "size": 46242650,
+          "sha256": "33f0d71253bc9f189782657b9fde15381c777a4827af2af1c206acdb0d984c76",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-545",
       "title": "feat: the built-in pad can be a Steam Controller to Steam",
