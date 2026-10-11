@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791689373627,
+  "generatedAt": 1791689584126,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-910fb47",
-    "title": "fix: the Steam Controller's hidraw node reaches the input shim again",
-    "summary": "The fix registers the descriptor (watchfd) when the Steam Controller node opens and unregisters it (unwatchfd) if setup fails, matching the Deck and touch nodes.",
-    "commit": "910fb47692d68041de19f5d75c5d172dd62ceb60",
+    "tag": "main-542ad3e",
+    "title": "feat: the built-in pad can be a Steam Controller to Steam",
+    "summary": "Adds Steam Controller as a third choice for how Steam sees the built-in pad (Mode settings \u2192 Controller), next to Steam Deck controller and Xbox 360.",
+    "commit": "542ad3e0601b8b6530463a28451568dc0c251e02",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791689343000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-910fb47",
+    "publishedAt": 1791689546000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-542ad3e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-910fb47.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-910fb47/DroidDeck-main-910fb47.apk",
-        "size": 46242650,
-        "sha256": "cf3a123f2a4c207f906171aa8fdc20fce8e10c8b426611c9a721dcdf9474c604",
+        "name": "DroidDeck-main-542ad3e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-542ad3e/DroidDeck-main-542ad3e.apk",
+        "size": 46246746,
+        "sha256": "5c8d0303d26419f2d82b38e28f2548045b14944048169bc9cae32005a1f22137",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-910fb47-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-910fb47/DroidDeck-main-910fb47-pubg.apk",
-        "size": 46242650,
-        "sha256": "95f34c739346450f7737399b0224656ebe016848f84d0373a2dfacbdf8a2b75c",
+        "name": "DroidDeck-main-542ad3e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-542ad3e/DroidDeck-main-542ad3e-pubg.apk",
+        "size": 46246746,
+        "sha256": "31a1c431fb3c6dbf9ec0bc4b523e0b5f6020b10a31934b67a3feaf6a72a1ab07",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-910fb47-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-910fb47/DroidDeck-main-910fb47-antutu.apk",
-        "size": 46242650,
-        "sha256": "015f8ce18730493316497d0f0456f26e139d583e97ab66904c1b76e81d85a18b",
+        "name": "DroidDeck-main-542ad3e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-542ad3e/DroidDeck-main-542ad3e-antutu.apk",
+        "size": 46246746,
+        "sha256": "54ff764aa1e9584c65aec35567b5030cab865d10e08c9c105c08583a83464286",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-910fb47-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-910fb47/DroidDeck-main-910fb47-ludashi.apk",
-        "size": 46242650,
-        "sha256": "5d5a05db07117c707e96aa5ebee5c4faf2cb95ee66b0e0fad34b7338466d9425",
+        "name": "DroidDeck-main-542ad3e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-542ad3e/DroidDeck-main-542ad3e-ludashi.apk",
+        "size": 46246746,
+        "sha256": "8d9302811a65bbe9074480d46397c5974ad3d6b4e000edf5abe647725fbfe932",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "542ad3e0601b8b6530463a28451568dc0c251e02",
+      "title": "feat: the built-in pad can be a Steam Controller to Steam",
+      "summary": "Adds Steam Controller as a third choice for how Steam sees the built-in pad (Mode settings \u2192 Controller), next to Steam Deck controller and Xbox 360.",
+      "publishedAt": 1791689546000
+    },
     {
       "commit": "910fb47692d68041de19f5d75c5d172dd62ceb60",
       "title": "fix: the Steam Controller's hidraw node reaches the input shim again",
@@ -155,12 +161,6 @@
       "title": "Games: old Games folders become entries, not Steam libraries",
       "summary": "Follow-up to #492. Games folders saved before the revamp were still registered as Steam libraries (GameStorage.gamesFolderLibraries() while Second library is Automatic). Steam's Install dialog therefore offered extra rows like \"Games (Internal shared storage)\" and \"Games (android)\". #492 had removed the settings section with the Forget button, so users had no way to get rid of them.",
       "publishedAt": 1791664016000
-    },
-    {
-      "commit": "fe60b3c279b565282e33c8e7aa3d7899340996bf",
-      "title": "Add global manual landscape orientation setting",
-      "summary": "With my controller I have my phone on reverse landscape orientation and when rotation changes I have trouble turning it back. This adds setting for that",
-      "publishedAt": 1791663262000
     }
   ],
   "tests": [
