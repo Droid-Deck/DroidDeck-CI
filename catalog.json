@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791731014958,
+  "generatedAt": 1791738977921,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-585",
+      "title": "Red Dead Redemption 2: launches again, no screensaver over games, hidden launcher held to one core, /tmp cleaned",
+      "summary": "Red Dead Redemption 2 exited with 0xc0000135 right after the Rockstar launcher started it. With that fixed, playing it showed three more problems: Steam's screensaver covered the game, Rockstar's hidden launcher took cores from it, and every session left files in the guest's /tmp.",
+      "commit": "d6e172fe3cf5388bff569678ed1e0b51d80e20c1",
+      "pr": 585,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791738925000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-585",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.585-d6e172f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-585/DroidDeck-PR.585-d6e172f.apk",
+          "size": 46275517,
+          "sha256": "0a19c1e80bd4825b54eacc821fa45c3a4b347981c949884b6d13c6d4fd645174",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.585-d6e172f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-585/DroidDeck-PR.585-d6e172f-pubg.apk",
+          "size": 46275517,
+          "sha256": "4f7f131cd6120504410558776670be8ceb1c3dddb08d5fee27ac56ac2fb0375b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.585-d6e172f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-585/DroidDeck-PR.585-d6e172f-antutu.apk",
+          "size": 46275517,
+          "sha256": "9f69f46627688b575e420a1a01777e03e75480500cc6d01613b2502a62cc8f65",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.585-d6e172f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-585/DroidDeck-PR.585-d6e172f-ludashi.apk",
+          "size": 46275517,
+          "sha256": "cef6a0c9583436a90f4b188b09f49c55636cc0ef98066293aca01a10b71baa56",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-564",
       "title": "feat: target Android API 36",
