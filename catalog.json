@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791684979485,
+  "generatedAt": 1791685518109,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-d1b0ac4",
-    "title": "Windows components: picked automatically by each game's source",
-    "summary": "Each game's Windows components now come from the list its own source trusts, and the ones that list names turn on by themselves. The user's own on/off switches always win, and each automatic row says why it is on.",
-    "commit": "d1b0ac4df110987534ec766b08b04f68f5f7c654",
+    "tag": "main-3dd14dd",
+    "title": "refactor: Steam always runs in Deck mode on the Deck beta branch",
+    "summary": "Deck mode and the steamdeckpublicbeta branch have been the default for a while, and turning either off no longer helps anyone. This removes both options and the code behind them, so every Steam session runs the way almost everyone already runs it.",
+    "commit": "3dd14dd62587e3c8022b6d8af3e14bac36017024",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791681785000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d1b0ac4",
+    "publishedAt": 1791685477000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3dd14dd",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-d1b0ac4.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d1b0ac4/DroidDeck-main-d1b0ac4.apk",
-        "size": 46250842,
-        "sha256": "74fb8c073f8f0c1c80d10017e35f26119ee27763aabcd5c87fbeeeb8493ab75d",
+        "name": "DroidDeck-main-3dd14dd.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd14dd/DroidDeck-main-3dd14dd.apk",
+        "size": 46238554,
+        "sha256": "eba2d00da3e18f1156f30c0dc488d1c8ac7a957ef3d05bb778b9117e87263c7f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-d1b0ac4-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d1b0ac4/DroidDeck-main-d1b0ac4-pubg.apk",
-        "size": 46250842,
-        "sha256": "72f28de7f17a77b022666fa4136803139db0f6a3d69a38e72329c10816b62f97",
+        "name": "DroidDeck-main-3dd14dd-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd14dd/DroidDeck-main-3dd14dd-pubg.apk",
+        "size": 46238554,
+        "sha256": "82a3d0f009bfe2137d230760fa75920303d46ab6327206c5bcbdc24a5fba813e",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-d1b0ac4-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d1b0ac4/DroidDeck-main-d1b0ac4-antutu.apk",
-        "size": 46250842,
-        "sha256": "0fb67e8a7bd408c3dad79e13033d45e97c8594910239652aa4aeea58a499b936",
+        "name": "DroidDeck-main-3dd14dd-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd14dd/DroidDeck-main-3dd14dd-antutu.apk",
+        "size": 46238554,
+        "sha256": "c0fd902abd901531da77f5b6fa8524945f0769f019b2454f2c88fb7cf426c09c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-d1b0ac4-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d1b0ac4/DroidDeck-main-d1b0ac4-ludashi.apk",
-        "size": 46250842,
-        "sha256": "b520f12d73b9e09eb8e80530eab375fc11e4b767f6232645e8988052dac2a317",
+        "name": "DroidDeck-main-3dd14dd-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd14dd/DroidDeck-main-3dd14dd-ludashi.apk",
+        "size": 46238554,
+        "sha256": "4fd68e0cd32c38332f1638ea39bda8e8f88bfd1d5afecf829d92808b303aed4b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "3dd14dd62587e3c8022b6d8af3e14bac36017024",
+      "title": "refactor: Steam always runs in Deck mode on the Deck beta branch",
+      "summary": "Deck mode and the steamdeckpublicbeta branch have been the default for a while, and turning either off no longer helps anyone. This removes both options and the code behind them, so every Steam session runs the way almost everyone already runs it.",
+      "publishedAt": 1791685477000
+    },
     {
       "commit": "d1b0ac4df110987534ec766b08b04f68f5f7c654",
       "title": "Windows components: picked automatically by each game's source",
@@ -155,12 +161,6 @@
       "title": "Hide the touchpad cursor when switching to direct touch",
       "summary": "Fixes the mouse cursor remaining visible after switching from Touchpad to Direct touch mode.",
       "publishedAt": 1791659403000
-    },
-    {
-      "commit": "666abd134fca6ce8487cd8432c432843c552e8b4",
-      "title": "Windows components: a recommended component is listed once, not again under All",
-      "summary": "The full list left out only the 'installed for this game' rows, never the recommendations, so every recommended component appeared twice: once under Recommended and again under All, both toggles mirroring each other (DirectX 9 on Final Fantasy Resonance Demo). The full list now leaves the recommended set out as well; its count drops by that many.",
-      "publishedAt": 1791659150000
     }
   ],
   "tests": [
