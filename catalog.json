@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791753019216,
+  "generatedAt": 1791755163429,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-435beb7",
-    "title": "feat: add persistent per-game compatibility profiles",
-    "summary": "This PR adds persistent per-game compatibility profiles with Default inheritance.",
-    "commit": "435beb7f195b8b1debee600fc786c4011a23fcf1",
+    "tag": "main-0cafa83",
+    "title": "fix: Epic games with a JSON manifest download",
+    "summary": "Some Epic games failed to install: every chunk returned 404 on all three CDNs and the download stopped with \"1 chunk(s) failed to download\" (seen with Cursed to Golf). These games use Epic's older JSON manifest instead of the binary one.",
+    "commit": "0cafa83ea7569132d96c180dcf96487e672a56d1",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791752991000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-435beb7",
+    "publishedAt": 1791755128000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0cafa83",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-435beb7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-435beb7/DroidDeck-main-435beb7.apk",
+        "name": "DroidDeck-main-0cafa83.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0cafa83/DroidDeck-main-0cafa83.apk",
         "size": 46521277,
-        "sha256": "c8f32974b9ae5ad787145d27cf4202ce66933b2f1bb2af99a1695a5d6979d7c0",
+        "sha256": "da1708038496fd68c75ff628a31eb5ae012314d033cde54efeb3e70d7d7dde39",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-435beb7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-435beb7/DroidDeck-main-435beb7-pubg.apk",
+        "name": "DroidDeck-main-0cafa83-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0cafa83/DroidDeck-main-0cafa83-pubg.apk",
         "size": 46521277,
-        "sha256": "af8f42fbce99a921ef69330144901e167c78efd58b5f0da10676a32a56ae9289",
+        "sha256": "071e0c9a72987b3568912551b2840260a916256bfee5fa14ebf8b9420b7c6155",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-435beb7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-435beb7/DroidDeck-main-435beb7-antutu.apk",
+        "name": "DroidDeck-main-0cafa83-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0cafa83/DroidDeck-main-0cafa83-antutu.apk",
         "size": 46521277,
-        "sha256": "ac0454f9a5fc017472567d34827e9c0adb045dda90d4d89c58279cb6bc35d445",
+        "sha256": "486b55b9330e35daa67c7ca2c572d1357162c4483e950676188556d7a7056c03",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-435beb7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-435beb7/DroidDeck-main-435beb7-ludashi.apk",
+        "name": "DroidDeck-main-0cafa83-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0cafa83/DroidDeck-main-0cafa83-ludashi.apk",
         "size": 46521277,
-        "sha256": "03b9c38c9773de13cb98c1de6ec6567f7b638fb2019bb3d750c8dd08547820a8",
+        "sha256": "9a58dd9a988437038c49e65459c628c738e77cd5f94bf1ef4d525dc10e2e4653",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0cafa83ea7569132d96c180dcf96487e672a56d1",
+      "title": "fix: Epic games with a JSON manifest download",
+      "summary": "Some Epic games failed to install: every chunk returned 404 on all three CDNs and the download stopped with \"1 chunk(s) failed to download\" (seen with Cursed to Golf). These games use Epic's older JSON manifest instead of the binary one.",
+      "publishedAt": 1791755128000
+    },
     {
       "commit": "435beb7f195b8b1debee600fc786c4011a23fcf1",
       "title": "feat: add persistent per-game compatibility profiles",
@@ -155,12 +161,6 @@
       "title": "refactor: Steam always runs in Deck mode on the Deck beta branch",
       "summary": "Deck mode and the steamdeckpublicbeta branch have been the default for a while, and turning either off no longer helps anyone. This removes both options and the code behind them, so every Steam session runs the way almost everyone already runs it.",
       "publishedAt": 1791685477000
-    },
-    {
-      "commit": "d1b0ac4df110987534ec766b08b04f68f5f7c654",
-      "title": "Windows components: picked automatically by each game's source",
-      "summary": "Each game's Windows components now come from the list its own source trusts, and the ones that list names turn on by themselves. The user's own on/off switches always win, and each automatic row says why it is on.",
-      "publishedAt": 1791681785000
     }
   ],
   "tests": [
