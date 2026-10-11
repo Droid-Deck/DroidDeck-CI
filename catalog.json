@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791689230256,
+  "generatedAt": 1791689373627,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3dd14dd",
-    "title": "refactor: Steam always runs in Deck mode on the Deck beta branch",
-    "summary": "Deck mode and the steamdeckpublicbeta branch have been the default for a while, and turning either off no longer helps anyone. This removes both options and the code behind them, so every Steam session runs the way almost everyone already runs it.",
-    "commit": "3dd14dd62587e3c8022b6d8af3e14bac36017024",
+    "tag": "main-910fb47",
+    "title": "fix: the Steam Controller's hidraw node reaches the input shim again",
+    "summary": "The fix registers the descriptor (watchfd) when the Steam Controller node opens and unregisters it (unwatchfd) if setup fails, matching the Deck and touch nodes.",
+    "commit": "910fb47692d68041de19f5d75c5d172dd62ceb60",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791685477000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3dd14dd",
+    "publishedAt": 1791689343000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-910fb47",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3dd14dd.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd14dd/DroidDeck-main-3dd14dd.apk",
-        "size": 46238554,
-        "sha256": "eba2d00da3e18f1156f30c0dc488d1c8ac7a957ef3d05bb778b9117e87263c7f",
+        "name": "DroidDeck-main-910fb47.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-910fb47/DroidDeck-main-910fb47.apk",
+        "size": 46242650,
+        "sha256": "cf3a123f2a4c207f906171aa8fdc20fce8e10c8b426611c9a721dcdf9474c604",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3dd14dd-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd14dd/DroidDeck-main-3dd14dd-pubg.apk",
-        "size": 46238554,
-        "sha256": "82a3d0f009bfe2137d230760fa75920303d46ab6327206c5bcbdc24a5fba813e",
+        "name": "DroidDeck-main-910fb47-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-910fb47/DroidDeck-main-910fb47-pubg.apk",
+        "size": 46242650,
+        "sha256": "95f34c739346450f7737399b0224656ebe016848f84d0373a2dfacbdf8a2b75c",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3dd14dd-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd14dd/DroidDeck-main-3dd14dd-antutu.apk",
-        "size": 46238554,
-        "sha256": "c0fd902abd901531da77f5b6fa8524945f0769f019b2454f2c88fb7cf426c09c",
+        "name": "DroidDeck-main-910fb47-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-910fb47/DroidDeck-main-910fb47-antutu.apk",
+        "size": 46242650,
+        "sha256": "015f8ce18730493316497d0f0456f26e139d583e97ab66904c1b76e81d85a18b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3dd14dd-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd14dd/DroidDeck-main-3dd14dd-ludashi.apk",
-        "size": 46238554,
-        "sha256": "4fd68e0cd32c38332f1638ea39bda8e8f88bfd1d5afecf829d92808b303aed4b",
+        "name": "DroidDeck-main-910fb47-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-910fb47/DroidDeck-main-910fb47-ludashi.apk",
+        "size": 46242650,
+        "sha256": "5d5a05db07117c707e96aa5ebee5c4faf2cb95ee66b0e0fad34b7338466d9425",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "910fb47692d68041de19f5d75c5d172dd62ceb60",
+      "title": "fix: the Steam Controller's hidraw node reaches the input shim again",
+      "summary": "The fix registers the descriptor (watchfd) when the Steam Controller node opens and unregisters it (unwatchfd) if setup fails, matching the Deck and touch nodes.",
+      "publishedAt": 1791689343000
+    },
     {
       "commit": "3dd14dd62587e3c8022b6d8af3e14bac36017024",
       "title": "refactor: Steam always runs in Deck mode on the Deck beta branch",
@@ -155,12 +161,6 @@
       "title": "Add global manual landscape orientation setting",
       "summary": "With my controller I have my phone on reverse landscape orientation and when rotation changes I have trouble turning it back. This adds setting for that",
       "publishedAt": 1791663262000
-    },
-    {
-      "commit": "c875ceda4d100c96e0466e2ab0826856a9da2dd7",
-      "title": "Hide the touchpad cursor when switching to direct touch",
-      "summary": "Fixes the mouse cursor remaining visible after switching from Touchpad to Direct touch mode.",
-      "publishedAt": 1791659403000
     }
   ],
   "tests": [
