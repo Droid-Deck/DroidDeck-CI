@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791702529860,
+  "generatedAt": 1791723979654,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-575",
+      "title": "perf: the session's background watchers share two loops and one D-Bus service process",
+      "summary": "Cuts the Steam session's own background processes from 13 to 7 with every watcher enabled, without changing what any of them does. It's part of getting the session under Android's 32-process \"phantom process\" limit. Together with #566 (web helper 8 \u2192 4), an idle Steam session goes from ~41 processes to ~30 on the Thor.",
+      "commit": "fa0886279c7839a038bcba1eb68d16111d5ac29c",
+      "pr": 575,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791723947000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-575",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.575-fa08862.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-575/DroidDeck-PR.575-fa08862.apk",
+          "size": 46267226,
+          "sha256": "1ff2d618aa0caae459430fbd8e4713bdf9c2960bc3614c30ea719d0fb73b999f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.575-fa08862-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-575/DroidDeck-PR.575-fa08862-pubg.apk",
+          "size": 46267226,
+          "sha256": "275a6b8c633e16efdbbbde9b0eac271acaf6c749dac232895a29802e4f34f074",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.575-fa08862-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-575/DroidDeck-PR.575-fa08862-antutu.apk",
+          "size": 46267226,
+          "sha256": "9013bd0e2515989c644237e907371ad8b4e29668a37fa001994e0b10ae9c637b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.575-fa08862-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-575/DroidDeck-PR.575-fa08862-ludashi.apk",
+          "size": 46267226,
+          "sha256": "d9c6f1ccfe5be959718a8b60149fe19958875468a189f1f560f021284757714d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-566",
       "title": "perf: Steam's web helper runs its GPU, audio and zygote work inside one process",
