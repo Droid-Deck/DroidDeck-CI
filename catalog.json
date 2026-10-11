@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791693031875,
+  "generatedAt": 1791699430262,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-564",
+      "title": "feat: target Android API 36",
+      "summary": "Moves the app from targetSdk 28 to targetSdk 36 (compileSdk 34 \u2192 36). Tested on the AYN Thor (Android 13) with SELinux enforcing: the Steam session, a Proton game, a Unity/DX11 game installed to the SD card, Steam downloads, the KDE desktop and background suspend/resume all work as on 28.",
+      "commit": "abfcb338c44b19a4dc7521a7ba6d7b63b1c6a59c",
+      "pr": 564,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791699394000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-564",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.564-abfcb33.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-abfcb33.apk",
+          "size": 46271322,
+          "sha256": "a36bc86e36f2a818cbbfdfa755fea46ab8c1478649fb461023643abf7c40447b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.564-abfcb33-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-abfcb33-pubg.apk",
+          "size": 46271322,
+          "sha256": "18d7c18d1f0074455e2bf8c6f6ed3bd86173ea2d1110d516a4393518a005bfb8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.564-abfcb33-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-abfcb33-antutu.apk",
+          "size": 46271322,
+          "sha256": "85e57ca3f564a794573b0b0920f6cb92522271ce93b581dc4b0aadb8356eb01c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.564-abfcb33-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-abfcb33-ludashi.apk",
+          "size": 46271322,
+          "sha256": "4c41192880e3d7be507f91ff87d06cc638ff536105692abb89a8d1e5a8b31c29",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-556",
       "title": "Accessibility tab: install and enable Orca in every Linux session",
