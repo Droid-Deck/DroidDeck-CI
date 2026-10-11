@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791749360631,
+  "generatedAt": 1791749812722,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3c2878c",
-    "title": "Red Dead Redemption 2: launches again, no screensaver over games, hidden launcher held to one core, /tmp cleaned",
-    "summary": "Red Dead Redemption 2 exited with 0xc0000135 right after the Rockstar launcher started it. With that fixed, playing it showed three more problems: Steam's screensaver covered the game, Rockstar's hidden launcher took cores from it, and every session left files in the guest's /tmp.",
-    "commit": "3c2878cc522a917af17581d60de33c591b002738",
+    "tag": "main-78fcb60",
+    "title": "DroidDeck-Proton as a Proton source, and update checks for every source",
+    "summary": "What\n\u2022 Setup \u203a Proton versions: DroidDeck-Proton (The412Banner/DroidDeck-Proton) added as a third source beside GE-Proton and proton-cachyos. It uses the GE-style aarch64 tarball and sha512 file, and is also accepted as droiddeck by droiddeck-proton-extra / the session queue. steam-compatibility adopts it like any other extra, so Steam lists it as \"DroidDeck-Proton 11-7.5 (Compatible)\".\n\u2022 Update checks for all three sources: the newest full release is looked up at app start and when the page opens, at most every 6 h; when offline, the last answer is kept. A newer release shows \"Update available \u2192 <tag>\" with Update. Updating installs the new build beside the old one, and the old one stays until it is removed with \"Remove old \u2026 versions\", because games are mapped to it by name\n\u2022 Installed builds are ordered by version number, not by name, so 11-9 comes before 11-10 (maxByOrNull { it.name } picked 11-9). The release tag each build was installed from is now recorded. Prereleases and drafts are skipped.\n\u2022 Removing an installed Proton removes that exact build, not always the newest.",
+    "commit": "78fcb60fd5e6eb394bd587fe8ea7a515bed4c10b",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791748898000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3c2878c",
+    "publishedAt": 1791749775000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-78fcb60",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3c2878c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c2878c/DroidDeck-main-3c2878c.apk",
-        "size": 46418877,
-        "sha256": "d34a5925431c2fde877534bd49c550d0e3eccfde8e0009ad2eb70c8e4517f1b4",
+        "name": "DroidDeck-main-78fcb60.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-78fcb60/DroidDeck-main-78fcb60.apk",
+        "size": 46427069,
+        "sha256": "bd7a3f962b393193d1460f844bc200b434ee7761ffe2290a560ec854048240db",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3c2878c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c2878c/DroidDeck-main-3c2878c-pubg.apk",
-        "size": 46418877,
-        "sha256": "621e8d78312ccbfecf50255b5e9e984228b558fc4e8365abce68e2a9db641cfd",
+        "name": "DroidDeck-main-78fcb60-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-78fcb60/DroidDeck-main-78fcb60-pubg.apk",
+        "size": 46427069,
+        "sha256": "fe36c658ef64e2e664128822dff5720b1c5a43f3446bd9af3f226adcfda17b52",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3c2878c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c2878c/DroidDeck-main-3c2878c-antutu.apk",
-        "size": 46418877,
-        "sha256": "dcfe6541289acffad560b1b30f845678243333bf7ecc4e40b72b1f78f4d11c6e",
+        "name": "DroidDeck-main-78fcb60-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-78fcb60/DroidDeck-main-78fcb60-antutu.apk",
+        "size": 46427069,
+        "sha256": "ae903e0d6acbbc13f00097bd8505d0f2b3732199a56ae5c5cd393d122a38c76b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3c2878c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c2878c/DroidDeck-main-3c2878c-ludashi.apk",
-        "size": 46418877,
-        "sha256": "306fb933f33aca855fb964eb4ff87494f15dde8fc7973160dad71c88e4c5d6b6",
+        "name": "DroidDeck-main-78fcb60-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-78fcb60/DroidDeck-main-78fcb60-ludashi.apk",
+        "size": 46427069,
+        "sha256": "698a199dc4be18711bd7ef0e097a043b7393c1262ac2d549c30cf477552164cd",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "78fcb60fd5e6eb394bd587fe8ea7a515bed4c10b",
+      "title": "DroidDeck-Proton as a Proton source, and update checks for every source",
+      "summary": "What\n\u2022 Setup \u203a Proton versions: DroidDeck-Proton (The412Banner/DroidDeck-Proton) added as a third source beside GE-Proton and proton-cachyos. It uses the GE-style aarch64 tarball and sha512 file, and is also accepted as droiddeck by droiddeck-proton-extra / the session queue. steam-compatibility adopts it like any other extra, so Steam lists it as \"DroidDeck-Proton 11-7.5 (Compatible)\".\n\u2022 Update c",
+      "publishedAt": 1791749775000
+    },
     {
       "commit": "3c2878cc522a917af17581d60de33c591b002738",
       "title": "Red Dead Redemption 2: launches again, no screensaver over games, hidden launcher held to one core, /tmp cleaned",
@@ -155,12 +161,6 @@
       "title": "FEX: preload the fault report only where x86 loaders look",
       "summary": "Every x86 program started through FEX printed this, once per process:",
       "publishedAt": 1791674512000
-    },
-    {
-      "commit": "d9cd0d2cc8f9d89eaa656f60c08c34dac9c2ecde",
-      "title": "Desktop: run programs, scripts and AppImages; Switch to Desktop without Deck mode",
-      "summary": "The KDE desktop now runs programs the way SteamOS's desktop mode does: double-click or a terminal starts Windows programs, Linux programs (with or without an extension), AppImages and scripts, each the right way.",
-      "publishedAt": 1791674429000
     }
   ],
   "tests": [
