@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791755163429,
+  "generatedAt": 1791755581370,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-592",
+      "title": "Preserve the ioctl preload hook chain",
+      "summary": "Preserve later GPU/debugging preload hooks by forwarding all unhandled libfakeinput ioctl paths through RTLDNEXT while retaining lock avoidance, adapted from TheStutter\u2019s Discord Quest upload and the findings in https://github.com/Droid-Deck/DroidDeck/issues/245; verified with a regression test that fails on the original code, libc passthrough, and an Android ARM64 native compile.",
+      "commit": "10c12b2998b59781feb5661a281d68b6b0140e31",
+      "pr": 592,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791755535000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-592",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.592-10c12b2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-592/DroidDeck-PR.592-10c12b2.apk",
+          "size": 46521277,
+          "sha256": "9808876a84182993e2966d3c4d60b657940c7be28d33ec8ca4d00a2c7af2762e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.592-10c12b2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-592/DroidDeck-PR.592-10c12b2-pubg.apk",
+          "size": 46521277,
+          "sha256": "4f51d287b9703fdeb583ddf350abc5a621f5366bc03babcb151a63e2539027f4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.592-10c12b2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-592/DroidDeck-PR.592-10c12b2-antutu.apk",
+          "size": 46521277,
+          "sha256": "4e008fb7984e04fa0ba0f492104e71f8eea3f6630a5cf54575878a007432b707",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.592-10c12b2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-592/DroidDeck-PR.592-10c12b2-ludashi.apk",
+          "size": 46521277,
+          "sha256": "6edace18e4ade6cdfd56a09af5ab25097d371e16a10e2cffd90de89fab9e93b8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-587",
       "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
