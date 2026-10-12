@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791831818208,
+  "generatedAt": 1791832577165,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a2a9586",
-    "title": "fix: Shut Down in Steam's power menu ends the session, and Restart restarts the client",
-    "summary": "Shut Down from the home menu's Power submenu blanked the screen and left the client running: the Guide button still opened the menu over black, and the session never ended. The client logged System.ShutdownPC and nothing after it. Steam's interface follows SteamOS's power path only when STEAMOSSTEAMSHUTDOWNSENTINEL and STEAMOSSTEAMREBOOTSENTINEL are set, as SteamOS's gamescope session sets t",
-    "commit": "a2a9586b54bbe09ddfd863d32a49fda574b567b7",
+    "tag": "main-8d02259",
+    "title": "fix: an unfolded Follow screen session turns to portrait again",
+    "summary": "\u2022 applyFollowOrientation is now the one place the session sets its orientation: Follow screen on a large panel (smallestScreenWidthDp >= 600) can turn with the device; everything else uses the orientation picked in Setup.\n\u2022 onResume calls it instead of applying the setting directly, so resuming keeps the unfolded rotation.",
+    "commit": "8d0225932c85695355f5d173a54c575b995cd393",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791827581000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a2a9586",
+    "publishedAt": 1791832540000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8d02259",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a2a9586.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a2a9586/DroidDeck-main-a2a9586.apk",
+        "name": "DroidDeck-main-8d02259.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d02259/DroidDeck-main-8d02259.apk",
         "size": 46558141,
-        "sha256": "df65d3411c95b2eac8c5eff7c7a4e6843ff08ba27eff10e5b14ded0019c52540",
+        "sha256": "5a7fc59e0c2a54eb0f3c05d226c379d4156102aaa541245156d17b80ae1b6ba1",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a2a9586-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a2a9586/DroidDeck-main-a2a9586-pubg.apk",
+        "name": "DroidDeck-main-8d02259-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d02259/DroidDeck-main-8d02259-pubg.apk",
         "size": 46558141,
-        "sha256": "842b52f4e7af4d1744d31e6bb07278094d618d2252f08d98fd4edff665169edb",
+        "sha256": "3730b6b383ebe484d3d486514e100e40f30b239173cbf99b7d61851a7d78cbf2",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a2a9586-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a2a9586/DroidDeck-main-a2a9586-antutu.apk",
+        "name": "DroidDeck-main-8d02259-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d02259/DroidDeck-main-8d02259-antutu.apk",
         "size": 46558141,
-        "sha256": "cf4d0eb156936910c31db4a707837e92eccfcd2b64fa9f5bb83dd30408b7cd79",
+        "sha256": "3bf71d85762c2d746d14aef062daeeeceea807e242e7036aa5a13266b0d2c4dd",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a2a9586-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a2a9586/DroidDeck-main-a2a9586-ludashi.apk",
+        "name": "DroidDeck-main-8d02259-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d02259/DroidDeck-main-8d02259-ludashi.apk",
         "size": 46558141,
-        "sha256": "dd80bf219e72af0d8479a6226be1a64f1a17215912c0faaf77b058fcfa98768e",
+        "sha256": "665caf0672c113abd9f169510ea7a219e6b67a8dd8014ee5b238aa8332080a08",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8d0225932c85695355f5d173a54c575b995cd393",
+      "title": "fix: an unfolded Follow screen session turns to portrait again",
+      "summary": "\u2022 applyFollowOrientation is now the one place the session sets its orientation: Follow screen on a large panel (smallestScreenWidthDp >= 600) can turn with the device; everything else uses the orientation picked in Setup.\n\u2022 onResume calls it instead of applying the setting directly, so resuming keeps the unfolded rotation.",
+      "publishedAt": 1791832540000
+    },
     {
       "commit": "a2a9586b54bbe09ddfd863d32a49fda574b567b7",
       "title": "fix: Shut Down in Steam's power menu ends the session, and Restart restarts the client",
@@ -155,12 +161,6 @@
       "title": "feat: store game pages flood onto their hero art, and downloads survive a restart",
       "summary": "The card's art grew over the whole pane as a blob, then the page faded in with its own hero banner rising up from below, so the logo showed twice; closing drained a full-pane copy back into the card. PageFlood takes an optional onto target: the tile now grows corner to corner from the card onto the page's hero banner (StoresMotion.heroAt, recorded by StoreGameDetail) on one firm spring, an",
       "publishedAt": 1791777880000
-    },
-    {
-      "commit": "ced4ac5db8a9166657f1127fb36fc3565dc3ee5c",
-      "title": "fix: a step-out out of a wide control draws its box again",
-      "summary": "The outline now comes in by the share of its own way out it has gone (in over the first 10\u201340% of the grow, out over the same part of the fold), for each axis it actually moves along; an axis it does not move along counts as done. The hook stays hidden, and every step-out is drawn whatever its size.",
-      "publishedAt": 1791776280000
     }
   ],
   "tests": [
