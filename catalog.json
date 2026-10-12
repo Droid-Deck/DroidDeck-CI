@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791803190891,
+  "generatedAt": 1791803731487,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6b2c8ac",
-    "title": "fix: keep the Steam desktop client in KDE",
-    "summary": "Keep desktop Steam on KDE with software CEF, reuse the existing client on repeated launches, and preserve explicit Big Picture handoff, verified on AYN Thor with 19 passing regression tests.",
-    "commit": "6b2c8ace0972bb17bad496ae304fb76c2c7fdc10",
+    "tag": "main-cebad56",
+    "title": "feat: store uninstall confirms in a step-out, shows progress, and lands on Install",
+    "summary": "Uninstalling a store game had no real feedback: Uninstall turned into \"Press again to uninstall\", then the page drained back into its card at once while the files were still being deleted, and the card kept reading installed until the library was read again.",
+    "commit": "cebad5692dba88ff263c68d311122805ddbdac87",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791803154000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6b2c8ac",
+    "publishedAt": 1791803689000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cebad56",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6b2c8ac.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6b2c8ac/DroidDeck-main-6b2c8ac.apk",
-        "size": 46549949,
-        "sha256": "c59a3f58a0862f7cb20db37ffd3aaf0405e07a785dca5bd33d2cbb682a14e8a6",
+        "name": "DroidDeck-main-cebad56.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cebad56/DroidDeck-main-cebad56.apk",
+        "size": 46558141,
+        "sha256": "a6c557db93335203c82f5dd71b7b014ffe86dd60ddb0c55230f33f7fe7d0c77d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6b2c8ac-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6b2c8ac/DroidDeck-main-6b2c8ac-pubg.apk",
-        "size": 46549949,
-        "sha256": "1c4c5f0d007248481fba086c80c000de0ec150b0a60387c40e5ffe0ed689dd83",
+        "name": "DroidDeck-main-cebad56-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cebad56/DroidDeck-main-cebad56-pubg.apk",
+        "size": 46558141,
+        "sha256": "34ae1b6e28946760bbba8c75cc266b848186535f17518786a2895e041f14dc93",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6b2c8ac-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6b2c8ac/DroidDeck-main-6b2c8ac-antutu.apk",
-        "size": 46549949,
-        "sha256": "a26e5fcdf2940caaa0dbc631a34af5b7e1416bfccf1ea1d99c7ce572904a4cf9",
+        "name": "DroidDeck-main-cebad56-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cebad56/DroidDeck-main-cebad56-antutu.apk",
+        "size": 46558141,
+        "sha256": "ed2021b927906ddb182d9725fd71b111f4a7f5c18bcf7d53b707a2d21f355263",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6b2c8ac-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6b2c8ac/DroidDeck-main-6b2c8ac-ludashi.apk",
-        "size": 46549949,
-        "sha256": "1e633794b3ada8d4f118de64a2e23ce369b348212709744baa00c806ac20ad72",
+        "name": "DroidDeck-main-cebad56-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cebad56/DroidDeck-main-cebad56-ludashi.apk",
+        "size": 46558141,
+        "sha256": "7dcb9158d12e1372cbda7ee1e94c891f859c2fd2aafd4d710e810df2a19c82c2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "cebad5692dba88ff263c68d311122805ddbdac87",
+      "title": "feat: store uninstall confirms in a step-out, shows progress, and lands on Install",
+      "summary": "Uninstalling a store game had no real feedback: Uninstall turned into \"Press again to uninstall\", then the page drained back into its card at once while the files were still being deleted, and the card kept reading installed until the library was read again.",
+      "publishedAt": 1791803689000
+    },
     {
       "commit": "6b2c8ace0972bb17bad496ae304fb76c2c7fdc10",
       "title": "fix: keep the Steam desktop client in KDE",
@@ -155,12 +161,6 @@
       "title": "Fix Discord launcher layout and controller navigation",
       "summary": "Fix Discord-reported settings clipping, interrupted animations, and launcher/controller navigation, including offscreen store-grid focus, with signed-build validation on AYN Thor at normal and phone-like layouts.",
       "publishedAt": 1791764102000
-    },
-    {
-      "commit": "0cafa83ea7569132d96c180dcf96487e672a56d1",
-      "title": "fix: Epic games with a JSON manifest download",
-      "summary": "Some Epic games failed to install: every chunk returned 404 on all three CDNs and the download stopped with \"1 chunk(s) failed to download\" (seen with Cursed to Golf). These games use Epic's older JSON manifest instead of the binary one.",
-      "publishedAt": 1791755128000
     }
   ],
   "tests": [
