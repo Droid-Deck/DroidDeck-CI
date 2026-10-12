@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791764131168,
+  "generatedAt": 1791766457093,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-597",
+      "title": "Fix black Steam output with FSR 1",
+      "summary": "Fix black Steam output with FSR 1 by avoiding compressed post-processing targets and invalidating stale source views, validated with consecutive signed-build launches on AYN Thor and native cache regression tests.",
+      "commit": "a14178908ec72beeaf2b6b0470cb189d717edf49",
+      "pr": 597,
+      "version": null,
+      "versionCode": 12,
+      "publishedAt": 1791766403000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-597",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.597-a141789.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-597/DroidDeck-PR.597-a141789.apk",
+          "size": 46529469,
+          "sha256": "389eb1d7183218c73f02eef5d89171e625f6723fc8ae65a5692af239a779e8ba",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.597-a141789-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-597/DroidDeck-PR.597-a141789-pubg.apk",
+          "size": 46529469,
+          "sha256": "da223331e07af1253b6f671e273978f35d37304611b6f1ae0058610cfda1ea83",
+          "packageName": "com.tencent.ig",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.597-a141789-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-597/DroidDeck-PR.597-a141789-antutu.apk",
+          "size": 46529469,
+          "sha256": "475de8566e7f4e54d7087d273c4c9192f393aca4866ce9ff182da9156c5d88a8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.597-a141789-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-597/DroidDeck-PR.597-a141789-ludashi.apk",
+          "size": 46529469,
+          "sha256": "a8ed1199378f1aac6cea1ee8616f06d8f53f1206769d52b41ed4830e24d14c61",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 12,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-592",
       "title": "Add experimental Quest 3/3S compatibility",
