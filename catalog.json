@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791840418037,
+  "generatedAt": 1791843517433,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-669",
+      "title": "Add translations for 23 more languages and fill missing strings",
+      "summary": "\u2022 23 more app languages, all selectable in the language picker and in Android 13+'s per-app language settings (localesconfig.xml):\n\u2022 Brazilian Portuguese and European Portuguese, plus Latin American Spanish as an overlay on Spanish.\n\u2022 Indonesian, Malay, Czech, Danish, German, Italian, Hungarian, Dutch, Norwegian Bokm\u00e5l, Polish, Romanian, Finnish, Swedish, Vietnamese, Turkish, Greek, Bulgarian, Ukrainian, Arabic, Hindi and Thai.\n\u2022 With the existing languages, that makes 32 besides English.\n\u2022 The 8 existing languages are complete: every string from values/strings.xml is now translated in Spanish, French, Russian, Japanese, Korean and the three kinds of Chinese. This includes the recent achievements and \"Start without Steam\" strings.\n\u2022 Choosing the language from the phone's settings:",
+      "commit": "d3f3439bbc45ca67de86d0093356a449c2c74600",
+      "pr": 669,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791843467000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-669",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.669-d3f3439.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-669/DroidDeck-PR.669-d3f3439.apk",
+          "size": 57028242,
+          "sha256": "4c09d2cbe2106022278d597ea75b01f373c17f1fffacf2f72d47f1e76dbfcaaa",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.669-d3f3439-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-669/DroidDeck-PR.669-d3f3439-pubg.apk",
+          "size": 57028242,
+          "sha256": "1a7a44b828bf86b3d70656aa8ba3c7f2dc63943ada671b84cf7bdf69f0724c8c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.669-d3f3439-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-669/DroidDeck-PR.669-d3f3439-antutu.apk",
+          "size": 57028242,
+          "sha256": "f00a1ccd6608a51589492a0c2f28af38bf60991c8f647f952b4bc5ca20cb0ef6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.669-d3f3439-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-669/DroidDeck-PR.669-d3f3439-ludashi.apk",
+          "size": 57028242,
+          "sha256": "92378dda23fbc23827018f741c48cab3cc7706e5b2e737a614195b33568905a5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-587",
       "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
