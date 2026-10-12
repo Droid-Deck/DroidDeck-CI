@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791832577165,
+  "generatedAt": 1791832867638,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8d02259",
-    "title": "fix: an unfolded Follow screen session turns to portrait again",
-    "summary": "\u2022 applyFollowOrientation is now the one place the session sets its orientation: Follow screen on a large panel (smallestScreenWidthDp >= 600) can turn with the device; everything else uses the orientation picked in Setup.\n\u2022 onResume calls it instead of applying the setting directly, so resuming keeps the unfolded rotation.",
-    "commit": "8d0225932c85695355f5d173a54c575b995cd393",
+    "tag": "main-98822fd",
+    "title": "fix: a touchpad tap holds its click long enough for games to see it",
+    "summary": "In touchpad mode a single tap often does nothing in games, while a long press or a double tap works (#618, and the touchpad part of #628).",
+    "commit": "98822fdd27f6d30ecd0d061eed60c492d8abd5b1",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791832540000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8d02259",
+    "publishedAt": 1791832813000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-98822fd",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8d02259.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d02259/DroidDeck-main-8d02259.apk",
+        "name": "DroidDeck-main-98822fd.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-98822fd/DroidDeck-main-98822fd.apk",
         "size": 46558141,
-        "sha256": "5a7fc59e0c2a54eb0f3c05d226c379d4156102aaa541245156d17b80ae1b6ba1",
+        "sha256": "971266f6acf7a71e1b3fbba101f5951742b3a83d788677a3b656308c9436fe08",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8d02259-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d02259/DroidDeck-main-8d02259-pubg.apk",
+        "name": "DroidDeck-main-98822fd-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-98822fd/DroidDeck-main-98822fd-pubg.apk",
         "size": 46558141,
-        "sha256": "3730b6b383ebe484d3d486514e100e40f30b239173cbf99b7d61851a7d78cbf2",
+        "sha256": "c084f2ae000c4837a904a884e67872c3606ed2aa87d11a8b19b2ce76bebd04be",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8d02259-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d02259/DroidDeck-main-8d02259-antutu.apk",
+        "name": "DroidDeck-main-98822fd-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-98822fd/DroidDeck-main-98822fd-antutu.apk",
         "size": 46558141,
-        "sha256": "3bf71d85762c2d746d14aef062daeeeceea807e242e7036aa5a13266b0d2c4dd",
+        "sha256": "6d3fb2342a83655040e1757b555c25d3c20d1b6754463f4e8920d2defb7b9473",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8d02259-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d02259/DroidDeck-main-8d02259-ludashi.apk",
+        "name": "DroidDeck-main-98822fd-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-98822fd/DroidDeck-main-98822fd-ludashi.apk",
         "size": 46558141,
-        "sha256": "665caf0672c113abd9f169510ea7a219e6b67a8dd8014ee5b238aa8332080a08",
+        "sha256": "fcc837bbb44682bdf745f48233f6530d321e0192777e23748f0d6ad5a13ddf86",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "98822fdd27f6d30ecd0d061eed60c492d8abd5b1",
+      "title": "fix: a touchpad tap holds its click long enough for games to see it",
+      "summary": "In touchpad mode a single tap often does nothing in games, while a long press or a double tap works (#618, and the touchpad part of #628).",
+      "publishedAt": 1791832813000
+    },
     {
       "commit": "8d0225932c85695355f5d173a54c575b995cd393",
       "title": "fix: an unfolded Follow screen session turns to portrait again",
@@ -155,12 +161,6 @@
       "title": "fix: keep the Steam desktop client in KDE",
       "summary": "Keep desktop Steam on KDE with software CEF, reuse the existing client on repeated launches, and preserve explicit Big Picture handoff, verified on AYN Thor with 19 passing regression tests.",
       "publishedAt": 1791803154000
-    },
-    {
-      "commit": "4d1b8421fb94a29dd703325b2227ac858f310a2a",
-      "title": "feat: store game pages flood onto their hero art, and downloads survive a restart",
-      "summary": "The card's art grew over the whole pane as a blob, then the page faded in with its own hero banner rising up from below, so the logo showed twice; closing drained a full-pane copy back into the card. PageFlood takes an optional onto target: the tile now grows corner to corner from the card onto the page's hero banner (StoresMotion.heroAt, recorded by StoreGameDetail) on one firm spring, an",
-      "publishedAt": 1791777880000
     }
   ],
   "tests": [
