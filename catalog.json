@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791843517433,
+  "generatedAt": 1791845350776,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-442",
+      "title": "Add opt-in zRAM compression for the Steam client while a game runs",
+      "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
+      "commit": "76506fccfb8be8186f25ea462be840d4b8d69f5c",
+      "pr": 442,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791845300000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-442",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.442-76506fc.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-76506fc.apk",
+          "size": 53870226,
+          "sha256": "eb864a8fb0da1423d30abd91f9a57c5242611d2091461f4bc934c015ed10515f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.442-76506fc-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-76506fc-pubg.apk",
+          "size": 53870226,
+          "sha256": "3faf94b8d47cbe7699b8e907ad1a234e82bf8ab931b94049e853bacf83ba511e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.442-76506fc-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-76506fc-antutu.apk",
+          "size": 53870226,
+          "sha256": "d3cdf1465c43e83fe92a6c0e4f487828a914254562753c6a25b117ac59d91dfe",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.442-76506fc-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-76506fc-ludashi.apk",
+          "size": 53870226,
+          "sha256": "dcc68040326b4332192b98248539bee8316bfcac4a2cc5fd1cdc1f682e1700cd",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-669",
       "title": "Add translations for 23 more languages and fill missing strings",
@@ -501,55 +550,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-489/DroidDeck-PR.489-fd31b9a-ludashi.apk",
           "size": 46119503,
           "sha256": "5d248044764cd0aed064893920b40b224e2baa0e723bcb035afb7675f307f5a6",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-442",
-      "title": "Add opt-in zRAM compression for the Steam client while a game runs",
-      "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
-      "commit": "7c0743641c8a6014b3f2b9a39967bad1f9503f30",
-      "pr": 442,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791636118000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-442",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.442-7c07436.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-7c07436.apk",
-          "size": 41785422,
-          "sha256": "914055dbe19b3156d8e327859e98b61b8ba3b4127b7472e3134792c313f3e12b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.442-7c07436-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-7c07436-pubg.apk",
-          "size": 41785422,
-          "sha256": "6badbc9f827dc00cb8c65843e8bfe17ec099a87be920410ce4c6b30b05c03e1a",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.442-7c07436-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-7c07436-antutu.apk",
-          "size": 41785422,
-          "sha256": "eaf22bba0878527d666a0c70475786ccd16fe2f0fa28b32d734124c9c07506f2",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.442-7c07436-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-7c07436-ludashi.apk",
-          "size": 41785422,
-          "sha256": "6fed011bf75c213c9346caf63c32fc9306d385eeaf1843bece356da04ab6cded",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
