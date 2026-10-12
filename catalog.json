@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791803731487,
+  "generatedAt": 1791806053385,
   "stable": {
     "tag": "0.3.2",
     "title": "DroidDeck 0.3.2",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cebad56",
-    "title": "feat: store uninstall confirms in a step-out, shows progress, and lands on Install",
-    "summary": "Uninstalling a store game had no real feedback: Uninstall turned into \"Press again to uninstall\", then the page drained back into its card at once while the files were still being deleted, and the card kept reading installed until the library was read again.",
-    "commit": "cebad5692dba88ff263c68d311122805ddbdac87",
+    "tag": "main-b25c4ea",
+    "title": "Fix multiple controller discovery",
+    "summary": "Adds multi-controller support by assigning each connected Android gamepad to its own synthetic input slot. Controllers are synchronized when the session starts, resumes, or detects a new device, allowing Steam to discover all players.",
+    "commit": "b25c4ea26b1e241922592899e30ec816e7df6f5c",
     "pr": 0,
     "version": null,
     "versionCode": 12,
-    "publishedAt": 1791803689000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cebad56",
+    "publishedAt": 1791806016000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b25c4ea",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cebad56.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cebad56/DroidDeck-main-cebad56.apk",
+        "name": "DroidDeck-main-b25c4ea.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b25c4ea/DroidDeck-main-b25c4ea.apk",
         "size": 46558141,
-        "sha256": "a6c557db93335203c82f5dd71b7b014ffe86dd60ddb0c55230f33f7fe7d0c77d",
+        "sha256": "450af009924a75ceca3713b5ff2fc51a5f19ddb2e5b165b3b531e0f4a59a3733",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cebad56-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cebad56/DroidDeck-main-cebad56-pubg.apk",
+        "name": "DroidDeck-main-b25c4ea-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b25c4ea/DroidDeck-main-b25c4ea-pubg.apk",
         "size": 46558141,
-        "sha256": "34ae1b6e28946760bbba8c75cc266b848186535f17518786a2895e041f14dc93",
+        "sha256": "f0c34bea34d301ec068da48ac5541401b967e0f6c9146b41339447b438972784",
         "packageName": "com.tencent.ig",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cebad56-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cebad56/DroidDeck-main-cebad56-antutu.apk",
+        "name": "DroidDeck-main-b25c4ea-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b25c4ea/DroidDeck-main-b25c4ea-antutu.apk",
         "size": 46558141,
-        "sha256": "ed2021b927906ddb182d9725fd71b111f4a7f5c18bcf7d53b707a2d21f355263",
+        "sha256": "136be727736e3ecb5b6ae25acf76a22c2f1bccbd726110fe5d29e00bcf0708c1",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cebad56-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cebad56/DroidDeck-main-cebad56-ludashi.apk",
+        "name": "DroidDeck-main-b25c4ea-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b25c4ea/DroidDeck-main-b25c4ea-ludashi.apk",
         "size": 46558141,
-        "sha256": "7dcb9158d12e1372cbda7ee1e94c891f859c2fd2aafd4d710e810df2a19c82c2",
+        "sha256": "493463c528b04bbc01674228f9a89ff3bf7aa62a1e63b2944930958818a180c1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 12,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b25c4ea26b1e241922592899e30ec816e7df6f5c",
+      "title": "Fix multiple controller discovery",
+      "summary": "Adds multi-controller support by assigning each connected Android gamepad to its own synthetic input slot. Controllers are synchronized when the session starts, resumes, or detects a new device, allowing Steam to discover all players.",
+      "publishedAt": 1791806016000
+    },
     {
       "commit": "cebad5692dba88ff263c68d311122805ddbdac87",
       "title": "feat: store uninstall confirms in a step-out, shows progress, and lands on Install",
@@ -155,12 +161,6 @@
       "title": "Fix black Steam output with FSR 1",
       "summary": "Fix black Steam output with FSR 1 by avoiding compressed post-processing targets and invalidating stale source views, validated with consecutive signed-build launches on AYN Thor and native cache regression tests.",
       "publishedAt": 1791767458000
-    },
-    {
-      "commit": "e4c375ad0d04b78d054828ec50c6dd19c38952e7",
-      "title": "Fix Discord launcher layout and controller navigation",
-      "summary": "Fix Discord-reported settings clipping, interrupted animations, and launcher/controller navigation, including offscreen store-grid focus, with signed-build validation on AYN Thor at normal and phone-like layouts.",
-      "publishedAt": 1791764102000
     }
   ],
   "tests": [
