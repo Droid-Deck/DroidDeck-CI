@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791845350776,
+  "generatedAt": 1791854711916,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-677",
+      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
+      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
+      "commit": "3d4c894dff0b492595e5bd22cb793af423b1fdda",
+      "pr": 677,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791854670000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-677",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.677-3d4c894.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-3d4c894.apk",
+          "size": 53862034,
+          "sha256": "25d4eb964bff8e362487ca71edfd8b4a6108f1d842b463ff26461f472f45f883",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.677-3d4c894-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-3d4c894-pubg.apk",
+          "size": 53862034,
+          "sha256": "633cb023d06e23fe1b5d2b41bbc8571eee319ea5d7ab69002e5bb951e28e606d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.677-3d4c894-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-3d4c894-antutu.apk",
+          "size": 53862034,
+          "sha256": "ac2d98f30ee2f9a814fcc06f75c6f12d35914a09dc7014735873dad4d674756b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.677-3d4c894-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-3d4c894-ludashi.apk",
+          "size": 53862034,
+          "sha256": "68e7ac74943dbcfc321d04356acf9b81f4293277f2806c71c8d26fa06a0e476b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-442",
       "title": "Add opt-in zRAM compression for the Steam client while a game runs",
