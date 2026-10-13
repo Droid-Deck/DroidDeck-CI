@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791858497918,
+  "generatedAt": 1791868493531,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-681",
+      "title": "Fix FEX dropdown scaling and Discover search focus",
+      "summary": "Preserve App scale in FEX/settings dropdowns and release Discover search focus when opening Flatpak details, keeping the query while preventing covered cards from taking controller focus.",
+      "commit": "7537a0ae20b2a3773da2def7761a635b5afaab11",
+      "pr": 681,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791868430000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-681",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.681-7537a0a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-681/DroidDeck-PR.681-7537a0a.apk",
+          "size": 53874322,
+          "sha256": "4b0ebc173b261b99e82fb7c2078c9d397e5408ce8334b674f8769618a40a24e2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.681-7537a0a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-681/DroidDeck-PR.681-7537a0a-pubg.apk",
+          "size": 53874322,
+          "sha256": "1a86ba57007f1cf66e6db34a11d9f4907e9e5811c68d6624aafd048561bf0a3c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.681-7537a0a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-681/DroidDeck-PR.681-7537a0a-antutu.apk",
+          "size": 53874322,
+          "sha256": "2228479b6ec070d9eee8d15095c6bc2979604a2561b771e42e0b58ea89683995",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.681-7537a0a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-681/DroidDeck-PR.681-7537a0a-ludashi.apk",
+          "size": 53874322,
+          "sha256": "fe4e5731815ebc9a4c1c0973193502554537ea789f9d3d8731e70485c396b679",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-671",
       "title": "fix(session): prevent overlapping startup and teardown",
