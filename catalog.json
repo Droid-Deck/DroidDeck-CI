@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791931538328,
+  "generatedAt": 1791931635590,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-749",
+      "title": "Preserve native Linux and FEX compatibility choices",
+      "summary": "Preserve native Linux defaults and explicit Linux Runtime, FEX, and Proton choices instead of rewriting them to the global Proton tool, fixing #533.",
+      "commit": "5050726b383a473638d204bb76d6eeae0883cf95",
+      "pr": 749,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791931570000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-749",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.749-5050726.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-5050726.apk",
+          "size": 61481651,
+          "sha256": "333d4eec088f5e16ef7c7cf62f2d5d394457dcebad89ffbd5c5a1a76ce75ab32",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.749-5050726-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-5050726-pubg.apk",
+          "size": 61481651,
+          "sha256": "ecf4fcce41105db03ace53b8691faed03499a67ab815a3d4e17f31716b96bc15",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.749-5050726-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-5050726-antutu.apk",
+          "size": 61481651,
+          "sha256": "98726b35ca294d9b54157828c746053de86f9e1d0492f12b819e6eb423a4c7aa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.749-5050726-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-5050726-ludashi.apk",
+          "size": 61481651,
+          "sha256": "74297b0b37ce3048f0004fddaf0814d7ca417dfe954cf87b334ce4e8e1266319",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-757",
       "title": "Verify native SD-card library paths before binding them",
       "summary": "Use native SD-card library paths only after an app-process probe verifies read/write access and both paths expose the same files, keeping the configured path as fallback; 12 storage tests pass, with device routing and game-load measurements pending (#373).",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-752/DroidDeck-PR.752-8fb856c-ludashi.apk",
           "size": 61481651,
           "sha256": "2b0c18d3627f06ceafaf87fe99aca34a5526e1d6d5c81b4d4841e171502c12ab",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-749",
-      "title": "Preserve native Linux and FEX compatibility choices",
-      "summary": "Preserve native Linux defaults and explicit Linux Runtime, FEX, and Proton choices instead of rewriting them to the global Proton tool, fixing #533.",
-      "commit": "32ea6c7d0527d10fc3bd28eb02ce0840d5a0ab6e",
-      "pr": 749,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791927617000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-749",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.749-32ea6c7.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-32ea6c7.apk",
-          "size": 61481651,
-          "sha256": "8e77927c8b0cb1a694ead754d37da11c5709f458b88ea3fe7e3cb71663e89bce",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.749-32ea6c7-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-32ea6c7-pubg.apk",
-          "size": 61481651,
-          "sha256": "ce201621c3fceee3fdd0450f5cc665cc52971807fc9fd2a2e2328a852587ddfd",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.749-32ea6c7-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-32ea6c7-antutu.apk",
-          "size": 61481651,
-          "sha256": "d0a41f56a311ce44ef6d10eb4e173f11a5c1af90a2bfece89f226e3e9282ad8a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.749-32ea6c7-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-32ea6c7-ludashi.apk",
-          "size": 61481651,
-          "sha256": "cd8bae77842a34c8fb31d7033ec37c405f25c3cdca634b1d7e6875cf21c7dee7",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
