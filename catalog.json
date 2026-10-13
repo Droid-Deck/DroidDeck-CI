@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791913059427,
+  "generatedAt": 1791913591834,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-975c76e",
-    "title": "fix: don't count a re-attached unchanged buffer as a new game frame",
-    "summary": "From the \"Unstable frame limit\" Discord thread. With a 30 FPS cap (from Steam's QAM or from the game itself), LSFG and Win-FG were fed ~50\u201360 \"source frames\" a second while the game made 30. The in-app HUD read \"LSFG 2\u00d7 59 \u2192 54\" / \"53 \u2192 60\" with MangoHud at 30, and camera motion felt floaty. It depended on the game: Super Meat Boy did 30 \u2192 60, Divinity and Quake didn't.",
-    "commit": "975c76e3e81ffd4f1fe1a7f24b1f3eed3cb52c57",
+    "tag": "main-f0c52c2",
+    "title": "Add opt-in zRAM compression for the Steam client while a game runs",
+    "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
+    "commit": "f0c52c273b7a2d8871ea8a6b106a2245975fadb1",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791912835000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-975c76e",
+    "publishedAt": 1791913554000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f0c52c2",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-975c76e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975c76e/DroidDeck-main-975c76e.apk",
-        "size": 54100451,
-        "sha256": "6da9668edda54752996909d1d2f3d28c383ca64f1b80df5c341f9931789556b6",
+        "name": "DroidDeck-main-f0c52c2.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f0c52c2/DroidDeck-main-f0c52c2.apk",
+        "size": 54108643,
+        "sha256": "66c63f73a6561c3ed24f8f0f8e95c7910bef8dce7d4d081ca8f20525b8b00a09",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-975c76e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975c76e/DroidDeck-main-975c76e-pubg.apk",
-        "size": 54100451,
-        "sha256": "77ba77613258ef7fee5bb63bfc3592c1a0d119fd91caad2c7c4071de31694b85",
+        "name": "DroidDeck-main-f0c52c2-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f0c52c2/DroidDeck-main-f0c52c2-pubg.apk",
+        "size": 54108643,
+        "sha256": "c9e50b02786dc241d25e7c7b76a9d5e51ccfda141275a3136e466a994ca496a2",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-975c76e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975c76e/DroidDeck-main-975c76e-antutu.apk",
-        "size": 54100451,
-        "sha256": "7a5083d44fc56c0d6ac68d31181ef7efd6bfebd0b05c8d29f756d382f23a6f64",
+        "name": "DroidDeck-main-f0c52c2-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f0c52c2/DroidDeck-main-f0c52c2-antutu.apk",
+        "size": 54108643,
+        "sha256": "0511546b9ab6454fd7ff7fa8c35978bc59318052979bf1ecbcf8707de1c184c3",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-975c76e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975c76e/DroidDeck-main-975c76e-ludashi.apk",
-        "size": 54100451,
-        "sha256": "421f7dc0f0d2a26d7c517763966b33b7693735477db1ca9c1d2f360aa95acd76",
+        "name": "DroidDeck-main-f0c52c2-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f0c52c2/DroidDeck-main-f0c52c2-ludashi.apk",
+        "size": 54108643,
+        "sha256": "366c8e3c99aff63fbc5b40a605b1bae7c374813d66bcdeb079ac118403ec3fe1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f0c52c273b7a2d8871ea8a6b106a2245975fadb1",
+      "title": "Add opt-in zRAM compression for the Steam client while a game runs",
+      "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
+      "publishedAt": 1791913554000
+    },
     {
       "commit": "975c76e3e81ffd4f1fe1a7f24b1f3eed3cb52c57",
       "title": "fix: don't count a re-attached unchanged buffer as a new game frame",
@@ -155,12 +161,6 @@
       "title": "Download components from the session drawer",
       "summary": "Download FEX, DXVK, and VKD3D versions from the session Games drawer using the shared Components catalog, package storage, and download progress.",
       "publishedAt": 1791858450000
-    },
-    {
-      "commit": "2503d6929332de2a4a22c8a31c1b3ce84e5a8831",
-      "title": "Add Quest 3/3S compatibility to the standard APK",
-      "summary": "Quest 3/3S use the standard APK with automatic detection and one-time defaults, preserving the GPUOBJ/Turnip and ioctl fixes adapted from TheStutter\u2019s Quest port plus per-package bwrap sockets; this removes the separate Quest release target and includes current main.",
-      "publishedAt": 1791840368000
     }
   ],
   "tests": [
