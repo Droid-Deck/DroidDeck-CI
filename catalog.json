@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791923836965,
+  "generatedAt": 1791925348277,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-749",
+      "title": "Preserve native Linux and FEX compatibility choices",
+      "summary": "Preserve native Linux defaults and explicit Linux Runtime, FEX, and Proton choices instead of rewriting them to the global Proton tool, fixing #533.",
+      "commit": "a7786407e6ffd7489dea1d64fba8fa475b8c4d02",
+      "pr": 749,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791925270000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-749",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.749-a778640.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-a778640.apk",
+          "size": 61481651,
+          "sha256": "0565efa7906b44cefc43c52b11286dabff63488d85b2f844fb4462223c1b4c7b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.749-a778640-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-a778640-pubg.apk",
+          "size": 61481651,
+          "sha256": "03c7369622357423588a1ca381132385e3ae13553c91c0ada1941f37253c7109",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.749-a778640-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-a778640-antutu.apk",
+          "size": 61481651,
+          "sha256": "eb07e6e2cda03ac1f17ebcea1204f8d08b06ee2f5002598355b075c8d5c20544",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.749-a778640-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-a778640-ludashi.apk",
+          "size": 61481651,
+          "sha256": "c56b6dc8b02a94f7da412a694945935ee5f8f6f83e72a596f358bebd5b6d2616",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-747",
       "title": "Fix microphone capture in DirectAudio games",
