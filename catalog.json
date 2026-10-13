@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791930580773,
+  "generatedAt": 1791930856381,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ec53742",
-    "title": "fix: the Debugging tools hint points to Setup > Diagnostics",
-    "summary": "With Debugging tools off, droiddeckctl tells you to turn on Setup > Session > Debugging tools. Setup has no Session tab; the toggle is under Diagnostics.",
-    "commit": "ec537421acc72f447bcce25313dc50326c98c1a4",
+    "tag": "main-0288883",
+    "title": "fix: pace gamescope's fixed-refresh frame limiter per window by time",
+    "summary": "From the \"Unstable frame limit\" Discord thread. With Steam's QAM Frame Limit at 30 and frame generation on, motion had \"small stops and ladders\". The same game capped by its own in-game 30 FPS lock was smooth, and MangoHud's frametimes looked the same in both cases.",
+    "commit": "02888834d40e352dea48e4f7b31184d96e5192f7",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791918627000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ec53742",
+    "publishedAt": 1791930807000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0288883",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ec53742.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ec53742/DroidDeck-main-ec53742.apk",
-        "size": 61477555,
-        "sha256": "29f9877378ebf77f790c39f3abad80bd856555350e12aa9dfdd37914abb19c9f",
+        "name": "DroidDeck-main-0288883.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0288883/DroidDeck-main-0288883.apk",
+        "size": 61481651,
+        "sha256": "2e6596f65b76d9b467a42aa4a2ade1dc2bdd78a12b9bf526fcee4c5d3f4b2565",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ec53742-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ec53742/DroidDeck-main-ec53742-pubg.apk",
-        "size": 61477555,
-        "sha256": "8c1423ebf5e45ff509f192e2460052ff4b79c8d5c422306e2142f1b33a271c1e",
+        "name": "DroidDeck-main-0288883-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0288883/DroidDeck-main-0288883-pubg.apk",
+        "size": 61481651,
+        "sha256": "d754f962d09ed4f67bb2a7728c4620548ec4dc2f6330f89f252415771e288c87",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ec53742-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ec53742/DroidDeck-main-ec53742-antutu.apk",
+        "name": "DroidDeck-main-0288883-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0288883/DroidDeck-main-0288883-antutu.apk",
         "size": 61481651,
-        "sha256": "9410759d0624207276b446f56f586e850d4c971fb2d7757bea365c2d29d577da",
+        "sha256": "d23146f2d29b225c3b325eeceabca3c69c78197c4f7997347c4c201996fef542",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ec53742-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ec53742/DroidDeck-main-ec53742-ludashi.apk",
+        "name": "DroidDeck-main-0288883-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0288883/DroidDeck-main-0288883-ludashi.apk",
         "size": 61481651,
-        "sha256": "791829abb45d149c65ffc3d7b81d0791fef960bc82256e3e6f65483070730e35",
+        "sha256": "fc7241f382db2eb282ab75f417969ae14886a8858fcdfbdcc96b66e776dd1208",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "02888834d40e352dea48e4f7b31184d96e5192f7",
+      "title": "fix: pace gamescope's fixed-refresh frame limiter per window by time",
+      "summary": "From the \"Unstable frame limit\" Discord thread. With Steam's QAM Frame Limit at 30 and frame generation on, motion had \"small stops and ladders\". The same game capped by its own in-game 30 FPS lock was smooth, and MangoHud's frametimes looked the same in both cases.",
+      "publishedAt": 1791930807000
+    },
     {
       "commit": "ec537421acc72f447bcce25313dc50326c98c1a4",
       "title": "fix: the Debugging tools hint points to Setup > Diagnostics",
@@ -155,12 +161,6 @@
       "title": "Use preview-builds for the Discord channel name",
       "summary": "Update the channel documentation and workflow comment to match the Discord rename from preview to preview-builds, preserving the existing webhook routing.",
       "publishedAt": 1791905717000
-    },
-    {
-      "commit": "31d12a9f6c477235dcb27457fbe5bdf4c7254a61",
-      "title": "Align Discord build names with the app",
-      "summary": "Use Preview and Test builds in Discord announcements and document safe channel renames while preserving the existing webhook secrets and message references.",
-      "publishedAt": 1791905192000
     }
   ],
   "tests": [
