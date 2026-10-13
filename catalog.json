@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791856044503,
+  "generatedAt": 1791856676851,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-671",
+      "title": "fix(session): prevent overlapping startup and teardown",
+      "summary": "Users reported Steam appearing offline. Logs showed Session Replaced after successful sign-in, while downloads still worked. This PR prevents overlapping local sessions, one possible cause, but does not establish the cause of those reports.",
+      "commit": "a114c4634d48703307ff1ec6ebcfbbd80010c49c",
+      "pr": 671,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791856628000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-671",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.671-a114c46.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-671/DroidDeck-PR.671-a114c46.apk",
+          "size": 53878418,
+          "sha256": "4119fb56a16fc148275442f41a70b2d5bbe31ca077fa6394bdff33511807ae47",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.671-a114c46-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-671/DroidDeck-PR.671-a114c46-pubg.apk",
+          "size": 53878418,
+          "sha256": "a254c87a74b4042a0fda5911da7357503b8f4fa908add0af532d6c6cd72c4984",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.671-a114c46-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-671/DroidDeck-PR.671-a114c46-antutu.apk",
+          "size": 53878418,
+          "sha256": "53244bc129c38b3dea8943a8238122fe3dd971aa774c45faa436ba561a6461cf",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.671-a114c46-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-671/DroidDeck-PR.671-a114c46-ludashi.apk",
+          "size": 53878418,
+          "sha256": "1ffb4e8d2f285e6456165be679f8bed430bfac195b65457270912e5d4508aa41",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-676",
       "title": "Add experimental Quest 2 and Adreno 6xx display-driver support",
