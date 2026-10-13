@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791928757951,
+  "generatedAt": 1791930580773,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-755",
+      "title": "Keep visible external-display sessions running",
+      "summary": "Respect the session Activity\u2019s display power when suspending or resuming, preventing handset screen-off from pausing visible DeX sessions (refs #586 and #741); Android 26/28/29/33 and visibility-transition regressions pass, with Samsung hardware validation pending.",
+      "commit": "e95ba8d8a2fcff7ac2d01e55c1bf95e559bf6df5",
+      "pr": 755,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791930541000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-755",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.755-e95ba8d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-755/DroidDeck-PR.755-e95ba8d.apk",
+          "size": 61481651,
+          "sha256": "4dcabf3bd19cf811f8e8027286b43e2892a37960cc0696b0c51949354e9e7018",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.755-e95ba8d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-755/DroidDeck-PR.755-e95ba8d-pubg.apk",
+          "size": 61481651,
+          "sha256": "840557d6cc521a10daf356d1974860d6a0308398a7e8edd1b515388dea925403",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.755-e95ba8d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-755/DroidDeck-PR.755-e95ba8d-antutu.apk",
+          "size": 61481651,
+          "sha256": "69ec5015b27d83c1f234ad54c090af5746baff9e61edcffee7809e6f460684c0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.755-e95ba8d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-755/DroidDeck-PR.755-e95ba8d-ludashi.apk",
+          "size": 61481651,
+          "sha256": "64109fc56c884fab83558d87fc7a464bc29e3d8dc384df7a6111637d93fc49d2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-752",
       "title": "Fix Flatpak installs on older Android kernels",
