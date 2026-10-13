@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791933087445,
+  "generatedAt": 1791933458357,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0288883",
-    "title": "fix: pace gamescope's fixed-refresh frame limiter per window by time",
-    "summary": "From the \"Unstable frame limit\" Discord thread. With Steam's QAM Frame Limit at 30 and frame generation on, motion had \"small stops and ladders\". The same game capped by its own in-game 30 FPS lock was smooth, and MangoHud's frametimes looked the same in both cases.",
-    "commit": "02888834d40e352dea48e4f7b31184d96e5192f7",
+    "tag": "main-4163b31",
+    "title": "fix: Windows components: .NET Core / Desktop runtimes install again",
+    "summary": "Installing .NET Desktop 3/6/7/8, .NET Core 3 or .NET 5 from Windows components failed with \"the installer stopped (status 1)\". This blocks MelonLoader/LemonLoader mods (Drova \u2013 Forsaken Kin, Stardew Valley) and Baldur's Gate 3.",
+    "commit": "4163b31b02cfc3734ddaede05cb5704899d0246f",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791930807000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0288883",
+    "publishedAt": 1791933394000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4163b31",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0288883.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0288883/DroidDeck-main-0288883.apk",
+        "name": "DroidDeck-main-4163b31.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4163b31/DroidDeck-main-4163b31.apk",
         "size": 61481651,
-        "sha256": "2e6596f65b76d9b467a42aa4a2ade1dc2bdd78a12b9bf526fcee4c5d3f4b2565",
+        "sha256": "3c73fc91eca267bd749fa5dc712244d823024a771bff630409b94f88b0ee046d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0288883-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0288883/DroidDeck-main-0288883-pubg.apk",
+        "name": "DroidDeck-main-4163b31-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4163b31/DroidDeck-main-4163b31-pubg.apk",
         "size": 61481651,
-        "sha256": "d754f962d09ed4f67bb2a7728c4620548ec4dc2f6330f89f252415771e288c87",
+        "sha256": "fd3d9f8eeb7ba7e7eafcf339b81481913d5de471ff9e1ab87865a202b4e5757d",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0288883-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0288883/DroidDeck-main-0288883-antutu.apk",
+        "name": "DroidDeck-main-4163b31-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4163b31/DroidDeck-main-4163b31-antutu.apk",
         "size": 61481651,
-        "sha256": "d23146f2d29b225c3b325eeceabca3c69c78197c4f7997347c4c201996fef542",
+        "sha256": "aa1f7ee3f47500c4ce9702f6bcc056d05d15cfb03a63774fc803902fbfdd66be",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0288883-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0288883/DroidDeck-main-0288883-ludashi.apk",
+        "name": "DroidDeck-main-4163b31-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4163b31/DroidDeck-main-4163b31-ludashi.apk",
         "size": 61481651,
-        "sha256": "fc7241f382db2eb282ab75f417969ae14886a8858fcdfbdcc96b66e776dd1208",
+        "sha256": "76aa976460ffed0e0a40993a0a168e456ade37065fd3141f89cdfc93c8e3f867",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4163b31b02cfc3734ddaede05cb5704899d0246f",
+      "title": "fix: Windows components: .NET Core / Desktop runtimes install again",
+      "summary": "Installing .NET Desktop 3/6/7/8, .NET Core 3 or .NET 5 from Windows components failed with \"the installer stopped (status 1)\". This blocks MelonLoader/LemonLoader mods (Drova \u2013 Forsaken Kin, Stardew Valley) and Baldur's Gate 3.",
+      "publishedAt": 1791933394000
+    },
     {
       "commit": "02888834d40e352dea48e4f7b31184d96e5192f7",
       "title": "fix: pace gamescope's fixed-refresh frame limiter per window by time",
@@ -155,12 +161,6 @@
       "title": "feat(): Rich Game details for GOG & Epic - Publisher, Developer, Release Date, HLTB & Metacritic",
       "summary": "This PR brings in rich details for GOG & Epic games.",
       "publishedAt": 1791905862000
-    },
-    {
-      "commit": "a2e555f4cc47c8ab5af1ff8270f0bae0842a3948",
-      "title": "Use preview-builds for the Discord channel name",
-      "summary": "Update the channel documentation and workflow comment to match the Discord rename from preview to preview-builds, preserving the existing webhook routing.",
-      "publishedAt": 1791905717000
     }
   ],
   "tests": [
