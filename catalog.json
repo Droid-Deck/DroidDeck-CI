@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791909763651,
+  "generatedAt": 1791912369100,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -207,55 +207,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-f0b3297-ludashi.apk",
           "size": 54223331,
           "sha256": "8101e65f3eed45762190b4802c25b57a2601912c4fff580afc221413d54a56be",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-731",
-      "title": "fix: don't count a re-attached unchanged buffer as a new game frame",
-      "summary": "From the \"Unstable frame limit\" Discord thread. With a 30 FPS cap (from Steam's QAM or from the game itself), LSFG and Win-FG were fed ~50\u201360 \"source frames\" a second while the game made 30. The in-app HUD read \"LSFG 2\u00d7 59 \u2192 54\" / \"53 \u2192 60\" with MangoHud at 30, and camera motion felt floaty. It depended on the game: Super Meat Boy did 30 \u2192 60, Divinity and Quake didn't.",
-      "commit": "06e1855fa780347e7b0e48029273cab7abbc9404",
-      "pr": 731,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791908685000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-731",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.731-06e1855.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-731/DroidDeck-PR.731-06e1855.apk",
-          "size": 54100451,
-          "sha256": "dbf66489723ad4044119df84fb3de6b1142854fd7f864e06b6cbb704ff121493",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.731-06e1855-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-731/DroidDeck-PR.731-06e1855-pubg.apk",
-          "size": 54100451,
-          "sha256": "7609ebf823c28818a9075df3d7cce207c11cb60996ad138c4b8a2ecb17d14354",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.731-06e1855-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-731/DroidDeck-PR.731-06e1855-antutu.apk",
-          "size": 54100451,
-          "sha256": "12b28dd62cde5038fcef49fd37bbbf171059bc183f4946849d155ffa90595cd4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.731-06e1855-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-731/DroidDeck-PR.731-06e1855-ludashi.apk",
-          "size": 54100451,
-          "sha256": "ad1b67d4e09ea5128aff6f55300879e7bd408770fc6744d36fdaccc825ce3611",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
