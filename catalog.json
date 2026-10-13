@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791898499935,
+  "generatedAt": 1791898787273,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-da8fe06",
-    "title": "fix: cap the session refresh rate at the device's peak refresh rate",
-    "summary": "Steam's Quick Access Menu frame limiter did nothing on devices whose peak refresh rate setting is lower than the panel's fastest mode. The AYN Thor's quick-settings tile had it at 60 Hz.",
-    "commit": "da8fe068d97b8e33fb2e4419b0d7c95864f1c850",
+    "tag": "main-75d7edd",
+    "title": "fix: anchor wppresentation timestamps to the vsync tick",
+    "summary": "Follow-up to #715. With the refresh rate fixed, gamescope still delivered only ~50 distinct frames a second to DroidDeck's compositor on a 60 Hz panel. The QAM frame limiter also overshot its cap: 30 read 35\u201337 FPS in MangoHud, and frametimes were jumpy.",
+    "commit": "75d7edd2c3c3acb532cf10dbf196ddc9d4c92e8a",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791897910000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-da8fe06",
+    "publishedAt": 1791898722000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-75d7edd",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-da8fe06.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da8fe06/DroidDeck-main-da8fe06.apk",
+        "name": "DroidDeck-main-75d7edd.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75d7edd/DroidDeck-main-75d7edd.apk",
         "size": 53874322,
-        "sha256": "4d4f55bdea854a607c9649d3b5a33a373b268ec7b1be93bbe4e88a088032745f",
+        "sha256": "823f73a5870b68a3a9d6867d4bdc89dd5675b71e7255e33ec499511110edbfb7",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-da8fe06-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da8fe06/DroidDeck-main-da8fe06-pubg.apk",
+        "name": "DroidDeck-main-75d7edd-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75d7edd/DroidDeck-main-75d7edd-pubg.apk",
         "size": 53874322,
-        "sha256": "9caa7dfffe3c633562e034613631d21d146f36809edf39c7867ca959aa889285",
+        "sha256": "2862dd8da6779bd2a557fc6dfd0cb7c616757d4738c47cb7e4ca41e788d8b230",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-da8fe06-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da8fe06/DroidDeck-main-da8fe06-antutu.apk",
+        "name": "DroidDeck-main-75d7edd-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75d7edd/DroidDeck-main-75d7edd-antutu.apk",
         "size": 53874322,
-        "sha256": "6de18e90ffe3a250dd47d29bd6ede1678295ff8ec65c1af0af9e0bb027f63767",
+        "sha256": "67cd2048922f4d3a5c84e8dcd9d4259c19d30a94b38c263269a7cc16c9e1c889",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-da8fe06-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da8fe06/DroidDeck-main-da8fe06-ludashi.apk",
+        "name": "DroidDeck-main-75d7edd-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75d7edd/DroidDeck-main-75d7edd-ludashi.apk",
         "size": 53874322,
-        "sha256": "b9f61b52adbf17533993a3833e75470c9356f56321a53c43650990c2e0682f8a",
+        "sha256": "032249c2c738f50cf95194b2a9d8c5181de27de9ea0201622e6a13d30bed1886",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "75d7edd2c3c3acb532cf10dbf196ddc9d4c92e8a",
+      "title": "fix: anchor wppresentation timestamps to the vsync tick",
+      "summary": "Follow-up to #715. With the refresh rate fixed, gamescope still delivered only ~50 distinct frames a second to DroidDeck's compositor on a 60 Hz panel. The QAM frame limiter also overshot its cap: 30 read 35\u201337 FPS in MangoHud, and frametimes were jumpy.",
+      "publishedAt": 1791898722000
+    },
     {
       "commit": "da8fe068d97b8e33fb2e4419b0d7c95864f1c850",
       "title": "fix: cap the session refresh rate at the device's peak refresh rate",
@@ -155,12 +161,6 @@
       "title": "fix: a touchpad tap holds its click long enough for games to see it",
       "summary": "In touchpad mode a single tap often does nothing in games, while a long press or a double tap works (#618, and the touchpad part of #628).",
       "publishedAt": 1791832813000
-    },
-    {
-      "commit": "8d0225932c85695355f5d173a54c575b995cd393",
-      "title": "fix: an unfolded Follow screen session turns to portrait again",
-      "summary": "\u2022 applyFollowOrientation is now the one place the session sets its orientation: Follow screen on a large panel (smallestScreenWidthDp >= 600) can turn with the device; everything else uses the orientation picked in Setup.\n\u2022 onResume calls it instead of applying the setting directly, so resuming keeps the unfolded rotation.",
-      "publishedAt": 1791832540000
     }
   ],
   "tests": [
