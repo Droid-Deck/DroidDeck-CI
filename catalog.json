@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791918669312,
+  "generatedAt": 1791920015446,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-740",
+      "title": "fix: Windows components: .NET Core / Desktop runtimes install again",
+      "summary": "Installing .NET Desktop 3/6/7/8, .NET Core 3 or .NET 5 from Windows components failed with \"the installer stopped (status 1)\". This blocks MelonLoader/LemonLoader mods (Drova \u2013 Forsaken Kin, Stardew Valley) and Baldur's Gate 3.",
+      "commit": "bdb2c9ab6d0a5157168918fd819f9ae2670335d4",
+      "pr": 740,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791919975000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-740",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.740-bdb2c9a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-740/DroidDeck-PR.740-bdb2c9a.apk",
+          "size": 61481651,
+          "sha256": "23d72982efc5417a450915436d2b4b4f0d0498de91421991398e989d7cd38d8a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.740-bdb2c9a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-740/DroidDeck-PR.740-bdb2c9a-pubg.apk",
+          "size": 61481651,
+          "sha256": "b8bc84c44bcb89576169ddcddb2f31f803493b3e55b25e7603fb0cf859c137fc",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.740-bdb2c9a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-740/DroidDeck-PR.740-bdb2c9a-antutu.apk",
+          "size": 61481651,
+          "sha256": "e1c38a08927fd421d14b4b037f8fa3f0e7a19113b27709f4a322222c93a981a1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.740-bdb2c9a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-740/DroidDeck-PR.740-bdb2c9a-ludashi.apk",
+          "size": 61481651,
+          "sha256": "0256639f71fb468502a39a5d6a5925cd65eac4d40c5615e1bb6d72890c7a65fd",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-733",
       "title": "fix(quest): correct desktop and Steam display corruption across sessions",
