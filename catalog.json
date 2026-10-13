@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791915432322,
+  "generatedAt": 1791916129997,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4562d61",
-    "title": "Feat/reset all settings",
-    "summary": "Adds a \"Reset all settings\" button in Setup > Diagnostics.\nIt resets all settings to default but keeps your games, logins and\ndownloads. There's also a checkbox to reset game profiles.\nTranslated into all app languages. Tested on my S24 Ultra, works fine.",
-    "commit": "4562d611395a7b7ab12d687df2021e50f2274777",
+    "tag": "main-5e23c66",
+    "title": "fix: the Android keyboard opens on the first tap after the system dismissed it",
+    "summary": "After the Android keyboard is closed with Back, the next tap on Android keyboard in the session menu does nothing; a second tap brings it up (#567 part 1, and I believe #258).",
+    "commit": "5e23c668f3763e903fc44a25332d8247ba7ba9a9",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791913742000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4562d61",
+    "publishedAt": 1791916083000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5e23c66",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4562d61.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4562d61/DroidDeck-main-4562d61.apk",
-        "size": 57344483,
-        "sha256": "57e8e8dbb12515286f5e961689e7fbcfa8b5abce4465e54b264c30e18aa0353d",
+        "name": "DroidDeck-main-5e23c66.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5e23c66/DroidDeck-main-5e23c66.apk",
+        "size": 61481651,
+        "sha256": "6f2b38013af08ff81078e480726aebd77ff2220d7a03f3d93761bb659e1f3271",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4562d61-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4562d61/DroidDeck-main-4562d61-pubg.apk",
-        "size": 57344483,
-        "sha256": "dfaa4a5b71bf75325c5f0c6f3da3995b24f9da1aa8b8ba063b9ad09c73bc8884",
+        "name": "DroidDeck-main-5e23c66-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5e23c66/DroidDeck-main-5e23c66-pubg.apk",
+        "size": 61481651,
+        "sha256": "3909fc272d1e57ab3a7203e0cbb8737521a4b52be57f5e128b1d3f7de3b7a91c",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4562d61-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4562d61/DroidDeck-main-4562d61-antutu.apk",
-        "size": 57344483,
-        "sha256": "8a3da3036c2df9aaa5f619efb5b3e675f983fb7992252537bf0087562998ebde",
+        "name": "DroidDeck-main-5e23c66-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5e23c66/DroidDeck-main-5e23c66-antutu.apk",
+        "size": 61481651,
+        "sha256": "6a6ba73920bac693b8bebe1e3670e17d2c7e869c7d0a91b6273fcc9b5a0a3131",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4562d61-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4562d61/DroidDeck-main-4562d61-ludashi.apk",
-        "size": 57344483,
-        "sha256": "364b52d5b1268a9f7471d8525b169ef903afc1893096eb660c2b453836b8f31e",
+        "name": "DroidDeck-main-5e23c66-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5e23c66/DroidDeck-main-5e23c66-ludashi.apk",
+        "size": 61481651,
+        "sha256": "7d67f04dbbffd10d6a902e3bb56dd80b6cde40391fa0d5583d431954755feab5",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "5e23c668f3763e903fc44a25332d8247ba7ba9a9",
+      "title": "fix: the Android keyboard opens on the first tap after the system dismissed it",
+      "summary": "After the Android keyboard is closed with Back, the next tap on Android keyboard in the session menu does nothing; a second tap brings it up (#567 part 1, and I believe #258).",
+      "publishedAt": 1791916083000
+    },
     {
       "commit": "4562d611395a7b7ab12d687df2021e50f2274777",
       "title": "Feat/reset all settings",
@@ -155,12 +161,6 @@
       "title": "fix: anchor wppresentation timestamps to the vsync tick",
       "summary": "Follow-up to #715. With the refresh rate fixed, gamescope still delivered only ~50 distinct frames a second to DroidDeck's compositor on a 60 Hz panel. The QAM frame limiter also overshot its cap: 30 read 35\u201337 FPS in MangoHud, and frametimes were jumpy.",
       "publishedAt": 1791898722000
-    },
-    {
-      "commit": "da8fe068d97b8e33fb2e4419b0d7c95864f1c850",
-      "title": "fix: cap the session refresh rate at the device's peak refresh rate",
-      "summary": "Steam's Quick Access Menu frame limiter did nothing on devices whose peak refresh rate setting is lower than the panel's fastest mode. The AYN Thor's quick-settings tile had it at 60 Hz.",
-      "publishedAt": 1791897910000
     }
   ],
   "tests": [
