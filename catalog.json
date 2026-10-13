@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791912369100,
+  "generatedAt": 1791912866253,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a394dfd",
-    "title": "feat(): Rich Game details for GOG & Epic - Publisher, Developer, Release Date, HLTB & Metacritic",
-    "summary": "This PR brings in rich details for GOG & Epic games.",
-    "commit": "a394dfd31b2102e20dd99c6f51b4873bbdedab05",
+    "tag": "main-975c76e",
+    "title": "fix: don't count a re-attached unchanged buffer as a new game frame",
+    "summary": "From the \"Unstable frame limit\" Discord thread. With a 30 FPS cap (from Steam's QAM or from the game itself), LSFG and Win-FG were fed ~50\u201360 \"source frames\" a second while the game made 30. The in-app HUD read \"LSFG 2\u00d7 59 \u2192 54\" / \"53 \u2192 60\" with MangoHud at 30, and camera motion felt floaty. It depended on the game: Super Meat Boy did 30 \u2192 60, Divinity and Quake didn't.",
+    "commit": "975c76e3e81ffd4f1fe1a7f24b1f3eed3cb52c57",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791905862000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a394dfd",
+    "publishedAt": 1791912835000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-975c76e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a394dfd.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a394dfd/DroidDeck-main-a394dfd.apk",
+        "name": "DroidDeck-main-975c76e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975c76e/DroidDeck-main-975c76e.apk",
         "size": 54100451,
-        "sha256": "6c8d21c7a0e5229778be14848e933ec7f47d1243c7c941e10bffec273107d7ee",
+        "sha256": "6da9668edda54752996909d1d2f3d28c383ca64f1b80df5c341f9931789556b6",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a394dfd-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a394dfd/DroidDeck-main-a394dfd-pubg.apk",
+        "name": "DroidDeck-main-975c76e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975c76e/DroidDeck-main-975c76e-pubg.apk",
         "size": 54100451,
-        "sha256": "646de8f0db1f2202c8254847cc4b730c5bf3de039b824e29021def9f6e2e95f9",
+        "sha256": "77ba77613258ef7fee5bb63bfc3592c1a0d119fd91caad2c7c4071de31694b85",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a394dfd-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a394dfd/DroidDeck-main-a394dfd-antutu.apk",
+        "name": "DroidDeck-main-975c76e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975c76e/DroidDeck-main-975c76e-antutu.apk",
         "size": 54100451,
-        "sha256": "6e2d1ceb6ffdf28f7b4190e7ade344afa7820198d6110077eddf332fc54ddaff",
+        "sha256": "7a5083d44fc56c0d6ac68d31181ef7efd6bfebd0b05c8d29f756d382f23a6f64",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a394dfd-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a394dfd/DroidDeck-main-a394dfd-ludashi.apk",
+        "name": "DroidDeck-main-975c76e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975c76e/DroidDeck-main-975c76e-ludashi.apk",
         "size": 54100451,
-        "sha256": "3bfe96a55ff72f04caf0a38992e0cb72d1acac4195a7daa149f62b10cd2b9791",
+        "sha256": "421f7dc0f0d2a26d7c517763966b33b7693735477db1ca9c1d2f360aa95acd76",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "975c76e3e81ffd4f1fe1a7f24b1f3eed3cb52c57",
+      "title": "fix: don't count a re-attached unchanged buffer as a new game frame",
+      "summary": "From the \"Unstable frame limit\" Discord thread. With a 30 FPS cap (from Steam's QAM or from the game itself), LSFG and Win-FG were fed ~50\u201360 \"source frames\" a second while the game made 30. The in-app HUD read \"LSFG 2\u00d7 59 \u2192 54\" / \"53 \u2192 60\" with MangoHud at 30, and camera motion felt floaty. It depended on the game: Super Meat Boy did 30 \u2192 60, Divinity and Quake didn't.",
+      "publishedAt": 1791912835000
+    },
     {
       "commit": "a394dfd31b2102e20dd99c6f51b4873bbdedab05",
       "title": "feat(): Rich Game details for GOG & Epic - Publisher, Developer, Release Date, HLTB & Metacritic",
@@ -155,12 +161,6 @@
       "title": "Add Quest 3/3S compatibility to the standard APK",
       "summary": "Quest 3/3S use the standard APK with automatic detection and one-time defaults, preserving the GPUOBJ/Turnip and ioctl fixes adapted from TheStutter\u2019s Quest port plus per-package bwrap sockets; this removes the separate Quest release target and includes current main.",
       "publishedAt": 1791840368000
-    },
-    {
-      "commit": "5e38e79c9656bf0e73bf713af621514cee007859",
-      "title": "Add opt-in GOG achievements through Comet",
-      "summary": "Adds opt-in GOG achievement syncing through pinned Comet with secure credential handoff, per-game controls, themed unlock notifications, and a session reader limited to live supported GOG/Epic games.",
-      "publishedAt": 1791838181000
     }
   ],
   "tests": [
@@ -207,55 +207,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-f0b3297-ludashi.apk",
           "size": 54223331,
           "sha256": "8101e65f3eed45762190b4802c25b57a2601912c4fff580afc221413d54a56be",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-669",
-      "title": "Add translations for 23 more languages and fill missing strings",
-      "summary": "\u2022 23 more app languages, all selectable in the language picker and in Android 13+'s per-app language settings (localesconfig.xml):\n\u2022 Brazilian Portuguese and European Portuguese, plus Latin American Spanish as an overlay on Spanish.\n\u2022 Indonesian, Malay, Czech, Danish, German, Italian, Hungarian, Dutch, Norwegian Bokm\u00e5l, Polish, Romanian, Finnish, Swedish, Vietnamese, Turkish, Greek, Bulgarian, Ukrainian, Arabic, Hindi and Thai.\n\u2022 With the existing languages, that makes 32 besides English.\n\u2022 The 8 existing languages are complete: every string from values/strings.xml is now translated in Spanish, French, Russian, Japanese, Korean and the three kinds of Chinese. This includes the recent achievements and \"Start without Steam\" strings.\n\u2022 Choosing the language from the phone's settings:",
-      "commit": "462791a64e650b2530a4773219ef38d98577d523",
-      "pr": 669,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791907944000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-669",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.669-462791a.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-669/DroidDeck-PR.669-462791a.apk",
-          "size": 57319907,
-          "sha256": "b9c19e3d915152e14e4920b9b1a288b917c7b31257f35a45cab2b67d7bc7eb7c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.669-462791a-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-669/DroidDeck-PR.669-462791a-pubg.apk",
-          "size": 57319907,
-          "sha256": "4e854a7b15a68af310d34e79ee36dd7ea9b9ee0dafa214f901af933ec7fd65d3",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.669-462791a-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-669/DroidDeck-PR.669-462791a-antutu.apk",
-          "size": 57319907,
-          "sha256": "b992fd959d7232cbd393d82154343c8819ad4aa4f89d18acc65309bcdf439a4a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.669-462791a-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-669/DroidDeck-PR.669-462791a-ludashi.apk",
-          "size": 57319907,
-          "sha256": "e42d34d48e2d26b4bb5c0476988bb955eb962452a7502937ffe55d3b4e52bf25",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -452,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-3d4c894-ludashi.apk",
           "size": 53862034,
           "sha256": "68e7ac74943dbcfc321d04356acf9b81f4293277f2806c71c8d26fa06a0e476b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-442",
-      "title": "Add opt-in zRAM compression for the Steam client while a game runs",
-      "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
-      "commit": "76506fccfb8be8186f25ea462be840d4b8d69f5c",
-      "pr": 442,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791845300000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-442",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.442-76506fc.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-76506fc.apk",
-          "size": 53870226,
-          "sha256": "eb864a8fb0da1423d30abd91f9a57c5242611d2091461f4bc934c015ed10515f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.442-76506fc-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-76506fc-pubg.apk",
-          "size": 53870226,
-          "sha256": "3faf94b8d47cbe7699b8e907ad1a234e82bf8ab931b94049e853bacf83ba511e",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.442-76506fc-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-76506fc-antutu.apk",
-          "size": 53870226,
-          "sha256": "d3cdf1465c43e83fe92a6c0e4f487828a914254562753c6a25b117ac59d91dfe",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.442-76506fc-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-442/DroidDeck-PR.442-76506fc-ludashi.apk",
-          "size": 53870226,
-          "sha256": "dcc68040326b4332192b98248539bee8316bfcac4a2cc5fd1cdc1f682e1700cd",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
