@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791931635590,
+  "generatedAt": 1791932523115,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-758",
+      "title": "Wait for Steam shortcut overviews before cold launches",
+      "summary": "Wait for an added game\u2019s exact Steam overview before handing off its cold-launch URL, avoiding CGameID-as-appid launch failures; regression tests and a controlled missing-overview test pass on Thor, with signed-build cold-launch checks pending.",
+      "commit": "2f80f8a415cdd785047611fedf37d23bb9c849b9",
+      "pr": 758,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791932467000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-758",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.758-2f80f8a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-2f80f8a.apk",
+          "size": 61481651,
+          "sha256": "598b299428c33027d7f25ef44f9022361eb192a6c47acbab9eada12af91ba3bd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.758-2f80f8a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-2f80f8a-pubg.apk",
+          "size": 61481651,
+          "sha256": "f69abcae1cb85b55f4c50d7b7189a99d86f3b37659ed9b9d556549374db5a6c0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.758-2f80f8a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-2f80f8a-antutu.apk",
+          "size": 61481651,
+          "sha256": "34c63f0e3e87fec5a453d7330d84bfbb1b1d571933a386953299ec5b62e96201",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.758-2f80f8a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-2f80f8a-ludashi.apk",
+          "size": 61481651,
+          "sha256": "7f43d1fba036fb1a813736250b2397f5b2659443d1f52176bb48c5352cf1ee96",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-749",
       "title": "Preserve native Linux and FEX compatibility choices",
