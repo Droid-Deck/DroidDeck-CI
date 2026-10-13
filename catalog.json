@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791890407833,
+  "generatedAt": 1791897959857,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8f9ce19",
-    "title": "Fix FEX dropdown scaling and Discover search focus",
-    "summary": "Preserve App scale in FEX/settings dropdowns and release Discover search focus when opening Flatpak details, keeping the query while preventing covered cards from taking controller focus.",
-    "commit": "8f9ce19638a270406d296e2a0933b4ef1316a919",
+    "tag": "main-da8fe06",
+    "title": "fix: cap the session refresh rate at the device's peak refresh rate",
+    "summary": "Steam's Quick Access Menu frame limiter did nothing on devices whose peak refresh rate setting is lower than the panel's fastest mode. The AYN Thor's quick-settings tile had it at 60 Hz.",
+    "commit": "da8fe068d97b8e33fb2e4419b0d7c95864f1c850",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791889754000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8f9ce19",
+    "publishedAt": 1791897910000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-da8fe06",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8f9ce19.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f9ce19/DroidDeck-main-8f9ce19.apk",
+        "name": "DroidDeck-main-da8fe06.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da8fe06/DroidDeck-main-da8fe06.apk",
         "size": 53874322,
-        "sha256": "94c6fba789240c64c6db2afede6effd312ddb3ed44a7110845e32b7dfa67f4c4",
+        "sha256": "4d4f55bdea854a607c9649d3b5a33a373b268ec7b1be93bbe4e88a088032745f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8f9ce19-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f9ce19/DroidDeck-main-8f9ce19-pubg.apk",
+        "name": "DroidDeck-main-da8fe06-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da8fe06/DroidDeck-main-da8fe06-pubg.apk",
         "size": 53874322,
-        "sha256": "97ae305011d7be1b5d634d6cd119430b29c65c595a820905e800abfef786a1cf",
+        "sha256": "9caa7dfffe3c633562e034613631d21d146f36809edf39c7867ca959aa889285",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8f9ce19-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f9ce19/DroidDeck-main-8f9ce19-antutu.apk",
+        "name": "DroidDeck-main-da8fe06-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da8fe06/DroidDeck-main-da8fe06-antutu.apk",
         "size": 53874322,
-        "sha256": "150d41a699422c913434d4c0728bb3c9ed0b69fad29d2c1722b5cae300cde3cd",
+        "sha256": "6de18e90ffe3a250dd47d29bd6ede1678295ff8ec65c1af0af9e0bb027f63767",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8f9ce19-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f9ce19/DroidDeck-main-8f9ce19-ludashi.apk",
+        "name": "DroidDeck-main-da8fe06-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da8fe06/DroidDeck-main-da8fe06-ludashi.apk",
         "size": 53874322,
-        "sha256": "594a5d6bc0b3e5b8377d6dca1f4c4b4df0111d20f7a74a27135992368728678c",
+        "sha256": "b9f61b52adbf17533993a3833e75470c9356f56321a53c43650990c2e0682f8a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "da8fe068d97b8e33fb2e4419b0d7c95864f1c850",
+      "title": "fix: cap the session refresh rate at the device's peak refresh rate",
+      "summary": "Steam's Quick Access Menu frame limiter did nothing on devices whose peak refresh rate setting is lower than the panel's fastest mode. The AYN Thor's quick-settings tile had it at 60 Hz.",
+      "publishedAt": 1791897910000
+    },
     {
       "commit": "8f9ce19638a270406d296e2a0933b4ef1316a919",
       "title": "Fix FEX dropdown scaling and Discover search focus",
@@ -155,12 +161,6 @@
       "title": "fix: an unfolded Follow screen session turns to portrait again",
       "summary": "\u2022 applyFollowOrientation is now the one place the session sets its orientation: Follow screen on a large panel (smallestScreenWidthDp >= 600) can turn with the device; everything else uses the orientation picked in Setup.\n\u2022 onResume calls it instead of applying the setting directly, so resuming keeps the unfolded rotation.",
       "publishedAt": 1791832540000
-    },
-    {
-      "commit": "a2a9586b54bbe09ddfd863d32a49fda574b567b7",
-      "title": "fix: Shut Down in Steam's power menu ends the session, and Restart restarts the client",
-      "summary": "Shut Down from the home menu's Power submenu blanked the screen and left the client running: the Guide button still opened the menu over black, and the session never ended. The client logged System.ShutdownPC and nothing after it. Steam's interface follows SteamOS's power path only when STEAMOSSTEAMSHUTDOWNSENTINEL and STEAMOSSTEAMREBOOTSENTINEL are set, as SteamOS's gamescope session sets t",
-      "publishedAt": 1791827581000
     }
   ],
   "tests": [
