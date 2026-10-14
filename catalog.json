@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792000978848,
+  "generatedAt": 1792001086712,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c035351",
-    "title": "fix: read the replaced listing's watch descriptor before detach can free it",
-    "summary": "install() in tools/linuxfs/preload/dircache.c replaces an existing cache entry like this:",
-    "commit": "c035351b4f62989ddb690428233cd752172178a0",
+    "tag": "main-b3ff93e",
+    "title": "Fix battery time estimates showing thousands of hours on phones that report current in mA",
+    "summary": "The battery estimates in Quick Access were way off: \"1196h 25m\" to full while charging and \"4521h 42m\" of battery life on battery. The power draw in the performance overlay was also way too low.",
+    "commit": "b3ff93e80fbccc2e335ef044020382a2f3b19785",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792000927000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c035351",
+    "publishedAt": 1792001025000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b3ff93e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c035351.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c035351/DroidDeck-main-c035351.apk",
+        "name": "DroidDeck-main-b3ff93e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3ff93e/DroidDeck-main-b3ff93e.apk",
         "size": 61706931,
-        "sha256": "38a2cd0b8a03b5a87839552eccaf62eca256d99765346d818a738591918c0174",
+        "sha256": "a54bf0f622f8509222492c2b675cf0ce9226a6a6b04af2713941c65a16757ba5",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c035351-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c035351/DroidDeck-main-c035351-pubg.apk",
+        "name": "DroidDeck-main-b3ff93e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3ff93e/DroidDeck-main-b3ff93e-pubg.apk",
         "size": 61706931,
-        "sha256": "b502f705041cd62b9d91fc0497ef13db10bab6ad6c5b19ac138c3dc0f49ff359",
+        "sha256": "d241c7a107f1251dee8a59b6a4404a0dfbe56d083309fd9fe438360c1c117231",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c035351-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c035351/DroidDeck-main-c035351-antutu.apk",
+        "name": "DroidDeck-main-b3ff93e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3ff93e/DroidDeck-main-b3ff93e-antutu.apk",
         "size": 61706931,
-        "sha256": "74ad1824e62e6f118b2af47e9d1288b8f949b4d30437cab94182772e793517f4",
+        "sha256": "83bbfac6d7392ecabd6fd7fab3c3783ae231008f667ab1328dc0ff285053e7be",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c035351-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c035351/DroidDeck-main-c035351-ludashi.apk",
+        "name": "DroidDeck-main-b3ff93e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3ff93e/DroidDeck-main-b3ff93e-ludashi.apk",
         "size": 61706931,
-        "sha256": "2f210164cc17bda0cce61d7819e667b3fa6e6a6de35056d41a57e6b4e5795c75",
+        "sha256": "961022007fc96625408c8ed267fd1199e1316b69f7852372afd5d0fd646ca096",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b3ff93e80fbccc2e335ef044020382a2f3b19785",
+      "title": "Fix battery time estimates showing thousands of hours on phones that report current in mA",
+      "summary": "The battery estimates in Quick Access were way off: \"1196h 25m\" to full while charging and \"4521h 42m\" of battery life on battery. The power draw in the performance overlay was also way too low.",
+      "publishedAt": 1792001025000
+    },
     {
       "commit": "c035351b4f62989ddb690428233cd752172178a0",
       "title": "fix: read the replaced listing's watch descriptor before detach can free it",
@@ -155,12 +161,6 @@
       "title": "Show controller-driven cursors in nested Wayland sessions",
       "summary": "Enable Gamescope cursor composition for Steam sessions while preserving client and lock hiding; fixes #355, passes Thor Steam Input motion/hide/recovery QA, and the signed CI APK runs the verified bundled binary in mode 2 without overrides.",
       "publishedAt": 1791981315000
-    },
-    {
-      "commit": "d99d728ba59173fcf17c0cf0ffe6823a470d27c1",
-      "title": "fix(stores): drop expired Epic and Amazon tokens when a refresh fails",
-      "summary": "Follow-up to #802 from the CodeRabbit review.",
-      "publishedAt": 1791978832000
     }
   ],
   "tests": [
