@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791949421314,
+  "generatedAt": 1791949602435,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-777",
+      "title": "Run CodeRabbit reviews independently of APK builds",
+      "summary": "Disable CodeRabbit\u2019s GitHub Checks integration so reviews do not wait for APK builds or other CI results.",
+      "commit": "8ab2a822803f54395f187a2c796be08b7e591d3d",
+      "pr": 777,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791949560000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-777",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.777-8ab2a82.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-777/DroidDeck-PR.777-8ab2a82.apk",
+          "size": 61555379,
+          "sha256": "a1b1bb9034d38ab7a3f30c424d9b1e0f4f0fc8c7de6219980434f65e957e23a2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.777-8ab2a82-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-777/DroidDeck-PR.777-8ab2a82-pubg.apk",
+          "size": 61555379,
+          "sha256": "0f45c8e3f1953a2e4fcb9103abf0abaaaf67a74314acb0d71368e3da39198abc",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.777-8ab2a82-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-777/DroidDeck-PR.777-8ab2a82-antutu.apk",
+          "size": 61555379,
+          "sha256": "9af369242dbbc82e55368fe95e83ebb404419cbceeb8e6c52d158a1bca883733",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.777-8ab2a82-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-777/DroidDeck-PR.777-8ab2a82-ludashi.apk",
+          "size": 61555379,
+          "sha256": "fec72a7930af63f664181491c8ad481dea5b05ca401ad2e69320e04d0f80b5aa",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-759",
       "title": "Show controller-driven cursors in nested Wayland sessions",
