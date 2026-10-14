@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792012488172,
+  "generatedAt": 1792012837108,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-fa9a944",
-    "title": "Build and test on Windows: LF session scripts, '/' in relative paths",
-    "summary": "Three things that break a local build or the unit tests on Windows (found while building DroidDeck locally on Windows for #509):",
-    "commit": "fa9a9446bba026edd1a4058aa7f1e82194addeaf",
+    "tag": "main-f635e92",
+    "title": "fix: Steam touch controls load the layout Steam picked for DroidDeck's touch controller, including workshop layouts",
+    "summary": "Picking an official or community touch layout in Steam (for example ConcernedApe's for Stardew Valley) showed in Big Picture, but once the game had focus DroidDeck's Steam touch controls went back to the default layout or an older autosave. This was reported in Discord (\"Steam touch controls going to default layout in game\"), with Steam Link showing the right layout for the same game.",
+    "commit": "f635e924987ff7d786a734607577e2daddcc8808",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792001415000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fa9a944",
+    "publishedAt": 1792012799000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f635e92",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-fa9a944.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fa9a944/DroidDeck-main-fa9a944.apk",
+        "name": "DroidDeck-main-f635e92.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f635e92/DroidDeck-main-f635e92.apk",
         "size": 61706931,
-        "sha256": "78dbb0445eb1267b854310ba1723ba5893238fc32bda87ab67dc2341f268a91d",
+        "sha256": "4441ef9849283b22675b195678334b4cf5ddc4093bf9919f41781b6867ad482a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-fa9a944-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fa9a944/DroidDeck-main-fa9a944-pubg.apk",
+        "name": "DroidDeck-main-f635e92-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f635e92/DroidDeck-main-f635e92-pubg.apk",
         "size": 61706931,
-        "sha256": "225937303b651d8abcf08fbd2cbe85ca1b62021803d4b4ac2dc1154c7fe969ce",
+        "sha256": "617dcac1c41f17797edef0a8336e92359b351c347ee14cecdd3cc67056a55fe2",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-fa9a944-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fa9a944/DroidDeck-main-fa9a944-antutu.apk",
+        "name": "DroidDeck-main-f635e92-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f635e92/DroidDeck-main-f635e92-antutu.apk",
         "size": 61706931,
-        "sha256": "c1f2d91b122d899f7bc33082cfb39b34485992ecf7ff8b214dc37c8f865b666a",
+        "sha256": "2a9bb98fb182e44c3a5672a681b446d70ae58b80c01cee7114c3ad68954af2a4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-fa9a944-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fa9a944/DroidDeck-main-fa9a944-ludashi.apk",
+        "name": "DroidDeck-main-f635e92-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f635e92/DroidDeck-main-f635e92-ludashi.apk",
         "size": 61706931,
-        "sha256": "3a209ed5a81cac997bbd0cab77377b9fff2c4eec2ee1a0ba9ccdfd3ceb41c1d2",
+        "sha256": "7eb61723be404e71302d50c43bb2a8c6a7ba64542f77550b0f71aa39df77a470",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f635e924987ff7d786a734607577e2daddcc8808",
+      "title": "fix: Steam touch controls load the layout Steam picked for DroidDeck's touch controller, including workshop layouts",
+      "summary": "Picking an official or community touch layout in Steam (for example ConcernedApe's for Stardew Valley) showed in Big Picture, but once the game had focus DroidDeck's Steam touch controls went back to the default layout or an older autosave. This was reported in Discord (\"Steam touch controls going to default layout in game\"), with Steam Link showing the right layout for the same game.",
+      "publishedAt": 1792012799000
+    },
     {
       "commit": "fa9a9446bba026edd1a4058aa7f1e82194addeaf",
       "title": "Build and test on Windows: LF session scripts, '/' in relative paths",
@@ -155,12 +161,6 @@
       "title": "feat: store sign-in walls and the Steam home wall fill with curated featured art",
       "summary": "The scrolling cover wall behind the Stores sign-in card was only ever filled for GOG, and the Steam tab's wall was blank with no games and full of repeats with a small library. Every wall now fills from art each store curates, with no login needed.",
       "publishedAt": 1792000677000
-    },
-    {
-      "commit": "f5eb5e7b819d5b42487615d9111d0a1ce68bfa6d",
-      "title": "fix: declare all-files access for raw USB storage",
-      "summary": "USB volumes can be exposed only at /mnt/mediarw/<uuid>, without a /storage/<uuid> path, as reported in #633. DroidDeck's existing StorageRoots code considers that raw path, but the current manifest does not declare MANAGEEXTERNALSTORAGE, so users cannot grant All files access.",
-      "publishedAt": 1792000650000
     }
   ],
   "tests": [
