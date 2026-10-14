@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791954552065,
+  "generatedAt": 1791954764839,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0c3444a",
-    "title": "Wait for Steam shortcut overviews before cold launches",
-    "summary": "Wait for an added game\u2019s exact Steam overview before handing off its cold-launch URL; regression tests, controlled missing-overview recovery, and signed-build cold launches of 20 Minutes Till Dawn and ELDERBORN pass on Thor (the older-client failure was not naturally reproducible on the current Steam client).",
-    "commit": "0c3444afbc8d93ca8245e7189990b5dbab4ce612",
+    "tag": "main-81e645a",
+    "title": "Fix microphone capture in DirectAudio games",
+    "summary": "Enable DirectAudio capture from the session microphone setting and prevent game overrides from enabling it when disabled, verified on Thor with one capture device when enabled and zero when disabled or denied Android permission.",
+    "commit": "81e645a9173645c73f5738429533964f2220e45b",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791954510000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0c3444a",
+    "publishedAt": 1791954720000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-81e645a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0c3444a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c3444a/DroidDeck-main-0c3444a.apk",
+        "name": "DroidDeck-main-81e645a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81e645a/DroidDeck-main-81e645a.apk",
         "size": 61555379,
-        "sha256": "d67b78db19b548c42d36920e726582b2b2f4454d694cb97b9a317380758e76d4",
+        "sha256": "1297344dfef58fb1301a65aefc19d7427f78bfef323446b74ed2bb092f35211b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0c3444a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c3444a/DroidDeck-main-0c3444a-pubg.apk",
+        "name": "DroidDeck-main-81e645a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81e645a/DroidDeck-main-81e645a-pubg.apk",
         "size": 61555379,
-        "sha256": "c73e66a4c2d80fd5a7da69fc81d63cfc232410bc106862f15f41f3b59d9488bc",
+        "sha256": "f76f74ad3fc3ae023166afa855431a4b70fa13df27201ce2211f2af1daa71612",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0c3444a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c3444a/DroidDeck-main-0c3444a-antutu.apk",
+        "name": "DroidDeck-main-81e645a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81e645a/DroidDeck-main-81e645a-antutu.apk",
         "size": 61555379,
-        "sha256": "6041caddfb62b63c8289360d6f688ed2486dc1e436dc93ef9f84a484b86b7bc2",
+        "sha256": "2a9c382db87d4189e030b3c23054d318fc40cfcef783511ed5f61ef7466c7ca0",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0c3444a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c3444a/DroidDeck-main-0c3444a-ludashi.apk",
+        "name": "DroidDeck-main-81e645a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81e645a/DroidDeck-main-81e645a-ludashi.apk",
         "size": 61555379,
-        "sha256": "9a73c41e3e2784292616de72c99704b4bbab6b3218448ff0795ef5745731be08",
+        "sha256": "1c0646f437a3b6f498ea6da29ea71dbd7d2bcdb06ebf4a1e792ad1d61d587a2c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "81e645a9173645c73f5738429533964f2220e45b",
+      "title": "Fix microphone capture in DirectAudio games",
+      "summary": "Enable DirectAudio capture from the session microphone setting and prevent game overrides from enabling it when disabled, verified on Thor with one capture device when enabled and zero when disabled or denied Android permission.",
+      "publishedAt": 1791954720000
+    },
     {
       "commit": "0c3444afbc8d93ca8245e7189990b5dbab4ce612",
       "title": "Wait for Steam shortcut overviews before cold launches",
@@ -155,12 +161,6 @@
       "title": "fix: pace gamescope's fixed-refresh frame limiter per window by time",
       "summary": "From the \"Unstable frame limit\" Discord thread. With Steam's QAM Frame Limit at 30 and frame generation on, motion had \"small stops and ladders\". The same game capped by its own in-game 30 FPS lock was smooth, and MangoHud's frametimes looked the same in both cases.",
       "publishedAt": 1791930807000
-    },
-    {
-      "commit": "ec537421acc72f447bcce25313dc50326c98c1a4",
-      "title": "fix: the Debugging tools hint points to Setup > Diagnostics",
-      "summary": "With Debugging tools off, droiddeckctl tells you to turn on Setup > Session > Debugging tools. Setup has no Session tab; the toggle is under Diagnostics.",
-      "publishedAt": 1791918627000
     }
   ],
   "tests": [
