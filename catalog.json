@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791976859464,
+  "generatedAt": 1791977302342,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0792617",
-    "title": "perf: the session's background watchers share two loops and one D-Bus service process",
-    "summary": "Cuts the Steam session's own background processes from 13 to 7 with every watcher enabled, without changing what any of them does. It's part of getting the session under Android's 32-process \"phantom process\" limit. Together with #566 (web helper 8 \u2192 4), an idle Steam session goes from ~41 processes to ~30 on the Thor.",
-    "commit": "079261759e7f05de3786821f9f619bc8703e4a89",
+    "tag": "main-4b17bc9",
+    "title": "feat: rewrite the Epic and Amazon store modules",
+    "summary": "Rewrites the Epic and Amazon store modules from a protocol-level spec. New Rust engines sit behind a small JNI surface (nativeCall / nativeInstall) with thin Kotlin facades, and the launcher sends its own user agent.",
+    "commit": "4b17bc9a23b985fcab24b21aa2ffe6222ead4b65",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791954928000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0792617",
+    "publishedAt": 1791977261000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4b17bc9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0792617.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0792617/DroidDeck-main-0792617.apk",
-        "size": 61559475,
-        "sha256": "0af9f2e6924fdc5f515b8bb812c191558b8ce0b08956a6cd2ae2192dc7b4d85b",
+        "name": "DroidDeck-main-4b17bc9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b17bc9/DroidDeck-main-4b17bc9.apk",
+        "size": 61698739,
+        "sha256": "4334a9ee0222cf8d8da2c51df48e8f27e7ffd2f3117be0c387cf203d60b14160",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0792617-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0792617/DroidDeck-main-0792617-pubg.apk",
-        "size": 61559475,
-        "sha256": "0328f1533522222ad6c1a51863a0ede8d5ac0ee98ff431ff859ff865dcf2928c",
+        "name": "DroidDeck-main-4b17bc9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b17bc9/DroidDeck-main-4b17bc9-pubg.apk",
+        "size": 61698739,
+        "sha256": "4ac28d0574983d4524bf30b09c6469640462be3c663474027f6d0fddce63967e",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0792617-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0792617/DroidDeck-main-0792617-antutu.apk",
-        "size": 61559475,
-        "sha256": "c6632bb39d0c99d27dc9ab4a02867eeffabea5091ad7fbd886fd599fb95b9dc0",
+        "name": "DroidDeck-main-4b17bc9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b17bc9/DroidDeck-main-4b17bc9-antutu.apk",
+        "size": 61698739,
+        "sha256": "101a1d97eae145f987d0dfb177a75ba9b34313ec0f9bccebc33d1b517c64e152",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0792617-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0792617/DroidDeck-main-0792617-ludashi.apk",
-        "size": 61559475,
-        "sha256": "00d3aae60aad495ae7ae4f5118423119e6d734fd7b01920e6155a2f8c0ccce51",
+        "name": "DroidDeck-main-4b17bc9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b17bc9/DroidDeck-main-4b17bc9-ludashi.apk",
+        "size": 61698739,
+        "sha256": "de65fe990682ff6558f3b268d3a8c7789856154f47022fcef0395eae6153a94d",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4b17bc9a23b985fcab24b21aa2ffe6222ead4b65",
+      "title": "feat: rewrite the Epic and Amazon store modules",
+      "summary": "Rewrites the Epic and Amazon store modules from a protocol-level spec. New Rust engines sit behind a small JNI surface (nativeCall / nativeInstall) with thin Kotlin facades, and the launcher sends its own user agent.",
+      "publishedAt": 1791977261000
+    },
     {
       "commit": "079261759e7f05de3786821f9f619bc8703e4a89",
       "title": "perf: the session's background watchers share two loops and one D-Bus service process",
@@ -155,12 +161,6 @@
       "title": "cleanup",
       "summary": "",
       "publishedAt": 1791942050000
-    },
-    {
-      "commit": "4163b31b02cfc3734ddaede05cb5704899d0246f",
-      "title": "fix: Windows components: .NET Core / Desktop runtimes install again",
-      "summary": "Installing .NET Desktop 3/6/7/8, .NET Core 3 or .NET 5 from Windows components failed with \"the installer stopped (status 1)\". This blocks MelonLoader/LemonLoader mods (Drova \u2013 Forsaken Kin, Stardew Valley) and Baldur's Gate 3.",
-      "publishedAt": 1791933394000
     }
   ],
   "tests": [
