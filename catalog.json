@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791942108229,
+  "generatedAt": 1791942997800,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-564",
+      "title": "feat: target Android API 36",
+      "summary": "Moves the app from targetSdk 28 to targetSdk 36 (compileSdk 34 \u2192 36).",
+      "commit": "db44151615743f6625b85a6940da98edb1c7ed6c",
+      "pr": 564,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791942959000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-564",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.564-db44151.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-db44151.apk",
+          "size": 61444787,
+          "sha256": "ce67c0d1f5e74b481968aee5db26e45b6d00a4f4e8209cca32c35f651d501b17",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.564-db44151-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-db44151-pubg.apk",
+          "size": 61444787,
+          "sha256": "64e3152b18e8c910efe6284d0cdb39168fa966ddccaac0e88ab0b2c09c0b4d6b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.564-db44151-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-db44151-antutu.apk",
+          "size": 61444787,
+          "sha256": "4b3a3a16d9fe98192ec5b4318d3c7710dddb111fadcd23e64b2bb690e7fb4e62",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.564-db44151-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-db44151-ludashi.apk",
+          "size": 61444787,
+          "sha256": "54c48a1bc420932907dff9d163694898f19e290166bd1d032af246cf48a9dd4b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-749",
+      "title": "Preserve native Linux and FEX compatibility choices",
+      "summary": "Preserve native Linux defaults and explicit Linux Runtime, FEX, and Proton choices instead of rewriting them to global Proton (#533); CI passes, and the signed build preserves Factorio Demo\u2019s cleared native mapping across refresh and full restart on Thor.",
+      "commit": "8b32ad6bd9d7cc15bd94e868d1a1cf05c1623485",
+      "pr": 749,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791942937000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-749",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.749-8b32ad6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-8b32ad6.apk",
+          "size": 61436595,
+          "sha256": "0cf1586b1cc0ca031e2a84ac1b41656fd8619a10b63ec46e1344ad7df00ec858",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.749-8b32ad6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-8b32ad6-pubg.apk",
+          "size": 61436595,
+          "sha256": "e5b6f5b1cd900dafb20351daef1a80b888c1a1a0a6b9c0f17b380ae4475bee4e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.749-8b32ad6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-8b32ad6-antutu.apk",
+          "size": 61436595,
+          "sha256": "59b6f3f52ebcd3f1466123b150fced2b84071a6eef544e54e55b93185de6cfd8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.749-8b32ad6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-8b32ad6-ludashi.apk",
+          "size": 61436595,
+          "sha256": "53f6f824d139ac0edf2a3790a4a999afcc5488999f69ea4e40111c48d60bb5cb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-766",
       "title": "fix: desktop session: Shift no longer stays held after typing capitals on a physical keyboard",
       "summary": "In the desktop session, typing capitals on a physical keyboard could leave Shift held for good. From then on digits typed !@#, , typed <, letters stayed capital, and Enter stopped working in the terminal. Tapping Shift again cleared it. Ctrl and Alt could get stuck the same way.",
@@ -305,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-2f80f8a-ludashi.apk",
           "size": 61481651,
           "sha256": "7f43d1fba036fb1a813736250b2397f5b2659443d1f52176bb48c5352cf1ee96",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-749",
-      "title": "Preserve native Linux and FEX compatibility choices",
-      "summary": "Preserve native Linux defaults and explicit Linux Runtime, FEX, and Proton choices instead of rewriting them to the global Proton tool, fixing #533.",
-      "commit": "5050726b383a473638d204bb76d6eeae0883cf95",
-      "pr": 749,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791931570000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-749",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.749-5050726.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-5050726.apk",
-          "size": 61481651,
-          "sha256": "333d4eec088f5e16ef7c7cf62f2d5d394457dcebad89ffbd5c5a1a76ce75ab32",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.749-5050726-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-5050726-pubg.apk",
-          "size": 61481651,
-          "sha256": "ecf4fcce41105db03ace53b8691faed03499a67ab815a3d4e17f31716b96bc15",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.749-5050726-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-5050726-antutu.apk",
-          "size": 61481651,
-          "sha256": "98726b35ca294d9b54157828c746053de86f9e1d0492f12b819e6eb423a4c7aa",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.749-5050726-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-5050726-ludashi.apk",
-          "size": 61481651,
-          "sha256": "74297b0b37ce3048f0004fddaf0814d7ca417dfe954cf87b334ce4e8e1266319",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -746,55 +795,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-bd36f6f-ludashi.apk",
           "size": 46422973,
           "sha256": "b6d94ded7ced129005f7a3310b6bde48e847c7aabd13b00bc91b6daa83b9cc23",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-564",
-      "title": "feat: target Android API 36",
-      "summary": "Moves the app from targetSdk 28 to targetSdk 36 (compileSdk 34 \u2192 36).",
-      "commit": "14b6edf9de598c3f8de47ac398cf166036620c85",
-      "pr": 564,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791730978000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-564",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.564-14b6edf.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-14b6edf.apk",
-          "size": 46275418,
-          "sha256": "304f30b70ad16b7d1c82f9c734d3216a6865872e72812beb72da2674ca6960cc",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.564-14b6edf-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-14b6edf-pubg.apk",
-          "size": 46275418,
-          "sha256": "c86063ed1d0cdbc89704be4eaf7bf63ce4b630347e0dddf8d84321809978c0a7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.564-14b6edf-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-14b6edf-antutu.apk",
-          "size": 46275418,
-          "sha256": "ee1cbe3eb30cf416085d93ebbed9d741baf002331467e1f8f78ac26c8655e7e9",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.564-14b6edf-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-14b6edf-ludashi.apk",
-          "size": 46275418,
-          "sha256": "cc4bec396198e04455e8f8b573b4746dd01ae41b81ab3c52bd254e44ac9023fb",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
