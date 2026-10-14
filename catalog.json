@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791945331882,
+  "generatedAt": 1791945581410,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-d310e59",
-    "title": "fix: desktop session: Shift no longer stays held after typing capitals on a physical keyboard",
-    "summary": "In the desktop session, typing capitals on a physical keyboard could leave Shift held for good. From then on digits typed !@#, , typed <, letters stayed capital, and Enter stopped working in the terminal. Tapping Shift again cleared it. Ctrl and Alt could get stuck the same way.",
-    "commit": "d310e59fce3c5a962ebc050bf4247c7d1cd6c1af",
+    "tag": "main-a074ba9",
+    "title": "Improve store install storage checks and recovery; reduce Epic cache usage",
+    "summary": "Allow Epic games to install without keeping a full game's temporary chunk cache alongside the installed files, and make insufficient-space failures actionable across Epic Games Store, GOG, and Amazon Games.",
+    "commit": "a074ba994b038ffd0919b0df9d05ef56e15bd88d",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791943990000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d310e59",
+    "publishedAt": 1791945519000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a074ba9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-d310e59.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d310e59/DroidDeck-main-d310e59.apk",
-        "size": 61436595,
-        "sha256": "a3cba7a2f0e092eb18c268dee195a28c8cbe89d34d7fecc79493977508e8522a",
+        "name": "DroidDeck-main-a074ba9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a074ba9/DroidDeck-main-a074ba9.apk",
+        "size": 61538995,
+        "sha256": "7cd7a01b338198ee99a31df5a85f93c857c8da809a9595799bef83e4a3a5767f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-d310e59-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d310e59/DroidDeck-main-d310e59-pubg.apk",
-        "size": 61436595,
-        "sha256": "9494fa3361aab8271c1a23e2b501dbfc193d4a939b828be1389bd6d61adf40b8",
+        "name": "DroidDeck-main-a074ba9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a074ba9/DroidDeck-main-a074ba9-pubg.apk",
+        "size": 61538995,
+        "sha256": "01fd0de97d0d2016cb58d3489e47771cb59807c20fa020da7659bdc3d49506ac",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-d310e59-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d310e59/DroidDeck-main-d310e59-antutu.apk",
-        "size": 61436595,
-        "sha256": "f0311e66fa077a1157d35afa4f73e5988ce453ae5e4057a4878ddc3003534bf5",
+        "name": "DroidDeck-main-a074ba9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a074ba9/DroidDeck-main-a074ba9-antutu.apk",
+        "size": 61538995,
+        "sha256": "0b3bfc1ce9198cae89e5ed76a41730e49c6099587ddf7acd9101431306c35c96",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-d310e59-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d310e59/DroidDeck-main-d310e59-ludashi.apk",
-        "size": 61436595,
-        "sha256": "9e729adf07e949a046141dae3a0090672fa4ea784e1ef08b8788f3922f6a5605",
+        "name": "DroidDeck-main-a074ba9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a074ba9/DroidDeck-main-a074ba9-ludashi.apk",
+        "size": 61538995,
+        "sha256": "d6f35f9b6464c8c82c036f8198df57047e98aaa90d7a274213bb805d3a4738f0",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a074ba994b038ffd0919b0df9d05ef56e15bd88d",
+      "title": "Improve store install storage checks and recovery; reduce Epic cache usage",
+      "summary": "Allow Epic games to install without keeping a full game's temporary chunk cache alongside the installed files, and make insufficient-space failures actionable across Epic Games Store, GOG, and Amazon Games.",
+      "publishedAt": 1791945519000
+    },
     {
       "commit": "d310e59fce3c5a962ebc050bf4247c7d1cd6c1af",
       "title": "fix: desktop session: Shift no longer stays held after typing capitals on a physical keyboard",
@@ -155,12 +161,6 @@
       "title": "Add translations for 23 more languages and fill missing strings",
       "summary": "\u2022 23 more app languages, all selectable in the language picker and in Android 13+'s per-app language settings (localesconfig.xml):\n\u2022 Brazilian Portuguese and European Portuguese, plus Latin American Spanish as an overlay on Spanish.\n\u2022 Indonesian, Malay, Czech, Danish, German, Italian, Hungarian, Dutch, Norwegian Bokm\u00e5l, Polish, Romanian, Finnish, Swedish, Vietnamese, Turkish, Greek, Bulgarian, Ukr",
       "publishedAt": 1791913607000
-    },
-    {
-      "commit": "f0c52c273b7a2d8871ea8a6b106a2245975fadb1",
-      "title": "Add opt-in zRAM compression for the Steam client while a game runs",
-      "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
-      "publishedAt": 1791913554000
     }
   ],
   "tests": [
