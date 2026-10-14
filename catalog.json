@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791954037320,
+  "generatedAt": 1791954163429,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -305,104 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-755/DroidDeck-PR.755-fcf3883-ludashi.apk",
           "size": 61436595,
           "sha256": "5b498ab40fad299a08253cc50fe8a5c38451a2c4adca31f6283adc13194886e8",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-575",
-      "title": "perf: the session's background watchers share two loops and one D-Bus service process",
-      "summary": "Cuts the Steam session's own background processes from 13 to 7 with every watcher enabled, without changing what any of them does. It's part of getting the session under Android's 32-process \"phantom process\" limit. Together with #566 (web helper 8 \u2192 4), an idle Steam session goes from ~41 processes to ~30 on the Thor.",
-      "commit": "e7475d3a39dfed854f6645fc13c99cd76a060225",
-      "pr": 575,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791943127000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-575",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.575-e7475d3.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-575/DroidDeck-PR.575-e7475d3.apk",
-          "size": 61436595,
-          "sha256": "1d522426032eba48b5fefcdfc53941245e67dc8bc86cc92d54148b73c9d6b875",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.575-e7475d3-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-575/DroidDeck-PR.575-e7475d3-pubg.apk",
-          "size": 61436595,
-          "sha256": "ddff2bc601e85dc9a8eb5438981ca5678485e8c7ff5069cfea554113e8284043",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.575-e7475d3-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-575/DroidDeck-PR.575-e7475d3-antutu.apk",
-          "size": 61436595,
-          "sha256": "585cb37daa2cf6f3d9f911ca20bab7466d1a7d041513fa892f04454f9e1b35c5",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.575-e7475d3-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-575/DroidDeck-PR.575-e7475d3-ludashi.apk",
-          "size": 61436595,
-          "sha256": "54d69c56d272ade047a345e66ea5ad719a2bf9b10a85bb015af51aff14e36360",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-566",
-      "title": "perf: Steam's web helper runs its GPU, audio and zygote work inside one process",
-      "summary": "Cuts Steam's web helper from 8 processes to 4 by running its GPU process, audio service and zygotes inside the browser process. This lowers the session's count against Android's child-process limit. On the Thor, under identical conditions, the whole session went from 41 to 37 processes; the web helper's memory went from ~1.4 GB to ~1.14 GB RSS.",
-      "commit": "ab919d0d363a87d91e253727cc6e8f9cd26bd3ca",
-      "pr": 566,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791943097000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-566",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.566-ab919d0.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-566/DroidDeck-PR.566-ab919d0.apk",
-          "size": 61436595,
-          "sha256": "4ad4b28189892f6e0ea6030015c1d166f95e943324161b1d88957c6da22e9b53",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.566-ab919d0-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-566/DroidDeck-PR.566-ab919d0-pubg.apk",
-          "size": 61436595,
-          "sha256": "d9250e5d44ec69fba6523f76a3ccfb9df4ae8f4985645b26e243c90e92ba6da9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.566-ab919d0-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-566/DroidDeck-PR.566-ab919d0-antutu.apk",
-          "size": 61436595,
-          "sha256": "4ffb569fad38649213e0e49b6c7a32300e5720a6a5c14b5667c8732f794b72e6",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.566-ab919d0-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-566/DroidDeck-PR.566-ab919d0-ludashi.apk",
-          "size": 61436595,
-          "sha256": "163f4aa374047b539a9d23accbd968572a7d72e562d29448307f066de20e993c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
