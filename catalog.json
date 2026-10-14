@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791987079187,
+  "generatedAt": 1791987698413,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-799be03",
-    "title": "Show controller-driven cursors in nested Wayland sessions",
-    "summary": "Enable Gamescope cursor composition for Steam sessions while preserving client and lock hiding; fixes #355, passes Thor Steam Input motion/hide/recovery QA, and the signed CI APK runs the verified bundled binary in mode 2 without overrides.",
-    "commit": "799be037e51032748662d787e84511fd75d90fe8",
+    "tag": "main-9838c83",
+    "title": "fix: store installs stay shortcuts instead of becoming Steam installs",
+    "summary": "Games installed from Epic, GOG or Amazon get turned into real Steam installs when you also own the same title on Steam. Discord reports: an Epic copy \"showed up as the steam version\" the next day and stopped launching; Tony Hawk 1+2 (Epic) hit the same error.",
+    "commit": "9838c83fc2392300c69a54c37396ebb7adc69226",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791981315000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-799be03",
+    "publishedAt": 1791987631000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9838c83",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-799be03.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-799be03/DroidDeck-main-799be03.apk",
+        "name": "DroidDeck-main-9838c83.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9838c83/DroidDeck-main-9838c83.apk",
         "size": 61698739,
-        "sha256": "85e27d6cb18e9873f3296ac9e516390bded37ef578b9568e349c104b71d5f23f",
+        "sha256": "c4f8a283748a036e9d717b8963f1471a78afa7da06130f97c85551631f3b0b84",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-799be03-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-799be03/DroidDeck-main-799be03-pubg.apk",
+        "name": "DroidDeck-main-9838c83-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9838c83/DroidDeck-main-9838c83-pubg.apk",
         "size": 61698739,
-        "sha256": "a0a6d2dacfdab2c3e11b2584c015806594f15e556740234ee1956841b173dce0",
+        "sha256": "12487a33ed8b04c6ee7e8e0a6c1d4fb1aa0104b121f23675ea1fd7563d424b48",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-799be03-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-799be03/DroidDeck-main-799be03-antutu.apk",
+        "name": "DroidDeck-main-9838c83-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9838c83/DroidDeck-main-9838c83-antutu.apk",
         "size": 61698739,
-        "sha256": "987e0d4b663657170e80a742fdf8ebee1f7ad043ca1991263aae5d2bc9d63a0c",
+        "sha256": "de0655429d6cf7da0a30dc120f2ae1d36994d0c690e6b3ed1d6fe856f6f8eb21",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-799be03-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-799be03/DroidDeck-main-799be03-ludashi.apk",
+        "name": "DroidDeck-main-9838c83-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9838c83/DroidDeck-main-9838c83-ludashi.apk",
         "size": 61698739,
-        "sha256": "27c246eeb7f01057408e125a76daef3edbff84c52e8425c4c8e471ebdb7fd874",
+        "sha256": "e4c2deb6f2564577058c624e77ea02173d167cfa6bdca5fe8f7c4980da3cca95",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9838c83fc2392300c69a54c37396ebb7adc69226",
+      "title": "fix: store installs stay shortcuts instead of becoming Steam installs",
+      "summary": "Games installed from Epic, GOG or Amazon get turned into real Steam installs when you also own the same title on Steam. Discord reports: an Epic copy \"showed up as the steam version\" the next day and stopped launching; Tony Hawk 1+2 (Epic) hit the same error.",
+      "publishedAt": 1791987631000
+    },
     {
       "commit": "799be037e51032748662d787e84511fd75d90fe8",
       "title": "Show controller-driven cursors in nested Wayland sessions",
@@ -155,12 +161,6 @@
       "title": "Configure CodeRabbit reviews",
       "summary": "Enable automatic CodeRabbit reviews with DroidDeck-specific correctness guidance, while disabling comment-coverage checks and generated code changes.",
       "publishedAt": 1791946555000
-    },
-    {
-      "commit": "a074ba994b038ffd0919b0df9d05ef56e15bd88d",
-      "title": "Improve store install storage checks and recovery; reduce Epic cache usage",
-      "summary": "Allow Epic games to install without keeping a full game's temporary chunk cache alongside the installed files, and make insufficient-space failures actionable across Epic Games Store, GOG, and Amazon Games.",
-      "publishedAt": 1791945519000
     }
   ],
   "tests": [
