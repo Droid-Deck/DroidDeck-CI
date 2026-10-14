@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792001224638,
+  "generatedAt": 1792001281971,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3e3c4d6",
-    "title": "feat: hide unfolded controls when a controller is connected",
-    "summary": "Hides the unfolded controls panel while a controller (including a BLE Steam Controller) is connected, and brings it back on disconnect instead of the regular on-screen controls.",
-    "commit": "3e3c4d69e4e434f7f6a49a85d3c555659cd2c4ee",
+    "tag": "main-913806f",
+    "title": "fix: seed redist markers again when the registry lost them",
+    "summary": "Batman: Arkham City GOTY (200260) never got past \"Running install script\". Steam ran the game's AMD Dual-Core Optimizer installer, and its MSI never finishes under Wine. droiddeck-seed-redists should have marked that step as already run, but it didn't.",
+    "commit": "913806f169f9667b9d5e98bf3b284879e339baf5",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792001169000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3e3c4d6",
+    "publishedAt": 1792001223000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-913806f",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3e3c4d6.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3e3c4d6/DroidDeck-main-3e3c4d6.apk",
+        "name": "DroidDeck-main-913806f.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-913806f/DroidDeck-main-913806f.apk",
         "size": 61706931,
-        "sha256": "93fa55945c8282c6bc7a1bfa4afd7542584059eab36fbceaf6e8b273ac9ac325",
+        "sha256": "9ccd1391d07279505c4d879bc95fb30601e923130a02f62676561b47ede4e589",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3e3c4d6-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3e3c4d6/DroidDeck-main-3e3c4d6-pubg.apk",
+        "name": "DroidDeck-main-913806f-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-913806f/DroidDeck-main-913806f-pubg.apk",
         "size": 61706931,
-        "sha256": "c6cb078dded38b970b83faa914b504566d2a9c58b096b33e74ac88c3ecf75146",
+        "sha256": "881a93102f4c867ee8c40ad5721be56b121b1bd8bfe9530f61bf8a281814b391",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3e3c4d6-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3e3c4d6/DroidDeck-main-3e3c4d6-antutu.apk",
+        "name": "DroidDeck-main-913806f-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-913806f/DroidDeck-main-913806f-antutu.apk",
         "size": 61706931,
-        "sha256": "a0668a2ed480a80464edc2e26092e8e04e97a72e0189737a7f093ec1b0047929",
+        "sha256": "dbb182cccd9854a658d588e02b1326c66d0eed26b1d2e40269c3ab15b8f54397",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3e3c4d6-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3e3c4d6/DroidDeck-main-3e3c4d6-ludashi.apk",
+        "name": "DroidDeck-main-913806f-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-913806f/DroidDeck-main-913806f-ludashi.apk",
         "size": 61706931,
-        "sha256": "455cd88bf126c7f415873a6d8e5587d92eb15f159604fe39ac4b7ecca88499bc",
+        "sha256": "af1197714723f04426ebf58556d12fcc5c7f9768c75cbf605cb547122a323630",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "913806f169f9667b9d5e98bf3b284879e339baf5",
+      "title": "fix: seed redist markers again when the registry lost them",
+      "summary": "Batman: Arkham City GOTY (200260) never got past \"Running install script\". Steam ran the game's AMD Dual-Core Optimizer installer, and its MSI never finishes under Wine. droiddeck-seed-redists should have marked that step as already run, but it didn't.",
+      "publishedAt": 1792001223000
+    },
     {
       "commit": "3e3c4d69e4e434f7f6a49a85d3c555659cd2c4ee",
       "title": "feat: hide unfolded controls when a controller is connected",
@@ -155,12 +161,6 @@
       "title": "fix: the touchpad moves a game's own cursor when it locks the pointer",
       "summary": "With touch set to Touchpad, a game that hides the system cursor and draws its own (The Message from Deep Space) could not be controlled: the game's cursor didn't move until a key was pressed, and DroidDeck's arrow showed beside it.",
       "publishedAt": 1791992404000
-    },
-    {
-      "commit": "97965254497db027419804ecaf9ce7551e7fb056",
-      "title": "perf: local builds reuse unchanged native steps across runs and worktrees",
-      "summary": "tools/buildlocal.sh took 11\u201316 minutes even when only Kotlin changed, and every new worktree paid the full cost again. On an Apple Silicon Mac all the Docker steps run as emulated linux/amd64, and several of them redid identical work every run:",
-      "publishedAt": 1791992263000
     }
   ],
   "tests": [
