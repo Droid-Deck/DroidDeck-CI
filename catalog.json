@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791956554969,
+  "generatedAt": 1791975778573,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-797",
+      "title": "feat: map a controller's two back paddles to the Deck's L4 and R4",
+      "summary": "Controllers with two back paddles (seen on the 8BitDo Mobile Controller) already had them recognised by DroidDeck's own menus, but they never reached Steam. The paddles did nothing inside Steam's UI or in games, even though the session emulates a Steam Deck controller, which has back buttons.",
+      "commit": "1563f479d15abe149db4b98213e01e02756117cd",
+      "pr": 797,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791975722000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-797",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.797-1563f47.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-797/DroidDeck-PR.797-1563f47.apk",
+          "size": 61559475,
+          "sha256": "bade3df2a04eea80015467571eeed2495445f547b20cb6bdd4044b710323f8a6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.797-1563f47-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-797/DroidDeck-PR.797-1563f47-pubg.apk",
+          "size": 61559475,
+          "sha256": "fb7c7d24aea08402d13598f2e7bb8595fa9435f9e149d5bd48d97154d14bd840",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.797-1563f47-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-797/DroidDeck-PR.797-1563f47-antutu.apk",
+          "size": 61559475,
+          "sha256": "47ed72994205129732658bf0c58f4f743a376fe077369096733e3f3b2bbf2f7c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.797-1563f47-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-797/DroidDeck-PR.797-1563f47-ludashi.apk",
+          "size": 61559475,
+          "sha256": "7dac4e7b8ba5e24e12e53a714a6838913637a64f92659874715375df15c83151",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-760",
       "title": "fix: declare all-files access for raw USB storage",
