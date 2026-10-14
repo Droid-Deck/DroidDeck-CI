@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791978884682,
+  "generatedAt": 1791979801201,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-808",
+      "title": "feat: low-latency controller and touch toggles in the session drawer",
+      "summary": "Adds a Latency group to the session drawer's Controller page with two toggles, Low-latency controller and Low-latency touch. Both are off by default and take effect immediately while Steam is running. You don't need to restart the session.",
+      "commit": "ceb0bee79a0376f5e7fc2098b327edd96495f983",
+      "pr": 808,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791979750000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-808",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.808-ceb0bee.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-808/DroidDeck-PR.808-ceb0bee.apk",
+          "size": 61702835,
+          "sha256": "6c41b44e3ee3ad400adfdef9955d70edcdc7bafec131133ccdad9117ccf23672",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.808-ceb0bee-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-808/DroidDeck-PR.808-ceb0bee-pubg.apk",
+          "size": 61702835,
+          "sha256": "49805d29b0e3d74cb705258260709e77fc0e2bfe01b470c632b4b864f9aadb17",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.808-ceb0bee-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-808/DroidDeck-PR.808-ceb0bee-antutu.apk",
+          "size": 61702835,
+          "sha256": "ea26b1a1522314af850b92705da7b53d961e1fdad6759f49ba840cf7c977c222",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.808-ceb0bee-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-808/DroidDeck-PR.808-ceb0bee-ludashi.apk",
+          "size": 61702835,
+          "sha256": "c28b24006d9f0ab2c659fb890c77f3e574652e571a3b0cc196035614453eae16",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-797",
       "title": "feat: map a controller's two back paddles to the Deck's L4 and R4",
