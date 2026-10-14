@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792000711973,
+  "generatedAt": 1792000767191,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f5eb5e7",
-    "title": "fix: declare all-files access for raw USB storage",
-    "summary": "USB volumes can be exposed only at /mnt/mediarw/<uuid>, without a /storage/<uuid> path, as reported in #633. DroidDeck's existing StorageRoots code considers that raw path, but the current manifest does not declare MANAGEEXTERNALSTORAGE, so users cannot grant All files access.",
-    "commit": "f5eb5e7b819d5b42487615d9111d0a1ce68bfa6d",
+    "tag": "main-bf99dbb",
+    "title": "feat: store sign-in walls and the Steam home wall fill with curated featured art",
+    "summary": "The scrolling cover wall behind the Stores sign-in card was only ever filled for GOG, and the Steam tab's wall was blank with no games and full of repeats with a small library. Every wall now fills from art each store curates, with no login needed.",
+    "commit": "bf99dbbe7318662305e4cb98c13340a221662868",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792000650000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f5eb5e7",
+    "publishedAt": 1792000677000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bf99dbb",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f5eb5e7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5eb5e7/DroidDeck-main-f5eb5e7.apk",
+        "name": "DroidDeck-main-bf99dbb.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf99dbb/DroidDeck-main-bf99dbb.apk",
         "size": 61706931,
-        "sha256": "7f3954e151710cbc72b066560f1ce6a17ae9772e1b51679b75ceef496381f18c",
+        "sha256": "0dcdc1f13cc796a814b501e3b8e593e5afea5a5b544ecf7bc750e8a002197ad0",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f5eb5e7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5eb5e7/DroidDeck-main-f5eb5e7-pubg.apk",
+        "name": "DroidDeck-main-bf99dbb-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf99dbb/DroidDeck-main-bf99dbb-pubg.apk",
         "size": 61706931,
-        "sha256": "2675154f41eaac5ced81ab7731d08c115e09ce694b9f5d899829fa8a92656f01",
+        "sha256": "7734b3a303003a802462f8a9deb00a314a7aa5073ef00df46a325b97526ad5ff",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f5eb5e7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5eb5e7/DroidDeck-main-f5eb5e7-antutu.apk",
+        "name": "DroidDeck-main-bf99dbb-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf99dbb/DroidDeck-main-bf99dbb-antutu.apk",
         "size": 61706931,
-        "sha256": "fb4e7d6fbe14ece4a078bb6c895a8333ad2751c30660be34a18eb57dff6614b2",
+        "sha256": "05150d03b2397fd3c219040842392a69e02efb641458558c7f94ae5a36f179fc",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f5eb5e7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5eb5e7/DroidDeck-main-f5eb5e7-ludashi.apk",
+        "name": "DroidDeck-main-bf99dbb-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf99dbb/DroidDeck-main-bf99dbb-ludashi.apk",
         "size": 61706931,
-        "sha256": "5e96beeced7199900a74ee9efccf8d0969e2a241a88e55812ff1baa09b01c751",
+        "sha256": "75380ace15c429785196fbf7f4aab9a03ac10dc01dc34c9bbfe7b9e671a60d12",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bf99dbbe7318662305e4cb98c13340a221662868",
+      "title": "feat: store sign-in walls and the Steam home wall fill with curated featured art",
+      "summary": "The scrolling cover wall behind the Stores sign-in card was only ever filled for GOG, and the Steam tab's wall was blank with no games and full of repeats with a small library. Every wall now fills from art each store curates, with no login needed.",
+      "publishedAt": 1792000677000
+    },
     {
       "commit": "f5eb5e7b819d5b42487615d9111d0a1ce68bfa6d",
       "title": "fix: declare all-files access for raw USB storage",
@@ -155,12 +161,6 @@
       "title": "perf: the session's background watchers share two loops and one D-Bus service process",
       "summary": "Cuts the Steam session's own background processes from 13 to 7 with every watcher enabled, without changing what any of them does. It's part of getting the session under Android's 32-process \"phantom process\" limit. Together with #566 (web helper 8 \u2192 4), an idle Steam session goes from ~41 processes to ~30 on the Thor.",
       "publishedAt": 1791954928000
-    },
-    {
-      "commit": "81e645a9173645c73f5738429533964f2220e45b",
-      "title": "Fix microphone capture in DirectAudio games",
-      "summary": "Enable DirectAudio capture from the session microphone setting and prevent game overrides from enabling it when disabled, verified on Thor with one capture device when enabled and zero when disabled or denied Android permission.",
-      "publishedAt": 1791954720000
     }
   ],
   "tests": [
