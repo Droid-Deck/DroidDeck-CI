@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791943068452,
+  "generatedAt": 1791943103697,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-758",
+      "title": "Wait for Steam shortcut overviews before cold launches",
+      "summary": "Wait for an added game\u2019s exact Steam overview before handing off its cold-launch URL; regression tests, controlled missing-overview recovery, and signed-build cold launches of 20 Minutes Till Dawn and ELDERBORN pass on Thor (the older-client failure was not naturally reproducible on the current Steam client).",
+      "commit": "0ba679b765ade04e8aa8ef7afca30f11cf78de2e",
+      "pr": 758,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791943062000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-758",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.758-0ba679b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-0ba679b.apk",
+          "size": 61436595,
+          "sha256": "b052add5c3d5788990a99f74ac0dab34cf8034dbd18a6d2cdb6a6c89ce518335",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.758-0ba679b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-0ba679b-pubg.apk",
+          "size": 61436595,
+          "sha256": "29e53f8158968df0bf521252770855fff0a8a4930f8ede5ee99ab0d0b2a6c16d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.758-0ba679b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-0ba679b-antutu.apk",
+          "size": 61436595,
+          "sha256": "057d48acca262dd7b5415a497e6ad7878792d3f9aecce090fd585c2de5abc5b4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.758-0ba679b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-0ba679b-ludashi.apk",
+          "size": 61436595,
+          "sha256": "d4f1e34db27e9ff13acac6f86474d343d98e066676c772d56f801b82308570e4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-757",
+      "title": "Verify native SD-card library paths before binding them",
+      "summary": "Use verified native SD-card library paths with a configured-path fallback; 12 storage tests pass, and Thor Sonic Mania A/B/A/B launches reached the title logo in 79.2/41.9/77.2/41.9 seconds (46% lower mean, same card/prefix/settings, caches retained), with the native route verified under the app UID (#373).",
+      "commit": "4bdf6185843582924c394ab5306fd091fede1a48",
+      "pr": 757,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791943033000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-757",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.757-4bdf618.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-757/DroidDeck-PR.757-4bdf618.apk",
+          "size": 61436595,
+          "sha256": "4456d712b6f66c9bcddb2a62e881ccb51d6efcff2cf87bf88ea98ac6a34fe607",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.757-4bdf618-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-757/DroidDeck-PR.757-4bdf618-pubg.apk",
+          "size": 61436595,
+          "sha256": "dc5299e25988a653d2a84afc1a682902db15d8e77972d63089ca849cce8629de",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.757-4bdf618-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-757/DroidDeck-PR.757-4bdf618-antutu.apk",
+          "size": 61436595,
+          "sha256": "eecd9883e1c4b6be4a036493d4977f3a90f02ac84db40a6f18b8c42c517ccb2e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.757-4bdf618-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-757/DroidDeck-PR.757-4bdf618-ludashi.apk",
+          "size": 61436595,
+          "sha256": "dd245dff9df60e85af0cb456fdbb01ae445d87c082061a93193aa46c6077d815",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-677",
       "title": "Fix direct-touch right-click and Steam Touch mode restoration",
@@ -403,104 +501,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-759/DroidDeck-PR.759-d03c4ec-ludashi.apk",
           "size": 61481651,
           "sha256": "8cd2094e55b064905ced30cf0743db5d38892ccfb94f95f0d6c0431fb1fda0ff",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-758",
-      "title": "Wait for Steam shortcut overviews before cold launches",
-      "summary": "Wait for an added game\u2019s exact Steam overview before handing off its cold-launch URL, avoiding CGameID-as-appid launch failures; regression tests and a controlled missing-overview test pass on Thor, with signed-build cold-launch checks pending.",
-      "commit": "2f80f8a415cdd785047611fedf37d23bb9c849b9",
-      "pr": 758,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791932467000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-758",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.758-2f80f8a.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-2f80f8a.apk",
-          "size": 61481651,
-          "sha256": "598b299428c33027d7f25ef44f9022361eb192a6c47acbab9eada12af91ba3bd",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.758-2f80f8a-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-2f80f8a-pubg.apk",
-          "size": 61481651,
-          "sha256": "f69abcae1cb85b55f4c50d7b7189a99d86f3b37659ed9b9d556549374db5a6c0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.758-2f80f8a-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-2f80f8a-antutu.apk",
-          "size": 61481651,
-          "sha256": "34c63f0e3e87fec5a453d7330d84bfbb1b1d571933a386953299ec5b62e96201",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.758-2f80f8a-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-758/DroidDeck-PR.758-2f80f8a-ludashi.apk",
-          "size": 61481651,
-          "sha256": "7f43d1fba036fb1a813736250b2397f5b2659443d1f52176bb48c5352cf1ee96",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-757",
-      "title": "Verify native SD-card library paths before binding them",
-      "summary": "Use native SD-card library paths only after an app-process probe verifies read/write access and both paths expose the same files, keeping the configured path as fallback; 12 storage tests pass, with device routing and game-load measurements pending (#373).",
-      "commit": "f30d114100f69f68bf144ce990cac12f685c411a",
-      "pr": 757,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791931484000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-757",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.757-f30d114.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-757/DroidDeck-PR.757-f30d114.apk",
-          "size": 61481651,
-          "sha256": "c7166bdd92befe873476502358c0b1bfe08ac4c92afedfd97fe27b40da006bbe",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.757-f30d114-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-757/DroidDeck-PR.757-f30d114-pubg.apk",
-          "size": 61481651,
-          "sha256": "a27babe026ec2d37a463639666047e6a0089291dba50cf8f6d60ec40a6bde10f",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.757-f30d114-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-757/DroidDeck-PR.757-f30d114-antutu.apk",
-          "size": 61481651,
-          "sha256": "ccb2ec431acfce902a667c5514febbf87082e7daa23020f81714f0ae4d094b7e",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.757-f30d114-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-757/DroidDeck-PR.757-f30d114-ludashi.apk",
-          "size": 61481651,
-          "sha256": "ca89970745d66f9d699f688c47c10d419349907e5e4d70fea0f6e9540570aaa0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
