@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792000928241,
+  "generatedAt": 1792000978848,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-10cdf97",
-    "title": "fix: Turkish translation for zRAM, reset-settings and store storage messages",
-    "summary": "The Turkish translation now covers the zRAM compression toggle and its hints, the \"Reset all settings\" row, dialog and messages, and the free-space messages shown when a store install does not fit. 14 strings were missing from values-tr; keys marked translatable=\"false\" (controller button names, \"Metacritic\", \"HowLongToBeat\") are left alone on purpose, so no translatable key is missing now.",
-    "commit": "10cdf97480167be6e9f636e05b06a3839c96f42e",
+    "tag": "main-c035351",
+    "title": "fix: read the replaced listing's watch descriptor before detach can free it",
+    "summary": "install() in tools/linuxfs/preload/dircache.c replaces an existing cache entry like this:",
+    "commit": "c035351b4f62989ddb690428233cd752172178a0",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792000865000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-10cdf97",
+    "publishedAt": 1792000927000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c035351",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-10cdf97.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-10cdf97/DroidDeck-main-10cdf97.apk",
+        "name": "DroidDeck-main-c035351.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c035351/DroidDeck-main-c035351.apk",
         "size": 61706931,
-        "sha256": "d46cb691cf04fada4b56de998a7fecfaaefba7aa9d3f3c57d74f741c1c23dfcb",
+        "sha256": "38a2cd0b8a03b5a87839552eccaf62eca256d99765346d818a738591918c0174",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-10cdf97-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-10cdf97/DroidDeck-main-10cdf97-pubg.apk",
+        "name": "DroidDeck-main-c035351-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c035351/DroidDeck-main-c035351-pubg.apk",
         "size": 61706931,
-        "sha256": "2b0a44d963dafcd89dc22b588639feb01286634f620af093de35343bd3886c6d",
+        "sha256": "b502f705041cd62b9d91fc0497ef13db10bab6ad6c5b19ac138c3dc0f49ff359",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-10cdf97-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-10cdf97/DroidDeck-main-10cdf97-antutu.apk",
+        "name": "DroidDeck-main-c035351-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c035351/DroidDeck-main-c035351-antutu.apk",
         "size": 61706931,
-        "sha256": "7bcea4b31a435fda21e9dcbc8fa9da3dca3ace3a59856dcf847398fef0c75bc3",
+        "sha256": "74ad1824e62e6f118b2af47e9d1288b8f949b4d30437cab94182772e793517f4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-10cdf97-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-10cdf97/DroidDeck-main-10cdf97-ludashi.apk",
+        "name": "DroidDeck-main-c035351-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c035351/DroidDeck-main-c035351-ludashi.apk",
         "size": 61706931,
-        "sha256": "cb23944603afaa4dcbb701efb4a00499284195ccb9a15efd02d0ff25078a3cb7",
+        "sha256": "2f210164cc17bda0cce61d7819e667b3fa6e6a6de35056d41a57e6b4e5795c75",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c035351b4f62989ddb690428233cd752172178a0",
+      "title": "fix: read the replaced listing's watch descriptor before detach can free it",
+      "summary": "install() in tools/linuxfs/preload/dircache.c replaces an existing cache entry like this:",
+      "publishedAt": 1792000927000
+    },
     {
       "commit": "10cdf97480167be6e9f636e05b06a3839c96f42e",
       "title": "fix: Turkish translation for zRAM, reset-settings and store storage messages",
@@ -155,12 +161,6 @@
       "title": "fix(stores): drop expired Epic and Amazon tokens when a refresh fails",
       "summary": "Follow-up to #802 from the CodeRabbit review.",
       "publishedAt": 1791978832000
-    },
-    {
-      "commit": "4b17bc9a23b985fcab24b21aa2ffe6222ead4b65",
-      "title": "feat: rewrite the Epic and Amazon store modules",
-      "summary": "Rewrites the Epic and Amazon store modules from a protocol-level spec. New Rust engines sit behind a small JNI surface (nativeCall / nativeInstall) with thin Kotlin facades, and the launcher sends its own user agent.",
-      "publishedAt": 1791977261000
     }
   ],
   "tests": [
