@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791977302342,
+  "generatedAt": 1791978884682,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4b17bc9",
-    "title": "feat: rewrite the Epic and Amazon store modules",
-    "summary": "Rewrites the Epic and Amazon store modules from a protocol-level spec. New Rust engines sit behind a small JNI surface (nativeCall / nativeInstall) with thin Kotlin facades, and the launcher sends its own user agent.",
-    "commit": "4b17bc9a23b985fcab24b21aa2ffe6222ead4b65",
+    "tag": "main-d99d728",
+    "title": "fix(stores): drop expired Epic and Amazon tokens when a refresh fails",
+    "summary": "Follow-up to #802 from the CodeRabbit review.",
+    "commit": "d99d728ba59173fcf17c0cf0ffe6823a470d27c1",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791977261000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4b17bc9",
+    "publishedAt": 1791978832000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d99d728",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4b17bc9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b17bc9/DroidDeck-main-4b17bc9.apk",
+        "name": "DroidDeck-main-d99d728.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d99d728/DroidDeck-main-d99d728.apk",
         "size": 61698739,
-        "sha256": "4334a9ee0222cf8d8da2c51df48e8f27e7ffd2f3117be0c387cf203d60b14160",
+        "sha256": "32e05540386bf0a7f871f96c1259e9d5f156d766bc194ff1100c749e5008ac55",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4b17bc9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b17bc9/DroidDeck-main-4b17bc9-pubg.apk",
+        "name": "DroidDeck-main-d99d728-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d99d728/DroidDeck-main-d99d728-pubg.apk",
         "size": 61698739,
-        "sha256": "4ac28d0574983d4524bf30b09c6469640462be3c663474027f6d0fddce63967e",
+        "sha256": "211f014abaa2b2fde888080d681631e39244cb812fa873aa638d44dca3eeff33",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4b17bc9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b17bc9/DroidDeck-main-4b17bc9-antutu.apk",
+        "name": "DroidDeck-main-d99d728-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d99d728/DroidDeck-main-d99d728-antutu.apk",
         "size": 61698739,
-        "sha256": "101a1d97eae145f987d0dfb177a75ba9b34313ec0f9bccebc33d1b517c64e152",
+        "sha256": "b804347ebfb2c404cf6d92f1844bd8c7d2a99f126299beb62df7dbc955739bff",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4b17bc9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b17bc9/DroidDeck-main-4b17bc9-ludashi.apk",
+        "name": "DroidDeck-main-d99d728-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d99d728/DroidDeck-main-d99d728-ludashi.apk",
         "size": 61698739,
-        "sha256": "de65fe990682ff6558f3b268d3a8c7789856154f47022fcef0395eae6153a94d",
+        "sha256": "e720df54894f2fa0c7663068c273d2f1bf0a3854357469afd986b4d81755b8e7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d99d728ba59173fcf17c0cf0ffe6823a470d27c1",
+      "title": "fix(stores): drop expired Epic and Amazon tokens when a refresh fails",
+      "summary": "Follow-up to #802 from the CodeRabbit review.",
+      "publishedAt": 1791978832000
+    },
     {
       "commit": "4b17bc9a23b985fcab24b21aa2ffe6222ead4b65",
       "title": "feat: rewrite the Epic and Amazon store modules",
@@ -155,12 +161,6 @@
       "title": "fix: desktop session: Shift no longer stays held after typing capitals on a physical keyboard",
       "summary": "In the desktop session, typing capitals on a physical keyboard could leave Shift held for good. From then on digits typed !@#, , typed <, letters stayed capital, and Enter stopped working in the terminal. Tapping Shift again cleared it. Ctrl and Alt could get stuck the same way.",
       "publishedAt": 1791943990000
-    },
-    {
-      "commit": "83ec5708edae6ad101045a9d438e4dbd15ea877c",
-      "title": "cleanup",
-      "summary": "",
-      "publishedAt": 1791942050000
     }
   ],
   "tests": [
