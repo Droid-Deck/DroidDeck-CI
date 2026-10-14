@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791943480295,
+  "generatedAt": 1791943654717,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-759",
+      "title": "Show controller-driven cursors in nested Wayland sessions",
+      "summary": "Enable Gamescope cursor composition for Steam sessions while preserving client and lock hiding; fixes #355, passes Thor Steam Input motion/hide/recovery QA, and the signed CI APK runs the verified bundled binary in mode 2 without overrides.",
+      "commit": "e599d6fa956f5d092b5e7681bb6dc4be2194c046",
+      "pr": 759,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791943593000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-759",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.759-e599d6f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-759/DroidDeck-PR.759-e599d6f.apk",
+          "size": 61436595,
+          "sha256": "fe577f00976c71ee4e2c2fe76becaeef36eda85a89a87e0693a5ea44f7edebbc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.759-e599d6f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-759/DroidDeck-PR.759-e599d6f-pubg.apk",
+          "size": 61436595,
+          "sha256": "04d490f7b6a72464a495f556194414cbeabae71c7001707922f8ac2a8d51be1a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.759-e599d6f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-759/DroidDeck-PR.759-e599d6f-antutu.apk",
+          "size": 61436595,
+          "sha256": "00c2097be22885e896d19852d6c0c243f7ad9d71f2bb8397ce9132d2d50f81e8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.759-e599d6f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-759/DroidDeck-PR.759-e599d6f-ludashi.apk",
+          "size": 61436595,
+          "sha256": "54556c93a74a9195fac1377341d49259afec0821cc2f3eba7d916fc2c9f8e448",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-755",
       "title": "Keep visible external-display sessions running",
@@ -599,55 +648,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-749/DroidDeck-PR.749-8b32ad6-ludashi.apk",
           "size": 61436595,
           "sha256": "53f6f824d139ac0edf2a3790a4a999afcc5488999f69ea4e40111c48d60bb5cb",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-759",
-      "title": "Show controller-driven cursors in nested Wayland sessions",
-      "summary": "Enable Gamescope cursor composition for DroidDeck Steam sessions while preserving client and lock hiding; fixes #355 and passed Thor Steam Input guide-chord motion QA.",
-      "commit": "d03c4ec7a54b6eedda66560c7f3ca8b31b535e84",
-      "pr": 759,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791933035000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-759",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.759-d03c4ec.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-759/DroidDeck-PR.759-d03c4ec.apk",
-          "size": 61481651,
-          "sha256": "e5f3e80b8940eba04723b3b82656cd786633d5984a16dfd31a0fe46a79d182ae",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.759-d03c4ec-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-759/DroidDeck-PR.759-d03c4ec-pubg.apk",
-          "size": 61481651,
-          "sha256": "72a6c019a482260bb335d20f382192439439bac6d08133e4515bb11d38392904",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.759-d03c4ec-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-759/DroidDeck-PR.759-d03c4ec-antutu.apk",
-          "size": 61481651,
-          "sha256": "b4ff7421f755a2b244ce5c94eee4fb052afd57662e093cbbbdbf980eefdfdd4c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.759-d03c4ec-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-759/DroidDeck-PR.759-d03c4ec-ludashi.apk",
-          "size": 61481651,
-          "sha256": "8cd2094e55b064905ced30cf0743db5d38892ccfb94f95f0d6c0431fb1fda0ff",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
