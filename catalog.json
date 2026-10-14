@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791942997800,
+  "generatedAt": 1791943068452,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-677",
+      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
+      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
+      "commit": "6cb895b27f417e20bc7cb4745eb98d2218df7674",
+      "pr": 677,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791943019000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-677",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.677-6cb895b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-6cb895b.apk",
+          "size": 61436595,
+          "sha256": "e7d623d51908acf3d188c1d05c8ffd15ae1b4ff24d46d9066b9f58f7bd9a9019",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.677-6cb895b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-6cb895b-pubg.apk",
+          "size": 61436595,
+          "sha256": "be931186a4249795b68f68dfc1016c3ca53cddf5bb3ab764c9043b82c2e455a4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.677-6cb895b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-6cb895b-antutu.apk",
+          "size": 61436595,
+          "sha256": "f64c3ced25b2d209392c79863db7058c38fdd410938e147e7cdddfd603da56a2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.677-6cb895b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-6cb895b-ludashi.apk",
+          "size": 61436595,
+          "sha256": "4e20ff1d2d9638639e450ba02ff3400c1a6742345142bbe7b985c785bdb875ca",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-564",
       "title": "feat: target Android API 36",
@@ -697,55 +746,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-671/DroidDeck-PR.671-a114c46-ludashi.apk",
           "size": 53878418,
           "sha256": "1ffb4e8d2f285e6456165be679f8bed430bfac195b65457270912e5d4508aa41",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-677",
-      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
-      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
-      "commit": "3d4c894dff0b492595e5bd22cb793af423b1fdda",
-      "pr": 677,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791854670000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-677",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.677-3d4c894.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-3d4c894.apk",
-          "size": 53862034,
-          "sha256": "25d4eb964bff8e362487ca71edfd8b4a6108f1d842b463ff26461f472f45f883",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.677-3d4c894-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-3d4c894-pubg.apk",
-          "size": 53862034,
-          "sha256": "633cb023d06e23fe1b5d2b41bbc8571eee319ea5d7ab69002e5bb951e28e606d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.677-3d4c894-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-3d4c894-antutu.apk",
-          "size": 53862034,
-          "sha256": "ac2d98f30ee2f9a814fcc06f75c6f12d35914a09dc7014735873dad4d674756b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.677-3d4c894-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-3d4c894-ludashi.apk",
-          "size": 53862034,
-          "sha256": "68e7ac74943dbcfc321d04356acf9b81f4293277f2806c71c8d26fa06a0e476b",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
