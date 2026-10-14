@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791991994875,
+  "generatedAt": 1791992305654,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9838c83",
-    "title": "fix: store installs stay shortcuts instead of becoming Steam installs",
-    "summary": "Games installed from Epic, GOG or Amazon get turned into real Steam installs when you also own the same title on Steam. Discord reports: an Epic copy \"showed up as the steam version\" the next day and stopped launching; Tony Hawk 1+2 (Epic) hit the same error.",
-    "commit": "9838c83fc2392300c69a54c37396ebb7adc69226",
+    "tag": "main-9796525",
+    "title": "perf: local builds reuse unchanged native steps across runs and worktrees",
+    "summary": "tools/buildlocal.sh took 11\u201316 minutes even when only Kotlin changed, and every new worktree paid the full cost again. On an Apple Silicon Mac all the Docker steps run as emulated linux/amd64, and several of them redid identical work every run:",
+    "commit": "97965254497db027419804ecaf9ce7551e7fb056",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791987817000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9838c83",
+    "publishedAt": 1791992263000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9796525",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9838c83.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9838c83/DroidDeck-main-9838c83.apk",
+        "name": "DroidDeck-main-9796525.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9796525/DroidDeck-main-9796525.apk",
         "size": 61698739,
-        "sha256": "d1c8f41572b90e24f8c611c1f85150a073aaa4f558b5b05b54a000aa57195785",
+        "sha256": "f1bddfe4350dc786b5063e87b78ab0e1dffb1f1f4d10c7b917b90fbe45a12bbe",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9838c83-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9838c83/DroidDeck-main-9838c83-pubg.apk",
+        "name": "DroidDeck-main-9796525-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9796525/DroidDeck-main-9796525-pubg.apk",
         "size": 61698739,
-        "sha256": "d5442f8fc26405a5b6115543d977133caaec44b63477a3e5946a61a67813788c",
+        "sha256": "ae49197649b11961c4108db855234404a5d2b24ee36b6fe9a2a60e204b4b0adc",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9838c83-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9838c83/DroidDeck-main-9838c83-antutu.apk",
+        "name": "DroidDeck-main-9796525-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9796525/DroidDeck-main-9796525-antutu.apk",
         "size": 61698739,
-        "sha256": "5cd49fdf0a5ed40da45ec3671f86603f633757509cdab48edaf9d8bdffdf19a2",
+        "sha256": "c83ea09e36a84bbfe184f6f5345e91cfce047fabdc5c95570e677af64a212c66",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9838c83-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9838c83/DroidDeck-main-9838c83-ludashi.apk",
+        "name": "DroidDeck-main-9796525-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9796525/DroidDeck-main-9796525-ludashi.apk",
         "size": 61698739,
-        "sha256": "7937acadf86505db27cc40240107f3b2ecf500686cc1a220c4b0a591c6a4ba08",
+        "sha256": "9592377d0c4ea1892be37438b8c7b4e25c21b9237fc43bdc70358ef5c540529b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "97965254497db027419804ecaf9ce7551e7fb056",
+      "title": "perf: local builds reuse unchanged native steps across runs and worktrees",
+      "summary": "tools/buildlocal.sh took 11\u201316 minutes even when only Kotlin changed, and every new worktree paid the full cost again. On an Apple Silicon Mac all the Docker steps run as emulated linux/amd64, and several of them redid identical work every run:",
+      "publishedAt": 1791992263000
+    },
     {
       "commit": "9838c83fc2392300c69a54c37396ebb7adc69226",
       "title": "fix: store installs stay shortcuts instead of becoming Steam installs",
@@ -155,12 +161,6 @@
       "title": "feat: redesign the store game page's facts, description and achievements",
       "summary": "Design pass on the GOG/Epic game page, building on the facts from #712.",
       "publishedAt": 1791949362000
-    },
-    {
-      "commit": "3a408058baedfff89eb0d71262f3cc6ae56c2a9f",
-      "title": "Configure CodeRabbit reviews",
-      "summary": "Enable automatic CodeRabbit reviews with DroidDeck-specific correctness guidance, while disabling comment-coverage checks and generated code changes.",
-      "publishedAt": 1791946555000
     }
   ],
   "tests": [
