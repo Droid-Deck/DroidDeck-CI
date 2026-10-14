@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791943220371,
+  "generatedAt": 1791943281760,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-747",
+      "title": "Fix microphone capture in DirectAudio games",
+      "summary": "Enable DirectAudio capture from the session microphone setting and prevent game overrides from enabling it when disabled, verified on Thor with one capture device when enabled and zero when disabled or denied Android permission.",
+      "commit": "d57cb070f6fb631a1a56452b24cc18c46f6a0682",
+      "pr": 747,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791943187000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-747",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.747-d57cb07.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-747/DroidDeck-PR.747-d57cb07.apk",
+          "size": 61436595,
+          "sha256": "4bd256c7058dc1653563d81b68dd1b57fbd0b30d0bfed3f43db05bda2c4edd4a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.747-d57cb07-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-747/DroidDeck-PR.747-d57cb07-pubg.apk",
+          "size": 61436595,
+          "sha256": "196b7a83b36904c3390d9845ad6d865e814b6f3722e5b35c7fcdc0ff1020232e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.747-d57cb07-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-747/DroidDeck-PR.747-d57cb07-antutu.apk",
+          "size": 61436595,
+          "sha256": "7ada2b0ab934086a6c1a799cae9dd881ae0b2e407632cc1b579273ac5efc0f42",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.747-d57cb07-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-747/DroidDeck-PR.747-d57cb07-ludashi.apk",
+          "size": 61436595,
+          "sha256": "ce1b878bcc2ae41a52db26fa11d6e533e0697bf162f7abf2eacb5f3cffbd160c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-575",
       "title": "perf: the session's background watchers share two loops and one D-Bus service process",
@@ -648,55 +697,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-755/DroidDeck-PR.755-e95ba8d-ludashi.apk",
           "size": 61481651,
           "sha256": "64109fc56c884fab83558d87fc7a464bc29e3d8dc384df7a6111637d93fc49d2",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-747",
-      "title": "Fix microphone capture in DirectAudio games",
-      "summary": "Pass the session microphone setting to DirectAudio games and prevent game environment overrides from enabling capture when the microphone is disabled.",
-      "commit": "4b8877c63880fcf68879dab846e9503aeeb7d4aa",
-      "pr": 747,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791923772000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-747",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.747-4b8877c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-747/DroidDeck-PR.747-4b8877c.apk",
-          "size": 61481651,
-          "sha256": "100660ea0aeb98ec5c0db3baa5c3b6e96094d1be9d8177e868e6d139f806215c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.747-4b8877c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-747/DroidDeck-PR.747-4b8877c-pubg.apk",
-          "size": 61481651,
-          "sha256": "1afc57f0579692f11615aa7cdeabd7f6e68b5d8afad1e0edfed885a7fd787d71",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.747-4b8877c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-747/DroidDeck-PR.747-4b8877c-antutu.apk",
-          "size": 61481651,
-          "sha256": "2684c8677cdcd191f77504731ac7099c9f52d6dfc0586a437019ec5ddaa0ea62",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.747-4b8877c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-747/DroidDeck-PR.747-4b8877c-ludashi.apk",
-          "size": 61481651,
-          "sha256": "d1efb315164ef92470a006221a5a92b23d040f31dbc8d5a743c34da6d06d4e50",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
