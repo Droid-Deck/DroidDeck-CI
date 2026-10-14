@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791954163429,
+  "generatedAt": 1791954552065,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0988cdc",
-    "title": "Run CodeRabbit reviews independently of APK builds",
-    "summary": "Disable CodeRabbit\u2019s GitHub Checks integration so reviews do not wait for APK builds or other CI results.",
-    "commit": "0988cdc43afbef7ae7badd46fee350f18b027f51",
+    "tag": "main-0c3444a",
+    "title": "Wait for Steam shortcut overviews before cold launches",
+    "summary": "Wait for an added game\u2019s exact Steam overview before handing off its cold-launch URL; regression tests, controlled missing-overview recovery, and signed-build cold launches of 20 Minutes Till Dawn and ELDERBORN pass on Thor (the older-client failure was not naturally reproducible on the current Steam client).",
+    "commit": "0c3444afbc8d93ca8245e7189990b5dbab4ce612",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791952764000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0988cdc",
+    "publishedAt": 1791954510000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0c3444a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0988cdc.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0988cdc/DroidDeck-main-0988cdc.apk",
+        "name": "DroidDeck-main-0c3444a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c3444a/DroidDeck-main-0c3444a.apk",
         "size": 61555379,
-        "sha256": "af95da2f67fbdc3e5d15d86f30b6c12ad8bc678739f9480616b38fb62c0e51d8",
+        "sha256": "d67b78db19b548c42d36920e726582b2b2f4454d694cb97b9a317380758e76d4",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0988cdc-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0988cdc/DroidDeck-main-0988cdc-pubg.apk",
+        "name": "DroidDeck-main-0c3444a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c3444a/DroidDeck-main-0c3444a-pubg.apk",
         "size": 61555379,
-        "sha256": "45af8a4b3c374bf9c6510ba795850d35c23243ee4e246a8e8033d3e41f7806c1",
+        "sha256": "c73e66a4c2d80fd5a7da69fc81d63cfc232410bc106862f15f41f3b59d9488bc",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0988cdc-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0988cdc/DroidDeck-main-0988cdc-antutu.apk",
+        "name": "DroidDeck-main-0c3444a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c3444a/DroidDeck-main-0c3444a-antutu.apk",
         "size": 61555379,
-        "sha256": "d4318f526dcb6ae256b66464b3d06bbac9b7044536c7aa60efeae86044f3dcb8",
+        "sha256": "6041caddfb62b63c8289360d6f688ed2486dc1e436dc93ef9f84a484b86b7bc2",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0988cdc-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0988cdc/DroidDeck-main-0988cdc-ludashi.apk",
+        "name": "DroidDeck-main-0c3444a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c3444a/DroidDeck-main-0c3444a-ludashi.apk",
         "size": 61555379,
-        "sha256": "0dd1cbae3626794274293b667ca6ed5d84e2c11e6384e6cd67f5dca3f50b44ad",
+        "sha256": "9a73c41e3e2784292616de72c99704b4bbab6b3218448ff0795ef5745731be08",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0c3444afbc8d93ca8245e7189990b5dbab4ce612",
+      "title": "Wait for Steam shortcut overviews before cold launches",
+      "summary": "Wait for an added game\u2019s exact Steam overview before handing off its cold-launch URL; regression tests, controlled missing-overview recovery, and signed-build cold launches of 20 Minutes Till Dawn and ELDERBORN pass on Thor (the older-client failure was not naturally reproducible on the current Steam client).",
+      "publishedAt": 1791954510000
+    },
     {
       "commit": "0988cdc43afbef7ae7badd46fee350f18b027f51",
       "title": "Run CodeRabbit reviews independently of APK builds",
@@ -155,12 +161,6 @@
       "title": "fix: the Debugging tools hint points to Setup > Diagnostics",
       "summary": "With Debugging tools off, droiddeckctl tells you to turn on Setup > Session > Debugging tools. Setup has no Session tab; the toggle is under Diagnostics.",
       "publishedAt": 1791918627000
-    },
-    {
-      "commit": "a12ac8134a14cd7665890176324298cd6348a7f0",
-      "title": "Add experimental Quest 2 and Adreno 6xx display-driver support",
-      "summary": "The Test 2 APK was built from PR #669 (d3f3439) with these compatibility changes. The tester confirms that it now works on Quest. Specific game coverage has not been recorded.",
-      "publishedAt": 1791916147000
     }
   ],
   "tests": [
