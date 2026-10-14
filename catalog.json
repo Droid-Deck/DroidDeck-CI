@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792001462063,
+  "generatedAt": 1792002578228,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-840",
+      "title": "fix: Steam touch controls load the layout Steam picked for DroidDeck's touch controller, including workshop layouts",
+      "summary": "Picking an official or community touch layout in Steam (for example ConcernedApe's for Stardew Valley) showed in Big Picture, but once the game had focus DroidDeck's Steam touch controls went back to the default layout or an older autosave. This was reported in Discord (\"Steam touch controls going to default layout in game\"), with Steam Link showing the right layout for the same game.",
+      "commit": "ea68385a72ff4ac6aacc574b342d65a0c8d2600f",
+      "pr": 840,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792002522000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-840",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.840-ea68385.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-840/DroidDeck-PR.840-ea68385.apk",
+          "size": 61706931,
+          "sha256": "e0bfcdf50b96b35763441dc4d1c176ec978ed087fd57a0c08aeea6a389c4fffb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.840-ea68385-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-840/DroidDeck-PR.840-ea68385-pubg.apk",
+          "size": 61706931,
+          "sha256": "94dce9224ac388ef057e8ba3043a4d0e60de059b58b0aa9711a6d0b4c0e4eed1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.840-ea68385-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-840/DroidDeck-PR.840-ea68385-antutu.apk",
+          "size": 61706931,
+          "sha256": "d1e53292a6d15c3deec152289fba3451af9eb958b423d3736263f85d56c99ff7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.840-ea68385-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-840/DroidDeck-PR.840-ea68385-ludashi.apk",
+          "size": 61706931,
+          "sha256": "9561f23be7ef2ecd153ce7b7862cae917efcd6558a9feddd7c467988c2da3491",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-732",
       "title": "Add VITURE XR controls, head tracking, and SteamVR",
