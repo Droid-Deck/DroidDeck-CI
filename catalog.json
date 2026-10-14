@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791992559973,
+  "generatedAt": 1791993198343,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-732",
+      "title": "Add VITURE XR controls, head tracking, and SteamVR",
+      "summary": "VITURE XR glasses support for DroidDeck:",
+      "commit": "bdf876d47cc9bb6fa810d014370da5bbb3c28039",
+      "pr": 732,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791993140000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-732",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.732-bdf876d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-bdf876d.apk",
+          "size": 61899443,
+          "sha256": "b7efef6442f384446bdd1750cec21f0eda61b370bc21d9f55187448e5c256760",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.732-bdf876d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-bdf876d-pubg.apk",
+          "size": 61899443,
+          "sha256": "002649ddbe32c91f8086d1d7c97bc95c3ae2a665087b6a787c701c4f8b93b534",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.732-bdf876d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-bdf876d-antutu.apk",
+          "size": 61899443,
+          "sha256": "014e766511b90203811e2a8d005be61acb2601322f56354fc5a04a5bd62b5893",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.732-bdf876d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-bdf876d-ludashi.apk",
+          "size": 61899443,
+          "sha256": "44b36f0a89da60e67f62d4f8129dfee13d79805baa9974017054129f5ca34f2c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-798",
       "title": "feat: sort the store library and installed tabs, and switch between card and list views",
       "summary": "The library and installed tabs always showed the store's own order with no way to\nreorder them. This adds a remembered sort and a card/list view switch, driven from\ntwo small buttons in the tab header.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-798/DroidDeck-PR.798-cbcedc5-ludashi.apk",
           "size": 61727411,
           "sha256": "e853534d37ee933ace479bb8fc13cf579e86695670029286bacc20ab0c3fa043",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-732",
-      "title": "Add VITURE XR controls, head tracking, and SteamVR",
-      "summary": "Adds VITURE XR controls, head tracking, external-display output and opt-in SteamVR. USB controls include refresh rate, stereo mode, brightness, volume and supported sunblock settings. SteamVR uses the glasses' head pose and supports gamepad-driven hands; ordinary Play Steam remains a flat session.",
-      "commit": "0a1dd16647b52c0c375fe29e1eaeb4d7e2a9b48b",
-      "pr": 732,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791990549000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-732",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.732-0a1dd16.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-0a1dd16.apk",
-          "size": 61907635,
-          "sha256": "879d923a53b81c13089a7b3f12d3d7a85fe84000add987a84a023121a48be7e3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.732-0a1dd16-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-0a1dd16-pubg.apk",
-          "size": 61907635,
-          "sha256": "5b91e96aeff381d86bbbbb6c95594527893ac81cf714724a7d93a4e6a6a5ebcb",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.732-0a1dd16-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-0a1dd16-antutu.apk",
-          "size": 61907635,
-          "sha256": "5a9db9fa44664e3b8ee50aa9209aa81a97c8111120ec0b4ef1d7c956d5fb2e59",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.732-0a1dd16-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-0a1dd16-ludashi.apk",
-          "size": 61907635,
-          "sha256": "3c1085060939f06777a0c68bd42e0a0d6f8faad9a5d6163c1217dc855bf3b791",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
