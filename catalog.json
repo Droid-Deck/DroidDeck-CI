@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791981363141,
+  "generatedAt": 1791986547408,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-816",
+      "title": "fix: store installs stay shortcuts instead of becoming Steam installs",
+      "summary": "Games installed from Epic, GOG or Amazon get turned into real Steam installs when you also own the same title on Steam. Discord reports: an Epic copy \"showed up as the steam version\" the next day and stopped launching; Tony Hawk 1+2 (Epic) hit the same error.",
+      "commit": "398dce9f14020c66a48ccb76d5d1afabddf73964",
+      "pr": 816,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791986491000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-816",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.816-398dce9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-816/DroidDeck-PR.816-398dce9.apk",
+          "size": 61698739,
+          "sha256": "f91b815d26c393abd792f2af797e274d66ffa48f24e4b7a91c9cf068abf47efd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.816-398dce9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-816/DroidDeck-PR.816-398dce9-pubg.apk",
+          "size": 61698739,
+          "sha256": "7a281b282164770ab48f62448864c1760f6c1632cc91308712c54a20c69ff2b7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.816-398dce9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-816/DroidDeck-PR.816-398dce9-antutu.apk",
+          "size": 61698739,
+          "sha256": "73c3838f0573b713d6f59bd67a7f74d710ca862fba5b675b5b7a150ee9c4c41a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.816-398dce9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-816/DroidDeck-PR.816-398dce9-ludashi.apk",
+          "size": 61698739,
+          "sha256": "7db3ef73d2141c52fa49dfe2aa1f75fd94fbe3000c3b1618c16b75e41b8e1aa1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-808",
       "title": "feat: low-latency controller and touch toggles in the session drawer",
