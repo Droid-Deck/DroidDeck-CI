@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791943654717,
+  "generatedAt": 1791944053341,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-83ec570",
-    "title": "cleanup",
-    "summary": "",
-    "commit": "83ec5708edae6ad101045a9d438e4dbd15ea877c",
+    "tag": "main-d310e59",
+    "title": "fix: desktop session: Shift no longer stays held after typing capitals on a physical keyboard",
+    "summary": "In the desktop session, typing capitals on a physical keyboard could leave Shift held for good. From then on digits typed !@#, , typed <, letters stayed capital, and Enter stopped working in the terminal. Tapping Shift again cleared it. Ctrl and Alt could get stuck the same way.",
+    "commit": "d310e59fce3c5a962ebc050bf4247c7d1cd6c1af",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791942050000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-83ec570",
+    "publishedAt": 1791943990000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d310e59",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-83ec570.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83ec570/DroidDeck-main-83ec570.apk",
-        "size": 61432499,
-        "sha256": "bbfba2137cc077a2840a64127fff61c4978d306165f2df6f71aee4a348d764c0",
+        "name": "DroidDeck-main-d310e59.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d310e59/DroidDeck-main-d310e59.apk",
+        "size": 61436595,
+        "sha256": "a3cba7a2f0e092eb18c268dee195a28c8cbe89d34d7fecc79493977508e8522a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-83ec570-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83ec570/DroidDeck-main-83ec570-pubg.apk",
-        "size": 61432499,
-        "sha256": "75b8cba205eec3fdc3beb53b044e8bb39f9c398f0a828911800301f185c36788",
+        "name": "DroidDeck-main-d310e59-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d310e59/DroidDeck-main-d310e59-pubg.apk",
+        "size": 61436595,
+        "sha256": "9494fa3361aab8271c1a23e2b501dbfc193d4a939b828be1389bd6d61adf40b8",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-83ec570-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83ec570/DroidDeck-main-83ec570-antutu.apk",
-        "size": 61432499,
-        "sha256": "2e5422bebe1618d8eb377232566fc3a00181be55d51318d450a2efcb16eea9e3",
+        "name": "DroidDeck-main-d310e59-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d310e59/DroidDeck-main-d310e59-antutu.apk",
+        "size": 61436595,
+        "sha256": "f0311e66fa077a1157d35afa4f73e5988ce453ae5e4057a4878ddc3003534bf5",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-83ec570-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83ec570/DroidDeck-main-83ec570-ludashi.apk",
-        "size": 61432499,
-        "sha256": "c0c6eb5696d64d27b96ddcbb76d4a260be6d1c8ef1f5de38f0374611395c27e9",
+        "name": "DroidDeck-main-d310e59-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d310e59/DroidDeck-main-d310e59-ludashi.apk",
+        "size": 61436595,
+        "sha256": "9e729adf07e949a046141dae3a0090672fa4ea784e1ef08b8788f3922f6a5605",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d310e59fce3c5a962ebc050bf4247c7d1cd6c1af",
+      "title": "fix: desktop session: Shift no longer stays held after typing capitals on a physical keyboard",
+      "summary": "In the desktop session, typing capitals on a physical keyboard could leave Shift held for good. From then on digits typed !@#, , typed <, letters stayed capital, and Enter stopped working in the terminal. Tapping Shift again cleared it. Ctrl and Alt could get stuck the same way.",
+      "publishedAt": 1791943990000
+    },
     {
       "commit": "83ec5708edae6ad101045a9d438e4dbd15ea877c",
       "title": "cleanup",
@@ -155,12 +161,6 @@
       "title": "Add opt-in zRAM compression for the Steam client while a game runs",
       "summary": "A \"zRAM compression\" toggle under Steam > Settings > Session, below \"Keep downloads running\". Off by default, kept once set, and disabled on devices without swap or with a kernel older than 5.4.",
       "publishedAt": 1791913554000
-    },
-    {
-      "commit": "975c76e3e81ffd4f1fe1a7f24b1f3eed3cb52c57",
-      "title": "fix: don't count a re-attached unchanged buffer as a new game frame",
-      "summary": "From the \"Unstable frame limit\" Discord thread. With a 30 FPS cap (from Steam's QAM or from the game itself), LSFG and Win-FG were fed ~50\u201360 \"source frames\" a second while the game made 30. The in-app HUD read \"LSFG 2\u00d7 59 \u2192 54\" / \"53 \u2192 60\" with MangoHud at 30, and camera motion felt floaty. It depended on the game: Super Meat Boy did 30 \u2192 60, Divinity and Quake didn't.",
-      "publishedAt": 1791912835000
     }
   ],
   "tests": [
