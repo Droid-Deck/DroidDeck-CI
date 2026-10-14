@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792001329371,
+  "generatedAt": 1792001462063,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-eda1e9b",
-    "title": "Fix wired PowerA and PDP right-stick and trigger mapping",
-    "summary": "Wired PowerA 20d6:2063 and PDP 0e6f:02f0 controllers expose their right stick as Android RX/RY and independent triggers as Z/RZ (-1 released, +1 pressed). PadBridge currently reads Z/RZ as the right stick and looks for triggers on LTRIGGER/RTRIGGER or BRAKE/GAS. The result is unwanted stick input from released triggers, missing right-stick movement, and missing trigger input.",
-    "commit": "eda1e9b9c648bf26c098b0401fa9a5e0981cd1eb",
+    "tag": "main-fa9a944",
+    "title": "Build and test on Windows: LF session scripts, '/' in relative paths",
+    "summary": "Three things that break a local build or the unit tests on Windows (found while building DroidDeck locally on Windows for #509):",
+    "commit": "fa9a9446bba026edd1a4058aa7f1e82194addeaf",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792001285000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-eda1e9b",
+    "publishedAt": 1792001415000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fa9a944",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-eda1e9b.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eda1e9b/DroidDeck-main-eda1e9b.apk",
+        "name": "DroidDeck-main-fa9a944.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fa9a944/DroidDeck-main-fa9a944.apk",
         "size": 61706931,
-        "sha256": "37d07f2326fe2b4e831bfa65ad95dac092536a93b41edb82b6d25b3be29d6ccb",
+        "sha256": "78dbb0445eb1267b854310ba1723ba5893238fc32bda87ab67dc2341f268a91d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-eda1e9b-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eda1e9b/DroidDeck-main-eda1e9b-pubg.apk",
+        "name": "DroidDeck-main-fa9a944-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fa9a944/DroidDeck-main-fa9a944-pubg.apk",
         "size": 61706931,
-        "sha256": "bd8998429860dcba80647f877c3855ab908dccdd119c86904f7b8c3ecbe99a90",
+        "sha256": "225937303b651d8abcf08fbd2cbe85ca1b62021803d4b4ac2dc1154c7fe969ce",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-eda1e9b-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eda1e9b/DroidDeck-main-eda1e9b-antutu.apk",
+        "name": "DroidDeck-main-fa9a944-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fa9a944/DroidDeck-main-fa9a944-antutu.apk",
         "size": 61706931,
-        "sha256": "863e038ecf11aac47b86eba178bf122bdd3b373a0e74b4972ab11a6235f52586",
+        "sha256": "c1f2d91b122d899f7bc33082cfb39b34485992ecf7ff8b214dc37c8f865b666a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-eda1e9b-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eda1e9b/DroidDeck-main-eda1e9b-ludashi.apk",
+        "name": "DroidDeck-main-fa9a944-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fa9a944/DroidDeck-main-fa9a944-ludashi.apk",
         "size": 61706931,
-        "sha256": "6fe470a95347132d7bf7e82f8ef33d82d8e69e6ed5c4722943a666eabec9471a",
+        "sha256": "3a209ed5a81cac997bbd0cab77377b9fff2c4eec2ee1a0ba9ccdfd3ceb41c1d2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "fa9a9446bba026edd1a4058aa7f1e82194addeaf",
+      "title": "Build and test on Windows: LF session scripts, '/' in relative paths",
+      "summary": "Three things that break a local build or the unit tests on Windows (found while building DroidDeck locally on Windows for #509):",
+      "publishedAt": 1792001415000
+    },
     {
       "commit": "eda1e9b9c648bf26c098b0401fa9a5e0981cd1eb",
       "title": "Fix wired PowerA and PDP right-stick and trigger mapping",
@@ -155,12 +161,6 @@
       "title": "fix: declare all-files access for raw USB storage",
       "summary": "USB volumes can be exposed only at /mnt/mediarw/<uuid>, without a /storage/<uuid> path, as reported in #633. DroidDeck's existing StorageRoots code considers that raw path, but the current manifest does not declare MANAGEEXTERNALSTORAGE, so users cannot grant All files access.",
       "publishedAt": 1792000650000
-    },
-    {
-      "commit": "46fac69438ed428f2ca43ea935cd47790264f380",
-      "title": "feat: map a controller's two back paddles to the Deck's L4 and R4",
-      "summary": "Controllers with two back paddles (seen on the 8BitDo Mobile Controller) already had them recognised by DroidDeck's own menus, but they never reached Steam. The paddles did nothing inside Steam's UI or in games, even though the session emulates a Steam Deck controller, which has back buttons.",
-      "publishedAt": 1791992516000
     }
   ],
   "tests": [
