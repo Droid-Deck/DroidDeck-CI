@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791990600365,
+  "generatedAt": 1791991121356,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-819",
+      "title": "perf: local builds reuse unchanged native steps across runs and worktrees",
+      "summary": "tools/buildlocal.sh took 11\u201316 minutes even when only Kotlin changed, and every new worktree paid the full cost again. On an Apple Silicon Mac all the Docker steps run as emulated linux/amd64, and several of them redid identical work every run:",
+      "commit": "8bf93563db3e33a9d4500dcfec9ce09d8f20d4f4",
+      "pr": 819,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791991066000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-819",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.819-8bf9356.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-819/DroidDeck-PR.819-8bf9356.apk",
+          "size": 61698739,
+          "sha256": "1fde373456e0025d3494749dbcad0f9e67f9494f9de18ffcb19c06c38be99a62",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.819-8bf9356-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-819/DroidDeck-PR.819-8bf9356-pubg.apk",
+          "size": 61698739,
+          "sha256": "f9edaeb91ef5119e064beab1a0b3e2d4b067ae171b569a04dae0683159a4fcaf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.819-8bf9356-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-819/DroidDeck-PR.819-8bf9356-antutu.apk",
+          "size": 61698739,
+          "sha256": "beb6d747cdefd8fc50e92ae2c6e795537046219e450a9ac376c66a602ff07702",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.819-8bf9356-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-819/DroidDeck-PR.819-8bf9356-ludashi.apk",
+          "size": 61698739,
+          "sha256": "16ca5a09673d83eb26ac696d7d846ff2a5e40cc6932ae82a0c6b80df55016d51",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-732",
       "title": "Add VITURE XR controls, head tracking, and SteamVR",
