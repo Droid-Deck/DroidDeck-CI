@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791986672947,
+  "generatedAt": 1791986813793,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-732",
+      "title": "Add VITURE XR controls, head tracking, and SteamVR",
+      "summary": "Adds VITURE XR controls, head tracking, external-display output and opt-in SteamVR. USB controls include refresh rate, stereo mode, brightness, volume and supported sunblock settings. SteamVR uses the glasses' head pose and supports gamepad-driven hands; ordinary Play Steam remains a flat session.",
+      "commit": "539a9e7ec442fb080fc717fa890788f4788a530c",
+      "pr": 732,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791986751000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-732",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.732-539a9e7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-539a9e7.apk",
+          "size": 61903539,
+          "sha256": "1a36936ed40f3f99a32a7a5c5158b800f7050a090068a8c5c9336cc35712ac8a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.732-539a9e7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-539a9e7-pubg.apk",
+          "size": 61903539,
+          "sha256": "8eada557da976f40082f107bf4048dd7095d1e7e5700573d82b01d192cbb3501",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.732-539a9e7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-539a9e7-antutu.apk",
+          "size": 61903539,
+          "sha256": "2ceae1349ad63af67169c1e3670c8fd345b0eeab4408e8b07b42f5d777c496e0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.732-539a9e7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-539a9e7-ludashi.apk",
+          "size": 61903539,
+          "sha256": "4bd7d75285a49495f683480a49e36b754f434d5e696747b8d1e225be8adaf5ae",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-816",
       "title": "fix: store installs stay shortcuts instead of becoming Steam installs",
@@ -403,55 +452,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-782/DroidDeck-PR.782-ffab8d7-ludashi.apk",
           "size": 61559475,
           "sha256": "9df7bd760128de4392c6892ccff5a1a1e3cfc9b872f484ecaf87b67dfc996245",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-732",
-      "title": "Add VITURE glasses support, with SteamVR at 120 fps on them",
-      "summary": "Support for VITURE XR glasses. DroidDeck drives the glasses over USB (refresh rate, 3D, brightness, volume, sunblock), uses their IMU for head tracking, and shows games or SteamVR on them. Tested on a VITURE Pro XR with a RedMagic phone, playing Angry Birds VR: Isle of Pigs from the start screen into Sandy Beach level 1.",
-      "commit": "4e75d53a7102c6a319320d643cd18263a9919896",
-      "pr": 732,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791952570000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-732",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.732-4e75d53.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-4e75d53.apk",
-          "size": 61756083,
-          "sha256": "d76d49836706069fb361338b0c4079d96e634e1e0a64ee1662505a2f846d691a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.732-4e75d53-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-4e75d53-pubg.apk",
-          "size": 61760179,
-          "sha256": "fc5591bd7029875568ca348238eda87549319402a09878e03df12fc434e0fdc9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.732-4e75d53-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-4e75d53-antutu.apk",
-          "size": 61760179,
-          "sha256": "960b08ad310a3d608ff5f1cbc0472655f89b19fad7c561ec9a41e926d3bca54d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.732-4e75d53-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-4e75d53-ludashi.apk",
-          "size": 61760179,
-          "sha256": "6175512449d83e5be7446bb6b3e8c486c60d8ff9e6e03f5fcff6992a025c1354",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
