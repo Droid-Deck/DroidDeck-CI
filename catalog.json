@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792000155839,
+  "generatedAt": 1792000711973,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-46fac69",
-    "title": "feat: map a controller's two back paddles to the Deck's L4 and R4",
-    "summary": "Controllers with two back paddles (seen on the 8BitDo Mobile Controller) already had them recognised by DroidDeck's own menus, but they never reached Steam. The paddles did nothing inside Steam's UI or in games, even though the session emulates a Steam Deck controller, which has back buttons.",
-    "commit": "46fac69438ed428f2ca43ea935cd47790264f380",
+    "tag": "main-f5eb5e7",
+    "title": "fix: declare all-files access for raw USB storage",
+    "summary": "USB volumes can be exposed only at /mnt/mediarw/<uuid>, without a /storage/<uuid> path, as reported in #633. DroidDeck's existing StorageRoots code considers that raw path, but the current manifest does not declare MANAGEEXTERNALSTORAGE, so users cannot grant All files access.",
+    "commit": "f5eb5e7b819d5b42487615d9111d0a1ce68bfa6d",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791992516000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-46fac69",
+    "publishedAt": 1792000650000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f5eb5e7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-46fac69.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-46fac69/DroidDeck-main-46fac69.apk",
-        "size": 61698739,
-        "sha256": "8ef4ec17759362d6f3ce52c49df904eeb79aecb445c2679a97ebe9ef6db818e5",
+        "name": "DroidDeck-main-f5eb5e7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5eb5e7/DroidDeck-main-f5eb5e7.apk",
+        "size": 61706931,
+        "sha256": "7f3954e151710cbc72b066560f1ce6a17ae9772e1b51679b75ceef496381f18c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-46fac69-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-46fac69/DroidDeck-main-46fac69-pubg.apk",
-        "size": 61698739,
-        "sha256": "2599e5954e1e11c3238a3f16ae037ed25317064bde578c2d6563efbdc2802435",
+        "name": "DroidDeck-main-f5eb5e7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5eb5e7/DroidDeck-main-f5eb5e7-pubg.apk",
+        "size": 61706931,
+        "sha256": "2675154f41eaac5ced81ab7731d08c115e09ce694b9f5d899829fa8a92656f01",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-46fac69-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-46fac69/DroidDeck-main-46fac69-antutu.apk",
-        "size": 61698739,
-        "sha256": "73d62aa2a6f7b2bfc03de407932befee272e452ff240d4a7ffc56c32e38fabc5",
+        "name": "DroidDeck-main-f5eb5e7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5eb5e7/DroidDeck-main-f5eb5e7-antutu.apk",
+        "size": 61706931,
+        "sha256": "fb4e7d6fbe14ece4a078bb6c895a8333ad2751c30660be34a18eb57dff6614b2",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-46fac69-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-46fac69/DroidDeck-main-46fac69-ludashi.apk",
-        "size": 61698739,
-        "sha256": "54da90c7d65ca611be1fe0702a4439431d5dc428fb488be32603348320120be2",
+        "name": "DroidDeck-main-f5eb5e7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5eb5e7/DroidDeck-main-f5eb5e7-ludashi.apk",
+        "size": 61706931,
+        "sha256": "5e96beeced7199900a74ee9efccf8d0969e2a241a88e55812ff1baa09b01c751",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f5eb5e7b819d5b42487615d9111d0a1ce68bfa6d",
+      "title": "fix: declare all-files access for raw USB storage",
+      "summary": "USB volumes can be exposed only at /mnt/mediarw/<uuid>, without a /storage/<uuid> path, as reported in #633. DroidDeck's existing StorageRoots code considers that raw path, but the current manifest does not declare MANAGEEXTERNALSTORAGE, so users cannot grant All files access.",
+      "publishedAt": 1792000650000
+    },
     {
       "commit": "46fac69438ed428f2ca43ea935cd47790264f380",
       "title": "feat: map a controller's two back paddles to the Deck's L4 and R4",
@@ -155,12 +161,6 @@
       "title": "Fix microphone capture in DirectAudio games",
       "summary": "Enable DirectAudio capture from the session microphone setting and prevent game overrides from enabling it when disabled, verified on Thor with one capture device when enabled and zero when disabled or denied Android permission.",
       "publishedAt": 1791954720000
-    },
-    {
-      "commit": "0c3444afbc8d93ca8245e7189990b5dbab4ce612",
-      "title": "Wait for Steam shortcut overviews before cold launches",
-      "summary": "Wait for an added game\u2019s exact Steam overview before handing off its cold-launch URL; regression tests, controlled missing-overview recovery, and signed-build cold launches of 20 Minutes Till Dawn and ELDERBORN pass on Thor (the older-client failure was not naturally reproducible on the current Steam client).",
-      "publishedAt": 1791954510000
     }
   ],
   "tests": [
