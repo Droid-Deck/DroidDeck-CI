@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791991121356,
+  "generatedAt": 1791991184807,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-798",
+      "title": "feat: sort the store library and installed tabs, and switch between card and list views",
+      "summary": "The library and installed tabs always showed the store's own order with no way to\nreorder them. This adds a remembered sort and a card/list view switch, driven from\ntwo small buttons in the tab header.",
+      "commit": "cbcedc518b1aeb9925819dd4804ed07178ca7626",
+      "pr": 798,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791991121000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-798",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.798-cbcedc5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-798/DroidDeck-PR.798-cbcedc5.apk",
+          "size": 61727411,
+          "sha256": "d58e9f13d11ecc91bc2693bf9ef2b7b5603ac7faff27ed40fd02d2e8ee166975",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.798-cbcedc5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-798/DroidDeck-PR.798-cbcedc5-pubg.apk",
+          "size": 61727411,
+          "sha256": "14f8b0e075a0d9400cf7c6aafe1dc6319a1e5901b4c08cd18cde2e2ea86334dc",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.798-cbcedc5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-798/DroidDeck-PR.798-cbcedc5-antutu.apk",
+          "size": 61727411,
+          "sha256": "5f3965938885267df8d471d00339111681e3cb4d2c2af266af4d77a5c44679ed",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.798-cbcedc5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-798/DroidDeck-PR.798-cbcedc5-ludashi.apk",
+          "size": 61727411,
+          "sha256": "e853534d37ee933ace479bb8fc13cf579e86695670029286bacc20ab0c3fa043",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-819",
       "title": "perf: local builds reuse unchanged native steps across runs and worktrees",
