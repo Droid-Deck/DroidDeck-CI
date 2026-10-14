@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792001281971,
+  "generatedAt": 1792001329371,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-913806f",
-    "title": "fix: seed redist markers again when the registry lost them",
-    "summary": "Batman: Arkham City GOTY (200260) never got past \"Running install script\". Steam ran the game's AMD Dual-Core Optimizer installer, and its MSI never finishes under Wine. droiddeck-seed-redists should have marked that step as already run, but it didn't.",
-    "commit": "913806f169f9667b9d5e98bf3b284879e339baf5",
+    "tag": "main-eda1e9b",
+    "title": "Fix wired PowerA and PDP right-stick and trigger mapping",
+    "summary": "Wired PowerA 20d6:2063 and PDP 0e6f:02f0 controllers expose their right stick as Android RX/RY and independent triggers as Z/RZ (-1 released, +1 pressed). PadBridge currently reads Z/RZ as the right stick and looks for triggers on LTRIGGER/RTRIGGER or BRAKE/GAS. The result is unwanted stick input from released triggers, missing right-stick movement, and missing trigger input.",
+    "commit": "eda1e9b9c648bf26c098b0401fa9a5e0981cd1eb",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792001223000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-913806f",
+    "publishedAt": 1792001285000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-eda1e9b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-913806f.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-913806f/DroidDeck-main-913806f.apk",
+        "name": "DroidDeck-main-eda1e9b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eda1e9b/DroidDeck-main-eda1e9b.apk",
         "size": 61706931,
-        "sha256": "9ccd1391d07279505c4d879bc95fb30601e923130a02f62676561b47ede4e589",
+        "sha256": "37d07f2326fe2b4e831bfa65ad95dac092536a93b41edb82b6d25b3be29d6ccb",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-913806f-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-913806f/DroidDeck-main-913806f-pubg.apk",
+        "name": "DroidDeck-main-eda1e9b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eda1e9b/DroidDeck-main-eda1e9b-pubg.apk",
         "size": 61706931,
-        "sha256": "881a93102f4c867ee8c40ad5721be56b121b1bd8bfe9530f61bf8a281814b391",
+        "sha256": "bd8998429860dcba80647f877c3855ab908dccdd119c86904f7b8c3ecbe99a90",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-913806f-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-913806f/DroidDeck-main-913806f-antutu.apk",
+        "name": "DroidDeck-main-eda1e9b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eda1e9b/DroidDeck-main-eda1e9b-antutu.apk",
         "size": 61706931,
-        "sha256": "dbb182cccd9854a658d588e02b1326c66d0eed26b1d2e40269c3ab15b8f54397",
+        "sha256": "863e038ecf11aac47b86eba178bf122bdd3b373a0e74b4972ab11a6235f52586",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-913806f-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-913806f/DroidDeck-main-913806f-ludashi.apk",
+        "name": "DroidDeck-main-eda1e9b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eda1e9b/DroidDeck-main-eda1e9b-ludashi.apk",
         "size": 61706931,
-        "sha256": "af1197714723f04426ebf58556d12fcc5c7f9768c75cbf605cb547122a323630",
+        "sha256": "6fe470a95347132d7bf7e82f8ef33d82d8e69e6ed5c4722943a666eabec9471a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "eda1e9b9c648bf26c098b0401fa9a5e0981cd1eb",
+      "title": "Fix wired PowerA and PDP right-stick and trigger mapping",
+      "summary": "Wired PowerA 20d6:2063 and PDP 0e6f:02f0 controllers expose their right stick as Android RX/RY and independent triggers as Z/RZ (-1 released, +1 pressed). PadBridge currently reads Z/RZ as the right stick and looks for triggers on LTRIGGER/RTRIGGER or BRAKE/GAS. The result is unwanted stick input from released triggers, missing right-stick movement, and missing trigger input.",
+      "publishedAt": 1792001285000
+    },
     {
       "commit": "913806f169f9667b9d5e98bf3b284879e339baf5",
       "title": "fix: seed redist markers again when the registry lost them",
@@ -155,12 +161,6 @@
       "title": "feat: map a controller's two back paddles to the Deck's L4 and R4",
       "summary": "Controllers with two back paddles (seen on the 8BitDo Mobile Controller) already had them recognised by DroidDeck's own menus, but they never reached Steam. The paddles did nothing inside Steam's UI or in games, even though the session emulates a Steam Deck controller, which has back buttons.",
       "publishedAt": 1791992516000
-    },
-    {
-      "commit": "82f04fb22ebcff3026cb0b17ebafee5c6d249c42",
-      "title": "fix: the touchpad moves a game's own cursor when it locks the pointer",
-      "summary": "With touch set to Touchpad, a game that hides the system cursor and draws its own (The Message from Deep Space) could not be controlled: the game's cursor didn't move until a key was pressed, and DroidDeck's arrow showed beside it.",
-      "publishedAt": 1791992404000
     }
   ],
   "tests": [
