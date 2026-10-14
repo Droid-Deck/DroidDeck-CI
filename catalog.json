@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792012837108,
+  "generatedAt": 1792018759877,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-852",
+      "title": "chore: keep only the 3 newest session log folders",
+      "summary": "Session log folders pile up and use a lot of storage. This lowers SessionPaths.KEEPSESSIONS from 30 to 3, so the cleanup keeps only the 3 newest finished session folders. The Settings hint (\"Keeps the newest %d\") reads the same constant, so it updates in every language. On existing installs, the older folders are deleted the next time the cleanup runs.",
+      "commit": "1ac1c95e0a4903caa992245dd19efa84884d347c",
+      "pr": 852,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792018709000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-852",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.852-1ac1c95.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-852/DroidDeck-PR.852-1ac1c95.apk",
+          "size": 61706931,
+          "sha256": "188a2b8b3a85db208a08bc87b82a1ba7efd29ea667bb4bee525015e729febd26",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.852-1ac1c95-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-852/DroidDeck-PR.852-1ac1c95-pubg.apk",
+          "size": 61706931,
+          "sha256": "5aa26b5f4b4bc1ffca925e3e1416be78c6a781cf2783ceabc9ce4680b020c938",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.852-1ac1c95-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-852/DroidDeck-PR.852-1ac1c95-antutu.apk",
+          "size": 61706931,
+          "sha256": "678b977f311831bce0c736881de466ca604101c1f367ce74e98f03472e57e148",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.852-1ac1c95-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-852/DroidDeck-PR.852-1ac1c95-ludashi.apk",
+          "size": 61706931,
+          "sha256": "4f4f2db998417250521869cb3113944caaae293bb4f4118de2f43197177e5b9f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-732",
       "title": "Add VITURE XR controls, head tracking, and SteamVR",
