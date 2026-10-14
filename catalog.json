@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791992305654,
+  "generatedAt": 1791992449914,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9796525",
-    "title": "perf: local builds reuse unchanged native steps across runs and worktrees",
-    "summary": "tools/buildlocal.sh took 11\u201316 minutes even when only Kotlin changed, and every new worktree paid the full cost again. On an Apple Silicon Mac all the Docker steps run as emulated linux/amd64, and several of them redid identical work every run:",
-    "commit": "97965254497db027419804ecaf9ce7551e7fb056",
+    "tag": "main-82f04fb",
+    "title": "fix: the touchpad moves a game's own cursor when it locks the pointer",
+    "summary": "With touch set to Touchpad, a game that hides the system cursor and draws its own (The Message from Deep Space) could not be controlled: the game's cursor didn't move until a key was pressed, and DroidDeck's arrow showed beside it.",
+    "commit": "82f04fb22ebcff3026cb0b17ebafee5c6d249c42",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791992263000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9796525",
+    "publishedAt": 1791992404000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-82f04fb",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9796525.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9796525/DroidDeck-main-9796525.apk",
+        "name": "DroidDeck-main-82f04fb.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-82f04fb/DroidDeck-main-82f04fb.apk",
         "size": 61698739,
-        "sha256": "f1bddfe4350dc786b5063e87b78ab0e1dffb1f1f4d10c7b917b90fbe45a12bbe",
+        "sha256": "a9935c5ed55973a3c68407221ddff09bcc8ee88cb598ca3e696e442f71c76679",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9796525-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9796525/DroidDeck-main-9796525-pubg.apk",
+        "name": "DroidDeck-main-82f04fb-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-82f04fb/DroidDeck-main-82f04fb-pubg.apk",
         "size": 61698739,
-        "sha256": "ae49197649b11961c4108db855234404a5d2b24ee36b6fe9a2a60e204b4b0adc",
+        "sha256": "3dcf4454965e31f39db3ea0cf6eee18a10febc19a02253af59b4d9e67be9ecdd",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9796525-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9796525/DroidDeck-main-9796525-antutu.apk",
+        "name": "DroidDeck-main-82f04fb-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-82f04fb/DroidDeck-main-82f04fb-antutu.apk",
         "size": 61698739,
-        "sha256": "c83ea09e36a84bbfe184f6f5345e91cfce047fabdc5c95570e677af64a212c66",
+        "sha256": "ba07cb288b3699957ca2097ad6b625c48fe6f48e8c7b3f907683f771c4cc1d59",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9796525-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9796525/DroidDeck-main-9796525-ludashi.apk",
+        "name": "DroidDeck-main-82f04fb-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-82f04fb/DroidDeck-main-82f04fb-ludashi.apk",
         "size": 61698739,
-        "sha256": "9592377d0c4ea1892be37438b8c7b4e25c21b9237fc43bdc70358ef5c540529b",
+        "sha256": "07b58951cdbd7a6960d8f25dcb48755f94fd6b665af43a3cec97001f0de754fb",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "82f04fb22ebcff3026cb0b17ebafee5c6d249c42",
+      "title": "fix: the touchpad moves a game's own cursor when it locks the pointer",
+      "summary": "With touch set to Touchpad, a game that hides the system cursor and draws its own (The Message from Deep Space) could not be controlled: the game's cursor didn't move until a key was pressed, and DroidDeck's arrow showed beside it.",
+      "publishedAt": 1791992404000
+    },
     {
       "commit": "97965254497db027419804ecaf9ce7551e7fb056",
       "title": "perf: local builds reuse unchanged native steps across runs and worktrees",
@@ -155,12 +161,6 @@
       "title": "Run CodeRabbit reviews independently of APK builds",
       "summary": "Disable CodeRabbit\u2019s GitHub Checks integration so reviews do not wait for APK builds or other CI results.",
       "publishedAt": 1791952764000
-    },
-    {
-      "commit": "06bd0de4d77cee42c559249d56c374a95ef20132",
-      "title": "feat: redesign the store game page's facts, description and achievements",
-      "summary": "Design pass on the GOG/Epic game page, building on the facts from #712.",
-      "publishedAt": 1791949362000
     }
   ],
   "tests": [
