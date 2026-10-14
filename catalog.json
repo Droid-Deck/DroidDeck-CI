@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1791954764839,
+  "generatedAt": 1791954963110,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-81e645a",
-    "title": "Fix microphone capture in DirectAudio games",
-    "summary": "Enable DirectAudio capture from the session microphone setting and prevent game overrides from enabling it when disabled, verified on Thor with one capture device when enabled and zero when disabled or denied Android permission.",
-    "commit": "81e645a9173645c73f5738429533964f2220e45b",
+    "tag": "main-0792617",
+    "title": "perf: the session's background watchers share two loops and one D-Bus service process",
+    "summary": "Cuts the Steam session's own background processes from 13 to 7 with every watcher enabled, without changing what any of them does. It's part of getting the session under Android's 32-process \"phantom process\" limit. Together with #566 (web helper 8 \u2192 4), an idle Steam session goes from ~41 processes to ~30 on the Thor.",
+    "commit": "079261759e7f05de3786821f9f619bc8703e4a89",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1791954720000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-81e645a",
+    "publishedAt": 1791954928000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0792617",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-81e645a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81e645a/DroidDeck-main-81e645a.apk",
-        "size": 61555379,
-        "sha256": "1297344dfef58fb1301a65aefc19d7427f78bfef323446b74ed2bb092f35211b",
+        "name": "DroidDeck-main-0792617.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0792617/DroidDeck-main-0792617.apk",
+        "size": 61559475,
+        "sha256": "0af9f2e6924fdc5f515b8bb812c191558b8ce0b08956a6cd2ae2192dc7b4d85b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-81e645a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81e645a/DroidDeck-main-81e645a-pubg.apk",
-        "size": 61555379,
-        "sha256": "f76f74ad3fc3ae023166afa855431a4b70fa13df27201ce2211f2af1daa71612",
+        "name": "DroidDeck-main-0792617-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0792617/DroidDeck-main-0792617-pubg.apk",
+        "size": 61559475,
+        "sha256": "0328f1533522222ad6c1a51863a0ede8d5ac0ee98ff431ff859ff865dcf2928c",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-81e645a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81e645a/DroidDeck-main-81e645a-antutu.apk",
-        "size": 61555379,
-        "sha256": "2a9c382db87d4189e030b3c23054d318fc40cfcef783511ed5f61ef7466c7ca0",
+        "name": "DroidDeck-main-0792617-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0792617/DroidDeck-main-0792617-antutu.apk",
+        "size": 61559475,
+        "sha256": "c6632bb39d0c99d27dc9ab4a02867eeffabea5091ad7fbd886fd599fb95b9dc0",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-81e645a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81e645a/DroidDeck-main-81e645a-ludashi.apk",
-        "size": 61555379,
-        "sha256": "1c0646f437a3b6f498ea6da29ea71dbd7d2bcdb06ebf4a1e792ad1d61d587a2c",
+        "name": "DroidDeck-main-0792617-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0792617/DroidDeck-main-0792617-ludashi.apk",
+        "size": 61559475,
+        "sha256": "00d3aae60aad495ae7ae4f5118423119e6d734fd7b01920e6155a2f8c0ccce51",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "079261759e7f05de3786821f9f619bc8703e4a89",
+      "title": "perf: the session's background watchers share two loops and one D-Bus service process",
+      "summary": "Cuts the Steam session's own background processes from 13 to 7 with every watcher enabled, without changing what any of them does. It's part of getting the session under Android's 32-process \"phantom process\" limit. Together with #566 (web helper 8 \u2192 4), an idle Steam session goes from ~41 processes to ~30 on the Thor.",
+      "publishedAt": 1791954928000
+    },
     {
       "commit": "81e645a9173645c73f5738429533964f2220e45b",
       "title": "Fix microphone capture in DirectAudio games",
@@ -155,12 +161,6 @@
       "title": "fix: Windows components: .NET Core / Desktop runtimes install again",
       "summary": "Installing .NET Desktop 3/6/7/8, .NET Core 3 or .NET 5 from Windows components failed with \"the installer stopped (status 1)\". This blocks MelonLoader/LemonLoader mods (Drova \u2013 Forsaken Kin, Stardew Valley) and Baldur's Gate 3.",
       "publishedAt": 1791933394000
-    },
-    {
-      "commit": "02888834d40e352dea48e4f7b31184d96e5192f7",
-      "title": "fix: pace gamescope's fixed-refresh frame limiter per window by time",
-      "summary": "From the \"Unstable frame limit\" Discord thread. With Steam's QAM Frame Limit at 30 and frame generation on, motion had \"small stops and ladders\". The same game capped by its own in-game 30 FPS lock was smooth, and MangoHud's frametimes looked the same in both cases.",
-      "publishedAt": 1791930807000
     }
   ],
   "tests": [
