@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792103524383,
+  "generatedAt": 1792103864087,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-927",
-      "title": "fix: pace adaptive frame generation on the game's frame rate, not the compositor loop's",
-      "summary": "From the \"Unstable frame limit\" Discord thread. On a Retroid Pocket G2 with the DroidDeck 30 FPS cap and LSFG Adaptive 60, the tester saw frame generation that was \"sometimes as good as the in-game limit, other times worse than ever\". The log for that clip shows the bad stretches clearly:",
-      "commit": "b8c3be066bcf7913d9ff7bc9cd100effcd74258e",
-      "pr": 927,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792103477000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-927",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.927-b8c3be0.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-927/DroidDeck-PR.927-b8c3be0.apk",
-          "size": 61969075,
-          "sha256": "7594d875f273ec3472ee8de6cba58185f6cfb59d7d74bf3b1293663aa190684c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.927-b8c3be0-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-927/DroidDeck-PR.927-b8c3be0-pubg.apk",
-          "size": 61969075,
-          "sha256": "27bea55c43715cdbb1968baf63e1716e1ac32f84fc01b910c641d21f76d8dee7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.927-b8c3be0-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-927/DroidDeck-PR.927-b8c3be0-antutu.apk",
-          "size": 61969075,
-          "sha256": "b3d135cc3e29696032983d86bb68cca7f869cd9933a2a36fadee1a868e39186d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.927-b8c3be0-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-927/DroidDeck-PR.927-b8c3be0-ludashi.apk",
-          "size": 61969075,
-          "sha256": "89aaa21319d3563a7c0b3b619824bfe873ea49ef15abec5e79591a2d305f9ba2",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-910",
       "title": "feat: add immersive Quest SteamVR to the standard app",
