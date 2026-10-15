@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792072633148,
+  "generatedAt": 1792072729561,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b539cc1",
-    "title": "Fix deploylocal.sh and droiddeckctl not finding a phone connected over wireless debugging",
-    "summary": "With my phone connected over wireless debugging, tools/deploylocal.sh stopped with \"adb-device: No authorized Android device found; set ADBSERIAL or ANDROIDSERIAL\", even though adb devices -l listed it as device. droiddeckctl failed the same way.",
-    "commit": "b539cc111110c0326e63257d0ffcd89efda60f19",
+    "tag": "main-0a72690",
+    "title": "fix: keep proot sessions alive when the kernel loses fork events",
+    "summary": "Problem:",
+    "commit": "0a72690631b3eeabf6450f62c12699f370dd6357",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792072591000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b539cc1",
+    "publishedAt": 1792072678000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0a72690",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b539cc1.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b539cc1/DroidDeck-main-b539cc1.apk",
+        "name": "DroidDeck-main-0a72690.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a72690/DroidDeck-main-0a72690.apk",
         "size": 61788851,
-        "sha256": "572a724bcf16334f20eae2988015ccc8a49a8ec3cc75c5e43aef8a243a5f9916",
+        "sha256": "2dc06d95fda8c157e7e88a3a6e4b3448f606a2c3c7f4413b0b6cfdfc6c9cfc5f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b539cc1-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b539cc1/DroidDeck-main-b539cc1-pubg.apk",
+        "name": "DroidDeck-main-0a72690-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a72690/DroidDeck-main-0a72690-pubg.apk",
         "size": 61788851,
-        "sha256": "4d9cf285f98fdd06aabcfffc41db6b4e436e64dbfa912d72652a35b7d4ac9082",
+        "sha256": "8a79a9075f9aef9e3d29c68d75cf5da1a69b6264090f99491ec811a964771206",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b539cc1-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b539cc1/DroidDeck-main-b539cc1-antutu.apk",
+        "name": "DroidDeck-main-0a72690-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a72690/DroidDeck-main-0a72690-antutu.apk",
         "size": 61788851,
-        "sha256": "ff8e5fc044b1f6a14630895ed5d52a69dee14261cda3e8ed925673985c164e74",
+        "sha256": "7e165f2438dccce87ce27919f6386a5ed9f5cd033f9a875c08aa216fbafa8acc",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b539cc1-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b539cc1/DroidDeck-main-b539cc1-ludashi.apk",
+        "name": "DroidDeck-main-0a72690-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a72690/DroidDeck-main-0a72690-ludashi.apk",
         "size": 61788851,
-        "sha256": "6284adb9a47fea350cc898bbbc7479cc9829953aaf262dfa834276539609ed0e",
+        "sha256": "cbb7c808d5d2848be7a61f111c3a69ae9adbe76a386d1b84e27b796fdae6e7e4",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0a72690631b3eeabf6450f62c12699f370dd6357",
+      "title": "fix: keep proot sessions alive when the kernel loses fork events",
+      "summary": "Problem:",
+      "publishedAt": 1792072678000
+    },
     {
       "commit": "b539cc111110c0326e63257d0ffcd89efda60f19",
       "title": "Fix deploylocal.sh and droiddeckctl not finding a phone connected over wireless debugging",
@@ -155,12 +161,6 @@
       "title": "DroidDeck-Proton: get releases from the Droid-Deck org repo",
       "summary": "DroidDeck-Proton is now built and released on the org repo: Droid-Deck/DroidDeck-Proton, where 11-9.1 is Latest. This switches DroidDeck to read releases from there instead of The412Banner/DroidDeck-Proton.",
       "publishedAt": 1792064514000
-    },
-    {
-      "commit": "a2486b2afc3bd8cb0da0978e248bde22bb1b3171",
-      "title": "fix: dependency scan ignores folders above the game folder",
-      "summary": "\\WinCompSourcesTest.customWithNoMatchHasTheFolderScanOnly\\ failed on main at eb225577 (run 38669537199) and passed on the next commit.",
-      "publishedAt": 1792062783000
     }
   ],
   "tests": [
