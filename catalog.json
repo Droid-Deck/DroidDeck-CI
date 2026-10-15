@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792071336546,
+  "generatedAt": 1792071463259,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -305,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-732/DroidDeck-PR.732-d1f2f85-ludashi.apk",
           "size": 61911731,
           "sha256": "ddcbb14898294618c0ce1de8c0a52e16d08b24d460f44709d9daf4a75be653cd",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-782",
-      "title": "feat: three-finger tap toggles Steam's on-screen keyboard in game mode",
-      "summary": "\u2022 In Steam game mode, a quick three-finger tap sends Steam + X on the virtual pad, which opens Steam's on-screen keyboard; tapping again closes it.\n\u2022 New ThreeFingerTap detector: all three fingers must land within 250 ms, stay within slop, and lift within 350 ms of the third finger. Holds, swipes and four-finger touches don't fire.\n\u2022 Once the third finger lands, touches already sent to the game are cancelled and the rest of the gesture is withheld, so one- and two-finger input is unchanged. Works in both direct-touch and touchpad routing.\n\u2022 PadBridge's Steam + A QAM chord now takes any companion button; triggerSteamKeyboard() reuses it with X.",
-      "commit": "ffab8d7568085875ade6b3277433d176822c60f0",
-      "pr": 782,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791956361000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-782",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.782-ffab8d7.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-782/DroidDeck-PR.782-ffab8d7.apk",
-          "size": 61559475,
-          "sha256": "6394e5ea50fc81aa1cf0a97aa1115982687c7d4882ed7ee11c9801eaa009af5a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.782-ffab8d7-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-782/DroidDeck-PR.782-ffab8d7-pubg.apk",
-          "size": 61559475,
-          "sha256": "fa5480802d87065fe41d74ceb9bda64b51840fa5aa48721b183a7047910944d5",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.782-ffab8d7-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-782/DroidDeck-PR.782-ffab8d7-antutu.apk",
-          "size": 61559475,
-          "sha256": "18e8805c6e52e2604de4bbce38630587f8e837921f9d55f2f53fc75c1100d759",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.782-ffab8d7-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-782/DroidDeck-PR.782-ffab8d7-ludashi.apk",
-          "size": 61559475,
-          "sha256": "9df7bd760128de4392c6892ccff5a1a1e3cfc9b872f484ecaf87b67dfc996245",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
