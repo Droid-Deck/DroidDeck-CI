@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792030218836,
+  "generatedAt": 1792030298901,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-929e049",
-    "title": "l10n: refresh stale and untranslated strings in es, fr, ko, ru",
-    "summary": "Refreshes stale and untranslated strings in es, fr, ko and ru (see #555).",
-    "commit": "929e049761ac7a0a8748b19aa8cd945760c6db20",
+    "tag": "main-38d560c",
+    "title": "fix: an interrupted Linux runtime download resumes instead of starting again",
+    "summary": "Fixes #811. An interrupted Linux runtime download now resumes from the bytes it kept instead of starting again. The installer used to delete the archive in its finally block after any outcome, so a retry always began at zero even though the downloader supports Range requests.",
+    "commit": "38d560cef1e2a042641a4559bd799617fac83e17",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792030185000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-929e049",
+    "publishedAt": 1792030236000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-38d560c",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-929e049.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-929e049/DroidDeck-main-929e049.apk",
+        "name": "DroidDeck-main-38d560c.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38d560c/DroidDeck-main-38d560c.apk",
         "size": 61711027,
-        "sha256": "51177bc1abe72786bc430aa5e04e9704bee1206f82a17f188eec0c75491b3911",
+        "sha256": "56a46acfc7ae49fbc5de79edaf98d59b9f6a3aec607d60be2d0e7246cca3886f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-929e049-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-929e049/DroidDeck-main-929e049-pubg.apk",
+        "name": "DroidDeck-main-38d560c-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38d560c/DroidDeck-main-38d560c-pubg.apk",
         "size": 61711027,
-        "sha256": "8f5acebd55c97f055443173b1f513eb7b6cf7b86d265452062e322acd784887f",
+        "sha256": "2f9612c98babb252c3092f5479e220e81a00fe858a09afb03b661517f99610b0",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-929e049-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-929e049/DroidDeck-main-929e049-antutu.apk",
+        "name": "DroidDeck-main-38d560c-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38d560c/DroidDeck-main-38d560c-antutu.apk",
         "size": 61711027,
-        "sha256": "0fe93e92b29494db6124b0cc47fa2ba494b562064a4756c74583b0de2e4586e6",
+        "sha256": "2d6f5e3acb9555e00ca73a2a8fc86f9f049c75c86597bd1ad54d886255453263",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-929e049-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-929e049/DroidDeck-main-929e049-ludashi.apk",
+        "name": "DroidDeck-main-38d560c-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38d560c/DroidDeck-main-38d560c-ludashi.apk",
         "size": 61711027,
-        "sha256": "8624addcebd7ae387e416723373039a80521761c0eaedea8428dec9eaed2460b",
+        "sha256": "098aa7136b38ca69ad7e595e577e629acc0a6d9aba5e7191f0c7991308473d42",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "38d560cef1e2a042641a4559bd799617fac83e17",
+      "title": "fix: an interrupted Linux runtime download resumes instead of starting again",
+      "summary": "Fixes #811. An interrupted Linux runtime download now resumes from the bytes it kept instead of starting again. The installer used to delete the archive in its finally block after any outcome, so a retry always began at zero even though the downloader supports Range requests.",
+      "publishedAt": 1792030236000
+    },
     {
       "commit": "929e049761ac7a0a8748b19aa8cd945760c6db20",
       "title": "l10n: refresh stale and untranslated strings in es, fr, ko, ru",
@@ -155,12 +161,6 @@
       "title": "feat: hide unfolded controls when a controller is connected",
       "summary": "Hides the unfolded controls panel while a controller (including a BLE Steam Controller) is connected, and brings it back on disconnect instead of the regular on-screen controls.",
       "publishedAt": 1792001169000
-    },
-    {
-      "commit": "7b018e6c427f50c245bf90eb561071344cbce67a",
-      "title": "fix: Batman: Arkham City starts with full x87 precision under FEX",
-      "summary": "Batman: Arkham City GOTY (200260) crashed right after start with Unreal's \"Fatal error!\" popup, before the launcher even showed up.",
-      "publishedAt": 1792001079000
     }
   ],
   "tests": [
