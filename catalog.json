@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792103864087,
+  "generatedAt": 1792104389080,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-5aa245c",
-    "title": "Pushed to main without a PR - feat: the second-screen Deck controls get the Gamepad tab (#895)",
-    "summary": "",
-    "commit": "5aa245cf3932f89b6e178c1a914df3731b0e1b75",
+    "tag": "main-21a78a1",
+    "title": "fix: pace adaptive frame generation on the game's frame rate, not the compositor loop's",
+    "summary": "From the \"Unstable frame limit\" Discord thread. On a Retroid Pocket G2 with the DroidDeck 30 FPS cap and LSFG Adaptive 60, the tester saw frame generation that was \"sometimes as good as the in-game limit, other times worse than ever\". The log for that clip shows the bad stretches clearly:",
+    "commit": "21a78a1eb2e4ccb56c798b7bc2ec9149274ec7a0",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792098551000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5aa245c",
+    "publishedAt": 1792104351000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-21a78a1",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-5aa245c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5aa245c/DroidDeck-main-5aa245c.apk",
+        "name": "DroidDeck-main-21a78a1.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-21a78a1/DroidDeck-main-21a78a1.apk",
         "size": 61969075,
-        "sha256": "9a952e088fd122bcb1b7f72b56f88a449573185e3cd8168b9017c37724478ab2",
+        "sha256": "d02e4883a8d1d0f97c2055663cdba3f6e7170d602d98d7ac68a40e421dbf9098",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-5aa245c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5aa245c/DroidDeck-main-5aa245c-pubg.apk",
+        "name": "DroidDeck-main-21a78a1-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-21a78a1/DroidDeck-main-21a78a1-pubg.apk",
         "size": 61969075,
-        "sha256": "ae33905a93fcbddea42478e097fd3223528e1c6727df8909f98b3e59f61761e9",
+        "sha256": "b2d86eb34ee900ba74ac73fc21e1944d371f2e28e6619613aa0da872c123f1d7",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-5aa245c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5aa245c/DroidDeck-main-5aa245c-antutu.apk",
+        "name": "DroidDeck-main-21a78a1-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-21a78a1/DroidDeck-main-21a78a1-antutu.apk",
         "size": 61969075,
-        "sha256": "50e68ecf1cdf1c4e13ec8636dbc4c98245c3043254619d884e4dd734b4848b31",
+        "sha256": "9b3bae3265797c1c8d1067c1bda3d7f8c8afcfc7d9db0e43622adbbfd9c40da7",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-5aa245c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5aa245c/DroidDeck-main-5aa245c-ludashi.apk",
+        "name": "DroidDeck-main-21a78a1-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-21a78a1/DroidDeck-main-21a78a1-ludashi.apk",
         "size": 61969075,
-        "sha256": "6de9a8c611d16a55fbdc5cfc11b11d2bd71becbf986d966ed05c09e40086b210",
+        "sha256": "85a6ef6a0b3d8c0033fecc42677ca5276e5ef58845ed2f79fef696e0cfac4944",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "21a78a1eb2e4ccb56c798b7bc2ec9149274ec7a0",
+      "title": "fix: pace adaptive frame generation on the game's frame rate, not the compositor loop's",
+      "summary": "From the \"Unstable frame limit\" Discord thread. On a Retroid Pocket G2 with the DroidDeck 30 FPS cap and LSFG Adaptive 60, the tester saw frame generation that was \"sometimes as good as the in-game limit, other times worse than ever\". The log for that clip shows the bad stretches clearly:",
+      "publishedAt": 1792104351000
+    },
     {
       "commit": "5aa245cf3932f89b6e178c1a914df3731b0e1b75",
       "title": "Pushed to main without a PR - feat: the second-screen Deck controls get the Gamepad tab (#895)",
@@ -155,12 +161,6 @@
       "title": "test: cover GPU family and support classification",
       "summary": "Adds unit tests for the GPU family and support classification (GpuInfo), so changes to detection for new devices have something to run against. No behaviour change: the only source edit is threeDigits becoming internal so it can be called from the test.",
       "publishedAt": 1792070943000
-    },
-    {
-      "commit": "c39a521a28b3118f1b0428a6042a16804dce6daa",
-      "title": "feat: Steam home wall fills from the signed-in library instead of store picks",
-      "summary": "Since #835, a Steam library with 4+ installed games is topped up to 40 covers from Steam's public top sellers, new releases and specials. With a small install list most of the wall is storefront picks, and users have reported covers they'd rather not have on their home screen. They asked for their own library, installed or not.",
-      "publishedAt": 1792070829000
     }
   ],
   "tests": [
