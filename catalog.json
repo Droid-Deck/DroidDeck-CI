@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792092209567,
+  "generatedAt": 1792094452659,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-913",
+      "title": "feat: storage page to see and free DroidDeck's storage",
+      "summary": "Adds a Storage tab to Setup that shows where DroidDeck's storage goes and frees what is safe to remove.",
+      "commit": "04af90a40d90095ca1a02df27f08b17364c09027",
+      "pr": 913,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792094402000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-913",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.913-04af90a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-913/DroidDeck-PR.913-04af90a.apk",
+          "size": 61903539,
+          "sha256": "dce52ed9d89dd38b87cb96a3a62b8c68ff4dd2de72114fb45c492a6dfe626abe",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.913-04af90a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-913/DroidDeck-PR.913-04af90a-pubg.apk",
+          "size": 61903539,
+          "sha256": "0e4b57eed207e015c8d997c2b5736c617ad0dfed28d3e10d047442bbedfc0229",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.913-04af90a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-913/DroidDeck-PR.913-04af90a-antutu.apk",
+          "size": 61903539,
+          "sha256": "eaf48ca48cfd678e13b78bb3e4e0643cebb01ced544f96092625a824a389e617",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.913-04af90a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-913/DroidDeck-PR.913-04af90a-ludashi.apk",
+          "size": 61903539,
+          "sha256": "641e8332b6cd96a15fac0ee8735133781ba39537d70884fc691aa5a6115dff5c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-910",
       "title": "feat: add immersive Quest SteamVR to the standard app",
       "summary": "The standard DroidDeck app can now enter immersive SteamVR on Quest. SteamVR previously used the panel/Cardboard presentation path; this adds an OpenXR activity with headset tracking, Touch input and haptics, and owned stereo frames paired with their render poses. The session stays active while the immersive activity replaces the panel. SteamVR and Cardboard now have separate tabs in the session",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-910/DroidDeck-PR.910-65c6ca3-ludashi.apk",
           "size": 62428208,
           "sha256": "4222457ef102169cb3b8b0385417a5b3ee60828c41627cfea0bbf3e48902287b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-913",
-      "title": "feat: storage page to see and free DroidDeck's storage",
-      "summary": "Adds a Storage tab to Setup that shows where DroidDeck's storage goes and frees what is safe to remove.",
-      "commit": "e8c0c256d60ebe98cab74f56d290a198a54f58c6",
-      "pr": 913,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792086559000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-913",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.913-e8c0c25.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-913/DroidDeck-PR.913-e8c0c25.apk",
-          "size": 61899443,
-          "sha256": "bb2ee7c8df3ed086994986ab5af32693bbd623631845bdd450017b07a9720556",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.913-e8c0c25-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-913/DroidDeck-PR.913-e8c0c25-pubg.apk",
-          "size": 61899443,
-          "sha256": "f3d4b2e77e886ce57cabec86a0005ae8a8567bfb6af0c1ee8d886601a24e92ca",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.913-e8c0c25-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-913/DroidDeck-PR.913-e8c0c25-antutu.apk",
-          "size": 61899443,
-          "sha256": "73b756d71d2c5d6a05aaaac44983aa6e94c8ba29907aec776eb3b643c56f9cac",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.913-e8c0c25-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-913/DroidDeck-PR.913-e8c0c25-ludashi.apk",
-          "size": 61899443,
-          "sha256": "0c68c2c10fd79e9ea1fb0e0eb91dabb5c3728a272123dddfbc3e9d822e96d8c9",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
