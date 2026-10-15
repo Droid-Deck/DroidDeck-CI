@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792072569468,
+  "generatedAt": 1792072633148,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-acf66b2",
-    "title": "fix: keep Quest-patched Turnip as the auto default",
-    "summary": "Fresh Quest installs already select the patched display driver once. However, selecting GPU driver Auto subsequently follows generic Adreno-family release recommendations, and the Android Auto by GPU fallback selects the unpatched generic bundle.",
-    "commit": "acf66b2b0ee6213fdd4638778cf5c4d605470cf3",
+    "tag": "main-b539cc1",
+    "title": "Fix deploylocal.sh and droiddeckctl not finding a phone connected over wireless debugging",
+    "summary": "With my phone connected over wireless debugging, tools/deploylocal.sh stopped with \"adb-device: No authorized Android device found; set ADBSERIAL or ANDROIDSERIAL\", even though adb devices -l listed it as device. droiddeckctl failed the same way.",
+    "commit": "b539cc111110c0326e63257d0ffcd89efda60f19",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792072512000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-acf66b2",
+    "publishedAt": 1792072591000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b539cc1",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-acf66b2.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-acf66b2/DroidDeck-main-acf66b2.apk",
+        "name": "DroidDeck-main-b539cc1.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b539cc1/DroidDeck-main-b539cc1.apk",
         "size": 61788851,
-        "sha256": "26b990fa3e1a3f40beedad9740f3010b57ecdde6825bab5763dd7e445c25bf11",
+        "sha256": "572a724bcf16334f20eae2988015ccc8a49a8ec3cc75c5e43aef8a243a5f9916",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-acf66b2-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-acf66b2/DroidDeck-main-acf66b2-pubg.apk",
+        "name": "DroidDeck-main-b539cc1-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b539cc1/DroidDeck-main-b539cc1-pubg.apk",
         "size": 61788851,
-        "sha256": "16a86c88bea1825ba50e434c004ac382a1737ca61ea2e73cc515615d2cdf584b",
+        "sha256": "4d9cf285f98fdd06aabcfffc41db6b4e436e64dbfa912d72652a35b7d4ac9082",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-acf66b2-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-acf66b2/DroidDeck-main-acf66b2-antutu.apk",
+        "name": "DroidDeck-main-b539cc1-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b539cc1/DroidDeck-main-b539cc1-antutu.apk",
         "size": 61788851,
-        "sha256": "90326466224e3d1a59514ce83dfe25057e07b9dd3488f2e09dbffd5f62370595",
+        "sha256": "ff8e5fc044b1f6a14630895ed5d52a69dee14261cda3e8ed925673985c164e74",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-acf66b2-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-acf66b2/DroidDeck-main-acf66b2-ludashi.apk",
+        "name": "DroidDeck-main-b539cc1-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b539cc1/DroidDeck-main-b539cc1-ludashi.apk",
         "size": 61788851,
-        "sha256": "648b618a1882e952d7f43681d60ce7d89d73ce1ab98095eda145daab6a31f6ba",
+        "sha256": "6284adb9a47fea350cc898bbbc7479cc9829953aaf262dfa834276539609ed0e",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b539cc111110c0326e63257d0ffcd89efda60f19",
+      "title": "Fix deploylocal.sh and droiddeckctl not finding a phone connected over wireless debugging",
+      "summary": "With my phone connected over wireless debugging, tools/deploylocal.sh stopped with \"adb-device: No authorized Android device found; set ADBSERIAL or ANDROIDSERIAL\", even though adb devices -l listed it as device. droiddeckctl failed the same way.",
+      "publishedAt": 1792072591000
+    },
     {
       "commit": "acf66b2b0ee6213fdd4638778cf5c4d605470cf3",
       "title": "fix: keep Quest-patched Turnip as the auto default",
@@ -155,12 +161,6 @@
       "title": "fix: dependency scan ignores folders above the game folder",
       "summary": "\\WinCompSourcesTest.customWithNoMatchHasTheFolderScanOnly\\ failed on main at eb225577 (run 38669537199) and passed on the next commit.",
       "publishedAt": 1792062783000
-    },
-    {
-      "commit": "1bd3c64d0189bbb44d77482c3ff93629278aed0e",
-      "title": "Add top, bottom, and centered picture positions for Steam sessions",
-      "summary": "Fixed-aspect games leave unused space above and below the picture on unfolded phones, while on-screen controls can overlap the game. Add Picture position to Execute Steam \u2192 Settings \u2192 Display, with Top, Bottom, and Center (default).",
-      "publishedAt": 1792062660000
     }
   ],
   "tests": [
