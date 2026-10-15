@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792031099334,
+  "generatedAt": 1792031207860,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-d2bab89",
-    "title": "fix: droiddeckctl reaches variant-package builds (recover #842)",
-    "summary": "droiddeckctl couldn't talk to the builds shipped under another package (tools/release/variants.txt: pubg, antutu, ludashi). The provider authority and the start Activity's component were fixed to com.droiddeck.launcher. Every command failed with an unknown provider, or failed to start the Activity, on a phone that only has a variant installed. That's common on devices whose game mode keys on",
-    "commit": "d2bab8970d91fd7731958626e2b7f1280d33dd2d",
+    "tag": "main-4433155",
+    "title": "feat: droiddeckctl reports on-screen pacing (recover #843)",
+    "summary": "Adds droiddeckctl pacing [--seconds N]. It reports what actually reached the panel during a capture, which a game's own fps counter can't show. The numbers in #634 (fixed by #717) came from this same source. There, a game whose counter read a steady 60 was putting about 57 frames a second on screen, and a quarter of the intervals were off-cadence.",
+    "commit": "44331558cc96693870eab5885596aa4d1def89c3",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792031042000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d2bab89",
+    "publishedAt": 1792031168000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4433155",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-d2bab89.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d2bab89/DroidDeck-main-d2bab89.apk",
+        "name": "DroidDeck-main-4433155.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4433155/DroidDeck-main-4433155.apk",
         "size": 61715123,
-        "sha256": "980b78430f479f641f932153c20af792bda9f6d063f33087e46c2278d2d65f04",
+        "sha256": "fd2f5e865ee410184a642b714f10c4bda1e58bcc1a388556cb3343e5bbfc666d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-d2bab89-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d2bab89/DroidDeck-main-d2bab89-pubg.apk",
+        "name": "DroidDeck-main-4433155-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4433155/DroidDeck-main-4433155-pubg.apk",
         "size": 61715123,
-        "sha256": "a7d47c1c6254e59aed0d048a405fa2050a2f250de247989335a22c871daf2f02",
+        "sha256": "2625cbc142d7d1d712f22cff3dc3ee9841a422c7701c61393104c760664a18ce",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-d2bab89-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d2bab89/DroidDeck-main-d2bab89-antutu.apk",
+        "name": "DroidDeck-main-4433155-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4433155/DroidDeck-main-4433155-antutu.apk",
         "size": 61715123,
-        "sha256": "5a39c5b2b31887755be57ad6e8c64f63666903fc55d37feaaf7feb28a817a76f",
+        "sha256": "37ae1c8034c32872d3642531a7e8142ba43b6828320c1788416397a0d7166047",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-d2bab89-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d2bab89/DroidDeck-main-d2bab89-ludashi.apk",
+        "name": "DroidDeck-main-4433155-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4433155/DroidDeck-main-4433155-ludashi.apk",
         "size": 61715123,
-        "sha256": "d9b62363e97acac114af911bc8983ed0467a37c1e937929fb513c63433ff5fc9",
+        "sha256": "2d735f42521b4e00ba91857d017e3540862876d1b0e1a81ecc5a884a2a185ee1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "44331558cc96693870eab5885596aa4d1def89c3",
+      "title": "feat: droiddeckctl reports on-screen pacing (recover #843)",
+      "summary": "Adds droiddeckctl pacing [--seconds N]. It reports what actually reached the panel during a capture, which a game's own fps counter can't show. The numbers in #634 (fixed by #717) came from this same source. There, a game whose counter read a steady 60 was putting about 57 frames a second on screen, and a quarter of the intervals were off-cadence.",
+      "publishedAt": 1792031168000
+    },
     {
       "commit": "d2bab8970d91fd7731958626e2b7f1280d33dd2d",
       "title": "fix: droiddeckctl reaches variant-package builds (recover #842)",
@@ -155,12 +161,6 @@
       "title": "Fix wired PowerA and PDP right-stick and trigger mapping",
       "summary": "Wired PowerA 20d6:2063 and PDP 0e6f:02f0 controllers expose their right stick as Android RX/RY and independent triggers as Z/RZ (-1 released, +1 pressed). PadBridge currently reads Z/RZ as the right stick and looks for triggers on LTRIGGER/RTRIGGER or BRAKE/GAS. The result is unwanted stick input from released triggers, missing right-stick movement, and missing trigger input.",
       "publishedAt": 1792001285000
-    },
-    {
-      "commit": "913806f169f9667b9d5e98bf3b284879e339baf5",
-      "title": "fix: seed redist markers again when the registry lost them",
-      "summary": "Batman: Arkham City GOTY (200260) never got past \"Running install script\". Steam ran the game's AMD Dual-Core Optimizer installer, and its MSI never finishes under Wine. droiddeck-seed-redists should have marked that step as already run, but it didn't.",
-      "publishedAt": 1792001223000
     }
   ],
   "tests": [
