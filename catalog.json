@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792028500969,
+  "generatedAt": 1792029165284,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-91dabdc",
-    "title": "chore: keep only the 3 newest session log folders",
-    "summary": "Session log folders pile up and use a lot of storage. This lowers SessionPaths.KEEPSESSIONS from 30 to 3, so the cleanup keeps only the 3 newest finished session folders. The Settings hint (\"Keeps the newest %d\") reads the same constant, so it updates in every language. On existing installs, the older folders are deleted the next time the cleanup runs.",
-    "commit": "91dabdc1e7814bceda136d369ffe283b599184ff",
+    "tag": "main-684f740",
+    "title": "fix: wireless ADB page names the child-process switch the way Android shows it",
+    "summary": "The wireless ADB page now names the Developer options switch the way Android shows it: \"Turn on \u201cDisable child process restrictions\u201d\" to lift the limit, and \"Turn off ...\" to put it back. It used to tell users to set \"Restrict child processes\" on or off, which is not a switch Android shows.",
+    "commit": "684f7407de676afc8cf3054a3f45557296db4592",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792028451000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-91dabdc",
+    "publishedAt": 1792029122000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-684f740",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-91dabdc.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-91dabdc/DroidDeck-main-91dabdc.apk",
-        "size": 61706931,
-        "sha256": "360db603876dd7b28f77cb198234c27042650e4369cc7fac7bfbffff8e7a3f32",
+        "name": "DroidDeck-main-684f740.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-684f740/DroidDeck-main-684f740.apk",
+        "size": 61711027,
+        "sha256": "10fc2fcead5aa2dcf88de402c90a0dfe4790e41b8bcb6110ab638b7aa7b0a49e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-91dabdc-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-91dabdc/DroidDeck-main-91dabdc-pubg.apk",
-        "size": 61706931,
-        "sha256": "c2fec500926b586de81941808336970ab499ff900b52ef7cd3179f2c22ab649a",
+        "name": "DroidDeck-main-684f740-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-684f740/DroidDeck-main-684f740-pubg.apk",
+        "size": 61711027,
+        "sha256": "88b20ab3f075dde5097d571628c98d0d96bb2c6182d43c8bc7490ce2e3a47de1",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-91dabdc-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-91dabdc/DroidDeck-main-91dabdc-antutu.apk",
-        "size": 61706931,
-        "sha256": "91fe6eedbe754a531e371dca3c169b7f2f5843071ecd02ad5f8649a3ea9c1fb3",
+        "name": "DroidDeck-main-684f740-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-684f740/DroidDeck-main-684f740-antutu.apk",
+        "size": 61711027,
+        "sha256": "49a6b309bd447bb7f1602444dfbbc592fa756e1bf39d733e0b6170156c8565e7",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-91dabdc-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-91dabdc/DroidDeck-main-91dabdc-ludashi.apk",
-        "size": 61706931,
-        "sha256": "89f4248c674187e94a3f3dd7e5a19f745fb99387d55c4a2b86feb6083c1685c9",
+        "name": "DroidDeck-main-684f740-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-684f740/DroidDeck-main-684f740-ludashi.apk",
+        "size": 61711027,
+        "sha256": "7ddda1a0740dd9df815d469320a6073ff94d32e953c2ea8dc4ff027859369bd1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "684f7407de676afc8cf3054a3f45557296db4592",
+      "title": "fix: wireless ADB page names the child-process switch the way Android shows it",
+      "summary": "The wireless ADB page now names the Developer options switch the way Android shows it: \"Turn on \u201cDisable child process restrictions\u201d\" to lift the limit, and \"Turn off ...\" to put it back. It used to tell users to set \"Restrict child processes\" on or off, which is not a switch Android shows.",
+      "publishedAt": 1792029122000
+    },
     {
       "commit": "91dabdc1e7814bceda136d369ffe283b599184ff",
       "title": "chore: keep only the 3 newest session log folders",
@@ -155,12 +161,6 @@
       "title": "fix: read the replaced listing's watch descriptor before detach can free it",
       "summary": "install() in tools/linuxfs/preload/dircache.c replaces an existing cache entry like this:",
       "publishedAt": 1792000927000
-    },
-    {
-      "commit": "10cdf97480167be6e9f636e05b06a3839c96f42e",
-      "title": "fix: Turkish translation for zRAM, reset-settings and store storage messages",
-      "summary": "The Turkish translation now covers the zRAM compression toggle and its hints, the \"Reset all settings\" row, dialog and messages, and the free-space messages shown when a store install does not fit. 14 strings were missing from values-tr; keys marked translatable=\"false\" (controller button names, \"Metacritic\", \"HowLongToBeat\") are left alone on purpose, so no translatable key is missing now.",
-      "publishedAt": 1792000865000
     }
   ],
   "tests": [
