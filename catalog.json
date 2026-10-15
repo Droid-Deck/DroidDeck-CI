@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792097863078,
+  "generatedAt": 1792098547328,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ef16de6",
-    "title": "feat: storage page to see and free DroidDeck's storage",
-    "summary": "Adds a Storage tab to Setup that shows where DroidDeck's storage goes and frees what is safe to remove.",
-    "commit": "ef16de628003fc05155a7ccd3160851b58ef27cb",
+    "tag": "main-507ddac",
+    "title": "fix: update zstd-jni so the Linux runtime installs on a 16 KB page-size device",
+    "summary": "The Linux runtime can be installed on a device whose kernel uses 16 KB memory pages: the app no longer crashes while extracting the downloaded runtime.",
+    "commit": "507ddac39db3d2d9008e85d0cbc622ea36074be0",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792097812000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ef16de6",
+    "publishedAt": 1792098496000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-507ddac",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ef16de6.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ef16de6/DroidDeck-main-ef16de6.apk",
-        "size": 61944499,
-        "sha256": "1d0fb4a421dca9a2e6893739194ff6ec241881494f1a42167ccad0df1e717b31",
+        "name": "DroidDeck-main-507ddac.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-507ddac/DroidDeck-main-507ddac.apk",
+        "size": 61969075,
+        "sha256": "82cbe3f34f331bc495f63b17d94f3b1308d2a7ea19381f1c5bdd919d09769c0b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ef16de6-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ef16de6/DroidDeck-main-ef16de6-pubg.apk",
-        "size": 61944499,
-        "sha256": "db806c19733b26a6a55d7a7d5c1875eae06496cec2b5b320212425e1ca151b19",
+        "name": "DroidDeck-main-507ddac-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-507ddac/DroidDeck-main-507ddac-pubg.apk",
+        "size": 61969075,
+        "sha256": "68fb236ddaa6906d7b24934e3eb6630a24288ebec2fb211dffaecf1ca3dfb1ac",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ef16de6-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ef16de6/DroidDeck-main-ef16de6-antutu.apk",
-        "size": 61944499,
-        "sha256": "6bbc61e29a1c186757fecc27eb81cfb398c277c79fd9ae91b286717f48ff2b00",
+        "name": "DroidDeck-main-507ddac-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-507ddac/DroidDeck-main-507ddac-antutu.apk",
+        "size": 61969075,
+        "sha256": "12455911147193c48bf748fe0f448964893aa5f29fd713900b90698496e9c67e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ef16de6-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ef16de6/DroidDeck-main-ef16de6-ludashi.apk",
-        "size": 61944499,
-        "sha256": "e646fda8cc7c02196644c3da493f1b5ebe7dee6266e25bcb5d34e7c6c2463f0f",
+        "name": "DroidDeck-main-507ddac-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-507ddac/DroidDeck-main-507ddac-ludashi.apk",
+        "size": 61969075,
+        "sha256": "c014986219fc331f5f94b4173d975c389fff6b28a0f43f31a7e6a7e7ac85bcc0",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "507ddac39db3d2d9008e85d0cbc622ea36074be0",
+      "title": "fix: update zstd-jni so the Linux runtime installs on a 16 KB page-size device",
+      "summary": "The Linux runtime can be installed on a device whose kernel uses 16 KB memory pages: the app no longer crashes while extracting the downloaded runtime.",
+      "publishedAt": 1792098496000
+    },
     {
       "commit": "ef16de628003fc05155a7ccd3160851b58ef27cb",
       "title": "feat: storage page to see and free DroidDeck's storage",
@@ -155,12 +161,6 @@
       "title": "fix: SteamGridDB lookups no longer stick as \"no match\" after a failure; add a search to the art chooser",
       "summary": "A SteamGridDB lookup that failed for any reason (key refused or missing, rate limit, offline, server error) was saved as \"none\" for that game and not retried for a week, so the art chooser showed no SteamGridDB images even after a working key was added.",
       "publishedAt": 1792068390000
-    },
-    {
-      "commit": "6e49c0c2879abcfbbfa40b977eb63bf3d7a32f4c",
-      "title": "feat: low-latency controller and touch toggles in the session drawer",
-      "summary": "Adds a Latency group to the session drawer's Controller page with two toggles, Low-latency controller and Low-latency touch. Both are off by default and take effect immediately while Steam is running. You don't need to restart the session.",
-      "publishedAt": 1792065922000
     }
   ],
   "tests": [
