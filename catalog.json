@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792070888168,
+  "generatedAt": 1792070982847,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c39a521",
-    "title": "feat: Steam home wall fills from the signed-in library instead of store picks",
-    "summary": "Since #835, a Steam library with 4+ installed games is topped up to 40 covers from Steam's public top sellers, new releases and specials. With a small install list most of the wall is storefront picks, and users have reported covers they'd rather not have on their home screen. They asked for their own library, installed or not.",
-    "commit": "c39a521a28b3118f1b0428a6042a16804dce6daa",
+    "tag": "main-9eb509b",
+    "title": "test: cover GPU family and support classification",
+    "summary": "Adds unit tests for the GPU family and support classification (GpuInfo), so changes to detection for new devices have something to run against. No behaviour change: the only source edit is threeDigits becoming internal so it can be called from the test.",
+    "commit": "9eb509b9e11b6d061aff4e4c1aa762b45ae08680",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792070829000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c39a521",
+    "publishedAt": 1792070943000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9eb509b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c39a521.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c39a521/DroidDeck-main-c39a521.apk",
+        "name": "DroidDeck-main-9eb509b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9eb509b/DroidDeck-main-9eb509b.apk",
         "size": 61751987,
-        "sha256": "099ef826ad849c83a910bc24f2c3ac5d7e9a3d2f7c2decab211b2504f518dfd1",
+        "sha256": "0f061b1aec69a546d6a086e8f9e98388a60789db204d93ffb76b95dbca9b127d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c39a521-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c39a521/DroidDeck-main-c39a521-pubg.apk",
+        "name": "DroidDeck-main-9eb509b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9eb509b/DroidDeck-main-9eb509b-pubg.apk",
         "size": 61751987,
-        "sha256": "0658b8267de414f7c8f754999be4a0b131939f4615128e5026a4190ab7d24d89",
+        "sha256": "df911faa1cb6505efeea06146e66d9b5dedd99d6e5356c616356f5493609ea24",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c39a521-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c39a521/DroidDeck-main-c39a521-antutu.apk",
+        "name": "DroidDeck-main-9eb509b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9eb509b/DroidDeck-main-9eb509b-antutu.apk",
         "size": 61751987,
-        "sha256": "66f74c827d7feb1cd11022b1c597134ace095550231a698f8a2ca1f461dd1c34",
+        "sha256": "7783ce2180b1b00c5ae54277988cad10876f84bd3554a445f4d67ee971d67403",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c39a521-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c39a521/DroidDeck-main-c39a521-ludashi.apk",
+        "name": "DroidDeck-main-9eb509b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9eb509b/DroidDeck-main-9eb509b-ludashi.apk",
         "size": 61751987,
-        "sha256": "8ed02ded89b1dd68faf4fec8c1ac11da1e314339101084bfd8be146aa52c0e70",
+        "sha256": "76fb28ab7178cb086e3048c5ddd0cf8a4a98b03db919d9de7f9daffb555bd7ab",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9eb509b9e11b6d061aff4e4c1aa762b45ae08680",
+      "title": "test: cover GPU family and support classification",
+      "summary": "Adds unit tests for the GPU family and support classification (GpuInfo), so changes to detection for new devices have something to run against. No behaviour change: the only source edit is threeDigits becoming internal so it can be called from the test.",
+      "publishedAt": 1792070943000
+    },
     {
       "commit": "c39a521a28b3118f1b0428a6042a16804dce6daa",
       "title": "feat: Steam home wall fills from the signed-in library instead of store picks",
@@ -155,12 +161,6 @@
       "title": "fix: the front end keeps its page when the Fold is folded or unfolded",
       "summary": "Folding or unfolding a foldable no longer restarts the main screen, file manager, file picker and store login, so they keep their state. MainActivity and three more activities now declare orientation|screenSize|screenLayout|smallestScreenSize|density in configChanges, like SessionActivity already does. uiMode is left out on purpose.",
       "publishedAt": 1792035586000
-    },
-    {
-      "commit": "39c8a0fe8c85e048a8f88205344f65b5264000c0",
-      "title": "fix: Steam can restart more than twice in a session",
-      "summary": "The third time the Steam client restarts in one session, the session ends and DroidDeck is back at the launcher with no error. It does not matter how far apart the restarts are or what asked for them, for example Steam's restart after a language change. This is what is left of #250 on main: a single language change now restarts fine (checked on a build of 3820445).",
-      "publishedAt": 1792031483000
     }
   ],
   "tests": [
