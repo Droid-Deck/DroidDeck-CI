@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792071463259,
+  "generatedAt": 1792071991335,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e1ca869",
-    "title": "Fix local builds on Linux failing after the first Comet build",
-    "summary": "On Linux, once tools/buildlocal.sh had built Comet, later builds failed in two places:",
-    "commit": "e1ca869d8e4f22d3074f2e3be0e64d6d576e24e5",
+    "tag": "main-892f400",
+    "title": "feat: three-finger tap toggles Steam's on-screen keyboard in game mode",
+    "summary": "\u2022 In Steam game mode, a quick three-finger tap sends Steam + X on the virtual pad, which opens Steam's on-screen keyboard; tapping again closes it. Steam only shows the keyboard over a running game; on its own home/library screens it ignores Steam + X unless a text field is focused.\n\u2022 New ThreeFingerTap detector: all three fingers must land within 250 ms, stay within slop, and lift within 350 ms of the third finger. Holds, swipes and four-finger touches don't fire.\n\u2022 Once the third finger lands, touches already sent to the game are cancelled and the rest of the gesture is withheld, so one- and two-finger input is unchanged. Works in both direct-touch and touchpad routing.\n\u2022 PadBridge's Steam + A QAM chord now takes any companion button; triggerSteamKeyboard() reuses it with X.",
+    "commit": "892f400145537e20b8a0012f1da20d5f561e5697",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792071287000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e1ca869",
+    "publishedAt": 1792071947000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-892f400",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e1ca869.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e1ca869/DroidDeck-main-e1ca869.apk",
-        "size": 61751987,
-        "sha256": "ba79dc092667d993f7eaa5e1a7e78d3fc29cfe0ea59b66cfb3a4ba7b5d72930a",
+        "name": "DroidDeck-main-892f400.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-892f400/DroidDeck-main-892f400.apk",
+        "size": 61784755,
+        "sha256": "4b48b84fa3774b8fd0ec4b3fdae7733e8139e6679f0652f85022c926dd4e94d3",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e1ca869-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e1ca869/DroidDeck-main-e1ca869-pubg.apk",
-        "size": 61751987,
-        "sha256": "2d7f2545af18373df6914d021e105f49e972db3df041599e95b23ae5fc9c328f",
+        "name": "DroidDeck-main-892f400-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-892f400/DroidDeck-main-892f400-pubg.apk",
+        "size": 61784755,
+        "sha256": "9dd9fd41f125fdbb5678056cd2889ff1d38ba1fea481d36ecf5f27ee562f4df5",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e1ca869-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e1ca869/DroidDeck-main-e1ca869-antutu.apk",
-        "size": 61751987,
-        "sha256": "437929d73fa0411162caae87e2a8cf4cfdfae3c6801fe1f6d35ccf1a839ebd06",
+        "name": "DroidDeck-main-892f400-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-892f400/DroidDeck-main-892f400-antutu.apk",
+        "size": 61784755,
+        "sha256": "670746ada44dc23c798d99c8a6cf454a42b341590c8bf4a231c2789ae2f310ca",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e1ca869-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e1ca869/DroidDeck-main-e1ca869-ludashi.apk",
-        "size": 61751987,
-        "sha256": "db75d97ffdffe54873c69aebd310d7b504ac7a74454704d194f16dd7c76163e3",
+        "name": "DroidDeck-main-892f400-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-892f400/DroidDeck-main-892f400-ludashi.apk",
+        "size": 61784755,
+        "sha256": "96bbc48517968c251d6853da65c64174406b1cbb377760a4292df10988be18a8",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "892f400145537e20b8a0012f1da20d5f561e5697",
+      "title": "feat: three-finger tap toggles Steam's on-screen keyboard in game mode",
+      "summary": "\u2022 In Steam game mode, a quick three-finger tap sends Steam + X on the virtual pad, which opens Steam's on-screen keyboard; tapping again closes it. Steam only shows the keyboard over a running game; on its own home/library screens it ignores Steam + X unless a text field is focused.\n\u2022 New ThreeFingerTap detector: all three fingers must land within 250 ms, stay within slop, and lift within 350 ms o",
+      "publishedAt": 1792071947000
+    },
     {
       "commit": "e1ca869d8e4f22d3074f2e3be0e64d6d576e24e5",
       "title": "Fix local builds on Linux failing after the first Comet build",
@@ -155,12 +161,6 @@
       "title": "l10n: translate the strings added since #284 into zh-CN, zh-HK, zh-TW and ja",
       "summary": "Since #284, about 184 new strings (the Epic/GOG/Amazon stores pages, cloud saves, Windows components and more) had no Chinese or Japanese text and showed up in English. This translates all of them into zh-CN, zh-HK, zh-TW and ja, keeping each file's existing vocabulary.",
       "publishedAt": 1792036309000
-    },
-    {
-      "commit": "21e5fdfc63f0a62b8fbd056a5ee8a6e815c314b0",
-      "title": "Release pointer buttons without replaying stale motion",
-      "summary": "Native touch taps in Backpack Battles can snap the cursor to the top-left corner because mouse-button cleanup also emits motion at stale mouse coordinates.",
-      "publishedAt": 1792035907000
     }
   ],
   "tests": [
