@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792027978827,
+  "generatedAt": 1792028500969,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f635e92",
-    "title": "fix: Steam touch controls load the layout Steam picked for DroidDeck's touch controller, including workshop layouts",
-    "summary": "Picking an official or community touch layout in Steam (for example ConcernedApe's for Stardew Valley) showed in Big Picture, but once the game had focus DroidDeck's Steam touch controls went back to the default layout or an older autosave. This was reported in Discord (\"Steam touch controls going to default layout in game\"), with Steam Link showing the right layout for the same game.",
-    "commit": "f635e924987ff7d786a734607577e2daddcc8808",
+    "tag": "main-91dabdc",
+    "title": "chore: keep only the 3 newest session log folders",
+    "summary": "Session log folders pile up and use a lot of storage. This lowers SessionPaths.KEEPSESSIONS from 30 to 3, so the cleanup keeps only the 3 newest finished session folders. The Settings hint (\"Keeps the newest %d\") reads the same constant, so it updates in every language. On existing installs, the older folders are deleted the next time the cleanup runs.",
+    "commit": "91dabdc1e7814bceda136d369ffe283b599184ff",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792012799000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f635e92",
+    "publishedAt": 1792028451000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-91dabdc",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f635e92.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f635e92/DroidDeck-main-f635e92.apk",
+        "name": "DroidDeck-main-91dabdc.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-91dabdc/DroidDeck-main-91dabdc.apk",
         "size": 61706931,
-        "sha256": "4441ef9849283b22675b195678334b4cf5ddc4093bf9919f41781b6867ad482a",
+        "sha256": "360db603876dd7b28f77cb198234c27042650e4369cc7fac7bfbffff8e7a3f32",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f635e92-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f635e92/DroidDeck-main-f635e92-pubg.apk",
+        "name": "DroidDeck-main-91dabdc-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-91dabdc/DroidDeck-main-91dabdc-pubg.apk",
         "size": 61706931,
-        "sha256": "617dcac1c41f17797edef0a8336e92359b351c347ee14cecdd3cc67056a55fe2",
+        "sha256": "c2fec500926b586de81941808336970ab499ff900b52ef7cd3179f2c22ab649a",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f635e92-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f635e92/DroidDeck-main-f635e92-antutu.apk",
+        "name": "DroidDeck-main-91dabdc-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-91dabdc/DroidDeck-main-91dabdc-antutu.apk",
         "size": 61706931,
-        "sha256": "2a9bb98fb182e44c3a5672a681b446d70ae58b80c01cee7114c3ad68954af2a4",
+        "sha256": "91fe6eedbe754a531e371dca3c169b7f2f5843071ecd02ad5f8649a3ea9c1fb3",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f635e92-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f635e92/DroidDeck-main-f635e92-ludashi.apk",
+        "name": "DroidDeck-main-91dabdc-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-91dabdc/DroidDeck-main-91dabdc-ludashi.apk",
         "size": 61706931,
-        "sha256": "7eb61723be404e71302d50c43bb2a8c6a7ba64542f77550b0f71aa39df77a470",
+        "sha256": "89f4248c674187e94a3f3dd7e5a19f745fb99387d55c4a2b86feb6083c1685c9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "91dabdc1e7814bceda136d369ffe283b599184ff",
+      "title": "chore: keep only the 3 newest session log folders",
+      "summary": "Session log folders pile up and use a lot of storage. This lowers SessionPaths.KEEPSESSIONS from 30 to 3, so the cleanup keeps only the 3 newest finished session folders. The Settings hint (\"Keeps the newest %d\") reads the same constant, so it updates in every language. On existing installs, the older folders are deleted the next time the cleanup runs.",
+      "publishedAt": 1792028451000
+    },
     {
       "commit": "f635e924987ff7d786a734607577e2daddcc8808",
       "title": "fix: Steam touch controls load the layout Steam picked for DroidDeck's touch controller, including workshop layouts",
@@ -155,12 +161,6 @@
       "title": "fix: Turkish translation for zRAM, reset-settings and store storage messages",
       "summary": "The Turkish translation now covers the zRAM compression toggle and its hints, the \"Reset all settings\" row, dialog and messages, and the free-space messages shown when a store install does not fit. 14 strings were missing from values-tr; keys marked translatable=\"false\" (controller button names, \"Metacritic\", \"HowLongToBeat\") are left alone on purpose, so no translatable key is missing now.",
       "publishedAt": 1792000865000
-    },
-    {
-      "commit": "bf99dbbe7318662305e4cb98c13340a221662868",
-      "title": "feat: store sign-in walls and the Steam home wall fill with curated featured art",
-      "summary": "The scrolling cover wall behind the Stores sign-in card was only ever filled for GOG, and the Steam tab's wall was blank with no games and full of repeats with a small library. Every wall now fills from art each store curates, with no login needed.",
-      "publishedAt": 1792000677000
     }
   ],
   "tests": [
