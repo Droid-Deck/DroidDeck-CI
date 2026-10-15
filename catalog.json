@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792031532250,
+  "generatedAt": 1792035644040,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-39c8a0f",
-    "title": "fix: Steam can restart more than twice in a session",
-    "summary": "The third time the Steam client restarts in one session, the session ends and DroidDeck is back at the launcher with no error. It does not matter how far apart the restarts are or what asked for them, for example Steam's restart after a language change. This is what is left of #250 on main: a single language change now restarts fine (checked on a build of 3820445).",
-    "commit": "39c8a0fe8c85e048a8f88205344f65b5264000c0",
+    "tag": "main-f819988",
+    "title": "fix: the front end keeps its page when the Fold is folded or unfolded",
+    "summary": "Folding or unfolding a foldable no longer restarts the main screen, file manager, file picker and store login, so they keep their state. MainActivity and three more activities now declare orientation|screenSize|screenLayout|smallestScreenSize|density in configChanges, like SessionActivity already does. uiMode is left out on purpose.",
+    "commit": "f819988b0d9f6f891d594202ff41dab5cd0d3a74",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792031483000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-39c8a0f",
+    "publishedAt": 1792035586000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f819988",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-39c8a0f.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-39c8a0f/DroidDeck-main-39c8a0f.apk",
+        "name": "DroidDeck-main-f819988.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f819988/DroidDeck-main-f819988.apk",
         "size": 61715123,
-        "sha256": "b4389a1bb1412eb6464ee7f09b11830bb7652b6a44de7f3060c4f80ebc096673",
+        "sha256": "3e502aca992d02897bee603587fc25a01ee08c3bcc990526e7098bf8c6441964",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-39c8a0f-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-39c8a0f/DroidDeck-main-39c8a0f-pubg.apk",
+        "name": "DroidDeck-main-f819988-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f819988/DroidDeck-main-f819988-pubg.apk",
         "size": 61715123,
-        "sha256": "a121efbba17afb9acc5501ba4c7a535fbfde39747d71d2455b91d1cb014903c8",
+        "sha256": "d01474aea07c16e9deef001ff31996a4256f013fe10972230f4ca1632d344740",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-39c8a0f-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-39c8a0f/DroidDeck-main-39c8a0f-antutu.apk",
+        "name": "DroidDeck-main-f819988-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f819988/DroidDeck-main-f819988-antutu.apk",
         "size": 61715123,
-        "sha256": "418a27aadbe9f6af1d3a7fe72c39ca66fc5ec53516dd453c24fabfc68fb7aafd",
+        "sha256": "874149569557ed4592fb6085a6576d6a15a3df5317556bf7c8042fa8d800bcdb",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-39c8a0f-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-39c8a0f/DroidDeck-main-39c8a0f-ludashi.apk",
+        "name": "DroidDeck-main-f819988-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f819988/DroidDeck-main-f819988-ludashi.apk",
         "size": 61715123,
-        "sha256": "b0593444c20b597d6b03e0512165d692522f2707e4df38c0529f3f15f0c4538b",
+        "sha256": "76ab3bde164c5c6744e63b1eda6d072a762039e9e87b53a819c85986b047ed44",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f819988b0d9f6f891d594202ff41dab5cd0d3a74",
+      "title": "fix: the front end keeps its page when the Fold is folded or unfolded",
+      "summary": "Folding or unfolding a foldable no longer restarts the main screen, file manager, file picker and store login, so they keep their state. MainActivity and three more activities now declare orientation|screenSize|screenLayout|smallestScreenSize|density in configChanges, like SessionActivity already does. uiMode is left out on purpose.",
+      "publishedAt": 1792035586000
+    },
     {
       "commit": "39c8a0fe8c85e048a8f88205344f65b5264000c0",
       "title": "fix: Steam can restart more than twice in a session",
@@ -155,12 +161,6 @@
       "title": "fix: Steam touch controls load the layout Steam picked for DroidDeck's touch controller, including workshop layouts",
       "summary": "Picking an official or community touch layout in Steam (for example ConcernedApe's for Stardew Valley) showed in Big Picture, but once the game had focus DroidDeck's Steam touch controls went back to the default layout or an older autosave. This was reported in Discord (\"Steam touch controls going to default layout in game\"), with Steam Link showing the right layout for the same game.",
       "publishedAt": 1792012799000
-    },
-    {
-      "commit": "fa9a9446bba026edd1a4058aa7f1e82194addeaf",
-      "title": "Build and test on Windows: LF session scripts, '/' in relative paths",
-      "summary": "Three things that break a local build or the unit tests on Windows (found while building DroidDeck locally on Windows for #509):",
-      "publishedAt": 1792001415000
     }
   ],
   "tests": [
