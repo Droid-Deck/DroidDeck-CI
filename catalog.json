@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792070504124,
+  "generatedAt": 1792070888168,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-58ab106",
-    "title": "fix: SteamGridDB lookups no longer stick as \"no match\" after a failure; add a search to the art chooser",
-    "summary": "A SteamGridDB lookup that failed for any reason (key refused or missing, rate limit, offline, server error) was saved as \"none\" for that game and not retried for a week, so the art chooser showed no SteamGridDB images even after a working key was added.",
-    "commit": "58ab106da8c66ef1ca567724b181a53ff15e6bbf",
+    "tag": "main-c39a521",
+    "title": "feat: Steam home wall fills from the signed-in library instead of store picks",
+    "summary": "Since #835, a Steam library with 4+ installed games is topped up to 40 covers from Steam's public top sellers, new releases and specials. With a small install list most of the wall is storefront picks, and users have reported covers they'd rather not have on their home screen. They asked for their own library, installed or not.",
+    "commit": "c39a521a28b3118f1b0428a6042a16804dce6daa",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792068390000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-58ab106",
+    "publishedAt": 1792070829000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c39a521",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-58ab106.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58ab106/DroidDeck-main-58ab106.apk",
-        "size": 61747891,
-        "sha256": "4fadf6e047af079e481bc6a86e8dfe2b8f69ea80d0c03afd5da3a975933a9a4b",
+        "name": "DroidDeck-main-c39a521.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c39a521/DroidDeck-main-c39a521.apk",
+        "size": 61751987,
+        "sha256": "099ef826ad849c83a910bc24f2c3ac5d7e9a3d2f7c2decab211b2504f518dfd1",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-58ab106-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58ab106/DroidDeck-main-58ab106-pubg.apk",
-        "size": 61747891,
-        "sha256": "1f826ddfb0cc19fd242018ca3024e497addc84491ac658c1ea6716000325a185",
+        "name": "DroidDeck-main-c39a521-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c39a521/DroidDeck-main-c39a521-pubg.apk",
+        "size": 61751987,
+        "sha256": "0658b8267de414f7c8f754999be4a0b131939f4615128e5026a4190ab7d24d89",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-58ab106-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58ab106/DroidDeck-main-58ab106-antutu.apk",
-        "size": 61747891,
-        "sha256": "92908f92e86bded5094a9eacbe9f43df2c2f9a3f5d8097d6f81c7778074d916b",
+        "name": "DroidDeck-main-c39a521-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c39a521/DroidDeck-main-c39a521-antutu.apk",
+        "size": 61751987,
+        "sha256": "66f74c827d7feb1cd11022b1c597134ace095550231a698f8a2ca1f461dd1c34",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-58ab106-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58ab106/DroidDeck-main-58ab106-ludashi.apk",
-        "size": 61747891,
-        "sha256": "abbdc64c212872515f5ce5fb215e450671f2f645c769819502d3d46dad05f651",
+        "name": "DroidDeck-main-c39a521-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c39a521/DroidDeck-main-c39a521-ludashi.apk",
+        "size": 61751987,
+        "sha256": "8ed02ded89b1dd68faf4fec8c1ac11da1e314339101084bfd8be146aa52c0e70",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c39a521a28b3118f1b0428a6042a16804dce6daa",
+      "title": "feat: Steam home wall fills from the signed-in library instead of store picks",
+      "summary": "Since #835, a Steam library with 4+ installed games is topped up to 40 covers from Steam's public top sellers, new releases and specials. With a small install list most of the wall is storefront picks, and users have reported covers they'd rather not have on their home screen. They asked for their own library, installed or not.",
+      "publishedAt": 1792070829000
+    },
     {
       "commit": "58ab106da8c66ef1ca567724b181a53ff15e6bbf",
       "title": "fix: SteamGridDB lookups no longer stick as \"no match\" after a failure; add a search to the art chooser",
@@ -155,12 +161,6 @@
       "title": "fix: Steam can restart more than twice in a session",
       "summary": "The third time the Steam client restarts in one session, the session ends and DroidDeck is back at the launcher with no error. It does not matter how far apart the restarts are or what asked for them, for example Steam's restart after a language change. This is what is left of #250 on main: a single language change now restarts fine (checked on a build of 3820445).",
       "publishedAt": 1792031483000
-    },
-    {
-      "commit": "44331558cc96693870eab5885596aa4d1def89c3",
-      "title": "feat: droiddeckctl reports on-screen pacing (recover #843)",
-      "summary": "Adds droiddeckctl pacing [--seconds N]. It reports what actually reached the panel during a capture, which a game's own fps counter can't show. The numbers in #634 (fixed by #717) came from this same source. There, a game whose counter read a steady 60 was putting about 57 frames a second on screen, and a quarter of the intervals were off-cadence.",
-      "publishedAt": 1792031168000
     }
   ],
   "tests": [
