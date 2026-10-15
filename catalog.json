@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792031207860,
+  "generatedAt": 1792031532250,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4433155",
-    "title": "feat: droiddeckctl reports on-screen pacing (recover #843)",
-    "summary": "Adds droiddeckctl pacing [--seconds N]. It reports what actually reached the panel during a capture, which a game's own fps counter can't show. The numbers in #634 (fixed by #717) came from this same source. There, a game whose counter read a steady 60 was putting about 57 frames a second on screen, and a quarter of the intervals were off-cadence.",
-    "commit": "44331558cc96693870eab5885596aa4d1def89c3",
+    "tag": "main-39c8a0f",
+    "title": "fix: Steam can restart more than twice in a session",
+    "summary": "The third time the Steam client restarts in one session, the session ends and DroidDeck is back at the launcher with no error. It does not matter how far apart the restarts are or what asked for them, for example Steam's restart after a language change. This is what is left of #250 on main: a single language change now restarts fine (checked on a build of 3820445).",
+    "commit": "39c8a0fe8c85e048a8f88205344f65b5264000c0",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792031168000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4433155",
+    "publishedAt": 1792031483000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-39c8a0f",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4433155.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4433155/DroidDeck-main-4433155.apk",
+        "name": "DroidDeck-main-39c8a0f.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-39c8a0f/DroidDeck-main-39c8a0f.apk",
         "size": 61715123,
-        "sha256": "fd2f5e865ee410184a642b714f10c4bda1e58bcc1a388556cb3343e5bbfc666d",
+        "sha256": "b4389a1bb1412eb6464ee7f09b11830bb7652b6a44de7f3060c4f80ebc096673",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4433155-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4433155/DroidDeck-main-4433155-pubg.apk",
+        "name": "DroidDeck-main-39c8a0f-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-39c8a0f/DroidDeck-main-39c8a0f-pubg.apk",
         "size": 61715123,
-        "sha256": "2625cbc142d7d1d712f22cff3dc3ee9841a422c7701c61393104c760664a18ce",
+        "sha256": "a121efbba17afb9acc5501ba4c7a535fbfde39747d71d2455b91d1cb014903c8",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4433155-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4433155/DroidDeck-main-4433155-antutu.apk",
+        "name": "DroidDeck-main-39c8a0f-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-39c8a0f/DroidDeck-main-39c8a0f-antutu.apk",
         "size": 61715123,
-        "sha256": "37ae1c8034c32872d3642531a7e8142ba43b6828320c1788416397a0d7166047",
+        "sha256": "418a27aadbe9f6af1d3a7fe72c39ca66fc5ec53516dd453c24fabfc68fb7aafd",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4433155-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4433155/DroidDeck-main-4433155-ludashi.apk",
+        "name": "DroidDeck-main-39c8a0f-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-39c8a0f/DroidDeck-main-39c8a0f-ludashi.apk",
         "size": 61715123,
-        "sha256": "2d735f42521b4e00ba91857d017e3540862876d1b0e1a81ecc5a884a2a185ee1",
+        "sha256": "b0593444c20b597d6b03e0512165d692522f2707e4df38c0529f3f15f0c4538b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "39c8a0fe8c85e048a8f88205344f65b5264000c0",
+      "title": "fix: Steam can restart more than twice in a session",
+      "summary": "The third time the Steam client restarts in one session, the session ends and DroidDeck is back at the launcher with no error. It does not matter how far apart the restarts are or what asked for them, for example Steam's restart after a language change. This is what is left of #250 on main: a single language change now restarts fine (checked on a build of 3820445).",
+      "publishedAt": 1792031483000
+    },
     {
       "commit": "44331558cc96693870eab5885596aa4d1def89c3",
       "title": "feat: droiddeckctl reports on-screen pacing (recover #843)",
@@ -155,12 +161,6 @@
       "title": "Build and test on Windows: LF session scripts, '/' in relative paths",
       "summary": "Three things that break a local build or the unit tests on Windows (found while building DroidDeck locally on Windows for #509):",
       "publishedAt": 1792001415000
-    },
-    {
-      "commit": "eda1e9b9c648bf26c098b0401fa9a5e0981cd1eb",
-      "title": "Fix wired PowerA and PDP right-stick and trigger mapping",
-      "summary": "Wired PowerA 20d6:2063 and PDP 0e6f:02f0 controllers expose their right stick as Android RX/RY and independent triggers as Z/RZ (-1 released, +1 pressed). PadBridge currently reads Z/RZ as the right stick and looks for triggers on LTRIGGER/RTRIGGER or BRAKE/GAS. The result is unwanted stick input from released triggers, missing right-stick movement, and missing trigger input.",
-      "publishedAt": 1792001285000
     }
   ],
   "tests": [
