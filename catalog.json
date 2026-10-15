@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792065961156,
+  "generatedAt": 1792067888569,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-876",
-      "title": "fix: SteamGridDB lookups no longer stick as \"no match\" after a failure; add a search to the art chooser",
-      "summary": "A SteamGridDB lookup that failed for any reason (key refused or missing, rate limit, offline, server error) was saved as \"none\" for that game and not retried for a week, so the art chooser showed no SteamGridDB images even after a working key was added.",
-      "commit": "79eefe537be9ebb0eceb55720fde8e02bd3c0ee9",
-      "pr": 876,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792065197000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-876",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.876-79eefe5.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-876/DroidDeck-PR.876-79eefe5.apk",
-          "size": 61743795,
-          "sha256": "df0c784d809ee998eae088ac4d6d2f9158f2d2a26c159bc8cca74c4d3e82a8bc",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.876-79eefe5-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-876/DroidDeck-PR.876-79eefe5-pubg.apk",
-          "size": 61743795,
-          "sha256": "5bb939a87a4cfbe15750748ab2323b8364009dcef68f2498731fead48439f4f4",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.876-79eefe5-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-876/DroidDeck-PR.876-79eefe5-antutu.apk",
-          "size": 61743795,
-          "sha256": "d1747568541e0933a292351888dd0d62785a68a159bdd22f75b0c2673a5a1433",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.876-79eefe5-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-876/DroidDeck-PR.876-79eefe5-ludashi.apk",
-          "size": 61743795,
-          "sha256": "dab061f1aa845ac2edcf70fff1877f4202a93a1418bd13c4858a06e7e29e286c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-858",
       "title": "Feat/gpu drivers redesign",
