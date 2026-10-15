@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792030298901,
+  "generatedAt": 1792031099334,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-38d560c",
-    "title": "fix: an interrupted Linux runtime download resumes instead of starting again",
-    "summary": "Fixes #811. An interrupted Linux runtime download now resumes from the bytes it kept instead of starting again. The installer used to delete the archive in its finally block after any outcome, so a retry always began at zero even though the downloader supports Range requests.",
-    "commit": "38d560cef1e2a042641a4559bd799617fac83e17",
+    "tag": "main-d2bab89",
+    "title": "fix: droiddeckctl reaches variant-package builds (recover #842)",
+    "summary": "droiddeckctl couldn't talk to the builds shipped under another package (tools/release/variants.txt: pubg, antutu, ludashi). The provider authority and the start Activity's component were fixed to com.droiddeck.launcher. Every command failed with an unknown provider, or failed to start the Activity, on a phone that only has a variant installed. That's common on devices whose game mode keys on",
+    "commit": "d2bab8970d91fd7731958626e2b7f1280d33dd2d",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792030236000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-38d560c",
+    "publishedAt": 1792031042000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d2bab89",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-38d560c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38d560c/DroidDeck-main-38d560c.apk",
-        "size": 61711027,
-        "sha256": "56a46acfc7ae49fbc5de79edaf98d59b9f6a3aec607d60be2d0e7246cca3886f",
+        "name": "DroidDeck-main-d2bab89.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d2bab89/DroidDeck-main-d2bab89.apk",
+        "size": 61715123,
+        "sha256": "980b78430f479f641f932153c20af792bda9f6d063f33087e46c2278d2d65f04",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-38d560c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38d560c/DroidDeck-main-38d560c-pubg.apk",
-        "size": 61711027,
-        "sha256": "2f9612c98babb252c3092f5479e220e81a00fe858a09afb03b661517f99610b0",
+        "name": "DroidDeck-main-d2bab89-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d2bab89/DroidDeck-main-d2bab89-pubg.apk",
+        "size": 61715123,
+        "sha256": "a7d47c1c6254e59aed0d048a405fa2050a2f250de247989335a22c871daf2f02",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-38d560c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38d560c/DroidDeck-main-38d560c-antutu.apk",
-        "size": 61711027,
-        "sha256": "2d6f5e3acb9555e00ca73a2a8fc86f9f049c75c86597bd1ad54d886255453263",
+        "name": "DroidDeck-main-d2bab89-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d2bab89/DroidDeck-main-d2bab89-antutu.apk",
+        "size": 61715123,
+        "sha256": "5a39c5b2b31887755be57ad6e8c64f63666903fc55d37feaaf7feb28a817a76f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-38d560c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-38d560c/DroidDeck-main-38d560c-ludashi.apk",
-        "size": 61711027,
-        "sha256": "098aa7136b38ca69ad7e595e577e629acc0a6d9aba5e7191f0c7991308473d42",
+        "name": "DroidDeck-main-d2bab89-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d2bab89/DroidDeck-main-d2bab89-ludashi.apk",
+        "size": 61715123,
+        "sha256": "d9b62363e97acac114af911bc8983ed0467a37c1e937929fb513c63433ff5fc9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d2bab8970d91fd7731958626e2b7f1280d33dd2d",
+      "title": "fix: droiddeckctl reaches variant-package builds (recover #842)",
+      "summary": "droiddeckctl couldn't talk to the builds shipped under another package (tools/release/variants.txt: pubg, antutu, ludashi). The provider authority and the start Activity's component were fixed to com.droiddeck.launcher. Every command failed with an unknown provider, or failed to start the Activity, on a phone that only has a variant installed. That's common on devices whose game mode keys on",
+      "publishedAt": 1792031042000
+    },
     {
       "commit": "38d560cef1e2a042641a4559bd799617fac83e17",
       "title": "fix: an interrupted Linux runtime download resumes instead of starting again",
@@ -155,12 +161,6 @@
       "title": "fix: seed redist markers again when the registry lost them",
       "summary": "Batman: Arkham City GOTY (200260) never got past \"Running install script\". Steam ran the game's AMD Dual-Core Optimizer installer, and its MSI never finishes under Wine. droiddeck-seed-redists should have marked that step as already run, but it didn't.",
       "publishedAt": 1792001223000
-    },
-    {
-      "commit": "3e3c4d69e4e434f7f6a49a85d3c555659cd2c4ee",
-      "title": "feat: hide unfolded controls when a controller is connected",
-      "summary": "Hides the unfolded controls panel while a controller (including a BLE Steam Controller) is connected, and brings it back on disconnect instead of the regular on-screen controls.",
-      "publishedAt": 1792001169000
     }
   ],
   "tests": [
