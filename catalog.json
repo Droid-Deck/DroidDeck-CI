@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792072288061,
+  "generatedAt": 1792072569468,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-892f400",
-    "title": "feat: three-finger tap toggles Steam's on-screen keyboard in game mode",
-    "summary": "\u2022 In Steam game mode, a quick three-finger tap sends Steam + X on the virtual pad, which opens Steam's on-screen keyboard; tapping again closes it. Steam only shows the keyboard over a running game; on its own home/library screens it ignores Steam + X unless a text field is focused.\n\u2022 New ThreeFingerTap detector: all three fingers must land within 250 ms, stay within slop, and lift within 350 ms of the third finger. Holds, swipes and four-finger touches don't fire.\n\u2022 Once the third finger lands, touches already sent to the game are cancelled and the rest of the gesture is withheld, so one- and two-finger input is unchanged. Works in both direct-touch and touchpad routing.\n\u2022 PadBridge's Steam + A QAM chord now takes any companion button; triggerSteamKeyboard() reuses it with X.",
-    "commit": "892f400145537e20b8a0012f1da20d5f561e5697",
+    "tag": "main-acf66b2",
+    "title": "fix: keep Quest-patched Turnip as the auto default",
+    "summary": "Fresh Quest installs already select the patched display driver once. However, selecting GPU driver Auto subsequently follows generic Adreno-family release recommendations, and the Android Auto by GPU fallback selects the unpatched generic bundle.",
+    "commit": "acf66b2b0ee6213fdd4638778cf5c4d605470cf3",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792071947000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-892f400",
+    "publishedAt": 1792072512000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-acf66b2",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-892f400.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-892f400/DroidDeck-main-892f400.apk",
-        "size": 61784755,
-        "sha256": "4b48b84fa3774b8fd0ec4b3fdae7733e8139e6679f0652f85022c926dd4e94d3",
+        "name": "DroidDeck-main-acf66b2.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-acf66b2/DroidDeck-main-acf66b2.apk",
+        "size": 61788851,
+        "sha256": "26b990fa3e1a3f40beedad9740f3010b57ecdde6825bab5763dd7e445c25bf11",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-892f400-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-892f400/DroidDeck-main-892f400-pubg.apk",
-        "size": 61784755,
-        "sha256": "9dd9fd41f125fdbb5678056cd2889ff1d38ba1fea481d36ecf5f27ee562f4df5",
+        "name": "DroidDeck-main-acf66b2-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-acf66b2/DroidDeck-main-acf66b2-pubg.apk",
+        "size": 61788851,
+        "sha256": "16a86c88bea1825ba50e434c004ac382a1737ca61ea2e73cc515615d2cdf584b",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-892f400-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-892f400/DroidDeck-main-892f400-antutu.apk",
-        "size": 61784755,
-        "sha256": "670746ada44dc23c798d99c8a6cf454a42b341590c8bf4a231c2789ae2f310ca",
+        "name": "DroidDeck-main-acf66b2-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-acf66b2/DroidDeck-main-acf66b2-antutu.apk",
+        "size": 61788851,
+        "sha256": "90326466224e3d1a59514ce83dfe25057e07b9dd3488f2e09dbffd5f62370595",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-892f400-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-892f400/DroidDeck-main-892f400-ludashi.apk",
-        "size": 61784755,
-        "sha256": "96bbc48517968c251d6853da65c64174406b1cbb377760a4292df10988be18a8",
+        "name": "DroidDeck-main-acf66b2-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-acf66b2/DroidDeck-main-acf66b2-ludashi.apk",
+        "size": 61788851,
+        "sha256": "648b618a1882e952d7f43681d60ce7d89d73ce1ab98095eda145daab6a31f6ba",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "acf66b2b0ee6213fdd4638778cf5c4d605470cf3",
+      "title": "fix: keep Quest-patched Turnip as the auto default",
+      "summary": "Fresh Quest installs already select the patched display driver once. However, selecting GPU driver Auto subsequently follows generic Adreno-family release recommendations, and the Android Auto by GPU fallback selects the unpatched generic bundle.",
+      "publishedAt": 1792072512000
+    },
     {
       "commit": "892f400145537e20b8a0012f1da20d5f561e5697",
       "title": "feat: three-finger tap toggles Steam's on-screen keyboard in game mode",
@@ -155,12 +161,6 @@
       "title": "Add top, bottom, and centered picture positions for Steam sessions",
       "summary": "Fixed-aspect games leave unused space above and below the picture on unfolded phones, while on-screen controls can overlap the game. Add Picture position to Execute Steam \u2192 Settings \u2192 Display, with Top, Bottom, and Center (default).",
       "publishedAt": 1792062660000
-    },
-    {
-      "commit": "7fc61b4c3d6552a5aaad35d29054d77e3466d794",
-      "title": "l10n: translate the strings added since #284 into zh-CN, zh-HK, zh-TW and ja",
-      "summary": "Since #284, about 184 new strings (the Epic/GOG/Amazon stores pages, cloud saves, Windows components and more) had no Chinese or Japanese text and showed up in English. This translates all of them into zh-CN, zh-HK, zh-TW and ja, keeping each file's existing vocabulary.",
-      "publishedAt": 1792036309000
     }
   ],
   "tests": [
