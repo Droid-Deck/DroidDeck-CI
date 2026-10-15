@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792018759877,
+  "generatedAt": 1792024512549,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-853",
+      "title": "fix: keep Quest-patched Turnip as the auto default",
+      "summary": "Fresh Quest installs already select the patched display driver once. However, selecting GPU driver Auto subsequently follows generic Adreno-family release recommendations, and the Android Auto by GPU fallback selects the unpatched generic bundle.",
+      "commit": "67a1cb4ea5ea900baa9146317e5b6d46324a1045",
+      "pr": 853,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792024463000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-853",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.853-67a1cb4.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-853/DroidDeck-PR.853-67a1cb4.apk",
+          "size": 61706931,
+          "sha256": "0f0a7ee0a900d7170e23b49a307075de4d0c8d8be5ce5bb6476474bb5a797bb1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.853-67a1cb4-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-853/DroidDeck-PR.853-67a1cb4-pubg.apk",
+          "size": 61706931,
+          "sha256": "a6f923bf8df24107f55e3dfcf91bffdcca74dcc56ec04f38f9f5cdd97a7b55f9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.853-67a1cb4-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-853/DroidDeck-PR.853-67a1cb4-antutu.apk",
+          "size": 61706931,
+          "sha256": "bec3cf8bf14322f6f0c40275fc561f75b8101f677af65224ebfd0f5bc8760aff",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.853-67a1cb4-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-853/DroidDeck-PR.853-67a1cb4-ludashi.apk",
+          "size": 61706931,
+          "sha256": "34b2da83d23706a99c0748e2c9b91b4b8df4bb4ed7bad3b4a3554658bb948500",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-852",
       "title": "chore: keep only the 3 newest session log folders",
