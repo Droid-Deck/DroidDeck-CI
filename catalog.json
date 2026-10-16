@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792130944186,
+  "generatedAt": 1792154787844,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cd4a26b",
-    "title": "Sync session logs every 2 s so a hard reset keeps their last minutes",
-    "summary": "Fixes #510.",
-    "commit": "cd4a26b5f1ad72482e324ca0dbfe958614b7df6a",
+    "tag": "main-e24e07d",
+    "title": "Fix Quest CI headers when preloads are cached",
+    "summary": "Prepare the Quest presenter test Vulkan headers independently of the preload cache so warm-cache CI builds pass; verified all Quest IPC and presenter shutdown checks in the Linux build container.",
+    "commit": "e24e07d0ce3b297bad02bd3a31fcfc57a748c7d8",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792130771000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cd4a26b",
+    "publishedAt": 1792154752000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e24e07d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cd4a26b.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd4a26b/DroidDeck-main-cd4a26b.apk",
-        "size": 63071381,
-        "sha256": "0757550cab9d591dc8d915c23b9e18092e2367361eaed11cd5e76ec0dc329bf9",
+        "name": "DroidDeck-main-e24e07d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e24e07d/DroidDeck-main-e24e07d.apk",
+        "size": 63079573,
+        "sha256": "9b9b0623a6bef1904652ef4c4e672a31d03abd283c4ad309358e8cc6bffaaabe",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cd4a26b-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd4a26b/DroidDeck-main-cd4a26b-pubg.apk",
-        "size": 63071381,
-        "sha256": "65bfb390851292ffbd8b85ac57593526b5a713592a894e138a11df652586ac2a",
+        "name": "DroidDeck-main-e24e07d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e24e07d/DroidDeck-main-e24e07d-pubg.apk",
+        "size": 63079573,
+        "sha256": "2f3f0a1dc45c7bc7751070fdbdba79cc6488dcea98c6c886ae987aff1b0f70a2",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cd4a26b-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd4a26b/DroidDeck-main-cd4a26b-antutu.apk",
-        "size": 63071381,
-        "sha256": "6173f4e9dfdd158bb00aa2902cd6e939370ff0b0eddd372a8bbce075870b260d",
+        "name": "DroidDeck-main-e24e07d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e24e07d/DroidDeck-main-e24e07d-antutu.apk",
+        "size": 63079573,
+        "sha256": "2565fdd6259bde0a1cd8a53596c5e0c47199c6b5162d40895b82b13b62d644af",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cd4a26b-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd4a26b/DroidDeck-main-cd4a26b-ludashi.apk",
-        "size": 63071381,
-        "sha256": "cf5806c4b9c8bcb0c3f4c4a252cd41d340854eba948c75da05128c9dd081431f",
+        "name": "DroidDeck-main-e24e07d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e24e07d/DroidDeck-main-e24e07d-ludashi.apk",
+        "size": 63079573,
+        "sha256": "7993ec540b527185ad59aec63e0ebbacea7d1d321bbf51b508c4d0fd9817a3ce",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e24e07d0ce3b297bad02bd3a31fcfc57a748c7d8",
+      "title": "Fix Quest CI headers when preloads are cached",
+      "summary": "Prepare the Quest presenter test Vulkan headers independently of the preload cache so warm-cache CI builds pass; verified all Quest IPC and presenter shutdown checks in the Linux build container.",
+      "publishedAt": 1792154752000
+    },
     {
       "commit": "cd4a26b5f1ad72482e324ca0dbfe958614b7df6a",
       "title": "Sync session logs every 2 s so a hard reset keeps their last minutes",
@@ -155,12 +161,6 @@
       "title": "Fix deploylocal.sh and droiddeckctl not finding a phone connected over wireless debugging",
       "summary": "With my phone connected over wireless debugging, tools/deploylocal.sh stopped with \"adb-device: No authorized Android device found; set ADBSERIAL or ANDROIDSERIAL\", even though adb devices -l listed it as device. droiddeckctl failed the same way.",
       "publishedAt": 1792072591000
-    },
-    {
-      "commit": "acf66b2b0ee6213fdd4638778cf5c4d605470cf3",
-      "title": "fix: keep Quest-patched Turnip as the auto default",
-      "summary": "Fresh Quest installs already select the patched display driver once. However, selecting GPU driver Auto subsequently follows generic Adreno-family release recommendations, and the Android Auto by GPU fallback selects the unpatched generic bundle.",
-      "publishedAt": 1792072512000
     }
   ],
   "tests": [
