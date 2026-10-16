@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792159180312,
+  "generatedAt": 1792159212908,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9abb21e",
-    "title": "l10n: refresh outdated strings, one name for the child-process switch, pt-rPT gaps",
-    "summary": "Translations that had fallen behind the English text are updated in es, fr, ru and hu, the name of the Developer-options switch is written the same way on every page in all languages, and pt-rPT gets the 14 strings it was missing.",
-    "commit": "9abb21e389fc9bc43bbf0b7ec0275242a92f078e",
+    "tag": "main-dce7e7e",
+    "title": "fix: the store sign-in page keeps its place when the display density changes",
+    "summary": "Signing in to a store (GOG, Epic, Amazon) no longer reloads the sign-in page when the display density changes, for example when a foldable moves between two panels of different density.",
+    "commit": "dce7e7ece69cb4037830e2ef104728d0998ce1ec",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792159138000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9abb21e",
+    "publishedAt": 1792159189000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-dce7e7e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9abb21e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9abb21e/DroidDeck-main-9abb21e.apk",
+        "name": "DroidDeck-main-dce7e7e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dce7e7e/DroidDeck-main-dce7e7e.apk",
         "size": 63083669,
-        "sha256": "37ac44c0912a718b679dcb8a1292a8f7197edf4eb791ff52e6d6ead681c45af0",
+        "sha256": "bddf42475ae31e6e8aca01b2a09d741b2f5615b073c27b050ace807bb5eeed12",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9abb21e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9abb21e/DroidDeck-main-9abb21e-pubg.apk",
+        "name": "DroidDeck-main-dce7e7e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dce7e7e/DroidDeck-main-dce7e7e-pubg.apk",
         "size": 63083669,
-        "sha256": "c10622260beb8f94239e89d445116bda80d3a9274ce04c32fc9ab9c85c40d9af",
+        "sha256": "2e560fa8725e7cafd4019eca53cbc52c6fe2afcc613ee89699f0ad2cf40d9f38",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9abb21e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9abb21e/DroidDeck-main-9abb21e-antutu.apk",
+        "name": "DroidDeck-main-dce7e7e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dce7e7e/DroidDeck-main-dce7e7e-antutu.apk",
         "size": 63083669,
-        "sha256": "3e5cb193832f09a6fe12faaf35466fd40b9b69c501ef21b800692135c4dbc707",
+        "sha256": "751e5aa03c914b7c227f6a6ec96b5f43037642ab682dfe8a124f7966f0ee76b6",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9abb21e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9abb21e/DroidDeck-main-9abb21e-ludashi.apk",
+        "name": "DroidDeck-main-dce7e7e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dce7e7e/DroidDeck-main-dce7e7e-ludashi.apk",
         "size": 63083669,
-        "sha256": "d1600c8f7f11fe858b60a0a899507b89b295fc570b3cc2feb829e4b8257d066f",
+        "sha256": "d572f164278f0338506bfcd037c54f24d9777bdeab7c1832f1473ec914bda01b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,18 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "dce7e7ece69cb4037830e2ef104728d0998ce1ec",
+      "title": "fix: the store sign-in page keeps its place when the display density changes",
+      "summary": "Signing in to a store (GOG, Epic, Amazon) no longer reloads the sign-in page when the display density changes, for example when a foldable moves between two panels of different density.",
+      "publishedAt": 1792159189000
+    },
+    {
+      "commit": "e3fe63aee6c52e240f63f30cddf739701f29f772",
+      "title": "fix: the store sign-in WebView cannot read local files or content URIs",
+      "summary": "The store sign-in WebView (GOG, Epic, Amazon) can no longer read local files or content:// URIs.",
+      "publishedAt": 1792159161000
+    },
     {
       "commit": "9abb21e389fc9bc43bbf0b7ec0275242a92f078e",
       "title": "l10n: refresh outdated strings, one name for the child-process switch, pt-rPT gaps",
@@ -149,18 +161,6 @@
       "title": "perf: boost the game's busiest threads onto the prime cores on the Odin 3",
       "summary": "On the Odin 3 a game's main thread rarely reaches the prime cores (6-7). Qualcomm's WALT moves a thread up only once it fills a mid core (/proc/sys/walt/schedupmigrate = 95), and a game thread that waits on its workers or the GPU for part of each frame never gets there.",
       "publishedAt": 1792130712000
-    },
-    {
-      "commit": "2847910f22a2f47df38621fccf64c6352dcfa6ca",
-      "title": "feat: add immersive Quest SteamVR to the standard app",
-      "summary": "The regular DroidDeck app can enter immersive SteamVR on Quest with Cardboard disabled. The session menu has separate SteamVR and Cardboard tabs. A native OpenXR activity supplies headset tracking, Touch inputs and haptics, and presents SteamVR's stereo output.",
-      "publishedAt": 1792130304000
-    },
-    {
-      "commit": "21a78a1eb2e4ccb56c798b7bc2ec9149274ec7a0",
-      "title": "fix: pace adaptive frame generation on the game's frame rate, not the compositor loop's",
-      "summary": "From the \"Unstable frame limit\" Discord thread. On a Retroid Pocket G2 with the DroidDeck 30 FPS cap and LSFG Adaptive 60, the tester saw frame generation that was \"sometimes as good as the in-game limit, other times worse than ever\". The log for that clip shows the bad stretches clearly:",
-      "publishedAt": 1792104351000
     }
   ],
   "tests": [
