@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792154787844,
+  "generatedAt": 1792158236289,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-954",
+      "title": "fix: ignore uinput- system virtual input devices in controller detection",
+      "summary": "Ignore kernel uinput- / uinput virtual input devices in PadBridge so vendor virtual input nodes (such as uinput-xiaomi on Xiaomi HyperOS 3) do not claim Player 1 (slot 0) or keep anyControllerConnected() permanently true.",
+      "commit": "9faf613d8ad5274b0f019a10ddbea754025909eb",
+      "pr": 954,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792158187000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-954",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.954-9faf613.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-954/DroidDeck-PR.954-9faf613.apk",
+          "size": 63079573,
+          "sha256": "6e27c5db45ca64117b9a61261b3ca13fb311e5ee0f2fcb0a0344105f0c394061",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.954-9faf613-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-954/DroidDeck-PR.954-9faf613-pubg.apk",
+          "size": 63079573,
+          "sha256": "e1fd055c83b851384921ec149c522b3a6f408f0d34c6a94308440b3fdbb63e7b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.954-9faf613-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-954/DroidDeck-PR.954-9faf613-antutu.apk",
+          "size": 63079573,
+          "sha256": "c9c1cc48b7fe753e04a2206aaf0be1d02a960bbbac6f5faffb25006e792b4633",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.954-9faf613-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-954/DroidDeck-PR.954-9faf613-ludashi.apk",
+          "size": 63079573,
+          "sha256": "526db2bee106c306852ace5e2286c9712b0c42d37a9a25cad1018b47ae334a10",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-928",
       "title": "feat: Epic Games Launcher for Linux",
