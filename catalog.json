@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792168240011,
+  "generatedAt": 1792171117390,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-963",
+      "title": "fix: reduce flickering on thor and a7xx: match the A740 TP UBWC flag hint to the system driver so Android UI stops flickering",
+      "summary": "During a session with a game running, Android UI flickers on Adreno 740 devices (AYN Thor, Odin 2 Portal). The session drawer is half-drawn or missing for single frames, and SystemUI volume icons drop out. Screen recordings capture it.",
+      "commit": "d59323e2053c4b68bb852cdb835e5d118ed69565",
+      "pr": 963,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792171060000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-963",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.963-d59323e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-963/DroidDeck-PR.963-d59323e.apk",
+          "size": 63079573,
+          "sha256": "76fa5770342c1c13878a64102521496f95570708ca415782e214d28bf727ef5e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.963-d59323e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-963/DroidDeck-PR.963-d59323e-pubg.apk",
+          "size": 63079573,
+          "sha256": "d41eaca65c1529eaa26c1ae07292faee81e2752ff22dca3ba2b884bbbda78f39",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.963-d59323e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-963/DroidDeck-PR.963-d59323e-antutu.apk",
+          "size": 63079573,
+          "sha256": "9cc86d910dbe65e71522dca478b382642f6392b48202208637295f22cf80365a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.963-d59323e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-963/DroidDeck-PR.963-d59323e-ludashi.apk",
+          "size": 63079573,
+          "sha256": "cd0d52007e29487e9cb02dcf9b4ade7ae1e01eb03978b9bca6e70de0cd1e3c2e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-928",
       "title": "feat: Epic Games Launcher for Linux",
