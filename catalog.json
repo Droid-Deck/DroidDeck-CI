@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792172302100,
+  "generatedAt": 1792172715178,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-abd89f9",
-    "title": "fix: session achievements page no longer sticks on Reading",
-    "summary": "Opening Achievements from the in-session drawer showed \"Reading\u2026\" forever (repro: Brotato from Epic on the Thor), even though the cache read and the Epic fetch both succeeded.",
-    "commit": "abd89f99544593a36f02a1963ddc54d007d08799",
+    "tag": "main-66529d9",
+    "title": "fix: hold XInput rumble until the game changes it, instead of stopping after a second",
+    "summary": "Game rumble under Proton stopped after about one second, even when the game kept the motors on. A held trigger or an engine idle gave one short buzz and then silence. This is the same bug fixed in GameScrub (GameHub) and GameNative. DroidDeck reaches it by a different route, so the fix lands in different places.",
+    "commit": "66529d9026a937797585da659ce44c9c5e8de9f4",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792166489000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-abd89f9",
+    "publishedAt": 1792172669000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-66529d9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-abd89f9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abd89f9/DroidDeck-main-abd89f9.apk",
+        "name": "DroidDeck-main-66529d9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66529d9/DroidDeck-main-66529d9.apk",
         "size": 63079573,
-        "sha256": "fc016f915c23ae3f8d48347924f0decb85ac4020c4ec04b4e34bee96362b1820",
+        "sha256": "800a82f6fa5e1e426e083e54f3e9d79e087eded99ed22d47e83f7bfd24a20be0",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-abd89f9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abd89f9/DroidDeck-main-abd89f9-pubg.apk",
+        "name": "DroidDeck-main-66529d9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66529d9/DroidDeck-main-66529d9-pubg.apk",
         "size": 63079573,
-        "sha256": "5be4b9721c79a15dc1e435327105f300694f56773d361a1b3852c811be1688b8",
+        "sha256": "814216fe9ea3613a35a12b63095005fbe161e10bdd1961b0d41adcb229a3dacf",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-abd89f9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abd89f9/DroidDeck-main-abd89f9-antutu.apk",
+        "name": "DroidDeck-main-66529d9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66529d9/DroidDeck-main-66529d9-antutu.apk",
         "size": 63079573,
-        "sha256": "37538c6885a729bec20c2c7bb6c2439195f158b22da2345fb2e6b8416dc2ad53",
+        "sha256": "465609f5b3917f122a0c75642382e2e2bc4c436c126a646cbfd8aa8eed09a047",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-abd89f9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-abd89f9/DroidDeck-main-abd89f9-ludashi.apk",
+        "name": "DroidDeck-main-66529d9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66529d9/DroidDeck-main-66529d9-ludashi.apk",
         "size": 63079573,
-        "sha256": "061921ca695db8ab4f49fc4c0132a19293cd93d3c0b65295a0b9d15a6bff3160",
+        "sha256": "80f39c5afc2decf9335ff78ae2693ca5dc9b8d5d7a357f3d663d74403c15a4d5",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "66529d9026a937797585da659ce44c9c5e8de9f4",
+      "title": "fix: hold XInput rumble until the game changes it, instead of stopping after a second",
+      "summary": "Game rumble under Proton stopped after about one second, even when the game kept the motors on. A held trigger or an engine idle gave one short buzz and then silence. This is the same bug fixed in GameScrub (GameHub) and GameNative. DroidDeck reaches it by a different route, so the fix lands in different places.",
+      "publishedAt": 1792172669000
+    },
     {
       "commit": "abd89f99544593a36f02a1963ddc54d007d08799",
       "title": "fix: session achievements page no longer sticks on Reading",
@@ -155,12 +161,6 @@
       "title": "l10n: refresh outdated strings, one name for the child-process switch, pt-rPT gaps",
       "summary": "Translations that had fallen behind the English text are updated in es, fr, ru and hu, the name of the Developer-options switch is written the same way on every page in all languages, and pt-rPT gets the 14 strings it was missing.",
       "publishedAt": 1792159138000
-    },
-    {
-      "commit": "a548d381b8dd1d79407c12502b0ffd671a5990aa",
-      "title": "fix: store background jobs log a failure instead of ending the app",
-      "summary": "A failure in a store background job (refresh, sign-out, uninstall, EOS overlay cleanup) is now logged instead of ending the app.",
-      "publishedAt": 1792159075000
     }
   ],
   "tests": [
