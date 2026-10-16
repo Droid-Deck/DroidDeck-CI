@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792181787400,
+  "generatedAt": 1792181873228,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-973",
+      "title": "Launch an added game after a bounded wait for its Steam overview",
+      "summary": "Added non-Steam games now start about 90 s after Steam is up at the latest, instead of never, when Steam's shortcut overview does not show up in time (large libraries).",
+      "commit": "8c178f619adc465b4ae766770032ff16e5323811",
+      "pr": 973,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792181815000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-973",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.973-8c178f6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-973/DroidDeck-PR.973-8c178f6.apk",
+          "size": 64627953,
+          "sha256": "5e076b4361462c907d31da41c40463039b14c77fa2ddfe68e96f6a999cbd753d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.973-8c178f6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-973/DroidDeck-PR.973-8c178f6-pubg.apk",
+          "size": 64627953,
+          "sha256": "c2266223ab3c6f1a8fcc12949598f5eb4a6c6c04c6805d0f8bbc8e983d0f6ca2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.973-8c178f6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-973/DroidDeck-PR.973-8c178f6-antutu.apk",
+          "size": 64627953,
+          "sha256": "b2a50acb4688bf36e26df504ac4df2e64abc00e187712b575e259f11ba2c63c9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.973-8c178f6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-973/DroidDeck-PR.973-8c178f6-ludashi.apk",
+          "size": 64627953,
+          "sha256": "fe9723e2c139a1600e7f0d423f186e84faeda7d000e0fae159c9d3dad8636e49",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-972",
       "title": "feat: auto drivers update on app open and roll back if a new pair never starts a session",
