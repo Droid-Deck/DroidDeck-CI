@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792130340928,
+  "generatedAt": 1792130760732,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-2847910",
-    "title": "feat: add immersive Quest SteamVR to the standard app",
-    "summary": "The regular DroidDeck app can enter immersive SteamVR on Quest with Cardboard disabled. The session menu has separate SteamVR and Cardboard tabs. A native OpenXR activity supplies headset tracking, Touch inputs and haptics, and presents SteamVR's stereo output.",
-    "commit": "2847910f22a2f47df38621fccf64c6352dcfa6ca",
+    "tag": "main-66ec776",
+    "title": "perf: boost the game's busiest threads onto the prime cores on the Odin 3",
+    "summary": "On the Odin 3 a game's main thread rarely reaches the prime cores (6-7). Qualcomm's WALT moves a thread up only once it fills a mid core (/proc/sys/walt/schedupmigrate = 95), and a game thread that waits on its workers or the GPU for part of each frame never gets there.",
+    "commit": "66ec776b0b068e73cac78079fdd82169e7b27283",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792130304000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2847910",
+    "publishedAt": 1792130712000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-66ec776",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-2847910.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2847910/DroidDeck-main-2847910.apk",
-        "size": 63067285,
-        "sha256": "89cdee2061f904090c40f066c0d67fd7b23c8c8ffd870ca200f89dacac268d41",
+        "name": "DroidDeck-main-66ec776.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66ec776/DroidDeck-main-66ec776.apk",
+        "size": 63071381,
+        "sha256": "f717611456f64a2528067d8a772ce9ae57954d015d6e3090bc143055f49f7e7b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-2847910-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2847910/DroidDeck-main-2847910-pubg.apk",
-        "size": 63067285,
-        "sha256": "2d1f110f9eb5a8d2d9dcd47dcab8aae489b8716ac5e52c514820f915385474ba",
+        "name": "DroidDeck-main-66ec776-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66ec776/DroidDeck-main-66ec776-pubg.apk",
+        "size": 63071381,
+        "sha256": "1aa70438972e4ee69f08313b42864fa7b0270143e8a4e50cf0b617091c80d1d4",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-2847910-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2847910/DroidDeck-main-2847910-antutu.apk",
-        "size": 63067285,
-        "sha256": "5b647b6cd91a32fe9f1076efee1125a8b99898d8f0f26085c79d43b5a92219eb",
+        "name": "DroidDeck-main-66ec776-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66ec776/DroidDeck-main-66ec776-antutu.apk",
+        "size": 63071381,
+        "sha256": "ed6c73192567615d5ba8c980b3f5e3817a2b85bdf8bfb915b63af937bc52d7ff",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-2847910-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2847910/DroidDeck-main-2847910-ludashi.apk",
-        "size": 63067285,
-        "sha256": "4c85115a41e671f724841a17bdcdaa0267082c379a2a381decbcfc0149d2ce25",
+        "name": "DroidDeck-main-66ec776-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66ec776/DroidDeck-main-66ec776-ludashi.apk",
+        "size": 63071381,
+        "sha256": "58655d467d1a7ec87591177aba7902da88382cb56b12bc17f23e1e8bbd13f513",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "66ec776b0b068e73cac78079fdd82169e7b27283",
+      "title": "perf: boost the game's busiest threads onto the prime cores on the Odin 3",
+      "summary": "On the Odin 3 a game's main thread rarely reaches the prime cores (6-7). Qualcomm's WALT moves a thread up only once it fills a mid core (/proc/sys/walt/schedupmigrate = 95), and a game thread that waits on its workers or the GPU for part of each frame never gets there.",
+      "publishedAt": 1792130712000
+    },
     {
       "commit": "2847910f22a2f47df38621fccf64c6352dcfa6ca",
       "title": "feat: add immersive Quest SteamVR to the standard app",
@@ -155,12 +161,6 @@
       "title": "feat: three-finger tap toggles Steam's on-screen keyboard in game mode",
       "summary": "\u2022 In Steam game mode, a quick three-finger tap sends Steam + X on the virtual pad, which opens Steam's on-screen keyboard; tapping again closes it. Steam only shows the keyboard over a running game; on its own home/library screens it ignores Steam + X unless a text field is focused.\n\u2022 New ThreeFingerTap detector: all three fingers must land within 250 ms, stay within slop, and lift within 350 ms o",
       "publishedAt": 1792071947000
-    },
-    {
-      "commit": "e1ca869d8e4f22d3074f2e3be0e64d6d576e24e5",
-      "title": "Fix local builds on Linux failing after the first Comet build",
-      "summary": "On Linux, once tools/buildlocal.sh had built Comet, later builds failed in two places:",
-      "publishedAt": 1792071287000
     }
   ],
   "tests": [
