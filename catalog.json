@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792159212908,
+  "generatedAt": 1792159473263,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-dce7e7e",
-    "title": "fix: the store sign-in page keeps its place when the display density changes",
-    "summary": "Signing in to a store (GOG, Epic, Amazon) no longer reloads the sign-in page when the display density changes, for example when a foldable moves between two panels of different density.",
-    "commit": "dce7e7ece69cb4037830e2ef104728d0998ce1ec",
+    "tag": "main-99381a8",
+    "title": "fix: droiddeckctl pacing judges cadence per refresh-rate record and always turns timestats off",
+    "summary": "Follow-up to #855 (and #843 before it): fixes the points CodeRabbit raised on droiddeckctl pacing.",
+    "commit": "99381a8f3e9894be87953229c7b5e7f335b413bb",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792159189000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-dce7e7e",
+    "publishedAt": 1792159419000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-99381a8",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-dce7e7e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dce7e7e/DroidDeck-main-dce7e7e.apk",
+        "name": "DroidDeck-main-99381a8.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-99381a8/DroidDeck-main-99381a8.apk",
         "size": 63083669,
-        "sha256": "bddf42475ae31e6e8aca01b2a09d741b2f5615b073c27b050ace807bb5eeed12",
+        "sha256": "0a5f6fe3c50879ebdd94e005e3d4f15b4c7204712dd3890b286fa824b3fbd7bd",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-dce7e7e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dce7e7e/DroidDeck-main-dce7e7e-pubg.apk",
+        "name": "DroidDeck-main-99381a8-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-99381a8/DroidDeck-main-99381a8-pubg.apk",
         "size": 63083669,
-        "sha256": "2e560fa8725e7cafd4019eca53cbc52c6fe2afcc613ee89699f0ad2cf40d9f38",
+        "sha256": "51887a8fc94924219f56f1b0db22ccc1dc466f7196ada02f2bf9adc8582877b7",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-dce7e7e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dce7e7e/DroidDeck-main-dce7e7e-antutu.apk",
+        "name": "DroidDeck-main-99381a8-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-99381a8/DroidDeck-main-99381a8-antutu.apk",
         "size": 63083669,
-        "sha256": "751e5aa03c914b7c227f6a6ec96b5f43037642ab682dfe8a124f7966f0ee76b6",
+        "sha256": "60af52105b08347721e24522999e272d62d940d8500cedc4ffdf2345ff46c3b6",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-dce7e7e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dce7e7e/DroidDeck-main-dce7e7e-ludashi.apk",
+        "name": "DroidDeck-main-99381a8-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-99381a8/DroidDeck-main-99381a8-ludashi.apk",
         "size": 63083669,
-        "sha256": "d572f164278f0338506bfcd037c54f24d9777bdeab7c1832f1473ec914bda01b",
+        "sha256": "40478cc51ea11d2bdaf66530f52f9ff3c4790951a6e251a22f060bae78f1107f",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "99381a8f3e9894be87953229c7b5e7f335b413bb",
+      "title": "fix: droiddeckctl pacing judges cadence per refresh-rate record and always turns timestats off",
+      "summary": "Follow-up to #855 (and #843 before it): fixes the points CodeRabbit raised on droiddeckctl pacing.",
+      "publishedAt": 1792159419000
+    },
     {
       "commit": "dce7e7ece69cb4037830e2ef104728d0998ce1ec",
       "title": "fix: the store sign-in page keeps its place when the display density changes",
@@ -155,12 +161,6 @@
       "title": "Sync session logs every 2 s so a hard reset keeps their last minutes",
       "summary": "Fixes #510.",
       "publishedAt": 1792130771000
-    },
-    {
-      "commit": "66ec776b0b068e73cac78079fdd82169e7b27283",
-      "title": "perf: boost the game's busiest threads onto the prime cores on the Odin 3",
-      "summary": "On the Odin 3 a game's main thread rarely reaches the prime cores (6-7). Qualcomm's WALT moves a thread up only once it fills a mid core (/proc/sys/walt/schedupmigrate = 95), and a game thread that waits on its workers or the GPU for part of each frame never gets there.",
-      "publishedAt": 1792130712000
     }
   ],
   "tests": [
