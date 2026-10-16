@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792178327916,
+  "generatedAt": 1792180850247,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-972",
+      "title": "feat: auto drivers update on app open and roll back if a new pair never starts a session",
+      "summary": "Auto mode now keeps users on the newest recommended driver pair without them having to press refresh. If a new pair can't start a session, Auto switches back to the last pair that worked.",
+      "commit": "406685de39e96469023adcd07c4334272f3cd306",
+      "pr": 972,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792180810000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-972",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.972-406685d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-972/DroidDeck-PR.972-406685d.apk",
+          "size": 64632049,
+          "sha256": "5ab29e97d997a9505213882738381841fa1409e1ba43329abb6cc41060dd75cd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.972-406685d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-972/DroidDeck-PR.972-406685d-pubg.apk",
+          "size": 64632049,
+          "sha256": "bfc00d2d4b7b5c1ee59695f48700501716a689ce8336033ef3a1995e9fd1dda8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.972-406685d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-972/DroidDeck-PR.972-406685d-antutu.apk",
+          "size": 64632049,
+          "sha256": "b23636fc7d8650baa285777fa73d082f28e6a87ed4a9779491db3a090bf6d5fe",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.972-406685d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-972/DroidDeck-PR.972-406685d-ludashi.apk",
+          "size": 64632049,
+          "sha256": "8a3ca49ca603d6e16618fbebd209cb6fa533d6e98794ff54bbfe754c9088d7d0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-928",
       "title": "feat: Epic Games Launcher for Linux",
