@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792130760732,
+  "generatedAt": 1792130812949,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-66ec776",
-    "title": "perf: boost the game's busiest threads onto the prime cores on the Odin 3",
-    "summary": "On the Odin 3 a game's main thread rarely reaches the prime cores (6-7). Qualcomm's WALT moves a thread up only once it fills a mid core (/proc/sys/walt/schedupmigrate = 95), and a game thread that waits on its workers or the GPU for part of each frame never gets there.",
-    "commit": "66ec776b0b068e73cac78079fdd82169e7b27283",
+    "tag": "main-cd4a26b",
+    "title": "Sync session logs every 2 s so a hard reset keeps their last minutes",
+    "summary": "Fixes #510.",
+    "commit": "cd4a26b5f1ad72482e324ca0dbfe958614b7df6a",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792130712000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-66ec776",
+    "publishedAt": 1792130771000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cd4a26b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-66ec776.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66ec776/DroidDeck-main-66ec776.apk",
+        "name": "DroidDeck-main-cd4a26b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd4a26b/DroidDeck-main-cd4a26b.apk",
         "size": 63071381,
-        "sha256": "f717611456f64a2528067d8a772ce9ae57954d015d6e3090bc143055f49f7e7b",
+        "sha256": "0757550cab9d591dc8d915c23b9e18092e2367361eaed11cd5e76ec0dc329bf9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-66ec776-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66ec776/DroidDeck-main-66ec776-pubg.apk",
+        "name": "DroidDeck-main-cd4a26b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd4a26b/DroidDeck-main-cd4a26b-pubg.apk",
         "size": 63071381,
-        "sha256": "1aa70438972e4ee69f08313b42864fa7b0270143e8a4e50cf0b617091c80d1d4",
+        "sha256": "65bfb390851292ffbd8b85ac57593526b5a713592a894e138a11df652586ac2a",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-66ec776-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66ec776/DroidDeck-main-66ec776-antutu.apk",
+        "name": "DroidDeck-main-cd4a26b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd4a26b/DroidDeck-main-cd4a26b-antutu.apk",
         "size": 63071381,
-        "sha256": "ed6c73192567615d5ba8c980b3f5e3817a2b85bdf8bfb915b63af937bc52d7ff",
+        "sha256": "6173f4e9dfdd158bb00aa2902cd6e939370ff0b0eddd372a8bbce075870b260d",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-66ec776-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66ec776/DroidDeck-main-66ec776-ludashi.apk",
+        "name": "DroidDeck-main-cd4a26b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd4a26b/DroidDeck-main-cd4a26b-ludashi.apk",
         "size": 63071381,
-        "sha256": "58655d467d1a7ec87591177aba7902da88382cb56b12bc17f23e1e8bbd13f513",
+        "sha256": "cf5806c4b9c8bcb0c3f4c4a252cd41d340854eba948c75da05128c9dd081431f",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "cd4a26b5f1ad72482e324ca0dbfe958614b7df6a",
+      "title": "Sync session logs every 2 s so a hard reset keeps their last minutes",
+      "summary": "Fixes #510.",
+      "publishedAt": 1792130771000
+    },
     {
       "commit": "66ec776b0b068e73cac78079fdd82169e7b27283",
       "title": "perf: boost the game's busiest threads onto the prime cores on the Odin 3",
@@ -155,12 +161,6 @@
       "title": "fix: keep Quest-patched Turnip as the auto default",
       "summary": "Fresh Quest installs already select the patched display driver once. However, selecting GPU driver Auto subsequently follows generic Adreno-family release recommendations, and the Android Auto by GPU fallback selects the unpatched generic bundle.",
       "publishedAt": 1792072512000
-    },
-    {
-      "commit": "892f400145537e20b8a0012f1da20d5f561e5697",
-      "title": "feat: three-finger tap toggles Steam's on-screen keyboard in game mode",
-      "summary": "\u2022 In Steam game mode, a quick three-finger tap sends Steam + X on the virtual pad, which opens Steam's on-screen keyboard; tapping again closes it. Steam only shows the keyboard over a running game; on its own home/library screens it ignores Steam + X unless a text field is focused.\n\u2022 New ThreeFingerTap detector: all three fingers must land within 250 ms, stay within slop, and lift within 350 ms o",
-      "publishedAt": 1792071947000
     }
   ],
   "tests": [
