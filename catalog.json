@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792158236289,
+  "generatedAt": 1792158367549,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e24e07d",
-    "title": "Fix Quest CI headers when preloads are cached",
-    "summary": "Prepare the Quest presenter test Vulkan headers independently of the preload cache so warm-cache CI builds pass; verified all Quest IPC and presenter shutdown checks in the Linux build container.",
-    "commit": "e24e07d0ce3b297bad02bd3a31fcfc57a748c7d8",
+    "tag": "main-86b92c5",
+    "title": "Add support for android auto",
+    "summary": "I followed the guide from google to include any game in android auto\nhttps://android-developers.googleblog.com/2026/09/bring-android-game-to-car-screen.html\nand It seems to work good enough. In order to use the app you need to enable dev mode in android auto and tick unknown source.\nThe only issue I noticed is audio it seems to not sync with the OS. for example retroarch stops other media apps but droid deck doesn't but that's very minor.",
+    "commit": "86b92c5d0e0789b57a582779943e67a44af8fd85",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792154752000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e24e07d",
+    "publishedAt": 1792158331000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-86b92c5",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e24e07d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e24e07d/DroidDeck-main-e24e07d.apk",
+        "name": "DroidDeck-main-86b92c5.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86b92c5/DroidDeck-main-86b92c5.apk",
         "size": 63079573,
-        "sha256": "9b9b0623a6bef1904652ef4c4e672a31d03abd283c4ad309358e8cc6bffaaabe",
+        "sha256": "fff66930c18d728def75e6fa75b51a42850cd4a9a06d4dc825b693d3d9b176d1",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e24e07d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e24e07d/DroidDeck-main-e24e07d-pubg.apk",
+        "name": "DroidDeck-main-86b92c5-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86b92c5/DroidDeck-main-86b92c5-pubg.apk",
         "size": 63079573,
-        "sha256": "2f3f0a1dc45c7bc7751070fdbdba79cc6488dcea98c6c886ae987aff1b0f70a2",
+        "sha256": "ab8b29e6ea04d710b0dfb664e5f2d67729e8cb126c3a858dddb6915cb37bece5",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e24e07d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e24e07d/DroidDeck-main-e24e07d-antutu.apk",
+        "name": "DroidDeck-main-86b92c5-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86b92c5/DroidDeck-main-86b92c5-antutu.apk",
         "size": 63079573,
-        "sha256": "2565fdd6259bde0a1cd8a53596c5e0c47199c6b5162d40895b82b13b62d644af",
+        "sha256": "05f9a26323f5fbfcb6664ad78d49cc83058674ec7cefbce2970ddb8e0f3ee8b4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e24e07d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e24e07d/DroidDeck-main-e24e07d-ludashi.apk",
+        "name": "DroidDeck-main-86b92c5-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86b92c5/DroidDeck-main-86b92c5-ludashi.apk",
         "size": 63079573,
-        "sha256": "7993ec540b527185ad59aec63e0ebbacea7d1d321bbf51b508c4d0fd9817a3ce",
+        "sha256": "5d62197e90a6157da3a031d686142884d5724d0c6fff9be89d1b2bba8df8ebaf",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "86b92c5d0e0789b57a582779943e67a44af8fd85",
+      "title": "Add support for android auto",
+      "summary": "I followed the guide from google to include any game in android auto\nhttps://android-developers.googleblog.com/2026/09/bring-android-game-to-car-screen.html\nand It seems to work good enough. In order to use the app you need to enable dev mode in android auto and tick unknown source.\nThe only issue I noticed is audio it seems to not sync with the OS. for example retroarch stops other media apps but",
+      "publishedAt": 1792158331000
+    },
     {
       "commit": "e24e07d0ce3b297bad02bd3a31fcfc57a748c7d8",
       "title": "Fix Quest CI headers when preloads are cached",
@@ -155,12 +161,6 @@
       "title": "fix: keep proot sessions alive when the kernel loses fork events",
       "summary": "Problem:",
       "publishedAt": 1792072678000
-    },
-    {
-      "commit": "b539cc111110c0326e63257d0ffcd89efda60f19",
-      "title": "Fix deploylocal.sh and droiddeckctl not finding a phone connected over wireless debugging",
-      "summary": "With my phone connected over wireless debugging, tools/deploylocal.sh stopped with \"adb-device: No authorized Android device found; set ADBSERIAL or ANDROIDSERIAL\", even though adb devices -l listed it as device. droiddeckctl failed the same way.",
-      "publishedAt": 1792072591000
     }
   ],
   "tests": [
