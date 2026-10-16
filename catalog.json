@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792160130535,
+  "generatedAt": 1792161387280,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0b8d55d",
-    "title": "fix: droiddeckctl refuses a DROIDDECKPACKAGE that is not a package name",
-    "summary": "Small follow-up to #854, from a note in its CodeRabbit review: droiddeckctl now refuses a DROIDDECKPACKAGE that isn't an Android package name. The value goes into commands run by the device's shell (am start -n, content call --uri), so a typo or a stray ; was passed on unchecked.",
-    "commit": "0b8d55d434f416d9d3ce51daee787f75cb6b135e",
+    "tag": "main-8886304",
+    "title": "fix: the proot fast path finds unix sockets whose host path is longer than sunpath",
+    "summary": "Fixes the socket part of #839, and with it the Couldn't connect to FEXServer socket error reported in #579.",
+    "commit": "8886304894e4ce2ca65067c0dac59ae2d7625945",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792160095000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0b8d55d",
+    "publishedAt": 1792161338000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8886304",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0b8d55d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8d55d/DroidDeck-main-0b8d55d.apk",
-        "size": 63083669,
-        "sha256": "6f886df90f3bde735db194376b68aef3e33cec74ace31fae62c6f92ceae2d5de",
+        "name": "DroidDeck-main-8886304.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8886304/DroidDeck-main-8886304.apk",
+        "size": 63087765,
+        "sha256": "c1e8d92ee5f35fff5941c15538c24409bd00e848260b02bf5127b8bd1fb44a3a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0b8d55d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8d55d/DroidDeck-main-0b8d55d-pubg.apk",
-        "size": 63083669,
-        "sha256": "d6ce2d40446652f99807dd39d258b319a1803c95616a1d10fd5b1d8eb2c232f5",
+        "name": "DroidDeck-main-8886304-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8886304/DroidDeck-main-8886304-pubg.apk",
+        "size": 63087765,
+        "sha256": "20311794120af55648df1b9cb0f207c974541f3705ad658174a034695928ab76",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0b8d55d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8d55d/DroidDeck-main-0b8d55d-antutu.apk",
-        "size": 63083669,
-        "sha256": "0c1623efc0592e96640b2141ac5cb9fdb665464e5bbc7a4369a60d615e24c8cf",
+        "name": "DroidDeck-main-8886304-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8886304/DroidDeck-main-8886304-antutu.apk",
+        "size": 63087765,
+        "sha256": "1d7995702f16d2fdd5941d71ca289d47fac5e2082e1ebe871fc66043a6b9857a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0b8d55d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8d55d/DroidDeck-main-0b8d55d-ludashi.apk",
-        "size": 63083669,
-        "sha256": "a245cc75ce53e66f5d99c0a83377c6fc27e93bcb13ef839c75a8e36aa88001cf",
+        "name": "DroidDeck-main-8886304-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8886304/DroidDeck-main-8886304-ludashi.apk",
+        "size": 63087765,
+        "sha256": "03041e6e11dacea01b23ba9cf1cdb573643e73c78e962daef8d03e1a56c546f1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8886304894e4ce2ca65067c0dac59ae2d7625945",
+      "title": "fix: the proot fast path finds unix sockets whose host path is longer than sunpath",
+      "summary": "Fixes the socket part of #839, and with it the Couldn't connect to FEXServer socket error reported in #579.",
+      "publishedAt": 1792161338000
+    },
     {
       "commit": "0b8d55d434f416d9d3ce51daee787f75cb6b135e",
       "title": "fix: droiddeckctl refuses a DROIDDECKPACKAGE that is not a package name",
@@ -155,12 +161,6 @@
       "title": "fix: read Settings.Global phantom process flag on Android 12 (SDK 31)",
       "summary": "Also write and check Settings.Global (settingsenablemonitorphantomprocs) on Android 12 (SDK 31) so disabling phantom process monitoring over USB ADB does not leave PhantomProcessLimit.read() stuck at UNREADABLE.",
       "publishedAt": 1792158464000
-    },
-    {
-      "commit": "86b92c5d0e0789b57a582779943e67a44af8fd85",
-      "title": "Add support for android auto",
-      "summary": "I followed the guide from google to include any game in android auto\nhttps://android-developers.googleblog.com/2026/09/bring-android-game-to-car-screen.html\nand It seems to work good enough. In order to use the app you need to enable dev mode in android auto and tick unknown source.\nThe only issue I noticed is audio it seems to not sync with the OS. for example retroarch stops other media apps but",
-      "publishedAt": 1792158331000
     }
   ],
   "tests": [
