@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792172715178,
+  "generatedAt": 1792173116393,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-66529d9",
-    "title": "fix: hold XInput rumble until the game changes it, instead of stopping after a second",
-    "summary": "Game rumble under Proton stopped after about one second, even when the game kept the motors on. A held trigger or an engine idle gave one short buzz and then silence. This is the same bug fixed in GameScrub (GameHub) and GameNative. DroidDeck reaches it by a different route, so the fix lands in different places.",
-    "commit": "66529d9026a937797585da659ce44c9c5e8de9f4",
+    "tag": "main-59a5afa",
+    "title": "fix: reduce flickering on thor and a7xx: match the A740 TP UBWC flag hint to the system driver so Android UI stops flickering",
+    "summary": "During a session with a game running, Android UI flickers on Adreno 740 devices (AYN Thor, Odin 2 Portal). The session drawer is half-drawn or missing for single frames, and SystemUI volume icons drop out. Screen recordings capture it.",
+    "commit": "59a5afa21df0ac83f6afae42496bb283c1876a80",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792172669000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-66529d9",
+    "publishedAt": 1792173097000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-59a5afa",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-66529d9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66529d9/DroidDeck-main-66529d9.apk",
+        "name": "DroidDeck-main-59a5afa.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-59a5afa/DroidDeck-main-59a5afa.apk",
         "size": 63079573,
-        "sha256": "800a82f6fa5e1e426e083e54f3e9d79e087eded99ed22d47e83f7bfd24a20be0",
+        "sha256": "5d0e62bbcbdba32aa5112c7535b49592cbbec5d0cfffd888235d93533853f90c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-66529d9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66529d9/DroidDeck-main-66529d9-pubg.apk",
+        "name": "DroidDeck-main-59a5afa-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-59a5afa/DroidDeck-main-59a5afa-pubg.apk",
         "size": 63079573,
-        "sha256": "814216fe9ea3613a35a12b63095005fbe161e10bdd1961b0d41adcb229a3dacf",
+        "sha256": "31f192e18e88170f4ff0912e870d6ad1dae7ae621b3412e5e3d4146328bc3201",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-66529d9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66529d9/DroidDeck-main-66529d9-antutu.apk",
+        "name": "DroidDeck-main-59a5afa-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-59a5afa/DroidDeck-main-59a5afa-antutu.apk",
         "size": 63079573,
-        "sha256": "465609f5b3917f122a0c75642382e2e2bc4c436c126a646cbfd8aa8eed09a047",
+        "sha256": "144d6e13cc29f4e73e3933c70847478ad52e99f538aea5c07fe4ab782c8c2c5d",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-66529d9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-66529d9/DroidDeck-main-66529d9-ludashi.apk",
+        "name": "DroidDeck-main-59a5afa-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-59a5afa/DroidDeck-main-59a5afa-ludashi.apk",
         "size": 63079573,
-        "sha256": "80f39c5afc2decf9335ff78ae2693ca5dc9b8d5d7a357f3d663d74403c15a4d5",
+        "sha256": "b64eca40f9edce9a53d4cffadfc2b9b426abe5a6965677d7c9868f3840e37291",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "59a5afa21df0ac83f6afae42496bb283c1876a80",
+      "title": "fix: reduce flickering on thor and a7xx: match the A740 TP UBWC flag hint to the system driver so Android UI stops flickering",
+      "summary": "During a session with a game running, Android UI flickers on Adreno 740 devices (AYN Thor, Odin 2 Portal). The session drawer is half-drawn or missing for single frames, and SystemUI volume icons drop out. Screen recordings capture it.",
+      "publishedAt": 1792173097000
+    },
     {
       "commit": "66529d9026a937797585da659ce44c9c5e8de9f4",
       "title": "fix: hold XInput rumble until the game changes it, instead of stopping after a second",
@@ -155,12 +161,6 @@
       "title": "fix: the store sign-in WebView cannot read local files or content URIs",
       "summary": "The store sign-in WebView (GOG, Epic, Amazon) can no longer read local files or content:// URIs.",
       "publishedAt": 1792159161000
-    },
-    {
-      "commit": "9abb21e389fc9bc43bbf0b7ec0275242a92f078e",
-      "title": "l10n: refresh outdated strings, one name for the child-process switch, pt-rPT gaps",
-      "summary": "Translations that had fallen behind the English text are updated in es, fr, ru and hu, the name of the Developer-options switch is written the same way on every page in all languages, and pt-rPT gets the 14 strings it was missing.",
-      "publishedAt": 1792159138000
     }
   ],
   "tests": [
@@ -256,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-954/DroidDeck-PR.954-9faf613-ludashi.apk",
           "size": 63079573,
           "sha256": "526db2bee106c306852ace5e2286c9712b0c42d37a9a25cad1018b47ae334a10",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-858",
-      "title": "Feat/gpu drivers redesign",
-      "summary": "",
-      "commit": "df9e5eb904ac6b928c9602e0aa6afba1d98784bb",
-      "pr": 858,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792041029000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-858",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.858-df9e5eb.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-858/DroidDeck-PR.858-df9e5eb.apk",
-          "size": 61751987,
-          "sha256": "02b979a4f1556f246d3b5c4b9edd58fd78b9c5c404b7df056035dfcbfdd11ee8",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.858-df9e5eb-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-858/DroidDeck-PR.858-df9e5eb-pubg.apk",
-          "size": 61751987,
-          "sha256": "ea1f973e4548780d28164423edc58eaf7df02a32589c49a1f9e7e1f16ee45cac",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.858-df9e5eb-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-858/DroidDeck-PR.858-df9e5eb-antutu.apk",
-          "size": 61751987,
-          "sha256": "8945746fa6d4a2d044639cfd7d13d3b971130de822809747257cc9d3fbe3f8be",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.858-df9e5eb-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-858/DroidDeck-PR.858-df9e5eb-ludashi.apk",
-          "size": 61751987,
-          "sha256": "367b22b0395900db323d285e6186a85523b4d2dc26a4a88fb3eeed908395d646",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
