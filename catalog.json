@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792158508525,
+  "generatedAt": 1792158982826,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a353b15",
-    "title": "fix: read Settings.Global phantom process flag on Android 12 (SDK 31)",
-    "summary": "Also write and check Settings.Global (settingsenablemonitorphantomprocs) on Android 12 (SDK 31) so disabling phantom process monitoring over USB ADB does not leave PhantomProcessLimit.read() stuck at UNREADABLE.",
-    "commit": "a353b1536473ee7582a9cb0408d675cc2ecf4c6f",
+    "tag": "main-4e4cc9d",
+    "title": "feat: the session report lists the memory page size and the last process exits",
+    "summary": "The session report (device.txt, also shared with the logs) now shows the memory page size and why the app's last processes ended, so \"the game was killed\" reports can say what killed it.",
+    "commit": "4e4cc9d5e30c314a787e265723d53175005ab289",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792158464000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a353b15",
+    "publishedAt": 1792158944000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4e4cc9d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a353b15.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a353b15/DroidDeck-main-a353b15.apk",
+        "name": "DroidDeck-main-4e4cc9d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4e4cc9d/DroidDeck-main-4e4cc9d.apk",
         "size": 63079573,
-        "sha256": "24e8ca57a1c23284db43b0b77a622e035d32321f2114f1dfba7218cbba343472",
+        "sha256": "5e7bc7c859719a4e71c16e452a060634fdde09d9eb056c2b343d5feb0f8d10fb",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a353b15-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a353b15/DroidDeck-main-a353b15-pubg.apk",
+        "name": "DroidDeck-main-4e4cc9d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4e4cc9d/DroidDeck-main-4e4cc9d-pubg.apk",
         "size": 63079573,
-        "sha256": "9b82821888fcf89b2def6571e210a499cea6cac7641a85ae6b0879b222426673",
+        "sha256": "ea182aa5e0df0a86e3435512c8b24019e1b03b8ad24e8d84946f845a2d5a1bb9",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a353b15-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a353b15/DroidDeck-main-a353b15-antutu.apk",
+        "name": "DroidDeck-main-4e4cc9d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4e4cc9d/DroidDeck-main-4e4cc9d-antutu.apk",
         "size": 63079573,
-        "sha256": "05a56b1956e6daacb3a1ab6cd0299b0baf1fe9772de7569e7cf0e7da57850788",
+        "sha256": "19d05befb9bbac7d0dda077e076f42f50c84a8de9fc4e3d413d55e34af06ef76",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a353b15-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a353b15/DroidDeck-main-a353b15-ludashi.apk",
+        "name": "DroidDeck-main-4e4cc9d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4e4cc9d/DroidDeck-main-4e4cc9d-ludashi.apk",
         "size": 63079573,
-        "sha256": "79ba94ccb0865be35dc5a530304d0659dc2978165462ca2e235d9e87baa1d2db",
+        "sha256": "f3816f80b08df4939f81ae028e8f66845c0a87027ba7c2efc2649c3b3f6a57d9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4e4cc9d5e30c314a787e265723d53175005ab289",
+      "title": "feat: the session report lists the memory page size and the last process exits",
+      "summary": "The session report (device.txt, also shared with the logs) now shows the memory page size and why the app's last processes ended, so \"the game was killed\" reports can say what killed it.",
+      "publishedAt": 1792158944000
+    },
     {
       "commit": "a353b1536473ee7582a9cb0408d675cc2ecf4c6f",
       "title": "fix: read Settings.Global phantom process flag on Android 12 (SDK 31)",
@@ -155,12 +161,6 @@
       "title": "fix: update zstd-jni so the Linux runtime installs on a 16 KB page-size device",
       "summary": "The Linux runtime can be installed on a device whose kernel uses 16 KB memory pages: the app no longer crashes while extracting the downloaded runtime.",
       "publishedAt": 1792098496000
-    },
-    {
-      "commit": "ef16de628003fc05155a7ccd3160851b58ef27cb",
-      "title": "feat: storage page to see and free DroidDeck's storage",
-      "summary": "Adds a Storage tab to Setup that shows where DroidDeck's storage goes and frees what is safe to remove.",
-      "publishedAt": 1792097812000
     }
   ],
   "tests": [
