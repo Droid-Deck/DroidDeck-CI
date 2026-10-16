@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792161387280,
+  "generatedAt": 1792161885244,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-928",
+      "title": "feat: Epic Games Launcher for Linux",
+      "summary": "Install Epic's official Linux launcher (EGLv2) from Epic's CDN with Valve's Steam Runtime 4 and run it under FEX, signed in with the linked Epic account. Epic games launch through a hidden launcher instance so they get the launcher's own arguments, with the exchange-code launch as the fallback, and DroidDeck installs show up in the launcher as installed.",
+      "commit": "8e2159a8ab634ae8ccb80718b2b183521a4c26ba",
+      "pr": 928,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792161838000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-928",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.928-8e2159a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-8e2159a.apk",
+          "size": 63169915,
+          "sha256": "e71db64b19ca323dd39b1158d53cb6a9300a8be014a655e94c8acb9c80ecc252",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.928-8e2159a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-8e2159a-pubg.apk",
+          "size": 63169915,
+          "sha256": "a7e9bb9f48079c4c2e13c426e55f11f90bbdc6533ed92d4d572224541dc6cba9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.928-8e2159a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-8e2159a-antutu.apk",
+          "size": 63169915,
+          "sha256": "91bc1ba648e8c51f6546f20fa1fb054092adf8acf91a662369b3b5fcbf098be6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.928-8e2159a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-8e2159a-ludashi.apk",
+          "size": 63169915,
+          "sha256": "1274ac9d96d7b2b2ea531b19296407f5db158d83c0afbaf5f7b928a2d975e18a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-954",
       "title": "fix: ignore uinput- system virtual input devices in controller detection",
       "summary": "Ignore kernel uinput- / uinput virtual input devices in PadBridge so vendor virtual input nodes (such as uinput-xiaomi on Xiaomi HyperOS 3) do not claim Player 1 (slot 0) or keep anyControllerConnected() permanently true.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-954/DroidDeck-PR.954-9faf613-ludashi.apk",
           "size": 63079573,
           "sha256": "526db2bee106c306852ace5e2286c9712b0c42d37a9a25cad1018b47ae334a10",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-928",
-      "title": "feat: Epic Games Launcher for Linux",
-      "summary": "Install Epic's official Linux launcher (EGLv2) from Epic's CDN with Valve's Steam Runtime 4 and run it under FEX, signed in with the linked Epic account. Epic games launch through a hidden launcher instance so they get the launcher's own arguments, with the exchange-code launch as the fallback, and DroidDeck installs show up in the launcher as installed.",
-      "commit": "aa675319e28f0d16fda7179d3d865f2ee5b6273f",
-      "pr": 928,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792120803000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-928",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.928-aa67531.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-aa67531.apk",
-          "size": 62055321,
-          "sha256": "a6eed53e6eec42fbf6255d294612fc334aa8bbb8e5c30af0896f1f8eb5827d4e",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.928-aa67531-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-aa67531-pubg.apk",
-          "size": 62055321,
-          "sha256": "bf8ea4caabe359df2ae27cc5a1cc7800a8dce675d47b68148c629e052ffe05ed",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.928-aa67531-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-aa67531-antutu.apk",
-          "size": 62055321,
-          "sha256": "6f79f916dc1727ed12229d65020983e78af222ff47bad468c028120baa830d98",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.928-aa67531-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-aa67531-ludashi.apk",
-          "size": 62055321,
-          "sha256": "d0e9412aab200dd6b7ec2a8d692fe0d55b30330e0f030dddb18e084c08b6cffd",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
