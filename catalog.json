@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792159571299,
+  "generatedAt": 1792160130535,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a422698",
-    "title": "Keep waiting for a shortcut's Steam overview instead of dropping its cold launch",
-    "summary": "Added non-Steam games now start even when Steam takes longer than 45 s to load the library on a cold launch.",
-    "commit": "a422698f92e9ffbb1d0547dd99262e4111fb18a5",
+    "tag": "main-0b8d55d",
+    "title": "fix: droiddeckctl refuses a DROIDDECKPACKAGE that is not a package name",
+    "summary": "Small follow-up to #854, from a note in its CodeRabbit review: droiddeckctl now refuses a DROIDDECKPACKAGE that isn't an Android package name. The value goes into commands run by the device's shell (am start -n, content call --uri), so a typo or a stray ; was passed on unchecked.",
+    "commit": "0b8d55d434f416d9d3ce51daee787f75cb6b135e",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792159518000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a422698",
+    "publishedAt": 1792160095000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0b8d55d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a422698.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a422698/DroidDeck-main-a422698.apk",
+        "name": "DroidDeck-main-0b8d55d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8d55d/DroidDeck-main-0b8d55d.apk",
         "size": 63083669,
-        "sha256": "8e73dc25062c3092c98dda56b16b0fbfb429b0f5e0e103372a41eefa8d6c63cf",
+        "sha256": "6f886df90f3bde735db194376b68aef3e33cec74ace31fae62c6f92ceae2d5de",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a422698-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a422698/DroidDeck-main-a422698-pubg.apk",
+        "name": "DroidDeck-main-0b8d55d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8d55d/DroidDeck-main-0b8d55d-pubg.apk",
         "size": 63083669,
-        "sha256": "1bdb228fcea03001b4f524e2c25babec012d1949be8d47d84d5d32a480c68d7e",
+        "sha256": "d6ce2d40446652f99807dd39d258b319a1803c95616a1d10fd5b1d8eb2c232f5",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a422698-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a422698/DroidDeck-main-a422698-antutu.apk",
+        "name": "DroidDeck-main-0b8d55d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8d55d/DroidDeck-main-0b8d55d-antutu.apk",
         "size": 63083669,
-        "sha256": "34ba83e5f21036c31b17db39beb2d1bea35ccf1079cf58dc13106b7e7813ceeb",
+        "sha256": "0c1623efc0592e96640b2141ac5cb9fdb665464e5bbc7a4369a60d615e24c8cf",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a422698-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a422698/DroidDeck-main-a422698-ludashi.apk",
+        "name": "DroidDeck-main-0b8d55d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8d55d/DroidDeck-main-0b8d55d-ludashi.apk",
         "size": 63083669,
-        "sha256": "bb5764737f30c90cc801ff8fc48dbfc9a282d5541d368d4a93f9d6fb20b1e641",
+        "sha256": "a245cc75ce53e66f5d99c0a83377c6fc27e93bcb13ef839c75a8e36aa88001cf",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0b8d55d434f416d9d3ce51daee787f75cb6b135e",
+      "title": "fix: droiddeckctl refuses a DROIDDECKPACKAGE that is not a package name",
+      "summary": "Small follow-up to #854, from a note in its CodeRabbit review: droiddeckctl now refuses a DROIDDECKPACKAGE that isn't an Android package name. The value goes into commands run by the device's shell (am start -n, content call --uri), so a typo or a stray ; was passed on unchecked.",
+      "publishedAt": 1792160095000
+    },
     {
       "commit": "a422698f92e9ffbb1d0547dd99262e4111fb18a5",
       "title": "Keep waiting for a shortcut's Steam overview instead of dropping its cold launch",
@@ -155,12 +161,6 @@
       "title": "Add support for android auto",
       "summary": "I followed the guide from google to include any game in android auto\nhttps://android-developers.googleblog.com/2026/09/bring-android-game-to-car-screen.html\nand It seems to work good enough. In order to use the app you need to enable dev mode in android auto and tick unknown source.\nThe only issue I noticed is audio it seems to not sync with the OS. for example retroarch stops other media apps but",
       "publishedAt": 1792158331000
-    },
-    {
-      "commit": "e24e07d0ce3b297bad02bd3a31fcfc57a748c7d8",
-      "title": "Fix Quest CI headers when preloads are cached",
-      "summary": "Prepare the Quest presenter test Vulkan headers independently of the preload cache so warm-cache CI builds pass; verified all Quest IPC and presenter shutdown checks in the Linux build container.",
-      "publishedAt": 1792154752000
     }
   ],
   "tests": [
