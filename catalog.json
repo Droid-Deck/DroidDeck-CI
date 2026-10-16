@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792104389080,
+  "generatedAt": 1792120849090,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-928",
+      "title": "feat: Epic Games Launcher for Linux",
+      "summary": "Install Epic's official Linux launcher (EGLv2) from Epic's CDN with Valve's Steam Runtime 4 and run it under FEX, signed in with the linked Epic account. Epic games launch through a hidden launcher instance so they get the launcher's own arguments, with the exchange-code launch as the fallback, and DroidDeck installs show up in the launcher as installed.",
+      "commit": "aa675319e28f0d16fda7179d3d865f2ee5b6273f",
+      "pr": 928,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792120803000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-928",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.928-aa67531.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-aa67531.apk",
+          "size": 62055321,
+          "sha256": "a6eed53e6eec42fbf6255d294612fc334aa8bbb8e5c30af0896f1f8eb5827d4e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.928-aa67531-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-aa67531-pubg.apk",
+          "size": 62055321,
+          "sha256": "bf8ea4caabe359df2ae27cc5a1cc7800a8dce675d47b68148c629e052ffe05ed",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.928-aa67531-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-aa67531-antutu.apk",
+          "size": 62055321,
+          "sha256": "6f79f916dc1727ed12229d65020983e78af222ff47bad468c028120baa830d98",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.928-aa67531-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-aa67531-ludashi.apk",
+          "size": 62055321,
+          "sha256": "d0e9412aab200dd6b7ec2a8d692fe0d55b30330e0f030dddb18e084c08b6cffd",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-910",
       "title": "feat: add immersive Quest SteamVR to the standard app",
