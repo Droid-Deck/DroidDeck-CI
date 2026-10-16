@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792182390571,
+  "generatedAt": 1792182921476,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-977",
+      "title": "feat: auto driver picks come from a Drivers-CI manifest with per-GPU fallbacks",
+      "summary": "Step 3 of the Auto driver plan: Auto's pick per GPU now comes from a manifest in Drivers-CI, so the team can change a default or pull a bad build without an app release.",
+      "commit": "55f8af6a2b6a94d994498e587f39ff2069929281",
+      "pr": 977,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792182875000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-977",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.977-55f8af6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-977/DroidDeck-PR.977-55f8af6.apk",
+          "size": 64644337,
+          "sha256": "ab2fa297065fdc694dce3ec7438893f376152368d1d9f38df49f0c60e43189e1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.977-55f8af6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-977/DroidDeck-PR.977-55f8af6-pubg.apk",
+          "size": 64644337,
+          "sha256": "c0e816ae5694c362889e075dcc05d7a0429e2c9b123bf5f080fe05b9650bc068",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.977-55f8af6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-977/DroidDeck-PR.977-55f8af6-antutu.apk",
+          "size": 64644337,
+          "sha256": "7c9eee84870b45a24489356487249898c451cb1230af10f5415daa5ca2789652",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.977-55f8af6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-977/DroidDeck-PR.977-55f8af6-ludashi.apk",
+          "size": 64644337,
+          "sha256": "4525b21dd5293d0f42bd0fa08898fbd8831e8bc4d28b6de2575db153a28aeffd",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-973",
       "title": "Launch an added game after a bounded wait for its Steam overview",
