@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792158367549,
+  "generatedAt": 1792158508525,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-86b92c5",
-    "title": "Add support for android auto",
-    "summary": "I followed the guide from google to include any game in android auto\nhttps://android-developers.googleblog.com/2026/09/bring-android-game-to-car-screen.html\nand It seems to work good enough. In order to use the app you need to enable dev mode in android auto and tick unknown source.\nThe only issue I noticed is audio it seems to not sync with the OS. for example retroarch stops other media apps but droid deck doesn't but that's very minor.",
-    "commit": "86b92c5d0e0789b57a582779943e67a44af8fd85",
+    "tag": "main-a353b15",
+    "title": "fix: read Settings.Global phantom process flag on Android 12 (SDK 31)",
+    "summary": "Also write and check Settings.Global (settingsenablemonitorphantomprocs) on Android 12 (SDK 31) so disabling phantom process monitoring over USB ADB does not leave PhantomProcessLimit.read() stuck at UNREADABLE.",
+    "commit": "a353b1536473ee7582a9cb0408d675cc2ecf4c6f",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792158331000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-86b92c5",
+    "publishedAt": 1792158464000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a353b15",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-86b92c5.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86b92c5/DroidDeck-main-86b92c5.apk",
+        "name": "DroidDeck-main-a353b15.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a353b15/DroidDeck-main-a353b15.apk",
         "size": 63079573,
-        "sha256": "fff66930c18d728def75e6fa75b51a42850cd4a9a06d4dc825b693d3d9b176d1",
+        "sha256": "24e8ca57a1c23284db43b0b77a622e035d32321f2114f1dfba7218cbba343472",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-86b92c5-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86b92c5/DroidDeck-main-86b92c5-pubg.apk",
+        "name": "DroidDeck-main-a353b15-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a353b15/DroidDeck-main-a353b15-pubg.apk",
         "size": 63079573,
-        "sha256": "ab8b29e6ea04d710b0dfb664e5f2d67729e8cb126c3a858dddb6915cb37bece5",
+        "sha256": "9b82821888fcf89b2def6571e210a499cea6cac7641a85ae6b0879b222426673",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-86b92c5-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86b92c5/DroidDeck-main-86b92c5-antutu.apk",
+        "name": "DroidDeck-main-a353b15-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a353b15/DroidDeck-main-a353b15-antutu.apk",
         "size": 63079573,
-        "sha256": "05f9a26323f5fbfcb6664ad78d49cc83058674ec7cefbce2970ddb8e0f3ee8b4",
+        "sha256": "05a56b1956e6daacb3a1ab6cd0299b0baf1fe9772de7569e7cf0e7da57850788",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-86b92c5-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86b92c5/DroidDeck-main-86b92c5-ludashi.apk",
+        "name": "DroidDeck-main-a353b15-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a353b15/DroidDeck-main-a353b15-ludashi.apk",
         "size": 63079573,
-        "sha256": "5d62197e90a6157da3a031d686142884d5724d0c6fff9be89d1b2bba8df8ebaf",
+        "sha256": "79ba94ccb0865be35dc5a530304d0659dc2978165462ca2e235d9e87baa1d2db",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a353b1536473ee7582a9cb0408d675cc2ecf4c6f",
+      "title": "fix: read Settings.Global phantom process flag on Android 12 (SDK 31)",
+      "summary": "Also write and check Settings.Global (settingsenablemonitorphantomprocs) on Android 12 (SDK 31) so disabling phantom process monitoring over USB ADB does not leave PhantomProcessLimit.read() stuck at UNREADABLE.",
+      "publishedAt": 1792158464000
+    },
     {
       "commit": "86b92c5d0e0789b57a582779943e67a44af8fd85",
       "title": "Add support for android auto",
@@ -155,12 +161,6 @@
       "title": "feat: storage page to see and free DroidDeck's storage",
       "summary": "Adds a Storage tab to Setup that shows where DroidDeck's storage goes and frees what is safe to remove.",
       "publishedAt": 1792097812000
-    },
-    {
-      "commit": "0a72690631b3eeabf6450f62c12699f370dd6357",
-      "title": "fix: keep proot sessions alive when the kernel loses fork events",
-      "summary": "Problem:",
-      "publishedAt": 1792072678000
     }
   ],
   "tests": [
