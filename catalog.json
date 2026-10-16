@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792182921476,
+  "generatedAt": 1792184107088,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-928",
+      "title": "feat: Epic Games Launcher for Linux",
+      "summary": "Adds Epic's own Linux client (EGLv2, the 0.96 preview) to DroidDeck. It runs under FEX inside the Linux session and signs in automatically with the Epic account already linked in DroidDeck. Every Epic game now starts through it, so games get the same sign-in, entitlement and EOS environment they would on a PC.",
+      "commit": "c48b9c3cd0fc136682b515bd7e75a63cd3d36f0e",
+      "pr": 928,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792184062000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-928",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.928-c48b9c3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-c48b9c3.apk",
+          "size": 64742966,
+          "sha256": "5ff390e63dbce9055df414dca596297013a6e671284cfbcd1d744a9e28109f30",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.928-c48b9c3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-c48b9c3-pubg.apk",
+          "size": 64742966,
+          "sha256": "5828817f46424fb9c5828262d930af98107ec1c3f831e9669e507bc40b2d2f2c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.928-c48b9c3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-c48b9c3-antutu.apk",
+          "size": 64742966,
+          "sha256": "e4febaefa4433695bc8e4985ca39b9dc78f538560cf76f76ebcd31f8fda8b92e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.928-c48b9c3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-c48b9c3-ludashi.apk",
+          "size": 64742966,
+          "sha256": "22b0ada144b0eb72b25d134b41b434049dde81cd32d910092b822c8b56f0240d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-977",
       "title": "feat: auto driver picks come from a Drivers-CI manifest with per-GPU fallbacks",
       "summary": "Step 3 of the Auto driver plan: Auto's pick per GPU now comes from a manifest in Drivers-CI, so the team can change a default or pull a bad build without an app release.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-973/DroidDeck-PR.973-8c178f6-ludashi.apk",
           "size": 64627953,
           "sha256": "fe9723e2c139a1600e7f0d423f186e84faeda7d000e0fae159c9d3dad8636e49",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-928",
-      "title": "feat: Epic Games Launcher for Linux",
-      "summary": "Adds Epic's own Linux client (EGLv2, the 0.96 preview) to DroidDeck. It runs under FEX inside the Linux session and signs in automatically with the Epic account already linked in DroidDeck. Every Epic game now starts through it, so games get the same sign-in, entitlement and EOS environment they would on a PC.",
-      "commit": "39e57b6f1fd2af40478c5a7a1eaaf235fddf88e4",
-      "pr": 928,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792168202000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-928",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.928-39e57b6.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-39e57b6.apk",
-          "size": 63165819,
-          "sha256": "ed7d917b6bd1b4c7382b25b6f111322d70a7a59258b37673a383e3f9902734ce",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.928-39e57b6-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-39e57b6-pubg.apk",
-          "size": 63165819,
-          "sha256": "bcf6146aa9916b8063d56cf662e2c56b0a7ddb954a4e81cb5d5815d89b88d892",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.928-39e57b6-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-39e57b6-antutu.apk",
-          "size": 63169915,
-          "sha256": "eb6a85dc2787c04be42ad401edc930e0fc5b5155f95f96cd697d514b121df351",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.928-39e57b6-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-928/DroidDeck-PR.928-39e57b6-ludashi.apk",
-          "size": 63169915,
-          "sha256": "dd69c0df1407d04a93f02a7e85c72ddd41206e0d96dd29a79f9292f519e0f765",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
