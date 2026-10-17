@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792272972100,
+  "generatedAt": 1792274242403,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1039",
+      "title": "feat: opt-in offline launch for Easy Anti-Cheat games",
+      "summary": "Adds an opt-in per-game DROIDDECKANTICHEATOFFLINE setting. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, allowing games with an offline mode to start without the EAC bootstrapper. Game and anti-cheat files remain untouched; online modes requiring EAC remain unavailable.",
+      "commit": "67bf8f156818c85155010229f2439242f148af56",
+      "pr": 1039,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792274209000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1039",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1039-67bf8f1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-67bf8f1.apk",
+          "size": 85882805,
+          "sha256": "ba67daa33fcc90fc4b0e7ba293474fd766920fba033672fcd99abe5cbc57981d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1039-67bf8f1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-67bf8f1-pubg.apk",
+          "size": 85882805,
+          "sha256": "fd5987a330dbd08b0f47918ea4e2877eda8b242df437f920947829b85dea8deb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1039-67bf8f1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-67bf8f1-antutu.apk",
+          "size": 85882805,
+          "sha256": "b4a3d6cc21193a842db9bd9b110e5c9250788d22d8f58155c79ae9b370112c2d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1039-67bf8f1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-67bf8f1-ludashi.apk",
+          "size": 85882805,
+          "sha256": "534f2ac88fd79339e7dcf09849994163cb5af7083be7b27bfe120be55827ec67",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1036",
       "title": "feat: Better boot movies system; Added steamdeckrepo support",
