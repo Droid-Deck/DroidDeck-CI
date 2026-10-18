@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792359449373,
+  "generatedAt": 1792359528780,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-587",
+      "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
+      "summary": "A user's first Steam setup never finished on an Honor Pad (Snapdragon 6 Gen 1, metered Wi-Fi with a 14 Mbit/s link). Their log stops at downloading Steam: binslinuxarm64linuxarm64 (2/17). The log was shared 31 s into the session, so nothing had failed yet. The way the download works explains why it never got further.",
+      "commit": "63168d4d3e7807645a675760d8a5483ec07cef86",
+      "pr": 587,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359428000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-587",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.587-63168d4.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-63168d4.apk",
+          "size": 105929572,
+          "sha256": "005256c2a917b8603ee117505c99d65298d91e469f6eaf3e73edc6438144a51d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.587-63168d4-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-63168d4-pubg.apk",
+          "size": 105929572,
+          "sha256": "084d8df7b7f340f1fa3a8597f63fff4b57f1006ce17edcde751dea352a1cb77d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.587-63168d4-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-63168d4-antutu.apk",
+          "size": 105929572,
+          "sha256": "2705d5bba3981342beb41c93671afd44e3bf68fd00f72171c3572d683696bd00",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.587-63168d4-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-63168d4-ludashi.apk",
+          "size": 105929572,
+          "sha256": "45f2ed130f44d697a291dd7996e5895f9be68e08c07ad8e28896070f83b4dca9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-395",
+      "title": "Return to the launcher when a front-end game closes",
+      "summary": "When a game started from DroidDeck's Games tab (or from another launcher's link) closes, DroidDeck now ends the Steam session cleanly and takes you back to where you launched it, instead of leaving you in Big Picture.",
+      "commit": "2098e0b7f0f9d1c97550db629b401a18ad5c98a9",
+      "pr": 395,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359425000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-395",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.395-2098e0b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-2098e0b.apk",
+          "size": 105933668,
+          "sha256": "d75f0adf2097dda920a278dd74cd541588b1d837ab3ac8ca72956ead169c24f1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.395-2098e0b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-2098e0b-pubg.apk",
+          "size": 105933668,
+          "sha256": "1b1b3b3a9704e7a1746050efcec935bb11a6084fb903c9762584f81287120721",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.395-2098e0b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-2098e0b-antutu.apk",
+          "size": 105933668,
+          "sha256": "cf9a58ea422afc54b00883b2bea567b1f9e90b896c2a49138ae5a2e3a13caec0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.395-2098e0b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-2098e0b-ludashi.apk",
+          "size": 105933668,
+          "sha256": "e3ac93e1bf757ef5004f167d1f8d8e5c06928a1559609d784310d50e46c60eba",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-530",
       "title": "feat(phantom-process): add manual override for manual ADB and unreadable setups",
       "summary": "Fixes #468, #207, and #508.\n### Problem\nOn Android 12 (API 31), DroidDeck relies on an app-local SharedPreferences flag (android12-off) set only via its own wireless ADB workflow. As a result, users who apply the phantom process fix externally via PC ADB, or whose devices lack standard Android wireless pairing with a PIN (e.g. LG V50s ThinQ, Huawei/HarmonyOS), remain stuck in UNREADABLE and cannot launch Steam.\n### Changes\n\u2022 Manual Override: Added an explicit \"I've already applied the changes\" action (PhantomProcessStatus.OVERRIDDEN) that persists the override and immediately unlocks Steam launch.\n\u2022 Accessible Workflows:",
@@ -172,7 +270,7 @@
       "pr": 530,
       "version": null,
       "versionCode": 14,
-      "publishedAt": 1792359401000,
+      "publishedAt": 1792359402000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-530",
       "apks": {
         "com.droiddeck.launcher": {
@@ -181,6 +279,24 @@
           "size": 105941860,
           "sha256": "0175649f4a6c993009b43512c9eaf70877d09dc37145d4c8dc4e5da033509d5d",
           "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.530-7ab8c95-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-530/DroidDeck-PR.530-7ab8c95-pubg.apk",
+          "size": 105941860,
+          "sha256": "653b579a13a21644350b3c9c45b054f039284567651ed21ad1517d9744c97d37",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.530-7ab8c95-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-530/DroidDeck-PR.530-7ab8c95-antutu.apk",
+          "size": 105941860,
+          "sha256": "d3e122891eeefeff7de38579ef54df5093649f1aa9036fcac867a0cd6f561604",
+          "packageName": "com.antutu.benchmark.full",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
@@ -2058,55 +2174,6 @@
       }
     },
     {
-      "tag": "pr-587",
-      "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
-      "summary": "A user's first Steam setup never finished on an Honor Pad (Snapdragon 6 Gen 1, metered Wi-Fi with a 14 Mbit/s link). Their log stops at downloading Steam: binslinuxarm64linuxarm64 (2/17). The log was shared 31 s into the session, so nothing had failed yet. The way the download works explains why it never got further.",
-      "commit": "bd36f6f6911272a8781cb1e76d540bb3d94b31bd",
-      "pr": 587,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791748985000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-587",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.587-bd36f6f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-bd36f6f.apk",
-          "size": 46422973,
-          "sha256": "819a3e5ef770295c55338dc6fb15b96aefa6ce065fa7c8f21313f5af3bd5a1d8",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.587-bd36f6f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-bd36f6f-pubg.apk",
-          "size": 46422973,
-          "sha256": "1f3f017e389b68422920202fdd70c2495c91f7eadb3a50cd0b6148304a34f915",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.587-bd36f6f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-bd36f6f-antutu.apk",
-          "size": 46422973,
-          "sha256": "a08a557db1fba4e6fe795495636e9940ece518978289986f476861f129044fc9",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.587-bd36f6f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-bd36f6f-ludashi.apk",
-          "size": 46422973,
-          "sha256": "b6d94ded7ced129005f7a3310b6bde48e847c7aabd13b00bc91b6daa83b9cc23",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-556",
       "title": "Accessibility tab: install and enable Orca in every Linux session",
       "summary": "Adds an Accessibility tab to the launcher's front-end rail: an introduction to Orca (the GNOME screen reader), an install button, an open-settings button and a master switch that defaults on after install.",
@@ -2200,55 +2267,6 @@
           "sha256": "5d248044764cd0aed064893920b40b224e2baa0e723bcb035afb7675f307f5a6",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-395",
-      "title": "Return to the launcher when a front-end game closes",
-      "summary": "When a game started from DroidDeck's Games tab (or from another launcher's link) closes, DroidDeck now ends the Steam session cleanly and takes you back to where you launched it, instead of leaving you in Big Picture.",
-      "commit": "799ecfb2679a7f4a20bc366b998cb5d5d4d8fb16",
-      "pr": 395,
-      "version": null,
-      "versionCode": 11,
-      "publishedAt": 1791383705000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-395",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.395-799ecfb.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-799ecfb.apk",
-          "size": 38199787,
-          "sha256": "e133da51d4271b65243b59bf7452a66c48db9f4f4df44bf75c56bb06f6a25466",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.395-799ecfb-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-799ecfb-pubg.apk",
-          "size": 38199787,
-          "sha256": "eab3039169ab6399240559841cf9cb71b846fb87487fd05a29817d5e422c565f",
-          "packageName": "com.tencent.ig",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.395-799ecfb-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-799ecfb-antutu.apk",
-          "size": 38199787,
-          "sha256": "34a9b62614f5bfb615d62b491c792dee5e1f62f1147f80fa91180104682408da",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 11,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.395-799ecfb-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-799ecfb-ludashi.apk",
-          "size": 38199787,
-          "sha256": "ac8756a6129be73c1d125f91145e08fdd9d9d1c8425cd12be36d74173cb229ff",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 11,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         }
       }
