@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792365189573,
+  "generatedAt": 1792365313828,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1096",
+      "title": "Steam x86-64 client: menus come up, sign-in stays put, games listed once",
+      "summary": "Users who switched the Steam client from arm64 to x86-64 got a blank screen behind \"Starting Steam x86-64 \u00b7 Downloading the Steam client update \u00b7 100%\". The app gave up after 10 minutes. Each switch also signed one of the two clients out, and some games were listed twice.",
+      "commit": "2242e7bb5591e6bbcb94a4f6df62273c8a67d045",
+      "pr": 1096,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792365214000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1096",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1096-2242e7b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1096/DroidDeck-PR.1096-2242e7b.apk",
+          "size": 105929572,
+          "sha256": "92b254d9e5777e36d9052c205d3110d0f0f55ba5b17ab2a93d0d9117da8ae9eb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1096-2242e7b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1096/DroidDeck-PR.1096-2242e7b-pubg.apk",
+          "size": 105929572,
+          "sha256": "808c936440d4604326d074e88ed6b475531f9d371f5780527cc470771bf7f3ea",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1096-2242e7b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1096/DroidDeck-PR.1096-2242e7b-antutu.apk",
+          "size": 105929572,
+          "sha256": "20c0e0a7b5efd9b7d32f3da70803795bd06b2e5d61745335c940866f2cef285c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1096-2242e7b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1096/DroidDeck-PR.1096-2242e7b-ludashi.apk",
+          "size": 105929572,
+          "sha256": "3921f3a54be837fe7419f798acca858d133dd12b1e9ec952e6b782ff7e3a3950",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-602",
       "title": "Add opt-in Pixel WoW64 and D3D9 compatibility tools",
