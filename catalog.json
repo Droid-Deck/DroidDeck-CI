@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792309281903,
+  "generatedAt": 1792309991956,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-7d21ba2",
-    "title": "fix: x86-64 Steam client fails without the KDE desktop (FEX r5 bundles libxxhash)",
-    "summary": "The x86-64 Steam client failed at its first FEX call on devices without the KDE desktop package:",
-    "commit": "7d21ba22332a82d06a39d972bf552e97d6517773",
+    "tag": "main-cf6cf16",
+    "title": "feat: x86-64 client follows DroidDeck-Components' fex.json; fuller x86-64 session logs",
+    "summary": "FEX builds can now reach devices without an app release, and x86-64 session logs say more about what ran.",
+    "commit": "cf6cf168b09b0ea19e80376783e514793c82daec",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792304118000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7d21ba2",
+    "publishedAt": 1792309940000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cf6cf16",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-7d21ba2.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d21ba2/DroidDeck-main-7d21ba2.apk",
-        "size": 85956926,
-        "sha256": "27e2bcad549f34c6256b7eefbf7756de37ef365a93f27b0c17c6c0954242719f",
+        "name": "DroidDeck-main-cf6cf16.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf6cf16/DroidDeck-main-cf6cf16.apk",
+        "size": 85961022,
+        "sha256": "185bde51b06962e76f585a7e59eb0e1c817bf816925f573ad0df4fe8a28831fa",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-7d21ba2-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d21ba2/DroidDeck-main-7d21ba2-pubg.apk",
-        "size": 85956926,
-        "sha256": "7e7965c9f2f7f7d84deef2fea619d4433658c95db49328f90c2073fb93151aa7",
+        "name": "DroidDeck-main-cf6cf16-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf6cf16/DroidDeck-main-cf6cf16-pubg.apk",
+        "size": 85961022,
+        "sha256": "5b6e6a854ee8fbbbb0a6942a7ab0593f20b58aa49d7c401d8af6248a3e97b11d",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-7d21ba2-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d21ba2/DroidDeck-main-7d21ba2-antutu.apk",
-        "size": 85956926,
-        "sha256": "42abbad38932fb4c2245b618b9636af3150887673055dfe42b6740502ba9e43b",
+        "name": "DroidDeck-main-cf6cf16-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf6cf16/DroidDeck-main-cf6cf16-antutu.apk",
+        "size": 85961022,
+        "sha256": "409772cef2ecf65c0bcb2513054a71e061a4740d1347bc71617e9eabd6536327",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-7d21ba2-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d21ba2/DroidDeck-main-7d21ba2-ludashi.apk",
-        "size": 85956926,
-        "sha256": "278f54e8038f13c5c4511b9d72b6b5767dc489a157a93d232ac907ee6bd0b9a2",
+        "name": "DroidDeck-main-cf6cf16-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf6cf16/DroidDeck-main-cf6cf16-ludashi.apk",
+        "size": 85961022,
+        "sha256": "d94c9e2a14d000bcb66304235d7831317e0cc26b007cd1dbada6828346f11bb1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "cf6cf168b09b0ea19e80376783e514793c82daec",
+      "title": "feat: x86-64 client follows DroidDeck-Components' fex.json; fuller x86-64 session logs",
+      "summary": "FEX builds can now reach devices without an app release, and x86-64 session logs say more about what ran.",
+      "publishedAt": 1792309940000
+    },
     {
       "commit": "7d21ba22332a82d06a39d972bf552e97d6517773",
       "title": "fix: x86-64 Steam client fails without the KDE desktop (FEX r5 bundles libxxhash)",
@@ -155,12 +161,6 @@
       "title": "feat: auto drivers update on app open and roll back if a new pair never starts a session",
       "summary": "Auto mode now keeps users on the newest recommended driver pair without them having to press refresh. If a new pair can't start a session, Auto switches back to the last pair that worked.",
       "publishedAt": 1792182335000
-    },
-    {
-      "commit": "d8df18df824400ecab66aa7129d66e7fd2b021ce",
-      "title": "fix: Keep game art in step with Steam's grid folder; apply review fixes",
-      "summary": "\u2022 A chosen cover, background or logo is written to Steam's grid folder at once, so it reaches Steam while the client is closed. Each library scan takes over art changed or removed in Steam, ignoring files the shortcuts writer placed. Works for Steam and Custom games.\n\u2022 A chosen image gets a new file name each time, so the launcher shows a new choice at once instead of the cached picture.\n\u2022 SteamGr",
-      "publishedAt": 1792182295000
     }
   ],
   "tests": [
