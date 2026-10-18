@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792355340701,
+  "generatedAt": 1792355441289,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1089",
+      "title": "fix: install Decky from upstream and offer the newest release",
+      "summary": "\u2022 Install and update the Decky Loader from SteamDeckHomebrew/decky-loader instead of the Droid-Deck/decky-loader fork. Upstream now publishes the PluginLoader-arm64 build that DroidDeck downloads, so the fork is no longer needed.\n\u2022 Offer the newest release across the stable and prerelease channels. Previously the menu showed stable and only fell back to prerelease when no stable release existed.",
+      "commit": "eb5272eefcc8af247734c16cc116c7a44b32d225",
+      "pr": 1089,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792355374000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1089",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1089-eb5272e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1089/DroidDeck-PR.1089-eb5272e.apk",
+          "size": 105929572,
+          "sha256": "78ab87af236d65454fd14611f75675b7b09ab37bf7c4eef4608ed3ff8741b00d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1089-eb5272e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1089/DroidDeck-PR.1089-eb5272e-pubg.apk",
+          "size": 105929572,
+          "sha256": "7aa16599abdec272763f491a11fdf8b95b5cf1c9e55c0875aa10c4921387aaaf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1089-eb5272e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1089/DroidDeck-PR.1089-eb5272e-antutu.apk",
+          "size": 105929572,
+          "sha256": "d164b49c65a8140ee17d80508729b5779714c6d405389cd63d52e5a2196a2942",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1089-eb5272e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1089/DroidDeck-PR.1089-eb5272e-ludashi.apk",
+          "size": 105929572,
+          "sha256": "3a73307481c5063ee860cd2c2071b64bfe88a3150b8ff945006cbacce3bf3950",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1078",
       "title": "fix: an interrupted package install can no longer break the Linux runtime",
       "summary": "A tester's Thor stopped starting Steam (Exit status 134) after the app was closed during a desktop install. Restarting did not help; only reinstalling the app did, which cost them every game.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-ludashi.apk",
           "size": 105929572,
           "sha256": "1cf35224cfc166d463b2aec18ef441307bd9f4f1afc6c06840c5c079040f98c7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1089",
-      "title": "fix: install Decky from upstream and offer the newest release",
-      "summary": "\u2022 Install and update the Decky Loader from SteamDeckHomebrew/decky-loader instead of the Droid-Deck/decky-loader fork. Upstream now publishes the PluginLoader-arm64 build that DroidDeck downloads, so the fork is no longer needed.\n\u2022 Offer the newest release across the stable and prerelease channels. Previously the menu showed stable and only fell back to prerelease when no stable release existed.",
-      "commit": "eb5272eefcc8af247734c16cc116c7a44b32d225",
-      "pr": 1089,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792355196000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1089",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1089-eb5272e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1089/DroidDeck-PR.1089-eb5272e.apk",
-          "size": 105929572,
-          "sha256": "78ab87af236d65454fd14611f75675b7b09ab37bf7c4eef4608ed3ff8741b00d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1089-eb5272e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1089/DroidDeck-PR.1089-eb5272e-pubg.apk",
-          "size": 105929572,
-          "sha256": "7aa16599abdec272763f491a11fdf8b95b5cf1c9e55c0875aa10c4921387aaaf",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1089-eb5272e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1089/DroidDeck-PR.1089-eb5272e-antutu.apk",
-          "size": 105929572,
-          "sha256": "d164b49c65a8140ee17d80508729b5779714c6d405389cd63d52e5a2196a2942",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1089-eb5272e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1089/DroidDeck-PR.1089-eb5272e-ludashi.apk",
-          "size": 105929572,
-          "sha256": "3a73307481c5063ee860cd2c2071b64bfe88a3150b8ff945006cbacce3bf3950",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
