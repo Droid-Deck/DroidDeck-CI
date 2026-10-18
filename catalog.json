@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792331074283,
+  "generatedAt": 1792335142219,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1078",
+      "title": "fix: an interrupted package install can no longer break the Linux runtime",
+      "summary": "A tester's Thor stopped starting Steam (Exit status 134) after the app was closed during a desktop install. Restarting did not help; only reinstalling the app did, which cost them every game.",
+      "commit": "b794f610f154f74d6cee8ba2b4dab5dd359aeb17",
+      "pr": 1078,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792335105000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1078",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1078-b794f61.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-b794f61.apk",
+          "size": 105933668,
+          "sha256": "8546ce1895c809e9ee3a12c16180f95abd6a758ed288696e0cea58cbd25b17e6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1078-b794f61-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-b794f61-pubg.apk",
+          "size": 105933668,
+          "sha256": "dff80c108b6873a1aef511894c9d1e47c26bab26ecc8e0d3842baf5690c64966",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1078-b794f61-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-b794f61-antutu.apk",
+          "size": 105933668,
+          "sha256": "e0b0f36918a2d398ce36a8634a3c7b6bd26b3934527a85e2e7e33ec93168b4d2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1078-b794f61-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-b794f61-ludashi.apk",
+          "size": 105933668,
+          "sha256": "d01eb0a862dd7fbce9cca1e86148a63eb895c563e25ed69c3518e56ef0c18b60",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1036",
       "title": "feat: Better boot movies system; Added steamdeckrepo support",
