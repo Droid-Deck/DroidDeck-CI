@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792328082300,
+  "generatedAt": 1792328172299,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cf6cf16",
-    "title": "feat: x86-64 client follows DroidDeck-Components' fex.json; fuller x86-64 session logs",
-    "summary": "FEX builds can now reach devices without an app release, and x86-64 session logs say more about what ran.",
-    "commit": "cf6cf168b09b0ea19e80376783e514793c82daec",
+    "tag": "main-219548f",
+    "title": "Add app-wide 3DoF for VITURE, RayNeo and XREAL glasses and 6DoF for Luma Ultra",
+    "summary": "Smart-glasses screen tracking now applies throughout DroidDeck: its menus and settings, non-Steam launchers, desktop sessions, and games share the same configuration. Users can select a tracked virtual screen without starting SteamVR. The branch also adds Luma Ultra positional tracking and optional stereo-assisted controllers, improves glasses display routing, and hardens SteamVR startup and rende",
+    "commit": "219548f4b6ce1c89e827666b8dd241905ef5cfe0",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792309940000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cf6cf16",
+    "publishedAt": 1792328126000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-219548f",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cf6cf16.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf6cf16/DroidDeck-main-cf6cf16.apk",
-        "size": 85961022,
-        "sha256": "185bde51b06962e76f585a7e59eb0e1c817bf816925f573ad0df4fe8a28831fa",
+        "name": "DroidDeck-main-219548f.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-219548f/DroidDeck-main-219548f.apk",
+        "size": 105921464,
+        "sha256": "b6470f20e8c6dd4d79bef43c05d387fc4fca9131c2671df6d55bf259babc83d1",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cf6cf16-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf6cf16/DroidDeck-main-cf6cf16-pubg.apk",
-        "size": 85961022,
-        "sha256": "5b6e6a854ee8fbbbb0a6942a7ab0593f20b58aa49d7c401d8af6248a3e97b11d",
+        "name": "DroidDeck-main-219548f-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-219548f/DroidDeck-main-219548f-pubg.apk",
+        "size": 105921464,
+        "sha256": "f4483b91b3a9e28cfb78953a3078448bb51d0e7bbe1bd494b7474cf79600f686",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cf6cf16-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf6cf16/DroidDeck-main-cf6cf16-antutu.apk",
-        "size": 85961022,
-        "sha256": "409772cef2ecf65c0bcb2513054a71e061a4740d1347bc71617e9eabd6536327",
+        "name": "DroidDeck-main-219548f-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-219548f/DroidDeck-main-219548f-antutu.apk",
+        "size": 105921464,
+        "sha256": "f44d235307093189d6f0666bf2fee7a34026924bbc76bbe0f8a94602187a1e2e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cf6cf16-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf6cf16/DroidDeck-main-cf6cf16-ludashi.apk",
-        "size": 85961022,
-        "sha256": "d94c9e2a14d000bcb66304235d7831317e0cc26b007cd1dbada6828346f11bb1",
+        "name": "DroidDeck-main-219548f-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-219548f/DroidDeck-main-219548f-ludashi.apk",
+        "size": 105921464,
+        "sha256": "a494cd9d19314e1ef413e865ed6b7bc1e7d474d85ff1deaa4d8db6548872e7b7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "219548f4b6ce1c89e827666b8dd241905ef5cfe0",
+      "title": "Add app-wide 3DoF for VITURE, RayNeo and XREAL glasses and 6DoF for Luma Ultra",
+      "summary": "Smart-glasses screen tracking now applies throughout DroidDeck: its menus and settings, non-Steam launchers, desktop sessions, and games share the same configuration. Users can select a tracked virtual screen without starting SteamVR. The branch also adds Luma Ultra positional tracking and optional stereo-assisted controllers, improves glasses display routing, and hardens SteamVR startup and rende",
+      "publishedAt": 1792328126000
+    },
     {
       "commit": "cf6cf168b09b0ea19e80376783e514793c82daec",
       "title": "feat: x86-64 client follows DroidDeck-Components' fex.json; fuller x86-64 session logs",
@@ -155,12 +161,6 @@
       "title": "Launch an added game after a bounded wait for its Steam overview",
       "summary": "Added non-Steam games now start about 90 s after Steam is up at the latest, instead of never, when Steam's shortcut overview does not show up in time (large libraries).",
       "publishedAt": 1792186422000
-    },
-    {
-      "commit": "62192203e957257fa6d17acc83780b5bd33bd00f",
-      "title": "feat: auto drivers update on app open and roll back if a new pair never starts a session",
-      "summary": "Auto mode now keeps users on the newest recommended driver pair without them having to press refresh. If a new pair can't start a session, Auto switches back to the last pair that worked.",
-      "publishedAt": 1792182335000
     }
   ],
   "tests": [
