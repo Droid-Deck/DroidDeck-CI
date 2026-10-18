@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792355541285,
+  "generatedAt": 1792355579952,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1039",
+      "title": "feat: opt-in offline launch for Easy Anti-Cheat games",
+      "summary": "Adds an opt-in per-game DROIDDECKANTICHEATOFFLINE setting. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, allowing games with an offline mode to start without the EAC bootstrapper. Game and anti-cheat files remain untouched; online modes requiring EAC remain unavailable.",
+      "commit": "51fa38f0fed92f5ec3cc1af7fe9ba82540f5f028",
+      "pr": 1039,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792355524000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1039",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1039-51fa38f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-51fa38f.apk",
+          "size": 105929572,
+          "sha256": "c7605d033f41fbfc97e0f14733d45ae2c94cd5f57216a62713edfa7248eda4ed",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1039-51fa38f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-51fa38f-pubg.apk",
+          "size": 105929572,
+          "sha256": "3c0ed575bc732aaf24e313d98727a17dadedd6379f9b4599191821c75532af00",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1039-51fa38f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-51fa38f-antutu.apk",
+          "size": 105929572,
+          "sha256": "418382f2aa04e3f5248883e6edf7c88b50959b4e2a32856abc63458a1e839a24",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1039-51fa38f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-51fa38f-ludashi.apk",
+          "size": 105929572,
+          "sha256": "3e0c3abc8327d21d5611db2dca6bafbad6f1ec000365666d2be8f77b393cb3e4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1078",
       "title": "fix: an interrupted package install can no longer break the Linux runtime",
@@ -454,55 +503,6 @@
           "sha256": "da898401712bd00d7553c8c24429ccc025cfe5d5856d4930fc4fe8c24de032f1",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1039",
-      "title": "feat: opt-in offline launch for Easy Anti-Cheat games",
-      "summary": "Adds an opt-in per-game DROIDDECKANTICHEATOFFLINE setting. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, allowing games with an offline mode to start without the EAC bootstrapper. Game and anti-cheat files remain untouched; online modes requiring EAC remain unavailable.",
-      "commit": "67bf8f156818c85155010229f2439242f148af56",
-      "pr": 1039,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792274209000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1039",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1039-67bf8f1.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-67bf8f1.apk",
-          "size": 85882805,
-          "sha256": "ba67daa33fcc90fc4b0e7ba293474fd766920fba033672fcd99abe5cbc57981d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1039-67bf8f1-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-67bf8f1-pubg.apk",
-          "size": 85882805,
-          "sha256": "fd5987a330dbd08b0f47918ea4e2877eda8b242df437f920947829b85dea8deb",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1039-67bf8f1-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-67bf8f1-antutu.apk",
-          "size": 85882805,
-          "sha256": "b4a3d6cc21193a842db9bd9b110e5c9250788d22d8f58155c79ae9b370112c2d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1039-67bf8f1-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-67bf8f1-ludashi.apk",
-          "size": 85882805,
-          "sha256": "534f2ac88fd79339e7dcf09849994163cb5af7083be7b27bfe120be55827ec67",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         }
       }
