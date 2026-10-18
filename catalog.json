@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792337995284,
+  "generatedAt": 1792343280334,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1036",
+      "title": "feat: Better boot movies system; Added steamdeckrepo support",
+      "summary": "\u2022 Installed: the \u201cInstalled movies\u201d row has a Browse button. It opens a list with a cover for each movie and the current one highlighted. The list re-reads every 2 seconds, so a movie picked or removed inside Steam shows up.\n\u2022 Import: the same import as before. Imported movies now go into Steam\u2019s own movies folder, so Steam lists them too.\n\u2022 SteamDeckRepo: search, device filter (all, Steam Deck, Steam Machine), and Trending / Most downloaded / Most liked / Newest tabs. Each page shows 12 movies, with Previous and Next buttons. Install downloads the movie, and the button turns into Use.\n\u2022 Sound: the on/off toggle, plus a volume slider and a \u201cLength\u201d slider. I read your \u201cseconds slide\u201d as how many seconds of the movie play, from 1 s up to the movie\u2019s full length. Tell me if you meant something else.\n\u2022 The Adjust logo hint now reads \u201cThis exact spot can differ by a few pixels.\u201d",
+      "commit": "eb6430f92c935e5b9d795232294775658983d81f",
+      "pr": 1036,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792343229000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1036",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1036-eb6430f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-eb6430f.apk",
+          "size": 106027876,
+          "sha256": "39a082c533509e74a087b24b924f84caa230c3040da8ef8f75c0ec8856cfd34f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1036-eb6430f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-eb6430f-pubg.apk",
+          "size": 106027876,
+          "sha256": "0c57eab668801a5f086e6f2e583b28bf7e1bd6709d22434051e2d41cc09f7cc0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1036-eb6430f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-eb6430f-antutu.apk",
+          "size": 106027876,
+          "sha256": "3da49e1954474b437a6dc7988d92588bb07d9dcfe3bec0c3810fb0982ad036e2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1036-eb6430f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-eb6430f-ludashi.apk",
+          "size": 106027876,
+          "sha256": "9c409305406e121312ddb005712608e3d67e14d4c4d7fcd73b12ba400be5619e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1078",
       "title": "fix: an interrupted package install can no longer break the Linux runtime",
       "summary": "A tester's Thor stopped starting Steam (Exit status 134) after the app was closed during a desktop install. Restarting did not help; only reinstalling the app did, which cost them every game.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-b794f61-ludashi.apk",
           "size": 105933668,
           "sha256": "d01eb0a862dd7fbce9cca1e86148a63eb895c563e25ed69c3518e56ef0c18b60",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1036",
-      "title": "feat: Better boot movies system; Added steamdeckrepo support",
-      "summary": "\u2022 Installed: the \u201cInstalled movies\u201d row has a Browse button. It opens a list with a cover for each movie and the current one highlighted. The list re-reads every 2 seconds, so a movie picked or removed inside Steam shows up.\n\u2022 Import: the same import as before. Imported movies now go into Steam\u2019s own movies folder, so Steam lists them too.\n\u2022 SteamDeckRepo: search, device filter (all, Steam Deck, Steam Machine), and Trending / Most downloaded / Most liked / Newest tabs. Each page shows 12 movies, with Previous and Next buttons. Install downloads the movie, and the button turns into Use.\n\u2022 Sound: the on/off toggle, plus a volume slider and a \u201cLength\u201d slider. I read your \u201cseconds slide\u201d as how many seconds of the movie play, from 1 s up to the movie\u2019s full length. Tell me if you meant something else.\n\u2022 The Adjust logo hint now reads \u201cThis exact spot can differ by a few pixels.\u201d",
-      "commit": "42a211c0d3025294786d12bb6e61a22b88220542",
-      "pr": 1036,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792328024000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1036",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1036-42a211c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-42a211c.apk",
-          "size": 86059326,
-          "sha256": "146dd65cee98388273522d2ea02b27610d452b77142c3cb06aaa2d52069673c7",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1036-42a211c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-42a211c-pubg.apk",
-          "size": 86059326,
-          "sha256": "994ffdf4b778800922fe644b78b34b8465a8f1ad34c5826383690a5be86b020b",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1036-42a211c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-42a211c-antutu.apk",
-          "size": 86059326,
-          "sha256": "b3741281fa40c3e8b38adb1cf522f5eb50fd9aab8d921f2b46d7b25277f6c30b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1036-42a211c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-42a211c-ludashi.apk",
-          "size": 86059326,
-          "sha256": "716d200bb6ae6dc7b6bbca215027d790e27c4ab69a957f93fc83ebc4c42f1682",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
