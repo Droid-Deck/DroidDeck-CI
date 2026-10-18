@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792355441289,
+  "generatedAt": 1792355492519,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-677",
+      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
+      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
+      "commit": "73e98ee18b0b18310b41af6a8df562551508ae27",
+      "pr": 677,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792355438000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-677",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.677-73e98ee.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee.apk",
+          "size": 105929572,
+          "sha256": "1a939d6631d422056c55c7252876942e3f9dfb5c8081cc7f57753f6f9780a1e2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.677-73e98ee-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-pubg.apk",
+          "size": 105929572,
+          "sha256": "516145f075bdb6cd94329108716dc14b8b4538037564dbe7fdf0f475022fc97c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.677-73e98ee-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-antutu.apk",
+          "size": 105929572,
+          "sha256": "ddb1b0c351d0581f2a35506a17dd40949771c622589cee88f39a78ad057b9d16",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.677-73e98ee-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-ludashi.apk",
+          "size": 105929572,
+          "sha256": "1cf35224cfc166d463b2aec18ef441307bd9f4f1afc6c06840c5c079040f98c7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1089",
       "title": "fix: install Decky from upstream and offer the newest release",
       "summary": "\u2022 Install and update the Decky Loader from SteamDeckHomebrew/decky-loader instead of the Droid-Deck/decky-loader fork. Upstream now publishes the PluginLoader-arm64 build that DroidDeck downloads, so the fork is no longer needed.\n\u2022 Offer the newest release across the stable and prerelease channels. Previously the menu showed stable and only fell back to prerelease when no stable release existed.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-4ac9c7a-ludashi.apk",
           "size": 105941860,
           "sha256": "7b57d79579e66dd7c47d2a04743e3a797fc0ccca666d8278b049efc4c45ce7e9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-677",
-      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
-      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
-      "commit": "73e98ee18b0b18310b41af6a8df562551508ae27",
-      "pr": 677,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792355305000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-677",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.677-73e98ee.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee.apk",
-          "size": 105929572,
-          "sha256": "1a939d6631d422056c55c7252876942e3f9dfb5c8081cc7f57753f6f9780a1e2",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.677-73e98ee-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-pubg.apk",
-          "size": 105929572,
-          "sha256": "516145f075bdb6cd94329108716dc14b8b4538037564dbe7fdf0f475022fc97c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.677-73e98ee-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-antutu.apk",
-          "size": 105929572,
-          "sha256": "ddb1b0c351d0581f2a35506a17dd40949771c622589cee88f39a78ad057b9d16",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.677-73e98ee-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-ludashi.apk",
-          "size": 105929572,
-          "sha256": "1cf35224cfc166d463b2aec18ef441307bd9f4f1afc6c06840c5c079040f98c7",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
