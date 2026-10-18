@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792355723180,
+  "generatedAt": 1792356595983,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1034",
+      "title": "fix: run x86 Proton under FEX in the Steam runtime it requires",
+      "summary": "x86-64 Proton (e.g. Proton Experimental / 11) run through droiddeck-fex never got past startup on the Thor. Three separate problems, all in the FEX launch path:",
+      "commit": "ab7582da4bae3c7e059a46be80d75c7e2dcb81bf",
+      "pr": 1034,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792356532000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1034",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1034-ab7582d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-ab7582d.apk",
+          "size": 105929572,
+          "sha256": "e6eae46628dd9e3f3db40741ca26f2c468162e405439917497f0ae0b5bbf1223",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1034-ab7582d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-ab7582d-pubg.apk",
+          "size": 105929572,
+          "sha256": "be5ec4718c697e9cb209a931ae2b6bf918e830062d4529edc180fbccdf587ba8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1034-ab7582d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-ab7582d-antutu.apk",
+          "size": 105929572,
+          "sha256": "962be63f21ae3ebe325271d536f4519d5e3293667b79000cfc29cb55124e2e20",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1034-ab7582d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-ab7582d-ludashi.apk",
+          "size": 105929572,
+          "sha256": "359f4611087877ab8ced9c9d0cd7da48bc72e02dc304601497f3fe17667f0a95",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1039",
       "title": "feat: opt-in offline launch for Easy Anti-Cheat games",
@@ -452,55 +501,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1091/DroidDeck-PR.1091-7e75ad7-ludashi.apk",
           "size": 105929572,
           "sha256": "05411352c313c9584d83c2af80b12e63e32a4a01cd894bbf0712a5312d9324bd",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1034",
-      "title": "fix: run x86 Proton under FEX in the Steam runtime it requires",
-      "summary": "x86-64 Proton (e.g. Proton Experimental / 11) run through droiddeck-fex never got past startup on the Thor. Three separate problems, all in the FEX launch path:",
-      "commit": "1cd5476c7691badd30557a39b1cde7afd20845be",
-      "pr": 1034,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792349607000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1034",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1034-1cd5476.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-1cd5476.apk",
-          "size": 105929572,
-          "sha256": "54de622c4a9165ee81bca3d88eef7ea20b25ddbff8eb89703ef642d9990865d5",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1034-1cd5476-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-1cd5476-pubg.apk",
-          "size": 105929572,
-          "sha256": "88d506b48d58e4d9cb9ade7e24ce753ba540e1e655ce72a72f731eaea3d448b7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1034-1cd5476-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-1cd5476-antutu.apk",
-          "size": 105929572,
-          "sha256": "a3b9110a30ba4b7be39fcb9e24fa7014de3e56d59f193362aedef93669ea5933",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1034-1cd5476-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-1cd5476-ludashi.apk",
-          "size": 105929572,
-          "sha256": "da898401712bd00d7553c8c24429ccc025cfe5d5856d4930fc4fe8c24de032f1",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
