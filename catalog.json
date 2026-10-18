@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792348860124,
+  "generatedAt": 1792349659751,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1034",
+      "title": "fix: run x86 Proton under FEX in the Steam runtime it requires",
+      "summary": "x86-64 Proton (e.g. Proton Experimental / 11) run through droiddeck-fex never got past startup on the Thor. Three separate problems, all in the FEX launch path:",
+      "commit": "1cd5476c7691badd30557a39b1cde7afd20845be",
+      "pr": 1034,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792349607000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1034",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1034-1cd5476.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-1cd5476.apk",
+          "size": 105929572,
+          "sha256": "54de622c4a9165ee81bca3d88eef7ea20b25ddbff8eb89703ef642d9990865d5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1034-1cd5476-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-1cd5476-pubg.apk",
+          "size": 105929572,
+          "sha256": "88d506b48d58e4d9cb9ade7e24ce753ba540e1e655ce72a72f731eaea3d448b7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1034-1cd5476-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-1cd5476-antutu.apk",
+          "size": 105929572,
+          "sha256": "a3b9110a30ba4b7be39fcb9e24fa7014de3e56d59f193362aedef93669ea5933",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1034-1cd5476-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-1cd5476-ludashi.apk",
+          "size": 105929572,
+          "sha256": "da898401712bd00d7553c8c24429ccc025cfe5d5856d4930fc4fe8c24de032f1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1036",
       "title": "feat: Better boot movies system; Added steamdeckrepo support",
