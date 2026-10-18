@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792328172299,
+  "generatedAt": 1792328290481,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1045",
+      "title": "feat: fetch Proton, FEX and the runtimes automatically, and make Linux games run under FEX",
+      "summary": "Proton Experimental ARM64, FEX and the Steam Linux Runtimes now download automatically on the first Steam start. Linux games running under FEX start, stay up and take the controller.",
+      "commit": "860a458dbc6e2051612df5dae2d2bef992e9b415",
+      "pr": 1045,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792328254000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1045",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1045-860a458.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-860a458.apk",
+          "size": 105925476,
+          "sha256": "dc1cfd7d92b45984f7e34c955f4073276d50a7ea3e69a93a7cd46cd85e0244a9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1045-860a458-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-860a458-pubg.apk",
+          "size": 105925476,
+          "sha256": "9944a5cffe7b793f4bd1007723c245889cd88f437ac2be823d9a3772aff84aaa",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1045-860a458-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-860a458-antutu.apk",
+          "size": 105925476,
+          "sha256": "33708b52a29f3b88682fec1cce547290f640f4a17b03af2bbbec401135deb4f4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1045-860a458-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-860a458-ludashi.apk",
+          "size": 105925476,
+          "sha256": "871f49aa3ae3100d934c1a8b684e4a1a2e3653f2d1a7b5579033ae37960452db",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1036",
       "title": "feat: Better boot movies system; Added steamdeckrepo support",
       "summary": "\u2022 Installed: the \u201cInstalled movies\u201d row has a Browse button. It opens a list with a cover for each movie and the current one highlighted. The list re-reads every 2 seconds, so a movie picked or removed inside Steam shows up.\n\u2022 Import: the same import as before. Imported movies now go into Steam\u2019s own movies folder, so Steam lists them too.\n\u2022 SteamDeckRepo: search, device filter (all, Steam Deck, Steam Machine), and Trending / Most downloaded / Most liked / Newest tabs. Each page shows 12 movies, with Previous and Next buttons. Install downloads the movie, and the button turns into Use.\n\u2022 Sound: the on/off toggle, plus a volume slider and a \u201cLength\u201d slider. I read your \u201cseconds slide\u201d as how many seconds of the movie play, from 1 s up to the movie\u2019s full length. Tell me if you meant something else.\n\u2022 The Adjust logo hint now reads \u201cThis exact spot can differ by a few pixels.\u201d",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-994/DroidDeck-PR.994-5eddf95-ludashi.apk",
           "size": 85882805,
           "sha256": "36d0b3c4898845e005f213643c1a2b91bcaf970e1216e87d2802a512be64be42",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1045",
-      "title": "feat: fetch Proton, FEX and the runtimes automatically, and make Linux games run under FEX",
-      "summary": "Proton Experimental ARM64, FEX and the Steam Linux Runtimes now download automatically on the first Steam start. Linux games running under FEX start, stay up and take the controller.",
-      "commit": "80202298cec1484158d419d34844daecda84f90f",
-      "pr": 1045,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792293810000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1045",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1045-8020229.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-8020229.apk",
-          "size": 85886817,
-          "sha256": "acb9eb2f8a42f8441836d3336b247b9a0d3a055599e851ab10110c463a0014c5",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1045-8020229-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-8020229-pubg.apk",
-          "size": 85886817,
-          "sha256": "41b6b8f2a19e260574b086cf0aec3c2661a8068bd637c1ac16a2bd2034171bcf",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1045-8020229-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-8020229-antutu.apk",
-          "size": 85886817,
-          "sha256": "724a3fd7f2b436b005814da97a01c845ff55cc6ea9f686531b7ae50cbbc2c310",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1045-8020229-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-8020229-ludashi.apk",
-          "size": 85886817,
-          "sha256": "8dcd56637e4dfdb81bd0de19b02ae882edb03e7976a75ff8d7878896010637cc",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
