@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792274242403,
+  "generatedAt": 1792291996721,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1045",
+      "title": "feat: Linux builds run under FEX by default, with controllers in Unity games",
+      "summary": "Games that ship a Linux build now run that build under FEX by default. Windows-only games and installed Windows builds keep the Proton default (Proton Experimental ARM64).",
+      "commit": "f13007fced01ed0d8fc9e948f4bde1e5e434786b",
+      "pr": 1045,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1792291953000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1045",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1045-f13007f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-f13007f.apk",
+          "size": 85886817,
+          "sha256": "fa0ad7aee502af5dee3d19c80bb6a4b49ae850cc273988a75857d50618f74ae8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1045-f13007f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-f13007f-pubg.apk",
+          "size": 85886817,
+          "sha256": "fefccb580a0b28421c8cf08fddb1997ec3bdc4a0931b944a9636f0d5e7c5c67a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1045-f13007f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-f13007f-antutu.apk",
+          "size": 85886817,
+          "sha256": "c44d0dafe3033afc335716ac7f9fd7700fe58468a40ef3401d800274382c325b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1045-f13007f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1045/DroidDeck-PR.1045-f13007f-ludashi.apk",
+          "size": 85886817,
+          "sha256": "174052f65c07fba42f34623a6033531ec17df025a94a9e2a9d7e500f00171752",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1039",
       "title": "feat: opt-in offline launch for Easy Anti-Cheat games",
