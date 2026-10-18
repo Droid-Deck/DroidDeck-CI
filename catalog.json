@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792359106787,
+  "generatedAt": 1792359193618,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,165 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1023",
+      "title": "fix: added-games scan keeps games like Reach, Breach, Crashday and Observer",
+      "summary": "Scanning a games folder no longer hides games whose exe names happen to contain words like eac, crash, report or server.",
+      "commit": "cca922577c29df6ea51a5337496ca6fbfe419491",
+      "pr": 1023,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359141000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1023",
+      "apks": {}
+    },
+    {
+      "tag": "pr-1025",
+      "title": "fix: paste bar ignores taps while a paste is running",
+      "summary": "Tapping the file manager's paste bar again during a paste no longer starts a second, overlapping copy or move.",
+      "commit": "845bcbd8b513ad789cff3946c26df6d8366b798f",
+      "pr": 1025,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359130000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1025",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1025-845bcbd.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1025/DroidDeck-PR.1025-845bcbd.apk",
+          "size": 105929572,
+          "sha256": "817bdea23c9bc58749d0d8d067e3349a6950b4bd98d84c90deddd059f7359226",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1025-845bcbd-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1025/DroidDeck-PR.1025-845bcbd-pubg.apk",
+          "size": 105929572,
+          "sha256": "031d1658a40df80937ec78335878cf109f75d013c5e905643b13060e05431b76",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1025-845bcbd-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1025/DroidDeck-PR.1025-845bcbd-antutu.apk",
+          "size": 105929572,
+          "sha256": "5c2d03b3344044ae30aab2ab487c56a1273bc9a85844d85d9b5a4461516ce09b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1025-845bcbd-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1025/DroidDeck-PR.1025-845bcbd-ludashi.apk",
+          "size": 105929572,
+          "sha256": "aad6f8d56af8513dc34cc35f747af364fa04f4c588f1098891511155ffdd2203",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1027",
+      "title": "fix: file manager copy/move keeps symlinks",
+      "summary": "Copying or moving a folder in the file manager now keeps the symbolic links inside it.",
+      "commit": "02319fd4468843378e3722e6cb2e126a5c8bc565",
+      "pr": 1027,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359121000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1027",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1027-02319fd.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1027/DroidDeck-PR.1027-02319fd.apk",
+          "size": 105929572,
+          "sha256": "e460fd45822d4352fd76f939800a3c85f5030fded21f83f4289aa8e67be16578",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1027-02319fd-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1027/DroidDeck-PR.1027-02319fd-pubg.apk",
+          "size": 105929572,
+          "sha256": "491d72ee9d3c536c829c727ca842ee8d72071643647f7891705a5926fc6b62ef",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1027-02319fd-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1027/DroidDeck-PR.1027-02319fd-antutu.apk",
+          "size": 105929572,
+          "sha256": "89661977c77ac64228515ecb075fed9be4e583223f4c3559a580f1da5c20cb19",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1027-02319fd-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1027/DroidDeck-PR.1027-02319fd-ludashi.apk",
+          "size": 105929572,
+          "sha256": "69e7ce24cde337fa09d1a99b060316a82b2674e1ed88fc14c29b5b9a99077db0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1028",
+      "title": "fix: a slow folder listing no longer replaces the folder being shown",
+      "summary": "Moving quickly between folders in the file manager no longer ends up showing the wrong folder's contents.",
+      "commit": "263d6f6675c9a44121e9c3b7b54eb714bcf5327d",
+      "pr": 1028,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359102000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1028",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1028-263d6f6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1028/DroidDeck-PR.1028-263d6f6.apk",
+          "size": 105929572,
+          "sha256": "1e6db7cba115aaa815a36b5726399692e6e07bdac892534c77f7ebb5860b7009",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1028-263d6f6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1028/DroidDeck-PR.1028-263d6f6-pubg.apk",
+          "size": 105929572,
+          "sha256": "91c9edeb7eaedca41df18619ba332ce5c8ad73eb76b29dffe1a3539bc9fb9423",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1028-263d6f6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1028/DroidDeck-PR.1028-263d6f6-antutu.apk",
+          "size": 105929572,
+          "sha256": "71ca8b68fdfe0a348eaa3e21fcc695a93e5fc7d68cfd11811ebb921b0359c36b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1028-263d6f6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1028/DroidDeck-PR.1028-263d6f6-ludashi.apk",
+          "size": 105929572,
+          "sha256": "682267ed375fc602d4adbe44ad8bbff949bdffa0eab42b7be118b67959955826",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1029",
       "title": "fix: cancelling a paste stops the copy and keeps a move's source",
