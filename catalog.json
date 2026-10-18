@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792359333912,
+  "generatedAt": 1792359390080,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,153 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-911",
+      "title": "feat: tools/device-smoke.sh checks a build on a real device over plain adb",
+      "summary": "tools/device-smoke.sh checks a build on a real device with nothing but adb, so a change can be tried on a phone or a foldable without python or a rooted device.",
+      "commit": "6e6704d50a8ef2edcbd3f900cdcbb0933701ee0d",
+      "pr": 911,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359327000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-911",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.911-6e6704d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-911/DroidDeck-PR.911-6e6704d.apk",
+          "size": 105929572,
+          "sha256": "2adfc3805c17b5cc5d786ec515b43084653ad3ca917a9074a0eb3cd9719a8e52",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.911-6e6704d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-911/DroidDeck-PR.911-6e6704d-pubg.apk",
+          "size": 105929572,
+          "sha256": "6653557962ac945287e03195cf78d92668a461d608142acefcd3b777d12183c9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.911-6e6704d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-911/DroidDeck-PR.911-6e6704d-antutu.apk",
+          "size": 105929572,
+          "sha256": "71fc837af75d2a9793c56d61530b347ba055d59f1b5a613db62282da2fa62cab",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.911-6e6704d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-911/DroidDeck-PR.911-6e6704d-ludashi.apk",
+          "size": 105929572,
+          "sha256": "2651f8192269a9ef79033a8310e81b6f9653a042e9bff2d01400dcb7a5b15b89",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-893",
+      "title": "feat: the unfolded game height can end at a fold line",
+      "summary": "The sizing rule for putting the game above a fold and the controls below it is now a tested function, so a posture-aware split on foldables can be built on it. Nothing in the app calls it with a fold yet, so there is no behaviour change today.",
+      "commit": "c7b4bc0fbd5ea569b308dbe3e88aea7990b576b5",
+      "pr": 893,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359316000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-893",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.893-c7b4bc0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-893/DroidDeck-PR.893-c7b4bc0.apk",
+          "size": 105929572,
+          "sha256": "5d46989ffc8c13da1ff52eb7ceeea146ecbd8f10ff72d352d5e9207a9d93c52b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.893-c7b4bc0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-893/DroidDeck-PR.893-c7b4bc0-pubg.apk",
+          "size": 105929572,
+          "sha256": "426225720aac86bb17ce574f2f68eada91772c8c833ac8863aa6b5a8833065ed",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.893-c7b4bc0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-893/DroidDeck-PR.893-c7b4bc0-antutu.apk",
+          "size": 105929572,
+          "sha256": "5ca4b75a69204aba7baf8bf58ea3055e2b37d50a99b589299bc49d01e243276c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.893-c7b4bc0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-893/DroidDeck-PR.893-c7b4bc0-ludashi.apk",
+          "size": 105929572,
+          "sha256": "bbd2418c47555ea5baa00c88466ce4fde452366ab9147122d5df71e048f8af53",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-918",
+      "title": "Steam's Wi-Fi and Bluetooth switches show and change the phone's real radios",
+      "summary": "In Steam's Quick Settings and in its Settings pages (Internet, Bluetooth), Wi-Fi and Bluetooth didn't match the phone. With both on, the QAM showed them off, and flipping either switch changed nothing on the phone.",
+      "commit": "c2e75c1eccb0de1e1ecaf009576df1c16572d827",
+      "pr": 918,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359304000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-918",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.918-c2e75c1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-918/DroidDeck-PR.918-c2e75c1.apk",
+          "size": 105933758,
+          "sha256": "98b005c5b385b729124e88ae357d4d1c42327dd46b84afbc147e5878d9a1096c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.918-c2e75c1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-918/DroidDeck-PR.918-c2e75c1-pubg.apk",
+          "size": 105933758,
+          "sha256": "b38833967190b6316bb545c853f2b5d14653428127a5bf776494e6a4b0f6dc1c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.918-c2e75c1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-918/DroidDeck-PR.918-c2e75c1-antutu.apk",
+          "size": 105933758,
+          "sha256": "e3f2e7dd3db4f200e11cd5d4500ff0e2d429ba875ef4f656a538792cda744ab9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.918-c2e75c1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-918/DroidDeck-PR.918-c2e75c1-ludashi.apk",
+          "size": 105933758,
+          "sha256": "36d8f39e96fed54cd142d102eba6c26512ca95b826d96213cf803b4c7056480d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-946",
       "title": "Let a game override the session locale",
