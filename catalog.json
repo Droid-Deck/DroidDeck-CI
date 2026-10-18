@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792359678523,
+  "generatedAt": 1792359948020,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,153 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1020",
+      "title": "fix: treat Unreal bootstrap launcher PE name as junk",
+      "summary": "Fixes #1010.",
+      "commit": "e425c6981e86395b3b1cd135bee579a72e18fa87",
+      "pr": 1020,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359853000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1020",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1020-e425c69.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1020/DroidDeck-PR.1020-e425c69.apk",
+          "size": 105929572,
+          "sha256": "5b63b25618a246068571618dd189221083b1b59ec9157e6089f379be74f73c14",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1020-e425c69-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1020/DroidDeck-PR.1020-e425c69-pubg.apk",
+          "size": 105929572,
+          "sha256": "609ad4fb22f48802ce37591b2dc76eb4ade5731d8c7ec57b33c2235b803ee3a1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1020-e425c69-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1020/DroidDeck-PR.1020-e425c69-antutu.apk",
+          "size": 105929572,
+          "sha256": "1ea0ec6f94320709f00245ad48525471f6996796587e31f64ccdf915cb42ff85",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1020-e425c69-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1020/DroidDeck-PR.1020-e425c69-ludashi.apk",
+          "size": 105929572,
+          "sha256": "be85816eafac2b322504b80058d4c78a80040822bd3401c685915d328249b3c6",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-560",
+      "title": "Retain compositor resources when GPU completion is unconfirmed",
+      "summary": "Finite fence waits can fail while submitted GPU work is still pending. Continuing or tearing down after that result can reset resources still in use or free image memory before completion. This adds a terminal completion-unknown state that stops further presentation and retains pending resources until the app process exits, while preserving the existing genuine-device-loss path.",
+      "commit": "7200f24364d5fcdce8be79b2e77a763c0d17eda1",
+      "pr": 560,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359840000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-560",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.560-7200f24.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-560/DroidDeck-PR.560-7200f24.apk",
+          "size": 105929572,
+          "sha256": "dd4ad398465b38a2470da4c650bc3c0a8a0b1b761a09d2f45f5b195d93d3e013",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.560-7200f24-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-560/DroidDeck-PR.560-7200f24-pubg.apk",
+          "size": 105929572,
+          "sha256": "6efd84c6b70a68eef55a9bae714e7dd71b6086105d3b6616d6e76572f4b1f0c5",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.560-7200f24-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-560/DroidDeck-PR.560-7200f24-antutu.apk",
+          "size": 105929572,
+          "sha256": "b1dd1f91a188089d02f4fa4fc4d11b4426e2b5d2c1a193fcf752b922b0676945",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.560-7200f24-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-560/DroidDeck-PR.560-7200f24-ludashi.apk",
+          "size": 105929572,
+          "sha256": "b2d96b10608a6f44f0ca41a4569b2763e0d3c1525ae95e08bb18a07770b3c93c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-556",
+      "title": "Accessibility tab: install and enable Orca in every Linux session",
+      "summary": "Adds an Accessibility tab to the launcher's front-end rail: an introduction to Orca (the GNOME screen reader), an install button, an open-settings button and a master switch that defaults on after install.",
+      "commit": "1376fdd764e335b5fbd89d12cf218782676c0b4c",
+      "pr": 556,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359840000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-556",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.556-1376fdd.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-556/DroidDeck-PR.556-1376fdd.apk",
+          "size": 105954332,
+          "sha256": "266d35e5d724d0c4bc3a9e431b9e31deae980655c185e495e1950bfa6348506e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.556-1376fdd-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-556/DroidDeck-PR.556-1376fdd-pubg.apk",
+          "size": 105954332,
+          "sha256": "f99a7ad0bd8bafd23c1602e1c9e893e928015bbd7dc98afeace67f4fd9095e2b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.556-1376fdd-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-556/DroidDeck-PR.556-1376fdd-antutu.apk",
+          "size": 105954332,
+          "sha256": "e8b71b4c9b1dd80d44b950538c54c43b74cf1ee06218259b5fcd4707d9d94972",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.556-1376fdd-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-556/DroidDeck-PR.556-1376fdd-ludashi.apk",
+          "size": 105954332,
+          "sha256": "a5baadff0c3133f0df604c6e563057a9ea85fa02d17a66f17a5518018a97253b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-581",
       "title": "Controller: stick dead zone setting and per-controller profiles (test build, not for merge yet)",
@@ -2267,55 +2414,6 @@
           "sha256": "1ffb4e8d2f285e6456165be679f8bed430bfac195b65457270912e5d4508aa41",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-556",
-      "title": "Accessibility tab: install and enable Orca in every Linux session",
-      "summary": "Adds an Accessibility tab to the launcher's front-end rail: an introduction to Orca (the GNOME screen reader), an install button, an open-settings button and a master switch that defaults on after install.",
-      "commit": "a0e48443a6b52c2299b9ba2affb4bc22a9bc6904",
-      "pr": 556,
-      "version": null,
-      "versionCode": 12,
-      "publishedAt": 1791689187000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-556",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.556-a0e4844.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-556/DroidDeck-PR.556-a0e4844.apk",
-          "size": 46259218,
-          "sha256": "a5051c574888147b66d55dc62292086ee3da071342ec386c8294ae3439d03f23",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.556-a0e4844-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-556/DroidDeck-PR.556-a0e4844-pubg.apk",
-          "size": 46259218,
-          "sha256": "46d393167f74bd206c6bf1e76bd69ad1457e07836f98b5f6fd98741f6a17a47b",
-          "packageName": "com.tencent.ig",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.556-a0e4844-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-556/DroidDeck-PR.556-a0e4844-antutu.apk",
-          "size": 46259218,
-          "sha256": "66f1d72d20359216a8195dbfd9b5b44f7437cbc4f1d352f0792a42bbc805447c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 12,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.556-a0e4844-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-556/DroidDeck-PR.556-a0e4844-ludashi.apk",
-          "size": 46259218,
-          "sha256": "8dc249acc01840b0a2abe1c2c4034260c4b982fe46008a3a85f8e49edd0368b9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 12,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         }
       }
