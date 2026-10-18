@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792347840737,
+  "generatedAt": 1792348762716,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3c5e95a",
-    "title": "chore: bump version to 0.5.0 (14)",
-    "summary": "Bumps versionCode to 14 and versionName to 0.5.0 for the 0.5.0 release.",
-    "commit": "3c5e95afa8a18f5d70538ce025f80697a693a86a",
+    "tag": "main-cffcbaa",
+    "title": "fix: skip DirectAudio setup for Proton queries",
+    "summary": "Steam asks Proton tools to translate paths while preparing a launch. Those queries currently stage DirectAudio and overwrite a prefix's Audio choice, which can reset a Pulse selection before the game runs. Limit DirectAudio setup to run, waitforexitandrun and runinprefix.",
+    "commit": "cffcbaae4a26af16c28b7e9492f47629dfd72d23",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792337772000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3c5e95a",
+    "publishedAt": 1792348727000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cffcbaa",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3c5e95a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c5e95a/DroidDeck-main-3c5e95a.apk",
+        "name": "DroidDeck-main-cffcbaa.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cffcbaa/DroidDeck-main-cffcbaa.apk",
         "size": 105925476,
-        "sha256": "ab6a53e41b6fa715bd3f9048ada53d22d8535ad2978d97943d723cf60fa430b1",
+        "sha256": "f657728c6109546b6e33c7f49ad2528eaf0feaca5b98d18c9b20b6f9e6f7453e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3c5e95a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c5e95a/DroidDeck-main-3c5e95a-pubg.apk",
+        "name": "DroidDeck-main-cffcbaa-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cffcbaa/DroidDeck-main-cffcbaa-pubg.apk",
         "size": 105925476,
-        "sha256": "4236e48bf0fa6bd673dbd7476ce3e3aa2e2d797b5266804d939e2c9dd8c1a397",
+        "sha256": "db5956dd237740cc3fd1cf9b5bfc44fab277d0fc8673eeb8e99ba842068dea01",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3c5e95a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c5e95a/DroidDeck-main-3c5e95a-antutu.apk",
+        "name": "DroidDeck-main-cffcbaa-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cffcbaa/DroidDeck-main-cffcbaa-antutu.apk",
         "size": 105925476,
-        "sha256": "eeae47d858411e55b7222fb1715fc9207d4c620fda994cc26a58a7e2dc063f30",
+        "sha256": "9c654024b9e48fcdc4d65811af8a993b9cb5b25bda91c8c69c3b9867e9c55627",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3c5e95a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c5e95a/DroidDeck-main-3c5e95a-ludashi.apk",
+        "name": "DroidDeck-main-cffcbaa-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cffcbaa/DroidDeck-main-cffcbaa-ludashi.apk",
         "size": 105925476,
-        "sha256": "33de1079bd366835a62ec4b52e71930984357753fe1cd27d244af7a42cebe08e",
+        "sha256": "f254acfdb3b93c3405884f8409f6cacc4e61902f8f615830433f2daa21d61930",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "cffcbaae4a26af16c28b7e9492f47629dfd72d23",
+      "title": "fix: skip DirectAudio setup for Proton queries",
+      "summary": "Steam asks Proton tools to translate paths while preparing a launch. Those queries currently stage DirectAudio and overwrite a prefix's Audio choice, which can reset a Pulse selection before the game runs. Limit DirectAudio setup to run, waitforexitandrun and runinprefix.",
+      "publishedAt": 1792348727000
+    },
     {
       "commit": "3c5e95afa8a18f5d70538ce025f80697a693a86a",
       "title": "chore: bump version to 0.5.0 (14)",
@@ -155,12 +161,6 @@
       "title": "l10n: translate the missing strings in every locale, and complete es-419",
       "summary": "Every locale now carries the strings the English file has, and es-419 is translated from an empty-ish file.",
       "publishedAt": 1792252503000
-    },
-    {
-      "commit": "26ca374c47641fb8db8d1711c188ddb36a4a7877",
-      "title": "feat: Adjust a game\u2019s logo position and size in the artwork editors",
-      "summary": "Adds an \u201cAdjust logo\u201d row at the bottom of the artwork editor for Steam, Custom and installed GOG/Epic/Amazon games.",
-      "publishedAt": 1792246239000
     }
   ],
   "tests": [
