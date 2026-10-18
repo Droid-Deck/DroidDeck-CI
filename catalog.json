@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792352842622,
+  "generatedAt": 1792353756091,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1091",
+      "title": "fix(ci): give unit tests a 2 GB heap",
+      "summary": "Unit tests on main and on open PRs fail with java.lang.OutOfMemoryError: Java heap space part way through testReleaseUnitTest. Examples: the main push run 39156692801, #979, and the fix/touch-gestures-628, fix/dex-session-visibility and fix/skip-directaudio-for-steam-iscript branches. The test that fails changes from run to run (SteamHomeHeadsetTest, GlassesMenuCaptureTest, ...), and",
+      "commit": "7e75ad7f5c8f7c5e823d2b8254e793d0a9e4b683",
+      "pr": 1091,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792353691000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1091",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1091-7e75ad7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1091/DroidDeck-PR.1091-7e75ad7.apk",
+          "size": 105929572,
+          "sha256": "674beb98ad494fd406a7febdec05dfbcd6f58a3230e8264f20bb2d24d8578f09",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1091-7e75ad7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1091/DroidDeck-PR.1091-7e75ad7-pubg.apk",
+          "size": 105929572,
+          "sha256": "9e16128591fbefd85744341c953f4f0ad8a51551e4ed80f16676467613e9be77",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1091-7e75ad7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1091/DroidDeck-PR.1091-7e75ad7-antutu.apk",
+          "size": 105929572,
+          "sha256": "dad6a3f887f6d5aaf7f82d84865287e26bf25bcd17113f72bfcefd434581b874",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1091-7e75ad7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1091/DroidDeck-PR.1091-7e75ad7-ludashi.apk",
+          "size": 105929572,
+          "sha256": "05411352c313c9584d83c2af80b12e63e32a4a01cd894bbf0712a5312d9324bd",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1089",
       "title": "fix: install Decky from upstream and offer the newest release",
