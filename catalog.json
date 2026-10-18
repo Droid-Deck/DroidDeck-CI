@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792355286740,
+  "generatedAt": 1792355340701,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1078",
+      "title": "fix: an interrupted package install can no longer break the Linux runtime",
+      "summary": "A tester's Thor stopped starting Steam (Exit status 134) after the app was closed during a desktop install. Restarting did not help; only reinstalling the app did, which cost them every game.",
+      "commit": "4ac9c7a91051540095477cee2b544b36c2eb7baf",
+      "pr": 1078,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792355315000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1078",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1078-4ac9c7a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-4ac9c7a.apk",
+          "size": 105941860,
+          "sha256": "3c73d4a8188e97d5248223a715b14fc7e0c8016e59b7590acbeda68196156b85",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1078-4ac9c7a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-4ac9c7a-pubg.apk",
+          "size": 105941860,
+          "sha256": "132abaa2662ffc81986ad99ac3435a164643c5c8be07784172a3c7eaee28ea3a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1078-4ac9c7a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-4ac9c7a-antutu.apk",
+          "size": 105941860,
+          "sha256": "1ba23b207f927a8a2de4d7d393e30672757067373409d88d8cb6bf751cfc00b5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1078-4ac9c7a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-4ac9c7a-ludashi.apk",
+          "size": 105941860,
+          "sha256": "7b57d79579e66dd7c47d2a04743e3a797fc0ccca666d8278b049efc4c45ce7e9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-677",
+      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
+      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
+      "commit": "73e98ee18b0b18310b41af6a8df562551508ae27",
+      "pr": 677,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792355305000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-677",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.677-73e98ee.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee.apk",
+          "size": 105929572,
+          "sha256": "1a939d6631d422056c55c7252876942e3f9dfb5c8081cc7f57753f6f9780a1e2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.677-73e98ee-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-pubg.apk",
+          "size": 105929572,
+          "sha256": "516145f075bdb6cd94329108716dc14b8b4538037564dbe7fdf0f475022fc97c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.677-73e98ee-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-antutu.apk",
+          "size": 105929572,
+          "sha256": "ddb1b0c351d0581f2a35506a17dd40949771c622589cee88f39a78ad057b9d16",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.677-73e98ee-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-ludashi.apk",
+          "size": 105929572,
+          "sha256": "1cf35224cfc166d463b2aec18ef441307bd9f4f1afc6c06840c5c079040f98c7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1089",
       "title": "fix: install Decky from upstream and offer the newest release",
@@ -361,55 +459,6 @@
       }
     },
     {
-      "tag": "pr-1078",
-      "title": "fix: an interrupted package install can no longer break the Linux runtime",
-      "summary": "A tester's Thor stopped starting Steam (Exit status 134) after the app was closed during a desktop install. Restarting did not help; only reinstalling the app did, which cost them every game.",
-      "commit": "b794f610f154f74d6cee8ba2b4dab5dd359aeb17",
-      "pr": 1078,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1792335224000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1078",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1078-b794f61.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-b794f61.apk",
-          "size": 105933668,
-          "sha256": "8546ce1895c809e9ee3a12c16180f95abd6a758ed288696e0cea58cbd25b17e6",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1078-b794f61-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-b794f61-pubg.apk",
-          "size": 105933668,
-          "sha256": "dff80c108b6873a1aef511894c9d1e47c26bab26ecc8e0d3842baf5690c64966",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1078-b794f61-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-b794f61-antutu.apk",
-          "size": 105933668,
-          "sha256": "e0b0f36918a2d398ce36a8634a3c7b6bd26b3934527a85e2e7e33ec93168b4d2",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1078-b794f61-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-b794f61-ludashi.apk",
-          "size": 105933668,
-          "sha256": "d01eb0a862dd7fbce9cca1e86148a63eb895c563e25ed69c3518e56ef0c18b60",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-1039",
       "title": "feat: opt-in offline launch for Easy Anti-Cheat games",
       "summary": "Adds an opt-in per-game DROIDDECKANTICHEATOFFLINE setting. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, allowing games with an offline mode to start without the EAC bootstrapper. Game and anti-cheat files remain untouched; online modes requiring EAC remain unavailable.",
@@ -550,55 +599,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-755/DroidDeck-PR.755-fcf3883-ludashi.apk",
           "size": 61436595,
           "sha256": "5b498ab40fad299a08253cc50fe8a5c38451a2c4adca31f6283adc13194886e8",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-677",
-      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
-      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
-      "commit": "6cb895b27f417e20bc7cb4745eb98d2218df7674",
-      "pr": 677,
-      "version": null,
-      "versionCode": 13,
-      "publishedAt": 1791943019000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-677",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.677-6cb895b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-6cb895b.apk",
-          "size": 61436595,
-          "sha256": "e7d623d51908acf3d188c1d05c8ffd15ae1b4ff24d46d9066b9f58f7bd9a9019",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.677-6cb895b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-6cb895b-pubg.apk",
-          "size": 61436595,
-          "sha256": "be931186a4249795b68f68dfc1016c3ca53cddf5bb3ab764c9043b82c2e455a4",
-          "packageName": "com.tencent.ig",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.677-6cb895b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-6cb895b-antutu.apk",
-          "size": 61436595,
-          "sha256": "f64c3ced25b2d209392c79863db7058c38fdd410938e147e7cdddfd603da56a2",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 13,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.677-6cb895b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-6cb895b-ludashi.apk",
-          "size": 61436595,
-          "sha256": "4e20ff1d2d9638639e450ba02ff3400c1a6742345142bbe7b985c785bdb875ca",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
