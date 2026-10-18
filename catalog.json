@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792329273387,
+  "generatedAt": 1792331074283,
   "stable": {
     "tag": "0.4.0",
     "title": "DroidDeck 0.4.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-69c88aa",
-    "title": "feat: fetch Proton, FEX and the runtimes automatically, and make Linux games run under FEX",
-    "summary": "Proton Experimental ARM64, FEX and the Steam Linux Runtimes now download automatically on the first Steam start. Linux games running under FEX start, stay up and take the controller.",
-    "commit": "69c88aa344575c20a3b920456a2e8d33bb8f61ba",
+    "tag": "main-7d149ac",
+    "title": "fix: only start SteamVR for VR-only games from Steam's library",
+    "summary": "A user reported that No Man's Sky kept starting SteamVR and opening in VR without VR mode selected. It still happened after they uninstalled SteamVR in Steam, cleared DroidDeck's data and reinstalled it. Steam kept showing SteamVR's Install button the whole time.",
+    "commit": "7d149acb00f18f782c734fb44a3c2d4caa09cf29",
     "pr": 0,
     "version": null,
     "versionCode": 13,
-    "publishedAt": 1792329227000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-69c88aa",
+    "publishedAt": 1792331042000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7d149ac",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-69c88aa.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-69c88aa/DroidDeck-main-69c88aa.apk",
+        "name": "DroidDeck-main-7d149ac.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d149ac/DroidDeck-main-7d149ac.apk",
         "size": 105925476,
-        "sha256": "fae85599628fff94c6735cbdc91ef59785f9a7ff2acebdc2af25701b63e3a423",
+        "sha256": "5f62f796ed57a67087db843450800600ab31072aee88100ee5c1ac2e0cd8c334",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-69c88aa-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-69c88aa/DroidDeck-main-69c88aa-pubg.apk",
+        "name": "DroidDeck-main-7d149ac-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d149ac/DroidDeck-main-7d149ac-pubg.apk",
         "size": 105925476,
-        "sha256": "2d47c7a4893faf9c08b2a4a55eead20847cea12d37df1b539b874dc8d9732bfb",
+        "sha256": "9428d00840f5d1a4fe0bd7cd0ddebb45995f757db67c2eee781bb85b7881fef5",
         "packageName": "com.tencent.ig",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-69c88aa-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-69c88aa/DroidDeck-main-69c88aa-antutu.apk",
+        "name": "DroidDeck-main-7d149ac-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d149ac/DroidDeck-main-7d149ac-antutu.apk",
         "size": 105925476,
-        "sha256": "1dffde085435be57135f09dec778e95685f10eff8e20c45acd17a5cc0c1258d8",
+        "sha256": "6bb959f69c10ff23bbdb5d7dffa02c76ded9f4b046ddf5c22a5b93c92e4f8d37",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-69c88aa-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-69c88aa/DroidDeck-main-69c88aa-ludashi.apk",
+        "name": "DroidDeck-main-7d149ac-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d149ac/DroidDeck-main-7d149ac-ludashi.apk",
         "size": 105925476,
-        "sha256": "efc41d090bba34ae78866de58d5dc6e125fa738a2b3d20d200c53a9d191ace6d",
+        "sha256": "eb7a39d224c14e9f9176de0b9c699c4754cd8d7554cfa00a7bf33d8f607c6c54",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 13,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "7d149acb00f18f782c734fb44a3c2d4caa09cf29",
+      "title": "fix: only start SteamVR for VR-only games from Steam's library",
+      "summary": "A user reported that No Man's Sky kept starting SteamVR and opening in VR without VR mode selected. It still happened after they uninstalled SteamVR in Steam, cleared DroidDeck's data and reinstalled it. Steam kept showing SteamVR's Install button the whole time.",
+      "publishedAt": 1792331042000
+    },
     {
       "commit": "69c88aa344575c20a3b920456a2e8d33bb8f61ba",
       "title": "feat: fetch Proton, FEX and the runtimes automatically, and make Linux games run under FEX",
@@ -155,12 +161,6 @@
       "title": "Feat/store game artwork",
       "summary": "Follow-up to #939 and #948.",
       "publishedAt": 1792214967000
-    },
-    {
-      "commit": "522e755b37ea4dfc7b031761621680f0900fe24f",
-      "title": "feat: the session report lists the panel refresh modes, thermal state and hint-session support",
-      "summary": "The session report now lists the panel's refresh modes and current refresh, the refreshratemode and peakrefreshrate settings, the thermal status and 10 s headroom, power saver, whether the device accepts performance hint sessions, and the selected Game Mode, so a report about slow or capped frames shows what state the device was in.",
-      "publishedAt": 1792204768000
     }
   ],
   "tests": [
