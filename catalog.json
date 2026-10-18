@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792359276620,
+  "generatedAt": 1792359333912,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,251 @@
   ],
   "tests": [
     {
+      "tag": "pr-946",
+      "title": "Let a game override the session locale",
+      "summary": "Wine takes a game's language and codepage from LANG, and every game runs in\nC.UTF-8: the rootfs ships only C.utf8, and the session sets LANG=C.UTF-8 for\nthe whole guest. A game that reads the locale itself starts with the wrong\nlanguage and codepage under that, and will not get past its own startup.",
+      "commit": "3f79012b661bbd56cb8c3625d2439dd050356172",
+      "pr": 946,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359293000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-946",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.946-3f79012.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-3f79012.apk",
+          "size": 105937764,
+          "sha256": "a5366e505598c77dd603f6f398727168952fbf860a317692f61d46c9823f41bc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.946-3f79012-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-3f79012-pubg.apk",
+          "size": 105937764,
+          "sha256": "e2abaf81f75212feecb187c4e1aa8030708fcbfda1fc8063ed0fa276bf57bd7d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.946-3f79012-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-3f79012-antutu.apk",
+          "size": 105937764,
+          "sha256": "25261df96774979cccc55f746ef088aca4673aa92fa49afe725090582129dbee",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.946-3f79012-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-3f79012-ludashi.apk",
+          "size": 105937764,
+          "sha256": "c4381825f7d8580aabc6500b83f21b0f561130996873adc75d2ccf4d13bb3ab9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-956",
+      "title": "fix: hide on-screen controls while the PC keyboard is open",
+      "summary": "Hide onScreenControls and steamTouchControls while pcKeyboardOpen is active so the touch gamepad overlay does not stay drawn over the on-screen PC keyboard.",
+      "commit": "3b97d061ea2d0bc09f87ef20a6dcb10a668e4a3e",
+      "pr": 956,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359279000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-956",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.956-3b97d06.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-956/DroidDeck-PR.956-3b97d06.apk",
+          "size": 105929572,
+          "sha256": "cfda0b8c9360c2f8c366127cf7c4f7e6cd4b57bf198853711a6039e0918bdc21",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.956-3b97d06-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-956/DroidDeck-PR.956-3b97d06-pubg.apk",
+          "size": 105929572,
+          "sha256": "b52b51891e27ebbef9dfe73f3278686769c0d11daa88d164cf5b8261d1ae16d3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.956-3b97d06-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-956/DroidDeck-PR.956-3b97d06-antutu.apk",
+          "size": 105929572,
+          "sha256": "b495891de46da0cc5d26327c0fdfa9ad687e1e4d1d1e1ed36ac8a0964f0990e8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.956-3b97d06-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-956/DroidDeck-PR.956-3b97d06-ludashi.apk",
+          "size": 105929572,
+          "sha256": "932c08824ca4104f26190d0c01790206ff5cf7b2b1a9d0633266be01d835afa9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-991",
+      "title": "fix: one refused thermal or power query no longer drops the others from the session report",
+      "summary": "The session report keeps the thermal headroom and power saver lines when the device refuses the thermal status query, and the other way round; a refused query now shows as \"unknown\" instead of removing the lines after it.",
+      "commit": "e7bd46677312ba10ee04444c1b0891094f9cd4f1",
+      "pr": 991,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359255000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-991",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.991-e7bd466.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-991/DroidDeck-PR.991-e7bd466.apk",
+          "size": 105929572,
+          "sha256": "838690a397f605305917840f32076df76bdbd2fe790ec7c92027c1e6bf77f8fa",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.991-e7bd466-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-991/DroidDeck-PR.991-e7bd466-pubg.apk",
+          "size": 105929572,
+          "sha256": "276f52f11c79a172587e5e927c010023048afdd7ce0bfde1ee384d66bf1ed1be",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.991-e7bd466-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-991/DroidDeck-PR.991-e7bd466-antutu.apk",
+          "size": 105929572,
+          "sha256": "e58db54fd67ffa7f35a1e2b6012f4192562b2becfec4992598bd64219cfe6fc6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.991-e7bd466-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-991/DroidDeck-PR.991-e7bd466-ludashi.apk",
+          "size": 105929572,
+          "sha256": "d281c9be6aa1acc90d9d2cccbec0f6e559ff636f5f2aa2fdd86e38cfad13b04f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-996",
+      "title": "feat: the unfolded controls can stay while a controller is connected",
+      "summary": "On foldable phones, the Steam Deck controls on the unfolded screen (trackpads and back grips) can now stay visible while a controller is connected. Turn on \"Keep them with a controller\" under \"Controls on the unfolded screen\" if you hold your phone in a telescopic controller and still want the on-screen trackpads and back buttons.",
+      "commit": "2bc4378dd2ebff5f58fdba3d0208f3da6bd9714a",
+      "pr": 996,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359252000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-996",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.996-2bc4378.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-996/DroidDeck-PR.996-2bc4378.apk",
+          "size": 105929572,
+          "sha256": "7c60ca46f0c7ae61d84c954da2411e1bbcea8427bd46a68062225b1167508833",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.996-2bc4378-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-996/DroidDeck-PR.996-2bc4378-pubg.apk",
+          "size": 105929572,
+          "sha256": "6b95e9cfaf258a352ee681e643ebdeb59d4f3277e1bb37ee58ad4551b23a2a18",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.996-2bc4378-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-996/DroidDeck-PR.996-2bc4378-antutu.apk",
+          "size": 105929572,
+          "sha256": "dfa5a5f3c190400fe475dff4b85722d3a784dec44925c017bf3ba45a354a1ca8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.996-2bc4378-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-996/DroidDeck-PR.996-2bc4378-ludashi.apk",
+          "size": 105929572,
+          "sha256": "e3c034a29034511bd52f7dbe0e1703345af8ff30a51340b0079655b5bf438333",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-999",
+      "title": "feat: games show their logo, and store games get one from the store",
+      "summary": "Games now show their own logo. On the Games page the big title over the game's artwork is replaced by the game's logo when one is available (Steam games, games from GOG, Epic and Amazon, and added games), with the name still shown as text when there is none. GOG, Epic and Amazon installs now also bring the store's own transparent logo, and games that already had a cover (store games, folders with",
+      "commit": "4bcc15f5547ee249124cf69224319e39cdce47e2",
+      "pr": 999,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359232000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-999",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.999-4bcc15f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-999/DroidDeck-PR.999-4bcc15f.apk",
+          "size": 105933668,
+          "sha256": "9bc32cd6eebdd52cf1e03e27709d8b2bdda55e842a7b8d62715c7c330ff611be",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.999-4bcc15f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-999/DroidDeck-PR.999-4bcc15f-pubg.apk",
+          "size": 105933668,
+          "sha256": "dd724ffef64230a63279d71b4176623faaa3684b4a3506688a10ad3e8ee5a6e0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.999-4bcc15f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-999/DroidDeck-PR.999-4bcc15f-antutu.apk",
+          "size": 105933668,
+          "sha256": "ab2bad718d377b216e0ebf6df510815e8f938f7077b48fe9f3eba0aadde53157",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.999-4bcc15f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-999/DroidDeck-PR.999-4bcc15f-ludashi.apk",
+          "size": 105933668,
+          "sha256": "d61d6972735a6798bdc19c11661555bf40d058cbb753777d333eee396ae9ddaf",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1003",
       "title": "fix: Steam's first frame no longer waits on the client re-downloading itself",
       "summary": "The install used to take whichever of Valve's three official client-update hosts answered the manifest first, and that is rarely the fastest one. It now measures all three by fetching the head of the largest component from each, keeps the fastest, and prints the host and the rate it measured, so the log says which one it used.",
@@ -212,18 +457,6 @@
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         }
       }
-    },
-    {
-      "tag": "pr-999",
-      "title": "feat: games show their logo, and store games get one from the store",
-      "summary": "Games now show their own logo. On the Games page the big title over the game's artwork is replaced by the game's logo when one is available (Steam games, games from GOG, Epic and Amazon, and added games), with the name still shown as text when there is none. GOG, Epic and Amazon installs now also bring the store's own transparent logo, and games that already had a cover (store games, folders with",
-      "commit": "4bcc15f5547ee249124cf69224319e39cdce47e2",
-      "pr": 999,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792359226000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-999",
-      "apks": {}
     },
     {
       "tag": "pr-1014",
