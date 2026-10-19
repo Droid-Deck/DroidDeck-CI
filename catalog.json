@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792435145373,
+  "generatedAt": 1792435229740,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-1197be9",
-    "title": "Fix direct-touch right-click and Steam Touch mode restoration",
-    "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
-    "commit": "1197be90d98e3733963ebb5cee77298f563e7f1b",
+    "tag": "main-868f54e",
+    "title": "fix: skip DirectAudio for Steam install scripts",
+    "summary": "Steam runs iscriptevaluator.exe from its legacycompat directory through Proton's run verb before the game launch. DirectAudio setup currently treats that preparatory invocation like a game launch and can rewrite the game prefix's audio registry and driver links before the main executable starts.",
+    "commit": "868f54e425c227b42e269571faabda6b1a5bb541",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792435051000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1197be9",
+    "publishedAt": 1792435109000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-868f54e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-1197be9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1197be9/DroidDeck-main-1197be9.apk",
-        "size": 106016204,
-        "sha256": "cb423cc73f6acb193481ee24de149a00fed777828fb9c2e5f385db359c029010",
+        "name": "DroidDeck-main-868f54e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-868f54e/DroidDeck-main-868f54e.apk",
+        "size": 106020300,
+        "sha256": "4e4713b69bd692a209977c2bc21dc99769c388b66e524bd093b10259be292c5f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-1197be9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1197be9/DroidDeck-main-1197be9-pubg.apk",
-        "size": 106016204,
-        "sha256": "ac5b28a238f6c8482f99412c3a6e388f830dff90d2fa0213d79d731635fad11f",
+        "name": "DroidDeck-main-868f54e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-868f54e/DroidDeck-main-868f54e-pubg.apk",
+        "size": 106020300,
+        "sha256": "8e954d2256015b653b99890ef5056b7f1001118db5d89df2c3c3e00fd23a2210",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-1197be9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1197be9/DroidDeck-main-1197be9-antutu.apk",
-        "size": 106016204,
-        "sha256": "7e39d7d1b326c583bfe32162805714e97c3e8646d518cf10b12419034818a2da",
+        "name": "DroidDeck-main-868f54e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-868f54e/DroidDeck-main-868f54e-antutu.apk",
+        "size": 106020300,
+        "sha256": "010962cbc9321d03e08ec79f38ad7535fadb6e69b0b8413cfd95239ba081820a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-1197be9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1197be9/DroidDeck-main-1197be9-ludashi.apk",
-        "size": 106016204,
-        "sha256": "1bc5e1145fbd77dca31e44e08e4ffe5865432ff64dcdd09c15b6565d96224b86",
+        "name": "DroidDeck-main-868f54e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-868f54e/DroidDeck-main-868f54e-ludashi.apk",
+        "size": 106020300,
+        "sha256": "9a204807b553d599abe6170ae4ecfc3b527be48e9e19978c98f5afe14b2193e0",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "868f54e425c227b42e269571faabda6b1a5bb541",
+      "title": "fix: skip DirectAudio for Steam install scripts",
+      "summary": "Steam runs iscriptevaluator.exe from its legacycompat directory through Proton's run verb before the game launch. DirectAudio setup currently treats that preparatory invocation like a game launch and can rewrite the game prefix's audio registry and driver links before the main executable starts.",
+      "publishedAt": 1792435109000
+    },
     {
       "commit": "1197be90d98e3733963ebb5cee77298f563e7f1b",
       "title": "Fix direct-touch right-click and Steam Touch mode restoration",
@@ -155,12 +161,6 @@
       "title": "feat: itch.io store, library and installs for DRM-free Windows builds",
       "summary": "Sign-in: the itch.io API key page sits behind a challenge a WebView cannot pass reliably, so the key is entered by hand and checked against /profile before it is stored.\nLibrary: read from /profile/owned-keys, parsed as the snakecase the server returns, and paged until a page comes back empty.\nStore: search through /search/games, shelves from the browser RSS feeds (newest, on sale, free, top rated",
       "publishedAt": 1792386369000
-    },
-    {
-      "commit": "65f44e2b807fdc6c05780460e66001ff7e87f893",
-      "title": "feat: add light launcher icon option",
-      "summary": "Adds an App icon choice under Setup \u2192 Launcher \u2192 Look: Dark (the current white D on black) or Light (black D on white, same blue orb).",
-      "publishedAt": 1792379256000
     }
   ],
   "tests": [
