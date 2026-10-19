@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792439808392,
+  "generatedAt": 1792440026393,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1155",
+      "title": "fix: add games picked inside a folder game as their own games",
+      "summary": "Adding a non-Steam game could replace one you already had instead of adding a new one. Picking the second game's exe switched the first game's target (it kept the first game's name and artwork), and when the first game was removed, picking any other game brought it back.",
+      "commit": "18343fd1df8e27b48a9b432a9f31bc73373cdb56",
+      "pr": 1155,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792439900000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1155",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1155-18343fd.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1155/DroidDeck-PR.1155-18343fd.apk",
+          "size": 106020300,
+          "sha256": "e79a8ed4ae5ca3b69bb25c3c4d69ee59613d66d59cc53e6e953d5ad81014aaad",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1155-18343fd-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1155/DroidDeck-PR.1155-18343fd-pubg.apk",
+          "size": 106020300,
+          "sha256": "a36e80c4a10d335aad30076d846e6e39282cbac0ae8869e8cefe9300d7a9146d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1155-18343fd-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1155/DroidDeck-PR.1155-18343fd-antutu.apk",
+          "size": 106020300,
+          "sha256": "d9ca4680597327abc40c6bfc62577037ed65e3c0f5db98355f993ea82b030009",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1155-18343fd-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1155/DroidDeck-PR.1155-18343fd-ludashi.apk",
+          "size": 106020300,
+          "sha256": "6d7608a900b0a549082fda8d6c2505f7b49e611e323e8e356f9172f3896b23ef",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1154",
       "title": "fix: show the app's cursor in sessions started from the front end",
