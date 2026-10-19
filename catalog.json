@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792414066667,
+  "generatedAt": 1792414563718,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1108",
+      "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
+      "summary": "Fixes two issues affecting Steam compatibility tool management and anti-cheat runtime discovery:\n1. Steam compatibility helper (droiddeck-steam-compat) crash loop on installed tools/runtimes:\nWhen legacy or uncatalogued Steam tools (such as Proton 5.0 1245040) are installed, they were treated as regular games and passed to CompatManager.GetCompatTools#1. Steam rejects non-game/tool App IDs with EResult 128, which previously threw an unhandled error inside self.many(), aborting reconcile() and preventing ensuretools() from running.\n2. Missing Easy Anti-Cheat (PROTONEACRUNTIME) and BattlEye (PROTONBATTLEYERUNTIME) runtime wiring:\ndroiddeck-game-env did not discover or export PROTONEACRUNTIME or PROTONBATTLEYERUNTIME when launching games through Proton, leaving Proton's wine-eac bridge unconfigured even when Proton EasyAntiCheat Runtime (1826330) or Proton BattlEye Runtime (1161040) was installed.\n## Changes",
+      "commit": "62f0c5837b05b83622ea2e65e3c81981529bdb11",
+      "pr": 1108,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792414454000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1108",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1108-62f0c58.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-62f0c58.apk",
+          "size": 106016204,
+          "sha256": "759c002edfc592f177c9e64a9f472cfd1a7c2533b573395a0f633fb17ae74b47",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1108-62f0c58-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-62f0c58-pubg.apk",
+          "size": 106016204,
+          "sha256": "65a7c4b3f880b77464dc50ffb673253d29e3bc5089ddc27288364d3597f782c4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1108-62f0c58-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-62f0c58-antutu.apk",
+          "size": 106016204,
+          "sha256": "58581dbd1814f3a97b068294119fa96a29af289f249230f1dbe7c9978f109fbd",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1108-62f0c58-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-62f0c58-ludashi.apk",
+          "size": 106016204,
+          "sha256": "f56b85ece854af2f1cc9c2d845e2be8feb1a710962a538c9f56a84f7adb9c702",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1036",
       "title": "feat: Better boot movies system; Added steamdeckrepo support",
