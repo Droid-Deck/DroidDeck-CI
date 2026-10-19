@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792443887882,
+  "generatedAt": 1792447167456,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1162",
+      "title": "fix: Steam no longer sleeps again right after a paused session resumes",
+      "summary": "When a Steam session came back after being paused longer than Steam's own idle-sleep timeout, Steam put itself to sleep again straight away:\n\u2022 the session paused again a second after Resume, so it needed a second Resume, or\n\u2022 the game dropped behind Big Picture, with its audio still playing.",
+      "commit": "649f2a6f82903a4cd5054a3743183b9d1e88dc93",
+      "pr": 1162,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792447088000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1162",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1162-649f2a6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-649f2a6.apk",
+          "size": 106020300,
+          "sha256": "58be6ba94261f6297efd57c252fe9c26ddb2c804b9b1a48f33b9b240f11b5ab5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1162-649f2a6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-649f2a6-pubg.apk",
+          "size": 106020300,
+          "sha256": "fa0cd0a2639362fdda77b86228775835cefc41590693dda943f1e1928d8ee2ee",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1162-649f2a6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-649f2a6-antutu.apk",
+          "size": 106020300,
+          "sha256": "7a2f4251e22c0ef5316585f9cceef34de0fecd01fc6b1a506b9bcaa9a449560a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1162-649f2a6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-649f2a6-ludashi.apk",
+          "size": 106020300,
+          "sha256": "c6916de742d48ed2656af053bf35e059d7a9e5fb598744fadbd712c6094369f4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1159",
       "title": "fix: GOG games miss the registry entries their install script sets",
