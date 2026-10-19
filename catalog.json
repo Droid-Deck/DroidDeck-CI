@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792381928126,
+  "generatedAt": 1792385768585,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -697,55 +697,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-5e3f36f-ludashi.apk",
           "size": 105929572,
           "sha256": "4c24271155c0967a856ecc350d42640cff9b95b3e451222a1f08256d14a9fa36",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1064",
-      "title": "feat: itch.io store, library and installs for DRM-free Windows builds",
-      "summary": "Sign-in: the itch.io API key page sits behind a challenge a WebView cannot pass reliably, so the key is entered by hand and checked against /profile before it is stored.\nLibrary: read from /profile/owned-keys, parsed as the snakecase the server returns, and paged until a page comes back empty.\nStore: search through /search/games, shelves from the browser RSS feeds (newest, on sale, free, top rated) with a three-hour cache that keeps the last answer when itch.io rate-limits the request.\nInstall: the newest Windows upload of the game is streamed into the scratch directory, unpacked, and handed to StoreInstalls, which writes the launcher, the sidebar entry and the Steam shortcut like every other store.\nStrings in every locale.",
-      "commit": "23a9f777875e42056c2d75264144c644d67755f7",
-      "pr": 1064,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792359391000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1064",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1064-23a9f77.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1064/DroidDeck-PR.1064-23a9f77.apk",
-          "size": 105974628,
-          "sha256": "04d3be7701d5f911f15f1256ff5f9c6bb1b257da35903f75db04f23e07b15089",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1064-23a9f77-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1064/DroidDeck-PR.1064-23a9f77-pubg.apk",
-          "size": 105974628,
-          "sha256": "cb91cfe240c7fea878e7a8837c2feac0ccd0adb50b89296ab1947f7b64540fb9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1064-23a9f77-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1064/DroidDeck-PR.1064-23a9f77-antutu.apk",
-          "size": 105974628,
-          "sha256": "08eea8ad7110db381548b59dbdce71925ce6fafd1cd33f071ec8820c9996aaf9",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1064-23a9f77-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1064/DroidDeck-PR.1064-23a9f77-ludashi.apk",
-          "size": 105974628,
-          "sha256": "44dfb9a5bfce8bb5191246a40dce823c06fa0dec6ed7bcc19da12cabb94e03d7",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
