@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792435385181,
+  "generatedAt": 1792437009821,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c3bc3e6",
-    "title": "fix: run x86 Proton under FEX in the Steam runtime it requires",
-    "summary": "x86-64 Proton (e.g. Proton Experimental / 11) run through droiddeck-fex never got past startup on the Thor. Three separate problems, all in the FEX launch path:",
-    "commit": "c3bc3e6fbd624e663f6a4b96c73472cc7e40d5ad",
+    "tag": "main-446452a",
+    "title": "Fix intermittent CI package updates and escaped test worker",
+    "summary": "Build APK intermittently lost its test JVM because CloudSavesTest started a 60-second worker that kept accessing Android preferences after Robolectric reset its context. Let the test capture deferred work through an internal executor overload and use a plain test application. The runtime entry point keeps the same worker and polling behavior.",
+    "commit": "446452a97f6098d4958fefc5e1ccb47009341a06",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792435311000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c3bc3e6",
+    "publishedAt": 1792436891000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-446452a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c3bc3e6.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c3bc3e6/DroidDeck-main-c3bc3e6.apk",
+        "name": "DroidDeck-main-446452a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-446452a/DroidDeck-main-446452a.apk",
         "size": 106020300,
-        "sha256": "1ab8d3cf6071fcb7a456a46cb87348b43ce6f4e820e7187b5216f6fe3dda14d1",
+        "sha256": "6533ac2a414f106edd04a9a0981b0dd268b3ca9fa8624db298f13c12e4d74f91",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c3bc3e6-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c3bc3e6/DroidDeck-main-c3bc3e6-pubg.apk",
+        "name": "DroidDeck-main-446452a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-446452a/DroidDeck-main-446452a-pubg.apk",
         "size": 106020300,
-        "sha256": "29cf6001822421b815b0e5b4bda800b0613a5288cc5a65dd0a7fa5fd5a5a7235",
+        "sha256": "638ad1e08c0ef8158ad92cb00a14fb74cc1b582da55e7f6494787938d6185cd5",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c3bc3e6-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c3bc3e6/DroidDeck-main-c3bc3e6-antutu.apk",
+        "name": "DroidDeck-main-446452a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-446452a/DroidDeck-main-446452a-antutu.apk",
         "size": 106020300,
-        "sha256": "b7eb74925e17a7a6c83d775b6d4f812c03b91ce6d0e2b2e48c7d04ebfe40197e",
+        "sha256": "79d9be20d5c467f162290f21020b5b1b154cb9711eb61dbb1a32233d178afce6",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c3bc3e6-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c3bc3e6/DroidDeck-main-c3bc3e6-ludashi.apk",
+        "name": "DroidDeck-main-446452a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-446452a/DroidDeck-main-446452a-ludashi.apk",
         "size": 106020300,
-        "sha256": "8fa588ff5b488affa5e0d1c6579346ad6c76485c348e628883f74c2a22f533a5",
+        "sha256": "78637da7e56a3ca3d81662cc0bad0f7c4ca85ed77a4c0d85cff1489e3a9cecd6",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "446452a97f6098d4958fefc5e1ccb47009341a06",
+      "title": "Fix intermittent CI package updates and escaped test worker",
+      "summary": "Build APK intermittently lost its test JVM because CloudSavesTest started a 60-second worker that kept accessing Android preferences after Robolectric reset its context. Let the test capture deferred work through an internal executor overload and use a plain test application. The runtime entry point keeps the same worker and polling behavior.",
+      "publishedAt": 1792436891000
+    },
     {
       "commit": "c3bc3e6fbd624e663f6a4b96c73472cc7e40d5ad",
       "title": "fix: run x86 Proton under FEX in the Steam runtime it requires",
@@ -155,12 +161,6 @@
       "title": "feat: library and store tabs per store with installed games listed first",
       "summary": "Replaces the hidden Store / Library / Installed popup inside each store pill with visible header tabs, and folds Installed into Library.",
       "publishedAt": 1792390532000
-    },
-    {
-      "commit": "8838cf28edeb3e738eb65f80a87de242d2414cfb",
-      "title": "Pushed to main without a PR - feat: itch.io store, library and installs for DRM-free Windows builds (#1064)",
-      "summary": "",
-      "publishedAt": 1792390187000
     }
   ],
   "tests": [
