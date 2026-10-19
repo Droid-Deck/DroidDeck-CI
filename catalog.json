@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792386432524,
+  "generatedAt": 1792387223485,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1114",
+      "title": "fix: correct Quest 3 controller driver-from-head offsets",
+      "summary": "Quest Touch controllers in the OpenXR path reported their pose with an identity driver-from-head transform, so the controllers moved and pointed wrong relative to the hand in SteamVR.",
+      "commit": "b262d390cba7160e16e24c308772126e3ba0d9e9",
+      "pr": 1114,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792387127000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1114",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1114-b262d39.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1114/DroidDeck-PR.1114-b262d39.apk",
+          "size": 106020300,
+          "sha256": "bc2fab11496341dcf423685b66c822199119a185dafbc06ef3f98072142f51cb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1114-b262d39-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1114/DroidDeck-PR.1114-b262d39-pubg.apk",
+          "size": 106020300,
+          "sha256": "624a2bd3353ac9890aa35e1981306c51a0df37c365883f4dd58bb2be21c98d92",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1114-b262d39-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1114/DroidDeck-PR.1114-b262d39-antutu.apk",
+          "size": 106020300,
+          "sha256": "66bffd3be23b209f18bffb8d31d35121425410dbf60b6ed40c76488aa4de7d8f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1114-b262d39-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1114/DroidDeck-PR.1114-b262d39-ludashi.apk",
+          "size": 106020300,
+          "sha256": "2f47a1a860f6ad4d439963f6ee6179803942788c25b2bd9a2faf41aed8257df9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1036",
       "title": "feat: Better boot movies system; Added steamdeckrepo support",
