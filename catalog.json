@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792439709388,
+  "generatedAt": 1792439808392,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-446452a",
-    "title": "Fix intermittent CI package updates and escaped test worker",
-    "summary": "Build APK intermittently lost its test JVM because CloudSavesTest started a 60-second worker that kept accessing Android preferences after Robolectric reset its context. Let the test capture deferred work through an internal executor overload and use a plain test application. The runtime entry point keeps the same worker and polling behavior.",
-    "commit": "446452a97f6098d4958fefc5e1ccb47009341a06",
+    "tag": "main-af57286",
+    "title": "fix: adding a games folder on an SD card found nothing",
+    "summary": "What was wrong, in plain terms: adding a games folder that sits on an SD card (anywhere outside DroidDeck's own Steam library folder) found nothing. The app showed \"Nothing new in this folder\" and no games were added, even though the folder was full of games.",
+    "commit": "af57286c98d51dee41c8b98348ac06fbb0d9c536",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792436891000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-446452a",
+    "publishedAt": 1792439717000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-af57286",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-446452a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-446452a/DroidDeck-main-446452a.apk",
+        "name": "DroidDeck-main-af57286.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af57286/DroidDeck-main-af57286.apk",
         "size": 106020300,
-        "sha256": "6533ac2a414f106edd04a9a0981b0dd268b3ca9fa8624db298f13c12e4d74f91",
+        "sha256": "24f4eff7a50c3742052476805d11dfd596abf3398774a0ba4ea11ba92d063f70",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-446452a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-446452a/DroidDeck-main-446452a-pubg.apk",
+        "name": "DroidDeck-main-af57286-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af57286/DroidDeck-main-af57286-pubg.apk",
         "size": 106020300,
-        "sha256": "638ad1e08c0ef8158ad92cb00a14fb74cc1b582da55e7f6494787938d6185cd5",
+        "sha256": "f73b9f8a345cd050fc0d76f181a123836ac335aa47a1f3ac1558ef8ad6029ff9",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-446452a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-446452a/DroidDeck-main-446452a-antutu.apk",
+        "name": "DroidDeck-main-af57286-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af57286/DroidDeck-main-af57286-antutu.apk",
         "size": 106020300,
-        "sha256": "79d9be20d5c467f162290f21020b5b1b154cb9711eb61dbb1a32233d178afce6",
+        "sha256": "1e62ed713ada7c868b61046c19bdf544f7a16f50711d170122c595456ca162ad",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-446452a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-446452a/DroidDeck-main-446452a-ludashi.apk",
+        "name": "DroidDeck-main-af57286-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af57286/DroidDeck-main-af57286-ludashi.apk",
         "size": 106020300,
-        "sha256": "78637da7e56a3ca3d81662cc0bad0f7c4ca85ed77a4c0d85cff1489e3a9cecd6",
+        "sha256": "6b4e84a8feb35b836171fd866c38a544079c25e694dfb17da560caa12430f4e1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "af57286c98d51dee41c8b98348ac06fbb0d9c536",
+      "title": "fix: adding a games folder on an SD card found nothing",
+      "summary": "What was wrong, in plain terms: adding a games folder that sits on an SD card (anywhere outside DroidDeck's own Steam library folder) found nothing. The app showed \"Nothing new in this folder\" and no games were added, even though the folder was full of games.",
+      "publishedAt": 1792439717000
+    },
     {
       "commit": "446452a97f6098d4958fefc5e1ccb47009341a06",
       "title": "Fix intermittent CI package updates and escaped test worker",
@@ -155,12 +161,6 @@
       "title": "feat: play button on installed store game pages",
       "summary": "\u2022 Installed games on a store's game page (GOG, Epic, Amazon, itch.io) now get a primary Play button, so they can be launched right from the Stores tab instead of switching to Games.\n\u2022 Play takes the initial controller focus, ahead of the existing \"In Steam\" chip and Uninstall.\n\u2022 Launch goes through the existing launchStoreGame helper, the same path the Downloads pane's Play uses (store launch prep",
       "publishedAt": 1792413592000
-    },
-    {
-      "commit": "facaa18a3c127da043c3edc471ac3bebcca4a295",
-      "title": "feat: library and store tabs per store with installed games listed first",
-      "summary": "Replaces the hidden Store / Library / Installed popup inside each store pill with visible header tabs, and folds Installed into Library.",
-      "publishedAt": 1792390532000
     }
   ],
   "tests": [
