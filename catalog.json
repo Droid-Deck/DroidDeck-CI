@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792434743208,
+  "generatedAt": 1792435145373,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ac25283",
-    "title": "fix: DD-FG 3x/4x flicker and rebrand Win-FG to DD-FG",
-    "summary": "DD-FG (formerly Win-FG) at 3x and 4x flickers and runs far slower than at 2x.",
-    "commit": "ac25283f04e94a1a2924950c5b7a2027388aa73b",
+    "tag": "main-1197be9",
+    "title": "Fix direct-touch right-click and Steam Touch mode restoration",
+    "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
+    "commit": "1197be90d98e3733963ebb5cee77298f563e7f1b",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792426219000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ac25283",
+    "publishedAt": 1792435051000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1197be9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ac25283.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac25283/DroidDeck-main-ac25283.apk",
+        "name": "DroidDeck-main-1197be9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1197be9/DroidDeck-main-1197be9.apk",
         "size": 106016204,
-        "sha256": "5fe45888db172b3b92fa4f494feeb612daf543184bcffa8a24a5e1fdbb40efb0",
+        "sha256": "cb423cc73f6acb193481ee24de149a00fed777828fb9c2e5f385db359c029010",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ac25283-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac25283/DroidDeck-main-ac25283-pubg.apk",
+        "name": "DroidDeck-main-1197be9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1197be9/DroidDeck-main-1197be9-pubg.apk",
         "size": 106016204,
-        "sha256": "dcb8a862cda5e90947f02bbb856bc4aaf49dfcb18488ce467a0363920c59bccf",
+        "sha256": "ac5b28a238f6c8482f99412c3a6e388f830dff90d2fa0213d79d731635fad11f",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ac25283-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac25283/DroidDeck-main-ac25283-antutu.apk",
+        "name": "DroidDeck-main-1197be9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1197be9/DroidDeck-main-1197be9-antutu.apk",
         "size": 106016204,
-        "sha256": "c178e8624362429566000e8f73c363f29265daeab95978a69dc0676b4f09f664",
+        "sha256": "7e39d7d1b326c583bfe32162805714e97c3e8646d518cf10b12419034818a2da",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ac25283-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac25283/DroidDeck-main-ac25283-ludashi.apk",
+        "name": "DroidDeck-main-1197be9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1197be9/DroidDeck-main-1197be9-ludashi.apk",
         "size": 106016204,
-        "sha256": "aedcf746eb037fe37a9a55769462119d3001aedea7589da567359668072d4805",
+        "sha256": "1bc5e1145fbd77dca31e44e08e4ffe5865432ff64dcdd09c15b6565d96224b86",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1197be90d98e3733963ebb5cee77298f563e7f1b",
+      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
+      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
+      "publishedAt": 1792435051000
+    },
     {
       "commit": "ac25283f04e94a1a2924950c5b7a2027388aa73b",
       "title": "fix: DD-FG 3x/4x flicker and rebrand Win-FG to DD-FG",
@@ -155,12 +161,6 @@
       "title": "feat: add light launcher icon option",
       "summary": "Adds an App icon choice under Setup \u2192 Launcher \u2192 Look: Dark (the current white D on black) or Light (black D on white, same blue orb).",
       "publishedAt": 1792379256000
-    },
-    {
-      "commit": "e321f5025da30ef47e32cb71cf1794b2d8862371",
-      "title": "Fill missing plural forms and translate English left in the app strings",
-      "summary": "I checked every app language (32) against values/strings.xml.",
-      "publishedAt": 1792374053000
     }
   ],
   "tests": [
