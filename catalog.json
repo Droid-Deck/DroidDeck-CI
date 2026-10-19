@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792428497322,
+  "generatedAt": 1792434026089,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -2174,55 +2174,6 @@
       }
     },
     {
-      "tag": "pr-1034",
-      "title": "fix: run x86 Proton under FEX in the Steam runtime it requires",
-      "summary": "x86-64 Proton (e.g. Proton Experimental / 11) run through droiddeck-fex never got past startup on the Thor. Three separate problems, all in the FEX launch path:",
-      "commit": "ab7582da4bae3c7e059a46be80d75c7e2dcb81bf",
-      "pr": 1034,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792356684000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1034",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1034-ab7582d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-ab7582d.apk",
-          "size": 105929572,
-          "sha256": "e6eae46628dd9e3f3db40741ca26f2c468162e405439917497f0ae0b5bbf1223",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1034-ab7582d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-ab7582d-pubg.apk",
-          "size": 105929572,
-          "sha256": "be5ec4718c697e9cb209a931ae2b6bf918e830062d4529edc180fbccdf587ba8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1034-ab7582d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-ab7582d-antutu.apk",
-          "size": 105929572,
-          "sha256": "962be63f21ae3ebe325271d536f4519d5e3293667b79000cfc29cb55124e2e20",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1034-ab7582d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1034/DroidDeck-PR.1034-ab7582d-ludashi.apk",
-          "size": 105929572,
-          "sha256": "359f4611087877ab8ced9c9d0cd7da48bc72e02dc304601497f3fe17667f0a95",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-1078",
       "title": "fix: an interrupted package install can no longer break the Linux runtime",
       "summary": "A tester's Thor stopped starting Steam (Exit status 134) after the app was closed during a desktop install. Restarting did not help; only reinstalling the app did, which cost them every game.",
@@ -2265,55 +2216,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1078/DroidDeck-PR.1078-4ac9c7a-ludashi.apk",
           "size": 105941860,
           "sha256": "7b57d79579e66dd7c47d2a04743e3a797fc0ccca666d8278b049efc4c45ce7e9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-677",
-      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
-      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
-      "commit": "73e98ee18b0b18310b41af6a8df562551508ae27",
-      "pr": 677,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792355438000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-677",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.677-73e98ee.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee.apk",
-          "size": 105929572,
-          "sha256": "1a939d6631d422056c55c7252876942e3f9dfb5c8081cc7f57753f6f9780a1e2",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.677-73e98ee-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-pubg.apk",
-          "size": 105929572,
-          "sha256": "516145f075bdb6cd94329108716dc14b8b4538037564dbe7fdf0f475022fc97c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.677-73e98ee-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-antutu.apk",
-          "size": 105929572,
-          "sha256": "ddb1b0c351d0581f2a35506a17dd40949771c622589cee88f39a78ad057b9d16",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.677-73e98ee-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-677/DroidDeck-PR.677-73e98ee-ludashi.apk",
-          "size": 105929572,
-          "sha256": "1cf35224cfc166d463b2aec18ef441307bd9f4f1afc6c06840c5c079040f98c7",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
