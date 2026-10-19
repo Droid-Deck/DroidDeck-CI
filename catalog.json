@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792437009821,
+  "generatedAt": 1792437185183,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1153",
+      "title": "fix: adding a games folder on an SD card found nothing",
+      "summary": "What was wrong, in plain terms: adding a games folder that sits on an SD card (anywhere outside DroidDeck's own Steam library folder) found nothing. The app showed \"Nothing new in this folder\" and no games were added, even though the folder was full of games.",
+      "commit": "490509fd66b38662490972e63dad13043e16c0ce",
+      "pr": 1153,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792437062000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1153",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1153-490509f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1153/DroidDeck-PR.1153-490509f.apk",
+          "size": 106020300,
+          "sha256": "5aa1594c6cb3f355928285dfc25bc9b5d55a40aaae6e2934b9daf907fb427926",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1153-490509f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1153/DroidDeck-PR.1153-490509f-pubg.apk",
+          "size": 106020300,
+          "sha256": "3db4fcbb0fc59edd161b1d5811431b7f459e1dcec14edab11a682a6204b840a0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1153-490509f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1153/DroidDeck-PR.1153-490509f-antutu.apk",
+          "size": 106020300,
+          "sha256": "0b8084c2196dda45cc17111c114b0c30505f21b878fa8ee0f22bc447129f62dc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1153-490509f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1153/DroidDeck-PR.1153-490509f-ludashi.apk",
+          "size": 106020300,
+          "sha256": "9ab19d1134562629eeed35e1822e346209f613944b06033d75a5ee47cd6980a9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1139",
       "title": "feat: run SteamOS PipeWire and WirePlumber for gamescope screen capture",
