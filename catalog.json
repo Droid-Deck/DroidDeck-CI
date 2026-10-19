@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792435229740,
+  "generatedAt": 1792435385181,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-868f54e",
-    "title": "fix: skip DirectAudio for Steam install scripts",
-    "summary": "Steam runs iscriptevaluator.exe from its legacycompat directory through Proton's run verb before the game launch. DirectAudio setup currently treats that preparatory invocation like a game launch and can rewrite the game prefix's audio registry and driver links before the main executable starts.",
-    "commit": "868f54e425c227b42e269571faabda6b1a5bb541",
+    "tag": "main-c3bc3e6",
+    "title": "fix: run x86 Proton under FEX in the Steam runtime it requires",
+    "summary": "x86-64 Proton (e.g. Proton Experimental / 11) run through droiddeck-fex never got past startup on the Thor. Three separate problems, all in the FEX launch path:",
+    "commit": "c3bc3e6fbd624e663f6a4b96c73472cc7e40d5ad",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792435109000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-868f54e",
+    "publishedAt": 1792435311000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c3bc3e6",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-868f54e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-868f54e/DroidDeck-main-868f54e.apk",
+        "name": "DroidDeck-main-c3bc3e6.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c3bc3e6/DroidDeck-main-c3bc3e6.apk",
         "size": 106020300,
-        "sha256": "4e4713b69bd692a209977c2bc21dc99769c388b66e524bd093b10259be292c5f",
+        "sha256": "1ab8d3cf6071fcb7a456a46cb87348b43ce6f4e820e7187b5216f6fe3dda14d1",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-868f54e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-868f54e/DroidDeck-main-868f54e-pubg.apk",
+        "name": "DroidDeck-main-c3bc3e6-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c3bc3e6/DroidDeck-main-c3bc3e6-pubg.apk",
         "size": 106020300,
-        "sha256": "8e954d2256015b653b99890ef5056b7f1001118db5d89df2c3c3e00fd23a2210",
+        "sha256": "29cf6001822421b815b0e5b4bda800b0613a5288cc5a65dd0a7fa5fd5a5a7235",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-868f54e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-868f54e/DroidDeck-main-868f54e-antutu.apk",
+        "name": "DroidDeck-main-c3bc3e6-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c3bc3e6/DroidDeck-main-c3bc3e6-antutu.apk",
         "size": 106020300,
-        "sha256": "010962cbc9321d03e08ec79f38ad7535fadb6e69b0b8413cfd95239ba081820a",
+        "sha256": "b7eb74925e17a7a6c83d775b6d4f812c03b91ce6d0e2b2e48c7d04ebfe40197e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-868f54e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-868f54e/DroidDeck-main-868f54e-ludashi.apk",
+        "name": "DroidDeck-main-c3bc3e6-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c3bc3e6/DroidDeck-main-c3bc3e6-ludashi.apk",
         "size": 106020300,
-        "sha256": "9a204807b553d599abe6170ae4ecfc3b527be48e9e19978c98f5afe14b2193e0",
+        "sha256": "8fa588ff5b488affa5e0d1c6579346ad6c76485c348e628883f74c2a22f533a5",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c3bc3e6fbd624e663f6a4b96c73472cc7e40d5ad",
+      "title": "fix: run x86 Proton under FEX in the Steam runtime it requires",
+      "summary": "x86-64 Proton (e.g. Proton Experimental / 11) run through droiddeck-fex never got past startup on the Thor. Three separate problems, all in the FEX launch path:",
+      "publishedAt": 1792435311000
+    },
     {
       "commit": "868f54e425c227b42e269571faabda6b1a5bb541",
       "title": "fix: skip DirectAudio for Steam install scripts",
@@ -155,12 +161,6 @@
       "title": "Pushed to main without a PR - feat: itch.io store, library and installs for DRM-free Windows builds (#1064)",
       "summary": "",
       "publishedAt": 1792390187000
-    },
-    {
-      "commit": "ebc7f89fe32801f57cdb18fae4b1375b6540ee5d",
-      "title": "feat: itch.io store, library and installs for DRM-free Windows builds",
-      "summary": "Sign-in: the itch.io API key page sits behind a challenge a WebView cannot pass reliably, so the key is entered by hand and checked against /profile before it is stored.\nLibrary: read from /profile/owned-keys, parsed as the snakecase the server returns, and paged until a page comes back empty.\nStore: search through /search/games, shelves from the browser RSS feeds (newest, on sale, free, top rated",
-      "publishedAt": 1792386369000
     }
   ],
   "tests": [
