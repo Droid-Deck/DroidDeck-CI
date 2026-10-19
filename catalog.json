@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792451278261,
+  "generatedAt": 1792453595168,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1167",
+      "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
+      "summary": "x86 Linux programs that link OpenSSL 3 cannot start under droiddeck-fex. The Tibia launcher fails with:",
+      "commit": "ecb5f8978ca537b4716864124ed29dcc1a9a2ad6",
+      "pr": 1167,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792453519000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1167",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1167-ecb5f89.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-ecb5f89.apk",
+          "size": 123954257,
+          "sha256": "6634e158496349b7c7fd0c89f1584da005ad78406e346332127edb9990cce5c0",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1167-ecb5f89-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-ecb5f89-pubg.apk",
+          "size": 123954257,
+          "sha256": "cb236e93a1edd668d5ff7dee796fd729440b7602aa30a760e0b948f83e782715",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1167-ecb5f89-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-ecb5f89-antutu.apk",
+          "size": 123954257,
+          "sha256": "a3ffbda6c4b81d50772409f829d10fedfabef79fa15a4209feea15dd002875bb",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1167-ecb5f89-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-ecb5f89-ludashi.apk",
+          "size": 123954257,
+          "sha256": "54ee57eb22b34852e0dead4b0aaad40bac83a680d1d7b53c94cb47759bba806c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1162",
       "title": "fix: Steam no longer sleeps again right after a paused session resumes",
