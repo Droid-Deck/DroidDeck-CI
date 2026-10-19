@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792442081507,
+  "generatedAt": 1792443887882,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1159",
+      "title": "fix: GOG games miss the registry entries their install script sets",
+      "summary": "GOG downloads only place the game's files. GOG's own installer also writes the registry entries listed in the game's install script, goggame-<id>.script. Games that look up their own keys find nothing. For example, Fallout: New Vegas reads HKLM\\Software\\Bethesda Softworks\\FalloutNV \u2192 Installed Path, and without it the game shows \"Fallout: New Vegas does not appear to be installed and the i",
+      "commit": "8f994b8dab625c63b0553ba8cf2a9c6a88dc1f80",
+      "pr": 1159,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792443767000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1159",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1159-8f994b8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1159/DroidDeck-PR.1159-8f994b8.apk",
+          "size": 106020300,
+          "sha256": "39aee537165ea8b504126a93025f7b61705afce2c7559328aecf8f72f3243fae",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1159-8f994b8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1159/DroidDeck-PR.1159-8f994b8-pubg.apk",
+          "size": 106020300,
+          "sha256": "f52018999caf5242379f2b2d0985b9b255231cbb233a7a7bc8e74b5703eaeb19",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1159-8f994b8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1159/DroidDeck-PR.1159-8f994b8-antutu.apk",
+          "size": 106020300,
+          "sha256": "1c845a97019ddf06d590e818f83277f6a82d174fce47007e0b065c7112b03e3a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1159-8f994b8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1159/DroidDeck-PR.1159-8f994b8-ludashi.apk",
+          "size": 106020300,
+          "sha256": "f8a8500007cf4fde97eeed452dc056a85b40be9560b53ba38382420df68e5356",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1156",
       "title": "Add experimental Xbox and PC Game Pass store support",
