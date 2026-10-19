@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792414796519,
+  "generatedAt": 1792416745463,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1128",
+      "title": "fix: keep the TP UBWC hint on for Samsung One UI 8 Gen 2",
+      "summary": "Since #963, Samsung One UI devices on the Snapdragon 8 Gen 2 (Galaxy S23 series, Tab S9) flicker and flash green from the boot animation onward. 0.4.0 is fine. Every reported device is a Samsung Adreno 740, and switching drivers didn't help.",
+      "commit": "c036e61e5ca45eec08f7db653029beeca7cf95f8",
+      "pr": 1128,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792416630000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1128",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1128-c036e61.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1128/DroidDeck-PR.1128-c036e61.apk",
+          "size": 106016204,
+          "sha256": "7297823f0bf89bbd40c72e0a7fc92a8a46f96ca38f4d61d48090c994832acd65",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1128-c036e61-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1128/DroidDeck-PR.1128-c036e61-pubg.apk",
+          "size": 106016204,
+          "sha256": "879b3c4f4c7586cfb7a1a2e273ca7b31df12cab9deb4f8e2a26c2a9d29b92cf3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1128-c036e61-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1128/DroidDeck-PR.1128-c036e61-antutu.apk",
+          "size": 106016204,
+          "sha256": "856e68a7ff60f93d5459e73e8ec2debe0dcd612bde0db962ce0ce83951e1524c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1128-c036e61-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1128/DroidDeck-PR.1128-c036e61-ludashi.apk",
+          "size": 106016204,
+          "sha256": "e270a9690467dea44929b040755e638b1c518f2d01fa429ec02045be3d2ce19e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1108",
       "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
