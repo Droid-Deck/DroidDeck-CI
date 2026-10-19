@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792453595168,
+  "generatedAt": 1792453712872,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1166",
+      "title": "fix: route ALSA to PulseAudio for x86 Linux games under FEX (no game audio)",
+      "summary": "Native Linux games run with the \"Linux x86 (FEX)\" tool get no sound when they play through ALSA. The game runs and the Steam UI keeps its sounds, but the game log shows:",
+      "commit": "ced786c001ae6307c09e140b49c22f5232cc9caf",
+      "pr": 1166,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792453612000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1166",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1166-ced786c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1166/DroidDeck-PR.1166-ced786c.apk",
+          "size": 123954257,
+          "sha256": "f1093df71ebd1405480157afcb330eb9fc619641cd91b354b4e602421b0c4cdb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1166-ced786c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1166/DroidDeck-PR.1166-ced786c-pubg.apk",
+          "size": 123954257,
+          "sha256": "f0626d746f82fff2571f7f30c48d1dab135e69bb6e221d775858ebe99c2da872",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1166-ced786c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1166/DroidDeck-PR.1166-ced786c-antutu.apk",
+          "size": 123954257,
+          "sha256": "18f997aba99e1a6f4b34f2d92d8a3df7ba7a3391286b0690acfc24caa740a350",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1166-ced786c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1166/DroidDeck-PR.1166-ced786c-ludashi.apk",
+          "size": 123954257,
+          "sha256": "a8e6f1f6ac35989e80a007ccec0e4d4574e61b989838c6bd423b1e1e6310a1b2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1167",
       "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
