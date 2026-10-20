@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792514795754,
+  "generatedAt": 1792515600328,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8b27900",
-    "title": "fix: prefetch Comet and Xbox packs for existing users",
-    "summary": "Follow-up to Droid-Deck/DroidDeck#1198, from upgrade testing on the Thor.",
-    "commit": "8b279001a53e8360e38cc4fd1dcaa8f75eb1afc0",
+    "tag": "main-0f1b82a",
+    "title": "fix: programs whose libraries ask for an executable stack start under proot",
+    "summary": "Part of #789. This fixes the error in its log. ONLYOFFICE then hits a separate Chromium (CEF) crash, so the issue stays open.",
+    "commit": "0f1b82aa26b906deddb1145421a63960579dbc5b",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792514522000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8b27900",
+    "publishedAt": 1792515498000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0f1b82a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8b27900.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b27900/DroidDeck-main-8b27900.apk",
+        "name": "DroidDeck-main-0f1b82a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0f1b82a/DroidDeck-main-0f1b82a.apk",
         "size": 66459064,
-        "sha256": "658760a0a7e09b15d53d08c210c981bfa0b7bf6ef5e624536617ea7ba89ff1fe",
+        "sha256": "360299b680a5aa4a979b0968785c47d30625bc866b840bc0ba5a6b34c39b04b7",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8b27900-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b27900/DroidDeck-main-8b27900-pubg.apk",
+        "name": "DroidDeck-main-0f1b82a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0f1b82a/DroidDeck-main-0f1b82a-pubg.apk",
         "size": 66459064,
-        "sha256": "990e74e79c7d852f96ad961dcc1d0eed05f73fe6158736f1dd6891372a0fb2d8",
+        "sha256": "c8e1f6da993ee7be00743e73b6994e39f0091a5bd5f36c489e34e183d27b9060",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8b27900-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b27900/DroidDeck-main-8b27900-antutu.apk",
+        "name": "DroidDeck-main-0f1b82a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0f1b82a/DroidDeck-main-0f1b82a-antutu.apk",
         "size": 66459064,
-        "sha256": "9a7215a12870e3d521a9ecd5ea6b0ee44900a2c739f2f4d9fcb1787edd8d731c",
+        "sha256": "31f090cc5ead8bf0c77c7fe58bda93c3f5e5738b85b16ff116ff3aeb0486aa86",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8b27900-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b27900/DroidDeck-main-8b27900-ludashi.apk",
+        "name": "DroidDeck-main-0f1b82a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0f1b82a/DroidDeck-main-0f1b82a-ludashi.apk",
         "size": 66459064,
-        "sha256": "f49ece59da935af8708c3060c9d2f4d5ba83f199b306659ea5104939330d1d4a",
+        "sha256": "bec0aa03ee00e779b8d85082a382970fd1220cfbcd890e78978f9ea396f93c3c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0f1b82aa26b906deddb1145421a63960579dbc5b",
+      "title": "fix: programs whose libraries ask for an executable stack start under proot",
+      "summary": "Part of #789. This fixes the error in its log. ONLYOFFICE then hits a separate Chromium (CEF) crash, so the issue stays open.",
+      "publishedAt": 1792515498000
+    },
     {
       "commit": "8b279001a53e8360e38cc4fd1dcaa8f75eb1afc0",
       "title": "fix: prefetch Comet and Xbox packs for existing users",
@@ -155,12 +161,6 @@
       "title": "fix: RPCS3 opens from the emulator rail again",
       "summary": "RPCS3 from the emulator rail (Desktop \u2192 RPCS3 \u2192 Open RPCS3) never opens. On current main the session ends straight away with \"RPCS3 stopped unexpectedly\". Once that is fixed, RPCS3 itself stops with the error in the report: Null object ... utils::shm::shm ... (errno=13=Permission denied).",
       "publishedAt": 1792501829000
-    },
-    {
-      "commit": "ba582dea6578150f9fdb3f8c385e04e0ec0ef93d",
-      "title": "fix: add a picked exe the session cannot see by binding its folder",
-      "summary": "Adding a game from a single EXE on a microSD card (or any folder outside internal storage and the game library) shows \"This location is not available in the session\" and adds nothing. A 100 GB game on the card cannot be added at all.",
-      "publishedAt": 1792472511000
     }
   ],
   "tests": [
