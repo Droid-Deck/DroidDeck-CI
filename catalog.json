@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792521093937,
+  "generatedAt": 1792521987523,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1039",
+      "title": "feat: launch Easy Anti-Cheat games offline when they support it",
+      "summary": "Adds a per-game DROIDDECKANTICHEATOFFLINE setting, on by default. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, so games with an offline mode start without the EAC bootstrapper. Turn it off per game to launch through Easy Anti-Cheat as before. Game and anti-cheat files remain untouched; online modes requiring",
+      "commit": "ccb0ecbb517178c841e108239a2ca041815d48ee",
+      "pr": 1039,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792521916000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1039",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1039-ccb0ecb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-ccb0ecb.apk",
+          "size": 66463160,
+          "sha256": "4c602fe42517b54ae62b603bc11dac44d9b98ac31a79fbbc5bf667c9680e91ac",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1039-ccb0ecb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-ccb0ecb-pubg.apk",
+          "size": 66463160,
+          "sha256": "37641ffeb2adcc8e73d992386edd4533f1788bba425851139d4435d50c62d3d7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1039-ccb0ecb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-ccb0ecb-antutu.apk",
+          "size": 66463160,
+          "sha256": "4f1a90a25b50c35d7c1509db3aef4c724a990cc9254118e3db87244e2fc86f95",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1039-ccb0ecb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-ccb0ecb-ludashi.apk",
+          "size": 66463160,
+          "sha256": "83d1485b85184e16ce3a358bee41de88b8c23fc9e185a70c97640ac2a2f06378",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1213",
       "title": "fix: native Linux games under FEX reach FEXServer, and a refused compat app no longer loops the sync",
@@ -746,55 +795,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-395/DroidDeck-PR.395-2098e0b-ludashi.apk",
           "size": 105933668,
           "sha256": "e3ac93e1bf757ef5004f167d1f8d8e5c06928a1559609d784310d50e46c60eba",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1039",
-      "title": "feat: launch Easy Anti-Cheat games offline when they support it",
-      "summary": "Adds a per-game DROIDDECKANTICHEATOFFLINE setting, on by default. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, so games with an offline mode start without the EAC bootstrapper. Turn it off per game to launch through Easy Anti-Cheat as before. Game and anti-cheat files remain untouched; online modes requiring",
-      "commit": "5e3f36f6c8ead28191755d58c27468551c02c6fa",
-      "pr": 1039,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792359400000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1039",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1039-5e3f36f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-5e3f36f.apk",
-          "size": 105929572,
-          "sha256": "a5aedfdf2ef2659e1727b0dfbb825adb807a5c1acc42ece17fc8219ba63d4e9a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1039-5e3f36f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-5e3f36f-pubg.apk",
-          "size": 105929572,
-          "sha256": "00455dd46039be9a35a94a4f7d106a67a90cb7ebd2d8713a7bda7f9ada46ebc5",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1039-5e3f36f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-5e3f36f-antutu.apk",
-          "size": 105929572,
-          "sha256": "9ed1b565826099ae1cc3c550395d3e3551ff5f41cfc208e620434296f5ca64db",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1039-5e3f36f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-5e3f36f-ludashi.apk",
-          "size": 105929572,
-          "sha256": "4c24271155c0967a856ecc350d42640cff9b95b3e451222a1f08256d14a9fa36",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
