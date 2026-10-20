@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792456611467,
+  "generatedAt": 1792458540342,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1167",
+      "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
+      "summary": "x86 Linux programs that link OpenSSL 3 cannot start under droiddeck-fex. The Tibia launcher fails with:",
+      "commit": "d0f60ef597a44dbe9b61b031392f4995cc6244b9",
+      "pr": 1167,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792458465000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1167",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1167-d0f60ef.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-d0f60ef.apk",
+          "size": 123966545,
+          "sha256": "61f5607ed8c8c0277c3f07afab9dd0d3810774c73e921aabdc22f43eac7479d4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1167-d0f60ef-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-d0f60ef-pubg.apk",
+          "size": 123966545,
+          "sha256": "0421c1b683ef8c4e93f6ceaadb67a5347e15139a6ec1048c536282660f05e0b6",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1167-d0f60ef-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-d0f60ef-antutu.apk",
+          "size": 123966545,
+          "sha256": "28b58013073b5c4a40c1cba79666d70cd15ba65f521a1f4db889cf0016ec7bae",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1167-d0f60ef-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-d0f60ef-ludashi.apk",
+          "size": 123966545,
+          "sha256": "8ed8b253ec4bfc704fb26890b318da6e3a96f6ec47168042b52ca3692ca79c97",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1168",
       "title": "fix: let x86 apps under FEX use the device's fonts (Epic launcher CJK text shows boxes)",
       "summary": "When the Epic Games Launcher shows its UI in Chinese, every Chinese character is drawn as an empty box (tofu). Tabs, the search box, filters, buttons and the \u300c\u300d around game titles are all affected. The same goes for Japanese and Korean, and for any other x86 Linux app run under FEX (Qt, GTK or WebKit) that draws CJK text with system fonts.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1166/DroidDeck-PR.1166-ced786c-ludashi.apk",
           "size": 123954257,
           "sha256": "a8e6f1f6ac35989e80a007ccec0e4d4574e61b989838c6bd423b1e1e6310a1b2",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1167",
-      "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
-      "summary": "x86 Linux programs that link OpenSSL 3 cannot start under droiddeck-fex. The Tibia launcher fails with:",
-      "commit": "ecb5f8978ca537b4716864124ed29dcc1a9a2ad6",
-      "pr": 1167,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792453519000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1167",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1167-ecb5f89.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-ecb5f89.apk",
-          "size": 123954257,
-          "sha256": "6634e158496349b7c7fd0c89f1584da005ad78406e346332127edb9990cce5c0",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1167-ecb5f89-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-ecb5f89-pubg.apk",
-          "size": 123954257,
-          "sha256": "cb236e93a1edd668d5ff7dee796fd729440b7602aa30a760e0b948f83e782715",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1167-ecb5f89-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-ecb5f89-antutu.apk",
-          "size": 123954257,
-          "sha256": "a3ffbda6c4b81d50772409f829d10fedfabef79fa15a4209feea15dd002875bb",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1167-ecb5f89-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-ecb5f89-ludashi.apk",
-          "size": 123954257,
-          "sha256": "54ee57eb22b34852e0dead4b0aaad40bac83a680d1d7b53c94cb47759bba806c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
