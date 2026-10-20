@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792510809520,
+  "generatedAt": 1792511105987,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ece1df0",
-    "title": "Fix Game Pass library sync when subscription plan rows are omitted",
-    "summary": "Game Pass titles can be dropped during refresh when their child entitlements name a subscription plan that is absent from the product entitlement response. Library sync now queries the separate subscriptions endpoint using the same Store session and market, and returns minimal membership records within the account-checked library response.",
-    "commit": "ece1df0da8d0d4e35022dfe2df502623cb9a0f86",
+    "tag": "main-6125478",
+    "title": "feat: ship proot, DirectAudio, Xbox, Comet and hand tracking as CI-built add-on packs",
+    "summary": "Optional and flagged payloads move out of the APK into add-on packs. CI builds each pack in the Build APK run, CI publishes it, and the APK pins its SHA-256. The app downloads a pack the first time it's needed.",
+    "commit": "61254786e6a6d59e19b4d24230c7aec4d3f7070d",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792510735000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ece1df0",
+    "publishedAt": 1792511024000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6125478",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ece1df0.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ece1df0/DroidDeck-main-ece1df0.apk",
-        "size": 124425297,
-        "sha256": "ed47c763da16556db6a79fd69c7ca02f977a05dc5b7c7af838871871148d9786",
+        "name": "DroidDeck-main-6125478.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6125478/DroidDeck-main-6125478.apk",
+        "size": 66459064,
+        "sha256": "0f6bdf3a9e2f5c44b90a63eecc9e1af943c336e49889c420a70f94ee84461bc7",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ece1df0-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ece1df0/DroidDeck-main-ece1df0-pubg.apk",
-        "size": 124425297,
-        "sha256": "d8c8575f70469da631a4fa46de5230531e3f5dfb42c20d391ba780e0ca18ceaa",
+        "name": "DroidDeck-main-6125478-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6125478/DroidDeck-main-6125478-pubg.apk",
+        "size": 66459064,
+        "sha256": "b997d3701b416fa98f4ad75bc865cc826459c42b184f50463ebd687f3a7115c0",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ece1df0-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ece1df0/DroidDeck-main-ece1df0-antutu.apk",
-        "size": 124425297,
-        "sha256": "4d9a3d1cd58fe4ae2356eff3a745b7e36ec60dd8100fbffa300199b5594e81ae",
+        "name": "DroidDeck-main-6125478-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6125478/DroidDeck-main-6125478-antutu.apk",
+        "size": 66459064,
+        "sha256": "16f39cf6ec0a3fbf2d28f6629ddbba267553d379c16c24d17dd743167dd37af1",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ece1df0-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ece1df0/DroidDeck-main-ece1df0-ludashi.apk",
-        "size": 124425297,
-        "sha256": "d753fe3557fe786502ae1d65f8bab0c75114aad6c227f63b79c3455f8f49c7f7",
+        "name": "DroidDeck-main-6125478-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6125478/DroidDeck-main-6125478-ludashi.apk",
+        "size": 66459064,
+        "sha256": "2ab16d23e12c05aa4380ebbacc482c63f9b7c87554c1835e0912f3e557bd63ac",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "61254786e6a6d59e19b4d24230c7aec4d3f7070d",
+      "title": "feat: ship proot, DirectAudio, Xbox, Comet and hand tracking as CI-built add-on packs",
+      "summary": "Optional and flagged payloads move out of the APK into add-on packs. CI builds each pack in the Build APK run, CI publishes it, and the APK pins its SHA-256. The app downloads a pack the first time it's needed.",
+      "publishedAt": 1792511024000
+    },
     {
       "commit": "ece1df0da8d0d4e35022dfe2df502623cb9a0f86",
       "title": "Fix Game Pass library sync when subscription plan rows are omitted",
@@ -155,12 +161,6 @@
       "title": "fix: route ALSA to PulseAudio for x86 Linux games under FEX (no game audio)",
       "summary": "Native Linux games run with the \"Linux x86 (FEX)\" tool get no sound when they play through ALSA. The game runs and the Steam UI keeps its sounds, but the game log shows:",
       "publishedAt": 1792472406000
-    },
-    {
-      "commit": "fdab3cea82861f365b185e531aed9b26b7658a77",
-      "title": "fix: GOG games miss the registry entries their install script sets",
-      "summary": "GOG downloads only place the game's files. GOG's own installer also writes the registry entries listed in the game's install script, goggame-<id>.script. Games that look up their own keys find nothing. For example, Fallout: New Vegas reads HKLM\\Software\\Bethesda Softworks\\FalloutNV \u2192 Installed Path, and without it the game shows \"Fallout: New Vegas does not appear to be installed and the i",
-      "publishedAt": 1792472235000
     }
   ],
   "tests": [
