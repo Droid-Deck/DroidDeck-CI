@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792523293887,
+  "generatedAt": 1792523888674,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-1f71cbd",
-    "title": "fix: the on-screen pad steps aside while Steam's or DroidDeck's keyboard is open",
-    "summary": "Fixes #813",
-    "commit": "1f71cbd117943f3f501f228b5358db429e3334f8",
+    "tag": "main-49446c7",
+    "title": "feat: launch Easy Anti-Cheat games offline when they support it",
+    "summary": "Adds a per-game DROIDDECKANTICHEATOFFLINE setting, on by default. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, so games with an offline mode start without the EAC bootstrapper. Turn it off per game to launch through Easy Anti-Cheat as before. Game and anti-cheat files remain untouched; online modes requiring",
+    "commit": "49446c7f011416246c64e94b9384682ac18d8abd",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792522110000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1f71cbd",
+    "publishedAt": 1792523813000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-49446c7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-1f71cbd.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1f71cbd/DroidDeck-main-1f71cbd.apk",
+        "name": "DroidDeck-main-49446c7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49446c7/DroidDeck-main-49446c7.apk",
         "size": 66463160,
-        "sha256": "53228c8170811c5dc85117f44dce067502feaf568225eeb3b5b7f629988c5585",
+        "sha256": "f83ba7f5e7af2ff48a268aff518f276d3e1dc1ac08e9f3bf0b116df014f53554",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-1f71cbd-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1f71cbd/DroidDeck-main-1f71cbd-pubg.apk",
+        "name": "DroidDeck-main-49446c7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49446c7/DroidDeck-main-49446c7-pubg.apk",
         "size": 66463160,
-        "sha256": "b6cbf6c77c75c15f639198dc2970c6381def88489dc27f34441dbf15fc90819a",
+        "sha256": "eccaa4e2d3d9422d41980fc7fba6f1736790727daba4c794e702e8b4829d3b4d",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-1f71cbd-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1f71cbd/DroidDeck-main-1f71cbd-antutu.apk",
+        "name": "DroidDeck-main-49446c7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49446c7/DroidDeck-main-49446c7-antutu.apk",
         "size": 66463160,
-        "sha256": "6ce9b264bd144f8fc9806a20b3847b06fa24fa18289b7c67c911cb0e548882cf",
+        "sha256": "e244b0d15ba637ab63dd0bd17318bb9839d42181f83a8688dc9089d37344ec9b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-1f71cbd-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1f71cbd/DroidDeck-main-1f71cbd-ludashi.apk",
+        "name": "DroidDeck-main-49446c7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49446c7/DroidDeck-main-49446c7-ludashi.apk",
         "size": 66463160,
-        "sha256": "6155352929ec64b78ef97bd7303cd5532652a076ccf3aee3ed66fcea80f8fcfc",
+        "sha256": "8eeb0b72a89e5a9706642228440739571598c538d6459ea2d3bacf9963d69c50",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "49446c7f011416246c64e94b9384682ac18d8abd",
+      "title": "feat: launch Easy Anti-Cheat games offline when they support it",
+      "summary": "Adds a per-game DROIDDECKANTICHEATOFFLINE setting, on by default. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, so games with an offline mode start without the EAC bootstrapper. Turn it off per game to launch through Easy Anti-Cheat as before. Game and anti-cheat files remain untouched; online modes requiring",
+      "publishedAt": 1792523813000
+    },
     {
       "commit": "1f71cbd117943f3f501f228b5358db429e3334f8",
       "title": "fix: the on-screen pad steps aside while Steam's or DroidDeck's keyboard is open",
@@ -155,12 +161,6 @@
       "title": "fix: open Flatpak apps in renamed app variants",
       "summary": "Flatpak apps don't open in the renamed builds (AnTuTu and the other variants), while they open in the regular app. The session ends with \"stopped unexpectedly\", and Chrome can't be installed.",
       "publishedAt": 1792504591000
-    },
-    {
-      "commit": "99ab6dd64ec631891799e087e23b71fe3ab2a97e",
-      "title": "feat: Better boot movies system; Added steamdeckrepo support",
-      "summary": "\u2022 Installed: the \u201cInstalled movies\u201d row has a Browse button. It opens a list with a cover for each movie and the current one highlighted. The list re-reads every 2 seconds, so a movie picked or removed inside Steam shows up.\n\u2022 Import: the same import as before. Imported movies now go into Steam\u2019s own movies folder, so Steam lists them too.\n\u2022 SteamDeckRepo: search, device filter (all, Steam Deck, S",
-      "publishedAt": 1792504182000
     }
   ],
   "tests": [
