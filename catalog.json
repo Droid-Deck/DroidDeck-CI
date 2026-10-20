@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792529694767,
+  "generatedAt": 1792529932593,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6a0671d",
-    "title": "fix: leave the PC keyboard's pad handling to #956 and fix the red keyboard test",
-    "summary": "Main's unit tests are red since #956 and #1217 both landed today (SessionKeyboardPadTest > keyboardsLeaveThePadAloneOutsideSteam, 1 of 1913 failed on ae6e4a3f).",
-    "commit": "6a0671d5bd6cfb600497acf47fdadd1f05239552",
+    "tag": "main-782bff4",
+    "title": "fix: let the device sleep while a session is suspended",
+    "summary": "Devices ran warm and drained battery while asleep, even on the manual sleep policy with background downloads off. On an AYN Thor, the kernel suspended 0 times in 13 minutes with the session reported as suspended. Two separate causes:",
+    "commit": "782bff4e874527970461b11744f6a50617e8950b",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792528965000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6a0671d",
+    "publishedAt": 1792529828000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-782bff4",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6a0671d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a0671d/DroidDeck-main-6a0671d.apk",
-        "size": 66475448,
-        "sha256": "b6e20a95605fb9a64dde0f518d25dc97d82454f9f7ba0f185c1a471549ddd14f",
+        "name": "DroidDeck-main-782bff4.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-782bff4/DroidDeck-main-782bff4.apk",
+        "size": 66483640,
+        "sha256": "1eebe82e211606f7f6f912e205ecf2ac9a27ddf94cfcb8b5f1eefee515601d34",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6a0671d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a0671d/DroidDeck-main-6a0671d-pubg.apk",
-        "size": 66475448,
-        "sha256": "03b932487117be6bed304212469c5f069058da66fe4efd9b19d682e65965efce",
+        "name": "DroidDeck-main-782bff4-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-782bff4/DroidDeck-main-782bff4-pubg.apk",
+        "size": 66483640,
+        "sha256": "2937a25e98e09bb347ff4cb844abee03d45b1a58fe895c2a0d7ee0fe7fde1513",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6a0671d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a0671d/DroidDeck-main-6a0671d-antutu.apk",
-        "size": 66475448,
-        "sha256": "55a5ba097708f07ce90bbd669d7cfdb00f52a1d3ed1aa06f27f4aebf70007196",
+        "name": "DroidDeck-main-782bff4-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-782bff4/DroidDeck-main-782bff4-antutu.apk",
+        "size": 66483640,
+        "sha256": "39d6b73adf54c542f9ad77edc47c399ea2afdd56c85cbb938b9bcf7fa3dc6234",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6a0671d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a0671d/DroidDeck-main-6a0671d-ludashi.apk",
-        "size": 66475448,
-        "sha256": "a00c89c157ed9109128101c5b0b79afbf34e6af64d0a721f45eb3287db3e76f2",
+        "name": "DroidDeck-main-782bff4-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-782bff4/DroidDeck-main-782bff4-ludashi.apk",
+        "size": 66483640,
+        "sha256": "4b2e0caab3a0e53de852fa977b0480cb47dc7d7ba6c11a638edeecc7e4380379",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "782bff4e874527970461b11744f6a50617e8950b",
+      "title": "fix: let the device sleep while a session is suspended",
+      "summary": "Devices ran warm and drained battery while asleep, even on the manual sleep policy with background downloads off. On an AYN Thor, the kernel suspended 0 times in 13 minutes with the session reported as suspended. Two separate causes:",
+      "publishedAt": 1792529828000
+    },
     {
       "commit": "6a0671d5bd6cfb600497acf47fdadd1f05239552",
       "title": "fix: leave the PC keyboard's pad handling to #956 and fix the red keyboard test",
@@ -155,12 +161,6 @@
       "title": "Fix Game Pass library sync when subscription plan rows are omitted",
       "summary": "Game Pass titles can be dropped during refresh when their child entitlements name a subscription plan that is absent from the product entitlement response. Library sync now queries the separate subscriptions endpoint using the same Store session and market, and returns minimal membership records within the account-checked library response.",
       "publishedAt": 1792510735000
-    },
-    {
-      "commit": "49d1311808db7250194c28297f6364968b4cb759",
-      "title": "feat: arrange and hide/show store tabs from stores settings",
-      "summary": "Drag to reorder and click to toggle visibility for store tabs in the stores settings.",
-      "publishedAt": 1792509984000
     }
   ],
   "tests": [
