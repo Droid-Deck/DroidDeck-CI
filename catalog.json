@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792510078674,
+  "generatedAt": 1792510809520,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-49d1311",
-    "title": "feat: arrange and hide/show store tabs from stores settings",
-    "summary": "Drag to reorder and click to toggle visibility for store tabs in the stores settings.",
-    "commit": "49d1311808db7250194c28297f6364968b4cb759",
+    "tag": "main-ece1df0",
+    "title": "Fix Game Pass library sync when subscription plan rows are omitted",
+    "summary": "Game Pass titles can be dropped during refresh when their child entitlements name a subscription plan that is absent from the product entitlement response. Library sync now queries the separate subscriptions endpoint using the same Store session and market, and returns minimal membership records within the account-checked library response.",
+    "commit": "ece1df0da8d0d4e35022dfe2df502623cb9a0f86",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792509984000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-49d1311",
+    "publishedAt": 1792510735000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ece1df0",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-49d1311.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49d1311/DroidDeck-main-49d1311.apk",
-        "size": 124421201,
-        "sha256": "6f170296b713a7e6f5779bfbeed28fc9c43ec11cebae985b44d9e2eeaa98faf3",
+        "name": "DroidDeck-main-ece1df0.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ece1df0/DroidDeck-main-ece1df0.apk",
+        "size": 124425297,
+        "sha256": "ed47c763da16556db6a79fd69c7ca02f977a05dc5b7c7af838871871148d9786",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-49d1311-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49d1311/DroidDeck-main-49d1311-pubg.apk",
-        "size": 124421201,
-        "sha256": "4cb5d83e11b0149cd05dfe712fabbb48ae74a2face179a6f1d7f08beadf808f6",
+        "name": "DroidDeck-main-ece1df0-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ece1df0/DroidDeck-main-ece1df0-pubg.apk",
+        "size": 124425297,
+        "sha256": "d8c8575f70469da631a4fa46de5230531e3f5dfb42c20d391ba780e0ca18ceaa",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-49d1311-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49d1311/DroidDeck-main-49d1311-antutu.apk",
-        "size": 124421201,
-        "sha256": "6ec42c903f41a52fa7f40a658bc96989fa841319c0e076dc328cb4a6215bc4cb",
+        "name": "DroidDeck-main-ece1df0-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ece1df0/DroidDeck-main-ece1df0-antutu.apk",
+        "size": 124425297,
+        "sha256": "4d9a3d1cd58fe4ae2356eff3a745b7e36ec60dd8100fbffa300199b5594e81ae",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-49d1311-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49d1311/DroidDeck-main-49d1311-ludashi.apk",
-        "size": 124421201,
-        "sha256": "187059b7f464815597d1118e0dba517209a18e0c1c231ffdc44c6c87d0091fe5",
+        "name": "DroidDeck-main-ece1df0-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ece1df0/DroidDeck-main-ece1df0-ludashi.apk",
+        "size": 124425297,
+        "sha256": "d753fe3557fe786502ae1d65f8bab0c75114aad6c227f63b79c3455f8f49c7f7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "ece1df0da8d0d4e35022dfe2df502623cb9a0f86",
+      "title": "Fix Game Pass library sync when subscription plan rows are omitted",
+      "summary": "Game Pass titles can be dropped during refresh when their child entitlements name a subscription plan that is absent from the product entitlement response. Library sync now queries the separate subscriptions endpoint using the same Store session and market, and returns minimal membership records within the account-checked library response.",
+      "publishedAt": 1792510735000
+    },
     {
       "commit": "49d1311808db7250194c28297f6364968b4cb759",
       "title": "feat: arrange and hide/show store tabs from stores settings",
@@ -155,12 +161,6 @@
       "title": "fix: GOG games miss the registry entries their install script sets",
       "summary": "GOG downloads only place the game's files. GOG's own installer also writes the registry entries listed in the game's install script, goggame-<id>.script. Games that look up their own keys find nothing. For example, Fallout: New Vegas reads HKLM\\Software\\Bethesda Softworks\\FalloutNV \u2192 Installed Path, and without it the game shows \"Fallout: New Vegas does not appear to be installed and the i",
       "publishedAt": 1792472235000
-    },
-    {
-      "commit": "b26b43fbd0510c8651a4efe43041de0f20276087",
-      "title": "fix: find and save Steam touch layouts of non-Steam shortcuts",
-      "summary": "The Steam touch layout editor (on-screen controls: Steam touch) opens \"App -&lt;n&gt; Layout\" for a non-Steam shortcut, such as an added game or the Epic Games Launcher. LB, LT, RT, RB, both sticks and LS/RS are greyed out and cannot be dragged onto the screen, so the left stick can never be placed for movement.",
-      "publishedAt": 1792471947000
     }
   ],
   "tests": [
