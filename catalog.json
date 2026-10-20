@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792533583993,
+  "generatedAt": 1792534367679,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-606ba5a",
-    "title": "fix: shared session logs are always scrubbed, whatever their size",
-    "summary": "\ufeffEvery file in a shared session-log zip is now scrubbed. Large logs and logs with a stray NUL byte no longer go out raw.",
-    "commit": "606ba5a9db307f31af5a0d987087a427737c3fb1",
+    "tag": "main-975d6e2",
+    "title": "fix: restore Factorio ARM64 controller input through readv",
+    "summary": "Factorio's native ARM64 build detects and opens the controller but receives no usable button or axis input. This was reproduced on an AYN Thor with DroidDeck 0.5.0 and Factorio 2.1.22 after the game had launched successfully.",
+    "commit": "975d6e260adab5facc4c8d7d96f4a84feb1ca9c3",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792531956000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-606ba5a",
+    "publishedAt": 1792534281000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-975d6e2",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-606ba5a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-606ba5a/DroidDeck-main-606ba5a.apk",
+        "name": "DroidDeck-main-975d6e2.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975d6e2/DroidDeck-main-975d6e2.apk",
         "size": 66491832,
-        "sha256": "de40952a64da6ec66620cd817e0fe7c122870eddf685575e8d995148fef51630",
+        "sha256": "8e5018a7107d9a667f3f680c3fcb4e360997c372b0f8b010f6038097c865b27d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-606ba5a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-606ba5a/DroidDeck-main-606ba5a-pubg.apk",
+        "name": "DroidDeck-main-975d6e2-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975d6e2/DroidDeck-main-975d6e2-pubg.apk",
         "size": 66491832,
-        "sha256": "79bd6cfe34c7f9aaa0e8e68e088d1ccc1f6568631a19fe7c8fbe1b652d28c87b",
+        "sha256": "5c2f13070976d247b2e9336a63f14eb0757c02472f5cdec140eed582eff38d8c",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-606ba5a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-606ba5a/DroidDeck-main-606ba5a-antutu.apk",
+        "name": "DroidDeck-main-975d6e2-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975d6e2/DroidDeck-main-975d6e2-antutu.apk",
         "size": 66491832,
-        "sha256": "4417aa8fba2341ec1c425a4c17309af6dcf1ad19dbbc07cbc5f20e7f0f69019a",
+        "sha256": "68822e4aeecf7734bc7d9ea4fea03682bda3ece4d29b0510f5edaf2f5ab23161",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-606ba5a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-606ba5a/DroidDeck-main-606ba5a-ludashi.apk",
+        "name": "DroidDeck-main-975d6e2-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975d6e2/DroidDeck-main-975d6e2-ludashi.apk",
         "size": 66491832,
-        "sha256": "edfaa914da68c145ae77faea253717a549161f7b7a18260da36afeddca18e23a",
+        "sha256": "dcf26bae10241c7219e244af2acc9bef1f8e7c8c014651466c882b669ee1a86c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,18 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "975d6e260adab5facc4c8d7d96f4a84feb1ca9c3",
+      "title": "fix: restore Factorio ARM64 controller input through readv",
+      "summary": "Factorio's native ARM64 build detects and opens the controller but receives no usable button or axis input. This was reproduced on an AYN Thor with DroidDeck 0.5.0 and Factorio 2.1.22 after the game had launched successfully.",
+      "publishedAt": 1792534281000
+    },
+    {
+      "commit": "5f9acf51d4082d208f65a9a2788f21649ebe84c6",
+      "title": "fix: treat Unreal bootstrap launcher PE name as junk",
+      "summary": "Fixes #1010.",
+      "publishedAt": 1792534271000
+    },
     {
       "commit": "606ba5a9db307f31af5a0d987087a427737c3fb1",
       "title": "fix: shared session logs are always scrubbed, whatever their size",
@@ -149,18 +161,6 @@
       "title": "feat: launch Easy Anti-Cheat games offline when they support it",
       "summary": "Adds a per-game DROIDDECKANTICHEATOFFLINE setting, on by default. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, so games with an offline mode start without the EAC bootstrapper. Turn it off per game to launch through Easy Anti-Cheat as before. Game and anti-cheat files remain untouched; online modes requiring",
       "publishedAt": 1792523813000
-    },
-    {
-      "commit": "1f71cbd117943f3f501f228b5358db429e3334f8",
-      "title": "fix: the on-screen pad steps aside while Steam's or DroidDeck's keyboard is open",
-      "summary": "Fixes #813",
-      "publishedAt": 1792522110000
-    },
-    {
-      "commit": "55d5e2191c149e04b6c056673ec1866d974efd72",
-      "title": "fix: a store game's first launch creates its prefix before the cloud save download",
-      "summary": "Fixes #1179",
-      "publishedAt": 1792521007000
     }
   ],
   "tests": [
