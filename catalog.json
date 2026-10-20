@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792512905645,
+  "generatedAt": 1792513441214,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1108",
+      "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
+      "summary": "Fixes the blockers that prevent Windows games with anti-cheat (e.g. Arc Raiders) and x8664 Proton versions from running under FEX emulation on Android.",
+      "commit": "9b55f94704a4b64bdfb5a726ff9d82432b58d89f",
+      "pr": 1108,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792513362000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1108",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1108-9b55f94.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-9b55f94.apk",
+          "size": 66463160,
+          "sha256": "b56e76865bfcbc62ead99af956fe0bc44b5130a637feb47b5e19c88dc9a7598d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1108-9b55f94-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-9b55f94-pubg.apk",
+          "size": 66463160,
+          "sha256": "a4419989786d0993a503988dd997f278008fd11517b796a7ded12a8f205b762d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1108-9b55f94-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-9b55f94-antutu.apk",
+          "size": 66463160,
+          "sha256": "3e50cbef25a2a73f313001f59915c87763d80c12a10568cb8c46aac827fca02c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1108-9b55f94-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-9b55f94-ludashi.apk",
+          "size": 66463160,
+          "sha256": "0d87f193631a15274241c1c59133e24b48d050bb1ed0e6e94afb38bbf859a1f7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1204",
       "title": "fix: prefetch Comet and Xbox packs for existing users",
       "summary": "Follow-up to Droid-Deck/DroidDeck#1198 from upgrade testing on the Thor.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1204/DroidDeck-PR.1204-4f8112b-ludashi.apk",
           "size": 66459064,
           "sha256": "36f8fcef60611da9518245a4bece84d5c0e6daef19682a6b06468fce1712a802",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1108",
-      "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
-      "summary": "Fixes the blockers that prevent Windows games with anti-cheat (e.g. Arc Raiders) and x8664 Proton versions from running under FEX emulation on Android.",
-      "commit": "329cd6717abeba28abeec828737a4c4e4913de73",
-      "pr": 1108,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792467675000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1108",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1108-329cd67.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-329cd67.apk",
-          "size": 124224593,
-          "sha256": "e47b99201188745e6c481e9a98ced8ec257ceed087ccfb64d7b1af849ad0d612",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1108-329cd67-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-329cd67-pubg.apk",
-          "size": 124224593,
-          "sha256": "ee7967a2206c617d50824fb1e1421ee7bbc590ca986bdc7a776bdf49b3c9ef95",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1108-329cd67-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-329cd67-antutu.apk",
-          "size": 124224593,
-          "sha256": "75a63e5207ca491ea4b2bd7d501ff16c8cc65b5b21ecc429b921753bb6f2f8a4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1108-329cd67-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-329cd67-ludashi.apk",
-          "size": 124224593,
-          "sha256": "2fe2113d07e226f01b03773965eb5258cb0637e09363fd693d310f6d7c6c3b4d",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
