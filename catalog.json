@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792534367679,
+  "generatedAt": 1792534733999,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-975d6e2",
-    "title": "fix: restore Factorio ARM64 controller input through readv",
-    "summary": "Factorio's native ARM64 build detects and opens the controller but receives no usable button or axis input. This was reproduced on an AYN Thor with DroidDeck 0.5.0 and Factorio 2.1.22 after the game had launched successfully.",
-    "commit": "975d6e260adab5facc4c8d7d96f4a84feb1ca9c3",
+    "tag": "main-276bfd7",
+    "title": "fix: file provider rejects document ids with . or .. segments",
+    "summary": "\ufeffDeleting a file through the system Files app can no longer wipe DroidDeck's whole app folder via a crafted path.",
+    "commit": "276bfd7fa24a5fe84a6be62cb3ea100beda03369",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792534281000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-975d6e2",
+    "publishedAt": 1792534665000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-276bfd7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-975d6e2.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975d6e2/DroidDeck-main-975d6e2.apk",
+        "name": "DroidDeck-main-276bfd7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-276bfd7/DroidDeck-main-276bfd7.apk",
         "size": 66491832,
-        "sha256": "8e5018a7107d9a667f3f680c3fcb4e360997c372b0f8b010f6038097c865b27d",
+        "sha256": "04dd09cac5968945cbdbd62cb8809b8c50463c8db13e4434f5bc0fd0e6033835",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-975d6e2-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975d6e2/DroidDeck-main-975d6e2-pubg.apk",
+        "name": "DroidDeck-main-276bfd7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-276bfd7/DroidDeck-main-276bfd7-pubg.apk",
         "size": 66491832,
-        "sha256": "5c2f13070976d247b2e9336a63f14eb0757c02472f5cdec140eed582eff38d8c",
+        "sha256": "5a7a959e0b1cf161a6313cbe76a461920e4e2ab55b76f5f355c687b10a83fad0",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-975d6e2-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975d6e2/DroidDeck-main-975d6e2-antutu.apk",
+        "name": "DroidDeck-main-276bfd7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-276bfd7/DroidDeck-main-276bfd7-antutu.apk",
         "size": 66491832,
-        "sha256": "68822e4aeecf7734bc7d9ea4fea03682bda3ece4d29b0510f5edaf2f5ab23161",
+        "sha256": "46d34d77c25f8d9ce9460e7c7b16ab28a91bb6ee1a8e824c89cfa950ba16fcaa",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-975d6e2-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-975d6e2/DroidDeck-main-975d6e2-ludashi.apk",
+        "name": "DroidDeck-main-276bfd7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-276bfd7/DroidDeck-main-276bfd7-ludashi.apk",
         "size": 66491832,
-        "sha256": "dcf26bae10241c7219e244af2acc9bef1f8e7c8c014651466c882b669ee1a86c",
+        "sha256": "493f31ef8954a7bfdcca6ee8494661646ea95c34c472fc932684e29789661f7a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "276bfd7fa24a5fe84a6be62cb3ea100beda03369",
+      "title": "fix: file provider rejects document ids with . or .. segments",
+      "summary": "\ufeffDeleting a file through the system Files app can no longer wipe DroidDeck's whole app folder via a crafted path.",
+      "publishedAt": 1792534665000
+    },
     {
       "commit": "975d6e260adab5facc4c8d7d96f4a84feb1ca9c3",
       "title": "fix: restore Factorio ARM64 controller input through readv",
@@ -155,12 +161,6 @@
       "title": "fix: native Linux games under FEX reach FEXServer, and a refused compat app no longer loops the sync",
       "summary": "Fixes #1205",
       "publishedAt": 1792523941000
-    },
-    {
-      "commit": "49446c7f011416246c64e94b9384682ac18d8abd",
-      "title": "feat: launch Easy Anti-Cheat games offline when they support it",
-      "summary": "Adds a per-game DROIDDECKANTICHEATOFFLINE setting, on by default. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, so games with an offline mode start without the EAC bootstrapper. Turn it off per game to launch through Easy Anti-Cheat as before. Game and anti-cheat files remain untouched; online modes requiring",
-      "publishedAt": 1792523813000
     }
   ],
   "tests": [
