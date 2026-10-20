@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792531227879,
+  "generatedAt": 1792532017910,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-06a6fd9",
-    "title": "fix: Rewired games see DroidDeck's pads (udev listing, dlsym-resolved libc calls)",
-    "summary": "Native Linux games that read pads through Rewired (Unity) saw no controller at all. Reported on Drova: Forsaken Kin (Retroid Pocket Nova): no pad with any Steam Input type, nor with Xbox 360 and Steam Input off. Reproduced and verified here with Graveyard Keeper, another native Unity + Rewired game.",
-    "commit": "06a6fd96db2ae82ccbe2556df83b90ce6ca308d0",
+    "tag": "main-606ba5a",
+    "title": "fix: shared session logs are always scrubbed, whatever their size",
+    "summary": "\ufeffEvery file in a shared session-log zip is now scrubbed. Large logs and logs with a stray NUL byte no longer go out raw.",
+    "commit": "606ba5a9db307f31af5a0d987087a427737c3fb1",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792530729000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-06a6fd9",
+    "publishedAt": 1792531956000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-606ba5a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-06a6fd9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06a6fd9/DroidDeck-main-06a6fd9.apk",
+        "name": "DroidDeck-main-606ba5a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-606ba5a/DroidDeck-main-606ba5a.apk",
         "size": 66491832,
-        "sha256": "917d7e63c89e8c5bc50b29492ab3dea2d2132d5f95085a2a56ba7f317ef56be6",
+        "sha256": "de40952a64da6ec66620cd817e0fe7c122870eddf685575e8d995148fef51630",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-06a6fd9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06a6fd9/DroidDeck-main-06a6fd9-pubg.apk",
+        "name": "DroidDeck-main-606ba5a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-606ba5a/DroidDeck-main-606ba5a-pubg.apk",
         "size": 66491832,
-        "sha256": "6445d188570d9c90be8b8274e92f2608e7ddb2bb6b857c5fdf5fcd1daacae6b9",
+        "sha256": "79bd6cfe34c7f9aaa0e8e68e088d1ccc1f6568631a19fe7c8fbe1b652d28c87b",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-06a6fd9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06a6fd9/DroidDeck-main-06a6fd9-antutu.apk",
+        "name": "DroidDeck-main-606ba5a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-606ba5a/DroidDeck-main-606ba5a-antutu.apk",
         "size": 66491832,
-        "sha256": "de09bd818d2f35d7d00ddc5c1f5b36eb8e7c64f509d4a6667558ccf479f10a2b",
+        "sha256": "4417aa8fba2341ec1c425a4c17309af6dcf1ad19dbbc07cbc5f20e7f0f69019a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-06a6fd9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06a6fd9/DroidDeck-main-06a6fd9-ludashi.apk",
+        "name": "DroidDeck-main-606ba5a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-606ba5a/DroidDeck-main-606ba5a-ludashi.apk",
         "size": 66491832,
-        "sha256": "58ef09f179a6b7f0c79838a11071caa74932d93a0624b34fa79c553b1418c4d4",
+        "sha256": "edfaa914da68c145ae77faea253717a549161f7b7a18260da36afeddca18e23a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "606ba5a9db307f31af5a0d987087a427737c3fb1",
+      "title": "fix: shared session logs are always scrubbed, whatever their size",
+      "summary": "\ufeffEvery file in a shared session-log zip is now scrubbed. Large logs and logs with a stray NUL byte no longer go out raw.",
+      "publishedAt": 1792531956000
+    },
     {
       "commit": "06a6fd96db2ae82ccbe2556df83b90ce6ca308d0",
       "title": "fix: Rewired games see DroidDeck's pads (udev listing, dlsym-resolved libc calls)",
@@ -155,12 +161,6 @@
       "title": "fix: a store game's first launch creates its prefix before the cloud save download",
       "summary": "Fixes #1179",
       "publishedAt": 1792521007000
-    },
-    {
-      "commit": "0f1b82aa26b906deddb1145421a63960579dbc5b",
-      "title": "fix: programs whose libraries ask for an executable stack start under proot",
-      "summary": "Part of #789. This fixes the error in its log. ONLYOFFICE then hits a separate Chromium (CEF) crash, so the issue stays open.",
-      "publishedAt": 1792515498000
     }
   ],
   "tests": [
