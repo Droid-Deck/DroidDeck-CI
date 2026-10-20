@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792460170509,
+  "generatedAt": 1792460746769,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3dd0045",
-    "title": "Restore Xbox launches from Steam",
-    "summary": "The one-use authorization added to the Xbox Play flow blocks launching an installed Xbox shortcut directly from Steam. This restores the same launch behavior users get with other stores while keeping Xbox preparation bound to a live DroidDeck session, a signed-in Xbox account, and an installed product.",
-    "commit": "3dd0045874da57cbf2de4668ec379007c721a1e3",
+    "tag": "main-7855bec",
+    "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
+    "summary": "x86 Linux programs that link OpenSSL 3 cannot start under droiddeck-fex. The Tibia launcher fails with:",
+    "commit": "7855bec6a1552d9eea3bab2037e1b0baa40fa4ba",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792458554000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3dd0045",
+    "publishedAt": 1792460668000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7855bec",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3dd0045.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd0045/DroidDeck-main-3dd0045.apk",
+        "name": "DroidDeck-main-7855bec.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7855bec/DroidDeck-main-7855bec.apk",
         "size": 123966545,
-        "sha256": "32ff6748436958a80b76c69b349c43bc08dfa6e895c4a8fa5848971fb00d3fde",
+        "sha256": "d76b0b75851e6d2172fcc9d8c0004cb5011f006411535aadfb4758983513faac",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3dd0045-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd0045/DroidDeck-main-3dd0045-pubg.apk",
+        "name": "DroidDeck-main-7855bec-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7855bec/DroidDeck-main-7855bec-pubg.apk",
         "size": 123966545,
-        "sha256": "df00e1a491ba065661760e28b94c65c1f25174d2a4a313eae93148e934b5729f",
+        "sha256": "f95a6c80eeccbe395985858497de66aca705d61c48dca4fcc647fa17aacbedc6",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3dd0045-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd0045/DroidDeck-main-3dd0045-antutu.apk",
+        "name": "DroidDeck-main-7855bec-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7855bec/DroidDeck-main-7855bec-antutu.apk",
         "size": 123966545,
-        "sha256": "e90612849fed4c5953f34bb7beb18aac18449bbf4f5d2fe42168cebbc8c624d8",
+        "sha256": "27e5875a6fa62784cac4c5364128095d49dee802dd675d920dfce5419f1a568b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3dd0045-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd0045/DroidDeck-main-3dd0045-ludashi.apk",
+        "name": "DroidDeck-main-7855bec-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7855bec/DroidDeck-main-7855bec-ludashi.apk",
         "size": 123966545,
-        "sha256": "733648ff7a6d4b4bb19f81dc22e3055a1286377ad6d0a5e4efb0ae85e7152c01",
+        "sha256": "e1a9d3b9d1eea669b29a08622b338434d19e4a47cee8e968fbca989876c69619",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,18 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "7855bec6a1552d9eea3bab2037e1b0baa40fa4ba",
+      "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
+      "summary": "x86 Linux programs that link OpenSSL 3 cannot start under droiddeck-fex. The Tibia launcher fails with:",
+      "publishedAt": 1792460668000
+    },
+    {
+      "commit": "64b966af49670852f50be76ba78a8e8c7d61e867",
+      "title": "fix: keep ModeHeader search from stealing focus when recomposed",
+      "summary": "\u2022 ModeHeader (used in StorePage Flathub Discover and StoresPage store library/catalog headers) previously passed\nocusOnShow = true unconditionally to AdbTextField.\n\u2022 Because ModeHeader is inside a LazyVerticalGrid header item, whenever a user had a non-empty search query and scrolled down until the header left composition (or switched tabs) and then scrolled back up, ModeHeader re-entered composit",
+      "publishedAt": 1792460650000
+    },
     {
       "commit": "3dd0045874da57cbf2de4668ec379007c721a1e3",
       "title": "Restore Xbox launches from Steam",
@@ -149,18 +161,6 @@
       "title": "Fix direct-touch right-click and Steam Touch mode restoration",
       "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
       "publishedAt": 1792435051000
-    },
-    {
-      "commit": "ac25283f04e94a1a2924950c5b7a2027388aa73b",
-      "title": "fix: DD-FG 3x/4x flicker and rebrand Win-FG to DD-FG",
-      "summary": "DD-FG (formerly Win-FG) at 3x and 4x flickers and runs far slower than at 2x.",
-      "publishedAt": 1792426219000
-    },
-    {
-      "commit": "2ecfe18f76b202e14080d12cf6ac0b3ad9f74959",
-      "title": "fix: keep the TP UBWC hint on for Samsung One UI 8 Gen 2",
-      "summary": "Since #963, Samsung One UI devices on the Snapdragon 8 Gen 2 (Galaxy S23 series, Tab S9) flicker and flash green from the boot animation onward. 0.4.0 is fine. Every reported device is a Samsung Adreno 740, and switching drivers didn't help.",
-      "publishedAt": 1792418943000
     }
   ],
   "tests": [
