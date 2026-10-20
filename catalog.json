@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792458540342,
+  "generatedAt": 1792458609125,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6bbcf3a",
-    "title": "Restrict Xbox credential IPC and address launch review findings",
-    "summary": "Xbox launch preparation exposed an account-wide credential socket to guest code. This follow-up to #1156 moves licensed launch-view preparation into an Android-owned backend and returns only a product/account/session launch lease, prepared executable, existing game-service connection and PlayFab game token. Credential IPC now checks the Android-owned PRoot tracer and mapped backend executable agai",
-    "commit": "6bbcf3ad8be8ef1b80a97bf5f3444e4e001749b9",
+    "tag": "main-3dd0045",
+    "title": "Restore Xbox launches from Steam",
+    "summary": "The one-use authorization added to the Xbox Play flow blocks launching an installed Xbox shortcut directly from Steam. This restores the same launch behavior users get with other stores while keeping Xbox preparation bound to a live DroidDeck session, a signed-in Xbox account, and an installed product.",
+    "commit": "3dd0045874da57cbf2de4668ec379007c721a1e3",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792456501000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6bbcf3a",
+    "publishedAt": 1792458554000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3dd0045",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6bbcf3a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bbcf3a/DroidDeck-main-6bbcf3a.apk",
+        "name": "DroidDeck-main-3dd0045.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd0045/DroidDeck-main-3dd0045.apk",
         "size": 123966545,
-        "sha256": "5e3515a548a552b56b1dbb750368b244c44ef91f4c30e6a9a0d9cddae3498ffe",
+        "sha256": "32ff6748436958a80b76c69b349c43bc08dfa6e895c4a8fa5848971fb00d3fde",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6bbcf3a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bbcf3a/DroidDeck-main-6bbcf3a-pubg.apk",
+        "name": "DroidDeck-main-3dd0045-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd0045/DroidDeck-main-3dd0045-pubg.apk",
         "size": 123966545,
-        "sha256": "e7a9efb2a9674403d9a494db085f0e0d6d9b147b8d9081dd2108bc1bdc4f7fdb",
+        "sha256": "df00e1a491ba065661760e28b94c65c1f25174d2a4a313eae93148e934b5729f",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6bbcf3a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bbcf3a/DroidDeck-main-6bbcf3a-antutu.apk",
+        "name": "DroidDeck-main-3dd0045-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd0045/DroidDeck-main-3dd0045-antutu.apk",
         "size": 123966545,
-        "sha256": "b8270f490c0bf4e4bcf73a98c6f513f313e97a4cd0ccc3ee35e6e12c72750c0d",
+        "sha256": "e90612849fed4c5953f34bb7beb18aac18449bbf4f5d2fe42168cebbc8c624d8",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6bbcf3a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bbcf3a/DroidDeck-main-6bbcf3a-ludashi.apk",
+        "name": "DroidDeck-main-3dd0045-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3dd0045/DroidDeck-main-3dd0045-ludashi.apk",
         "size": 123966545,
-        "sha256": "bba1409313c74a08cda8c0e65f026742f745eed5fccb453b08c23698c4c934ca",
+        "sha256": "733648ff7a6d4b4bb19f81dc22e3055a1286377ad6d0a5e4efb0ae85e7152c01",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "3dd0045874da57cbf2de4668ec379007c721a1e3",
+      "title": "Restore Xbox launches from Steam",
+      "summary": "The one-use authorization added to the Xbox Play flow blocks launching an installed Xbox shortcut directly from Steam. This restores the same launch behavior users get with other stores while keeping Xbox preparation bound to a live DroidDeck session, a signed-in Xbox account, and an installed product.",
+      "publishedAt": 1792458554000
+    },
     {
       "commit": "6bbcf3ad8be8ef1b80a97bf5f3444e4e001749b9",
       "title": "Restrict Xbox credential IPC and address launch review findings",
@@ -155,15 +161,58 @@
       "title": "fix: keep the TP UBWC hint on for Samsung One UI 8 Gen 2",
       "summary": "Since #963, Samsung One UI devices on the Snapdragon 8 Gen 2 (Galaxy S23 series, Tab S9) flicker and flash green from the boot animation onward. 0.4.0 is fine. Every reported device is a Samsung Adreno 740, and switching drivers didn't help.",
       "publishedAt": 1792418943000
-    },
-    {
-      "commit": "7515bb98985846af0e79fc83e13956ad915f2fae",
-      "title": "Ship the desktop's translations as per-language packs",
-      "summary": "The KDE desktop package ships English catalogues only, and nothing hands the app's language to KDE, so the desktop stays English whatever the user picks.",
-      "publishedAt": 1792418605000
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1162",
+      "title": "fix: Steam no longer sleeps again right after a paused session resumes",
+      "summary": "When a Steam session came back after being paused longer than Steam's own idle-sleep timeout, Steam put itself to sleep again straight away:\n\u2022 the session paused again a second after Resume, so it needed a second Resume, or\n\u2022 the game dropped behind Big Picture, with its audio still playing.",
+      "commit": "cd4f96c2ad67eb9769e2bb1a3670904975b4da76",
+      "pr": 1162,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792458530000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1162",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1162-cd4f96c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-cd4f96c.apk",
+          "size": 123966545,
+          "sha256": "271b6644f6d014e450a379ca4d02e28fae62d91d27133548d1875905e4c1710d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1162-cd4f96c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-cd4f96c-pubg.apk",
+          "size": 123966545,
+          "sha256": "19788d9a3d1b706c81e4ad62a2f51333e8110ed0fd4b84216ef134bba0c879cf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1162-cd4f96c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-cd4f96c-antutu.apk",
+          "size": 123966545,
+          "sha256": "25b56b2d62b1148faa768d9f4c5035140cfbae59a9fcfda2630981b5863eb6eb",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1162-cd4f96c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-cd4f96c-ludashi.apk",
+          "size": 123966545,
+          "sha256": "7d2adabbd058f557c613685e2c26b127e132eb69c4959dfd22ab24161033cdac",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1167",
       "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1166/DroidDeck-PR.1166-ced786c-ludashi.apk",
           "size": 123954257,
           "sha256": "a8e6f1f6ac35989e80a007ccec0e4d4574e61b989838c6bd423b1e1e6310a1b2",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1162",
-      "title": "fix: Steam no longer sleeps again right after a paused session resumes",
-      "summary": "When a Steam session came back after being paused longer than Steam's own idle-sleep timeout, Steam put itself to sleep again straight away:\n\u2022 the session paused again a second after Resume, so it needed a second Resume, or\n\u2022 the game dropped behind Big Picture, with its audio still playing.",
-      "commit": "649f2a6f82903a4cd5054a3743183b9d1e88dc93",
-      "pr": 1162,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792447088000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1162",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1162-649f2a6.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-649f2a6.apk",
-          "size": 106020300,
-          "sha256": "58be6ba94261f6297efd57c252fe9c26ddb2c804b9b1a48f33b9b240f11b5ab5",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1162-649f2a6-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-649f2a6-pubg.apk",
-          "size": 106020300,
-          "sha256": "fa0cd0a2639362fdda77b86228775835cefc41590693dda943f1e1928d8ee2ee",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1162-649f2a6-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-649f2a6-antutu.apk",
-          "size": 106020300,
-          "sha256": "7a2f4251e22c0ef5316585f9cceef34de0fecd01fc6b1a506b9bcaa9a449560a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1162-649f2a6-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-649f2a6-ludashi.apk",
-          "size": 106020300,
-          "sha256": "c6916de742d48ed2656af053bf35e059d7a9e5fb598744fadbd712c6094369f4",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
