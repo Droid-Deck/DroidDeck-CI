@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792459299813,
+  "generatedAt": 1792459778186,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,55 +165,6 @@
   ],
   "tests": [
     {
-      "tag": "pr-1172",
-      "title": "fix: user apps open at the Desktop's resolution",
-      "summary": "A user app (script, AppImage or Flatpak added under Desktop apps) started from its shortcut ignores the resolution chosen under Open Desktop. It always gets a 1280x720 canvas, letterboxed on screens that are not 16:9, while the same app run inside the Desktop gets the chosen resolution.",
-      "commit": "0aee12298a200bb0e657674cf3e4813fcb18e138",
-      "pr": 1172,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792459198000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1172",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1172-0aee122.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1172/DroidDeck-PR.1172-0aee122.apk",
-          "size": 123966545,
-          "sha256": "e8703b56e51bdc87211453b47fa26374b426561acec631942a38ff450dc1b222",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1172-0aee122-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1172/DroidDeck-PR.1172-0aee122-pubg.apk",
-          "size": 123966545,
-          "sha256": "7407520c709cd86d88bc3ebc6f5d2276b10935157ab78a080fd1c7fe066c2ee2",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1172-0aee122-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1172/DroidDeck-PR.1172-0aee122-antutu.apk",
-          "size": 123966545,
-          "sha256": "76dcd23f7da7fe6a980868001c7ec952d7fb6d11f835f357b4112e90815611ce",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1172-0aee122-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1172/DroidDeck-PR.1172-0aee122-ludashi.apk",
-          "size": 123966545,
-          "sha256": "986f3cde17b243589c34662ef1fc9dd59d61b1fa234cd406ac806956dfbcfbcc",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-1163",
       "title": "fix: let Wine write hooks into code FEX has translated (Ubisoft \"Error at hooking API\")",
       "summary": "Ubisoft games (Immortals Fenyx Rising reported on Discord, several users since 0.5.0) stop with Error at hooking API \"NtProtectVirtualMemory\" and a dump of the untouched 32-bit syscall thunk (B8 50 00 00 00 BA \u2026 FF D2 C2 14 00 90). Any program that patches its own ntdll with WriteProcessMemory / NtWriteVirtualMemory hits the same wall: hook engines, overlays, launchers and some anti-tamp",
@@ -305,104 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-cd4f96c-ludashi.apk",
           "size": 123966545,
           "sha256": "7d2adabbd058f557c613685e2c26b127e132eb69c4959dfd22ab24161033cdac",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1167",
-      "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
-      "summary": "x86 Linux programs that link OpenSSL 3 cannot start under droiddeck-fex. The Tibia launcher fails with:",
-      "commit": "d0f60ef597a44dbe9b61b031392f4995cc6244b9",
-      "pr": 1167,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792458465000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1167",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1167-d0f60ef.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-d0f60ef.apk",
-          "size": 123966545,
-          "sha256": "61f5607ed8c8c0277c3f07afab9dd0d3810774c73e921aabdc22f43eac7479d4",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1167-d0f60ef-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-d0f60ef-pubg.apk",
-          "size": 123966545,
-          "sha256": "0421c1b683ef8c4e93f6ceaadb67a5347e15139a6ec1048c536282660f05e0b6",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1167-d0f60ef-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-d0f60ef-antutu.apk",
-          "size": 123966545,
-          "sha256": "28b58013073b5c4a40c1cba79666d70cd15ba65f521a1f4db889cf0016ec7bae",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1167-d0f60ef-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1167/DroidDeck-PR.1167-d0f60ef-ludashi.apk",
-          "size": 123966545,
-          "sha256": "8ed8b253ec4bfc704fb26890b318da6e3a96f6ec47168042b52ca3692ca79c97",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1168",
-      "title": "fix: let x86 apps under FEX use the device's fonts (Epic launcher CJK text shows boxes)",
-      "summary": "When the Epic Games Launcher shows its UI in Chinese, every Chinese character is drawn as an empty box (tofu). Tabs, the search box, filters, buttons and the \u300c\u300d around game titles are all affected. The same goes for Japanese and Korean, and for any other x86 Linux app run under FEX (Qt, GTK or WebKit) that draws CJK text with system fonts.",
-      "commit": "ca89da4170a2d7e0e3976957ff4de3d4e7722d5b",
-      "pr": 1168,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792454742000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1168",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1168-ca89da4.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1168/DroidDeck-PR.1168-ca89da4.apk",
-          "size": 123954257,
-          "sha256": "09ac01f66adcca4b10eecc2cf9166d8bd7266e8ac6bcb92d9f98d03662b0750d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1168-ca89da4-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1168/DroidDeck-PR.1168-ca89da4-pubg.apk",
-          "size": 123954257,
-          "sha256": "16515564195b7014ee0b3e73851f5d95b15c1859c16d770a5dadecb6f0651353",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1168-ca89da4-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1168/DroidDeck-PR.1168-ca89da4-antutu.apk",
-          "size": 123954257,
-          "sha256": "a3c0b529acb5d23b973f8a7773a6c41bda4a63613ecd6f9980b8f6f31ad627b2",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1168-ca89da4-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1168/DroidDeck-PR.1168-ca89da4-ludashi.apk",
-          "size": 123954257,
-          "sha256": "743a1921b6af80c4b06737fc251c438c49a1eaab361e6671542961398ecca3fd",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
