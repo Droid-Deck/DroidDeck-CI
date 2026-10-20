@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792470970160,
+  "generatedAt": 1792471189500,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a42ad82",
-    "title": "fix: keep held Steam Touch controls pressed across action-set and layer changes",
-    "summary": "\u2022 Finding #58: Add SteamTouchConfig.remapHeld(held, next) and update SteamTouchControls.refreshState() so action-set and layer switches (state.actionSeq != actionSeq) call ebuild(keepHeld = true) (keepHeldFingers()) instead of eleaseAll().\n\u2022 Held pointers on controls that survive the layer/action-set transition (matched by Element.id and Element::class) remain held and re-publish their state against the new element list, while pointers on removed controls are cleanly released.",
-    "commit": "a42ad82bcb80374450155c005c5d2f3cab0b9c7b",
+    "tag": "main-cee84fd",
+    "title": "fix: show the app's cursor in sessions started from the front end",
+    "summary": "Apps started from the front end (store apps, Flatpaks, emulators, anything in a run-mode session) had no cursor of their own. In a fresh app process you got DroidDeck's fallback arrow, and after a desktop session had been used the cursor was gone completely, while mouse and touchpad input still worked.",
+    "commit": "cee84fd12a40a3a4a29c049bd87679b7cf446154",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792469136000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a42ad82",
+    "publishedAt": 1792471077000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cee84fd",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a42ad82.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a42ad82/DroidDeck-main-a42ad82.apk",
+        "name": "DroidDeck-main-cee84fd.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cee84fd/DroidDeck-main-cee84fd.apk",
         "size": 124236881,
-        "sha256": "c20ca2591ea8ca3adeca563366438991d49795818022c08e93e3c72dfc9d7fa1",
+        "sha256": "2d50aa5a375b96eafaec41a9dc34677be22de8bb8133d9134804d41eb9c441dc",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a42ad82-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a42ad82/DroidDeck-main-a42ad82-pubg.apk",
+        "name": "DroidDeck-main-cee84fd-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cee84fd/DroidDeck-main-cee84fd-pubg.apk",
         "size": 124236881,
-        "sha256": "ef93fdb20ab89d7f98022c0d4005a6f036c6bc6374d9610c3d786e19f3560808",
+        "sha256": "58feb1d5ed80e8576848a27a68a7150b47fe33683aa04065475e72f993c25d9d",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a42ad82-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a42ad82/DroidDeck-main-a42ad82-antutu.apk",
+        "name": "DroidDeck-main-cee84fd-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cee84fd/DroidDeck-main-cee84fd-antutu.apk",
         "size": 124236881,
-        "sha256": "a50db7cf3bcfcc0e7a5604823927a1f5a56287a3f672d9d2332ae6573cef373a",
+        "sha256": "74c04756c53c5df2b3471e0ea829fe1703a9a20d04ea1f9779e49b8feb9016ec",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a42ad82-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a42ad82/DroidDeck-main-a42ad82-ludashi.apk",
+        "name": "DroidDeck-main-cee84fd-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cee84fd/DroidDeck-main-cee84fd-ludashi.apk",
         "size": 124236881,
-        "sha256": "118dc09c9f62e9dea4a5c64faf2828f94a6107a84f453d751f24d2ea29d8794a",
+        "sha256": "7615ac4a6d2a03f279f8ce8d7648b5fd56f4d8dc00c9c90f34332c016286e489",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "cee84fd12a40a3a4a29c049bd87679b7cf446154",
+      "title": "fix: show the app's cursor in sessions started from the front end",
+      "summary": "Apps started from the front end (store apps, Flatpaks, emulators, anything in a run-mode session) had no cursor of their own. In a fresh app process you got DroidDeck's fallback arrow, and after a desktop session had been used the cursor was gone completely, while mouse and touchpad input still worked.",
+      "publishedAt": 1792471077000
+    },
     {
       "commit": "a42ad82bcb80374450155c005c5d2f3cab0b9c7b",
       "title": "fix: keep held Steam Touch controls pressed across action-set and layer changes",
@@ -155,12 +161,6 @@
       "title": "fix: keep ModeHeader search from stealing focus when recomposed",
       "summary": "\u2022 ModeHeader (used in StorePage Flathub Discover and StoresPage store library/catalog headers) previously passed\nocusOnShow = true unconditionally to AdbTextField.\n\u2022 Because ModeHeader is inside a LazyVerticalGrid header item, whenever a user had a non-empty search query and scrolled down until the header left composition (or switched tabs) and then scrolled back up, ModeHeader re-entered composit",
       "publishedAt": 1792460650000
-    },
-    {
-      "commit": "3dd0045874da57cbf2de4668ec379007c721a1e3",
-      "title": "Restore Xbox launches from Steam",
-      "summary": "The one-use authorization added to the Xbox Play flow blocks launching an installed Xbox shortcut directly from Steam. This restores the same launch behavior users get with other stores while keeping Xbox preparation bound to a live DroidDeck session, a signed-in Xbox account, and an installed product.",
-      "publishedAt": 1792458554000
     }
   ],
   "tests": [
@@ -305,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1173/DroidDeck-PR.1173-1b3cb93-ludashi.apk",
           "size": 123966545,
           "sha256": "dab9eaf77ef1b6c521e62c62f25d107d64b24163a0e3032464485bb5b83a7b79",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1159",
-      "title": "fix: GOG games miss the registry entries their install script sets",
-      "summary": "GOG downloads only place the game's files. GOG's own installer also writes the registry entries listed in the game's install script, goggame-<id>.script. Games that look up their own keys find nothing. For example, Fallout: New Vegas reads HKLM\\Software\\Bethesda Softworks\\FalloutNV \u2192 Installed Path, and without it the game shows \"Fallout: New Vegas does not appear to be installed and the i",
-      "commit": "8f994b8dab625c63b0553ba8cf2a9c6a88dc1f80",
-      "pr": 1159,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792443767000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1159",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1159-8f994b8.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1159/DroidDeck-PR.1159-8f994b8.apk",
-          "size": 106020300,
-          "sha256": "39aee537165ea8b504126a93025f7b61705afce2c7559328aecf8f72f3243fae",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1159-8f994b8-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1159/DroidDeck-PR.1159-8f994b8-pubg.apk",
-          "size": 106020300,
-          "sha256": "f52018999caf5242379f2b2d0985b9b255231cbb233a7a7bc8e74b5703eaeb19",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1159-8f994b8-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1159/DroidDeck-PR.1159-8f994b8-antutu.apk",
-          "size": 106020300,
-          "sha256": "1c845a97019ddf06d590e818f83277f6a82d174fce47007e0b065c7112b03e3a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1159-8f994b8-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1159/DroidDeck-PR.1159-8f994b8-ludashi.apk",
-          "size": 106020300,
-          "sha256": "f8a8500007cf4fde97eeed452dc056a85b40be9560b53ba38382420df68e5356",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
