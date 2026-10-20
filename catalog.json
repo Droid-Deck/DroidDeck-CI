@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792468510636,
+  "generatedAt": 1792469178035,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-06e819f",
-    "title": "fix: an interrupted package install can no longer break the Linux runtime",
-    "summary": "A tester's Thor stopped starting Steam (Exit status 134) after the app was closed during a desktop install. Restarting did not help; only reinstalling the app did, which cost them every game.",
-    "commit": "06e819f864995e318e022631649c523790000872",
+    "tag": "main-48daa06",
+    "title": "fix: confirm before bulk-removing unused components in Storage",
+    "summary": "\u2022 In Setup \u2192 Storage \u2192 Components, per-row Remove buttons show a ConfirmDialog before deleting an unused component package or saved Proton original, while the top-right bulk Remove unused (PrimaryButton) previously called StorageState.removeComponents(unused) immediately on tap without confirmation (unlike ToolsView, which confirms bulk removal).\n\u2022 Add a confirmation dialog (confirmAll) to ComponentsView listing each unused component (\u2022 <label> \u2014 <size>) and displaying R.string.storagecomponentconfirm (when any unused item is a downloaded .wcp package) or R.string.storageoriginalconfirm.\n\u2022 Add StorageComponentsBulkConfirmTest (Robolectric Compose UI test) verifying that tapping bulk Remove unused opens the confirmation dialog without deleting files, Cancel keeps the files on disk, and Remove inside the dialog deletes them.",
+    "commit": "48daa064c9ddea5cd0e345d279f72c6ebd6e0724",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792468418000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-06e819f",
+    "publishedAt": 1792469090000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-48daa06",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-06e819f.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06e819f/DroidDeck-main-06e819f.apk",
-        "size": 124232785,
-        "sha256": "d59893e2649a3b822686e79e2d641151ef4fb7b4bebce95c480e87d6f805e095",
+        "name": "DroidDeck-main-48daa06.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-48daa06/DroidDeck-main-48daa06.apk",
+        "size": 124236881,
+        "sha256": "ab8711f1614611b4dddfe3de263034410a5d2a3749073bcf2ad6f31eacc7d6cb",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-06e819f-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06e819f/DroidDeck-main-06e819f-pubg.apk",
-        "size": 124232785,
-        "sha256": "75766dfeb609d67191cd579dcb2fa5fc2e6d508fcd8e0d56351af92abdbc023e",
+        "name": "DroidDeck-main-48daa06-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-48daa06/DroidDeck-main-48daa06-pubg.apk",
+        "size": 124236881,
+        "sha256": "4e39c06ff360009ad2f1b308886ba44fabc1048fb6394767d4ce2eaf22e2edf2",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-06e819f-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06e819f/DroidDeck-main-06e819f-antutu.apk",
-        "size": 124232785,
-        "sha256": "5e09dedf1ad6e8d20d7e5f91abc3167dfcf4a57546acd2360eacfdd65dcb63d8",
+        "name": "DroidDeck-main-48daa06-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-48daa06/DroidDeck-main-48daa06-antutu.apk",
+        "size": 124236881,
+        "sha256": "b93ca58b5e4400b77d71564aa527d258235a391bfe23afb75b87757312c355ec",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-06e819f-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-06e819f/DroidDeck-main-06e819f-ludashi.apk",
-        "size": 124232785,
-        "sha256": "a6d7c7ecaab03ca72d7d5e99869b5ca091a2b5cdb2ba329f556e1f5c73c6ffad",
+        "name": "DroidDeck-main-48daa06-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-48daa06/DroidDeck-main-48daa06-ludashi.apk",
+        "size": 124236881,
+        "sha256": "74c42b6a02644da70ebb436bfae17cc395cd0096f58c1bd58946ce47b8a8d730",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "48daa064c9ddea5cd0e345d279f72c6ebd6e0724",
+      "title": "fix: confirm before bulk-removing unused components in Storage",
+      "summary": "\u2022 In Setup \u2192 Storage \u2192 Components, per-row Remove buttons show a ConfirmDialog before deleting an unused component package or saved Proton original, while the top-right bulk Remove unused (PrimaryButton) previously called StorageState.removeComponents(unused) immediately on tap without confirmation (unlike ToolsView, which confirms bulk removal).\n\u2022 Add a confirmation dialog (confirmAll) to Compone",
+      "publishedAt": 1792469090000
+    },
     {
       "commit": "06e819f864995e318e022631649c523790000872",
       "title": "fix: an interrupted package install can no longer break the Linux runtime",
@@ -155,12 +161,6 @@
       "title": "Restrict Xbox credential IPC and address launch review findings",
       "summary": "Xbox launch preparation exposed an account-wide credential socket to guest code. This follow-up to #1156 moves licensed launch-view preparation into an Android-owned backend and returns only a product/account/session launch lease, prepared executable, existing game-service connection and PlayFab game token. Credential IPC now checks the Android-owned PRoot tracer and mapped backend executable agai",
       "publishedAt": 1792456501000
-    },
-    {
-      "commit": "f5bba17f53dfc5d03db566dbed578e5c07dae756",
-      "title": "Add experimental Xbox and PC Game Pass store support",
-      "summary": "Adds Xbox / PC Game Pass as a native DroidDeck store, using a pinned Nexus-patched Xodus backend built for Linux AArch64. Microsoft sign-in, owned/subscription library entries, package selection, licensed downloads with pause/resume, update/verify, related-content management, and a dedicated Proton/FEX launch path use DroidDeck's existing UI and queue.",
-      "publishedAt": 1792451206000
     }
   ],
   "tests": [
