@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792496973038,
+  "generatedAt": 1792499671920,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1191",
+      "title": "fix: RPCS3 opens from the emulator rail again",
+      "summary": "RPCS3 from the emulator rail (Desktop \u2192 RPCS3 \u2192 Open RPCS3) never opens. On current main the session ends straight away with \"RPCS3 stopped unexpectedly\". Once that is fixed, RPCS3 itself stops with the error in the report: Null object ... utils::shm::shm ... (errno=13=Permission denied).",
+      "commit": "df9dd5a8c5fdbf060126dcf0da22b28bc8fad562",
+      "pr": 1191,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792499570000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1191",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1191-df9dd5a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1191/DroidDeck-PR.1191-df9dd5a.apk",
+          "size": 124240977,
+          "sha256": "b5faa3e54a212c210cf64f9b16c96e41e40b471737685e75b9414a706279e5af",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1191-df9dd5a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1191/DroidDeck-PR.1191-df9dd5a-pubg.apk",
+          "size": 124240977,
+          "sha256": "d8e2c6eb265210cc6d0258ae01d15ae9cabd304cf0e0519bcb61fa07f918adb2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1191-df9dd5a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1191/DroidDeck-PR.1191-df9dd5a-antutu.apk",
+          "size": 124240977,
+          "sha256": "0ca94f12d2ca9d0c9a873c5ef5281eef1265f8f96e73811b937ccfef2ac18ae5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1191-df9dd5a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1191/DroidDeck-PR.1191-df9dd5a-ludashi.apk",
+          "size": 124240977,
+          "sha256": "9a3663d0182f88471e830e7879a08ae9309833316c65e4064e4e435e096afb4b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1188",
       "title": "perf: tile rendering for games, faster session start",
