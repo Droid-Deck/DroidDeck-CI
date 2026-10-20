@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792501926735,
+  "generatedAt": 1792502443939,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,53 +165,16 @@
   ],
   "tests": [
     {
-      "tag": "pr-1188",
-      "title": "perf: tile rendering for games, faster session start",
-      "summary": "Performance pass measured on the REDMAGIC NP06J tablet (SM8850 / Adreno 840, Android 16), with PEAK (Vulkan) as the reference game. Every number below is an A/B on the same device: builds of main (ba582dea) and of this branch were installed alternately, and the device cooled to the same battery temperature before every run.",
-      "commit": "1e635e2d13ddabc5a25295e0f5ee92f473281ce5",
-      "pr": 1188,
+      "tag": "pr-1192",
+      "title": "fix: open Flatpak apps in renamed app variants",
+      "summary": "Flatpak apps don't open in the renamed builds (AnTuTu and the other variants), while they open in the regular app. The session ends with \"stopped unexpectedly\", and Chrome can't be installed.",
+      "commit": "6e30c9706a56ebe321c84cbcdc43f754bbe95915",
+      "pr": 1192,
       "version": null,
       "versionCode": 14,
-      "publishedAt": 1792496883000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1188",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1188-1e635e2.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1188/DroidDeck-PR.1188-1e635e2.apk",
-          "size": 124245073,
-          "sha256": "d9263e86e95eae5d9d392ac1f53b562beb26145e4e61e79835264a0df4906821",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1188-1e635e2-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1188/DroidDeck-PR.1188-1e635e2-pubg.apk",
-          "size": 124245073,
-          "sha256": "bba0c96073ed15500c9251212335f7f80e7aa782794c78152165fe1bb417d240",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1188-1e635e2-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1188/DroidDeck-PR.1188-1e635e2-antutu.apk",
-          "size": 124245073,
-          "sha256": "3567b775790ac3e411f6c7fb39511c6462c9dab05ae56bf86931b6c4b0021e01",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1188-1e635e2-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1188/DroidDeck-PR.1188-1e635e2-ludashi.apk",
-          "size": 124245073,
-          "sha256": "6179a5fcebd899e5fa72971524b2c683b4b7ced8e6c966d43c638754aab66a74",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
+      "publishedAt": 1792502392000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1192",
+      "apks": {}
     },
     {
       "tag": "pr-1036",
