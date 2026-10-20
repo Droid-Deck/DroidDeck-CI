@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792455177456,
+  "generatedAt": 1792456611467,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f5bba17",
-    "title": "Add experimental Xbox and PC Game Pass store support",
-    "summary": "Adds Xbox / PC Game Pass as a native DroidDeck store, using a pinned Nexus-patched Xodus backend built for Linux AArch64. Microsoft sign-in, owned/subscription library entries, package selection, licensed downloads with pause/resume, update/verify, related-content management, and a dedicated Proton/FEX launch path use DroidDeck's existing UI and queue.",
-    "commit": "f5bba17f53dfc5d03db566dbed578e5c07dae756",
+    "tag": "main-6bbcf3a",
+    "title": "Restrict Xbox credential IPC and address launch review findings",
+    "summary": "Xbox launch preparation exposed an account-wide credential socket to guest code. This follow-up to #1156 moves licensed launch-view preparation into an Android-owned backend and returns only a product/account/session launch lease, prepared executable, existing game-service connection and PlayFab game token. Credential IPC now checks the Android-owned PRoot tracer and mapped backend executable agai",
+    "commit": "6bbcf3ad8be8ef1b80a97bf5f3444e4e001749b9",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792451206000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f5bba17",
+    "publishedAt": 1792456501000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6bbcf3a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f5bba17.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5bba17/DroidDeck-main-f5bba17.apk",
-        "size": 123954257,
-        "sha256": "fffb59dedba0fb5725cb04ef1ae7578a7bb70d21d00e94fab75006669c9d8a96",
+        "name": "DroidDeck-main-6bbcf3a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bbcf3a/DroidDeck-main-6bbcf3a.apk",
+        "size": 123966545,
+        "sha256": "5e3515a548a552b56b1dbb750368b244c44ef91f4c30e6a9a0d9cddae3498ffe",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f5bba17-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5bba17/DroidDeck-main-f5bba17-pubg.apk",
-        "size": 123954257,
-        "sha256": "be81065cbfd65114175c25abd5a8f265145193a7e1fd8778fd140c9fe6ad1e6d",
+        "name": "DroidDeck-main-6bbcf3a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bbcf3a/DroidDeck-main-6bbcf3a-pubg.apk",
+        "size": 123966545,
+        "sha256": "e7a9efb2a9674403d9a494db085f0e0d6d9b147b8d9081dd2108bc1bdc4f7fdb",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f5bba17-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5bba17/DroidDeck-main-f5bba17-antutu.apk",
-        "size": 123954257,
-        "sha256": "3d118c4eccae14186e8a42a8a5e3edb886df7a94a36431a02331aac30954af02",
+        "name": "DroidDeck-main-6bbcf3a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bbcf3a/DroidDeck-main-6bbcf3a-antutu.apk",
+        "size": 123966545,
+        "sha256": "b8270f490c0bf4e4bcf73a98c6f513f313e97a4cd0ccc3ee35e6e12c72750c0d",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f5bba17-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f5bba17/DroidDeck-main-f5bba17-ludashi.apk",
-        "size": 123954257,
-        "sha256": "8282f40d797a757f712d6130826e3588a58321af605e8a5d1070f82a778de254",
+        "name": "DroidDeck-main-6bbcf3a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bbcf3a/DroidDeck-main-6bbcf3a-ludashi.apk",
+        "size": 123966545,
+        "sha256": "bba1409313c74a08cda8c0e65f026742f745eed5fccb453b08c23698c4c934ca",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6bbcf3ad8be8ef1b80a97bf5f3444e4e001749b9",
+      "title": "Restrict Xbox credential IPC and address launch review findings",
+      "summary": "Xbox launch preparation exposed an account-wide credential socket to guest code. This follow-up to #1156 moves licensed launch-view preparation into an Android-owned backend and returns only a product/account/session launch lease, prepared executable, existing game-service connection and PlayFab game token. Credential IPC now checks the Android-owned PRoot tracer and mapped backend executable agai",
+      "publishedAt": 1792456501000
+    },
     {
       "commit": "f5bba17f53dfc5d03db566dbed578e5c07dae756",
       "title": "Add experimental Xbox and PC Game Pass store support",
@@ -155,12 +161,6 @@
       "title": "Ship the desktop's translations as per-language packs",
       "summary": "The KDE desktop package ships English catalogues only, and nothing hands the app's language to KDE, so the desktop stays English whatever the user picks.",
       "publishedAt": 1792418605000
-    },
-    {
-      "commit": "4555fa266d9e7deaf16b1575aeb9613bc480bb52",
-      "title": "feat: capsule view with DVD-case store art across all stores",
-      "summary": "Adds a third library view next to cards and list: portrait capsules at a 5:7 DVD-case ratio, available in every store's Library tab.",
-      "publishedAt": 1792414704000
     }
   ],
   "tests": [
