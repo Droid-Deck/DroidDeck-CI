@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792458728813,
+  "generatedAt": 1792459299813,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1172",
+      "title": "fix: user apps open at the Desktop's resolution",
+      "summary": "A user app (script, AppImage or Flatpak added under Desktop apps) started from its shortcut ignores the resolution chosen under Open Desktop. It always gets a 1280x720 canvas, letterboxed on screens that are not 16:9, while the same app run inside the Desktop gets the chosen resolution.",
+      "commit": "0aee12298a200bb0e657674cf3e4813fcb18e138",
+      "pr": 1172,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792459198000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1172",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1172-0aee122.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1172/DroidDeck-PR.1172-0aee122.apk",
+          "size": 123966545,
+          "sha256": "e8703b56e51bdc87211453b47fa26374b426561acec631942a38ff450dc1b222",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1172-0aee122-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1172/DroidDeck-PR.1172-0aee122-pubg.apk",
+          "size": 123966545,
+          "sha256": "7407520c709cd86d88bc3ebc6f5d2276b10935157ab78a080fd1c7fe066c2ee2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1172-0aee122-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1172/DroidDeck-PR.1172-0aee122-antutu.apk",
+          "size": 123966545,
+          "sha256": "76dcd23f7da7fe6a980868001c7ec952d7fb6d11f835f357b4112e90815611ce",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1172-0aee122-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1172/DroidDeck-PR.1172-0aee122-ludashi.apk",
+          "size": 123966545,
+          "sha256": "986f3cde17b243589c34662ef1fc9dd59d61b1fa234cd406ac806956dfbcfbcc",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1163",
       "title": "fix: let Wine write hooks into code FEX has translated (Ubisoft \"Error at hooking API\")",
