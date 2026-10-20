@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792472578774,
+  "generatedAt": 1792491663012,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1188",
+      "title": "perf: tile rendering for games, faster session start",
+      "summary": "Performance pass measured on the REDMAGIC NP06J tablet (SM8850 / Adreno 840, Android 16), with PEAK (Vulkan) as the reference game. Every number below is an A/B on the same device: builds of main (ba582dea) and of this branch were installed alternately, and the device cooled to the same battery temperature before every run.",
+      "commit": "44e6bde9828a845e971d2c56c0cdceefc5e01d5d",
+      "pr": 1188,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792491590000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1188",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1188-44e6bde.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1188/DroidDeck-PR.1188-44e6bde.apk",
+          "size": 124245073,
+          "sha256": "95be19ddf3ad4c9f9c52a4f270ff2560e36681ee4aa6ef3e7416da0627ffa58a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1188-44e6bde-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1188/DroidDeck-PR.1188-44e6bde-pubg.apk",
+          "size": 124245073,
+          "sha256": "00540302bf43a0e71db36a6db242b34ef4a35f2e1663e3b5062dab6be24d3187",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1188-44e6bde-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1188/DroidDeck-PR.1188-44e6bde-antutu.apk",
+          "size": 124245073,
+          "sha256": "951dd6ef572f2cd4e97da0a8d936e497dc506cf65c18eb5a853007996d338104",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1188-44e6bde-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1188/DroidDeck-PR.1188-44e6bde-ludashi.apk",
+          "size": 124245073,
+          "sha256": "067db64fe2c424eca10381e79671194232d319940b3863076458f5b134a052d2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1108",
       "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
