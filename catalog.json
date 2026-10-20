@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792523888674,
+  "generatedAt": 1792524049225,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-49446c7",
-    "title": "feat: launch Easy Anti-Cheat games offline when they support it",
-    "summary": "Adds a per-game DROIDDECKANTICHEATOFFLINE setting, on by default. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, so games with an offline mode start without the EAC bootstrapper. Turn it off per game to launch through Easy Anti-Cheat as before. Game and anti-cheat files remain untouched; online modes requiring",
-    "commit": "49446c7f011416246c64e94b9384682ac18d8abd",
+    "tag": "main-1e33eee",
+    "title": "fix: native Linux games under FEX reach FEXServer, and a refused compat app no longer loops the sync",
+    "summary": "Fixes #1205",
+    "commit": "1e33eee3f27bcdbb1299f7401cebcba63483128d",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792523813000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-49446c7",
+    "publishedAt": 1792523941000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1e33eee",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-49446c7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49446c7/DroidDeck-main-49446c7.apk",
+        "name": "DroidDeck-main-1e33eee.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e33eee/DroidDeck-main-1e33eee.apk",
         "size": 66463160,
-        "sha256": "f83ba7f5e7af2ff48a268aff518f276d3e1dc1ac08e9f3bf0b116df014f53554",
+        "sha256": "ab4a9fa6b11f70f91371031d8a0cc09bfba6767a1d471e3d0242361c410705b3",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-49446c7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49446c7/DroidDeck-main-49446c7-pubg.apk",
+        "name": "DroidDeck-main-1e33eee-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e33eee/DroidDeck-main-1e33eee-pubg.apk",
         "size": 66463160,
-        "sha256": "eccaa4e2d3d9422d41980fc7fba6f1736790727daba4c794e702e8b4829d3b4d",
+        "sha256": "fb369423a1ecc5bafea3d24c67b487d11cea488f959e6ba95dfdbe3d924f7017",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-49446c7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49446c7/DroidDeck-main-49446c7-antutu.apk",
+        "name": "DroidDeck-main-1e33eee-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e33eee/DroidDeck-main-1e33eee-antutu.apk",
         "size": 66463160,
-        "sha256": "e244b0d15ba637ab63dd0bd17318bb9839d42181f83a8688dc9089d37344ec9b",
+        "sha256": "207da4dd48e7f70bdd88556e6af3861f53ac5a009ccc67599fe376c62d8ddcc9",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-49446c7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49446c7/DroidDeck-main-49446c7-ludashi.apk",
+        "name": "DroidDeck-main-1e33eee-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e33eee/DroidDeck-main-1e33eee-ludashi.apk",
         "size": 66463160,
-        "sha256": "8eeb0b72a89e5a9706642228440739571598c538d6459ea2d3bacf9963d69c50",
+        "sha256": "db9f05c1e2d77eb92a34e3fc0e897ee227766275ecfc0b557cbe550746841166",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1e33eee3f27bcdbb1299f7401cebcba63483128d",
+      "title": "fix: native Linux games under FEX reach FEXServer, and a refused compat app no longer loops the sync",
+      "summary": "Fixes #1205",
+      "publishedAt": 1792523941000
+    },
     {
       "commit": "49446c7f011416246c64e94b9384682ac18d8abd",
       "title": "feat: launch Easy Anti-Cheat games offline when they support it",
@@ -155,12 +161,6 @@
       "title": "fix: RetroArch fills the screen from the emulator rail",
       "summary": "RetroArch opened from the emulator rail shows a magnified, cropped part of its menu instead of the whole screen. Other emulators fill the screen, and changing the resolution setting makes no difference.",
       "publishedAt": 1792508228000
-    },
-    {
-      "commit": "31a6c3d03370f9d3cf5e64deaab385b387ef8e98",
-      "title": "fix: open Flatpak apps in renamed app variants",
-      "summary": "Flatpak apps don't open in the renamed builds (AnTuTu and the other variants), while they open in the regular app. The session ends with \"stopped unexpectedly\", and Chrome can't be installed.",
-      "publishedAt": 1792504591000
     }
   ],
   "tests": [
