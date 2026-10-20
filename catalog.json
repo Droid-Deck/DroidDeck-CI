@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792504271608,
+  "generatedAt": 1792504497826,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1193",
+      "title": "Fix Game Pass library sync when subscription plan rows are omitted",
+      "summary": "Game Pass titles can be dropped during refresh when their child entitlements name a subscription plan that is absent from the product entitlement response. Library sync now queries the separate subscriptions endpoint using the same Store session and market, and returns minimal membership records within the account-checked library response.",
+      "commit": "f3b03950023810274b546b8fd258837d81bbb099",
+      "pr": 1193,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792504421000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1193",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1193-f3b0395.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1193/DroidDeck-PR.1193-f3b0395.apk",
+          "size": 124253265,
+          "sha256": "4f979b2463cdb015a7eb789b492738444fe84a061fad39d35b3ccaf6831326f9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1193-f3b0395-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1193/DroidDeck-PR.1193-f3b0395-pubg.apk",
+          "size": 124253265,
+          "sha256": "936e3817620f6dcb6778d2edefd106753656ba4583749a794751f1a3bb63b23b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1193-f3b0395-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1193/DroidDeck-PR.1193-f3b0395-antutu.apk",
+          "size": 124253265,
+          "sha256": "c106158081de2499eced4e44815e847d5ff27da920daa97e4079bd5515623be2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1193-f3b0395-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1193/DroidDeck-PR.1193-f3b0395-ludashi.apk",
+          "size": 124253265,
+          "sha256": "50398854a4fb97bf1893c43932e75b84777187c7a623ca4f2af4632e1987c0e0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1108",
       "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
