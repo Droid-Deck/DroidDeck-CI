@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792460843446,
+  "generatedAt": 1792460937828,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-583c680",
-    "title": "fix: keep touchpad two-finger scroll from jumping the cursor or starting a drag",
-    "summary": "\u2022 Finding #59: Resync lastX/lastY on every non-holdDrag ACTIONPOINTERUP in TouchpadGestures, not only when the lifted pointer was ^GnchorId. Previously, lifting the non-anchor finger at the end of a two-finger scroll left lastX/lastY at the pre-scroll anchor position, so the next single-finger ACTIONMOVE jumped the cursor by the entire scroll distance.\n\u2022 Finding #63: Add scrollLocked latch and hysteresis (HOLDDRAGMOVERSLOPS = 2f, HOLDDRAGANCHORSLOPS = 0.5f) to two-finger gesture classification in TouchpadGestures so a two-finger scroll where one finger crosses ouchSlop a frame before the other is not misclassified as a left-button holdDrag.",
-    "commit": "583c6805fd97988b0579b9aa1ede03e8a505ed8d",
+    "tag": "main-2a423a7",
+    "title": "fix: let x86 apps under FEX use the device's fonts (Epic launcher CJK text shows boxes)",
+    "summary": "When the Epic Games Launcher shows its UI in Chinese, every Chinese character is drawn as an empty box (tofu). Tabs, the search box, filters, buttons and the \u300c\u300d around game titles are all affected. The same goes for Japanese and Korean, and for any other x86 Linux app run under FEX (Qt, GTK or WebKit) that draws CJK text with system fonts.",
+    "commit": "2a423a729ae96899843f94c5bb66feee36d56450",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792460723000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-583c680",
+    "publishedAt": 1792460767000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2a423a7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-583c680.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-583c680/DroidDeck-main-583c680.apk",
+        "name": "DroidDeck-main-2a423a7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2a423a7/DroidDeck-main-2a423a7.apk",
         "size": 123966545,
-        "sha256": "3c60274f5f95de163f978457daf64d8a681cc1ae1f781922a4487616d8d8cbde",
+        "sha256": "9b1d88423429ca9488daf4382355ced1e983355a2856b06c764188e2c1f84b5f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-583c680-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-583c680/DroidDeck-main-583c680-pubg.apk",
+        "name": "DroidDeck-main-2a423a7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2a423a7/DroidDeck-main-2a423a7-pubg.apk",
         "size": 123966545,
-        "sha256": "64414ce284714ac36027a079d4ccf4902f894b4387c869a4e3c2d6791f2c8d62",
+        "sha256": "faf10fd9177bee50212f8dc95d05d67989613d7126f29964a0c388e84457cffd",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-583c680-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-583c680/DroidDeck-main-583c680-antutu.apk",
+        "name": "DroidDeck-main-2a423a7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2a423a7/DroidDeck-main-2a423a7-antutu.apk",
         "size": 123966545,
-        "sha256": "dc695488ba79b6f235693e17875b2143e4e031b3d3e688ac02fd43eacec8274e",
+        "sha256": "72618500fa51838eb440b84c838d56908996f75a19ed28900f4df7f37f7e56eb",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-583c680-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-583c680/DroidDeck-main-583c680-ludashi.apk",
+        "name": "DroidDeck-main-2a423a7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2a423a7/DroidDeck-main-2a423a7-ludashi.apk",
         "size": 123966545,
-        "sha256": "93f8bb596b9dc1d7ae84342b655e88139402f167f42e0c0f260980e64d273da8",
+        "sha256": "020114f53729a1067bccda05aa6a587c17db48eef775804f4b464c6c9b7e877f",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "2a423a729ae96899843f94c5bb66feee36d56450",
+      "title": "fix: let x86 apps under FEX use the device's fonts (Epic launcher CJK text shows boxes)",
+      "summary": "When the Epic Games Launcher shows its UI in Chinese, every Chinese character is drawn as an empty box (tofu). Tabs, the search box, filters, buttons and the \u300c\u300d around game titles are all affected. The same goes for Japanese and Korean, and for any other x86 Linux app run under FEX (Qt, GTK or WebKit) that draws CJK text with system fonts.",
+      "publishedAt": 1792460767000
+    },
     {
       "commit": "583c6805fd97988b0579b9aa1ede03e8a505ed8d",
       "title": "fix: keep touchpad two-finger scroll from jumping the cursor or starting a drag",
@@ -155,12 +161,6 @@
       "title": "fix: run x86 Proton under FEX in the Steam runtime it requires",
       "summary": "x86-64 Proton (e.g. Proton Experimental / 11) run through droiddeck-fex never got past startup on the Thor. Three separate problems, all in the FEX launch path:",
       "publishedAt": 1792435311000
-    },
-    {
-      "commit": "868f54e425c227b42e269571faabda6b1a5bb541",
-      "title": "fix: skip DirectAudio for Steam install scripts",
-      "summary": "Steam runs iscriptevaluator.exe from its legacycompat directory through Proton's run verb before the game launch. DirectAudio setup currently treats that preparatory invocation like a game launch and can rewrite the game prefix's audio registry and driver links before the main executable starts.",
-      "publishedAt": 1792435109000
     }
   ],
   "tests": [
