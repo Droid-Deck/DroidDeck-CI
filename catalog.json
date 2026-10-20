@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792471189500,
+  "generatedAt": 1792471435111,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cee84fd",
-    "title": "fix: show the app's cursor in sessions started from the front end",
-    "summary": "Apps started from the front end (store apps, Flatpaks, emulators, anything in a run-mode session) had no cursor of their own. In a fresh app process you got DroidDeck's fallback arrow, and after a desktop session had been used the cursor was gone completely, while mouse and touchpad input still worked.",
-    "commit": "cee84fd12a40a3a4a29c049bd87679b7cf446154",
+    "tag": "main-57799be",
+    "title": "fix: add games picked inside a folder game as their own games",
+    "summary": "Adding a non-Steam game could replace one you already had instead of adding a new one. Picking the second game's exe switched the first game's target (it kept the first game's name and artwork), and when the first game was removed, picking any other game brought it back.",
+    "commit": "57799bef5a1223fa0cb68a4fe5eac470409556ee",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792471077000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cee84fd",
+    "publishedAt": 1792471338000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-57799be",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cee84fd.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cee84fd/DroidDeck-main-cee84fd.apk",
+        "name": "DroidDeck-main-57799be.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-57799be/DroidDeck-main-57799be.apk",
         "size": 124236881,
-        "sha256": "2d50aa5a375b96eafaec41a9dc34677be22de8bb8133d9134804d41eb9c441dc",
+        "sha256": "97a73eec5285e686b3cbbe8d16c064064e1e3dbf9d2b5f8e536d564242c29faa",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cee84fd-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cee84fd/DroidDeck-main-cee84fd-pubg.apk",
+        "name": "DroidDeck-main-57799be-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-57799be/DroidDeck-main-57799be-pubg.apk",
         "size": 124236881,
-        "sha256": "58feb1d5ed80e8576848a27a68a7150b47fe33683aa04065475e72f993c25d9d",
+        "sha256": "71ab923362424ec88250ca4e1f3594214a8acc97f541b059ee9fd9c6ebd9595f",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cee84fd-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cee84fd/DroidDeck-main-cee84fd-antutu.apk",
+        "name": "DroidDeck-main-57799be-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-57799be/DroidDeck-main-57799be-antutu.apk",
         "size": 124236881,
-        "sha256": "74c04756c53c5df2b3471e0ea829fe1703a9a20d04ea1f9779e49b8feb9016ec",
+        "sha256": "a606989d835be25a217895a71f156634206aea7027162d0f73a426436289d257",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cee84fd-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cee84fd/DroidDeck-main-cee84fd-ludashi.apk",
+        "name": "DroidDeck-main-57799be-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-57799be/DroidDeck-main-57799be-ludashi.apk",
         "size": 124236881,
-        "sha256": "7615ac4a6d2a03f279f8ce8d7648b5fd56f4d8dc00c9c90f34332c016286e489",
+        "sha256": "2290c7b3a8026653262731f4262063b1937ad813f72be3bfb308ad3121e11f0a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "57799bef5a1223fa0cb68a4fe5eac470409556ee",
+      "title": "fix: add games picked inside a folder game as their own games",
+      "summary": "Adding a non-Steam game could replace one you already had instead of adding a new one. Picking the second game's exe switched the first game's target (it kept the first game's name and artwork), and when the first game was removed, picking any other game brought it back.",
+      "publishedAt": 1792471338000
+    },
     {
       "commit": "cee84fd12a40a3a4a29c049bd87679b7cf446154",
       "title": "fix: show the app's cursor in sessions started from the front end",
@@ -155,12 +161,6 @@
       "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
       "summary": "x86 Linux programs that link OpenSSL 3 cannot start under droiddeck-fex. The Tibia launcher fails with:",
       "publishedAt": 1792460668000
-    },
-    {
-      "commit": "64b966af49670852f50be76ba78a8e8c7d61e867",
-      "title": "fix: keep ModeHeader search from stealing focus when recomposed",
-      "summary": "\u2022 ModeHeader (used in StorePage Flathub Discover and StoresPage store library/catalog headers) previously passed\nocusOnShow = true unconditionally to AdbTextField.\n\u2022 Because ModeHeader is inside a LazyVerticalGrid header item, whenever a user had a non-empty search query and scrolled down until the header left composition (or switched tabs) and then scrolled back up, ModeHeader re-entered composit",
-      "publishedAt": 1792460650000
     }
   ],
   "tests": [
