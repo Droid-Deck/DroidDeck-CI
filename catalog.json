@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792500887772,
+  "generatedAt": 1792501926735,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ba582de",
-    "title": "fix: add a picked exe the session cannot see by binding its folder",
-    "summary": "Adding a game from a single EXE on a microSD card (or any folder outside internal storage and the game library) shows \"This location is not available in the session\" and adds nothing. A 100 GB game on the card cannot be added at all.",
-    "commit": "ba582dea6578150f9fdb3f8c385e04e0ec0ef93d",
+    "tag": "main-aeb0fa5",
+    "title": "fix: RPCS3 opens from the emulator rail again",
+    "summary": "RPCS3 from the emulator rail (Desktop \u2192 RPCS3 \u2192 Open RPCS3) never opens. On current main the session ends straight away with \"RPCS3 stopped unexpectedly\". Once that is fixed, RPCS3 itself stops with the error in the report: Null object ... utils::shm::shm ... (errno=13=Permission denied).",
+    "commit": "aeb0fa57e3435e0373fe7af7e4a6c9ebd8f0268b",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792472511000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ba582de",
+    "publishedAt": 1792501829000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-aeb0fa5",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ba582de.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ba582de/DroidDeck-main-ba582de.apk",
+        "name": "DroidDeck-main-aeb0fa5.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aeb0fa5/DroidDeck-main-aeb0fa5.apk",
         "size": 124240977,
-        "sha256": "10c2e9dc10c7d33e1aded461ad25c82b7125e2e12eeccab1ddf61fc88faac3b3",
+        "sha256": "fee06c43ca5dcafa2f9a86dad7d092a9ade8e340adf91b489ee0b0cd0fcb728d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ba582de-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ba582de/DroidDeck-main-ba582de-pubg.apk",
+        "name": "DroidDeck-main-aeb0fa5-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aeb0fa5/DroidDeck-main-aeb0fa5-pubg.apk",
         "size": 124240977,
-        "sha256": "3f3b382b01b41421e8efa0c92daf1304976a1b32332376c00b72d84d985c7ed1",
+        "sha256": "5fee070925d57e9523d193c5f162b5aaaaf6597cfd9925f80a4807cdeaa6cc1d",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ba582de-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ba582de/DroidDeck-main-ba582de-antutu.apk",
+        "name": "DroidDeck-main-aeb0fa5-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aeb0fa5/DroidDeck-main-aeb0fa5-antutu.apk",
         "size": 124240977,
-        "sha256": "b809c3675b3e07f244d2e471f45a336f6f7a3c36090ba8045ab62fe1d39fe6c9",
+        "sha256": "c9d9165588c72cf2588160e9e802225765a9625401770e49bdfb539aa0d62d6b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ba582de-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ba582de/DroidDeck-main-ba582de-ludashi.apk",
+        "name": "DroidDeck-main-aeb0fa5-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aeb0fa5/DroidDeck-main-aeb0fa5-ludashi.apk",
         "size": 124240977,
-        "sha256": "18363316504a9b5af7668146d782de4e6e276cba1643a69808e43cd04c322551",
+        "sha256": "d6c01f71859886a52233b6e22c56e15b5d5c4cccb6823011ed0736318bdbf3a3",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "aeb0fa57e3435e0373fe7af7e4a6c9ebd8f0268b",
+      "title": "fix: RPCS3 opens from the emulator rail again",
+      "summary": "RPCS3 from the emulator rail (Desktop \u2192 RPCS3 \u2192 Open RPCS3) never opens. On current main the session ends straight away with \"RPCS3 stopped unexpectedly\". Once that is fixed, RPCS3 itself stops with the error in the report: Null object ... utils::shm::shm ... (errno=13=Permission denied).",
+      "publishedAt": 1792501829000
+    },
     {
       "commit": "ba582dea6578150f9fdb3f8c385e04e0ec0ef93d",
       "title": "fix: add a picked exe the session cannot see by binding its folder",
@@ -155,12 +161,6 @@
       "title": "fix: confirm before bulk-removing unused components in Storage",
       "summary": "\u2022 In Setup \u2192 Storage \u2192 Components, per-row Remove buttons show a ConfirmDialog before deleting an unused component package or saved Proton original, while the top-right bulk Remove unused (PrimaryButton) previously called StorageState.removeComponents(unused) immediately on tap without confirmation (unlike ToolsView, which confirms bulk removal).\n\u2022 Add a confirmation dialog (confirmAll) to Compone",
       "publishedAt": 1792469090000
-    },
-    {
-      "commit": "06e819f864995e318e022631649c523790000872",
-      "title": "fix: an interrupted package install can no longer break the Linux runtime",
-      "summary": "A tester's Thor stopped starting Steam (Exit status 134) after the app was closed during a desktop install. Restarting did not help; only reinstalling the app did, which cost them every game.",
-      "publishedAt": 1792468418000
     }
   ],
   "tests": [
