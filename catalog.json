@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792516216563,
+  "generatedAt": 1792517464851,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1213",
+      "title": "fix: native Linux games under FEX reach FEXServer, and a refused compat app no longer loops the sync",
+      "summary": "Fixes #1205",
+      "commit": "e552b4e77431529b0316640c420d7854bb62036c",
+      "pr": 1213,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792517343000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1213",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1213-e552b4e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1213/DroidDeck-PR.1213-e552b4e.apk",
+          "size": 66459064,
+          "sha256": "544ba32390fabbd7212f3d0bf1ddd19fa59475953e9307ec0f831d87e1a6dcfa",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1213-e552b4e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1213/DroidDeck-PR.1213-e552b4e-pubg.apk",
+          "size": 66459064,
+          "sha256": "a8636f119f1cab9ed2fd98f5431c3938ce7ca455accbba18d9f17615361afd78",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1213-e552b4e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1213/DroidDeck-PR.1213-e552b4e-antutu.apk",
+          "size": 66459064,
+          "sha256": "6cf70bd7bc5c817cb331d16714d0e08e6cd0a02840f9d60f28bc7eabdfd8a852",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1213-e552b4e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1213/DroidDeck-PR.1213-e552b4e-ludashi.apk",
+          "size": 66459064,
+          "sha256": "54f7ee27bd2e229b6d1e21eef020b4214f831b0345f8f1e8737f230a869eef8a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1211",
       "title": "fix: a session on an external display stays awake while the phone screen is off",
