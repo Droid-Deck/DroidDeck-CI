@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792472321303,
+  "generatedAt": 1792472474232,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-fdab3ce",
-    "title": "fix: GOG games miss the registry entries their install script sets",
-    "summary": "GOG downloads only place the game's files. GOG's own installer also writes the registry entries listed in the game's install script, goggame-<id>.script. Games that look up their own keys find nothing. For example, Fallout: New Vegas reads HKLM\\Software\\Bethesda Softworks\\FalloutNV \u2192 Installed Path, and without it the game shows \"Fallout: New Vegas does not appear to be installed and the i",
-    "commit": "fdab3cea82861f365b185e531aed9b26b7658a77",
+    "tag": "main-8074ec4",
+    "title": "fix: route ALSA to PulseAudio for x86 Linux games under FEX (no game audio)",
+    "summary": "Native Linux games run with the \"Linux x86 (FEX)\" tool get no sound when they play through ALSA. The game runs and the Steam UI keeps its sounds, but the game log shows:",
+    "commit": "8074ec44e882be513c875474b7c5793da0f97d34",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792472235000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fdab3ce",
+    "publishedAt": 1792472406000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8074ec4",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-fdab3ce.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fdab3ce/DroidDeck-main-fdab3ce.apk",
+        "name": "DroidDeck-main-8074ec4.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8074ec4/DroidDeck-main-8074ec4.apk",
         "size": 124240977,
-        "sha256": "c8670282d057cf42872270f52b61c39d2c6dea63df3cea7b282ec9179f032e26",
+        "sha256": "bc26afa5e6c4b431bd7c40356c7a814715ee58f87ec94f3c001c273baa4b7f88",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-fdab3ce-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fdab3ce/DroidDeck-main-fdab3ce-pubg.apk",
+        "name": "DroidDeck-main-8074ec4-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8074ec4/DroidDeck-main-8074ec4-pubg.apk",
         "size": 124240977,
-        "sha256": "dcd54ae28160de082afb203ee70dd8de18596e1ec8ce12bf088747f630f65b11",
+        "sha256": "b1c983d841a77e22912d0b00e0efdeefbf97ffe937a422498176fc571dabd4c1",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-fdab3ce-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fdab3ce/DroidDeck-main-fdab3ce-antutu.apk",
+        "name": "DroidDeck-main-8074ec4-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8074ec4/DroidDeck-main-8074ec4-antutu.apk",
         "size": 124240977,
-        "sha256": "9614f08fd51a321627795472210f9346f60464947fe7ace96b50122d824e658b",
+        "sha256": "6c28e1dff712c8a5611cf592488e40dcc3aad3fe13c1f2fd18b110df45de13ec",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-fdab3ce-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fdab3ce/DroidDeck-main-fdab3ce-ludashi.apk",
+        "name": "DroidDeck-main-8074ec4-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8074ec4/DroidDeck-main-8074ec4-ludashi.apk",
         "size": 124240977,
-        "sha256": "f2b8232801fac5bba2c076314c2bc9334ca43c8c64fe48996daf89d8ec7f350c",
+        "sha256": "50dad99efe9957b8043fc96985b179e9dd2cf7af054129c4897793259e880327",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8074ec44e882be513c875474b7c5793da0f97d34",
+      "title": "fix: route ALSA to PulseAudio for x86 Linux games under FEX (no game audio)",
+      "summary": "Native Linux games run with the \"Linux x86 (FEX)\" tool get no sound when they play through ALSA. The game runs and the Steam UI keeps its sounds, but the game log shows:",
+      "publishedAt": 1792472406000
+    },
     {
       "commit": "fdab3cea82861f365b185e531aed9b26b7658a77",
       "title": "fix: GOG games miss the registry entries their install script sets",
@@ -155,12 +161,6 @@
       "title": "feat: add configurable touchscreen gestures",
       "summary": "Adds a configurable Gestures input mode with global defaults and per-game overrides.",
       "publishedAt": 1792467331000
-    },
-    {
-      "commit": "3a8d6aaabbcb88d26ca18d82ba8742caa12f855f",
-      "title": "fix: Steam no longer sleeps again right after a paused session resumes",
-      "summary": "When a Steam session came back after being paused longer than Steam's own idle-sleep timeout, Steam put itself to sleep again straight away:\n\u2022 the session paused again a second after Resume, so it needed a second Resume, or\n\u2022 the game dropped behind Big Picture, with its audio still playing.",
-      "publishedAt": 1792466627000
     }
   ],
   "tests": [
