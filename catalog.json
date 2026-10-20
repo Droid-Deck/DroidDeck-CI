@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792491663012,
+  "generatedAt": 1792494851367,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1036",
+      "title": "feat: Better boot movies system; Added steamdeckrepo support",
+      "summary": "\u2022 Installed: the \u201cInstalled movies\u201d row has a Browse button. It opens a list with a cover for each movie and the current one highlighted. The list re-reads every 2 seconds, so a movie picked or removed inside Steam shows up.\n\u2022 Import: the same import as before. Imported movies now go into Steam\u2019s own movies folder, so Steam lists them too.\n\u2022 SteamDeckRepo: search, device filter (all, Steam Deck, Steam Machine), and Trending / Most downloaded / Most liked / Newest tabs. Each page shows 12 movies, with Previous and Next buttons. Install downloads the movie, and the button turns into Use.\n\u2022 Sound: the on/off toggle, plus a volume slider and a \u201cLength\u201d slider. I read your \u201cseconds slide\u201d as how many seconds of the movie play, from 1 s up to the movie\u2019s full length. Tell me if you meant something else.\n\u2022 The Adjust logo hint now reads \u201cThis exact spot can differ by a few pixels.\u201d",
+      "commit": "a17213c19f9684c7abfa7a4412c70b02d615617a",
+      "pr": 1036,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792494779000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1036",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1036-a17213c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-a17213c.apk",
+          "size": 124400721,
+          "sha256": "7e118f3691449c9cd7ebd8bc843769e28b094454c62cc509db2cebb8eeaa4fab",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1036-a17213c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-a17213c-pubg.apk",
+          "size": 124400721,
+          "sha256": "e67a09896b26c561b7623e57ee18505549970609e25cfde9ef2918c12a441fca",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1036-a17213c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-a17213c-antutu.apk",
+          "size": 124400721,
+          "sha256": "eee56c126693bde86abe7bd05d4f5d5c2505ca0c525744c4ff523c6fee416fc4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1036-a17213c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-a17213c-ludashi.apk",
+          "size": 124400721,
+          "sha256": "cfcf17a41994115fdd86cde239e3c73dc5d296e2fd2feab5ce154ce83ba37027",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1188",
       "title": "perf: tile rendering for games, faster session start",
       "summary": "Performance pass measured on the REDMAGIC NP06J tablet (SM8850 / Adreno 840, Android 16), with PEAK (Vulkan) as the reference game. Every number below is an A/B on the same device: builds of main (ba582dea) and of this branch were installed alternately, and the device cooled to the same battery temperature before every run.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1139/DroidDeck-PR.1139-be55a57-ludashi.apk",
           "size": 107159179,
           "sha256": "1cf739201bed29ec890b2595ce13f1f5bd5ab48ebc250978fe1f883d65f23845",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1036",
-      "title": "feat: Better boot movies system; Added steamdeckrepo support",
-      "summary": "\u2022 Installed: the \u201cInstalled movies\u201d row has a Browse button. It opens a list with a cover for each movie and the current one highlighted. The list re-reads every 2 seconds, so a movie picked or removed inside Steam shows up.\n\u2022 Import: the same import as before. Imported movies now go into Steam\u2019s own movies folder, so Steam lists them too.\n\u2022 SteamDeckRepo: search, device filter (all, Steam Deck, Steam Machine), and Trending / Most downloaded / Most liked / Newest tabs. Each page shows 12 movies, with Previous and Next buttons. Install downloads the movie, and the button turns into Use.\n\u2022 Sound: the on/off toggle, plus a volume slider and a \u201cLength\u201d slider. I read your \u201cseconds slide\u201d as how many seconds of the movie play, from 1 s up to the movie\u2019s full length. Tell me if you meant something else.\n\u2022 The Adjust logo hint now reads \u201cThis exact spot can differ by a few pixels.\u201d",
-      "commit": "1fc60b41091170e6d3a1186352c0c3924e474444",
-      "pr": 1036,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792413529000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1036",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1036-1fc60b4.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-1fc60b4.apk",
-          "size": 106139084,
-          "sha256": "9015e45790fd99d6c780f0983cc7394a0637ada86c669ce0c6c08d58a1ea302b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1036-1fc60b4-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-1fc60b4-pubg.apk",
-          "size": 106139084,
-          "sha256": "5526f582b14a3f72a8011776346e8eb7e406872d668f548fedbdec7aa6331760",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1036-1fc60b4-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-1fc60b4-antutu.apk",
-          "size": 106139084,
-          "sha256": "ee5db7d195c580dcbc2fc1ff4f85f20be5f384ef9b51916b5a4d284d86d9d0ab",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1036-1fc60b4-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1036/DroidDeck-PR.1036-1fc60b4-ludashi.apk",
-          "size": 106139084,
-          "sha256": "7b5af767a509e521abfd77aa8cc04bc4bbd0d45ae1a7e933f2310d7a0917cc4d",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
