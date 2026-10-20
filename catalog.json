@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792522216834,
+  "generatedAt": 1792522793715,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,104 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1039",
-      "title": "feat: launch Easy Anti-Cheat games offline when they support it",
-      "summary": "Adds a per-game DROIDDECKANTICHEATOFFLINE setting, on by default. For Proton launches, it reads the executable from the adjacent EasyAntiCheat/settings.json and launches that executable directly, so games with an offline mode start without the EAC bootstrapper. Turn it off per game to launch through Easy Anti-Cheat as before. Game and anti-cheat files remain untouched; online modes requiring",
-      "commit": "ccb0ecbb517178c841e108239a2ca041815d48ee",
-      "pr": 1039,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792521916000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1039",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1039-ccb0ecb.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-ccb0ecb.apk",
-          "size": 66463160,
-          "sha256": "4c602fe42517b54ae62b603bc11dac44d9b98ac31a79fbbc5bf667c9680e91ac",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1039-ccb0ecb-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-ccb0ecb-pubg.apk",
-          "size": 66463160,
-          "sha256": "37641ffeb2adcc8e73d992386edd4533f1788bba425851139d4435d50c62d3d7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1039-ccb0ecb-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-ccb0ecb-antutu.apk",
-          "size": 66463160,
-          "sha256": "4f1a90a25b50c35d7c1509db3aef4c724a990cc9254118e3db87244e2fc86f95",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1039-ccb0ecb-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1039/DroidDeck-PR.1039-ccb0ecb-ludashi.apk",
-          "size": 66463160,
-          "sha256": "83d1485b85184e16ce3a358bee41de88b8c23fc9e185a70c97640ac2a2f06378",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1213",
-      "title": "fix: native Linux games under FEX reach FEXServer, and a refused compat app no longer loops the sync",
-      "summary": "Fixes #1205",
-      "commit": "11a820402c1f4f4b03a62b85c16a40af31be4170",
-      "pr": 1213,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792520839000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1213",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1213-11a8204.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1213/DroidDeck-PR.1213-11a8204.apk",
-          "size": 66463160,
-          "sha256": "f0c1c14645d9be90c5532820a6d1ccb004e8488e86893ab4a3106ff9f6af7120",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1213-11a8204-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1213/DroidDeck-PR.1213-11a8204-pubg.apk",
-          "size": 66463160,
-          "sha256": "e4d6048cdab3c8ee88cd6716c24e4ef2140b92edf1b72fe2be35b3dc629e22b8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1213-11a8204-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1213/DroidDeck-PR.1213-11a8204-antutu.apk",
-          "size": 66463160,
-          "sha256": "c843be8e9d6c0a102366115e5a89ecfaca3bfa2db613b8d3f52b50c4c5c7fcf4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1213-11a8204-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1213/DroidDeck-PR.1213-11a8204-ludashi.apk",
-          "size": 66463160,
-          "sha256": "7a15f71d3fee5c1758a1a9ca62d37d84f2f3d6ecc200118c28a90e727460d6d8",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1108",
       "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
