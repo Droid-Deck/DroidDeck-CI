@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792529050666,
+  "generatedAt": 1792529505437,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1222",
+      "title": "fix: Rewired games see DroidDeck's pads (udev listing, dlsym-resolved libc calls)",
+      "summary": "Native Linux games that read pads through Rewired (Unity) saw no controller at all. Reported on Drova: Forsaken Kin (Retroid Pocket Nova): no pad with any Steam Input type, nor with Xbox 360 and Steam Input off. Reproduced and verified here with Graveyard Keeper, another native Unity + Rewired game.",
+      "commit": "9238be5b25fe3b98bcf9253323cea0f2296e6927",
+      "pr": 1222,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792529414000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1222",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1222-9238be5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1222/DroidDeck-PR.1222-9238be5.apk",
+          "size": 66483640,
+          "sha256": "b3ac081e8da231e88672a47ea23f217161677fb5cf72fac7e745ea428dd3580b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1222-9238be5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1222/DroidDeck-PR.1222-9238be5-pubg.apk",
+          "size": 66483640,
+          "sha256": "eaa3b5a7aa55a0aa4fd46443acd03a24319ac9fb996602f2acbc71e8cb5ef542",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1222-9238be5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1222/DroidDeck-PR.1222-9238be5-antutu.apk",
+          "size": 66483640,
+          "sha256": "5c75d5af193c5cba027ef0e566e4ba57d5613e0f2dd6d26b7bbf2782b2ae3d27",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1222-9238be5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1222/DroidDeck-PR.1222-9238be5-ludashi.apk",
+          "size": 66483640,
+          "sha256": "b7670defda58567e03841d7254f3be5a240bb0f63c7fc7e3d71c7702a39e3867",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1108",
       "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
