@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792460746769,
+  "generatedAt": 1792460843446,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-7855bec",
-    "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
-    "summary": "x86 Linux programs that link OpenSSL 3 cannot start under droiddeck-fex. The Tibia launcher fails with:",
-    "commit": "7855bec6a1552d9eea3bab2037e1b0baa40fa4ba",
+    "tag": "main-583c680",
+    "title": "fix: keep touchpad two-finger scroll from jumping the cursor or starting a drag",
+    "summary": "\u2022 Finding #59: Resync lastX/lastY on every non-holdDrag ACTIONPOINTERUP in TouchpadGestures, not only when the lifted pointer was ^GnchorId. Previously, lifting the non-anchor finger at the end of a two-finger scroll left lastX/lastY at the pre-scroll anchor position, so the next single-finger ACTIONMOVE jumped the cursor by the entire scroll distance.\n\u2022 Finding #63: Add scrollLocked latch and hysteresis (HOLDDRAGMOVERSLOPS = 2f, HOLDDRAGANCHORSLOPS = 0.5f) to two-finger gesture classification in TouchpadGestures so a two-finger scroll where one finger crosses ouchSlop a frame before the other is not misclassified as a left-button holdDrag.",
+    "commit": "583c6805fd97988b0579b9aa1ede03e8a505ed8d",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792460668000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7855bec",
+    "publishedAt": 1792460723000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-583c680",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-7855bec.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7855bec/DroidDeck-main-7855bec.apk",
+        "name": "DroidDeck-main-583c680.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-583c680/DroidDeck-main-583c680.apk",
         "size": 123966545,
-        "sha256": "d76b0b75851e6d2172fcc9d8c0004cb5011f006411535aadfb4758983513faac",
+        "sha256": "3c60274f5f95de163f978457daf64d8a681cc1ae1f781922a4487616d8d8cbde",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-7855bec-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7855bec/DroidDeck-main-7855bec-pubg.apk",
+        "name": "DroidDeck-main-583c680-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-583c680/DroidDeck-main-583c680-pubg.apk",
         "size": 123966545,
-        "sha256": "f95a6c80eeccbe395985858497de66aca705d61c48dca4fcc647fa17aacbedc6",
+        "sha256": "64414ce284714ac36027a079d4ccf4902f894b4387c869a4e3c2d6791f2c8d62",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-7855bec-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7855bec/DroidDeck-main-7855bec-antutu.apk",
+        "name": "DroidDeck-main-583c680-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-583c680/DroidDeck-main-583c680-antutu.apk",
         "size": 123966545,
-        "sha256": "27e5875a6fa62784cac4c5364128095d49dee802dd675d920dfce5419f1a568b",
+        "sha256": "dc695488ba79b6f235693e17875b2143e4e031b3d3e688ac02fd43eacec8274e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-7855bec-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7855bec/DroidDeck-main-7855bec-ludashi.apk",
+        "name": "DroidDeck-main-583c680-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-583c680/DroidDeck-main-583c680-ludashi.apk",
         "size": 123966545,
-        "sha256": "e1a9d3b9d1eea669b29a08622b338434d19e4a47cee8e968fbca989876c69619",
+        "sha256": "93f8bb596b9dc1d7ae84342b655e88139402f167f42e0c0f260980e64d273da8",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "583c6805fd97988b0579b9aa1ede03e8a505ed8d",
+      "title": "fix: keep touchpad two-finger scroll from jumping the cursor or starting a drag",
+      "summary": "\u2022 Finding #59: Resync lastX/lastY on every non-holdDrag ACTIONPOINTERUP in TouchpadGestures, not only when the lifted pointer was ^GnchorId. Previously, lifting the non-anchor finger at the end of a two-finger scroll left lastX/lastY at the pre-scroll anchor position, so the next single-finger ACTIONMOVE jumped the cursor by the entire scroll distance.\n\u2022 Finding #63: Add scrollLocked latch and hys",
+      "publishedAt": 1792460723000
+    },
     {
       "commit": "7855bec6a1552d9eea3bab2037e1b0baa40fa4ba",
       "title": "fix: give x86 programs under FEX the runtime's OpenSSL 3 (libcrypto.so.3 not found)",
@@ -155,12 +161,6 @@
       "title": "fix: skip DirectAudio for Steam install scripts",
       "summary": "Steam runs iscriptevaluator.exe from its legacycompat directory through Proton's run verb before the game launch. DirectAudio setup currently treats that preparatory invocation like a game launch and can rewrite the game prefix's audio registry and driver links before the main executable starts.",
       "publishedAt": 1792435109000
-    },
-    {
-      "commit": "1197be90d98e3733963ebb5cee77298f563e7f1b",
-      "title": "Fix direct-touch right-click and Steam Touch mode restoration",
-      "summary": "Addresses #628 by adding long-press right-click to Direct Touch (including Steam Touch\u2019s direct mode) and restoring the saved touch mode when Steam Touch is disabled; all 10 focused tests pass, with device validation pending.",
-      "publishedAt": 1792435051000
     }
   ],
   "tests": [
