@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792513863291,
+  "generatedAt": 1792513937583,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1211",
+      "title": "fix: a session on an external display stays awake while the phone screen is off",
+      "summary": "Reported on Discord (bug-reports, \"Full phone systemwide crash\"). The reporter used a Galaxy S25 Ultra in DeX on a lapdock.",
+      "commit": "eb92b16a020ceeb1cc1f1b22e055974996577ae0",
+      "pr": 1211,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792513858000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1211",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1211-eb92b16.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1211/DroidDeck-PR.1211-eb92b16.apk",
+          "size": 66459064,
+          "sha256": "516ea215dd4d501dc155779de245f824092335a09c70c2bd79654e02fb048adb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1211-eb92b16-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1211/DroidDeck-PR.1211-eb92b16-pubg.apk",
+          "size": 66459064,
+          "sha256": "1646906ac3f2f993edb4e284e17c99fbeac1169213418f828fda338270c6f650",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1211-eb92b16-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1211/DroidDeck-PR.1211-eb92b16-antutu.apk",
+          "size": 66459064,
+          "sha256": "fa73648a38aca33d0b53719c10f819f5badf50ae636c9f9627d139469b7c7b66",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1211-eb92b16-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1211/DroidDeck-PR.1211-eb92b16-ludashi.apk",
+          "size": 66459064,
+          "sha256": "315cdb158fbd6dc54246ab8a09d59893b9b65a2ccc84a79613cafd2347317a7a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1208",
       "title": "fix: programs whose libraries ask for an executable stack start under proot",
