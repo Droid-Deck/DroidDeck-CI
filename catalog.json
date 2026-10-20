@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792511105987,
+  "generatedAt": 1792511452151,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1203",
+      "title": "test: PR pack routing (do not merge)",
+      "summary": "Throwaway PR: changes only the tracking pack's bytes so its test build attaches pack-tracking-<sha>.tar.zst to pr-N on DroidDeck-CI while the other packs come from DroidDeck-Components. Will be closed (not merged) to check that pr-release-cleanup.yml removes the release and its pack.",
+      "commit": "8ee5b70335dfd57a9ddeda4c46ff49ef16b023b5",
+      "pr": 1203,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792511352000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1203",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1203-8ee5b70.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1203/DroidDeck-PR.1203-8ee5b70.apk",
+          "size": 66459064,
+          "sha256": "6d9678420de3ce5dc0e33c2362d50f393b019e860c9459bab2c37e47869a8f88",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1203-8ee5b70-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1203/DroidDeck-PR.1203-8ee5b70-pubg.apk",
+          "size": 66459064,
+          "sha256": "155bfe696f9f544cd76acc773bb40a49429554050bcefa8b38af4102298b5920",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1203-8ee5b70-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1203/DroidDeck-PR.1203-8ee5b70-antutu.apk",
+          "size": 66459064,
+          "sha256": "8658a042298718e5ab20dec47c1adfde620c67ba5c1d4f3bf27706f7c349c46d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1203-8ee5b70-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1203/DroidDeck-PR.1203-8ee5b70-ludashi.apk",
+          "size": 66459064,
+          "sha256": "9d1be725105cb57af08ddee89cf0b721d8fbd925eefa380ba4dc757e3417ede0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1108",
       "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
