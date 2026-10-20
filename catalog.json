@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792535633703,
+  "generatedAt": 1792535849315,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e5b44f9",
-    "title": "fix: moving a stick no longer releases a D-pad or trigger held as a key",
-    "summary": "\ufeffHolding the D-pad or a trigger while moving a stick now keeps it held on controllers that report those buttons as keys.",
-    "commit": "e5b44f95f67b142c99ac7a9681c6af68babba166",
+    "tag": "main-c44c124",
+    "title": "fix: Mono P/Invoke readv calls reach the controller hook too",
+    "summary": "Follow-up to #1195 (Delete228). That branch didn't allow maintainer edits, so this branch is built on it: Delete228's seven #1195 commits are kept as they are, main is merged in, and one commit of mine goes on top. It will be merged with a merge commit so their commits stay in main's history.",
+    "commit": "c44c12488ef2ac35aa0418a12978dd9fca9c2e13",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792535559000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e5b44f9",
+    "publishedAt": 1792535710000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c44c124",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e5b44f9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e5b44f9/DroidDeck-main-e5b44f9.apk",
+        "name": "DroidDeck-main-c44c124.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c44c124/DroidDeck-main-c44c124.apk",
         "size": 66491832,
-        "sha256": "03e37d875826e063f62649966e42d683ba902c7908dd16c14c13b7f49d1b8536",
+        "sha256": "f558131dc08250ba95735c659458ab40a151b543f44de34284da7865501612d9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e5b44f9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e5b44f9/DroidDeck-main-e5b44f9-pubg.apk",
+        "name": "DroidDeck-main-c44c124-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c44c124/DroidDeck-main-c44c124-pubg.apk",
         "size": 66491832,
-        "sha256": "5246f2f33ff9d73d329c67bca53d22c292fb66205b07e9e52549365c837853dc",
+        "sha256": "bfb1b59272e8b3279ac47cf1f8e6ad5cf67a0346f145e99702ae40aa3532a499",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e5b44f9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e5b44f9/DroidDeck-main-e5b44f9-antutu.apk",
+        "name": "DroidDeck-main-c44c124-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c44c124/DroidDeck-main-c44c124-antutu.apk",
         "size": 66491832,
-        "sha256": "703b591ba1abbb4ce47bba30fbf98eba89a82e32e5fbdd5a65a46e55a5861ad3",
+        "sha256": "936e406a665ea5b1d04b80f1c7e859e33a3518199f21c17f2a23f469c76f4f25",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e5b44f9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e5b44f9/DroidDeck-main-e5b44f9-ludashi.apk",
+        "name": "DroidDeck-main-c44c124-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c44c124/DroidDeck-main-c44c124-ludashi.apk",
         "size": 66491832,
-        "sha256": "94d431f987bf230c30237a7b781dae0ed2b5932aa909834e09f6b045149a47de",
+        "sha256": "09ec1d61c15e576e4fda2e4483827030f0d5499c25e70f5cf65904a445d82a7e",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c44c12488ef2ac35aa0418a12978dd9fca9c2e13",
+      "title": "fix: Mono P/Invoke readv calls reach the controller hook too",
+      "summary": "Follow-up to #1195 (Delete228). That branch didn't allow maintainer edits, so this branch is built on it: Delete228's seven #1195 commits are kept as they are, main is merged in, and one commit of mine goes on top. It will be merged with a merge commit so their commits stay in main's history.",
+      "publishedAt": 1792535710000
+    },
     {
       "commit": "e5b44f95f67b142c99ac7a9681c6af68babba166",
       "title": "fix: moving a stick no longer releases a D-pad or trigger held as a key",
@@ -155,12 +161,6 @@
       "title": "fix: let the device sleep while a session is suspended",
       "summary": "Devices ran warm and drained battery while asleep, even on the manual sleep policy with background downloads off. On an AYN Thor, the kernel suspended 0 times in 13 minutes with the session reported as suspended. Two separate causes:",
       "publishedAt": 1792529828000
-    },
-    {
-      "commit": "6a0671d5bd6cfb600497acf47fdadd1f05239552",
-      "title": "fix: leave the PC keyboard's pad handling to #956 and fix the red keyboard test",
-      "summary": "Main's unit tests are red since #956 and #1217 both landed today (SessionKeyboardPadTest > keyboardsLeaveThePadAloneOutsideSteam, 1 of 1913 failed on ae6e4a3f).",
-      "publishedAt": 1792528965000
     }
   ],
   "tests": [
