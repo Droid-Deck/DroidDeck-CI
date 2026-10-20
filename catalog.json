@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792459778186,
+  "generatedAt": 1792460170509,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,153 @@
   ],
   "tests": [
     {
+      "tag": "pr-1173",
+      "title": "fix: add a picked exe the session cannot see by binding its folder",
+      "summary": "Adding a game from a single EXE on a microSD card (or any folder outside internal storage and the game library) shows \"This location is not available in the session\" and adds nothing. A 100 GB game on the card cannot be added at all.",
+      "commit": "1b3cb93a1be2dcaee35bd02b6ac72d16e9c378e2",
+      "pr": 1173,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792460081000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1173",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1173-1b3cb93.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1173/DroidDeck-PR.1173-1b3cb93.apk",
+          "size": 123966545,
+          "sha256": "b70a7c2ae8f93b19011dc469dbf257c0b92f5e51a0479bf3e2587f652de89d3c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1173-1b3cb93-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1173/DroidDeck-PR.1173-1b3cb93-pubg.apk",
+          "size": 123966545,
+          "sha256": "64fb185112be828c9e4bc65b47040e394336897470c670b5aab2b4bdb9b03571",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1173-1b3cb93-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1173/DroidDeck-PR.1173-1b3cb93-antutu.apk",
+          "size": 123966545,
+          "sha256": "b751e5e0af047fad87aac857f51b7599add7e89d616a842f99f6085421fee0f8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1173-1b3cb93-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1173/DroidDeck-PR.1173-1b3cb93-ludashi.apk",
+          "size": 123966545,
+          "sha256": "dab9eaf77ef1b6c521e62c62f25d107d64b24163a0e3032464485bb5b83a7b79",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1162",
+      "title": "fix: Steam no longer sleeps again right after a paused session resumes",
+      "summary": "When a Steam session came back after being paused longer than Steam's own idle-sleep timeout, Steam put itself to sleep again straight away:\n\u2022 the session paused again a second after Resume, so it needed a second Resume, or\n\u2022 the game dropped behind Big Picture, with its audio still playing.",
+      "commit": "9ecb9083cb78e732897631ac4835ea4ac7847ff9",
+      "pr": 1162,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792460070000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1162",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1162-9ecb908.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-9ecb908.apk",
+          "size": 123970641,
+          "sha256": "aa857576a32c881ba9549edef4f4ad112128cc20b905476eafd4fe15cc1c5fee",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1162-9ecb908-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-9ecb908-pubg.apk",
+          "size": 123970641,
+          "sha256": "b5b370aa7c730652d2c62b4f109125a092fb074b987b172ece07bd337efefc8e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1162-9ecb908-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-9ecb908-antutu.apk",
+          "size": 123970641,
+          "sha256": "af420a00d3baab89ebbf3489b939c97f89f1bc4fe6354ce1ccb591f762568c6a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1162-9ecb908-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-9ecb908-ludashi.apk",
+          "size": 123970641,
+          "sha256": "7de7f4812e8e4d43fcee2aa4c86fe5786ba3abd005cf709c28e3d99a9a926e61",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1171",
+      "title": "fix: find and save Steam touch layouts of non-Steam shortcuts",
+      "summary": "The Steam touch layout editor (on-screen controls: Steam touch) opens \"App -&lt;n&gt; Layout\" for a non-Steam shortcut, such as an added game or the Epic Games Launcher. LB, LT, RT, RB, both sticks and LS/RS are greyed out and cannot be dragged onto the screen, so the left stick can never be placed for movement.",
+      "commit": "eda95723d58ed4506bf1fd2e782aff741ec11fbf",
+      "pr": 1171,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792460046000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1171",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1171-eda9572.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1171/DroidDeck-PR.1171-eda9572.apk",
+          "size": 123966545,
+          "sha256": "333dc5659b33156f97dc95cb892df20073d0b2fb2d0804293585a9da6b52f617",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1171-eda9572-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1171/DroidDeck-PR.1171-eda9572-pubg.apk",
+          "size": 123966545,
+          "sha256": "c6734ac0ac6f7ca70f41261c0c1a0e91f60e9fa975a9fc35a2d6f25aed45c82d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1171-eda9572-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1171/DroidDeck-PR.1171-eda9572-antutu.apk",
+          "size": 123966545,
+          "sha256": "e8501b3e02d057777d3b64d48f7e08c0eb147d0ccc6855f03430b9d9948127ae",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1171-eda9572-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1171/DroidDeck-PR.1171-eda9572-ludashi.apk",
+          "size": 123966545,
+          "sha256": "8fddd3611252190099c333e29e77631573c64980a70a4c82f76d1fdc1b58c551",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1163",
       "title": "fix: let Wine write hooks into code FEX has translated (Ubisoft \"Error at hooking API\")",
       "summary": "Ubisoft games (Immortals Fenyx Rising reported on Discord, several users since 0.5.0) stop with Error at hooking API \"NtProtectVirtualMemory\" and a dump of the untouched 32-bit syscall thunk (B8 50 00 00 00 BA \u2026 FF D2 C2 14 00 90). Any program that patches its own ntdll with WriteProcessMemory / NtWriteVirtualMemory hits the same wall: hook engines, overlays, launchers and some anti-tamp",
@@ -207,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1163/DroidDeck-PR.1163-be8aeec-ludashi.apk",
           "size": 123966545,
           "sha256": "310bf786398ebd0fccf0b46dfbc1caf4645c46343a3658857a250a4f272c291d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1162",
-      "title": "fix: Steam no longer sleeps again right after a paused session resumes",
-      "summary": "When a Steam session came back after being paused longer than Steam's own idle-sleep timeout, Steam put itself to sleep again straight away:\n\u2022 the session paused again a second after Resume, so it needed a second Resume, or\n\u2022 the game dropped behind Big Picture, with its audio still playing.",
-      "commit": "cd4f96c2ad67eb9769e2bb1a3670904975b4da76",
-      "pr": 1162,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792458530000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1162",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1162-cd4f96c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-cd4f96c.apk",
-          "size": 123966545,
-          "sha256": "271b6644f6d014e450a379ca4d02e28fae62d91d27133548d1875905e4c1710d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1162-cd4f96c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-cd4f96c-pubg.apk",
-          "size": 123966545,
-          "sha256": "19788d9a3d1b706c81e4ad62a2f51333e8110ed0fd4b84216ef134bba0c879cf",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1162-cd4f96c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-cd4f96c-antutu.apk",
-          "size": 123966545,
-          "sha256": "25b56b2d62b1148faa768d9f4c5035140cfbae59a9fcfda2630981b5863eb6eb",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1162-cd4f96c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1162/DroidDeck-PR.1162-cd4f96c-ludashi.apk",
-          "size": 123966545,
-          "sha256": "7d2adabbd058f557c613685e2c26b127e132eb69c4959dfd22ab24161033cdac",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
