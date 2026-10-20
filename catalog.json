@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792458609125,
+  "generatedAt": 1792458728813,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1163",
+      "title": "fix: let Wine write hooks into code FEX has translated (Ubisoft \"Error at hooking API\")",
+      "summary": "Ubisoft games (Immortals Fenyx Rising reported on Discord, several users since 0.5.0) stop with Error at hooking API \"NtProtectVirtualMemory\" and a dump of the untouched 32-bit syscall thunk (B8 50 00 00 00 BA \u2026 FF D2 C2 14 00 90). Any program that patches its own ntdll with WriteProcessMemory / NtWriteVirtualMemory hits the same wall: hook engines, overlays, launchers and some anti-tamp",
+      "commit": "be8aeecec24c4c83dc5631a0a6486b16ba9d0b26",
+      "pr": 1163,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792458621000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1163",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1163-be8aeec.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1163/DroidDeck-PR.1163-be8aeec.apk",
+          "size": 123966545,
+          "sha256": "1d5fd4217f0d43ed69984ad91fc7b0fc70c934135a7632652f85907efc252cb8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1163-be8aeec-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1163/DroidDeck-PR.1163-be8aeec-pubg.apk",
+          "size": 123966545,
+          "sha256": "1892b532b86be72c4a6ad70ffff84b272d9d10b28bc3cb9de33bc683c1e808af",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1163-be8aeec-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1163/DroidDeck-PR.1163-be8aeec-antutu.apk",
+          "size": 123966545,
+          "sha256": "0ac17a213151252cd1b0caed36ceb79dcb9acbe22cd935ced00e43f655afb09f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1163-be8aeec-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1163/DroidDeck-PR.1163-be8aeec-ludashi.apk",
+          "size": 123966545,
+          "sha256": "310bf786398ebd0fccf0b46dfbc1caf4645c46343a3658857a250a4f272c291d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1162",
       "title": "fix: Steam no longer sleeps again right after a paused session resumes",
