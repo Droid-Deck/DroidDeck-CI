@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792606338853,
+  "generatedAt": 1792606672734,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4992cf7",
-    "title": "feat: local builds reuse the add-on packs a CI build installed",
-    "summary": "A build made outside CI pins no add-on packs (PACKSHA256 comes from app/build/packs, which only CI fills). Such a build installed over a CI build could not use proot, DirectAudio, tracking, Xbox or Comet. The Xbox tab showed \"Couldn't download the Xbox components\" and logcat said AddonPack: xbox: this build has no pack.",
-    "commit": "4992cf76dd2026db62553c81cb1984b4bf7bb64a",
+    "tag": "main-fba6a5d",
+    "title": "feat: Remote Play host: PipeWire capture, hardware encoding, touch and game audio",
+    "summary": "Remote Play from DroidDeck showed a black screen on the client: audio and input streamed, but there was no picture. Gamescope publishes its picture as a PipeWire stream, and Steam's Remote Play and game recording capture from it. The session never starts a PipeWire daemon, so gamescope logged pipewire: pwcontextconnect failed / failed to setup PipeWire, screen capture won't be available, and",
+    "commit": "fba6a5d0f2e97f213327d2eacbe6cd8fcca8b4c5",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792604257000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4992cf7",
+    "publishedAt": 1792606605000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fba6a5d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4992cf7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4992cf7/DroidDeck-main-4992cf7.apk",
-        "size": 66549176,
-        "sha256": "5a472df6b903b0118c8ce80fff0eaa1e7922fd907e3853617de4cf3bf38bc3d8",
+        "name": "DroidDeck-main-fba6a5d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fba6a5d/DroidDeck-main-fba6a5d.apk",
+        "size": 67737279,
+        "sha256": "cc3a5b545f2934a79b9147a284327b4b1421a68d424d8a669a3643eb42d458be",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4992cf7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4992cf7/DroidDeck-main-4992cf7-pubg.apk",
-        "size": 66549176,
-        "sha256": "5caca3c027d21794c23ef8e364a688fea93943185c0a327ebc02b3132c0d64da",
+        "name": "DroidDeck-main-fba6a5d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fba6a5d/DroidDeck-main-fba6a5d-pubg.apk",
+        "size": 67737279,
+        "sha256": "0b6d4f44adb89a5d22495c82d8f96ff88ff9e5e368a961672cff8b5f631ff021",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4992cf7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4992cf7/DroidDeck-main-4992cf7-antutu.apk",
-        "size": 66549176,
-        "sha256": "129090993b9b854db14157a0652e490ea8076cea2a80d48ceecb9939f6914cfb",
+        "name": "DroidDeck-main-fba6a5d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fba6a5d/DroidDeck-main-fba6a5d-antutu.apk",
+        "size": 67737279,
+        "sha256": "96c02265e063b46957e31938fc87d383b5ad4c1602f2b55486b170c8a0caebbf",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4992cf7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4992cf7/DroidDeck-main-4992cf7-ludashi.apk",
-        "size": 66549176,
-        "sha256": "eb14ef9fd783846bb7916ac4d6f007f57ff3968d342d4a8e42138450a8485627",
+        "name": "DroidDeck-main-fba6a5d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fba6a5d/DroidDeck-main-fba6a5d-ludashi.apk",
+        "size": 67737279,
+        "sha256": "8c507957ca62daeb5581634a616c807260517316591fe06f0347b8e2e8dd752b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "fba6a5d0f2e97f213327d2eacbe6cd8fcca8b4c5",
+      "title": "feat: Remote Play host: PipeWire capture, hardware encoding, touch and game audio",
+      "summary": "Remote Play from DroidDeck showed a black screen on the client: audio and input streamed, but there was no picture. Gamescope publishes its picture as a PipeWire stream, and Steam's Remote Play and game recording capture from it. The session never starts a PipeWire daemon, so gamescope logged pipewire: pwcontextconnect failed / failed to setup PipeWire, screen capture won't be available, and",
+      "publishedAt": 1792606605000
+    },
     {
       "commit": "4992cf76dd2026db62553c81cb1984b4bf7bb64a",
       "title": "feat: local builds reuse the add-on packs a CI build installed",
@@ -155,12 +161,6 @@
       "title": "fix: Google sign-in from a store shows the real device instead of a Galaxy S23 Ultra",
       "summary": "Fixes #1246",
       "publishedAt": 1792576619000
-    },
-    {
-      "commit": "bb64592f5f16946f12b540a2ea7ce7444cf21ae5",
-      "title": "fix: browsers added as non-Steam games show their window and load pages in Gaming Mode",
-      "summary": "Part of #1185",
-      "publishedAt": 1792563629000
     }
   ],
   "tests": [
