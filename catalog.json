@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792542002233,
+  "generatedAt": 1792542506893,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1230",
+      "title": "fix: game files keep the full game name instead of cutting it at 40 characters",
+      "summary": "Game files (the .steam files written by Files \u2192 Sync all game files to folder and the per-game export) now keep the whole game name. Before, the name was cut at 40 characters.",
+      "commit": "722dee27efaa5bcb5d2bbbdb06fb55c3bdb82109",
+      "pr": 1230,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792542435000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1230",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1230-722dee2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1230/DroidDeck-PR.1230-722dee2.apk",
+          "size": 66495928,
+          "sha256": "a4365bc348d56f37c47966e561e6116cf0bc245879a1375d2ee51676657a3b3e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1230-722dee2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1230/DroidDeck-PR.1230-722dee2-pubg.apk",
+          "size": 66495928,
+          "sha256": "2c2f5959c16871ff7721e47cb637f2c4c5a0e963b55af1182099ea90d7a2eed9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1230-722dee2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1230/DroidDeck-PR.1230-722dee2-antutu.apk",
+          "size": 66495928,
+          "sha256": "542e64724e2b222b39074c926c7b0b0b5eeecfe1579b8d8212895031a62547ea",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1230-722dee2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1230/DroidDeck-PR.1230-722dee2-ludashi.apk",
+          "size": 66495928,
+          "sha256": "43edc9d06735177223b5c348adccf6121afe55ed6c2ed7dd4bfa974799ce338e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1229",
       "title": "fix: keep controller focus after installing a boot movie; Xbox and itch artwork covered",
