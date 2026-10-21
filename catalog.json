@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792616226459,
+  "generatedAt": 1792616321143,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1273",
+      "title": "perf: games skip Steam's install-script evaluator once it has finished",
+      "summary": "On every launch, Steam runs a game's install scripts (iscriptevaluator.exe) through Proton before the game starts. That is a whole Wine start, and it only confirms that the redistributables are already installed: DroidDeck marks those as run beforehand.",
+      "commit": "fbe669ff3b923fac4b12b167581d02b003b7072b",
+      "pr": 1273,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792616261000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1273",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1273-fbe669f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1273/DroidDeck-PR.1273-fbe669f.apk",
+          "size": 67696319,
+          "sha256": "36d4e30041e06b8c97dc9a57edcafa9818808f41189d05060b2cee53cbeeb62a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1273-fbe669f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1273/DroidDeck-PR.1273-fbe669f-pubg.apk",
+          "size": 67700415,
+          "sha256": "0dcbafc37c0ede81647a859b83cfdc204357c60dddcbb62b1bb48a0cb461e884",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1273-fbe669f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1273/DroidDeck-PR.1273-fbe669f-antutu.apk",
+          "size": 67700415,
+          "sha256": "7aaab941d26f6a776b6cb9702b57089d0eb8c18a6c6b1657be95821c03a2589b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1273-fbe669f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1273/DroidDeck-PR.1273-fbe669f-ludashi.apk",
+          "size": 67700415,
+          "sha256": "04ef26c3fbd1323fe2028658adf6294a50dda064df2d259dcd987e1ec2b8fa2e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1275",
       "title": "perf: network tables Android refuses are served from the synthesized copy without retrying the open",
