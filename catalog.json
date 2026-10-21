@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792621114449,
+  "generatedAt": 1792622332411,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-aaaa18a",
-    "title": "fix: manual cloud-save upload/download no longer reports a skipped sync as success",
-    "summary": "\ufeffManual cloud-save Upload and Download now tell the user when nothing was synced, instead of showing a success message.",
-    "commit": "aaaa18a7dc3e3de0f26baca7a986fa663bc97042",
+    "tag": "main-8b40bb5",
+    "title": "fix: Chromium browsers start on the desktop",
+    "summary": "Chromium-based browsers would not run on the desktop: Helium, Chrome, Chromium and ungoogled-chromium did not start, and Brave opened with every tab crashed. Adding --no-sandbox by hand did not help. The report's log shows Helium (arm64 AppImage) ending with No usable sandbox! and then a Trace/breakpoint trap.",
+    "commit": "8b40bb5c880e8f63fe2d15dab12f96aec4945ea4",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792619570000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-aaaa18a",
+    "publishedAt": 1792622252000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8b40bb5",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-aaaa18a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aaaa18a/DroidDeck-main-aaaa18a.apk",
+        "name": "DroidDeck-main-8b40bb5.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b40bb5/DroidDeck-main-8b40bb5.apk",
         "size": 67749664,
-        "sha256": "6e509401e6961a5ddc165fe450518653ec5bcfaaee8ec786030abbc8b7abb3c9",
+        "sha256": "b73127ca3ae5fff374fd5ca9ea3fe770582353b4fe2f4a8627d0bc3dbcaac164",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-aaaa18a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aaaa18a/DroidDeck-main-aaaa18a-pubg.apk",
+        "name": "DroidDeck-main-8b40bb5-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b40bb5/DroidDeck-main-8b40bb5-pubg.apk",
         "size": 67749664,
-        "sha256": "e6349ff50464b5a3a9cdbdb5054639e89129b7830d6f6a5fedf83bb2345c0648",
+        "sha256": "3eb977c8650a3284ec3f6de5918b6e2a37310c937f5a711743a9c7683c843386",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-aaaa18a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aaaa18a/DroidDeck-main-aaaa18a-antutu.apk",
+        "name": "DroidDeck-main-8b40bb5-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b40bb5/DroidDeck-main-8b40bb5-antutu.apk",
         "size": 67749664,
-        "sha256": "2a62ca4c46e5acdf1c40793917268c9a38a5510b583a56b965b2d065f3b9db6d",
+        "sha256": "193a4968d3c9ede298f68981b92bf7e79574f03a2296980c2d15b0e524af38c4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-aaaa18a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aaaa18a/DroidDeck-main-aaaa18a-ludashi.apk",
+        "name": "DroidDeck-main-8b40bb5-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b40bb5/DroidDeck-main-8b40bb5-ludashi.apk",
         "size": 67749664,
-        "sha256": "70c7d5b033b9c6057603871569ba6bab227785d88bbc73a88f9fdd1c77b5cf32",
+        "sha256": "a6fc043b280837e79f1aa15d8764423afd130b1cf9e35923b7ac71ab8fed7b62",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8b40bb5c880e8f63fe2d15dab12f96aec4945ea4",
+      "title": "fix: Chromium browsers start on the desktop",
+      "summary": "Chromium-based browsers would not run on the desktop: Helium, Chrome, Chromium and ungoogled-chromium did not start, and Brave opened with every tab crashed. Adding --no-sandbox by hand did not help. The report's log shows Helium (arm64 AppImage) ending with No usable sandbox! and then a Trace/breakpoint trap.",
+      "publishedAt": 1792622252000
+    },
     {
       "commit": "aaaa18a7dc3e3de0f26baca7a986fa663bc97042",
       "title": "fix: manual cloud-save upload/download no longer reports a skipped sync as success",
@@ -155,12 +161,6 @@
       "title": "feat: Rokid Max and Air glasses with 3DoF, SBS modes, 120 Hz and brightness",
       "summary": "Adds Rokid glasses as a fourth integrated glasses type next to VITURE, RayNeo and XREAL.",
       "publishedAt": 1792608070000
-    },
-    {
-      "commit": "23bca1b974f1fefc47f6b47b30b7e39be91b92bd",
-      "title": "fix: give the touch gesture dialog room to scroll on phones",
-      "summary": "The touch gesture dialog in the session drawer left only a ~90dp strip for\nthe gesture list on a phone in landscape. The title bar, the scope picker and\na hint line under every section title took roughly 250dp of a ~340dp tall\nwindow, so each tab could only be scrolled through that sliver.",
-      "publishedAt": 1792607615000
     }
   ],
   "tests": [
