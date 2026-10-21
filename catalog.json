@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792602892347,
+  "generatedAt": 1792603046260,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1207",
+      "title": "feat: let the built-in controller be turned off",
+      "summary": "The built-in touch controller always shows up in the guest as an Xbox 360 controller, and it takes player 1. A controller connected over Bluetooth or USB lands in player 2, which breaks games that only look at the first pad.",
+      "commit": "0befacb6239141a27c1014568c186b4ef326b353",
+      "pr": 1207,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792602951000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1207",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1207-0befacb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1207/DroidDeck-PR.1207-0befacb.apk",
+          "size": 66500024,
+          "sha256": "8f76ecd0c1db50520aa03d6c29721a9b50068f727d42cf3bdf312029f16de950",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1207-0befacb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1207/DroidDeck-PR.1207-0befacb-pubg.apk",
+          "size": 66500024,
+          "sha256": "37d803ebcc61214728c09960806ed9f815f067a4b7ea9b4d6998dda029d24832",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1207-0befacb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1207/DroidDeck-PR.1207-0befacb-antutu.apk",
+          "size": 66500024,
+          "sha256": "7e796dcce44913df3493c7ac7c070ef529609fa997b0fae7118a1e8f0e06dc6d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1207-0befacb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1207/DroidDeck-PR.1207-0befacb-ludashi.apk",
+          "size": 66500024,
+          "sha256": "554d79586113711f7b1ff0fdcd23861eb44128a0603eb85a5571f37a4445a46e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1258",
       "title": "perf: SysV queues stay mapped, install-script evaluator skipped, overlay repaints ride the game frame",
