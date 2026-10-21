@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792579829106,
+  "generatedAt": 1792588426843,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1258",
+      "title": "perf: SysV message queues stay mapped instead of reopening per call",
+      "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
+      "commit": "df80371497dbd830147b7a6a472bcb23b921af3b",
+      "pr": 1258,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792588333000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1258",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1258-df80371.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-df80371.apk",
+          "size": 66512312,
+          "sha256": "2d5a7d3c1353232f19ed89ddacfd8f01bdcde1d0ffffffebc8a2e750e17f0b21",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1258-df80371-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-df80371-pubg.apk",
+          "size": 66512312,
+          "sha256": "3305124f6808a7a853a60d6b60617fc71df7d259a1f51a2c4c67bb80cef857c7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1258-df80371-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-df80371-antutu.apk",
+          "size": 66512312,
+          "sha256": "725182043cb1a8cd6bf843fb72b94d22e7a3f7378d079832b1cbf0ba1dbea7eb",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1258-df80371-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-df80371-ludashi.apk",
+          "size": 66512312,
+          "sha256": "a4620d4c556d39108001eddea367406826c65e17d043c4f0105426abfa574ef3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1108",
       "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
