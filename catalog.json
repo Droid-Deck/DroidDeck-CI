@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792619637317,
+  "generatedAt": 1792620879311,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1280",
+      "title": "fix: Chromium browsers start on the desktop",
+      "summary": "Chromium-based browsers would not run on the desktop: Helium, Chrome, Chromium and ungoogled-chromium did not start, and Brave opened with every tab crashed. Adding --no-sandbox by hand did not help. The report's log shows Helium (arm64 AppImage) ending with No usable sandbox! and then a Trace/breakpoint trap.",
+      "commit": "011ab465ec53ceb02e329ed793b760056e225718",
+      "pr": 1280,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792620796000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1280",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1280-011ab46.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1280/DroidDeck-PR.1280-011ab46.apk",
+          "size": 67749664,
+          "sha256": "4e0d957d67d91eacdf3de6dbec29ea845be6c6d3716d614110c9f761ef5ceea7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1280-011ab46-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1280/DroidDeck-PR.1280-011ab46-pubg.apk",
+          "size": 67749664,
+          "sha256": "a8e9be995b501655bfd82362dddf1acd66c3aa01d327d73dca2c4622bc4bb054",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1280-011ab46-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1280/DroidDeck-PR.1280-011ab46-antutu.apk",
+          "size": 67749664,
+          "sha256": "9a1db37ca6c5cb36df9f077289309dd3a717d987a38b5a0f416371465c85d1f6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1280-011ab46-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1280/DroidDeck-PR.1280-011ab46-ludashi.apk",
+          "size": 67749664,
+          "sha256": "505fe56fd01bbc17ccdbe041b59778f6f98ec6496f727d5b9271f08fb5816ed0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1178",
       "title": "fix: place GOG cloud saves at the location root",
