@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792617609714,
+  "generatedAt": 1792618160012,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cdc0866",
-    "title": "perf: games skip Steam's install-script evaluator once it has finished",
-    "summary": "On every launch, Steam runs a game's install scripts (iscriptevaluator.exe) through Proton before the game starts. That is a whole Wine start, and it only confirms that the redistributables are already installed: DroidDeck marks those as run beforehand.",
-    "commit": "cdc0866cfe93603b25ecc203aa0cc6a54069b698",
+    "tag": "main-81500fe",
+    "title": "perf: SysV message queues stay mapped instead of reopening per call",
+    "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
+    "commit": "81500fe184022f912b8d9cda64653706f9357271",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792617315000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cdc0866",
+    "publishedAt": 1792618111000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-81500fe",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cdc0866.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdc0866/DroidDeck-main-cdc0866.apk",
-        "size": 67696319,
-        "sha256": "6ec35a5ebabddcee21e91fbaba0bc937a8ca9f79939a721d0b0318b05fd3b93d",
+        "name": "DroidDeck-main-81500fe.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81500fe/DroidDeck-main-81500fe.apk",
+        "size": 67700415,
+        "sha256": "68309a7f6e80110a8f8e0fe74cd51b1eafbbaf70aec73434836bbe08a126dd03",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cdc0866-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdc0866/DroidDeck-main-cdc0866-pubg.apk",
-        "size": 67696319,
-        "sha256": "7f60406fc495de2624dba5b35273806e9dd9a0e4c14d1d3451e345a313379c5e",
+        "name": "DroidDeck-main-81500fe-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81500fe/DroidDeck-main-81500fe-pubg.apk",
+        "size": 67700415,
+        "sha256": "836dfa1148b3e346ee81a2b6f4a8499daf259a9859f778bd60132c34a28413c5",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cdc0866-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdc0866/DroidDeck-main-cdc0866-antutu.apk",
-        "size": 67696319,
-        "sha256": "6bd0813a0e2d72f7eeba073580d9c1808501df2a6f6af5526b7cc5168b9995ba",
+        "name": "DroidDeck-main-81500fe-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81500fe/DroidDeck-main-81500fe-antutu.apk",
+        "size": 67700415,
+        "sha256": "16b98ee5828187780922e64f338d4fd92d3b407519e1c04410101dc13727a113",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cdc0866-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdc0866/DroidDeck-main-cdc0866-ludashi.apk",
-        "size": 67696319,
-        "sha256": "e5a7ccecb2143984a995dde8837a9bce8cf9410943ce302dd202a9bb35389ba9",
+        "name": "DroidDeck-main-81500fe-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81500fe/DroidDeck-main-81500fe-ludashi.apk",
+        "size": 67700415,
+        "sha256": "0869313959861ebf8794c912f91c8d9145220c13909d1acaf0bef7396780c45c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "81500fe184022f912b8d9cda64653706f9357271",
+      "title": "perf: SysV message queues stay mapped instead of reopening per call",
+      "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
+      "publishedAt": 1792618111000
+    },
     {
       "commit": "cdc0866cfe93603b25ecc203aa0cc6a54069b698",
       "title": "perf: games skip Steam's install-script evaluator once it has finished",
@@ -155,12 +161,6 @@
       "title": "feat: Decky Loader update channel selector",
       "summary": "Adds an Update Channel row (Stable / Prerelease) to the Decky settings, aligned with Decky Loader's own BranchSelect.",
       "publishedAt": 1792603445000
-    },
-    {
-      "commit": "003064769d72cc7c191fa36eb468b8ce4a8ef3a5",
-      "title": "feat: warn before installing a Decky plugin ZIP",
-      "summary": "Requested by the Decky Loader team so a ZIP install through DroidDeck shows the same third-party warning as Decky's own installer.",
-      "publishedAt": 1792602069000
     }
   ],
   "tests": [
