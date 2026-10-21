@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792595627800,
+  "generatedAt": 1792598407741,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0e78180",
-    "title": "fix: moving a mouse no longer recomposes the whole session overlay",
-    "summary": "Part of #1247",
-    "commit": "0e7818049ab5ee0cf4409af0143c12ac98e6e1a8",
+    "tag": "main-9fe8bf6",
+    "title": "fix: keep Steam downloads running across suspend with Manual policy",
+    "summary": "\u2022 Manual policy paused the session on return during a download. Hiding the session latched manualPauseRequested even while \"Keep downloads running\" was blocking the suspend. The download exemption only applies while hidden, so on return the latch took over and froze the visible session. The latch is now set only when the hidden session would actually suspend. Seen on the Thor: session.suspe\n\u2022 SD card download manifests were never read. libraryfolders.vdf lists /mnt/droiddeck-sd, which only exists inside proot, so the monitor looked for it under the rootfs and found nothing. Card libraries are now resolved to their host path. Detection had been relying on contentlog.txt alone.",
+    "commit": "9fe8bf695596ade55e60cf4322ebc750951be402",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792579753000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0e78180",
+    "publishedAt": 1792598339000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9fe8bf6",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0e78180.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e78180/DroidDeck-main-0e78180.apk",
+        "name": "DroidDeck-main-9fe8bf6.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9fe8bf6/DroidDeck-main-9fe8bf6.apk",
         "size": 66512312,
-        "sha256": "668d17b1b031a781528c2c2e86a610897fd5dbc3355da39684991494f0a28045",
+        "sha256": "a0dbfba5375c841fd1a45bf726108c8dc4fab93948645fc453cabc852a43baae",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0e78180-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e78180/DroidDeck-main-0e78180-pubg.apk",
+        "name": "DroidDeck-main-9fe8bf6-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9fe8bf6/DroidDeck-main-9fe8bf6-pubg.apk",
         "size": 66512312,
-        "sha256": "d91a1adc3c968c3ec569c7b7e0c88add4b91e13b663b4777a03d2c8ea3d088de",
+        "sha256": "81b983d1cedc380bcb94927502dc200b31c00fa53c4a59822eaf0e5d889101fc",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0e78180-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e78180/DroidDeck-main-0e78180-antutu.apk",
+        "name": "DroidDeck-main-9fe8bf6-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9fe8bf6/DroidDeck-main-9fe8bf6-antutu.apk",
         "size": 66512312,
-        "sha256": "05359d5f812d926434b57e475492a12770d5f05564436d78bc9879dea35c0420",
+        "sha256": "2c52ebc19a7aceb9641921d7dcfe7abacfa636ef5cc73783880d48e7cbcaa649",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0e78180-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e78180/DroidDeck-main-0e78180-ludashi.apk",
+        "name": "DroidDeck-main-9fe8bf6-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9fe8bf6/DroidDeck-main-9fe8bf6-ludashi.apk",
         "size": 66512312,
-        "sha256": "60b80b6068fdfa9b3458e5b0fceca8dd9d4b96cfc908d2a45faf8cd4ddc60e5a",
+        "sha256": "b2647663f9b122e44867b3ab2d35da4c457a4441e8ec53274aba13bdd78ba537",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9fe8bf695596ade55e60cf4322ebc750951be402",
+      "title": "fix: keep Steam downloads running across suspend with Manual policy",
+      "summary": "\u2022 Manual policy paused the session on return during a download. Hiding the session latched manualPauseRequested even while \"Keep downloads running\" was blocking the suspend. The download exemption only applies while hidden, so on return the latch took over and froze the visible session. The latch is now set only when the hidden session would actually suspend. Seen on the Thor: session.suspe\n\u2022 SD c",
+      "publishedAt": 1792598339000
+    },
     {
       "commit": "0e7818049ab5ee0cf4409af0143c12ac98e6e1a8",
       "title": "fix: moving a mouse no longer recomposes the whole session overlay",
@@ -155,12 +161,6 @@
       "title": "fix: file manager copy/move keeps symlinks",
       "summary": "\ufeffCopying or moving a folder in the file manager now keeps the symbolic links inside it.",
       "publishedAt": 1792553716000
-    },
-    {
-      "commit": "a74ff3d67a5d6bd5465aa4fe952f7ebd0ec62e54",
-      "title": "fix: cancelling a paste stops the copy and keeps a move's source",
-      "summary": "\ufeffTapping Cancel during a file manager copy or move now actually stops it.",
-      "publishedAt": 1792541950000
     }
   ],
   "tests": [
