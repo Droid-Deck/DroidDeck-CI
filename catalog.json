@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792617401972,
+  "generatedAt": 1792617609714,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1275",
-      "title": "perf: network tables Android refuses are served from the synthesized copy without retrying the open",
-      "summary": "Wine's network driver (nsiproxy) reads /proc/net/dev and /sys/class/net/<if>/carrier for every interface on each adapter query, and /proc/net/route and /proc/net/ipv6route for gateways. Android refuses these opens. netif.c already answers them from a synthesized table, but only after the real open failed, and each refused open costs 60 to 150 \u00b5s under proot.",
-      "commit": "8d35caf73d55ed98a598d3483851d7b68f4c2b2f",
-      "pr": 1275,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792616148000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1275",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1275-8d35caf.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1275/DroidDeck-PR.1275-8d35caf.apk",
-          "size": 67696319,
-          "sha256": "fafe0db91ee53c372ae919f1ebf6950aadfd8df4201b9db7a9aa43e7a5aee20c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1275-8d35caf-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1275/DroidDeck-PR.1275-8d35caf-pubg.apk",
-          "size": 67696319,
-          "sha256": "84cd0749197e529bab2762d5af2172984730d0f957e410c96ca24efcb8334614",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1275-8d35caf-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1275/DroidDeck-PR.1275-8d35caf-antutu.apk",
-          "size": 67696319,
-          "sha256": "16cbed0531d1bc84347f576dc78933d4f11ef82e2d37592f4793148c9fb4db7b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1275-8d35caf-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1275/DroidDeck-PR.1275-8d35caf-ludashi.apk",
-          "size": 67696319,
-          "sha256": "8410c91ac576456f065681ddd6cdb227f504d10582587c3fd8da1efc16d3a333",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1178",
       "title": "fix: place GOG cloud saves at the location root",
