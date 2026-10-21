@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792608287374,
+  "generatedAt": 1792613120947,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1258",
+      "title": "perf: SysV queues stay mapped, install-script evaluator skipped, overlay repaints ride the game frame, refused network tables skip the open",
+      "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
+      "commit": "8d0b1a42b977802764ca3204b4b8f80c80815f8b",
+      "pr": 1258,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792613029000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1258",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1258-8d0b1a4.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-8d0b1a4.apk",
+          "size": 67700415,
+          "sha256": "8057d92d6ff05e1ede88d8972d2405ddab734e3a9cd1d4a8f4af5734d7ddff15",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1258-8d0b1a4-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-8d0b1a4-pubg.apk",
+          "size": 67700415,
+          "sha256": "612dee5e8a67888a8fd3426aabbadafd9212cc45213a735e6dfc18cdf4da1972",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1258-8d0b1a4-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-8d0b1a4-antutu.apk",
+          "size": 67700415,
+          "sha256": "be4832ca0aca4265f863d421da88b0368388240095bed36dc9ae170993de6254",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1258-8d0b1a4-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-8d0b1a4-ludashi.apk",
+          "size": 67700415,
+          "sha256": "501966c5daa2b0f82ea74d3064c2c8cf9ec2834c05649ffbcb5f4c3ce7bb4986",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1178",
       "title": "fix: place GOG cloud saves at the location root",
       "summary": "On a GOG game with cloud saves, DroidDeck logged a successful download but the game showed empty profiles. With Hollow Knight: Silksong the cloud files were written to .../Hollow Knight Silksong/default/saves/, while the game reads .../Hollow Knight Silksong/default/.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1207/DroidDeck-PR.1207-0befacb-ludashi.apk",
           "size": 66500024,
           "sha256": "554d79586113711f7b1ff0fdcd23861eb44128a0603eb85a5571f37a4445a46e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1258",
-      "title": "perf: SysV queues stay mapped, install-script evaluator skipped, overlay repaints ride the game frame",
-      "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
-      "commit": "dafe5f13b51388f65e2d3ad957009d3d276cb61c",
-      "pr": 1258,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792595535000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1258",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1258-dafe5f1.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-dafe5f1.apk",
-          "size": 66516408,
-          "sha256": "2ca1c801bb9bd526f1ba158079150a8f3411a3d0a8658aed036db3908750f0bf",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1258-dafe5f1-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-dafe5f1-pubg.apk",
-          "size": 66516408,
-          "sha256": "0b4dfa7ab1b13f2bfeb2f76ab250044621740b4129f70a0ae1e9b6c1d49af631",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1258-dafe5f1-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-dafe5f1-antutu.apk",
-          "size": 66516408,
-          "sha256": "82aa7fbbfaf363631a03f4f8c4e7f0f7a412f33cb4cc4097c30222223ae20d20",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1258-dafe5f1-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-dafe5f1-ludashi.apk",
-          "size": 66516408,
-          "sha256": "2e9ed93fac59ecfe0eda96bac9bb405d29ff720a6c9df849f2dd8d527ffefcb3",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
