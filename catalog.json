@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792603728979,
+  "generatedAt": 1792603863720,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1178",
+      "title": "fix: place GOG cloud saves at the location root",
+      "summary": "On a GOG game with cloud saves, DroidDeck logged a successful download but the game showed empty profiles. With Hollow Knight: Silksong the cloud files were written to .../Hollow Knight Silksong/default/saves/, while the game reads .../Hollow Knight Silksong/default/.",
+      "commit": "fabf8ba494e5adc830b77e5dbcca4b9dfdc3bee7",
+      "pr": 1178,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792603773000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1178",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1178-fabf8ba.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1178/DroidDeck-PR.1178-fabf8ba.apk",
+          "size": 66553272,
+          "sha256": "10a6963f68e54abe9be90bb06908bfd93a3dd7f2e6fe4fa672cff95330bc8b17",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1178-fabf8ba-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1178/DroidDeck-PR.1178-fabf8ba-pubg.apk",
+          "size": 66553272,
+          "sha256": "4b4256cdaa1bc18977f3e9a71c48cf9ea3ca6eab9ecacf2dbf50d812574b8172",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1178-fabf8ba-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1178/DroidDeck-PR.1178-fabf8ba-antutu.apk",
+          "size": 66553272,
+          "sha256": "f0cadc85c082364ad4a3d97290e1004890a55ef32e9aa7ef6e0676d6a662c007",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1178-fabf8ba-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1178/DroidDeck-PR.1178-fabf8ba-ludashi.apk",
+          "size": 66553272,
+          "sha256": "c0528e359b9c27717204b970b8b05b6bedf959a8626845c8c66c5412357ce70c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1207",
       "title": "feat: let the built-in controller be turned off",
