@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792618412806,
+  "generatedAt": 1792618524734,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-81500fe",
-    "title": "perf: SysV message queues stay mapped instead of reopening per call",
-    "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
-    "commit": "81500fe184022f912b8d9cda64653706f9357271",
+    "tag": "main-c178355",
+    "title": "perf: performance overlay updates ride the next game frame instead of an extra composite",
+    "summary": "On a fixed refresh output, gamescope repainted the screen for every mangoapp commit. mangoapp draws once per game frame, just after that frame was shown. A 60 fps game on the 120 Hz panel was therefore composited twice per frame: the second composite came 8 ms later with the same game picture and only the overlay changed. With VRR, gamescope already leaves such repaints to the next game frame.",
+    "commit": "c178355d92a9a38440b3eb1c6bd9587eafc5d007",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792618111000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-81500fe",
+    "publishedAt": 1792618461000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c178355",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-81500fe.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81500fe/DroidDeck-main-81500fe.apk",
+        "name": "DroidDeck-main-c178355.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c178355/DroidDeck-main-c178355.apk",
         "size": 67700415,
-        "sha256": "68309a7f6e80110a8f8e0fe74cd51b1eafbbaf70aec73434836bbe08a126dd03",
+        "sha256": "257c704e75674b97fc64c4d7c0ff5f03138943968147671de8f3fe3532b1cc14",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-81500fe-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81500fe/DroidDeck-main-81500fe-pubg.apk",
+        "name": "DroidDeck-main-c178355-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c178355/DroidDeck-main-c178355-pubg.apk",
         "size": 67700415,
-        "sha256": "836dfa1148b3e346ee81a2b6f4a8499daf259a9859f778bd60132c34a28413c5",
+        "sha256": "674b33448f8de6f011770f5b1da82df778e1c5289439fdd9404e893cdbc1ed05",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-81500fe-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81500fe/DroidDeck-main-81500fe-antutu.apk",
+        "name": "DroidDeck-main-c178355-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c178355/DroidDeck-main-c178355-antutu.apk",
         "size": 67700415,
-        "sha256": "16b98ee5828187780922e64f338d4fd92d3b407519e1c04410101dc13727a113",
+        "sha256": "ca702bed34c930e5bba5a6a53bfdc3bae3169e865536451e8c77b2c59553ec37",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-81500fe-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-81500fe/DroidDeck-main-81500fe-ludashi.apk",
+        "name": "DroidDeck-main-c178355-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c178355/DroidDeck-main-c178355-ludashi.apk",
         "size": 67700415,
-        "sha256": "0869313959861ebf8794c912f91c8d9145220c13909d1acaf0bef7396780c45c",
+        "sha256": "958cd6545b7d45b464136e07c4f9996cb291d0628a8805c1939d9bc076d9ce75",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c178355d92a9a38440b3eb1c6bd9587eafc5d007",
+      "title": "perf: performance overlay updates ride the next game frame instead of an extra composite",
+      "summary": "On a fixed refresh output, gamescope repainted the screen for every mangoapp commit. mangoapp draws once per game frame, just after that frame was shown. A 60 fps game on the 120 Hz panel was therefore composited twice per frame: the second composite came 8 ms later with the same game picture and only the overlay changed. With VRR, gamescope already leaves such repaints to the next game frame.",
+      "publishedAt": 1792618461000
+    },
     {
       "commit": "81500fe184022f912b8d9cda64653706f9357271",
       "title": "perf: SysV message queues stay mapped instead of reopening per call",
@@ -155,12 +161,6 @@
       "title": "fix: store dots stay dim when signed out and stores open on the first arranged tab",
       "summary": "Store dots for stores that are not signed in were drawn fully opaque, so they looked the same as signed-in ones. The stores page also always opened on GOG instead of the first tab in the arranged order.",
       "publishedAt": 1792603575000
-    },
-    {
-      "commit": "f67398e6bc92516829c378365552cd4e160ca2f8",
-      "title": "feat: Decky Loader update channel selector",
-      "summary": "Adds an Update Channel row (Stable / Prerelease) to the Decky settings, aligned with Decky Loader's own BranchSelect.",
-      "publishedAt": 1792603445000
     }
   ],
   "tests": [
