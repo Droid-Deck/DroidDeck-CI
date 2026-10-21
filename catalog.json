@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792598407741,
+  "generatedAt": 1792602220961,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9fe8bf6",
-    "title": "fix: keep Steam downloads running across suspend with Manual policy",
-    "summary": "\u2022 Manual policy paused the session on return during a download. Hiding the session latched manualPauseRequested even while \"Keep downloads running\" was blocking the suspend. The download exemption only applies while hidden, so on return the latch took over and froze the visible session. The latch is now set only when the hidden session would actually suspend. Seen on the Thor: session.suspe\n\u2022 SD card download manifests were never read. libraryfolders.vdf lists /mnt/droiddeck-sd, which only exists inside proot, so the monitor looked for it under the rootfs and found nothing. Card libraries are now resolved to their host path. Detection had been relying on contentlog.txt alone.",
-    "commit": "9fe8bf695596ade55e60cf4322ebc750951be402",
+    "tag": "main-0030647",
+    "title": "feat: warn before installing a Decky plugin ZIP",
+    "summary": "Requested by the Decky Loader team so a ZIP install through DroidDeck shows the same third-party warning as Decky's own installer.",
+    "commit": "003064769d72cc7c191fa36eb468b8ce4a8ef3a5",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792598339000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9fe8bf6",
+    "publishedAt": 1792602069000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0030647",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9fe8bf6.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9fe8bf6/DroidDeck-main-9fe8bf6.apk",
-        "size": 66512312,
-        "sha256": "a0dbfba5375c841fd1a45bf726108c8dc4fab93948645fc453cabc852a43baae",
+        "name": "DroidDeck-main-0030647.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0030647/DroidDeck-main-0030647.apk",
+        "size": 66516408,
+        "sha256": "cb72a9254ce8bad448404fcad5c685f5fb5e3598d4920db8d24f928495607049",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9fe8bf6-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9fe8bf6/DroidDeck-main-9fe8bf6-pubg.apk",
-        "size": 66512312,
-        "sha256": "81b983d1cedc380bcb94927502dc200b31c00fa53c4a59822eaf0e5d889101fc",
+        "name": "DroidDeck-main-0030647-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0030647/DroidDeck-main-0030647-pubg.apk",
+        "size": 66516408,
+        "sha256": "e19016085dd660bfbe41b9aabd7fe40fd8d9031a33e61d23d222a27234ab8c6d",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9fe8bf6-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9fe8bf6/DroidDeck-main-9fe8bf6-antutu.apk",
-        "size": 66512312,
-        "sha256": "2c52ebc19a7aceb9641921d7dcfe7abacfa636ef5cc73783880d48e7cbcaa649",
+        "name": "DroidDeck-main-0030647-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0030647/DroidDeck-main-0030647-antutu.apk",
+        "size": 66516408,
+        "sha256": "76af71038df43794c6efe2a8f22b13257a3a1266df1e608b52738c8c2797397f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9fe8bf6-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9fe8bf6/DroidDeck-main-9fe8bf6-ludashi.apk",
-        "size": 66512312,
-        "sha256": "b2647663f9b122e44867b3ab2d35da4c457a4441e8ec53274aba13bdd78ba537",
+        "name": "DroidDeck-main-0030647-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0030647/DroidDeck-main-0030647-ludashi.apk",
+        "size": 66516408,
+        "sha256": "d39032a329711708f9fc04f473b99020b8b9ae335bf7024fd3b7a6bcbe405713",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "003064769d72cc7c191fa36eb468b8ce4a8ef3a5",
+      "title": "feat: warn before installing a Decky plugin ZIP",
+      "summary": "Requested by the Decky Loader team so a ZIP install through DroidDeck shows the same third-party warning as Decky's own installer.",
+      "publishedAt": 1792602069000
+    },
     {
       "commit": "9fe8bf695596ade55e60cf4322ebc750951be402",
       "title": "fix: keep Steam downloads running across suspend with Manual policy",
@@ -155,12 +161,6 @@
       "title": "fix: game files keep the full game name instead of cutting it at 40 characters",
       "summary": "Game files (the .steam files written by Files \u2192 Sync all game files to folder and the per-game export) now keep the whole game name. Before, the name was cut at 40 characters.",
       "publishedAt": 1792554028000
-    },
-    {
-      "commit": "b4c56096a483d446735a871992ceb9e84b1cdce2",
-      "title": "fix: file manager copy/move keeps symlinks",
-      "summary": "\ufeffCopying or moving a folder in the file manager now keeps the symbolic links inside it.",
-      "publishedAt": 1792553716000
     }
   ],
   "tests": [
