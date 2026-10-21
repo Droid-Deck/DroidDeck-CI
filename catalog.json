@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792616463924,
+  "generatedAt": 1792617401972,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6a3583d",
-    "title": "Add support for Java 17 via mise",
-    "summary": "Right now build is hard coded to use openjdk via homebrew. If the user installed Java through some other cli, like mise, build will fail.",
-    "commit": "6a3583d7447c5debebe756397372ae309d0bd337",
+    "tag": "main-cdc0866",
+    "title": "perf: games skip Steam's install-script evaluator once it has finished",
+    "summary": "On every launch, Steam runs a game's install scripts (iscriptevaluator.exe) through Proton before the game starts. That is a whole Wine start, and it only confirms that the redistributables are already installed: DroidDeck marks those as run beforehand.",
+    "commit": "cdc0866cfe93603b25ecc203aa0cc6a54069b698",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792608217000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6a3583d",
+    "publishedAt": 1792617315000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cdc0866",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6a3583d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a3583d/DroidDeck-main-6a3583d.apk",
+        "name": "DroidDeck-main-cdc0866.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdc0866/DroidDeck-main-cdc0866.apk",
         "size": 67696319,
-        "sha256": "8eb2a329e38433039fd0ba768a0f584c3a47490154234ae68e9f5b8db3fcf42b",
+        "sha256": "6ec35a5ebabddcee21e91fbaba0bc937a8ca9f79939a721d0b0318b05fd3b93d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6a3583d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a3583d/DroidDeck-main-6a3583d-pubg.apk",
+        "name": "DroidDeck-main-cdc0866-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdc0866/DroidDeck-main-cdc0866-pubg.apk",
         "size": 67696319,
-        "sha256": "df0ed9afae621c38235e7835225d7561dbb334c3a44c820ffe0d33cb3bfeae9b",
+        "sha256": "7f60406fc495de2624dba5b35273806e9dd9a0e4c14d1d3451e345a313379c5e",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6a3583d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a3583d/DroidDeck-main-6a3583d-antutu.apk",
+        "name": "DroidDeck-main-cdc0866-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdc0866/DroidDeck-main-cdc0866-antutu.apk",
         "size": 67696319,
-        "sha256": "ec3f97939737ae243ad950bcfffed8b757e5009d232a257af208aaeb168e3437",
+        "sha256": "6bd0813a0e2d72f7eeba073580d9c1808501df2a6f6af5526b7cc5168b9995ba",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6a3583d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a3583d/DroidDeck-main-6a3583d-ludashi.apk",
+        "name": "DroidDeck-main-cdc0866-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdc0866/DroidDeck-main-cdc0866-ludashi.apk",
         "size": 67696319,
-        "sha256": "c8fea1aeea3facea6cbc0507abc41f329326d9a9542de4982a17d01cbe189500",
+        "sha256": "e5a7ccecb2143984a995dde8837a9bce8cf9410943ce302dd202a9bb35389ba9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "cdc0866cfe93603b25ecc203aa0cc6a54069b698",
+      "title": "perf: games skip Steam's install-script evaluator once it has finished",
+      "summary": "On every launch, Steam runs a game's install scripts (iscriptevaluator.exe) through Proton before the game starts. That is a whole Wine start, and it only confirms that the redistributables are already installed: DroidDeck marks those as run beforehand.",
+      "publishedAt": 1792617315000
+    },
     {
       "commit": "6a3583d7447c5debebe756397372ae309d0bd337",
       "title": "Add support for Java 17 via mise",
@@ -155,12 +161,6 @@
       "title": "feat: warn before installing a Decky plugin ZIP",
       "summary": "Requested by the Decky Loader team so a ZIP install through DroidDeck shows the same third-party warning as Decky's own installer.",
       "publishedAt": 1792602069000
-    },
-    {
-      "commit": "9fe8bf695596ade55e60cf4322ebc750951be402",
-      "title": "fix: keep Steam downloads running across suspend with Manual policy",
-      "summary": "\u2022 Manual policy paused the session on return during a download. Hiding the session latched manualPauseRequested even while \"Keep downloads running\" was blocking the suspend. The download exemption only applies while hidden, so on return the latch took over and froze the visible session. The latch is now set only when the hidden session would actually suspend. Seen on the Thor: session.suspe\n\u2022 SD c",
-      "publishedAt": 1792598339000
     }
   ],
   "tests": [
