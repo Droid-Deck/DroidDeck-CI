@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792557153722,
+  "generatedAt": 1792557247164,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1235",
+      "title": "fix: GOG sign-in starts without the previous account's web session",
+      "summary": "Signing in to GOG again now shows an empty Email and Password form. Before, the login page stayed locked to the previously used GOG account, so a different account couldn't be used after signing out.",
+      "commit": "d10df2e0c86bf5e70e7557ba4cfb7737f56086ef",
+      "pr": 1235,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792557164000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1235",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1235-d10df2e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1235/DroidDeck-PR.1235-d10df2e.apk",
+          "size": 66500024,
+          "sha256": "3144bf20fe803f079adfd3b30efb35d914019c34c46c459e7f309cf1942b1fa5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1235-d10df2e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1235/DroidDeck-PR.1235-d10df2e-pubg.apk",
+          "size": 66500024,
+          "sha256": "3dba68de1f4cbf1ff16d54c5f5cfee33466aaecd37ffa8e33cbe8b4b01e6721a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1235-d10df2e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1235/DroidDeck-PR.1235-d10df2e-antutu.apk",
+          "size": 66500024,
+          "sha256": "2a4cc5f64101aa65bb4122ecfd0a51dcc658d923e610c91a3ccbd55bf05d8bff",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1235-d10df2e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1235/DroidDeck-PR.1235-d10df2e-ludashi.apk",
+          "size": 66500024,
+          "sha256": "573d62708cb408627cc0d75247bf72c0a6ffaed8edccaefcccac60ba10c33110",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1108",
       "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
       "summary": "Fixes the blockers that prevent Windows games with EAC anti-cheat (e.g. Arc Raiders) and x8664 Proton versions from running under FEX emulation on Android.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1108/DroidDeck-PR.1108-9c219b6-ludashi.apk",
           "size": 66495928,
           "sha256": "b1e3124eaf7c9a2883ce3b38e4191f28159326acfe9107a38505b7cb1e4663e4",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1235",
-      "title": "fix: GOG sign-in starts without the previous account's web session",
-      "summary": "Signing in to GOG again now shows an empty Email and Password form. Before, the login page stayed locked to the previously used GOG account, so a different account couldn't be used after signing out.",
-      "commit": "9f5e63c4843785e05abafd6e0144aea046589b52",
-      "pr": 1235,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792556303000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1235",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1235-9f5e63c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1235/DroidDeck-PR.1235-9f5e63c.apk",
-          "size": 66500024,
-          "sha256": "098319daa3331a65273583c3bbee58f3f69bda74d856197a93ec8b666e35724d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1235-9f5e63c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1235/DroidDeck-PR.1235-9f5e63c-pubg.apk",
-          "size": 66500024,
-          "sha256": "e9aaf2fd95a96f8de833b82af585f39974334ad9cebb83928d51eff5bedbd7c0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1235-9f5e63c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1235/DroidDeck-PR.1235-9f5e63c-antutu.apk",
-          "size": 66500024,
-          "sha256": "fe2844df7063fd0a979eae9b395598da004989a66ee486d40ed97c8b3b93f48f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1235-9f5e63c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1235/DroidDeck-PR.1235-9f5e63c-ludashi.apk",
-          "size": 66500024,
-          "sha256": "910b19b0f94a18d446a9fdeb4e59c4893007c4e75428196081b38eeaf60c9414",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
