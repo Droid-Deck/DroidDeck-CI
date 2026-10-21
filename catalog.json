@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792613120947,
+  "generatedAt": 1792615182463,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1258",
-      "title": "perf: SysV queues stay mapped, install-script evaluator skipped, overlay repaints ride the game frame, refused network tables skip the open",
-      "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
-      "commit": "8d0b1a42b977802764ca3204b4b8f80c80815f8b",
-      "pr": 1258,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792613029000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1258",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1258-8d0b1a4.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-8d0b1a4.apk",
-          "size": 67700415,
-          "sha256": "8057d92d6ff05e1ede88d8972d2405ddab734e3a9cd1d4a8f4af5734d7ddff15",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1258-8d0b1a4-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-8d0b1a4-pubg.apk",
-          "size": 67700415,
-          "sha256": "612dee5e8a67888a8fd3426aabbadafd9212cc45213a735e6dfc18cdf4da1972",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1258-8d0b1a4-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-8d0b1a4-antutu.apk",
-          "size": 67700415,
-          "sha256": "be4832ca0aca4265f863d421da88b0368388240095bed36dc9ae170993de6254",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1258-8d0b1a4-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-8d0b1a4-ludashi.apk",
-          "size": 67700415,
-          "sha256": "501966c5daa2b0f82ea74d3064c2c8cf9ec2834c05649ffbcb5f4c3ce7bb4986",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1178",
       "title": "fix: place GOG cloud saves at the location root",
