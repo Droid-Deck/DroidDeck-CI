@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792563695882,
+  "generatedAt": 1792574339236,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1250",
+      "title": "fix: clearing a game's compatibility tool in Steam keeps the Linux build",
+      "summary": "Fixes #1248",
+      "commit": "96569d80ac2332903dd24934941870e2f5742feb",
+      "pr": 1250,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792574246000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1250",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1250-96569d8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1250/DroidDeck-PR.1250-96569d8.apk",
+          "size": 66512312,
+          "sha256": "ba8566ce58462d2fccd82fd9768241ab1c74ba74aa533cc23f2cbdfc6d4b2dd9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1250-96569d8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1250/DroidDeck-PR.1250-96569d8-pubg.apk",
+          "size": 66512312,
+          "sha256": "82664efc89ddaabffb49d0c09cfde405dc2a3ad8e55e48de2c350e1a8a55a37f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1250-96569d8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1250/DroidDeck-PR.1250-96569d8-antutu.apk",
+          "size": 66512312,
+          "sha256": "44fd20e15370bf393c5dc39c799675c67d014c14ee0069d5f7cf0b67a3642fb7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1250-96569d8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1250/DroidDeck-PR.1250-96569d8-ludashi.apk",
+          "size": 66512312,
+          "sha256": "56839a0e50851cc3e8faed94da0c436cd31c396db80aafabc6f9b94bd76fcf07",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1108",
       "title": "steam: exclude Valve tools from compat reconciliation and wire EAC ru\u2026",
