@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792592299785,
+  "generatedAt": 1792594106618,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -166,47 +166,47 @@
   "tests": [
     {
       "tag": "pr-1258",
-      "title": "perf: SysV queues stay mapped, install-script evaluator skipped once finished",
+      "title": "perf: SysV queues stay mapped, install-script evaluator skipped, overlay repaints ride the game frame",
       "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
-      "commit": "17f9919852c04f78791831d3a9df1170eafaa396",
+      "commit": "5cdc8dc96938c9eed87c417871f17d6d3c586ee8",
       "pr": 1258,
       "version": null,
       "versionCode": 14,
-      "publishedAt": 1792592207000,
+      "publishedAt": 1792594006000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1258",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1258-17f9919.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-17f9919.apk",
+          "name": "DroidDeck-PR.1258-5cdc8dc.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-5cdc8dc.apk",
           "size": 66516408,
-          "sha256": "4867efcb4e1097511a24f7f956e237445e2efb099010a8564c5f6592bc688ba2",
+          "sha256": "34f968c858f9b0e29e31ecf94cf6bb98ed1441f84de426310cf8141473f5f8fe",
           "packageName": "com.droiddeck.launcher",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.tencent.ig": {
-          "name": "DroidDeck-PR.1258-17f9919-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-17f9919-pubg.apk",
+          "name": "DroidDeck-PR.1258-5cdc8dc-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-5cdc8dc-pubg.apk",
           "size": 66516408,
-          "sha256": "b089faefc9108e26ad8cf0dfc662f56af637d27afece1d24c40a45bf3c2b97c8",
+          "sha256": "590d5be7d762b2c778d22cb25154d7caa7dcc9b5758713fdae2a8a5040b56ffa",
           "packageName": "com.tencent.ig",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1258-17f9919-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-17f9919-antutu.apk",
+          "name": "DroidDeck-PR.1258-5cdc8dc-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-5cdc8dc-antutu.apk",
           "size": 66516408,
-          "sha256": "6259ec241924fd60f4806b8886a2819504be6744be5d527dd897e849483e1395",
+          "sha256": "0042f0d1b728fd8982cf2b554587dd3e2f6bc2c2c19a1bf72a7c6bdda17b058f",
           "packageName": "com.antutu.benchmark.full",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1258-17f9919-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-17f9919-ludashi.apk",
+          "name": "DroidDeck-PR.1258-5cdc8dc-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1258/DroidDeck-PR.1258-5cdc8dc-ludashi.apk",
           "size": 66516408,
-          "sha256": "4858042b1a10f02211893cd79a934ca029e6624308048f79820e4779d030e2f6",
+          "sha256": "0de177af7beaa676d24cc3b9ce1922b622c5bec2625f90545548c524145547ee",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
