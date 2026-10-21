@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792559598261,
+  "generatedAt": 1792560269764,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-afb9e3e",
-    "title": "fix: a failed Steam client download ends the session with a message instead of silently",
-    "summary": "\ufeffWhen the Steam client can't be downloaded on first start, for example on a school or work network or a VPN that blocks Steam's servers, DroidDeck now says so: \"Couldn't download the Steam client. Your network or VPN may be blocking Steam's servers; check the connection and try again.\" with curl's error and the Retry button. Before, the session just ended and the launcher came back with no expla",
-    "commit": "afb9e3e823f60c031e7cc0a064ec0d6c7d622c8f",
+    "tag": "main-25f3923",
+    "title": "fix: a failing image or script on a store sign-in page no longer replaces the page with an SSL error",
+    "summary": "Fixes #667",
+    "commit": "25f392383e2de3b0059bc0386d06168d101ffc7e",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792559537000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-afb9e3e",
+    "publishedAt": 1792560188000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-25f3923",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-afb9e3e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-afb9e3e/DroidDeck-main-afb9e3e.apk",
+        "name": "DroidDeck-main-25f3923.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-25f3923/DroidDeck-main-25f3923.apk",
         "size": 66512312,
-        "sha256": "d88e540ad77233bff9b52f45102665958df43fc3fc5f43f1da2ed7d5b4e261ee",
+        "sha256": "072bf5256a846bde63eacd838d335272ee3dbe8614b5d05d32e78e46461e4ce1",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-afb9e3e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-afb9e3e/DroidDeck-main-afb9e3e-pubg.apk",
+        "name": "DroidDeck-main-25f3923-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-25f3923/DroidDeck-main-25f3923-pubg.apk",
         "size": 66512312,
-        "sha256": "24b7eec2aa4ca11e15bd8f779f2f46e88e1aa0d0d90c7d21b603b87cb0e899a4",
+        "sha256": "3fbda259658e99e451d7e301029ce23ebd060e2c5bf3719e5db55322d0557082",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-afb9e3e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-afb9e3e/DroidDeck-main-afb9e3e-antutu.apk",
+        "name": "DroidDeck-main-25f3923-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-25f3923/DroidDeck-main-25f3923-antutu.apk",
         "size": 66512312,
-        "sha256": "9bbfefad00387a9be3cfef9e22e836fd28ba4932fb004288dd87c36be62e7228",
+        "sha256": "8666145296312a738b20748d59e18e98bc55abd0389503a494eb5e1b278f23ff",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-afb9e3e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-afb9e3e/DroidDeck-main-afb9e3e-ludashi.apk",
+        "name": "DroidDeck-main-25f3923-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-25f3923/DroidDeck-main-25f3923-ludashi.apk",
         "size": 66512312,
-        "sha256": "5494b4fef7c563e03fcc36ee4a1b97dc0b19c0d6b7c0704f485fc905b0940c9c",
+        "sha256": "6ef2ff81d00f6fda7fc0fa39692438a6e00d7a5c3b2ceac71101a1263f8594d2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "25f392383e2de3b0059bc0386d06168d101ffc7e",
+      "title": "fix: a failing image or script on a store sign-in page no longer replaces the page with an SSL error",
+      "summary": "Fixes #667",
+      "publishedAt": 1792560188000
+    },
     {
       "commit": "afb9e3e823f60c031e7cc0a064ec0d6c7d622c8f",
       "title": "fix: a failed Steam client download ends the session with a message instead of silently",
@@ -155,12 +161,6 @@
       "title": "fix: a slow folder listing no longer replaces the folder being shown",
       "summary": "\ufeffMoving quickly between folders in the file manager no longer ends up showing the wrong folder's contents.",
       "publishedAt": 1792536638000
-    },
-    {
-      "commit": "13cb2068f0a1853ffc89e0db5fc7db05dad91dda",
-      "title": "fix: file manager selection actions respect the search filter",
-      "summary": "\ufeffSelect all, Copy, Cut and Delete in the file manager now act only on the files the search is showing.",
-      "publishedAt": 1792536483000
     }
   ],
   "tests": [
