@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792603531205,
+  "generatedAt": 1792603665483,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f67398e",
-    "title": "feat: Decky Loader update channel selector",
-    "summary": "Adds an Update Channel row (Stable / Prerelease) to the Decky settings, aligned with Decky Loader's own BranchSelect.",
-    "commit": "f67398e6bc92516829c378365552cd4e160ca2f8",
+    "tag": "main-7d69128",
+    "title": "fix: store dots stay dim when signed out and stores open on the first arranged tab",
+    "summary": "Store dots for stores that are not signed in were drawn fully opaque, so they looked the same as signed-in ones. The stores page also always opened on GOG instead of the first tab in the arranged order.",
+    "commit": "7d691282faed10c1fbf1881918be7a1e4adfc7c6",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792603445000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f67398e",
+    "publishedAt": 1792603575000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7d69128",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f67398e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f67398e/DroidDeck-main-f67398e.apk",
-        "size": 66524600,
-        "sha256": "993c75f730458666e9bbd4cb0f93e8305999b3f36be25d9406a193fbe3026975",
+        "name": "DroidDeck-main-7d69128.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d69128/DroidDeck-main-7d69128.apk",
+        "size": 66545080,
+        "sha256": "a45dcaae7427293bcf774a5b7f903f890064151be06bf7c1eb3dad4b3d31ef23",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f67398e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f67398e/DroidDeck-main-f67398e-pubg.apk",
-        "size": 66524600,
-        "sha256": "8fd3068885ec1b791a687d1fade08f09e5ace1083bb512daaf3d075af0e8a41d",
+        "name": "DroidDeck-main-7d69128-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d69128/DroidDeck-main-7d69128-pubg.apk",
+        "size": 66545080,
+        "sha256": "364e538c341f7197466e4dd9f7fa14cc94fadb9437d90455e47831d0f0321912",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f67398e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f67398e/DroidDeck-main-f67398e-antutu.apk",
-        "size": 66524600,
-        "sha256": "516e11d58f36d1bf701fba6044f4fdc2685bd06b66eec5ff18bb73c1f174bfe0",
+        "name": "DroidDeck-main-7d69128-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d69128/DroidDeck-main-7d69128-antutu.apk",
+        "size": 66545080,
+        "sha256": "410ac0cf8670d0c8aadb31079a91e46e4041e54848c08eab0c82f5ff5b2969e4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f67398e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f67398e/DroidDeck-main-f67398e-ludashi.apk",
-        "size": 66524600,
-        "sha256": "399fbb1365e3e94ff7b6169ef5e74a9ae9027c4d0db61b0dcae7e835efaf0a27",
+        "name": "DroidDeck-main-7d69128-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d69128/DroidDeck-main-7d69128-ludashi.apk",
+        "size": 66545080,
+        "sha256": "daf0b9aa3b719cd84b28b8c7af9236a7f16135eaff9c9be2d5306e8398017bd3",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "7d691282faed10c1fbf1881918be7a1e4adfc7c6",
+      "title": "fix: store dots stay dim when signed out and stores open on the first arranged tab",
+      "summary": "Store dots for stores that are not signed in were drawn fully opaque, so they looked the same as signed-in ones. The stores page also always opened on GOG instead of the first tab in the arranged order.",
+      "publishedAt": 1792603575000
+    },
     {
       "commit": "f67398e6bc92516829c378365552cd4e160ca2f8",
       "title": "feat: Decky Loader update channel selector",
