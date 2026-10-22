@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792693934395,
+  "generatedAt": 1792694079959,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a4eee5c",
-    "title": "feat: page the session out to zram before suspending it, and zram is always on where supported",
-    "summary": "On the Thor, a session suspended overnight with Bulletstorm running was killed by lmkd at 07:28 while the screen was off. The kill record showed 275 MB free and 6.8 of 8 GB of zram still unused: the frozen game sat fully resident because nothing had moved it to swap. lmkd then worked its way up to the session's foreground service (adj 200) within 1.5 s.",
-    "commit": "a4eee5c2a4334c86fe12b5c8c9ff8af9c01f52a2",
+    "tag": "main-633f66f",
+    "title": "Fix main APK 7zip dependency download",
+    "summary": "Current main APK run 39823490454 fails before Gradle because Arch Linux ARM\u2019s redirecting mirror sends the pinned 7zip download to a Florida mirror returning HTTP 404.",
+    "commit": "633f66fd49c49f88cc24deac0911c708e3c90006",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792692419000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a4eee5c",
+    "publishedAt": 1792693992000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-633f66f",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a4eee5c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a4eee5c/DroidDeck-main-a4eee5c.apk",
-        "size": 67716975,
-        "sha256": "0c50dea448d5d707bab7a56e49a9bd1b957983604c9a96d0f233fac94843ca6d",
+        "name": "DroidDeck-main-633f66f.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-633f66f/DroidDeck-main-633f66f.apk",
+        "size": 67712879,
+        "sha256": "89b45ad6b47026fdcd7d646e5450d15a4a218f8956f658eec90054477921c413",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a4eee5c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a4eee5c/DroidDeck-main-a4eee5c-pubg.apk",
-        "size": 67716975,
-        "sha256": "08d68e253559e9cdc6752866206b6fef5d7156468dc080f8ef2876ca6d925e14",
+        "name": "DroidDeck-main-633f66f-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-633f66f/DroidDeck-main-633f66f-pubg.apk",
+        "size": 67712879,
+        "sha256": "5be769755a2560d6a4d428fad3a380fb9409afe45dbbfc936a10d96351401768",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a4eee5c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a4eee5c/DroidDeck-main-a4eee5c-antutu.apk",
-        "size": 67716975,
-        "sha256": "6c5e1e7674949e1bfe5fabc1fd7065b915567a6514562e4475e42c6855d2b522",
+        "name": "DroidDeck-main-633f66f-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-633f66f/DroidDeck-main-633f66f-antutu.apk",
+        "size": 67712879,
+        "sha256": "fc3854f4a04b383aeb2610dce25f2c50d8268eb9b7e56c0a059ce35341fca190",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a4eee5c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a4eee5c/DroidDeck-main-a4eee5c-ludashi.apk",
-        "size": 67716975,
-        "sha256": "e92d219c5236409731dae9b4f1f76728b1f735dac98f05aeba94cf5c2802f977",
+        "name": "DroidDeck-main-633f66f-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-633f66f/DroidDeck-main-633f66f-ludashi.apk",
+        "size": 67712879,
+        "sha256": "3dbf48850f641bddaccc9350acb1328ce38ee1e88ec6a942d319d0a845cf49be",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "633f66fd49c49f88cc24deac0911c708e3c90006",
+      "title": "Fix main APK 7zip dependency download",
+      "summary": "Current main APK run 39823490454 fails before Gradle because Arch Linux ARM\u2019s redirecting mirror sends the pinned 7zip download to a Florida mirror returning HTTP 404.",
+      "publishedAt": 1792693992000
+    },
     {
       "commit": "a4eee5c2a4334c86fe12b5c8c9ff8af9c01f52a2",
       "title": "feat: page the session out to zram before suspending it, and zram is always on where supported",
@@ -155,12 +161,6 @@
       "title": "fix: recognize SM8975 and mark Adreno 850 support experimental",
       "summary": "KGSL chip IDs were parsed as three-digit Adreno model numbers when a GPU name was unavailable. This could misidentify the hardware and leave driver selection using a different detection path from the device information screen.",
       "publishedAt": 1792681987000
-    },
-    {
-      "commit": "b47e7757c8ab6f2372b15966fe89a167df690faa",
-      "title": "Fix: Keep Android library names visible in diagnostic logs",
-      "summary": "Android HIDL library names such as android.hardware.graphics.mapper@4.0.so matched the email scrubber, so dependency failures became library \"<redacted:email>\" not found. Preserve these names only in library \"...\" not found loader diagnostics, including /vendor/ and /system/ paths. Generic text remains subject to email redaction.",
-      "publishedAt": 1792681864000
     }
   ],
   "tests": [
