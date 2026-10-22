@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792671526481,
+  "generatedAt": 1792671676686,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-923ffde",
-    "title": "feat: DroidDeck's linux-nightly components, with a Stable/Nightly switch",
-    "summary": "The component manager also offers the nightly DXVK, VKD3D-Proton and FEX builds from the linux-nightly release of Droid-Deck/DroidDeck-Components (built hourly from upstream for glibc Protons, Droid-Deck/DroidDeck-Components#7).",
-    "commit": "923ffde71574130e3871a2c8424c9e080a473217",
+    "tag": "main-bca4eb4",
+    "title": "fix: pause Steam Controller BLE reconnects while the session is suspended",
+    "summary": "With a paired Steam Controller that is switched off, the BLE retry loop kept calling connectGatt every ~35 s (30 s connect timeout + 5 s retry) for the whole time a session sat suspended. One overnight suspend on the Thor logged 754 attempts, each one waking the Bluetooth stack.",
+    "commit": "bca4eb44e6cf832e47ae6a861a995255bc8cc300",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792658269000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-923ffde",
+    "publishedAt": 1792671614000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bca4eb4",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-923ffde.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-923ffde/DroidDeck-main-923ffde.apk",
+        "name": "DroidDeck-main-bca4eb4.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bca4eb4/DroidDeck-main-bca4eb4.apk",
         "size": 67786528,
-        "sha256": "131848f2ce80233c0f48954cb1a561aa6f98401eb44f998b1c0ac13c5d67b80e",
+        "sha256": "d77fcfb3c4e176ec6ae73eb2bfc6f6658778f5f85d80c8f7feb2f3d0092f2c2b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-923ffde-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-923ffde/DroidDeck-main-923ffde-pubg.apk",
+        "name": "DroidDeck-main-bca4eb4-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bca4eb4/DroidDeck-main-bca4eb4-pubg.apk",
         "size": 67786528,
-        "sha256": "4318486d787870d83ca0bcee4cb7f805810ee3f37b27eadfbf5b188ed0daf844",
+        "sha256": "bca2da0fc495c972dbc24a6c10b19c21e6115806df0c8e280e0363c4e8dbc403",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-923ffde-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-923ffde/DroidDeck-main-923ffde-antutu.apk",
+        "name": "DroidDeck-main-bca4eb4-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bca4eb4/DroidDeck-main-bca4eb4-antutu.apk",
         "size": 67786528,
-        "sha256": "bdd14bd04b211943856537c9d8785ec5834b6445a62b69a555951678fa82715d",
+        "sha256": "62d775f7448ffde4e7d52f363e563b2d141595ce6ced84856846a8c453a10c01",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-923ffde-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-923ffde/DroidDeck-main-923ffde-ludashi.apk",
+        "name": "DroidDeck-main-bca4eb4-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bca4eb4/DroidDeck-main-bca4eb4-ludashi.apk",
         "size": 67786528,
-        "sha256": "48f01baaa53f6a2d4b51b209a7ffa5e28ea829aa34cb5cfdc746dea18ed86272",
+        "sha256": "83a12e68700195054e4f599518385fa025675e5cc47aeaed78f71c83eb271032",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bca4eb44e6cf832e47ae6a861a995255bc8cc300",
+      "title": "fix: pause Steam Controller BLE reconnects while the session is suspended",
+      "summary": "With a paired Steam Controller that is switched off, the BLE retry loop kept calling connectGatt every ~35 s (30 s connect timeout + 5 s retry) for the whole time a session sat suspended. One overnight suspend on the Thor logged 754 attempts, each one waking the Bluetooth stack.",
+      "publishedAt": 1792671614000
+    },
     {
       "commit": "923ffde71574130e3871a2c8424c9e080a473217",
       "title": "feat: DroidDeck's linux-nightly components, with a Stable/Nightly switch",
@@ -155,12 +161,6 @@
       "title": "fix: in-app update works on Android 9 and 10",
       "summary": "\ufeffIn-app updates install again on Android 9 and 10, and on Android 8 the downloaded APK's signer is now checked too.",
       "publishedAt": 1792640035000
-    },
-    {
-      "commit": "bacfa942a0e6378cfa26e7e4e0a7b6597944aba4",
-      "title": "Revert dedicated second-screen activity",
-      "summary": "Reverts PR #1041 and restores the second-screen controls to the original Android Presentation implementation. The existing keyboard, trackpad, terminal, and Deck controls are retained; only their host changes back from a dedicated activity to a presentation window.",
-      "publishedAt": 1792638546000
     }
   ],
   "tests": [
