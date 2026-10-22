@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792691538622,
+  "generatedAt": 1792692488657,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e4a7e52",
-    "title": "Fix nested KWin render-device selection on Android",
-    "summary": "KWin 6.8 removes QPainter, and Android host dmabuf feedback cannot identify the KGSL render node as a DRM device. The nested backend now accepts one explicitly selected, successfully opened render node when the normal host-device lookup fails. The new package marker selects O2/Zink in the desktop launcher before Plasma starts, including startup paths that bypass the PATH wrapper. Older packages re",
-    "commit": "e4a7e52f811601390ca40a98a432051c48d71c38",
+    "tag": "main-a4eee5c",
+    "title": "feat: page the session out to zram before suspending it, and zram is always on where supported",
+    "summary": "On the Thor, a session suspended overnight with Bulletstorm running was killed by lmkd at 07:28 while the screen was off. The kill record showed 275 MB free and 6.8 of 8 GB of zram still unused: the frozen game sat fully resident because nothing had moved it to swap. lmkd then worked its way up to the session's foreground service (adj 200) within 1.5 s.",
+    "commit": "a4eee5c2a4334c86fe12b5c8c9ff8af9c01f52a2",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792691470000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e4a7e52",
+    "publishedAt": 1792692419000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a4eee5c",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e4a7e52.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a7e52/DroidDeck-main-e4a7e52.apk",
-        "size": 67725167,
-        "sha256": "b6f2b060fe6406ef73c7e7e55a18f26fec77b668f8ee8f8563d80e283f96262e",
+        "name": "DroidDeck-main-a4eee5c.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a4eee5c/DroidDeck-main-a4eee5c.apk",
+        "size": 67716975,
+        "sha256": "0c50dea448d5d707bab7a56e49a9bd1b957983604c9a96d0f233fac94843ca6d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e4a7e52-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a7e52/DroidDeck-main-e4a7e52-pubg.apk",
-        "size": 67725167,
-        "sha256": "cc79a1e755bcb7532a0102f3c5c120c844390b5d06aefcbe4d4f28abb330bb44",
+        "name": "DroidDeck-main-a4eee5c-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a4eee5c/DroidDeck-main-a4eee5c-pubg.apk",
+        "size": 67716975,
+        "sha256": "08d68e253559e9cdc6752866206b6fef5d7156468dc080f8ef2876ca6d925e14",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e4a7e52-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a7e52/DroidDeck-main-e4a7e52-antutu.apk",
-        "size": 67725167,
-        "sha256": "4c31a3d4c2763996d9715afa22f9ddedf4bac551631e7b8244564de6362337f5",
+        "name": "DroidDeck-main-a4eee5c-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a4eee5c/DroidDeck-main-a4eee5c-antutu.apk",
+        "size": 67716975,
+        "sha256": "6c5e1e7674949e1bfe5fabc1fd7065b915567a6514562e4475e42c6855d2b522",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e4a7e52-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a7e52/DroidDeck-main-e4a7e52-ludashi.apk",
-        "size": 67725167,
-        "sha256": "b445455558089a73ce7006d06a7338f82bf4782d9a636df4545d3722112dbdcd",
+        "name": "DroidDeck-main-a4eee5c-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a4eee5c/DroidDeck-main-a4eee5c-ludashi.apk",
+        "size": 67716975,
+        "sha256": "e92d219c5236409731dae9b4f1f76728b1f735dac98f05aeba94cf5c2802f977",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a4eee5c2a4334c86fe12b5c8c9ff8af9c01f52a2",
+      "title": "feat: page the session out to zram before suspending it, and zram is always on where supported",
+      "summary": "On the Thor, a session suspended overnight with Bulletstorm running was killed by lmkd at 07:28 while the screen was off. The kill record showed 275 MB free and 6.8 of 8 GB of zram still unused: the frozen game sat fully resident because nothing had moved it to swap. lmkd then worked its way up to the session's foreground service (adj 200) within 1.5 s.",
+      "publishedAt": 1792692419000
+    },
     {
       "commit": "e4a7e52f811601390ca40a98a432051c48d71c38",
       "title": "Fix nested KWin render-device selection on Android",
@@ -155,12 +161,6 @@
       "title": "Fix: Keep Android library names visible in diagnostic logs",
       "summary": "Android HIDL library names such as android.hardware.graphics.mapper@4.0.so matched the email scrubber, so dependency failures became library \"<redacted:email>\" not found. Preserve these names only in library \"...\" not found loader diagnostics, including /vendor/ and /system/ paths. Generic text remains subject to email redaction.",
       "publishedAt": 1792681864000
-    },
-    {
-      "commit": "e5e6b5eb488c1260ed7a503314bbf46cbcc15101",
-      "title": "fix: Game cores also apply to games started through \"Linux x86 (FEX)\"",
-      "summary": "Performance > Game cores reached only the Proton launchers. Games started with the \"Linux x86 (FEX)\" compatibility tool (native Linux games, both x86 under FEX and native arm64 builds, which go through the same tool) ran on every core, including the slowest cluster.",
-      "publishedAt": 1792680943000
     }
   ],
   "tests": [
