@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792670641180,
+  "generatedAt": 1792670723474,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1312",
+      "title": "fix: pause Steam Controller BLE reconnects while the session is suspended",
+      "summary": "With a paired Steam Controller that is switched off, the BLE retry loop kept calling connectGatt every ~35 s (30 s connect timeout + 5 s retry) for the whole time a session sat suspended. One overnight suspend on the Thor logged 754 attempts, each one waking the Bluetooth stack.",
+      "commit": "e2a4566842afd641e5deb430d5269b358d059feb",
+      "pr": 1312,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792670650000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1312",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1312-e2a4566.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1312/DroidDeck-PR.1312-e2a4566.apk",
+          "size": 67786528,
+          "sha256": "13572016f0ccbb85447d3f1f435a9652009aab9d7500e9065d9f2e19cb96cb36",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1312-e2a4566-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1312/DroidDeck-PR.1312-e2a4566-pubg.apk",
+          "size": 67786528,
+          "sha256": "2d4c077865e7cdb92ef2cdf5971968ad1ff877ef6ec43022cb909acc1aa4cf67",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1312-e2a4566-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1312/DroidDeck-PR.1312-e2a4566-antutu.apk",
+          "size": 67786528,
+          "sha256": "a0e8a92ba748925c8a10513d56b294c657b9413f1ccdfa8e2b9a5e8c1b538230",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1312-e2a4566-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1312/DroidDeck-PR.1312-e2a4566-ludashi.apk",
+          "size": 67786528,
+          "sha256": "9c200dffacd52ca2824f2887e22e8e9939d665c41a42ff5f9469978864868578",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1311",
       "title": "feat: make desktop mode easy to uninstall safely",
