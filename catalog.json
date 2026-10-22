@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792688958287,
+  "generatedAt": 1792691330502,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -207,104 +207,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1322/DroidDeck-PR.1322-17e4788-ludashi.apk",
           "size": 67729263,
           "sha256": "5753a2f24f8f3c6cb34b08c8774052b62ed5214c9cd5f6f6a490ccbe12924d52",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1327",
-      "title": "fix: latch kgsl GPU busy windows so MangoHud's GPU load stops reading 0%",
-      "summary": "Fixes #765.",
-      "commit": "3501d13d290531205ebb255081066f2fe3ea2b82",
-      "pr": 1327,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792688730000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1327",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1327-3501d13.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1327/DroidDeck-PR.1327-3501d13.apk",
-          "size": 67725167,
-          "sha256": "ce85e9dfaf487214f778ca97e75153e2d2ec91f44a98b483768b4d60aa556e6d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1327-3501d13-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1327/DroidDeck-PR.1327-3501d13-pubg.apk",
-          "size": 67725167,
-          "sha256": "62e8c93d23d988250e5c223e0b0b96a26c5e485af22e6270edb8c831f82a3652",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1327-3501d13-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1327/DroidDeck-PR.1327-3501d13-antutu.apk",
-          "size": 67725167,
-          "sha256": "e13e000d2f3df229806b9014823ec1411aa4b225261404fddea3ef05c1be4833",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1327-3501d13-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1327/DroidDeck-PR.1327-3501d13-ludashi.apk",
-          "size": 67725167,
-          "sha256": "c52fa934e5777a841f1eddbcb02edd786a88b730bab62266fa0c29ebec684bb7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1317",
-      "title": "feat: page the session out to zram before suspending it, and zram is always on where supported",
-      "summary": "On the Thor, a session suspended overnight with Bulletstorm running was killed by lmkd at 07:28 while the screen was off. The kill record showed 275 MB free and 6.8 of 8 GB of zram still unused: the frozen game sat fully resident because nothing had moved it to swap. lmkd then worked its way up to the session's foreground service (adj 200) within 1.5 s.",
-      "commit": "e8a8de1b226d76f2c16229c1a4e3bd411c6fa5a3",
-      "pr": 1317,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792688558000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1317",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1317-e8a8de1.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-e8a8de1.apk",
-          "size": 67712879,
-          "sha256": "89219534165a26aa2d763b94ed07fa46dabd95964e9733fe6fdad994b0a05d3a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1317-e8a8de1-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-e8a8de1-pubg.apk",
-          "size": 67712879,
-          "sha256": "a8d6d90c00a67a597be6fad9fe221265872279a62f646de64e693660705a11a8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1317-e8a8de1-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-e8a8de1-antutu.apk",
-          "size": 67712879,
-          "sha256": "c68a0f3066382c999d324e44680a9d4b9cd86e1225be90f9e27a667a6b0a228a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1317-e8a8de1-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-e8a8de1-ludashi.apk",
-          "size": 67712879,
-          "sha256": "dbf5af846b6c0a7ff49dfd42259614db5a261c77ff8c9ab4c55c0614a758d29f",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
