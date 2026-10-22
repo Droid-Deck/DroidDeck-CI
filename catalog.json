@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792688457439,
+  "generatedAt": 1792688681642,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1317",
+      "title": "feat: page the session out to zram before suspending it, and zram is always on where supported",
+      "summary": "On the Thor, a session suspended overnight with Bulletstorm running was killed by lmkd at 07:28 while the screen was off. The kill record showed 275 MB free and 6.8 of 8 GB of zram still unused: the frozen game sat fully resident because nothing had moved it to swap. lmkd then worked its way up to the session's foreground service (adj 200) within 1.5 s.",
+      "commit": "e8a8de1b226d76f2c16229c1a4e3bd411c6fa5a3",
+      "pr": 1317,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792688558000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1317",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1317-e8a8de1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-e8a8de1.apk",
+          "size": 67712879,
+          "sha256": "89219534165a26aa2d763b94ed07fa46dabd95964e9733fe6fdad994b0a05d3a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1317-e8a8de1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-e8a8de1-pubg.apk",
+          "size": 67712879,
+          "sha256": "a8d6d90c00a67a597be6fad9fe221265872279a62f646de64e693660705a11a8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1317-e8a8de1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-e8a8de1-antutu.apk",
+          "size": 67712879,
+          "sha256": "c68a0f3066382c999d324e44680a9d4b9cd86e1225be90f9e27a667a6b0a228a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1317-e8a8de1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-e8a8de1-ludashi.apk",
+          "size": 67712879,
+          "sha256": "dbf5af846b6c0a7ff49dfd42259614db5a261c77ff8c9ab4c55c0614a758d29f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1322",
       "title": "fix(xbox): show why Microsoft sign-in fails, and the gamertag instead of the email",
       "summary": "Refs #1300",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1322/DroidDeck-PR.1322-c52e420-ludashi.apk",
           "size": 67848047,
           "sha256": "0e6a705c3115f9ecbfe3f00850de2aa95a0fc08be63622b8c0eb49cc2a2d225d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1317",
-      "title": "feat: page the session out to zram before suspending it, and zram is always on where supported",
-      "summary": "On the Thor, a session suspended overnight with Bulletstorm running was killed by lmkd at 07:28 while the screen was off. The kill record showed 275 MB free and 6.8 of 8 GB of zram still unused: the frozen game sat fully resident because nothing had moved it to swap. lmkd then worked its way up to the session's foreground service (adj 200) within 1.5 s.",
-      "commit": "84c290920fcb7b5f70bdebefab39b947fff7dee2",
-      "pr": 1317,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792682482000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1317",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1317-84c2909.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-84c2909.apk",
-          "size": 67831663,
-          "sha256": "15d9e32526cc7c857343fd42eaff6b3a0b9bd0efd6ad7a2162b1e017fdd8e230",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1317-84c2909-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-84c2909-pubg.apk",
-          "size": 67831663,
-          "sha256": "7487222ef7beb4203d50145532cead687bf4799a11d78f39cf6637ad6666cf2c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1317-84c2909-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-84c2909-antutu.apk",
-          "size": 67831663,
-          "sha256": "85291289155a56399f1ccc0731889e0b32f74e4158e4dc0a8890cac000159d34",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1317-84c2909-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1317/DroidDeck-PR.1317-84c2909-ludashi.apk",
-          "size": 67831663,
-          "sha256": "8f28bee36b4b7072ebe323c25f2ead193bbd8b014980eef071a2a4e0b9c47480",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
