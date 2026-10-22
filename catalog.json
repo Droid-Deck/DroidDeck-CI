@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792626971085,
+  "generatedAt": 1792627448981,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8b40bb5",
-    "title": "fix: Chromium browsers start on the desktop",
-    "summary": "Chromium-based browsers would not run on the desktop: Helium, Chrome, Chromium and ungoogled-chromium did not start, and Brave opened with every tab crashed. Adding --no-sandbox by hand did not help. The report's log shows Helium (arm64 AppImage) ending with No usable sandbox! and then a Trace/breakpoint trap.",
-    "commit": "8b40bb5c880e8f63fe2d15dab12f96aec4945ea4",
+    "tag": "main-829a39a",
+    "title": "feat: let the built-in controller be turned off",
+    "summary": "The built-in touch controller always shows up in the guest as an Xbox 360 controller, and it takes player 1. A controller connected over Bluetooth or USB lands in player 2, which breaks games that only look at the first pad.",
+    "commit": "829a39a9ca8cd6181179e9afe59aa486f0c23325",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792622252000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8b40bb5",
+    "publishedAt": 1792627382000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-829a39a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8b40bb5.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b40bb5/DroidDeck-main-8b40bb5.apk",
+        "name": "DroidDeck-main-829a39a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-829a39a/DroidDeck-main-829a39a.apk",
         "size": 67749664,
-        "sha256": "b73127ca3ae5fff374fd5ca9ea3fe770582353b4fe2f4a8627d0bc3dbcaac164",
+        "sha256": "d633847b3d10d2e5bd1859e687522ef46f01c917182c34c69d4ea816d61c8ce6",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8b40bb5-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b40bb5/DroidDeck-main-8b40bb5-pubg.apk",
+        "name": "DroidDeck-main-829a39a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-829a39a/DroidDeck-main-829a39a-pubg.apk",
         "size": 67749664,
-        "sha256": "3eb977c8650a3284ec3f6de5918b6e2a37310c937f5a711743a9c7683c843386",
+        "sha256": "647e68ea60d8e15ba5d52d4cd48bf8fb928ec111d6edf21c164df200e60fd9c0",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8b40bb5-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b40bb5/DroidDeck-main-8b40bb5-antutu.apk",
+        "name": "DroidDeck-main-829a39a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-829a39a/DroidDeck-main-829a39a-antutu.apk",
         "size": 67749664,
-        "sha256": "193a4968d3c9ede298f68981b92bf7e79574f03a2296980c2d15b0e524af38c4",
+        "sha256": "8afd6730d25b43588bec3fd86dd7922121e0bf1cd5201c39dabe68f86c16a6a5",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8b40bb5-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8b40bb5/DroidDeck-main-8b40bb5-ludashi.apk",
+        "name": "DroidDeck-main-829a39a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-829a39a/DroidDeck-main-829a39a-ludashi.apk",
         "size": 67749664,
-        "sha256": "a6fc043b280837e79f1aa15d8764423afd130b1cf9e35923b7ac71ab8fed7b62",
+        "sha256": "23f66ad97e33fd155f34fcd588121289aa04106512fc03491bd87cc329679bdd",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "829a39a9ca8cd6181179e9afe59aa486f0c23325",
+      "title": "feat: let the built-in controller be turned off",
+      "summary": "The built-in touch controller always shows up in the guest as an Xbox 360 controller, and it takes player 1. A controller connected over Bluetooth or USB lands in player 2, which breaks games that only look at the first pad.",
+      "publishedAt": 1792627382000
+    },
     {
       "commit": "8b40bb5c880e8f63fe2d15dab12f96aec4945ea4",
       "title": "fix: Chromium browsers start on the desktop",
@@ -155,15 +161,58 @@
       "title": "Add support for Java 17 via mise",
       "summary": "Right now build is hard coded to use openjdk via homebrew. If the user installed Java through some other cli, like mise, build will fail.",
       "publishedAt": 1792608217000
-    },
-    {
-      "commit": "d51f8ed4ffb5336217512bc62e73e39cfdd0d12c",
-      "title": "feat: Rokid Max and Air glasses with 3DoF, SBS modes, 120 Hz and brightness",
-      "summary": "Adds Rokid glasses as a fourth integrated glasses type next to VITURE, RayNeo and XREAL.",
-      "publishedAt": 1792608070000
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1283",
+      "title": "perf: FEX's in-root path lookups go through the fast path instead of proot",
+      "summary": "FEX opens guest files with openat2(RESOLVEINROOT) against its rootfs. Android blocks openat2, so robust.c resolves those lookups itself, one path component at a time. Every fstatat, readlinkat and openat in that walk was a raw syscall, so each one stopped in proot.",
+      "commit": "946bed9e41cbf65057b3fcc1ef1e94b32075e88e",
+      "pr": 1283,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792627381000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1283",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1283-946bed9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1283/DroidDeck-PR.1283-946bed9.apk",
+          "size": 67749664,
+          "sha256": "d221306e1acb8ef644b772a39022e506872d772caef86f221490dbaaf6a1f9e0",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1283-946bed9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1283/DroidDeck-PR.1283-946bed9-pubg.apk",
+          "size": 67749664,
+          "sha256": "a30cb73309287aebcb4cacdc44f80c987db3b488c7b2d35af76f8693c09315e2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1283-946bed9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1283/DroidDeck-PR.1283-946bed9-antutu.apk",
+          "size": 67749664,
+          "sha256": "60116b03a686a99dd8abf22e5d25197df1e0b681323bf889f9b389e3c1b70cc7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1283-946bed9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1283/DroidDeck-PR.1283-946bed9-ludashi.apk",
+          "size": 67749664,
+          "sha256": "a2859957c8a0259cae5c9a7d4dad0af9dc8e6790fb88d8423d1c7912c7c9f063",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1284",
       "title": "feat: DroidDeck's linux-nightly components, with a Stable/Nightly switch",
