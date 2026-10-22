@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792691330502,
+  "generatedAt": 1792691538622,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-701e70b",
-    "title": "fix: the emulated Steam Controller reports the firmware build Steam ships",
-    "summary": "The emulated Steam Controller (the app's pad as Triton, 28de:1302) answered Steam's attribute query with a hardcoded firmware timestamp, 0x6AC686B3. The Steam client on the Thor ships TRITONFWTS:6ACFF323 in bin/hardwareupdater/hardwareupdater.cfg, so the pad looked out of date.",
-    "commit": "701e70bd3edf2fef473dfe3f880000d4fb16b4c5",
+    "tag": "main-e4a7e52",
+    "title": "Fix nested KWin render-device selection on Android",
+    "summary": "KWin 6.8 removes QPainter, and Android host dmabuf feedback cannot identify the KGSL render node as a DRM device. The nested backend now accepts one explicitly selected, successfully opened render node when the normal host-device lookup fails. The new package marker selects O2/Zink in the desktop launcher before Plasma starts, including startup paths that bypass the PATH wrapper. Older packages re",
+    "commit": "e4a7e52f811601390ca40a98a432051c48d71c38",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792688330000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-701e70b",
+    "publishedAt": 1792691470000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e4a7e52",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-701e70b.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-701e70b/DroidDeck-main-701e70b.apk",
+        "name": "DroidDeck-main-e4a7e52.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a7e52/DroidDeck-main-e4a7e52.apk",
         "size": 67725167,
-        "sha256": "a5463f56dd68c83438d4833191d85f9589d89b8ef9786baf3b24e45f8041803b",
+        "sha256": "b6f2b060fe6406ef73c7e7e55a18f26fec77b668f8ee8f8563d80e283f96262e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-701e70b-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-701e70b/DroidDeck-main-701e70b-pubg.apk",
+        "name": "DroidDeck-main-e4a7e52-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a7e52/DroidDeck-main-e4a7e52-pubg.apk",
         "size": 67725167,
-        "sha256": "a845e3a0cc398d757fb0eb98ba408b7f86e0f4a0e2bc8c3ef763a6e0af51bb4c",
+        "sha256": "cc79a1e755bcb7532a0102f3c5c120c844390b5d06aefcbe4d4f28abb330bb44",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-701e70b-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-701e70b/DroidDeck-main-701e70b-antutu.apk",
+        "name": "DroidDeck-main-e4a7e52-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a7e52/DroidDeck-main-e4a7e52-antutu.apk",
         "size": 67725167,
-        "sha256": "3eeb36b0219d561d4bce0b1c9aca131f7232b7b73486fc0a9cb8476f198566b0",
+        "sha256": "4c31a3d4c2763996d9715afa22f9ddedf4bac551631e7b8244564de6362337f5",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-701e70b-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-701e70b/DroidDeck-main-701e70b-ludashi.apk",
+        "name": "DroidDeck-main-e4a7e52-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a7e52/DroidDeck-main-e4a7e52-ludashi.apk",
         "size": 67725167,
-        "sha256": "1036cb92cb8326537989b5b07beacd26c4493038fbe255ed999b2c5a4ad44d36",
+        "sha256": "b445455558089a73ce7006d06a7338f82bf4782d9a636df4545d3722112dbdcd",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e4a7e52f811601390ca40a98a432051c48d71c38",
+      "title": "Fix nested KWin render-device selection on Android",
+      "summary": "KWin 6.8 removes QPainter, and Android host dmabuf feedback cannot identify the KGSL render node as a DRM device. The nested backend now accepts one explicitly selected, successfully opened render node when the normal host-device lookup fails. The new package marker selects O2/Zink in the desktop launcher before Plasma starts, including startup paths that bypass the PATH wrapper. Older packages re",
+      "publishedAt": 1792691470000
+    },
     {
       "commit": "701e70bd3edf2fef473dfe3f880000d4fb16b4c5",
       "title": "fix: the emulated Steam Controller reports the firmware build Steam ships",
@@ -155,12 +161,6 @@
       "title": "fix: Game cores also apply to games started through \"Linux x86 (FEX)\"",
       "summary": "Performance > Game cores reached only the Proton launchers. Games started with the \"Linux x86 (FEX)\" compatibility tool (native Linux games, both x86 under FEX and native arm64 builds, which go through the same tool) ran on every core, including the slowest cluster.",
       "publishedAt": 1792680943000
-    },
-    {
-      "commit": "669d9da059394d3953bd33393afcad33e360b912",
-      "title": "fix(ui): stop touch-blocking dialog and drawer containers from merging descendant semantics",
-      "summary": "\u2022 Finding #148: Add Modifier.blockTouches() and Modifier.tapOutside(onTap) helpers in SettingsWidgets.kt using pointerInput { detectTapGestures(...) } so touch-blocking dialog/drawer surfaces and wrapping scrims consume pointer taps without adding Modifier.clickable semantics merge boundaries.\n\u2022 Replace .clickable(...) {} and wrapping .clickable(..., onClick = close) in AppDialog (AddAppDialog.kt)",
-      "publishedAt": 1792676953000
     }
   ],
   "tests": [
