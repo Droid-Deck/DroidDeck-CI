@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792636499144,
+  "generatedAt": 1792637637263,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c0703cb",
-    "title": "Default session orientation to landscape",
-    "summary": "Default the new session orientation preference and its invalid-value fallback to landscape while preserving explicit saved choices.",
-    "commit": "c0703cb809e00841af4cd9259ac2150c23e67ffe",
+    "tag": "main-af37432",
+    "title": "perf: FEX's file lookups and opens go through the fast path instead of proot",
+    "summary": "FEX reaches host files in two ways, and both stopped in proot on every call:",
+    "commit": "af3743225139b51e7e86a8aa5d2fd84d858019e7",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792633341000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c0703cb",
+    "publishedAt": 1792637557000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-af37432",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c0703cb.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c0703cb/DroidDeck-main-c0703cb.apk",
+        "name": "DroidDeck-main-af37432.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af37432/DroidDeck-main-af37432.apk",
         "size": 67749664,
-        "sha256": "6d30951496f3a6f8c53ace4768987724fccca4ae10a2d9ce6b86691067a71b48",
+        "sha256": "180433f43bf8cf4562e57c89a42b766336efb9b529ce44aa56794c8330a5b564",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c0703cb-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c0703cb/DroidDeck-main-c0703cb-pubg.apk",
+        "name": "DroidDeck-main-af37432-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af37432/DroidDeck-main-af37432-pubg.apk",
         "size": 67749664,
-        "sha256": "3e7e7d8b702791adf3bfc4ddcaaffa1221b27697de64aa2e2f5024ab7f726f9b",
+        "sha256": "0c106267fd708543373f07b9144dd18649e81817dde4a91b590597d5d1ce5525",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c0703cb-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c0703cb/DroidDeck-main-c0703cb-antutu.apk",
+        "name": "DroidDeck-main-af37432-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af37432/DroidDeck-main-af37432-antutu.apk",
         "size": 67749664,
-        "sha256": "1087bb9ed01e2b36daf6fb85bb12d362be7eed939a6ca24d7c330b036ec14a36",
+        "sha256": "c10edc5df6269c63264b7cca422bb8d007f3bc94a0f813a4913a58ce0cca55ef",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c0703cb-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c0703cb/DroidDeck-main-c0703cb-ludashi.apk",
+        "name": "DroidDeck-main-af37432-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af37432/DroidDeck-main-af37432-ludashi.apk",
         "size": 67749664,
-        "sha256": "29ba47cb1e4747aed0f4c526b010ed3590603622c3458f98f9d0fe2833062e1b",
+        "sha256": "e2536288bbed8e9c8a628afc1b9cee391f4beef4778a8f139b8ecb920b797b16",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "af3743225139b51e7e86a8aa5d2fd84d858019e7",
+      "title": "perf: FEX's file lookups and opens go through the fast path instead of proot",
+      "summary": "FEX reaches host files in two ways, and both stopped in proot on every call:",
+      "publishedAt": 1792637557000
+    },
     {
       "commit": "c0703cb809e00841af4cd9259ac2150c23e67ffe",
       "title": "Default session orientation to landscape",
@@ -155,12 +161,6 @@
       "title": "perf: SysV message queues stay mapped instead of reopening per call",
       "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
       "publishedAt": 1792618111000
-    },
-    {
-      "commit": "cdc0866cfe93603b25ecc203aa0cc6a54069b698",
-      "title": "perf: games skip Steam's install-script evaluator once it has finished",
-      "summary": "On every launch, Steam runs a game's install scripts (iscriptevaluator.exe) through Proton before the game starts. That is a whole Wine start, and it only confirms that the redistributables are already installed: DroidDeck marks those as run beforehand.",
-      "publishedAt": 1792617315000
     }
   ],
   "tests": [
