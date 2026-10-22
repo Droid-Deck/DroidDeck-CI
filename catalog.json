@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792680629733,
+  "generatedAt": 1792681242986,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-669d9da",
-    "title": "fix(ui): stop touch-blocking dialog and drawer containers from merging descendant semantics",
-    "summary": "\u2022 Finding #148: Add Modifier.blockTouches() and Modifier.tapOutside(onTap) helpers in SettingsWidgets.kt using pointerInput { detectTapGestures(...) } so touch-blocking dialog/drawer surfaces and wrapping scrims consume pointer taps without adding Modifier.clickable semantics merge boundaries.\n\u2022 Replace .clickable(...) {} and wrapping .clickable(..., onClick = close) in AppDialog (AddAppDialog.kt), AchievementsSheet (StoreAchievementsUi.kt), SessionLoading / SessionPausedOverlay (SessionLoading.kt), and the drawer sheet in SessionOverlay.kt.\n\u2022 Label the sibling scrim in SessionOverlay.kt with R.string.commonclose and\nocusProperties { canFocus = false }.",
-    "commit": "669d9da059394d3953bd33393afcad33e360b912",
+    "tag": "main-e5e6b5e",
+    "title": "fix: Game cores also apply to games started through \"Linux x86 (FEX)\"",
+    "summary": "Performance > Game cores reached only the Proton launchers. Games started with the \"Linux x86 (FEX)\" compatibility tool (native Linux games, both x86 under FEX and native arm64 builds, which go through the same tool) ran on every core, including the slowest cluster.",
+    "commit": "e5e6b5eb488c1260ed7a503314bbf46cbcc15101",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792676953000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-669d9da",
+    "publishedAt": 1792680943000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e5e6b5e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-669d9da.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-669d9da/DroidDeck-main-669d9da.apk",
+        "name": "DroidDeck-main-e5e6b5e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e5e6b5e/DroidDeck-main-e5e6b5e.apk",
         "size": 67786528,
-        "sha256": "67766f2329725b8f2d906f76aac490a1fef619c6dca4e37d1ac299b04ce57432",
+        "sha256": "f3d16cc3e9d216c804079cdb439c225517fa9f549658d927c4508a94bc120e6a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-669d9da-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-669d9da/DroidDeck-main-669d9da-pubg.apk",
+        "name": "DroidDeck-main-e5e6b5e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e5e6b5e/DroidDeck-main-e5e6b5e-pubg.apk",
         "size": 67786528,
-        "sha256": "d7dc84fc3daad8238e391d4919740b8ef5fed289dfe52eece19c74ceb8b52b8b",
+        "sha256": "1755c5d63331fd66ab39c82b0ee64967951fd6e4b57724cdcfb3cdae2ecae33f",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-669d9da-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-669d9da/DroidDeck-main-669d9da-antutu.apk",
+        "name": "DroidDeck-main-e5e6b5e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e5e6b5e/DroidDeck-main-e5e6b5e-antutu.apk",
         "size": 67786528,
-        "sha256": "ba2ead1ef58277fde816b0f0cbe5e8d2e48a50189040b15710a07249a1fe7ab1",
+        "sha256": "e6ed1d08c47054a8936d1bb600a6acf91fae7407a0e61dfbadfe2a1204f75560",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-669d9da-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-669d9da/DroidDeck-main-669d9da-ludashi.apk",
+        "name": "DroidDeck-main-e5e6b5e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e5e6b5e/DroidDeck-main-e5e6b5e-ludashi.apk",
         "size": 67786528,
-        "sha256": "9cc8c99fe360c1e3ac10ee02e5156ca33d2ecbe08ed572cd09365fb0fa5a55cd",
+        "sha256": "dd3124c23b3490fbd3fc690064f45ff8c138b7e583f7f71fe90d08108223e16d",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e5e6b5eb488c1260ed7a503314bbf46cbcc15101",
+      "title": "fix: Game cores also apply to games started through \"Linux x86 (FEX)\"",
+      "summary": "Performance > Game cores reached only the Proton launchers. Games started with the \"Linux x86 (FEX)\" compatibility tool (native Linux games, both x86 under FEX and native arm64 builds, which go through the same tool) ran on every core, including the slowest cluster.",
+      "publishedAt": 1792680943000
+    },
     {
       "commit": "669d9da059394d3953bd33393afcad33e360b912",
       "title": "fix(ui): stop touch-blocking dialog and drawer containers from merging descendant semantics",
@@ -155,12 +161,6 @@
       "title": "fix: Steam Controller (Triton) output/feature reports are no longer overwritten unread",
       "summary": "\ufeffBack-to-back output and feature reports from games or Steam to a BLE Steam Controller (haptics, settings writes) are no longer silently dropped.",
       "publishedAt": 1792642216000
-    },
-    {
-      "commit": "6b2ca398e22f82c0816047c16491bcc5bfe48b87",
-      "title": "fix: a full disk no longer crashes the app during cover art fetches",
-      "summary": "\ufeffWith storage full, opening or returning to DroidDeck no longer crashes it while it looks for cover art.",
-      "publishedAt": 1792642050000
     }
   ],
   "tests": [
