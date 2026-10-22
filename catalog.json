@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792696659596,
+  "generatedAt": 1792697181452,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1341",
+      "title": "fix: make the default launcher entry a real activity so Red Magic Game Space can add the app",
+      "summary": "Red Magic Game Space no longer lets users add DroidDeck on preview builds; 0.5.0 stable works. Since #1104 (light/dark launcher icon) the only MAIN/LAUNCHER entries are activity-aliases of MainActivity, and Game Space appears to reject apps whose launch entry is an alias.",
+      "commit": "fac51b3400618ba0aa9b0f0828ae0149b59b72f6",
+      "pr": 1341,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792697116000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1341",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1341-fac51b3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1341/DroidDeck-PR.1341-fac51b3.apk",
+          "size": 67721071,
+          "sha256": "f188f57e5f3629e9cf5ef08580a177f951087848461154dcf7ac3cf1fa833e57",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1341-fac51b3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1341/DroidDeck-PR.1341-fac51b3-pubg.apk",
+          "size": 67721071,
+          "sha256": "e0cc83a6ff98a79a43a9953b6961c978d9ff31127d237d18e38c3203a8f7635e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1341-fac51b3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1341/DroidDeck-PR.1341-fac51b3-antutu.apk",
+          "size": 67721071,
+          "sha256": "0327e1dfbd70faafe2204a91e91908d319b1d52570430ce87a0161f0195024a5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1341-fac51b3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1341/DroidDeck-PR.1341-fac51b3-ludashi.apk",
+          "size": 67721071,
+          "sha256": "ad0cad5bce344a8e80e8d7c68fc0b20fad74735fe721dff9d6a3866bb84aa4ee",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1338",
       "title": "fix: Steam starts again on phones where PipeWire took every client for a sandboxed app",
