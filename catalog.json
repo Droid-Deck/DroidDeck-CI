@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792682280819,
+  "generatedAt": 1792682353233,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-907c79d",
-    "title": "a11y: give the button-like clickables a Button role for screen readers",
-    "summary": "\ufeffButtons, tiles, list rows and rail items across the launcher now announce themselves as buttons to a screen reader.",
-    "commit": "907c79d13bbaeec15c523606c771b215227c7833",
+    "tag": "main-b612d5d",
+    "title": "perf: session log step times carry milliseconds",
+    "summary": "\ufeffSession logs now time each setup step to the millisecond (== STEP 21:18:44.312 \u00d4\u00c7\u011e), so the work done before the Steam client starts can be measured step by step.",
+    "commit": "b612d5dbf404d23f5f2cb35a81ecfbc761053766",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792682147000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-907c79d",
+    "publishedAt": 1792682272000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b612d5d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-907c79d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-907c79d/DroidDeck-main-907c79d.apk",
+        "name": "DroidDeck-main-b612d5d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b612d5d/DroidDeck-main-b612d5d.apk",
         "size": 67843951,
-        "sha256": "363330ebd54f9279f070d3956e1ebe8218f5389ea0135b9afd693b7bf2486302",
+        "sha256": "e8ce4a6358b9270e5289e6e8ef66429aa37da54539a1c298c66b74eee574cc0e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-907c79d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-907c79d/DroidDeck-main-907c79d-pubg.apk",
+        "name": "DroidDeck-main-b612d5d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b612d5d/DroidDeck-main-b612d5d-pubg.apk",
         "size": 67843951,
-        "sha256": "9ec520408253dbdc1fd1985c2ac08b977e3b34982cb0bd958b590f435321750f",
+        "sha256": "4b076b03bd650ce3d2a4794e9a6275ae3a6838342037c3a4aa2aa01f994ae407",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-907c79d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-907c79d/DroidDeck-main-907c79d-antutu.apk",
+        "name": "DroidDeck-main-b612d5d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b612d5d/DroidDeck-main-b612d5d-antutu.apk",
         "size": 67843951,
-        "sha256": "017864c04fe9d799f9c88979b78527e15814f9552934c72e1b19b2547d9c54fc",
+        "sha256": "913c4e3204ba2e30c90dfcfc16f6212a857b1f8b5f032a92b9d04bf19ad10300",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-907c79d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-907c79d/DroidDeck-main-907c79d-ludashi.apk",
+        "name": "DroidDeck-main-b612d5d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b612d5d/DroidDeck-main-b612d5d-ludashi.apk",
         "size": 67843951,
-        "sha256": "8f118aa051ebb00448d51a957010186dd565b8f88afed7f9b0a09c945a3b26a6",
+        "sha256": "2519e01a78e42e8d6e70e8f232f6f95c0a5a4c84c38207cd431d58b5732ba5c3",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b612d5dbf404d23f5f2cb35a81ecfbc761053766",
+      "title": "perf: session log step times carry milliseconds",
+      "summary": "\ufeffSession logs now time each setup step to the millisecond (== STEP 21:18:44.312 \u00d4\u00c7\u011e), so the work done before the Steam client starts can be measured step by step.",
+      "publishedAt": 1792682272000
+    },
     {
       "commit": "907c79d13bbaeec15c523606c771b215227c7833",
       "title": "a11y: give the button-like clickables a Button role for screen readers",
@@ -155,12 +161,6 @@
       "title": "fix: pause Steam Controller BLE reconnects while the session is suspended",
       "summary": "With a paired Steam Controller that is switched off, the BLE retry loop kept calling connectGatt every ~35 s (30 s connect timeout + 5 s retry) for the whole time a session sat suspended. One overnight suspend on the Thor logged 754 attempts, each one waking the Bluetooth stack.",
       "publishedAt": 1792671614000
-    },
-    {
-      "commit": "923ffde71574130e3871a2c8424c9e080a473217",
-      "title": "feat: DroidDeck's linux-nightly components, with a Stable/Nightly switch",
-      "summary": "The component manager also offers the nightly DXVK, VKD3D-Proton and FEX builds from the linux-nightly release of Droid-Deck/DroidDeck-Components (built hourly from upstream for glibc Protons, Droid-Deck/DroidDeck-Components#7).",
-      "publishedAt": 1792658269000
     }
   ],
   "tests": [
