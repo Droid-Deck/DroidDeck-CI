@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792697569165,
+  "generatedAt": 1792698766617,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-006db14",
-    "title": "perf: SD card library files resolve through the fast path instead of proot",
-    "summary": "Games on an SD card library (or any library bound under several guest names) resolve their files through the proot fast path again instead of falling back to proot on every lookup.",
-    "commit": "006db1456139c83ef7592139d28eab888b48cd20",
+    "tag": "main-9a4a611",
+    "title": "fix: Steam starts again on phones where PipeWire took every client for a sandboxed app",
+    "summary": "On some phones a Steam session stays on a black screen and Steam never starts. Seen on a nubia NX809J (SM8850, Android 16) on the current main preview. The session log stops at:",
+    "commit": "9a4a611d38b0ed6b7caf44b8406f6baccc9e0878",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792697514000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-006db14",
+    "publishedAt": 1792698696000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9a4a611",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-006db14.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-006db14/DroidDeck-main-006db14.apk",
+        "name": "DroidDeck-main-9a4a611.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9a4a611/DroidDeck-main-9a4a611.apk",
         "size": 67721071,
-        "sha256": "299d7be4478f1c7d928aecf7ef0e312db519cb4ba4a3dd75db6bf907be7cd7fb",
+        "sha256": "006d54acea1defb3fc3126e39219a8bc2c83443a33a544590ceb9e12e3f7d569",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-006db14-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-006db14/DroidDeck-main-006db14-pubg.apk",
+        "name": "DroidDeck-main-9a4a611-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9a4a611/DroidDeck-main-9a4a611-pubg.apk",
         "size": 67721071,
-        "sha256": "dffbc635b2a13a370c57d0b8e3d0239810c5af5e8ba70a6a8d5ba349f2ab20e1",
+        "sha256": "86e94c0af4e65caec28ae3dba1d9c97be6da56b9181ffdd8af58d3c0e3901f58",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-006db14-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-006db14/DroidDeck-main-006db14-antutu.apk",
+        "name": "DroidDeck-main-9a4a611-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9a4a611/DroidDeck-main-9a4a611-antutu.apk",
         "size": 67721071,
-        "sha256": "aa50955fe41b0f9852c8cc12dac50236e14f3c5759b5f72cc42dbd2b890b563d",
+        "sha256": "189ecf9741952192786ef0b9e36a5c9956d2e514e120a4a7f5baf63a5be16dde",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-006db14-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-006db14/DroidDeck-main-006db14-ludashi.apk",
+        "name": "DroidDeck-main-9a4a611-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9a4a611/DroidDeck-main-9a4a611-ludashi.apk",
         "size": 67721071,
-        "sha256": "7658bc0b6e86fc3bdb5bafe0b1556dbd3a5605eb264ed4bc0abe47f67270e40b",
+        "sha256": "7ac5b7df60735351fa484959d670eb3b2e87b189d2897cb346312c0115143748",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9a4a611d38b0ed6b7caf44b8406f6baccc9e0878",
+      "title": "fix: Steam starts again on phones where PipeWire took every client for a sandboxed app",
+      "summary": "On some phones a Steam session stays on a black screen and Steam never starts. Seen on a nubia NX809J (SM8850, Android 16) on the current main preview. The session log stops at:",
+      "publishedAt": 1792698696000
+    },
     {
       "commit": "006db1456139c83ef7592139d28eab888b48cd20",
       "title": "perf: SD card library files resolve through the fast path instead of proot",
@@ -155,12 +161,6 @@
       "title": "feat: the unfolded controls can stay while a controller is connected",
       "summary": "\ufeffOn foldable phones, the Steam Deck controls on the unfolded screen (trackpads and back grips) can now stay visible while a controller is connected. Turn on \"Keep them with a controller\" under \"Controls on the unfolded screen\" if you hold your phone in a telescopic controller and still want the on-screen trackpads and back buttons.",
       "publishedAt": 1792682555000
-    },
-    {
-      "commit": "b612d5dbf404d23f5f2cb35a81ecfbc761053766",
-      "title": "perf: session log step times carry milliseconds",
-      "summary": "\ufeffSession logs now time each setup step to the millisecond (== STEP 21:18:44.312 \u00d4\u00c7\u011e), so the work done before the Steam client starts can be measured step by step.",
-      "publishedAt": 1792682272000
     }
   ],
   "tests": [
