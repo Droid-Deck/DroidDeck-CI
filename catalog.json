@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792642285672,
+  "generatedAt": 1792642688132,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a863ca7",
-    "title": "fix: Steam Controller (Triton) output/feature reports are no longer overwritten unread",
-    "summary": "\ufeffBack-to-back output and feature reports from games or Steam to a BLE Steam Controller (haptics, settings writes) are no longer silently dropped.",
-    "commit": "a863ca7b310b7a820c02a7bc0fbf6021bd9db54c",
+    "tag": "main-9f5e258",
+    "title": "fix: auto-driver trial rolls back when the display driver crashes at startup",
+    "summary": "\ufeffA trial display driver that crashes DroidDeck while the compositor starts now triggers the automatic rollback, like one that fails later.",
+    "commit": "9f5e258bd692770f7b00db218ff53beed832c1b9",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792642216000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a863ca7",
+    "publishedAt": 1792642645000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9f5e258",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a863ca7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a863ca7/DroidDeck-main-a863ca7.apk",
+        "name": "DroidDeck-main-9f5e258.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f5e258/DroidDeck-main-9f5e258.apk",
         "size": 67761952,
-        "sha256": "58a741bd5cca938af1e528b8cce8661660bb2cee1abb5e7a64cc0a7f40c86cdf",
+        "sha256": "fc5c0801993806490ecad058e60c84790b215a2c067ca8899b85bbe25724276d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a863ca7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a863ca7/DroidDeck-main-a863ca7-pubg.apk",
+        "name": "DroidDeck-main-9f5e258-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f5e258/DroidDeck-main-9f5e258-pubg.apk",
         "size": 67761952,
-        "sha256": "f9ccfe70e08c1da31aca967b4fc7d9569d0bd3b73d2d4f36f7e087ebe3d5709a",
+        "sha256": "1947fe5c029b5b749de03c4c9d10a8a203102a10d362921452876abecf1d933b",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a863ca7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a863ca7/DroidDeck-main-a863ca7-antutu.apk",
+        "name": "DroidDeck-main-9f5e258-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f5e258/DroidDeck-main-9f5e258-antutu.apk",
         "size": 67761952,
-        "sha256": "b3e6612504820ded5515c9f4db11f3066ae8f4096a8b4c88abd637b483891db2",
+        "sha256": "45ab9daa5c9495a25fbe443133837b8e37df85264f98a7689fb57f6dee8cf220",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a863ca7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a863ca7/DroidDeck-main-a863ca7-ludashi.apk",
+        "name": "DroidDeck-main-9f5e258-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f5e258/DroidDeck-main-9f5e258-ludashi.apk",
         "size": 67761952,
-        "sha256": "f63e6c4d9d66158b89603820314b67e812f974b8cf629c12f276de28ab435a0f",
+        "sha256": "bf8ace6c2939bc626ed5130e363bbd1f09566359a9bbbb81a89a57a46f1e2dc9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9f5e258bd692770f7b00db218ff53beed832c1b9",
+      "title": "fix: auto-driver trial rolls back when the display driver crashes at startup",
+      "summary": "\ufeffA trial display driver that crashes DroidDeck while the compositor starts now triggers the automatic rollback, like one that fails later.",
+      "publishedAt": 1792642645000
+    },
     {
       "commit": "a863ca7b310b7a820c02a7bc0fbf6021bd9db54c",
       "title": "fix: Steam Controller (Triton) output/feature reports are no longer overwritten unread",
@@ -155,12 +161,6 @@
       "title": "Default session orientation to landscape",
       "summary": "Default the new session orientation preference and its invalid-value fallback to landscape while preserving explicit saved choices.",
       "publishedAt": 1792633341000
-    },
-    {
-      "commit": "829a39a9ca8cd6181179e9afe59aa486f0c23325",
-      "title": "feat: let the built-in controller be turned off",
-      "summary": "The built-in touch controller always shows up in the guest as an Xbox 360 controller, and it takes player 1. A controller connected over Bluetooth or USB lands in player 2, which breaks games that only look at the first pad.",
-      "publishedAt": 1792627382000
     }
   ],
   "tests": [
