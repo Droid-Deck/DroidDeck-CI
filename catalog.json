@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792694079959,
+  "generatedAt": 1792694948111,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1338",
+      "title": "fix: Steam starts again on phones where PipeWire took every client for a sandboxed app",
+      "summary": "On some phones a Steam session stays on a black screen and Steam never starts. Seen on a nubia NX809J (SM8850, Android 16) on the current main preview. The session log stops at:",
+      "commit": "72cbe0ac0796caeb25a2961858536368aaba9e8f",
+      "pr": 1338,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792694889000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1338",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1338-72cbe0a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1338/DroidDeck-PR.1338-72cbe0a.apk",
+          "size": 67712879,
+          "sha256": "f3cbf3935709dca1ae5dda6aa2d524fe1850bb4694dc62a86ca0218932f0b6a1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1338-72cbe0a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1338/DroidDeck-PR.1338-72cbe0a-pubg.apk",
+          "size": 67712879,
+          "sha256": "e7d9a43b18e636b91b2846550f8a59e7e01ad95ae0d0de2598aa3917a799b096",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1338-72cbe0a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1338/DroidDeck-PR.1338-72cbe0a-antutu.apk",
+          "size": 67712879,
+          "sha256": "d8e5298b7b720d285d27b2e5b5ec02537d1ad890b41c7bd0c3b6fb3900006d83",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1338-72cbe0a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1338/DroidDeck-PR.1338-72cbe0a-ludashi.apk",
+          "size": 67712879,
+          "sha256": "aa3a2edbb2c5a7890965b9e4503eb34142341eca0f09d39a1d046691352fb5be",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1178",
       "title": "fix: place GOG cloud saves at the location root",
@@ -697,55 +746,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-991/DroidDeck-PR.991-e7bd466-ludashi.apk",
           "size": 105929572,
           "sha256": "d281c9be6aa1acc90d9d2cccbec0f6e559ff636f5f2aa2fdd86e38cfad13b04f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-999",
-      "title": "feat: games show their logo, and store games get one from the store",
-      "summary": "Games now show their own logo. On the Games page the big title over the game's artwork is replaced by the game's logo when one is available (Steam games, games from GOG, Epic and Amazon, and added games), with the name still shown as text when there is none. GOG, Epic and Amazon installs now also bring the store's own transparent logo, and games that already had a cover (store games, folders with",
-      "commit": "4bcc15f5547ee249124cf69224319e39cdce47e2",
-      "pr": 999,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792359232000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-999",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.999-4bcc15f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-999/DroidDeck-PR.999-4bcc15f.apk",
-          "size": 105933668,
-          "sha256": "9bc32cd6eebdd52cf1e03e27709d8b2bdda55e842a7b8d62715c7c330ff611be",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.999-4bcc15f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-999/DroidDeck-PR.999-4bcc15f-pubg.apk",
-          "size": 105933668,
-          "sha256": "dd724ffef64230a63279d71b4176623faaa3684b4a3506688a10ad3e8ee5a6e0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.999-4bcc15f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-999/DroidDeck-PR.999-4bcc15f-antutu.apk",
-          "size": 105933668,
-          "sha256": "ab2bad718d377b216e0ebf6df510815e8f938f7077b48fe9f3eba0aadde53157",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.999-4bcc15f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-999/DroidDeck-PR.999-4bcc15f-ludashi.apk",
-          "size": 105933668,
-          "sha256": "d61d6972735a6798bdc19c11661555bf40d058cbb753777d333eee396ae9ddaf",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
