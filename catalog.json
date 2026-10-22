@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792697524271,
+  "generatedAt": 1792697569165,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-58f0f27",
-    "title": "fix(xbox): show why Microsoft sign-in fails, and the gamertag instead of the email",
-    "summary": "Refs #1300",
-    "commit": "58f0f27f391733df81b3cbe7dbca8751b8fbd637",
+    "tag": "main-006db14",
+    "title": "perf: SD card library files resolve through the fast path instead of proot",
+    "summary": "Games on an SD card library (or any library bound under several guest names) resolve their files through the proot fast path again instead of falling back to proot on every lookup.",
+    "commit": "006db1456139c83ef7592139d28eab888b48cd20",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792696601000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-58f0f27",
+    "publishedAt": 1792697514000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-006db14",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-58f0f27.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58f0f27/DroidDeck-main-58f0f27.apk",
-        "size": 67716975,
-        "sha256": "19e11060386885561b5a790126201a2dcb64754e26d06d31d586043a36e75457",
+        "name": "DroidDeck-main-006db14.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-006db14/DroidDeck-main-006db14.apk",
+        "size": 67721071,
+        "sha256": "299d7be4478f1c7d928aecf7ef0e312db519cb4ba4a3dd75db6bf907be7cd7fb",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-58f0f27-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58f0f27/DroidDeck-main-58f0f27-pubg.apk",
-        "size": 67716975,
-        "sha256": "5009c8920a18c8d1853093c7285da72ea5644fb954b55add28e201434a76830c",
+        "name": "DroidDeck-main-006db14-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-006db14/DroidDeck-main-006db14-pubg.apk",
+        "size": 67721071,
+        "sha256": "dffbc635b2a13a370c57d0b8e3d0239810c5af5e8ba70a6a8d5ba349f2ab20e1",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-58f0f27-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58f0f27/DroidDeck-main-58f0f27-antutu.apk",
-        "size": 67716975,
-        "sha256": "d580e41d1808dd098b5c10164a33eca016a3d0e172f14f01b7184feb7e754be3",
+        "name": "DroidDeck-main-006db14-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-006db14/DroidDeck-main-006db14-antutu.apk",
+        "size": 67721071,
+        "sha256": "aa50955fe41b0f9852c8cc12dac50236e14f3c5759b5f72cc42dbd2b890b563d",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-58f0f27-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58f0f27/DroidDeck-main-58f0f27-ludashi.apk",
-        "size": 67716975,
-        "sha256": "33d549449c310a40816333207daf942912ddb255e6ce3ab76fcd4bb8d9238bdc",
+        "name": "DroidDeck-main-006db14-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-006db14/DroidDeck-main-006db14-ludashi.apk",
+        "size": 67721071,
+        "sha256": "7658bc0b6e86fc3bdb5bafe0b1556dbd3a5605eb264ed4bc0abe47f67270e40b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "006db1456139c83ef7592139d28eab888b48cd20",
+      "title": "perf: SD card library files resolve through the fast path instead of proot",
+      "summary": "Games on an SD card library (or any library bound under several guest names) resolve their files through the proot fast path again instead of falling back to proot on every lookup.",
+      "publishedAt": 1792697514000
+    },
     {
       "commit": "58f0f27f391733df81b3cbe7dbca8751b8fbd637",
       "title": "fix(xbox): show why Microsoft sign-in fails, and the gamertag instead of the email",
@@ -155,12 +161,6 @@
       "title": "perf: session log step times carry milliseconds",
       "summary": "\ufeffSession logs now time each setup step to the millisecond (== STEP 21:18:44.312 \u00d4\u00c7\u011e), so the work done before the Steam client starts can be measured step by step.",
       "publishedAt": 1792682272000
-    },
-    {
-      "commit": "907c79d13bbaeec15c523606c771b215227c7833",
-      "title": "a11y: give the button-like clickables a Button role for screen readers",
-      "summary": "\ufeffButtons, tiles, list rows and rail items across the launcher now announce themselves as buttons to a screen reader.",
-      "publishedAt": 1792682147000
     }
   ],
   "tests": [
