@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792637637263,
+  "generatedAt": 1792638168189,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-af37432",
-    "title": "perf: FEX's file lookups and opens go through the fast path instead of proot",
-    "summary": "FEX reaches host files in two ways, and both stopped in proot on every call:",
-    "commit": "af3743225139b51e7e86a8aa5d2fd84d858019e7",
+    "tag": "main-b68bb05",
+    "title": "fix: Xbox search results open with their metadata and Game Pass installs",
+    "summary": "Opening an Xbox store search result that is not in the library showed only the product ID, with no artwork, description or action buttons (reproduced with Echo Weaver 9N72DFC6GL91). An unacquired PC Game Pass title could also never be installed, because the detail page only offered Install when the entitlement map already listed the product.",
+    "commit": "b68bb054a901aa4a705de9d24587dcd20a46d4bd",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792637557000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-af37432",
+    "publishedAt": 1792638106000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b68bb05",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-af37432.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af37432/DroidDeck-main-af37432.apk",
+        "name": "DroidDeck-main-b68bb05.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b68bb05/DroidDeck-main-b68bb05.apk",
         "size": 67749664,
-        "sha256": "180433f43bf8cf4562e57c89a42b766336efb9b529ce44aa56794c8330a5b564",
+        "sha256": "44d30ba4dcef364098a4923928104e42e19b44080673bc81084f335a3a189fa7",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-af37432-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af37432/DroidDeck-main-af37432-pubg.apk",
+        "name": "DroidDeck-main-b68bb05-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b68bb05/DroidDeck-main-b68bb05-pubg.apk",
         "size": 67749664,
-        "sha256": "0c106267fd708543373f07b9144dd18649e81817dde4a91b590597d5d1ce5525",
+        "sha256": "aced180d9bd07cccd06c8ad52cd214e49aecf2fb73dffea5939ce89c75a22bea",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-af37432-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af37432/DroidDeck-main-af37432-antutu.apk",
+        "name": "DroidDeck-main-b68bb05-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b68bb05/DroidDeck-main-b68bb05-antutu.apk",
         "size": 67749664,
-        "sha256": "c10edc5df6269c63264b7cca422bb8d007f3bc94a0f813a4913a58ce0cca55ef",
+        "sha256": "2fa6b84ebcc1cf4696e4c1644124fe86e42a860786c9f46cd824ffd5b2d0b299",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-af37432-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-af37432/DroidDeck-main-af37432-ludashi.apk",
+        "name": "DroidDeck-main-b68bb05-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b68bb05/DroidDeck-main-b68bb05-ludashi.apk",
         "size": 67749664,
-        "sha256": "e2536288bbed8e9c8a628afc1b9cee391f4beef4778a8f139b8ecb920b797b16",
+        "sha256": "9dfdf59d69389b13421d221a72c0fb9c82b151739af8bdfef8235c465a1f4c92",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b68bb054a901aa4a705de9d24587dcd20a46d4bd",
+      "title": "fix: Xbox search results open with their metadata and Game Pass installs",
+      "summary": "Opening an Xbox store search result that is not in the library showed only the product ID, with no artwork, description or action buttons (reproduced with Echo Weaver 9N72DFC6GL91). An unacquired PC Game Pass title could also never be installed, because the detail page only offered Install when the entitlement map already listed the product.",
+      "publishedAt": 1792638106000
+    },
     {
       "commit": "af3743225139b51e7e86a8aa5d2fd84d858019e7",
       "title": "perf: FEX's file lookups and opens go through the fast path instead of proot",
@@ -155,12 +161,6 @@
       "title": "perf: performance overlay updates ride the next game frame instead of an extra composite",
       "summary": "On a fixed refresh output, gamescope repainted the screen for every mangoapp commit. mangoapp draws once per game frame, just after that frame was shown. A 60 fps game on the 120 Hz panel was therefore composited twice per frame: the second composite came 8 ms later with the same game picture and only the overlay changed. With VRR, gamescope already leaves such repaints to the next game frame.",
       "publishedAt": 1792618461000
-    },
-    {
-      "commit": "81500fe184022f912b8d9cda64653706f9357271",
-      "title": "perf: SysV message queues stay mapped instead of reopening per call",
-      "summary": "gamescope and mangoapp talk over a SysV message queue on every frame, and gamescope polls it even while the performance overlay is hidden. Android has no SysV IPC, so libblsession emulates it with files in /dev/shm/wnsysv. Every msgsnd/msgrcv call used to:",
-      "publishedAt": 1792618111000
     }
   ],
   "tests": [
