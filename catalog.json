@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792638168189,
+  "generatedAt": 1792638595675,
   "stable": {
     "tag": "0.5.0",
     "title": "DroidDeck 0.5.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b68bb05",
-    "title": "fix: Xbox search results open with their metadata and Game Pass installs",
-    "summary": "Opening an Xbox store search result that is not in the library showed only the product ID, with no artwork, description or action buttons (reproduced with Echo Weaver 9N72DFC6GL91). An unacquired PC Game Pass title could also never be installed, because the detail page only offered Install when the entitlement map already listed the product.",
-    "commit": "b68bb054a901aa4a705de9d24587dcd20a46d4bd",
+    "tag": "main-bacfa94",
+    "title": "Revert dedicated second-screen activity",
+    "summary": "Reverts PR #1041 and restores the second-screen controls to the original Android Presentation implementation. The existing keyboard, trackpad, terminal, and Deck controls are retained; only their host changes back from a dedicated activity to a presentation window.",
+    "commit": "bacfa942a0e6378cfa26e7e4e0a7b6597944aba4",
     "pr": 0,
     "version": null,
     "versionCode": 14,
-    "publishedAt": 1792638106000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b68bb05",
+    "publishedAt": 1792638546000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bacfa94",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b68bb05.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b68bb05/DroidDeck-main-b68bb05.apk",
+        "name": "DroidDeck-main-bacfa94.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bacfa94/DroidDeck-main-bacfa94.apk",
         "size": 67749664,
-        "sha256": "44d30ba4dcef364098a4923928104e42e19b44080673bc81084f335a3a189fa7",
+        "sha256": "f72c1704a181c8a42d890e8342209665e375bcfdcea375303d952347cfcf9730",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b68bb05-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b68bb05/DroidDeck-main-b68bb05-pubg.apk",
+        "name": "DroidDeck-main-bacfa94-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bacfa94/DroidDeck-main-bacfa94-pubg.apk",
         "size": 67749664,
-        "sha256": "aced180d9bd07cccd06c8ad52cd214e49aecf2fb73dffea5939ce89c75a22bea",
+        "sha256": "d373ba54630bc7583297dfa924917f9f2974eee0682278c2fb578234bde6aebf",
         "packageName": "com.tencent.ig",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b68bb05-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b68bb05/DroidDeck-main-b68bb05-antutu.apk",
+        "name": "DroidDeck-main-bacfa94-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bacfa94/DroidDeck-main-bacfa94-antutu.apk",
         "size": 67749664,
-        "sha256": "2fa6b84ebcc1cf4696e4c1644124fe86e42a860786c9f46cd824ffd5b2d0b299",
+        "sha256": "7c5c3381cc2bfd13c6cbf8e58064a0c392d97c89555d9d5c149a821d5c0f5463",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b68bb05-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b68bb05/DroidDeck-main-b68bb05-ludashi.apk",
+        "name": "DroidDeck-main-bacfa94-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bacfa94/DroidDeck-main-bacfa94-ludashi.apk",
         "size": 67749664,
-        "sha256": "9dfdf59d69389b13421d221a72c0fb9c82b151739af8bdfef8235c465a1f4c92",
+        "sha256": "a3a232ef1ef15187a19500e2d3e3991c37c672ca50cc9a132e90e2eacb33fca5",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 14,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bacfa942a0e6378cfa26e7e4e0a7b6597944aba4",
+      "title": "Revert dedicated second-screen activity",
+      "summary": "Reverts PR #1041 and restores the second-screen controls to the original Android Presentation implementation. The existing keyboard, trackpad, terminal, and Deck controls are retained; only their host changes back from a dedicated activity to a presentation window.",
+      "publishedAt": 1792638546000
+    },
     {
       "commit": "b68bb054a901aa4a705de9d24587dcd20a46d4bd",
       "title": "fix: Xbox search results open with their metadata and Game Pass installs",
@@ -155,12 +161,6 @@
       "title": "perf: network tables Android refuses are served from the synthesized copy without retrying the open",
       "summary": "Wine's network driver (nsiproxy) reads /proc/net/dev and /sys/class/net/<if>/carrier for every interface on each adapter query, and /proc/net/route and /proc/net/ipv6route for gateways. Android refuses these opens. netif.c already answers them from a synthesized table, but only after the real open failed, and each refused open costs 60 to 150 \u00b5s under proot.",
       "publishedAt": 1792618528000
-    },
-    {
-      "commit": "c178355d92a9a38440b3eb1c6bd9587eafc5d007",
-      "title": "perf: performance overlay updates ride the next game frame instead of an extra composite",
-      "summary": "On a fixed refresh output, gamescope repainted the screen for every mangoapp commit. mangoapp draws once per game frame, just after that frame was shown. A 60 fps game on the 120 Hz panel was therefore composited twice per frame: the second composite came 8 ms later with the same game picture and only the overlay changed. With VRR, gamescope already leaves such repaints to the next game frame.",
-      "publishedAt": 1792618461000
     }
   ],
   "tests": [
