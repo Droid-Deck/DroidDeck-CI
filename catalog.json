@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792769496639,
+  "generatedAt": 1792770113469,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1099",
+      "title": "fix: add an A740 UBWC compatibility override",
+      "summary": "Add an Adreno 740 Auto/On/Off UBWC override under GPU drivers \u2192 Advanced, applied to both drivers after restarting DroidDeck, while retaining the existing automatic rules and frame-generation guards.",
+      "commit": "bd4b43ff039950de865fb722ee70c2a9aa2369c4",
+      "pr": 1099,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792770034000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1099",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1099-bd4b43f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1099/DroidDeck-PR.1099-bd4b43f.apk",
+          "size": 67766127,
+          "sha256": "88b604c74e45a445749a7cbf3c9c0c296a3b1eeebc88f0a5f0ce71b430062d7b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1099-bd4b43f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1099/DroidDeck-PR.1099-bd4b43f-pubg.apk",
+          "size": 67766127,
+          "sha256": "e247c4a162faee9257028b7b533ff9bd9ee571ff90cc3941ec4e1cae0bc642bb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1099-bd4b43f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1099/DroidDeck-PR.1099-bd4b43f-antutu.apk",
+          "size": 67766127,
+          "sha256": "c53e3a1b7afd8cd3e21cfd58e1f0e4c72d62fd500b529188caa56a306e077325",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1099-bd4b43f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1099/DroidDeck-PR.1099-bd4b43f-ludashi.apk",
+          "size": 67766127,
+          "sha256": "1ca680be8870dc1386d644165382ae98cfcdb284d4324b4107d4b12361f5af5b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1403",
       "title": "feat: lift paused frame into a grey card with a glass resume button",
       "summary": "Replaces the paused-session overlay with a captured grey frame card and glass resume button, with progress, failure feedback, and a return-to-game animation tied to the service resume state.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1401/DroidDeck-PR.1401-4bcd4e3-ludashi.apk",
           "size": 67729263,
           "sha256": "29435d35c434590158e5a313d06a0e4d7b775106d88e097bad685a07ac50e92d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1099",
-      "title": "fix: match the A740 UBWC hint on driver 512.676.76",
-      "summary": "Enable the A740 TP UBWC hint for Qualcomm 512.676.76 and later 676 patches to address the POCO F6 Pro stripes in #428, retaining the original frame-generation size/transition guards and current main\u2019s Samsung handling.",
-      "commit": "522a537f9c9929c0099425a67ec2ac23c0291d75",
-      "pr": 1099,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792763424000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1099",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1099-522a537.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1099/DroidDeck-PR.1099-522a537.apk",
-          "size": 67725167,
-          "sha256": "aa7120b11be7a529495148280f22ac4efb7ed0d05668c0f872d4dda43578e005",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1099-522a537-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1099/DroidDeck-PR.1099-522a537-pubg.apk",
-          "size": 67725167,
-          "sha256": "b4cee0ea35fc1b8fd5cee85eefc7204fe1e2db195947e15e86df8adfe44d9350",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1099-522a537-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1099/DroidDeck-PR.1099-522a537-antutu.apk",
-          "size": 67725167,
-          "sha256": "20bab046e7866e38c5e1f3a22b82b396831d42b129802ee8bb660913cce63868",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1099-522a537-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1099/DroidDeck-PR.1099-522a537-ludashi.apk",
-          "size": 67725167,
-          "sha256": "cd1b1ce4716ce6e16bed1de6a653bceae525405a88c839da710acd93b276cedc",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
