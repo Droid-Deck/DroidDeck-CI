@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792760952783,
+  "generatedAt": 1792762114235,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4cbda4e",
-    "title": "Pushed to main without a PR - fix: release the microphone before freezing a session so the SoC can sleep (#1389)",
-    "summary": "",
-    "commit": "4cbda4e51b4cd9b766dfb56c53c6403c1c0c0ccb",
+    "tag": "main-8ebba02",
+    "title": "fix: stop the authorship check from flagging people whose names contain an assistant's name",
+    "summary": "checkauthorship.py matched bot names as case-insensitive substrings of the whole identity. Any contributor whose name or login contains one of them failed validation as a bot. #1378 by @Claudemirovsky fails with bot author and pull request: bot authorship is forbidden only because the login contains \"Claude\". The same pattern would block people named Devin, Cody, Cursor or Gemini, or names",
+    "commit": "8ebba02688470ab58dea27d75fa3dd693571a826",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792760903000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4cbda4e",
+    "publishedAt": 1792762070000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8ebba02",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4cbda4e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cbda4e/DroidDeck-main-4cbda4e.apk",
+        "name": "DroidDeck-main-8ebba02.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ebba02/DroidDeck-main-8ebba02.apk",
         "size": 67725167,
-        "sha256": "633625a64953273bfd82a778b08cd13c169c05d255dc8742514b832b065a2a33",
+        "sha256": "69cae00a329a10d63d95ec4e71ec0c9ece197bbd5ece013a0c2ba8dcb55f69c8",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4cbda4e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cbda4e/DroidDeck-main-4cbda4e-pubg.apk",
+        "name": "DroidDeck-main-8ebba02-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ebba02/DroidDeck-main-8ebba02-pubg.apk",
         "size": 67725167,
-        "sha256": "7c7bd464ce1dcbf7c1707f5f9676eeaa178432050f26f8d2c49908a4bbafdf70",
+        "sha256": "01f01e6441fdc154947880e0444fc9816336fba8f2344bf1ce442b5255ed093f",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4cbda4e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cbda4e/DroidDeck-main-4cbda4e-antutu.apk",
+        "name": "DroidDeck-main-8ebba02-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ebba02/DroidDeck-main-8ebba02-antutu.apk",
         "size": 67725167,
-        "sha256": "a1d154cf042e7e226845207f85001c624ab97f096af8d2c710837b3eb1e02735",
+        "sha256": "a4014890e3faa1a6fed7361040deec8c37513c359de94cf03e6606e80733d9e8",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4cbda4e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cbda4e/DroidDeck-main-4cbda4e-ludashi.apk",
+        "name": "DroidDeck-main-8ebba02-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8ebba02/DroidDeck-main-8ebba02-ludashi.apk",
         "size": 67725167,
-        "sha256": "813ec3b642b2565b5d52d4a7100660dfd3afc871e0f2b426640ed231346ddd91",
+        "sha256": "70d10ae02f193fbb7040c4c6c21e0668a3e27d956f28e9b701293948380b6386",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8ebba02688470ab58dea27d75fa3dd693571a826",
+      "title": "fix: stop the authorship check from flagging people whose names contain an assistant's name",
+      "summary": "checkauthorship.py matched bot names as case-insensitive substrings of the whole identity. Any contributor whose name or login contains one of them failed validation as a bot. #1378 by @Claudemirovsky fails with bot author and pull request: bot authorship is forbidden only because the login contains \"Claude\". The same pattern would block people named Devin, Cody, Cursor or Gemini, or names",
+      "publishedAt": 1792762070000
+    },
     {
       "commit": "4cbda4e51b4cd9b766dfb56c53c6403c1c0c0ccb",
       "title": "Pushed to main without a PR - fix: release the microphone before freezing a session so the SoC can sleep (#1389)",
@@ -155,12 +161,6 @@
       "title": "fix(xbox): show why Microsoft sign-in fails, and the gamertag instead of the email",
       "summary": "Refs #1300",
       "publishedAt": 1792696601000
-    },
-    {
-      "commit": "f61525162ddc121206fc4ee93782ea298f5701f0",
-      "title": "Pushed to main without a PR - feat: games show their logo, and store games get one from the store (#999)",
-      "summary": "",
-      "publishedAt": 1792695858000
     }
   ],
   "tests": [
