@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792773892479,
+  "generatedAt": 1792774009767,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1407",
+      "title": "fix: draw the gamescope cursor only when that option is on",
+      "summary": "Steam sessions always had gamescope paint the cursor. That extra plane costs frames on a phone.",
+      "commit": "f1d646b2348a7c691246a114afc5c4d354f28892",
+      "pr": 1407,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792773939000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1407",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1407-f1d646b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1407/DroidDeck-PR.1407-f1d646b.apk",
+          "size": 67766127,
+          "sha256": "69fd8c2ddb064622464dd67835737f8130903476d33d92692dc563256481c36d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1407-f1d646b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1407/DroidDeck-PR.1407-f1d646b-pubg.apk",
+          "size": 67766127,
+          "sha256": "f820bb58921eb6cf758e789e4ef08f25bac7843619f3e6da8040b7884d8a0b63",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1407-f1d646b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1407/DroidDeck-PR.1407-f1d646b-antutu.apk",
+          "size": 67766127,
+          "sha256": "0279d17e7d1fa4ba9c4b3eda47980b43aab965ec827212c045f32f86a2af1fac",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1407-f1d646b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1407/DroidDeck-PR.1407-f1d646b-ludashi.apk",
+          "size": 67766127,
+          "sha256": "ba46cb2bd7cab35fe9e989f6a92864c50795b6c3cf98ddedfe7895c31248daf6",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1400",
       "title": "feat: toggle Steam shader pre-caching from DroidDeck's Steam settings",
