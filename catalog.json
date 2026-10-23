@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792781958656,
+  "generatedAt": 1792782740872,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1401",
-      "title": "perf: faster droiddeck-ntsync, and ntsync as the default Wine sync",
-      "summary": "droiddeck-ntsync (the userspace stand-in for the Linux ntsync driver, Wine sync = ntsync) was slower than droiddeck-esync on every cheap operation. On the tablet a SetEvent cost 0.94 \u00b5s against esync's 0.21 \u00b5s, and a wait on a signaled event 0.45 \u00b5s against 0.08 \u00b5s. Four things made it slow:",
-      "commit": "293e84a64c038ca014a66a20d45966b78b1cd996",
-      "pr": 1401,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792779266000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1401",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1401-293e84a.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1401/DroidDeck-PR.1401-293e84a.apk",
-          "size": 67794994,
-          "sha256": "6d88e878c01fea7ec486690235a53efea5f6436763b02a9138bffd81c3465b01",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1401-293e84a-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1401/DroidDeck-PR.1401-293e84a-pubg.apk",
-          "size": 67794994,
-          "sha256": "5c0cb52ae69c3835536f5ec5086bd3f3f003d32db6c2446532bba80095c87675",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1401-293e84a-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1401/DroidDeck-PR.1401-293e84a-antutu.apk",
-          "size": 67794994,
-          "sha256": "e6ad1619773cccc64e8de88aa7a13e8b1206c53de6df25554ebb2390d56386e6",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1401-293e84a-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1401/DroidDeck-PR.1401-293e84a-ludashi.apk",
-          "size": 67794994,
-          "sha256": "131755dfc1c50514821db2199f0d4d978e6179aa09b257da9cf9b4396ea6b819",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1347",
       "title": "fix(steam): the last change to a game's compatibility tool wins",
