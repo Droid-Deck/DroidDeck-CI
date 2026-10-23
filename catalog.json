@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792778109185,
+  "generatedAt": 1792778648363,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b76f13f",
-    "title": "feat: toggle Steam shader pre-caching from DroidDeck's Steam settings",
-    "summary": "Adds a Shader pre-caching toggle to DroidDeck's Steam settings (Steam client group), so turning Steam's shader downloads and background processing on or off no longer needs a trip to Desktop Mode.",
-    "commit": "b76f13f7acc0af0cc00369dde61fb88e40529e6d",
+    "tag": "main-a444703",
+    "title": "ci: parallelize regression checks and isolate component caches",
+    "summary": "CI serialized Python/native tests after APK compilation and rebuilt Comet whenever the broad preload cache changed. This separates those costs while preserving source checks and publication gates.",
+    "commit": "a4447039b9b377bbd8366bb07826bbfa22f7aa38",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792777577000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b76f13f",
+    "publishedAt": 1792778586000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a444703",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b76f13f.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b76f13f/DroidDeck-main-b76f13f.apk",
+        "name": "DroidDeck-main-a444703.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a444703/DroidDeck-main-a444703.apk",
         "size": 67782706,
-        "sha256": "f7af507232da329a7a00611d2563184d2f242baa6a3a3a5707b31e8b3e2e3b2c",
+        "sha256": "acd70cde386ae0c03da5e40e0948f73eb6ba38c5301e3705a3ce319019b564db",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b76f13f-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b76f13f/DroidDeck-main-b76f13f-pubg.apk",
+        "name": "DroidDeck-main-a444703-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a444703/DroidDeck-main-a444703-pubg.apk",
         "size": 67782706,
-        "sha256": "f99e4a1b56c088b58ef5a6c88a51ee7f75486bf33c9d00dc31d16947aaabcd3c",
+        "sha256": "55f8e2b06f114e446af5e6b3c960bcfd240a0b302c89e85ebbd843a8ac89d5d7",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b76f13f-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b76f13f/DroidDeck-main-b76f13f-antutu.apk",
+        "name": "DroidDeck-main-a444703-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a444703/DroidDeck-main-a444703-antutu.apk",
         "size": 67782706,
-        "sha256": "36bb61565f6c0de9ea3b991823bf623e2cea6e097e1d7283a523edf6349f2136",
+        "sha256": "6644d18dd8bca7bcc705b393cfcaac24ee6978aa81b3abb3ed6db4994a8b546c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b76f13f-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b76f13f/DroidDeck-main-b76f13f-ludashi.apk",
+        "name": "DroidDeck-main-a444703-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a444703/DroidDeck-main-a444703-ludashi.apk",
         "size": 67782706,
-        "sha256": "5e068c7b64723c2709e58a707f88351634609d71ccb9fe19c65dee4366e4358b",
+        "sha256": "7a3c13b8b5b8b4bf0360fdadc49e8461557a46b055eb4e11a644f17e04a5601e",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a4447039b9b377bbd8366bb07826bbfa22f7aa38",
+      "title": "ci: parallelize regression checks and isolate component caches",
+      "summary": "CI serialized Python/native tests after APK compilation and rebuilt Comet whenever the broad preload cache changed. This separates those costs while preserving source checks and publication gates.",
+      "publishedAt": 1792778586000
+    },
     {
       "commit": "b76f13f7acc0af0cc00369dde61fb88e40529e6d",
       "title": "feat: toggle Steam shader pre-caching from DroidDeck's Steam settings",
@@ -155,12 +161,6 @@
       "title": "perf: let Wine read process memory counters from /proc directly",
       "summary": "Wine builds its process list (NtQuerySystemInformation(SystemProcessInformation), behind CreateToolhelp32Snapshot, EnumProcesses and friends) by opening /proc/<pid>/status for every process in fillvmcounters to read its memory counters. libblsession rewrites TracerPid in those reads, and for another process's file it hands back a read-only copy made through /tmp/.droiddeck-status-",
       "publishedAt": 1792755622000
-    },
-    {
-      "commit": "ffa40a15d5655fb7fb2aa22cdf51d13f7ba95af1",
-      "title": "perf: run Wine's arm64 SIGUSR2 context switch without a kernel signal",
-      "summary": "Wine on arm64 restores a full thread context by raising SIGUSR2 in syscalldispatcherreturnslowpath. It does this after every exception that a handler continues from and after every NtContinue into emulated x86 code, so every x86 game under FEX goes through it. Under proot each of those signals is a ptrace stop, about 20 \u00b5s on the tablet, and an access violation pays for two traced signal",
-      "publishedAt": 1792737218000
     }
   ],
   "tests": [
