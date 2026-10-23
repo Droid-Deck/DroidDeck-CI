@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792760115636,
+  "generatedAt": 1792760952783,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ac0909e",
-    "title": "perf: let Wine read process memory counters from /proc directly",
-    "summary": "Wine builds its process list (NtQuerySystemInformation(SystemProcessInformation), behind CreateToolhelp32Snapshot, EnumProcesses and friends) by opening /proc/<pid>/status for every process in fillvmcounters to read its memory counters. libblsession rewrites TracerPid in those reads, and for another process's file it hands back a read-only copy made through /tmp/.droiddeck-status-",
-    "commit": "ac0909eaa35c0ccf8a42b417f88e9ff37f3523cb",
+    "tag": "main-4cbda4e",
+    "title": "Pushed to main without a PR - fix: release the microphone before freezing a session so the SoC can sleep (#1389)",
+    "summary": "",
+    "commit": "4cbda4e51b4cd9b766dfb56c53c6403c1c0c0ccb",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792755622000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ac0909e",
+    "publishedAt": 1792760903000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4cbda4e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ac0909e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac0909e/DroidDeck-main-ac0909e.apk",
+        "name": "DroidDeck-main-4cbda4e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cbda4e/DroidDeck-main-4cbda4e.apk",
         "size": 67725167,
-        "sha256": "2ad3ec9d3440594c27bbbf00fd6b4e3116bc993c18e85d24aaa70e12eacf005f",
+        "sha256": "633625a64953273bfd82a778b08cd13c169c05d255dc8742514b832b065a2a33",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ac0909e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac0909e/DroidDeck-main-ac0909e-pubg.apk",
+        "name": "DroidDeck-main-4cbda4e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cbda4e/DroidDeck-main-4cbda4e-pubg.apk",
         "size": 67725167,
-        "sha256": "9478c5c5d4bf56b6a598f4a50e6cfc89566c1b6f2ba7a95fb089b6be7570c223",
+        "sha256": "7c7bd464ce1dcbf7c1707f5f9676eeaa178432050f26f8d2c49908a4bbafdf70",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ac0909e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac0909e/DroidDeck-main-ac0909e-antutu.apk",
+        "name": "DroidDeck-main-4cbda4e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cbda4e/DroidDeck-main-4cbda4e-antutu.apk",
         "size": 67725167,
-        "sha256": "af9225ba388b99a6d858cfc1680acdcb7c02d6a50fa6ff6d6ed4f42246050e88",
+        "sha256": "a1d154cf042e7e226845207f85001c624ab97f096af8d2c710837b3eb1e02735",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ac0909e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac0909e/DroidDeck-main-ac0909e-ludashi.apk",
+        "name": "DroidDeck-main-4cbda4e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cbda4e/DroidDeck-main-4cbda4e-ludashi.apk",
         "size": 67725167,
-        "sha256": "7f2a4a3f85c5c383627de640b6447e197e7d806def3c26c93444410f1a1cacec",
+        "sha256": "813ec3b642b2565b5d52d4a7100660dfd3afc871e0f2b426640ed231346ddd91",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4cbda4e51b4cd9b766dfb56c53c6403c1c0c0ccb",
+      "title": "Pushed to main without a PR - fix: release the microphone before freezing a session so the SoC can sleep (#1389)",
+      "summary": "",
+      "publishedAt": 1792760903000
+    },
     {
       "commit": "ac0909eaa35c0ccf8a42b417f88e9ff37f3523cb",
       "title": "perf: let Wine read process memory counters from /proc directly",
@@ -155,12 +161,6 @@
       "title": "Pushed to main without a PR - feat: games show their logo, and store games get one from the store (#999)",
       "summary": "",
       "publishedAt": 1792695858000
-    },
-    {
-      "commit": "633f66fd49c49f88cc24deac0911c708e3c90006",
-      "title": "Fix main APK 7zip dependency download",
-      "summary": "Current main APK run 39823490454 fails before Gradle because Arch Linux ARM\u2019s redirecting mirror sends the pinned 7zip download to a Florida mirror returning HTTP 404.",
-      "publishedAt": 1792693992000
     }
   ],
   "tests": [
