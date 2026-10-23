@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792770947363,
+  "generatedAt": 1792771182938,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-bf4aa58",
-    "title": "Add File Manager Return and Exit navigation",
-    "summary": "\u2022 Add Return to start to the File Manager toolbar for Game files and Proton prefix launches. It remembers the entry directory and returns there after browsing another storage location. Returning restores the starting storage root and closes search or favorites views. If the requested directory is unavailable, Return shows a message while browsing starts from the fallback.\n\u2022 Add Exit at the right end of the toolbar so the File Manager can close from any directory. Keep the existing toolbar design and accessible button labels.\n\u2022 Guard Exit, Return, Android Back, and parent-folder navigation while a file operation is active. Accept cancels the active operation and waits for it to stop before navigating; Decline leaves the operation running.\n\u2022 Prevent concurrent file operations and clear the tracked job only when the finishing operation owns it, so navigation continues to wait for active work.\n\u2022 Make copy, move, and delete observe cancellation during file transfer, recursive work, and the initial size scan. Clean up newly created partial destination trees while preserving existing destination directories. Preserve the move source if cancellation occurs before its copy commits; once the destination is committed, finish source cleanup.\n\u2022 Restore staged-overwrite permissions when possible; log restoration failures and continue publishing the copied file.",
-    "commit": "bf4aa58c6835e8dd66f135d6ebbd6ce7fa539a5c",
+    "tag": "main-b88eebe",
+    "title": "feat: Inner Gamer RGB theme, and keep the color picker's hex box above the keyboard",
+    "summary": "Two changes.",
+    "commit": "b88eebe09bbe4e988d70fdfa8c47c72206448a07",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792768913000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bf4aa58",
+    "publishedAt": 1792771115000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b88eebe",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-bf4aa58.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf4aa58/DroidDeck-main-bf4aa58.apk",
-        "size": 67753839,
-        "sha256": "4b94fcd176250aa9ccc09841646d7eeacfecd48d0d32f3e4795d0d50eac7b854",
+        "name": "DroidDeck-main-b88eebe.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b88eebe/DroidDeck-main-b88eebe.apk",
+        "size": 67766127,
+        "sha256": "baa98ba416a4283b754fa596ed8d3f13d93f5ec493457e1a5364137ae1533034",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-bf4aa58-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf4aa58/DroidDeck-main-bf4aa58-pubg.apk",
-        "size": 67753839,
-        "sha256": "e9304ba372cb70951e2cc5db6de89aac7fb72d95ed12fa840e22721a4f05f937",
+        "name": "DroidDeck-main-b88eebe-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b88eebe/DroidDeck-main-b88eebe-pubg.apk",
+        "size": 67766127,
+        "sha256": "e8aaaf92a0c690914ab8dbc0667575d1faff0af784b074d7baba80923fc2a421",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-bf4aa58-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf4aa58/DroidDeck-main-bf4aa58-antutu.apk",
-        "size": 67753839,
-        "sha256": "318d57a67b6d30c7b0b52e7237eb02bfd6e23a86a5c3f5ec52c085858e044ecf",
+        "name": "DroidDeck-main-b88eebe-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b88eebe/DroidDeck-main-b88eebe-antutu.apk",
+        "size": 67766127,
+        "sha256": "37f54ca00e888d27b790116d7bb4c2956666a12e1504e5bc178208f32d33bf9c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-bf4aa58-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf4aa58/DroidDeck-main-bf4aa58-ludashi.apk",
-        "size": 67753839,
-        "sha256": "399535c2f0285a0e2cfe6d4a29d864c37c55c1d5c57ed1a101b5627b3172450b",
+        "name": "DroidDeck-main-b88eebe-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b88eebe/DroidDeck-main-b88eebe-ludashi.apk",
+        "size": 67766127,
+        "sha256": "4fe09ec0a524adb2f1877cf2e5ad5de4f374a80bdf3ff04bafa1f7d06f622c3f",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b88eebe09bbe4e988d70fdfa8c47c72206448a07",
+      "title": "feat: Inner Gamer RGB theme, and keep the color picker's hex box above the keyboard",
+      "summary": "Two changes.",
+      "publishedAt": 1792771115000
+    },
     {
       "commit": "bf4aa58c6835e8dd66f135d6ebbd6ce7fa539a5c",
       "title": "Add File Manager Return and Exit navigation",
@@ -155,12 +161,6 @@
       "title": "fix(xbox): put the helper's sign-in failure code in the shared log",
       "summary": "Refs #1300, follows #1322",
       "publishedAt": 1792700271000
-    },
-    {
-      "commit": "9a4a611d38b0ed6b7caf44b8406f6baccc9e0878",
-      "title": "fix: Steam starts again on phones where PipeWire took every client for a sandboxed app",
-      "summary": "On some phones a Steam session stays on a black screen and Steam never starts. Seen on a nubia NX809J (SM8850, Android 16) on the current main preview. The session log stops at:",
-      "publishedAt": 1792698696000
     }
   ],
   "tests": [
