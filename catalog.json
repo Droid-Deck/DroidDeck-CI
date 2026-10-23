@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792755682075,
+  "generatedAt": 1792758443553,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1389",
+      "title": "fix: release the microphone before freezing a session so the SoC can sleep",
+      "summary": "With the microphone on, a session frozen at screen-off kept the device fully awake. When the freeze happens while something in the guest is recording (Steam's voice capture stream opens on DirectAudioMic during play), the DirectAudio relay is SIGSTOPped with its Android input stream still started. AudioFlinger then holds the AudioIn wake lock for as long as the session stays frozen.",
+      "commit": "f3b5cadb7b186a75d584b380f71df181190caec8",
+      "pr": 1389,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792758388000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1389",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1389-f3b5cad.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1389/DroidDeck-PR.1389-f3b5cad.apk",
+          "size": 67725167,
+          "sha256": "8a1a0b7b5071aa12506ca0424008bc66928084b1c7b664804c41bc9a911801b7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1389-f3b5cad-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1389/DroidDeck-PR.1389-f3b5cad-pubg.apk",
+          "size": 67725167,
+          "sha256": "3c50d7a74455b40f023a47032b11edb2a42b8d07da73d5a76077f8308642f58c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1389-f3b5cad-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1389/DroidDeck-PR.1389-f3b5cad-antutu.apk",
+          "size": 67725167,
+          "sha256": "ee574671226f90eba80920b8c5debd8e2e9be6ca790d16edf598978a4357b496",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1389-f3b5cad-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1389/DroidDeck-PR.1389-f3b5cad-ludashi.apk",
+          "size": 67725167,
+          "sha256": "95e183d1bcbbb0d18c957718e8edabd9cf2a225361c914b5ac4cd217bb5b15b9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1365",
       "title": "feat: Inner Gamer RGB theme, and keep the color picker's hex box above the keyboard",
