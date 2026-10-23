@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792783201448,
+  "generatedAt": 1792783594346,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3d9d90d",
-    "title": "ci: consolidate and verify runtime components",
-    "summary": "Consolidate runtime preparation into a component registry and reusable recipes, and reuse approved preload binaries with independent main-build provenance checks.",
-    "commit": "3d9d90d832b1de07f7273a4736d7c4249c9741c9",
+    "tag": "main-8f0bd51",
+    "title": "perf: faster droiddeck-ntsync, and ntsync as the default Wine sync",
+    "summary": "droiddeck-ntsync (the userspace stand-in for the Linux ntsync driver, Wine sync = ntsync) was slower than droiddeck-esync on every cheap operation. On the tablet a SetEvent cost 0.94 \u00b5s against esync's 0.21 \u00b5s, and a wait on a signaled event 0.45 \u00b5s against 0.08 \u00b5s. Four things made it slow:",
+    "commit": "8f0bd51fd8c41003ff0e2b694b12369c913c8081",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792783093000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3d9d90d",
+    "publishedAt": 1792783530000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8f0bd51",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3d9d90d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3d9d90d/DroidDeck-main-3d9d90d.apk",
-        "size": 67786802,
-        "sha256": "b0b8158572db417f13a2ad4ba440199767834b1b16934a6de0f9144d9aec221a",
+        "name": "DroidDeck-main-8f0bd51.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f0bd51/DroidDeck-main-8f0bd51.apk",
+        "size": 67794994,
+        "sha256": "88f4bc2bb8d1e9ba2f9ce83cb71bdb06cb0380a629e308cf43936d785642561b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3d9d90d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3d9d90d/DroidDeck-main-3d9d90d-pubg.apk",
-        "size": 67786802,
-        "sha256": "e6445988a9375981532e3c4d33eae670b1cbbb627af32fbaf0a9ba3ce35d2e4f",
+        "name": "DroidDeck-main-8f0bd51-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f0bd51/DroidDeck-main-8f0bd51-pubg.apk",
+        "size": 67794994,
+        "sha256": "1e0733908c21af997c955243dab07eeb03b2b95165f1a61a9c83412c8e52b5d2",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3d9d90d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3d9d90d/DroidDeck-main-3d9d90d-antutu.apk",
-        "size": 67786802,
-        "sha256": "68a5a4280bd448ae6c3a2493562872233f3c7421d4237a61a05956065e6dfaaf",
+        "name": "DroidDeck-main-8f0bd51-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f0bd51/DroidDeck-main-8f0bd51-antutu.apk",
+        "size": 67794994,
+        "sha256": "d5edb93952425658dd7d207d4b06db71f816cf1c0bf720946cb14976af023b34",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3d9d90d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3d9d90d/DroidDeck-main-3d9d90d-ludashi.apk",
-        "size": 67786802,
-        "sha256": "ff16b4d3bfae3255b2260ddb7c73f561e74c932b79ec5dfafd1e04c3514a995e",
+        "name": "DroidDeck-main-8f0bd51-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f0bd51/DroidDeck-main-8f0bd51-ludashi.apk",
+        "size": 67794994,
+        "sha256": "415fbb77a24f9f246742e2548ed82a7bbceeb115b05c1e1060958207771d6e11",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8f0bd51fd8c41003ff0e2b694b12369c913c8081",
+      "title": "perf: faster droiddeck-ntsync, and ntsync as the default Wine sync",
+      "summary": "droiddeck-ntsync (the userspace stand-in for the Linux ntsync driver, Wine sync = ntsync) was slower than droiddeck-esync on every cheap operation. On the tablet a SetEvent cost 0.94 \u00b5s against esync's 0.21 \u00b5s, and a wait on a signaled event 0.45 \u00b5s against 0.08 \u00b5s. Four things made it slow:",
+      "publishedAt": 1792783530000
+    },
     {
       "commit": "3d9d90d832b1de07f7273a4736d7c4249c9741c9",
       "title": "ci: consolidate and verify runtime components",
@@ -155,12 +161,6 @@
       "title": "Add File Manager Return and Exit navigation",
       "summary": "\u2022 Add Return to start to the File Manager toolbar for Game files and Proton prefix launches. It remembers the entry directory and returns there after browsing another storage location. Returning restores the starting storage root and closes search or favorites views. If the requested directory is unavailable, Return shows a message while browsing starts from the fallback.\n\u2022 Add Exit at the right e",
       "publishedAt": 1792768913000
-    },
-    {
-      "commit": "747c6eca87ebdd66ea17ed9790257d96e93eb909",
-      "title": "feat: show dot-prefixed folders in game picker",
-      "summary": "\u2022 Add a persistent Show/Hide hidden files eye button to the Add Games picker (Games \u2192 +).\n\u2022 Allow users to navigate dot-prefixed directories such as .Games and choose executable files inside them.\n\u2022 Pass the same setting to Add all games in this folder, so bulk import can include dot-prefixed game directories.\n\u2022 Keep the current default behavior (hidden files not shown) and reuse the file manager'",
-      "publishedAt": 1792768438000
     }
   ],
   "tests": [
