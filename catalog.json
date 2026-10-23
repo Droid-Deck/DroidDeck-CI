@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792779421627,
+  "generatedAt": 1792781813375,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1412",
+      "title": "ci: consolidate and verify runtime components",
+      "summary": "Consolidate runtime preparation into a component registry and reusable recipes, and reuse approved preload binaries with independent main-build provenance checks.",
+      "commit": "d32b1a13fdef00d1260b423c6f3e3548d2e43c19",
+      "pr": 1412,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792781743000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1412",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1412-d32b1a1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1412/DroidDeck-PR.1412-d32b1a1.apk",
+          "size": 67786802,
+          "sha256": "168fae5290dcd4a65484098528fcd31adbf5e219a3f8c7ff83a0cf84d7ff383a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1412-d32b1a1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1412/DroidDeck-PR.1412-d32b1a1-pubg.apk",
+          "size": 67786802,
+          "sha256": "f70b3acd75b894b2723e0a75e8ecc747cd649e205a5ddca07f4390fb140f9b4f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1412-d32b1a1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1412/DroidDeck-PR.1412-d32b1a1-antutu.apk",
+          "size": 67786802,
+          "sha256": "16860bdf67462d5e8322de6136295594c9ec1d4f4f54e518429e27943273c900",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1412-d32b1a1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1412/DroidDeck-PR.1412-d32b1a1-ludashi.apk",
+          "size": 67786802,
+          "sha256": "1a0b5d384dbb664828eaae6281bf4c28db8838ec87fe4bfceb2a2f25b7f6cce2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1401",
       "title": "perf: faster droiddeck-ntsync, and ntsync as the default Wine sync",
       "summary": "droiddeck-ntsync (the userspace stand-in for the Linux ntsync driver, Wine sync = ntsync) was slower than droiddeck-esync on every cheap operation. On the tablet a SetEvent cost 0.94 \u00b5s against esync's 0.21 \u00b5s, and a wait on a signaled event 0.45 \u00b5s against 0.08 \u00b5s. Four things made it slow:",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1401/DroidDeck-PR.1401-293e84a-ludashi.apk",
           "size": 67794994,
           "sha256": "131755dfc1c50514821db2199f0d4d978e6179aa09b257da9cf9b4396ea6b819",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1412",
-      "title": "ci: reuse preload snapshots verified against main builds",
-      "summary": "Fresh PRs and cache eviction currently rebuild unchanged preload binaries. This adds a 1.48 MB immutable snapshot for the core ARM64 and x86 preloads, pinned by a reviewed source/output manifest. VR and other runtime components keep their existing build paths.",
-      "commit": "d111b2b3ddf52c93bd245e579897054368d4531d",
-      "pr": 1412,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792779242000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1412",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1412-d111b2b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1412/DroidDeck-PR.1412-d111b2b.apk",
-          "size": 67786802,
-          "sha256": "8ca9d0ee96aeb630ad5f2b46cdae4e002139f5f5e803900c5f9d1ca24c6128fa",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1412-d111b2b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1412/DroidDeck-PR.1412-d111b2b-pubg.apk",
-          "size": 67786802,
-          "sha256": "48c9c287094ed143d17b3aaab7dd3269b6852f3e9d52360d1a74a301c89ae695",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1412-d111b2b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1412/DroidDeck-PR.1412-d111b2b-antutu.apk",
-          "size": 67786802,
-          "sha256": "5821d8ec23a0637871d39b5224ba69c705d57023c42464ac19027511f83294bd",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1412-d111b2b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1412/DroidDeck-PR.1412-d111b2b-ludashi.apk",
-          "size": 67786802,
-          "sha256": "ff00e30486d8591c929161b928a2017721097c156535797e426c5fbee76b7588",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
