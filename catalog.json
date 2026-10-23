@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792785852632,
+  "generatedAt": 1792785988529,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1421",
+      "title": "fix: Steam starts on ROMs that refuse the Android ID read",
+      "summary": "On a Redmi K70 (Android 14), tapping Steam drops straight back to the main screen. The session thread dies while writing the guest network link:",
+      "commit": "b6ca673d6edf5528c788e1cebda766d3ec2dc8ab",
+      "pr": 1421,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792785932000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1421",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1421-b6ca673.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1421/DroidDeck-PR.1421-b6ca673.apk",
+          "size": 67794994,
+          "sha256": "1b82ffce1288ccccde0721c0acf86e6af3a8c035b168ebdba6532b47c02438db",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1421-b6ca673-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1421/DroidDeck-PR.1421-b6ca673-pubg.apk",
+          "size": 67794994,
+          "sha256": "cb51c6d80b23fe3c98628ab009fa64400324d75f9bfa4e330ac23ae0bfc69f1c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1421-b6ca673-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1421/DroidDeck-PR.1421-b6ca673-antutu.apk",
+          "size": 67794994,
+          "sha256": "8907d41b86d766dc6905dc35e003e301e0108e82340232e8e96e414b0b8c2736",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1421-b6ca673-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1421/DroidDeck-PR.1421-b6ca673-ludashi.apk",
+          "size": 67794994,
+          "sha256": "d06f0eed061505bc17b5b4d69baea2c41ad6301fc896cbdb6ee9b5763f9f7b24",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1420",
       "title": "fix: the app follows automatic landscape rotation again unless an orientation was picked",
