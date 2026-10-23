@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792754437144,
+  "generatedAt": 1792755682075,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ffa40a1",
-    "title": "perf: run Wine's arm64 SIGUSR2 context switch without a kernel signal",
-    "summary": "Wine on arm64 restores a full thread context by raising SIGUSR2 in syscalldispatcherreturnslowpath. It does this after every exception that a handler continues from and after every NtContinue into emulated x86 code, so every x86 game under FEX goes through it. Under proot each of those signals is a ptrace stop, about 20 \u00b5s on the tablet, and an access violation pays for two traced signal",
-    "commit": "ffa40a15d5655fb7fb2aa22cdf51d13f7ba95af1",
+    "tag": "main-ac0909e",
+    "title": "perf: let Wine read process memory counters from /proc directly",
+    "summary": "Wine builds its process list (NtQuerySystemInformation(SystemProcessInformation), behind CreateToolhelp32Snapshot, EnumProcesses and friends) by opening /proc/<pid>/status for every process in fillvmcounters to read its memory counters. libblsession rewrites TracerPid in those reads, and for another process's file it hands back a read-only copy made through /tmp/.droiddeck-status-",
+    "commit": "ac0909eaa35c0ccf8a42b417f88e9ff37f3523cb",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792737218000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ffa40a1",
+    "publishedAt": 1792755622000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ac0909e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ffa40a1.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffa40a1/DroidDeck-main-ffa40a1.apk",
-        "size": 67721071,
-        "sha256": "e25e9e82dd8a31582e6cfff2ab2e450e6280e8e88907f41ad58c08dff04f6c79",
+        "name": "DroidDeck-main-ac0909e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac0909e/DroidDeck-main-ac0909e.apk",
+        "size": 67725167,
+        "sha256": "2ad3ec9d3440594c27bbbf00fd6b4e3116bc993c18e85d24aaa70e12eacf005f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ffa40a1-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffa40a1/DroidDeck-main-ffa40a1-pubg.apk",
-        "size": 67721071,
-        "sha256": "4fa18ec1d08096b6727c818d38e559f640937f39f4be86db7f3446af5a876db8",
+        "name": "DroidDeck-main-ac0909e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac0909e/DroidDeck-main-ac0909e-pubg.apk",
+        "size": 67725167,
+        "sha256": "9478c5c5d4bf56b6a598f4a50e6cfc89566c1b6f2ba7a95fb089b6be7570c223",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ffa40a1-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffa40a1/DroidDeck-main-ffa40a1-antutu.apk",
-        "size": 67721071,
-        "sha256": "b01356187c81a1970d692ab245128bd21bab3ae654d13afea8398f68469a0308",
+        "name": "DroidDeck-main-ac0909e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac0909e/DroidDeck-main-ac0909e-antutu.apk",
+        "size": 67725167,
+        "sha256": "af9225ba388b99a6d858cfc1680acdcb7c02d6a50fa6ff6d6ed4f42246050e88",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ffa40a1-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffa40a1/DroidDeck-main-ffa40a1-ludashi.apk",
-        "size": 67721071,
-        "sha256": "1d437b2574bc21d71f82c2ea8cbce35ce4c525b0c622568b0f6ce3b79f8f7760",
+        "name": "DroidDeck-main-ac0909e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ac0909e/DroidDeck-main-ac0909e-ludashi.apk",
+        "size": 67725167,
+        "sha256": "7f2a4a3f85c5c383627de640b6447e197e7d806def3c26c93444410f1a1cacec",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "ac0909eaa35c0ccf8a42b417f88e9ff37f3523cb",
+      "title": "perf: let Wine read process memory counters from /proc directly",
+      "summary": "Wine builds its process list (NtQuerySystemInformation(SystemProcessInformation), behind CreateToolhelp32Snapshot, EnumProcesses and friends) by opening /proc/<pid>/status for every process in fillvmcounters to read its memory counters. libblsession rewrites TracerPid in those reads, and for another process's file it hands back a read-only copy made through /tmp/.droiddeck-status-",
+      "publishedAt": 1792755622000
+    },
     {
       "commit": "ffa40a15d5655fb7fb2aa22cdf51d13f7ba95af1",
       "title": "perf: run Wine's arm64 SIGUSR2 context switch without a kernel signal",
@@ -155,12 +161,6 @@
       "title": "Fix main APK 7zip dependency download",
       "summary": "Current main APK run 39823490454 fails before Gradle because Arch Linux ARM\u2019s redirecting mirror sends the pinned 7zip download to a Florida mirror returning HTTP 404.",
       "publishedAt": 1792693992000
-    },
-    {
-      "commit": "a4eee5c2a4334c86fe12b5c8c9ff8af9c01f52a2",
-      "title": "feat: page the session out to zram before suspending it, and zram is always on where supported",
-      "summary": "On the Thor, a session suspended overnight with Bulletstorm running was killed by lmkd at 07:28 while the screen was off. The kill record showed 275 MB free and 6.8 of 8 GB of zram still unused: the frozen game sat fully resident because nothing had moved it to swap. lmkd then worked its way up to the session's foreground service (adj 200) within 1.5 s.",
-      "publishedAt": 1792692419000
     }
   ],
   "tests": [
