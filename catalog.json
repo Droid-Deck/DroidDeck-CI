@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792790683252,
+  "generatedAt": 1792790813824,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1427",
+      "title": "fix: games hold the frame limit instead of dropping below it",
+      "summary": "With a frame limit set, games run well below it. MKX does about 57 fps uncapped on a REDMAGIC tablet, yet only 33-35 fps with a 40 limit, with half-second stalls every few seconds. Discord reports describe the same with 60 limits (games dropping to 40-50).",
+      "commit": "1dca6715a8cd9ab68d70818daa0b92483a0bc440",
+      "pr": 1427,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792790763000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1427",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1427-1dca671.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1427/DroidDeck-PR.1427-1dca671.apk",
+          "size": 67794994,
+          "sha256": "e74899a536d96536f744d4b7275193e35280454c5711923d176519cbf685cce4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1427-1dca671-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1427/DroidDeck-PR.1427-1dca671-pubg.apk",
+          "size": 67794994,
+          "sha256": "667609659be9409279bc45a3d89a60506b8e4388591944cd07287f8727d35f02",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1427-1dca671-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1427/DroidDeck-PR.1427-1dca671-antutu.apk",
+          "size": 67794994,
+          "sha256": "3840de736f7963644ba501e882294b54b6962063d6821237aa333c66bc0270ce",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1427-1dca671-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1427/DroidDeck-PR.1427-1dca671-ludashi.apk",
+          "size": 67794994,
+          "sha256": "29dcf1b6da9f592c0834c49336e682cebc52c9d9016d39a1fad00484acd3533c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1425",
       "title": "feat(stores): download Amazon engine on demand",
