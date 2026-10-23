@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792787495579,
+  "generatedAt": 1792787634203,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9010d27",
-    "title": "fix(steam): the last change to a game's compatibility tool wins",
-    "summary": "Refs #1248",
-    "commit": "9010d275ab065d4caad42812b05b9c0ff03d2eb1",
+    "tag": "main-0c26a82",
+    "title": "fix: keep FEX's TSO on for Unity games",
+    "summary": "The default FEX preset (Performance + TSO) is fine for Unity. But when the Default profile is switched to a preset\nthat turns TSO off (Performance, Extreme, Extreme-gn, Denuvo), Unity players break. DroidDeck already keeps full TSO\nfor .NET games (coreclr.dll) whatever the preset; this gives Unity players the same safety net for TSO.",
+    "commit": "0c26a829ecda96d057320e30f56a0630796d4e69",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792787243000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9010d27",
+    "publishedAt": 1792787584000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0c26a82",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9010d27.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9010d27/DroidDeck-main-9010d27.apk",
+        "name": "DroidDeck-main-0c26a82.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c26a82/DroidDeck-main-0c26a82.apk",
         "size": 67794994,
-        "sha256": "a57e58b507d8406a045becce46c07901ad367aea77c4d10a7e99948fd43188b7",
+        "sha256": "7688d6227b35c549ad14a0d5e5836d8ffa280fb3c7af916fdc935867e298d6fb",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9010d27-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9010d27/DroidDeck-main-9010d27-pubg.apk",
+        "name": "DroidDeck-main-0c26a82-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c26a82/DroidDeck-main-0c26a82-pubg.apk",
         "size": 67794994,
-        "sha256": "7debab18abfe88d06508f10ea20d68a05c204c9b18e5877741b08bb5998003c6",
+        "sha256": "68abd6b977e0773b483f306f9c27255684f562f4f4de64678820585350363eb7",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9010d27-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9010d27/DroidDeck-main-9010d27-antutu.apk",
+        "name": "DroidDeck-main-0c26a82-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c26a82/DroidDeck-main-0c26a82-antutu.apk",
         "size": 67794994,
-        "sha256": "108a1a35a612a4a15bd289569cbaaddf5d1d5721902f4e037559a80ed6f403b0",
+        "sha256": "28dbe46af9eda2e6208dad527a9be1722308e9ba51f9e8c992ae0a43fe191270",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9010d27-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9010d27/DroidDeck-main-9010d27-ludashi.apk",
+        "name": "DroidDeck-main-0c26a82-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c26a82/DroidDeck-main-0c26a82-ludashi.apk",
         "size": 67794994,
-        "sha256": "25f9290380f6e0882e81322d09c9e21038528ecd75c6fbca685138d1ff817a41",
+        "sha256": "8e362df3a0859cf3835adcfb190f43ffc951a8a34e0d62e19d8003ef1fecc3fe",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0c26a829ecda96d057320e30f56a0630796d4e69",
+      "title": "fix: keep FEX's TSO on for Unity games",
+      "summary": "The default FEX preset (Performance + TSO) is fine for Unity. But when the Default profile is switched to a preset\nthat turns TSO off (Performance, Extreme, Extreme-gn, Denuvo), Unity players break. DroidDeck already keeps full TSO\nfor .NET games (coreclr.dll) whatever the preset; this gives Unity players the same safety net for TSO.",
+      "publishedAt": 1792787584000
+    },
     {
       "commit": "9010d275ab065d4caad42812b05b9c0ff03d2eb1",
       "title": "fix(steam): the last change to a game's compatibility tool wins",
@@ -155,64 +161,9 @@
       "title": "fix: draw the gamescope cursor only when that option is on",
       "summary": "Steam sessions always had gamescope paint the cursor. That extra plane costs frames on a phone.",
       "publishedAt": 1792778618000
-    },
-    {
-      "commit": "a4447039b9b377bbd8366bb07826bbfa22f7aa38",
-      "title": "ci: parallelize regression checks and isolate component caches",
-      "summary": "CI serialized Python/native tests after APK compilation and rebuilt Comet whenever the broad preload cache changed. This separates those costs while preserving source checks and publication gates.",
-      "publishedAt": 1792778586000
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1423",
-      "title": "chore: drop the comments added with the Unity TSO fix",
-      "summary": "Follow-up to #1415: removes the code comment and docstring it added. No behavior change.",
-      "commit": "7eb4717d4c8919688d74b294d0db538a247e5b5d",
-      "pr": 1423,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792787431000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1423",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1423-7eb4717.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1423/DroidDeck-PR.1423-7eb4717.apk",
-          "size": 67794994,
-          "sha256": "26ebe71201e3ee13253f9882d6585f1c18a0a2becf18b8551750f3afc4fa4865",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1423-7eb4717-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1423/DroidDeck-PR.1423-7eb4717-pubg.apk",
-          "size": 67794994,
-          "sha256": "ab7e0c98e433b0ecdca7c4ef0e7144200b6736be9651a782efa9402943be32ec",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1423-7eb4717-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1423/DroidDeck-PR.1423-7eb4717-antutu.apk",
-          "size": 67794994,
-          "sha256": "233e39598c131b3c142b801bccc543769a15affa7cf5d099bd742aaa06df61d0",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1423-7eb4717-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1423/DroidDeck-PR.1423-7eb4717-ludashi.apk",
-          "size": 67794994,
-          "sha256": "845fb04b432162ac7a01a3ee9b1c910b1ab40eb486db1c83d5a1c57668dbb4f5",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1417",
       "title": "ci: avoid repeated build and pack setup",
