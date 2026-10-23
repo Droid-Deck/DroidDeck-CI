@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792778648363,
+  "generatedAt": 1792778693520,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a444703",
-    "title": "ci: parallelize regression checks and isolate component caches",
-    "summary": "CI serialized Python/native tests after APK compilation and rebuilt Comet whenever the broad preload cache changed. This separates those costs while preserving source checks and publication gates.",
-    "commit": "a4447039b9b377bbd8366bb07826bbfa22f7aa38",
+    "tag": "main-7c51e6e",
+    "title": "fix: draw the gamescope cursor only when that option is on",
+    "summary": "Steam sessions always had gamescope paint the cursor. That extra plane costs frames on a phone.",
+    "commit": "7c51e6e904ec0caa6015ab9da09ea3fc5fd3fda0",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792778586000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a444703",
+    "publishedAt": 1792778618000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7c51e6e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a444703.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a444703/DroidDeck-main-a444703.apk",
+        "name": "DroidDeck-main-7c51e6e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c51e6e/DroidDeck-main-7c51e6e.apk",
         "size": 67782706,
-        "sha256": "acd70cde386ae0c03da5e40e0948f73eb6ba38c5301e3705a3ce319019b564db",
+        "sha256": "ca6aa059851475bed390dafe7679b0298d14f60aaea6d394d105c703e7aebd04",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a444703-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a444703/DroidDeck-main-a444703-pubg.apk",
+        "name": "DroidDeck-main-7c51e6e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c51e6e/DroidDeck-main-7c51e6e-pubg.apk",
         "size": 67782706,
-        "sha256": "55f8e2b06f114e446af5e6b3c960bcfd240a0b302c89e85ebbd843a8ac89d5d7",
+        "sha256": "161d4e9e71f14a37c049504632aae8313e053fac1daa255404e1b07e9d2bdc06",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a444703-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a444703/DroidDeck-main-a444703-antutu.apk",
+        "name": "DroidDeck-main-7c51e6e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c51e6e/DroidDeck-main-7c51e6e-antutu.apk",
         "size": 67782706,
-        "sha256": "6644d18dd8bca7bcc705b393cfcaac24ee6978aa81b3abb3ed6db4994a8b546c",
+        "sha256": "e373a19a30c4ce73e9bd19c40a8af42e75069e89c30d2162e1ccb28576b01665",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a444703-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a444703/DroidDeck-main-a444703-ludashi.apk",
+        "name": "DroidDeck-main-7c51e6e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c51e6e/DroidDeck-main-7c51e6e-ludashi.apk",
         "size": 67782706,
-        "sha256": "7a3c13b8b5b8b4bf0360fdadc49e8461557a46b055eb4e11a644f17e04a5601e",
+        "sha256": "987a58f4ab7f74f5a3dfc21f4e997ada13506bf46c6a7271ad78002dbb6d1c79",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "7c51e6e904ec0caa6015ab9da09ea3fc5fd3fda0",
+      "title": "fix: draw the gamescope cursor only when that option is on",
+      "summary": "Steam sessions always had gamescope paint the cursor. That extra plane costs frames on a phone.",
+      "publishedAt": 1792778618000
+    },
     {
       "commit": "a4447039b9b377bbd8366bb07826bbfa22f7aa38",
       "title": "ci: parallelize regression checks and isolate component caches",
@@ -155,12 +161,6 @@
       "title": "Pushed to main without a PR - fix: release the microphone before freezing a session so the SoC can sleep (#1389)",
       "summary": "",
       "publishedAt": 1792760903000
-    },
-    {
-      "commit": "ac0909eaa35c0ccf8a42b417f88e9ff37f3523cb",
-      "title": "perf: let Wine read process memory counters from /proc directly",
-      "summary": "Wine builds its process list (NtQuerySystemInformation(SystemProcessInformation), behind CreateToolhelp32Snapshot, EnumProcesses and friends) by opening /proc/<pid>/status for every process in fillvmcounters to read its memory counters. libblsession rewrites TracerPid in those reads, and for another process's file it hands back a read-only copy made through /tmp/.droiddeck-status-",
-      "publishedAt": 1792755622000
     }
   ],
   "tests": [
