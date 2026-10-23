@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792793612500,
+  "generatedAt": 1792795642980,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1434",
+      "title": "fix: stored components can be deleted after a Proton update",
+      "summary": "After a Proton update, stored DXVK / VKD3D / FEX packages can't be deleted. Components says they're \"in use\" by a Proton that's gone (DroidDeck-Proton11-9.1 after updating to 11-11.1) or by a bare number (4005446849).",
+      "commit": "94b530ecb2a32efe6b92a67a97ea6cf6bc38e72a",
+      "pr": 1434,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792795588000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1434",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1434-94b530e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1434/DroidDeck-PR.1434-94b530e.apk",
+          "size": 67794994,
+          "sha256": "f9f86ecc07d4eccfdedcc7296432c863845af0d8685f851a8201f2d0a8af8a7d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1434-94b530e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1434/DroidDeck-PR.1434-94b530e-pubg.apk",
+          "size": 67794994,
+          "sha256": "408b127c4b985a390f5d4e6d30bc77c09da04719135c6825463d054d50da6bd3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1434-94b530e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1434/DroidDeck-PR.1434-94b530e-antutu.apk",
+          "size": 67794994,
+          "sha256": "a28778a748fd9b648e96e8c441584cf586a972d827c3660ae80e90b66897df37",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1434-94b530e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1434/DroidDeck-PR.1434-94b530e-ludashi.apk",
+          "size": 67794994,
+          "sha256": "eaf6ad9a9eaddd71dac9aa9fa677b87eb332209d118d4adf103fddee68134b0f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1429",
       "title": "fix(xbox): mount external storage for installs",
