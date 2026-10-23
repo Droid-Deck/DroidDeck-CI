@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792787785055,
+  "generatedAt": 1792788441116,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0c26a82",
-    "title": "fix: keep FEX's TSO on for Unity games",
-    "summary": "The default FEX preset (Performance + TSO) is fine for Unity. But when the Default profile is switched to a preset\nthat turns TSO off (Performance, Extreme, Extreme-gn, Denuvo), Unity players break. DroidDeck already keeps full TSO\nfor .NET games (coreclr.dll) whatever the preset; this gives Unity players the same safety net for TSO.",
-    "commit": "0c26a829ecda96d057320e30f56a0630796d4e69",
+    "tag": "main-1deae2f",
+    "title": "chore: drop the comments added with the Unity TSO fix",
+    "summary": "Follow-up to #1415: removes the code comment and docstring it added. No behavior change.",
+    "commit": "1deae2fa5bb4cda8bf9366ebd82f49fffbe19713",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792787584000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0c26a82",
+    "publishedAt": 1792788375000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1deae2f",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0c26a82.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c26a82/DroidDeck-main-0c26a82.apk",
+        "name": "DroidDeck-main-1deae2f.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1deae2f/DroidDeck-main-1deae2f.apk",
         "size": 67794994,
-        "sha256": "7688d6227b35c549ad14a0d5e5836d8ffa280fb3c7af916fdc935867e298d6fb",
+        "sha256": "29e8589f6f57ed2cae2bfa4f1b39b7654c7d688e29bfc7b2b221938b2f3188d6",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0c26a82-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c26a82/DroidDeck-main-0c26a82-pubg.apk",
+        "name": "DroidDeck-main-1deae2f-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1deae2f/DroidDeck-main-1deae2f-pubg.apk",
         "size": 67794994,
-        "sha256": "68abd6b977e0773b483f306f9c27255684f562f4f4de64678820585350363eb7",
+        "sha256": "b54ebf8658b33529c6267214113d5990217ac77fd16f5e99a7bc2c890af3dc35",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0c26a82-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c26a82/DroidDeck-main-0c26a82-antutu.apk",
+        "name": "DroidDeck-main-1deae2f-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1deae2f/DroidDeck-main-1deae2f-antutu.apk",
         "size": 67794994,
-        "sha256": "28dbe46af9eda2e6208dad527a9be1722308e9ba51f9e8c992ae0a43fe191270",
+        "sha256": "cebc4b085e5e03e542685811e8dba3397466b78ee81ad38b38a7039df5ac923f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0c26a82-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0c26a82/DroidDeck-main-0c26a82-ludashi.apk",
+        "name": "DroidDeck-main-1deae2f-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1deae2f/DroidDeck-main-1deae2f-ludashi.apk",
         "size": 67794994,
-        "sha256": "8e362df3a0859cf3835adcfb190f43ffc951a8a34e0d62e19d8003ef1fecc3fe",
+        "sha256": "8ef31583c43f31e6748d0c01264c6637188965bc03175b46db35d05deedda174",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1deae2fa5bb4cda8bf9366ebd82f49fffbe19713",
+      "title": "chore: drop the comments added with the Unity TSO fix",
+      "summary": "Follow-up to #1415: removes the code comment and docstring it added. No behavior change.",
+      "publishedAt": 1792788375000
+    },
     {
       "commit": "0c26a829ecda96d057320e30f56a0630796d4e69",
       "title": "fix: keep FEX's TSO on for Unity games",
@@ -155,12 +161,6 @@
       "title": "fix: add an A740 UBWC compatibility override",
       "summary": "Add an Adreno 740 Auto/On/Off UBWC override under GPU drivers \u2192 Advanced, applied to both drivers after restarting DroidDeck, while retaining the existing automatic rules and frame-generation guards.",
       "publishedAt": 1792779366000
-    },
-    {
-      "commit": "7c51e6e904ec0caa6015ab9da09ea3fc5fd3fda0",
-      "title": "fix: draw the gamescope cursor only when that option is on",
-      "summary": "Steam sessions always had gamescope paint the cursor. That extra plane costs frames on a phone.",
-      "publishedAt": 1792778618000
     }
   ],
   "tests": [
