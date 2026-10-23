@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792788673419,
+  "generatedAt": 1792790217375,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-61482ff",
-    "title": "ci: avoid repeated build and pack setup",
-    "summary": "Follow-up to #1412, focused on repeat work observed in completed CI logs.",
-    "commit": "61482ffee78ee8277382fdf230720fb1f4e6ff17",
+    "tag": "main-4ff4be2",
+    "title": "fix: keep a slightly early vsync tick for frame pacing",
+    "summary": "Gamescope paces from the presentation timestamp. The Choreographer tick is often still slightly ahead of the render thread, and that tick was thrown away, so the draw time was reported instead.",
+    "commit": "4ff4be23710f720cea7cd00a2fc836ebc4a7736d",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792788613000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-61482ff",
+    "publishedAt": 1792790173000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4ff4be2",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-61482ff.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61482ff/DroidDeck-main-61482ff.apk",
+        "name": "DroidDeck-main-4ff4be2.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4ff4be2/DroidDeck-main-4ff4be2.apk",
         "size": 67794994,
-        "sha256": "735b7ed1126c19182cf53e86a534671681b8e11e4ee817e04ddc7004b4187e06",
+        "sha256": "bb6ebc07162dab2bdb1fd8607d0d54443bf50f8a96e9156da137fc2b75bcf6ae",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-61482ff-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61482ff/DroidDeck-main-61482ff-pubg.apk",
+        "name": "DroidDeck-main-4ff4be2-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4ff4be2/DroidDeck-main-4ff4be2-pubg.apk",
         "size": 67794994,
-        "sha256": "ff3ceca55f0d56fea1a2d21a04e0ec1ceb3765a35ec7508c4dbf9b63c4ea2664",
+        "sha256": "3baae245b01109d65f2cb95e4f2a077566dca87a270691d99c2b5f70656d6fbb",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-61482ff-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61482ff/DroidDeck-main-61482ff-antutu.apk",
+        "name": "DroidDeck-main-4ff4be2-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4ff4be2/DroidDeck-main-4ff4be2-antutu.apk",
         "size": 67794994,
-        "sha256": "b413f4b943b60392b7343abe778221ad8273652aa5eb4f72a0c207775006f3fb",
+        "sha256": "cfd1266b56cfa27a55e9531a0a68f2c91eb9e85916631287d9a61ab9bb6ad5fc",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-61482ff-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61482ff/DroidDeck-main-61482ff-ludashi.apk",
+        "name": "DroidDeck-main-4ff4be2-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4ff4be2/DroidDeck-main-4ff4be2-ludashi.apk",
         "size": 67794994,
-        "sha256": "23cd7ec7f54fad894173a1b26d73c85c23b25f8994c1b3265edff569d554ad48",
+        "sha256": "47dbbbd01c563d7ec5347973dffcd214c2743b9753ef656bff0535548399b4c5",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4ff4be23710f720cea7cd00a2fc836ebc4a7736d",
+      "title": "fix: keep a slightly early vsync tick for frame pacing",
+      "summary": "Gamescope paces from the presentation timestamp. The Choreographer tick is often still slightly ahead of the render thread, and that tick was thrown away, so the draw time was reported instead.",
+      "publishedAt": 1792790173000
+    },
     {
       "commit": "61482ffee78ee8277382fdf230720fb1f4e6ff17",
       "title": "ci: avoid repeated build and pack setup",
@@ -155,12 +161,6 @@
       "title": "perf: faster droiddeck-ntsync, and ntsync as the default Wine sync",
       "summary": "droiddeck-ntsync (the userspace stand-in for the Linux ntsync driver, Wine sync = ntsync) was slower than droiddeck-esync on every cheap operation. On the tablet a SetEvent cost 0.94 \u00b5s against esync's 0.21 \u00b5s, and a wait on a signaled event 0.45 \u00b5s against 0.08 \u00b5s. Four things made it slow:",
       "publishedAt": 1792783530000
-    },
-    {
-      "commit": "3d9d90d832b1de07f7273a4736d7c4249c9741c9",
-      "title": "ci: consolidate and verify runtime components",
-      "summary": "Consolidate runtime preparation into a component registry and reusable recipes, and reuse approved preload binaries with independent main-build provenance checks.",
-      "publishedAt": 1792783093000
     }
   ],
   "tests": [
