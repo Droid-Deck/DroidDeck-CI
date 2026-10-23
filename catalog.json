@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792795642980,
+  "generatedAt": 1792796073336,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1431",
+      "title": "fix: games that keep stopping at boot with a warm shader cache start without it",
+      "summary": "Caravan SandWitch (1582650, D3D12 through vkd3d-proton on DD-Turnip / Adreno 840) only boots right after a Proton or driver swap. On every later start it shows its window and then quits about 4 seconds later.",
+      "commit": "73f29c8ab37cf4560f786ac28a62e201718839cd",
+      "pr": 1431,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792796007000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1431",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1431-73f29c8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-73f29c8.apk",
+          "size": 67794994,
+          "sha256": "fce26b3e2cba44fe79bdaa3df5a58def6fa3b19af055c2682a3afcec5ef8cba6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1431-73f29c8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-73f29c8-pubg.apk",
+          "size": 67794994,
+          "sha256": "2bee387251b8836b66b52f5204558c5a70b6c02dc5766ed919ba295ef1d767de",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1431-73f29c8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-73f29c8-antutu.apk",
+          "size": 67794994,
+          "sha256": "aeae1584d8a1dcd217f81076712d7718da1160a7f33b3bbb5934e8cb358a6aff",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1431-73f29c8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-73f29c8-ludashi.apk",
+          "size": 67794994,
+          "sha256": "d7cdc316d8be63efd654a444381286662eb6974700656d08875114540f68e31a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1434",
       "title": "fix: stored components can be deleted after a Proton update",
