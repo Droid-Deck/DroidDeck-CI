@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792736051332,
+  "generatedAt": 1792737271228,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-22eac08",
-    "title": "fix: keep the default launcher entry named MainActivity so RedMagic Game Space keeps DroidDeck",
-    "summary": "Since #1104 (light launcher icon), DroidDeck drops out of RedMagic Game Space, including on the Astra 2, and doesn't come back by itself. 0.5.0 is fine. Every build after #1104 has the problem, and the 0.6.0 release would bring it to everyone updating from 0.5.0.",
-    "commit": "22eac0831d10671f6bc2ad914a93a0da5046c7df",
+    "tag": "main-ffa40a1",
+    "title": "perf: run Wine's arm64 SIGUSR2 context switch without a kernel signal",
+    "summary": "Wine on arm64 restores a full thread context by raising SIGUSR2 in syscalldispatcherreturnslowpath. It does this after every exception that a handler continues from and after every NtContinue into emulated x86 code, so every x86 game under FEX goes through it. Under proot each of those signals is a ptrace stop, about 20 \u00b5s on the tablet, and an access violation pays for two traced signal",
+    "commit": "ffa40a15d5655fb7fb2aa22cdf51d13f7ba95af1",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792703497000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-22eac08",
+    "publishedAt": 1792737218000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ffa40a1",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-22eac08.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-22eac08/DroidDeck-main-22eac08.apk",
+        "name": "DroidDeck-main-ffa40a1.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffa40a1/DroidDeck-main-ffa40a1.apk",
         "size": 67721071,
-        "sha256": "7b980c6eaf6a0251a6be13376c162514868a69ee2ee68c5ee29bc0ecaed03489",
+        "sha256": "e25e9e82dd8a31582e6cfff2ab2e450e6280e8e88907f41ad58c08dff04f6c79",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-22eac08-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-22eac08/DroidDeck-main-22eac08-pubg.apk",
+        "name": "DroidDeck-main-ffa40a1-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffa40a1/DroidDeck-main-ffa40a1-pubg.apk",
         "size": 67721071,
-        "sha256": "85ccbb07c48c9438000068490ee04ab40226941e21de3db1cd85ed0b8a71e123",
+        "sha256": "4fa18ec1d08096b6727c818d38e559f640937f39f4be86db7f3446af5a876db8",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-22eac08-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-22eac08/DroidDeck-main-22eac08-antutu.apk",
+        "name": "DroidDeck-main-ffa40a1-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffa40a1/DroidDeck-main-ffa40a1-antutu.apk",
         "size": 67721071,
-        "sha256": "ab2a966f05debc7683a01978411cd9d84ed4c2c22f7580a1fef8765c76efbc86",
+        "sha256": "b01356187c81a1970d692ab245128bd21bab3ae654d13afea8398f68469a0308",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-22eac08-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-22eac08/DroidDeck-main-22eac08-ludashi.apk",
+        "name": "DroidDeck-main-ffa40a1-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ffa40a1/DroidDeck-main-ffa40a1-ludashi.apk",
         "size": 67721071,
-        "sha256": "272473a67f6fed2609eddb26c2620f860ba9707162e5e06fcc0338050199a003",
+        "sha256": "1d437b2574bc21d71f82c2ea8cbce35ce4c525b0c622568b0f6ce3b79f8f7760",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "ffa40a15d5655fb7fb2aa22cdf51d13f7ba95af1",
+      "title": "perf: run Wine's arm64 SIGUSR2 context switch without a kernel signal",
+      "summary": "Wine on arm64 restores a full thread context by raising SIGUSR2 in syscalldispatcherreturnslowpath. It does this after every exception that a handler continues from and after every NtContinue into emulated x86 code, so every x86 game under FEX goes through it. Under proot each of those signals is a ptrace stop, about 20 \u00b5s on the tablet, and an access violation pays for two traced signal",
+      "publishedAt": 1792737218000
+    },
     {
       "commit": "22eac0831d10671f6bc2ad914a93a0da5046c7df",
       "title": "fix: keep the default launcher entry named MainActivity so RedMagic Game Space keeps DroidDeck",
@@ -155,12 +161,6 @@
       "title": "feat: page the session out to zram before suspending it, and zram is always on where supported",
       "summary": "On the Thor, a session suspended overnight with Bulletstorm running was killed by lmkd at 07:28 while the screen was off. The kill record showed 275 MB free and 6.8 of 8 GB of zram still unused: the frozen game sat fully resident because nothing had moved it to swap. lmkd then worked its way up to the session's foreground service (adj 200) within 1.5 s.",
       "publishedAt": 1792692419000
-    },
-    {
-      "commit": "e4a7e52f811601390ca40a98a432051c48d71c38",
-      "title": "Fix nested KWin render-device selection on Android",
-      "summary": "KWin 6.8 removes QPainter, and Android host dmabuf feedback cannot identify the KGSL render node as a DRM device. The nested backend now accepts one explicitly selected, successfully opened render node when the normal host-device lookup fails. The new package marker selects O2/Zink in the desktop launcher before Plasma starts, including startup paths that bypass the PATH wrapper. Older packages re",
-      "publishedAt": 1792691470000
     }
   ],
   "tests": [
