@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792783594346,
+  "generatedAt": 1792784559414,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1416",
-      "title": "fix: preserve GPU stats while pinning clocks",
-      "summary": "Enabling GPU clock pinning froze Thor's kernel utilization counters, leaving the HUD stuck at an arbitrary value (10\u201311% in the reproduced sessions). KGSLPROPPWRCTRL disables both the governor and its utilization sampling.",
-      "commit": "6cc289f7d3f74eaa3c187e2ea0edaed6b7e2da3d",
-      "pr": 1416,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792783140000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1416",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1416-6cc289f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1416/DroidDeck-PR.1416-6cc289f.apk",
-          "size": 67790898,
-          "sha256": "a29923f2f8d352eb2ebe8b7ae27865bb3c7e0599fdf3546dd23c7bcd3cb197e2",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1416-6cc289f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1416/DroidDeck-PR.1416-6cc289f-pubg.apk",
-          "size": 67790898,
-          "sha256": "e1ab9bde69d25bc21e744d2a421e0c866c59546abdd58941f48d6578c39e7d78",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1416-6cc289f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1416/DroidDeck-PR.1416-6cc289f-antutu.apk",
-          "size": 67790898,
-          "sha256": "6bf4a8d847a78d1c2623d99edfa31fe7bf973c666bf2b6747e51aa09e9c0d890",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1416-6cc289f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1416/DroidDeck-PR.1416-6cc289f-ludashi.apk",
-          "size": 67790898,
-          "sha256": "43a68382e622c97d7298a8c338f6e251fb313098c85218d5d35aadb7108f5f9a",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1347",
       "title": "fix(steam): the last change to a game's compatibility tool wins",
