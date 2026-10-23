@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792785389019,
+  "generatedAt": 1792785640518,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1419",
+      "title": "fix: x86 Linux games under FEX keep LDPRELOAD libraries given by name",
+      "summary": "droiddeck-fex kept an LDPRELOAD entry only if os.path.exists() found it. A bare soname that the loader resolves through LDLIBRARYPATH doesn't exist relative to the working directory, so it was dropped before the x86 game started. MelonLoader's bootstrap in Drova is one example.",
+      "commit": "f909c7a69cc351de7063c048819191bf5b654359",
+      "pr": 1419,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792785565000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1419",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1419-f909c7a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1419/DroidDeck-PR.1419-f909c7a.apk",
+          "size": 67794994,
+          "sha256": "2376321fd0c9a75f31ad49606eab83d513f995863be63da9ee49a95f0a20ab67",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1419-f909c7a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1419/DroidDeck-PR.1419-f909c7a-pubg.apk",
+          "size": 67794994,
+          "sha256": "a617dfa29a6988b1cf6cd4b0e3dc41c619665f0611cb41f37b8611781bf20af2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1419-f909c7a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1419/DroidDeck-PR.1419-f909c7a-antutu.apk",
+          "size": 67794994,
+          "sha256": "debb8a7661fe12ea957558426996a708296d12f14a84bd8b5fbc5ccffb6a0e2b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1419-f909c7a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1419/DroidDeck-PR.1419-f909c7a-ludashi.apk",
+          "size": 67794994,
+          "sha256": "ccf4b13be15b3b01363055cdba652217316c1907576c428a49cf2543d97a31bb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1347",
       "title": "fix(steam): the last change to a game's compatibility tool wins",
