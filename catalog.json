@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792786121963,
+  "generatedAt": 1792786191258,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1417",
+      "title": "ci: avoid repeated build and pack setup",
+      "summary": "Follow-up to #1412, focused on repeat work observed in completed CI logs.",
+      "commit": "9835c4e3e16b7a9695c13362bfa370f665645508",
+      "pr": 1417,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792786146000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1417",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1417-9835c4e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1417/DroidDeck-PR.1417-9835c4e.apk",
+          "size": 67794994,
+          "sha256": "9f1bbf0667b7b41beb89e864ad6b118efd018d77ec86d6282608ed390c9ab306",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1417-9835c4e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1417/DroidDeck-PR.1417-9835c4e-pubg.apk",
+          "size": 67794994,
+          "sha256": "09fa310b2a1917e21a0e090c6b67c31a92fffbdb638583195b036fae30297978",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1417-9835c4e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1417/DroidDeck-PR.1417-9835c4e-antutu.apk",
+          "size": 67794994,
+          "sha256": "9c07a8efae96277c9308aa91de9ab4aa1f8873eb52b8a8c3f6b56431f741201a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1417-9835c4e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1417/DroidDeck-PR.1417-9835c4e-ludashi.apk",
+          "size": 67794994,
+          "sha256": "455281a85bc71a1869d62e56bb952496027ff7d5f5e932b81713aafb5bb14488",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1347",
       "title": "fix(steam): the last change to a game's compatibility tool wins",
       "summary": "Refs #1248",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1347/DroidDeck-PR.1347-3e85e4a-ludashi.apk",
           "size": 67794994,
           "sha256": "a7993f08153e8e148ffdd33761b65cf2c61ac5592fb7d9c6727c29a696ef6ff8",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1421",
-      "title": "fix: Steam starts on ROMs that refuse the Android ID read",
-      "summary": "On a Redmi K70 (Android 14), tapping Steam drops straight back to the main screen. The session thread dies while writing the guest network link:",
-      "commit": "b6ca673d6edf5528c788e1cebda766d3ec2dc8ab",
-      "pr": 1421,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792785932000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1421",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1421-b6ca673.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1421/DroidDeck-PR.1421-b6ca673.apk",
-          "size": 67794994,
-          "sha256": "1b82ffce1288ccccde0721c0acf86e6af3a8c035b168ebdba6532b47c02438db",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1421-b6ca673-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1421/DroidDeck-PR.1421-b6ca673-pubg.apk",
-          "size": 67794994,
-          "sha256": "cb51c6d80b23fe3c98628ab009fa64400324d75f9bfa4e330ac23ae0bfc69f1c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1421-b6ca673-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1421/DroidDeck-PR.1421-b6ca673-antutu.apk",
-          "size": 67794994,
-          "sha256": "8907d41b86d766dc6905dc35e003e301e0108e82340232e8e96e414b0b8c2736",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1421-b6ca673-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1421/DroidDeck-PR.1421-b6ca673-ludashi.apk",
-          "size": 67794994,
-          "sha256": "d06f0eed061505bc17b5b4d69baea2c41ad6301fc896cbdb6ee9b5763f9f7b24",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
