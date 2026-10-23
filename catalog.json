@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792786641160,
+  "generatedAt": 1792787080029,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-36dc401",
-    "title": "fix: x86 Linux games under FEX keep LDPRELOAD libraries given by name",
-    "summary": "droiddeck-fex kept an LDPRELOAD entry only if os.path.exists() found it. A bare soname that the loader resolves through LDLIBRARYPATH doesn't exist relative to the working directory, so it was dropped before the x86 game started. MelonLoader's bootstrap in Drova is one example.",
-    "commit": "36dc4014b76de1c11556b0c60ba89a796cd114e0",
+    "tag": "main-92ef850",
+    "title": "fix: Steam starts on ROMs that refuse the Android ID read",
+    "summary": "On a Redmi K70 (Android 14), tapping Steam drops straight back to the main screen. The session thread dies while writing the guest network link:",
+    "commit": "92ef85099936cee4966be76f80e345e8e53ce3df",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792786591000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-36dc401",
+    "publishedAt": 1792787030000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-92ef850",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-36dc401.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-36dc401/DroidDeck-main-36dc401.apk",
+        "name": "DroidDeck-main-92ef850.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92ef850/DroidDeck-main-92ef850.apk",
         "size": 67794994,
-        "sha256": "98f1c6a219ced2149b56b5f60c23b11d69db109796a7f9b6a3260317da193b2f",
+        "sha256": "70235a3042f8b29609b762a8bffee60e27a78603766f26fd54adf09815758738",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-36dc401-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-36dc401/DroidDeck-main-36dc401-pubg.apk",
+        "name": "DroidDeck-main-92ef850-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92ef850/DroidDeck-main-92ef850-pubg.apk",
         "size": 67794994,
-        "sha256": "1ea50e1f635e821d5d7a682966bf8ef6965300de8a9c281b53cc3bca1caa2426",
+        "sha256": "b3d7345608bafe66eb5d1ab36c533498c25c16f1e96308c7fbbad45c62cbba73",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-36dc401-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-36dc401/DroidDeck-main-36dc401-antutu.apk",
+        "name": "DroidDeck-main-92ef850-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92ef850/DroidDeck-main-92ef850-antutu.apk",
         "size": 67794994,
-        "sha256": "51c1de068320a4032072b4746632439fcecb5b29e680e01e5b58518391497ee6",
+        "sha256": "5d1a831603d9ee1aab12a77b147253b618f37e7abf27d3220da1c0a4f51dc544",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-36dc401-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-36dc401/DroidDeck-main-36dc401-ludashi.apk",
+        "name": "DroidDeck-main-92ef850-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92ef850/DroidDeck-main-92ef850-ludashi.apk",
         "size": 67794994,
-        "sha256": "421aa34d424b8485518a830ea77efb7de5b4afe2fbc2184499a71fa2f72c8681",
+        "sha256": "37edec30ff0a22fa33ffe678ca4e19f3a9508b34a07e8a08bed70c57ab7d9f72",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "92ef85099936cee4966be76f80e345e8e53ce3df",
+      "title": "fix: Steam starts on ROMs that refuse the Android ID read",
+      "summary": "On a Redmi K70 (Android 14), tapping Steam drops straight back to the main screen. The session thread dies while writing the guest network link:",
+      "publishedAt": 1792787030000
+    },
     {
       "commit": "36dc4014b76de1c11556b0c60ba89a796cd114e0",
       "title": "fix: x86 Linux games under FEX keep LDPRELOAD libraries given by name",
@@ -155,12 +161,6 @@
       "title": "feat: lift paused frame into a grey card with a glass resume button",
       "summary": "Replaces the paused-session overlay with a captured grey frame card and glass resume button, with progress, failure feedback, and a return-to-game animation tied to the service resume state.",
       "publishedAt": 1792773839000
-    },
-    {
-      "commit": "70eec3cc32e326765f3a2dbe8f02ec53af9a4fd7",
-      "title": "fix: fall back to Valve's stable Steam client when the beta one keeps failing",
-      "summary": "Stable fallback for the native arm64 Steam client",
-      "publishedAt": 1792772503000
     }
   ],
   "tests": [
