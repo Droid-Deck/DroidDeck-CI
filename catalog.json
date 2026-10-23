@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792768921954,
+  "generatedAt": 1792768999122,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-747c6ec",
-    "title": "feat: show dot-prefixed folders in game picker",
-    "summary": "\u2022 Add a persistent Show/Hide hidden files eye button to the Add Games picker (Games \u2192 +).\n\u2022 Allow users to navigate dot-prefixed directories such as .Games and choose executable files inside them.\n\u2022 Pass the same setting to Add all games in this folder, so bulk import can include dot-prefixed game directories.\n\u2022 Keep the current default behavior (hidden files not shown) and reuse the file manager's existing localized labels.\n\u2022 Extend PickListingTest to cover the opt-in behavior with a .Games directory and a dot-prefixed .exe.",
-    "commit": "747c6eca87ebdd66ea17ed9790257d96e93eb909",
+    "tag": "main-bf4aa58",
+    "title": "Add File Manager Return and Exit navigation",
+    "summary": "\u2022 Add Return to start to the File Manager toolbar for Game files and Proton prefix launches. It remembers the entry directory and returns there after browsing another storage location. Returning restores the starting storage root and closes search or favorites views. If the requested directory is unavailable, Return shows a message while browsing starts from the fallback.\n\u2022 Add Exit at the right end of the toolbar so the File Manager can close from any directory. Keep the existing toolbar design and accessible button labels.\n\u2022 Guard Exit, Return, Android Back, and parent-folder navigation while a file operation is active. Accept cancels the active operation and waits for it to stop before navigating; Decline leaves the operation running.\n\u2022 Prevent concurrent file operations and clear the tracked job only when the finishing operation owns it, so navigation continues to wait for active work.\n\u2022 Make copy, move, and delete observe cancellation during file transfer, recursive work, and the initial size scan. Clean up newly created partial destination trees while preserving existing destination directories. Preserve the move source if cancellation occurs before its copy commits; once the destination is committed, finish source cleanup.\n\u2022 Restore staged-overwrite permissions when possible; log restoration failures and continue publishing the copied file.",
+    "commit": "bf4aa58c6835e8dd66f135d6ebbd6ce7fa539a5c",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792768438000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-747c6ec",
+    "publishedAt": 1792768913000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bf4aa58",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-747c6ec.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-747c6ec/DroidDeck-main-747c6ec.apk",
-        "size": 67725167,
-        "sha256": "e162032cf9a9ae3dceb730d55fb40601184ff790b127ef046008feab9a835a67",
+        "name": "DroidDeck-main-bf4aa58.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf4aa58/DroidDeck-main-bf4aa58.apk",
+        "size": 67753839,
+        "sha256": "4b94fcd176250aa9ccc09841646d7eeacfecd48d0d32f3e4795d0d50eac7b854",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-747c6ec-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-747c6ec/DroidDeck-main-747c6ec-pubg.apk",
-        "size": 67725167,
-        "sha256": "572bf19b7812949aa0214ca266cb54772e5560247489ebbbb9ddb04d8a41f72d",
+        "name": "DroidDeck-main-bf4aa58-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf4aa58/DroidDeck-main-bf4aa58-pubg.apk",
+        "size": 67753839,
+        "sha256": "e9304ba372cb70951e2cc5db6de89aac7fb72d95ed12fa840e22721a4f05f937",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-747c6ec-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-747c6ec/DroidDeck-main-747c6ec-antutu.apk",
-        "size": 67725167,
-        "sha256": "9f31cffcb680f03bc780b03514b3ac817dab7bc782889e8fb73ce19a234aabad",
+        "name": "DroidDeck-main-bf4aa58-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf4aa58/DroidDeck-main-bf4aa58-antutu.apk",
+        "size": 67753839,
+        "sha256": "318d57a67b6d30c7b0b52e7237eb02bfd6e23a86a5c3f5ec52c085858e044ecf",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-747c6ec-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-747c6ec/DroidDeck-main-747c6ec-ludashi.apk",
-        "size": 67725167,
-        "sha256": "ee8587cc9f9343263c9693c8c2b2f97ae492bcedd9ff45ea68ea132c8de44081",
+        "name": "DroidDeck-main-bf4aa58-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf4aa58/DroidDeck-main-bf4aa58-ludashi.apk",
+        "size": 67753839,
+        "sha256": "399535c2f0285a0e2cfe6d4a29d864c37c55c1d5c57ed1a101b5627b3172450b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bf4aa58c6835e8dd66f135d6ebbd6ce7fa539a5c",
+      "title": "Add File Manager Return and Exit navigation",
+      "summary": "\u2022 Add Return to start to the File Manager toolbar for Game files and Proton prefix launches. It remembers the entry directory and returns there after browsing another storage location. Returning restores the starting storage root and closes search or favorites views. If the requested directory is unavailable, Return shows a message while browsing starts from the fallback.\n\u2022 Add Exit at the right e",
+      "publishedAt": 1792768913000
+    },
     {
       "commit": "747c6eca87ebdd66ea17ed9790257d96e93eb909",
       "title": "feat: show dot-prefixed folders in game picker",
@@ -155,12 +161,6 @@
       "title": "fix: Steam starts again on phones where PipeWire took every client for a sandboxed app",
       "summary": "On some phones a Steam session stays on a black screen and Steam never starts. Seen on a nubia NX809J (SM8850, Android 16) on the current main preview. The session log stops at:",
       "publishedAt": 1792698696000
-    },
-    {
-      "commit": "006db1456139c83ef7592139d28eab888b48cd20",
-      "title": "perf: SD card library files resolve through the fast path instead of proot",
-      "summary": "Games on an SD card library (or any library bound under several guest names) resolve their files through the proot fast path again instead of falling back to proot on every lookup.",
-      "publishedAt": 1792697514000
     }
   ],
   "tests": [
