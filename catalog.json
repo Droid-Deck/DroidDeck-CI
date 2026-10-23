@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792731046353,
+  "generatedAt": 1792731320927,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1371",
+      "title": "perf: run Wine's arm64 SIGUSR2 context switch without a kernel signal",
+      "summary": "Wine on arm64 restores a full thread context by raising SIGUSR2 in syscalldispatcherreturnslowpath. It does this after every exception that a handler continues from and after every NtContinue into emulated x86 code, so every x86 game under FEX goes through it. Under proot each of those signals is a ptrace stop, about 20 \u00b5s on the tablet, and an access violation pays for two traced signal",
+      "commit": "f08f1de3465707e17028d7f2fb8c16d08b5fce69",
+      "pr": 1371,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792731254000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1371",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1371-f08f1de.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1371/DroidDeck-PR.1371-f08f1de.apk",
+          "size": 67725167,
+          "sha256": "a9ffe01267d8c42a5bbbe85700678ba5a176fd55a9150262ce9ce4e10fbbb753",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1371-f08f1de-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1371/DroidDeck-PR.1371-f08f1de-pubg.apk",
+          "size": 67725167,
+          "sha256": "a2f65242aa68d7db5e7d2006dd18130fcafd9a8c5ecce9f14e0b683ee8cc8b31",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1371-f08f1de-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1371/DroidDeck-PR.1371-f08f1de-antutu.apk",
+          "size": 67725167,
+          "sha256": "4122a946914bb2a71e72c53de294a9eeec2c78b4c62de84cad43c7c721bf148f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1371-f08f1de-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1371/DroidDeck-PR.1371-f08f1de-ludashi.apk",
+          "size": 67725167,
+          "sha256": "d98092e1cbd7fb5330ba49d391733b0b09198d375d779a281234f14cd8366184",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1365",
       "title": "feat: Inner Gamer RGB theme, and keep the color picker's hex box above the keyboard",
