@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792753612725,
+  "generatedAt": 1792754437144,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1374",
-      "title": "perf: let Wine read process memory counters from /proc directly",
-      "summary": "Wine builds its process list (NtQuerySystemInformation(SystemProcessInformation), behind CreateToolhelp32Snapshot, EnumProcesses and friends) by opening /proc/<pid>/status for every process in fillvmcounters to read its memory counters. libblsession rewrites TracerPid in those reads, and for another process's file it hands back a read-only copy made through /tmp/.droiddeck-status-",
-      "commit": "5d793e740e6dc8bf210f8b748e1671a94bda5716",
-      "pr": 1374,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792738337000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1374",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1374-5d793e7.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1374/DroidDeck-PR.1374-5d793e7.apk",
-          "size": 67725167,
-          "sha256": "d12fbac02ed3f8af95b0d765728c592ae6a0812781ccda7c337c10b0e3869d1f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1374-5d793e7-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1374/DroidDeck-PR.1374-5d793e7-pubg.apk",
-          "size": 67725167,
-          "sha256": "e2d65d3b40059b2fd1bae0206fe3958a1d8150e1b4fdefc122702a7ab3951a51",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1374-5d793e7-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1374/DroidDeck-PR.1374-5d793e7-antutu.apk",
-          "size": 67725167,
-          "sha256": "c721fc335ddbec2b90a264ea039e4504a1bbaf1179a1e0912cf02a4449ad0a80",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1374-5d793e7-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1374/DroidDeck-PR.1374-5d793e7-ludashi.apk",
-          "size": 67725167,
-          "sha256": "c134e7593791dd4e65b1ab881b673dd875991fe641410f2e1f0db5436dd19e67",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1365",
       "title": "feat: Inner Gamer RGB theme, and keep the color picker's hex box above the keyboard",
