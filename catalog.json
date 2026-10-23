@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792784559414,
+  "generatedAt": 1792785389019,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8f0bd51",
-    "title": "perf: faster droiddeck-ntsync, and ntsync as the default Wine sync",
-    "summary": "droiddeck-ntsync (the userspace stand-in for the Linux ntsync driver, Wine sync = ntsync) was slower than droiddeck-esync on every cheap operation. On the tablet a SetEvent cost 0.94 \u00b5s against esync's 0.21 \u00b5s, and a wait on a signaled event 0.45 \u00b5s against 0.08 \u00b5s. Four things made it slow:",
-    "commit": "8f0bd51fd8c41003ff0e2b694b12369c913c8081",
+    "tag": "main-2d59f03",
+    "title": "fix: preserve GPU stats while pinning clocks",
+    "summary": "Enabling GPU clock pinning froze Thor's kernel utilization counters, leaving the HUD stuck at an arbitrary value (10\u201311% in the reproduced sessions). KGSLPROPPWRCTRL disables both the governor and its utilization sampling.",
+    "commit": "2d59f03e7b037c461cfb7082eca4892d56955453",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792783530000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8f0bd51",
+    "publishedAt": 1792785327000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2d59f03",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8f0bd51.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f0bd51/DroidDeck-main-8f0bd51.apk",
+        "name": "DroidDeck-main-2d59f03.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d59f03/DroidDeck-main-2d59f03.apk",
         "size": 67794994,
-        "sha256": "88f4bc2bb8d1e9ba2f9ce83cb71bdb06cb0380a629e308cf43936d785642561b",
+        "sha256": "739d81d55d8b546b3102c27e46ce96720cef10eeec149a283d9c7be36f834da1",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8f0bd51-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f0bd51/DroidDeck-main-8f0bd51-pubg.apk",
+        "name": "DroidDeck-main-2d59f03-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d59f03/DroidDeck-main-2d59f03-pubg.apk",
         "size": 67794994,
-        "sha256": "1e0733908c21af997c955243dab07eeb03b2b95165f1a61a9c83412c8e52b5d2",
+        "sha256": "0eaad17f70c0c92c379bf8c8f097907e14cb37c2f8c843ec235a50815f406615",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8f0bd51-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f0bd51/DroidDeck-main-8f0bd51-antutu.apk",
+        "name": "DroidDeck-main-2d59f03-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d59f03/DroidDeck-main-2d59f03-antutu.apk",
         "size": 67794994,
-        "sha256": "d5edb93952425658dd7d207d4b06db71f816cf1c0bf720946cb14976af023b34",
+        "sha256": "75ed6113d4ce1e8506fcbcb2b453fcec9a12f4ad1d0c816393e96a63b09a5c60",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8f0bd51-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8f0bd51/DroidDeck-main-8f0bd51-ludashi.apk",
+        "name": "DroidDeck-main-2d59f03-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d59f03/DroidDeck-main-2d59f03-ludashi.apk",
         "size": 67794994,
-        "sha256": "415fbb77a24f9f246742e2548ed82a7bbceeb115b05c1e1060958207771d6e11",
+        "sha256": "d1590f4677a0503172415c4c5fe77eab731eef936f020d2d85d60e347ebae36b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "2d59f03e7b037c461cfb7082eca4892d56955453",
+      "title": "fix: preserve GPU stats while pinning clocks",
+      "summary": "Enabling GPU clock pinning froze Thor's kernel utilization counters, leaving the HUD stuck at an arbitrary value (10\u201311% in the reproduced sessions). KGSLPROPPWRCTRL disables both the governor and its utilization sampling.",
+      "publishedAt": 1792785327000
+    },
     {
       "commit": "8f0bd51fd8c41003ff0e2b694b12369c913c8081",
       "title": "perf: faster droiddeck-ntsync, and ntsync as the default Wine sync",
@@ -155,12 +161,6 @@
       "title": "feat: Inner Gamer RGB theme, and keep the color picker's hex box above the keyboard",
       "summary": "Two changes.",
       "publishedAt": 1792771115000
-    },
-    {
-      "commit": "bf4aa58c6835e8dd66f135d6ebbd6ce7fa539a5c",
-      "title": "Add File Manager Return and Exit navigation",
-      "summary": "\u2022 Add Return to start to the File Manager toolbar for Game files and Proton prefix launches. It remembers the entry directory and returns there after browsing another storage location. Returning restores the starting storage root and closes search or favorites views. If the requested directory is unavailable, Return shows a message while browsing starts from the fallback.\n\u2022 Add Exit at the right e",
-      "publishedAt": 1792768913000
     }
   ],
   "tests": [
