@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792802797026,
+  "generatedAt": 1792803619170,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-866551e",
-    "title": "fix: Snapdragon 8 Gen 2 no longer pins Steam to one core by default",
-    "summary": "Since 0.5.0, Snapdragon 8 Gen 2 devices (Retroid Pocket 6, Galaxy S23, AYN Thor) pin the Steam client, its UI helper and gamescope to the single prime core whenever the core settings were never touched. The Steam menu and overlay lag on those devices, and games launched from Steam get CPU-starved.",
-    "commit": "866551e797bb488cb72494056c96d1c21051e2ca",
+    "tag": "main-116d0e4",
+    "title": "fix: a game started from another launcher returns to that launcher",
+    "summary": "A game started from another launcher (ES-DE, a droiddeck://game/ link, a pinned shortcut) should send the player back to that launcher when it closes. Instead DroidDeck always opened the Android home screen, which is a different place whenever that launcher isn't the default Home app.",
+    "commit": "116d0e4f1a4ce77faa3fe1a9e5f155d4bd9b19de",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792802145000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-866551e",
+    "publishedAt": 1792803554000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-116d0e4",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-866551e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-866551e/DroidDeck-main-866551e.apk",
+        "name": "DroidDeck-main-116d0e4.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-116d0e4/DroidDeck-main-116d0e4.apk",
         "size": 67794994,
-        "sha256": "4751510ea113eec5f17d52280146b3f7dc11e0e6b7662540b38845a5b775d95f",
+        "sha256": "91588fa8fc9b470384a5209671a12a0eec67d82c22c47b2e48f3b5611704ced8",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-866551e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-866551e/DroidDeck-main-866551e-pubg.apk",
+        "name": "DroidDeck-main-116d0e4-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-116d0e4/DroidDeck-main-116d0e4-pubg.apk",
         "size": 67794994,
-        "sha256": "59c36c723e47c7ea7a489677863c1a9594f9cf1100ac6521df33fb954afca5b4",
+        "sha256": "88112c0977e17b41260ed9bf217269e164ef3901d9a2faa889903b32dcc61d41",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-866551e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-866551e/DroidDeck-main-866551e-antutu.apk",
+        "name": "DroidDeck-main-116d0e4-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-116d0e4/DroidDeck-main-116d0e4-antutu.apk",
         "size": 67794994,
-        "sha256": "0de323006d07471b5047886ce5680363b0a049e0dbd107f1a749a97869b0cb10",
+        "sha256": "b69d4e188ba9f5958e25aff042ecf2cbddbaac4f830ba57767467eccfdbbdebb",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-866551e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-866551e/DroidDeck-main-866551e-ludashi.apk",
+        "name": "DroidDeck-main-116d0e4-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-116d0e4/DroidDeck-main-116d0e4-ludashi.apk",
         "size": 67794994,
-        "sha256": "a3e397a1e3dd08ff9a3f4a737b81fba645a0c73ad4e1b13530e8803d5a852026",
+        "sha256": "9ca72117481d2eae627772b6be20747b58f78c46aac15846b86346348f9040a2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "116d0e4f1a4ce77faa3fe1a9e5f155d4bd9b19de",
+      "title": "fix: a game started from another launcher returns to that launcher",
+      "summary": "A game started from another launcher (ES-DE, a droiddeck://game/ link, a pinned shortcut) should send the player back to that launcher when it closes. Instead DroidDeck always opened the Android home screen, which is a different place whenever that launcher isn't the default Home app.",
+      "publishedAt": 1792803554000
+    },
     {
       "commit": "866551e797bb488cb72494056c96d1c21051e2ca",
       "title": "fix: Snapdragon 8 Gen 2 no longer pins Steam to one core by default",
@@ -155,12 +161,6 @@
       "title": "fix: the app follows automatic landscape rotation again unless an orientation was picked",
       "summary": "Fixes #1348, fixes #1372, fixes #1388.",
       "publishedAt": 1792787170000
-    },
-    {
-      "commit": "92ef85099936cee4966be76f80e345e8e53ce3df",
-      "title": "fix: Steam starts on ROMs that refuse the Android ID read",
-      "summary": "On a Redmi K70 (Android 14), tapping Steam drops straight back to the main screen. The session thread dies while writing the guest network link:",
-      "publishedAt": 1792787030000
     }
   ],
   "tests": [
