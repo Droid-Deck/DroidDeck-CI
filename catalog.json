@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792816811218,
+  "generatedAt": 1792817014704,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1457",
+      "title": "fix: Proton's EasyAntiCheat and BattlEye runtimes are not listed as games",
+      "summary": "When a game needs Proton's anti-cheat support, Steam installs Proton EasyAntiCheat Runtime (1826330) or Proton BattlEye Runtime (1161040). Both are tool depots, but the launcher's Games tab listed them as games with a Launch button, and they couldn't be removed.",
+      "commit": "be71edc19a372b372169982d0550a8e5f3738e1d",
+      "pr": 1457,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792816955000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1457",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1457-be71edc.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1457/DroidDeck-PR.1457-be71edc.apk",
+          "size": 67803186,
+          "sha256": "3655ab6109b81d915236dfba9f13a5a18e706ebc98c5a831e3f0b7ba43454eca",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1457-be71edc-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1457/DroidDeck-PR.1457-be71edc-pubg.apk",
+          "size": 67803186,
+          "sha256": "6b3dfc7d1b4daee1faa3721db7d3ab9b7a5660cd8de0b75e60eab9b734a905bf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1457-be71edc-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1457/DroidDeck-PR.1457-be71edc-antutu.apk",
+          "size": 67803186,
+          "sha256": "4f238c801e0edbc3f715655cff78976720d8d5a29d09b3f6ba8aba9a3e9c9c47",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1457-be71edc-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1457/DroidDeck-PR.1457-be71edc-ludashi.apk",
+          "size": 67803186,
+          "sha256": "61874ed82fcbdbf899e559fa0dbafd925c4a157fa20dc3111867ce69fba1a9e9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1424",
       "title": "feat: add experimental Android XR tracking and SteamVR support",
