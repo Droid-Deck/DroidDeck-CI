@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792884221411,
+  "generatedAt": 1792885757480,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1524",
+      "title": "Focus flatpak and other sandboxed shortcuts in gaming mode",
+      "summary": "A Flatpak app added to Steam as a non-Steam game opened from Big Picture, but the screen stayed on Steam's loading spinner with only the app's sound. Battle.net launched the same way (DD-273) showed the same thing.",
+      "commit": "a08b85f57026206d46d91979d28b65bd0540b01a",
+      "pr": 1524,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792885705000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1524",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1524-a08b85f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1524/DroidDeck-PR.1524-a08b85f.apk",
+          "size": 67872818,
+          "sha256": "32457584e55042ca082edb1b6337e176ffb389bb89f370fee0839055f3c5f86b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1524-a08b85f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1524/DroidDeck-PR.1524-a08b85f-pubg.apk",
+          "size": 67872818,
+          "sha256": "3489cb6de8df439bafc462670708702d5d5615ba48fda7cfc72fce497885dc5b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1524-a08b85f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1524/DroidDeck-PR.1524-a08b85f-antutu.apk",
+          "size": 67872818,
+          "sha256": "78cc3d1560ed496e66104f8de75db318f58332f8db9d77223e76ff030b500b09",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1524-a08b85f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1524/DroidDeck-PR.1524-a08b85f-ludashi.apk",
+          "size": 67872818,
+          "sha256": "baf2d1f67c304c207c9a393d1a9f9864ca44564c40f8568cfd55d2d68a85f74b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1521",
       "title": "Xbox: name why sign-in can't reach the app, fall back to a keyed loopback port",
