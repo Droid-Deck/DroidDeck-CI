@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792809632976,
+  "generatedAt": 1792810791686,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1431",
+      "title": "fix: Caravan SandWitch starts, and Cyberpunk 2077 gets past ray tracing init",
+      "summary": "Caravan SandWitch quit about 4 seconds after its window opened, on every start. Two separate problems caused it; this fixes both. The second fix also covers Cyberpunk 2077's \"Ray Tracing initialization failed\" (#750).",
+      "commit": "f72691e0fa04bae545708e4b044500f8b09ca55a",
+      "pr": 1431,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792810721000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1431",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1431-f72691e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-f72691e.apk",
+          "size": 67794994,
+          "sha256": "440e27d39e286a2cdc5db6b7b7c3e089ec316038a2320eac938564165692c268",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1431-f72691e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-f72691e-pubg.apk",
+          "size": 67794994,
+          "sha256": "78c4df1583fa35b7c4d00cfe050258bb14d0a2ddac39323d20bddf0ae8c2942a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1431-f72691e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-f72691e-antutu.apk",
+          "size": 67794994,
+          "sha256": "44129cd69e8f413a796c493fb109bd284326b0b60a5c58658e92b30e752a7a58",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1431-f72691e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-f72691e-ludashi.apk",
+          "size": 67794994,
+          "sha256": "78e266f196c0f029f4c89debfb14259b771955dc0034dfbe1b919c1248bd1bbf",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-587",
       "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
