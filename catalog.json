@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792875148954,
+  "generatedAt": 1792875317932,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1510",
+      "title": "Automatically update installed Proton builds on app open",
+      "summary": "Automatically download newer releases of installed Proton families on app open when the session is stopped and network/power conditions allow, reusing the verified installer while retaining older builds and pinned selections; validated with 22 focused automation, Proton release, and default-selection tests.",
+      "commit": "547fdcef5d6d01862f33d7bd2d2e84db712448ba",
+      "pr": 1510,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792875237000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1510",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1510-547fdce.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1510/DroidDeck-PR.1510-547fdce.apk",
+          "size": 67872818,
+          "sha256": "91efd980eb6a2cbf839e37a4e3d0e78c358c4e4d5033c5296cea48c924722836",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1510-547fdce-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1510/DroidDeck-PR.1510-547fdce-pubg.apk",
+          "size": 67872818,
+          "sha256": "2a73ee6ca43189e405a29e1c193e51b08abea44b21b004a838bc2731bc0b7586",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1510-547fdce-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1510/DroidDeck-PR.1510-547fdce-antutu.apk",
+          "size": 67872818,
+          "sha256": "d909e1d4c58aec9002267a9d0efd11a3fe5def89aec9f86c05faf19959031d00",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1510-547fdce-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1510/DroidDeck-PR.1510-547fdce-ludashi.apk",
+          "size": 67872818,
+          "sha256": "c2422a548027cb5697b778cd761fd1d61a54d2b2aba89c24a30a21f9cec88b9f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1509",
       "title": "Share installed games between the arm64 and x86-64 Steam clients",
