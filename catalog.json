@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792870106634,
+  "generatedAt": 1792872716526,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1502",
+      "title": "Experimental Qualcomm proprietary driver backend for the Linux runtime",
+      "summary": "This adds an experimental Qualcomm proprietary driver backend for DroidDeck's Linux runtime. Steam, Proton and Linux apps can run on the phone's own Adreno Vulkan driver (or an imported AdrenoTools driver) instead of Turnip. Proton games, the Steam client and Zink-based OpenGL all present through it. The phone's system graphics stack is not modified and nothing needs root.",
+      "commit": "b45e761ab1c23786083069006fcad81e38b07dbb",
+      "pr": 1502,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792872647000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1502",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1502-b45e761.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1502/DroidDeck-PR.1502-b45e761.apk",
+          "size": 92764718,
+          "sha256": "27b0a14e54bba02642cf2da0f0323e1cc1c4642a385efbbdc08eebc020f69b10",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1502-b45e761-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1502/DroidDeck-PR.1502-b45e761-pubg.apk",
+          "size": 92764718,
+          "sha256": "59eb11ce9f56b1b1c05806c68a85ad391fdefdee8716f93464e97fd365c38e6d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1502-b45e761-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1502/DroidDeck-PR.1502-b45e761-antutu.apk",
+          "size": 92764718,
+          "sha256": "0f17820fbca5d7a297774c33c123d5ce409a401239bb42359d11dbdb78a563b5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1502-b45e761-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1502/DroidDeck-PR.1502-b45e761-ludashi.apk",
+          "size": 92764718,
+          "sha256": "7376bfc411502572acefd7a88da4945fd973e6e7e236ffc7a925b6537d9c9997",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1508",
       "title": "Skip umu-protonfixes for Black Ops III and Dark Souls Remastered",
