@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792867864308,
+  "generatedAt": 1792868365530,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8156a96",
-    "title": "perf: reuse Steam artwork directory scans",
-    "summary": "The installed Steam library scan lists the same app artwork directory separately for its cover, background, icon and logo, then lists it again when falling back to a hash-named icon.",
-    "commit": "8156a9649d10d4c2bf7d020391ead1b049ab19dc",
+    "tag": "main-4dda1c1",
+    "title": "fix(epic): a paused install keeps what it downloaded",
+    "summary": "Pausing an Epic download and resuming it threw away every half-written file, and the progress bar went back to 0%. In one test 1.25 GB of Blood West's 1.76 GB was downloaded again after a resume. DD-035 reports it as \"restarts from zero at ~50%\".",
+    "commit": "4dda1c1e52dcac250ed7aae4d94f530900ca41ee",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792867779000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8156a96",
+    "publishedAt": 1792868307000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4dda1c1",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8156a96.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8156a96/DroidDeck-main-8156a96.apk",
-        "size": 67856434,
-        "sha256": "984535c14992058aae4a5d575e5aaf03ec7d1d600322eb44fb5923aa17b28998",
+        "name": "DroidDeck-main-4dda1c1.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4dda1c1/DroidDeck-main-4dda1c1.apk",
+        "size": 67868722,
+        "sha256": "74217996f2abff4f4a9a61da0af5128a7f7279e8fe7319af29f4a5d1b77b8787",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8156a96-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8156a96/DroidDeck-main-8156a96-pubg.apk",
-        "size": 67860530,
-        "sha256": "5da8ca6a4b713e6bd036f1e101d057d1d38a32b75bdd1ae12f6f019911082b10",
+        "name": "DroidDeck-main-4dda1c1-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4dda1c1/DroidDeck-main-4dda1c1-pubg.apk",
+        "size": 67868722,
+        "sha256": "13064e7b2dc599897ce7fa351c62e702d60165b93595772a1ef05f8969cf1133",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8156a96-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8156a96/DroidDeck-main-8156a96-antutu.apk",
-        "size": 67860530,
-        "sha256": "d95df14ff91152215872e8c7141b16ba3f595a7c6433bd035ca8cbe3bb701d1a",
+        "name": "DroidDeck-main-4dda1c1-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4dda1c1/DroidDeck-main-4dda1c1-antutu.apk",
+        "size": 67868722,
+        "sha256": "1d03de60565333f5e89a87cd3ae84503becaf555b2bd46a9d33b3861fc124f73",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8156a96-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8156a96/DroidDeck-main-8156a96-ludashi.apk",
-        "size": 67860530,
-        "sha256": "ee591300ef3cf425be3622861f90099f28b4dfcf4ce13ec2fddef6403db5d3e9",
+        "name": "DroidDeck-main-4dda1c1-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4dda1c1/DroidDeck-main-4dda1c1-ludashi.apk",
+        "size": 67868722,
+        "sha256": "34ae3b29c5093b236941582e5b5ba7df67aeee4604ed1aa3e0a79ab44d8a8996",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4dda1c1e52dcac250ed7aae4d94f530900ca41ee",
+      "title": "fix(epic): a paused install keeps what it downloaded",
+      "summary": "Pausing an Epic download and resuming it threw away every half-written file, and the progress bar went back to 0%. In one test 1.25 GB of Blood West's 1.76 GB was downloaded again after a resume. DD-035 reports it as \"restarts from zero at ~50%\".",
+      "publishedAt": 1792868307000
+    },
     {
       "commit": "8156a9649d10d4c2bf7d020391ead1b049ab19dc",
       "title": "perf: reuse Steam artwork directory scans",
@@ -155,12 +161,6 @@
       "title": "fix: removing a Proton also deletes its stored component originals",
       "summary": "Removing a GE-Proton, CachyOS or DroidDeck-Proton build from Components left its saved DXVK, VKD3D-Proton and FEX originals in files/components/originals, about 29 MB per build.",
       "publishedAt": 1792845380000
-    },
-    {
-      "commit": "0b671b2144ee270cd1ea9828450dde8e3ecce642",
-      "title": "fix: turn off the Ubisoft Connect overlay so Ubisoft games stop crashing at start",
-      "summary": "Ubisoft games that start through Ubisoft Connect crashed about 12 seconds after their window opened: Ubisoft Connect showed \"Oh no, it crashed!\", or the game ended on a black screen.",
-      "publishedAt": 1792838401000
     }
   ],
   "tests": [
