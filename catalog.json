@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792879326957,
+  "generatedAt": 1792879770613,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8471682",
-    "title": "Collect only the Steam log lines a session wrote",
-    "summary": "Phones stayed hot after DroidDeck was closed. Every session stop re-read and redacted all of Steam's logs (about 100 files, 105 MB here), so session-collect kept one core busy for about 45 s after each swipe-away. Most of that was rotated .previous.txt files from earlier sessions. Steam appends across sessions, so even the live logs carried days of old lines.",
-    "commit": "8471682b1c3702762db1285c13707cf66b144744",
+    "tag": "main-49b6a07",
+    "title": "Present games from the KDE Steam client through software WSI",
+    "summary": "Games started from Steam's desktop client in KDE closed right after launch.",
+    "commit": "49b6a0739d97cd168b891833eeb2f9771b9b54f4",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792868550000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8471682",
+    "publishedAt": 1792879726000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-49b6a07",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8471682.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8471682/DroidDeck-main-8471682.apk",
+        "name": "DroidDeck-main-49b6a07.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49b6a07/DroidDeck-main-49b6a07.apk",
         "size": 67872818,
-        "sha256": "671fba41db3006569ff6edab746dbf68635b6c0a4651567e4c98e958a6a85816",
+        "sha256": "974010b0c86ca011e9c22f73bbd21e3ea06d48dd01f399e4ef35b7676bbe37f9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8471682-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8471682/DroidDeck-main-8471682-pubg.apk",
+        "name": "DroidDeck-main-49b6a07-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49b6a07/DroidDeck-main-49b6a07-pubg.apk",
         "size": 67872818,
-        "sha256": "43555fbe4f5cd4518f4011e1b1ec52f520a63d12417e5b3538feef2f28c2574d",
+        "sha256": "7e12dab02a135373e0fdb8716a31b7a5c12f7066f0434f401d5182ba17cab6cb",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8471682-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8471682/DroidDeck-main-8471682-antutu.apk",
+        "name": "DroidDeck-main-49b6a07-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49b6a07/DroidDeck-main-49b6a07-antutu.apk",
         "size": 67872818,
-        "sha256": "89f30b8286a27451719a501b28448dff23971e1313383064520129109e6ef760",
+        "sha256": "b9669910d45440eba1ef9805a447cda06ea935a1b098d6195f10307f94503339",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8471682-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8471682/DroidDeck-main-8471682-ludashi.apk",
+        "name": "DroidDeck-main-49b6a07-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-49b6a07/DroidDeck-main-49b6a07-ludashi.apk",
         "size": 67872818,
-        "sha256": "966a1c54eec7ef21285e7b870edc5a4641bf8ae7679e91c01a5e7064d3997c82",
+        "sha256": "3a2078205adf0e49c5a58ecd671215f1429a08e0f41f7a6a57c6c114475cc358",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "49b6a0739d97cd168b891833eeb2f9771b9b54f4",
+      "title": "Present games from the KDE Steam client through software WSI",
+      "summary": "Games started from Steam's desktop client in KDE closed right after launch.",
+      "publishedAt": 1792879726000
+    },
     {
       "commit": "8471682b1c3702762db1285c13707cf66b144744",
       "title": "Collect only the Steam log lines a session wrote",
@@ -155,12 +161,6 @@
       "title": "fix: Steam Input mouse clicks, scrolling and pointer moves reach games again",
       "summary": "Fixes #1289.",
       "publishedAt": 1792847941000
-    },
-    {
-      "commit": "2bd279a0f31a111ca541975b3a87c87f36c89abf",
-      "title": "fix: read Steam shader settings off the main thread",
-      "summary": "Read and parse Steam\u2019s shader pre-caching setting off the UI thread when opening Steam settings or switching client architecture, and skip the read in Desktop settings.",
-      "publishedAt": 1792847327000
     }
   ],
   "tests": [
