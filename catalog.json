@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792868365530,
+  "generatedAt": 1792868621340,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4dda1c1",
-    "title": "fix(epic): a paused install keeps what it downloaded",
-    "summary": "Pausing an Epic download and resuming it threw away every half-written file, and the progress bar went back to 0%. In one test 1.25 GB of Blood West's 1.76 GB was downloaded again after a resume. DD-035 reports it as \"restarts from zero at ~50%\".",
-    "commit": "4dda1c1e52dcac250ed7aae4d94f530900ca41ee",
+    "tag": "main-8471682",
+    "title": "Collect only the Steam log lines a session wrote",
+    "summary": "Phones stayed hot after DroidDeck was closed. Every session stop re-read and redacted all of Steam's logs (about 100 files, 105 MB here), so session-collect kept one core busy for about 45 s after each swipe-away. Most of that was rotated .previous.txt files from earlier sessions. Steam appends across sessions, so even the live logs carried days of old lines.",
+    "commit": "8471682b1c3702762db1285c13707cf66b144744",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792868307000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4dda1c1",
+    "publishedAt": 1792868550000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8471682",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4dda1c1.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4dda1c1/DroidDeck-main-4dda1c1.apk",
-        "size": 67868722,
-        "sha256": "74217996f2abff4f4a9a61da0af5128a7f7279e8fe7319af29f4a5d1b77b8787",
+        "name": "DroidDeck-main-8471682.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8471682/DroidDeck-main-8471682.apk",
+        "size": 67872818,
+        "sha256": "671fba41db3006569ff6edab746dbf68635b6c0a4651567e4c98e958a6a85816",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4dda1c1-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4dda1c1/DroidDeck-main-4dda1c1-pubg.apk",
-        "size": 67868722,
-        "sha256": "13064e7b2dc599897ce7fa351c62e702d60165b93595772a1ef05f8969cf1133",
+        "name": "DroidDeck-main-8471682-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8471682/DroidDeck-main-8471682-pubg.apk",
+        "size": 67872818,
+        "sha256": "43555fbe4f5cd4518f4011e1b1ec52f520a63d12417e5b3538feef2f28c2574d",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4dda1c1-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4dda1c1/DroidDeck-main-4dda1c1-antutu.apk",
-        "size": 67868722,
-        "sha256": "1d03de60565333f5e89a87cd3ae84503becaf555b2bd46a9d33b3861fc124f73",
+        "name": "DroidDeck-main-8471682-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8471682/DroidDeck-main-8471682-antutu.apk",
+        "size": 67872818,
+        "sha256": "89f30b8286a27451719a501b28448dff23971e1313383064520129109e6ef760",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4dda1c1-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4dda1c1/DroidDeck-main-4dda1c1-ludashi.apk",
-        "size": 67868722,
-        "sha256": "34ae3b29c5093b236941582e5b5ba7df67aeee4604ed1aa3e0a79ab44d8a8996",
+        "name": "DroidDeck-main-8471682-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8471682/DroidDeck-main-8471682-ludashi.apk",
+        "size": 67872818,
+        "sha256": "966a1c54eec7ef21285e7b870edc5a4641bf8ae7679e91c01a5e7064d3997c82",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8471682b1c3702762db1285c13707cf66b144744",
+      "title": "Collect only the Steam log lines a session wrote",
+      "summary": "Phones stayed hot after DroidDeck was closed. Every session stop re-read and redacted all of Steam's logs (about 100 files, 105 MB here), so session-collect kept one core busy for about 45 s after each swipe-away. Most of that was rotated .previous.txt files from earlier sessions. Steam appends across sessions, so even the live logs carried days of old lines.",
+      "publishedAt": 1792868550000
+    },
     {
       "commit": "4dda1c1e52dcac250ed7aae4d94f530900ca41ee",
       "title": "fix(epic): a paused install keeps what it downloaded",
@@ -155,12 +161,6 @@
       "title": "fix: read Steam shader settings off the main thread",
       "summary": "Read and parse Steam\u2019s shader pre-caching setting off the UI thread when opening Steam settings or switching client architecture, and skip the read in Desktop settings.",
       "publishedAt": 1792847327000
-    },
-    {
-      "commit": "0790cb4390627ea79fb7c9aef3d1acc98b941bdb",
-      "title": "fix: removing a Proton also deletes its stored component originals",
-      "summary": "Removing a GE-Proton, CachyOS or DroidDeck-Proton build from Components left its saved DXVK, VKD3D-Proton and FEX originals in files/components/originals, about 29 MB per build.",
-      "publishedAt": 1792845380000
     }
   ],
   "tests": [
