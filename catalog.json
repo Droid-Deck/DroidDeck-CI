@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792804477602,
+  "generatedAt": 1792804891897,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-116d0e4",
-    "title": "fix: a game started from another launcher returns to that launcher",
-    "summary": "A game started from another launcher (ES-DE, a droiddeck://game/ link, a pinned shortcut) should send the player back to that launcher when it closes. Instead DroidDeck always opened the Android home screen, which is a different place whenever that launcher isn't the default Home app.",
-    "commit": "116d0e4f1a4ce77faa3fe1a9e5f155d4bd9b19de",
+    "tag": "main-ad9eb8e",
+    "title": "xbox backend x86 to arm cross compilation",
+    "summary": "anyone building on an x86 system would run into docker or podman running the xbox backends docker container as an arm64 one being emulated in qemu, very slow lol. anyone whos on an arm system will still use an arm64 container, but with this commit anyone on x86 just cross compiles to arm rather than running the entire build image in an arm emulator.",
+    "commit": "ad9eb8eb29afcd59f6823faca3c0272446026d7e",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792803554000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-116d0e4",
+    "publishedAt": 1792804831000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ad9eb8e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-116d0e4.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-116d0e4/DroidDeck-main-116d0e4.apk",
+        "name": "DroidDeck-main-ad9eb8e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ad9eb8e/DroidDeck-main-ad9eb8e.apk",
         "size": 67794994,
-        "sha256": "91588fa8fc9b470384a5209671a12a0eec67d82c22c47b2e48f3b5611704ced8",
+        "sha256": "2fa4861ec14d1251b3ef1fdf7e0809f4367ab60bf0c808dc9b05133c1e1410c9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-116d0e4-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-116d0e4/DroidDeck-main-116d0e4-pubg.apk",
+        "name": "DroidDeck-main-ad9eb8e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ad9eb8e/DroidDeck-main-ad9eb8e-pubg.apk",
         "size": 67794994,
-        "sha256": "88112c0977e17b41260ed9bf217269e164ef3901d9a2faa889903b32dcc61d41",
+        "sha256": "072485be21e9ca4b3c9f9b3d806a86dd3c20d0f1ef29e2f5ff1729ec76b49406",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-116d0e4-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-116d0e4/DroidDeck-main-116d0e4-antutu.apk",
+        "name": "DroidDeck-main-ad9eb8e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ad9eb8e/DroidDeck-main-ad9eb8e-antutu.apk",
         "size": 67794994,
-        "sha256": "b69d4e188ba9f5958e25aff042ecf2cbddbaac4f830ba57767467eccfdbbdebb",
+        "sha256": "d1f97d3ec35d9fbaebea848b344e1839d4250a6361f4b470fec9c4acf2448181",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-116d0e4-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-116d0e4/DroidDeck-main-116d0e4-ludashi.apk",
+        "name": "DroidDeck-main-ad9eb8e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ad9eb8e/DroidDeck-main-ad9eb8e-ludashi.apk",
         "size": 67794994,
-        "sha256": "9ca72117481d2eae627772b6be20747b58f78c46aac15846b86346348f9040a2",
+        "sha256": "765cd7cfaffc8f1cfe66a694f13c3c16b4460450bf3e43a192990a7e1bd15365",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "ad9eb8eb29afcd59f6823faca3c0272446026d7e",
+      "title": "xbox backend x86 to arm cross compilation",
+      "summary": "anyone building on an x86 system would run into docker or podman running the xbox backends docker container as an arm64 one being emulated in qemu, very slow lol. anyone whos on an arm system will still use an arm64 container, but with this commit anyone on x86 just cross compiles to arm rather than running the entire build image in an arm emulator.",
+      "publishedAt": 1792804831000
+    },
     {
       "commit": "116d0e4f1a4ce77faa3fe1a9e5f155d4bd9b19de",
       "title": "fix: a game started from another launcher returns to that launcher",
@@ -155,12 +161,6 @@
       "title": "fix(steam): the last change to a game's compatibility tool wins",
       "summary": "Refs #1248",
       "publishedAt": 1792787243000
-    },
-    {
-      "commit": "64b94f7cdb79448c742fae5424650c909e3808a4",
-      "title": "fix: the app follows automatic landscape rotation again unless an orientation was picked",
-      "summary": "Fixes #1348, fixes #1372, fixes #1388.",
-      "publishedAt": 1792787170000
     }
   ],
   "tests": [
