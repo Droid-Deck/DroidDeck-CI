@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792813524505,
+  "generatedAt": 1792814233055,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1449",
+      "title": "fix: Steam's Ubisoft games install Ubisoft Connect again",
+      "summary": "Ubisoft games from Steam stopped at \"Unable to locate Uplay PC. Please reinstall Uplay PC.\" because Ubisoft Connect was never installed. Users reported it as a regression since 0.5.0.",
+      "commit": "5f8d8d9c49c3333eec59de9c605bb84073039008",
+      "pr": 1449,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792814178000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1449",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1449-5f8d8d9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1449/DroidDeck-PR.1449-5f8d8d9.apk",
+          "size": 67794994,
+          "sha256": "f3c95047011ec97009243166cd9297e71f9ac60c22335dbf4762e509b615b5ef",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1449-5f8d8d9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1449/DroidDeck-PR.1449-5f8d8d9-pubg.apk",
+          "size": 67794994,
+          "sha256": "2780602f8761e3a6a596c08861ae9194da7f06643362226825a39bfde550cc2b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1449-5f8d8d9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1449/DroidDeck-PR.1449-5f8d8d9-antutu.apk",
+          "size": 67794994,
+          "sha256": "0cdbe7a6631dcbaa66f2a33ca10e81c168b5f29971b00ffc7674961884372b44",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1449-5f8d8d9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1449/DroidDeck-PR.1449-5f8d8d9-ludashi.apk",
+          "size": 67794994,
+          "sha256": "2155b03dfc2a584d0aadf1c22a9e4133d6f61568851a47eb0ec00e02ce7d4822",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1431",
       "title": "fix: Caravan SandWitch starts, and Cyberpunk 2077 gets past ray tracing init",
       "summary": "Caravan SandWitch quit about 4 seconds after its window opened, on every start. Two separate problems caused it; this fixes both. The second fix also covers Cyberpunk 2077's \"Ray Tracing initialization failed\" (#750).",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-a9378c2-ludashi.apk",
           "size": 67799090,
           "sha256": "80e094082b929694d817b51c222c61774c2b726c564d190703749d9f6ee3e501",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1429",
-      "title": "fix(xbox): enable Xodus fast path and external mounts",
-      "summary": "Closes #1210.",
-      "commit": "c403d6f27ec7fa46d8e92df3ac559ba51ce4def2",
-      "pr": 1429,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792804402000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1429",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1429-c403d6f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-c403d6f.apk",
-          "size": 67794994,
-          "sha256": "1b62516dab1162757c92ff418f42cf34cf6f5f9b9967ea511f5a30b0d6d152de",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1429-c403d6f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-c403d6f-pubg.apk",
-          "size": 67794994,
-          "sha256": "f4c7381e9271a6a17196a79ca0df970dfd0966071a8d9f47b285ab2dce9c97e0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1429-c403d6f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-c403d6f-antutu.apk",
-          "size": 67794994,
-          "sha256": "624f0ca0a4d21708cc31cee2ba57300b519aa8af3fda195fe08d42826300efcd",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1429-c403d6f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-c403d6f-ludashi.apk",
-          "size": 67794994,
-          "sha256": "14aaa3490b5adf623807b003defa640317c66a965d230224854f1b28c6c09a9b",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
