@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792815982862,
+  "generatedAt": 1792816104016,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1456",
-      "title": "fix: the Steam download monitor no longer stalls the main thread on a long content log",
-      "summary": "Browsing DroidDeck during a Steam download could raise Android's \"DroidDeck isn't responding\" dialog on slower devices (reported on a Retroid Pocket Nova). It didn't happen when the user stayed idle, which is the pattern of a stalled main thread: an ANR fires only when input is waiting.",
-      "commit": "73955b7f1b15d4a489dce04f5317024cee4be562",
-      "pr": 1456,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792815913000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1456",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1456-73955b7.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1456/DroidDeck-PR.1456-73955b7.apk",
-          "size": 67803186,
-          "sha256": "d5b2988c3a42d0698177d3281655cf9e91f803119a9d36cddefb10d275857dfa",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1456-73955b7-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1456/DroidDeck-PR.1456-73955b7-pubg.apk",
-          "size": 67803186,
-          "sha256": "6c72d9330b4d04fdc2f82cd61f0cb2ca0981454527907389e2097b8877f03732",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1456-73955b7-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1456/DroidDeck-PR.1456-73955b7-antutu.apk",
-          "size": 67803186,
-          "sha256": "696c7a083ed94395ce080916fac5c8ab1d0154255b559d8580eab5feb6850607",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1456-73955b7-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1456/DroidDeck-PR.1456-73955b7-ludashi.apk",
-          "size": 67803186,
-          "sha256": "ffd097a4718ec8d04e8d2edceb5d22aee4085f297f404d7d5a2d074655734707",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1424",
       "title": "feat: add experimental Android XR tracking and SteamVR support",
