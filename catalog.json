@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792804891897,
+  "generatedAt": 1792805816121,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-587",
+      "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
+      "summary": "A user's first Steam setup never finished on an Honor Pad (Snapdragon 6 Gen 1, metered Wi-Fi with a 14 Mbit/s link). Their log stops at downloading Steam: binslinuxarm64linuxarm64 (2/17). The log was shared 31 s into the session, so nothing had failed yet. The way the download works explains why it never got further.",
+      "commit": "96e2bf992d4864baa8f546734554bf51107f2afe",
+      "pr": 587,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792805769000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-587",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.587-96e2bf9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-96e2bf9.apk",
+          "size": 67794994,
+          "sha256": "8696b416739ed16556650d928ccc3306f6851ca803425f33ef39e323307ab829",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.587-96e2bf9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-96e2bf9-pubg.apk",
+          "size": 67794994,
+          "sha256": "3e68b88c32f8e70cf4196c24fdf784c5328f77d813072ada5eda4fa6683df945",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.587-96e2bf9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-96e2bf9-antutu.apk",
+          "size": 67794994,
+          "sha256": "e3cc5cad754c6aa9258bb074d086c46de32f81b36df286587e905dc26d3dc5db",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.587-96e2bf9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-96e2bf9-ludashi.apk",
+          "size": 67794994,
+          "sha256": "0dc056a9402cefdad0546aeb72088075819a53f18ef59c51a1d2de993ddbef44",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1429",
       "title": "fix(xbox): enable Xodus fast path and external mounts",
       "summary": "Closes #1210.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-c403d6f-ludashi.apk",
           "size": 67794994,
           "sha256": "14aaa3490b5adf623807b003defa640317c66a965d230224854f1b28c6c09a9b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-587",
-      "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
-      "summary": "A user's first Steam setup never finished on an Honor Pad (Snapdragon 6 Gen 1, metered Wi-Fi with a 14 Mbit/s link). Their log stops at downloading Steam: binslinuxarm64linuxarm64 (2/17). The log was shared 31 s into the session, so nothing had failed yet. The way the download works explains why it never got further.",
-      "commit": "4a57c6f6f1e4a6758cfabb4216ff0631b3ea882b",
-      "pr": 587,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792803651000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-587",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.587-4a57c6f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-4a57c6f.apk",
-          "size": 67794994,
-          "sha256": "13fbc1698029dcbf6d72d5185a03eda02150b3cc58af8c2336d96fba24a3b953",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.587-4a57c6f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-4a57c6f-pubg.apk",
-          "size": 67794994,
-          "sha256": "6d88f1b427a1253ee8d78ea460069d11bd9546158c9d76ebe61b659e4f2734a0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.587-4a57c6f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-4a57c6f-antutu.apk",
-          "size": 67794994,
-          "sha256": "5a1b261cfcf2231917c27a338f5c04075de48bcd27c539a4f5171a92406bbd7d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.587-4a57c6f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-4a57c6f-ludashi.apk",
-          "size": 67794994,
-          "sha256": "4d4a81cef53ef80d97d30b7200fc9c772c39dc371cb4ef697a3ffb78519c29fc",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
