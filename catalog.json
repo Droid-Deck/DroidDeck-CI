@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792847309464,
+  "generatedAt": 1792847372543,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0790cb4",
-    "title": "fix: removing a Proton also deletes its stored component originals",
-    "summary": "Removing a GE-Proton, CachyOS or DroidDeck-Proton build from Components left its saved DXVK, VKD3D-Proton and FEX originals in files/components/originals, about 29 MB per build.",
-    "commit": "0790cb4390627ea79fb7c9aef3d1acc98b941bdb",
+    "tag": "main-2bd279a",
+    "title": "fix: read Steam shader settings off the main thread",
+    "summary": "Read and parse Steam\u2019s shader pre-caching setting off the UI thread when opening Steam settings or switching client architecture, and skip the read in Desktop settings.",
+    "commit": "2bd279a0f31a111ca541975b3a87c87f36c89abf",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792845380000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0790cb4",
+    "publishedAt": 1792847327000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2bd279a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0790cb4.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0790cb4/DroidDeck-main-0790cb4.apk",
+        "name": "DroidDeck-main-2bd279a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2bd279a/DroidDeck-main-2bd279a.apk",
         "size": 67803186,
-        "sha256": "2474b0f2336a76a927fd37abc7d97bbb3758120d47026c4b5b6cc987625ae903",
+        "sha256": "947c02d19f4f929d91776d4a337e17a6ffe4e6ca64f987e805f18fe4da3658e8",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0790cb4-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0790cb4/DroidDeck-main-0790cb4-pubg.apk",
+        "name": "DroidDeck-main-2bd279a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2bd279a/DroidDeck-main-2bd279a-pubg.apk",
         "size": 67803186,
-        "sha256": "34711148bfc529b36e0f1b625dd29e684f852338a53dd87ff7629e7459c7e318",
+        "sha256": "f989bca6b99117611ccb628856c8533edefee6d8debd38c735b458566723663b",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0790cb4-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0790cb4/DroidDeck-main-0790cb4-antutu.apk",
+        "name": "DroidDeck-main-2bd279a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2bd279a/DroidDeck-main-2bd279a-antutu.apk",
         "size": 67803186,
-        "sha256": "8e9c8570b29dc309b8949597c6ceee1338d725dfb4d07024a3dc048dd0d72b15",
+        "sha256": "c934b33d97c521d4654b6ebc2356c0bc690945e1de79f1edaa1e375f88255a02",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0790cb4-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0790cb4/DroidDeck-main-0790cb4-ludashi.apk",
+        "name": "DroidDeck-main-2bd279a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2bd279a/DroidDeck-main-2bd279a-ludashi.apk",
         "size": 67803186,
-        "sha256": "0cafb0f4bb803122962afff1c0fec6c89dabcb77dfc57c7b27e94c6be632508c",
+        "sha256": "bf0a1084e189ec436b96d7f161fbc4711861e9daf0938dcadc915c081cbcf5c7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "2bd279a0f31a111ca541975b3a87c87f36c89abf",
+      "title": "fix: read Steam shader settings off the main thread",
+      "summary": "Read and parse Steam\u2019s shader pre-caching setting off the UI thread when opening Steam settings or switching client architecture, and skip the read in Desktop settings.",
+      "publishedAt": 1792847327000
+    },
     {
       "commit": "0790cb4390627ea79fb7c9aef3d1acc98b941bdb",
       "title": "fix: removing a Proton also deletes its stored component originals",
@@ -155,12 +161,6 @@
       "title": "fix(xbox): enable Xodus fast path and external mounts",
       "summary": "Closes #1210.",
       "publishedAt": 1792815039000
-    },
-    {
-      "commit": "fcfbb74068d06f70e10d519c2b0d81537fecd25e",
-      "title": "fix: one refused thermal or power query no longer drops the others from the session report",
-      "summary": "\ufeffThe session report keeps the thermal headroom and power saver lines when the device refuses the thermal status query, and the other way round; a refused query now shows as \"unknown\" instead of removing the lines after it.",
-      "publishedAt": 1792814207000
     }
   ],
   "tests": [
