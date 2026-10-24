@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792817335896,
+  "generatedAt": 1792818184732,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-dd79f44",
-    "title": "fix: the Steam download monitor no longer stalls the main thread on a long content log",
-    "summary": "Browsing DroidDeck during a Steam download could raise Android's \"DroidDeck isn't responding\" dialog on slower devices (reported on a Retroid Pocket Nova). It didn't happen when the user stayed idle, which is the pattern of a stalled main thread: an ANR fires only when input is waiting.",
-    "commit": "dd79f44b3a05b858c6801da2d69f49f3785b7b9a",
+    "tag": "main-f89dc04",
+    "title": "fix: Proton's EasyAntiCheat and BattlEye runtimes are not listed as games",
+    "summary": "When a game needs Proton's anti-cheat support, Steam installs Proton EasyAntiCheat Runtime (1826330) or Proton BattlEye Runtime (1161040). Both are tool depots, but the launcher's Games tab listed them as games with a Launch button, and they couldn't be removed.",
+    "commit": "f89dc0407231a3144b7d207d5276b7eae74bcc27",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792816765000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-dd79f44",
+    "publishedAt": 1792818144000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f89dc04",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-dd79f44.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd79f44/DroidDeck-main-dd79f44.apk",
+        "name": "DroidDeck-main-f89dc04.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f89dc04/DroidDeck-main-f89dc04.apk",
         "size": 67803186,
-        "sha256": "fa6e015fc710a1ba84042e5ca963a04e0da9226e104001d7177c23fc3f4408fa",
+        "sha256": "cfc5aad3e5e086fe3c4d68d2b5f4bf9d5d96ce052a52bce1d65615e9a08dd854",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-dd79f44-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd79f44/DroidDeck-main-dd79f44-pubg.apk",
+        "name": "DroidDeck-main-f89dc04-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f89dc04/DroidDeck-main-f89dc04-pubg.apk",
         "size": 67803186,
-        "sha256": "43303739a20c1d843a6a1e8355893720e6316f61ddec24ca2a16968440f76ea3",
+        "sha256": "c4e7b7b776627ac4e49869ce1c72f1ea982459cc2c89a5b1bf3e0f0d69fcba9f",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-dd79f44-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd79f44/DroidDeck-main-dd79f44-antutu.apk",
+        "name": "DroidDeck-main-f89dc04-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f89dc04/DroidDeck-main-f89dc04-antutu.apk",
         "size": 67803186,
-        "sha256": "f03571e2607143f1a37cff8ff0628b4dde2741f83831dd1950052176217de77f",
+        "sha256": "cefcbcc93344e57240e9881f06e6f4bf4bbf9f44fcdfdbecef9cd57cfe828021",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-dd79f44-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd79f44/DroidDeck-main-dd79f44-ludashi.apk",
+        "name": "DroidDeck-main-f89dc04-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f89dc04/DroidDeck-main-f89dc04-ludashi.apk",
         "size": 67803186,
-        "sha256": "016c89c9f427cd2d64f3a25eb19b857cae19971eb36c028b507a77ae10bb91f1",
+        "sha256": "39f69b30c0ffab7888a9208d0fb0105005aef23c542604cf2af7dfbe38975a67",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f89dc0407231a3144b7d207d5276b7eae74bcc27",
+      "title": "fix: Proton's EasyAntiCheat and BattlEye runtimes are not listed as games",
+      "summary": "When a game needs Proton's anti-cheat support, Steam installs Proton EasyAntiCheat Runtime (1826330) or Proton BattlEye Runtime (1161040). Both are tool depots, but the launcher's Games tab listed them as games with a Launch button, and they couldn't be removed.",
+      "publishedAt": 1792818144000
+    },
     {
       "commit": "dd79f44b3a05b858c6801da2d69f49f3785b7b9a",
       "title": "fix: the Steam download monitor no longer stalls the main thread on a long content log",
@@ -155,15 +161,58 @@
       "title": "fix: Snapdragon 8 Gen 2 no longer pins Steam to one core by default",
       "summary": "Since 0.5.0, Snapdragon 8 Gen 2 devices (Retroid Pocket 6, Galaxy S23, AYN Thor) pin the Steam client, its UI helper and gamescope to the single prime core whenever the core settings were never touched. The Steam menu and overlay lag on those devices, and games launched from Steam get CPU-starved.",
       "publishedAt": 1792802145000
-    },
-    {
-      "commit": "0d8b5a7cf20eeb18eff7d9525ca4a43b297ebba2",
-      "title": "fix: stored components can be deleted after a Proton update",
-      "summary": "After a Proton update, stored DXVK / VKD3D / FEX packages can't be deleted. Components says they're \"in use\" by a Proton that's gone (DroidDeck-Proton11-9.1 after updating to 11-11.1) or by a bare number (4005446849).",
-      "publishedAt": 1792798067000
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1459",
+      "title": "Keep Steam's Default startup movie when it is picked in Steam",
+      "summary": "Picking Startup (Default) in Steam's Customization settings had no effect: DroidDeck's own animation came back at the next start.",
+      "commit": "93d8784202e0882eec2421b797bd9ecf23cced69",
+      "pr": 1459,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792818144000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1459",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1459-93d8784.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1459/DroidDeck-PR.1459-93d8784.apk",
+          "size": 67803186,
+          "sha256": "1ebe52d848bd39676963632fd57c9add7b746fd0fdc1fc7684366300a60bb432",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1459-93d8784-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1459/DroidDeck-PR.1459-93d8784-pubg.apk",
+          "size": 67803186,
+          "sha256": "ba1c2a69e0ab9e6209a57940e2c27c8537a4128b7a76ec9ce60ec84691ea98be",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1459-93d8784-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1459/DroidDeck-PR.1459-93d8784-antutu.apk",
+          "size": 67803186,
+          "sha256": "b537cb9a2cb5438790ec72f2473fd1ebdf4fdce13b387d5452b80fe5e0327569",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1459-93d8784-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1459/DroidDeck-PR.1459-93d8784-ludashi.apk",
+          "size": 67803186,
+          "sha256": "1a963ed11f7c4f683dfd52c505a4e806a63f789077a2502a423c8430101fb5d5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1424",
       "title": "feat: add experimental Android XR tracking and SteamVR support",
