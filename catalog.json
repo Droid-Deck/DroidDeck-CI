@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792800337136,
+  "generatedAt": 1792801423282,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,55 +165,6 @@
   ],
   "tests": [
     {
-      "tag": "pr-1441",
-      "title": "fix: Snapdragon 8 Gen 2 no longer pins Steam to one core by default",
-      "summary": "Since 0.5.0, Snapdragon 8 Gen 2 devices (Retroid Pocket 6, Galaxy S23, AYN Thor) pin the Steam client, its UI helper and gamescope to the single prime core whenever the core settings were never touched. The Steam menu and overlay lag on those devices, and games launched from Steam get CPU-starved.",
-      "commit": "c7bcd8278216ed5632cb852b31b0b4ec468220cf",
-      "pr": 1441,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792800287000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1441",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1441-c7bcd82.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1441/DroidDeck-PR.1441-c7bcd82.apk",
-          "size": 67794994,
-          "sha256": "e63ac2a3f3701a84b300c3fd84a1bfbebb72e05135047256e6b699fadd33ef93",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1441-c7bcd82-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1441/DroidDeck-PR.1441-c7bcd82-pubg.apk",
-          "size": 67794994,
-          "sha256": "96a0faf9e0022abe08d3f31546cb1aa7ee4c48e92bd2a1f37569bfce1e4887b8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1441-c7bcd82-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1441/DroidDeck-PR.1441-c7bcd82-antutu.apk",
-          "size": 67794994,
-          "sha256": "5f78af747ea7bde6950f2c32c3e248a0bc753e80ac9c768bddc17395eb5f8dc2",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1441-c7bcd82-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1441/DroidDeck-PR.1441-c7bcd82-ludashi.apk",
-          "size": 67794994,
-          "sha256": "f7837ebe91ff88be345def6f46da2d51b1d46637fcac832e00526ceab556f0e1",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-1438",
       "title": "fix: a game started from another launcher returns to that launcher",
       "summary": "A game started from another launcher (ES-DE, a droiddeck://game/ link, a pinned shortcut) should send the player back to that launcher when it closes. Instead DroidDeck always opened the Android home screen, which is a different place whenever that launcher isn't the default Home app.",
@@ -354,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1424/DroidDeck-PR.1424-54eafe2-ludashi.apk",
           "size": 67856568,
           "sha256": "e9828ba4f34a5517baf33f614d508090c7bcd6ff75698b2a842d76f073e00481",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1431",
-      "title": "fix: games that keep stopping at boot with a warm shader cache start without it",
-      "summary": "Caravan SandWitch (1582650, D3D12 through vkd3d-proton on DD-Turnip / Adreno 840) only boots right after a Proton or driver swap. On every later start it shows its window and then quits about 4 seconds later.",
-      "commit": "73f29c8ab37cf4560f786ac28a62e201718839cd",
-      "pr": 1431,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792796007000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1431",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1431-73f29c8.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-73f29c8.apk",
-          "size": 67794994,
-          "sha256": "fce26b3e2cba44fe79bdaa3df5a58def6fa3b19af055c2682a3afcec5ef8cba6",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1431-73f29c8-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-73f29c8-pubg.apk",
-          "size": 67794994,
-          "sha256": "2bee387251b8836b66b52f5204558c5a70b6c02dc5766ed919ba295ef1d767de",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1431-73f29c8-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-73f29c8-antutu.apk",
-          "size": 67794994,
-          "sha256": "aeae1584d8a1dcd217f81076712d7718da1160a7f33b3bbb5934e8cb358a6aff",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1431-73f29c8-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1431/DroidDeck-PR.1431-73f29c8-ludashi.apk",
-          "size": 67794994,
-          "sha256": "d7cdc316d8be63efd654a444381286662eb6974700656d08875114540f68e31a",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
