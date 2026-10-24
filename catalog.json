@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792864548621,
+  "generatedAt": 1792866688764,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1505",
+      "title": "Collect only the Steam log lines a session wrote",
+      "summary": "Phones stayed hot after DroidDeck was closed. Every session stop re-read and redacted all of Steam's logs (about 100 files, 105 MB here), so session-collect kept one core busy for about 45 s after each swipe-away. Most of that was rotated .previous.txt files from earlier sessions. Steam appends across sessions, so even the live logs carried days of old lines.",
+      "commit": "f0854c3acfe846fdfb48a02e700f58a344f0f8e7",
+      "pr": 1505,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792866611000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1505",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1505-f0854c3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1505/DroidDeck-PR.1505-f0854c3.apk",
+          "size": 67860530,
+          "sha256": "01fee02301e9ff57a40841521052540dd1167ad7ec9de819a02eba4e84bed1de",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1505-f0854c3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1505/DroidDeck-PR.1505-f0854c3-pubg.apk",
+          "size": 67860530,
+          "sha256": "5f0c6a085fcfa8e97bf3457ab36655da1170d571ad92993c565698178478a51a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1505-f0854c3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1505/DroidDeck-PR.1505-f0854c3-antutu.apk",
+          "size": 67860530,
+          "sha256": "2ccaaba34910958f595483e217601c20a15f146df5703c4333c59dd5c3d69dd7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1505-f0854c3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1505/DroidDeck-PR.1505-f0854c3-ludashi.apk",
+          "size": 67860530,
+          "sha256": "c3e253e33084a60116053dd8a42405e61b3f57a9bda200d2fe6049b65a96a112",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1504",
       "title": "fix(epic): a paused install keeps what it downloaded",
