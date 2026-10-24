@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792803726174,
+  "generatedAt": 1792804477602,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1429",
+      "title": "fix(xbox): enable Xodus fast path and external mounts",
+      "summary": "Closes #1210.",
+      "commit": "c403d6f27ec7fa46d8e92df3ac559ba51ce4def2",
+      "pr": 1429,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792804402000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1429",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1429-c403d6f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-c403d6f.apk",
+          "size": 67794994,
+          "sha256": "1b62516dab1162757c92ff418f42cf34cf6f5f9b9967ea511f5a30b0d6d152de",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1429-c403d6f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-c403d6f-pubg.apk",
+          "size": 67794994,
+          "sha256": "f4c7381e9271a6a17196a79ca0df970dfd0966071a8d9f47b285ab2dce9c97e0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1429-c403d6f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-c403d6f-antutu.apk",
+          "size": 67794994,
+          "sha256": "624f0ca0a4d21708cc31cee2ba57300b519aa8af3fda195fe08d42826300efcd",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1429-c403d6f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-c403d6f-ludashi.apk",
+          "size": 67794994,
+          "sha256": "14aaa3490b5adf623807b003defa640317c66a965d230224854f1b28c6c09a9b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-587",
       "title": "Steam client download: resumes, retries, shows megabytes, and isn't paused out of sight",
       "summary": "A user's first Steam setup never finished on an Honor Pad (Snapdragon 6 Gen 1, metered Wi-Fi with a 14 Mbit/s link). Their log stops at downloading Steam: binslinuxarm64linuxarm64 (2/17). The log was shared 31 s into the session, so nothing had failed yet. The way the download works explains why it never got further.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-587/DroidDeck-PR.587-4a57c6f-ludashi.apk",
           "size": 67794994,
           "sha256": "4d4a81cef53ef80d97d30b7200fc9c772c39dc371cb4ef697a3ffb78519c29fc",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1429",
-      "title": "fix(xbox): mount external storage for installs",
-      "summary": "Closes #1210.",
-      "commit": "20ac861f085af24f160c142be278e07a958f63b2",
-      "pr": 1429,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792799500000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1429",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1429-20ac861.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-20ac861.apk",
-          "size": 67799090,
-          "sha256": "6a691e4f49ccaaf2a60e6909bdfbf8398748667c7320801c04bd65583361481a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1429-20ac861-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-20ac861-pubg.apk",
-          "size": 67799090,
-          "sha256": "5d1afc2fe0b80231452655f858a579d84a86af7d825c22bd1cda70058327909f",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1429-20ac861-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-20ac861-antutu.apk",
-          "size": 67799090,
-          "sha256": "e812fac07477944d7c4e734c2d709c9fc6092811e9541432d9553760505da84d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1429-20ac861-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1429/DroidDeck-PR.1429-20ac861-ludashi.apk",
-          "size": 67799090,
-          "sha256": "78d4290280a5320e242624f1fae8477420053505eefab3daee1f8d766814009d",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
