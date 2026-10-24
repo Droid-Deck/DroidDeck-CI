@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792866688764,
+  "generatedAt": 1792866769827,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1504",
+      "title": "fix(epic): a paused install keeps what it downloaded",
+      "summary": "Pausing an Epic download and resuming it threw away every half-written file, and the progress bar went back to 0%. In one test 1.25 GB of Blood West's 1.76 GB was downloaded again after a resume. DD-035 reports it as \"restarts from zero at ~50%\".",
+      "commit": "b9e3a18125f09dc9b984b421b0ae01db42b64874",
+      "pr": 1504,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792866717000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1504",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1504-b9e3a18.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1504/DroidDeck-PR.1504-b9e3a18.apk",
+          "size": 67868722,
+          "sha256": "f2fae99a3d1d747251b1edb67fd540f7aa5c413d7a735f5d7bd1dc71b3b48ec7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1504-b9e3a18-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1504/DroidDeck-PR.1504-b9e3a18-pubg.apk",
+          "size": 67868722,
+          "sha256": "1258d92c0447c7a246711989f7493831ccf3c0a3c199650707dd738313ffa5cc",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1504-b9e3a18-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1504/DroidDeck-PR.1504-b9e3a18-antutu.apk",
+          "size": 67868722,
+          "sha256": "015f018c6eb13a8354db9a97e117854acbc53b4f1b4b7b9b2fa35a529f3a31d8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1504-b9e3a18-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1504/DroidDeck-PR.1504-b9e3a18-ludashi.apk",
+          "size": 67868722,
+          "sha256": "ba8d68583d1b360dde84f99e2f1ad08ce6fee66b4295c4ca8a46da9cdcc385f3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1505",
       "title": "Collect only the Steam log lines a session wrote",
       "summary": "Phones stayed hot after DroidDeck was closed. Every session stop re-read and redacted all of Steam's logs (about 100 files, 105 MB here), so session-collect kept one core busy for about 45 s after each swipe-away. Most of that was rotated .previous.txt files from earlier sessions. Steam appends across sessions, so even the live logs carried days of old lines.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1505/DroidDeck-PR.1505-f0854c3-ludashi.apk",
           "size": 67860530,
           "sha256": "c3e253e33084a60116053dd8a42405e61b3f57a9bda200d2fe6049b65a96a112",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1504",
-      "title": "fix(epic): a paused install keeps what it downloaded",
-      "summary": "Pausing an Epic download and resuming it threw away every half-written file, and the progress bar went back to 0%. In one test 1.25 GB of Blood West's 1.76 GB was downloaded again after a resume. DD-035 reports it as \"restarts from zero at ~50%\".",
-      "commit": "e1dc9a84736527d807478e5f17701e5dab268cd6",
-      "pr": 1504,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792864493000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1504",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1504-e1dc9a8.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1504/DroidDeck-PR.1504-e1dc9a8.apk",
-          "size": 67868722,
-          "sha256": "04568113b397c51830d9783f7ac4ec636b32ef1a625db1455945e69a41bdd0ad",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1504-e1dc9a8-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1504/DroidDeck-PR.1504-e1dc9a8-pubg.apk",
-          "size": 67868722,
-          "sha256": "e96cfe551160771902602a2c13617477f121400100ebdd3225e5bce268c475ee",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1504-e1dc9a8-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1504/DroidDeck-PR.1504-e1dc9a8-antutu.apk",
-          "size": 67868722,
-          "sha256": "9b42d7c50e8b966015dcf5465165917594a762bca8e965055b48a829facfe9f8",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1504-e1dc9a8-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1504/DroidDeck-PR.1504-e1dc9a8-ludashi.apk",
-          "size": 67868722,
-          "sha256": "0837f0d31076e3ca5192b979d26bda31eb84f5daa89d7057cd36853885418dc7",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
