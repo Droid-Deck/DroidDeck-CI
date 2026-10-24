@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792799550008,
+  "generatedAt": 1792800242568,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1438",
+      "title": "fix: a game started from another launcher returns to that launcher",
+      "summary": "A game started from another launcher (ES-DE, a droiddeck://game/ link, a pinned shortcut) should send the player back to that launcher when it closes. Instead DroidDeck always opened the Android home screen, which is a different place whenever that launcher isn't the default Home app.",
+      "commit": "caaf6b3a011c7d27db573f0d1d0ccb2cefa3b6ca",
+      "pr": 1438,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792800178000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1438",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1438-caaf6b3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1438/DroidDeck-PR.1438-caaf6b3.apk",
+          "size": 67799090,
+          "sha256": "4a598aa9ec2b2e3c7372757aa12d1862f1c3e71e150a2f203b1d8f51c83f9e0f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1438-caaf6b3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1438/DroidDeck-PR.1438-caaf6b3-pubg.apk",
+          "size": 67799090,
+          "sha256": "ec9cd482e2fff99c5653daf2ed4f48033f484ff47cb297e9e0a91234f60e86a9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1438-caaf6b3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1438/DroidDeck-PR.1438-caaf6b3-antutu.apk",
+          "size": 67799090,
+          "sha256": "68e0d45cfca3154dad9fde286aeacc5d11b7bf6b91362d644eee22ce2873ca2f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1438-caaf6b3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1438/DroidDeck-PR.1438-caaf6b3-ludashi.apk",
+          "size": 67799090,
+          "sha256": "ac1ba423edb85242063b36ce7a5d6d80625a2fab2c19b8cee71002daccc7a6b7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1429",
       "title": "fix(xbox): mount external storage for installs",
       "summary": "Closes #1210.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1424/DroidDeck-PR.1424-54eafe2-ludashi.apk",
           "size": 67856568,
           "sha256": "e9828ba4f34a5517baf33f614d508090c7bcd6ff75698b2a842d76f073e00481",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1438",
-      "title": "fix: a game started from another launcher returns to that launcher",
-      "summary": "A game started from another launcher (ES-DE, a droiddeck://game/ link, a pinned shortcut) should send the player back to that launcher when it closes. Instead DroidDeck always opened the Android home screen, which is a different place whenever that launcher isn't the default Home app.",
-      "commit": "69b2b8fcdfabc365a476846425fabc9284e52943",
-      "pr": 1438,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792798373000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1438",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1438-69b2b8f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1438/DroidDeck-PR.1438-69b2b8f.apk",
-          "size": 67799090,
-          "sha256": "d5379ee793a88597b4d662b90f113646544160e1dd86363087c3443c51f0beca",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1438-69b2b8f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1438/DroidDeck-PR.1438-69b2b8f-pubg.apk",
-          "size": 67799090,
-          "sha256": "887181575481da1d82dde75aac7b13a3fb0449fc3433add675fee40a7e9d1e30",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1438-69b2b8f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1438/DroidDeck-PR.1438-69b2b8f-antutu.apk",
-          "size": 67799090,
-          "sha256": "36214e8a2d344c6d9c9516948317389ee9a1c2589ec7bb797b2a1613be029f7b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1438-69b2b8f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1438/DroidDeck-PR.1438-69b2b8f-ludashi.apk",
-          "size": 67799090,
-          "sha256": "da6b53d66b1a485fa63bc025afaf440b5ddbf116c9c81a1d59b33facd60a3000",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
