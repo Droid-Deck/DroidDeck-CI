@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792854007563,
+  "generatedAt": 1792854844268,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1494",
+      "title": "fix(desktop): keep the Desktop page from overlapping on phones",
+      "summary": "On phones in landscape, the Desktop page's big \"Desktop\" title overlapped the Emulators & apps cards once the desktop was installed. The Uninstall button sat under the store and + buttons, which made that block taller and pushed the title up into the cards.",
+      "commit": "9ea42361a570fd126da1365a43c75c95c140d8ff",
+      "pr": 1494,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792854793000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1494",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1494-9ea4236.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1494/DroidDeck-PR.1494-9ea4236.apk",
+          "size": 67811378,
+          "sha256": "6f198323c20ff45d6f09ca961aae4391547da4e71b1dc2ee2a438dbf8203848d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1494-9ea4236-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1494/DroidDeck-PR.1494-9ea4236-pubg.apk",
+          "size": 67811378,
+          "sha256": "a6ad6e9229dbbef4087c75ad49d795121c758a418ea7da7905c528ad03ba35c1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1494-9ea4236-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1494/DroidDeck-PR.1494-9ea4236-antutu.apk",
+          "size": 67811378,
+          "sha256": "5c1befc3939ad5761da9f85dc641d12e81a7a4e5cc4b408210903e8defcf47dc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1494-9ea4236-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1494/DroidDeck-PR.1494-9ea4236-ludashi.apk",
+          "size": 67811378,
+          "sha256": "0c1bb6102913d113c299454c85dd89e8e664a5cda604ce6a602231aa30920d63",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1473",
       "title": "itch.io: browse the Store tab by sort and price, with paging and a disk cache",
