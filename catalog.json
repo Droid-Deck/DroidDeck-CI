@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792961848138,
+  "generatedAt": 1792962298191,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-aca4b5d",
-    "title": "Start World of Warcraft on DirectX 11 by default",
-    "summary": "World of Warcraft picks DirectX 12 on Adreno, which runs slower than DirectX 11 under DroidDeck. WoW now starts on DirectX 11 unless the player picks something else.",
-    "commit": "aca4b5dd3e6e9e1cd5861493e2922f94f765d905",
+    "tag": "main-815b93d",
+    "title": "feat: profile PRoot costs and test fast-path libraries without an APK rebuild",
+    "summary": "Add opt-in PRoot handler CPU/wall profiling and one-session ARM64 fast-path library overrides. Append the tracer output to session.log so profiling reports retain their counters, and keep launch-prefix regression checks compatible with additional environment arguments.",
+    "commit": "815b93db5f280e6fa0ddc98c15058df3380bc85f",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792961810000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-aca4b5d",
+    "publishedAt": 1792962241000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-815b93d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-aca4b5d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aca4b5d/DroidDeck-main-aca4b5d.apk",
+        "name": "DroidDeck-main-815b93d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-815b93d/DroidDeck-main-815b93d.apk",
         "size": 73914947,
-        "sha256": "fd899edbd627f545656487ea849e394707ca23d4d0858891ef70295f3f546288",
+        "sha256": "d4ab373813513b9ab483f0f24b74f80ac67c891449cc4d7a34ea687d10170a50",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-aca4b5d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aca4b5d/DroidDeck-main-aca4b5d-pubg.apk",
+        "name": "DroidDeck-main-815b93d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-815b93d/DroidDeck-main-815b93d-pubg.apk",
         "size": 73914947,
-        "sha256": "9fe7dfd2b3d3601ef8f63ef01ef257fee5fe427930ab1d06e8d3f07fc2438e4f",
+        "sha256": "85a4adcb090c10d8f151a95dbe581441b62cbf68d4a7de635c31876b85f0d319",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-aca4b5d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aca4b5d/DroidDeck-main-aca4b5d-antutu.apk",
+        "name": "DroidDeck-main-815b93d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-815b93d/DroidDeck-main-815b93d-antutu.apk",
         "size": 73914947,
-        "sha256": "cdc4479849d8cce6cf5ddbb24266f4644654590694040210647bb02580226af8",
+        "sha256": "cda46c4944375e4e4d0930424501b8f7c09e5f5a3fabd1e75d8ca96badf07768",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-aca4b5d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aca4b5d/DroidDeck-main-aca4b5d-ludashi.apk",
+        "name": "DroidDeck-main-815b93d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-815b93d/DroidDeck-main-815b93d-ludashi.apk",
         "size": 73914947,
-        "sha256": "e3b0a5f4c450250ce4bb41bb6cccc2dcb43f1aafe16dba26b053992cf2daefb0",
+        "sha256": "3e5cd087941452f592494fde0a0e6f72eff2f6a581a04d8ef970106cfe9bc2f5",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "815b93db5f280e6fa0ddc98c15058df3380bc85f",
+      "title": "feat: profile PRoot costs and test fast-path libraries without an APK rebuild",
+      "summary": "Add opt-in PRoot handler CPU/wall profiling and one-session ARM64 fast-path library overrides. Append the tracer output to session.log so profiling reports retain their counters, and keep launch-prefix regression checks compatible with additional environment arguments.",
+      "publishedAt": 1792962241000
+    },
     {
       "commit": "aca4b5dd3e6e9e1cd5861493e2922f94f765d905",
       "title": "Start World of Warcraft on DirectX 11 by default",
@@ -155,12 +161,6 @@
       "title": "fix: Arabic text reads right to left when it mixes in English words",
       "summary": "Fixes #1447.",
       "publishedAt": 1792953600000
-    },
-    {
-      "commit": "9593529197f3422a7ace53b2b2be6ff5037c2f75",
-      "title": "feat: a setting to keep Steam uncompressed while games run",
-      "summary": "Fixes #1533",
-      "publishedAt": 1792949714000
     }
   ],
   "tests": [
