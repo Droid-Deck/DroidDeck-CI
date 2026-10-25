@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792965700102,
+  "generatedAt": 1792965937311,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cf13762",
-    "title": "feat: Show the drawer's game settings when a game starts without Steam",
-    "summary": "A session started without the client has no Steam overview to read the current title from. resolveDrawerGameProfileRefresh asks the agent for the selected or active app id, and with no client running both are null, so the drawer's game profile group stayed empty: the per-game settings card, the FEX preset, the environment editor and the unfolded controls row were all hidden even though every one",
-    "commit": "cf13762939c810f10c810e32e7b700dc7b8c727b",
+    "tag": "main-b4b7883",
+    "title": "fix: Reuse the prefix the client made for a shortcut id",
+    "summary": "droiddeck-proton-run builds the prefix path as steamapps/compatdata/<appid>, but the client names that folder with the signed 32-bit form of the shortcut id. A shortcut whose id has the top bit set therefore gets a second, empty prefix, and the first launch after that runs wineboot from scratch: the session sits on a black screen for the length of a full prefix init, and the old prefix is neve",
+    "commit": "b4b78836484f3f30fd50847bbcb00727de0bb9cf",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792964643000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cf13762",
+    "publishedAt": 1792965890000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b4b7883",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cf13762.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf13762/DroidDeck-main-cf13762.apk",
+        "name": "DroidDeck-main-b4b7883.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b4b7883/DroidDeck-main-b4b7883.apk",
         "size": 74009155,
-        "sha256": "5a6f20faaf9b849dfb8502958b39a825725d327f80898ac8d11e53d162131d1e",
+        "sha256": "377261bec1a5436cbbea8759ac6ad078ab32f9120462efc53f016393f2a06262",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cf13762-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf13762/DroidDeck-main-cf13762-pubg.apk",
+        "name": "DroidDeck-main-b4b7883-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b4b7883/DroidDeck-main-b4b7883-pubg.apk",
         "size": 74009155,
-        "sha256": "c8f28c602f2c3df16baea98cff614e2b1b9df23f11edc5e2887e7ce2be07d357",
+        "sha256": "0caf82d54ec67bc304bdaac6b44d814b29e06ef4699362d4506b1dcc181a2113",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cf13762-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf13762/DroidDeck-main-cf13762-antutu.apk",
+        "name": "DroidDeck-main-b4b7883-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b4b7883/DroidDeck-main-b4b7883-antutu.apk",
         "size": 74009155,
-        "sha256": "a5b2bcd21fc39627fbf67df8a20f8424e7747a098aaab382cd74848491d27029",
+        "sha256": "c4ccf566e4f9fafff9ba79e964a5e6fe6fe979011ee9a01453065542c0c7ac0d",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cf13762-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cf13762/DroidDeck-main-cf13762-ludashi.apk",
+        "name": "DroidDeck-main-b4b7883-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b4b7883/DroidDeck-main-b4b7883-ludashi.apk",
         "size": 74009155,
-        "sha256": "7333bd22f1c9d6dd91eaf4833fc87cf77f1cc3e1d077993329fcc0744a9a0454",
+        "sha256": "23f462902c24e3d072199476a910c2fb943ad93f2e038b0586dddc4dd0c65756",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b4b78836484f3f30fd50847bbcb00727de0bb9cf",
+      "title": "fix: Reuse the prefix the client made for a shortcut id",
+      "summary": "droiddeck-proton-run builds the prefix path as steamapps/compatdata/<appid>, but the client names that folder with the signed 32-bit form of the shortcut id. A shortcut whose id has the top bit set therefore gets a second, empty prefix, and the first launch after that runs wineboot from scratch: the session sits on a black screen for the length of a full prefix init, and the old prefix is neve",
+      "publishedAt": 1792965890000
+    },
     {
       "commit": "cf13762939c810f10c810e32e7b700dc7b8c727b",
       "title": "feat: Show the drawer's game settings when a game starts without Steam",
@@ -155,12 +161,6 @@
       "title": "feat: default storage for new installs, with USB/SDCARD/SSD detection",
       "summary": "Small, independently mergeable slice of USB/SD storage support. No native code, no new dependencies, no new permissions, no migrations, no version bump.",
       "publishedAt": 1792961565000
-    },
-    {
-      "commit": "38926b315727bb2de7539b1ebb1cfebe838895c7",
-      "title": "Performance mode: unpaced buffer release, more swapchain images and cached per-frame window checks behind one switch",
-      "summary": "> Testers on the pr-1563 test build reported positive results. gamescope now comes from the official release gamescope-3.16.29-p13. The Wine fix (fix 4) follows with a DroidDeck-Proton release; until then Performance mode gives fixes 1-3.",
-      "publishedAt": 1792960977000
     }
   ],
   "tests": [
