@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792899371782,
+  "generatedAt": 1792899902242,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1460",
+      "title": "feat: merge Games and store libraries into one Library and one game page",
+      "summary": "The same game could be found in three places with two different detail pages. Now there is one Library for every owned game, one game page for every source, and Stores is only for getting games. The Steam tab is untouched.",
+      "commit": "67f78ec82365c80e8755e23a0dc72b34afd96ae3",
+      "pr": 1460,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792899841000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1460",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1460-67f78ec.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1460/DroidDeck-PR.1460-67f78ec.apk",
+          "size": 73632120,
+          "sha256": "acc4a5d5e7372b0356a17205cb9739d512b762bd66fbfba63d9f29dd55e42b53",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1460-67f78ec-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1460/DroidDeck-PR.1460-67f78ec-pubg.apk",
+          "size": 73632120,
+          "sha256": "154f738cd471f68edd407b8d420f648dd4633b687ac83540770edfd50480a8e9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1460-67f78ec-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1460/DroidDeck-PR.1460-67f78ec-antutu.apk",
+          "size": 73632120,
+          "sha256": "8ad68b7e8ee020de1307851d6836f3064c43ec9f8a07903757cac1c702479838",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1460-67f78ec-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1460/DroidDeck-PR.1460-67f78ec-ludashi.apk",
+          "size": 73632120,
+          "sha256": "0a4ff50495ca236e2faa647af47a67ec787a072357c756812acb2c12fe58bbde",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-979",
       "title": "feat: Battle.net on the desktop with its games and store, plus memory options",
       "summary": "Adds Blizzard's Battle.net as a store: the real Battle.net client, downloaded from Blizzard, running in its own Proton prefix (compatdata/2596113170), with its games in the Games tab, Steam and the desktop. It also adds the memory work Diablo IV and Diablo II: Resurrected need on an 11 GB phone.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1503/DroidDeck-PR.1503-3554f5c-ludashi.apk",
           "size": 67897394,
           "sha256": "6e97d424d0481aa71d6694d6491557fa9ae824a5ca86ef9b6997b573530eb572",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1460",
-      "title": "feat: merge Games and store libraries into one Library and one game page",
-      "summary": "The same game could be found in three places with two different detail pages. Now there is one Library for every owned game, one game page for every source, and Stores is only for getting games. The Steam tab is untouched.",
-      "commit": "d8ec7e2e1adfa3a02bbe117a880a068b8b8af9c0",
-      "pr": 1460,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792877236000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1460",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1460-d8ec7e2.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1460/DroidDeck-PR.1460-d8ec7e2.apk",
-          "size": 67938354,
-          "sha256": "49a9c9b55f6a5b7c622d403a3181cedba11c0afa16bb684d4d5e01b57bf508d3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1460-d8ec7e2-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1460/DroidDeck-PR.1460-d8ec7e2-pubg.apk",
-          "size": 67938354,
-          "sha256": "1a6b484f37a066c7c45388174a6259c79a1d55e91c5884faf956e9b3d3cc78db",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1460-d8ec7e2-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1460/DroidDeck-PR.1460-d8ec7e2-antutu.apk",
-          "size": 67938354,
-          "sha256": "08630a91aef482c1f42128a9cc8f338fad818e6a0c56b4f539254c2f399029b6",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1460-d8ec7e2-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1460/DroidDeck-PR.1460-d8ec7e2-ludashi.apk",
-          "size": 67938354,
-          "sha256": "96f12bcded990f81024d162ec6080dc6a4d42b07477ac84c73720dea710b1a7e",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
