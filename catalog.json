@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792962429402,
+  "generatedAt": 1792962998928,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-815b93d",
-    "title": "feat: profile PRoot costs and test fast-path libraries without an APK rebuild",
-    "summary": "Add opt-in PRoot handler CPU/wall profiling and one-session ARM64 fast-path library overrides. Append the tracer output to session.log so profiling reports retain their counters, and keep launch-prefix regression checks compatible with additional environment arguments.",
-    "commit": "815b93db5f280e6fa0ddc98c15058df3380bc85f",
+    "tag": "main-19c655b",
+    "title": "fix: update status receiver only acts on DroidDeck's own install session",
+    "summary": "\ufeffThe self-update status receiver now ignores broadcasts that do not belong to the install DroidDeck started, and only ever launches a system installer screen.",
+    "commit": "19c655bd7e9935c2ad91e0871ce49e6b6bb313bd",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792962241000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-815b93d",
+    "publishedAt": 1792962950000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-19c655b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-815b93d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-815b93d/DroidDeck-main-815b93d.apk",
-        "size": 73914947,
-        "sha256": "d4ab373813513b9ab483f0f24b74f80ac67c891449cc4d7a34ea687d10170a50",
+        "name": "DroidDeck-main-19c655b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-19c655b/DroidDeck-main-19c655b.apk",
+        "size": 73919043,
+        "sha256": "be1005ef1a9352e48e9ab914b96245dd5ba5784499efeab252cc4cae4261ace2",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-815b93d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-815b93d/DroidDeck-main-815b93d-pubg.apk",
-        "size": 73914947,
-        "sha256": "85a4adcb090c10d8f151a95dbe581441b62cbf68d4a7de635c31876b85f0d319",
+        "name": "DroidDeck-main-19c655b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-19c655b/DroidDeck-main-19c655b-pubg.apk",
+        "size": 73919043,
+        "sha256": "e0a7bd1328c74ab7c9f1316ea7117a677593cf2497f720c15fb2c21a278be866",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-815b93d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-815b93d/DroidDeck-main-815b93d-antutu.apk",
-        "size": 73914947,
-        "sha256": "cda46c4944375e4e4d0930424501b8f7c09e5f5a3fabd1e75d8ca96badf07768",
+        "name": "DroidDeck-main-19c655b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-19c655b/DroidDeck-main-19c655b-antutu.apk",
+        "size": 73919043,
+        "sha256": "770bb3cd2e273bdf6e4d7b2241238a884d039d71dabd0be71f0596d03e293903",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-815b93d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-815b93d/DroidDeck-main-815b93d-ludashi.apk",
-        "size": 73914947,
-        "sha256": "3e5cd087941452f592494fde0a0e6f72eff2f6a581a04d8ef970106cfe9bc2f5",
+        "name": "DroidDeck-main-19c655b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-19c655b/DroidDeck-main-19c655b-ludashi.apk",
+        "size": 73919043,
+        "sha256": "3651b66e25d2331bc3033cc379666da8c1bcd80c3b50154ad3889bbd81d968a7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "19c655bd7e9935c2ad91e0871ce49e6b6bb313bd",
+      "title": "fix: update status receiver only acts on DroidDeck's own install session",
+      "summary": "\ufeffThe self-update status receiver now ignores broadcasts that do not belong to the install DroidDeck started, and only ever launches a system installer screen.",
+      "publishedAt": 1792962950000
+    },
     {
       "commit": "815b93db5f280e6fa0ddc98c15058df3380bc85f",
       "title": "feat: profile PRoot costs and test fast-path libraries without an APK rebuild",
@@ -155,12 +161,6 @@
       "title": "fix: close the Stores and Library search with its X or Back",
       "summary": "Once a search was typed in the Stores tab, there was no way to put the search box away: tapping outside or Back only hid the keyboard, and the box stayed until the text was deleted by hand.",
       "publishedAt": 1792953607000
-    },
-    {
-      "commit": "1f3f1ebc6a4e1a389bb09fcef825d4eb9b8dfe85",
-      "title": "fix: Arabic text reads right to left when it mixes in English words",
-      "summary": "Fixes #1447.",
-      "publishedAt": 1792953600000
     }
   ],
   "tests": [
