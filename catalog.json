@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792948436329,
+  "generatedAt": 1792948541812,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-7ef5286",
-    "title": "fix: place GOG cloud saves at the location root",
-    "summary": "On a GOG game with cloud saves, DroidDeck logged a successful download but the game showed empty profiles. With Hollow Knight: Silksong the cloud files were written to .../Hollow Knight Silksong/default/saves/, while the game reads .../Hollow Knight Silksong/default/.",
-    "commit": "7ef52865d22ae1146828cb66e66a185a508f164a",
+    "tag": "main-067f82e",
+    "title": "fix(stores): let a game's description fill the free height of the page",
+    "summary": "On a store game's page, the description stopped at 150 dp and scrolled inside that box, even on a tall tablet with half the screen empty below it.",
+    "commit": "067f82e5e2725ce79b35bade80bb71fbca1f1473",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792948416000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7ef5286",
+    "publishedAt": 1792948493000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-067f82e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-7ef5286.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7ef5286/DroidDeck-main-7ef5286.apk",
-        "size": 73816534,
-        "sha256": "3b114081ca8235659202b74199c7f4b8b26154a880c5a0f9075f39cef092f63a",
+        "name": "DroidDeck-main-067f82e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067f82e/DroidDeck-main-067f82e.apk",
+        "size": 73820630,
+        "sha256": "016d2af4678ba05f376410b6aef4e774425e934b6990da55304478694d906bf0",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-7ef5286-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7ef5286/DroidDeck-main-7ef5286-pubg.apk",
-        "size": 73816534,
-        "sha256": "01092ab01fa14ddd5981e5a10399ba0ee31eec5ae7e24ea5caf2414de7ea8808",
+        "name": "DroidDeck-main-067f82e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067f82e/DroidDeck-main-067f82e-pubg.apk",
+        "size": 73820630,
+        "sha256": "32f86ea4d385b881e8a7d7408c3fd51afefc4777e2715cbe6dfd4820a1a30f6b",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-7ef5286-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7ef5286/DroidDeck-main-7ef5286-antutu.apk",
-        "size": 73816534,
-        "sha256": "a57b21c325999b0cebc1f981147d53f0c534fb809dc52f810136c7280cd5a113",
+        "name": "DroidDeck-main-067f82e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067f82e/DroidDeck-main-067f82e-antutu.apk",
+        "size": 73820630,
+        "sha256": "c89e1fbf9cc384e51ce8954f84d1d2daccb7d6e1523f8955d7900223afa6d8ef",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-7ef5286-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7ef5286/DroidDeck-main-7ef5286-ludashi.apk",
-        "size": 73816534,
-        "sha256": "3d036ad88c5532c35f31a232b6823635cdcdb2338aaa019d246fab5808c0bc58",
+        "name": "DroidDeck-main-067f82e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067f82e/DroidDeck-main-067f82e-ludashi.apk",
+        "size": 73820630,
+        "sha256": "6b4c2582288f246b21ea7776bd4570dbfe99507283f493de8ed61253d21c7359",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "067f82e5e2725ce79b35bade80bb71fbca1f1473",
+      "title": "fix(stores): let a game's description fill the free height of the page",
+      "summary": "On a store game's page, the description stopped at 150 dp and scrolled inside that box, even on a tall tablet with half the screen empty below it.",
+      "publishedAt": 1792948493000
+    },
     {
       "commit": "7ef52865d22ae1146828cb66e66a185a508f164a",
       "title": "fix: place GOG cloud saves at the location root",
@@ -155,12 +161,6 @@
       "title": "fix: find the arm64 reaper under XDGDATAHOME and serve queued file dialog requests at once",
       "summary": "Follow-up to #1557, from its review:",
       "publishedAt": 1792946631000
-    },
-    {
-      "commit": "86ecb716eb6aedfaec4f66522ba6e649e263dc5e",
-      "title": "fix(build): build the local image when Podman reports it missing",
-      "summary": "tools/dockerpreflight.py builds the local cross image only when docker image inspect fails with Docker's No such image. Podman (rootless, behind a docker command) reports a missing image as Error: <name>: image not known, so on Podman the preflight exits with \"Cannot inspect the build image\" instead of building it. It shows up every time the image tag changes (the 24.04-v3 \u2192 v4 bu",
-      "publishedAt": 1792945355000
     }
   ],
   "tests": [
