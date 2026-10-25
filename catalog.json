@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792942951931,
+  "generatedAt": 1792943063678,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a7753a6",
-    "title": "fix: Flatpak apps see the device's network, so WebRTC streams connect",
-    "summary": "Flatpak apps could not see the device's network, so WebRTC in a Flatpak browser found no local addresses and cloud-gaming streams never connected. Amazon Luna in Flatpak Chromium sat on an endless spinner after the loading screen (#1185).",
-    "commit": "a7753a667c9dd8062d65aabda7fc345ecce8e066",
+    "tag": "main-c9565bc",
+    "title": "Skip umu-protonfixes for Black Ops III and Dark Souls Remastered",
+    "summary": "Black Ops III works on Armada but not with DroidDeck's x86-64 Steam client, and Dark Souls Remastered closes a few seconds after it starts. With the x86-64 client, DroidDeck defaults to the GE-based DroidDeck-Proton, and GE-based Protons run umu-protonfixes before the game starts. Its fixes for both games break here:",
+    "commit": "c9565bc0b9b27d0865aa6ce24a983c2a143583b2",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792942883000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a7753a6",
+    "publishedAt": 1792943000000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c9565bc",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a7753a6.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7753a6/DroidDeck-main-a7753a6.apk",
+        "name": "DroidDeck-main-c9565bc.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c9565bc/DroidDeck-main-c9565bc.apk",
         "size": 73640312,
-        "sha256": "8689fb07ce2e46c7e2d6115224109d8ef01dcb99460c80c2b00e0ad3d5ba0285",
+        "sha256": "d0e4f5dc6943837e56fda9b9889a6cd43c57952db6c07c287a069bf5b185db87",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a7753a6-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7753a6/DroidDeck-main-a7753a6-pubg.apk",
+        "name": "DroidDeck-main-c9565bc-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c9565bc/DroidDeck-main-c9565bc-pubg.apk",
         "size": 73640312,
-        "sha256": "f00fe877dc145d5e8f6b8eb0c3079da17893ebf1eaf233fe8eb06c823c73552e",
+        "sha256": "70d3ee2c74db2fdb965ffd963318bde7921e48a6f3f77bd7506c392b88f5ad57",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a7753a6-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7753a6/DroidDeck-main-a7753a6-antutu.apk",
+        "name": "DroidDeck-main-c9565bc-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c9565bc/DroidDeck-main-c9565bc-antutu.apk",
         "size": 73640312,
-        "sha256": "40c39047ac5a82e45b5658cb6a4ebecd0a2328c701b6034fa930ab3483b684a0",
+        "sha256": "330d5acf6a92979d8f7e62aa99754b721cca9c21894c9ab1132bcd41f3b69eb6",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a7753a6-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7753a6/DroidDeck-main-a7753a6-ludashi.apk",
+        "name": "DroidDeck-main-c9565bc-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c9565bc/DroidDeck-main-c9565bc-ludashi.apk",
         "size": 73640312,
-        "sha256": "e5072d9833282c0e18e05739e15697fa364d886efba5589584ba1a3fb0918c67",
+        "sha256": "6056f7759172c2c86748f79da2897031149ad5c8757801c1b17116f313969c6c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c9565bc0b9b27d0865aa6ce24a983c2a143583b2",
+      "title": "Skip umu-protonfixes for Black Ops III and Dark Souls Remastered",
+      "summary": "Black Ops III works on Armada but not with DroidDeck's x86-64 Steam client, and Dark Souls Remastered closes a few seconds after it starts. With the x86-64 client, DroidDeck defaults to the GE-based DroidDeck-Proton, and GE-based Protons run umu-protonfixes before the game starts. Its fixes for both games break here:",
+      "publishedAt": 1792943000000
+    },
     {
       "commit": "a7753a667c9dd8062d65aabda7fc345ecce8e066",
       "title": "fix: Flatpak apps see the device's network, so WebRTC streams connect",
@@ -155,12 +161,6 @@
       "title": "Automatically update installed Proton builds on app open",
       "summary": "Automatically update installed Proton families while idle under suitable network and power conditions, preserving older builds and pinned selections with launch exclusion and a persistent retry cooldown (30 focused tests passed).",
       "publishedAt": 1792886759000
-    },
-    {
-      "commit": "74a6a88df8c3371dd4570e1ce9e258832b380e11",
-      "title": "fix(desktop): keep the Desktop page from overlapping on phones",
-      "summary": "On phones in landscape, the Desktop page's big \"Desktop\" title overlapped the Emulators & apps cards once the desktop was installed. The Uninstall button sat under the store and + buttons, which made that block taller and pushed the title up into the cards.",
-      "publishedAt": 1792883679000
     }
   ],
   "tests": [
