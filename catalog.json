@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792949721006,
+  "generatedAt": 1792949769707,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ae193e9",
-    "title": "fix: find GOG Galaxy SDK cloud saves when remote-config lists no locations",
-    "summary": "GOG games that use Galaxy SDK IStorage publish cloudStorage.enabled: true with an empty locations array. That is namespace default at %LocalAppData%/GOG.com/Galaxy/Applications/<clientId>/Storage/Shared/Files. DroidDeck treated the empty list as no cloud, so Manage saves showed \"No cloud saves\" even when the files were on cloudstorage.gog.com.",
-    "commit": "ae193e9b8d72046b41ce2b784422853e4a9e03cc",
+    "tag": "main-9593529",
+    "title": "feat: a setting to keep Steam uncompressed while games run",
+    "summary": "Fixes #1533",
+    "commit": "9593529197f3422a7ace53b2b2be6ff5037c2f75",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792949688000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ae193e9",
+    "publishedAt": 1792949714000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9593529",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ae193e9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ae193e9/DroidDeck-main-ae193e9.apk",
-        "size": 73820630,
-        "sha256": "8b663aad52bff15179eafcb3182a3b2ba319f740edac36c5ec4030d8da42de1b",
+        "name": "DroidDeck-main-9593529.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9593529/DroidDeck-main-9593529.apk",
+        "size": 73824726,
+        "sha256": "f8f3170fc9487f6001c7078d3e473c0dfb23652a47e110044b234c215f52425b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ae193e9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ae193e9/DroidDeck-main-ae193e9-pubg.apk",
-        "size": 73820630,
-        "sha256": "5bfe7896967e83e84483033bac4c997502a4e74dda862a144851315c6c3fd89d",
+        "name": "DroidDeck-main-9593529-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9593529/DroidDeck-main-9593529-pubg.apk",
+        "size": 73824726,
+        "sha256": "bddff36bbb07f72f1ebe2a590e3d58f5f22a57c7c4e1d722ad007518d354f645",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ae193e9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ae193e9/DroidDeck-main-ae193e9-antutu.apk",
-        "size": 73820630,
-        "sha256": "4cb6330db9e63af6f4b0109aacb0697d988f40ea79646c0c5e27e8332c6591e1",
+        "name": "DroidDeck-main-9593529-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9593529/DroidDeck-main-9593529-antutu.apk",
+        "size": 73824726,
+        "sha256": "9701dc75337a6e0f8cbc7bfd56bf021c2f86147509b054c4c992921a9b1db34c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ae193e9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ae193e9/DroidDeck-main-ae193e9-ludashi.apk",
-        "size": 73820630,
-        "sha256": "79eddc598e77c5eade911b1c2f166a61afa50672f350dd275ad68aab4567637c",
+        "name": "DroidDeck-main-9593529-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9593529/DroidDeck-main-9593529-ludashi.apk",
+        "size": 73824726,
+        "sha256": "0862306a2e323ee019486e95e87635bf4c8025a46641382123524c6aa94fe7dd",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9593529197f3422a7ace53b2b2be6ff5037c2f75",
+      "title": "feat: a setting to keep Steam uncompressed while games run",
+      "summary": "Fixes #1533",
+      "publishedAt": 1792949714000
+    },
     {
       "commit": "ae193e9b8d72046b41ce2b784422853e4a9e03cc",
       "title": "fix: find GOG Galaxy SDK cloud saves when remote-config lists no locations",
@@ -155,15 +161,58 @@
       "title": "[FIX] statx call on old kernels < 4.11",
       "summary": "Fix statx call on old kernels < 4.11 for correct using of \"Fast proot path\"",
       "publishedAt": 1792947442000
-    },
-    {
-      "commit": "10fe5c5f777e52c418f2b5e18fa4540f6eb25431",
-      "title": "feat: stretch 16:9 games to screens wider than 16:9 too",
-      "summary": "Fixes #1487",
-      "publishedAt": 1792947213000
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1566",
+      "title": "feat: pick a game's CPU cores in its game profile",
+      "summary": "Fixes #1296",
+      "commit": "3d342ab632ad4e9b39b1c24c66b0010ce62026d8",
+      "pr": 1566,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792949737000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1566",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1566-3d342ab.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1566/DroidDeck-PR.1566-3d342ab.apk",
+          "size": 73820630,
+          "sha256": "59fbb98543321a658d774d63fe555530f85fa17d3eeb1f0ab6aa7c3ca8ab328b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1566-3d342ab-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1566/DroidDeck-PR.1566-3d342ab-pubg.apk",
+          "size": 73820630,
+          "sha256": "348a72946fc2b1c25ca17238c1843715f5915310e39ed91d14443f545f762614",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1566-3d342ab-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1566/DroidDeck-PR.1566-3d342ab-antutu.apk",
+          "size": 73820630,
+          "sha256": "fd8ecb8fa6597ec37fa416e088e5abfd673a39dc8863b16670a70aaf5b32ec0a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1566-3d342ab-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1566/DroidDeck-PR.1566-3d342ab-ludashi.apk",
+          "size": 73820630,
+          "sha256": "ede553c5e72685beff4531373ee575652cc3f99e2d61441635babfc1cc57baab",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1563",
       "title": "Performance mode: unpaced buffer release, more swapchain images and cached per-frame window checks behind one switch",
