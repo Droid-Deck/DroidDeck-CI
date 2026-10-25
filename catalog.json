@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792965997284,
+  "generatedAt": 1792966317218,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e76489c",
-    "title": "fix: refuse overwriting in-use component packages and clear unpacked store on replace",
-    "summary": "\u2022 Finding #64: Extract checkPackageUnused(context, state, name) and centralize package installation in ComponentsManager.storePackage(context, part, dest) for both importPackage and download.\n\u2022 Treat byte-identical re-imports/downloads of an existing .wcp package as a no-op.\n\u2022 Refuse overwriting a .wcp package with different contents when it is currently referenced by the global state or any Proton/game profile (R.string.cmgrpackageinuse).\n\u2022 When replacing an unreferenced .wcp package with new contents, delete its cached store/<safeName> unpacked directory and verify enameTo succeeds so subsequent launches unpack the updated archive instead of reusing stale unpacked files.",
-    "commit": "e76489cceac703f8321dbe1a046e95e78410cca6",
+    "tag": "main-65bacc0",
+    "title": "fix: extract GOG installer fallback natively on ARM",
+    "summary": "Fixes #694.",
+    "commit": "65bacc067b706e740d4b1cdbaad14d45ddebb73f",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792965954000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e76489c",
+    "publishedAt": 1792966283000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-65bacc0",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e76489c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e76489c/DroidDeck-main-e76489c.apk",
-        "size": 74009155,
-        "sha256": "b4d4ee9a14edf1e9bfdeb3e612a93e448b9922672c02fac0ed56e06a328c5f22",
+        "name": "DroidDeck-main-65bacc0.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-65bacc0/DroidDeck-main-65bacc0.apk",
+        "size": 74636868,
+        "sha256": "3b617b0098e4fe0a413c8d6fe68e968f15e576fa9413b45047f50d59fb58bbcd",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e76489c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e76489c/DroidDeck-main-e76489c-pubg.apk",
-        "size": 74009155,
-        "sha256": "ae28756e6c1243f6a779026c9594cf1b9b8059c265f3d94fbec24d2ff682abf3",
+        "name": "DroidDeck-main-65bacc0-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-65bacc0/DroidDeck-main-65bacc0-pubg.apk",
+        "size": 74636868,
+        "sha256": "80ebc404ad53b46435e0e9b48d77f2d6e551519da9e6c1d2a2f0bfd0a908735a",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e76489c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e76489c/DroidDeck-main-e76489c-antutu.apk",
-        "size": 74009155,
-        "sha256": "ece67ca8b2e1e3bb7d9a18b8560c79b29cd22c0ad4a2d298800fa54487f7d285",
+        "name": "DroidDeck-main-65bacc0-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-65bacc0/DroidDeck-main-65bacc0-antutu.apk",
+        "size": 74636868,
+        "sha256": "178134cbedf4484eab52ccf0b49cfdb86d7cd23e35619d754f73c61a5fd2ce0b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e76489c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e76489c/DroidDeck-main-e76489c-ludashi.apk",
-        "size": 74009155,
-        "sha256": "fa8d1abd6cbad81434a4652a9011b2ed8e9303a2bfbc4a928bbeb997fb8c9280",
+        "name": "DroidDeck-main-65bacc0-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-65bacc0/DroidDeck-main-65bacc0-ludashi.apk",
+        "size": 74636868,
+        "sha256": "4d5dc038ce83fddd92d13731dc4a687e7e2a0a91fd712a10f71b51129bf7b7a7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "65bacc067b706e740d4b1cdbaad14d45ddebb73f",
+      "title": "fix: extract GOG installer fallback natively on ARM",
+      "summary": "Fixes #694.",
+      "publishedAt": 1792966283000
+    },
     {
       "commit": "e76489cceac703f8321dbe1a046e95e78410cca6",
       "title": "fix: refuse overwriting in-use component packages and clear unpacked store on replace",
@@ -155,12 +161,6 @@
       "title": "Start World of Warcraft on DirectX 11 by default",
       "summary": "World of Warcraft picks DirectX 12 on Adreno, which runs slower than DirectX 11 under DroidDeck. WoW now starts on DirectX 11 unless the player picks something else.",
       "publishedAt": 1792961810000
-    },
-    {
-      "commit": "8d858b4334948fec6c96a14bc88691ca5178e50d",
-      "title": "feat: pick a game's CPU cores in its game profile",
-      "summary": "Fixes #1296",
-      "publishedAt": 1792961579000
     }
   ],
   "tests": [
