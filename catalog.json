@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792971220212,
+  "generatedAt": 1792971665974,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4922d30",
-    "title": "perf: allocate only solved DD-FG flow levels",
-    "summary": "DD-FG solves optical flow only from flowFinest through level 6, but allocated flow images, UBOs and descriptor sets for all seven levels. With the app's default preset (finest level 3), the three largest flow images were never used by a dispatch.",
-    "commit": "4922d309c87acecb5565d2aaea2c3bfbe2234bac",
+    "tag": "main-cce7427",
+    "title": "fix: zero-copy launch log no longer points at a drawer switch that do\u2026",
+    "summary": "\u2026es not exist (#865)",
+    "commit": "cce742766d9144ab6b33da691a221dce127b7ea4",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792971187000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4922d30",
+    "publishedAt": 1792971630000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cce7427",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4922d30.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4922d30/DroidDeck-main-4922d30.apk",
+        "name": "DroidDeck-main-cce7427.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cce7427/DroidDeck-main-cce7427.apk",
         "size": 74636868,
-        "sha256": "71ff33c8b32184c2a8c41691718c59b08ec844f827f0fadbfab3f855ff594c88",
+        "sha256": "e154d6bef941afdd060fc19e31207911d4e933f57e7c6d370390a6764c831286",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4922d30-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4922d30/DroidDeck-main-4922d30-pubg.apk",
+        "name": "DroidDeck-main-cce7427-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cce7427/DroidDeck-main-cce7427-pubg.apk",
         "size": 74636868,
-        "sha256": "6b5aecbc0b4bb38b2d9287ab0373382e850e580b4a1ab90253e065b74b5b7f6f",
+        "sha256": "3b6b26fab3d8b034e5404c0347b6ab6720631afb57ab6c57d8541cf9eba7cacf",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4922d30-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4922d30/DroidDeck-main-4922d30-antutu.apk",
+        "name": "DroidDeck-main-cce7427-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cce7427/DroidDeck-main-cce7427-antutu.apk",
         "size": 74636868,
-        "sha256": "455533ec93fcf05f0ad4766cf14c5fcd07922170bc420b4ae6c4d5c294b52c62",
+        "sha256": "3d5b288774445e26911000c02c4e51d8463aff22856e3e2b8c4502a5383d4329",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4922d30-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4922d30/DroidDeck-main-4922d30-ludashi.apk",
+        "name": "DroidDeck-main-cce7427-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cce7427/DroidDeck-main-cce7427-ludashi.apk",
         "size": 74636868,
-        "sha256": "5dcb53275ce31e5892513c88a74a2ec67e0c89efd6bb3296d4be6c899e973141",
+        "sha256": "a6fb8eb9d84f95f54374d22d14dd48a55aea5ac746ab9206136121ff102f3266",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "cce742766d9144ab6b33da691a221dce127b7ea4",
+      "title": "fix: zero-copy launch log no longer points at a drawer switch that do\u2026",
+      "summary": "\u2026es not exist (#865)",
+      "publishedAt": 1792971630000
+    },
     {
       "commit": "4922d309c87acecb5565d2aaea2c3bfbe2234bac",
       "title": "perf: allocate only solved DD-FG flow levels",
@@ -155,12 +161,6 @@
       "title": "fix: report a full battery at 100% while charging, so Steam stops showing 99%",
       "summary": "Fixes #382",
       "publishedAt": 1792964533000
-    },
-    {
-      "commit": "9f4794769c0d5c399f3299d155faf2f61aa22929",
-      "title": "feat: on-screen keys for any key or key combo",
-      "summary": "A session can need keys the on-screen controls cannot produce. Steam touch layouts only bind what the Steam client exposes, the built-in pad only sends pad buttons, and a connected controller cannot be mapped to a keyboard key at all, so games that want Ctrl+C, F5 or Tab have no way to get them.",
-      "publishedAt": 1792964500000
     }
   ],
   "tests": [
