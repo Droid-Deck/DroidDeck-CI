@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792953649620,
+  "generatedAt": 1792954109370,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1573",
+      "title": "fix: shared logs carry Battle.net's and Blizzard's own logs",
+      "summary": "A Battle.net report on Discord (AYN Thor: \"trouble launching the Battle.net Update Agent\" when installing from desktop mode, then a black sign-in window after the email step) came with a log zip that had nothing from Battle.net itself: only gamescope and Proton start-up. Neither problem reproduces on a REDMAGIC tablet: a fresh install from desktop mode and from the Store page, on DroidDeck-Proton",
+      "commit": "1cbde693c64ce9f2148839ff06ca76b87b6132a2",
+      "pr": 1573,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792954057000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1573",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1573-1cbde69.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1573/DroidDeck-PR.1573-1cbde69.apk",
+          "size": 73828822,
+          "sha256": "73b47a1550e5b052ed5dddf09ca1413ba9981bc8a46fc00e776a02a7da1484e6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1573-1cbde69-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1573/DroidDeck-PR.1573-1cbde69-pubg.apk",
+          "size": 73828822,
+          "sha256": "0782b1b509679c289498dec6fe94d6b2f90fd68cd7f30f8ae685864fdad78a95",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1573-1cbde69-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1573/DroidDeck-PR.1573-1cbde69-antutu.apk",
+          "size": 73828822,
+          "sha256": "7a9fc43d91aade51a66c66e46b5af9ff28cfefd4d5805398d0eb6fe297dcc475",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1573-1cbde69-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1573/DroidDeck-PR.1573-1cbde69-ludashi.apk",
+          "size": 73828822,
+          "sha256": "53d10dff79427daf2d027e31a39708cb3219d5396fa40c0804477b177df20c07",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1569",
       "title": "debugging tool for a possible native Linux application launch",
