@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792965937311,
+  "generatedAt": 1792965997284,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b4b7883",
-    "title": "fix: Reuse the prefix the client made for a shortcut id",
-    "summary": "droiddeck-proton-run builds the prefix path as steamapps/compatdata/<appid>, but the client names that folder with the signed 32-bit form of the shortcut id. A shortcut whose id has the top bit set therefore gets a second, empty prefix, and the first launch after that runs wineboot from scratch: the session sits on a black screen for the length of a full prefix init, and the old prefix is neve",
-    "commit": "b4b78836484f3f30fd50847bbcb00727de0bb9cf",
+    "tag": "main-e76489c",
+    "title": "fix: refuse overwriting in-use component packages and clear unpacked store on replace",
+    "summary": "\u2022 Finding #64: Extract checkPackageUnused(context, state, name) and centralize package installation in ComponentsManager.storePackage(context, part, dest) for both importPackage and download.\n\u2022 Treat byte-identical re-imports/downloads of an existing .wcp package as a no-op.\n\u2022 Refuse overwriting a .wcp package with different contents when it is currently referenced by the global state or any Proton/game profile (R.string.cmgrpackageinuse).\n\u2022 When replacing an unreferenced .wcp package with new contents, delete its cached store/<safeName> unpacked directory and verify enameTo succeeds so subsequent launches unpack the updated archive instead of reusing stale unpacked files.",
+    "commit": "e76489cceac703f8321dbe1a046e95e78410cca6",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792965890000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b4b7883",
+    "publishedAt": 1792965954000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e76489c",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b4b7883.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b4b7883/DroidDeck-main-b4b7883.apk",
+        "name": "DroidDeck-main-e76489c.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e76489c/DroidDeck-main-e76489c.apk",
         "size": 74009155,
-        "sha256": "377261bec1a5436cbbea8759ac6ad078ab32f9120462efc53f016393f2a06262",
+        "sha256": "b4d4ee9a14edf1e9bfdeb3e612a93e448b9922672c02fac0ed56e06a328c5f22",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b4b7883-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b4b7883/DroidDeck-main-b4b7883-pubg.apk",
+        "name": "DroidDeck-main-e76489c-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e76489c/DroidDeck-main-e76489c-pubg.apk",
         "size": 74009155,
-        "sha256": "0caf82d54ec67bc304bdaac6b44d814b29e06ef4699362d4506b1dcc181a2113",
+        "sha256": "ae28756e6c1243f6a779026c9594cf1b9b8059c265f3d94fbec24d2ff682abf3",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b4b7883-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b4b7883/DroidDeck-main-b4b7883-antutu.apk",
+        "name": "DroidDeck-main-e76489c-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e76489c/DroidDeck-main-e76489c-antutu.apk",
         "size": 74009155,
-        "sha256": "c4ccf566e4f9fafff9ba79e964a5e6fe6fe979011ee9a01453065542c0c7ac0d",
+        "sha256": "ece67ca8b2e1e3bb7d9a18b8560c79b29cd22c0ad4a2d298800fa54487f7d285",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b4b7883-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b4b7883/DroidDeck-main-b4b7883-ludashi.apk",
+        "name": "DroidDeck-main-e76489c-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e76489c/DroidDeck-main-e76489c-ludashi.apk",
         "size": 74009155,
-        "sha256": "23f462902c24e3d072199476a910c2fb943ad93f2e038b0586dddc4dd0c65756",
+        "sha256": "fa8d1abd6cbad81434a4652a9011b2ed8e9303a2bfbc4a928bbeb997fb8c9280",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e76489cceac703f8321dbe1a046e95e78410cca6",
+      "title": "fix: refuse overwriting in-use component packages and clear unpacked store on replace",
+      "summary": "\u2022 Finding #64: Extract checkPackageUnused(context, state, name) and centralize package installation in ComponentsManager.storePackage(context, part, dest) for both importPackage and download.\n\u2022 Treat byte-identical re-imports/downloads of an existing .wcp package as a no-op.\n\u2022 Refuse overwriting a .wcp package with different contents when it is currently referenced by the global state or any Proto",
+      "publishedAt": 1792965954000
+    },
     {
       "commit": "b4b78836484f3f30fd50847bbcb00727de0bb9cf",
       "title": "fix: Reuse the prefix the client made for a shortcut id",
@@ -155,64 +161,9 @@
       "title": "feat: pick a game's CPU cores in its game profile",
       "summary": "Fixes #1296",
       "publishedAt": 1792961579000
-    },
-    {
-      "commit": "ee3f32d31e8a5f79d54c716bd108e35634e9fe7d",
-      "title": "feat: default storage for new installs, with USB/SDCARD/SSD detection",
-      "summary": "Small, independently mergeable slice of USB/SD storage support. No native code, no new dependencies, no new permissions, no migrations, no version bump.",
-      "publishedAt": 1792961565000
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1580",
-      "title": "fix: say why Flatpak setup failed instead of blaming the mirrors",
-      "summary": "Refs #1575",
-      "commit": "75a65f305553d57d7d228763cdcd7333151605e5",
-      "pr": 1580,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792965649000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1580",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1580-75a65f3.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1580/DroidDeck-PR.1580-75a65f3.apk",
-          "size": 74009155,
-          "sha256": "86030bc6d966610d426ec59d3180cf631c900ca032786cfad4fb54eaaa06f35b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1580-75a65f3-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1580/DroidDeck-PR.1580-75a65f3-pubg.apk",
-          "size": 74009155,
-          "sha256": "cad248a0917384436a650211cc2edf3cc1e73201066d4a88b9ca27dc7d1b0b35",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1580-75a65f3-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1580/DroidDeck-PR.1580-75a65f3-antutu.apk",
-          "size": 74009155,
-          "sha256": "934f156afb85c37a4654aad7c6aa25de6b1a9b67d6561c520e06cc0564917c59",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1580-75a65f3-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1580/DroidDeck-PR.1580-75a65f3-ludashi.apk",
-          "size": 74009155,
-          "sha256": "bdbcfd9c32951d59233f539d44423126e3b3af041f933add32eb1668caf2b6d9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1578",
       "title": "Keep a still direct touch held unless Long press is on",
