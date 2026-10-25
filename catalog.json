@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792950688041,
+  "generatedAt": 1792950916931,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1567",
+      "title": "fix: close the Stores and Library search with its X or Back",
+      "summary": "Once a search was typed in the Stores tab, there was no way to put the search box away: tapping outside or Back only hid the keyboard, and the box stayed until the text was deleted by hand.",
+      "commit": "b0f3a6117369ee714fece99fccc4578e6f7b168a",
+      "pr": 1567,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792950875000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1567",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1567-b0f3a61.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1567/DroidDeck-PR.1567-b0f3a61.apk",
+          "size": 73824726,
+          "sha256": "6d59eb9d513ad3c02726d2fecd78e3ca8e44b9aef09a599e803530946236bf0f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1567-b0f3a61-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1567/DroidDeck-PR.1567-b0f3a61-pubg.apk",
+          "size": 73824726,
+          "sha256": "a51fb51c6af14f86d4a3e061f2247ea357467eb9bc3806e6a1ecd4c34400988d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1567-b0f3a61-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1567/DroidDeck-PR.1567-b0f3a61-antutu.apk",
+          "size": 73824726,
+          "sha256": "4e0a503f45ab2ed575abdd01fe37b813822d1de81322b38f449ec0e7b3e3eaa4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1567-b0f3a61-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1567/DroidDeck-PR.1567-b0f3a61-ludashi.apk",
+          "size": 73824726,
+          "sha256": "32f1c7cf1d01162809d9b7599aab95dd0158ae65727302e9641ecca997a5645a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1568",
       "title": "fix: Arabic text reads right to left when it mixes in English words",
       "summary": "Fixes #1447.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1568/DroidDeck-PR.1568-a012b48-ludashi.apk",
           "size": 73824726,
           "sha256": "4d9f66780766c61e5b20012364ff46725f7d0e22344e02b3d0f70f74f44c7dec",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1567",
-      "title": "fix: close the Stores and Library search with its X or Back",
-      "summary": "Once a search was typed in the Stores tab, there was no way to put the search box away: tapping outside or Back only hid the keyboard, and the box stayed until the text was deleted by hand.",
-      "commit": "0babe424e47fba41fe5a70623667e70b44059245",
-      "pr": 1567,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792949756000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1567",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1567-0babe42.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1567/DroidDeck-PR.1567-0babe42.apk",
-          "size": 73824726,
-          "sha256": "8ea6e311464c44869230a1e455638e8bc156b89a5340c08df17e6ddb90a1d731",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1567-0babe42-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1567/DroidDeck-PR.1567-0babe42-pubg.apk",
-          "size": 73824726,
-          "sha256": "63deaac3ef513efd7c90c376e2f00c2b098a803d0634849d3c1d2a416336f26c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1567-0babe42-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1567/DroidDeck-PR.1567-0babe42-antutu.apk",
-          "size": 73824726,
-          "sha256": "9fe3f23633fbf69624e5865f84fbb494b3aa0705d9cf1d67d739161aef7dc0ee",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1567-0babe42-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1567/DroidDeck-PR.1567-0babe42-ludashi.apk",
-          "size": 73824726,
-          "sha256": "21e2c8e6a358abfce677fe4dd6f5dce43ce1977d4bca80805d856f5fd06b13cf",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
