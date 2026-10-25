@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792942841244,
+  "generatedAt": 1792942951931,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3fdc740",
-    "title": "DroidDeck-Proton is downloaded, kept up to date and used by default",
-    "summary": "DroidDeck-Proton becomes the Proton games use by default. It is downloaded on its own, kept up to date, and each update replaces the older build without losing anyone's choices.",
-    "commit": "3fdc74051c6b1e0b1ec8a92926fd82144f981a37",
+    "tag": "main-a7753a6",
+    "title": "fix: Flatpak apps see the device's network, so WebRTC streams connect",
+    "summary": "Flatpak apps could not see the device's network, so WebRTC in a Flatpak browser found no local addresses and cloud-gaming streams never connected. Amazon Luna in Flatpak Chromium sat on an endless spinner after the loading screen (#1185).",
+    "commit": "a7753a667c9dd8062d65aabda7fc345ecce8e066",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792938132000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3fdc740",
+    "publishedAt": 1792942883000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a7753a6",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3fdc740.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fdc740/DroidDeck-main-3fdc740.apk",
+        "name": "DroidDeck-main-a7753a6.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7753a6/DroidDeck-main-a7753a6.apk",
         "size": 73640312,
-        "sha256": "6cf2c4a11d2cd8d814ddf48f0be57c8f358a37d8a552bbba72003880ede390b5",
+        "sha256": "8689fb07ce2e46c7e2d6115224109d8ef01dcb99460c80c2b00e0ad3d5ba0285",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3fdc740-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fdc740/DroidDeck-main-3fdc740-pubg.apk",
+        "name": "DroidDeck-main-a7753a6-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7753a6/DroidDeck-main-a7753a6-pubg.apk",
         "size": 73640312,
-        "sha256": "8cb228204903afce74350a48bac3a1bf889e722a8ec63cc428574cfbb025d0d4",
+        "sha256": "f00fe877dc145d5e8f6b8eb0c3079da17893ebf1eaf233fe8eb06c823c73552e",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3fdc740-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fdc740/DroidDeck-main-3fdc740-antutu.apk",
+        "name": "DroidDeck-main-a7753a6-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7753a6/DroidDeck-main-a7753a6-antutu.apk",
         "size": 73640312,
-        "sha256": "6b5a844ee6ffc32119a8b999bbca89870d7924158eb5d736040a2bd75e10ea5b",
+        "sha256": "40c39047ac5a82e45b5658cb6a4ebecd0a2328c701b6034fa930ab3483b684a0",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3fdc740-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fdc740/DroidDeck-main-3fdc740-ludashi.apk",
+        "name": "DroidDeck-main-a7753a6-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7753a6/DroidDeck-main-a7753a6-ludashi.apk",
         "size": 73640312,
-        "sha256": "9e57890bbbc0d9d9959b83f9d07f8b0398b70482926845d186d065653af207fb",
+        "sha256": "e5072d9833282c0e18e05739e15697fa364d886efba5589584ba1a3fb0918c67",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a7753a667c9dd8062d65aabda7fc345ecce8e066",
+      "title": "fix: Flatpak apps see the device's network, so WebRTC streams connect",
+      "summary": "Flatpak apps could not see the device's network, so WebRTC in a Flatpak browser found no local addresses and cloud-gaming streams never connected. Amazon Luna in Flatpak Chromium sat on an endless spinner after the loading screen (#1185).",
+      "publishedAt": 1792942883000
+    },
     {
       "commit": "3fdc74051c6b1e0b1ec8a92926fd82144f981a37",
       "title": "DroidDeck-Proton is downloaded, kept up to date and used by default",
@@ -155,64 +161,9 @@
       "title": "fix(desktop): keep the Desktop page from overlapping on phones",
       "summary": "On phones in landscape, the Desktop page's big \"Desktop\" title overlapped the Emulators & apps cards once the desktop was installed. The Uninstall button sat under the store and + buttons, which made that block taller and pushed the title up into the cards.",
       "publishedAt": 1792883679000
-    },
-    {
-      "commit": "dc08385411228bb1378f1eeadef317acf7672b9d",
-      "title": "Stop the library helper when the KDE Steam client exits",
-      "summary": "After you quit Steam's desktop client in KDE, it could not be opened again until the session restarted. The second launch waited and then reported that the desktop client did not become ready.",
-      "publishedAt": 1792879995000
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1550",
-      "title": "perf: pause the home page's ambient motion after 20 s without input",
-      "summary": "Fixes #1499",
-      "commit": "8d086b031c572e782ca79044df3bb24267a1379c",
-      "pr": 1550,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792942769000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1550",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1550-8d086b0.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1550/DroidDeck-PR.1550-8d086b0.apk",
-          "size": 73640312,
-          "sha256": "3fa58556e5e814f0d7d6db9cf11c1dcf6b88db865fcd0d6d6f87dec7a65e2a0c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1550-8d086b0-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1550/DroidDeck-PR.1550-8d086b0-pubg.apk",
-          "size": 73640312,
-          "sha256": "af270342bacf1d8b3f88c89766c5ffc1dc4f3b45e310d45c6e53eaf7a55207e8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1550-8d086b0-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1550/DroidDeck-PR.1550-8d086b0-antutu.apk",
-          "size": 73640312,
-          "sha256": "cbd7fd004f368d76c5c317439593b21eb87d69e3c45a34755a698c246e616276",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1550-8d086b0-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1550/DroidDeck-PR.1550-8d086b0-ludashi.apk",
-          "size": 73640312,
-          "sha256": "0e0154c7431ef220a3d5480089c38cbee221e9549fd954ae189bed2681a9c3d1",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1553",
       "title": "fix: run RoboCop: Rogue City at D3D12 feature level 121",
