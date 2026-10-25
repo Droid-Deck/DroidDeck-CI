@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792959538960,
+  "generatedAt": 1792959831505,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1563",
+      "title": "Performance mode: unpaced buffer release, more swapchain images and cached per-frame window checks behind one switch",
+      "summary": "> Testers on the pr-1563 test build reported positive results. gamescope now comes from the official release gamescope-3.16.29-p13. The Wine fix (fix 4) follows with a DroidDeck-Proton release; until then Performance mode gives fixes 1-3.",
+      "commit": "9233d30db4ef0f6413fb5c1578dc88e07c4dca61",
+      "pr": 1563,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792959783000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1563",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1563-9233d30.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1563/DroidDeck-PR.1563-9233d30.apk",
+          "size": 73902659,
+          "sha256": "141f2b9f0de00688720bdd96d261f6d3934b90f86e414e83a14227c23f22033e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1563-9233d30-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1563/DroidDeck-PR.1563-9233d30-pubg.apk",
+          "size": 73902659,
+          "sha256": "c260c17491ccadc12a9d5d0a9dcb169e35920aaa989af6de13fd9305f8d5f39f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1563-9233d30-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1563/DroidDeck-PR.1563-9233d30-antutu.apk",
+          "size": 73902659,
+          "sha256": "0b6d0dda6f3931733a099cd4235c5c79b546c6cae531cb9c8cf13b46f7c58c5e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1563-9233d30-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1563/DroidDeck-PR.1563-9233d30-ludashi.apk",
+          "size": 73902659,
+          "sha256": "d44a1e744d52ff2336eb1012c3fad85e60cae64ea968f7be00069edb50616114",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1528",
       "title": "feat: profile PRoot costs and test fast-path libraries without an APK rebuild",
       "summary": "Add opt-in PRoot handler CPU/wall profiling and one-session fast-path library overrides to shorten performance investigations and A/B testing; Android ARM64/Kotlin compilation and focused tests pass, with device validation pending.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1566/DroidDeck-PR.1566-3d342ab-ludashi.apk",
           "size": 73820630,
           "sha256": "ede553c5e72685beff4531373ee575652cc3f99e2d61441635babfc1cc57baab",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1563",
-      "title": "Performance mode: unpaced buffer release, more swapchain images and cached per-frame window checks behind one switch",
-      "summary": "> For testing, not for merging yet. The gamescope and Proton releases listed below come first, and the DiRT loading freeze needs more runs.",
-      "commit": "876ed3552b98cdc9c0c3d2667a889d6380dbea2e",
-      "pr": 1563,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792948918000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1563",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1563-876ed35.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1563/DroidDeck-PR.1563-876ed35.apk",
-          "size": 73890371,
-          "sha256": "e3e5cf8f895633d51bef841b2e72d707678c2e79e862a39620395cbed3133cb6",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1563-876ed35-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1563/DroidDeck-PR.1563-876ed35-pubg.apk",
-          "size": 73890371,
-          "sha256": "0cb310b0f2eb98abf3a9d4318c9452e2b549b0af233472553f4647e220ed47dc",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1563-876ed35-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1563/DroidDeck-PR.1563-876ed35-antutu.apk",
-          "size": 73890371,
-          "sha256": "b1f750f194045904e4d2e0eb02c6c6c760f0415c29386b8e26087c86d0a563fb",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1563-876ed35-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1563/DroidDeck-PR.1563-876ed35-ludashi.apk",
-          "size": 73890371,
-          "sha256": "7e9a35bff2ebaf23b9d3864a25f7c8f2cd3f965328d2e2cd360125515c5975b5",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
