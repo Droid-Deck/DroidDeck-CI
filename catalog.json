@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792945198112,
+  "generatedAt": 1792945408380,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c6bc8ae",
-    "title": "Add an optional HTTP proxy for downloads",
-    "summary": "Add an optional HTTP proxy for downloads",
-    "commit": "c6bc8aef04ef9f9b336d015c42562fcc7e7f4aaa",
+    "tag": "main-86ecb71",
+    "title": "fix(build): build the local image when Podman reports it missing",
+    "summary": "tools/dockerpreflight.py builds the local cross image only when docker image inspect fails with Docker's No such image. Podman (rootless, behind a docker command) reports a missing image as Error: <name>: image not known, so on Podman the preflight exits with \"Cannot inspect the build image\" instead of building it. It shows up every time the image tag changes (the 24.04-v3 \u2192 v4 bu",
+    "commit": "86ecb716eb6aedfaec4f66522ba6e649e263dc5e",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792945126000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c6bc8ae",
+    "publishedAt": 1792945355000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-86ecb71",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c6bc8ae.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c6bc8ae/DroidDeck-main-c6bc8ae.apk",
+        "name": "DroidDeck-main-86ecb71.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86ecb71/DroidDeck-main-86ecb71.apk",
         "size": 73652600,
-        "sha256": "3f7e42614c0a63095ff8713addcb637b4e1e024464f8126d5d374beb4d0561a4",
+        "sha256": "6df56bbaaab0e0b3fefe548506944545fdb64516665dadd82285481d131bfc7c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c6bc8ae-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c6bc8ae/DroidDeck-main-c6bc8ae-pubg.apk",
+        "name": "DroidDeck-main-86ecb71-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86ecb71/DroidDeck-main-86ecb71-pubg.apk",
         "size": 73652600,
-        "sha256": "557ff7c5a5483e6982b97ae6dffa31e02f2e1319e8209f0a68a452fea71a17ab",
+        "sha256": "2c78fcdc6da4eb317ebb80f23b61a68835df908400ed57f1caba0beb28cecdf2",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c6bc8ae-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c6bc8ae/DroidDeck-main-c6bc8ae-antutu.apk",
+        "name": "DroidDeck-main-86ecb71-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86ecb71/DroidDeck-main-86ecb71-antutu.apk",
         "size": 73652600,
-        "sha256": "06590edeb9b8c4f207eaec8696bdf84c2f5c87b6c68738f8fecc801968eedb82",
+        "sha256": "7f1105d54220016f4da0cab399e7585c50c23ac892c4ffd54cd4199771e32643",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c6bc8ae-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c6bc8ae/DroidDeck-main-c6bc8ae-ludashi.apk",
+        "name": "DroidDeck-main-86ecb71-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86ecb71/DroidDeck-main-86ecb71-ludashi.apk",
         "size": 73652600,
-        "sha256": "e9ba3b596f409c5e1e873e65ecdeab460c3017b6d334274cee7f2369154b9b25",
+        "sha256": "6463ab3d9816ae31aaaf34e9d2cb3bb41d3fab28f65cd551114eb22419f11c9c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,18 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "86ecb716eb6aedfaec4f66522ba6e649e263dc5e",
+      "title": "fix(build): build the local image when Podman reports it missing",
+      "summary": "tools/dockerpreflight.py builds the local cross image only when docker image inspect fails with Docker's No such image. Podman (rootless, behind a docker command) reports a missing image as Error: <name>: image not known, so on Podman the preflight exits with \"Cannot inspect the build image\" instead of building it. It shows up every time the image tag changes (the 24.04-v3 \u2192 v4 bu",
+      "publishedAt": 1792945355000
+    },
+    {
+      "commit": "2be08bc67d2e4d9896498d70d87c34b7c28a9918",
+      "title": "feat: adjustable RAM and VRAM caps for the container",
+      "summary": "Adds Performance \u2192 Memory with two sliders (both off by default):",
+      "publishedAt": 1792945336000
+    },
     {
       "commit": "c6bc8aef04ef9f9b336d015c42562fcc7e7f4aaa",
       "title": "Add an optional HTTP proxy for downloads",
@@ -149,18 +161,6 @@
       "title": "fix: Flatpak apps see the device's network, so WebRTC streams connect",
       "summary": "Flatpak apps could not see the device's network, so WebRTC in a Flatpak browser found no local addresses and cloud-gaming streams never connected. Amazon Luna in Flatpak Chromium sat on an endless spinner after the loading screen (#1185).",
       "publishedAt": 1792942883000
-    },
-    {
-      "commit": "3fdc74051c6b1e0b1ec8a92926fd82144f981a37",
-      "title": "DroidDeck-Proton is downloaded, kept up to date and used by default",
-      "summary": "DroidDeck-Proton becomes the Proton games use by default. It is downloaded on its own, kept up to date, and each update replaces the older build without losing anyone's choices.",
-      "publishedAt": 1792938132000
-    },
-    {
-      "commit": "2a695051991e537dec115ecbb664240bf69daa10",
-      "title": "feat: merge Games and store libraries into one Library and one game page",
-      "summary": "The same game could be found in three places with two different detail pages. Now there is one Library for every owned game, one game page for every source, and Stores is only for getting games. The Steam tab is untouched.",
-      "publishedAt": 1792932770000
     }
   ],
   "tests": [
