@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792938191774,
+  "generatedAt": 1792940097909,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1548",
+      "title": "fix: Flatpak apps see the device's network, so WebRTC streams connect",
+      "summary": "Flatpak apps could not see the device's network, so WebRTC in a Flatpak browser found no local addresses and cloud-gaming streams never connected. Amazon Luna in Flatpak Chromium sat on an endless spinner after the loading screen (#1185).",
+      "commit": "c54cc86b9f9aa8da37f0f824b18773fc728b1d7d",
+      "pr": 1548,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792940019000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1548",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1548-c54cc86.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1548/DroidDeck-PR.1548-c54cc86.apk",
+          "size": 73640312,
+          "sha256": "cea95fe5a33c75d8ea5f26428665df302727d15e15f88bdc353ebfc6a93aa470",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1548-c54cc86-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1548/DroidDeck-PR.1548-c54cc86-pubg.apk",
+          "size": 73640312,
+          "sha256": "ae60763a7fd607683cc0e5a6e4b31594edba0f330de34572c696d0fff45e26a3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1548-c54cc86-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1548/DroidDeck-PR.1548-c54cc86-antutu.apk",
+          "size": 73640312,
+          "sha256": "7a9e65acc1fba3acf9b2222ae3ab47cfdb6cd67c556aadde40ac6f237fa840eb",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1548-c54cc86-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1548/DroidDeck-PR.1548-c54cc86-ludashi.apk",
+          "size": 73640312,
+          "sha256": "70b4197eda080798e54f33488cc10e67e5c4a162d8276021ad68db83f311a75f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1503",
       "title": "itch.io: version picker and installing free games",
