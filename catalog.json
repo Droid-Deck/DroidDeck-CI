@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792949195237,
+  "generatedAt": 1792949721006,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-27e390a",
-    "title": "fix: StarCraft starts its 32-bit client from Battle.net",
-    "summary": "StarCraft: Remastered crashes as soon as Battle.net starts it: its 64-bit client faults in ClientSdk.dll under FEX. The 32-bit client runs.",
-    "commit": "27e390a846b9b5cd8d0b450f0d1bea6e5f04bcf3",
+    "tag": "main-ae193e9",
+    "title": "fix: find GOG Galaxy SDK cloud saves when remote-config lists no locations",
+    "summary": "GOG games that use Galaxy SDK IStorage publish cloudStorage.enabled: true with an empty locations array. That is namespace default at %LocalAppData%/GOG.com/Galaxy/Applications/<clientId>/Storage/Shared/Files. DroidDeck treated the empty list as no cloud, so Manage saves showed \"No cloud saves\" even when the files were on cloudstorage.gog.com.",
+    "commit": "ae193e9b8d72046b41ce2b784422853e4a9e03cc",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792949156000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-27e390a",
+    "publishedAt": 1792949688000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ae193e9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-27e390a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27e390a/DroidDeck-main-27e390a.apk",
+        "name": "DroidDeck-main-ae193e9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ae193e9/DroidDeck-main-ae193e9.apk",
         "size": 73820630,
-        "sha256": "fd24f667c0057584912af30c49da3db219dbaa363860eeae29ea60af51b7f4f7",
+        "sha256": "8b663aad52bff15179eafcb3182a3b2ba319f740edac36c5ec4030d8da42de1b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-27e390a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27e390a/DroidDeck-main-27e390a-pubg.apk",
+        "name": "DroidDeck-main-ae193e9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ae193e9/DroidDeck-main-ae193e9-pubg.apk",
         "size": 73820630,
-        "sha256": "84f527dd08d9c5216729e9928283d3d819cd6aaed74580c1928fa081ed273c0e",
+        "sha256": "5bfe7896967e83e84483033bac4c997502a4e74dda862a144851315c6c3fd89d",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-27e390a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27e390a/DroidDeck-main-27e390a-antutu.apk",
+        "name": "DroidDeck-main-ae193e9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ae193e9/DroidDeck-main-ae193e9-antutu.apk",
         "size": 73820630,
-        "sha256": "c336088c2201aea5acd8cfebac50585ddc8737df2a9a9cd909c37792ac1a4f09",
+        "sha256": "4cb6330db9e63af6f4b0109aacb0697d988f40ea79646c0c5e27e8332c6591e1",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-27e390a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27e390a/DroidDeck-main-27e390a-ludashi.apk",
+        "name": "DroidDeck-main-ae193e9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ae193e9/DroidDeck-main-ae193e9-ludashi.apk",
         "size": 73820630,
-        "sha256": "3877ae49dfd170f4e88fa42648c944c5707980b67a8e00377badbbbce659144a",
+        "sha256": "79eddc598e77c5eade911b1c2f166a61afa50672f350dd275ad68aab4567637c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "ae193e9b8d72046b41ce2b784422853e4a9e03cc",
+      "title": "fix: find GOG Galaxy SDK cloud saves when remote-config lists no locations",
+      "summary": "GOG games that use Galaxy SDK IStorage publish cloudStorage.enabled: true with an empty locations array. That is namespace default at %LocalAppData%/GOG.com/Galaxy/Applications/<clientId>/Storage/Shared/Files. DroidDeck treated the empty list as no cloud, so Manage saves showed \"No cloud saves\" even when the files were on cloudstorage.gog.com.",
+      "publishedAt": 1792949688000
+    },
     {
       "commit": "27e390a846b9b5cd8d0b450f0d1bea6e5f04bcf3",
       "title": "fix: StarCraft starts its 32-bit client from Battle.net",
@@ -155,12 +161,6 @@
       "title": "feat: stretch 16:9 games to screens wider than 16:9 too",
       "summary": "Fixes #1487",
       "publishedAt": 1792947213000
-    },
-    {
-      "commit": "411fda343a58882b6ad7f9ca2061e6941d205708",
-      "title": "itch.io: version picker and installing free games",
-      "summary": "The third PR in the itch.io Store rework. Tapping Install on an itch game now opens a version picker, and free games can be installed without being in the user's library.",
-      "publishedAt": 1792946955000
     }
   ],
   "tests": [
