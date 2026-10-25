@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792946647238,
+  "generatedAt": 1792946688068,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-86ecb71",
-    "title": "fix(build): build the local image when Podman reports it missing",
-    "summary": "tools/dockerpreflight.py builds the local cross image only when docker image inspect fails with Docker's No such image. Podman (rootless, behind a docker command) reports a missing image as Error: <name>: image not known, so on Podman the preflight exits with \"Cannot inspect the build image\" instead of building it. It shows up every time the image tag changes (the 24.04-v3 \u2192 v4 bu",
-    "commit": "86ecb716eb6aedfaec4f66522ba6e649e263dc5e",
+    "tag": "main-7d99a24",
+    "title": "fix: find the arm64 reaper under XDGDATAHOME and serve queued file dialog requests at once",
+    "summary": "Follow-up to #1557, from its review:",
+    "commit": "7d99a24ad5a655616204b159b5434c32a4c296e7",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792945355000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-86ecb71",
+    "publishedAt": 1792946631000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7d99a24",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-86ecb71.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86ecb71/DroidDeck-main-86ecb71.apk",
+        "name": "DroidDeck-main-7d99a24.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d99a24/DroidDeck-main-7d99a24.apk",
         "size": 73652600,
-        "sha256": "6df56bbaaab0e0b3fefe548506944545fdb64516665dadd82285481d131bfc7c",
+        "sha256": "a4f312bdb877685f8d3eedfb3f9262ce00f852d147a6f0507f71f58ca14003cb",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-86ecb71-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86ecb71/DroidDeck-main-86ecb71-pubg.apk",
+        "name": "DroidDeck-main-7d99a24-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d99a24/DroidDeck-main-7d99a24-pubg.apk",
         "size": 73652600,
-        "sha256": "2c78fcdc6da4eb317ebb80f23b61a68835df908400ed57f1caba0beb28cecdf2",
+        "sha256": "6803b7008b46ceb850960af255eadcff201dcfd2556c8d351ad0de310048c585",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-86ecb71-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86ecb71/DroidDeck-main-86ecb71-antutu.apk",
+        "name": "DroidDeck-main-7d99a24-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d99a24/DroidDeck-main-7d99a24-antutu.apk",
         "size": 73652600,
-        "sha256": "7f1105d54220016f4da0cab399e7585c50c23ac892c4ffd54cd4199771e32643",
+        "sha256": "c9c72b520b43a63a44ae245ec2c3ddd356c88ca165b8af2f7ce15b49cb1158f5",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-86ecb71-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-86ecb71/DroidDeck-main-86ecb71-ludashi.apk",
+        "name": "DroidDeck-main-7d99a24-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d99a24/DroidDeck-main-7d99a24-ludashi.apk",
         "size": 73652600,
-        "sha256": "6463ab3d9816ae31aaaf34e9d2cb3bb41d3fab28f65cd551114eb22419f11c9c",
+        "sha256": "12f8404b68785f53ebc98030e80eeafc4eaceee6a1fde1acb32e958d7bcc12b7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "7d99a24ad5a655616204b159b5434c32a4c296e7",
+      "title": "fix: find the arm64 reaper under XDGDATAHOME and serve queued file dialog requests at once",
+      "summary": "Follow-up to #1557, from its review:",
+      "publishedAt": 1792946631000
+    },
     {
       "commit": "86ecb716eb6aedfaec4f66522ba6e649e263dc5e",
       "title": "fix(build): build the local image when Podman reports it missing",
@@ -155,12 +161,6 @@
       "title": "Skip umu-protonfixes for Black Ops III and Dark Souls Remastered",
       "summary": "Black Ops III works on Armada but not with DroidDeck's x86-64 Steam client, and Dark Souls Remastered closes a few seconds after it starts. With the x86-64 client, DroidDeck defaults to the GE-based DroidDeck-Proton, and GE-based Protons run umu-protonfixes before the game starts. Its fixes for both games break here:",
       "publishedAt": 1792943000000
-    },
-    {
-      "commit": "a7753a667c9dd8062d65aabda7fc345ecce8e066",
-      "title": "fix: Flatpak apps see the device's network, so WebRTC streams connect",
-      "summary": "Flatpak apps could not see the device's network, so WebRTC in a Flatpak browser found no local addresses and cloud-gaming streams never connected. Amazon Luna in Flatpak Chromium sat on an endless spinner after the loading screen (#1185).",
-      "publishedAt": 1792942883000
     }
   ],
   "tests": [
