@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793044441794,
+  "generatedAt": 1793044519907,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b3561bf",
-    "title": "fix(input): discard queued chords on disconnect",
-    "summary": "A primary controller disconnected during the Back/QAM lead could leave its queued button report eligible for delivery after removal. Discard queued primary reports when that slot loses a controller or a Joy-Con pairing clears its state, and immediately publish the cleared pairing state even if the triggering event is ignored. Preserve a Back hold owned by another device and leave other player slot",
-    "commit": "b3561bf6580e3973208f9852561659c33562d4cc",
+    "tag": "main-2d8957a",
+    "title": "feat(launch): show compatibility install progress",
+    "summary": "Launching during a compatibility-tool install currently discards the launch and shows a brief toast. Keep that request on the existing loading screen instead, show the installer's stage and percentage, and continue automatically when setup finishes.",
+    "commit": "2d8957a401f202351d2f1b8a975e034645ad73dc",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793044157000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b3561bf",
+    "publishedAt": 1793044458000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2d8957a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b3561bf.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3561bf/DroidDeck-main-b3561bf.apk",
-        "size": 74735267,
-        "sha256": "361593e0269948ca50c7131194222650cb9569ed8d6be9725997b8faaec678b7",
+        "name": "DroidDeck-main-2d8957a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d8957a/DroidDeck-main-2d8957a.apk",
+        "size": 74739363,
+        "sha256": "99afb5a7b58e2adc159f271a80a15d8b6982b83cab4aca0cc58dee07d906bb1c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b3561bf-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3561bf/DroidDeck-main-b3561bf-pubg.apk",
-        "size": 74735267,
-        "sha256": "3ad1d7085494c7f17557f5103312d0e0dde4a2cc35718b8db7e8a0ab23771c0a",
+        "name": "DroidDeck-main-2d8957a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d8957a/DroidDeck-main-2d8957a-pubg.apk",
+        "size": 74739363,
+        "sha256": "436c1897d0008a3958da53d699ec97bb4feb9a427a569f46edd369febb320ab7",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b3561bf-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3561bf/DroidDeck-main-b3561bf-antutu.apk",
-        "size": 74735267,
-        "sha256": "eb8a3f7f5f8a81817dca8057e2197a68828b706d80d4a258974801a510b0751e",
+        "name": "DroidDeck-main-2d8957a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d8957a/DroidDeck-main-2d8957a-antutu.apk",
+        "size": 74739363,
+        "sha256": "08144e51608a712334b49572fd9f20b2f29093ec2514712a6d1d8c2fc9a5fca9",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b3561bf-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3561bf/DroidDeck-main-b3561bf-ludashi.apk",
-        "size": 74735267,
-        "sha256": "607f6852279774ac78cd485a217bc1e4d8dfbbc343bd8c6ecfc631a4b0360901",
+        "name": "DroidDeck-main-2d8957a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d8957a/DroidDeck-main-2d8957a-ludashi.apk",
+        "size": 74739363,
+        "sha256": "1d8c3abc2d0f0d59ba1ef09773e830fb708e7a66a1d868aa13de4fb7241829dd",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "2d8957a401f202351d2f1b8a975e034645ad73dc",
+      "title": "feat(launch): show compatibility install progress",
+      "summary": "Launching during a compatibility-tool install currently discards the launch and shows a brief toast. Keep that request on the existing loading screen instead, show the installer's stage and percentage, and continue automatically when setup finishes.",
+      "publishedAt": 1793044458000
+    },
     {
       "commit": "b3561bf6580e3973208f9852561659c33562d4cc",
       "title": "fix(input): discard queued chords on disconnect",
@@ -155,12 +161,6 @@
       "title": "fix: Flatpak setup clears a package lock left by an interrupted run",
       "summary": "Fixes #1575",
       "publishedAt": 1793034104000
-    },
-    {
-      "commit": "da127d1b4c2de5d9506f56fc19e7cacedcb7c282",
-      "title": "fix: compress the client only after the game window is focused",
-      "summary": "The game process exists for the whole Proton launch. Compressing the client then stalls the launch.",
-      "publishedAt": 1793032152000
     }
   ],
   "tests": [
