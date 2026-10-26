@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793046371728,
+  "generatedAt": 1793050187155,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1637",
+      "title": "feat(steam): optional Steam integration setup",
+      "summary": "Optional Android permissions that improve the Steam session were scattered: Wi-Fi names lived in Steam settings, Home selection was under Setup \u2192 Launcher, and brightness opened Android settings mid-session from the slider. This gathers them into one Steam integration group in Setup \u2192 Overview (also shown in the Steam settings sheet), and adds held Home \u2192 Steam Guide shortcuts.",
+      "commit": "b3345d080d7db675deca176cfdaee6772f656d46",
+      "pr": 1637,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793050120000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1637",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1637-b3345d0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1637/DroidDeck-PR.1637-b3345d0.apk",
+          "size": 74768091,
+          "sha256": "1d7b35fe3401df339445e1df85457f849cf6aeda3d6e7c594a91833c0e9852fa",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1637-b3345d0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1637/DroidDeck-PR.1637-b3345d0-pubg.apk",
+          "size": 74768091,
+          "sha256": "51da6c44b758a224b581da00c55382b42bcffe5d4355b271202ceb0a6045469f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1637-b3345d0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1637/DroidDeck-PR.1637-b3345d0-antutu.apk",
+          "size": 74768091,
+          "sha256": "8904c8da9a4894878f30bbe344692d299317241a4448e68c358ef3f53153613d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1637-b3345d0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1637/DroidDeck-PR.1637-b3345d0-ludashi.apk",
+          "size": 74768091,
+          "sha256": "92f9d3047923a8ba546c62c2bb81fbccab45de87625f2de78db33863472f574c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1635",
       "title": "fix(proton): Windows games see only the cores they are pinned to",
