@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793021851285,
+  "generatedAt": 1793022696085,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1611",
+      "title": "fix: Battle.net games the Agent no longer tracks stay out of the Library",
+      "summary": "Battle.net games that were no longer installed still showed in the Library, Steam and the Stores grid. World of Warcraft and StarCraft also vanished from the Battle.net client even though their files were still on the Games folder (124 GB and 5.4 GB).",
+      "commit": "73a8f0b9dffa3452a3086d2612ae674efad49ed3",
+      "pr": 1611,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793022647000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1611",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1611-73a8f0b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1611/DroidDeck-PR.1611-73a8f0b.apk",
+          "size": 74702404,
+          "sha256": "071ba7f98595c3881e1a7422d675335e0664572f879e627252170d69774801d2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1611-73a8f0b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1611/DroidDeck-PR.1611-73a8f0b-pubg.apk",
+          "size": 74702404,
+          "sha256": "7012f8d036ef33cdd5442ebea611e81d07e7b53a97fb9b8fc243d18157f6ddab",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1611-73a8f0b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1611/DroidDeck-PR.1611-73a8f0b-antutu.apk",
+          "size": 74702404,
+          "sha256": "9139be1a6640f0ffcd7ff1d4d658a8ce10fbdaeb820ac42c8cf96d5ce18b1cda",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1611-73a8f0b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1611/DroidDeck-PR.1611-73a8f0b-ludashi.apk",
+          "size": 74702404,
+          "sha256": "6109de2250a37025be5011ff00a5e24bf1e11425484bfdd3bded5b9d5a81e7fb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1608",
       "title": "fix: show a desktop window game's real fps on the HUD",
