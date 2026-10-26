@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793031745585,
+  "generatedAt": 1793032202425,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-eaaecf0",
-    "title": "feat(session): add portrait sessions and controls below the game",
-    "summary": "Steam, games, and Linux desktop sessions can now use Portrait or Follow device rotation independently of launcher orientation. Landscape remains the default. Resolution presets rotate with the session; custom dimensions remain exact, and older automatic resolution preferences retain preset behavior.",
-    "commit": "eaaecf066143a6fd5efda6d53344f368c4cb48a3",
+    "tag": "main-da127d1",
+    "title": "fix: compress the client only after the game window is focused",
+    "summary": "The game process exists for the whole Proton launch. Compressing the client then stalls the launch.",
+    "commit": "da127d1b4c2de5d9506f56fc19e7cacedcb7c282",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793031538000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-eaaecf0",
+    "publishedAt": 1793032152000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-da127d1",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-eaaecf0.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eaaecf0/DroidDeck-main-eaaecf0.apk",
+        "name": "DroidDeck-main-da127d1.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da127d1/DroidDeck-main-da127d1.apk",
         "size": 74706500,
-        "sha256": "fbc09c03e778540fa1f8417dd8267b3c764bf379e14bdaa935cdd003bcfd0835",
+        "sha256": "44b0b60b5b491180320cc53cf3d383f64b9a0965a62bd794592ba4eec8347325",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-eaaecf0-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eaaecf0/DroidDeck-main-eaaecf0-pubg.apk",
+        "name": "DroidDeck-main-da127d1-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da127d1/DroidDeck-main-da127d1-pubg.apk",
         "size": 74706500,
-        "sha256": "f91aadac8a9d592b4fa61d048b33de9a446f60a5412e8cc5084a5c367381c6f7",
+        "sha256": "f428d4abc6429703a7122b6705c7f162dd4d36a747449172e16e8bad472990f7",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-eaaecf0-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eaaecf0/DroidDeck-main-eaaecf0-antutu.apk",
+        "name": "DroidDeck-main-da127d1-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da127d1/DroidDeck-main-da127d1-antutu.apk",
         "size": 74706500,
-        "sha256": "5f697210708201457af2d8c49e30d906cc2878be4067e23402f8bec89f705cd5",
+        "sha256": "e9a027b35bd99df9657f4b49b057f8071923983b7582e17add2d1e54cbbf0977",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-eaaecf0-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-eaaecf0/DroidDeck-main-eaaecf0-ludashi.apk",
+        "name": "DroidDeck-main-da127d1-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da127d1/DroidDeck-main-da127d1-ludashi.apk",
         "size": 74706500,
-        "sha256": "0494eef378f8c66672fbedf113211c6a445ac4279ac8fb4059ba3ad9e5a2a45d",
+        "sha256": "9a3b0f77e2f9b73d31c7b2720047339d5ec58b8c4fbfe8ee4864e0f221bf9082",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "da127d1b4c2de5d9506f56fc19e7cacedcb7c282",
+      "title": "fix: compress the client only after the game window is focused",
+      "summary": "The game process exists for the whole Proton launch. Compressing the client then stalls the launch.",
+      "publishedAt": 1793032152000
+    },
     {
       "commit": "eaaecf066143a6fd5efda6d53344f368c4cb48a3",
       "title": "feat(session): add portrait sessions and controls below the game",
@@ -155,12 +161,6 @@
       "title": "feat(ui): support portrait launcher layouts",
       "summary": "DroidDeck can now follow device rotation or stay in portrait. Tall windows use navigation at the bottom edge, while landscape keeps the side rail. Launcher orientation is separate from Steam/game/desktop orientation and also applies to the file browser, file picker, and store sign-in activities.",
       "publishedAt": 1793021501000
-    },
-    {
-      "commit": "db56cff880e84c777740d377049c8e0e3a844acf",
-      "title": "feat: install Battle.net games from Stores with downloads, updates and uninstall",
-      "summary": "Battle.net games now install from Stores the same way Epic, Xbox and itch games do:",
-      "publishedAt": 1793020479000
     }
   ],
   "tests": [
