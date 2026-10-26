@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792981407639,
+  "generatedAt": 1792983478926,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1588",
+      "title": "fix(ui): restore consistent focus glide transitions",
+      "summary": "Moving focus from the navigation rail to Play Steam and other primary actions currently bypasses the shared glide, so large jumps lose the outline-to-ball transition. Restore primary-button registration while keeping their outlines hollow to preserve Electric theme label contrast.",
+      "commit": "9c4184c64ad04dbbd9837a6a2d19a0300245963a",
+      "pr": 1588,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792983438000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1588",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1588-9c4184c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1588/DroidDeck-PR.1588-9c4184c.apk",
+          "size": 74653252,
+          "sha256": "8e3b21d2a37757aa7d22b60f0d0ad503404260438b87afa67e25190432bddf20",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1588-9c4184c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1588/DroidDeck-PR.1588-9c4184c-pubg.apk",
+          "size": 74653252,
+          "sha256": "379e8ef01da5cb91c04ae0bbd0ce3308a5a14bde01377a4b12b7932e86dae2db",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1588-9c4184c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1588/DroidDeck-PR.1588-9c4184c-antutu.apk",
+          "size": 74653252,
+          "sha256": "a8284cd9fe46c21842b18f7ff09bee7e323ab5caf79579c69237570f48e4fae2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1588-9c4184c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1588/DroidDeck-PR.1588-9c4184c-ludashi.apk",
+          "size": 74653252,
+          "sha256": "6f1a3c7e4d1f09cc5a5c8107b58f6468a96d3be4c64c16a06a4d34f0eedb1c61",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1587",
       "title": "Mali GPU support through MaliBridge by ASEbrahim",
