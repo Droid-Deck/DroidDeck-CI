@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793014258802,
+  "generatedAt": 1793015067909,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1591",
+      "title": "feat(library): remember visibility and store order",
+      "summary": "Library previously mixed installed games with hundreds of uninstalled titles, and its source tabs ignored the order configured in Stores. Library now defaults to installed games and remembers the visibility choice in a Filter menu beside Sort.",
+      "commit": "aa2046b44e6d8a7328685e1f894cc1fc4fb9ffba",
+      "pr": 1591,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793015026000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1591",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1591-aa2046b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-aa2046b.apk",
+          "size": 74657348,
+          "sha256": "f8add940dd2a26fd1881b5f4ef8ee72ce3c097f98469d26d5eeba82f345230e1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1591-aa2046b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-aa2046b-pubg.apk",
+          "size": 74657348,
+          "sha256": "3cbd6c43925473a0996afbb592ffa8d267a9e443cf32c664f41963b5becc730a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1591-aa2046b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-aa2046b-antutu.apk",
+          "size": 74657348,
+          "sha256": "9641d16250c132eed7e615cdd8536cc68a8db3ef415318d82a8f55a7356e9350",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1591-aa2046b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-aa2046b-ludashi.apk",
+          "size": 74657348,
+          "sha256": "51ad493d0e4c3c1cda875ace6c079e5b38e67c60fc73107e77a4f0c1d2c3b5f0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1602",
       "title": "feat: install Battle.net games from Stores with downloads, updates and uninstall",
       "summary": "Battle.net games now install from Stores the same way Epic, Xbox and itch games do:",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1602/DroidDeck-PR.1602-4aa992b-ludashi.apk",
           "size": 74686020,
           "sha256": "641290fffaaeb7d3bf7bbc2b1a3a0fcfd62aeaaf668b9ff743fa0e944b26e703",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1591",
-      "title": "feat(library): remember visibility and store order",
-      "summary": "Library previously mixed installed games with hundreds of uninstalled titles, and its source tabs ignored the order configured in Stores. Library now defaults to installed games and remembers the visibility choice in a Filter menu beside Sort.",
-      "commit": "3d4cc142a874ccfcc60056d5b058ebc2a2136eeb",
-      "pr": 1591,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792995296000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1591",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1591-3d4cc14.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-3d4cc14.apk",
-          "size": 74661444,
-          "sha256": "e3fe7f5857b69fb1119a43c9f40a437bfe33539fb2db98366cd45724cf813078",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1591-3d4cc14-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-3d4cc14-pubg.apk",
-          "size": 74661444,
-          "sha256": "6a8b797cda92d34f36c28e0e6a6d35464beb8e9929907b6fdabe72592887835f",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1591-3d4cc14-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-3d4cc14-antutu.apk",
-          "size": 74661444,
-          "sha256": "40f9b6e9002bf1439406d2558c81c5b331c302fb35f9a733725d06288cb67926",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1591-3d4cc14-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-3d4cc14-ludashi.apk",
-          "size": 74661444,
-          "sha256": "f6ab0fcfaca8987d35c323e6b7e87e78edc691ac27111d0e2c5352f9655ee12c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
