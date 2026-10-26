@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793029421400,
+  "generatedAt": 1793029468486,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ee1b3b2",
-    "title": "fix: show a desktop window game's real fps on the HUD",
-    "summary": "In the KDE desktop, a game started from Steam runs in a desktop window (#1584), but the performance HUD showed 0 fps the whole time even though the game was running smoothly.",
-    "commit": "ee1b3b26e1f7b19216b17a1d49cb070d77980f65",
+    "tag": "main-5d945d7",
+    "title": "refactor: remove duplicate session frame limiter",
+    "summary": "DroidDeck's Mode settings frame cap duplicates Steam QAM and can leave users with two competing limiters. Remove the session-wide control and its saved-setting/runtime wiring so Steam's Quick Access menu owns Steam game frame limits.",
+    "commit": "5d945d7784248be6cd294c3ce830c56ef513bbd8",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793027368000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ee1b3b2",
+    "publishedAt": 1793029422000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5d945d7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ee1b3b2.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ee1b3b2/DroidDeck-main-ee1b3b2.apk",
-        "size": 74706500,
-        "sha256": "cfa8b35dcb614b453fad6d52943afc78ff6057bc7c9e3199c4a77b170a2cdc07",
+        "name": "DroidDeck-main-5d945d7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5d945d7/DroidDeck-main-5d945d7.apk",
+        "size": 74698308,
+        "sha256": "4dda53199608dddb1f4926a4b2218d1ecaefa26d0d809a2f89b52e3af1abce78",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ee1b3b2-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ee1b3b2/DroidDeck-main-ee1b3b2-pubg.apk",
-        "size": 74706500,
-        "sha256": "f89c9faf05d157e717b5ed2d45983fded2bfa8a7899b08e788af849ffb3068eb",
+        "name": "DroidDeck-main-5d945d7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5d945d7/DroidDeck-main-5d945d7-pubg.apk",
+        "size": 74698308,
+        "sha256": "441ab5b4409ce13fa7a3361786d6f1db8cc15311afa9266334af87b22e27d185",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ee1b3b2-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ee1b3b2/DroidDeck-main-ee1b3b2-antutu.apk",
-        "size": 74706500,
-        "sha256": "3511caa66d9c723e37311cc47e4cb653ed6570d310f8b3bf86f25017e70a75e1",
+        "name": "DroidDeck-main-5d945d7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5d945d7/DroidDeck-main-5d945d7-antutu.apk",
+        "size": 74698308,
+        "sha256": "62034961f22600ff1401b979285a4fba7e97bbc8507d75fcc3908db93791665a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ee1b3b2-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ee1b3b2/DroidDeck-main-ee1b3b2-ludashi.apk",
-        "size": 74706500,
-        "sha256": "05414a91cdc43cbdff103a26cb7aab35194b0ad027845754dfcd26bd3d89cee7",
+        "name": "DroidDeck-main-5d945d7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5d945d7/DroidDeck-main-5d945d7-ludashi.apk",
+        "size": 74698308,
+        "sha256": "11ebc7947aef9d52fa149c2a1ea27c39a4807829f39e3bf0d14d03dee54a95df",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "5d945d7784248be6cd294c3ce830c56ef513bbd8",
+      "title": "refactor: remove duplicate session frame limiter",
+      "summary": "DroidDeck's Mode settings frame cap duplicates Steam QAM and can leave users with two competing limiters. Remove the session-wide control and its saved-setting/runtime wiring so Steam's Quick Access menu owns Steam game frame limits.",
+      "publishedAt": 1793029422000
+    },
     {
       "commit": "ee1b3b26e1f7b19216b17a1d49cb070d77980f65",
       "title": "fix: show a desktop window game's real fps on the HUD",
@@ -155,12 +161,6 @@
       "title": "fix(ui): restore continuous ambient motion",
       "summary": "The game-card wall freezes after 20 seconds without input following #1550. Revert 709c041b24225a01d9365b8f6eef97b17131c470 to restore continuous wall drift, capsule floating, and sheet-handle motion.",
       "publishedAt": 1792995447000
-    },
-    {
-      "commit": "3fd6b1f00d5e47611fc219481a7259320c48ccd4",
-      "title": "fix(ui): restore consistent focus glide transitions",
-      "summary": "Moving focus from the navigation rail to Play Steam and other primary actions currently bypasses the shared glide, so large jumps lose the outline-to-ball transition. Restore primary-button registration while keeping their outlines hollow to preserve Electric theme label contrast.",
-      "publishedAt": 1792985674000
     }
   ],
   "tests": [
