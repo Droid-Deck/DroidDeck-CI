@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793045846706,
+  "generatedAt": 1793046191962,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-aa17b05",
-    "title": "fix(input): on-screen controls work while the touchpad finger is down",
-    "summary": "In touchpad mode (and direct mode), the on-screen controls stop working while a finger is on the touchpad. With the right side used as a mouse, the left stick can't be held, so FPS-style layouts don't work. Reported on Discord (DD-330, Poco F7 Ultra).",
-    "commit": "aa17b0553d9e56c67b4f54cacbb8ea679bface0a",
+    "tag": "main-73daaf7",
+    "title": "fix(gamescope): keep Fill scaling and magnification visible",
+    "summary": "Fill scaling and Steam magnification could turn the picture black while the HUD remained visible. Cropping an 800x600 image into a 1280x720 output needs y=-120; Gamescope converted that signed position through an unsigned size helper and sent y=35791275 instead.",
+    "commit": "73daaf7adc5b3cc9c8723aa67c19cc461651017a",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793045399000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-aa17b05",
+    "publishedAt": 1793046151000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-73daaf7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-aa17b05.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa17b05/DroidDeck-main-aa17b05.apk",
-        "size": 74743459,
-        "sha256": "cef96cbfe252fc5df4b6106423cd4e5d80fdb18e7f30fb59e053ff53c13684ad",
+        "name": "DroidDeck-main-73daaf7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-73daaf7/DroidDeck-main-73daaf7.apk",
+        "size": 74739363,
+        "sha256": "819842ed320bec40c2391855cd7d98a145722cdf4db6f3165f4f9c0d6967d85e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-aa17b05-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa17b05/DroidDeck-main-aa17b05-pubg.apk",
-        "size": 74743459,
-        "sha256": "ae3a5061ebc09c1405b8f29a105e10dc9109eca3e2bb9e16a5f2739f59587b1e",
+        "name": "DroidDeck-main-73daaf7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-73daaf7/DroidDeck-main-73daaf7-pubg.apk",
+        "size": 74739363,
+        "sha256": "c7de9abdb56dad4d055df0664d1d585f26d52bd7c475696a0ae1b61c989176f9",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-aa17b05-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa17b05/DroidDeck-main-aa17b05-antutu.apk",
-        "size": 74743459,
-        "sha256": "50cd7559a45f99123a0927961817ed97838be60c1e46252b2a8dc107842ccc27",
+        "name": "DroidDeck-main-73daaf7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-73daaf7/DroidDeck-main-73daaf7-antutu.apk",
+        "size": 74739363,
+        "sha256": "2f87858fa9de8a4621b736e32e4f961a63b510dcbc050e0a6f63b494e3399d4e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-aa17b05-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa17b05/DroidDeck-main-aa17b05-ludashi.apk",
-        "size": 74743459,
-        "sha256": "aa7a32cc45a82a577566ef0c8620ec7777c0b6203d4d86ce2367ae618c84d45b",
+        "name": "DroidDeck-main-73daaf7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-73daaf7/DroidDeck-main-73daaf7-ludashi.apk",
+        "size": 74739363,
+        "sha256": "04c184c7a1549f727ad0c2a9745bd06b2a2f802ac05c20957ad149ded9d9d9fa",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "73daaf7adc5b3cc9c8723aa67c19cc461651017a",
+      "title": "fix(gamescope): keep Fill scaling and magnification visible",
+      "summary": "Fill scaling and Steam magnification could turn the picture black while the HUD remained visible. Cropping an 800x600 image into a 1280x720 output needs y=-120; Gamescope converted that signed position through an unsigned size helper and sent y=35791275 instead.",
+      "publishedAt": 1793046151000
+    },
     {
       "commit": "aa17b0553d9e56c67b4f54cacbb8ea679bface0a",
       "title": "fix(input): on-screen controls work while the touchpad finger is down",
@@ -155,12 +161,6 @@
       "title": "Keep Sentry for Godot games that are not .NET",
       "summary": "Pathogenic (Godot 4.7, app 3808690) quits 10-17 s after launch (DD-058). Its godot.log is full of parse errors such as Identifier \"SentrySDK\" not declared in the current scope, followed by Failed to compile depended scripts.",
       "publishedAt": 1793036949000
-    },
-    {
-      "commit": "a984d11742c28c73892dfc2cef3ca51fbd19606e",
-      "title": "Run Xbox games from a short drive letter",
-      "summary": "Xbox Store games run from a private launch view under the app's files folder, so the game sees an install path like",
-      "publishedAt": 1793036319000
     }
   ],
   "tests": [
