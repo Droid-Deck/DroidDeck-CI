@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792980536634,
+  "generatedAt": 1792981407639,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c71ba6d",
-    "title": "Run desktop games on the GPU",
-    "summary": "Games started from the KDE desktop now run on the GPU in a window of their own, whether they come from Steam or not.",
-    "commit": "c71ba6da96c7f1437c3871ac3a05d39bd578d526",
+    "tag": "main-5978a13",
+    "title": "fix(stores): restore store capabilities in Library",
+    "summary": "The Library redesign (#1460) moved Xbox installs and content management out of Stores, but their package chooser and content dialogs still existed only inside StoresPage. Starting either action from Library could leave its result invisible. Both dialogs now have one shared host in FrontEndScreen, with Xbox styling and scrollable choices.",
+    "commit": "5978a13f092cd537574cf0abf523e1ec290d4b86",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792977950000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c71ba6d",
+    "publishedAt": 1792981371000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5978a13",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c71ba6d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c71ba6d/DroidDeck-main-c71ba6d.apk",
-        "size": 74636868,
-        "sha256": "8f65f4376e023907ce6f9180707bec3c073bbae475d35865f42f1c118c582bd5",
+        "name": "DroidDeck-main-5978a13.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5978a13/DroidDeck-main-5978a13.apk",
+        "size": 74640964,
+        "sha256": "c08986cab377d58c4774e269be3324afe434d96fd68978a303730bfeda25ff14",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c71ba6d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c71ba6d/DroidDeck-main-c71ba6d-pubg.apk",
-        "size": 74636868,
-        "sha256": "e8bf935dc98ca709c249443830d5a440dffad185cf63feb13aafdc9a65610f13",
+        "name": "DroidDeck-main-5978a13-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5978a13/DroidDeck-main-5978a13-pubg.apk",
+        "size": 74640964,
+        "sha256": "a076b07b228b0774cffa9ede027a24fae3539602b72e4c9e42f3103324c1bdf0",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c71ba6d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c71ba6d/DroidDeck-main-c71ba6d-antutu.apk",
-        "size": 74636868,
-        "sha256": "3245cbeba632cdeef9656a93813aafd32ac9017baca05f7301d90ff75263d4eb",
+        "name": "DroidDeck-main-5978a13-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5978a13/DroidDeck-main-5978a13-antutu.apk",
+        "size": 74640964,
+        "sha256": "711281f0518c37fada9ee39790f1ccaf752d06c4758b11fb6dab8e1f32b8c7c9",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c71ba6d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c71ba6d/DroidDeck-main-c71ba6d-ludashi.apk",
-        "size": 74636868,
-        "sha256": "fdb6af96255c89ce7611c449c08d7ba66f72e3cb764d7850b9a041ce837a82e0",
+        "name": "DroidDeck-main-5978a13-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5978a13/DroidDeck-main-5978a13-ludashi.apk",
+        "size": 74640964,
+        "sha256": "8f7a6d3d6fdf00aa1904022163e737af5f22ac357638963ff86f330d5012e59c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "5978a13f092cd537574cf0abf523e1ec290d4b86",
+      "title": "fix(stores): restore store capabilities in Library",
+      "summary": "The Library redesign (#1460) moved Xbox installs and content management out of Stores, but their package chooser and content dialogs still existed only inside StoresPage. Starting either action from Library could leave its result invisible. Both dialogs now have one shared host in FrontEndScreen, with Xbox styling and scrollable choices.",
+      "publishedAt": 1792981371000
+    },
     {
       "commit": "c71ba6da96c7f1437c3871ac3a05d39bd578d526",
       "title": "Run desktop games on the GPU",
@@ -155,12 +161,6 @@
       "title": "fix: Reuse the prefix the client made for a shortcut id",
       "summary": "droiddeck-proton-run builds the prefix path as steamapps/compatdata/<appid>, but the client names that folder with the signed 32-bit form of the shortcut id. A shortcut whose id has the top bit set therefore gets a second, empty prefix, and the first launch after that runs wineboot from scratch: the session sits on a black screen for the length of a full prefix init, and the old prefix is neve",
       "publishedAt": 1792965890000
-    },
-    {
-      "commit": "cf13762939c810f10c810e32e7b700dc7b8c727b",
-      "title": "feat: Show the drawer's game settings when a game starts without Steam",
-      "summary": "A session started without the client has no Steam overview to read the current title from. resolveDrawerGameProfileRefresh asks the agent for the selected or active app id, and with no client running both are null, so the drawer's game profile group stayed empty: the per-game settings card, the FEX preset, the environment editor and the unfolded controls row were all hidden even though every one",
-      "publishedAt": 1792964643000
     }
   ],
   "tests": [
