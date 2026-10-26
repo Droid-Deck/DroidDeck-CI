@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792986670859,
+  "generatedAt": 1792990539994,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1591",
+      "title": "feat(library): remember visibility and store order",
+      "summary": "Library previously mixed installed games with hundreds of uninstalled titles, and its source tabs ignored the order configured in Stores. Library now opens with installed games and a remembered Show uninstalled switch, while its store sources follow the configured order. Steam stays first and manually added games stay last; hiding a Stores browsing tab keeps its Library games accessible.",
+      "commit": "d1a3e941d85658b880beed2c3ed4898ef39d7f70",
+      "pr": 1591,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792990488000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1591",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1591-d1a3e94.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-d1a3e94.apk",
+          "size": 74661444,
+          "sha256": "5253efa37d18bc95c1912ca24ca0c224fd3622da966020b6eda1748d34e1ec2c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1591-d1a3e94-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-d1a3e94-pubg.apk",
+          "size": 74661444,
+          "sha256": "4611417c4dec1d728cc20fa3f076076013066ad7359eb5eb5b5edb3a07fc62de",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1591-d1a3e94-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-d1a3e94-antutu.apk",
+          "size": 74661444,
+          "sha256": "2912285faba6a8e6c19cb4d9864c06649ba27dc0cbb1cd80ed7754d1314b2007",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1591-d1a3e94-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1591/DroidDeck-PR.1591-d1a3e94-ludashi.apk",
+          "size": 74661444,
+          "sha256": "6980ca6f621fb94393bb594cf516b7710dd36e6a701c2ecef7508268503d53e7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1589",
       "title": "itch.io: install Linux builds and start them through Steam",
