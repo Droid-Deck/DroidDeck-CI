@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793044908209,
+  "generatedAt": 1793045455327,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-2d8957a",
-    "title": "feat(launch): show compatibility install progress",
-    "summary": "Launching during a compatibility-tool install currently discards the launch and shows a brief toast. Keep that request on the existing loading screen instead, show the installer's stage and percentage, and continue automatically when setup finishes.",
-    "commit": "2d8957a401f202351d2f1b8a975e034645ad73dc",
+    "tag": "main-aa17b05",
+    "title": "fix(input): on-screen controls work while the touchpad finger is down",
+    "summary": "In touchpad mode (and direct mode), the on-screen controls stop working while a finger is on the touchpad. With the right side used as a mouse, the left stick can't be held, so FPS-style layouts don't work. Reported on Discord (DD-330, Poco F7 Ultra).",
+    "commit": "aa17b0553d9e56c67b4f54cacbb8ea679bface0a",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793044458000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2d8957a",
+    "publishedAt": 1793045399000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-aa17b05",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-2d8957a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d8957a/DroidDeck-main-2d8957a.apk",
-        "size": 74739363,
-        "sha256": "99afb5a7b58e2adc159f271a80a15d8b6982b83cab4aca0cc58dee07d906bb1c",
+        "name": "DroidDeck-main-aa17b05.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa17b05/DroidDeck-main-aa17b05.apk",
+        "size": 74743459,
+        "sha256": "cef96cbfe252fc5df4b6106423cd4e5d80fdb18e7f30fb59e053ff53c13684ad",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-2d8957a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d8957a/DroidDeck-main-2d8957a-pubg.apk",
-        "size": 74739363,
-        "sha256": "436c1897d0008a3958da53d699ec97bb4feb9a427a569f46edd369febb320ab7",
+        "name": "DroidDeck-main-aa17b05-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa17b05/DroidDeck-main-aa17b05-pubg.apk",
+        "size": 74743459,
+        "sha256": "ae3a5061ebc09c1405b8f29a105e10dc9109eca3e2bb9e16a5f2739f59587b1e",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-2d8957a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d8957a/DroidDeck-main-2d8957a-antutu.apk",
-        "size": 74739363,
-        "sha256": "08144e51608a712334b49572fd9f20b2f29093ec2514712a6d1d8c2fc9a5fca9",
+        "name": "DroidDeck-main-aa17b05-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa17b05/DroidDeck-main-aa17b05-antutu.apk",
+        "size": 74743459,
+        "sha256": "50cd7559a45f99123a0927961817ed97838be60c1e46252b2a8dc107842ccc27",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-2d8957a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d8957a/DroidDeck-main-2d8957a-ludashi.apk",
-        "size": 74739363,
-        "sha256": "1d8c3abc2d0f0d59ba1ef09773e830fb708e7a66a1d868aa13de4fb7241829dd",
+        "name": "DroidDeck-main-aa17b05-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa17b05/DroidDeck-main-aa17b05-ludashi.apk",
+        "size": 74743459,
+        "sha256": "aa7a32cc45a82a577566ef0c8620ec7777c0b6203d4d86ce2367ae618c84d45b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "aa17b0553d9e56c67b4f54cacbb8ea679bface0a",
+      "title": "fix(input): on-screen controls work while the touchpad finger is down",
+      "summary": "In touchpad mode (and direct mode), the on-screen controls stop working while a finger is on the touchpad. With the right side used as a mouse, the left stick can't be held, so FPS-style layouts don't work. Reported on Discord (DD-330, Poco F7 Ultra).",
+      "publishedAt": 1793045399000
+    },
     {
       "commit": "2d8957a401f202351d2f1b8a975e034645ad73dc",
       "title": "feat(launch): show compatibility install progress",
@@ -155,12 +161,6 @@
       "title": "Run Xbox games from a short drive letter",
       "summary": "Xbox Store games run from a private launch view under the app's files folder, so the game sees an install path like",
       "publishedAt": 1793036319000
-    },
-    {
-      "commit": "c446566f42fd8083119598beda574b6197352767",
-      "title": "fix: Flatpak setup clears a package lock left by an interrupted run",
-      "summary": "Fixes #1575",
-      "publishedAt": 1793034104000
     }
   ],
   "tests": [
