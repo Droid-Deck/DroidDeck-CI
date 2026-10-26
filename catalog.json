@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793021658396,
+  "generatedAt": 1793021851285,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1608",
+      "title": "fix: show a desktop window game's real fps on the HUD",
+      "summary": "In the KDE desktop, a game started from Steam runs in a desktop window (#1584), but the performance HUD showed 0 fps the whole time even though the game was running smoothly.",
+      "commit": "9cf2105f04d8c2d046ece6f1cca320a30b708ff4",
+      "pr": 1608,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793021793000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1608",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1608-9cf2105.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1608/DroidDeck-PR.1608-9cf2105.apk",
+          "size": 74706500,
+          "sha256": "fff840bb870181d9786e00f68cdfeb8f15cf69d9ba37d5603833b5751eaa9218",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1608-9cf2105-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1608/DroidDeck-PR.1608-9cf2105-pubg.apk",
+          "size": 74706500,
+          "sha256": "6446890862370459b3fc2ef1365341b20d1db0ce15710b35c8a4dd4da3a8e669",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1608-9cf2105-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1608/DroidDeck-PR.1608-9cf2105-antutu.apk",
+          "size": 74706500,
+          "sha256": "1b1e9ff19f0f5d7e3541a99b7020770a6982defe777da53baf088837576ae983",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1608-9cf2105-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1608/DroidDeck-PR.1608-9cf2105-ludashi.apk",
+          "size": 74706500,
+          "sha256": "9ee38d1d0800194a5c39f812b0f4c35a81587567751746cd7559a3a659f1c634",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1610",
       "title": "fix: list Battle.net store games in a grid that scrolls down",
       "summary": "The Battle.net store put its whole catalog in a single \"Blizzard games\" shelf. That made one row that scrolled sideways, with empty space below. The shelf also stops at 24 cards, so the last 7 of the 31 titles could not be reached at all: Warcraft II: Remastered, Warcraft Rumble, Doom: The Dark Ages, Sea of Thieves, The Outer Worlds 2, Tony Hawk's Pro Skater and Avowed.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1610/DroidDeck-PR.1610-caa0c80-ludashi.apk",
           "size": 74690116,
           "sha256": "c1ac63f3a57cf6831bf9b4f9b11a4c2bb30f260a4bc1add0fbe238770caa7190",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1608",
-      "title": "fix: show a desktop window game's real fps on the HUD",
-      "summary": "In the KDE desktop, a game started from Steam runs in a desktop window (#1584), but the performance HUD showed 0 fps the whole time even though the game was running smoothly.",
-      "commit": "1bc3647687ce1c720bdd40296a51e2fc33b77855",
-      "pr": 1608,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793019808000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1608",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1608-1bc3647.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1608/DroidDeck-PR.1608-1bc3647.apk",
-          "size": 74657348,
-          "sha256": "8091112030c2974148778c7a16e18342441c3296d64f02e96c16ba6b5784cdd2",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1608-1bc3647-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1608/DroidDeck-PR.1608-1bc3647-pubg.apk",
-          "size": 74657348,
-          "sha256": "c2e78470d3dfca29c5c0803dd5991b489fc7e272658cfefb6a6d823be5a486cb",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1608-1bc3647-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1608/DroidDeck-PR.1608-1bc3647-antutu.apk",
-          "size": 74657348,
-          "sha256": "2e70074d0d418c7c1c7443cd2248bb589fd0ca6ccaa9e7308e6d4313b18a0f63",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1608-1bc3647-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1608/DroidDeck-PR.1608-1bc3647-ludashi.apk",
-          "size": 74657348,
-          "sha256": "a14f5d8a126424af663130a091c17045a74dec907dbd5b7703b316720df68511",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
