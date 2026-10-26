@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793043788122,
+  "generatedAt": 1793044198956,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-13eb291",
-    "title": "fix(input): handle immediate Back chords and tap timing",
-    "summary": "Starting a Back shortcut quickly could also send the partner's ordinary input before Steam recognized QAM. Promote Back on the first accepted button, D-pad, trigger, or stick input, and give Steam a modifier report before forwarding the partner. Preserve quick presses and releases in order, discard queued input on cancellation, and keep the existing single/double-tap actions and 700 ms Back-only h",
-    "commit": "13eb291ba83f7496a06138ce109f795fbff2ec2a",
+    "tag": "main-b3561bf",
+    "title": "fix(input): discard queued chords on disconnect",
+    "summary": "A primary controller disconnected during the Back/QAM lead could leave its queued button report eligible for delivery after removal. Discard queued primary reports when that slot loses a controller or a Joy-Con pairing clears its state, and immediately publish the cleared pairing state even if the triggering event is ignored. Preserve a Back hold owned by another device and leave other player slot",
+    "commit": "b3561bf6580e3973208f9852561659c33562d4cc",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793042514000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-13eb291",
+    "publishedAt": 1793044157000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b3561bf",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-13eb291.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13eb291/DroidDeck-main-13eb291.apk",
+        "name": "DroidDeck-main-b3561bf.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3561bf/DroidDeck-main-b3561bf.apk",
         "size": 74735267,
-        "sha256": "89634c3b3d96623d3f05a5158174788e84c0ac5409a00a0c2059581f27ad6b1e",
+        "sha256": "361593e0269948ca50c7131194222650cb9569ed8d6be9725997b8faaec678b7",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-13eb291-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13eb291/DroidDeck-main-13eb291-pubg.apk",
+        "name": "DroidDeck-main-b3561bf-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3561bf/DroidDeck-main-b3561bf-pubg.apk",
         "size": 74735267,
-        "sha256": "fc2c57d59cd6b745cfb820b3ab2958c37da392f002c6ea60e94cb8c07507ccb5",
+        "sha256": "3ad1d7085494c7f17557f5103312d0e0dde4a2cc35718b8db7e8a0ab23771c0a",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-13eb291-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13eb291/DroidDeck-main-13eb291-antutu.apk",
+        "name": "DroidDeck-main-b3561bf-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3561bf/DroidDeck-main-b3561bf-antutu.apk",
         "size": 74735267,
-        "sha256": "93e623da59c6f79f325b9ef09388b9d95c2285b8d3bbeb248f41ba719fa55118",
+        "sha256": "eb8a3f7f5f8a81817dca8057e2197a68828b706d80d4a258974801a510b0751e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-13eb291-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13eb291/DroidDeck-main-13eb291-ludashi.apk",
+        "name": "DroidDeck-main-b3561bf-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3561bf/DroidDeck-main-b3561bf-ludashi.apk",
         "size": 74735267,
-        "sha256": "79f95babf04791bda332daa209ef4d9ac1e5fed4844376f4be6aaa436c352738",
+        "sha256": "607f6852279774ac78cd485a217bc1e4d8dfbbc343bd8c6ecfc631a4b0360901",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b3561bf6580e3973208f9852561659c33562d4cc",
+      "title": "fix(input): discard queued chords on disconnect",
+      "summary": "A primary controller disconnected during the Back/QAM lead could leave its queued button report eligible for delivery after removal. Discard queued primary reports when that slot loses a controller or a Joy-Con pairing clears its state, and immediately publish the cleared pairing state even if the triggering event is ignored. Preserve a Back hold owned by another device and leave other player slot",
+      "publishedAt": 1793044157000
+    },
     {
       "commit": "13eb291ba83f7496a06138ce109f795fbff2ec2a",
       "title": "fix(input): handle immediate Back chords and tap timing",
@@ -155,12 +161,6 @@
       "title": "fix: compress the client only after the game window is focused",
       "summary": "The game process exists for the whole Proton launch. Compressing the client then stalls the launch.",
       "publishedAt": 1793032152000
-    },
-    {
-      "commit": "eaaecf066143a6fd5efda6d53344f368c4cb48a3",
-      "title": "feat(session): add portrait sessions and controls below the game",
-      "summary": "Steam, games, and Linux desktop sessions can now use Portrait or Follow device rotation independently of launcher orientation. Landscape remains the default. Resolution presets rotate with the session; custom dimensions remain exact, and older automatic resolution preferences retain preset behavior.",
-      "publishedAt": 1793031538000
     }
   ],
   "tests": [
