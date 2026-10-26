@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792975732756,
+  "generatedAt": 1792976937748,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1584",
+      "title": "Run desktop games on the GPU",
+      "summary": "Games started from the KDE desktop now run on the GPU in a window of their own, whether they come from Steam or not.",
+      "commit": "7ecbad57a06daad358815caa7baa512d90eae114",
+      "pr": 1584,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792976885000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1584",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1584-7ecbad5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1584/DroidDeck-PR.1584-7ecbad5.apk",
+          "size": 74636868,
+          "sha256": "8011b9df37c8cea71e7ed0f12847a415c098418c9fda9771f73784d89c48be62",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1584-7ecbad5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1584/DroidDeck-PR.1584-7ecbad5-pubg.apk",
+          "size": 74636868,
+          "sha256": "624d7c0693681bf415890a7e15a53db5d4e7fa95116b7745d5e0a6095fd85fbd",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1584-7ecbad5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1584/DroidDeck-PR.1584-7ecbad5-antutu.apk",
+          "size": 74636868,
+          "sha256": "aaf487bee2472f5ca0e3cb4d5723f162de0d124654790f96b4426cc01de1f699",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1584-7ecbad5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1584/DroidDeck-PR.1584-7ecbad5-ludashi.apk",
+          "size": 74636868,
+          "sha256": "a43bda8291d118fe3796ebd8239a3344460e3626f6555263aa6a0e3373f0640c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1586",
       "title": "fix(stores): restore store capabilities in Library",
       "summary": "The Library redesign (#1460) moved Xbox installs and content management out of Stores, but their package chooser and content dialogs still existed only inside StoresPage. Starting either action from Library could leave its result invisible. Both dialogs now have one shared host in FrontEndScreen, with Xbox styling and scrollable choices.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-f107e9d-ludashi.apk",
           "size": 76795932,
           "sha256": "c3242a28dff6d30dd8b7b2d5d910763d439b03de1f9dfb7f7e93b46114bdc2a9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1584",
-      "title": "Run desktop games on the GPU",
-      "summary": "Games started from the KDE desktop now run on the GPU, whether they come from Steam or not.",
-      "commit": "87748ff504307c4b67af1cc5e2959d39dad7a9cf",
-      "pr": 1584,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792972545000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1584",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1584-87748ff.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1584/DroidDeck-PR.1584-87748ff.apk",
-          "size": 74636868,
-          "sha256": "91ba46d2ab5a02f4ffb5b7648efa02dff575319be7c71023fff9eaacd49105bc",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1584-87748ff-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1584/DroidDeck-PR.1584-87748ff-pubg.apk",
-          "size": 74636868,
-          "sha256": "746266d6cde9cbdd6a0d162cbc6e331eae7436193db59705d8eb6318de460fc8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1584-87748ff-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1584/DroidDeck-PR.1584-87748ff-antutu.apk",
-          "size": 74636868,
-          "sha256": "4a68361951c30af9494f6fbfbcce5b266dd3338b326ce4fda73117f459570215",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1584-87748ff-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1584/DroidDeck-PR.1584-87748ff-ludashi.apk",
-          "size": 74636868,
-          "sha256": "080a8d004a2d568cc2b46f99f6049b30bd03ee7389cbd06d26c8bc862ed47130",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
