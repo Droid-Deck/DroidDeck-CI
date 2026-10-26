@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793024619109,
+  "generatedAt": 1793024845320,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-1b3814a",
-    "title": "Hold games to the frame limit in Performance mode",
-    "summary": "With Performance mode on and a frame limit set, games are now held to the limit instead of drawing frames the screen never shows.",
-    "commit": "1b3814a5876788962141d1a53c4ffcd8cc367c9c",
+    "tag": "main-fd9de4a",
+    "title": "fix: list Battle.net store games in a grid that scrolls down",
+    "summary": "The Battle.net store put its whole catalog in a single \"Blizzard games\" shelf. That made one row that scrolled sideways, with empty space below. The shelf also stops at 24 cards, so the last 7 of the 31 titles could not be reached at all: Warcraft II: Remastered, Warcraft Rumble, Doom: The Dark Ages, Sea of Thieves, The Outer Worlds 2, Tony Hawk's Pro Skater and Avowed.",
+    "commit": "fd9de4a21e7c5b49e36ecb05e475477ce85c8d7b",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793021593000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1b3814a",
+    "publishedAt": 1793024789000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fd9de4a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-1b3814a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b3814a/DroidDeck-main-1b3814a.apk",
+        "name": "DroidDeck-main-fd9de4a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd9de4a/DroidDeck-main-fd9de4a.apk",
         "size": 74706500,
-        "sha256": "b9180058482ba8e60eb9674c6a4ccc8bbacea7ad142499f39969e0280d1be5d4",
+        "sha256": "810c1739db10c512e3090cfc15583090cbde6dc0b60cab11d85a0bb3a8c08b2d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-1b3814a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b3814a/DroidDeck-main-1b3814a-pubg.apk",
+        "name": "DroidDeck-main-fd9de4a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd9de4a/DroidDeck-main-fd9de4a-pubg.apk",
         "size": 74706500,
-        "sha256": "9452955a165e18094a1592b8d1f60449e66bea845d96ed2ac10b6cf11fde655a",
+        "sha256": "4c0c002439126e001d69bca972985ae46acaa12c9f9addc48acfc3706f4347af",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-1b3814a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b3814a/DroidDeck-main-1b3814a-antutu.apk",
+        "name": "DroidDeck-main-fd9de4a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd9de4a/DroidDeck-main-fd9de4a-antutu.apk",
         "size": 74706500,
-        "sha256": "b0f9c2e61d427403b7e14979846aa76ff14a5dbf77837f2d1d9d6ecf4f3c3b36",
+        "sha256": "dfcdd9d969a30afb02b74880dd674e78cde6dbf5d41cb30ebd793ee679bc255e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-1b3814a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b3814a/DroidDeck-main-1b3814a-ludashi.apk",
+        "name": "DroidDeck-main-fd9de4a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fd9de4a/DroidDeck-main-fd9de4a-ludashi.apk",
         "size": 74706500,
-        "sha256": "064ebc34902ec4e576e52e1db18ecc5e3741918f48c0c17acc9ce8df032108ae",
+        "sha256": "e03c82f87fb1730d02801f370d7009f8a05b950d396ada0b281441c308763337",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "fd9de4a21e7c5b49e36ecb05e475477ce85c8d7b",
+      "title": "fix: list Battle.net store games in a grid that scrolls down",
+      "summary": "The Battle.net store put its whole catalog in a single \"Blizzard games\" shelf. That made one row that scrolled sideways, with empty space below. The shelf also stops at 24 cards, so the last 7 of the 31 titles could not be reached at all: Warcraft II: Remastered, Warcraft Rumble, Doom: The Dark Ages, Sea of Thieves, The Outer Worlds 2, Tony Hawk's Pro Skater and Avowed.",
+      "publishedAt": 1793024789000
+    },
     {
       "commit": "1b3814a5876788962141d1a53c4ffcd8cc367c9c",
       "title": "Hold games to the frame limit in Performance mode",
@@ -155,12 +161,6 @@
       "title": "Run desktop games on the GPU",
       "summary": "Games started from the KDE desktop now run on the GPU in a window of their own, whether they come from Steam or not.",
       "publishedAt": 1792977950000
-    },
-    {
-      "commit": "cce742766d9144ab6b33da691a221dce127b7ea4",
-      "title": "fix: zero-copy launch log no longer points at a drawer switch that do\u2026",
-      "summary": "\u2026es not exist (#865)",
-      "publishedAt": 1792971630000
     }
   ],
   "tests": [
