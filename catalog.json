@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792972587970,
+  "generatedAt": 1792975629236,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1587",
+      "title": "Mali GPU support through MaliBridge by ASEbrahim",
+      "summary": "Brings MaliBridge by ASEbrahim into DroidDeck, along with ASEbrahim's DroidDeck integration from their fork, so phones with a Mali GPU can run sessions. The device is detected automatically: an Adreno keeps Turnip and the existing automatic driver route, and a Mali turns the bridge on.",
+      "commit": "f107e9db23d11cb309780c57753bf58bfd6f6a02",
+      "pr": 1587,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792975569000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1587",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1587-f107e9d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-f107e9d.apk",
+          "size": 76795932,
+          "sha256": "47f6df953a58e22887047f2f68d48076074472c7161ac7d01e746286fe6b4b54",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1587-f107e9d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-f107e9d-pubg.apk",
+          "size": 76795932,
+          "sha256": "ebbec818de939a7095ea5ada4d12adad9d463b39fd6c80783d11d69f585bb18a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1587-f107e9d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-f107e9d-antutu.apk",
+          "size": 76795932,
+          "sha256": "e533da013cc449ec3edd70006ae4f5acaed0a0066f62e238c8c10e4be6953522",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1587-f107e9d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-f107e9d-ludashi.apk",
+          "size": 76795932,
+          "sha256": "c3242a28dff6d30dd8b7b2d5d910763d439b03de1f9dfb7f7e93b46114bdc2a9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1584",
       "title": "Run desktop games on the GPU",
