@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793028938944,
+  "generatedAt": 1793029421400,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1617",
+      "title": "Make the performance HUD measure the game's frames like Steam's overlay",
+      "summary": "The performance HUD (green, top right) showed a jagged frame-time line and a lower fps than Steam's performance overlay (MangoHud) for the same game. In Among Us, Steam showed a flat 60 fps line while the HUD read 51-56 fps with spikes.",
+      "commit": "ed0816bd02c53952a99409380cd75a0b63a64ca4",
+      "pr": 1617,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793029361000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1617",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1617-ed0816b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1617/DroidDeck-PR.1617-ed0816b.apk",
+          "size": 74698308,
+          "sha256": "9e82b3c7a896defe67d344836bc2a28f88f1536e977bc52612d3c2822af03655",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1617-ed0816b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1617/DroidDeck-PR.1617-ed0816b-pubg.apk",
+          "size": 74698308,
+          "sha256": "73f86ca7543ac8f3162510743899f8b3ce5c98cdd1727bba15b6f27fc022202f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1617-ed0816b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1617/DroidDeck-PR.1617-ed0816b-antutu.apk",
+          "size": 74698308,
+          "sha256": "d877e941f9448e9a56b987321c801f74053181261d52bfb5a6e9129b92f9e69f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1617-ed0816b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1617/DroidDeck-PR.1617-ed0816b-ludashi.apk",
+          "size": 74698308,
+          "sha256": "10dfb49f6ee1a3967545229ad0b1f13a04fd01f2f35305dfd785caded17ddfad",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1612",
       "title": "feat(session): add portrait sessions and controls below the game",
