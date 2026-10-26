@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793052327797,
+  "generatedAt": 1793052865432,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1635",
+      "title": "fix(proton): Windows games see only the cores they are pinned to",
+      "summary": "DD-277 (Discord): Prototype only works when it is held to two CPU cores. With Game cores set to two cores, it still freezes at the splash screen most of the time.",
+      "commit": "77237dbe10320ffa83eab518f5e787bd362e30cb",
+      "pr": 1635,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793052809000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1635",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1635-77237db.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-77237db.apk",
+          "size": 74768091,
+          "sha256": "c3befc670e5439aa5c5ec980e5b05aa94f18a1f6eb8659665dab520cd83aacc4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1635-77237db-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-77237db-pubg.apk",
+          "size": 74768091,
+          "sha256": "33d7840fa77bb2e2a00c1429d844b847d642c5157906a638957f8ae481c4d6f3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1635-77237db-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-77237db-antutu.apk",
+          "size": 74768091,
+          "sha256": "1cfb5596ea821610075d66f149c998887f383ca6816b5fa18b703fc00830ed7a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1635-77237db-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-77237db-ludashi.apk",
+          "size": 74768091,
+          "sha256": "668f1e824b6e003565c69979c53a2271e282dc12841e64a387e7b11709c1ff3c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1638",
       "title": "Decode Remote Play streams on the arm64 Steam client",
       "summary": "Fixes Remote Play from a PC to the arm64 Steam client on the tablet (#381, #1075).",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1638/DroidDeck-PR.1638-c51ab40-ludashi.apk",
           "size": 74751651,
           "sha256": "184249c532068dd89f763423fe710a546370e8d7bbc5e08bcfb96e3906eb2413",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1635",
-      "title": "fix(proton): Windows games see only the cores they are pinned to",
-      "summary": "DD-277 (Discord): Prototype only works when it is held to two CPU cores. With Game cores set to two cores, it still freezes at the splash screen most of the time.",
-      "commit": "3780853368f704e375a109ce7069327e12be9b02",
-      "pr": 1635,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793051618000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1635",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1635-3780853.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-3780853.apk",
-          "size": 74743459,
-          "sha256": "c83610c4d4ccbb6de1f1c867fcc094453f880372d37c3e619e86f362d3b73dcd",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1635-3780853-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-3780853-pubg.apk",
-          "size": 74743459,
-          "sha256": "f086a479c458c4cecd4f151200346fa9c28c9423f2bdccae18e31e1c9bd14731",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1635-3780853-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-3780853-antutu.apk",
-          "size": 74743459,
-          "sha256": "864cf954ca835db8ae3ce1c26c37061bfcbd48372bd21bf2becf25f0d805b714",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1635-3780853-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-3780853-ludashi.apk",
-          "size": 74743459,
-          "sha256": "bf318f0388044967d36fad1ff45aa480cadd64ba87306f2f64cd68f315caaf8c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
