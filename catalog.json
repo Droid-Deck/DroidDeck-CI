@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793030570275,
+  "generatedAt": 1793031363784,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-d65912f",
-    "title": "Pushed to main without a PR - fix: stop starting a session on the slow proot (#1395)",
-    "summary": "",
-    "commit": "d65912f0c52a642b2c76be28145a700cf5d183eb",
+    "tag": "main-9b68b33",
+    "title": "Make the performance HUD measure the game's frames like Steam's overlay",
+    "summary": "The performance HUD (green, top right) showed a jagged frame-time line and a lower fps than Steam's performance overlay (MangoHud) for the same game. In Among Us, Steam showed a flat 60 fps line while the HUD read 51-56 fps with spikes.",
+    "commit": "9b68b33e73228c08cee2802d51cb4fa55027ad34",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793030319000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d65912f",
+    "publishedAt": 1793031307000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9b68b33",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-d65912f.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d65912f/DroidDeck-main-d65912f.apk",
-        "size": 74698308,
-        "sha256": "9c0f5fb2191c32af6d0303c95b80e826b8ea9f9137f3f79599b3108a915f9a8f",
+        "name": "DroidDeck-main-9b68b33.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9b68b33/DroidDeck-main-9b68b33.apk",
+        "size": 74706500,
+        "sha256": "43ca55ea28b61e326665ce5c03321e57c8583fe235bfa1594ca7cca5b801e5b6",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-d65912f-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d65912f/DroidDeck-main-d65912f-pubg.apk",
-        "size": 74698308,
-        "sha256": "7b72243efefc75e3887814af4437b417746b6e93f5d74735d4dca2725434b9a2",
+        "name": "DroidDeck-main-9b68b33-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9b68b33/DroidDeck-main-9b68b33-pubg.apk",
+        "size": 74706500,
+        "sha256": "61b5d36689ac53ca0974171ff2927576a77ee3b0ad3299cff8cf0940e80224bc",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-d65912f-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d65912f/DroidDeck-main-d65912f-antutu.apk",
-        "size": 74698308,
-        "sha256": "f2de1a671a7400f0bff4861add4bdedd8383c8faaf6721e7265f969728404637",
+        "name": "DroidDeck-main-9b68b33-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9b68b33/DroidDeck-main-9b68b33-antutu.apk",
+        "size": 74706500,
+        "sha256": "c13dc2ed6d5ebb0b834631336c7b28a7fb3d2eac96bf07c4e43176811942adee",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-d65912f-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d65912f/DroidDeck-main-d65912f-ludashi.apk",
-        "size": 74698308,
-        "sha256": "7c3bf43287c11ac07fe952c3ad1418aaa1684985d61244570b931d217e940e09",
+        "name": "DroidDeck-main-9b68b33-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9b68b33/DroidDeck-main-9b68b33-ludashi.apk",
+        "size": 74706500,
+        "sha256": "adeb34b680687463512e0beb831adaee4c5864651617a34fb6608ad145596524",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9b68b33e73228c08cee2802d51cb4fa55027ad34",
+      "title": "Make the performance HUD measure the game's frames like Steam's overlay",
+      "summary": "The performance HUD (green, top right) showed a jagged frame-time line and a lower fps than Steam's performance overlay (MangoHud) for the same game. In Among Us, Steam showed a flat 60 fps line while the HUD read 51-56 fps with spikes.",
+      "publishedAt": 1793031307000
+    },
     {
       "commit": "d65912f0c52a642b2c76be28145a700cf5d183eb",
       "title": "Pushed to main without a PR - fix: stop starting a session on the slow proot (#1395)",
@@ -155,12 +161,6 @@
       "title": "feat(input): unify low latency mode",
       "summary": "Replace the separate controller and touch low-latency switches with one default-enabled Low latency mode switch. Its only description is Increases CPU and battery usage.",
       "publishedAt": 1793017698000
-    },
-    {
-      "commit": "63d1e4d61d9be4dc5721622305ac58ebd7b33f34",
-      "title": "feat(library): remember visibility and store order",
-      "summary": "Library previously mixed installed games with hundreds of uninstalled titles, and its source tabs ignored the order configured in Stores. Library now defaults to installed games and remembers the visibility choice in a Filter menu beside Sort.",
-      "publishedAt": 1793016008000
     }
   ],
   "tests": [
