@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793015964261,
+  "generatedAt": 1793016060602,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-fbb3342",
-    "title": "fix(ui): restore continuous ambient motion",
-    "summary": "The game-card wall freezes after 20 seconds without input following #1550. Revert 709c041b24225a01d9365b8f6eef97b17131c470 to restore continuous wall drift, capsule floating, and sheet-handle motion.",
-    "commit": "fbb334263c388f30778bf60e441764e0b76f3f54",
+    "tag": "main-63d1e4d",
+    "title": "feat(library): remember visibility and store order",
+    "summary": "Library previously mixed installed games with hundreds of uninstalled titles, and its source tabs ignored the order configured in Stores. Library now defaults to installed games and remembers the visibility choice in a Filter menu beside Sort.",
+    "commit": "63d1e4d61d9be4dc5721622305ac58ebd7b33f34",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792995447000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fbb3342",
+    "publishedAt": 1793016008000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-63d1e4d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-fbb3342.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fbb3342/DroidDeck-main-fbb3342.apk",
-        "size": 74653252,
-        "sha256": "aa1ffd320eea143e01df3c493e3d02c90a34c86bd314497036b1a6cd08350682",
+        "name": "DroidDeck-main-63d1e4d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-63d1e4d/DroidDeck-main-63d1e4d.apk",
+        "size": 74657348,
+        "sha256": "3085ecdbd0cd3c83e6ebd05d5e5bf770e777668cb7b521a0ed9c7ce713de2e64",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-fbb3342-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fbb3342/DroidDeck-main-fbb3342-pubg.apk",
-        "size": 74653252,
-        "sha256": "bfc19ad5c8a3bb0233968d5599712f42ad696b361e3395ab46112a7320f47549",
+        "name": "DroidDeck-main-63d1e4d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-63d1e4d/DroidDeck-main-63d1e4d-pubg.apk",
+        "size": 74657348,
+        "sha256": "cf980f6641496c0c1701548b062177aa7d803ed420c9e6647124ebfc0235d6c6",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-fbb3342-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fbb3342/DroidDeck-main-fbb3342-antutu.apk",
-        "size": 74653252,
-        "sha256": "0716686d3c50ef4ce6c6fcbd35afeac8cabcbd056dbfa0366e7644e355949823",
+        "name": "DroidDeck-main-63d1e4d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-63d1e4d/DroidDeck-main-63d1e4d-antutu.apk",
+        "size": 74657348,
+        "sha256": "e68502a53a812f3a2c56c3e5d984eb5a4da4a39e366b0b6ef20bc9148fd2767f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-fbb3342-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fbb3342/DroidDeck-main-fbb3342-ludashi.apk",
-        "size": 74653252,
-        "sha256": "73129f752f52c32098d4037409c144f2fb678b07ece9d6b82ebb1669c19b1ee3",
+        "name": "DroidDeck-main-63d1e4d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-63d1e4d/DroidDeck-main-63d1e4d-ludashi.apk",
+        "size": 74657348,
+        "sha256": "18da0bf73ad9a00343eb66f3115f9d0abba60a01a408e4f847576e423dd43e66",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "63d1e4d61d9be4dc5721622305ac58ebd7b33f34",
+      "title": "feat(library): remember visibility and store order",
+      "summary": "Library previously mixed installed games with hundreds of uninstalled titles, and its source tabs ignored the order configured in Stores. Library now defaults to installed games and remembers the visibility choice in a Filter menu beside Sort.",
+      "publishedAt": 1793016008000
+    },
     {
       "commit": "fbb334263c388f30778bf60e441764e0b76f3f54",
       "title": "fix(ui): restore continuous ambient motion",
@@ -155,12 +161,6 @@
       "title": "fix: start the session even when the agent environment can't be prepared",
       "summary": "The core of #1024 by @ovurrsl, applied to current main.",
       "publishedAt": 1792966354000
-    },
-    {
-      "commit": "65bacc067b706e740d4b1cdbaad14d45ddebb73f",
-      "title": "fix: extract GOG installer fallback natively on ARM",
-      "summary": "Fixes #694.",
-      "publishedAt": 1792966283000
     }
   ],
   "tests": [
