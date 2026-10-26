@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792995358649,
+  "generatedAt": 1792995508270,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3fd6b1f",
-    "title": "fix(ui): restore consistent focus glide transitions",
-    "summary": "Moving focus from the navigation rail to Play Steam and other primary actions currently bypasses the shared glide, so large jumps lose the outline-to-ball transition. Restore primary-button registration while keeping their outlines hollow to preserve Electric theme label contrast.",
-    "commit": "3fd6b1f00d5e47611fc219481a7259320c48ccd4",
+    "tag": "main-fbb3342",
+    "title": "fix(ui): restore continuous ambient motion",
+    "summary": "The game-card wall freezes after 20 seconds without input following #1550. Revert 709c041b24225a01d9365b8f6eef97b17131c470 to restore continuous wall drift, capsule floating, and sheet-handle motion.",
+    "commit": "fbb334263c388f30778bf60e441764e0b76f3f54",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792985674000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3fd6b1f",
+    "publishedAt": 1792995447000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fbb3342",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3fd6b1f.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fd6b1f/DroidDeck-main-3fd6b1f.apk",
+        "name": "DroidDeck-main-fbb3342.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fbb3342/DroidDeck-main-fbb3342.apk",
         "size": 74653252,
-        "sha256": "8104319dae8df2afbe1aba96ed53691801e6856723ea2aa13ebd905b56579e6d",
+        "sha256": "aa1ffd320eea143e01df3c493e3d02c90a34c86bd314497036b1a6cd08350682",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3fd6b1f-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fd6b1f/DroidDeck-main-3fd6b1f-pubg.apk",
+        "name": "DroidDeck-main-fbb3342-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fbb3342/DroidDeck-main-fbb3342-pubg.apk",
         "size": 74653252,
-        "sha256": "426834aec320dc2832e06265d41b43b97c7c75f2f5f8e728692c8149f61547e3",
+        "sha256": "bfc19ad5c8a3bb0233968d5599712f42ad696b361e3395ab46112a7320f47549",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3fd6b1f-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fd6b1f/DroidDeck-main-3fd6b1f-antutu.apk",
+        "name": "DroidDeck-main-fbb3342-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fbb3342/DroidDeck-main-fbb3342-antutu.apk",
         "size": 74653252,
-        "sha256": "b3619adb82ac76af05efccb84f8b2b3fffbaf01a57c000bb4b7bacc23b72bfab",
+        "sha256": "0716686d3c50ef4ce6c6fcbd35afeac8cabcbd056dbfa0366e7644e355949823",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3fd6b1f-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fd6b1f/DroidDeck-main-3fd6b1f-ludashi.apk",
+        "name": "DroidDeck-main-fbb3342-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fbb3342/DroidDeck-main-fbb3342-ludashi.apk",
         "size": 74653252,
-        "sha256": "a643893a99be212e6a7c6c3dd565bc57ae8716020ddb8b8fd955d7b571e97934",
+        "sha256": "73129f752f52c32098d4037409c144f2fb678b07ece9d6b82ebb1669c19b1ee3",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "fbb334263c388f30778bf60e441764e0b76f3f54",
+      "title": "fix(ui): restore continuous ambient motion",
+      "summary": "The game-card wall freezes after 20 seconds without input following #1550. Revert 709c041b24225a01d9365b8f6eef97b17131c470 to restore continuous wall drift, capsule floating, and sheet-handle motion.",
+      "publishedAt": 1792995447000
+    },
     {
       "commit": "3fd6b1f00d5e47611fc219481a7259320c48ccd4",
       "title": "fix(ui): restore consistent focus glide transitions",
@@ -155,12 +161,6 @@
       "title": "fix: extract GOG installer fallback natively on ARM",
       "summary": "Fixes #694.",
       "publishedAt": 1792966283000
-    },
-    {
-      "commit": "e76489cceac703f8321dbe1a046e95e78410cca6",
-      "title": "fix: refuse overwriting in-use component packages and clear unpacked store on replace",
-      "summary": "\u2022 Finding #64: Extract checkPackageUnused(context, state, name) and centralize package installation in ComponentsManager.storePackage(context, part, dest) for both importPackage and download.\n\u2022 Treat byte-identical re-imports/downloads of an existing .wcp package as a no-op.\n\u2022 Refuse overwriting a .wcp package with different contents when it is currently referenced by the global state or any Proto",
-      "publishedAt": 1792965954000
     }
   ],
   "tests": [
