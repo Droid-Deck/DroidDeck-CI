@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793037893349,
+  "generatedAt": 1793039143787,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a0a68f7",
-    "title": "feat(steam): sync QAM controls and pass held Back shortcuts",
-    "summary": "Steam's native QAM sliders now control Android brightness and media volume, with device changes reflected back in Steam. Holding Android Back for 700 ms sends a real held QAM button for Steam shortcuts. Single and double taps keep the existing menu/QAM order and swap setting; the double-tap window remains 500 ms.",
-    "commit": "a0a68f7280f02df8385fe066ba8785fe2a3389da",
+    "tag": "main-830c753",
+    "title": "fix: turn off D3DGear's capture hook when it sits beside a game",
+    "summary": "When a game's folder has D3DGear64.dll in it (the hook from the D3DGear screen recorder), DroidDeck now turns that DLL off for the game (WINEDLLOVERRIDES=d3dgear64=d). Without this the game shows a black screen while its sound keeps playing.",
+    "commit": "830c75331269a64f1fafdd11f79e86c0c366f0d6",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793037827000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a0a68f7",
+    "publishedAt": 1793039081000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-830c753",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a0a68f7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a0a68f7/DroidDeck-main-a0a68f7.apk",
+        "name": "DroidDeck-main-830c753.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-830c753/DroidDeck-main-830c753.apk",
         "size": 74727075,
-        "sha256": "d5e9b5923f20c6918f4fd64631bde618b81b3afaa9c022ede333bcdf991762f8",
+        "sha256": "8107d25866141887382ba0950fba3de1c549f3f7a30158a98d5eb7ce16c42bef",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a0a68f7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a0a68f7/DroidDeck-main-a0a68f7-pubg.apk",
+        "name": "DroidDeck-main-830c753-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-830c753/DroidDeck-main-830c753-pubg.apk",
         "size": 74727075,
-        "sha256": "e6b542f7954fe855dcfe121142f65de80a37e60383035578ad86148795b2136f",
+        "sha256": "90f004e99ae5aa7f161c3900cd39f768b68897199532067d206ce8ae8f021345",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a0a68f7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a0a68f7/DroidDeck-main-a0a68f7-antutu.apk",
+        "name": "DroidDeck-main-830c753-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-830c753/DroidDeck-main-830c753-antutu.apk",
         "size": 74727075,
-        "sha256": "3d83c64eb7676663c191f3b2993748c002c4269cab17d580caae4e3291edbc68",
+        "sha256": "3d26a050cb0d28824a462e91225002f20f0d18c9c870d997d3ef8de60b3669d3",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a0a68f7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a0a68f7/DroidDeck-main-a0a68f7-ludashi.apk",
+        "name": "DroidDeck-main-830c753-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-830c753/DroidDeck-main-830c753-ludashi.apk",
         "size": 74727075,
-        "sha256": "706f4f2059e4c4fcec21ead2416d5e36fabf4339ccb6b465c6578aabeb5b4b42",
+        "sha256": "82b2aff4f10a9be926f7078c42552c895a893bd0d1286f3f6431282aa538d29e",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "830c75331269a64f1fafdd11f79e86c0c366f0d6",
+      "title": "fix: turn off D3DGear's capture hook when it sits beside a game",
+      "summary": "When a game's folder has D3DGear64.dll in it (the hook from the D3DGear screen recorder), DroidDeck now turns that DLL off for the game (WINEDLLOVERRIDES=d3dgear64=d). Without this the game shows a black screen while its sound keeps playing.",
+      "publishedAt": 1793039081000
+    },
     {
       "commit": "a0a68f7280f02df8385fe066ba8785fe2a3389da",
       "title": "feat(steam): sync QAM controls and pass held Back shortcuts",
@@ -155,12 +161,6 @@
       "title": "Pushed to main without a PR - fix: stop starting a session on the slow proot (#1395)",
       "summary": "",
       "publishedAt": 1793030319000
-    },
-    {
-      "commit": "5d945d7784248be6cd294c3ce830c56ef513bbd8",
-      "title": "refactor: remove duplicate session frame limiter",
-      "summary": "DroidDeck's Mode settings frame cap duplicates Steam QAM and can leave users with two competing limiters. Remove the session-wide control and its saved-setting/runtime wiring so Steam's Quick Access menu owns Steam game frame limits.",
-      "publishedAt": 1793029422000
     }
   ],
   "tests": [
