@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793039143787,
+  "generatedAt": 1793039456850,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1587",
+      "title": "Mali GPU support through MaliBridge by ASEbrahim",
+      "summary": "Brings MaliBridge by ASEbrahim into DroidDeck, along with ASEbrahim's DroidDeck integration from their fork, so phones with a Mali GPU can run sessions. The device is detected automatically: an Adreno keeps Turnip and the existing automatic driver route, and a Mali turns the bridge on.",
+      "commit": "c300342a292fe0e5e7a35513c4457a9cde7bbd44",
+      "pr": 1587,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793039405000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1587",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1587-c300342.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-c300342.apk",
+          "size": 76943483,
+          "sha256": "ab2820d69798de58db61d663152e8426f4731e94132494e92bfffcb8e98d7963",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1587-c300342-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-c300342-pubg.apk",
+          "size": 76943483,
+          "sha256": "3f53aef57d16fe9669fe4ed3db39bc5e405c491ab8e793c451530a485d57de18",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1587-c300342-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-c300342-antutu.apk",
+          "size": 76943483,
+          "sha256": "346535482e7a430f0fd841c759ef8d7661dcec2c7eb8b83b0423afa6ade767d0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1587-c300342-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-c300342-ludashi.apk",
+          "size": 76943483,
+          "sha256": "7abb235a5bc9452d9ef58e20a7ce90ee5092a9e97f700ea6901faa857414253e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1589",
       "title": "itch.io: install Linux builds and start them through Steam",
       "summary": "Follow-up to #1503. Linux builds in the itch.io version picker, which were listed as \"Not supported yet\", can now be installed and started through Steam like every other game.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1589/DroidDeck-PR.1589-7664792-ludashi.apk",
           "size": 74653252,
           "sha256": "f45d0aa345dc5a83ea38401ae3ab253f2a81b0d8c3e18514e9a4264203120edc",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1587",
-      "title": "Mali GPU support through MaliBridge by ASEbrahim",
-      "summary": "Brings MaliBridge by ASEbrahim into DroidDeck, along with ASEbrahim's DroidDeck integration from their fork, so phones with a Mali GPU can run sessions. The device is detected automatically: an Adreno keeps Turnip and the existing automatic driver route, and a Mali turns the bridge on.",
-      "commit": "f107e9db23d11cb309780c57753bf58bfd6f6a02",
-      "pr": 1587,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792975569000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1587",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1587-f107e9d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-f107e9d.apk",
-          "size": 76795932,
-          "sha256": "47f6df953a58e22887047f2f68d48076074472c7161ac7d01e746286fe6b4b54",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1587-f107e9d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-f107e9d-pubg.apk",
-          "size": 76795932,
-          "sha256": "ebbec818de939a7095ea5ada4d12adad9d463b39fd6c80783d11d69f585bb18a",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1587-f107e9d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-f107e9d-antutu.apk",
-          "size": 76795932,
-          "sha256": "e533da013cc449ec3edd70006ae4f5acaed0a0066f62e238c8c10e4be6953522",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1587-f107e9d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-f107e9d-ludashi.apk",
-          "size": 76795932,
-          "sha256": "c3242a28dff6d30dd8b7b2d5d910763d439b03de1f9dfb7f7e93b46114bdc2a9",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
