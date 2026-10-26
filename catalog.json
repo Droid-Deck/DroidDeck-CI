@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793045455327,
+  "generatedAt": 1793045846706,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1635",
+      "title": "fix(proton): Windows games see only the cores they are pinned to",
+      "summary": "DD-277 (Discord): Prototype only works when it is held to two CPU cores. With Game cores set to two cores, it still freezes at the splash screen most of the time.",
+      "commit": "4d0a607f5bf0c73dd0cecf05bf3f1ab59d02543a",
+      "pr": 1635,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793045776000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1635",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1635-4d0a607.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-4d0a607.apk",
+          "size": 74743459,
+          "sha256": "5f0acca0d19b8bb3b489c0a36e87f26fd74f9924dbb355e46b0cf92f26a1077c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1635-4d0a607-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-4d0a607-pubg.apk",
+          "size": 74743459,
+          "sha256": "8e570225535265b1ea5658328b7279b6cfe4cef8983c00096529a3ff1fdc551b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1635-4d0a607-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-4d0a607-antutu.apk",
+          "size": 74743459,
+          "sha256": "d6dc284c9e28aaf0a10eac92d3c3f1e67cf88608f18a7c4949a16d76bbd92c3b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1635-4d0a607-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1635/DroidDeck-PR.1635-4d0a607-ludashi.apk",
+          "size": 74743459,
+          "sha256": "40aa7a54ea1caafbc2f78df2f9666e6a332c56291b1341f740fd1aacd7b5d0ba",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1597",
       "title": "feat(itch): collections filter in the Library",
