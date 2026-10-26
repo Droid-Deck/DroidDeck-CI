@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793033283776,
+  "generatedAt": 1793033668327,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1621",
+      "title": "feat(steam): sync native QAM brightness and volume with Android",
+      "summary": "Steam's existing QAM sliders now control Android system brightness and media volume, with device changes reflected back in Steam.",
+      "commit": "53d643dd005b5c4477087fd5cf22e95f9fb9288f",
+      "pr": 1621,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793033623000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1621",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1621-53d643d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1621/DroidDeck-PR.1621-53d643d.apk",
+          "size": 74718788,
+          "sha256": "3e107e85040c08e3a6ca2590c30b6f506b963d9d989c52015ffefdb98a203997",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1621-53d643d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1621/DroidDeck-PR.1621-53d643d-pubg.apk",
+          "size": 74718788,
+          "sha256": "036b0afc5b572cacc76fbd032a0752334b70a3e6f8361d56b0f51b187294863e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1621-53d643d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1621/DroidDeck-PR.1621-53d643d-antutu.apk",
+          "size": 74718788,
+          "sha256": "f98aa075b091907d08d1f25e66438f7acdee099fd7f857e4663002bcc0ad3c40",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1621-53d643d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1621/DroidDeck-PR.1621-53d643d-ludashi.apk",
+          "size": 74718788,
+          "sha256": "69f82a917d17f70db309f1168191f79b824c99d94861f5e36548a2d0fd3835de",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1589",
       "title": "itch.io: install Linux builds and start them through Steam",
