@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792990539994,
+  "generatedAt": 1792992740055,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1592",
+      "title": "fix(ui): restore continuous ambient motion",
+      "summary": "The game-card wall freezes after 20 seconds without input following #1550. Revert 709c041b24225a01d9365b8f6eef97b17131c470 to restore continuous wall drift, capsule floating, and sheet-handle motion.",
+      "commit": "c304b3bc2a4b785f1160734ac7b2601be847352e",
+      "pr": 1592,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1792992674000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1592",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1592-c304b3b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1592/DroidDeck-PR.1592-c304b3b.apk",
+          "size": 74653252,
+          "sha256": "98bf78afb0514f49e69484b4b77019705f8b01338a1ac43373b162e999e0c245",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1592-c304b3b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1592/DroidDeck-PR.1592-c304b3b-pubg.apk",
+          "size": 74653252,
+          "sha256": "ada39b2e1ff3bc241b82c6afd444549a3fc8ddc9010e28bb0779b6f25aa06ac1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1592-c304b3b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1592/DroidDeck-PR.1592-c304b3b-antutu.apk",
+          "size": 74653252,
+          "sha256": "808b830ced31865205126717b2d763a44cae8f09010a8160713bec05ff12ffcd",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1592-c304b3b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1592/DroidDeck-PR.1592-c304b3b-ludashi.apk",
+          "size": 74653252,
+          "sha256": "690e417bec6eb6a74287fb7338d0307f2b1b51ab7ceaf7797b90c7e16c6b59c2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1591",
       "title": "feat(library): remember visibility and store order",
