@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793051672442,
+  "generatedAt": 1793052102246,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1638",
+      "title": "Decode Remote Play streams on the arm64 Steam client",
+      "summary": "Fixes Remote Play from a PC to the arm64 Steam client on the tablet (#381, #1075).",
+      "commit": "c51ab400cc296d584cab0994e730fee4021c5534",
+      "pr": 1638,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793052058000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1638",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1638-c51ab40.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1638/DroidDeck-PR.1638-c51ab40.apk",
+          "size": 74751651,
+          "sha256": "6de89988ec19d38744a6b0187076df2ff09b68b4b9af6a3ab7ed156fef776889",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1638-c51ab40-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1638/DroidDeck-PR.1638-c51ab40-pubg.apk",
+          "size": 74751651,
+          "sha256": "5dc36c2aaccf700d438c343ae64609f78a268d492c2a0655d660971dea841a5d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1638-c51ab40-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1638/DroidDeck-PR.1638-c51ab40-antutu.apk",
+          "size": 74751651,
+          "sha256": "9e19e991619e538a32166d188eb242c6171704b7270d78265978e3981f3c5cf5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1638-c51ab40-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1638/DroidDeck-PR.1638-c51ab40-ludashi.apk",
+          "size": 74751651,
+          "sha256": "184249c532068dd89f763423fe710a546370e8d7bbc5e08bcfb96e3906eb2413",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1635",
       "title": "fix(proton): Windows games see only the cores they are pinned to",
