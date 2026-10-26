@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792984927530,
+  "generatedAt": 1792985708439,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-5978a13",
-    "title": "fix(stores): restore store capabilities in Library",
-    "summary": "The Library redesign (#1460) moved Xbox installs and content management out of Stores, but their package chooser and content dialogs still existed only inside StoresPage. Starting either action from Library could leave its result invisible. Both dialogs now have one shared host in FrontEndScreen, with Xbox styling and scrollable choices.",
-    "commit": "5978a13f092cd537574cf0abf523e1ec290d4b86",
+    "tag": "main-3fd6b1f",
+    "title": "fix(ui): restore consistent focus glide transitions",
+    "summary": "Moving focus from the navigation rail to Play Steam and other primary actions currently bypasses the shared glide, so large jumps lose the outline-to-ball transition. Restore primary-button registration while keeping their outlines hollow to preserve Electric theme label contrast.",
+    "commit": "3fd6b1f00d5e47611fc219481a7259320c48ccd4",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1792981371000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5978a13",
+    "publishedAt": 1792985674000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3fd6b1f",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-5978a13.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5978a13/DroidDeck-main-5978a13.apk",
-        "size": 74640964,
-        "sha256": "c08986cab377d58c4774e269be3324afe434d96fd68978a303730bfeda25ff14",
+        "name": "DroidDeck-main-3fd6b1f.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fd6b1f/DroidDeck-main-3fd6b1f.apk",
+        "size": 74653252,
+        "sha256": "8104319dae8df2afbe1aba96ed53691801e6856723ea2aa13ebd905b56579e6d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-5978a13-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5978a13/DroidDeck-main-5978a13-pubg.apk",
-        "size": 74640964,
-        "sha256": "a076b07b228b0774cffa9ede027a24fae3539602b72e4c9e42f3103324c1bdf0",
+        "name": "DroidDeck-main-3fd6b1f-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fd6b1f/DroidDeck-main-3fd6b1f-pubg.apk",
+        "size": 74653252,
+        "sha256": "426834aec320dc2832e06265d41b43b97c7c75f2f5f8e728692c8149f61547e3",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-5978a13-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5978a13/DroidDeck-main-5978a13-antutu.apk",
-        "size": 74640964,
-        "sha256": "711281f0518c37fada9ee39790f1ccaf752d06c4758b11fb6dab8e1f32b8c7c9",
+        "name": "DroidDeck-main-3fd6b1f-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fd6b1f/DroidDeck-main-3fd6b1f-antutu.apk",
+        "size": 74653252,
+        "sha256": "b3619adb82ac76af05efccb84f8b2b3fffbaf01a57c000bb4b7bacc23b72bfab",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-5978a13-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5978a13/DroidDeck-main-5978a13-ludashi.apk",
-        "size": 74640964,
-        "sha256": "8f7a6d3d6fdf00aa1904022163e737af5f22ac357638963ff86f330d5012e59c",
+        "name": "DroidDeck-main-3fd6b1f-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fd6b1f/DroidDeck-main-3fd6b1f-ludashi.apk",
+        "size": 74653252,
+        "sha256": "a643893a99be212e6a7c6c3dd565bc57ae8716020ddb8b8fd955d7b571e97934",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "3fd6b1f00d5e47611fc219481a7259320c48ccd4",
+      "title": "fix(ui): restore consistent focus glide transitions",
+      "summary": "Moving focus from the navigation rail to Play Steam and other primary actions currently bypasses the shared glide, so large jumps lose the outline-to-ball transition. Restore primary-button registration while keeping their outlines hollow to preserve Electric theme label contrast.",
+      "publishedAt": 1792985674000
+    },
     {
       "commit": "5978a13f092cd537574cf0abf523e1ec290d4b86",
       "title": "fix(stores): restore store capabilities in Library",
@@ -155,12 +161,6 @@
       "title": "fix: refuse overwriting in-use component packages and clear unpacked store on replace",
       "summary": "\u2022 Finding #64: Extract checkPackageUnused(context, state, name) and centralize package installation in ComponentsManager.storePackage(context, part, dest) for both importPackage and download.\n\u2022 Treat byte-identical re-imports/downloads of an existing .wcp package as a no-op.\n\u2022 Refuse overwriting a .wcp package with different contents when it is currently referenced by the global state or any Proto",
       "publishedAt": 1792965954000
-    },
-    {
-      "commit": "b4b78836484f3f30fd50847bbcb00727de0bb9cf",
-      "title": "fix: Reuse the prefix the client made for a shortcut id",
-      "summary": "droiddeck-proton-run builds the prefix path as steamapps/compatdata/<appid>, but the client names that folder with the signed 32-bit form of the shortcut id. A shortcut whose id has the top bit set therefore gets a second, empty prefix, and the first launch after that runs wineboot from scratch: the session sits on a black screen for the length of a full prefix init, and the old prefix is neve",
-      "publishedAt": 1792965890000
     }
   ],
   "tests": [
