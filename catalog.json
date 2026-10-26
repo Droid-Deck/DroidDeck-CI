@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1792977988656,
+  "generatedAt": 1792980536634,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1586",
-      "title": "fix(stores): restore store capabilities in Library",
-      "summary": "The Library redesign (#1460) moved Xbox installs and content management out of Stores, but their package chooser and content dialogs still existed only inside StoresPage. Starting either action from Library could leave its result invisible. Both dialogs now have one shared host in FrontEndScreen, with Xbox styling and scrollable choices.",
-      "commit": "52d35344b488ab469ec9b796fd85e2ee7fdf06b8",
-      "pr": 1586,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1792975694000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1586",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1586-52d3534.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1586/DroidDeck-PR.1586-52d3534.apk",
-          "size": 74640964,
-          "sha256": "b6793c4354122e297b95387af86c29d4166c92ac24c7c025a907c82fae0291b3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1586-52d3534-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1586/DroidDeck-PR.1586-52d3534-pubg.apk",
-          "size": 74640964,
-          "sha256": "25750a1e9819b15f17d0b572fd1db84b8a48ef1d6accadcbdce8cd054590a675",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1586-52d3534-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1586/DroidDeck-PR.1586-52d3534-antutu.apk",
-          "size": 74640964,
-          "sha256": "7516341a89e1dad4698e4329501fc7e65dbc4b1913972ae87f383e8412718d08",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1586-52d3534-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1586/DroidDeck-PR.1586-52d3534-ludashi.apk",
-          "size": 74640964,
-          "sha256": "f07fa3fb3c360d09c71f3f31491cb17ce5b9a4e0301c0faae537cb9c73ee3663",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1587",
       "title": "Mali GPU support through MaliBridge by ASEbrahim",
