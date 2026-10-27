@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793092959768,
+  "generatedAt": 1793093200711,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1003",
+      "title": "fix: Steam's first frame no longer waits on the client re-downloading itself; a crawling source is dropped for a faster one",
+      "summary": "Main already falls back from a client-update host that does not answer. It still starts with whichever one answers the manifest first, and that is rarely the fastest. The install now measures all three by fetching the head of the largest component from each, keeps the fastest, and prints the host and the rate it measured, so the log says which one it used. The x86-64 client's own install does th",
+      "commit": "38ff6a24adfcd5a97973ffeb71375d1fb9d0c3c2",
+      "pr": 1003,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793093149000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1003",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1003-38ff6a2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1003/DroidDeck-PR.1003-38ff6a2.apk",
+          "size": 74792667,
+          "sha256": "5989a4e0e0feccff05c1a2a62824ce3624bbbea30788b0f002c184671a1c5f34",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1003-38ff6a2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1003/DroidDeck-PR.1003-38ff6a2-pubg.apk",
+          "size": 74792667,
+          "sha256": "85a15eda2908e2306f880d42aa29ad39f5cbdef0c45848ed723c4c713cca0076",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1003-38ff6a2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1003/DroidDeck-PR.1003-38ff6a2-antutu.apk",
+          "size": 74792667,
+          "sha256": "0b274975e6d15d76a687d8dec7de5e44c0a215737012edcad0b1f3aec9ce8730",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1003-38ff6a2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1003/DroidDeck-PR.1003-38ff6a2-ludashi.apk",
+          "size": 74792667,
+          "sha256": "44cc29a4f9fe709ce19d8e63f82b54bc9a395c03100e2fcd6f92609d7445bccd",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1555",
       "title": "fix: duplicate cursors and clicks that miss in a game session",
@@ -746,55 +795,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-581/DroidDeck-PR.581-b40aae3-ludashi.apk",
           "size": 105937764,
           "sha256": "06d7337acdf61f952eac64acde445b5357901ba9fed26cfd3c7f60c8d5b4c99a",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1003",
-      "title": "fix: Steam's first frame no longer waits on the client re-downloading itself",
-      "summary": "The install used to take whichever of Valve's three official client-update hosts answered the manifest first, and that is rarely the fastest one. It now measures all three by fetching the head of the largest component from each, keeps the fastest, and prints the host and the rate it measured, so the log says which one it used.",
-      "commit": "4b639ae758acc795ddc4983c793a6655289867e4",
-      "pr": 1003,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792359228000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1003",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1003-4b639ae.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1003/DroidDeck-PR.1003-4b639ae.apk",
-          "size": 105929572,
-          "sha256": "5be3d9f4c20d2ad9bcb9339b05c9453bb9d5a3cb2aca0d844473081e6d2ea9ed",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1003-4b639ae-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1003/DroidDeck-PR.1003-4b639ae-pubg.apk",
-          "size": 105929572,
-          "sha256": "63a716ad14c4338add6bb2f8f33e97bd9c4b533f757c4d2fd9b3eee1bc9c47bc",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1003-4b639ae-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1003/DroidDeck-PR.1003-4b639ae-antutu.apk",
-          "size": 105929572,
-          "sha256": "89585332e8935037e6d9260d0e08d447583117bce882db2db370b188adefe358",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1003-4b639ae-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1003/DroidDeck-PR.1003-4b639ae-ludashi.apk",
-          "size": 105929572,
-          "sha256": "e0f05568909262913b7ccfc5063b31c695983d96a0e20de51ec0c26d6cd565f2",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
