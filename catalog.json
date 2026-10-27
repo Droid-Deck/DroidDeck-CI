@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793072163675,
+  "generatedAt": 1793073169548,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1653",
+      "title": "Components: keep game FEX/DXVK choices on Proton builds installed later (StarCraft launch)",
+      "summary": "StarCraft (Battle.net, installed from Stores) opens and closes again right away. The 32-bit client dies in ClientSdk.dll's DllMain with an execute access violation (c0000005, info 8, raised in libwow64fex.dll). Every launch ends with \"Battle.net closed before a game started\".",
+      "commit": "229bf0d993903b5f1749d3f8783207fdf895495b",
+      "pr": 1653,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793073123000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1653",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1653-229bf0d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1653/DroidDeck-PR.1653-229bf0d.apk",
+          "size": 74788571,
+          "sha256": "5c4674556bf2535885380c0f0f645ae1a70f502be6ff549b8327ebf2c699d060",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1653-229bf0d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1653/DroidDeck-PR.1653-229bf0d-pubg.apk",
+          "size": 74788571,
+          "sha256": "76acdd36fa5ea45dc48861fa18c3ff57b90d5a279960061cd6c4497c724dd5ab",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1653-229bf0d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1653/DroidDeck-PR.1653-229bf0d-antutu.apk",
+          "size": 74788571,
+          "sha256": "57ae19bbc8dbb4288bb05abcd522859428bbedfcd4ca580741d8d3e08d65d4a8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1653-229bf0d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1653/DroidDeck-PR.1653-229bf0d-ludashi.apk",
+          "size": 74788571,
+          "sha256": "e1827f232b8df1cfed6d7c4a5d369820d12ea49d675fef9b2094c2de118bf5dc",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1587",
       "title": "Mali GPU support through MaliBridge by ASEbrahim",
