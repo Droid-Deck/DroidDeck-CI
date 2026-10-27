@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793118805315,
+  "generatedAt": 1793119781439,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e8bfe0c",
-    "title": "fix: hold Home as Steam on Retroid Nova pads",
-    "summary": "Holding Home for Steam button chords didn't work on the Retroid Pocket Nova, though it works on the AYN Thor.",
-    "commit": "e8bfe0c4e4d0796bc8e80d92ad53038b0bde4841",
+    "tag": "main-067dabe",
+    "title": "perf(compositor): screen tick on its own thread, pacing counters",
+    "summary": "\u2022 Screen tick on its own thread. The Choreographer frame callback that drives the compositor (CompositorHost) ran on the app's main thread. Any main-thread work delayed the tick before it reached the compositor thread. It now runs on a display-priority HandlerThread (droiddeck-vsync) with its own Choreographer.\n\u2022 The session pref vsyncThread (default true, no UI) switches back to the main thread.\n\u2022 The session log says which mode runs (\"screen tick runs on its own display-priority thread\" / \"\u2026on the main thread\").\n\u2022 Pacing counters. A new 10 s pacing log line from the compositor reports:\n\u2022 how late the tick reaches the compositor (average, max, count over 2 ms);\n\u2022 how long a new frame waits to be drawn;",
+    "commit": "067dabe81c4710706af33ab053e65eb3bc7032ab",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793111411000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e8bfe0c",
+    "publishedAt": 1793119708000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-067dabe",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e8bfe0c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8bfe0c/DroidDeck-main-e8bfe0c.apk",
+        "name": "DroidDeck-main-067dabe.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067dabe/DroidDeck-main-067dabe.apk",
         "size": 74788571,
-        "sha256": "86371dde223133ef9eec448d383b8aef8d2e65920960bfb49bff111723de91d7",
+        "sha256": "62808dc4e23e321e0af6a9fbb6902cef9becbb15c2c9ed272c225edb3c2d5fa8",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e8bfe0c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8bfe0c/DroidDeck-main-e8bfe0c-pubg.apk",
+        "name": "DroidDeck-main-067dabe-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067dabe/DroidDeck-main-067dabe-pubg.apk",
         "size": 74788571,
-        "sha256": "f38be5e5937bffeb453cc5c7b1301412338a58227abb716ec4f45e9de34d1eff",
+        "sha256": "d8e8f65ca56ca4c3de5cf8b5cb8ca99ba34cd8fe6a43251fb6317d253d2cca9c",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e8bfe0c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8bfe0c/DroidDeck-main-e8bfe0c-antutu.apk",
+        "name": "DroidDeck-main-067dabe-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067dabe/DroidDeck-main-067dabe-antutu.apk",
         "size": 74788571,
-        "sha256": "9abbd9f3a48f186ee4411b4c1e89d1f2099491a1d66cc240390fd54146149832",
+        "sha256": "3268ccd692bcb73edfefce39c270fa0e5dcad27a4ba6ee81d3e9b09b5c72da38",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e8bfe0c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8bfe0c/DroidDeck-main-e8bfe0c-ludashi.apk",
+        "name": "DroidDeck-main-067dabe-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067dabe/DroidDeck-main-067dabe-ludashi.apk",
         "size": 74788571,
-        "sha256": "7b84e344f74a3082d1ada5b235bdd4ab8fc1c20101e0be64ae8451600a174d58",
+        "sha256": "33cec48b8ed32014bae2b31ed922e185f3f4119ae28354d5da78b2660389f48a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "067dabe81c4710706af33ab053e65eb3bc7032ab",
+      "title": "perf(compositor): screen tick on its own thread, pacing counters",
+      "summary": "\u2022 Screen tick on its own thread. The Choreographer frame callback that drives the compositor (CompositorHost) ran on the app's main thread. Any main-thread work delayed the tick before it reached the compositor thread. It now runs on a display-priority HandlerThread (droiddeck-vsync) with its own Choreographer.\n\u2022 The session pref vsyncThread (default true, no UI) switches back to the main thread.\n",
+      "publishedAt": 1793119708000
+    },
     {
       "commit": "e8bfe0c4e4d0796bc8e80d92ad53038b0bde4841",
       "title": "fix: hold Home as Steam on Retroid Nova pads",
@@ -155,12 +161,6 @@
       "title": "feat: trust contributors for test builds",
       "summary": "Automatically publish release-signed test builds for fork PRs opened by contributors listed in .github/trusted-test-builds.txt, regardless of who pushes. The initial list contains FX192, kingokksa, and ovurrsl. The existing automatic signing of same-repository PR builds remains in place, including successful reruns.",
       "publishedAt": 1793070830000
-    },
-    {
-      "commit": "8749154cbf3974d6f9de7966ce2a106657b49ad7",
-      "title": "fix(input): keep AYN system key out of Home shortcuts",
-      "summary": "On the AYN Thor, enabling Home button shortcuts (#1637) also turned the AYN button under the bottom screen into a held Steam Guide, so it no longer opened AYN's panel.",
-      "publishedAt": 1793064470000
     }
   ],
   "tests": [
