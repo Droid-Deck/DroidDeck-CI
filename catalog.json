@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793106730848,
+  "generatedAt": 1793107790646,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0f839be",
-    "title": "fix(ui): bloom into the compatibility tools loading screen",
-    "summary": "Launching a game while a Proton install is running jumped straight to the \"Preparing compatibility tools\" screen. There was no bloom from the launch button, and the focus ring stayed where the button was, drawn over the loading screen.",
-    "commit": "0f839bef5d5cf109af614d0ff15844c95a8e16d0",
+    "tag": "main-b5cc6dd",
+    "title": "perf(gamescope): skip the repeated window lookup and wake on host events",
+    "summary": "Two gamescope changes from the performance audit, as one gamescope update: gamescope-3.16.29-p17 (p16 + 2 patches).",
+    "commit": "b5cc6dd1850b05a3806cd729b3a4000d4ebbd016",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793101226000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0f839be",
+    "publishedAt": 1793107732000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b5cc6dd",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0f839be.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0f839be/DroidDeck-main-0f839be.apk",
+        "name": "DroidDeck-main-b5cc6dd.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b5cc6dd/DroidDeck-main-b5cc6dd.apk",
         "size": 74788571,
-        "sha256": "a3502db1ada4b4c9423fabfcbc64a7c3d17c2c39bec597ed37d8b25aaacf580e",
+        "sha256": "54da331b60b59e3377cd19ba639fceed9a80759789d0f8c0c592d925ff6a5717",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0f839be-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0f839be/DroidDeck-main-0f839be-pubg.apk",
+        "name": "DroidDeck-main-b5cc6dd-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b5cc6dd/DroidDeck-main-b5cc6dd-pubg.apk",
         "size": 74788571,
-        "sha256": "dcb57a3713c30e5f42ec398bfa9752960f5c3c5116cb30e2a7c5263d86006970",
+        "sha256": "f2fe0d6261b2e2d0da9fa8a22f8174b8dca932d81f795e4721a0549d359732cc",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0f839be-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0f839be/DroidDeck-main-0f839be-antutu.apk",
+        "name": "DroidDeck-main-b5cc6dd-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b5cc6dd/DroidDeck-main-b5cc6dd-antutu.apk",
         "size": 74788571,
-        "sha256": "bead9ea7cafe04d5c770c6cd489a4c4d6c4aab0bc5951cde5ade784d6eb2ed0b",
+        "sha256": "1450ecbc220c4a5425e0aab772549faa7377bce6a72e388a5124d9713a97b4f8",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0f839be-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0f839be/DroidDeck-main-0f839be-ludashi.apk",
+        "name": "DroidDeck-main-b5cc6dd-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b5cc6dd/DroidDeck-main-b5cc6dd-ludashi.apk",
         "size": 74788571,
-        "sha256": "025772377940716795afa9488a2038b54d71db46656f7868d7edb0e540fa98cb",
+        "sha256": "bd680cf9208a9e70e6e27feac8b26442d8d680b6343653d65ed858757bca437c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b5cc6dd1850b05a3806cd729b3a4000d4ebbd016",
+      "title": "perf(gamescope): skip the repeated window lookup and wake on host events",
+      "summary": "Two gamescope changes from the performance audit, as one gamescope update: gamescope-3.16.29-p17 (p16 + 2 patches).",
+      "publishedAt": 1793107732000
+    },
     {
       "commit": "0f839bef5d5cf109af614d0ff15844c95a8e16d0",
       "title": "fix(ui): bloom into the compatibility tools loading screen",
@@ -155,12 +161,6 @@
       "title": "fix(skate.): run ReSkate at D3D12 feature level 121",
       "summary": "Do not merge until the ReSkate testers confirm it.",
       "publishedAt": 1793062269000
-    },
-    {
-      "commit": "70d8fc6559c41910c8d48056987e7c52516259a5",
-      "title": "fix(proton): Windows games see only the cores they are pinned to",
-      "summary": "DD-277 (Discord): Prototype only works when it is held to two CPU cores. With Game cores set to two cores, it still freezes at the splash screen most of the time.",
-      "publishedAt": 1793054792000
     }
   ],
   "tests": [
