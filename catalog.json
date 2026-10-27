@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793134704447,
+  "generatedAt": 1793134951582,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1048",
+      "title": "fix: a recreated launcher screen keeps running installs and save work busy",
+      "summary": "\ufeffAfter the launcher screen is recreated (a language change, a settings reset, or a configuration change it doesn't handle), work that is still running stays marked busy. It is no longer possible to start a session or remove the Linux runtime while that work is writing into it.",
+      "commit": "ab13014b87636aa62541ba19cb59c23ee2451b64",
+      "pr": 1048,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793134880000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1048",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1048-ab13014.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-ab13014.apk",
+          "size": 74993371,
+          "sha256": "442283eee6989e4a204f43818d3db21e7d44da1ee8c7e7aa7385db95a05356a0",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1048-ab13014-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-ab13014-pubg.apk",
+          "size": 74993371,
+          "sha256": "30ec5a816d9e15e1f3514f3a3c391739306c3f3b8af05395fa02b848b353f29d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1048-ab13014-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-ab13014-antutu.apk",
+          "size": 74993371,
+          "sha256": "b86732fab6e3be61c3bb274536d768765e3023f80cc8a315b4011d2c7d6a3cdc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1048-ab13014-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-ab13014-ludashi.apk",
+          "size": 74993371,
+          "sha256": "156435bdade18ac9903f81c87450d50a6c895b34424cf51c1a5c7d82f894d775",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1067",
       "title": "fix: an unproven update-channel guess no longer moves stable users to Nightly",
