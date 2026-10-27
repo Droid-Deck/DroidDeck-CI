@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793070866441,
+  "generatedAt": 1793072163675,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0e9a31c",
-    "title": "feat: trust contributors for test builds",
-    "summary": "Automatically publish release-signed test builds for fork PRs opened by contributors listed in .github/trusted-test-builds.txt, regardless of who pushes. The initial list contains FX192, kingokksa, and ovurrsl. The existing automatic signing of same-repository PR builds remains in place, including successful reruns.",
-    "commit": "0e9a31ccfe4fcce2828d067c7fa0e6db79badea5",
+    "tag": "main-4c7e59e",
+    "title": "feat: Steam's Frame Limit decides; gamescope and the limit follow the refresh rate",
+    "summary": "\u2022 Performance mode switch removed. Sessions always run the way Performance mode did. Steam's Frame Limit in the Quick Access menu is the only frame limit. It decides whether a game is capped or uncapped (the app's own limiter was already removed in #1616).\n\u2022 The Frame Limit slider stays correct when the refresh rate changes. If your limit is still offered at the new rate, it is kept. If not (for example 72 at 120 Hz), it moves to the highest value. Before, the slider jumped to its first value while the game kept the old limit.\n\u2022 gamescope follows the screen's refresh rate during a session, instead of keeping the rate the session started with.\n\u2022 Changing the refresh rate in Android's settings during a game now switches the display. Before, after the session had asked for 60 Hz, raising the setting left it at 60.",
+    "commit": "4c7e59ed8b58c570e6b8220c356dad39e9a34ad3",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793070830000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0e9a31c",
+    "publishedAt": 1793072126000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4c7e59e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0e9a31c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e9a31c/DroidDeck-main-0e9a31c.apk",
+        "name": "DroidDeck-main-4c7e59e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c7e59e/DroidDeck-main-4c7e59e.apk",
         "size": 74788571,
-        "sha256": "f97a0bab68ada0e61e62d9894a78a29479a58f4d0c314c76fba75206e1b9d961",
+        "sha256": "ba51df9d10665142b0eae5effae015253f52fb8ab819930bc1ccd3ef9e05efc9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0e9a31c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e9a31c/DroidDeck-main-0e9a31c-pubg.apk",
+        "name": "DroidDeck-main-4c7e59e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c7e59e/DroidDeck-main-4c7e59e-pubg.apk",
         "size": 74788571,
-        "sha256": "9028964c3ab9288b91f1deb12ba729f8adb0b0f44d1bf88b9c2b489c3e464ed1",
+        "sha256": "180de33caf1ff1ed65d57d7dc7cfb35b425716a91a33736546d302187af5ceb1",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0e9a31c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e9a31c/DroidDeck-main-0e9a31c-antutu.apk",
+        "name": "DroidDeck-main-4c7e59e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c7e59e/DroidDeck-main-4c7e59e-antutu.apk",
         "size": 74788571,
-        "sha256": "8a6657e89d87204a937ae84383a796345dc4e0e002d769a41cd9f9e858e0437b",
+        "sha256": "17ca11d8e29ff174ac8d345a0327bdbf52429fe760bd83b215eb6cfdded077d8",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0e9a31c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e9a31c/DroidDeck-main-0e9a31c-ludashi.apk",
+        "name": "DroidDeck-main-4c7e59e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c7e59e/DroidDeck-main-4c7e59e-ludashi.apk",
         "size": 74788571,
-        "sha256": "88616c5c5c75357265ed6937eb85c532d04c5f5bd15271eefb24c45e5c4a88e4",
+        "sha256": "ca6c64ea542c37bf3e23894c195a06e5b4078055799f96601d83e0ab1bcd758c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4c7e59ed8b58c570e6b8220c356dad39e9a34ad3",
+      "title": "feat: Steam's Frame Limit decides; gamescope and the limit follow the refresh rate",
+      "summary": "\u2022 Performance mode switch removed. Sessions always run the way Performance mode did. Steam's Frame Limit in the Quick Access menu is the only frame limit. It decides whether a game is capped or uncapped (the app's own limiter was already removed in #1616).\n\u2022 The Frame Limit slider stays correct when the refresh rate changes. If your limit is still offered at the new rate, it is kept. If not (for e",
+      "publishedAt": 1793072126000
+    },
     {
       "commit": "0e9a31ccfe4fcce2828d067c7fa0e6db79badea5",
       "title": "feat: trust contributors for test builds",
@@ -155,12 +161,6 @@
       "title": "fix(input): on-screen controls work while the touchpad finger is down",
       "summary": "In touchpad mode (and direct mode), the on-screen controls stop working while a finger is on the touchpad. With the right side used as a mouse, the left stick can't be held, so FPS-style layouts don't work. Reported on Discord (DD-330, Poco F7 Ultra).",
       "publishedAt": 1793045399000
-    },
-    {
-      "commit": "2d8957a401f202351d2f1b8a975e034645ad73dc",
-      "title": "feat(launch): show compatibility install progress",
-      "summary": "Launching during a compatibility-tool install currently discards the launch and shows a brief toast. Keep that request on the existing loading screen instead, show the installer's stage and percentage, and continue automatically when setup finishes.",
-      "publishedAt": 1793044458000
     }
   ],
   "tests": [
