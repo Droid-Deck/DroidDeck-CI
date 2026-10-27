@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793140524980,
+  "generatedAt": 1793141050326,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1665",
+      "title": "feat(itch): update detection and safe updates for installed games",
+      "summary": "Adds update detection for installed itch.io games. This is PR4 of the itch.io store rework (browse, filters, game page and collections are merged; Linux support is #1589). Butler patching comes later as an add-on pack. Updates here download the full build.",
+      "commit": "f371149e1f47366fd2f887ab80aa17a32a1c1af3",
+      "pr": 1665,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793141001000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1665",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1665-f371149.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-f371149.apk",
+          "size": 75009755,
+          "sha256": "7701e75edd798e2cb00260a0eed996e767c9267bb0f43dd3ced1b1b26adf4656",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1665-f371149-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-f371149-pubg.apk",
+          "size": 75009755,
+          "sha256": "071136c86a100c99e54ee7856c306ef159937920dbadbd1da1e65664e25d05e2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1665-f371149-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-f371149-antutu.apk",
+          "size": 75009755,
+          "sha256": "857f7fc205fb5d295c4ed0afc037b14eb7525e755d32b4b88ef26456c1e21d47",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1665-f371149-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-f371149-ludashi.apk",
+          "size": 75009755,
+          "sha256": "d63af1693444bb2bb8aafc124d6180000e83342e4c6cd43e65d7e5629a37df1b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1697",
       "title": "fix(proton): Windows CPU 0 is the fastest core",
@@ -550,55 +599,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1688/DroidDeck-PR.1688-fc8dad5-ludashi.apk",
           "size": 75488987,
           "sha256": "f0b8c03a9ea1bc3dabba5ee9d6ef27635b783fef3757d45f07e052b033a3bb30",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1665",
-      "title": "feat(itch): update detection and safe updates for installed games",
-      "summary": "Adds update detection for installed itch.io games. This is PR4 of the itch.io store rework (browse, filters, game page and collections are merged; Linux support is #1589). Butler patching comes later as an add-on pack. Updates here download the full build.",
-      "commit": "efaf5bf9b7dc3696ac011651b8551175b1604971",
-      "pr": 1665,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793102546000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1665",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1665-efaf5bf.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-efaf5bf.apk",
-          "size": 74804955,
-          "sha256": "50ef1c28e95c8310b0f788ceb88b55617c6db36bf8a4af70249a1e05dbcef89d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1665-efaf5bf-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-efaf5bf-pubg.apk",
-          "size": 74804955,
-          "sha256": "7abf468c9d9e0f8e67515bbca1b3cf314cb836dd0f02f055baf7ad37d348f7f0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1665-efaf5bf-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-efaf5bf-antutu.apk",
-          "size": 74804955,
-          "sha256": "e9c0bcaca2c160e041bbcee96b1691d33f3d86b58cbf50ad535ebae06053e53b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1665-efaf5bf-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-efaf5bf-ludashi.apk",
-          "size": 74804955,
-          "sha256": "7e527fc11bd767a77ef85314b3a8deb783a33324d136f2f02dac1f7a7c2d24f4",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
