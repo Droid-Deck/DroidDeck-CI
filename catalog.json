@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793082110337,
+  "generatedAt": 1793084497361,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1555",
+      "title": "fix: duplicate cursors and clicks that miss in a game session",
+      "summary": "Problem. Input in a game session went wrong in several ways:",
+      "commit": "7afbeb6e98690344f0ee958e55ad8017d15906e6",
+      "pr": 1555,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793084452000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1555",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1555-7afbeb6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1555/DroidDeck-PR.1555-7afbeb6.apk",
+          "size": 74796763,
+          "sha256": "d29d841137df2dab4838e2885205952a2d3ccc2e86f36651faf89ba1b1d88fbc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1555-7afbeb6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1555/DroidDeck-PR.1555-7afbeb6-pubg.apk",
+          "size": 74796763,
+          "sha256": "4efc542eb9e91cc0606fdd991894969456f8a9faf9271b6011e78507e2770be4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1555-7afbeb6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1555/DroidDeck-PR.1555-7afbeb6-antutu.apk",
+          "size": 74796763,
+          "sha256": "afbcdccaeac7ccfe0bec2084d8f664056ac5b68fa68fab8000ce161dc2a25a41",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1555-7afbeb6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1555/DroidDeck-PR.1555-7afbeb6-ludashi.apk",
+          "size": 74796763,
+          "sha256": "527272bec2f05bcd9e898c6897856167efad4b50b31fa7f0a1e0ae7701e0538c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1593",
       "title": "fix: the virtual pads reach non-Steam programs, where udev is resolved through dlsym",
