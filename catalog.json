@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793074168416,
+  "generatedAt": 1793074921143,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4c7e59e",
-    "title": "feat: Steam's Frame Limit decides; gamescope and the limit follow the refresh rate",
-    "summary": "\u2022 Performance mode switch removed. Sessions always run the way Performance mode did. Steam's Frame Limit in the Quick Access menu is the only frame limit. It decides whether a game is capped or uncapped (the app's own limiter was already removed in #1616).\n\u2022 The Frame Limit slider stays correct when the refresh rate changes. If your limit is still offered at the new rate, it is kept. If not (for example 72 at 120 Hz), it moves to the highest value. Before, the slider jumped to its first value while the game kept the old limit.\n\u2022 gamescope follows the screen's refresh rate during a session, instead of keeping the rate the session started with.\n\u2022 Changing the refresh rate in Android's settings during a game now switches the display. Before, after the session had asked for 60 Hz, raising the setting left it at 60.",
-    "commit": "4c7e59ed8b58c570e6b8220c356dad39e9a34ad3",
+    "tag": "main-c25d54a",
+    "title": "Components: keep game FEX/DXVK choices on Proton builds installed later (StarCraft launch)",
+    "summary": "StarCraft (Battle.net, installed from Stores) opens and closes again right away. The 32-bit client dies in ClientSdk.dll's DllMain with an execute access violation (c0000005, info 8, raised in libwow64fex.dll). Every launch ends with \"Battle.net closed before a game started\".",
+    "commit": "c25d54acedcd0db899ce569751a9adfc76156e6a",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793072126000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4c7e59e",
+    "publishedAt": 1793074872000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c25d54a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4c7e59e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c7e59e/DroidDeck-main-4c7e59e.apk",
+        "name": "DroidDeck-main-c25d54a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c25d54a/DroidDeck-main-c25d54a.apk",
         "size": 74788571,
-        "sha256": "ba51df9d10665142b0eae5effae015253f52fb8ab819930bc1ccd3ef9e05efc9",
+        "sha256": "9b8c7619f28f127a3ede3d96005b3b49f487a98fcac2007571efeab7cb7ffee5",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4c7e59e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c7e59e/DroidDeck-main-4c7e59e-pubg.apk",
+        "name": "DroidDeck-main-c25d54a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c25d54a/DroidDeck-main-c25d54a-pubg.apk",
         "size": 74788571,
-        "sha256": "180de33caf1ff1ed65d57d7dc7cfb35b425716a91a33736546d302187af5ceb1",
+        "sha256": "7d6d33361340cd50a824f044119042afd32a4da25ac391d64fec66eb7023c07b",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4c7e59e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c7e59e/DroidDeck-main-4c7e59e-antutu.apk",
+        "name": "DroidDeck-main-c25d54a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c25d54a/DroidDeck-main-c25d54a-antutu.apk",
         "size": 74788571,
-        "sha256": "17ca11d8e29ff174ac8d345a0327bdbf52429fe760bd83b215eb6cfdded077d8",
+        "sha256": "755ba34e434aa671e8f389da9b910f617f147be67b94fb2872fda5d15daa8c1b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4c7e59e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c7e59e/DroidDeck-main-4c7e59e-ludashi.apk",
+        "name": "DroidDeck-main-c25d54a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c25d54a/DroidDeck-main-c25d54a-ludashi.apk",
         "size": 74788571,
-        "sha256": "ca6c64ea542c37bf3e23894c195a06e5b4078055799f96601d83e0ab1bcd758c",
+        "sha256": "b14f53e9e904f7fb7ef92520db7bfbfc86bf258632ad854209b3caf016acaca9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c25d54acedcd0db899ce569751a9adfc76156e6a",
+      "title": "Components: keep game FEX/DXVK choices on Proton builds installed later (StarCraft launch)",
+      "summary": "StarCraft (Battle.net, installed from Stores) opens and closes again right away. The 32-bit client dies in ClientSdk.dll's DllMain with an execute access violation (c0000005, info 8, raised in libwow64fex.dll). Every launch ends with \"Battle.net closed before a game started\".",
+      "publishedAt": 1793074872000
+    },
     {
       "commit": "4c7e59ed8b58c570e6b8220c356dad39e9a34ad3",
       "title": "feat: Steam's Frame Limit decides; gamescope and the limit follow the refresh rate",
@@ -155,12 +161,6 @@
       "title": "fix(gamescope): keep Fill scaling and magnification visible",
       "summary": "Fill scaling and Steam magnification could turn the picture black while the HUD remained visible. Cropping an 800x600 image into a 1280x720 output needs y=-120; Gamescope converted that signed position through an unsigned size helper and sent y=35791275 instead.",
       "publishedAt": 1793046151000
-    },
-    {
-      "commit": "aa17b0553d9e56c67b4f54cacbb8ea679bface0a",
-      "title": "fix(input): on-screen controls work while the touchpad finger is down",
-      "summary": "In touchpad mode (and direct mode), the on-screen controls stop working while a finger is on the touchpad. With the right side used as a mouse, the left stick can't be held, so FPS-style layouts don't work. Reported on Discord (DD-330, Poco F7 Ultra).",
-      "publishedAt": 1793045399000
     }
   ],
   "tests": [
