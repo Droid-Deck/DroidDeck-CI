@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793131605664,
+  "generatedAt": 1793131787734,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-2d19c31",
-    "title": "fix(release): rename the pin task affinity for variant APKs",
-    "summary": "PR test builds still fail to publish after #1690. The antutu, ludashi and pubg variants stop at:",
-    "commit": "2d19c31872dcc55934209c90bcf08eab0f36010f",
+    "tag": "main-4f58230",
+    "title": "fix(session): look up the launched game without rescanning the library",
+    "summary": "Starting an added game with the Steam client off goes through droiddeck-proton-run, and the\nlaunch command for it was built by scanning the entire added-games library just to find the one\ngame the user tapped. AddedGames.scan() walks every game folder for a candidate exe, reads its\nPE header, and re-reads the sidecar and account config per game, so the cost scales with the\nlibrary: with dozens of added games the front end sits on the games page for seconds before the\nsession screen appears, with no feedback that anything is happening.",
+    "commit": "4f58230a20ed0988b8996dbb9a61c43af7e828de",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793131553000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2d19c31",
+    "publishedAt": 1793131733000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4f58230",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-2d19c31.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d19c31/DroidDeck-main-2d19c31.apk",
+        "name": "DroidDeck-main-4f58230.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4f58230/DroidDeck-main-4f58230.apk",
         "size": 74993371,
-        "sha256": "8fb0e9c5828a1647cd7ccbf195c80aec5d8ba667c0fdd801f902dd6996c6f3f8",
+        "sha256": "800d43eadaaa5a3fbbaba8b4b89407b5cb415492550c7336fcb7199019e27534",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-2d19c31-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d19c31/DroidDeck-main-2d19c31-pubg.apk",
+        "name": "DroidDeck-main-4f58230-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4f58230/DroidDeck-main-4f58230-pubg.apk",
         "size": 74993371,
-        "sha256": "0a48e2887d24dc21831da1d3d0079685373898f3defdb1436746b9910d3260ea",
+        "sha256": "d7f90b33a4742893cc8aaf7704e37d0db6b79c57506f0cf14ed206c4175c4c4f",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-2d19c31-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d19c31/DroidDeck-main-2d19c31-antutu.apk",
+        "name": "DroidDeck-main-4f58230-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4f58230/DroidDeck-main-4f58230-antutu.apk",
         "size": 74993371,
-        "sha256": "4140442852db268a8aa0ab060528ae2c74ad5de9931961d2acf1d1e7054799e7",
+        "sha256": "544aa84e5124dfab9d5f2eb0fcef7e03342cfe17df4de1b4f62cea7e0cbc1690",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-2d19c31-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d19c31/DroidDeck-main-2d19c31-ludashi.apk",
+        "name": "DroidDeck-main-4f58230-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4f58230/DroidDeck-main-4f58230-ludashi.apk",
         "size": 74993371,
-        "sha256": "63a355cd3dc5dc291b1cf2ccb83f774a13e98451227e471c16cc465b884bdfe3",
+        "sha256": "0ae223128d4a09c6970cf1fd95b806a4ff9ad65b0b05e46fb96ebab954063515",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4f58230a20ed0988b8996dbb9a61c43af7e828de",
+      "title": "fix(session): look up the launched game without rescanning the library",
+      "summary": "Starting an added game with the Steam client off goes through droiddeck-proton-run, and the\nlaunch command for it was built by scanning the entire added-games library just to find the one\ngame the user tapped. AddedGames.scan() walks every game folder for a candidate exe, reads its\nPE header, and re-reads the sidecar and account config per game, so the cost scales with the\nlibrary: with dozens of ",
+      "publishedAt": 1793131733000
+    },
     {
       "commit": "2d19c31872dcc55934209c90bcf08eab0f36010f",
       "title": "fix(release): rename the pin task affinity for variant APKs",
@@ -155,15 +161,58 @@
       "title": "Components: keep game FEX/DXVK choices on Proton builds installed later (StarCraft launch)",
       "summary": "StarCraft (Battle.net, installed from Stores) opens and closes again right away. The 32-bit client dies in ClientSdk.dll's DllMain with an execute access violation (c0000005, info 8, raised in libwow64fex.dll). Every launch ends with \"Battle.net closed before a game started\".",
       "publishedAt": 1793074872000
-    },
-    {
-      "commit": "4c7e59ed8b58c570e6b8220c356dad39e9a34ad3",
-      "title": "feat: Steam's Frame Limit decides; gamescope and the limit follow the refresh rate",
-      "summary": "\u2022 Performance mode switch removed. Sessions always run the way Performance mode did. Steam's Frame Limit in the Quick Access menu is the only frame limit. It decides whether a game is capped or uncapped (the app's own limiter was already removed in #1616).\n\u2022 The Frame Limit slider stays correct when the refresh rate changes. If your limit is still offered at the new rate, it is kept. If not (for e",
-      "publishedAt": 1793072126000
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1150",
+      "title": "feat(input): add native PS5 DualSense & DualSense Edge wireless/wired support",
+      "summary": "Implements native PlayStation 5 DualSense (0x054C:0x0CE6) and DualSense Edge (0x054C:0x0DF2) controller support across Wired (USB) and Wireless (Bluetooth) connections in DroidDeck.",
+      "commit": "bbeecf6646e32e8e90f99db81314ec338e31a77f",
+      "pr": 1150,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793131725000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1150",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1150-bbeecf6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1150/DroidDeck-PR.1150-bbeecf6.apk",
+          "size": 75091675,
+          "sha256": "a51c3454775264d7e908609e0eb11712004e045c252c901f57622d32ad206ade",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1150-bbeecf6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1150/DroidDeck-PR.1150-bbeecf6-pubg.apk",
+          "size": 75091675,
+          "sha256": "bbdc95ceed1800472c3cc735f1d5e3128a12cb8bd9f5fff77118865332ed03f3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1150-bbeecf6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1150/DroidDeck-PR.1150-bbeecf6-antutu.apk",
+          "size": 75091675,
+          "sha256": "a24eb9966cdbfdc87a40b19af1ae6f09670ef77dede4561893c7053d6011549d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1150-bbeecf6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1150/DroidDeck-PR.1150-bbeecf6-ludashi.apk",
+          "size": 75091675,
+          "sha256": "edba363d0f2b845c21636d159e93e89bf7839526c9d309d95593193fbf816361",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1688",
       "title": "Desktop: pacman, sudo, everyday utilities, copy/paste and touchpad-style touch gestures",
