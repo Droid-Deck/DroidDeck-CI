@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793101278601,
+  "generatedAt": 1793101371893,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1665",
+      "title": "feat(itch): update detection and safe updates for installed games",
+      "summary": "Adds update detection for installed itch.io games. This is PR4 of the itch.io store rework (browse, filters, game page and collections are merged; Linux support is #1589). Butler patching comes later as an add-on pack. Updates here download the full build.",
+      "commit": "0a7397cd0e83f8fdafcfaf1e628f5916754e63b2",
+      "pr": 1665,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793101329000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1665",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1665-0a7397c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-0a7397c.apk",
+          "size": 74804955,
+          "sha256": "d6fc8c86218c9b113fb175a30c74d18c5aa51b207c48da7eec87b540f87c6754",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1665-0a7397c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-0a7397c-pubg.apk",
+          "size": 74804955,
+          "sha256": "35bf104e759429ba17276a109a07ee486ec0a8568e56ab5c20f491c5c65efa06",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1665-0a7397c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-0a7397c-antutu.apk",
+          "size": 74804955,
+          "sha256": "85f7169509c52319709edf415be0e26cd686397f6d65c621025c665036dfd46a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1665-0a7397c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-0a7397c-ludashi.apk",
+          "size": 74804955,
+          "sha256": "5d7ca6b87b5a026818b4e38ab21fc035722aaa3580476978ebcd0b3fa029bcc5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1668",
       "title": "fix(input): stop controller rumble when the device sleeps",
