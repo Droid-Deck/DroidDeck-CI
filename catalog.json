@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793075786202,
+  "generatedAt": 1793081797501,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1656",
+      "title": "feat(input): make the controls toggle and keyboard buttons movable in the layout editor",
+      "summary": "The controls toggle and the keyboard button were drawn at fixed offsets from the screen corner, so the layout editor could not show or move them: they were not part of the control list, and their positions came from hardcoded insets.",
+      "commit": "7792a483684117294bb1256fbb41cffa667d241c",
+      "pr": 1656,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793081753000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1656",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1656-7792a48.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1656/DroidDeck-PR.1656-7792a48.apk",
+          "size": 74788571,
+          "sha256": "48c45aba0c70f1b6860d4cbdb6ae99243580ad9a13a174103e1abbce69c86974",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1656-7792a48-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1656/DroidDeck-PR.1656-7792a48-pubg.apk",
+          "size": 74788571,
+          "sha256": "1ff518a2634ab4588f43096a360339f30277995938bec48f0b251ab523811f48",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1656-7792a48-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1656/DroidDeck-PR.1656-7792a48-antutu.apk",
+          "size": 74788571,
+          "sha256": "02e991f43596f09ee92fc724f7b2eed2dc665950033f76fcae9901b33222ab32",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1656-7792a48-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1656/DroidDeck-PR.1656-7792a48-ludashi.apk",
+          "size": 74788571,
+          "sha256": "4b03c218dcbf3ce65e5c71ee99ed3b60792d5a5c43d7d1ecbc56a916045d0ce2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-946",
       "title": "Let a game override the session locale",
