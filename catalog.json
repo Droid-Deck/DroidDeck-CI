@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793064507431,
+  "generatedAt": 1793069605334,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1646",
+      "title": "feat: trust contributors for test builds",
+      "summary": "Automatically publish release-signed test builds for fork PRs opened by contributors listed in .github/trusted-test-builds.txt, regardless of who pushes. The initial list contains FX192, kingokksa, and ovurrsl. The existing automatic signing of same-repository PR builds remains in place, including successful reruns.",
+      "commit": "783e9061fbb13c5870065d18cf8d21368b3af2d4",
+      "pr": 1646,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793069539000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1646",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1646-783e906.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1646/DroidDeck-PR.1646-783e906.apk",
+          "size": 74788571,
+          "sha256": "6d19a14eea5ff06fec2b6d8989805f69e3ef117ca56c67e873d80b3ba465442e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1646-783e906-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1646/DroidDeck-PR.1646-783e906-pubg.apk",
+          "size": 74788571,
+          "sha256": "c4611ab18eb05a0b023ca9aec6f3a5f4d9d8093ca1abb6defd9444060a531c49",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1646-783e906-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1646/DroidDeck-PR.1646-783e906-antutu.apk",
+          "size": 74788571,
+          "sha256": "1ea80b1ecc7452dbcbeba552997efe9fa9034ce4480a11046690402d5d5823d8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1646-783e906-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1646/DroidDeck-PR.1646-783e906-ludashi.apk",
+          "size": 74788571,
+          "sha256": "bd0209ae4fbb6ab06ab87095096f75b5006c1363cb299c58d62289e5308d8973",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1587",
       "title": "Mali GPU support through MaliBridge by ASEbrahim",
