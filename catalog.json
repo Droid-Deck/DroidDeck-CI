@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793136213826,
+  "generatedAt": 1793136553176,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-953",
+      "title": "fix: keep 6+2 Oryon cores, Fold SoC names, and 120 Hz display mode across fold changes",
+      "summary": "Keep all 8 cores in programcores() on 6+2 Oryon SoCs (SM8750-AC / SM8850-AC), strip Samsung -AC/-AB SoC model suffixes in SocNames (alongside the canoe / Adreno 840 platform entries and a hex gpuchipid guard), and pin preferredDisplayModeId across fold/unfold configuration changes in PerfMode and SessionActivity.",
+      "commit": "354ff3b4cc84a512d91909ecac2c44ffa379fe56",
+      "pr": 953,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793136475000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-953",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.953-354ff3b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-953/DroidDeck-PR.953-354ff3b.apk",
+          "size": 74993371,
+          "sha256": "b5584bd44beb93cd1ef4a52f01351bc53bc43a15608a58b1a32bfaa5ed790ff2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.953-354ff3b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-953/DroidDeck-PR.953-354ff3b-pubg.apk",
+          "size": 74993371,
+          "sha256": "ba6c03ef690dc3912fdd7cacee10b3e35fdbe90446f59bd4c32c306e16f8c050",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.953-354ff3b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-953/DroidDeck-PR.953-354ff3b-antutu.apk",
+          "size": 74993371,
+          "sha256": "57adc263efeffca35560e0f95b932c50e149c5e479c6ea651874b17df5dc2969",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.953-354ff3b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-953/DroidDeck-PR.953-354ff3b-ludashi.apk",
+          "size": 74993371,
+          "sha256": "55b12d62d90705c2d4c4f1c499f3e115c6df726598e943bec519af8d03a0e90b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1042",
       "title": "fix: cancelling the first-run desktop or Proton install stops its download",
