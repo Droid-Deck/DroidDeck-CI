@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793069774140,
+  "generatedAt": 1793070866441,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8749154",
-    "title": "fix(input): keep AYN system key out of Home shortcuts",
-    "summary": "On the AYN Thor, enabling Home button shortcuts (#1637) also turned the AYN button under the bottom screen into a held Steam Guide, so it no longer opened AYN's panel.",
-    "commit": "8749154cbf3974d6f9de7966ce2a106657b49ad7",
+    "tag": "main-0e9a31c",
+    "title": "feat: trust contributors for test builds",
+    "summary": "Automatically publish release-signed test builds for fork PRs opened by contributors listed in .github/trusted-test-builds.txt, regardless of who pushes. The initial list contains FX192, kingokksa, and ovurrsl. The existing automatic signing of same-repository PR builds remains in place, including successful reruns.",
+    "commit": "0e9a31ccfe4fcce2828d067c7fa0e6db79badea5",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793064470000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8749154",
+    "publishedAt": 1793070830000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0e9a31c",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8749154.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8749154/DroidDeck-main-8749154.apk",
+        "name": "DroidDeck-main-0e9a31c.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e9a31c/DroidDeck-main-0e9a31c.apk",
         "size": 74788571,
-        "sha256": "cf97c75e083f1bb486114115344a9b6b633d6bff0765e6b710c1d5672d963d89",
+        "sha256": "f97a0bab68ada0e61e62d9894a78a29479a58f4d0c314c76fba75206e1b9d961",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8749154-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8749154/DroidDeck-main-8749154-pubg.apk",
+        "name": "DroidDeck-main-0e9a31c-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e9a31c/DroidDeck-main-0e9a31c-pubg.apk",
         "size": 74788571,
-        "sha256": "f14d6800346cd414857491af51fd1b4b079ccf4108839f7d5180f1b6580b4b51",
+        "sha256": "9028964c3ab9288b91f1deb12ba729f8adb0b0f44d1bf88b9c2b489c3e464ed1",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8749154-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8749154/DroidDeck-main-8749154-antutu.apk",
+        "name": "DroidDeck-main-0e9a31c-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e9a31c/DroidDeck-main-0e9a31c-antutu.apk",
         "size": 74788571,
-        "sha256": "fbbc717ef9d9a4a6a9c5ef0fa35fa67e7d55b14e40263cbfc4349fe1c71a7273",
+        "sha256": "8a6657e89d87204a937ae84383a796345dc4e0e002d769a41cd9f9e858e0437b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8749154-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8749154/DroidDeck-main-8749154-ludashi.apk",
+        "name": "DroidDeck-main-0e9a31c-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0e9a31c/DroidDeck-main-0e9a31c-ludashi.apk",
         "size": 74788571,
-        "sha256": "3ea2247373b8fe9b997442e2a6456ae908b9376b5018f8dba0a02ac71dfbf2c9",
+        "sha256": "88616c5c5c75357265ed6937eb85c532d04c5f5bd15271eefb24c45e5c4a88e4",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0e9a31ccfe4fcce2828d067c7fa0e6db79badea5",
+      "title": "feat: trust contributors for test builds",
+      "summary": "Automatically publish release-signed test builds for fork PRs opened by contributors listed in .github/trusted-test-builds.txt, regardless of who pushes. The initial list contains FX192, kingokksa, and ovurrsl. The existing automatic signing of same-repository PR builds remains in place, including successful reruns.",
+      "publishedAt": 1793070830000
+    },
     {
       "commit": "8749154cbf3974d6f9de7966ce2a106657b49ad7",
       "title": "fix(input): keep AYN system key out of Home shortcuts",
@@ -155,12 +161,6 @@
       "title": "feat(launch): show compatibility install progress",
       "summary": "Launching during a compatibility-tool install currently discards the launch and shows a brief toast. Keep that request on the existing loading screen instead, show the installer's stage and percentage, and continue automatically when setup finishes.",
       "publishedAt": 1793044458000
-    },
-    {
-      "commit": "b3561bf6580e3973208f9852561659c33562d4cc",
-      "title": "fix(input): discard queued chords on disconnect",
-      "summary": "A primary controller disconnected during the Back/QAM lead could leave its queued button report eligible for delivery after removal. Discard queued primary reports when that slot loses a controller or a Joy-Con pairing clears its state, and immediately publish the cleared pairing state even if the triggering event is ignored. Preserve a Back hold owned by another device and leave other player slot",
-      "publishedAt": 1793044157000
     }
   ],
   "tests": [
