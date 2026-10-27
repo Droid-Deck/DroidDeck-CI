@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793142611154,
+  "generatedAt": 1793143500381,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4f58230",
-    "title": "fix(session): look up the launched game without rescanning the library",
-    "summary": "Starting an added game with the Steam client off goes through droiddeck-proton-run, and the\nlaunch command for it was built by scanning the entire added-games library just to find the one\ngame the user tapped. AddedGames.scan() walks every game folder for a candidate exe, reads its\nPE header, and re-reads the sidecar and account config per game, so the cost scales with the\nlibrary: with dozens of added games the front end sits on the games page for seconds before the\nsession screen appears, with no feedback that anything is happening.",
-    "commit": "4f58230a20ed0988b8996dbb9a61c43af7e828de",
+    "tag": "main-4ef6b53",
+    "title": "fix(proton): Windows CPU 0 is the fastest core",
+    "summary": "GTA IV ran at half speed in DroidDeck: 32 fps against 64\u201366 in Bannerlator, with the same settings, DXVK and FEX.",
+    "commit": "4ef6b53eb09f9cd5150f288be49c5c740e400e48",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793131733000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4f58230",
+    "publishedAt": 1793143444000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4ef6b53",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4f58230.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4f58230/DroidDeck-main-4f58230.apk",
+        "name": "DroidDeck-main-4ef6b53.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4ef6b53/DroidDeck-main-4ef6b53.apk",
         "size": 74993371,
-        "sha256": "800d43eadaaa5a3fbbaba8b4b89407b5cb415492550c7336fcb7199019e27534",
+        "sha256": "4e213e60e86cbccb4f4cee145476cfd5175728953bed33f694dbae6db95d8b79",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4f58230-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4f58230/DroidDeck-main-4f58230-pubg.apk",
+        "name": "DroidDeck-main-4ef6b53-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4ef6b53/DroidDeck-main-4ef6b53-pubg.apk",
         "size": 74993371,
-        "sha256": "d7f90b33a4742893cc8aaf7704e37d0db6b79c57506f0cf14ed206c4175c4c4f",
+        "sha256": "22e8c8d91d46565c6a168f4a87fb72a4c646bf27346b7573ad6c9f3549d2a506",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4f58230-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4f58230/DroidDeck-main-4f58230-antutu.apk",
+        "name": "DroidDeck-main-4ef6b53-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4ef6b53/DroidDeck-main-4ef6b53-antutu.apk",
         "size": 74993371,
-        "sha256": "544aa84e5124dfab9d5f2eb0fcef7e03342cfe17df4de1b4f62cea7e0cbc1690",
+        "sha256": "8a37c993ad6a6de37454b955e35105836940caccc20b323e5c69efffb867f919",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4f58230-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4f58230/DroidDeck-main-4f58230-ludashi.apk",
+        "name": "DroidDeck-main-4ef6b53-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4ef6b53/DroidDeck-main-4ef6b53-ludashi.apk",
         "size": 74993371,
-        "sha256": "0ae223128d4a09c6970cf1fd95b806a4ff9ad65b0b05e46fb96ebab954063515",
+        "sha256": "36dee9a396082275b29f5af490092cb059b99ff7b5a253db6dc7ad4510aafca1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4ef6b53eb09f9cd5150f288be49c5c740e400e48",
+      "title": "fix(proton): Windows CPU 0 is the fastest core",
+      "summary": "GTA IV ran at half speed in DroidDeck: 32 fps against 64\u201366 in Bannerlator, with the same settings, DXVK and FEX.",
+      "publishedAt": 1793143444000
+    },
     {
       "commit": "4f58230a20ed0988b8996dbb9a61c43af7e828de",
       "title": "fix(session): look up the launched game without rescanning the library",
@@ -155,12 +161,6 @@
       "title": "fix: show gesture settings only in gesture mode",
       "summary": "The session drawer now shows Touch gesture settings only when Touch is set to Gestures, and removes the explanatory text beneath it.",
       "publishedAt": 1793075750000
-    },
-    {
-      "commit": "c25d54acedcd0db899ce569751a9adfc76156e6a",
-      "title": "Components: keep game FEX/DXVK choices on Proton builds installed later (StarCraft launch)",
-      "summary": "StarCraft (Battle.net, installed from Stores) opens and closes again right away. The 32-bit client dies in ClientSdk.dll's DllMain with an execute access violation (c0000005, info 8, raised in libwow64fex.dll). Every launch ends with \"Battle.net closed before a game started\".",
-      "publishedAt": 1793074872000
     }
   ],
   "tests": [
