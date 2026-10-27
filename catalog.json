@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793130859852,
+  "generatedAt": 1793131605664,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-067dabe",
-    "title": "perf(compositor): screen tick on its own thread, pacing counters",
-    "summary": "\u2022 Screen tick on its own thread. The Choreographer frame callback that drives the compositor (CompositorHost) ran on the app's main thread. Any main-thread work delayed the tick before it reached the compositor thread. It now runs on a display-priority HandlerThread (droiddeck-vsync) with its own Choreographer.\n\u2022 The session pref vsyncThread (default true, no UI) switches back to the main thread.\n\u2022 The session log says which mode runs (\"screen tick runs on its own display-priority thread\" / \"\u2026on the main thread\").\n\u2022 Pacing counters. A new 10 s pacing log line from the compositor reports:\n\u2022 how late the tick reaches the compositor (average, max, count over 2 ms);\n\u2022 how long a new frame waits to be drawn;",
-    "commit": "067dabe81c4710706af33ab053e65eb3bc7032ab",
+    "tag": "main-2d19c31",
+    "title": "fix(release): rename the pin task affinity for variant APKs",
+    "summary": "PR test builds still fail to publish after #1690. The antutu, ludashi and pubg variants stop at:",
+    "commit": "2d19c31872dcc55934209c90bcf08eab0f36010f",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793119708000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-067dabe",
+    "publishedAt": 1793131553000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2d19c31",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-067dabe.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067dabe/DroidDeck-main-067dabe.apk",
-        "size": 74788571,
-        "sha256": "62808dc4e23e321e0af6a9fbb6902cef9becbb15c2c9ed272c225edb3c2d5fa8",
+        "name": "DroidDeck-main-2d19c31.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d19c31/DroidDeck-main-2d19c31.apk",
+        "size": 74993371,
+        "sha256": "8fb0e9c5828a1647cd7ccbf195c80aec5d8ba667c0fdd801f902dd6996c6f3f8",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-067dabe-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067dabe/DroidDeck-main-067dabe-pubg.apk",
-        "size": 74788571,
-        "sha256": "d8e8f65ca56ca4c3de5cf8b5cb8ca99ba34cd8fe6a43251fb6317d253d2cca9c",
+        "name": "DroidDeck-main-2d19c31-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d19c31/DroidDeck-main-2d19c31-pubg.apk",
+        "size": 74993371,
+        "sha256": "0a48e2887d24dc21831da1d3d0079685373898f3defdb1436746b9910d3260ea",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-067dabe-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067dabe/DroidDeck-main-067dabe-antutu.apk",
-        "size": 74788571,
-        "sha256": "3268ccd692bcb73edfefce39c270fa0e5dcad27a4ba6ee81d3e9b09b5c72da38",
+        "name": "DroidDeck-main-2d19c31-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d19c31/DroidDeck-main-2d19c31-antutu.apk",
+        "size": 74993371,
+        "sha256": "4140442852db268a8aa0ab060528ae2c74ad5de9931961d2acf1d1e7054799e7",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-067dabe-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-067dabe/DroidDeck-main-067dabe-ludashi.apk",
-        "size": 74788571,
-        "sha256": "33cec48b8ed32014bae2b31ed922e185f3f4119ae28354d5da78b2660389f48a",
+        "name": "DroidDeck-main-2d19c31-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2d19c31/DroidDeck-main-2d19c31-ludashi.apk",
+        "size": 74993371,
+        "sha256": "63a355cd3dc5dc291b1cf2ccb83f774a13e98451227e471c16cc465b884bdfe3",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "2d19c31872dcc55934209c90bcf08eab0f36010f",
+      "title": "fix(release): rename the pin task affinity for variant APKs",
+      "summary": "PR test builds still fail to publish after #1690. The antutu, ludashi and pubg variants stop at:",
+      "publishedAt": 1793131553000
+    },
     {
       "commit": "067dabe81c4710706af33ab053e65eb3bc7032ab",
       "title": "perf(compositor): screen tick on its own thread, pacing counters",
@@ -155,12 +161,6 @@
       "title": "feat: Steam's Frame Limit decides; gamescope and the limit follow the refresh rate",
       "summary": "\u2022 Performance mode switch removed. Sessions always run the way Performance mode did. Steam's Frame Limit in the Quick Access menu is the only frame limit. It decides whether a game is capped or uncapped (the app's own limiter was already removed in #1616).\n\u2022 The Frame Limit slider stays correct when the refresh rate changes. If your limit is still offered at the new rate, it is kept. If not (for e",
       "publishedAt": 1793072126000
-    },
-    {
-      "commit": "0e9a31ccfe4fcce2828d067c7fa0e6db79badea5",
-      "title": "feat: trust contributors for test builds",
-      "summary": "Automatically publish release-signed test builds for fork PRs opened by contributors listed in .github/trusted-test-builds.txt, regardless of who pushes. The initial list contains FX192, kingokksa, and ovurrsl. The existing automatic signing of same-repository PR builds remains in place, including successful reruns.",
-      "publishedAt": 1793070830000
     }
   ],
   "tests": [
