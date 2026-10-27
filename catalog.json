@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793116228762,
+  "generatedAt": 1793118805315,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1678",
-      "title": "perf(compositor): screen tick on its own thread, pacing counters",
-      "summary": "\u2022 Screen tick on its own thread. The Choreographer frame callback that drives the compositor (CompositorHost) ran on the app's main thread. Any main-thread work delayed the tick before it reached the compositor thread. It now runs on a display-priority HandlerThread (droiddeck-vsync) with its own Choreographer.\n\u2022 The session pref vsyncThread (default true, no UI) switches back to the main thread.\n\u2022 The session log says which mode runs (\"screen tick runs on its own display-priority thread\" / \"\u2026on the main thread\").\n\u2022 Pacing counters. A new 10 s pacing log line from the compositor reports:\n\u2022 how late the tick reaches the compositor (average, max, count over 2 ms);\n\u2022 how long a new frame waits to be drawn;",
-      "commit": "e445d0aac5d2674bdf139775bd750b9aa9242062",
-      "pr": 1678,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793116166000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1678",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1678-e445d0a.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1678/DroidDeck-PR.1678-e445d0a.apk",
-          "size": 74788571,
-          "sha256": "880e88f8f3b87574c9cf0c48f0661bb4616d1182aaa559c8abbbcc82e47bdfdb",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1678-e445d0a-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1678/DroidDeck-PR.1678-e445d0a-pubg.apk",
-          "size": 74788571,
-          "sha256": "43d4de352b26568646a0d5bc398eee4497591756d54808fbe08dd3d79c8a7ad6",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1678-e445d0a-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1678/DroidDeck-PR.1678-e445d0a-antutu.apk",
-          "size": 74788571,
-          "sha256": "41d8b687f2c1a6a630e5b265a0d6fee109847de135fe831d5fc3b73df2ad319f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1678-e445d0a-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1678/DroidDeck-PR.1678-e445d0a-ludashi.apk",
-          "size": 74788571,
-          "sha256": "4c28d66cee160f2c17c06615ba0bca35f469b4eee40ca587af064e88ce7bef9c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1665",
       "title": "feat(itch): update detection and safe updates for installed games",
