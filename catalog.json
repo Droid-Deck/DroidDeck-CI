@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793075094801,
+  "generatedAt": 1793075786202,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c25d54a",
-    "title": "Components: keep game FEX/DXVK choices on Proton builds installed later (StarCraft launch)",
-    "summary": "StarCraft (Battle.net, installed from Stores) opens and closes again right away. The 32-bit client dies in ClientSdk.dll's DllMain with an execute access violation (c0000005, info 8, raised in libwow64fex.dll). Every launch ends with \"Battle.net closed before a game started\".",
-    "commit": "c25d54acedcd0db899ce569751a9adfc76156e6a",
+    "tag": "main-07a0a7e",
+    "title": "fix: show gesture settings only in gesture mode",
+    "summary": "The session drawer now shows Touch gesture settings only when Touch is set to Gestures, and removes the explanatory text beneath it.",
+    "commit": "07a0a7e34433882f6fba2cd722783e63e03b4f40",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793074872000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c25d54a",
+    "publishedAt": 1793075750000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-07a0a7e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c25d54a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c25d54a/DroidDeck-main-c25d54a.apk",
+        "name": "DroidDeck-main-07a0a7e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-07a0a7e/DroidDeck-main-07a0a7e.apk",
         "size": 74788571,
-        "sha256": "9b8c7619f28f127a3ede3d96005b3b49f487a98fcac2007571efeab7cb7ffee5",
+        "sha256": "410014146f6e8fca21f0b45ce384508e4178e0792d2d170ac2080811c4544912",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c25d54a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c25d54a/DroidDeck-main-c25d54a-pubg.apk",
+        "name": "DroidDeck-main-07a0a7e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-07a0a7e/DroidDeck-main-07a0a7e-pubg.apk",
         "size": 74788571,
-        "sha256": "7d6d33361340cd50a824f044119042afd32a4da25ac391d64fec66eb7023c07b",
+        "sha256": "2276ad76d2ec808eba667fa49b737648788aabeef3df9bb8e81128eeeb5aac37",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c25d54a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c25d54a/DroidDeck-main-c25d54a-antutu.apk",
+        "name": "DroidDeck-main-07a0a7e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-07a0a7e/DroidDeck-main-07a0a7e-antutu.apk",
         "size": 74788571,
-        "sha256": "755ba34e434aa671e8f389da9b910f617f147be67b94fb2872fda5d15daa8c1b",
+        "sha256": "c956436100254fb155b1baa8d284f368841821fe942918a5bca0b2eeb3eb3aa1",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c25d54a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c25d54a/DroidDeck-main-c25d54a-ludashi.apk",
+        "name": "DroidDeck-main-07a0a7e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-07a0a7e/DroidDeck-main-07a0a7e-ludashi.apk",
         "size": 74788571,
-        "sha256": "b14f53e9e904f7fb7ef92520db7bfbfc86bf258632ad854209b3caf016acaca9",
+        "sha256": "bf159cdaedd13bc3d4b65cbce9c1158f6a71ce9d57494fc5e4e1735dfae0c454",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "07a0a7e34433882f6fba2cd722783e63e03b4f40",
+      "title": "fix: show gesture settings only in gesture mode",
+      "summary": "The session drawer now shows Touch gesture settings only when Touch is set to Gestures, and removes the explanatory text beneath it.",
+      "publishedAt": 1793075750000
+    },
     {
       "commit": "c25d54acedcd0db899ce569751a9adfc76156e6a",
       "title": "Components: keep game FEX/DXVK choices on Proton builds installed later (StarCraft launch)",
@@ -155,12 +161,6 @@
       "title": "feat(steam): optional Steam integration setup",
       "summary": "Optional Android permissions that improve the Steam session were scattered: Wi-Fi names lived in Steam settings, Home selection was under Setup \u2192 Launcher, and brightness opened Android settings mid-session from the slider. This gathers them into one Steam integration group in Setup \u2192 Overview (also shown in the Steam settings sheet), and adds held Home \u2192 Steam Guide shortcuts.",
       "publishedAt": 1793052279000
-    },
-    {
-      "commit": "73daaf7adc5b3cc9c8723aa67c19cc461651017a",
-      "title": "fix(gamescope): keep Fill scaling and magnification visible",
-      "summary": "Fill scaling and Steam magnification could turn the picture black while the HUD remained visible. Cropping an 800x600 image into a 1280x720 output needs y=-120; Gamescope converted that signed position through an unsigned size helper and sent y=35791275 instead.",
-      "publishedAt": 1793046151000
     }
   ],
   "tests": [
