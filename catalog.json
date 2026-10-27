@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793073169548,
+  "generatedAt": 1793073227456,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-946",
+      "title": "Let a game override the session locale",
+      "summary": "Wine takes a game's language and codepage from LANG, and every game runs in\nC.UTF-8: the rootfs ships only C.utf8, and the session sets LANG=C.UTF-8 for\nthe whole guest. A game that reads the locale itself starts with the wrong\nlanguage and codepage under that, and will not get past its own startup.",
+      "commit": "7c56d6eec6a1beb633cc8652519118c2dd3b7915",
+      "pr": 946,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793073187000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-946",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.946-7c56d6e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-7c56d6e.apk",
+          "size": 74800859,
+          "sha256": "7edb69eef1ea3137eb6c83e65e59c0d4678c5c7b0c8ea1fc77dd5b24876ace59",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.946-7c56d6e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-7c56d6e-pubg.apk",
+          "size": 74800859,
+          "sha256": "8bcbea4b3d2512bfa1aa5b79ae84ed7699c7847e7e3f0034790cad5209a02df3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.946-7c56d6e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-7c56d6e-antutu.apk",
+          "size": 74800859,
+          "sha256": "ba9b76800e487fa34232f12e7b3f4d024aecaece28bdfb515c33b493fe2ad458",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.946-7c56d6e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-7c56d6e-ludashi.apk",
+          "size": 74800859,
+          "sha256": "2c6beeb52c52ae109bc85bda2b63088c5d8177373870d3e2c39117ecbb014447",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1653",
       "title": "Components: keep game FEX/DXVK choices on Proton builds installed later (StarCraft launch)",
@@ -599,55 +648,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-581/DroidDeck-PR.581-b40aae3-ludashi.apk",
           "size": 105937764,
           "sha256": "06d7337acdf61f952eac64acde445b5357901ba9fed26cfd3c7f60c8d5b4c99a",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-946",
-      "title": "Let a game override the session locale",
-      "summary": "Wine takes a game's language and codepage from LANG, and every game runs in\nC.UTF-8: the rootfs ships only C.utf8, and the session sets LANG=C.UTF-8 for\nthe whole guest. A game that reads the locale itself starts with the wrong\nlanguage and codepage under that, and will not get past its own startup.",
-      "commit": "3f79012b661bbd56cb8c3625d2439dd050356172",
-      "pr": 946,
-      "version": null,
-      "versionCode": 14,
-      "publishedAt": 1792359293000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-946",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.946-3f79012.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-3f79012.apk",
-          "size": 105937764,
-          "sha256": "a5366e505598c77dd603f6f398727168952fbf860a317692f61d46c9823f41bc",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.946-3f79012-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-3f79012-pubg.apk",
-          "size": 105937764,
-          "sha256": "e2abaf81f75212feecb187c4e1aa8030708fcbfda1fc8063ed0fa276bf57bd7d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.946-3f79012-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-3f79012-antutu.apk",
-          "size": 105937764,
-          "sha256": "25261df96774979cccc55f746ef088aca4673aa92fa49afe725090582129dbee",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 14,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.946-3f79012-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-946/DroidDeck-PR.946-3f79012-ludashi.apk",
-          "size": 105937764,
-          "sha256": "c4381825f7d8580aabc6500b83f21b0f561130996873adc75d2ccf4d13bb3ab9",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
