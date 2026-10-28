@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793198186497,
+  "generatedAt": 1793199306887,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1687",
-      "title": "perf(proot): accelerate and cache glibc syscall relays",
-      "summary": "Libc-internal file operations bypass the existing preload wrappers and still stop in PRoot. Patch recognized ARM64 SVC sites in libc and the runtime loader, reuse the current translator for 20 path syscall numbers, and return declined calls to PRoot. Enabled by default after the tracer-key check; PROOTFPPATCHSVC=0 remains the troubleshooting opt-out.",
-      "commit": "2c3c135b52c3dd949ef5a99a67d8c12eba24406c",
-      "pr": 1687,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793198125000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1687",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1687-2c3c135.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1687/DroidDeck-PR.1687-2c3c135.apk",
-          "size": 75046619,
-          "sha256": "1dc2ccc0a009efa9841677af811ea3bb7239d86be8b33b66015ba2ead7a048ed",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1687-2c3c135-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1687/DroidDeck-PR.1687-2c3c135-pubg.apk",
-          "size": 75046619,
-          "sha256": "a3996befb8db0ce805251638f569cf2e1985dca1a145894ff251bb4c01212c4d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1687-2c3c135-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1687/DroidDeck-PR.1687-2c3c135-antutu.apk",
-          "size": 75046619,
-          "sha256": "70ce7d0732ee807c6b9607fdd8e0df563842ce6bddd1ba33a1c200163b52e9b1",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1687-2c3c135-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1687/DroidDeck-PR.1687-2c3c135-ludashi.apk",
-          "size": 75046619,
-          "sha256": "823bdefa110412df6f200983ed5f8388284febff1233b6f872072a8d11dd6a69",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1675",
       "title": "fix: keep the sync store lock off the launch path",
