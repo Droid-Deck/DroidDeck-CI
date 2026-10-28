@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793215784120,
+  "generatedAt": 1793216519091,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-27bdc68",
-    "title": "ci: faster pipeline and fewer network flakes",
-    "summary": "\u2022 Python regression suite now runs in 3 parallel groups (tools/ci/run-python-tests.sh) instead of serially.\n\u2022 Gradle unit tests use up to 2 forks on CI.\n\u2022 Recipe curl downloads retry connection resets (exit 56) via --retry-all-errors; the earlier failures were Build proot hitting this.\n\u2022 Pushes to main cancel superseded main builds; docs/ and issue templates no longer trigger builds.\n\u2022 Gradle cache cleanup runs only outside PRs.",
-    "commit": "27bdc68867309221ede2e2ab44fe0ada9d1631f5",
+    "tag": "main-52fa417",
+    "title": "fix: stop stale Android readbacks snapping Steam's brightness slider back",
+    "summary": "Holding back + stick up/down in a Steam session made the brightness slider jump around (e.g. 35% \u2192 100% \u2192 10% \u2192 90%).",
+    "commit": "52fa41767c3843d3704020215e1268188557d011",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793202678000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-27bdc68",
+    "publishedAt": 1793216431000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-52fa417",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-27bdc68.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27bdc68/DroidDeck-main-27bdc68.apk",
-        "size": 75046619,
-        "sha256": "0823f2de23024ed2e515ac377966e10cee22345c3ddeac4f613ceffceadebfd8",
+        "name": "DroidDeck-main-52fa417.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-52fa417/DroidDeck-main-52fa417.apk",
+        "size": 75054811,
+        "sha256": "689726c842bc800435da00930e5772be0bbfffe7368b53c2695971355a1277f4",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-27bdc68-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27bdc68/DroidDeck-main-27bdc68-pubg.apk",
-        "size": 75046619,
-        "sha256": "f16567e6efbd957f81ed6e363da2cee93282aa9b556594137da4ed9a56185c8d",
+        "name": "DroidDeck-main-52fa417-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-52fa417/DroidDeck-main-52fa417-pubg.apk",
+        "size": 75054811,
+        "sha256": "67204720aa2519fd7927a07e082d7c0ebc221a7ac9f98fc227def275171bda5d",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-27bdc68-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27bdc68/DroidDeck-main-27bdc68-antutu.apk",
-        "size": 75046619,
-        "sha256": "edb8a0c4530e862fe03b7368123a98995db71823e685098dba479326be53a6ad",
+        "name": "DroidDeck-main-52fa417-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-52fa417/DroidDeck-main-52fa417-antutu.apk",
+        "size": 75054811,
+        "sha256": "b89f4812ea9370a01a8f239d47ba6b8784321c3c4da3235ac48eb496f311c539",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-27bdc68-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27bdc68/DroidDeck-main-27bdc68-ludashi.apk",
-        "size": 75046619,
-        "sha256": "5e52225f02d821c6071ee087e3111e03808f9f07f08a0aaf392b726105e863e8",
+        "name": "DroidDeck-main-52fa417-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-52fa417/DroidDeck-main-52fa417-ludashi.apk",
+        "size": 75054811,
+        "sha256": "f5251ffcf793a981600a4606f85c9df4c8cb094bca322d6e6f697b557fc612f9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "52fa41767c3843d3704020215e1268188557d011",
+      "title": "fix: stop stale Android readbacks snapping Steam's brightness slider back",
+      "summary": "Holding back + stick up/down in a Steam session made the brightness slider jump around (e.g. 35% \u2192 100% \u2192 10% \u2192 90%).",
+      "publishedAt": 1793216431000
+    },
     {
       "commit": "27bdc68867309221ede2e2ab44fe0ada9d1631f5",
       "title": "ci: faster pipeline and fewer network flakes",
@@ -155,12 +161,6 @@
       "title": "fix(steam): answer Steam's D3D driver query without starting Wine",
       "summary": "At every start, Steam's shader pre-caching runs d3ddriverquery64.exe (with and without -d3d12) through each Proton tool \u2013 DroidDeck-Proton and the ARM64 Proton \u2013 in compatdata/0. On DroidDeck the query never succeeds: 948 of 948 runs in the client's shader log failed (mostly exit code 1), and Steam ends with \"Unknown shader cache type, ignoring.\"",
       "publishedAt": 1793180106000
-    },
-    {
-      "commit": "f4656ad83aeb9764e6c75beffb062bd411ed24d7",
-      "title": "fix: show every held volume step in Steam's volume slider",
-      "summary": "Holding a volume key moved Steam's QAM volume slider in uneven jumps with a stall at the start, instead of tracking Android's steady ramp.",
-      "publishedAt": 1793160998000
     }
   ],
   "tests": [
