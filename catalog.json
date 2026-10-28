@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793221534036,
+  "generatedAt": 1793221833084,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1736",
+      "title": "fix(storage): stack the summary card in narrow panes",
+      "summary": "On narrow portrait screens the Storage summary card kept its side-by-side layout, so the 170-210dp 'Safe to free now' panel squeezed the usage text to a few characters per line. Narrow panes now stack the usage block above a divider and the clean-up panel.",
+      "commit": "fd4c8a34aa5154587325d669e1ce582ed9ad076e",
+      "pr": 1736,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793221776000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1736",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1736-fd4c8a3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1736/DroidDeck-PR.1736-fd4c8a3.apk",
+          "size": 75186149,
+          "sha256": "7d241eff71b41cf61388f79dabb49e0d532c3c3354d4d12be321e505c296d108",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1736-fd4c8a3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1736/DroidDeck-PR.1736-fd4c8a3-pubg.apk",
+          "size": 75186149,
+          "sha256": "248ba39270a75e0bd061f26779ba58c574c55294829eca223f091748ecfc90e5",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1736-fd4c8a3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1736/DroidDeck-PR.1736-fd4c8a3-antutu.apk",
+          "size": 75186149,
+          "sha256": "09b1434d171deb9b99db37b975bb2c74b80f5f9750094eb2980abc0fccd0889d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1736-fd4c8a3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1736/DroidDeck-PR.1736-fd4c8a3-ludashi.apk",
+          "size": 75186149,
+          "sha256": "e472a31f15ae7d3c420516c2d89940b69845c12b9288e71ee028ed58bf30e171",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1729",
       "title": "Update Xbox backend to 0.2.12",
