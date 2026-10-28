@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793199306887,
+  "generatedAt": 1793200138260,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4aa19b6",
-    "title": "fix: cancelling the first-run desktop or Proton install stops its download",
-    "summary": "Pressing Cancel (or B) while a session is installing the desktop or the Steam-mode Proton seed now stops the download. Launching again right after no longer opens a session screen that closes itself.",
-    "commit": "4aa19b6a39be5ee5d861680ab716b478984f3992",
+    "tag": "main-9294a60",
+    "title": "perf(proot): accelerate and cache glibc syscall relays",
+    "summary": "Libc-internal file operations bypass the existing preload wrappers and still stop in PRoot. Patch recognized ARM64 SVC sites in libc and the runtime loader, reuse the current translator for 20 path syscall numbers, and return declined calls to PRoot. Enabled by default after the tracer-key check; PROOTFPPATCHSVC=0 remains the troubleshooting opt-out.",
+    "commit": "9294a60172be652defd92fae5fcf22f38544dc80",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793197415000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4aa19b6",
+    "publishedAt": 1793200068000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9294a60",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4aa19b6.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4aa19b6/DroidDeck-main-4aa19b6.apk",
-        "size": 75042523,
-        "sha256": "597c1e41fef0bfda1d5758fd7b7f58bf7ba7c5b7d31b3ccaa110f0f768a3b353",
+        "name": "DroidDeck-main-9294a60.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9294a60/DroidDeck-main-9294a60.apk",
+        "size": 75046619,
+        "sha256": "9bfea524c284abc603375c78f26dbfa2fa7bb2f0131e4d7777b4ee059bfc7a7a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4aa19b6-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4aa19b6/DroidDeck-main-4aa19b6-pubg.apk",
-        "size": 75042523,
-        "sha256": "a0e315cda53d121ecd972c6f95a83a8466f75a2ba200212ee9c06fc76262b1cb",
+        "name": "DroidDeck-main-9294a60-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9294a60/DroidDeck-main-9294a60-pubg.apk",
+        "size": 75046619,
+        "sha256": "e0540ecc9597d447c48e098d0712a8579bfbcfaeb41cae0889294d3d1e3a6f63",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4aa19b6-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4aa19b6/DroidDeck-main-4aa19b6-antutu.apk",
-        "size": 75042523,
-        "sha256": "76f65002a6ee72968cd4545e19ec66babc42d9581e1deee73be2f9746bc5b312",
+        "name": "DroidDeck-main-9294a60-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9294a60/DroidDeck-main-9294a60-antutu.apk",
+        "size": 75046619,
+        "sha256": "0925171d0083625708de89e377daecdb2a250f4f5f4294ee9eb21615e20513c4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4aa19b6-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4aa19b6/DroidDeck-main-4aa19b6-ludashi.apk",
-        "size": 75042523,
-        "sha256": "be4f8e8f79dacb5df45d65f655b83d35e1bed797d7367f141f0d9e193ef4678d",
+        "name": "DroidDeck-main-9294a60-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9294a60/DroidDeck-main-9294a60-ludashi.apk",
+        "size": 75046619,
+        "sha256": "6d32fa0616cba0714e8013f98288915c8494ec26e8acfcdacd36aeda05a6cbcf",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9294a60172be652defd92fae5fcf22f38544dc80",
+      "title": "perf(proot): accelerate and cache glibc syscall relays",
+      "summary": "Libc-internal file operations bypass the existing preload wrappers and still stop in PRoot. Patch recognized ARM64 SVC sites in libc and the runtime loader, reuse the current translator for 20 path syscall numbers, and return declined calls to PRoot. Enabled by default after the tracer-key check; PROOTFPPATCHSVC=0 remains the troubleshooting opt-out.",
+      "publishedAt": 1793200068000
+    },
     {
       "commit": "4aa19b6a39be5ee5d861680ab716b478984f3992",
       "title": "fix: cancelling the first-run desktop or Proton install stops its download",
@@ -155,12 +161,6 @@
       "title": "fix: avoid incompatible Turnip selection and explain Steam startup failures",
       "summary": "Two startup failures currently end with a generic stopped-session message: #1376 reports Steam exiting with Illegal instruction / status 132 after installation, while #1368 reports a non-Adreno MT6993 device starting with Turnip and gamescope failing to find a Vulkan device.",
       "publishedAt": 1793155492000
-    },
-    {
-      "commit": "3716c8acdf80011a700ceffbd6e59b0a7d234ac4",
-      "title": "fix: an unproven update-channel guess no longer moves stable users to Nightly",
-      "summary": "Stable users are no longer silently switched to the Nightly (Preview) update channel when DroidDeck can't yet tell which channel they installed from.",
-      "publishedAt": 1793155381000
     }
   ],
   "tests": [
