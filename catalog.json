@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793163516647,
+  "generatedAt": 1793167317075,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1665",
+      "title": "feat(itch): update detection and safe updates for installed games",
+      "summary": "Adds update detection for installed itch.io games. This is PR4 of the itch.io store rework (browse, filters, game page and collections are merged; Linux support is #1589). Butler patching comes later as an add-on pack. Updates here download the full build.",
+      "commit": "9b44bf798dfa27afa56ba84a3fa4f0aeef4b6e23",
+      "pr": 1665,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793167234000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1665",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1665-9b44bf7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-9b44bf7.apk",
+          "size": 75034331,
+          "sha256": "a8f228e6a3277508bdab76ba16beb3d905e0830872ca33345bcd9342145891d8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1665-9b44bf7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-9b44bf7-pubg.apk",
+          "size": 75034331,
+          "sha256": "72b19921f71b806330dc75d272c2f6399146d0855ebc25610713587b8690d3a8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1665-9b44bf7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-9b44bf7-antutu.apk",
+          "size": 75034331,
+          "sha256": "8c98f6fa6eb0ccb3e7e246d820ce38f8901fdae0f74a6aa7b35ff7ee5446c291",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1665-9b44bf7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-9b44bf7-ludashi.apk",
+          "size": 75034331,
+          "sha256": "961606be35ea429aa8273a9ad961951c85648376f34f7e828a7163c245f08484",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1708",
       "title": "fix(steam): answer Steam's D3D driver query without starting Wine",
       "summary": "At every start, Steam's shader pre-caching runs d3ddriverquery64.exe (with and without -d3d12) through each Proton tool \u2013 DroidDeck-Proton and the ARM64 Proton \u2013 in compatdata/0. On DroidDeck the query never succeeds: 948 of 948 runs in the client's shader log failed (mostly exit code 1), and Steam ends with \"Unknown shader cache type, ignoring.\"",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1706/DroidDeck-PR.1706-91bc704-ludashi.apk",
           "size": 75017947,
           "sha256": "aa8f10c7539385e11645c9009e5af31e30d3446c14af76ef18114bbdfa00d5e8",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1665",
-      "title": "feat(itch): update detection and safe updates for installed games",
-      "summary": "Adds update detection for installed itch.io games. This is PR4 of the itch.io store rework (browse, filters, game page and collections are merged; Linux support is #1589). Butler patching comes later as an add-on pack. Updates here download the full build.",
-      "commit": "0e173ed05a70d5f5dbbd9a3bbd828d589432ff51",
-      "pr": 1665,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793143589000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1665",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1665-0e173ed.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-0e173ed.apk",
-          "size": 75009755,
-          "sha256": "937a4a48e4576b70e3c39bafbbb16aa2c5aaea5cc5c84ad1c0312e4a06cc7dd6",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1665-0e173ed-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-0e173ed-pubg.apk",
-          "size": 75009755,
-          "sha256": "4c576ac7355916ee72f1579b1710ecb5b65f16a5cccca1d282721b6f6cc04897",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1665-0e173ed-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-0e173ed-antutu.apk",
-          "size": 75009755,
-          "sha256": "583cf89917112e7ca9f0231e2e7f693805c0bade1911378786809f7c1d0464b8",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1665-0e173ed-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1665/DroidDeck-PR.1665-0e173ed-ludashi.apk",
-          "size": 75009755,
-          "sha256": "3478c69c9c9b36cb5424d89887978fd1359e6e607585774717abe1964b1ac242",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
