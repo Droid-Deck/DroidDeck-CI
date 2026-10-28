@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793225483840,
+  "generatedAt": 1793226070132,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -207,55 +207,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-ce35f73-ludashi.apk",
           "size": 75748228,
           "sha256": "140fe3f9b22e3cc701a73fe48f8083930a5d39f21f569ac07aff07660a48ff5b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1739",
-      "title": "fix(ui): keep the ring veil count per test",
-      "summary": "RingVeil's snapshot state was created inside whichever test touched it first and then shared, so a later Compose test could fail with a snapshot read error depending on how tests were distributed across forks. The shared compose rule now resets it. Four forks were also measured at 195 s against 121 s for two, so the fork count stays at two.",
-      "commit": "a6bca88872d85ac934c5c4b26ae537838742ffb4",
-      "pr": 1739,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793225099000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1739",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1739-a6bca88.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1739/DroidDeck-PR.1739-a6bca88.apk",
-          "size": 75186149,
-          "sha256": "f2886065cd883bd17ba7b04390dce80dfcc4a0ce8bb6e23a02c427478f8bb6ab",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1739-a6bca88-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1739/DroidDeck-PR.1739-a6bca88-pubg.apk",
-          "size": 75186149,
-          "sha256": "6f7fecaa209a0f91bd417d590377ccbce8c90848de4032bc6460f2989570f95c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1739-a6bca88-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1739/DroidDeck-PR.1739-a6bca88-antutu.apk",
-          "size": 75186149,
-          "sha256": "d079397b01c67a545816819a9de6e2579ac5a47e47a9add06f1cb9e3a77459e0",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1739-a6bca88-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1739/DroidDeck-PR.1739-a6bca88-ludashi.apk",
-          "size": 75186149,
-          "sha256": "8b99043ce03baee8c5160067cda40da0d264d4f4a9d2c6aea30eac4488d56701",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
