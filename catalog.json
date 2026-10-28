@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793205413425,
+  "generatedAt": 1793206038270,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1725",
+      "title": "ci: check out without history blobs or the release-note GIFs",
+      "summary": "Every job in build.yml runs actions/checkout with fetch-depth: 0, which downloads all blobs in history (about 284 MB) and a 210 MB working tree. The checkout step takes 30 to 75 s per job (38 s in source, 32 s in components, 29 s in build, 49 s in the Python job, 76 s in xbox), and source, components and build run in sequence.",
+      "commit": "aa4e5a5fdbb6e3729faeb7aca182c28c6106374a",
+      "pr": 1725,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793205921000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1725",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1725-aa4e5a5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1725/DroidDeck-PR.1725-aa4e5a5.apk",
+          "size": 75046619,
+          "sha256": "5a1e13af5f1e0ba91db3cf4d14ea443dae0fe241dd735c38362af1afa142b691",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1725-aa4e5a5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1725/DroidDeck-PR.1725-aa4e5a5-pubg.apk",
+          "size": 75046619,
+          "sha256": "3043ea1ad93b7db283d9976e68feae99c0906673f39f8ae6986643717accd34e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1725-aa4e5a5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1725/DroidDeck-PR.1725-aa4e5a5-antutu.apk",
+          "size": 75046619,
+          "sha256": "a6b1f23716fddcbfcf8419f73fb4eac9402f9478cac6e057ecb12ccc88bbac24",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1725-aa4e5a5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1725/DroidDeck-PR.1725-aa4e5a5-ludashi.apk",
+          "size": 75046619,
+          "sha256": "2976df1c877e64f276052da167fcc2b9dc06f2f5b70c65a74b781ecd4ae5cbeb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1724",
       "title": "Reset a game's Wine prefix from Game data",
