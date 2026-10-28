@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793200861914,
+  "generatedAt": 1793201586559,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1719",
-      "title": "ci: faster pipeline and fewer network flakes",
-      "summary": "\u2022 Python regression suite now runs in 3 parallel groups (tools/ci/run-python-tests.sh) instead of serially.\n\u2022 Gradle unit tests use up to 2 forks on CI.\n\u2022 Recipe curl downloads retry connection resets (exit 56) via --retry-all-errors; the earlier failures were Build proot hitting this.\n\u2022 Pushes to main cancel superseded main builds; docs/ and issue templates no longer trigger builds.\n\u2022 Gradle cache cleanup runs only outside PRs.",
-      "commit": "3083f8baa30fc2681329110a81a96a766f9cf5cd",
-      "pr": 1719,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793200519000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1719",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1719-3083f8b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1719/DroidDeck-PR.1719-3083f8b.apk",
-          "size": 75046619,
-          "sha256": "eea523cda6e4d9be1f4cc7367777e29115c24559b6e02c847a4df4178d383fea",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1719-3083f8b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1719/DroidDeck-PR.1719-3083f8b-pubg.apk",
-          "size": 75046619,
-          "sha256": "4224e714cc5720591434986f8aad3fd33432814752db4ea78f251d7ceeec9ce5",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1719-3083f8b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1719/DroidDeck-PR.1719-3083f8b-antutu.apk",
-          "size": 75046619,
-          "sha256": "cb6f680dc04365733e97a095e413d37419ac1801cbd88c7aa7838fa55afce44a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1719-3083f8b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1719/DroidDeck-PR.1719-3083f8b-ludashi.apk",
-          "size": 75046619,
-          "sha256": "1a90cbe4b11d6d79afe9ba7123b6b3ed9939179fe51c01bfe77fb3ff62412792",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1675",
       "title": "fix: keep the sync store lock off the launch path",
