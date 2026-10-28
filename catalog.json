@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793180292545,
+  "generatedAt": 1793180340057,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8549ac9",
-    "title": "perf(compositor): draw a new frame when it arrives",
-    "summary": "The compositor drew a new game frame only at the next screen tick, so each frame waited for the tick before it was drawn: 1.9\u20133.5 ms on average at 144 Hz, measured with the pacing counters from #1678. With FIFO, a frame drawn at the tick is shown one refresh later than one drawn when it arrives.",
-    "commit": "8549ac9ce8128a036075e9402419de6eec103dfd",
+    "tag": "main-8c4f97a",
+    "title": "perf(gamescope): p18 \u2013 handle a finished frame in one loop pass",
+    "summary": "Every finished game frame took two passes of gamescope's main loop (the gamescope-xwm thread). The Xwayland commit woke it to import the buffer: it duplicated the buffer's fence and handed the commit to the image waiter (epoll add). Then the gamescopeimg thread saw the fence signalled, removed and closed it, and woke the main loop again to handle the finished commit. At 3,000+ fps that is a l",
+    "commit": "8c4f97a1705d34f042d79a8f1d31c401f0872d4e",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793180224000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8549ac9",
+    "publishedAt": 1793180257000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8c4f97a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8549ac9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8549ac9/DroidDeck-main-8549ac9.apk",
+        "name": "DroidDeck-main-8c4f97a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8c4f97a/DroidDeck-main-8c4f97a.apk",
         "size": 75017947,
-        "sha256": "4ceb91363af009f01a0f2ab5e2c8f6af4cf71abbf07b089bb9a38a7848b75a9d",
+        "sha256": "7fe8048f49bb55c3556c43a25edd3b648409f3ff00a3eac8c555c9b22614f9e2",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8549ac9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8549ac9/DroidDeck-main-8549ac9-pubg.apk",
+        "name": "DroidDeck-main-8c4f97a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8c4f97a/DroidDeck-main-8c4f97a-pubg.apk",
         "size": 75017947,
-        "sha256": "69aca76c6f3e6befa8f95f295df6deb9c4771127035d31f3e1fe8f6db082ff52",
+        "sha256": "20e77dd7049f7552183d04346976432914ce126b30ccd2d3f76f00028262e6cf",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8549ac9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8549ac9/DroidDeck-main-8549ac9-antutu.apk",
+        "name": "DroidDeck-main-8c4f97a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8c4f97a/DroidDeck-main-8c4f97a-antutu.apk",
         "size": 75017947,
-        "sha256": "04a1481f661a7f23323e0d1761908501c8c5a219700f7f97cf3f0eebec55aeb0",
+        "sha256": "f7b1aa765d2829ada766ea6970c44c8956b8bdf57efad833ce3a0e716f16f40f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8549ac9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8549ac9/DroidDeck-main-8549ac9-ludashi.apk",
+        "name": "DroidDeck-main-8c4f97a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8c4f97a/DroidDeck-main-8c4f97a-ludashi.apk",
         "size": 75017947,
-        "sha256": "2fed947f49200fa44c784bf8765c60830b09b6fb9354530fe9ad19c526daaa60",
+        "sha256": "2b66b1f74e876510f2b94a98c89c6bda81396bf165c2c175d2ef605e55cdaa97",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8c4f97a1705d34f042d79a8f1d31c401f0872d4e",
+      "title": "perf(gamescope): p18 \u2013 handle a finished frame in one loop pass",
+      "summary": "Every finished game frame took two passes of gamescope's main loop (the gamescope-xwm thread). The Xwayland commit woke it to import the buffer: it duplicated the buffer's fence and handed the commit to the image waiter (epoll add). Then the gamescopeimg thread saw the fence signalled, removed and closed it, and woke the main loop again to handle the finished commit. At 3,000+ fps that is a l",
+      "publishedAt": 1793180257000
+    },
     {
       "commit": "8549ac9ce8128a036075e9402419de6eec103dfd",
       "title": "perf(compositor): draw a new frame when it arrives",
@@ -155,12 +161,6 @@
       "title": "fix(proton): Windows CPU 0 is the fastest core",
       "summary": "GTA IV ran at half speed in DroidDeck: 32 fps against 64\u201366 in Bannerlator, with the same settings, DXVK and FEX.",
       "publishedAt": 1793143444000
-    },
-    {
-      "commit": "4f58230a20ed0988b8996dbb9a61c43af7e828de",
-      "title": "fix(session): look up the launched game without rescanning the library",
-      "summary": "Starting an added game with the Steam client off goes through droiddeck-proton-run, and the\nlaunch command for it was built by scanning the entire added-games library just to find the one\ngame the user tapped. AddedGames.scan() walks every game folder for a candidate exe, reads its\nPE header, and re-reads the sidecar and account config per game, so the cost scales with the\nlibrary: with dozens of ",
-      "publishedAt": 1793131733000
     }
   ],
   "tests": [
