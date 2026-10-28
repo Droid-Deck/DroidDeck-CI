@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793163436044,
+  "generatedAt": 1793163516647,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1708",
+      "title": "fix(steam): answer Steam's D3D driver query without starting Wine",
+      "summary": "At every start, Steam's shader pre-caching runs d3ddriverquery64.exe (with and without -d3d12) through each Proton tool \u2013 DroidDeck-Proton and the ARM64 Proton \u2013 in compatdata/0. On DroidDeck the query never succeeds: 948 of 948 runs in the client's shader log failed (mostly exit code 1), and Steam ends with \"Unknown shader cache type, ignoring.\"",
+      "commit": "c5e8ad0f8069800a8dae7c2bbec5037ccc18740b",
+      "pr": 1708,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793163446000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1708",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1708-c5e8ad0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1708/DroidDeck-PR.1708-c5e8ad0.apk",
+          "size": 75017947,
+          "sha256": "988f4c8016e3cbc82cfa8a3cc2b42f2fdc5a06b05ccc638c84a0dc4734942172",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1708-c5e8ad0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1708/DroidDeck-PR.1708-c5e8ad0-pubg.apk",
+          "size": 75017947,
+          "sha256": "3d999fe3165d1a8290761017a787869179b33983df4b4e104c3e9cae58c86712",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1708-c5e8ad0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1708/DroidDeck-PR.1708-c5e8ad0-antutu.apk",
+          "size": 75017947,
+          "sha256": "ea12ed70ca2494259833c62f91f5f930423819db465961cb54e25249bdfd4814",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1708-c5e8ad0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1708/DroidDeck-PR.1708-c5e8ad0-ludashi.apk",
+          "size": 75017947,
+          "sha256": "f576fe108cbd02e97a2316d1c60d79f5add94cd7498b5cebf445043d8f791c86",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1707",
       "title": "perf(compositor): draw a new frame when it arrives",
       "summary": "The compositor drew a new game frame only at the next screen tick, so each frame waited for the tick before it was drawn: 1.9\u20133.5 ms on average at 144 Hz, measured with the pacing counters from #1678. With FIFO, a frame drawn at the tick is shown one refresh later than one drawn when it arrives.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1707/DroidDeck-PR.1707-bfe5941-ludashi.apk",
           "size": 75017947,
           "sha256": "5212bfa3c3b39af867557d71884d914f5df2973c537fa7cac5547bd0b8607510",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1708",
-      "title": "fix(steam): answer Steam's D3D driver query without starting Wine",
-      "summary": "At every start, Steam's shader pre-caching runs d3ddriverquery64.exe (with and without -d3d12) through each Proton tool \u2013 DroidDeck-Proton and the ARM64 Proton \u2013 in compatdata/0. On DroidDeck the query never succeeds: 948 of 948 runs in the client's shader log failed (mostly exit code 1), and Steam ends with \"Unknown shader cache type, ignoring.\"",
-      "commit": "0d8dbe4360ae7b81256e9c7b3236c8a8dd0225dc",
-      "pr": 1708,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793162168000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1708",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1708-0d8dbe4.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1708/DroidDeck-PR.1708-0d8dbe4.apk",
-          "size": 75017947,
-          "sha256": "ce25d4891b01cceb2d451c5e2581a9b44e357429329aee7d221bafbc43cfde2a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1708-0d8dbe4-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1708/DroidDeck-PR.1708-0d8dbe4-pubg.apk",
-          "size": 75017947,
-          "sha256": "1bb6428a37151ad59b47bdccf8b707679a85382367d72e43849e4212654fb087",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1708-0d8dbe4-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1708/DroidDeck-PR.1708-0d8dbe4-antutu.apk",
-          "size": 75017947,
-          "sha256": "b66c58ee785c497b6bb98d05571d8ec3bcebbb7940a4d0b2db7ae5132bc1a194",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1708-0d8dbe4-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1708/DroidDeck-PR.1708-0d8dbe4-ludashi.apk",
-          "size": 75017947,
-          "sha256": "9ed38144ee988b92bfb3b898ca4692dc190a0e3c31f0f667b90b60cc58232c3c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
