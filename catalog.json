@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793168263860,
+  "generatedAt": 1793179324400,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -305,104 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1708/DroidDeck-PR.1708-c5e8ad0-ludashi.apk",
           "size": 75017947,
           "sha256": "f576fe108cbd02e97a2316d1c60d79f5add94cd7498b5cebf445043d8f791c86",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1707",
-      "title": "perf(compositor): draw a new frame when it arrives",
-      "summary": "The compositor drew a new game frame only at the next screen tick, so each frame waited for the tick before it was drawn: 1.9\u20133.5 ms on average at 144 Hz, measured with the pacing counters from #1678. With FIFO, a frame drawn at the tick is shown one refresh later than one drawn when it arrives.",
-      "commit": "bfe5941ce9cf5795d5a9633c1120584dad136e54",
-      "pr": 1707,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793163365000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1707",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1707-bfe5941.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1707/DroidDeck-PR.1707-bfe5941.apk",
-          "size": 75017947,
-          "sha256": "c3888a635544a293ffc0924c3dfc9dae4e2a86a4183f41b0e365e7973f00d11d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1707-bfe5941-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1707/DroidDeck-PR.1707-bfe5941-pubg.apk",
-          "size": 75017947,
-          "sha256": "d0f97f2fd77a615ebc00e91924e58757ad40f63b7addec0b9bb201744d023e52",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1707-bfe5941-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1707/DroidDeck-PR.1707-bfe5941-antutu.apk",
-          "size": 75017947,
-          "sha256": "d8f02922ccf1f4520d2fa645d2401911601f13226392838db969e8e63d543b58",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1707-bfe5941-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1707/DroidDeck-PR.1707-bfe5941-ludashi.apk",
-          "size": 75017947,
-          "sha256": "5212bfa3c3b39af867557d71884d914f5df2973c537fa7cac5547bd0b8607510",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1706",
-      "title": "perf(gamescope): p18 \u2013 handle a finished frame in one loop pass",
-      "summary": "Every finished game frame took two passes of gamescope's main loop (the gamescope-xwm thread). The Xwayland commit woke it to import the buffer: it duplicated the buffer's fence and handed the commit to the image waiter (epoll add). Then the gamescopeimg thread saw the fence signalled, removed and closed it, and woke the main loop again to handle the finished commit. At 3,000+ fps that is a l",
-      "commit": "91bc7043e9cbe98a34b6717d16d3aae02f4d7de4",
-      "pr": 1706,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793162073000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1706",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1706-91bc704.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1706/DroidDeck-PR.1706-91bc704.apk",
-          "size": 75017947,
-          "sha256": "5fc52910a424cd03c2df8d6bd96a212678bfc542517045475fe6d6d0fda03cd5",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1706-91bc704-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1706/DroidDeck-PR.1706-91bc704-pubg.apk",
-          "size": 75017947,
-          "sha256": "4c7ddd029aae58e5389d782e72b55689dfb8c9a716b9611b0581273c833b79d7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1706-91bc704-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1706/DroidDeck-PR.1706-91bc704-antutu.apk",
-          "size": 75017947,
-          "sha256": "836808a1277d91cf0a1c34afca89783ad6a8f81c8baaac1461fac2b0734565d4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1706-91bc704-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1706/DroidDeck-PR.1706-91bc704-ludashi.apk",
-          "size": 75017947,
-          "sha256": "aa8f10c7539385e11645c9009e5af31e30d3446c14af76ef18114bbdfa00d5e8",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
