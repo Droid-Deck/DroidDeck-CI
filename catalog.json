@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793161068178,
+  "generatedAt": 1793162145291,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1706",
+      "title": "perf(gamescope): p18 \u2013 handle a finished frame in one loop pass",
+      "summary": "Every finished game frame took two passes of gamescope's main loop (the gamescope-xwm thread). The Xwayland commit woke it to import the buffer: it duplicated the buffer's fence and handed the commit to the image waiter (epoll add). Then the gamescopeimg thread saw the fence signalled, removed and closed it, and woke the main loop again to handle the finished commit. At 3,000+ fps that is a l",
+      "commit": "91bc7043e9cbe98a34b6717d16d3aae02f4d7de4",
+      "pr": 1706,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793162073000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1706",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1706-91bc704.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1706/DroidDeck-PR.1706-91bc704.apk",
+          "size": 75017947,
+          "sha256": "5fc52910a424cd03c2df8d6bd96a212678bfc542517045475fe6d6d0fda03cd5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1706-91bc704-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1706/DroidDeck-PR.1706-91bc704-pubg.apk",
+          "size": 75017947,
+          "sha256": "4c7ddd029aae58e5389d782e72b55689dfb8c9a716b9611b0581273c833b79d7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1706-91bc704-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1706/DroidDeck-PR.1706-91bc704-antutu.apk",
+          "size": 75017947,
+          "sha256": "836808a1277d91cf0a1c34afca89783ad6a8f81c8baaac1461fac2b0734565d4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1706-91bc704-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1706/DroidDeck-PR.1706-91bc704-ludashi.apk",
+          "size": 75017947,
+          "sha256": "aa8f10c7539385e11645c9009e5af31e30d3446c14af76ef18114bbdfa00d5e8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1665",
       "title": "feat(itch): update detection and safe updates for installed games",
