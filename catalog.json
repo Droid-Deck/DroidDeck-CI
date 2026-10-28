@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793207512299,
+  "generatedAt": 1793214320996,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1722",
+      "title": "feat: add GOG updates, repair, and offline patches",
+      "summary": "Installed GOG games previously had no complete maintenance workflow. This adds automatic metadata checks with manual application, depot updates and repair with verified chunk reuse, exact-build Galaxy deltas, recovery journals, and an interactive Proton flow for provider standalone patches.",
+      "commit": "61ce39c69b61a83ef55f1008406a5cc2e2865036",
+      "pr": 1722,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793214213000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1722",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1722-61ce39c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1722/DroidDeck-PR.1722-61ce39c.apk",
+          "size": 75182053,
+          "sha256": "fe230be46b4661bd47c2b2855cc82b7a7cd78b9f8334dc4da440799a31375b0f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1722-61ce39c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1722/DroidDeck-PR.1722-61ce39c-pubg.apk",
+          "size": 75182053,
+          "sha256": "ff745e3a3b4341328da1462844891247e48bc190934195d45952e1db4b93469b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1722-61ce39c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1722/DroidDeck-PR.1722-61ce39c-antutu.apk",
+          "size": 75182053,
+          "sha256": "7e603d30c685a428f011e84673c42a8502719ab4bd66d6792e31d3ab799eeaaa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1722-61ce39c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1722/DroidDeck-PR.1722-61ce39c-ludashi.apk",
+          "size": 75182053,
+          "sha256": "3ddece0c31e7b861d081e6d1041af82142a1ba8aa8a3968efdded7c298d5bb49",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1723",
       "title": "ci: run android unit tests in their own job alongside the apk build",
