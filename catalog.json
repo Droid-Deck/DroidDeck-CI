@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793226070132,
+  "generatedAt": 1793226687317,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-92787dd",
-    "title": "ci: run unit tests in two parallel forks",
-    "summary": "Halves the serial unit-test step. Forks were reverted earlier because tests shared process-wide state; this branch finds and fixes those.",
-    "commit": "92787dd0f015455481d09398ac2ee0f42c7e6883",
+    "tag": "main-1e92d10",
+    "title": "fix(ui): keep the ring veil count per test",
+    "summary": "RingVeil's snapshot state was created inside whichever test touched it first and then shared, so a later Compose test could fail with a snapshot read error depending on how tests were distributed across forks. The shared compose rule now resets it. Four forks were also measured at 195 s against 121 s for two, so the fork count stays at two.",
+    "commit": "1e92d10fa53b98086b4fdfd6629990d71be714b4",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793224189000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-92787dd",
+    "publishedAt": 1793226637000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1e92d10",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-92787dd.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92787dd/DroidDeck-main-92787dd.apk",
+        "name": "DroidDeck-main-1e92d10.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e92d10/DroidDeck-main-1e92d10.apk",
         "size": 75186149,
-        "sha256": "321d1b779a9899215f1296e3d9b5e222592876fb8542436f0f44ae3c1d20fe0b",
+        "sha256": "af7e1f24d6dd3a066da7c0eb853d688d0de268da30a29987b3b5871ff81f26c4",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-92787dd-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92787dd/DroidDeck-main-92787dd-pubg.apk",
+        "name": "DroidDeck-main-1e92d10-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e92d10/DroidDeck-main-1e92d10-pubg.apk",
         "size": 75186149,
-        "sha256": "209a66f58c7c3ea888f5de7ed75795eec3c2daf15add801b293439486ba09501",
+        "sha256": "c516a16f62c63935682cee2b81f504e14a146681b998ccd564c6c8ce17fd927d",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-92787dd-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92787dd/DroidDeck-main-92787dd-antutu.apk",
+        "name": "DroidDeck-main-1e92d10-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e92d10/DroidDeck-main-1e92d10-antutu.apk",
         "size": 75186149,
-        "sha256": "1656e3a8683fbc15b9572423f35ca89a26747624acd07f2185297080a8ae6a58",
+        "sha256": "7c5f4ee166beb7b69dfc60ea5df170f1483fa5efca38d09cf0410e5fdf23b164",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-92787dd-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92787dd/DroidDeck-main-92787dd-ludashi.apk",
+        "name": "DroidDeck-main-1e92d10-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1e92d10/DroidDeck-main-1e92d10-ludashi.apk",
         "size": 75186149,
-        "sha256": "d73a798eb1169a6ceed0f5289b0f6b84ca5cd446c0a501d16cab54f38f876176",
+        "sha256": "d1f5a7dd2e20e820bdf060d92210847a67f9027c1091d485f07c12450e3ed729",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1e92d10fa53b98086b4fdfd6629990d71be714b4",
+      "title": "fix(ui): keep the ring veil count per test",
+      "summary": "RingVeil's snapshot state was created inside whichever test touched it first and then shared, so a later Compose test could fail with a snapshot read error depending on how tests were distributed across forks. The shared compose rule now resets it. Four forks were also measured at 195 s against 121 s for two, so the fork count stays at two.",
+      "publishedAt": 1793226637000
+    },
     {
       "commit": "92787dd0f015455481d09398ac2ee0f42c7e6883",
       "title": "ci: run unit tests in two parallel forks",
@@ -155,12 +161,6 @@
       "title": "feat(itch): update detection and safe updates for installed games",
       "summary": "Adds update detection for installed itch.io games. This is PR4 of the itch.io store rework (browse, filters, game page and collections are merged; Linux support is #1589). Butler patching comes later as an add-on pack. Updates here download the full build.",
       "publishedAt": 1793195533000
-    },
-    {
-      "commit": "9d82df6981bd7b82ee24e976c0ffa22c8ee50d50",
-      "title": "fix(game-env): OpenGL games stop waiting for each screen refresh",
-      "summary": "With no frame limit, AIO's Direct3D 7 (DirectDraw) test ran at exactly 144 fps on the 144 Hz AYANEO Pocket FIT: frame times averaged 6.94 ms, one refresh each (D3D11 on the same build: 0.26 ms). Every frame waited for the screen refresh.",
-      "publishedAt": 1793195327000
     }
   ],
   "tests": [
