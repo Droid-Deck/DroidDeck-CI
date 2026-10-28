@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793201586559,
+  "generatedAt": 1793202760977,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6ecf1ed",
-    "title": "tool: deploy session helper changes by grafting them into the latest main APK",
-    "summary": "python tools/deployfast.py takes the newest release-signed main build from DroidDeck-CI that this checkout descends from, replaces the session helper assets whose sources changed, re-signs with the local release signer and optionally installs (--install). --plan shows what would change.",
-    "commit": "6ecf1ede2cae76d8c2259f1a7cc96a9307a157d1",
+    "tag": "main-27bdc68",
+    "title": "ci: faster pipeline and fewer network flakes",
+    "summary": "\u2022 Python regression suite now runs in 3 parallel groups (tools/ci/run-python-tests.sh) instead of serially.\n\u2022 Gradle unit tests use up to 2 forks on CI.\n\u2022 Recipe curl downloads retry connection resets (exit 56) via --retry-all-errors; the earlier failures were Build proot hitting this.\n\u2022 Pushes to main cancel superseded main builds; docs/ and issue templates no longer trigger builds.\n\u2022 Gradle cache cleanup runs only outside PRs.",
+    "commit": "27bdc68867309221ede2e2ab44fe0ada9d1631f5",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793200809000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6ecf1ed",
+    "publishedAt": 1793202678000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-27bdc68",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6ecf1ed.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6ecf1ed/DroidDeck-main-6ecf1ed.apk",
-        "size": 75050715,
-        "sha256": "95192858064787c2ab2273dca25fa77b22ab71ea69af8426e92cdb1fdf7741a3",
+        "name": "DroidDeck-main-27bdc68.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27bdc68/DroidDeck-main-27bdc68.apk",
+        "size": 75046619,
+        "sha256": "0823f2de23024ed2e515ac377966e10cee22345c3ddeac4f613ceffceadebfd8",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6ecf1ed-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6ecf1ed/DroidDeck-main-6ecf1ed-pubg.apk",
-        "size": 75050715,
-        "sha256": "a9d7611ed3d552225248923e75796d60a3737f0bc879938a1293ab9f027fc3c7",
+        "name": "DroidDeck-main-27bdc68-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27bdc68/DroidDeck-main-27bdc68-pubg.apk",
+        "size": 75046619,
+        "sha256": "f16567e6efbd957f81ed6e363da2cee93282aa9b556594137da4ed9a56185c8d",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6ecf1ed-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6ecf1ed/DroidDeck-main-6ecf1ed-antutu.apk",
-        "size": 75050715,
-        "sha256": "f260b24f953bfda6a58a9ecdefcdab87f4988af8c43c21c9f2a582b229ea77e2",
+        "name": "DroidDeck-main-27bdc68-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27bdc68/DroidDeck-main-27bdc68-antutu.apk",
+        "size": 75046619,
+        "sha256": "edb8a0c4530e862fe03b7368123a98995db71823e685098dba479326be53a6ad",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6ecf1ed-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6ecf1ed/DroidDeck-main-6ecf1ed-ludashi.apk",
-        "size": 75050715,
-        "sha256": "72f37db7da883c53fa758b1e4756240dded2c6335ab430519d0346929b176c76",
+        "name": "DroidDeck-main-27bdc68-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-27bdc68/DroidDeck-main-27bdc68-ludashi.apk",
+        "size": 75046619,
+        "sha256": "5e52225f02d821c6071ee087e3111e03808f9f07f08a0aaf392b726105e863e8",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "27bdc68867309221ede2e2ab44fe0ada9d1631f5",
+      "title": "ci: faster pipeline and fewer network flakes",
+      "summary": "\u2022 Python regression suite now runs in 3 parallel groups (tools/ci/run-python-tests.sh) instead of serially.\n\u2022 Gradle unit tests use up to 2 forks on CI.\n\u2022 Recipe curl downloads retry connection resets (exit 56) via --retry-all-errors; the earlier failures were Build proot hitting this.\n\u2022 Pushes to main cancel superseded main builds; docs/ and issue templates no longer trigger builds.\n\u2022 Gradle cach",
+      "publishedAt": 1793202678000
+    },
     {
       "commit": "6ecf1ede2cae76d8c2259f1a7cc96a9307a157d1",
       "title": "tool: deploy session helper changes by grafting them into the latest main APK",
@@ -155,12 +161,6 @@
       "title": "fix: show every held volume step in Steam's volume slider",
       "summary": "Holding a volume key moved Steam's QAM volume slider in uneven jumps with a stall at the start, instead of tracking Android's steady ramp.",
       "publishedAt": 1793160998000
-    },
-    {
-      "commit": "8164f9fae137d4d7d41193f124535b41fb9bf0c8",
-      "title": "feat(session): manual pause button in the session menu",
-      "summary": "Adds a Pause button to the in-session menu's top row, left of Picture in picture. It pauses the session in every Background behavior (Auto, Native, Manual, Never) and holds until Resume, including across leaving and returning to the app.",
-      "publishedAt": 1793155737000
     }
   ],
   "tests": [
