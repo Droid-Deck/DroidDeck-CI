@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793224069010,
+  "generatedAt": 1793224238652,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-aef1f85",
-    "title": "ci: run store engine host tests in a parallel job",
-    "summary": "Moves the non-blocking cargo test for the store engines (25-39 s serial in the build job) into its own job that only needs the pinned source, so it overlaps the Gradle build. It stays non-gating as before (continue-on-error), with its own host-target cargo cache.",
-    "commit": "aef1f85aa9d579e24a1e3bd7c8dae2bd1a3fc84b",
+    "tag": "main-92787dd",
+    "title": "ci: run unit tests in two parallel forks",
+    "summary": "Halves the serial unit-test step. Forks were reverted earlier because tests shared process-wide state; this branch finds and fixes those.",
+    "commit": "92787dd0f015455481d09398ac2ee0f42c7e6883",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793221483000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-aef1f85",
+    "publishedAt": 1793224189000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-92787dd",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-aef1f85.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aef1f85/DroidDeck-main-aef1f85.apk",
+        "name": "DroidDeck-main-92787dd.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92787dd/DroidDeck-main-92787dd.apk",
         "size": 75186149,
-        "sha256": "b02fc04c054b78de1b524366dbd477800b23aaa2e2a449a6f74c50173f2aadc3",
+        "sha256": "321d1b779a9899215f1296e3d9b5e222592876fb8542436f0f44ae3c1d20fe0b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-aef1f85-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aef1f85/DroidDeck-main-aef1f85-pubg.apk",
+        "name": "DroidDeck-main-92787dd-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92787dd/DroidDeck-main-92787dd-pubg.apk",
         "size": 75186149,
-        "sha256": "e2f141c376ad82a1b02646834fbf84c42c19631449b19cf8c1257aaa20898e27",
+        "sha256": "209a66f58c7c3ea888f5de7ed75795eec3c2daf15add801b293439486ba09501",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-aef1f85-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aef1f85/DroidDeck-main-aef1f85-antutu.apk",
+        "name": "DroidDeck-main-92787dd-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92787dd/DroidDeck-main-92787dd-antutu.apk",
         "size": 75186149,
-        "sha256": "736a7ba1af28947aea4d1b0b1b9d6d4a49071507aa7f8ab12442b9b581779f2a",
+        "sha256": "1656e3a8683fbc15b9572423f35ca89a26747624acd07f2185297080a8ae6a58",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-aef1f85-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aef1f85/DroidDeck-main-aef1f85-ludashi.apk",
+        "name": "DroidDeck-main-92787dd-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92787dd/DroidDeck-main-92787dd-ludashi.apk",
         "size": 75186149,
-        "sha256": "7e3ab5d992819b8c70c93e6ed3c5a2ce619bbe4038be08b12f6754c7673ef471",
+        "sha256": "d73a798eb1169a6ceed0f5289b0f6b84ca5cd446c0a501d16cab54f38f876176",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "92787dd0f015455481d09398ac2ee0f42c7e6883",
+      "title": "ci: run unit tests in two parallel forks",
+      "summary": "Halves the serial unit-test step. Forks were reverted earlier because tests shared process-wide state; this branch finds and fixes those.",
+      "publishedAt": 1793224189000
+    },
     {
       "commit": "aef1f85aa9d579e24a1e3bd7c8dae2bd1a3fc84b",
       "title": "ci: run store engine host tests in a parallel job",
@@ -155,12 +161,6 @@
       "title": "fix(game-env): OpenGL games stop waiting for each screen refresh",
       "summary": "With no frame limit, AIO's Direct3D 7 (DirectDraw) test ran at exactly 144 fps on the 144 Hz AYANEO Pocket FIT: frame times averaged 6.94 ms, one refresh each (D3D11 on the same build: 0.26 ms). Every frame waited for the screen refresh.",
       "publishedAt": 1793195327000
-    },
-    {
-      "commit": "8c4f97a1705d34f042d79a8f1d31c401f0872d4e",
-      "title": "perf(gamescope): p18 \u2013 handle a finished frame in one loop pass",
-      "summary": "Every finished game frame took two passes of gamescope's main loop (the gamescope-xwm thread). The Xwayland commit woke it to import the buffer: it duplicated the buffer's fence and handed the commit to the image waiter (epoll add). Then the gamescopeimg thread saw the fence signalled, removed and closed it, and woke the main loop again to handle the finished commit. At 3,000+ fps that is a l",
-      "publishedAt": 1793180257000
     }
   ],
   "tests": [
