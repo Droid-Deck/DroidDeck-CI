@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793179389831,
+  "generatedAt": 1793180153904,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f4656ad",
-    "title": "fix: show every held volume step in Steam's volume slider",
-    "summary": "Holding a volume key moved Steam's QAM volume slider in uneven jumps with a stall at the start, instead of tracking Android's steady ramp.",
-    "commit": "f4656ad83aeb9764e6c75beffb062bd411ed24d7",
+    "tag": "main-213c2da",
+    "title": "fix(steam): answer Steam's D3D driver query without starting Wine",
+    "summary": "At every start, Steam's shader pre-caching runs d3ddriverquery64.exe (with and without -d3d12) through each Proton tool \u2013 DroidDeck-Proton and the ARM64 Proton \u2013 in compatdata/0. On DroidDeck the query never succeeds: 948 of 948 runs in the client's shader log failed (mostly exit code 1), and Steam ends with \"Unknown shader cache type, ignoring.\"",
+    "commit": "213c2da57e67e6062afcbd4db531c9c909059da8",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793160998000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f4656ad",
+    "publishedAt": 1793180106000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-213c2da",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f4656ad.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f4656ad/DroidDeck-main-f4656ad.apk",
+        "name": "DroidDeck-main-213c2da.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-213c2da/DroidDeck-main-213c2da.apk",
         "size": 75017947,
-        "sha256": "2aba25327584ad32e41eb2f333546b58b4c30701cbb13d8e123edf7f80e9b419",
+        "sha256": "524997ec7f9ae76a02997ba7763956901705482b8fe3c52dbe2ce6e09902bacf",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f4656ad-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f4656ad/DroidDeck-main-f4656ad-pubg.apk",
+        "name": "DroidDeck-main-213c2da-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-213c2da/DroidDeck-main-213c2da-pubg.apk",
         "size": 75017947,
-        "sha256": "534ad7e7152a44e4a256bc33b47bb6001e4a4721d23b092f1b16bfc695a2c9ad",
+        "sha256": "8413d3ad50cfb1b8807a03aac91ec4d6575b6f06224fdfbf50cae3385a7e4fdf",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f4656ad-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f4656ad/DroidDeck-main-f4656ad-antutu.apk",
+        "name": "DroidDeck-main-213c2da-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-213c2da/DroidDeck-main-213c2da-antutu.apk",
         "size": 75017947,
-        "sha256": "68231b64e4fde9dc8207112cc88b48bb21446000ec60b1fd092aac9a055217f3",
+        "sha256": "fc62eff0a26be1323fbf6ffddcd52f914b4d29d62a950fdcbf64d289e62032af",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f4656ad-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f4656ad/DroidDeck-main-f4656ad-ludashi.apk",
+        "name": "DroidDeck-main-213c2da-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-213c2da/DroidDeck-main-213c2da-ludashi.apk",
         "size": 75017947,
-        "sha256": "b9b5b04ed22f98dcefbadab4656f81640457ff539e83c492698940f8969f8f48",
+        "sha256": "e31670c1c8abbcf41b8afcaebd07d2d027056b046808e575dbf8cce4be609316",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "213c2da57e67e6062afcbd4db531c9c909059da8",
+      "title": "fix(steam): answer Steam's D3D driver query without starting Wine",
+      "summary": "At every start, Steam's shader pre-caching runs d3ddriverquery64.exe (with and without -d3d12) through each Proton tool \u2013 DroidDeck-Proton and the ARM64 Proton \u2013 in compatdata/0. On DroidDeck the query never succeeds: 948 of 948 runs in the client's shader log failed (mostly exit code 1), and Steam ends with \"Unknown shader cache type, ignoring.\"",
+      "publishedAt": 1793180106000
+    },
     {
       "commit": "f4656ad83aeb9764e6c75beffb062bd411ed24d7",
       "title": "fix: show every held volume step in Steam's volume slider",
@@ -155,12 +161,6 @@
       "title": "fix(release): rename the pin task affinity for variant APKs",
       "summary": "PR test builds still fail to publish after #1690. The antutu, ludashi and pubg variants stop at:",
       "publishedAt": 1793131553000
-    },
-    {
-      "commit": "067dabe81c4710706af33ab053e65eb3bc7032ab",
-      "title": "perf(compositor): screen tick on its own thread, pacing counters",
-      "summary": "\u2022 Screen tick on its own thread. The Choreographer frame callback that drives the compositor (CompositorHost) ran on the app's main thread. Any main-thread work delayed the tick before it reached the compositor thread. It now runs on a display-priority HandlerThread (droiddeck-vsync) with its own Choreographer.\n\u2022 The session pref vsyncThread (default true, no UI) switches back to the main thread.\n",
-      "publishedAt": 1793119708000
     }
   ],
   "tests": [
