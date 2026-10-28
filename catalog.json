@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793143669155,
+  "generatedAt": 1793150983709,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1700",
+      "title": "fix(library): keep installed/all owned filter when stores tab is off",
+      "summary": "Disabling the Stores tab hid the Installed / All owned games filter in Library. The filter now shows regardless of the Stores setting (still hidden in the shortcut picker).",
+      "commit": "7e03a055ef8852637634e96322a0637ff13688ee",
+      "pr": 1700,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793150931000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1700",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1700-7e03a05.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1700/DroidDeck-PR.1700-7e03a05.apk",
+          "size": 74993371,
+          "sha256": "10119656ccc2ab4db90e546572394a3f1fa892fe48aaf3e32ffac80f260653cc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1700-7e03a05-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1700/DroidDeck-PR.1700-7e03a05-pubg.apk",
+          "size": 74993371,
+          "sha256": "0bbf8775c301cbb66bf0214803d3dc10939b3365d19c07cd804713a43aef99bb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1700-7e03a05-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1700/DroidDeck-PR.1700-7e03a05-antutu.apk",
+          "size": 74993371,
+          "sha256": "85b0e16e39bb11e222e060dab554f7ba321a2eb473947373c5abec8d5a083215",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1700-7e03a05-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1700/DroidDeck-PR.1700-7e03a05-ludashi.apk",
+          "size": 74993371,
+          "sha256": "eb856b5ed01f8fa883ccf29111d5f47190248049fc10ca527464954066155060",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1665",
       "title": "feat(itch): update detection and safe updates for installed games",
