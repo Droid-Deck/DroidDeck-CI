@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793155438961,
+  "generatedAt": 1793155538173,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3716c8a",
-    "title": "fix: an unproven update-channel guess no longer moves stable users to Nightly",
-    "summary": "Stable users are no longer silently switched to the Nightly (Preview) update channel when DroidDeck can't yet tell which channel they installed from.",
-    "commit": "3716c8acdf80011a700ceffbd6e59b0a7d234ac4",
+    "tag": "main-374d478",
+    "title": "fix: avoid incompatible Turnip selection and explain Steam startup failures",
+    "summary": "Two startup failures currently end with a generic stopped-session message: #1376 reports Steam exiting with Illegal instruction / status 132 after installation, while #1368 reports a non-Adreno MT6993 device starting with Turnip and gamescope failing to find a Vulkan device.",
+    "commit": "374d4783fc76828b2456ba15003d236c769808ec",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793155381000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3716c8a",
+    "publishedAt": 1793155492000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-374d478",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3716c8a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3716c8a/DroidDeck-main-3716c8a.apk",
-        "size": 75005659,
-        "sha256": "76cfe98077baaedf11722fc07957a1c70fd53249d8e02cdbae12e877e5b28a76",
+        "name": "DroidDeck-main-374d478.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-374d478/DroidDeck-main-374d478.apk",
+        "size": 75013851,
+        "sha256": "502fa05d0f48c41f579253d95d6720e8ccb3a0c8fc3824297154131819d9b506",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3716c8a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3716c8a/DroidDeck-main-3716c8a-pubg.apk",
-        "size": 75005659,
-        "sha256": "c23f2ddcc6acc9b170738c957b3b5dfa0cd3005cad1cb3758d408f96744ba011",
+        "name": "DroidDeck-main-374d478-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-374d478/DroidDeck-main-374d478-pubg.apk",
+        "size": 75013851,
+        "sha256": "8d7dc2a9f52037794e2201a425fa36306b731597024176850be2a92ffa7381b4",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3716c8a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3716c8a/DroidDeck-main-3716c8a-antutu.apk",
-        "size": 75005659,
-        "sha256": "1392d4a42fb649cdcb5bada67944b704a7dcfd50f3cd0b3f50c9d62d3212b941",
+        "name": "DroidDeck-main-374d478-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-374d478/DroidDeck-main-374d478-antutu.apk",
+        "size": 75013851,
+        "sha256": "dc589a8b9cea2547b6a1634f1f808e1c21558c902664527a0d62ad742e6167bd",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3716c8a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3716c8a/DroidDeck-main-3716c8a-ludashi.apk",
-        "size": 75005659,
-        "sha256": "4f72bf90ccfc66a174017affbcec8dda8e2c01c9c56ab54f206a5c2ef380ebe3",
+        "name": "DroidDeck-main-374d478-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-374d478/DroidDeck-main-374d478-ludashi.apk",
+        "size": 75013851,
+        "sha256": "916b2a7cd9c8cb7aca463d297bfa09cb53c23cde0fb403b0f72f810716fd21c9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "374d4783fc76828b2456ba15003d236c769808ec",
+      "title": "fix: avoid incompatible Turnip selection and explain Steam startup failures",
+      "summary": "Two startup failures currently end with a generic stopped-session message: #1376 reports Steam exiting with Illegal instruction / status 132 after installation, while #1368 reports a non-Adreno MT6993 device starting with Turnip and gamescope failing to find a Vulkan device.",
+      "publishedAt": 1793155492000
+    },
     {
       "commit": "3716c8acdf80011a700ceffbd6e59b0a7d234ac4",
       "title": "fix: an unproven update-channel guess no longer moves stable users to Nightly",
@@ -155,12 +161,6 @@
       "title": "fix(ui): portrait nav highlight drift and blurry Android app icons",
       "summary": "\u2022 Bottom bar / side rail highlight now tracks its tab after the bar scrolls. Item bounds are measured relative to the scrolled content instead of root minus a container offset that did not refresh on scroll.\n\u2022 Android app icons in launcher mode are rasterized at 72dp for the screen density instead of a fixed 48px, so they stay sharp on high-density phones.",
       "publishedAt": 1793111399000
-    },
-    {
-      "commit": "b5cc6dd1850b05a3806cd729b3a4000d4ebbd016",
-      "title": "perf(gamescope): skip the repeated window lookup and wake on host events",
-      "summary": "Two gamescope changes from the performance audit, as one gamescope update: gamescope-3.16.29-p17 (p16 + 2 patches).",
-      "publishedAt": 1793107732000
     }
   ],
   "tests": [
