@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793190144602,
+  "generatedAt": 1793192604569,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1715",
+      "title": "fix(game-env): OpenGL games stop waiting for each screen refresh",
+      "summary": "With no frame limit, AIO's Direct3D 7 (DirectDraw) test ran at exactly 144 fps on the 144 Hz AYANEO Pocket FIT: frame times averaged 6.94 ms, one refresh each (D3D11 on the same build: 0.26 ms). Every frame waited for the screen refresh.",
+      "commit": "8c94cb85ee4f6b2b7a5885a1f952eb6fc88300be",
+      "pr": 1715,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793192543000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1715",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1715-8c94cb8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1715/DroidDeck-PR.1715-8c94cb8.apk",
+          "size": 75022043,
+          "sha256": "d7817c233331e2005ffae9ea914e0413461d03ce8802a57b7114ba30b7be60e7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1715-8c94cb8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1715/DroidDeck-PR.1715-8c94cb8-pubg.apk",
+          "size": 75022043,
+          "sha256": "3270c26ab67269ebe10df0bcfcd29a79029256e51416baba4f902f85a3836003",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1715-8c94cb8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1715/DroidDeck-PR.1715-8c94cb8-antutu.apk",
+          "size": 75022043,
+          "sha256": "ed7bb3434777083df994db1d7dbc9d44baf4a3a5c269fcf3b271a3bf3b045402",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1715-8c94cb8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1715/DroidDeck-PR.1715-8c94cb8-ludashi.apk",
+          "size": 75022043,
+          "sha256": "3d6bba8ada9f0b8729865b960077e22eb0f432e0c8a887f47de0c6afc3fdbd09",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1687",
       "title": "perf(proot): accelerate and cache glibc syscall relays",
