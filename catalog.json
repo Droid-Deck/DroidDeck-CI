@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793180340057,
+  "generatedAt": 1793188956481,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1687",
+      "title": "perf(proot): accelerate and cache glibc syscall relays",
+      "summary": "Libc-internal file operations bypass the existing preload wrappers and still stop in PRoot. Patch recognized ARM64 SVC sites in libc and the runtime loader, route 20 existing path syscall families through the shared translator, and return declined/recursive calls to PRoot.",
+      "commit": "40b7c480a3de320ab734b85c8a8e35a56f399160",
+      "pr": 1687,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793188888000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1687",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1687-40b7c48.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1687/DroidDeck-PR.1687-40b7c48.apk",
+          "size": 75026139,
+          "sha256": "bb3b0633a434fcf738d5c40e64d806c7bbcf207258e1b726c94a301e9ff513d5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1687-40b7c48-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1687/DroidDeck-PR.1687-40b7c48-pubg.apk",
+          "size": 75026139,
+          "sha256": "7266f18eddade389506dc8173a0357bf9e29c78d9a9e8391197704c4390e9566",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1687-40b7c48-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1687/DroidDeck-PR.1687-40b7c48-antutu.apk",
+          "size": 75026139,
+          "sha256": "4b2c39667abc03b8342be5e5b613096192e3f978b9d2ec0668630f7ffcde456a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1687-40b7c48-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1687/DroidDeck-PR.1687-40b7c48-ludashi.apk",
+          "size": 75026139,
+          "sha256": "c2aefe7790b32895ba9e77455aa32e33ea63152f99e6339ced0f7a1e431b932f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1665",
       "title": "feat(itch): update detection and safe updates for installed games",
