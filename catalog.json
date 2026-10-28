@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793194705074,
+  "generatedAt": 1793195407398,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8c4f97a",
-    "title": "perf(gamescope): p18 \u2013 handle a finished frame in one loop pass",
-    "summary": "Every finished game frame took two passes of gamescope's main loop (the gamescope-xwm thread). The Xwayland commit woke it to import the buffer: it duplicated the buffer's fence and handed the commit to the image waiter (epoll add). Then the gamescopeimg thread saw the fence signalled, removed and closed it, and woke the main loop again to handle the finished commit. At 3,000+ fps that is a l",
-    "commit": "8c4f97a1705d34f042d79a8f1d31c401f0872d4e",
+    "tag": "main-9d82df6",
+    "title": "fix(game-env): OpenGL games stop waiting for each screen refresh",
+    "summary": "With no frame limit, AIO's Direct3D 7 (DirectDraw) test ran at exactly 144 fps on the 144 Hz AYANEO Pocket FIT: frame times averaged 6.94 ms, one refresh each (D3D11 on the same build: 0.26 ms). Every frame waited for the screen refresh.",
+    "commit": "9d82df6981bd7b82ee24e976c0ffa22c8ee50d50",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793180257000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8c4f97a",
+    "publishedAt": 1793195327000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9d82df6",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8c4f97a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8c4f97a/DroidDeck-main-8c4f97a.apk",
-        "size": 75017947,
-        "sha256": "7fe8048f49bb55c3556c43a25edd3b648409f3ff00a3eac8c555c9b22614f9e2",
+        "name": "DroidDeck-main-9d82df6.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d82df6/DroidDeck-main-9d82df6.apk",
+        "size": 75022043,
+        "sha256": "d3d03c3a554c4d5e57520b27a1f76dcc1113491074de0582743f0c7ccfbfec69",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8c4f97a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8c4f97a/DroidDeck-main-8c4f97a-pubg.apk",
-        "size": 75017947,
-        "sha256": "20e77dd7049f7552183d04346976432914ce126b30ccd2d3f76f00028262e6cf",
+        "name": "DroidDeck-main-9d82df6-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d82df6/DroidDeck-main-9d82df6-pubg.apk",
+        "size": 75022043,
+        "sha256": "73f2665c7971d81c5303a2c2d04e187463d22cac0cf91013c202887ce07b4a9d",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8c4f97a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8c4f97a/DroidDeck-main-8c4f97a-antutu.apk",
-        "size": 75017947,
-        "sha256": "f7b1aa765d2829ada766ea6970c44c8956b8bdf57efad833ce3a0e716f16f40f",
+        "name": "DroidDeck-main-9d82df6-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d82df6/DroidDeck-main-9d82df6-antutu.apk",
+        "size": 75022043,
+        "sha256": "de35ab42eaf817c8d8ee7ab1c34da1d3648f0fb6f14575aff79711244a6dc041",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8c4f97a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8c4f97a/DroidDeck-main-8c4f97a-ludashi.apk",
-        "size": 75017947,
-        "sha256": "2b66b1f74e876510f2b94a98c89c6bda81396bf165c2c175d2ef605e55cdaa97",
+        "name": "DroidDeck-main-9d82df6-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d82df6/DroidDeck-main-9d82df6-ludashi.apk",
+        "size": 75022043,
+        "sha256": "558ac50f1787042a0e9ac119f2c4bbc1f995420b5c679f95ee779e3a3d1b3d42",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9d82df6981bd7b82ee24e976c0ffa22c8ee50d50",
+      "title": "fix(game-env): OpenGL games stop waiting for each screen refresh",
+      "summary": "With no frame limit, AIO's Direct3D 7 (DirectDraw) test ran at exactly 144 fps on the 144 Hz AYANEO Pocket FIT: frame times averaged 6.94 ms, one refresh each (D3D11 on the same build: 0.26 ms). Every frame waited for the screen refresh.",
+      "publishedAt": 1793195327000
+    },
     {
       "commit": "8c4f97a1705d34f042d79a8f1d31c401f0872d4e",
       "title": "perf(gamescope): p18 \u2013 handle a finished frame in one loop pass",
@@ -155,12 +161,6 @@
       "title": "fix(library): keep installed/all owned filter when stores tab is off",
       "summary": "Disabling the Stores tab hid the Installed / All owned games filter in Library. The filter now shows regardless of the Stores setting (still hidden in the shortcut picker).",
       "publishedAt": 1793152622000
-    },
-    {
-      "commit": "4ef6b53eb09f9cd5150f288be49c5c740e400e48",
-      "title": "fix(proton): Windows CPU 0 is the fastest core",
-      "summary": "GTA IV ran at half speed in DroidDeck: 32 fps against 64\u201366 in Bannerlator, with the same settings, DXVK and FEX.",
-      "publishedAt": 1793143444000
     }
   ],
   "tests": [
