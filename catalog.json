@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793206038270,
+  "generatedAt": 1793206774575,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1726",
+      "title": "Guide the child-process toggle when developer options are off",
+      "summary": "The child-process gate and the setup row's Developer options button opened Settings directly. With developer options off the intent failed and the user only got a toast.",
+      "commit": "3f4853582d874849ed7576daf1f8e4c31bc76378",
+      "pr": 1726,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793206693000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1726",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1726-3f48535.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1726/DroidDeck-PR.1726-3f48535.apk",
+          "size": 75050715,
+          "sha256": "b622c22587f16fd8abc48b1cb5cfca19fb81354b4ae2b925df7582f413192105",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1726-3f48535-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1726/DroidDeck-PR.1726-3f48535-pubg.apk",
+          "size": 75050715,
+          "sha256": "0abc65b414e1d26f2f1dfd780dcdbc483c61446d3321dd2d2661ccc0b1a8c9fb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1726-3f48535-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1726/DroidDeck-PR.1726-3f48535-antutu.apk",
+          "size": 75050715,
+          "sha256": "67cd7f7a7522910f8dcdb77a245bedce8ddabf9873f6d1633a4b369497d25df8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1726-3f48535-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1726/DroidDeck-PR.1726-3f48535-ludashi.apk",
+          "size": 75050715,
+          "sha256": "665e655d6ceb74014b84b6285435e60c0a2dc9fccc9a088bad918504301dad5b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1725",
       "title": "ci: check out without history blobs or the release-note GIFs",
