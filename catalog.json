@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793223542728,
+  "generatedAt": 1793224069010,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1733",
+      "title": "Move the Linux runtime to Ubuntu 26.04 LTS with a separate Kubuntu desktop",
+      "summary": "Replaces the Arch Linux ARM runtime with Ubuntu 26.04 LTS (arm64), with Kubuntu's Plasma desktop as a separate download. Builds on #1688 (its desktop and touch fixes carry over) and includes #1555's pointer and direct-touch fixes.",
+      "commit": "b9baf4bfddc4d17e37245807da80b54da33ab4e6",
+      "pr": 1733,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793223997000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1733",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1733-b9baf4b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-b9baf4b.apk",
+          "size": 75748228,
+          "sha256": "b477c586203afd48974480a78927207978789b09f77189a007be65233b9d6b64",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1733-b9baf4b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-b9baf4b-pubg.apk",
+          "size": 75748228,
+          "sha256": "fd5861cdcd93f04cc74cee3b9b8e2a8066e6e9e12f1ce61cc574d1986af5e96b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1733-b9baf4b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-b9baf4b-antutu.apk",
+          "size": 75748228,
+          "sha256": "5b6bd72765beb7b8e9838429483f8fe3e2fe9ceea17553f343918eefc6d274d0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1733-b9baf4b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-b9baf4b-ludashi.apk",
+          "size": 75748228,
+          "sha256": "a67786659a5a00dc200b67d6879bd8a9d7c171282ad50239de7bedca1af8b8cf",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1738",
       "title": "feat: game page with art backdrop and frosted controls",
