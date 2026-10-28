@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793228637319,
+  "generatedAt": 1793229691677,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1740",
+      "title": "feat: add maintenance for other game stores",
+      "summary": "Installed games outside GOG lacked a consistent maintenance workflow. This adds metadata-only update checks and a compact Maintenance menu, pins queued targets to their existing installation folder, and preserves installation settings through maintenance and recovery.",
+      "commit": "090b87c37c495a278272fca07239383330050cf1",
+      "pr": 1740,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793229639000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1740",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1740-090b87c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-090b87c.apk",
+          "size": 75259877,
+          "sha256": "9c2bb8b1ae104bb9aaa0ffdc9fdf494b528b30a216a78ee3f758accf54b72601",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1740-090b87c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-090b87c-pubg.apk",
+          "size": 75259877,
+          "sha256": "e2ca4e0e9885675c714d0af2847bd37f2bbf36cab12618764762ec60360670fc",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1740-090b87c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-090b87c-antutu.apk",
+          "size": 75259877,
+          "sha256": "5a73a913f9369349b4f51f002df0aaa8c24a61e58d2f818dc9f762ae997eef18",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1740-090b87c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-090b87c-ludashi.apk",
+          "size": 75259877,
+          "sha256": "881740f424a43422c2ed9145f664aa5e5b505552092462df5b278897a25a8d3d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1738",
       "title": "feat: game page with art backdrop and frosted controls",
       "summary": "The game page (Library and Stores) now uses the game's art as the page background, with frosted capsules for the controls, in place of the boxed hero card.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1738/DroidDeck-PR.1738-190be30-ludashi.apk",
           "size": 75214821,
           "sha256": "bdef3f058e182b8242624e1d1602ff2a9e6d769691e733e07675c0df6ce5ffcc",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1740",
-      "title": "feat: add maintenance for other game stores",
-      "summary": "Installed games outside GOG lacked a consistent maintenance workflow. This adds metadata-only update checks and a compact Maintenance menu, pins queued targets to their existing installation folder, and preserves installation settings through maintenance and recovery.",
-      "commit": "449c3dab4f2856bc38aef101b8b5e232d636fc7a",
-      "pr": 1740,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793228588000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1740",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1740-449c3da.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-449c3da.apk",
-          "size": 75263973,
-          "sha256": "b1f10e22a6b8fb975f55038fda2e05982ccf04d2c3e3837bde49c40baf581537",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1740-449c3da-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-449c3da-pubg.apk",
-          "size": 75263973,
-          "sha256": "f2a1ec5c4616fa5593b8c40c073faf1ae11500be2226a1a88dd0676429e8b2d1",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1740-449c3da-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-449c3da-antutu.apk",
-          "size": 75263973,
-          "sha256": "47dad1410a8eeccdf49bc42c153f2428005636d771b7bd72cdd60c0de21e58f2",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1740-449c3da-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-449c3da-ludashi.apk",
-          "size": 75263973,
-          "sha256": "82cbc888038cc59cdbf82031bb7b91dfc79d529b6b78bf7415d1380a68727071",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
