@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793234048576,
+  "generatedAt": 1793234729901,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1743",
+      "title": "feat: FusionHUD replaces the session HUD, with MangoHud's readings",
+      "summary": "DroidDeck's session HUD and Steam's performance overlay could show different numbers for the same game, which confuses people comparing the two. This replaces the session HUD with FusionHUD (Bannerlator's HUD) and takes every reading from the same source, worked out the same way, as the MangoHud build that runs Steam's performance overlay in a DroidDeck session (Valve's mangohud-20260902.1). It",
+      "commit": "7e9469fb4737ea9cbd8645afcd8eee7b18b55c28",
+      "pr": 1743,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793234679000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1743",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1743-7e9469f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1743/DroidDeck-PR.1743-7e9469f.apk",
+          "size": 75378661,
+          "sha256": "1bffc762a5c035cdd06e373d8e3343b30e6b3a910b4aff1cfed32b70ace7aba3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1743-7e9469f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1743/DroidDeck-PR.1743-7e9469f-pubg.apk",
+          "size": 75378661,
+          "sha256": "e3afa835667e45a4b985e54d2ffe130d10dde5639e422b90ea9c0a4e596a68db",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1743-7e9469f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1743/DroidDeck-PR.1743-7e9469f-antutu.apk",
+          "size": 75378661,
+          "sha256": "0b7141cc3cdb1eae09f9ed9c0837452b8dfb64755cf1fee8d91c3940e417e93e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1743-7e9469f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1743/DroidDeck-PR.1743-7e9469f-ludashi.apk",
+          "size": 75378661,
+          "sha256": "acc3670dd20bdc45aff6db5ab1ad80f22fc6f4c11f08fef80ecbae8f3e45ce4c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1733",
       "title": "Move the Linux runtime to Ubuntu 26.04 LTS with a separate Kubuntu desktop",
