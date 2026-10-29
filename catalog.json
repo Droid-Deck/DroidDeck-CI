@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793317432370,
+  "generatedAt": 1793317514960,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1793",
+      "title": "fix: ARMSX2, melonDS and Cemu start without the desktop installed",
+      "summary": "On 0.6.7, ARMSX2 fails to start with libOpenGL.so.0: cannot open shared object file (reported on Discord with logs from a Galaxy S23, DroidDeck-2026-10-29-24-armsx2.zip). It worked on 0.6.0.",
+      "commit": "2f93a761b853dc301de4394dfc2c4dcb8f3184b5",
+      "pr": 1793,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793317443000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1793",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1793-2f93a76.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1793/DroidDeck-PR.1793-2f93a76.apk",
+          "size": 76071998,
+          "sha256": "d8965613c20ac37cbe5812974d0a16f254e04d8455075e7c32a56ea2439d4f4c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1793-2f93a76-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1793/DroidDeck-PR.1793-2f93a76-pubg.apk",
+          "size": 76071998,
+          "sha256": "e762c6d89066cf3fcb8d37630c2bf2b80343178aa4c037fab966badb41ae81eb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1793-2f93a76-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1793/DroidDeck-PR.1793-2f93a76-antutu.apk",
+          "size": 76071998,
+          "sha256": "97e080ab58f8bb1cfebc302a8091bce86577197f94ced12d2c3bfba460ec80b2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1793-2f93a76-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1793/DroidDeck-PR.1793-2f93a76-ludashi.apk",
+          "size": 76071998,
+          "sha256": "cc75b71591a1259138b199ce0924df0ae7f610e52ffef9034d91918dd8ecc8d3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1788",
       "title": "Windows components: restore bundle parts, wait for restores and keep older picks",
