@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793275389371,
+  "generatedAt": 1793275559396,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1764",
+      "title": "perf(epic): keep the hidden launcher from loading its store and Fab pages, and compress it while games run",
+      "summary": "While an Epic game runs, DroidDeck keeps a hidden Epic Games Launcher open for sign-in, on a private headless display. That hidden launcher pre-warmed its Store and Fab web pages, which nobody ever sees.",
+      "commit": "043cf2f7fe0a82f6b0f4630a9568bc7e587e744a",
+      "pr": 1764,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793275486000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1764",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1764-043cf2f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1764/DroidDeck-PR.1764-043cf2f.apk",
+          "size": 75423717,
+          "sha256": "4de7d9577b93052f27a336a9fa774cd443520228ee96f12e9246a46b0daefc27",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1764-043cf2f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1764/DroidDeck-PR.1764-043cf2f-pubg.apk",
+          "size": 75423717,
+          "sha256": "48a827ec5a3f8a0916b55f36e98a3dd517e8050fee3727d51919ef8445524920",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1764-043cf2f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1764/DroidDeck-PR.1764-043cf2f-antutu.apk",
+          "size": 75423717,
+          "sha256": "1d66eea14d9c81b41283041ea7c185141eb8a10e320a75409872d5974076cee1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1764-043cf2f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1764/DroidDeck-PR.1764-043cf2f-ludashi.apk",
+          "size": 75423717,
+          "sha256": "94527a04ff451842021d6d508b4ef0b360ddece9f8779cbce3c413a15513fcf0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1733",
       "title": "Move the Linux runtime to Ubuntu 26.04 LTS with a separate Kubuntu desktop",
