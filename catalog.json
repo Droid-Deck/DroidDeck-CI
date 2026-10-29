@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793245668355,
+  "generatedAt": 1793245903055,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1746",
+      "title": "Warn when a game library drive is linked at USB 2.0 speed",
+      "summary": "When a drive that DroidDeck uses as a game library (the Second library / game storage volume, or a Games folder on an external drive) is linked slower than USB 3 (5 Gbps), DroidDeck shows a warning in the usual app dialog style:",
+      "commit": "a7db0b1d886ff6d13a3de494ce105322a154554c",
+      "pr": 1746,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793245839000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1746",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1746-a7db0b1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a7db0b1.apk",
+          "size": 75419621,
+          "sha256": "d9380d2080a7d532ba585c056982e6f34ce98ec373e616a529192b576e76cd2f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1746-a7db0b1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a7db0b1-pubg.apk",
+          "size": 75419621,
+          "sha256": "9a277e802c7196dc7ff52e59ac3a8cd58190935f3e72736530f88cb9f0bf03c6",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1746-a7db0b1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a7db0b1-antutu.apk",
+          "size": 75419621,
+          "sha256": "b89131f8420e45892e0d9c7b35ebf9eb9fa44744f4f729b5c4d699df94ae8e3f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1746-a7db0b1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a7db0b1-ludashi.apk",
+          "size": 75419621,
+          "sha256": "2e3aa8e83e1012f7d12ff46d9b91371cffb4e1cb8c1e13297d8d49b807865d19",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1749",
       "title": "feat: setting to hide sidebar labels",
       "summary": "\u2022 New Setup > Launcher > Sidebar labels toggle (on by default). Turning it off uses the existing icon-only rail, so the sidebar slims down and the content area gets the width back.\n\u2022 Saved in prefs and applied live.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-bf2155a-ludashi.apk",
           "size": 75949020,
           "sha256": "446a83e6709bc789e85a68d6baacc910825d2d929366abcda944ca384cd94efe",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1746",
-      "title": "Warn when a game library drive is linked at USB 2.0 speed",
-      "summary": "When a drive that DroidDeck uses as a game library (the Second library / game storage volume, or a Games folder on an external drive) is linked slower than USB 3 (5 Gbps), DroidDeck shows a warning in the usual app dialog style:",
-      "commit": "a1aa9a51d6fc2a685d263f4fd4a9f9cbe0e3dcb9",
-      "pr": 1746,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793241828000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1746",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1746-a1aa9a5.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a1aa9a5.apk",
-          "size": 75407333,
-          "sha256": "71f5e0986ce3d211c4eb1d33b6e538d5605ec4390a750855ebb8b908955e5aef",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1746-a1aa9a5-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a1aa9a5-pubg.apk",
-          "size": 75407333,
-          "sha256": "e019056ffe5f6ca79dde885a6e9e9e1e27527777c55b349f19c1e55c33b303fe",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1746-a1aa9a5-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a1aa9a5-antutu.apk",
-          "size": 75407333,
-          "sha256": "3e8f254159ccdb4e6b974876004643093768d405ca69556fe15e199cf00eb99f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1746-a1aa9a5-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a1aa9a5-ludashi.apk",
-          "size": 75407333,
-          "sha256": "b7d8bd597bc87d89727e4b469b520e0b9f1d55aba61e444d8f449246d2504327",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
