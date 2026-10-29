@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793238886905,
+  "generatedAt": 1793239847426,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e871557",
-    "title": "Update Xbox backend to 0.2.12",
-    "summary": "Update the pinned Nexus backend from 0.2.8 to 0.2.12 and rebase the existing DroidDeck patches for credential transport, launch views, and cloud-token support.",
-    "commit": "e871557bf2492f05ed2b17a31d560a5ae62ca13d",
+    "tag": "main-110cfc2",
+    "title": "feat: FusionHUD replaces the session HUD, with MangoHud's readings",
+    "summary": "DroidDeck's session HUD and Steam's performance overlay could show different numbers for the same game, which confuses people comparing the two. This replaces the session HUD with FusionHUD (Bannerlator's HUD) and takes every reading from the same source, worked out the same way, as the MangoHud build that runs Steam's performance overlay in a DroidDeck session (Valve's mangohud-20260902.1). It",
+    "commit": "110cfc28f81291d7bde494e3271571ff7192e958",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793233635000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e871557",
+    "publishedAt": 1793239788000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-110cfc2",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e871557.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e871557/DroidDeck-main-e871557.apk",
-        "size": 75214821,
-        "sha256": "fa1e76638b8a6d0e2767cdef173a98903c55e02bf14b24e834856dc7a976a61e",
+        "name": "DroidDeck-main-110cfc2.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-110cfc2/DroidDeck-main-110cfc2.apk",
+        "size": 75378661,
+        "sha256": "6396ffd5ae282cf4e01d1b0467024727096bfdf7b0558d7df87be39c5f806045",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e871557-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e871557/DroidDeck-main-e871557-pubg.apk",
-        "size": 75214821,
-        "sha256": "7210343e3f5ddb3ae47993ed79dd89e31dc3c76662eafa895f89990a34ef212c",
+        "name": "DroidDeck-main-110cfc2-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-110cfc2/DroidDeck-main-110cfc2-pubg.apk",
+        "size": 75378661,
+        "sha256": "580a32976e056170012a869dba0315c3413341cccb53f4637919af204893c031",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e871557-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e871557/DroidDeck-main-e871557-antutu.apk",
-        "size": 75214821,
-        "sha256": "190c0a07200adf7c00fab0fb7dd636a4f167600bee4089b2b5854e20eede5651",
+        "name": "DroidDeck-main-110cfc2-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-110cfc2/DroidDeck-main-110cfc2-antutu.apk",
+        "size": 75378661,
+        "sha256": "59d5de1521c0e78108df5d3fecaf1955ff304fc7dd9f95019da98f5b407a2d68",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e871557-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e871557/DroidDeck-main-e871557-ludashi.apk",
-        "size": 75214821,
-        "sha256": "e6af0b0db3178e37e4d74dd8d06beb51327ff6895699e3b17b232530a9f56ace",
+        "name": "DroidDeck-main-110cfc2-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-110cfc2/DroidDeck-main-110cfc2-ludashi.apk",
+        "size": 75378661,
+        "sha256": "e9904c258c20194647b4d79d0705cd326a16a36a3ff63b7d5aed544be71e563f",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "110cfc28f81291d7bde494e3271571ff7192e958",
+      "title": "feat: FusionHUD replaces the session HUD, with MangoHud's readings",
+      "summary": "DroidDeck's session HUD and Steam's performance overlay could show different numbers for the same game, which confuses people comparing the two. This replaces the session HUD with FusionHUD (Bannerlator's HUD) and takes every reading from the same source, worked out the same way, as the MangoHud build that runs Steam's performance overlay in a DroidDeck session (Valve's mangohud-20260902.1). It",
+      "publishedAt": 1793239788000
+    },
     {
       "commit": "e871557bf2492f05ed2b17a31d560a5ae62ca13d",
       "title": "Update Xbox backend to 0.2.12",
@@ -155,12 +161,6 @@
       "title": "tool: deploy session helper changes by grafting them into the latest main APK",
       "summary": "python tools/deployfast.py takes the newest release-signed main build from DroidDeck-CI that this checkout descends from, replaces the session helper assets whose sources changed, re-signs with the local release signer and optionally installs (--install). --plan shows what would change.",
       "publishedAt": 1793200809000
-    },
-    {
-      "commit": "9294a60172be652defd92fae5fcf22f38544dc80",
-      "title": "perf(proot): accelerate and cache glibc syscall relays",
-      "summary": "Libc-internal file operations bypass the existing preload wrappers and still stop in PRoot. Patch recognized ARM64 SVC sites in libc and the runtime loader, reuse the current translator for 20 path syscall numbers, and return declined calls to PRoot. Enabled by default after the tracer-key check; PROOTFPPATCHSVC=0 remains the troubleshooting opt-out.",
-      "publishedAt": 1793200068000
     }
   ],
   "tests": [
