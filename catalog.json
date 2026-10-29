@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793312495646,
+  "generatedAt": 1793313476848,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1789",
+      "title": "Launch frontend game links without a tap on dual-screen devices",
+      "summary": "Since the dual-screen launcher panel landed (Droid-Deck/DroidDeck#1734), launching a game from a frontend on a dual-screen device stalls:",
+      "commit": "d17b74f652bce3bc9506b57306c17b71a5f52479",
+      "pr": 1789,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793313385000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1789",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1789-d17b74f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-d17b74f.apk",
+          "size": 76067902,
+          "sha256": "0399bd21852e5e0c99cb5536c3bf4f3b6c0cb577c5f8cf743ea4c3f4977e487f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1789-d17b74f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-d17b74f-pubg.apk",
+          "size": 76067902,
+          "sha256": "1391b2c4e02cb87de7db7019be8747fa63db7f420bf89a5414f5361473e67f80",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1789-d17b74f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-d17b74f-antutu.apk",
+          "size": 76067902,
+          "sha256": "9d5d5fe35ada626dab90b8cfdf30b0d390576cc217d64c42625ffc85e1ff1315",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1789-d17b74f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-d17b74f-ludashi.apk",
+          "size": 76067902,
+          "sha256": "627cd30347f117f06bcb25293c5a054c25dbf6d1e3076c328b3d31f250f26af1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1788",
       "title": "Windows components: restore bundle parts, wait for restores and keep older picks",
       "summary": "Follow-up to Droid-Deck/DroidDeck#1786, covering the review points raised after it was merged.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1790/DroidDeck-PR.1790-02ae739-ludashi.apk",
           "size": 76067902,
           "sha256": "11378754ce0b04fe906816226caa3a798deeacdd869ae71e117669ce913ba112",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1789",
-      "title": "Launch frontend game links without a tap on dual-screen devices",
-      "summary": "Since the dual-screen launcher panel landed (Droid-Deck/DroidDeck#1734), launching a game from a frontend on a dual-screen device stalls:",
-      "commit": "9fc1611a965f98b9814b77e2c5640729501fddfd",
-      "pr": 1789,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793311716000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1789",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1789-9fc1611.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-9fc1611.apk",
-          "size": 76067902,
-          "sha256": "0e2868dce97098479cd45a2284f92c4095562e8bd94bafe042eb50431e9b3f09",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1789-9fc1611-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-9fc1611-pubg.apk",
-          "size": 76067902,
-          "sha256": "7e586d73ad360ddd6f6407aeafb72f15e96b0987051a37d18689b64d2d3e39c5",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1789-9fc1611-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-9fc1611-antutu.apk",
-          "size": 76067902,
-          "sha256": "e7e4576a6a7c83fd95b4391567de7bd3724823a58bc5553dafaa9b6295c4d44c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1789-9fc1611-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-9fc1611-ludashi.apk",
-          "size": 76067902,
-          "sha256": "8f21f4dfea201c644814a433d16e546dba7d3d66b35263d10c893fc46777c2ff",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
