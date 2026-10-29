@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793282570304,
+  "generatedAt": 1793284239463,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e9e0186",
-    "title": "perf(fex): answer raw stat, readlink and statx syscalls through the proot fast path",
-    "summary": "FEX issues most of its path lookups as raw syscall() calls (newfstatat, readlinkat, statx) rather than through the libc wrappers. The session preload already routes raw openat, openat2 and execveat into the proot fast path, but these three still fell through to ptrace, so every one of them cost a full tracer round trip.",
-    "commit": "e9e0186e664a2a70901ef336836770850fde76fd",
+    "tag": "main-15b00fc",
+    "title": "fix(release): rename the dual-screen and typing task affinities for variant APKs",
+    "summary": "Since #1734, every main build fails in sign / sign pubg, sign ludashi and sign antutu:",
+    "commit": "15b00fc23cb31e994ad12c2e198b03b20ddc9d59",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793274355000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e9e0186",
+    "publishedAt": 1793284173000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-15b00fc",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e9e0186.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e9e0186/DroidDeck-main-e9e0186.apk",
-        "size": 75423717,
-        "sha256": "7287a60e2b75dce4d92af5d0556212fb08fb39abf64ec456c7c25eb154be2b56",
+        "name": "DroidDeck-main-15b00fc.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-15b00fc/DroidDeck-main-15b00fc.apk",
+        "size": 76067804,
+        "sha256": "fdfed7e956afb37a86d47758809b99372d62493d5f657b0d21e005df1ec8c373",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e9e0186-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e9e0186/DroidDeck-main-e9e0186-pubg.apk",
-        "size": 75423717,
-        "sha256": "14b997e7a935f0912096371ba8ff91ed008875c1bfb198e4d9073fd1c291e821",
+        "name": "DroidDeck-main-15b00fc-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-15b00fc/DroidDeck-main-15b00fc-pubg.apk",
+        "size": 76067804,
+        "sha256": "93aa83aa052f1268196a99789ad7cb6d2021028e88aa7600a6895c422e3ef247",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e9e0186-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e9e0186/DroidDeck-main-e9e0186-antutu.apk",
-        "size": 75423717,
-        "sha256": "c25b00f58158cce78bcf253c8a63d7349488bf86cbdacc9514764a16a749c56c",
+        "name": "DroidDeck-main-15b00fc-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-15b00fc/DroidDeck-main-15b00fc-antutu.apk",
+        "size": 76067804,
+        "sha256": "574ae2b8e9313d8121c9d0001442984158c3d19243eede28baa27a51e16d98eb",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e9e0186-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e9e0186/DroidDeck-main-e9e0186-ludashi.apk",
-        "size": 75423717,
-        "sha256": "8f74f363f3371698ba88e48dedcf1d3208d81aa917ea8c628c008abe49999035",
+        "name": "DroidDeck-main-15b00fc-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-15b00fc/DroidDeck-main-15b00fc-ludashi.apk",
+        "size": 76067804,
+        "sha256": "4c3e816d1a2926bf6b17ba54ab376fed3fff6f1b86ab77643b781d9f6aa59c5b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "15b00fc23cb31e994ad12c2e198b03b20ddc9d59",
+      "title": "fix(release): rename the dual-screen and typing task affinities for variant APKs",
+      "summary": "Since #1734, every main build fails in sign / sign pubg, sign ludashi and sign antutu:",
+      "publishedAt": 1793284173000
+    },
     {
       "commit": "e9e0186e664a2a70901ef336836770850fde76fd",
       "title": "perf(fex): answer raw stat, readlink and statx syscalls through the proot fast path",
@@ -155,12 +161,6 @@
       "title": "fix(ui): keep the ring veil count per test",
       "summary": "RingVeil's snapshot state was created inside whichever test touched it first and then shared, so a later Compose test could fail with a snapshot read error depending on how tests were distributed across forks. The shared compose rule now resets it. Four forks were also measured at 195 s against 121 s for two, so the fork count stays at two.",
       "publishedAt": 1793226637000
-    },
-    {
-      "commit": "92787dd0f015455481d09398ac2ee0f42c7e6883",
-      "title": "ci: run unit tests in two parallel forks",
-      "summary": "Halves the serial unit-test step. Forks were reverted earlier because tests shared process-wide state; this branch finds and fixes those.",
-      "publishedAt": 1793224189000
     }
   ],
   "tests": [
