@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793313992421,
+  "generatedAt": 1793314281377,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -256,104 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1788/DroidDeck-PR.1788-137f266-ludashi.apk",
           "size": 76067902,
           "sha256": "b34eadf8a3cd80aedc62e8b9b7db78c72f978700d690f57559f50443cd7f28aa",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1787",
-      "title": "Update the Linux runtime by itself when a new one is out",
-      "summary": "A new Linux runtime (for example ubuntu-r1-rc2, which fixes Steam on rc1) only installed when the user opened the runtime menu and pressed the button. Many users updated the app but kept running the old runtime, along with its bugs.",
-      "commit": "3bd4297413559982d0847794680cdd9b2aa60587",
-      "pr": 1787,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793312207000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1787",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1787-3bd4297.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1787/DroidDeck-PR.1787-3bd4297.apk",
-          "size": 76067902,
-          "sha256": "d62aaeb5f2276553161d783f6d1429307d25e4cc6dd6180865f0bfa60e933037",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1787-3bd4297-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1787/DroidDeck-PR.1787-3bd4297-pubg.apk",
-          "size": 76067902,
-          "sha256": "7498ef1b987dd573b365a1ae0bd56bbe11293b16f78874c5111c588f99a07c34",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1787-3bd4297-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1787/DroidDeck-PR.1787-3bd4297-antutu.apk",
-          "size": 76067902,
-          "sha256": "ac94832ffe21401a9a8137a267cd219df723532ad1250d22145596fbf2d09df3",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1787-3bd4297-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1787/DroidDeck-PR.1787-3bd4297-ludashi.apk",
-          "size": 76067902,
-          "sha256": "9e5a7dde13ac04c95116f69349220d75f4727cf3af44626a329d0e6ae96cb8dc",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1790",
-      "title": "Session follows the Android time zone, and Teardown keeps its own vsync",
-      "summary": "1. Time zone stuck on GMT. The clock in Big Picture and the desktop showed GMT (\"Why can't I change SteamOS time? It's stuck on GMT\"). The session sets TZ to the Android zone, but the runtime's /etc/localtime is Ubuntu's default link to Etc/UTC and there is no /etc/timezone. The Steam client's browser engine and other programs read the system zone, not TZ.\n2. Teardown frame rate. After Droid-Deck/DroidDeck#1715 set vblankmode=0 for all games, Teardown no longer kept to 60 Hz, and capping it through Steam halved it to 30 fps. Teardown turns on its own vsync, which vblankmode=0 overrides.",
-      "commit": "02ae739d3b9f2a196ce908ad8c97c4d55b0ecae5",
-      "pr": 1790,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793312118000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1790",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1790-02ae739.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1790/DroidDeck-PR.1790-02ae739.apk",
-          "size": 76067902,
-          "sha256": "b50cfed581af580c0961b0b3bff570030b609e73e80819814c7705f4108aa1fa",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1790-02ae739-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1790/DroidDeck-PR.1790-02ae739-pubg.apk",
-          "size": 76067902,
-          "sha256": "e40920260b02966d546ef4f02779ea20b34a276b9e426f54bc009a69e016eea8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1790-02ae739-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1790/DroidDeck-PR.1790-02ae739-antutu.apk",
-          "size": 76067902,
-          "sha256": "6a8950651b7373d836fb97fbfe94d9b94c155d386e6cf2515745f4e28a2152bd",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1790-02ae739-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1790/DroidDeck-PR.1790-02ae739-ludashi.apk",
-          "size": 76067902,
-          "sha256": "11378754ce0b04fe906816226caa3a798deeacdd869ae71e117669ce913ba112",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
