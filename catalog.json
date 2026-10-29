@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793244174365,
+  "generatedAt": 1793245566334,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1747",
+      "title": "feat: art-first store cards",
+      "summary": "\u2022 Store catalog cards (shelves and grid) use the same art-only card as the Library: name and price/size on a slim fade over the art, status chip in the corner, download bar on top.\n\u2022 The Library's art card is now a shared ArtCard, so both pages stay in step. The old label-strip CardFace is removed.\n\u2022 The Display menu (card size, show title, show size) is on the store page header too and shares the Library's saved settings. Size also controls price on store cards.\n\u2022 Store card width follows the Display size setting.",
+      "commit": "af843a9040aacc3ce33d51563a3f611443220f42",
+      "pr": 1747,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793245493000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1747",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1747-af843a9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1747/DroidDeck-PR.1747-af843a9.apk",
+          "size": 75390949,
+          "sha256": "93178f9a1a1929e04ea66f214c0866806226f7fbb075184e70b024a8926323d7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1747-af843a9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1747/DroidDeck-PR.1747-af843a9-pubg.apk",
+          "size": 75390949,
+          "sha256": "a1d927b32b8780cde2b0b0ca465d3426b0c07d5524ce8161f6386b1390b5f78d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1747-af843a9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1747/DroidDeck-PR.1747-af843a9-antutu.apk",
+          "size": 75390949,
+          "sha256": "8af83fea540de9c6cafdc05ef2e739607bbae9360b6e6e78b385837f449b4152",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1747-af843a9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1747/DroidDeck-PR.1747-af843a9-ludashi.apk",
+          "size": 75390949,
+          "sha256": "108fed6be9c9b5e127dfaf00e3be997d9b6f1a621dcbeeed3c040d8b04793091",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1733",
       "title": "Move the Linux runtime to Ubuntu 26.04 LTS with a separate Kubuntu desktop",
