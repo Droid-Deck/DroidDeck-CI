@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793232571859,
+  "generatedAt": 1793232714017,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1733",
+      "title": "Move the Linux runtime to Ubuntu 26.04 LTS with a separate Kubuntu desktop",
+      "summary": "Replaces the Arch Linux ARM runtime with Ubuntu 26.04 LTS (arm64), with Kubuntu's Plasma desktop as a separate download. Builds on #1688 (its desktop and touch fixes carry over) and includes #1555's pointer and direct-touch fixes.",
+      "commit": "310ac180fc7773fb9321fc825d155529b2991edf",
+      "pr": 1733,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793232666000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1733",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1733-310ac18.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-310ac18.apk",
+          "size": 75776988,
+          "sha256": "da39614f342d6d0dc672f8834026330d961666be101944928a1cf8f738ae00f4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1733-310ac18-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-310ac18-pubg.apk",
+          "size": 75776988,
+          "sha256": "2e477131a5d666e6fa6d7d11a4865db632a52d1fe3f4d5ccb1225d29c60ae123",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1733-310ac18-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-310ac18-antutu.apk",
+          "size": 75776988,
+          "sha256": "e77c122ce5b6140c387055d0736d4ab13607a61fe12d5d6f29099cac8cd420d2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1733-310ac18-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-310ac18-ludashi.apk",
+          "size": 75776988,
+          "sha256": "38d09753bf39f8034255e02cbfb1bba6bd687706eb1247bd7b15695428c0b06e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1740",
       "title": "feat: add maintenance for other game stores",
       "summary": "Installed games outside GOG lacked a consistent maintenance workflow. This adds metadata-only update checks and a compact Maintenance menu, pins queued targets to their existing installation folder, and preserves installation settings through maintenance and recovery.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-ef1221c-ludashi.apk",
           "size": 75259877,
           "sha256": "1e8a33cda962720bc8a676cd604eeb3d9699de561df55ae93fad849ad8cf4cb9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1733",
-      "title": "Move the Linux runtime to Ubuntu 26.04 LTS with a separate Kubuntu desktop",
-      "summary": "Replaces the Arch Linux ARM runtime with Ubuntu 26.04 LTS (arm64), with Kubuntu's Plasma desktop as a separate download. Builds on #1688 (its desktop and touch fixes carry over) and includes #1555's pointer and direct-touch fixes.",
-      "commit": "ce35f73fd4582f62acc08945ac14f6c2545ed66d",
-      "pr": 1733,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793225417000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1733",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1733-ce35f73.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-ce35f73.apk",
-          "size": 75748228,
-          "sha256": "50dcec3724c8025388fe6039a54022f8436e12fb350c995d490a87ab61705360",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1733-ce35f73-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-ce35f73-pubg.apk",
-          "size": 75748228,
-          "sha256": "effdfa58ae32c0a38661008f8be5e73ba07f51b856142c639e11e3bb6756f00c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1733-ce35f73-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-ce35f73-antutu.apk",
-          "size": 75748228,
-          "sha256": "46fd38f6e065c4e8a09e250a6f5ea06161ecc63fd2e1e63bdedd7e584f461fdf",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1733-ce35f73-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1733/DroidDeck-PR.1733-ce35f73-ludashi.apk",
-          "size": 75748228,
-          "sha256": "140fe3f9b22e3cc701a73fe48f8083930a5d39f21f569ac07aff07660a48ff5b",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
