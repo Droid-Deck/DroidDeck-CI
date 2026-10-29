@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793266831299,
+  "generatedAt": 1793267349411,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1757",
+      "title": "perf(fex): answer raw stat, readlink and statx syscalls through the proot fast path",
+      "summary": "FEX issues most of its path lookups as raw syscall() calls (newfstatat, readlinkat, statx) rather than through the libc wrappers. The session preload already routes raw openat, openat2 and execveat into the proot fast path, but these three still fell through to ptrace, so every one of them cost a full tracer round trip.",
+      "commit": "8e49ec6b28afb8305aeaa50cdb3f698663aa9068",
+      "pr": 1757,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793267263000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1757",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1757-8e49ec6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-8e49ec6.apk",
+          "size": 75419621,
+          "sha256": "7aaed21ab1e18317060dc0feb43f2684f7f2f1c83ff0c2373260ca7a08b3945f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1757-8e49ec6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-8e49ec6-pubg.apk",
+          "size": 75419621,
+          "sha256": "f7c8e9ff1b6c4fe4544d49a86141d6befda0529814926bd97495e4984e5340fb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1757-8e49ec6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-8e49ec6-antutu.apk",
+          "size": 75419621,
+          "sha256": "41ed2af5a809437d4d1d20203224b9628ce3be4158b82031278ed036cf621079",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1757-8e49ec6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-8e49ec6-ludashi.apk",
+          "size": 75419621,
+          "sha256": "6ccc133b1e3dfc2e8d1d54eb91d8c1000a5b52c5d6b8999f4287c2133f92e082",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1048",
       "title": "fix: a recreated launcher screen keeps running installs and save work busy",
