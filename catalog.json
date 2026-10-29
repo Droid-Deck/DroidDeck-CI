@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793310770442,
+  "generatedAt": 1793311532126,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-001ec02",
-    "title": "chore: bump version to 0.6.7 (16)",
-    "summary": "\u2022 Bumps versionName to 0.6.7 and versionCode to 16 in app/build.gradle, ready for the 0.6.7 release.\n\u2022 Brings the 0.6.7 release notes up to date with the seven pull requests merged since they were written (#1764, #1767, #1768, #1772, #1773, #1775, #1781), and updates the pull request and contributor counts.",
-    "commit": "001ec02a175b094c36df0b4ba5f9c0e42c951e5b",
+    "tag": "main-b726e19",
+    "title": "Keep Windows components across runtime updates and reinstall lost ones",
+    "summary": "After the runtime update, games that needed Windows components (DirectX, VC++ runtimes, XAudio, PhysX and others) stopped working. The component store at /opt/droiddeck/wincomponents lives inside the runtime, so it was not carried over to the new one. On the next launch, droiddeck-wincomponents saw that the picked components were missing and removed the DLLs they had placed in each game's pref",
+    "commit": "b726e19fa4c6e5fcdf7706addcf059c84ebf0a04",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793302476000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-001ec02",
+    "publishedAt": 1793311439000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b726e19",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-001ec02.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-001ec02/DroidDeck-main-001ec02.apk",
+        "name": "DroidDeck-main-b726e19.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b726e19/DroidDeck-main-b726e19.apk",
         "size": 76067902,
-        "sha256": "633876d58445fd7d026e6480271a12453e05bc37510f23cca1aa1898dfffe58c",
+        "sha256": "741afd8e0254885bc8d7a94edd2bd0809f85bd9719de40f414848ca06ff62600",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-001ec02-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-001ec02/DroidDeck-main-001ec02-pubg.apk",
+        "name": "DroidDeck-main-b726e19-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b726e19/DroidDeck-main-b726e19-pubg.apk",
         "size": 76067902,
-        "sha256": "dd6889383db38782b37ad7de60f439342f22f6cb8a76f555cea19b6686154c15",
+        "sha256": "4712885615079e5812afb9790b86d3e420de0cc9057b58992e79825027b5a03c",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-001ec02-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-001ec02/DroidDeck-main-001ec02-antutu.apk",
+        "name": "DroidDeck-main-b726e19-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b726e19/DroidDeck-main-b726e19-antutu.apk",
         "size": 76067902,
-        "sha256": "1f0b8e3c5e25aeb3d3e614e6c749b03ff4e848b643313716f889bec9f2c49894",
+        "sha256": "fd3c65ac85c936133c4a6883e719ea4c9bde037e6b7832c2359f036e1b5571e8",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-001ec02-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-001ec02/DroidDeck-main-001ec02-ludashi.apk",
+        "name": "DroidDeck-main-b726e19-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b726e19/DroidDeck-main-b726e19-ludashi.apk",
         "size": 76067902,
-        "sha256": "bc8f4450ea6539e198f5eb93c317e82425e9addbc71643f66f9a244cf3b6a265",
+        "sha256": "7fb2a902753f65a89b2c04f83cea0ea6508773a35dc68c19df471d7f80614866",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b726e19fa4c6e5fcdf7706addcf059c84ebf0a04",
+      "title": "Keep Windows components across runtime updates and reinstall lost ones",
+      "summary": "After the runtime update, games that needed Windows components (DirectX, VC++ runtimes, XAudio, PhysX and others) stopped working. The component store at /opt/droiddeck/wincomponents lives inside the runtime, so it was not carried over to the new one. On the next launch, droiddeck-wincomponents saw that the picked components were missing and removed the DLLs they had placed in each game's pref",
+      "publishedAt": 1793311439000
+    },
     {
       "commit": "001ec02a175b094c36df0b4ba5f9c0e42c951e5b",
       "title": "chore: bump version to 0.6.7 (16)",
@@ -155,12 +161,6 @@
       "title": "fix(storage): stack the summary card in narrow panes",
       "summary": "On narrow portrait screens the Storage summary card kept its side-by-side layout, so the 170-210dp 'Safe to free now' panel squeezed the usage text to a few characters per line. Narrow panes now stack the usage block above a divider and the clean-up panel.",
       "publishedAt": 1793244101000
-    },
-    {
-      "commit": "0516d023fa03362e5a34b5436fbda5f6008d4d4f",
-      "title": "feat: art-first library cards with a display menu",
-      "summary": "\u2022 Library cards are now art only. The label strip, the per-card store badge (kept on the All tab) and the not-installed dimming are gone.\n\u2022 Name and size sit on a slim fade over the bottom of the art, so touch-only devices still see them. The focused card expands to two lines.\n\u2022 Art is never cropped for near-matching shapes. Ultra-wide banners (GOG, Steam) fill the wide card by trimming the far ed",
-      "publishedAt": 1793242623000
     }
   ],
   "tests": [
