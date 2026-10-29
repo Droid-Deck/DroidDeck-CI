@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793294347340,
+  "generatedAt": 1793300756443,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1781",
+      "title": "fix(desktop): let desktop apps save read-only game files, and make game libraries writable",
+      "summary": "A user could not save FALLOUT.INI from Kate in desktop mode. The game is Fallout: New Vegas from the GOG store, and the file is in its Proton prefix. Kate reported:",
+      "commit": "ac29486fc08c09249743635a9399ffed54daa716",
+      "pr": 1781,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793300672000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1781",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1781-ac29486.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1781/DroidDeck-PR.1781-ac29486.apk",
+          "size": 76067902,
+          "sha256": "ed3c3361baa661ed4ae99bfc2c0148a41ea41946e699e23fbe5c42fd1a6e8f07",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1781-ac29486-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1781/DroidDeck-PR.1781-ac29486-pubg.apk",
+          "size": 76067902,
+          "sha256": "9560354d72275bcc30a4136b770f3eaf3b38f72dfc3fdc2586eee80324fe7761",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1781-ac29486-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1781/DroidDeck-PR.1781-ac29486-antutu.apk",
+          "size": 76067902,
+          "sha256": "6c291c90963a6a92c5355322e98e5677be32eae0a287bb0fa20cfa4ba54ded65",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1781-ac29486-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1781/DroidDeck-PR.1781-ac29486-ludashi.apk",
+          "size": 76067902,
+          "sha256": "4b74a8d34cf788ee2b024fe93fcc5178a794aa867b7d6908006a72e78a63dc12",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1778",
       "title": "feat: show the DroidDeck D mark as the fastfetch logo",
