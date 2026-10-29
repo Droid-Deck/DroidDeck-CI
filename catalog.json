@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793289501085,
+  "generatedAt": 1793290733110,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3092363",
-    "title": "fix: remove performance HUD detail text",
-    "summary": "Removes the \"Frame rate, frame times and readings come from the same sources as Steam's performance overlay.\" text from the Performance HUD settings group, along with the now-unused string in all locales. Not built or tested on device.",
-    "commit": "30923635af049237c58a100fd572f1bc27c07c93",
+    "tag": "main-0258f10",
+    "title": "fix(desktop): start Electron and Chromium apps from apt without the sandbox, on X11",
+    "summary": "Electron and Chromium apps installed on the Ubuntu desktop as .deb packages close right after they start. Examples are VS Code, Discord, Obsidian, Signal and Google Chrome.",
+    "commit": "0258f10df0542d9273cc654c90d01ba24f887599",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793285552000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3092363",
+    "publishedAt": 1793290666000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0258f10",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3092363.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3092363/DroidDeck-main-3092363.apk",
+        "name": "DroidDeck-main-0258f10.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0258f10/DroidDeck-main-0258f10.apk",
         "size": 76063708,
-        "sha256": "74232516f32572fb12d63cb1992c76155a1dd31ab736af25dc530136230414a1",
+        "sha256": "96e0552084542669d380f74d75e89c4f1bda31ae38488be266a6a3bd3491d461",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3092363-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3092363/DroidDeck-main-3092363-pubg.apk",
+        "name": "DroidDeck-main-0258f10-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0258f10/DroidDeck-main-0258f10-pubg.apk",
         "size": 76063708,
-        "sha256": "fefd69dca868c76c9add2446f7e5f6b1a6fb10c4aa8798202cdb60fe20f9bd7a",
+        "sha256": "a9d61c4f6a49db76cc05c4c80667b5f728670bdb5ff2cde81604cb7bb77dc1b3",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3092363-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3092363/DroidDeck-main-3092363-antutu.apk",
+        "name": "DroidDeck-main-0258f10-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0258f10/DroidDeck-main-0258f10-antutu.apk",
         "size": 76063708,
-        "sha256": "bfb8c5ba68cd5c295e48f978963e81e9899035665594d195a34431b8a9f29f3e",
+        "sha256": "3b23202c49e7d3a59d3f533bdf36ea2d978f8982cf6ef822760dc362c0c1c270",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3092363-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3092363/DroidDeck-main-3092363-ludashi.apk",
+        "name": "DroidDeck-main-0258f10-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0258f10/DroidDeck-main-0258f10-ludashi.apk",
         "size": 76063708,
-        "sha256": "6f2a93fe030599556e3571043c2baed01f1c833ad8b5fd38a9f9da74c1701170",
+        "sha256": "3ab8a25f37546cc069a51aeae4d5a3311949dd350c7d8cc2b9d5b915a396d2d0",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0258f10df0542d9273cc654c90d01ba24f887599",
+      "title": "fix(desktop): start Electron and Chromium apps from apt without the sandbox, on X11",
+      "summary": "Electron and Chromium apps installed on the Ubuntu desktop as .deb packages close right after they start. Examples are VS Code, Discord, Obsidian, Signal and Google Chrome.",
+      "publishedAt": 1793290666000
+    },
     {
       "commit": "30923635af049237c58a100fd572f1bc27c07c93",
       "title": "fix: remove performance HUD detail text",
@@ -155,12 +161,6 @@
       "title": "Update Xbox backend to 0.2.12",
       "summary": "Update the pinned Nexus backend from 0.2.8 to 0.2.12 and rebase the existing DroidDeck patches for credential transport, launch views, and cloud-token support.",
       "publishedAt": 1793233635000
-    },
-    {
-      "commit": "87572a7f9138328d3deaf12058e0e02f58c7fdf5",
-      "title": "feat: game page with art backdrop and frosted controls",
-      "summary": "The game page (Library and Stores) now uses the game's art as the page background, with frosted capsules for the controls, in place of the boxed hero card.",
-      "publishedAt": 1793231373000
     }
   ],
   "tests": [
