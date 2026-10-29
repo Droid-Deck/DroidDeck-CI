@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793311532126,
+  "generatedAt": 1793311777637,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1789",
+      "title": "Launch frontend game links without a tap on dual-screen devices",
+      "summary": "Since the dual-screen launcher panel landed (Droid-Deck/DroidDeck#1734), launching a game from a frontend on a dual-screen device stalls:",
+      "commit": "9fc1611a965f98b9814b77e2c5640729501fddfd",
+      "pr": 1789,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793311716000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1789",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1789-9fc1611.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-9fc1611.apk",
+          "size": 76067902,
+          "sha256": "0e2868dce97098479cd45a2284f92c4095562e8bd94bafe042eb50431e9b3f09",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1789-9fc1611-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-9fc1611-pubg.apk",
+          "size": 76067902,
+          "sha256": "7e586d73ad360ddd6f6407aeafb72f15e96b0987051a37d18689b64d2d3e39c5",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1789-9fc1611-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-9fc1611-antutu.apk",
+          "size": 76067902,
+          "sha256": "e7e4576a6a7c83fd95b4391567de7bd3724823a58bc5553dafaa9b6295c4d44c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1789-9fc1611-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1789/DroidDeck-PR.1789-9fc1611-ludashi.apk",
+          "size": 76067902,
+          "sha256": "8f21f4dfea201c644814a433d16e546dba7d3d66b35263d10c893fc46777c2ff",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1787",
       "title": "Update the Linux runtime by itself when a new one is out",
