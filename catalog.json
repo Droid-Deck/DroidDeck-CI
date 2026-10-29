@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793313653552,
+  "generatedAt": 1793313992421,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1791",
+      "title": "fix: Windows installs to Android storage no longer ask for an administrator",
+      "summary": "Installing a Battle.net game (reported with WoW) to a folder on Android storage (Z:, a microSD card or a USB SSD such as a Samsung T9) fails with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841). Installing to C: works. Symlinks don't help. Other stores that check folder permissions can hit the same thing.",
+      "commit": "9ea8a4db3d23a95e50beff94d074498850d14a11",
+      "pr": 1791,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793313917000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1791",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1791-9ea8a4d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1791/DroidDeck-PR.1791-9ea8a4d.apk",
+          "size": 76067902,
+          "sha256": "7671086d4567f10615507f25fd943829ff8be144cbc408513e7b8ee772344438",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1791-9ea8a4d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1791/DroidDeck-PR.1791-9ea8a4d-pubg.apk",
+          "size": 76067902,
+          "sha256": "a89ec1b2d7cd9d39f364d4b11501ddb46a0d5f819874fbedc54ba91e0d7da118",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1791-9ea8a4d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1791/DroidDeck-PR.1791-9ea8a4d-antutu.apk",
+          "size": 76067902,
+          "sha256": "855d7423b50dca2b3c1f828d65068d5ebd42dd0f76ee81c1c2dd72a47e4b2dc6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1791-9ea8a4d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1791/DroidDeck-PR.1791-9ea8a4d-ludashi.apk",
+          "size": 76067902,
+          "sha256": "3808f4c78095493d8ecde12c45dc38a234c41b18aa0f95dd03d9d6b7110da83a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1788",
       "title": "Windows components: restore bundle parts, wait for restores and keep older picks",
