@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793264915456,
+  "generatedAt": 1793266831299,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1048",
+      "title": "fix: a recreated launcher screen keeps running installs and save work busy",
+      "summary": "After the launcher screen is recreated (a language change, a settings reset, or a configuration change it doesn't handle), work that is still running stays marked busy. It is no longer possible to start a session or remove the Linux runtime while that work is writing into it.",
+      "commit": "2a793ca0bc62fa385e3e9ad031555cefec533623",
+      "pr": 1048,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793266776000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1048",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1048-2a793ca.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-2a793ca.apk",
+          "size": 75423717,
+          "sha256": "38ec901ac26df69bda94ec722a5afedd361a89d5b3296928d240b10bafa8d12d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1048-2a793ca-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-2a793ca-pubg.apk",
+          "size": 75423717,
+          "sha256": "1952bf6eeb6e3f64fde638e55379a8b86b00d57e65efb96fbae1f023d9c01348",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1048-2a793ca-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-2a793ca-antutu.apk",
+          "size": 75423717,
+          "sha256": "0314c8d01920fc97de2d8e7b627a7640f15a8c6474186a693f56c1af578e1fe6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1048-2a793ca-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-2a793ca-ludashi.apk",
+          "size": 75423717,
+          "sha256": "3d197ea26e8dd7656dde7313ddbca163a8b12ddeebce2d81db5d1e94c20cff7b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1024",
       "title": "fix: a failing agent environment no longer blocks session start",
@@ -550,55 +599,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-953/DroidDeck-PR.953-354ff3b-ludashi.apk",
           "size": 74993371,
           "sha256": "55b12d62d90705c2d4c4f1c499f3e115c6df726598e943bec519af8d03a0e90b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1048",
-      "title": "fix: a recreated launcher screen keeps running installs and save work busy",
-      "summary": "\ufeffAfter the launcher screen is recreated (a language change, a settings reset, or a configuration change it doesn't handle), work that is still running stays marked busy. It is no longer possible to start a session or remove the Linux runtime while that work is writing into it.",
-      "commit": "9bee46aa65a361b738d930d9c41b0af33528d556",
-      "pr": 1048,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793135937000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1048",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1048-9bee46a.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-9bee46a.apk",
-          "size": 74993371,
-          "sha256": "e67642754975b4bf6db15bd4467e8fbaa50bc23f7490ac8c6a83b4185090f0af",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1048-9bee46a-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-9bee46a-pubg.apk",
-          "size": 74993371,
-          "sha256": "db6bda3e0b56ad5f9e742a7043b09c8b50163d05740a01a98fc081541c756111",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1048-9bee46a-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-9bee46a-antutu.apk",
-          "size": 74993371,
-          "sha256": "c9ef7a0b56edab0ba9c49a573ec5c69fa6c911ebf8a17a25cd49249f3ed5ef7f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1048-9bee46a-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1048/DroidDeck-PR.1048-9bee46a-ludashi.apk",
-          "size": 74993371,
-          "sha256": "190b4c22a8ccf80b27882edad1c8a2a36b7c0131199d038d7dfe9399482285fc",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
