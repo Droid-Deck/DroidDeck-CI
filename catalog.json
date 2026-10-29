@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793271702901,
+  "generatedAt": 1793271753432,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -501,55 +501,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1749/DroidDeck-PR.1749-2fd5509-ludashi.apk",
           "size": 75390949,
           "sha256": "481f3c2a4a24b1c73b7153f23464bad46b401e2394a26e53175534f202f5ab10",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1750",
-      "title": "fix: smooth grid scrolling when focus moves past the visible rows",
-      "summary": "\u2022 Pressing Down from the bottom-most visible card in the Library or a store grid used to jump the whole page so the next row sat at the very top of the screen. The row was not composed yet, so the handler fell back to scrollToItem, which pins the target to the top.\n\u2022 Now the grid scrolls exactly one row (a short tween) and focus is requested at the same time, so the focus ring tracks the card while the page slides. Up works the same way. scrollToItem stays as a fallback if the row still is not composed afterwards.\n\u2022 Applies to the Library grid and the store catalog grid; both share the new LazyGridState.revealRow helper.",
-      "commit": "f244e284ad1e9e69084fa24820a18211fb7bf19e",
-      "pr": 1750,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793247169000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1750",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1750-f244e28.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1750/DroidDeck-PR.1750-f244e28.apk",
-          "size": 75390949,
-          "sha256": "54399dfc9140b9040bbf586abc3f2ea2b6d6833801fcc186d84d388ac8722e64",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1750-f244e28-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1750/DroidDeck-PR.1750-f244e28-pubg.apk",
-          "size": 75390949,
-          "sha256": "545412e46e593b92132f29c9abde69f623df77afd64d3c625335afd9aca8ea06",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1750-f244e28-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1750/DroidDeck-PR.1750-f244e28-antutu.apk",
-          "size": 75390949,
-          "sha256": "3284b5dfcbaca34c7ab1fa43e8ffed8d4d84412c5433bf96cdd9753b88ddfaf5",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1750-f244e28-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1750/DroidDeck-PR.1750-f244e28-ludashi.apk",
-          "size": 75390949,
-          "sha256": "a4c5a1a7ac294f17f120cd0cdcad3dba2d336d20fc22f8582d5581ce6704b8c0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
