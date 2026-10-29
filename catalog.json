@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793254478727,
+  "generatedAt": 1793264915456,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1024",
+      "title": "fix: a failing agent environment no longer blocks session start",
+      "summary": "Sessions now start even if the agent environment state can't be read or written.",
+      "commit": "6030afbf9adbf7253ccbbcf6106873abd13b7cf2",
+      "pr": 1024,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793264835000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1024",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1024-6030afb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1024/DroidDeck-PR.1024-6030afb.apk",
+          "size": 75419621,
+          "sha256": "39c3d131f424f71cac8137a99eec96a326c4f925b4319a659d837356f134426c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1024-6030afb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1024/DroidDeck-PR.1024-6030afb-pubg.apk",
+          "size": 75419621,
+          "sha256": "bbc6f61cb6d2190d19d9a87d147ffab6a32450a94f1a1a7a4dfe8e58ccb8640e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1024-6030afb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1024/DroidDeck-PR.1024-6030afb-antutu.apk",
+          "size": 75419621,
+          "sha256": "92b3ec3ac5d1179f1e40cb10d61afa33c2303b8897da25489b24da0481ca5f7e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1024-6030afb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1024/DroidDeck-PR.1024-6030afb-ludashi.apk",
+          "size": 75419621,
+          "sha256": "19476db8a7a457be5bdbcf9e03ec6527cfc486b92d47079463e91ede2a4a315c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1754",
       "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
@@ -452,55 +501,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-ef1221c-ludashi.apk",
           "size": 75259877,
           "sha256": "1e8a33cda962720bc8a676cd604eeb3d9699de561df55ae93fad849ad8cf4cb9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1024",
-      "title": "fix: a failing agent environment no longer blocks session start",
-      "summary": "Sessions now start even if the agent environment state can't be read or written.",
-      "commit": "e7a588efc84b226043325532873532800626bc6b",
-      "pr": 1024,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793137879000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1024",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1024-e7a588e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1024/DroidDeck-PR.1024-e7a588e.apk",
-          "size": 74993371,
-          "sha256": "697211b052d21388aca0ac3e2f2611001a39de7c8c5218c0d94591097b69ab56",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1024-e7a588e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1024/DroidDeck-PR.1024-e7a588e-pubg.apk",
-          "size": 74993371,
-          "sha256": "fa1e79d00b3d2b984cadc6ab2728cf60310c4acd765a0f21e59d449832f517d9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1024-e7a588e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1024/DroidDeck-PR.1024-e7a588e-antutu.apk",
-          "size": 74993371,
-          "sha256": "d2384db6072ad2694d9a99f6ecc92f9c7c0fb156e060cf75599b5bade6ff65c4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1024-e7a588e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1024/DroidDeck-PR.1024-e7a588e-ludashi.apk",
-          "size": 74993371,
-          "sha256": "efbc9bca0d67a30702df91013996d49d7b8ddc0138a1e446d2ead9ca94985a54",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
