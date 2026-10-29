@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793247235812,
+  "generatedAt": 1793247574412,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1749",
+      "title": "feat: setting to hide sidebar labels",
+      "summary": "\u2022 New Setup > Launcher > Sidebar labels toggle. It is off by default, so new installs and anyone who has not chosen get the slim icon-only rail. Turning it on shows names under the icons.\n\u2022 Saved in prefs, applied live, and cleared by Reset all settings.",
+      "commit": "2fd5509cb55edec2f8c933d0c2448b40b094412e",
+      "pr": 1749,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793247506000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1749",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1749-2fd5509.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1749/DroidDeck-PR.1749-2fd5509.apk",
+          "size": 75390949,
+          "sha256": "15ee19648aa0110e250d87ccaa9cfb27088b8add4286170c052118dc9d4069ac",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1749-2fd5509-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1749/DroidDeck-PR.1749-2fd5509-pubg.apk",
+          "size": 75390949,
+          "sha256": "83c086ab68ba142ccad839db8704dd7146e9c97df90a14bfd4ebe286d23416b1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1749-2fd5509-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1749/DroidDeck-PR.1749-2fd5509-antutu.apk",
+          "size": 75390949,
+          "sha256": "56dbf57181033f4f7dde519b7a3a0394c8eed051484f7f7f9c6a4e2774c45d50",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1749-2fd5509-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1749/DroidDeck-PR.1749-2fd5509-ludashi.apk",
+          "size": 75390949,
+          "sha256": "481f3c2a4a24b1c73b7153f23464bad46b401e2394a26e53175534f202f5ab10",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1750",
       "title": "fix: smooth grid scrolling when focus moves past the visible rows",
       "summary": "\u2022 Pressing Down from the bottom-most visible card in the Library or a store grid used to jump the whole page so the next row sat at the very top of the screen. The row was not composed yet, so the handler fell back to scrollToItem, which pins the target to the top.\n\u2022 Now the grid scrolls exactly one row (a short tween) and focus is requested at the same time, so the focus ring tracks the card while the page slides. Up works the same way. scrollToItem stays as a fallback if the row still is not composed afterwards.\n\u2022 Applies to the Library grid and the store catalog grid; both share the new LazyGridState.revealRow helper.",
@@ -207,104 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1750/DroidDeck-PR.1750-f244e28-ludashi.apk",
           "size": 75390949,
           "sha256": "a4c5a1a7ac294f17f120cd0cdcad3dba2d336d20fc22f8582d5581ce6704b8c0",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1746",
-      "title": "Warn when a game library drive is linked at USB 2.0 speed",
-      "summary": "When a drive that DroidDeck uses as a game library (the Second library / game storage volume, or a Games folder on an external drive) is linked slower than USB 3 (5 Gbps), DroidDeck shows a warning in the usual app dialog style:",
-      "commit": "a7db0b1d886ff6d13a3de494ce105322a154554c",
-      "pr": 1746,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793245839000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1746",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1746-a7db0b1.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a7db0b1.apk",
-          "size": 75419621,
-          "sha256": "d9380d2080a7d532ba585c056982e6f34ce98ec373e616a529192b576e76cd2f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1746-a7db0b1-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a7db0b1-pubg.apk",
-          "size": 75419621,
-          "sha256": "9a277e802c7196dc7ff52e59ac3a8cd58190935f3e72736530f88cb9f0bf03c6",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1746-a7db0b1-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a7db0b1-antutu.apk",
-          "size": 75419621,
-          "sha256": "b89131f8420e45892e0d9c7b35ebf9eb9fa44744f4f729b5c4d699df94ae8e3f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1746-a7db0b1-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1746/DroidDeck-PR.1746-a7db0b1-ludashi.apk",
-          "size": 75419621,
-          "sha256": "2e3aa8e83e1012f7d12ff46d9b91371cffb4e1cb8c1e13297d8d49b807865d19",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1749",
-      "title": "feat: setting to hide sidebar labels",
-      "summary": "\u2022 New Setup > Launcher > Sidebar labels toggle (on by default). Turning it off uses the existing icon-only rail, so the sidebar slims down and the content area gets the width back.\n\u2022 Saved in prefs and applied live.",
-      "commit": "6871fb7179b5ece48395d2bfe01b24d2786b7ad7",
-      "pr": 1749,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793245607000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1749",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1749-6871fb7.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1749/DroidDeck-PR.1749-6871fb7.apk",
-          "size": 75390949,
-          "sha256": "641f256f1a18dbb686b4aa69e237566b5d944c0d8e094943d1a7df18a6fe2251",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1749-6871fb7-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1749/DroidDeck-PR.1749-6871fb7-pubg.apk",
-          "size": 75390949,
-          "sha256": "44ba39531983ca52b8efe6d1ce89837ad7119242c6549b489e5d2e687f193819",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1749-6871fb7-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1749/DroidDeck-PR.1749-6871fb7-antutu.apk",
-          "size": 75390949,
-          "sha256": "a88441bbc5150a1066530e8d8f7d1a2b5049ae8c26cbd3a4e5049be0db221498",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1749-6871fb7-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1749/DroidDeck-PR.1749-6871fb7-ludashi.apk",
-          "size": 75390949,
-          "sha256": "cc650a19f270c0e7e597124ce442ca3a2e4e24494f30296f8125f03f945a074d",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
