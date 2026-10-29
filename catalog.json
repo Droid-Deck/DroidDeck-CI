@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793315625325,
+  "generatedAt": 1793316574665,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3b9abf6",
-    "title": "Update the Linux runtime by itself when a new one is out",
-    "summary": "A new Linux runtime (for example ubuntu-r1-rc2, which fixes Steam on rc1) only installed when the user opened the runtime menu and pressed the button. Many users updated the app but kept running the old runtime, along with its bugs.",
-    "commit": "3b9abf63022e440906f4263a5c5c0901ab12de5a",
+    "tag": "main-31c943c",
+    "title": "fix: Windows installs to Android storage no longer ask for an administrator",
+    "summary": "Installing a Battle.net game (reported with WoW) to a folder on Android storage (Z:, a microSD card or a USB SSD such as a Samsung T9) fails with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841). Installing to C: works. Symlinks don't help. Other stores that check folder permissions can hit the same thing.",
+    "commit": "31c943c82aa722bdebc40744f5e3ba868059e26b",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793315287000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3b9abf6",
+    "publishedAt": 1793316518000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-31c943c",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3b9abf6.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3b9abf6/DroidDeck-main-3b9abf6.apk",
+        "name": "DroidDeck-main-31c943c.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-31c943c/DroidDeck-main-31c943c.apk",
         "size": 76071998,
-        "sha256": "cbf638a02e7cb0c775b09b0194544b413c12b663909d1fbe8e95edc3cfaa4929",
+        "sha256": "0690012a33bcace39e21e3c1cf7b3c9a7c7b7e1a66928f56dd463f131af38445",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3b9abf6-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3b9abf6/DroidDeck-main-3b9abf6-pubg.apk",
+        "name": "DroidDeck-main-31c943c-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-31c943c/DroidDeck-main-31c943c-pubg.apk",
         "size": 76071998,
-        "sha256": "220335e9e3479471c4fa0db47362599a9bf151911001ed51d5f666c26ae80c68",
+        "sha256": "72ee81f4d35e199bd96924e115ea009669beeb59f4f7cea81598f1fafd3520c1",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3b9abf6-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3b9abf6/DroidDeck-main-3b9abf6-antutu.apk",
+        "name": "DroidDeck-main-31c943c-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-31c943c/DroidDeck-main-31c943c-antutu.apk",
         "size": 76071998,
-        "sha256": "322a8e9f0d3dfe48ef0340de63d6f08177cd3b8b6e80865c22e55da86d954208",
+        "sha256": "97e43193edd66b44bfe79a3ee49e3a7faf8c64828d3d4d9f08a35ee69a437e9b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3b9abf6-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3b9abf6/DroidDeck-main-3b9abf6-ludashi.apk",
+        "name": "DroidDeck-main-31c943c-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-31c943c/DroidDeck-main-31c943c-ludashi.apk",
         "size": 76071998,
-        "sha256": "8ef651a8e2c701add9b408f86a59ca206526769631eec3702160d5784521e8a9",
+        "sha256": "3174974ae441ece4890769f81d6456c295af8ab6b60dcec2d34c939bcbf1daf4",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "31c943c82aa722bdebc40744f5e3ba868059e26b",
+      "title": "fix: Windows installs to Android storage no longer ask for an administrator",
+      "summary": "Installing a Battle.net game (reported with WoW) to a folder on Android storage (Z:, a microSD card or a USB SSD such as a Samsung T9) fails with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841). Installing to C: works. Symlinks don't help. Other stores that check folder permissions can hit the same thing.",
+      "publishedAt": 1793316518000
+    },
     {
       "commit": "3b9abf63022e440906f4263a5c5c0901ab12de5a",
       "title": "Update the Linux runtime by itself when a new one is out",
@@ -155,12 +161,6 @@
       "title": "Warn when a game library drive is linked at USB 2.0 speed",
       "summary": "When a drive that DroidDeck uses as a game library (the Second library / game storage volume, or a Games folder on an external drive) is linked slower than USB 3 (5 Gbps), DroidDeck shows a warning in the usual app dialog style:",
       "publishedAt": 1793248387000
-    },
-    {
-      "commit": "2410b8c67c459419e89f29ae1af88f7a8368628d",
-      "title": "feat: art-first store cards",
-      "summary": "\u2022 Store catalog cards (shelves and grid) use the same art-only card as the Library: name and price/size on a slim fade over the art, status chip in the corner, download bar on top.\n\u2022 The Library's art card is now a shared ArtCard, so both pages stay in step. The old label-strip CardFace is removed.\n\u2022 The Display menu (card size, show title, show size) is on the store page header too and shares the",
-      "publishedAt": 1793246290000
     }
   ],
   "tests": [
@@ -168,45 +168,45 @@
       "tag": "pr-1788",
       "title": "Windows components: restore bundle parts, wait for restores and keep older picks",
       "summary": "Follow-up to Droid-Deck/DroidDeck#1786, covering the review points raised after it was merged.",
-      "commit": "137f266bc1504b11aad299413443658e7cc805d6",
+      "commit": "e42d18fd475de110136b60150e0edab8be78b67c",
       "pr": 1788,
       "version": null,
       "versionCode": 16,
-      "publishedAt": 1793312429000,
+      "publishedAt": 1793316502000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1788",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1788-137f266.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1788/DroidDeck-PR.1788-137f266.apk",
-          "size": 76067902,
-          "sha256": "90ddfcedd18c64f5361689d0636ee2719098f532741c1cdfbe87c13c51b18753",
+          "name": "DroidDeck-PR.1788-e42d18f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1788/DroidDeck-PR.1788-e42d18f.apk",
+          "size": 76071998,
+          "sha256": "27f7ac7a4c64d4f26c500b801b8dec20483ac2c0deb1c727188f00ed69df1e45",
           "packageName": "com.droiddeck.launcher",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.tencent.ig": {
-          "name": "DroidDeck-PR.1788-137f266-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1788/DroidDeck-PR.1788-137f266-pubg.apk",
-          "size": 76067902,
-          "sha256": "436486acf5e4b0696c026ae3f440f165a87a620ae45310e857ad85177503541c",
+          "name": "DroidDeck-PR.1788-e42d18f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1788/DroidDeck-PR.1788-e42d18f-pubg.apk",
+          "size": 76071998,
+          "sha256": "768749f40538744e6a7a6fab8581927f1b617abd7074fb5227ea344234912b09",
           "packageName": "com.tencent.ig",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1788-137f266-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1788/DroidDeck-PR.1788-137f266-antutu.apk",
-          "size": 76067902,
-          "sha256": "177bdff8fe31e772d0dbbd81da025cd9cd344ddfed843f4689938af176097ed5",
+          "name": "DroidDeck-PR.1788-e42d18f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1788/DroidDeck-PR.1788-e42d18f-antutu.apk",
+          "size": 76071998,
+          "sha256": "e978668e0b5ba72809aa137e69478cc13ecdf440961cb8b875ee2f03e1849514",
           "packageName": "com.antutu.benchmark.full",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1788-137f266-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1788/DroidDeck-PR.1788-137f266-ludashi.apk",
-          "size": 76067902,
-          "sha256": "b34eadf8a3cd80aedc62e8b9b7db78c72f978700d690f57559f50443cd7f28aa",
+          "name": "DroidDeck-PR.1788-e42d18f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1788/DroidDeck-PR.1788-e42d18f-ludashi.apk",
+          "size": 76071998,
+          "sha256": "a8c694e3992104dbf8e3d7fc56d5ed1bc682670767be529ae4c698c135be1532",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
