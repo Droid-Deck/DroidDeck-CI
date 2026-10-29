@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793273340251,
+  "generatedAt": 1793274433907,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-d1bd23d",
-    "title": "Warn when a game library drive is linked at USB 2.0 speed",
-    "summary": "When a drive that DroidDeck uses as a game library (the Second library / game storage volume, or a Games folder on an external drive) is linked slower than USB 3 (5 Gbps), DroidDeck shows a warning in the usual app dialog style:",
-    "commit": "d1bd23df161de27520e05601f0ad71ab45f78a2c",
+    "tag": "main-e9e0186",
+    "title": "perf(fex): answer raw stat, readlink and statx syscalls through the proot fast path",
+    "summary": "FEX issues most of its path lookups as raw syscall() calls (newfstatat, readlinkat, statx) rather than through the libc wrappers. The session preload already routes raw openat, openat2 and execveat into the proot fast path, but these three still fell through to ptrace, so every one of them cost a full tracer round trip.",
+    "commit": "e9e0186e664a2a70901ef336836770850fde76fd",
     "pr": 0,
     "version": null,
     "versionCode": 15,
-    "publishedAt": 1793248387000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d1bd23d",
+    "publishedAt": 1793274355000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e9e0186",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-d1bd23d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d1bd23d/DroidDeck-main-d1bd23d.apk",
-        "size": 75419621,
-        "sha256": "38ab8d6ccb8062db65329f0eca2a60d1bd90fafa17732196bd1f20fe054ef26e",
+        "name": "DroidDeck-main-e9e0186.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e9e0186/DroidDeck-main-e9e0186.apk",
+        "size": 75423717,
+        "sha256": "7287a60e2b75dce4d92af5d0556212fb08fb39abf64ec456c7c25eb154be2b56",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-d1bd23d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d1bd23d/DroidDeck-main-d1bd23d-pubg.apk",
-        "size": 75419621,
-        "sha256": "6d749b9a987cd068470870e8dea6426a6980953d8207d00eb560b670634ca09c",
+        "name": "DroidDeck-main-e9e0186-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e9e0186/DroidDeck-main-e9e0186-pubg.apk",
+        "size": 75423717,
+        "sha256": "14b997e7a935f0912096371ba8ff91ed008875c1bfb198e4d9073fd1c291e821",
         "packageName": "com.tencent.ig",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-d1bd23d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d1bd23d/DroidDeck-main-d1bd23d-antutu.apk",
-        "size": 75419621,
-        "sha256": "9c1acdca9b1b813acdaadc0a9b7bda45a9c5d23eef21d2b6062cb86e0296aa20",
+        "name": "DroidDeck-main-e9e0186-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e9e0186/DroidDeck-main-e9e0186-antutu.apk",
+        "size": 75423717,
+        "sha256": "c25b00f58158cce78bcf253c8a63d7349488bf86cbdacc9514764a16a749c56c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-d1bd23d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d1bd23d/DroidDeck-main-d1bd23d-ludashi.apk",
-        "size": 75419621,
-        "sha256": "2ceccc0819edcc6d2dbcba3ec93ba01d975bb13df0d26264bf7009b647b41e25",
+        "name": "DroidDeck-main-e9e0186-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e9e0186/DroidDeck-main-e9e0186-ludashi.apk",
+        "size": 75423717,
+        "sha256": "8f74f363f3371698ba88e48dedcf1d3208d81aa917ea8c628c008abe49999035",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 15,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e9e0186e664a2a70901ef336836770850fde76fd",
+      "title": "perf(fex): answer raw stat, readlink and statx syscalls through the proot fast path",
+      "summary": "FEX issues most of its path lookups as raw syscall() calls (newfstatat, readlinkat, statx) rather than through the libc wrappers. The session preload already routes raw openat, openat2 and execveat into the proot fast path, but these three still fell through to ptrace, so every one of them cost a full tracer round trip.",
+      "publishedAt": 1793274355000
+    },
     {
       "commit": "d1bd23df161de27520e05601f0ad71ab45f78a2c",
       "title": "Warn when a game library drive is linked at USB 2.0 speed",
@@ -155,12 +161,6 @@
       "title": "ci: run unit tests in two parallel forks",
       "summary": "Halves the serial unit-test step. Forks were reverted earlier because tests shared process-wide state; this branch finds and fixes those.",
       "publishedAt": 1793224189000
-    },
-    {
-      "commit": "aef1f85aa9d579e24a1e3bd7c8dae2bd1a3fc84b",
-      "title": "ci: run store engine host tests in a parallel job",
-      "summary": "Moves the non-blocking cargo test for the store engines (25-39 s serial in the build job) into its own job that only needs the pinned source, so it overlaps the Gradle build. It stays non-gating as before (continue-on-error), with its own host-target cargo cache.",
-      "publishedAt": 1793221483000
     }
   ],
   "tests": [
