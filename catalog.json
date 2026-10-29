@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793267645183,
+  "generatedAt": 1793271702901,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-1757",
+      "title": "perf(fex): answer raw stat, readlink and statx syscalls through the proot fast path",
+      "summary": "FEX issues most of its path lookups as raw syscall() calls (newfstatat, readlinkat, statx) rather than through the libc wrappers. The session preload already routes raw openat, openat2 and execveat into the proot fast path, but these three still fell through to ptrace, so every one of them cost a full tracer round trip.",
+      "commit": "e48a129a5475fb89325734ac8e068bb42133062b",
+      "pr": 1757,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793271622000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1757",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1757-e48a129.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-e48a129.apk",
+          "size": 75419621,
+          "sha256": "3a325f5687624698565238480f73e1b53458363e9f906d4d0ade0481f2019570",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1757-e48a129-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-e48a129-pubg.apk",
+          "size": 75419621,
+          "sha256": "8bc514548c550f568905abb5ef0171f4eba5d430611ab35a172962bc848de87a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1757-e48a129-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-e48a129-antutu.apk",
+          "size": 75419621,
+          "sha256": "ccaea761ab207b9f5606046b359867ec1293c9b99621422130b0e693c081148b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1757-e48a129-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-e48a129-ludashi.apk",
+          "size": 75419621,
+          "sha256": "1042a9f409d589053007478548a5f271600a4c9715194cef5f1e7426ae3ac728",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1754",
+      "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
+      "summary": "not meant to be merged and is a debugging tool.",
+      "commit": "ed544ec379aaece147a04e987cc3a9ad22290dfd",
+      "pr": 1754,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793271621000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1754",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1754-ed544ec.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-ed544ec.apk",
+          "size": 75423717,
+          "sha256": "9aa9af37bed6fd85d09fc9b5a50d5b6c35cc023625bdd8bb64bee7e3cdbb8ac2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1754-ed544ec-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-ed544ec-pubg.apk",
+          "size": 75423717,
+          "sha256": "095fc834ce0e2e90300760f1bf738873f4f5f318bb8a4635ea71a3fb80c12272",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1754-ed544ec-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-ed544ec-antutu.apk",
+          "size": 75423717,
+          "sha256": "50570435e7774ce9c6b826f57d5495f79bb597b290330be0130d550962d5985f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1754-ed544ec-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-ed544ec-ludashi.apk",
+          "size": 75423717,
+          "sha256": "3696d958277a81c8863612584ccd6e7711a104a6eb59f23edc95958e730e1fe8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1150",
       "title": "feat(input): add native PS5 DualSense & DualSense Edge wireless/wired support",
       "summary": "",
@@ -207,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1150/DroidDeck-PR.1150-7ccc430-ludashi.apk",
           "size": 75513829,
           "sha256": "4513851fec38571f5df82df7edc79e13a52c0b5b06603cfaaf360fee01bfa037",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1757",
-      "title": "perf(fex): answer raw stat, readlink and statx syscalls through the proot fast path",
-      "summary": "FEX issues most of its path lookups as raw syscall() calls (newfstatat, readlinkat, statx) rather than through the libc wrappers. The session preload already routes raw openat, openat2 and execveat into the proot fast path, but these three still fell through to ptrace, so every one of them cost a full tracer round trip.",
-      "commit": "8e49ec6b28afb8305aeaa50cdb3f698663aa9068",
-      "pr": 1757,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793267263000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1757",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1757-8e49ec6.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-8e49ec6.apk",
-          "size": 75419621,
-          "sha256": "7aaed21ab1e18317060dc0feb43f2684f7f2f1c83ff0c2373260ca7a08b3945f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1757-8e49ec6-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-8e49ec6-pubg.apk",
-          "size": 75419621,
-          "sha256": "f7c8e9ff1b6c4fe4544d49a86141d6befda0529814926bd97495e4984e5340fb",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1757-8e49ec6-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-8e49ec6-antutu.apk",
-          "size": 75419621,
-          "sha256": "41ed2af5a809437d4d1d20203224b9628ce3be4158b82031278ed036cf621079",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1757-8e49ec6-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1757/DroidDeck-PR.1757-8e49ec6-ludashi.apk",
-          "size": 75419621,
-          "sha256": "6ccc133b1e3dfc2e8d1d54eb91d8c1000a5b52c5d6b8999f4287c2133f92e082",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -354,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1024/DroidDeck-PR.1024-6030afb-ludashi.apk",
           "size": 75419621,
           "sha256": "19476db8a7a457be5bdbcf9e03ec6527cfc486b92d47079463e91ede2a4a315c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1754",
-      "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
-      "summary": "not meant to be merged and is a debugging tool.",
-      "commit": "fb212eb933c2336c5925a4eb922d56c3e8a92e43",
-      "pr": 1754,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793254403000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1754",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1754-fb212eb.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-fb212eb.apk",
-          "size": 75423717,
-          "sha256": "053f2e73fa7e598fb43406653e1ff64b8c649599d46b4c0a70d0e05ea632c90d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1754-fb212eb-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-fb212eb-pubg.apk",
-          "size": 75423717,
-          "sha256": "fcdf62ea2eacff6aa6abbd44b5925ed4ecf9a841ef19708050a74cced282cf23",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1754-fb212eb-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-fb212eb-antutu.apk",
-          "size": 75423717,
-          "sha256": "3a007c5eb31988b63bda630f1832764296cba746000183f77646dc77e83dd563",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1754-fb212eb-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-fb212eb-ludashi.apk",
-          "size": 75423717,
-          "sha256": "669e8dad6cd7ff7b1b6dc1c7f87362effb89d8b30226b5ee114fe95fd4f20974",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
