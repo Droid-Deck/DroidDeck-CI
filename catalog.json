@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793302697993,
+  "generatedAt": 1793310770442,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1787",
+      "title": "Update the Linux runtime by itself when a new one is out",
+      "summary": "A new Linux runtime (for example ubuntu-r1-rc2, which fixes Steam on rc1) only installed when the user opened the runtime menu and pressed the button. Many users updated the app but kept running the old runtime, along with its bugs.",
+      "commit": "3160acf3ca15c1988b9135d93ff5aed371275e33",
+      "pr": 1787,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793310689000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1787",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1787-3160acf.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1787/DroidDeck-PR.1787-3160acf.apk",
+          "size": 76067902,
+          "sha256": "86b58f2b3b6c0693f1547cde669fd6a854a8fe383fc9c6f1caa34570f70b78a6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1787-3160acf-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1787/DroidDeck-PR.1787-3160acf-pubg.apk",
+          "size": 76067902,
+          "sha256": "6680508a7bd258c7f063083bbca05c4aa868f6f278840f27279ce9ab4d994c87",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1787-3160acf-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1787/DroidDeck-PR.1787-3160acf-antutu.apk",
+          "size": 76067902,
+          "sha256": "c3c6d2696bba8342ee993b2a0da068af09e8c466465f949978b58c8e5002b550",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1787-3160acf-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1787/DroidDeck-PR.1787-3160acf-ludashi.apk",
+          "size": 76067902,
+          "sha256": "ec46d5390d5e141f18a5acd869d22d47325cf728fef8456c99814f52f2674ac3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1778",
       "title": "feat: show the DroidDeck D mark as the fastfetch logo",
