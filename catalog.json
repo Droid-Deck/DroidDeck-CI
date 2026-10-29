@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793289161584,
+  "generatedAt": 1793289501085,
   "stable": {
     "tag": "0.6.0",
     "title": "DroidDeck 0.6.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1773",
+      "title": "fix: ship libxcb-keysyms1 in the Ubuntu runtime so DD-Turnip loads",
+      "summary": "On the Ubuntu 26.04 runtime (ubuntu-r1-rc1) Steam exits within a second of starting. The session log from an Adreno 840 device shows:",
+      "commit": "1acf9b7bc29d8116e2fe5117eb75a3f6691cadda",
+      "pr": 1773,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793289446000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1773",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1773-1acf9b7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1773/DroidDeck-PR.1773-1acf9b7.apk",
+          "size": 76063708,
+          "sha256": "303e415def1e92d25c056af212da7b38ea7edf1d9d2c5793edc86be050ca2754",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1773-1acf9b7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1773/DroidDeck-PR.1773-1acf9b7-pubg.apk",
+          "size": 76063708,
+          "sha256": "5399ae8f0c6664086775c8d0c780ba74f1b39fb98b8a4d0ec8718d3f40cb7611",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1773-1acf9b7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1773/DroidDeck-PR.1773-1acf9b7-antutu.apk",
+          "size": 76063708,
+          "sha256": "44e1cae96e21af0156655bf8e963035a45f3d3643003cbe88e5baceaf86b956f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1773-1acf9b7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1773/DroidDeck-PR.1773-1acf9b7-ludashi.apk",
+          "size": 76063708,
+          "sha256": "2948092a276ff709e7a1dacb9c6530a7f9609c6afedd6e8cfd444170fe8fd601",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1772",
       "title": "feat(desktop): one bottom panel with the system tray instead of a top bar",
