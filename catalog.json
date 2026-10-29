@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793315155356,
+  "generatedAt": 1793315361390,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b726e19",
-    "title": "Keep Windows components across runtime updates and reinstall lost ones",
-    "summary": "After the runtime update, games that needed Windows components (DirectX, VC++ runtimes, XAudio, PhysX and others) stopped working. The component store at /opt/droiddeck/wincomponents lives inside the runtime, so it was not carried over to the new one. On the next launch, droiddeck-wincomponents saw that the picked components were missing and removed the DLLs they had placed in each game's pref",
-    "commit": "b726e19fa4c6e5fcdf7706addcf059c84ebf0a04",
+    "tag": "main-3b9abf6",
+    "title": "Update the Linux runtime by itself when a new one is out",
+    "summary": "A new Linux runtime (for example ubuntu-r1-rc2, which fixes Steam on rc1) only installed when the user opened the runtime menu and pressed the button. Many users updated the app but kept running the old runtime, along with its bugs.",
+    "commit": "3b9abf63022e440906f4263a5c5c0901ab12de5a",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793311439000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b726e19",
+    "publishedAt": 1793315287000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3b9abf6",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b726e19.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b726e19/DroidDeck-main-b726e19.apk",
-        "size": 76067902,
-        "sha256": "741afd8e0254885bc8d7a94edd2bd0809f85bd9719de40f414848ca06ff62600",
+        "name": "DroidDeck-main-3b9abf6.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3b9abf6/DroidDeck-main-3b9abf6.apk",
+        "size": 76071998,
+        "sha256": "cbf638a02e7cb0c775b09b0194544b413c12b663909d1fbe8e95edc3cfaa4929",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b726e19-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b726e19/DroidDeck-main-b726e19-pubg.apk",
-        "size": 76067902,
-        "sha256": "4712885615079e5812afb9790b86d3e420de0cc9057b58992e79825027b5a03c",
+        "name": "DroidDeck-main-3b9abf6-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3b9abf6/DroidDeck-main-3b9abf6-pubg.apk",
+        "size": 76071998,
+        "sha256": "220335e9e3479471c4fa0db47362599a9bf151911001ed51d5f666c26ae80c68",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b726e19-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b726e19/DroidDeck-main-b726e19-antutu.apk",
-        "size": 76067902,
-        "sha256": "fd3c65ac85c936133c4a6883e719ea4c9bde037e6b7832c2359f036e1b5571e8",
+        "name": "DroidDeck-main-3b9abf6-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3b9abf6/DroidDeck-main-3b9abf6-antutu.apk",
+        "size": 76071998,
+        "sha256": "322a8e9f0d3dfe48ef0340de63d6f08177cd3b8b6e80865c22e55da86d954208",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b726e19-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b726e19/DroidDeck-main-b726e19-ludashi.apk",
-        "size": 76067902,
-        "sha256": "7fb2a902753f65a89b2c04f83cea0ea6508773a35dc68c19df471d7f80614866",
+        "name": "DroidDeck-main-3b9abf6-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3b9abf6/DroidDeck-main-3b9abf6-ludashi.apk",
+        "size": 76071998,
+        "sha256": "8ef651a8e2c701add9b408f86a59ca206526769631eec3702160d5784521e8a9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "3b9abf63022e440906f4263a5c5c0901ab12de5a",
+      "title": "Update the Linux runtime by itself when a new one is out",
+      "summary": "A new Linux runtime (for example ubuntu-r1-rc2, which fixes Steam on rc1) only installed when the user opened the runtime menu and pressed the button. Many users updated the app but kept running the old runtime, along with its bugs.",
+      "publishedAt": 1793315287000
+    },
     {
       "commit": "b726e19fa4c6e5fcdf7706addcf059c84ebf0a04",
       "title": "Keep Windows components across runtime updates and reinstall lost ones",
@@ -155,12 +161,6 @@
       "title": "feat: art-first store cards",
       "summary": "\u2022 Store catalog cards (shelves and grid) use the same art-only card as the Library: name and price/size on a slim fade over the art, status chip in the corner, download bar on top.\n\u2022 The Library's art card is now a shared ArtCard, so both pages stay in step. The old label-strip CardFace is removed.\n\u2022 The Display menu (card size, show title, show size) is on the store page header too and shares the",
       "publishedAt": 1793246290000
-    },
-    {
-      "commit": "64950099a3c05b876ba981e838eda6d8fcf811ec",
-      "title": "fix(storage): stack the summary card in narrow panes",
-      "summary": "On narrow portrait screens the Storage summary card kept its side-by-side layout, so the 170-210dp 'Safe to free now' panel squeezed the usage text to a few characters per line. Narrow panes now stack the usage block above a divider and the clean-up panel.",
-      "publishedAt": 1793244101000
     }
   ],
   "tests": [
