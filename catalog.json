@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793374082406,
+  "generatedAt": 1793374811807,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1840",
+      "title": "fix(dual-screen): keep the bottom-screen controls up while a game loads",
+      "summary": "On the Retroid Pocket Duo, pressing Play on a game made the bottom screen drop DroidDeck and show whatever Android app was behind it (Android Settings during testing) until the game drew its first frame. The trackpad came back only after that. For Xbox games the load includes Xodus preparing the package, so the gap lasts many seconds.",
+      "commit": "567b3fbb609139f43a7cf63e43bdd0bfce85f4f5",
+      "pr": 1840,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793374709000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1840",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1840-567b3fb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-567b3fb.apk",
+          "size": 76141630,
+          "sha256": "62cbbff69582d2f5f584540f5dcb706badd6c7ccd08387080445026076bb12d4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1840-567b3fb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-567b3fb-pubg.apk",
+          "size": 76141630,
+          "sha256": "7a51f8761d47e05733cc5b2e7c9cd9712068dc03d5a87a43eaf27710fb444991",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1840-567b3fb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-567b3fb-antutu.apk",
+          "size": 76141630,
+          "sha256": "0ec78613985adb73437462e18fde6965dc6e82ad51df8a7066facfcc155345ad",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1840-567b3fb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-567b3fb-ludashi.apk",
+          "size": 76141630,
+          "sha256": "c85de1a58b34fd153d59c559820d1406e833ac75edfaf582071e8af3865b8728",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1842",
       "title": "fix: a session in picture-in-picture draws at 30 fps instead of the full refresh",
       "summary": "Since #1727 made automatic picture-in-picture the default, pressing Home during a session leaves it running in a small window instead of suspending it. The window takes no input, but the session keeps drawing at its full rate. This is the largest heat and battery regression found in the 0.6.7 audit.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-8035604-ludashi.apk",
           "size": 76145726,
           "sha256": "94d0b9232e6ca8d4189b8f61ce2e93b1ecec97f75ffdfecb347d19f54aceedaf",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1840",
-      "title": "fix(dual-screen): keep the bottom-screen controls up while a game loads",
-      "summary": "On the Retroid Pocket Duo, pressing Play on a game made the bottom screen drop DroidDeck and show whatever Android app was behind it (Android Settings during testing) until the game drew its first frame. The trackpad came back only after that. For Xbox games the load includes Xodus preparing the package, so the gap lasts many seconds.",
-      "commit": "c4fa3ce63eefb7d10473a322e28878a91ee23c2e",
-      "pr": 1840,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793369595000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1840",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1840-c4fa3ce.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-c4fa3ce.apk",
-          "size": 76141630,
-          "sha256": "4519d7be8800f2bf84191d30a706a74602d7bbb1f63ef24ea5c9891c0087f5af",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1840-c4fa3ce-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-c4fa3ce-pubg.apk",
-          "size": 76141630,
-          "sha256": "a7c9f2e5313dd4557f2b5dc0ee19a64d90a93e8d7e69a0baeea7b02fec0926d9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1840-c4fa3ce-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-c4fa3ce-antutu.apk",
-          "size": 76141630,
-          "sha256": "16ac12022e3e127eee2c39c7b21dbcf45c74fca258879d30f86e8e19d68350d0",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1840-c4fa3ce-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-c4fa3ce-ludashi.apk",
-          "size": 76141630,
-          "sha256": "2ae9ad5d6f6d14158dfe324ce66819880a23f836111b17ede062243f9428a938",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
