@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793321470949,
+  "generatedAt": 1793321542551,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1797",
+      "title": "fix: keep the launcher from reclaiming focus when an app opens on the primary screen",
+      "summary": "On dual-screen devices with the launcher panel on, choosing Primary screen for an app that was not running appeared to do nothing. The app launched, then the panel activity on the other display resumed and its returnFocus pulled the launcher task back over it.",
+      "commit": "fdcd9b9fe7b85bd1ca58dc25c87e29df02b3c26c",
+      "pr": 1797,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793321484000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1797",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1797-fdcd9b9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1797/DroidDeck-PR.1797-fdcd9b9.apk",
+          "size": 76071998,
+          "sha256": "88b6c5710d3ed6cb0be10abd5c67434fae19ff905b74018174f65b7958d6bf7c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1797-fdcd9b9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1797/DroidDeck-PR.1797-fdcd9b9-pubg.apk",
+          "size": 76071998,
+          "sha256": "8f864322e0b0f03fecc929d07d90b1760f25161917723650b9d6c2483ebce278",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1797-fdcd9b9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1797/DroidDeck-PR.1797-fdcd9b9-antutu.apk",
+          "size": 76071998,
+          "sha256": "52fd7102bdb60b1cd1f1567ab02c951aefb263cc02a87bf7ac0299e3dff28f5f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1797-fdcd9b9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1797/DroidDeck-PR.1797-fdcd9b9-ludashi.apk",
+          "size": 76071998,
+          "sha256": "237880b34e6559b8142ab91262fafdeddc6b432c9aa638b376781671afe8726a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1795",
       "title": "fix: Steam no longer restarts every launch to import added games, and asks first",
