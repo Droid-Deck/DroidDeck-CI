@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793328567954,
+  "generatedAt": 1793328836582,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1804",
+      "title": "fix(xbox): games run from their own folder on the short drive, not the drive root",
+      "summary": "Since 0.6.7, Xbox games fail at launch for several users on Discord:\n\u2022 Doom 64: Unable to find X:\\Doom64.kpf.\n\u2022 Unity games: \"There should be '<game>Data' folder next to the executable\".\n\u2022 AI: The Somnium Files: the game's launcher reports \"program not found\".",
+      "commit": "9a3bc77dc03e93cb08a35f5b0247e90cca740d1e",
+      "pr": 1804,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793328754000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1804",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1804-9a3bc77.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1804/DroidDeck-PR.1804-9a3bc77.apk",
+          "size": 76088382,
+          "sha256": "54aca79cb7489f792377a76aa51a1f1cb1babea83b925d331b413af33a79c51e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1804-9a3bc77-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1804/DroidDeck-PR.1804-9a3bc77-pubg.apk",
+          "size": 76088382,
+          "sha256": "0b1b6858a24de1ba4e451a2d2f17a078789a75f171fa804aff5eef10737a4863",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1804-9a3bc77-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1804/DroidDeck-PR.1804-9a3bc77-antutu.apk",
+          "size": 76088382,
+          "sha256": "6c2a8a0e9978b55c3a6586cde191653d4164bc80821498def28c2c20b4fef7aa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1804-9a3bc77-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1804/DroidDeck-PR.1804-9a3bc77-ludashi.apk",
+          "size": 76088382,
+          "sha256": "7f108f5a8379013a161fcbea7b90542c77cd84b92b46a85c70f69707f8cfe58f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1801",
       "title": "fix: use a second screen only when two physical screens are lit (Odin keeps its side rail)",
