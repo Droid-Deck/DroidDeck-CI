@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793377292037,
+  "generatedAt": 1793377871383,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-41615d2",
-    "title": "fix: Steam's UI runs at the panel's full refresh rate again",
-    "summary": "Reported on Discord after the latest Preview: games run at 120 fps, but Steam Big Picture is locked at 60 on a 120 Hz screen, with power saving off and the vendor game manager disabled. Users expect the Steam UI to run at the panel's refresh rate, like games and the desktop do.",
-    "commit": "41615d2460b52e0b83fc051b8aad0af9f0fa672d",
+    "tag": "main-92c1560",
+    "title": "feat: Steam's sleep-after timers start every session as Disabled",
+    "summary": "\u2022 At every session start, before the Steam client launches, set Power > \"Sleep after\" (on battery and plugged in) to Disabled in each Steam home's config.vdf.\n\u2022 Android owns the device's sleep; a client that suspends inside the session only shows a black screen that Android doesn't know about.\n\u2022 Only IdleSuspendBatterySeconds and IdleSuspendACSeconds are forced. Dim display and screensaver timers stay the user's.\n\u2022 A change made in Steam's Power page applies for the running session and resets at the next launch.",
+    "commit": "92c1560f63cecf0c4ff465a6bcf3184adf41da8d",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793373914000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-41615d2",
+    "publishedAt": 1793377779000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-92c1560",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-41615d2.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41615d2/DroidDeck-main-41615d2.apk",
+        "name": "DroidDeck-main-92c1560.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92c1560/DroidDeck-main-92c1560.apk",
         "size": 76141630,
-        "sha256": "125df067e44040ed68332871fd82556541519198f1bfba476e6b54868517b0a2",
+        "sha256": "652558f5df7253d985c6ea0905c1212396940f9bac3ac9f0fc52aba802176dce",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-41615d2-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41615d2/DroidDeck-main-41615d2-pubg.apk",
+        "name": "DroidDeck-main-92c1560-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92c1560/DroidDeck-main-92c1560-pubg.apk",
         "size": 76141630,
-        "sha256": "f1082e73c1d2798d6b31f58443c65049601712cf6aeae8c2b05adfa136f57d7b",
+        "sha256": "7581260693c034a943a35d81384937a83de6efe6b76e34ba2465ce6e72d517ac",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-41615d2-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41615d2/DroidDeck-main-41615d2-antutu.apk",
+        "name": "DroidDeck-main-92c1560-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92c1560/DroidDeck-main-92c1560-antutu.apk",
         "size": 76141630,
-        "sha256": "90dfde223fc076e8182c9eb1f140f97be8948f121b5bebfb3dbe3a99b438d7b2",
+        "sha256": "f5e00de40d4055dfe1d8ff3a434720babdc302495e4f3bc1f8eb61db7d77aa5d",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-41615d2-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41615d2/DroidDeck-main-41615d2-ludashi.apk",
+        "name": "DroidDeck-main-92c1560-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92c1560/DroidDeck-main-92c1560-ludashi.apk",
         "size": 76141630,
-        "sha256": "1ad4e8d3e6a7408d49774f86df3e44f017c91ba2c57e4e1cf047bc5de84e9537",
+        "sha256": "a50e3f5146f399ca5d822b4ee580e4a77058d68dbb3b4ad6e6b66f9805f43513",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "92c1560f63cecf0c4ff465a6bcf3184adf41da8d",
+      "title": "feat: Steam's sleep-after timers start every session as Disabled",
+      "summary": "\u2022 At every session start, before the Steam client launches, set Power > \"Sleep after\" (on battery and plugged in) to Disabled in each Steam home's config.vdf.\n\u2022 Android owns the device's sleep; a client that suspends inside the session only shows a black screen that Android doesn't know about.\n\u2022 Only IdleSuspendBatterySeconds and IdleSuspendACSeconds are forced. Dim display and screensaver timers ",
+      "publishedAt": 1793377779000
+    },
     {
       "commit": "41615d2460b52e0b83fc051b8aad0af9f0fa672d",
       "title": "fix: Steam's UI runs at the panel's full refresh rate again",
@@ -155,12 +161,6 @@
       "title": "fix(itch): install games whose download is an archive inside an archive",
       "summary": "Reported on Discord (POCO F6, 0.6.7): itch.io installs fail with \"no exe found\" when the download is an archive that holds another archive. Voices of the Void ships a .zip whose only payload is a .7z, and the .exe is inside the .7z. The installer unpacked one level, found no .exe, and gave up.",
       "publishedAt": 1793331323000
-    },
-    {
-      "commit": "57362979873a31efe4a58c361c1335f9a14f78c2",
-      "title": "fix: keep the launcher from reclaiming focus when an app opens on the primary screen",
-      "summary": "On dual-screen devices with the launcher panel on, choosing Primary screen for an app that was not running appeared to do nothing. The app launched, then the panel activity on the other display resumed and its returnFocus pulled the launcher task back over it.",
-      "publishedAt": 1793326201000
     }
   ],
   "tests": [
