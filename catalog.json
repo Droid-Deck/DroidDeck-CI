@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793385330934,
+  "generatedAt": 1793385389989,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -942,6 +942,55 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1555/DroidDeck-PR.1555-929aa8b-ludashi.apk",
           "size": 74800859,
           "sha256": "fa970e7b977b6caa25f65ce7f51d330e2718a3dfa0b92f299e2a0d08ffb9d438",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1593",
+      "title": "fix: the virtual pads reach non-Steam programs, where udev is resolved through dlsym",
+      "summary": "Outside Steam the pads were invisible: Firefox and Chromium load libudev with dlopen and look the symbols up with dlsym, which skips interposition, so the browser found no pad even though the virtual device was there. SDL2 (SDLudev.c) and hidapi's Linux backend take the same route, so any program outside Steam that enumerates udev input devices missed them too.",
+      "commit": "830376af38503a536fb2f6d88f3484d7ecf1d3e6",
+      "pr": 1593,
+      "version": null,
+      "versionCode": 15,
+      "publishedAt": 1793082058000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1593",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1593-830376a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1593/DroidDeck-PR.1593-830376a.apk",
+          "size": 74800859,
+          "sha256": "a6f816af782b82ec676f2aa21f7bdbbcbf04cea864127f969fe048a0552b8c44",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1593-830376a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1593/DroidDeck-PR.1593-830376a-pubg.apk",
+          "size": 74800859,
+          "sha256": "0ae9079bb6dbb99bf1315d960705bc964e7a9563bdd3a23debe000a97bd4a0a4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1593-830376a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1593/DroidDeck-PR.1593-830376a-antutu.apk",
+          "size": 74800859,
+          "sha256": "389cd2a3e1ad9c9d50a3edb4ca5d576f4a91db12dcbad254f3ae6d8d7c085c6b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 15,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1593-830376a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1593/DroidDeck-PR.1593-830376a-ludashi.apk",
+          "size": 74800859,
+          "sha256": "e3d3292a42999a9640d152a94e6eaf2a9f8a4140fc05ced1f84187c89b806f28",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
