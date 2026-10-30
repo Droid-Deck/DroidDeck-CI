@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793324958767,
+  "generatedAt": 1793325445942,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1801",
+      "title": "fix: AYN Odin handhelds keep their side rail (not treated as dual-screen)",
+      "summary": "Since 0.6.7 (#1734), AYN Odin 2, Odin 2 Mini and Odin 2 Portal users lose the side rail and the Back menu. DroidDeck treats the handheld as dual-screen and moves the rail to a \"second screen\" that doesn't exist. Four users on Discord reported it; turning Dual screen off in settings brings the rail back.",
+      "commit": "f33315a645ee44007761ca1733512654b7a8756e",
+      "pr": 1801,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793325384000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1801",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1801-f33315a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-f33315a.apk",
+          "size": 76088382,
+          "sha256": "9f6eef7b683dac68137293bd0b80698d172e73ef1d29b482372274838d624671",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1801-f33315a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-f33315a-pubg.apk",
+          "size": 76088382,
+          "sha256": "0d4a106e9bd7495548e6e621558c27b26f96481d4cb7effc6ab76f481eb56937",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1801-f33315a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-f33315a-antutu.apk",
+          "size": 76088382,
+          "sha256": "2549740df94adbb2ee92a0020f0848aef9ae9461aa80928668064e46d22fd42b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1801-f33315a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-f33315a-ludashi.apk",
+          "size": 76088382,
+          "sha256": "19c7dea8b1137a4ce9b1645f7f4b91b9a60f0772ff7aaf0d8e3f53d8617637b8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1800",
       "title": "fix(itch): install games whose download is an archive inside an archive",
