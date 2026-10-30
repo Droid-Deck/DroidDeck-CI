@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793335669421,
+  "generatedAt": 1793337122207,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1809",
+      "title": "fix: Steam's UI no longer renders flat out (lag and heat since 0.6.7)",
+      "summary": "Since 0.6.7, Steam's Big Picture UI stutters on several devices and the device heats up quickly while sitting in Steam. 0.6.0 stays cool. A Discord user posted the same library scroll on 0.6.7 fresh, 0.6.0 fresh and 0.6.7 updated: 49 stalls over 100 ms on 0.6.7 against 1 on 0.6.0 (Galaxy S26 Ultra). It was also reported on an S26, an AYN Thor Max and others.",
+      "commit": "aa48f203e09bc4532eede335d811fa46e3d62af8",
+      "pr": 1809,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793337065000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1809",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1809-aa48f20.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-aa48f20.apk",
+          "size": 76092478,
+          "sha256": "b03ba7f833c84b221bff561e4931884da91ccb33b87186ba41b5d2e504fed31b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1809-aa48f20-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-aa48f20-pubg.apk",
+          "size": 76092478,
+          "sha256": "3c2f69f13051a405df7fec88e31dc573b49915c3e52b4ee65040a836b64271d5",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1809-aa48f20-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-aa48f20-antutu.apk",
+          "size": 76092478,
+          "sha256": "7c61bf4c2221dcc3fa2b92fce32378385e85f82b317ca8aacddb1dc3a6ccdbcc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1809-aa48f20-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-aa48f20-ludashi.apk",
+          "size": 76092478,
+          "sha256": "849c242e08e8d56c873eb39b46d046fb543fd70af4ead80f30f98b2d333166c4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1810",
       "title": "fix: a folder of games on game storage lists each game instead of one combined game (#1808)",
       "summary": "Fixes #1808.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-0a1e8e7-ludashi.apk",
           "size": 76092478,
           "sha256": "f1815b4f66ff0e5b5f82ff5f2e7e1cea4121f7c66b3042ed5709746a0a6333a6",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1809",
-      "title": "fix: Steam's UI no longer renders flat out (lag and heat since 0.6.7)",
-      "summary": "Since 0.6.7, Steam's Big Picture UI stutters on several devices and the device heats up quickly while sitting in Steam. 0.6.0 stays cool. A Discord user posted the same library scroll on 0.6.7 fresh, 0.6.0 fresh and 0.6.7 updated: 49 stalls over 100 ms on 0.6.7 against 1 on 0.6.0 (Galaxy S26 Ultra). It was also reported on an S26, an AYN Thor Max and others.",
-      "commit": "feec33548c0f41331c768bbbcf2a19dcc62d05c9",
-      "pr": 1809,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793333901000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1809",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1809-feec335.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-feec335.apk",
-          "size": 76092478,
-          "sha256": "df6e51297e95dcc652b991d7343c982a828de137708eeaf26b201237d03634c3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1809-feec335-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-feec335-pubg.apk",
-          "size": 76092478,
-          "sha256": "2300298e8981d804f36f9b2d10cf6f744cbfc3723e77eeae7313081fdfde6d2b",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1809-feec335-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-feec335-antutu.apk",
-          "size": 76092478,
-          "sha256": "6ebeaa1bdb6b1041ec7b9cdc3210204c51dea85803a5c06a63c8c7c0ff961b1d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1809-feec335-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-feec335-ludashi.apk",
-          "size": 76092478,
-          "sha256": "986cf8ec8dbb78ab70db7bf814dbb27f7be1bd5708cec86101fda507098ddde6",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
