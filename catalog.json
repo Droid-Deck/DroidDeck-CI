@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793373136970,
+  "generatedAt": 1793374005287,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-bc1a010",
-    "title": "fix: launching a game from a frontend starts it instead of sitting on the home screen",
-    "summary": "A game link (droiddeck://game/<id>, the LAUNCHGAME intent) sometimes left DroidDeck on its home screen with Play Steam until the user tapped.",
-    "commit": "bc1a01041110878aa04bf040f07e7288e561b464",
+    "tag": "main-41615d2",
+    "title": "fix: Steam's UI runs at the panel's full refresh rate again",
+    "summary": "Reported on Discord after the latest Preview: games run at 120 fps, but Steam Big Picture is locked at 60 on a 120 Hz screen, with power saving off and the vendor game manager disabled. Users expect the Steam UI to run at the panel's refresh rate, like games and the desktop do.",
+    "commit": "41615d2460b52e0b83fc051b8aad0af9f0fa672d",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793371602000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bc1a010",
+    "publishedAt": 1793373914000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-41615d2",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-bc1a010.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc1a010/DroidDeck-main-bc1a010.apk",
+        "name": "DroidDeck-main-41615d2.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41615d2/DroidDeck-main-41615d2.apk",
         "size": 76141630,
-        "sha256": "c8714bd4ff62ac5ebde6faf2ff57d4e44ef6e4fb17125513f6d503f93ec37f3d",
+        "sha256": "125df067e44040ed68332871fd82556541519198f1bfba476e6b54868517b0a2",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-bc1a010-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc1a010/DroidDeck-main-bc1a010-pubg.apk",
+        "name": "DroidDeck-main-41615d2-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41615d2/DroidDeck-main-41615d2-pubg.apk",
         "size": 76141630,
-        "sha256": "2e6a48fa1e997d76636e8523c35467517a1b5a6e249197cdb9358014e588427b",
+        "sha256": "f1082e73c1d2798d6b31f58443c65049601712cf6aeae8c2b05adfa136f57d7b",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-bc1a010-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc1a010/DroidDeck-main-bc1a010-antutu.apk",
+        "name": "DroidDeck-main-41615d2-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41615d2/DroidDeck-main-41615d2-antutu.apk",
         "size": 76141630,
-        "sha256": "6aa9579cf2ad4f08a1e756106c7dd5d57c2ec892c79f1552b3a0331625933801",
+        "sha256": "90dfde223fc076e8182c9eb1f140f97be8948f121b5bebfb3dbe3a99b438d7b2",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-bc1a010-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc1a010/DroidDeck-main-bc1a010-ludashi.apk",
+        "name": "DroidDeck-main-41615d2-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-41615d2/DroidDeck-main-41615d2-ludashi.apk",
         "size": 76141630,
-        "sha256": "9c67aacf1290ff6c75888148be652ce45d597b904172b1ddf6f6b38b3be57d1b",
+        "sha256": "1ad4e8d3e6a7408d49774f86df3e44f017c91ba2c57e4e1cf047bc5de84e9537",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "41615d2460b52e0b83fc051b8aad0af9f0fa672d",
+      "title": "fix: Steam's UI runs at the panel's full refresh rate again",
+      "summary": "Reported on Discord after the latest Preview: games run at 120 fps, but Steam Big Picture is locked at 60 on a 120 Hz screen, with power saving off and the vendor game manager disabled. Users expect the Steam UI to run at the panel's refresh rate, like games and the desktop do.",
+      "publishedAt": 1793373914000
+    },
     {
       "commit": "bc1a01041110878aa04bf040f07e7288e561b464",
       "title": "fix: launching a game from a frontend starts it instead of sitting on the home screen",
@@ -155,15 +161,58 @@
       "title": "fix: keep the launcher from reclaiming focus when an app opens on the primary screen",
       "summary": "On dual-screen devices with the launcher panel on, choosing Primary screen for an app that was not running appeared to do nothing. The app launched, then the panel activity on the other display resumed and its returnFocus pulled the launcher task back over it.",
       "publishedAt": 1793326201000
-    },
-    {
-      "commit": "26e2f26ec986ea75b46dccd0deaaa07eb828419f",
-      "title": "fix: Steam's Browse buttons work when another app holds port 8080 with Decky enabled",
-      "summary": "On a Thor in the desktop session, Steam's Add a Non-Steam Game \u2192 Browse\u2026 does nothing. The user's desktop log shows:",
-      "publishedAt": 1793324304000
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1846",
+      "title": "test: turn off the zero-timeout KGSL poll shortcut (frame-order glitch, Adreno 740)",
+      "summary": "Diagnostic build, not for merge.",
+      "commit": "8e28aab00dfdd5af0ca6ef1ca1c5826189327fba",
+      "pr": 1846,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793373906000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1846",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1846-8e28aab.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-8e28aab.apk",
+          "size": 76141630,
+          "sha256": "dfe74475a6d3962591ef94055a9c6f7b036e1c060a96b4f58b3a43b95fbead07",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1846-8e28aab-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-8e28aab-pubg.apk",
+          "size": 76141630,
+          "sha256": "6b8a1762f68f1e6f395586d03c7f7727c1228a246056046d060a212e52180492",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1846-8e28aab-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-8e28aab-antutu.apk",
+          "size": 76141630,
+          "sha256": "37e7a916a020fcc1121045237af86eade77a7994a6366056430bef0d671a6e99",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1846-8e28aab-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-8e28aab-ludashi.apk",
+          "size": 76141630,
+          "sha256": "a2d1b463e114fb515d4b9c9aef22b835c92dd75e91137600eb0512a4c2005b21",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1801",
       "title": "fix: Automatic dual screen needs a real second touch panel (Odin keeps its side rail)",
