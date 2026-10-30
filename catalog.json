@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793322942517,
+  "generatedAt": 1793324096771,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1800",
+      "title": "fix(itch): install games whose download is an archive inside an archive",
+      "summary": "Reported on Discord (POCO F6, 0.6.7): itch.io installs fail with \"no exe found\" when the download is an archive that holds another archive. Voices of the Void ships a .zip whose only payload is a .7z, and the .exe is inside the .7z. The installer unpacked one level, found no .exe, and gave up.",
+      "commit": "4256f1b022e604ad756a3287d29811c669bdf3c9",
+      "pr": 1800,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793324018000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1800",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1800-4256f1b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1800/DroidDeck-PR.1800-4256f1b.apk",
+          "size": 76088382,
+          "sha256": "4387332513407dbea1774b3026699790b879ef95b311bc3d150d611d602e05a7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1800-4256f1b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1800/DroidDeck-PR.1800-4256f1b-pubg.apk",
+          "size": 76088382,
+          "sha256": "1d1dda0a158f37841c5a6013b14f9d4910b80e0497b39aebe38339a66e7138b2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1800-4256f1b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1800/DroidDeck-PR.1800-4256f1b-antutu.apk",
+          "size": 76088382,
+          "sha256": "69a61d0c59c2885330cfc8f84a67839132024aa9914e0f03089d2485eb8f6825",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1800-4256f1b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1800/DroidDeck-PR.1800-4256f1b-ludashi.apk",
+          "size": 76088382,
+          "sha256": "10599dc5358b74695eeb74b6ba571994d2211bc551b975d68323fea6255f8cb7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1797",
       "title": "fix: keep the launcher from reclaiming focus when an app opens on the primary screen",
