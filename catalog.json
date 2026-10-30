@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793400758210,
+  "generatedAt": 1793400825021,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-7e47db2",
-    "title": "fix: a game with a launch-option picker is no longer closed while the picker is open (MK11)",
-    "summary": "Fixes the Discord report \"MK11 won't run\" (Mortal Kombat 11 on a RedMagic 11 Pro: it opens, then drops back to DroidDeck without booting, on 0.6.7 and every preview since).",
-    "commit": "7e47db2e2ae517fdf18deff7669724c6f5f07e0c",
+    "tag": "main-8cf01eb",
+    "title": "fix: Linux games on an NTFS USB drive start the first time instead of failing to load a library",
+    "summary": "A native Linux game installed on a USB drive formatted NTFS (a Samsung SSD on the RedMagic Astra 2) closed about 14 seconds after launch, and the session returned to the launcher. The session log showed:",
+    "commit": "8cf01ebb77a2cc91db89692b69c7bc6dffbcacb6",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793399686000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7e47db2",
+    "publishedAt": 1793400730000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8cf01eb",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-7e47db2.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7e47db2/DroidDeck-main-7e47db2.apk",
+        "name": "DroidDeck-main-8cf01eb.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cf01eb/DroidDeck-main-8cf01eb.apk",
         "size": 76653630,
-        "sha256": "b727805503668b67c8f898df63367e623c164c86784823b5596daa99af5ef396",
+        "sha256": "4e6a91f34d9a1a61a9838067eaa2b36584f9c80df806741ee6490d88246b6f29",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-7e47db2-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7e47db2/DroidDeck-main-7e47db2-pubg.apk",
+        "name": "DroidDeck-main-8cf01eb-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cf01eb/DroidDeck-main-8cf01eb-pubg.apk",
         "size": 76653630,
-        "sha256": "a6eb141d3c416e6cffec1c122f39b043b0ffbe15c5871d2a13933cf257ac675a",
+        "sha256": "f479757711487ba8bdf6373931d2308cd29c579fdb87caf1e5a3b7bc2ab25fc7",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-7e47db2-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7e47db2/DroidDeck-main-7e47db2-antutu.apk",
+        "name": "DroidDeck-main-8cf01eb-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cf01eb/DroidDeck-main-8cf01eb-antutu.apk",
         "size": 76653630,
-        "sha256": "20022f2d7997b70d1e3fe0cd4729405e9623ab647c52d5e0dc2926920c007b60",
+        "sha256": "acc18d1f2427c82d310c9765260e1162fd8b979b37ae50cae789e5dd0056f856",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-7e47db2-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7e47db2/DroidDeck-main-7e47db2-ludashi.apk",
+        "name": "DroidDeck-main-8cf01eb-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cf01eb/DroidDeck-main-8cf01eb-ludashi.apk",
         "size": 76653630,
-        "sha256": "98b8cf92948ad2ebc56fe2e11583100ad05f553e4a9c70a981d44c6797529a26",
+        "sha256": "fc14d61e8c2f8cc07028d20517b9f12b7e5adca639782cf57b6fd957508e7972",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8cf01ebb77a2cc91db89692b69c7bc6dffbcacb6",
+      "title": "fix: Linux games on an NTFS USB drive start the first time instead of failing to load a library",
+      "summary": "A native Linux game installed on a USB drive formatted NTFS (a Samsung SSD on the RedMagic Astra 2) closed about 14 seconds after launch, and the session returned to the launcher. The session log showed:",
+      "publishedAt": 1793400730000
+    },
     {
       "commit": "7e47db2e2ae517fdf18deff7669724c6f5f07e0c",
       "title": "fix: a game with a launch-option picker is no longer closed while the picker is open (MK11)",
@@ -155,12 +161,6 @@
       "title": "feat: cap the frame rate in session for games launched without Steam",
       "summary": "\u2022 Adds a Frame limit row to the in-session drawer's Display page for games launched without Steam (Off, 30, 40, 45, 60, 90, 120).\n\u2022 The limit applies live: it paces the compositor and the display switches to a refresh rate the cap divides evenly, as the old Display setting did.\n\u2022 It lasts for the session and resets when the next one starts. Steam games keep using Steam's Frame Limit in the Quick A",
       "publishedAt": 1793361414000
-    },
-    {
-      "commit": "4770d11e390b2adf2649276a17594f20f2d85bed",
-      "title": "feat: Add physical controller button shortcuts",
-      "summary": "\u2022 Assign physical controller buttons to Steam, Quick Access, or DroidDeck menus, with per-controller settings and reset.\n\u2022 Preserve default behavior for unassigned buttons and add translations for all supported languages.",
-      "publishedAt": 1793359468000
     }
   ],
   "tests": [
