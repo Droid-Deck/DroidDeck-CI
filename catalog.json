@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793370965493,
+  "generatedAt": 1793371698411,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-fb5af9d",
-    "title": "fix(runtime): cutscenes and in-game videos play again with DroidDeck-Proton (libva-drm2, libva-x11-2)",
-    "summary": "Fixes the 0.6.7 video regression reported on Discord (Video Playback Regression on 0.6.7, There some bugs on new Linux using DD proton, KH1.5+2.5 crashing at FMV cutscene).",
-    "commit": "fb5af9d35ebff0d3d36e2ec741451934e4f19900",
+    "tag": "main-bc1a010",
+    "title": "fix: launching a game from a frontend starts it instead of sitting on the home screen",
+    "summary": "A game link (droiddeck://game/<id>, the LAUNCHGAME intent) sometimes left DroidDeck on its home screen with Play Steam until the user tapped.",
+    "commit": "bc1a01041110878aa04bf040f07e7288e561b464",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793367024000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fb5af9d",
+    "publishedAt": 1793371602000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bc1a010",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-fb5af9d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fb5af9d/DroidDeck-main-fb5af9d.apk",
+        "name": "DroidDeck-main-bc1a010.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc1a010/DroidDeck-main-bc1a010.apk",
         "size": 76141630,
-        "sha256": "19f8642ab0f598bd8faccce2446e7e7679a30de0340e65fade03c29cfe44a0b6",
+        "sha256": "c8714bd4ff62ac5ebde6faf2ff57d4e44ef6e4fb17125513f6d503f93ec37f3d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-fb5af9d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fb5af9d/DroidDeck-main-fb5af9d-pubg.apk",
+        "name": "DroidDeck-main-bc1a010-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc1a010/DroidDeck-main-bc1a010-pubg.apk",
         "size": 76141630,
-        "sha256": "ab2573bb0e184427560a209b3020be9eeadf078730a888d367b5ab3eec20b80a",
+        "sha256": "2e6a48fa1e997d76636e8523c35467517a1b5a6e249197cdb9358014e588427b",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-fb5af9d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fb5af9d/DroidDeck-main-fb5af9d-antutu.apk",
+        "name": "DroidDeck-main-bc1a010-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc1a010/DroidDeck-main-bc1a010-antutu.apk",
         "size": 76141630,
-        "sha256": "bac39c1e38ed20ff3bc0a38fe2402b7297ff5b07f74f9cd4ff70bdffe5e9a1c4",
+        "sha256": "6aa9579cf2ad4f08a1e756106c7dd5d57c2ec892c79f1552b3a0331625933801",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-fb5af9d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fb5af9d/DroidDeck-main-fb5af9d-ludashi.apk",
+        "name": "DroidDeck-main-bc1a010-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc1a010/DroidDeck-main-bc1a010-ludashi.apk",
         "size": 76141630,
-        "sha256": "fc13b7634fbcbd37a4488a5d362524df5d29a055e57bdbeecfe2696f4001b42c",
+        "sha256": "9c67aacf1290ff6c75888148be652ce45d597b904172b1ddf6f6b38b3be57d1b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bc1a01041110878aa04bf040f07e7288e561b464",
+      "title": "fix: launching a game from a frontend starts it instead of sitting on the home screen",
+      "summary": "A game link (droiddeck://game/<id>, the LAUNCHGAME intent) sometimes left DroidDeck on its home screen with Play Steam until the user tapped.",
+      "publishedAt": 1793371602000
+    },
     {
       "commit": "fb5af9d35ebff0d3d36e2ec741451934e4f19900",
       "title": "fix(runtime): cutscenes and in-game videos play again with DroidDeck-Proton (libva-drm2, libva-x11-2)",
@@ -155,12 +161,6 @@
       "title": "fix: Steam's Browse buttons work when another app holds port 8080 with Decky enabled",
       "summary": "On a Thor in the desktop session, Steam's Add a Non-Steam Game \u2192 Browse\u2026 does nothing. The user's desktop log shows:",
       "publishedAt": 1793324304000
-    },
-    {
-      "commit": "ee3876b965a8cdb4083e118011170ceaba60e859",
-      "title": "Windows components: restore bundle parts, wait for restores and keep older picks",
-      "summary": "Follow-up to Droid-Deck/DroidDeck#1786, covering the review points raised after it was merged.",
-      "publishedAt": 1793321360000
     }
   ],
   "tests": [
