@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793362760809,
+  "generatedAt": 1793365755803,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,189 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1824",
+      "title": "fix: banking apps no longer refuse to open while DroidDeck is installed",
+      "summary": "Fixes the Discord report \"Banking application locked with DroidDeck 0.6.7 installed\" (UBS on a Galaxy S26 Ultra; fine on 0.6.0).",
+      "commit": "6d04dccd9b1a9adbca5ff54e1b110d95056fc85a",
+      "pr": 1824,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793365719000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1824",
+      "apks": {}
+    },
+    {
+      "tag": "pr-1832",
+      "title": "fix: Battle.net scales its windows to large desktops instead of opening tiny on high-resolution screens",
+      "summary": "On large screens (Fold 8 report on Discord, RedMagic Astra 2, any session above 1080p) the Battle.net login and launcher open at Wine's default 96 DPI, so the window is a small box in the middle of the desktop and the text is hard to read.",
+      "commit": "3c85c956cd593a78600d6791019441f832c03011",
+      "pr": 1832,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793365718000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1832",
+      "apks": {}
+    },
+    {
+      "tag": "pr-1825",
+      "title": "fix(runtime): the x86-64 Steam client starts again on the Ubuntu runtime (liblzo2-2 for FEX)",
+      "summary": "Fixes the 0.6.7 report \"x86 steam client broken in 0.6.7\" and the x86-64 follow-ups in \"Runtime Update breaks Steam on Preview build\". There were two faults: the second showed up once the first was fixed.",
+      "commit": "3fb68d1299a6ea41dfceba316686d79d67008e1a",
+      "pr": 1825,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793365717000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1825",
+      "apks": {}
+    },
+    {
+      "tag": "pr-1827",
+      "title": "fix: library filter, sort and display menus aren't cut off in portrait",
+      "summary": "Fixes the Discord report \"Library filter menus in portrait look weird, face wrong direction cut off\".",
+      "commit": "aac4f810526aba92fd84154d18612eb432170622",
+      "pr": 1827,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793365716000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1827",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1827-aac4f81.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1827/DroidDeck-PR.1827-aac4f81.apk",
+          "size": 76092478,
+          "sha256": "0c07bbf2a531131f0bcafa38f535ba844679da7f84f46a556b2036cc6c498369",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1827-aac4f81-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1827/DroidDeck-PR.1827-aac4f81-pubg.apk",
+          "size": 76092478,
+          "sha256": "61af904a7170c18b5e77e05d2240f9524937dc8ae96b8527908c24f658bfd3a3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1827-aac4f81-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1827/DroidDeck-PR.1827-aac4f81-antutu.apk",
+          "size": 76092478,
+          "sha256": "8defda6b27d521510c22d4d69bf4d39d46ea93d9449162f656ad593390d8e62c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1827-aac4f81-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1827/DroidDeck-PR.1827-aac4f81-ludashi.apk",
+          "size": 76092478,
+          "sha256": "efb1e25235251794edd77169dd75d0960415059c75e540c260a44f7d83c0d31d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1828",
+      "title": "fix: on dual-screen handhelds DroidDeck no longer jumps back over apps opened from outside it",
+      "summary": "For the Discord report \"6.7 opening droiddeck from iisu returns to iisu\" (two AYN Thor users; 0.6.0 was fine).",
+      "commit": "c76de3d50130c97c498f70946e8fec08f9da8ad1",
+      "pr": 1828,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793365710000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1828",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1828-c76de3d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1828/DroidDeck-PR.1828-c76de3d.apk",
+          "size": 76092478,
+          "sha256": "cc59884301bceeaf96e5e5e188e308a927efbfddff06b81a23ba6b7d55932b2e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1828-c76de3d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1828/DroidDeck-PR.1828-c76de3d-pubg.apk",
+          "size": 76092478,
+          "sha256": "a3c230b08b5c4c4972091a94f5e293082718bc79df27ce81f235a6ca865c1c5b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1828-c76de3d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1828/DroidDeck-PR.1828-c76de3d-antutu.apk",
+          "size": 76092478,
+          "sha256": "2a7270a646758555758829fe87c6947364c6a1d6dc36ca320b0193b9757f7183",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1828-c76de3d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1828/DroidDeck-PR.1828-c76de3d-ludashi.apk",
+          "size": 76092478,
+          "sha256": "0b0888a9eea153b61e72dde63ef1eda6d488f7adf202cb15be967f6f7d20c9a7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1822",
+      "title": "fix: a folder of games with an extra non-game folder still lists each game (Rance 01)",
+      "summary": "Follow-up to #1810 for #1808.",
+      "commit": "644d3cfa8bac737ab649eefe159aa56031c88674",
+      "pr": 1822,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793365698000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1822",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1822-644d3cf.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1822/DroidDeck-PR.1822-644d3cf.apk",
+          "size": 76092478,
+          "sha256": "c26233e0dc3066f2a757049e1d31d395dc9019f948c75e98dee6a26d5142ed34",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1822-644d3cf-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1822/DroidDeck-PR.1822-644d3cf-pubg.apk",
+          "size": 76092478,
+          "sha256": "dd6a634797b6354166b9b68087eec19c35c4e90af0d45d303dcb5485e6bab6c8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1822-644d3cf-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1822/DroidDeck-PR.1822-644d3cf-antutu.apk",
+          "size": 76092478,
+          "sha256": "8a4e61110909a0b89b44ea8a0211fbfd8f42bd5499a643bf3b7b3dc88e5e380a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1822-644d3cf-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1822/DroidDeck-PR.1822-644d3cf-ludashi.apk",
+          "size": 76092478,
+          "sha256": "ac15989d43782b7e74c164dbb65ed102c141834a2b711487c76501f4d5247f9e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1831",
       "title": "fix: match the game page's check for updates, uninstall and edit art buttons to the frosted design",
