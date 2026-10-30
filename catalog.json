@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793402197550,
+  "generatedAt": 1793402459891,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8cf01eb",
-    "title": "fix: Linux games on an NTFS USB drive start the first time instead of failing to load a library",
-    "summary": "A native Linux game installed on a USB drive formatted NTFS (a Samsung SSD on the RedMagic Astra 2) closed about 14 seconds after launch, and the session returned to the launcher. The session log showed:",
-    "commit": "8cf01ebb77a2cc91db89692b69c7bc6dffbcacb6",
+    "tag": "main-6673a89",
+    "title": "Refuse Flatpak bundles built for another architecture with a clear message",
+    "summary": "On Discord, a user installed r2modman from a .flatpak bundle in desktop mode. The install finished, but the app closed straight away every time it was opened. Their log (DroidDeck-2026-10-30-01-desktop.zip, Samsung SM-F976B) shows why:",
+    "commit": "6673a892e25c3339b5ffc1e883d0fb0507429424",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793400730000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8cf01eb",
+    "publishedAt": 1793402389000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6673a89",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8cf01eb.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cf01eb/DroidDeck-main-8cf01eb.apk",
-        "size": 76653630,
-        "sha256": "4e6a91f34d9a1a61a9838067eaa2b36584f9c80df806741ee6490d88246b6f29",
+        "name": "DroidDeck-main-6673a89.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6673a89/DroidDeck-main-6673a89.apk",
+        "size": 76661822,
+        "sha256": "9591a9d73d580f2c153aee75bb002d1f11deaacbbba769a43d6b590839784a09",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8cf01eb-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cf01eb/DroidDeck-main-8cf01eb-pubg.apk",
-        "size": 76653630,
-        "sha256": "f479757711487ba8bdf6373931d2308cd29c579fdb87caf1e5a3b7bc2ab25fc7",
+        "name": "DroidDeck-main-6673a89-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6673a89/DroidDeck-main-6673a89-pubg.apk",
+        "size": 76661822,
+        "sha256": "18ed3ad0450a99d38a1c34675d48e2c0db4e03a028f483264543d9e98128e72c",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8cf01eb-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cf01eb/DroidDeck-main-8cf01eb-antutu.apk",
-        "size": 76653630,
-        "sha256": "acc18d1f2427c82d310c9765260e1162fd8b979b37ae50cae789e5dd0056f856",
+        "name": "DroidDeck-main-6673a89-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6673a89/DroidDeck-main-6673a89-antutu.apk",
+        "size": 76661822,
+        "sha256": "c60dec139fb3af93d75b88d12ae6cad9e42cb487dd649ee4986ed26911ab6e3b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8cf01eb-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cf01eb/DroidDeck-main-8cf01eb-ludashi.apk",
-        "size": 76653630,
-        "sha256": "fc14d61e8c2f8cc07028d20517b9f12b7e5adca639782cf57b6fd957508e7972",
+        "name": "DroidDeck-main-6673a89-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6673a89/DroidDeck-main-6673a89-ludashi.apk",
+        "size": 76661822,
+        "sha256": "d48abd732457637b08b6b38c76b2ce9299a889dde4de6bddab80ffce67854646",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6673a892e25c3339b5ffc1e883d0fb0507429424",
+      "title": "Refuse Flatpak bundles built for another architecture with a clear message",
+      "summary": "On Discord, a user installed r2modman from a .flatpak bundle in desktop mode. The install finished, but the app closed straight away every time it was opened. Their log (DroidDeck-2026-10-30-01-desktop.zip, Samsung SM-F976B) shows why:",
+      "publishedAt": 1793402389000
+    },
     {
       "commit": "8cf01ebb77a2cc91db89692b69c7bc6dffbcacb6",
       "title": "fix: Linux games on an NTFS USB drive start the first time instead of failing to load a library",
@@ -155,12 +161,6 @@
       "title": "fix(runtime): cutscenes and in-game videos play again with DroidDeck-Proton (libva-drm2, libva-x11-2)",
       "summary": "Fixes the 0.6.7 video regression reported on Discord (Video Playback Regression on 0.6.7, There some bugs on new Linux using DD proton, KH1.5+2.5 crashing at FMV cutscene).",
       "publishedAt": 1793367024000
-    },
-    {
-      "commit": "b75060c280906702973daa6be5bceffb31091725",
-      "title": "feat: cap the frame rate in session for games launched without Steam",
-      "summary": "\u2022 Adds a Frame limit row to the in-session drawer's Display page for games launched without Steam (Off, 30, 40, 45, 60, 90, 120).\n\u2022 The limit applies live: it paces the compositor and the display switches to a refresh rate the cap divides evenly, as the old Display setting did.\n\u2022 It lasts for the session and resets when the next one starts. Steam games keep using Steam's Frame Limit in the Quick A",
-      "publishedAt": 1793361414000
     }
   ],
   "tests": [
