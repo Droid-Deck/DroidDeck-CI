@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793366481492,
+  "generatedAt": 1793367104296,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b75060c",
-    "title": "feat: cap the frame rate in session for games launched without Steam",
-    "summary": "\u2022 Adds a Frame limit row to the in-session drawer's Display page for games launched without Steam (Off, 30, 40, 45, 60, 90, 120).\n\u2022 The limit applies live: it paces the compositor and the display switches to a refresh rate the cap divides evenly, as the old Display setting did.\n\u2022 It lasts for the session and resets when the next one starts. Steam games keep using Steam's Frame Limit in the Quick Access menu, and glasses mirroring still wins when it asks for a lower rate.",
-    "commit": "b75060c280906702973daa6be5bceffb31091725",
+    "tag": "main-fb5af9d",
+    "title": "fix(runtime): cutscenes and in-game videos play again with DroidDeck-Proton (libva-drm2, libva-x11-2)",
+    "summary": "Fixes the 0.6.7 video regression reported on Discord (Video Playback Regression on 0.6.7, There some bugs on new Linux using DD proton, KH1.5+2.5 crashing at FMV cutscene).",
+    "commit": "fb5af9d35ebff0d3d36e2ec741451934e4f19900",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793361414000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b75060c",
+    "publishedAt": 1793367024000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-fb5af9d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b75060c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b75060c/DroidDeck-main-b75060c.apk",
+        "name": "DroidDeck-main-fb5af9d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fb5af9d/DroidDeck-main-fb5af9d.apk",
         "size": 76141630,
-        "sha256": "9bccec94a65beb42e40a76af7c2e95ef16943367294294c653d32926de40fecd",
+        "sha256": "19f8642ab0f598bd8faccce2446e7e7679a30de0340e65fade03c29cfe44a0b6",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b75060c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b75060c/DroidDeck-main-b75060c-pubg.apk",
+        "name": "DroidDeck-main-fb5af9d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fb5af9d/DroidDeck-main-fb5af9d-pubg.apk",
         "size": 76141630,
-        "sha256": "68963d399832a4788591eaadff8457f1cd69574de40d50cfe25986ae8a3ae654",
+        "sha256": "ab2573bb0e184427560a209b3020be9eeadf078730a888d367b5ab3eec20b80a",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b75060c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b75060c/DroidDeck-main-b75060c-antutu.apk",
+        "name": "DroidDeck-main-fb5af9d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fb5af9d/DroidDeck-main-fb5af9d-antutu.apk",
         "size": 76141630,
-        "sha256": "a133fa49cfa4f68311174281e3117b2ca154a1987bf4da5479a569af9ea69940",
+        "sha256": "bac39c1e38ed20ff3bc0a38fe2402b7297ff5b07f74f9cd4ff70bdffe5e9a1c4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b75060c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b75060c/DroidDeck-main-b75060c-ludashi.apk",
+        "name": "DroidDeck-main-fb5af9d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-fb5af9d/DroidDeck-main-fb5af9d-ludashi.apk",
         "size": 76141630,
-        "sha256": "f884a87456feeaaa5396b95e4a3eb2cccf8cc9683479289f054ae97e27043ea9",
+        "sha256": "fc13b7634fbcbd37a4488a5d362524df5d29a055e57bdbeecfe2696f4001b42c",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "fb5af9d35ebff0d3d36e2ec741451934e4f19900",
+      "title": "fix(runtime): cutscenes and in-game videos play again with DroidDeck-Proton (libva-drm2, libva-x11-2)",
+      "summary": "Fixes the 0.6.7 video regression reported on Discord (Video Playback Regression on 0.6.7, There some bugs on new Linux using DD proton, KH1.5+2.5 crashing at FMV cutscene).",
+      "publishedAt": 1793367024000
+    },
     {
       "commit": "b75060c280906702973daa6be5bceffb31091725",
       "title": "feat: cap the frame rate in session for games launched without Steam",
@@ -155,12 +161,6 @@
       "title": "Windows components: restore bundle parts, wait for restores and keep older picks",
       "summary": "Follow-up to Droid-Deck/DroidDeck#1786, covering the review points raised after it was merged.",
       "publishedAt": 1793321360000
-    },
-    {
-      "commit": "31c943c82aa722bdebc40744f5e3ba868059e26b",
-      "title": "fix: Windows installs to Android storage no longer ask for an administrator",
-      "summary": "Installing a Battle.net game (reported with WoW) to a folder on Android storage (Z:, a microSD card or a USB SSD such as a Samsung T9) fails with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841). Installing to C: works. Symlinks don't help. Other stores that check folder permissions can hit the same thing.",
-      "publishedAt": 1793316518000
     }
   ],
   "tests": [
