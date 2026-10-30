@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793331282548,
+  "generatedAt": 1793331393853,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-5736297",
-    "title": "fix: keep the launcher from reclaiming focus when an app opens on the primary screen",
-    "summary": "On dual-screen devices with the launcher panel on, choosing Primary screen for an app that was not running appeared to do nothing. The app launched, then the panel activity on the other display resumed and its returnFocus pulled the launcher task back over it.",
-    "commit": "57362979873a31efe4a58c361c1335f9a14f78c2",
+    "tag": "main-58968c9",
+    "title": "fix(itch): install games whose download is an archive inside an archive",
+    "summary": "Reported on Discord (POCO F6, 0.6.7): itch.io installs fail with \"no exe found\" when the download is an archive that holds another archive. Voices of the Void ships a .zip whose only payload is a .7z, and the .exe is inside the .7z. The installer unpacked one level, found no .exe, and gave up.",
+    "commit": "58968c9286973e341e1f61f4c862ea3b04d9554b",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793326201000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5736297",
+    "publishedAt": 1793331323000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-58968c9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-5736297.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5736297/DroidDeck-main-5736297.apk",
-        "size": 76088382,
-        "sha256": "5141cbe1593735e6eef3df95864d414dae16f7ac21a68934e7c6b6e4f642ea27",
+        "name": "DroidDeck-main-58968c9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58968c9/DroidDeck-main-58968c9.apk",
+        "size": 76092478,
+        "sha256": "b65fa368b5a520384a299d073dca2b7ffd0870886afa8cc4899446821a63a6da",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-5736297-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5736297/DroidDeck-main-5736297-pubg.apk",
-        "size": 76088382,
-        "sha256": "57ec148f3b87cbd1bfb88144d3e07ad7d4d491eddc674f602c2b379e3c0c92aa",
+        "name": "DroidDeck-main-58968c9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58968c9/DroidDeck-main-58968c9-pubg.apk",
+        "size": 76092478,
+        "sha256": "16e8b3ecb77b9c67f2972bd9be8845a0ebb1b9465d68fd292ef6ea99a422b7bb",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-5736297-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5736297/DroidDeck-main-5736297-antutu.apk",
-        "size": 76088382,
-        "sha256": "99f4b892c54c15d8783494b50eb5915704b743aea9a7f298e634d87d8380e7a1",
+        "name": "DroidDeck-main-58968c9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58968c9/DroidDeck-main-58968c9-antutu.apk",
+        "size": 76092478,
+        "sha256": "94763c47aa8737178e4d796ff927b784eb2801b2f8bbc06956102aca780c3918",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-5736297-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5736297/DroidDeck-main-5736297-ludashi.apk",
-        "size": 76088382,
-        "sha256": "40b5a47bcfff676c325ada2c4253072dbdc4663a47a0519cd9301f40eb92c0c3",
+        "name": "DroidDeck-main-58968c9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58968c9/DroidDeck-main-58968c9-ludashi.apk",
+        "size": 76092478,
+        "sha256": "82a187b5a337d6f9ec5497ed1badf4c9eb1f766fc46edaaa75cf3252b50129eb",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "58968c9286973e341e1f61f4c862ea3b04d9554b",
+      "title": "fix(itch): install games whose download is an archive inside an archive",
+      "summary": "Reported on Discord (POCO F6, 0.6.7): itch.io installs fail with \"no exe found\" when the download is an archive that holds another archive. Voices of the Void ships a .zip whose only payload is a .7z, and the .exe is inside the .7z. The installer unpacked one level, found no .exe, and gave up.",
+      "publishedAt": 1793331323000
+    },
     {
       "commit": "57362979873a31efe4a58c361c1335f9a14f78c2",
       "title": "fix: keep the launcher from reclaiming focus when an app opens on the primary screen",
@@ -155,12 +161,6 @@
       "title": "fix(desktop): start Electron and Chromium apps from apt without the sandbox, on X11",
       "summary": "Electron and Chromium apps installed on the Ubuntu desktop as .deb packages close right after they start. Examples are VS Code, Discord, Obsidian, Signal and Google Chrome.",
       "publishedAt": 1793290666000
-    },
-    {
-      "commit": "30923635af049237c58a100fd572f1bc27c07c93",
-      "title": "fix: remove performance HUD detail text",
-      "summary": "Removes the \"Frame rate, frame times and readings come from the same sources as Steam's performance overlay.\" text from the Performance HUD settings group, along with the now-unused string in all locales. Not built or tested on device.",
-      "publishedAt": 1793285552000
     }
   ],
   "tests": [
