@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793389727246,
+  "generatedAt": 1793389808058,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-92c1560",
-    "title": "feat: Steam's sleep-after timers start every session as Disabled",
-    "summary": "\u2022 At every session start, before the Steam client launches, set Power > \"Sleep after\" (on battery and plugged in) to Disabled in each Steam home's config.vdf.\n\u2022 Android owns the device's sleep; a client that suspends inside the session only shows a black screen that Android doesn't know about.\n\u2022 Only IdleSuspendBatterySeconds and IdleSuspendACSeconds are forced. Dim display and screensaver timers stay the user's.\n\u2022 A change made in Steam's Power page applies for the running session and resets at the next launch.",
-    "commit": "92c1560f63cecf0c4ff465a6bcf3184adf41da8d",
+    "tag": "main-9cc5663",
+    "title": "feat: test and local builds show a faint PR, commit and title watermark",
+    "summary": "\u2022 Test PR builds and local builds draw a small white-on-gray tag in the bottom-right corner of every activity (launcher, in-session menu, games, Steam, desktop), so a screenshot or screen share shows what build is running.\n\u2022 PR builds: PR-1234 | abc1234 plus the PR title cut to 80 characters. Local builds: LOCAL | abc1234 plus the branch name.\n\u2022 Stable and preview builds (CI builds without a PR number) show nothing.\n\u2022 CI passes the PR title to Gradle as DROIDDECKPRTITLE; the title is baked in at build time, so a later edit shows up on the next push.",
+    "commit": "9cc56631cd064941ea0acc365ffd312df831fc19",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793377779000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-92c1560",
+    "publishedAt": 1793389729000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9cc5663",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-92c1560.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92c1560/DroidDeck-main-92c1560.apk",
-        "size": 76141630,
-        "sha256": "652558f5df7253d985c6ea0905c1212396940f9bac3ac9f0fc52aba802176dce",
+        "name": "DroidDeck-main-9cc5663.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9cc5663/DroidDeck-main-9cc5663.apk",
+        "size": 76149822,
+        "sha256": "5c51a5128a456ea7975bd38657250d34fc629d56cda3c6ad863c9ca0d28aee3f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-92c1560-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92c1560/DroidDeck-main-92c1560-pubg.apk",
-        "size": 76141630,
-        "sha256": "7581260693c034a943a35d81384937a83de6efe6b76e34ba2465ce6e72d517ac",
+        "name": "DroidDeck-main-9cc5663-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9cc5663/DroidDeck-main-9cc5663-pubg.apk",
+        "size": 76149822,
+        "sha256": "26e7c971ea4aba578d2d23070d9fc9c285cdf78575d7109ec361a95d42ff4962",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-92c1560-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92c1560/DroidDeck-main-92c1560-antutu.apk",
-        "size": 76141630,
-        "sha256": "f5e00de40d4055dfe1d8ff3a434720babdc302495e4f3bc1f8eb61db7d77aa5d",
+        "name": "DroidDeck-main-9cc5663-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9cc5663/DroidDeck-main-9cc5663-antutu.apk",
+        "size": 76149822,
+        "sha256": "1584202327fa1669dfbd9af425196ff727373383a404182530a787d3a85a5cbf",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-92c1560-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92c1560/DroidDeck-main-92c1560-ludashi.apk",
-        "size": 76141630,
-        "sha256": "a50e3f5146f399ca5d822b4ee580e4a77058d68dbb3b4ad6e6b66f9805f43513",
+        "name": "DroidDeck-main-9cc5663-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9cc5663/DroidDeck-main-9cc5663-ludashi.apk",
+        "size": 76149822,
+        "sha256": "c38b7fc6f1835b2e3acef6f6a21e6e95c9946d33992e8f6a24cf59245ababac2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9cc56631cd064941ea0acc365ffd312df831fc19",
+      "title": "feat: test and local builds show a faint PR, commit and title watermark",
+      "summary": "\u2022 Test PR builds and local builds draw a small white-on-gray tag in the bottom-right corner of every activity (launcher, in-session menu, games, Steam, desktop), so a screenshot or screen share shows what build is running.\n\u2022 PR builds: PR-1234 | abc1234 plus the PR title cut to 80 characters. Local builds: LOCAL | abc1234 plus the branch name.\n\u2022 Stable and preview builds (CI builds without a PR nu",
+      "publishedAt": 1793389729000
+    },
     {
       "commit": "92c1560f63cecf0c4ff465a6bcf3184adf41da8d",
       "title": "feat: Steam's sleep-after timers start every session as Disabled",
@@ -155,12 +161,6 @@
       "title": "fix: the Duo's bottom screen keeps the panel you picked across games",
       "summary": "On the Retroid Pocket Duo (and other dual-screen handhelds), the bottom screen doesn't stay on the panel the user chose. When the user switches it to Trackpad (or Terminal), the next game session opens Deck controls again.",
       "publishedAt": 1793332991000
-    },
-    {
-      "commit": "58968c9286973e341e1f61f4c862ea3b04d9554b",
-      "title": "fix(itch): install games whose download is an archive inside an archive",
-      "summary": "Reported on Discord (POCO F6, 0.6.7): itch.io installs fail with \"no exe found\" when the download is an archive that holds another archive. Voices of the Void ships a .zip whose only payload is a .7z, and the .exe is inside the .7z. The installer unpacked one level, found no .exe, and gave up.",
-      "publishedAt": 1793331323000
     }
   ],
   "tests": [
