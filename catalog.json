@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793331461252,
+  "generatedAt": 1793331538294,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1807",
+      "title": "fix: the performance HUD is off by default and keeps the user's own choice",
+      "summary": "Since 0.6.7, users see the performance HUD (FPS, CPU, GPU, RAM, battery bar) in every session without having turned it on. Several asked on Discord how to remove it.",
+      "commit": "16683b5fe09c4f5c585ce34f8ca841f16f0f6a86",
+      "pr": 1807,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793331430000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1807",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1807-16683b5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1807/DroidDeck-PR.1807-16683b5.apk",
+          "size": 76092478,
+          "sha256": "ea3978b5fa4cf6552652f2bc4ad8906a5634dda36f7f4ec13c601f2b768b04c1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1807-16683b5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1807/DroidDeck-PR.1807-16683b5-pubg.apk",
+          "size": 76092478,
+          "sha256": "d597984636382f02bfe1eb91735859274d48cec359fb9a0f487332804ccf99a2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1807-16683b5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1807/DroidDeck-PR.1807-16683b5-antutu.apk",
+          "size": 76092478,
+          "sha256": "eb09954664563eac2821aad52873ef8bf13fc60cac4e8689a628918a689ad5ca",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1807-16683b5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1807/DroidDeck-PR.1807-16683b5-ludashi.apk",
+          "size": 76092478,
+          "sha256": "33e43b207070f8cfa55fcde27aa84e04d9eb0791393d3c51c8769f5fb62be6f0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1803",
       "title": "fix: the Duo's bottom screen keeps the panel you picked across games",
