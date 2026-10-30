@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793332435172,
+  "generatedAt": 1793332719914,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1805",
+      "title": "fix: the Stop button no longer wraps letter by letter on narrow bottom screens",
+      "summary": "On an AYN Thor's bottom screen, the docked drawer's header row has no room left for the Stop button, and its label wraps one letter per line (\"S / to / p\"). A Discord user reported it on 0.6.7 with a screenshot.",
+      "commit": "37cdaaba00527e96a7beff8665ac077399616440",
+      "pr": 1805,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793332646000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1805",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1805-37cdaab.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-37cdaab.apk",
+          "size": 76092478,
+          "sha256": "efebdad4cebd0b3609a553ddf0270ade1c4ff1c708ea4015f3eba2f8e609c4fc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1805-37cdaab-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-37cdaab-pubg.apk",
+          "size": 76092478,
+          "sha256": "6dd2cbd03b62672303c003546128f4ed5c31278bbf5c71d1931bf013b6669c10",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1805-37cdaab-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-37cdaab-antutu.apk",
+          "size": 76092478,
+          "sha256": "3a38bb9e848f477116049076e93401d6e476a5cbb3ad856baf39c8f32d58a5d5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1805-37cdaab-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-37cdaab-ludashi.apk",
+          "size": 76092478,
+          "sha256": "60960c10030adc29aa8f101fe2df477874b5f42258209b8c0d6e7fa9f203719c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1806",
       "title": "fix: \"DroidDeck isn't responding\" on dual-screen handhelds when input reaches the bottom screen",
       "summary": "On dual-screen handhelds (reported on the AYN Thor, also seen on the Retroid Pocket Duo), Android shows \"DroidDeck isn't responding\" on both screens while the DroidDeck front end is open, with no game session running. Controller navigation stops working until the dialog is dismissed.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-8dc12b4-ludashi.apk",
           "size": 76088382,
           "sha256": "4095fe8fdb7421820e908b61d245549e8893ac3961eef8c539d09ee5937c4599",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1805",
-      "title": "fix: the Stop button no longer wraps letter by letter on narrow bottom screens",
-      "summary": "On an AYN Thor's bottom screen, the docked drawer's header row has no room left for the Stop button, and its label wraps one letter per line (\"S / to / p\"). A Discord user reported it on 0.6.7 with a screenshot.",
-      "commit": "2fb265ee23d75fbcbbcbe089b4d654592e095aa5",
-      "pr": 1805,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793328812000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1805",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1805-2fb265e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-2fb265e.apk",
-          "size": 76088382,
-          "sha256": "160681afbf81828b21e410346261195ada0f003a1c02a356b7cb0d455d2f1d85",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1805-2fb265e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-2fb265e-pubg.apk",
-          "size": 76088382,
-          "sha256": "7186fdbada1dd0e337c139ebe419930b30c1869aecee8b3f3fadcb6b8bc143b0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1805-2fb265e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-2fb265e-antutu.apk",
-          "size": 76088382,
-          "sha256": "18de905dbb317b58771e06ea81a6c72e092fd0be58e5ccefb86de25b15a6a95c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1805-2fb265e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-2fb265e-ludashi.apk",
-          "size": 76088382,
-          "sha256": "be08082faa33a2862e4740cb48f7da5b6074bcce9a3778ed2070b198b21a8e2c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
