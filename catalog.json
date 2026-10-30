@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793365755803,
+  "generatedAt": 1793365832771,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,16 +165,53 @@
   ],
   "tests": [
     {
-      "tag": "pr-1824",
-      "title": "fix: banking apps no longer refuse to open while DroidDeck is installed",
-      "summary": "Fixes the Discord report \"Banking application locked with DroidDeck 0.6.7 installed\" (UBS on a Galaxy S26 Ultra; fine on 0.6.0).",
-      "commit": "6d04dccd9b1a9adbca5ff54e1b110d95056fc85a",
-      "pr": 1824,
+      "tag": "pr-1833",
+      "title": "fix(desktop): video wallpapers no longer race ahead after DroidDeck returns from the background",
+      "summary": "Reported on Discord (RedMagic): after DroidDeck is minimised and reopened, a live video wallpaper on the desktop plays very fast for a moment.",
+      "commit": "afde98683b1dae756c23b31b29065e4217bf66e0",
+      "pr": 1833,
       "version": null,
       "versionCode": 16,
-      "publishedAt": 1793365719000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1824",
-      "apks": {}
+      "publishedAt": 1793365754000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1833",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1833-afde986.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1833/DroidDeck-PR.1833-afde986.apk",
+          "size": 76145726,
+          "sha256": "3dcac66ea8e4837446a441be5fd495297bb14b27cbeaf15aa177aeafed58489c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1833-afde986-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1833/DroidDeck-PR.1833-afde986-pubg.apk",
+          "size": 76145726,
+          "sha256": "56e813588690f72255ebbcad1960bc501d24a2906e539c2b780d73296a7bf5e3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1833-afde986-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1833/DroidDeck-PR.1833-afde986-antutu.apk",
+          "size": 76145726,
+          "sha256": "64220683504425f98ae094336a558d66638dc462cd25efb146434d663f44aec9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1833-afde986-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1833/DroidDeck-PR.1833-afde986-ludashi.apk",
+          "size": 76145726,
+          "sha256": "db95fad8e81aa3dc1faae2c43613b9939cf8faa1e495a6399c78d08208d55fba",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
     },
     {
       "tag": "pr-1832",
@@ -184,9 +221,95 @@
       "pr": 1832,
       "version": null,
       "versionCode": 16,
-      "publishedAt": 1793365718000,
+      "publishedAt": 1793365723000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1832",
-      "apks": {}
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1832-3c85c95.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1832/DroidDeck-PR.1832-3c85c95.apk",
+          "size": 76133438,
+          "sha256": "b313fc28fb9b5b92e246318ee824a9494ca3948e073ce40e6fbd15ad883a1b57",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1832-3c85c95-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1832/DroidDeck-PR.1832-3c85c95-pubg.apk",
+          "size": 76133438,
+          "sha256": "dc294a830b20012f9855bf981206dad578ad0f0c265d523a7443f11b1d31ce0a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1832-3c85c95-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1832/DroidDeck-PR.1832-3c85c95-antutu.apk",
+          "size": 76133438,
+          "sha256": "3e31031ebd50eb5291a4791caa219f7230bec2b8424ee24ca61ed63af4b8b1ef",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1832-3c85c95-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1832/DroidDeck-PR.1832-3c85c95-ludashi.apk",
+          "size": 76133438,
+          "sha256": "fddf86c00868f99bb0a5329c551cf6819ae59e85f687bcf9e396a7d206525637",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1824",
+      "title": "fix: banking apps no longer refuse to open while DroidDeck is installed",
+      "summary": "Fixes the Discord report \"Banking application locked with DroidDeck 0.6.7 installed\" (UBS on a Galaxy S26 Ultra; fine on 0.6.0).",
+      "commit": "6d04dccd9b1a9adbca5ff54e1b110d95056fc85a",
+      "pr": 1824,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793365723000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1824",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1824-6d04dcc.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-6d04dcc.apk",
+          "size": 76092478,
+          "sha256": "a047d3b8868f95725db709d9c60faacabfcde51280ceb52eca6de7b867ff101c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1824-6d04dcc-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-6d04dcc-pubg.apk",
+          "size": 76092478,
+          "sha256": "8e86c91cf74c60b5f55b253e6d36d5d1b087250681a38c9cdb5851295b88208e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1824-6d04dcc-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-6d04dcc-antutu.apk",
+          "size": 76092478,
+          "sha256": "05ec9cdb21b9c1bcd120d7d55e447ac4e54c00b01a975d2d131520b0ea2a092b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1824-6d04dcc-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-6d04dcc-ludashi.apk",
+          "size": 76092478,
+          "sha256": "df41b400567dd1043d21730bbbb39be3fefed2c324fcdd665951065b477fdaf0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
     },
     {
       "tag": "pr-1825",
@@ -196,9 +319,46 @@
       "pr": 1825,
       "version": null,
       "versionCode": 16,
-      "publishedAt": 1793365717000,
+      "publishedAt": 1793365722000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1825",
-      "apks": {}
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1825-3fb68d1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1825/DroidDeck-PR.1825-3fb68d1.apk",
+          "size": 76092478,
+          "sha256": "a615daa07e4b0b984de127e256237a70802aa8ba0002ef2047554c809ebb52cd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1825-3fb68d1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1825/DroidDeck-PR.1825-3fb68d1-pubg.apk",
+          "size": 76092478,
+          "sha256": "93cb939771d31f303bd1f08ba46bc9cc625db33bb76b037ae9e3a895e8e24dfe",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1825-3fb68d1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1825/DroidDeck-PR.1825-3fb68d1-antutu.apk",
+          "size": 76092478,
+          "sha256": "9772444e97f82b80dca96193d72621395f9bd70d48281ab5caafeacbb9115451",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1825-3fb68d1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1825/DroidDeck-PR.1825-3fb68d1-ludashi.apk",
+          "size": 76092478,
+          "sha256": "b7e04bf3ddf0ee884d4f390fbe715e2f7055aab2fb03de1546a2a7751da80b2b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
     },
     {
       "tag": "pr-1827",
