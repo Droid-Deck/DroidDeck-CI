@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793337122207,
+  "generatedAt": 1793337565619,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1810",
+      "title": "fix: a folder of games on game storage lists each game instead of one combined game (#1808)",
+      "summary": "Fixes #1808.",
+      "commit": "74710d25c45132f9df62c16d08169d3adab4ecc1",
+      "pr": 1810,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793337509000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1810",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1810-74710d2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1810/DroidDeck-PR.1810-74710d2.apk",
+          "size": 76092478,
+          "sha256": "94282e4f4eaec20925cce9eff18b405dabb5868a036d1a1554f51f05b17eb337",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1810-74710d2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1810/DroidDeck-PR.1810-74710d2-pubg.apk",
+          "size": 76092478,
+          "sha256": "55c7ca5b50b1116f8d54624a9cdddb50bf0a4fe97497930fb4b8e4d64d3b7158",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1810-74710d2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1810/DroidDeck-PR.1810-74710d2-antutu.apk",
+          "size": 76092478,
+          "sha256": "ab294e5619d50ab761fc85f74bf5aa43a4c0258fb54c4009c19c975f6b22b305",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1810-74710d2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1810/DroidDeck-PR.1810-74710d2-ludashi.apk",
+          "size": 76092478,
+          "sha256": "92e5cb7ab53b119f3906df672558668d8eda71d73ba20b3ad42afbd51620b73c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1809",
       "title": "fix: Steam's UI no longer renders flat out (lag and heat since 0.6.7)",
       "summary": "Since 0.6.7, Steam's Big Picture UI stutters on several devices and the device heats up quickly while sitting in Steam. 0.6.0 stays cool. A Discord user posted the same library scroll on 0.6.7 fresh, 0.6.0 fresh and 0.6.7 updated: 49 stalls over 100 ms on 0.6.7 against 1 on 0.6.0 (Galaxy S26 Ultra). It was also reported on an S26, an AYN Thor Max and others.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-aa48f20-ludashi.apk",
           "size": 76092478,
           "sha256": "849c242e08e8d56c873eb39b46d046fb543fd70af4ead80f30f98b2d333166c4",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1810",
-      "title": "fix: a folder of games on game storage lists each game instead of one combined game (#1808)",
-      "summary": "Fixes #1808.",
-      "commit": "c772635fb51a0982f1af43866e414d8948239f2e",
-      "pr": 1810,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793335583000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1810",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1810-c772635.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1810/DroidDeck-PR.1810-c772635.apk",
-          "size": 76092478,
-          "sha256": "a718ad490892511b4ff0a38b22b0c1e72c4f9810a4a2394e84901feadf17fffc",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1810-c772635-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1810/DroidDeck-PR.1810-c772635-pubg.apk",
-          "size": 76092478,
-          "sha256": "ba6a1b6f7a2070804ebf1da52ef951cd1806ffe0fd3bd87a9d3169a67ba8a2df",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1810-c772635-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1810/DroidDeck-PR.1810-c772635-antutu.apk",
-          "size": 76092478,
-          "sha256": "d00ca527678f69a93c45c7a31970d4b696458ad34252a374be30fad80e8c9a86",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1810-c772635-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1810/DroidDeck-PR.1810-c772635-ludashi.apk",
-          "size": 76092478,
-          "sha256": "ebe645c8e913669eb125c3e5c3325514fbc57615a71b6704e14da223067c2465",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
