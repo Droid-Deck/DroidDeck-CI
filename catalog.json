@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793320375938,
+  "generatedAt": 1793321418275,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-31c943c",
-    "title": "fix: Windows installs to Android storage no longer ask for an administrator",
-    "summary": "Installing a Battle.net game (reported with WoW) to a folder on Android storage (Z:, a microSD card or a USB SSD such as a Samsung T9) fails with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841). Installing to C: works. Symlinks don't help. Other stores that check folder permissions can hit the same thing.",
-    "commit": "31c943c82aa722bdebc40744f5e3ba868059e26b",
+    "tag": "main-ee3876b",
+    "title": "Windows components: restore bundle parts, wait for restores and keep older picks",
+    "summary": "Follow-up to Droid-Deck/DroidDeck#1786, covering the review points raised after it was merged.",
+    "commit": "ee3876b965a8cdb4083e118011170ceaba60e859",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793316518000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-31c943c",
+    "publishedAt": 1793321360000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ee3876b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-31c943c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-31c943c/DroidDeck-main-31c943c.apk",
+        "name": "DroidDeck-main-ee3876b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ee3876b/DroidDeck-main-ee3876b.apk",
         "size": 76071998,
-        "sha256": "0690012a33bcace39e21e3c1cf7b3c9a7c7b7e1a66928f56dd463f131af38445",
+        "sha256": "aa0f013eff5e1e9a738c5a800df21acb21325ad27cae8650b10acb6b60719925",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-31c943c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-31c943c/DroidDeck-main-31c943c-pubg.apk",
+        "name": "DroidDeck-main-ee3876b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ee3876b/DroidDeck-main-ee3876b-pubg.apk",
         "size": 76071998,
-        "sha256": "72ee81f4d35e199bd96924e115ea009669beeb59f4f7cea81598f1fafd3520c1",
+        "sha256": "f6b84c09f3440e826567655f3fad311385d2950a6bfbf42aff3535b2d7473930",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-31c943c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-31c943c/DroidDeck-main-31c943c-antutu.apk",
+        "name": "DroidDeck-main-ee3876b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ee3876b/DroidDeck-main-ee3876b-antutu.apk",
         "size": 76071998,
-        "sha256": "97e43193edd66b44bfe79a3ee49e3a7faf8c64828d3d4d9f08a35ee69a437e9b",
+        "sha256": "3c948ebb4c2523fe2552cb3a8a672228a617ffdc835e67da046f8f7bb97ce93b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-31c943c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-31c943c/DroidDeck-main-31c943c-ludashi.apk",
+        "name": "DroidDeck-main-ee3876b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ee3876b/DroidDeck-main-ee3876b-ludashi.apk",
         "size": 76071998,
-        "sha256": "3174974ae441ece4890769f81d6456c295af8ab6b60dcec2d34c939bcbf1daf4",
+        "sha256": "9d248ffdfba501e426ee4acd944a805ed81a63baddbb32691a114d5cfc8d3e0d",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "ee3876b965a8cdb4083e118011170ceaba60e859",
+      "title": "Windows components: restore bundle parts, wait for restores and keep older picks",
+      "summary": "Follow-up to Droid-Deck/DroidDeck#1786, covering the review points raised after it was merged.",
+      "publishedAt": 1793321360000
+    },
     {
       "commit": "31c943c82aa722bdebc40744f5e3ba868059e26b",
       "title": "fix: Windows installs to Android storage no longer ask for an administrator",
@@ -155,12 +161,6 @@
       "title": "perf(fex): answer raw stat, readlink and statx syscalls through the proot fast path",
       "summary": "FEX issues most of its path lookups as raw syscall() calls (newfstatat, readlinkat, statx) rather than through the libc wrappers. The session preload already routes raw openat, openat2 and execveat into the proot fast path, but these three still fell through to ptrace, so every one of them cost a full tracer round trip.",
       "publishedAt": 1793274355000
-    },
-    {
-      "commit": "d1bd23df161de27520e05601f0ad71ab45f78a2c",
-      "title": "Warn when a game library drive is linked at USB 2.0 speed",
-      "summary": "When a drive that DroidDeck uses as a game library (the Second library / game storage volume, or a Games folder on an external drive) is linked slower than USB 3 (5 Gbps), DroidDeck shows a warning in the usual app dialog style:",
-      "publishedAt": 1793248387000
     }
   ],
   "tests": [
