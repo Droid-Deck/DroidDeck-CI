@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793333973805,
+  "generatedAt": 1793334143844,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1806",
+      "title": "fix: \"DroidDeck isn't responding\" on dual-screen handhelds when input reaches the bottom screen",
+      "summary": "On dual-screen handhelds (reported on the AYN Thor, also seen on the Retroid Pocket Duo), Android shows \"DroidDeck isn't responding\" on both screens while the DroidDeck front end is open, with no game session running. Controller navigation stops working until the dialog is dismissed.",
+      "commit": "0a1e8e702a1aabc4e96bdea0afa55a151ac6012c",
+      "pr": 1806,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793334069000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1806",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1806-0a1e8e7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-0a1e8e7.apk",
+          "size": 76092478,
+          "sha256": "2a01ab84dd7306eee787da6f66fe045257fac794f264947020302b6332eb344d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1806-0a1e8e7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-0a1e8e7-pubg.apk",
+          "size": 76092478,
+          "sha256": "7dfcb8583490494b10cacfed9392196774b435c5e114114308aff81be146180f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1806-0a1e8e7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-0a1e8e7-antutu.apk",
+          "size": 76092478,
+          "sha256": "16e35a1a81604ca5aff8c76af43fc9c0d91100677e9c0a57c2495c0632fe0455",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1806-0a1e8e7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-0a1e8e7-ludashi.apk",
+          "size": 76092478,
+          "sha256": "f1815b4f66ff0e5b5f82ff5f2e7e1cea4121f7c66b3042ed5709746a0a6333a6",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1810",
       "title": "fix: non-Steam games inside a group folder are added on their own (#1808)",
       "summary": "Fixes #1808.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-feec335-ludashi.apk",
           "size": 76092478,
           "sha256": "986cf8ec8dbb78ab70db7bf814dbb27f7be1bd5708cec86101fda507098ddde6",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1806",
-      "title": "fix: \"DroidDeck isn't responding\" on dual-screen handhelds when input reaches the bottom screen",
-      "summary": "On dual-screen handhelds (reported on the AYN Thor, also seen on the Retroid Pocket Duo), Android shows \"DroidDeck isn't responding\" on both screens while the DroidDeck front end is open, with no game session running. Controller navigation stops working until the dialog is dismissed.",
-      "commit": "86e6969d4c94504c0b84e2cbac9bb52ace862edd",
-      "pr": 1806,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793332355000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1806",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1806-86e6969.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-86e6969.apk",
-          "size": 76092478,
-          "sha256": "c8e617b83a6004800655831ea78751daf33f8bd869610aaf138fc7e5a0e91465",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1806-86e6969-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-86e6969-pubg.apk",
-          "size": 76092478,
-          "sha256": "d00a06aae09bf2bd92b2fd8df7c5692a84bd9ae86ab750ea6bacc6916b94777b",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1806-86e6969-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-86e6969-antutu.apk",
-          "size": 76092478,
-          "sha256": "011c59ba0366d6150aa933557560130840600f086bedec23ef58249ae2c97195",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1806-86e6969-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-86e6969-ludashi.apk",
-          "size": 76092478,
-          "sha256": "eac51551fffb82da8caed76a863c32240318c88131bdeb7037c0839a356209d1",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
