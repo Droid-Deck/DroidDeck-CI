@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793388448938,
+  "generatedAt": 1793388701562,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1863",
-      "title": "feat: test and local builds show a faint PR, commit and title watermark",
-      "summary": "\u2022 Test PR builds and local builds draw a small white-on-gray tag in the bottom-right corner of every activity (launcher, in-session menu, games, Steam, desktop), so a screenshot or screen share shows what build is running.\n\u2022 PR builds: PR-1234 | abc1234 plus the PR title cut to 80 characters. Local builds: LOCAL | abc1234 plus the branch name.\n\u2022 Stable and preview builds (CI builds without a PR number) show nothing.\n\u2022 CI passes the PR title to Gradle as DROIDDECKPRTITLE; the title is baked in at build time, so a later edit shows up on the next push.",
-      "commit": "8351a937afc77eb6c62d170f37960c00a0ae42c2",
-      "pr": 1863,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793387856000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1863",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1863-8351a93.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1863/DroidDeck-PR.1863-8351a93.apk",
-          "size": 76149822,
-          "sha256": "d10dd1c7c50db72c22c31880f358c427ae530b176fb4209b2001d112d8c8287a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1863-8351a93-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1863/DroidDeck-PR.1863-8351a93-pubg.apk",
-          "size": 76149822,
-          "sha256": "7c0d0aed4914a101394c7baa037dad460dbaa285f26348b94f86538c92491c15",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1863-8351a93-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1863/DroidDeck-PR.1863-8351a93-antutu.apk",
-          "size": 76149822,
-          "sha256": "17e7b7fd32b9dadc9772273e0cef1db664fc4abd39f3c906e70a856645c597ca",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1863-8351a93-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1863/DroidDeck-PR.1863-8351a93-ludashi.apk",
-          "size": 76149822,
-          "sha256": "c8da50e3bbe297a69f6569f6b9705dd43041da3d2b00463da81539b5ded7c0be",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1688",
       "title": "Desktop: pacman, sudo, everyday utilities, copy/paste and touchpad-style touch gestures",
