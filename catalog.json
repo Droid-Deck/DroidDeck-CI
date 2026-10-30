@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793332964162,
+  "generatedAt": 1793333069671,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-58968c9",
-    "title": "fix(itch): install games whose download is an archive inside an archive",
-    "summary": "Reported on Discord (POCO F6, 0.6.7): itch.io installs fail with \"no exe found\" when the download is an archive that holds another archive. Voices of the Void ships a .zip whose only payload is a .7z, and the .exe is inside the .7z. The installer unpacked one level, found no .exe, and gave up.",
-    "commit": "58968c9286973e341e1f61f4c862ea3b04d9554b",
+    "tag": "main-2b0d633",
+    "title": "fix: the Duo's bottom screen keeps the panel you picked across games",
+    "summary": "On the Retroid Pocket Duo (and other dual-screen handhelds), the bottom screen doesn't stay on the panel the user chose. When the user switches it to Trackpad (or Terminal), the next game session opens Deck controls again.",
+    "commit": "2b0d63353531ed8294d78fa948cb8060520cfda5",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793331323000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-58968c9",
+    "publishedAt": 1793332991000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2b0d633",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-58968c9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58968c9/DroidDeck-main-58968c9.apk",
+        "name": "DroidDeck-main-2b0d633.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b0d633/DroidDeck-main-2b0d633.apk",
         "size": 76092478,
-        "sha256": "b65fa368b5a520384a299d073dca2b7ffd0870886afa8cc4899446821a63a6da",
+        "sha256": "ec3375d9d1afcd21edc463e27e98835191a701d578ef11ee7b2011bd11db79b9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-58968c9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58968c9/DroidDeck-main-58968c9-pubg.apk",
+        "name": "DroidDeck-main-2b0d633-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b0d633/DroidDeck-main-2b0d633-pubg.apk",
         "size": 76092478,
-        "sha256": "16e8b3ecb77b9c67f2972bd9be8845a0ebb1b9465d68fd292ef6ea99a422b7bb",
+        "sha256": "97181b1943daa66f33a873f40979b0a495cdbbdea2d6ba8d08e93552afe6743d",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-58968c9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58968c9/DroidDeck-main-58968c9-antutu.apk",
+        "name": "DroidDeck-main-2b0d633-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b0d633/DroidDeck-main-2b0d633-antutu.apk",
         "size": 76092478,
-        "sha256": "94763c47aa8737178e4d796ff927b784eb2801b2f8bbc06956102aca780c3918",
+        "sha256": "cd2f7c0d50fac28b0f21cddd5de67f3809d59e5d5e84ccd6584c58f208b3fdbb",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-58968c9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58968c9/DroidDeck-main-58968c9-ludashi.apk",
+        "name": "DroidDeck-main-2b0d633-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b0d633/DroidDeck-main-2b0d633-ludashi.apk",
         "size": 76092478,
-        "sha256": "82a187b5a337d6f9ec5497ed1badf4c9eb1f766fc46edaaa75cf3252b50129eb",
+        "sha256": "d35c1ab01f26f09cf021cd49dd05a98ae1bf7693ae9185506cf74cef4b4f187b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "2b0d63353531ed8294d78fa948cb8060520cfda5",
+      "title": "fix: the Duo's bottom screen keeps the panel you picked across games",
+      "summary": "On the Retroid Pocket Duo (and other dual-screen handhelds), the bottom screen doesn't stay on the panel the user chose. When the user switches it to Trackpad (or Terminal), the next game session opens Deck controls again.",
+      "publishedAt": 1793332991000
+    },
     {
       "commit": "58968c9286973e341e1f61f4c862ea3b04d9554b",
       "title": "fix(itch): install games whose download is an archive inside an archive",
@@ -155,12 +161,6 @@
       "title": "feat(desktop): one bottom panel with the system tray instead of a top bar",
       "summary": "\u2022 The Kubuntu desktop's default layout now has a single bottom panel: Kickoff, the task manager and the system tray on the right.\n\u2022 The top bar with the pager, clock, system tray and Show Desktop is removed.\n\u2022 The tray keeps scaleIconsToFit.",
       "publishedAt": 1793292645000
-    },
-    {
-      "commit": "0258f10df0542d9273cc654c90d01ba24f887599",
-      "title": "fix(desktop): start Electron and Chromium apps from apt without the sandbox, on X11",
-      "summary": "Electron and Chromium apps installed on the Ubuntu desktop as .deb packages close right after they start. Examples are VS Code, Discord, Obsidian, Signal and Google Chrome.",
-      "publishedAt": 1793290666000
     }
   ],
   "tests": [
