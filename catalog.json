@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793328466429,
+  "generatedAt": 1793328567954,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1801",
+      "title": "fix: use a second screen only when two physical screens are lit (Odin keeps its side rail)",
+      "summary": "Since 0.6.7 (#1734), AYN Odin 2, Odin 2 Mini and Odin 2 Portal users lose the side rail and the Back menu. DroidDeck treats the handheld as dual-screen and moves the rail to a \"second screen\" that doesn't exist. Four users on Discord reported it; turning Dual screen off in settings brings the rail back.",
+      "commit": "f64f661f493a30062e898cb41edccbccbc365100",
+      "pr": 1801,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793328510000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1801",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1801-f64f661.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-f64f661.apk",
+          "size": 76088382,
+          "sha256": "1669f675f3c95a5b41af226435b7af7b5a46c5cd88682264105cd4d6854556e1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1801-f64f661-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-f64f661-pubg.apk",
+          "size": 76088382,
+          "sha256": "28f363b79459052345694caafab618046e525a586d697cf6782bc3f45cf27364",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1801-f64f661-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-f64f661-antutu.apk",
+          "size": 76088382,
+          "sha256": "2a2faeac5c345b5ab168fe7ffbfe54f1f3dffffe21084ef470b1fc066a404e31",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1801-f64f661-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-f64f661-ludashi.apk",
+          "size": 76088382,
+          "sha256": "89d156516a3f75f0edb9d9ce97fec26f1e8b80e5aa7b830e73755ac79c4c423c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1803",
       "title": "fix: the Duo's bottom screen keeps the panel you picked across games",
       "summary": "On the Retroid Pocket Duo (and other dual-screen handhelds), the bottom screen doesn't stay on the panel the user chose. When the user switches it to Trackpad (or Terminal), the next game session opens Deck controls again.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1800/DroidDeck-PR.1800-d31e4cf-ludashi.apk",
           "size": 76092478,
           "sha256": "d47ab1839f332821345245ad95af1be674f8cd81ba1bde37571a4ab37e3868fb",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1801",
-      "title": "fix: use a second screen only when two physical screens are lit (Odin keeps its side rail)",
-      "summary": "Since 0.6.7 (#1734), AYN Odin 2, Odin 2 Mini and Odin 2 Portal users lose the side rail and the Back menu. DroidDeck treats the handheld as dual-screen and moves the rail to a \"second screen\" that doesn't exist. Four users on Discord reported it; turning Dual screen off in settings brings the rail back.",
-      "commit": "27a4bfd8f6dbaeff1c1eb803903e1259c979ef5d",
-      "pr": 1801,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793327322000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1801",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1801-27a4bfd.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-27a4bfd.apk",
-          "size": 76088382,
-          "sha256": "d9f8640e7935f8a77351b86772bb3ed47d6678ed7107859441a45cdc118c7ff3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1801-27a4bfd-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-27a4bfd-pubg.apk",
-          "size": 76088382,
-          "sha256": "1403ac18e8817313d5241741026b2991d8a5d5e1ef9cb5d9b25389956029dfc0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1801-27a4bfd-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-27a4bfd-antutu.apk",
-          "size": 76088382,
-          "sha256": "601f2e81cc5c19d4230f6b3a95d2d976dc1f090e267c9d188fb5ecb74dde8dde",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1801-27a4bfd-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-27a4bfd-ludashi.apk",
-          "size": 76088382,
-          "sha256": "2e5b5e64fa41e8b60854f0ea86358cecc66ab7d6693d4fa25211b71a5bbecf56",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
