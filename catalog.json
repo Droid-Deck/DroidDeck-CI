@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793392624660,
+  "generatedAt": 1793393169210,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1868",
+      "title": "feat: the HUD is named DroidDeck HUD everywhere, without the credit line or the outline dot",
+      "summary": "\u2022 Every HUD class, setting and label that said Fusion HUD now says DroidDeck HUD (DroidDeckHudView, DroidDeckHudHost, DroidDeckHudConfig, DroidDeckHudSettings, DroidDeckHudSize, and the HUD diagnostics report heading).\n\u2022 The HUD page of the session menu no longer shows the FusionHUD / The412Banner credit line, and its hudcredit string is removed from every locale.\n\u2022 The accent dot at the left edge of the HUD outline is gone; the outline is now only the neon stroke.",
+      "commit": "78f6e0acb87914554af6374c7e2cb8da3b72f65a",
+      "pr": 1868,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793393079000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1868",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1868-78f6e0a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-78f6e0a.apk",
+          "size": 76145726,
+          "sha256": "6ddbb8a9e1693dc9216b8032d971ff2b5952a548965112ba1d2f0242d1487d59",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1868-78f6e0a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-78f6e0a-pubg.apk",
+          "size": 76145726,
+          "sha256": "39376e88ec7cdb188b5c2a9ec8563aa4b75d94e1ee524595c06e26590cd44ddd",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1868-78f6e0a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-78f6e0a-antutu.apk",
+          "size": 76145726,
+          "sha256": "ad9ec912c948ef5b0ff637ace7827a09e4c519ec6f4364f6ba52e4637fa4534f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1868-78f6e0a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-78f6e0a-ludashi.apk",
+          "size": 76145726,
+          "sha256": "55cd7fbbc9dabf44bcfed60c548f79024f3f49b1e95c9a8fa84c950852bd6993",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1822",
       "title": "fix: a folder of games with an extra non-game folder still lists each game (Rance 01)",
