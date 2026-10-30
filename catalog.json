@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793376630403,
+  "generatedAt": 1793376881487,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1842",
+      "title": "fix: a session in picture-in-picture draws at 30 fps instead of the full refresh",
+      "summary": "Since #1727 made automatic picture-in-picture the default, pressing Home during a session leaves it running in a small window instead of suspending it. The window takes no input, but the session keeps drawing at its full rate. This is the largest heat and battery regression found in the 0.6.7 audit.",
+      "commit": "e82dc509e4533d52a65499551b961479d95555f1",
+      "pr": 1842,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793376770000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1842",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1842-e82dc50.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-e82dc50.apk",
+          "size": 76141630,
+          "sha256": "141e4ebff6752660b269ee48fe852a826f5620e8c4d7e80ca5a6a37a6263311f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1842-e82dc50-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-e82dc50-pubg.apk",
+          "size": 76141630,
+          "sha256": "7c68884d6b54d679691245dd17f3d542ab34f31bc28dd2c98bdb722f4bed63bf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1842-e82dc50-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-e82dc50-antutu.apk",
+          "size": 76141630,
+          "sha256": "974169c68c69fc26d3fcc879047017254c9cf335a7a4a47d78a068aba775313f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1842-e82dc50-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-e82dc50-ludashi.apk",
+          "size": 76141630,
+          "sha256": "fe0219c14c936e31b41f68d10958497c0394aaad1ecf2f8bfeea24c5b89b405c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1850",
       "title": "fix: Linux games on an NTFS USB drive start the first time instead of failing to load a library",
       "summary": "A native Linux game installed on a USB drive formatted NTFS (a Samsung SSD on the RedMagic Astra 2) closed about 14 seconds after launch, and the session returned to the launcher. The session log showed:",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1850/DroidDeck-PR.1850-ece8f5f-ludashi.apk",
           "size": 76141630,
           "sha256": "345c8ef5709b29ff7128164df8d18df3b9c61a2651acc790e1df28c2374b9fc8",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1848",
-      "title": "feat: Steam's sleep-after timers start every session as Disabled",
-      "summary": "\u2022 At every session start, before the Steam client launches, set Power > \"Sleep after\" (on battery and plugged in) to Disabled in each Steam home's config.vdf.\n\u2022 Android owns the device's sleep; a client that suspends inside the session only shows a black screen that Android doesn't know about.\n\u2022 Only IdleSuspendBatterySeconds and IdleSuspendACSeconds are forced. Dim display and screensaver timers stay the user's.\n\u2022 A change made in Steam's Power page applies for the running session and resets at the next launch.",
-      "commit": "96074e3f80b026d76c32d7bf6be6208a8251c465",
-      "pr": 1848,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793375407000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1848",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1848-96074e3.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1848/DroidDeck-PR.1848-96074e3.apk",
-          "size": 76141630,
-          "sha256": "72fad28c7e03cb9f6430583b7dc4614bfc8530fa3ad3125a6a23e0313c4237bf",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1848-96074e3-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1848/DroidDeck-PR.1848-96074e3-pubg.apk",
-          "size": 76141630,
-          "sha256": "4cfc4d95533331955b36c3d7d3c4fa6deb1b7234adea73ffe1db1e9c37b5c60e",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1848-96074e3-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1848/DroidDeck-PR.1848-96074e3-antutu.apk",
-          "size": 76141630,
-          "sha256": "f6b4e3921243093dc0f35f204417c8a6a21b84c509b0d2c304035c3835e81e65",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1848-96074e3-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1848/DroidDeck-PR.1848-96074e3-ludashi.apk",
-          "size": 76141630,
-          "sha256": "8c1cbeb9548b9d6f0e9156770728675108cd01134679a7c702e3935d8e7b7576",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -354,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-567b3fb-ludashi.apk",
           "size": 76141630,
           "sha256": "c85de1a58b34fd153d59c559820d1406e833ac75edfaf582071e8af3865b8728",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1842",
-      "title": "fix: a session in picture-in-picture draws at 30 fps instead of the full refresh",
-      "summary": "Since #1727 made automatic picture-in-picture the default, pressing Home during a session leaves it running in a small window instead of suspending it. The window takes no input, but the session keeps drawing at its full rate. This is the largest heat and battery regression found in the 0.6.7 audit.",
-      "commit": "dd5f4726614e9d238b274c8ab321b9aa202ed019",
-      "pr": 1842,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793374016000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1842",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1842-dd5f472.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-dd5f472.apk",
-          "size": 76141630,
-          "sha256": "c05162283bb974d988ed2283c66af2a610eee562ae8fd0503709799d6c0963d5",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1842-dd5f472-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-dd5f472-pubg.apk",
-          "size": 76141630,
-          "sha256": "ce52142d2d92ad26b6079f7ab7dd4fa49b249674d21665738a05c8904ef5b17e",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1842-dd5f472-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-dd5f472-antutu.apk",
-          "size": 76141630,
-          "sha256": "e4f37dc0991253136a67333150e079962f47a7d0a4d45675132da1cfac619fc0",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1842-dd5f472-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-dd5f472-ludashi.apk",
-          "size": 76141630,
-          "sha256": "02ee75ca51548ee59cda2097de2e46330ff012e53919f48bab0b8a055c205141",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
