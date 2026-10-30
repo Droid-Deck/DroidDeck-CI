@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793325789286,
+  "generatedAt": 1793326254881,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-26e2f26",
-    "title": "fix: Steam's Browse buttons work when another app holds port 8080 with Decky enabled",
-    "summary": "On a Thor in the desktop session, Steam's Add a Non-Steam Game \u2192 Browse\u2026 does nothing. The user's desktop log shows:",
-    "commit": "26e2f26ec986ea75b46dccd0deaaa07eb828419f",
+    "tag": "main-5736297",
+    "title": "fix: keep the launcher from reclaiming focus when an app opens on the primary screen",
+    "summary": "On dual-screen devices with the launcher panel on, choosing Primary screen for an app that was not running appeared to do nothing. The app launched, then the panel activity on the other display resumed and its returnFocus pulled the launcher task back over it.",
+    "commit": "57362979873a31efe4a58c361c1335f9a14f78c2",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793324304000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-26e2f26",
+    "publishedAt": 1793326201000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5736297",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-26e2f26.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-26e2f26/DroidDeck-main-26e2f26.apk",
+        "name": "DroidDeck-main-5736297.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5736297/DroidDeck-main-5736297.apk",
         "size": 76088382,
-        "sha256": "425213e961be24d32ad68507e19e595fded76b1b779a15c278ead1a58d603566",
+        "sha256": "5141cbe1593735e6eef3df95864d414dae16f7ac21a68934e7c6b6e4f642ea27",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-26e2f26-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-26e2f26/DroidDeck-main-26e2f26-pubg.apk",
+        "name": "DroidDeck-main-5736297-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5736297/DroidDeck-main-5736297-pubg.apk",
         "size": 76088382,
-        "sha256": "c558d4cc21a2748b0a4b7edc46ac5e735959bb5f6ae0554bfb310d8d9e7a7014",
+        "sha256": "57ec148f3b87cbd1bfb88144d3e07ad7d4d491eddc674f602c2b379e3c0c92aa",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-26e2f26-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-26e2f26/DroidDeck-main-26e2f26-antutu.apk",
+        "name": "DroidDeck-main-5736297-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5736297/DroidDeck-main-5736297-antutu.apk",
         "size": 76088382,
-        "sha256": "7d481de0ef598bbf9e720cff3c5d3e33f38571bed7dbbd6743c39605a794aa20",
+        "sha256": "99f4b892c54c15d8783494b50eb5915704b743aea9a7f298e634d87d8380e7a1",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-26e2f26-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-26e2f26/DroidDeck-main-26e2f26-ludashi.apk",
+        "name": "DroidDeck-main-5736297-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5736297/DroidDeck-main-5736297-ludashi.apk",
         "size": 76088382,
-        "sha256": "fe1b9688d5549ac15be104bf508774399bed781a1c97dd0b461e2ee8a6df252c",
+        "sha256": "40b5a47bcfff676c325ada2c4253072dbdc4663a47a0519cd9301f40eb92c0c3",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "57362979873a31efe4a58c361c1335f9a14f78c2",
+      "title": "fix: keep the launcher from reclaiming focus when an app opens on the primary screen",
+      "summary": "On dual-screen devices with the launcher panel on, choosing Primary screen for an app that was not running appeared to do nothing. The app launched, then the panel activity on the other display resumed and its returnFocus pulled the launcher task back over it.",
+      "publishedAt": 1793326201000
+    },
     {
       "commit": "26e2f26ec986ea75b46dccd0deaaa07eb828419f",
       "title": "fix: Steam's Browse buttons work when another app holds port 8080 with Decky enabled",
@@ -155,12 +161,6 @@
       "title": "fix: remove performance HUD detail text",
       "summary": "Removes the \"Frame rate, frame times and readings come from the same sources as Steam's performance overlay.\" text from the Performance HUD settings group, along with the now-unused string in all locales. Not built or tested on device.",
       "publishedAt": 1793285552000
-    },
-    {
-      "commit": "15b00fc23cb31e994ad12c2e198b03b20ddc9d59",
-      "title": "fix(release): rename the dual-screen and typing task affinities for variant APKs",
-      "summary": "Since #1734, every main build fails in sign / sign pubg, sign ludashi and sign antutu:",
-      "publishedAt": 1793284173000
     }
   ],
   "tests": [
