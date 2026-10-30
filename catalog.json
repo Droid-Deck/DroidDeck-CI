@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793330575389,
+  "generatedAt": 1793331075861,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1806",
+      "title": "fix: \"DroidDeck isn't responding\" on dual-screen handhelds when input reaches the bottom screen",
+      "summary": "On dual-screen handhelds (reported on the AYN Thor, also seen on the Retroid Pocket Duo), Android shows \"DroidDeck isn't responding\" on both screens while the DroidDeck front end is open, with no game session running. Controller navigation stops working until the dialog is dismissed.",
+      "commit": "c6d10b0a1c3daea7b6084d48f8b17b35408bac08",
+      "pr": 1806,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793331015000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1806",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1806-c6d10b0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-c6d10b0.apk",
+          "size": 76088382,
+          "sha256": "b188b8fe5712275a4f330a9e8a624501fb06cd8c715fc550ee1dd21fc06d9c23",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1806-c6d10b0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-c6d10b0-pubg.apk",
+          "size": 76088382,
+          "sha256": "6d43a9c2f40d5e009676b12a9723b18c9abceafa71a0a61353c5acb66f6d5af3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1806-c6d10b0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-c6d10b0-antutu.apk",
+          "size": 76088382,
+          "sha256": "60de480136c9be8eb253bae7c9b59d57829144783a37731bc8fd9eb2e6873d67",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1806-c6d10b0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-c6d10b0-ludashi.apk",
+          "size": 76088382,
+          "sha256": "20aade12fdb063fe3164031a03b21fcfdaa75dfc7bea7a64b15710f88f838abf",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1805",
       "title": "fix: the Stop button no longer wraps letter by letter on narrow bottom screens",
