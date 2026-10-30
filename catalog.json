@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793334143844,
+  "generatedAt": 1793334683308,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-2b0d633",
-    "title": "fix: the Duo's bottom screen keeps the panel you picked across games",
-    "summary": "On the Retroid Pocket Duo (and other dual-screen handhelds), the bottom screen doesn't stay on the panel the user chose. When the user switches it to Trackpad (or Terminal), the next game session opens Deck controls again.",
-    "commit": "2b0d63353531ed8294d78fa948cb8060520cfda5",
+    "tag": "main-ed661d7",
+    "title": "fix: the performance HUD is off by default and keeps the user's own choice",
+    "summary": "Since 0.6.7, users see the performance HUD (FPS, CPU, GPU, RAM, battery bar) in every session without having turned it on. Several asked on Discord how to remove it.",
+    "commit": "ed661d700741833fae6f75244793401a15ee9eb9",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793332991000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2b0d633",
+    "publishedAt": 1793334595000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ed661d7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-2b0d633.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b0d633/DroidDeck-main-2b0d633.apk",
+        "name": "DroidDeck-main-ed661d7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ed661d7/DroidDeck-main-ed661d7.apk",
         "size": 76092478,
-        "sha256": "ec3375d9d1afcd21edc463e27e98835191a701d578ef11ee7b2011bd11db79b9",
+        "sha256": "681c02c7dc64ff70d207238edd49cc486c69eb3d014318885b748102983b3760",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-2b0d633-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b0d633/DroidDeck-main-2b0d633-pubg.apk",
+        "name": "DroidDeck-main-ed661d7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ed661d7/DroidDeck-main-ed661d7-pubg.apk",
         "size": 76092478,
-        "sha256": "97181b1943daa66f33a873f40979b0a495cdbbdea2d6ba8d08e93552afe6743d",
+        "sha256": "7473d23d9945250158092a95e67bfc1f4aa0327dad27598b24695f2d185318f5",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-2b0d633-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b0d633/DroidDeck-main-2b0d633-antutu.apk",
+        "name": "DroidDeck-main-ed661d7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ed661d7/DroidDeck-main-ed661d7-antutu.apk",
         "size": 76092478,
-        "sha256": "cd2f7c0d50fac28b0f21cddd5de67f3809d59e5d5e84ccd6584c58f208b3fdbb",
+        "sha256": "f2c61b276d0cf2856397ca295cb0b30fb8d8ed3ad354b032c10675efee9a8b35",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-2b0d633-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b0d633/DroidDeck-main-2b0d633-ludashi.apk",
+        "name": "DroidDeck-main-ed661d7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ed661d7/DroidDeck-main-ed661d7-ludashi.apk",
         "size": 76092478,
-        "sha256": "d35c1ab01f26f09cf021cd49dd05a98ae1bf7693ae9185506cf74cef4b4f187b",
+        "sha256": "89f2de68ca3fa0a99f71beb20faf1c609668c6b8151da64a1329a1c87e3cefb2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "ed661d700741833fae6f75244793401a15ee9eb9",
+      "title": "fix: the performance HUD is off by default and keeps the user's own choice",
+      "summary": "Since 0.6.7, users see the performance HUD (FPS, CPU, GPU, RAM, battery bar) in every session without having turned it on. Several asked on Discord how to remove it.",
+      "publishedAt": 1793334595000
+    },
     {
       "commit": "2b0d63353531ed8294d78fa948cb8060520cfda5",
       "title": "fix: the Duo's bottom screen keeps the panel you picked across games",
@@ -155,12 +161,6 @@
       "title": "chore: bump version to 0.6.7 (16)",
       "summary": "\u2022 Bumps versionName to 0.6.7 and versionCode to 16 in app/build.gradle, ready for the 0.6.7 release.\n\u2022 Brings the 0.6.7 release notes up to date with the seven pull requests merged since they were written (#1764, #1767, #1768, #1772, #1773, #1775, #1781), and updates the pull request and contributor counts.",
       "publishedAt": 1793302476000
-    },
-    {
-      "commit": "5786e89ff4d580e75fc1bb8d6a7106949e563030",
-      "title": "feat(desktop): one bottom panel with the system tray instead of a top bar",
-      "summary": "\u2022 The Kubuntu desktop's default layout now has a single bottom panel: Kickoff, the task manager and the system tray on the right.\n\u2022 The top bar with the pager, clock, system tray and Show Desktop is removed.\n\u2022 The tray keeps scaleIconsToFit.",
-      "publishedAt": 1793292645000
     }
   ],
   "tests": [
