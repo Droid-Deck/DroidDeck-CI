@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793327801426,
+  "generatedAt": 1793328466429,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1803",
+      "title": "fix: the Duo's bottom screen keeps the panel you picked across games",
+      "summary": "On the Retroid Pocket Duo (and other dual-screen handhelds), the bottom screen doesn't stay on the panel the user chose. When the user switches it to Trackpad (or Terminal), the next game session opens Deck controls again.",
+      "commit": "6f4b2c0b73e98354dfd5a71c19ec29d6479f7972",
+      "pr": 1803,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793328394000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1803",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1803-6f4b2c0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1803/DroidDeck-PR.1803-6f4b2c0.apk",
+          "size": 76088382,
+          "sha256": "8d8ce3ad57465aac0b83f7f127992fd3ddccdf2545b5606ff23d9189f4e2f87a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1803-6f4b2c0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1803/DroidDeck-PR.1803-6f4b2c0-pubg.apk",
+          "size": 76088382,
+          "sha256": "90dfd00c5dc2121ef199367bc44cc7e5b0b469e94ed9add633223d6a182269eb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1803-6f4b2c0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1803/DroidDeck-PR.1803-6f4b2c0-antutu.apk",
+          "size": 76088382,
+          "sha256": "91c050570112ec62a2a6b3f54ba86b54d392b98fb4378fc537ef810f522373e6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1803-6f4b2c0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1803/DroidDeck-PR.1803-6f4b2c0-ludashi.apk",
+          "size": 76088382,
+          "sha256": "0429f1e362a015cbe479d25834ee71cb5caffe3aaa377458f338f6bdd76fefdb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1800",
       "title": "fix(itch): install games whose download is an archive inside an archive",
