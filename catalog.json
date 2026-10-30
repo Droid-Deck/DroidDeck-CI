@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793333069671,
+  "generatedAt": 1793333480695,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -214,55 +214,6 @@
       }
     },
     {
-      "tag": "pr-1805",
-      "title": "fix: the Stop button no longer wraps letter by letter on narrow bottom screens",
-      "summary": "On an AYN Thor's bottom screen, the docked drawer's header row has no room left for the Stop button, and its label wraps one letter per line (\"S / to / p\"). A Discord user reported it on 0.6.7 with a screenshot.",
-      "commit": "37cdaaba00527e96a7beff8665ac077399616440",
-      "pr": 1805,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793332646000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1805",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1805-37cdaab.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-37cdaab.apk",
-          "size": 76092478,
-          "sha256": "efebdad4cebd0b3609a553ddf0270ade1c4ff1c708ea4015f3eba2f8e609c4fc",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1805-37cdaab-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-37cdaab-pubg.apk",
-          "size": 76092478,
-          "sha256": "6dd2cbd03b62672303c003546128f4ed5c31278bbf5c71d1931bf013b6669c10",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1805-37cdaab-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-37cdaab-antutu.apk",
-          "size": 76092478,
-          "sha256": "3a38bb9e848f477116049076e93401d6e476a5cbb3ad856baf39c8f32d58a5d5",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1805-37cdaab-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-37cdaab-ludashi.apk",
-          "size": 76092478,
-          "sha256": "60960c10030adc29aa8f101fe2df477874b5f42258209b8c0d6e7fa9f203719c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-1806",
       "title": "fix: \"DroidDeck isn't responding\" on dual-screen handhelds when input reaches the bottom screen",
       "summary": "On dual-screen handhelds (reported on the AYN Thor, also seen on the Retroid Pocket Duo), Android shows \"DroidDeck isn't responding\" on both screens while the DroidDeck front end is open, with no game session running. Controller navigation stops working until the dialog is dismissed.",
@@ -305,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1806/DroidDeck-PR.1806-86e6969-ludashi.apk",
           "size": 76092478,
           "sha256": "eac51551fffb82da8caed76a863c32240318c88131bdeb7037c0839a356209d1",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1807",
-      "title": "fix: the performance HUD is off by default and keeps the user's own choice",
-      "summary": "Since 0.6.7, users see the performance HUD (FPS, CPU, GPU, RAM, battery bar) in every session without having turned it on. Several asked on Discord how to remove it.",
-      "commit": "16683b5fe09c4f5c585ce34f8ca841f16f0f6a86",
-      "pr": 1807,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793331430000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1807",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1807-16683b5.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1807/DroidDeck-PR.1807-16683b5.apk",
-          "size": 76092478,
-          "sha256": "ea3978b5fa4cf6552652f2bc4ad8906a5634dda36f7f4ec13c601f2b768b04c1",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1807-16683b5-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1807/DroidDeck-PR.1807-16683b5-pubg.apk",
-          "size": 76092478,
-          "sha256": "d597984636382f02bfe1eb91735859274d48cec359fb9a0f487332804ccf99a2",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1807-16683b5-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1807/DroidDeck-PR.1807-16683b5-antutu.apk",
-          "size": 76092478,
-          "sha256": "eb09954664563eac2821aad52873ef8bf13fc60cac4e8689a628918a689ad5ca",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1807-16683b5-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1807/DroidDeck-PR.1807-16683b5-ludashi.apk",
-          "size": 76092478,
-          "sha256": "33e43b207070f8cfa55fcde27aa84e04d9eb0791393d3c51c8769f5fb62be6f0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
