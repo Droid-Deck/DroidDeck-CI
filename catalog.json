@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793387937964,
+  "generatedAt": 1793388146644,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1866",
+      "title": "test: the required-status gate expects the skip-on-superseded condition",
+      "summary": "main's Build APK run fails in Python and native regression tests because testrequiredstatusrejectsfailedcancelledorskippedtestjobs still asserts the checks gate uses always(). The gate was changed to !cancelled() in 298a3d43e so a superseded main build is skipped instead of marked failed; the test now asserts that condition. The rest of the test, which checks the gate fails",
+      "commit": "1a2f3724a5ee14172de40489ed0663fe1a8e411a",
+      "pr": 1866,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793388080000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1866",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1866-1a2f372.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1866/DroidDeck-PR.1866-1a2f372.apk",
+          "size": 76145726,
+          "sha256": "5fe4c45b7ec752741f86a6d5d59dfe3b1342c868b9bf6545f96e2be87014cd50",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1866-1a2f372-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1866/DroidDeck-PR.1866-1a2f372-pubg.apk",
+          "size": 76145726,
+          "sha256": "18fead92a61a3649abab71e0eb6801b03d8d16826c4aff28c960a4ff3a25f30f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1866-1a2f372-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1866/DroidDeck-PR.1866-1a2f372-antutu.apk",
+          "size": 76145726,
+          "sha256": "7468a70975f42c674b59bc9382f686c02df9dbe5c030e9ccafebeadb29be8a60",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1866-1a2f372-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1866/DroidDeck-PR.1866-1a2f372-ludashi.apk",
+          "size": 76145726,
+          "sha256": "2a579d61fbc0f2395931978626b0e8f86a2ae9a409a681da853234cc5b8e7043",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1863",
       "title": "feat: test and local builds show a faint PR, commit and title watermark",
