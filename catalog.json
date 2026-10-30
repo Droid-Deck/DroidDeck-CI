@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793389949775,
+  "generatedAt": 1793391988033,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1824",
+      "title": "fix: banking apps no longer refuse to open while DroidDeck is installed",
+      "summary": "Fixes the Discord report \"Banking application locked with DroidDeck 0.6.7 installed\" (UBS on a Galaxy S26 Ultra; fine on 0.6.0).",
+      "commit": "bd2b5d6771f0f657c482638c814fd1513473da9e",
+      "pr": 1824,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793391931000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1824",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1824-bd2b5d6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-bd2b5d6.apk",
+          "size": 76149822,
+          "sha256": "3fc935792ec602576a6cef74da046e075a47dfcdec5cfb8c43a76517b527dd72",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1824-bd2b5d6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-bd2b5d6-pubg.apk",
+          "size": 76149822,
+          "sha256": "ecabcc7c9ca1343f7b0b6d2bf582be61dd4cc8e977292e01fedfa0c5401b690b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1824-bd2b5d6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-bd2b5d6-antutu.apk",
+          "size": 76149822,
+          "sha256": "57453f52db3e1da67ae19b2675a8a110b207b02e96e988c521edb3729d7330b5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1824-bd2b5d6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-bd2b5d6-ludashi.apk",
+          "size": 76149822,
+          "sha256": "fc4975b8266891b5fe63e4ac4b8f2e83431f99b97fc356bb65dc6dc24df00b53",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1865",
       "title": "ci: maintainer PR builds are release-signed as soon as the APK uploads",
@@ -501,55 +550,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1587/DroidDeck-PR.1587-0a5955d-ludashi.apk",
           "size": 78362134,
           "sha256": "70c1e38b46ab4d1ca5a117c0f1708266779a40b0dd2d4977e10b9c5cf14c5120",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1824",
-      "title": "fix: banking apps no longer refuse to open while DroidDeck is installed",
-      "summary": "Fixes the Discord report \"Banking application locked with DroidDeck 0.6.7 installed\" (UBS on a Galaxy S26 Ultra; fine on 0.6.0).",
-      "commit": "6d04dccd9b1a9adbca5ff54e1b110d95056fc85a",
-      "pr": 1824,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793365723000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1824",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1824-6d04dcc.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-6d04dcc.apk",
-          "size": 76092478,
-          "sha256": "a047d3b8868f95725db709d9c60faacabfcde51280ceb52eca6de7b867ff101c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1824-6d04dcc-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-6d04dcc-pubg.apk",
-          "size": 76092478,
-          "sha256": "8e86c91cf74c60b5f55b253e6d36d5d1b087250681a38c9cdb5851295b88208e",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1824-6d04dcc-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-6d04dcc-antutu.apk",
-          "size": 76092478,
-          "sha256": "05ec9cdb21b9c1bcd120d7d55e447ac4e54c00b01a975d2d131520b0ea2a092b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1824-6d04dcc-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1824/DroidDeck-PR.1824-6d04dcc-ludashi.apk",
-          "size": 76092478,
-          "sha256": "df41b400567dd1043d21730bbbb39be3fefed2c324fcdd665951065b477fdaf0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
