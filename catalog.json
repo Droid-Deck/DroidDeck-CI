@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793325578070,
+  "generatedAt": 1793325789286,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1802",
+      "title": "fix(runtime): ship GTK 3 and the libraries Proton's arm64 builds need",
+      "summary": "An audit of the Ubuntu runtime (ubuntu-r1-rc2) against what DroidDeck ships and launches found libraries that only the desktop pack installs. Users who never install the desktop (Steam game mode only) don't have them, although the Arch runtime did.",
+      "commit": "f0be10f412b85ce99a6ac9fc020d57bbd06accc1",
+      "pr": 1802,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793325720000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1802",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1802-f0be10f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1802/DroidDeck-PR.1802-f0be10f.apk",
+          "size": 76088382,
+          "sha256": "f2a3f4d37c5d67f54b0803d211b40d7091f8e12020db8c113b709cb3476a610d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1802-f0be10f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1802/DroidDeck-PR.1802-f0be10f-pubg.apk",
+          "size": 76088382,
+          "sha256": "a7c7389d0c059026e7c496c2f588fbeb247fb8ea2f7d05508c02cdda02794332",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1802-f0be10f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1802/DroidDeck-PR.1802-f0be10f-antutu.apk",
+          "size": 76088382,
+          "sha256": "33eea2dabcde97f63c0c42f27fd6ade840768b80ea590a7bf88ae19775fa5e4c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1802-f0be10f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1802/DroidDeck-PR.1802-f0be10f-ludashi.apk",
+          "size": 76088382,
+          "sha256": "f11d2e8e309426fe4b66be56069f718af96dd380328ab604e35235d4be930159",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1801",
       "title": "fix: AYN Odin handhelds keep their side rail (not treated as dual-screen)",
