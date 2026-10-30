@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793340768309,
+  "generatedAt": 1793341065710,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1809",
-      "title": "fix: Steam's UI draws at an even share of the refresh near 60 fps instead of the panel's full rate (lag and heat since 0.6.7)",
-      "summary": "Since 0.6.7, Steam's Big Picture UI lags on several devices, and the device heats up quickly while sitting in Steam. 0.6.0 stays cool. A Discord user posted the same library scroll on 0.6.7 fresh, 0.6.0 fresh and 0.6.7 updated: 49 stalls over 100 ms on 0.6.7 against 1 on 0.6.0 (Galaxy S26 Ultra). It was also reported on an S26, an AYN Thor Max and others.",
-      "commit": "bf2d7c3b091adb55c538ba06c0f1daa4263ab76a",
-      "pr": 1809,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793340704000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1809",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1809-bf2d7c3.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-bf2d7c3.apk",
-          "size": 76092478,
-          "sha256": "b9327ccea4e5e493b705fc263ee126fd1c1e8b233073d5b6e0b5d6ce12d7dc89",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1809-bf2d7c3-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-bf2d7c3-pubg.apk",
-          "size": 76092478,
-          "sha256": "b3b9c0a2e62197909a82af5ca936b02eb5d91b64dbcc6266bc533c9a9be3662f",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1809-bf2d7c3-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-bf2d7c3-antutu.apk",
-          "size": 76092478,
-          "sha256": "186fbfe182d5c0376ad90a246871039a286c3d9acd573cb53eb84363dd0a8802",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1809-bf2d7c3-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1809/DroidDeck-PR.1809-bf2d7c3-ludashi.apk",
-          "size": 76092478,
-          "sha256": "c9eae343131104bc37ff04e76d579b407abdf10881ad26fdd6ab2a737944cb84",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-1813",
       "title": "feat: cap the frame rate in session for games launched without Steam",
