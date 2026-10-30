@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793337565619,
+  "generatedAt": 1793338039076,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1813",
+      "title": "feat: cap the frame rate in session for games launched without Steam",
+      "summary": "\u2022 Adds a Frame limit row to the in-session drawer's Display page for games launched without Steam (Off, 30, 40, 45, 60, 90, 120).\n\u2022 The limit applies live: it paces the compositor and the display switches to a refresh rate the cap divides evenly, as the old Display setting did.\n\u2022 It lasts for the session and resets when the next one starts. Steam games keep using Steam's Frame Limit in the Quick Access menu, and glasses mirroring still wins when it asks for a lower rate.",
+      "commit": "5498f6e4118761692cf6abdea03d58cf1e0ee008",
+      "pr": 1813,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793337974000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1813",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1813-5498f6e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1813/DroidDeck-PR.1813-5498f6e.apk",
+          "size": 76092478,
+          "sha256": "f68ef9fac645cc5618105c6facf7a44e0cb5b6f31deaff08e6bf71037a55d5e5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1813-5498f6e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1813/DroidDeck-PR.1813-5498f6e-pubg.apk",
+          "size": 76092478,
+          "sha256": "36c61a87a9f109818d16e58273303d49ba10b554cd1422d6bd4f17e8cbea73c2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1813-5498f6e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1813/DroidDeck-PR.1813-5498f6e-antutu.apk",
+          "size": 76092478,
+          "sha256": "45a99f4058450d7e83fc7a8924aa5dcbcd3a05a065f1ab81f410133fedc55407",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1813-5498f6e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1813/DroidDeck-PR.1813-5498f6e-ludashi.apk",
+          "size": 76092478,
+          "sha256": "394be44718ab9240f6a9f3416de7bc0542672fe1521b7a30c75ae1f22daf1cf2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1810",
       "title": "fix: a folder of games on game storage lists each game instead of one combined game (#1808)",
