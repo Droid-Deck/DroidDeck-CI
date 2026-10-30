@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793375388245,
+  "generatedAt": 1793375496450,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1848",
+      "title": "feat: Steam's sleep-after timers start every session as Disabled",
+      "summary": "\u2022 At every session start, before the Steam client launches, set Power > \"Sleep after\" (on battery and plugged in) to Disabled in each Steam home's config.vdf.\n\u2022 Android owns the device's sleep; a client that suspends inside the session only shows a black screen that Android doesn't know about.\n\u2022 Only IdleSuspendBatterySeconds and IdleSuspendACSeconds are forced. Dim display and screensaver timers stay the user's.\n\u2022 A change made in Steam's Power page applies for the running session and resets at the next launch.",
+      "commit": "96074e3f80b026d76c32d7bf6be6208a8251c465",
+      "pr": 1848,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793375407000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1848",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1848-96074e3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1848/DroidDeck-PR.1848-96074e3.apk",
+          "size": 76141630,
+          "sha256": "72fad28c7e03cb9f6430583b7dc4614bfc8530fa3ad3125a6a23e0313c4237bf",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1848-96074e3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1848/DroidDeck-PR.1848-96074e3-pubg.apk",
+          "size": 76141630,
+          "sha256": "4cfc4d95533331955b36c3d7d3c4fa6deb1b7234adea73ffe1db1e9c37b5c60e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1848-96074e3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1848/DroidDeck-PR.1848-96074e3-antutu.apk",
+          "size": 76141630,
+          "sha256": "f6b4e3921243093dc0f35f204417c8a6a21b84c509b0d2c304035c3835e81e65",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1848-96074e3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1848/DroidDeck-PR.1848-96074e3-ludashi.apk",
+          "size": 76141630,
+          "sha256": "8c1cbeb9548b9d6f0e9156770728675108cd01134679a7c702e3935d8e7b7576",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1801",
       "title": "fix: Automatic dual screen needs a real second touch panel (Odin keeps its side rail)",
