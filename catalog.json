@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793328836582,
+  "generatedAt": 1793328924520,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1805",
+      "title": "fix: the Stop button no longer wraps letter by letter on narrow bottom screens",
+      "summary": "On an AYN Thor's bottom screen, the docked drawer's header row has no room left for the Stop button, and its label wraps one letter per line (\"S / to / p\"). A Discord user reported it on 0.6.7 with a screenshot.",
+      "commit": "2fb265ee23d75fbcbbcbe089b4d654592e095aa5",
+      "pr": 1805,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793328812000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1805",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1805-2fb265e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-2fb265e.apk",
+          "size": 76088382,
+          "sha256": "160681afbf81828b21e410346261195ada0f003a1c02a356b7cb0d455d2f1d85",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1805-2fb265e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-2fb265e-pubg.apk",
+          "size": 76088382,
+          "sha256": "7186fdbada1dd0e337c139ebe419930b30c1869aecee8b3f3fadcb6b8bc143b0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1805-2fb265e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-2fb265e-antutu.apk",
+          "size": 76088382,
+          "sha256": "18de905dbb317b58771e06ea81a6c72e092fd0be58e5ccefb86de25b15a6a95c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1805-2fb265e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1805/DroidDeck-PR.1805-2fb265e-ludashi.apk",
+          "size": 76088382,
+          "sha256": "be08082faa33a2862e4740cb48f7da5b6074bcce9a3778ed2070b198b21a8e2c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1804",
       "title": "fix(xbox): games run from their own folder on the short drive, not the drive root",
