@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793400825021,
+  "generatedAt": 1793400993268,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1872",
+      "title": "Ask for All files access when a USB drive is mounted but unreadable",
+      "summary": "On some Samsung phones a USB drive shows up in the file manager but tapping it only shows \"is mounted but not readable right now\". Android mounts the drive but blocks DroidDeck from reading it until All files access is granted. The manifest already declares MANAGEEXTERNALSTORAGE, but DroidDeck never asked for it, so users had to find the setting themselves.",
+      "commit": "9a59ca5362189ad9e82a7a1bb1d37b05d7d4683a",
+      "pr": 1872,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793400922000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1872",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1872-9a59ca5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1872/DroidDeck-PR.1872-9a59ca5.apk",
+          "size": 76665918,
+          "sha256": "907df16a483c7216cb588fe7a6369f643cb1fef1b45fa3416962de07633fbe94",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1872-9a59ca5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1872/DroidDeck-PR.1872-9a59ca5-pubg.apk",
+          "size": 76665918,
+          "sha256": "029a59bbcafc426edf8979f490cd06a1bae799ab7f7fae13e890978cbab5c133",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1872-9a59ca5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1872/DroidDeck-PR.1872-9a59ca5-antutu.apk",
+          "size": 76665918,
+          "sha256": "909b3ae6cf6ae734722596b8691da12c3f19dc6377f33f7498fe92f310bf097c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1872-9a59ca5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1872/DroidDeck-PR.1872-9a59ca5-ludashi.apk",
+          "size": 76665918,
+          "sha256": "7e00c040a0da8445dab0096d7bc96510d82bd28a21b1d0dabd49c4dbfc588d8e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1871",
       "title": "fix: \"DroidDeck isn't responding\" on dual-screen handhelds after the bottom screen takes focus",
