@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793377871383,
+  "generatedAt": 1793378504250,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1846",
+      "title": "test: frame-order glitch on Adreno 740: order and producer-fence logging, draw on the tick",
+      "summary": "Diagnostic build, not for merge.",
+      "commit": "c2c63b505578a3730b60e5ad5b0102f3de71d564",
+      "pr": 1846,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793378437000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1846",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1846-c2c63b5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-c2c63b5.apk",
+          "size": 76141630,
+          "sha256": "2a5cce94e765518b9ab119ae06b05ef31e62dd2edae83a4f07954ccb519f26cf",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1846-c2c63b5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-c2c63b5-pubg.apk",
+          "size": 76141630,
+          "sha256": "dba1a31acae596bf001bd3ddb6fd374a129e3e3cfce9b9538a7f0c23b83891fa",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1846-c2c63b5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-c2c63b5-antutu.apk",
+          "size": 76141630,
+          "sha256": "5885906137b96a982bbcfbcc4f4a37ff9b51ff24320912121661a0d5b8b7ddb6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1846-c2c63b5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-c2c63b5-ludashi.apk",
+          "size": 76141630,
+          "sha256": "5048011fb97967e93c5c757a6ee553db61babf950b1ad129aed925fa8c0c6a61",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1587",
       "title": "Mali GPU support through MaliBridge by ASEbrahim",
@@ -403,55 +452,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1840/DroidDeck-PR.1840-567b3fb-ludashi.apk",
           "size": 76141630,
           "sha256": "c85de1a58b34fd153d59c559820d1406e833ac75edfaf582071e8af3865b8728",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1846",
-      "title": "test: turn off the zero-timeout KGSL poll shortcut (frame-order glitch, Adreno 740)",
-      "summary": "Diagnostic build, not for merge.",
-      "commit": "8e28aab00dfdd5af0ca6ef1ca1c5826189327fba",
-      "pr": 1846,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793373906000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1846",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1846-8e28aab.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-8e28aab.apk",
-          "size": 76141630,
-          "sha256": "dfe74475a6d3962591ef94055a9c6f7b036e1c060a96b4f58b3a43b95fbead07",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1846-8e28aab-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-8e28aab-pubg.apk",
-          "size": 76141630,
-          "sha256": "6b8a1762f68f1e6f395586d03c7f7727c1228a246056046d060a212e52180492",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1846-8e28aab-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-8e28aab-antutu.apk",
-          "size": 76141630,
-          "sha256": "37e7a916a020fcc1121045237af86eade77a7994a6366056430bef0d671a6e99",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1846-8e28aab-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1846/DroidDeck-PR.1846-8e28aab-ludashi.apk",
-          "size": 76141630,
-          "sha256": "a2d1b463e114fb515d4b9c9aef22b835c92dd75e91137600eb0512a4c2005b21",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
