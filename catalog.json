@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793331538294,
+  "generatedAt": 1793331995690,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -214,55 +214,6 @@
       }
     },
     {
-      "tag": "pr-1803",
-      "title": "fix: the Duo's bottom screen keeps the panel you picked across games",
-      "summary": "On the Retroid Pocket Duo (and other dual-screen handhelds), the bottom screen doesn't stay on the panel the user chose. When the user switches it to Trackpad (or Terminal), the next game session opens Deck controls again.",
-      "commit": "f5a2eacca7ec43c26e60910a37fcbe220fafc3f7",
-      "pr": 1803,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793331361000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1803",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1803-f5a2eac.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1803/DroidDeck-PR.1803-f5a2eac.apk",
-          "size": 76088382,
-          "sha256": "847ed6559ec3088c73b3779b3ba682a2b8551d2b8ab60c912acac15a32852d09",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1803-f5a2eac-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1803/DroidDeck-PR.1803-f5a2eac-pubg.apk",
-          "size": 76088382,
-          "sha256": "8613e662c54e1fedd688f0eb3b55c64afb5971869bbfecf9ab9ab900e8254f4f",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1803-f5a2eac-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1803/DroidDeck-PR.1803-f5a2eac-antutu.apk",
-          "size": 76088382,
-          "sha256": "67be07e8c8766b8934f28196c21da14f99af00ebb92f9a2efa053edbc4373663",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1803-f5a2eac-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1803/DroidDeck-PR.1803-f5a2eac-ludashi.apk",
-          "size": 76088382,
-          "sha256": "65e9c893b2621315886b4e89303586f66edcd312561b0accb54bc4d9bba580dc",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-1801",
       "title": "fix: use a second screen only when two physical screens are lit (Odin keeps its side rail)",
       "summary": "Since 0.6.7 (#1734), AYN Odin 2, Odin 2 Mini and Odin 2 Portal users lose the side rail and the Back menu. DroidDeck treats the handheld as dual-screen and moves the rail to a \"second screen\" that doesn't exist. Four users on Discord reported it; turning Dual screen off in settings brings the rail back.",
@@ -452,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1804/DroidDeck-PR.1804-9a3bc77-ludashi.apk",
           "size": 76088382,
           "sha256": "7f108f5a8379013a161fcbea7b90542c77cd84b92b46a85c70f69707f8cfe58f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1802",
-      "title": "fix(runtime): ship GTK 3 and the libraries Proton's arm64 builds need",
-      "summary": "An audit of the Ubuntu runtime (ubuntu-r1-rc2) against what DroidDeck ships and launches found libraries that only the desktop pack installs. Users who never install the desktop (Steam game mode only) don't have them, although the Arch runtime did.",
-      "commit": "f0be10f412b85ce99a6ac9fc020d57bbd06accc1",
-      "pr": 1802,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793325720000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1802",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1802-f0be10f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1802/DroidDeck-PR.1802-f0be10f.apk",
-          "size": 76088382,
-          "sha256": "f2a3f4d37c5d67f54b0803d211b40d7091f8e12020db8c113b709cb3476a610d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1802-f0be10f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1802/DroidDeck-PR.1802-f0be10f-pubg.apk",
-          "size": 76088382,
-          "sha256": "a7c7389d0c059026e7c496c2f588fbeb247fb8ea2f7d05508c02cdda02794332",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1802-f0be10f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1802/DroidDeck-PR.1802-f0be10f-antutu.apk",
-          "size": 76088382,
-          "sha256": "33eea2dabcde97f63c0c42f27fd6ade840768b80ea590a7bf88ae19775fa5e4c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1802-f0be10f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1802/DroidDeck-PR.1802-f0be10f-ludashi.apk",
-          "size": 76088382,
-          "sha256": "f11d2e8e309426fe4b66be56069f718af96dd380328ab604e35235d4be930159",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
