@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793374005287,
+  "generatedAt": 1793374082406,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1842",
+      "title": "fix: a session in picture-in-picture draws at 30 fps instead of the full refresh",
+      "summary": "Since #1727 made automatic picture-in-picture the default, pressing Home during a session leaves it running in a small window instead of suspending it. The window takes no input, but the session keeps drawing at its full rate. This is the largest heat and battery regression found in the 0.6.7 audit.",
+      "commit": "dd5f4726614e9d238b274c8ab321b9aa202ed019",
+      "pr": 1842,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793374016000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1842",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1842-dd5f472.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-dd5f472.apk",
+          "size": 76141630,
+          "sha256": "c05162283bb974d988ed2283c66af2a610eee562ae8fd0503709799d6c0963d5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1842-dd5f472-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-dd5f472-pubg.apk",
+          "size": 76141630,
+          "sha256": "ce52142d2d92ad26b6079f7ab7dd4fa49b249674d21665738a05c8904ef5b17e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1842-dd5f472-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-dd5f472-antutu.apk",
+          "size": 76141630,
+          "sha256": "e4f37dc0991253136a67333150e079962f47a7d0a4d45675132da1cfac619fc0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1842-dd5f472-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-dd5f472-ludashi.apk",
+          "size": 76141630,
+          "sha256": "02ee75ca51548ee59cda2097de2e46330ff012e53919f48bab0b8a055c205141",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1846",
       "title": "test: turn off the zero-timeout KGSL poll shortcut (frame-order glitch, Adreno 740)",
       "summary": "Diagnostic build, not for merge.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1801/DroidDeck-PR.1801-8035604-ludashi.apk",
           "size": 76145726,
           "sha256": "94d0b9232e6ca8d4189b8f61ce2e93b1ecec97f75ffdfecb347d19f54aceedaf",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1842",
-      "title": "fix: a session in picture-in-picture draws at 30 fps instead of the full refresh",
-      "summary": "Since #1727 made automatic picture-in-picture the default, pressing Home during a session leaves it running in a small window instead of suspending it. The window takes no input, but the session keeps drawing at its full rate. This is the largest heat and battery regression found in the 0.6.7 audit.",
-      "commit": "17dc24e5e64b8c0a69ee8049eaf0ca1a339226ef",
-      "pr": 1842,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793372851000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1842",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1842-17dc24e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-17dc24e.apk",
-          "size": 76141630,
-          "sha256": "7dbfbd4d052dbc062f7eff79b4395a87df6afa5e9d88fc266adee3eeaef03ca9",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1842-17dc24e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-17dc24e-pubg.apk",
-          "size": 76141630,
-          "sha256": "282a2bdf4d1f2fcdfa6a04734dfb9937487b514ee9becc126d778f66ebe3a33b",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1842-17dc24e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-17dc24e-antutu.apk",
-          "size": 76141630,
-          "sha256": "7356322396d1235262e8230ea08f73af740fdfc6e251a2ee8e892f9a7b260643",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1842-17dc24e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1842/DroidDeck-PR.1842-17dc24e-ludashi.apk",
-          "size": 76141630,
-          "sha256": "0b532626b2148661ce5ab2f03fce57866891e02d2b65d73b6ad2a4bce1504ce7",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
