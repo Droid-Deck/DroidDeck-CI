@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793415655192,
+  "generatedAt": 1793417168858,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1754",
+      "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
+      "summary": "not meant to be merged and is a debugging tool.",
+      "commit": "6125e7d64e38f572bfb7f13c57d07acb28fed688",
+      "pr": 1754,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793417113000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1754",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1754-6125e7d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-6125e7d.apk",
+          "size": 76686398,
+          "sha256": "ef7a93703f9c08d87deb16c88cb89e92dce4dd02e12054519c73955fdffee11d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1754-6125e7d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-6125e7d-pubg.apk",
+          "size": 76686398,
+          "sha256": "cda339e2cfe230c69926e94acfb5683d732bc2c6ad11ca8934be196b5565311a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1754-6125e7d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-6125e7d-antutu.apk",
+          "size": 76686398,
+          "sha256": "1539f8274c5ea462433f4c148caa488bf2fec30a714558cce33b2302bea8aa76",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1754-6125e7d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-6125e7d-ludashi.apk",
+          "size": 76686398,
+          "sha256": "680a9d9403dd1b9338595e66cf7a57f0ff2cda90f01b510abc5b1068f9d299aa",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1877",
       "title": "Proton: QueryPerformanceCounter reads the CPU timer on ARM64EC",
       "summary": "Windows on ARM answers QueryPerformanceCounter from the CPU's generic timer without leaving user space. Wine's ARM64EC ntdll makes a system call for every one: through FEX's syscall callback and Wine's dispatcher into clockgettime. DroidDeck-Proton's own user-mode TSC patch excludes ARM64EC, so phones still pay for every read.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1877/DroidDeck-PR.1877-f34af54-ludashi.apk",
           "size": 76678300,
           "sha256": "61ef0070ffae5c74984190950336b5c82be4f4b050d0743d25082191daa37ed3",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1754",
-      "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
-      "summary": "not meant to be merged and is a debugging tool.",
-      "commit": "713aef35a5e7c6d184ed152faeadb6c891bedc84",
-      "pr": 1754,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793406226000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1754",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1754-713aef3.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-713aef3.apk",
-          "size": 76670014,
-          "sha256": "3aa5e60efd35ca0535d38ee4fa8ac7ff9a4d53c0947bfa9c78d2ad2d9ca29f86",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1754-713aef3-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-713aef3-pubg.apk",
-          "size": 76670014,
-          "sha256": "29e284b8de7ea2aa6e9f30f92ba078c9b7972b07f77ef54c060445f61931c36d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1754-713aef3-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-713aef3-antutu.apk",
-          "size": 76670014,
-          "sha256": "7460ebcd3d86e03efdbcc9b27ca5fb847f1640c2dda302c1bbf04005ed2e8d4c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1754-713aef3-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-713aef3-ludashi.apk",
-          "size": 76670014,
-          "sha256": "c0b35fffe0dd3d45356a00ee14217468ff3d045265f3f8ae302613ee0e544590",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
