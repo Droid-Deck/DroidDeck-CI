@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793417168858,
+  "generatedAt": 1793419824133,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1880",
+      "title": "perf: .NET games keep the FEX preset's multiblock setting (Stardew Valley starts in 45 s instead of 85 s)",
+      "summary": "Every game that ships coreclr.dll (.NET 5+ games such as Stardew Valley) gets a fixed FEX profile from droiddeck-game-env. That profile turned FEX multiblock off on top of full TSO, overriding the user's global FEX preset (Performance + TSO by default, which has multiblock on). Multiblock off makes FEX translate x86 code one block at a time, and .NET's JIT produces a lot of fresh code while a",
+      "commit": "05e6c4acacfdc384aaed702503d992ac6200dd1f",
+      "pr": 1880,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793419751000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1880",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1880-05e6c4a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1880/DroidDeck-PR.1880-05e6c4a.apk",
+          "size": 76678206,
+          "sha256": "963d8146c877f428cb556342573f483f5c920e84c1c80bb696b712db1e1170ec",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1880-05e6c4a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1880/DroidDeck-PR.1880-05e6c4a-pubg.apk",
+          "size": 76678206,
+          "sha256": "b3c4c9a1f45e8ec9426628dfc467684602678858c84f2f146bb9b7157e45b9be",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1880-05e6c4a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1880/DroidDeck-PR.1880-05e6c4a-antutu.apk",
+          "size": 76678206,
+          "sha256": "fd1dd42492d5f15c682cbcd9e080b9feaf074938b45780b898956cc9d41a1571",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1880-05e6c4a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1880/DroidDeck-PR.1880-05e6c4a-ludashi.apk",
+          "size": 76678206,
+          "sha256": "2d60b51fde5d7dd5395caab02d45239bb6dfe4033ca5396fc0ef33bcb540656e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1754",
       "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
