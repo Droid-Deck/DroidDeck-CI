@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793464427540,
+  "generatedAt": 1793464558641,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1888",
+      "title": "Games: launch options for Steam games in the Edit screen, shared with Steam's Properties",
+      "summary": "Only added games have a Launch options field in DroidDeck (their editor, under the pencil). Passing -dx11, -dx12 or -vulkan to a Steam game still means opening the Steam client's Properties.",
+      "commit": "a400fda2f1787c1e0384e8b4858d6d54a30611c4",
+      "pr": 1888,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793464484000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1888",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1888-a400fda.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-a400fda.apk",
+          "size": 76702782,
+          "sha256": "acdbc2799ffbe50974738d11dbd90d9a47bcc66f8c013e9bc722e2b43dfce319",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1888-a400fda-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-a400fda-pubg.apk",
+          "size": 76702782,
+          "sha256": "9f5ba7e070e7edd28d6703bf3f8f9be068531228d56e831ee46367a691923ece",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1888-a400fda-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-a400fda-antutu.apk",
+          "size": 76702782,
+          "sha256": "267b79223dfb3992b9e4d165b4ea28cfbfc13b4758783a3bbf1bdfba048ec382",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1888-a400fda-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-a400fda-ludashi.apk",
+          "size": 76702782,
+          "sha256": "e308d511b9fda134f4a4061dc4bd8346bb49625627602475948595d592c6996d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1899",
       "title": "feat: a per-game relative mouse switch for games that confine and warp the cursor",
       "summary": "Some games read the mouse by confining it and warping it back, so in a Steam session the pointer stops at the screen edge and aim is capped by screen size.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b9b9358-ludashi.apk",
           "size": 76682302,
           "sha256": "d20581034f2efb9db1df2e90fc28c7e7d3eccb065d26773dc8d7aaf40207d3b3",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1888",
-      "title": "Games: launch options for Steam games in the Edit screen, shared with Steam's Properties",
-      "summary": "Only added games have a Launch options field in DroidDeck (their editor, under the pencil). Passing -dx11, -dx12 or -vulkan to a Steam game still means opening the Steam client's Properties.",
-      "commit": "ffb903b80c1b3be23c9df03208e067eb8ea65da2",
-      "pr": 1888,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793461904000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1888",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1888-ffb903b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-ffb903b.apk",
-          "size": 76702782,
-          "sha256": "acee74f510b228b7ed21d7b3217984730004e40c6ad701d5fb3403bb1d452b8b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1888-ffb903b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-ffb903b-pubg.apk",
-          "size": 76702782,
-          "sha256": "8ccc2da078b1d5b5b5fc9ff154d683ca2c872d24c98e17f7b8e9a7796298eeae",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1888-ffb903b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-ffb903b-antutu.apk",
-          "size": 76702782,
-          "sha256": "21c2bb5ad11cf94a0fa93dd2b8c280890eeb97804a2d5087adb765bfc5ec8bc7",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1888-ffb903b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-ffb903b-ludashi.apk",
-          "size": 76702782,
-          "sha256": "88a2deca3f08ecbd26fef5cfff7ae5c7610698fecfaedc777351f1cf67b59a4c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
