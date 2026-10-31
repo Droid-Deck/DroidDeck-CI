@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793409111641,
+  "generatedAt": 1793409744371,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,55 +165,6 @@
   ],
   "tests": [
     {
-      "tag": "pr-1875",
-      "title": "Run x8664 Flatpak apps through FEX",
-      "summary": "x8664 Flatpak apps could not start. EdziioSan's r2modman bundle installed fine, but every launch died at Flatpak's first step:",
-      "commit": "5d0dd72230dcea6535a1e7de9f0f4a8f79249785",
-      "pr": 1875,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793409037000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1875",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1875-5d0dd72.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1875/DroidDeck-PR.1875-5d0dd72.apk",
-          "size": 76665918,
-          "sha256": "5fe811b527065e40da3fe376f66e2a83a3bfa6015ee72225c0ec39e03992b045",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1875-5d0dd72-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1875/DroidDeck-PR.1875-5d0dd72-pubg.apk",
-          "size": 76665918,
-          "sha256": "a4f8f951348ce84732d3b93ef2cdcf03ea65f3279b74c0f55a5f9f63025d500d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1875-5d0dd72-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1875/DroidDeck-PR.1875-5d0dd72-antutu.apk",
-          "size": 76665918,
-          "sha256": "caf379573008ebcbceb9b0a8908f181411369e1c046fd08cc682e1f548883f38",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1875-5d0dd72-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1875/DroidDeck-PR.1875-5d0dd72-ludashi.apk",
-          "size": 76665918,
-          "sha256": "12f60162572b0c4f97d58e7f969190716be650dfc53b00488bd1d32c2586dcd6",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-1868",
       "title": "feat: the HUD is DroidDeck HUD, pinch resizes it, and pushing it off an edge docks it as an FPS tab",
       "summary": "\u2022 Every HUD class, setting and label that said Fusion HUD now says DroidDeck HUD (DroidDeckHudView, DroidDeckHudHost, DroidDeckHudConfig, DroidDeckHudSettings, DroidDeckHudSize, and the HUD diagnostics report heading).\n\u2022 The HUD page of the session menu no longer shows the FusionHUD / The412Banner credit line, and its hudcredit string is removed from every locale.\n\u2022 The accent dot at the left edge of the HUD outline is gone, and the outline now closes into one continuous line where the dot used to sit.\n\u2022 Pinch with two fingers on an unlocked HUD to resize it (50% to 200%, saved as hudScale).\n\u2022 Drag an unlocked HUD so about 40% of it hangs past a screen edge and it docks as a small FPS tab. A tap on the tab, or pulling it away from the edge, brings the HUD back. The docked edge is saved as hudDock.\n\u2022 Docking contracts the HUD into the tab and undocking expands it back out as one shape, using the launcher's own Motion easing and duration scale (no animation when animations are off).",
@@ -305,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-713aef3-ludashi.apk",
           "size": 76670014,
           "sha256": "c0b35fffe0dd3d45356a00ee14217468ff3d045265f3f8ae302613ee0e544590",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1872",
-      "title": "Ask for All files access when a USB drive is mounted but unreadable",
-      "summary": "On some Samsung phones a USB drive shows up in the file manager but tapping it only shows \"is mounted but not readable right now\". Android mounts the drive but blocks DroidDeck from reading it until All files access is granted. The manifest already declares MANAGEEXTERNALSTORAGE, but DroidDeck never asked for it, so users had to find the setting themselves.",
-      "commit": "9a59ca5362189ad9e82a7a1bb1d37b05d7d4683a",
-      "pr": 1872,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793400922000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1872",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1872-9a59ca5.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1872/DroidDeck-PR.1872-9a59ca5.apk",
-          "size": 76665918,
-          "sha256": "907df16a483c7216cb588fe7a6369f643cb1fef1b45fa3416962de07633fbe94",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1872-9a59ca5-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1872/DroidDeck-PR.1872-9a59ca5-pubg.apk",
-          "size": 76665918,
-          "sha256": "029a59bbcafc426edf8979f490cd06a1bae799ab7f7fae13e890978cbab5c133",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1872-9a59ca5-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1872/DroidDeck-PR.1872-9a59ca5-antutu.apk",
-          "size": 76665918,
-          "sha256": "909b3ae6cf6ae734722596b8691da12c3f19dc6377f33f7498fe92f310bf097c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1872-9a59ca5-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1872/DroidDeck-PR.1872-9a59ca5-ludashi.apk",
-          "size": 76665918,
-          "sha256": "7e00c040a0da8445dab0096d7bc96510d82bd28a21b1d0dabd49c4dbfc588d8e",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
