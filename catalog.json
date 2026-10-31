@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793472504064,
+  "generatedAt": 1793474299148,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1908",
+      "title": "fix: local builds bundle the addon packs they pin",
+      "summary": "Sessions from APKs built with tools/buildlocal.sh failed on first start with RUNTIMEINSTALLFAILED / \"Cannot download proot\".",
+      "commit": "d5648a5dfcbaf8900df6d9d62be15ce64a7db496",
+      "pr": 1908,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793474233000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1908",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1908-d5648a5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1908/DroidDeck-PR.1908-d5648a5.apk",
+          "size": 76702782,
+          "sha256": "1c9d2259ea53d120bb74beffdfd99dfc64dc5d29e0463b4d16474c0ed10b242c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1908-d5648a5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1908/DroidDeck-PR.1908-d5648a5-pubg.apk",
+          "size": 76702782,
+          "sha256": "58624167d55f699057563a45d646ca8fb08ef6db550013dd9ee3ee9a5d453151",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1908-d5648a5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1908/DroidDeck-PR.1908-d5648a5-antutu.apk",
+          "size": 76702782,
+          "sha256": "8eb9a3332aa1d266af8826eb2da96b2e4ce707c6b2e68493797c11c343e4f4c1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1908-d5648a5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1908/DroidDeck-PR.1908-d5648a5-ludashi.apk",
+          "size": 76702782,
+          "sha256": "3ebf0a8d1141cb16880f9db66a2baf4e75e29a0e87d054f7116e91f36aa38049",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1899",
       "title": "feat: a per-game relative mouse switch for games that confine and warp the cursor",
