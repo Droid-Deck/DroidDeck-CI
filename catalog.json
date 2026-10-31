@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793422435382,
+  "generatedAt": 1793423009716,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1885",
+      "title": "Session: the drawer's frame limit works in desktop mode, up to 165",
+      "summary": "The Frame limit slider from #1813 shows in the session drawer only for games started without Steam in run mode (Proton run, Epic, Battle.net). Games run from desktop mode never get it, so a desktop session has no way to pick its frame rate: it follows whatever rate the panel had when the session started.",
+      "commit": "666a807285f6a8e01b98f6ca5669f43535a51f41",
+      "pr": 1885,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793422933000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1885",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1885-666a807.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1885/DroidDeck-PR.1885-666a807.apk",
+          "size": 76678206,
+          "sha256": "c2bc2490c76bca68eca0072c2b2a613372f8753e2347e86bc0246adbb1c1da7d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1885-666a807-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1885/DroidDeck-PR.1885-666a807-pubg.apk",
+          "size": 76678206,
+          "sha256": "9eb79cbfd8143fab9a2ed302c7d506670cfd65a46664fed9c8ec6883596b6a82",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1885-666a807-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1885/DroidDeck-PR.1885-666a807-antutu.apk",
+          "size": 76678206,
+          "sha256": "f33490dfedd7f10e1a0c218d127e5e8fb0de06c47bf0d8adf9d17d3f3d376cc3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1885-666a807-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1885/DroidDeck-PR.1885-666a807-ludashi.apk",
+          "size": 76678206,
+          "sha256": "2efe197364dc9183827f67f8a589ec46a85e69405090f9581d395e4b2e2123e5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1882",
       "title": "zRAM: compress Battle.net with the Steam client while one of its games runs",
