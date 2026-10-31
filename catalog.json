@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793455360791,
+  "generatedAt": 1793457992768,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1896",
+      "title": "fix: stop importing games as Spacewar (480) and follow a changed Steam app id",
+      "summary": "An added game whose steamappid.txt says 480 disappears from the Library and shows up as Spacewar.",
+      "commit": "b5c1f4f53fad5e417b7e5c1a4f97a433db497913",
+      "pr": 1896,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793457911000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1896",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1896-b5c1f4f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b5c1f4f.apk",
+          "size": 76682302,
+          "sha256": "54698b494a4f96185d9136c2e190fd67560e88cd5170e53f335a7a76a05e4499",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1896-b5c1f4f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b5c1f4f-pubg.apk",
+          "size": 76682302,
+          "sha256": "c7e1884fa08c9c94cffed1f303977d2711dbff5d3ad82c9b6d96bdbc9ebad022",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1896-b5c1f4f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b5c1f4f-antutu.apk",
+          "size": 76682302,
+          "sha256": "c691945bf1a714862669e377c68440db46c6cb90b719d1c1dafee17abe72aa31",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1896-b5c1f4f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b5c1f4f-ludashi.apk",
+          "size": 76682302,
+          "sha256": "c268bc2c316cb34bbc212625ccb52812258a0ec9bef025d38f15a0c2647e5df7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1754",
       "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
