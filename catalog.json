@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793420335756,
+  "generatedAt": 1793421221931,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6eef072",
-    "title": "feat: the HUD is DroidDeck HUD, pinch resizes it, and pushing it off an edge docks it as an FPS tab",
-    "summary": "\u2022 Every HUD class, setting and label that said Fusion HUD now says DroidDeck HUD (DroidDeckHudView, DroidDeckHudHost, DroidDeckHudConfig, DroidDeckHudSettings, DroidDeckHudSize, and the HUD diagnostics report heading).\n\u2022 The HUD page of the session menu no longer shows the FusionHUD / The412Banner credit line, and its hudcredit string is removed from every locale.\n\u2022 The accent dot at the left edge of the HUD outline is gone, and the outline now closes into one continuous line where the dot used to sit.\n\u2022 Pinch with two fingers on an unlocked HUD to resize it (50% to 200%, saved as hudScale).\n\u2022 Drag an unlocked HUD so about 40% of it hangs past a screen edge and it docks as a small FPS tab. A tap on the tab, or pulling it away from the edge, brings the HUD back. The docked edge is saved as hudDock.\n\u2022 Docking contracts the HUD into the tab and undocking expands it back out as one shape, using the launcher's own Motion easing and duration scale (no animation when animations are off).",
-    "commit": "6eef0721c99fb3ad1355abf1a35989761ea2491c",
+    "tag": "main-b07eca3",
+    "title": "perf: .NET games keep the FEX preset's multiblock setting (Stardew Valley starts in 45 s instead of 85 s)",
+    "summary": "Every game that ships coreclr.dll (.NET 5+ games such as Stardew Valley) gets a fixed FEX profile from droiddeck-game-env. That profile turned FEX multiblock off on top of full TSO, overriding the user's global FEX preset (Performance + TSO by default, which has multiblock on). Multiblock off makes FEX translate x86 code one block at a time, and .NET's JIT produces a lot of fresh code while a",
+    "commit": "b07eca3c0629e8e6eaaa18b7f6e027effc5cf399",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793415572000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6eef072",
+    "publishedAt": 1793421141000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b07eca3",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6eef072.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6eef072/DroidDeck-main-6eef072.apk",
+        "name": "DroidDeck-main-b07eca3.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b07eca3/DroidDeck-main-b07eca3.apk",
         "size": 76678206,
-        "sha256": "33bb44806bf1c828cd59d31c8988baa892468d67096a30ff35411e6d362386a4",
+        "sha256": "e1afb9e171f89db6b51a11f0ff22ee2ee2a25a821cdbc1b5603cd9a270bb3745",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6eef072-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6eef072/DroidDeck-main-6eef072-pubg.apk",
+        "name": "DroidDeck-main-b07eca3-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b07eca3/DroidDeck-main-b07eca3-pubg.apk",
         "size": 76678206,
-        "sha256": "a86fd1fa346432d1931d4ac125ae237c9c7f188145c6ad6c00d6ebbad001ee0b",
+        "sha256": "62a78e19ea8c1bc085d2ba9d96646d55b1a45d1e4ba106a8aaaa45239b74d54b",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6eef072-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6eef072/DroidDeck-main-6eef072-antutu.apk",
+        "name": "DroidDeck-main-b07eca3-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b07eca3/DroidDeck-main-b07eca3-antutu.apk",
         "size": 76678206,
-        "sha256": "5e6251622c6dc611cb2c4ec8cf01afc9dcf4ec658c94899ff1356741e4e3f508",
+        "sha256": "05d2ff405c7ddaf4606d4a4be62d9156454488bab745b6951f43eef266c240e0",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6eef072-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6eef072/DroidDeck-main-6eef072-ludashi.apk",
+        "name": "DroidDeck-main-b07eca3-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b07eca3/DroidDeck-main-b07eca3-ludashi.apk",
         "size": 76678206,
-        "sha256": "945fb44daf069c8576833606963c6bbd2c7685e3f4db4840411ad87e687d855f",
+        "sha256": "2c1a6a2722dd7421ab1ae7765a5c3154ec8c9737cb7379dba2d4db18dd732d9d",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b07eca3c0629e8e6eaaa18b7f6e027effc5cf399",
+      "title": "perf: .NET games keep the FEX preset's multiblock setting (Stardew Valley starts in 45 s instead of 85 s)",
+      "summary": "Every game that ships coreclr.dll (.NET 5+ games such as Stardew Valley) gets a fixed FEX profile from droiddeck-game-env. That profile turned FEX multiblock off on top of full TSO, overriding the user's global FEX preset (Performance + TSO by default, which has multiblock on). Multiblock off makes FEX translate x86 code one block at a time, and .NET's JIT produces a lot of fresh code while a",
+      "publishedAt": 1793421141000
+    },
     {
       "commit": "6eef0721c99fb3ad1355abf1a35989761ea2491c",
       "title": "feat: the HUD is DroidDeck HUD, pinch resizes it, and pushing it off an edge docks it as an FPS tab",
@@ -155,12 +161,6 @@
       "title": "feat: test and local builds show a faint PR, commit and title watermark",
       "summary": "\u2022 Test PR builds and local builds draw a small white-on-gray tag in the bottom-right corner of every activity (launcher, in-session menu, games, Steam, desktop), so a screenshot or screen share shows what build is running.\n\u2022 PR builds: PR-1234 | abc1234 plus the PR title cut to 80 characters. Local builds: LOCAL | abc1234 plus the branch name.\n\u2022 Stable and preview builds (CI builds without a PR nu",
       "publishedAt": 1793389729000
-    },
-    {
-      "commit": "92c1560f63cecf0c4ff465a6bcf3184adf41da8d",
-      "title": "feat: Steam's sleep-after timers start every session as Disabled",
-      "summary": "\u2022 At every session start, before the Steam client launches, set Power > \"Sleep after\" (on battery and plugged in) to Disabled in each Steam home's config.vdf.\n\u2022 Android owns the device's sleep; a client that suspends inside the session only shows a black screen that Android doesn't know about.\n\u2022 Only IdleSuspendBatterySeconds and IdleSuspendACSeconds are forced. Dim display and screensaver timers ",
-      "publishedAt": 1793377779000
     }
   ],
   "tests": [
