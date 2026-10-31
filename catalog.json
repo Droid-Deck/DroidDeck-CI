@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793410001736,
+  "generatedAt": 1793410419509,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1877",
+      "title": "Proton: QueryPerformanceCounter reads the CPU timer on ARM64EC",
+      "summary": "Windows on ARM answers QueryPerformanceCounter from the CPU's generic timer without leaving user space. Wine's ARM64EC ntdll makes a system call for every one: through FEX's syscall callback and Wine's dispatcher into clockgettime. DroidDeck-Proton's own user-mode TSC patch excludes ARM64EC, so phones still pay for every read.",
+      "commit": "cc7ad8eafb25a576773cb88e89f0527a1f356325",
+      "pr": 1877,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793410335000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1877",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1877-cc7ad8e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1877/DroidDeck-PR.1877-cc7ad8e.apk",
+          "size": 76666012,
+          "sha256": "7c93513637fa0264d0512d6d153f6f13ae2d8bf37896e3fc52617645009e2b8a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1877-cc7ad8e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1877/DroidDeck-PR.1877-cc7ad8e-pubg.apk",
+          "size": 76666012,
+          "sha256": "2a8ef8676ba67691a5aa5255557b89d3112873c5d435abb5471d094be3110d8c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1877-cc7ad8e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1877/DroidDeck-PR.1877-cc7ad8e-antutu.apk",
+          "size": 76666012,
+          "sha256": "5d25a3763cbd024aa57bbd66e06c77f7e8131f64dad6e249005c1d0c004fff05",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1877-cc7ad8e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1877/DroidDeck-PR.1877-cc7ad8e-ludashi.apk",
+          "size": 76666012,
+          "sha256": "1f1eccc14eef10824b4643ed9d7c8b6f87389a914cca3ac1253592444748b536",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1868",
       "title": "feat: the HUD is DroidDeck HUD, pinch resizes it, and pushing it off an edge docks it as an FPS tab",
