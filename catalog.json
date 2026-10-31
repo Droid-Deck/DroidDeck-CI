@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793464558641,
+  "generatedAt": 1793465558715,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1899",
+      "title": "feat: a per-game relative mouse switch for games that confine and warp the cursor",
+      "summary": "Some games read the mouse by confining it and warping it back, so in a Steam session the pointer stops at the screen edge and aim is capped by screen size.",
+      "commit": "cf0f82d8cd1236b29a07299a88784488afa4e92f",
+      "pr": 1899,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793465470000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1899",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1899-cf0f82d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-cf0f82d.apk",
+          "size": 76686398,
+          "sha256": "e1879ee21a96ade3ec475c0d42d8444a414f327625de5741964d40ef929268fb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1899-cf0f82d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-cf0f82d-pubg.apk",
+          "size": 76686398,
+          "sha256": "ec433b7386d2e47d03870448642c5717c2360e782c5e877eb1ef5ce3a522c887",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1899-cf0f82d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-cf0f82d-antutu.apk",
+          "size": 76686398,
+          "sha256": "8aded585435b869e0a4dd67aa8ae9c7b36b439c9908b383ed22bbdcde013ef03",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1899-cf0f82d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-cf0f82d-ludashi.apk",
+          "size": 76686398,
+          "sha256": "705f8268041516960a319e1f7001129ac144b4f9e0e5ff5b53bc3a83f32c030b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1888",
       "title": "Games: launch options for Steam games in the Edit screen, shared with Steam's Properties",
       "summary": "Only added games have a Launch options field in DroidDeck (their editor, under the pencil). Passing -dx11, -dx12 or -vulkan to a Steam game still means opening the Steam client's Properties.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-a400fda-ludashi.apk",
           "size": 76702782,
           "sha256": "e308d511b9fda134f4a4061dc4bd8346bb49625627602475948595d592c6996d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1899",
-      "title": "feat: a per-game relative mouse switch for games that confine and warp the cursor",
-      "summary": "Some games read the mouse by confining it and warping it back, so in a Steam session the pointer stops at the screen edge and aim is capped by screen size.",
-      "commit": "7ff8c5d568cb6682f3f5b483150337ee7186eebe",
-      "pr": 1899,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793464338000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1899",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1899-7ff8c5d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-7ff8c5d.apk",
-          "size": 76686398,
-          "sha256": "503dd41116578e8f2146c420f6adce7610ce242e171348d5968f955a13469feb",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1899-7ff8c5d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-7ff8c5d-pubg.apk",
-          "size": 76686398,
-          "sha256": "6e342c9dc7523f66babdbf5bf1ac8c94c374a4a2418c0b557899d85dc3aa2a59",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1899-7ff8c5d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-7ff8c5d-antutu.apk",
-          "size": 76686398,
-          "sha256": "fa90242dd8e33037581536b233569557948b36ca18da6def7d4979f7e651f041",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1899-7ff8c5d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-7ff8c5d-ludashi.apk",
-          "size": 76686398,
-          "sha256": "73c2e166e54f7c3a079816388e6dccf9f75cbd222152d02b5a15ddd6a4b87265",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
