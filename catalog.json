@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793466200604,
+  "generatedAt": 1793466436839,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1896",
+      "title": "fix: stop importing games as Spacewar (480) and follow a changed Steam app id",
+      "summary": "An added game whose steamappid.txt says 480 disappears from the Library and shows up as Spacewar.",
+      "commit": "f34e158e7adee870a839b33e0811f81035e013ed",
+      "pr": 1896,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793466379000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1896",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1896-f34e158.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-f34e158.apk",
+          "size": 76682302,
+          "sha256": "17abf7b15240ca5948f3ed8b59691d6321a4174c648b1808754b84e11bfb6eb5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1896-f34e158-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-f34e158-pubg.apk",
+          "size": 76682302,
+          "sha256": "fb6a6681f6e2ba0be6d2817a6c3f4239f94a2b5dd489f812ee909647c2a6e113",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1896-f34e158-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-f34e158-antutu.apk",
+          "size": 76682302,
+          "sha256": "796945cf93e47be7c6051be08843efd625cc6f5562f6036d2d0752f3e23b89c3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1896-f34e158-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-f34e158-ludashi.apk",
+          "size": 76682302,
+          "sha256": "d91b1a6e7575bbe0cff1bd7a3cbd5faaeb0a6e6a234bc48a867b123687d3566d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1888",
       "title": "Games: launch options for Steam games in the Edit screen, shared with Steam's Properties",
       "summary": "Only added games have a Launch options field in DroidDeck (their editor, under the pencil). Passing -dx11, -dx12 or -vulkan to a Steam game still means opening the Steam client's Properties.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-cf0f82d-ludashi.apk",
           "size": 76686398,
           "sha256": "705f8268041516960a319e1f7001129ac144b4f9e0e5ff5b53bc3a83f32c030b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1896",
-      "title": "fix: stop importing games as Spacewar (480) and follow a changed Steam app id",
-      "summary": "An added game whose steamappid.txt says 480 disappears from the Library and shows up as Spacewar.",
-      "commit": "b9b9358aec58646837c6b3a92a63369ef912854d",
-      "pr": 1896,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793462433000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1896",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1896-b9b9358.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b9b9358.apk",
-          "size": 76682302,
-          "sha256": "f5f5aca6969a4b55af4e473f1af0a9d63e54d5244f2e0b3121e71f07ce007e95",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1896-b9b9358-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b9b9358-pubg.apk",
-          "size": 76682302,
-          "sha256": "b7aad04711216870fa39287fda1d7dd4456cee28332b6b5f053bbba3bdb01c18",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1896-b9b9358-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b9b9358-antutu.apk",
-          "size": 76682302,
-          "sha256": "bbae8c87f154b7668e91788627f4dbc6c64afb46027625705ebf77269e6bb490",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1896-b9b9358-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b9b9358-ludashi.apk",
-          "size": 76682302,
-          "sha256": "d20581034f2efb9db1df2e90fc28c7e7d3eccb065d26773dc8d7aaf40207d3b3",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
