@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793448750281,
+  "generatedAt": 1793449518137,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b07eca3",
-    "title": "perf: .NET games keep the FEX preset's multiblock setting (Stardew Valley starts in 45 s instead of 85 s)",
-    "summary": "Every game that ships coreclr.dll (.NET 5+ games such as Stardew Valley) gets a fixed FEX profile from droiddeck-game-env. That profile turned FEX multiblock off on top of full TSO, overriding the user's global FEX preset (Performance + TSO by default, which has multiblock on). Multiblock off makes FEX translate x86 code one block at a time, and .NET's JIT produces a lot of fresh code while a",
-    "commit": "b07eca3c0629e8e6eaaa18b7f6e027effc5cf399",
+    "tag": "main-85dd8be",
+    "title": "zRAM: compress Battle.net with the Steam client while one of its games runs",
+    "summary": "Test build only. Do not merge yet.",
+    "commit": "85dd8beae155820d5ffb14dfe4e5c456c88013f9",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793421141000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b07eca3",
+    "publishedAt": 1793449463000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-85dd8be",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b07eca3.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b07eca3/DroidDeck-main-b07eca3.apk",
+        "name": "DroidDeck-main-85dd8be.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-85dd8be/DroidDeck-main-85dd8be.apk",
         "size": 76678206,
-        "sha256": "e1afb9e171f89db6b51a11f0ff22ee2ee2a25a821cdbc1b5603cd9a270bb3745",
+        "sha256": "d4ac4f229d4935f86d52b7f9d5288a793f77767f685a05183fda9303929c5067",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b07eca3-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b07eca3/DroidDeck-main-b07eca3-pubg.apk",
+        "name": "DroidDeck-main-85dd8be-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-85dd8be/DroidDeck-main-85dd8be-pubg.apk",
         "size": 76678206,
-        "sha256": "62a78e19ea8c1bc085d2ba9d96646d55b1a45d1e4ba106a8aaaa45239b74d54b",
+        "sha256": "f296cea63e080781ce48d3c97f85f8fe953b6ab57eef373b9f10da7eca76939f",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b07eca3-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b07eca3/DroidDeck-main-b07eca3-antutu.apk",
+        "name": "DroidDeck-main-85dd8be-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-85dd8be/DroidDeck-main-85dd8be-antutu.apk",
         "size": 76678206,
-        "sha256": "05d2ff405c7ddaf4606d4a4be62d9156454488bab745b6951f43eef266c240e0",
+        "sha256": "abc74a725d56f48532f84431303735793fbe780680b03884c8fe013be7ea8684",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b07eca3-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b07eca3/DroidDeck-main-b07eca3-ludashi.apk",
+        "name": "DroidDeck-main-85dd8be-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-85dd8be/DroidDeck-main-85dd8be-ludashi.apk",
         "size": 76678206,
-        "sha256": "2c1a6a2722dd7421ab1ae7765a5c3154ec8c9737cb7379dba2d4db18dd732d9d",
+        "sha256": "736fbbb4daa9252f0a60fbc7839a5d160c112e9f9069af08e5736b3c747e0fd7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "85dd8beae155820d5ffb14dfe4e5c456c88013f9",
+      "title": "zRAM: compress Battle.net with the Steam client while one of its games runs",
+      "summary": "Test build only. Do not merge yet.",
+      "publishedAt": 1793449463000
+    },
     {
       "commit": "b07eca3c0629e8e6eaaa18b7f6e027effc5cf399",
       "title": "perf: .NET games keep the FEX preset's multiblock setting (Stardew Valley starts in 45 s instead of 85 s)",
@@ -155,12 +161,6 @@
       "title": "fix(audio): DirectAudio no longer crackles where Android refuses low-latency output",
       "summary": "Fixes #1843 and #1819 (audio crackling and popping in Proton games with DirectAudio).",
       "publishedAt": 1793393364000
-    },
-    {
-      "commit": "9cc56631cd064941ea0acc365ffd312df831fc19",
-      "title": "feat: test and local builds show a faint PR, commit and title watermark",
-      "summary": "\u2022 Test PR builds and local builds draw a small white-on-gray tag in the bottom-right corner of every activity (launcher, in-session menu, games, Steam, desktop), so a screenshot or screen share shows what build is running.\n\u2022 PR builds: PR-1234 | abc1234 plus the PR title cut to 80 characters. Local builds: LOCAL | abc1234 plus the branch name.\n\u2022 Stable and preview builds (CI builds without a PR nu",
-      "publishedAt": 1793389729000
     }
   ],
   "tests": [
