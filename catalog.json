@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793449518137,
+  "generatedAt": 1793450836486,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -168,45 +168,94 @@
       "tag": "pr-1754",
       "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
       "summary": "not meant to be merged and is a debugging tool.",
-      "commit": "5fc85bc8e1324a817057b11087bc0d46d489c8c9",
+      "commit": "01096d5d8d5189591dab5f79e8947e2c03d39e07",
       "pr": 1754,
       "version": null,
       "versionCode": 16,
-      "publishedAt": 1793448347000,
+      "publishedAt": 1793450768000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1754",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1754-5fc85bc.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-5fc85bc.apk",
-          "size": 76690494,
-          "sha256": "fdd0c30726318c7e64b8baf390d47e778485d331f906c1353319a5c37c3024e4",
+          "name": "DroidDeck-PR.1754-01096d5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-01096d5.apk",
+          "size": 76694590,
+          "sha256": "8e8b6e234b24f6d3ddf94c69fb34df2e4069fd1f1f699a851f74ec98e8241622",
           "packageName": "com.droiddeck.launcher",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.tencent.ig": {
-          "name": "DroidDeck-PR.1754-5fc85bc-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-5fc85bc-pubg.apk",
-          "size": 76690494,
-          "sha256": "b3f0b1b467eb5065b6dfe566ec09468edd3800087c1765c2109976facf76b9ab",
+          "name": "DroidDeck-PR.1754-01096d5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-01096d5-pubg.apk",
+          "size": 76694590,
+          "sha256": "fbf53a3bd8aa5cc017a23240912915a7f446a3431b765f54c2a1215381599275",
           "packageName": "com.tencent.ig",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1754-5fc85bc-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-5fc85bc-antutu.apk",
-          "size": 76690494,
-          "sha256": "c9d66902e326114b389e64b7af2b02c6dd4f5f78b822727bde2b5a0ac8379ee1",
+          "name": "DroidDeck-PR.1754-01096d5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-01096d5-antutu.apk",
+          "size": 76694590,
+          "sha256": "4d8620b7557a7584e60706376156d7afd1bd57f085a3c2bdf4d4973eee7baf8d",
           "packageName": "com.antutu.benchmark.full",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1754-5fc85bc-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-5fc85bc-ludashi.apk",
-          "size": 76690494,
-          "sha256": "d7c9a01dbfdda8e3ad935855b627eba32fa9d325a103e80b998b9b75a80c91dd",
+          "name": "DroidDeck-PR.1754-01096d5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-01096d5-ludashi.apk",
+          "size": 76694590,
+          "sha256": "13623faf44ef2b3bef1944910421a3e6fc245ed139b10d33947970a4eb9f07e4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1893",
+      "title": "fix: dual-screen update prompt survives a bottom-screen tap, home launcher stays out of Recents, Quest panel opens landscape",
+      "summary": "Fixes three dual-screen and panel launcher bugs reported on Discord: DD-368, DD-377 and DD-360. DD-382 was already fixed by #1871; it is re-checked below.",
+      "commit": "418be23a7dd349dd592dbff384a0ed04a9f59e56",
+      "pr": 1893,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793450761000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1893",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1893-418be23.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1893/DroidDeck-PR.1893-418be23.apk",
+          "size": 76678206,
+          "sha256": "2c708da88580e8eb49f57d9e429664b547f8dae35f70e0d2cbd6bef8d9e57eae",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1893-418be23-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1893/DroidDeck-PR.1893-418be23-pubg.apk",
+          "size": 76678206,
+          "sha256": "1c2f19abd299e399babfb7ab3f631763ef198eb68bcf1302115eba906c68b16c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1893-418be23-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1893/DroidDeck-PR.1893-418be23-antutu.apk",
+          "size": 76678206,
+          "sha256": "ee1bf112e84e4200ead34ee3ae25c7cee536b551edf312d6d76990f68b0388c8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1893-418be23-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1893/DroidDeck-PR.1893-418be23-ludashi.apk",
+          "size": 76678206,
+          "sha256": "4ff5c38a7e495cd02e0f6f679ea2c8844a0c615b56fa6d29d57715214996af83",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
