@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793462510309,
+  "generatedAt": 1793463716272,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1899",
+      "title": "feat: a per-game relative mouse switch for games that confine and warp the cursor",
+      "summary": "Some games read the mouse by confining it and warping it back, so in a Steam session the pointer stops at the screen edge and aim is capped by screen size.",
+      "commit": "e96a187e029374c087b8f5593f2afae082a68ca5",
+      "pr": 1899,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793463628000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1899",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1899-e96a187.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-e96a187.apk",
+          "size": 76686398,
+          "sha256": "941ff7891ecff6b9cf0ba9c49bf774e51f0fbd567ce2054cbd44e9c4133480fd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1899-e96a187-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-e96a187-pubg.apk",
+          "size": 76686398,
+          "sha256": "dcaca8d6b218c778aca1bbe8d06e661b678d717d6dfd074be5f26e95af25b232",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1899-e96a187-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-e96a187-antutu.apk",
+          "size": 76686398,
+          "sha256": "3d659fc0677d4e74986cbdc34225de2fc062654cff376899404f8f806bd5e38c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1899-e96a187-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-e96a187-ludashi.apk",
+          "size": 76686398,
+          "sha256": "16b45197acaddef113e20079212b1074b69c2bf64c3fbedd749700ff1e79bc42",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1896",
       "title": "fix: stop importing games as Spacewar (480) and follow a changed Steam app id",
