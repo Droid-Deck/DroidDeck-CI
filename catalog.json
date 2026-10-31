@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793415039636,
+  "generatedAt": 1793415655192,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a81d1a4",
-    "title": "Ask for All files access when a USB drive is mounted but unreadable",
-    "summary": "On some Samsung phones a USB drive shows up in the file manager but tapping it only shows \"is mounted but not readable right now\". Android mounts the drive but blocks DroidDeck from reading it until All files access is granted. The manifest already declares MANAGEEXTERNALSTORAGE, but DroidDeck never asked for it, so users had to find the setting themselves.",
-    "commit": "a81d1a4d4eb6d4c7055aaa17fa2b6c408f5f99d3",
+    "tag": "main-6eef072",
+    "title": "feat: the HUD is DroidDeck HUD, pinch resizes it, and pushing it off an edge docks it as an FPS tab",
+    "summary": "\u2022 Every HUD class, setting and label that said Fusion HUD now says DroidDeck HUD (DroidDeckHudView, DroidDeckHudHost, DroidDeckHudConfig, DroidDeckHudSettings, DroidDeckHudSize, and the HUD diagnostics report heading).\n\u2022 The HUD page of the session menu no longer shows the FusionHUD / The412Banner credit line, and its hudcredit string is removed from every locale.\n\u2022 The accent dot at the left edge of the HUD outline is gone, and the outline now closes into one continuous line where the dot used to sit.\n\u2022 Pinch with two fingers on an unlocked HUD to resize it (50% to 200%, saved as hudScale).\n\u2022 Drag an unlocked HUD so about 40% of it hangs past a screen edge and it docks as a small FPS tab. A tap on the tab, or pulling it away from the edge, brings the HUD back. The docked edge is saved as hudDock.\n\u2022 Docking contracts the HUD into the tab and undocking expands it back out as one shape, using the launcher's own Motion easing and duration scale (no animation when animations are off).",
+    "commit": "6eef0721c99fb3ad1355abf1a35989761ea2491c",
     "pr": 0,
     "version": null,
     "versionCode": 16,
-    "publishedAt": 1793410751000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a81d1a4",
+    "publishedAt": 1793415572000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6eef072",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a81d1a4.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a81d1a4/DroidDeck-main-a81d1a4.apk",
+        "name": "DroidDeck-main-6eef072.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6eef072/DroidDeck-main-6eef072.apk",
         "size": 76678206,
-        "sha256": "c93d50d2a4de26b1f3ae321c9619d6e75a0a7ceec9a9fe3c38a5089c657ada41",
+        "sha256": "33bb44806bf1c828cd59d31c8988baa892468d67096a30ff35411e6d362386a4",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a81d1a4-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a81d1a4/DroidDeck-main-a81d1a4-pubg.apk",
+        "name": "DroidDeck-main-6eef072-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6eef072/DroidDeck-main-6eef072-pubg.apk",
         "size": 76678206,
-        "sha256": "fe22056128ea1ec65b4d6e0d6ee9b5626bd2edb6bfc3f7fd06376a8e48c9481d",
+        "sha256": "a86fd1fa346432d1931d4ac125ae237c9c7f188145c6ad6c00d6ebbad001ee0b",
         "packageName": "com.tencent.ig",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a81d1a4-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a81d1a4/DroidDeck-main-a81d1a4-antutu.apk",
+        "name": "DroidDeck-main-6eef072-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6eef072/DroidDeck-main-6eef072-antutu.apk",
         "size": 76678206,
-        "sha256": "59556f75ec63c6d0f59f44e1bff24a1a17d8c160ea9eb39dbdb027f5afe15dbc",
+        "sha256": "5e6251622c6dc611cb2c4ec8cf01afc9dcf4ec658c94899ff1356741e4e3f508",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a81d1a4-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a81d1a4/DroidDeck-main-a81d1a4-ludashi.apk",
+        "name": "DroidDeck-main-6eef072-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6eef072/DroidDeck-main-6eef072-ludashi.apk",
         "size": 76678206,
-        "sha256": "272fb9fd520c78ff97f60bdd04ab3cbf1a3a95e255a1b220e66118d3d873776b",
+        "sha256": "945fb44daf069c8576833606963c6bbd2c7685e3f4db4840411ad87e687d855f",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 16,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6eef0721c99fb3ad1355abf1a35989761ea2491c",
+      "title": "feat: the HUD is DroidDeck HUD, pinch resizes it, and pushing it off an edge docks it as an FPS tab",
+      "summary": "\u2022 Every HUD class, setting and label that said Fusion HUD now says DroidDeck HUD (DroidDeckHudView, DroidDeckHudHost, DroidDeckHudConfig, DroidDeckHudSettings, DroidDeckHudSize, and the HUD diagnostics report heading).\n\u2022 The HUD page of the session menu no longer shows the FusionHUD / The412Banner credit line, and its hudcredit string is removed from every locale.\n\u2022 The accent dot at the left edge",
+      "publishedAt": 1793415572000
+    },
     {
       "commit": "a81d1a4d4eb6d4c7055aaa17fa2b6c408f5f99d3",
       "title": "Ask for All files access when a USB drive is mounted but unreadable",
@@ -155,12 +161,6 @@
       "title": "feat: Steam's sleep-after timers start every session as Disabled",
       "summary": "\u2022 At every session start, before the Steam client launches, set Power > \"Sleep after\" (on battery and plugged in) to Disabled in each Steam home's config.vdf.\n\u2022 Android owns the device's sleep; a client that suspends inside the session only shows a black screen that Android doesn't know about.\n\u2022 Only IdleSuspendBatterySeconds and IdleSuspendACSeconds are forced. Dim display and screensaver timers ",
       "publishedAt": 1793377779000
-    },
-    {
-      "commit": "41615d2460b52e0b83fc051b8aad0af9f0fa672d",
-      "title": "fix: Steam's UI runs at the panel's full refresh rate again",
-      "summary": "Reported on Discord after the latest Preview: games run at 120 fps, but Steam Big Picture is locked at 60 on a 120 Hz screen, with power saving off and the vendor game manager disabled. Users expect the Steam UI to run at the panel's refresh rate, like games and the desktop do.",
-      "publishedAt": 1793373914000
     }
   ],
   "tests": [
