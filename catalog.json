@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793459521072,
+  "generatedAt": 1793459911486,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1888",
+      "title": "Games: launch options for Steam games in the Edit screen, shared with Steam's Properties",
+      "summary": "Only added games have a Launch options field in DroidDeck (their editor, under the pencil). Passing -dx11, -dx12 or -vulkan to a Steam game still means opening the Steam client's Properties.",
+      "commit": "1daeb2bee7552e5efbc8f3fa3f87735eebe7966c",
+      "pr": 1888,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793459835000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1888",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1888-1daeb2b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-1daeb2b.apk",
+          "size": 76694590,
+          "sha256": "9b132cece6fbc4f91b78b9d8d4828838d7db215ac28c255887d8ddfe29aeea51",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1888-1daeb2b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-1daeb2b-pubg.apk",
+          "size": 76694590,
+          "sha256": "722e1ac61fcc675b6f153d83f921b509fa58dc007ff8ea756df74337bd6f70b3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1888-1daeb2b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-1daeb2b-antutu.apk",
+          "size": 76694590,
+          "sha256": "e41ab85d89593e6ec6a931964ffe8b09a98f4f57a25782ff8dcf1011f30d224c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1888-1daeb2b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-1daeb2b-ludashi.apk",
+          "size": 76694590,
+          "sha256": "e5c2bcfe1f9ccc04082d45120c6ebfb05414ac3dd7caa1b2c479385aa6dfe777",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1754",
       "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
       "summary": "not meant to be merged and is a debugging tool.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1896/DroidDeck-PR.1896-b5c1f4f-ludashi.apk",
           "size": 76682302,
           "sha256": "c268bc2c316cb34bbc212625ccb52812258a0ec9bef025d38f15a0c2647e5df7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1888",
-      "title": "Games: launch options for Steam games in the Edit screen, written over Steam's",
-      "summary": "Only added games have a Launch options field in DroidDeck (their editor, under the pencil). Passing -dx11, -dx12 or -vulkan to a Steam game still means opening the Steam client's Properties.",
-      "commit": "16e6543b9fdd7ffe07a3bd220c7cece50f4b9196",
-      "pr": 1888,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793432839000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1888",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1888-16e6543.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-16e6543.apk",
-          "size": 76682302,
-          "sha256": "564700f3f14f6343816f5b39612b6dd53676c20339d376b35e090fae932535ab",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1888-16e6543-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-16e6543-pubg.apk",
-          "size": 76682302,
-          "sha256": "d00944f5d19a07e1cc879e0150f04056aa7157ba058773ae29b325808351952c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1888-16e6543-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-16e6543-antutu.apk",
-          "size": 76682302,
-          "sha256": "83d83cf826a599bf4f5fcbb2da823b3cd7e956ea6d0de603ca997f0244e94002",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1888-16e6543-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1888/DroidDeck-PR.1888-16e6543-ludashi.apk",
-          "size": 76682302,
-          "sha256": "b6703107b1c7e8ae1d6bb8dec7df11a28d56381e0d8c5768641b51f6aecfa188",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
