@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793406301652,
+  "generatedAt": 1793406836702,
   "stable": {
     "tag": "0.6.7",
     "title": "DroidDeck 0.6.7",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1868",
+      "title": "feat: the HUD is DroidDeck HUD, pinch resizes it, and pushing it off an edge docks it as an FPS tab",
+      "summary": "\u2022 Every HUD class, setting and label that said Fusion HUD now says DroidDeck HUD (DroidDeckHudView, DroidDeckHudHost, DroidDeckHudConfig, DroidDeckHudSettings, DroidDeckHudSize, and the HUD diagnostics report heading).\n\u2022 The HUD page of the session menu no longer shows the FusionHUD / The412Banner credit line, and its hudcredit string is removed from every locale.\n\u2022 The accent dot at the left edge of the HUD outline is gone, and the outline now closes into one continuous line where the dot used to sit.\n\u2022 Pinch with two fingers on an unlocked HUD to resize it (50% to 200%, saved as hudScale).\n\u2022 Drag an unlocked HUD so about 40% of it hangs past a screen edge and it docks as a small FPS tab. A tap on the tab, or pulling it away from the edge, brings the HUD back. The docked edge is saved as hudDock.\n\u2022 Docking contracts the HUD into the tab and undocking expands it back out as one shape, using the launcher's own Motion easing and duration scale (no animation when animations are off).",
+      "commit": "36a794d5e4f87d5441e194d5e40c2e5c4b480811",
+      "pr": 1868,
+      "version": null,
+      "versionCode": 16,
+      "publishedAt": 1793406759000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1868",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1868-36a794d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-36a794d.apk",
+          "size": 76665918,
+          "sha256": "baa47a70eb1510ced3f435d082d423e7576bf8ff02a9e1b7877ccece576d01e6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1868-36a794d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-36a794d-pubg.apk",
+          "size": 76665918,
+          "sha256": "f5dd8618d44185d379dced94c07cac9e1ea309bd229fdfd0c1a2622d5cb08f17",
+          "packageName": "com.tencent.ig",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1868-36a794d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-36a794d-antutu.apk",
+          "size": 76665918,
+          "sha256": "55df35f7de5e84846b3d3cc3759b527048a990ef9bc3669f6ea89b2e5f233dd5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1868-36a794d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-36a794d-ludashi.apk",
+          "size": 76665918,
+          "sha256": "606ab1308aa9525057f8accde0aa4b0f34bef7de683ace50a0595f063abacb00",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 16,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1754",
       "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
       "summary": "not meant to be merged and is a debugging tool.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1872/DroidDeck-PR.1872-9a59ca5-ludashi.apk",
           "size": 76665918,
           "sha256": "7e00c040a0da8445dab0096d7bc96510d82bd28a21b1d0dabd49c4dbfc588d8e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1868",
-      "title": "feat: the HUD is named DroidDeck HUD everywhere, without the credit line or the outline dot",
-      "summary": "\u2022 Every HUD class, setting and label that said Fusion HUD now says DroidDeck HUD (DroidDeckHudView, DroidDeckHudHost, DroidDeckHudConfig, DroidDeckHudSettings, DroidDeckHudSize, and the HUD diagnostics report heading).\n\u2022 The HUD page of the session menu no longer shows the FusionHUD / The412Banner credit line, and its hudcredit string is removed from every locale.\n\u2022 The accent dot at the left edge of the HUD outline is gone; the outline is now only the neon stroke.",
-      "commit": "33eace186ad177b62297b00cf911d54ec55b11ae",
-      "pr": 1868,
-      "version": null,
-      "versionCode": 16,
-      "publishedAt": 1793399098000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1868",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1868-33eace1.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-33eace1.apk",
-          "size": 76657726,
-          "sha256": "2b05848f17640c03f730726b61bc7d6e9b9bc2af4173184bd6ba98752d59a83d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1868-33eace1-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-33eace1-pubg.apk",
-          "size": 76657726,
-          "sha256": "0fd568d4ca7a63ad8fce352aafbacb0cba59fda6284592524130060de3974486",
-          "packageName": "com.tencent.ig",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1868-33eace1-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-33eace1-antutu.apk",
-          "size": 76657726,
-          "sha256": "5d4f036ee2c92d8c2b4d757ab08de510d03c7ae0a24d0b8fb83c051ce6970b0b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 16,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1868-33eace1-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1868/DroidDeck-PR.1868-33eace1-ludashi.apk",
-          "size": 76657726,
-          "sha256": "835c267e751fd68b6813ab12408ca86be9cb046196a1caec19d0d1af8ebc2cca",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 16,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
