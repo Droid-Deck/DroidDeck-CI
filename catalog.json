@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793499009074,
+  "generatedAt": 1793499722987,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1923",
+      "title": "fix: Flathub installs work again outside a session",
+      "summary": "Installing any app from Flathub fails right away with Could not connect: No such file or directory (reported on Discord in #support; reproduced on a RedMagic Astra 2 with 0.6.9 installing ASCII Draw).",
+      "commit": "a6ec9b020caae47bcfa6837ca549b64c6d9ce61f",
+      "pr": 1923,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793499629000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1923",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1923-a6ec9b0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-a6ec9b0.apk",
+          "size": 76706878,
+          "sha256": "42b463a7a510c303dd011eb2b6a4e403c31287ab5ca15bb61699cc581f0fc2a1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1923-a6ec9b0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-a6ec9b0-pubg.apk",
+          "size": 76706878,
+          "sha256": "327a0ba9e89305d12080d50ac04b70d6e69f6aef077bb67959809a4a0ac51bf9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1923-a6ec9b0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-a6ec9b0-antutu.apk",
+          "size": 76706878,
+          "sha256": "4925a2e6132b3ce47539d5a53efe748dede31be67e05f3c4d5566ee00edb5eb9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1923-a6ec9b0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-a6ec9b0-ludashi.apk",
+          "size": 76706878,
+          "sha256": "1b967e89e0bb57f1a823de8056717aaffe094170d2a58bf9bfe9e102dbb1477a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1920",
       "title": "feat(dual-screen): bottom-screen Dashboard with downloads, notifications, screenshots, Steam chat and In-game stats",
       "summary": "Dual-screen handhelds like the Retroid Pocket Duo leave the second screen black while a game runs. This adds a Dashboard for it: downloads, notifications, screenshots, Steam chat with voice controls, and live in-game stats.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1920/DroidDeck-PR.1920-8b60c5c-ludashi.apk",
           "size": 76887202,
           "sha256": "221ade53d8e6d628f2fc553b04c8d537d5fdebc3f014e33f8bb1e087d15edb62",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1923",
-      "title": "fix: Flathub installs work again outside a session",
-      "summary": "Installing any app from Flathub fails right away with Could not connect: No such file or directory (reported on Discord in #support; reproduced on a RedMagic Astra 2 with 0.6.9 installing ASCII Draw).",
-      "commit": "699a3469a7f20c82c3b839d60c8e1861bb80c9e8",
-      "pr": 1923,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793498761000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1923",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1923-699a346.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-699a346.apk",
-          "size": 76706878,
-          "sha256": "e8c9baf0cc0c5daa11fc1ca5eb1b9da478bf9c7fd0b117d5e9d009469edca7e1",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1923-699a346-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-699a346-pubg.apk",
-          "size": 76706878,
-          "sha256": "96cca6fe2de8cdf855ebc55a109b0206e95b685cea648cf0dfaa6462a5751be4",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1923-699a346-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-699a346-antutu.apk",
-          "size": 76706878,
-          "sha256": "bbf2c0dfa84838f023f175b2dff01a6e1f0bea871862c340aeaf4256bff06d09",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1923-699a346-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-699a346-ludashi.apk",
-          "size": 76706878,
-          "sha256": "379b42073b25611591ee81a0af3565b2c45357e7fa11a36bacaaee5c0a420d2f",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
