@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793558681550,
+  "generatedAt": 1793558885767,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1961",
+      "title": "test: download the DroidDeck-Proton 11-11.11 prerelease (DiRT 2 fix, do not merge)",
+      "summary": "A test build only, not to merge. It lets the app download the DroidDeck-Proton-11-11.11 prerelease from Droid-Deck/DroidDeck-Proton#10, so the DiRT 2 fix can be tried before that build is released. Once 11-11.11 is released as latest, this PR gets closed.",
+      "commit": "4d2db8648fda3a37513943e24cf865c2784cf54b",
+      "pr": 1961,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793558797000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1961",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1961-4d2db86.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-4d2db86.apk",
+          "size": 90633459,
+          "sha256": "6f3336f67b66e4a8f81650ab9bcbd78655a1c5e7c11692633cd8b6fa9790f732",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1961-4d2db86-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-4d2db86-pubg.apk",
+          "size": 90633459,
+          "sha256": "ba20863870eb026a51fabb81487efc848fdbc3aed8ce99b93dcd5b6a32520b46",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1961-4d2db86-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-4d2db86-antutu.apk",
+          "size": 90633459,
+          "sha256": "b27cc4de226852a8ff72b1c65b8a80041c7e7b1000c2d11301bfe8f7d52e0f6b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1961-4d2db86-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-4d2db86-ludashi.apk",
+          "size": 90633459,
+          "sha256": "ec6ad4646bd2339bcd773b0776029ce3195389fe2fc340f9acd5c3981c0e5463",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1965",
       "title": "chore: remove source comments and unused code, translate every missing string",
       "summary": "Clean-up only. Nothing here is meant to change how the app behaves.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1964/DroidDeck-PR.1964-cc8e744-ludashi.apk",
           "size": 90633459,
           "sha256": "9ff1555d91ebea17ca63da5a80badecbfd2035dc96b99e22397f234bdf21b055",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1961",
-      "title": "test: download the DroidDeck-Proton 11-11.11 prerelease (DiRT 2 fix, do not merge)",
-      "summary": "A test build only, not to merge. It lets the app download the DroidDeck-Proton-11-11.11 prerelease from Droid-Deck/DroidDeck-Proton#10, so the DiRT 2 fix can be tried before that build is released. Once 11-11.11 is released as latest, this PR gets closed.",
-      "commit": "b588ed5d315ae1ada67456991518441c25e42ae0",
-      "pr": 1961,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793553601000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1961",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1961-b588ed5.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-b588ed5.apk",
-          "size": 76928162,
-          "sha256": "a4749cf6e2ee1a0d64df088c063c4e04d6a7d26134817fd1eb75090b92bd3063",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1961-b588ed5-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-b588ed5-pubg.apk",
-          "size": 76928162,
-          "sha256": "f7314d45f9bccc79eb1a9aea64d558da7e538cc3d9504f3520dbfcc0fde299ea",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1961-b588ed5-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-b588ed5-antutu.apk",
-          "size": 76928162,
-          "sha256": "1c79ee8b9f594475ce46e74e97eb09b3f10091a97c2eb493c955128c21704286",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1961-b588ed5-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-b588ed5-ludashi.apk",
-          "size": 76928162,
-          "sha256": "ce1c174a5c5199097a03026c99a73c2ef5ab01f142f92ad6770ef75a62c45690",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
