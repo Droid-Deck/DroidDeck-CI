@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793574346682,
+  "generatedAt": 1793574491492,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1979",
+      "title": "feat(dual-screen): single-screen mode on the Retroid Pocket Duo while another window holds the bottom screen",
+      "summary": "On the Retroid Pocket Duo, DroidDeck now switches to single-screen mode while something else holds the bottom screen, and back to dual-screen mode when it's free again.",
+      "commit": "52fef4a888580ae64d7c0f9837771f4248d66e08",
+      "pr": 1979,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793574440000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1979",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1979-52fef4a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-52fef4a.apk",
+          "size": 91010881,
+          "sha256": "5331d2e8eeb5d60f532415b2d80008ffcdd0ae00524b50890d5e2273fb1c1275",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1979-52fef4a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-52fef4a-pubg.apk",
+          "size": 91010881,
+          "sha256": "2012cae3144cccd61755713b3cd5aa7c5862fc26447b3f8f0c565e024a235109",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1979-52fef4a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-52fef4a-antutu.apk",
+          "size": 91010881,
+          "sha256": "c5ec242cf34bd52b34374ecc7824c167a8381df8b7cc8365ac2850a1b4fac5ab",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1979-52fef4a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-52fef4a-ludashi.apk",
+          "size": 91010881,
+          "sha256": "46d012eeb9e0a793251837366c970f50bb1ecab5ea94699be417108c581dbb71",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1971",
       "title": "feat: desktop session follows the app language",
       "summary": "The desktop session always started with LANG=C.UTF-8 and never installed translations, so Plasma and its apps were English-only regardless of the language chosen in DroidDeck (reported in Discord #development).",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1971/DroidDeck-PR.1971-3eb97a5-ludashi.apk",
           "size": 91010881,
           "sha256": "88c77e540162a7d78738794cff60c0adbfff554738af332127c656bb61d26ea7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1979",
-      "title": "feat(dual-screen): single-screen mode on the Retroid Pocket Duo while another window holds the bottom screen",
-      "summary": "On the Retroid Pocket Duo, DroidDeck now switches to single-screen mode while something else holds the bottom screen, and back to dual-screen mode when it's free again.",
-      "commit": "16716566e47ceb9889aaca5d463d2b04ee088a7d",
-      "pr": 1979,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793572761000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1979",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1979-1671656.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-1671656.apk",
-          "size": 90994497,
-          "sha256": "f414248c68963103b2a114f5cf898377356ec422f784b3655098cff0c21efbcf",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1979-1671656-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-1671656-pubg.apk",
-          "size": 90994497,
-          "sha256": "21232d4bae8c8e1d0d505a9c6d8f0f0342e75761fa2293aea32ea72133ae7260",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1979-1671656-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-1671656-antutu.apk",
-          "size": 90994497,
-          "sha256": "ba78fd447ea52aa82827199a91fe2742a253c44458d326dcb77fceb9d039716c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1979-1671656-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-1671656-ludashi.apk",
-          "size": 90994497,
-          "sha256": "092ff8c1e9dcd1db9cb9a6552800acce02643fb1edde258a56b468a538db60af",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
