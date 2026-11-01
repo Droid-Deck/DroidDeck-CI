@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793550542163,
+  "generatedAt": 1793553672100,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-1961",
+      "title": "test: download the DroidDeck-Proton 11-11.11 prerelease (DiRT 2 fix, do not merge)",
+      "summary": "A test build only, not to merge. It lets the app download the DroidDeck-Proton-11-11.11 prerelease from Droid-Deck/DroidDeck-Proton#10, so the DiRT 2 fix can be tried before that build is released. Once 11-11.11 is released as latest, this PR gets closed.",
+      "commit": "b588ed5d315ae1ada67456991518441c25e42ae0",
+      "pr": 1961,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793553601000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1961",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1961-b588ed5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-b588ed5.apk",
+          "size": 76928162,
+          "sha256": "a4749cf6e2ee1a0d64df088c063c4e04d6a7d26134817fd1eb75090b92bd3063",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1961-b588ed5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-b588ed5-pubg.apk",
+          "size": 76928162,
+          "sha256": "f7314d45f9bccc79eb1a9aea64d558da7e538cc3d9504f3520dbfcc0fde299ea",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1961-b588ed5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-b588ed5-antutu.apk",
+          "size": 76928162,
+          "sha256": "1c79ee8b9f594475ce46e74e97eb09b3f10091a97c2eb493c955128c21704286",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1961-b588ed5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1961/DroidDeck-PR.1961-b588ed5-ludashi.apk",
+          "size": 76928162,
+          "sha256": "ce1c174a5c5199097a03026c99a73c2ef5ab01f142f92ad6770ef75a62c45690",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1927",
+      "title": "feat: Performance boost switch for any phone, with Samsung clock floors and a boost report",
+      "summary": "A Boost group in Settings \u2192 Performance: a switch that asks the phone for more speed while a game falls behind, a log of what it did, and a test mode that measures whether it helps. This PR is mainly for testers: no frame-rate gain has been measured yet.",
+      "commit": "17b578b7cf58f6c12a1a005a123af656e1bdd41e",
+      "pr": 1927,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793553583000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1927",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1927-17b578b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-17b578b.apk",
+          "size": 76952738,
+          "sha256": "7c6c89a64e65f49739ea20ce287018ad1717751b3ca9fd35798e0ad564909890",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1927-17b578b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-17b578b-pubg.apk",
+          "size": 76952738,
+          "sha256": "afd0c955e4450367ffe701ee98b993add017823f5969c0fc2de6a81764fc3b47",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1927-17b578b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-17b578b-antutu.apk",
+          "size": 76952738,
+          "sha256": "fd9db2e45ba266ff256e4fe686e330c91e6d938e07987ede88a13106d616563a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1927-17b578b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-17b578b-ludashi.apk",
+          "size": 76952738,
+          "sha256": "893dd73b51939716c76dcec4db5cdb7694fa49b546d36825e1a8d7ad2b759856",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1754",
       "title": "Temporary Game Jolt probe behind Debugging tools (not for merge)",
       "summary": "not meant to be merged and is a debugging tool.",
@@ -256,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1780/DroidDeck-PR.1780-e571a57-ludashi.apk",
           "size": 76895394,
           "sha256": "eb8a86aaf40a6bbf99416549b4a7af66f449970700716e3c5cbb43e30855b747",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1927",
-      "title": "feat: Performance boost switch for any phone, with Samsung clock floors and a boost report",
-      "summary": "A Boost group in Settings \u2192 Performance: a switch that asks the phone for more speed while a game falls behind, a log of what it did, and a test mode that measures whether it helps. This PR is mainly for testers: no frame-rate gain has been measured yet.",
-      "commit": "0d82557957a56989f83a2acd34b64e2dc69580e9",
-      "pr": 1927,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793497691000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1927",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1927-0d82557.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-0d82557.apk",
-          "size": 76731454,
-          "sha256": "a4c989141f2760a1d27a54f128333749f69e82f9379ca4cda0ea7347ca892db3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1927-0d82557-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-0d82557-pubg.apk",
-          "size": 76731454,
-          "sha256": "8ae1e07afe53ac17f239eb92d2c373115524f9f45455530c23bdd2cf08c34186",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1927-0d82557-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-0d82557-antutu.apk",
-          "size": 76731454,
-          "sha256": "47acc4019857702fa28efe75c3ad47e6d57258082d9bf62ad93de04954ba6254",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1927-0d82557-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-0d82557-ludashi.apk",
-          "size": 76731454,
-          "sha256": "1cbfb6b02db5010d7e4ac035845f9b966b49c6c912e4ceb35749bfddbf0fa845",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
