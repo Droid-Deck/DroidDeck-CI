@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793507501639,
+  "generatedAt": 1793508269694,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1933",
+      "title": "fix(dual-screen): open the bottom-screen Dashboard in every session, not only the first",
+      "summary": "On dual-screen handhelds the bottom-screen Dashboard only opened by itself in the first Steam session after DroidDeck started. When Steam was closed and started again without closing the app, the bottom screen stayed on Android's own launcher.",
+      "commit": "35d27db1468a642da64f9bebe33edbb482cf4b9b",
+      "pr": 1933,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793508181000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1933",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1933-35d27db.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1933/DroidDeck-PR.1933-35d27db.apk",
+          "size": 76895394,
+          "sha256": "a238119d2521022b37211ae4f245090847f19384faff340bfc83066137decc6d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1933-35d27db-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1933/DroidDeck-PR.1933-35d27db-pubg.apk",
+          "size": 76895394,
+          "sha256": "a26977b9855749cc4170a26eeb32f46846015247ec66b616297bbb8614257723",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1933-35d27db-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1933/DroidDeck-PR.1933-35d27db-antutu.apk",
+          "size": 76895394,
+          "sha256": "0a95c11514a2934da95f9dff2e4d6705c436f4349e56485eb7308c9102a0cef6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1933-35d27db-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1933/DroidDeck-PR.1933-35d27db-ludashi.apk",
+          "size": 76895394,
+          "sha256": "5a5e41181b0df0dfc481378ab8cea759063fbbda5f4f64e9a7c6c57980df11f3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1932",
       "title": "fix: performance HUD cycles colors with the Inner Gamer theme",
       "summary": "With the Inner Gamer theme, the drawer and the rest of the app cycle through the color wheel, but the performance HUD kept the color it read when its config was applied (e.g. a green HUD next to a yellow drawer).",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1754/DroidDeck-PR.1754-9329269-ludashi.apk",
           "size": 76973218,
           "sha256": "501524018d338d325a753f817ba4990564a266562b5a6b751b7b757c4a317b78",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1933",
-      "title": "fix(dual-screen): open the bottom-screen Dashboard in every session, not only the first",
-      "summary": "On dual-screen handhelds the bottom-screen Dashboard only opened by itself in the first Steam session after DroidDeck started. When Steam was closed and started again without closing the app, the bottom screen stayed on Android's own launcher.",
-      "commit": "abaabc54c0b31924413432238b0c518223c38f90",
-      "pr": 1933,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793506264000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1933",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1933-abaabc5.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1933/DroidDeck-PR.1933-abaabc5.apk",
-          "size": 76891298,
-          "sha256": "bafc61b1a05e5fc9af48c82f9449987a1e5224e74cd66c793f61bbc3fade9416",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1933-abaabc5-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1933/DroidDeck-PR.1933-abaabc5-pubg.apk",
-          "size": 76891298,
-          "sha256": "5a6118b2b3a7f2cb3b48375df3c2d5f451178814d2b56a2c0ee4cb1ddf34c4fa",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1933-abaabc5-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1933/DroidDeck-PR.1933-abaabc5-antutu.apk",
-          "size": 76891298,
-          "sha256": "54e16aea339201532c59e67e65f5127a8970b0aa0411d80c404d20cf17a04f2a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1933-abaabc5-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1933/DroidDeck-PR.1933-abaabc5-ludashi.apk",
-          "size": 76891298,
-          "sha256": "1bf23fde951ef4c4e20db7e506be5b8542f07ce3eb00921ada0ceb807a3f8ff4",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
