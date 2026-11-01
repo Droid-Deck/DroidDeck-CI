@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793509869910,
+  "generatedAt": 1793511196549,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1936",
+      "title": "fix(game-env): give Codemasters EGO games a thread plan for the core count Windows sees",
+      "summary": "Codemasters EGO games (DiRT 3, DiRT Showdown, GRID, F1 ...) pick their thread plan by core count from system/hardwaresettingsrestrictions.xml in the game folder. The shipped files have plans for 2, 3, 4, 6 and 8+ cores only.",
+      "commit": "ccde8600cf1f05da2945707c721def1c502bbcec",
+      "pr": 1936,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793511131000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1936",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1936-ccde860.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1936/DroidDeck-PR.1936-ccde860.apk",
+          "size": 76899490,
+          "sha256": "a18139b96446f7a96ea53cd000ba24a81039f40b2035186051b40f5307963cf1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1936-ccde860-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1936/DroidDeck-PR.1936-ccde860-pubg.apk",
+          "size": 76899490,
+          "sha256": "6a176603df7ad398f0bf0cc291bc6d6f4ebe0df12163092a8bbde3b746856ed3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1936-ccde860-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1936/DroidDeck-PR.1936-ccde860-antutu.apk",
+          "size": 76899490,
+          "sha256": "c3a795bf92af3a47f498f3cd54b7bff0974437826ba5b8a97fbf0b3f2ded591e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1936-ccde860-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1936/DroidDeck-PR.1936-ccde860-ludashi.apk",
+          "size": 76899490,
+          "sha256": "12b6c2a4a4fa023b1aa09eb2768d06f16eef4ec233ed2d7ebe5bbae8037670fb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1932",
       "title": "fix: performance HUD cycles colors with the Inner Gamer theme",
