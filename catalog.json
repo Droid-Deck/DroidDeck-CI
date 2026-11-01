@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793564660644,
+  "generatedAt": 1793565583257,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6cd844e",
-    "title": "feat: Follow screen resolution can be scaled down by a factor",
-    "summary": "Requested in #feature-requests (\"Session resolution: follow halved\").",
-    "commit": "6cd844ea516a4c598de4a242dcdd7e80c7f57140",
+    "tag": "main-8cb5c21",
+    "title": "feat(hud): GPU load and clock without root where Android blocks kgsl",
+    "summary": "Some phones, like the Retroid Pocket Duo, block apps from reading the GPU numbers, so DroidDeck's HUD showed no GPU % and no GPU clock there. Without root, this PR adds:",
+    "commit": "8cb5c2168e8ec4a3f05bc1e075eaaf968570ca69",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793563647000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6cd844e",
+    "publishedAt": 1793565506000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8cb5c21",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6cd844e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6cd844e/DroidDeck-main-6cd844e.apk",
-        "size": 90637555,
-        "sha256": "751092bf9ccdcedee25cbcf553dcface65ada765e12d7c3d86aa4b0ce7f0261d",
+        "name": "DroidDeck-main-8cb5c21.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cb5c21/DroidDeck-main-8cb5c21.apk",
+        "size": 90658358,
+        "sha256": "07d24f35c3badc370bd6cfbce78eb6ea2c290540c8f19a01cb5a7d43262f4ce7",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6cd844e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6cd844e/DroidDeck-main-6cd844e-pubg.apk",
-        "size": 90637555,
-        "sha256": "fae9d3dfa9e78b885b66078db5f9ccd3a9378d4a3e79b498c043a318e6db6845",
+        "name": "DroidDeck-main-8cb5c21-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cb5c21/DroidDeck-main-8cb5c21-pubg.apk",
+        "size": 90658358,
+        "sha256": "2f8ab065e08e5c6aed7e17ec19dc8e515da56354b28b7cf0d0739bfaef6f1eb9",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6cd844e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6cd844e/DroidDeck-main-6cd844e-antutu.apk",
-        "size": 90637555,
-        "sha256": "6c2850d20cfb83b6389e734bd0a7eaa983030f55786fbcf57496a6b92033d1de",
+        "name": "DroidDeck-main-8cb5c21-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cb5c21/DroidDeck-main-8cb5c21-antutu.apk",
+        "size": 90658358,
+        "sha256": "ec75f45ca82b91ef1b3252ecf0c28b8a82ade22f1b3d13b4ac0f0a3099648264",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6cd844e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6cd844e/DroidDeck-main-6cd844e-ludashi.apk",
-        "size": 90637555,
-        "sha256": "fa99ea2255a73ba4738b4344cdb04d8cba54b57ba0023ba7b58b093aa4e86353",
+        "name": "DroidDeck-main-8cb5c21-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8cb5c21/DroidDeck-main-8cb5c21-ludashi.apk",
+        "size": 90658358,
+        "sha256": "1b10c74e089a13b0a7d655e4311e72b936e405cd922578f99e2e5b5ce5004978",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8cb5c2168e8ec4a3f05bc1e075eaaf968570ca69",
+      "title": "feat(hud): GPU load and clock without root where Android blocks kgsl",
+      "summary": "Some phones, like the Retroid Pocket Duo, block apps from reading the GPU numbers, so DroidDeck's HUD showed no GPU % and no GPU clock there. Without root, this PR adds:",
+      "publishedAt": 1793565506000
+    },
     {
       "commit": "6cd844ea516a4c598de4a242dcdd7e80c7f57140",
       "title": "feat: Follow screen resolution can be scaled down by a factor",
@@ -155,12 +161,6 @@
       "title": "perf: Little Nightmares keeps its render thread (+12.7% FPS on the Retroid Pocket Duo)",
       "summary": "A bottleneck study of the Retroid Pocket Duo (Adreno 722, 8 GB, Android 16) with Little Nightmares, covering every layer a Windows game passes through: PRoot, FEX, Proton/Wine, DXVK, Turnip and the presentation path.",
       "publishedAt": 1793505924000
-    },
-    {
-      "commit": "8a7022fc14679fccf6a661f84e25a62d8d016b9f",
-      "title": "feat(dual-screen): bottom-screen Dashboard with downloads, notifications, screenshots, Steam chat and In-game stats",
-      "summary": "Dual-screen handhelds like the Retroid Pocket Duo leave the second screen black while a game runs. This adds a Dashboard for it: downloads, notifications, screenshots, Steam chat with voice controls, and live in-game stats.",
-      "publishedAt": 1793501668000
     }
   ],
   "tests": [
