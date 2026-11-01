@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793576688633,
+  "generatedAt": 1793577352980,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-da665bb",
-    "title": "feat: Auto picks DD-Turnip on Adreno 7xx",
-    "summary": "Auto now prefers the newest DD-Turnip release on the Adreno 7xx, the 710/720/722 included.",
-    "commit": "da665bb14f0cc201e3891ead354ae8ed954283b9",
+    "tag": "main-6a30a9b",
+    "title": "fix: docked HUD tab FPS number is half its previous size",
+    "summary": "The docked FPS tab was disproportionately large next to the full HUD. The number drops from 20sp to 10sp, the \"fps\" label from 8.5sp to 6sp, and the padding scales with it. The tab still scales with the HUD scale setting. The sizes are now shared constants used by the build, size and drag-preview paths.",
+    "commit": "6a30a9bb4be22f3136f49ed171df93b2daa8425f",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793574820000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-da665bb",
+    "publishedAt": 1793577286000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6a30a9b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-da665bb.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da665bb/DroidDeck-main-da665bb.apk",
+        "name": "DroidDeck-main-6a30a9b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a30a9b/DroidDeck-main-6a30a9b.apk",
         "size": 91002689,
-        "sha256": "892ecc8a5bd74fc995002dd3736aedc8edea8ae3ffce4bfe7bb2ea3e3ee9e150",
+        "sha256": "12ff16b4d326eba9e14b046e678593b879f8d6e5c2350946237d02613e4d6d02",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-da665bb-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da665bb/DroidDeck-main-da665bb-pubg.apk",
+        "name": "DroidDeck-main-6a30a9b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a30a9b/DroidDeck-main-6a30a9b-pubg.apk",
         "size": 91002689,
-        "sha256": "50c81e8b085255a9980c95edaeeb538a587cedb5de322e67a24b397d4663dcae",
+        "sha256": "299dd43aadd34ea96b19e37679a1a8f649761ca5133ca426caa270bbcadab376",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-da665bb-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da665bb/DroidDeck-main-da665bb-antutu.apk",
+        "name": "DroidDeck-main-6a30a9b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a30a9b/DroidDeck-main-6a30a9b-antutu.apk",
         "size": 91002689,
-        "sha256": "438dc85ccdec2e7a71b765fbd490bd5b1956adc6bd57941e7d2bb16453c2b405",
+        "sha256": "05351214a0dbf4192d0b5676a3391a3ff609f07993ea61e42ed902421649072b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-da665bb-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da665bb/DroidDeck-main-da665bb-ludashi.apk",
+        "name": "DroidDeck-main-6a30a9b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6a30a9b/DroidDeck-main-6a30a9b-ludashi.apk",
         "size": 91002689,
-        "sha256": "5168a646c1b39f663bc78c044ce47772582b7239c5227976031ed2e3460fb087",
+        "sha256": "49f6b6bba2b15a70a7701f5f81e36b081a9e93c2138955ff6826925a23a1ed89",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6a30a9bb4be22f3136f49ed171df93b2daa8425f",
+      "title": "fix: docked HUD tab FPS number is half its previous size",
+      "summary": "The docked FPS tab was disproportionately large next to the full HUD. The number drops from 20sp to 10sp, the \"fps\" label from 8.5sp to 6sp, and the padding scales with it. The tab still scales with the HUD scale setting. The sizes are now shared constants used by the build, size and drag-preview paths.",
+      "publishedAt": 1793577286000
+    },
     {
       "commit": "da665bb14f0cc201e3891ead354ae8ed954283b9",
       "title": "feat: Auto picks DD-Turnip on Adreno 7xx",
@@ -155,12 +161,6 @@
       "title": "feat: HUD shrinks into its tab as it is dragged off an edge, and snaps to the sides",
       "summary": "Moving the HUD around now feels like an Android picture-in-picture window instead of a hard snap into the corner.",
       "publishedAt": 1793547074000
-    },
-    {
-      "commit": "ec9573643a71d6b55e623dfa13c6725924077aab",
-      "title": "fix(game-env): give Codemasters EGO games a thread plan for the core count Windows sees",
-      "summary": "Codemasters EGO games (DiRT 3, DiRT Showdown, GRID, F1 ...) pick their thread plan by core count from system/hardwaresettingsrestrictions.xml in the game folder. The shipped files have plans for 2, 3, 4, 6 and 8+ cores only.",
-      "publishedAt": 1793515179000
     }
   ],
   "tests": [
