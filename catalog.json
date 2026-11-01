@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793495803416,
+  "generatedAt": 1793496552381,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1923",
+      "title": "fix: Flathub installs work again outside a session",
+      "summary": "Installing any app from Flathub fails right away with Could not connect: No such file or directory (reported on Discord in #support; reproduced on a RedMagic Astra 2 with 0.6.9 installing ASCII Draw).",
+      "commit": "f7b5c41bddf0b7d05a09b193065612db2c274b22",
+      "pr": 1923,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793496462000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1923",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1923-f7b5c41.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-f7b5c41.apk",
+          "size": 76706878,
+          "sha256": "b2dad6e938f400dfe7470cb2c28bf5490be53535e9dd72ad92fe02c11ae72595",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1923-f7b5c41-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-f7b5c41-pubg.apk",
+          "size": 76706878,
+          "sha256": "2a4ff142c10b8bc0cb7b8eed1505211aaf1646af04668db96966fdfbd38c6b7a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1923-f7b5c41-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-f7b5c41-antutu.apk",
+          "size": 76706878,
+          "sha256": "053b6ad610ad130c81900c68281abdc5d7a690d1de730d003cdc550429e7ee0e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1923-f7b5c41-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-f7b5c41-ludashi.apk",
+          "size": 76706878,
+          "sha256": "4d00d671b2d2f148118b42bf57fafef7f2b8ad31608618504c591cf01acf3312",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1920",
       "title": "feat(dual-screen): bottom-screen Dashboard with downloads, notifications, screenshots, Steam chat and In-game stats",
