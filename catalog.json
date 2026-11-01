@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793502188558,
+  "generatedAt": 1793502672544,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1923",
+      "title": "fix: Flathub installs work again outside a session",
+      "summary": "Installing any app from Flathub fails right away with Could not connect: No such file or directory (reported on Discord in #support; reproduced on a RedMagic Astra 2 with 0.6.9 installing ASCII Draw).",
+      "commit": "3197ed3a1716bf4e192549fe28fd2482bb88b8d7",
+      "pr": 1923,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793502595000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1923",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1923-3197ed3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-3197ed3.apk",
+          "size": 76887202,
+          "sha256": "c5af5f9b0683be077c7b23ed941fc3e4e670889d27c520b63fe9f2133a244df2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1923-3197ed3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-3197ed3-pubg.apk",
+          "size": 76887202,
+          "sha256": "9c3bcafe60d1b876b9eb78fb141d0ad32fc6153211f9901ddba2019a14feeeb6",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1923-3197ed3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-3197ed3-antutu.apk",
+          "size": 76887202,
+          "sha256": "60f9517cc2c401c0feb07ead73c9e55503eaed9adffac76f59037f3134eef1bd",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1923-3197ed3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-3197ed3-ludashi.apk",
+          "size": 76887202,
+          "sha256": "ede5dae9c722c25975adcd90d3060d612ce53d8f5f0c6c4dd50140ed44440a71",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1930",
       "title": "perf: Little Nightmares keeps its render thread on DroidDeck",
       "summary": "Performance study of the Retroid Pocket Duo with Little Nightmares. Full measurements, charts and screenshots are being added to this description; do not merge yet.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1930/DroidDeck-PR.1930-b114557-ludashi.apk",
           "size": 76887202,
           "sha256": "c2d1934de1814c425311a666e801ab2f18f8da327813585ea90d4079a7b697ab",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1923",
-      "title": "fix: Flathub installs work again outside a session",
-      "summary": "Installing any app from Flathub fails right away with Could not connect: No such file or directory (reported on Discord in #support; reproduced on a RedMagic Astra 2 with 0.6.9 installing ASCII Draw).",
-      "commit": "aece480755535188ddd7a6d81258210665276e54",
-      "pr": 1923,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793501748000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1923",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1923-aece480.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-aece480.apk",
-          "size": 76887202,
-          "sha256": "d34e6a0574a6b134f8bffb7fc526d10c5fd8269c57bdebba1938199188efe996",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1923-aece480-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-aece480-pubg.apk",
-          "size": 76887202,
-          "sha256": "be1560b5cddad82c2eaa0957f035510ec4c42593f20d82be5f5e74935c1d074d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1923-aece480-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-aece480-antutu.apk",
-          "size": 76887202,
-          "sha256": "46427545f91d5863aa4362dbbfb34b0ab1c5dc117454dda087cfd885ec24ffb4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1923-aece480-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-aece480-ludashi.apk",
-          "size": 76887202,
-          "sha256": "2b3b6cd42cafc451946f480586d49ef12cfd2af76ce2a405b0a0edc71d51ad36",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
