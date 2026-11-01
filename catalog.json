@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793496552381,
+  "generatedAt": 1793497010482,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1920",
+      "title": "feat(dual-screen): bottom-screen Dashboard with downloads, notifications, screenshots, Steam chat and In-game stats",
+      "summary": "Dual-screen handhelds like the Retroid Pocket Duo leave the second screen black while a game runs. This adds a Dashboard for it: downloads, notifications, screenshots, Steam chat with voice controls, and live in-game stats.",
+      "commit": "7bf29501b6447c661540cda4dfd8ea710ef19c61",
+      "pr": 1920,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793496917000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1920",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1920-7bf2950.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1920/DroidDeck-PR.1920-7bf2950.apk",
+          "size": 76887202,
+          "sha256": "a88b4bec79de17b6e75bf601931789acf23cdae0260045e1047eb1099c89180a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1920-7bf2950-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1920/DroidDeck-PR.1920-7bf2950-pubg.apk",
+          "size": 76887202,
+          "sha256": "fc961b2f59b2f99b11aaf359ec42cd0b52e013ab3a34bd94d6fea0a6e6815829",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1920-7bf2950-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1920/DroidDeck-PR.1920-7bf2950-antutu.apk",
+          "size": 76887202,
+          "sha256": "e0183f8b1bd3356f62caba810686fc3b1548fbbd210cd10cb3f997e74656e524",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1920-7bf2950-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1920/DroidDeck-PR.1920-7bf2950-ludashi.apk",
+          "size": 76887202,
+          "sha256": "23595b87d48ed3322d0de5e5c03c91c4c5333f81bc1a408bc14a4112307e8bbb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1923",
       "title": "fix: Flathub installs work again outside a session",
       "summary": "Installing any app from Flathub fails right away with Could not connect: No such file or directory (reported on Discord in #support; reproduced on a RedMagic Astra 2 with 0.6.9 installing ASCII Draw).",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1923/DroidDeck-PR.1923-f7b5c41-ludashi.apk",
           "size": 76706878,
           "sha256": "4d00d671b2d2f148118b42bf57fafef7f2b8ad31608618504c591cf01acf3312",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1920",
-      "title": "feat(dual-screen): bottom-screen Dashboard with downloads, notifications, screenshots, Steam chat and In-game stats",
-      "summary": "Dual-screen handhelds like the Retroid Pocket Duo leave the second screen black while a game runs. This adds a Dashboard for it: downloads, notifications, screenshots, Steam chat with voice controls, and live in-game stats.",
-      "commit": "9d4df1b3d84502dbe3d856a3f15637986da3b72d",
-      "pr": 1920,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793495744000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1920",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1920-9d4df1b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1920/DroidDeck-PR.1920-9d4df1b.apk",
-          "size": 76887202,
-          "sha256": "88eaf142714650ceb7c27ce7317c851f95948afb621c5c392c78c31177706b5a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1920-9d4df1b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1920/DroidDeck-PR.1920-9d4df1b-pubg.apk",
-          "size": 76887202,
-          "sha256": "c9fed031d7dcc1192d43ce894c15c1d321889da2450ad3120a5d132620d972a8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1920-9d4df1b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1920/DroidDeck-PR.1920-9d4df1b-antutu.apk",
-          "size": 76887202,
-          "sha256": "f2e83055279636501a7546f11f50d6e2475f8d12b40627cc3535c41ef83e3dae",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1920-9d4df1b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1920/DroidDeck-PR.1920-9d4df1b-ludashi.apk",
-          "size": 76887202,
-          "sha256": "1306874d2d6a5e14f17c00f9242eaf4c1afa163639415a6fb270e5b2ed0207e0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
