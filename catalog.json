@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793577352980,
+  "generatedAt": 1793577508956,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1979",
+      "title": "feat(dual-screen): single-screen mode on the Retroid Pocket Duo and AYN Thor while another window holds the bottom screen",
+      "summary": "On the Retroid Pocket Duo and the AYN Thor, DroidDeck now switches to single-screen mode while something else holds the bottom screen, and back to dual-screen mode when it's free again.",
+      "commit": "a31a843a5d56c4277aa4c13dbfc5bfbb084ac630",
+      "pr": 1979,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793577437000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1979",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1979-a31a843.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-a31a843.apk",
+          "size": 91010881,
+          "sha256": "c1ffaab181d1007fa000dc06bb121f88c083a895db2b730a8b10115405045e26",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1979-a31a843-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-a31a843-pubg.apk",
+          "size": 91010881,
+          "sha256": "0b8d3497fdcd2b7eb5d8ede321cf4fe8a364456fd7e23f669aac06daa33781aa",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1979-a31a843-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-a31a843-antutu.apk",
+          "size": 91010881,
+          "sha256": "c6876c4f4a0b2372c41d5c70a4d527b995a755c0aed3d90fd0d73f6281f317ee",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1979-a31a843-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-a31a843-ludashi.apk",
+          "size": 91010881,
+          "sha256": "b53a90d32c96ca802eedf2f3836914cf9a583064c3c544dd2db111a611e60aa3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1984",
       "title": "fix: a stale session's startup failure no longer stops the newer session",
       "summary": "runSession(gen) runs on a background thread and calls stopSession(...) when startup fails (passwd/group write, missing proot, game environment publish, run mode without a program, guest start failure). stopSession only checked SessionState.running, so if the user quit and started a new session while the old one was still starting, the old session's failure tore down the new session.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1984/DroidDeck-PR.1984-677312c-ludashi.apk",
           "size": 91002689,
           "sha256": "cdccebcb96210c1426d4fcefb179c277b87bc1d169424b8d9ecdc92449af79d5",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1979",
-      "title": "feat(dual-screen): single-screen mode on the Retroid Pocket Duo and AYN Thor while another window holds the bottom screen",
-      "summary": "On the Retroid Pocket Duo and the AYN Thor, DroidDeck now switches to single-screen mode while something else holds the bottom screen, and back to dual-screen mode when it's free again.",
-      "commit": "9c0b515799fedd9098db7b7cca225e4ed5da5be3",
-      "pr": 1979,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793576082000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1979",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1979-9c0b515.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-9c0b515.apk",
-          "size": 91010881,
-          "sha256": "aadd21b1f26bac3c0fa898fb3ea604970c9c7eb97dea82c6a76c6d40eb0deb12",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1979-9c0b515-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-9c0b515-pubg.apk",
-          "size": 91010881,
-          "sha256": "738feadbd1d7e42e72bad18091a5cdefabc41a8c2e5c6b671ff54f3c8c845313",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1979-9c0b515-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-9c0b515-antutu.apk",
-          "size": 91010881,
-          "sha256": "97dede71ba7f78da926a7da5300ec30d9a00ef316eb7d201d12f4a5de83bfd91",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1979-9c0b515-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1979/DroidDeck-PR.1979-9c0b515-ludashi.apk",
-          "size": 91010881,
-          "sha256": "10a20de25a96e3375f5060b2ea89e8dee41642f8812aeb83487d39270df5c40d",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
