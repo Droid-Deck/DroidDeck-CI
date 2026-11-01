@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793559778845,
+  "generatedAt": 1793559870089,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1964",
+      "title": "feat: Follow screen resolution can be scaled down by a factor",
+      "summary": "Requested in #feature-requests (\"Session resolution: follow halved\").",
+      "commit": "8cc5d023105cb414d59117105d0fa5ae4f36c773",
+      "pr": 1964,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793559809000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1964",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1964-8cc5d02.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1964/DroidDeck-PR.1964-8cc5d02.apk",
+          "size": 90637555,
+          "sha256": "050162aea51d7c39cc827303a5aad901a1cc5aff09dc253f1894be653d41000b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1964-8cc5d02-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1964/DroidDeck-PR.1964-8cc5d02-pubg.apk",
+          "size": 90637555,
+          "sha256": "9ed74f43578e66ad8ea17c0dd39bd9da905414ea02af0d71a7f408ede17f234c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1964-8cc5d02-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1964/DroidDeck-PR.1964-8cc5d02-antutu.apk",
+          "size": 90637555,
+          "sha256": "2efdb081d8429649e479f94a00e22ef9ca540bcd55156edff6d384ccefc4c460",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1964-8cc5d02-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1964/DroidDeck-PR.1964-8cc5d02-ludashi.apk",
+          "size": 90637555,
+          "sha256": "5ec7f6d1bb5aa369b414bf33bfb0b5507a4b3152f8339ab20f7dddce6b3f7e85",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1966",
       "title": "feat: KDE desktop on the bottom screen beside the session",
       "summary": "Adds Desktop as a bottom-screen mode on dual-screen handhelds (Retroid Pocket Duo, AYN Thor), next to Dashboard, Keyboard + trackpad, Terminal and Deck grips. The KDE Plasma desktop runs on the bottom screen while the Steam session, or a game, stays on the top screen.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1965/DroidDeck-PR.1965-9b82906-ludashi.apk",
           "size": 90932467,
           "sha256": "52e06cf2bbdc5008fe170c4776f00676f7f0b336c4873bf3510dc62aa6889d2c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1964",
-      "title": "feat: Follow screen resolution can be scaled down by 2, 3 or 4",
-      "summary": "Requested in #feature-requests (\"Session resolution: follow halved\").",
-      "commit": "cc8e744a743f0b3774ecda846305a6826c6f4ae4",
-      "pr": 1964,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793557986000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1964",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1964-cc8e744.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1964/DroidDeck-PR.1964-cc8e744.apk",
-          "size": 90633459,
-          "sha256": "3bd7c28de23a4512736438084dc5005f8ef5a20b9f19d0ac851a289699756149",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1964-cc8e744-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1964/DroidDeck-PR.1964-cc8e744-pubg.apk",
-          "size": 90633459,
-          "sha256": "b2718283ee8221e49a95020b0cdc0c3ee47ccfa0e58d487e2ac2681c05b7c5f5",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1964-cc8e744-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1964/DroidDeck-PR.1964-cc8e744-antutu.apk",
-          "size": 90633459,
-          "sha256": "095d12e39a56d42ac890b22d4c5b2f8fdd87d0301d216c89df09f2d91b29119f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1964-cc8e744-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1964/DroidDeck-PR.1964-cc8e744-ludashi.apk",
-          "size": 90633459,
-          "sha256": "9ff1555d91ebea17ca63da5a80badecbfd2035dc96b99e22397f234bdf21b055",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
