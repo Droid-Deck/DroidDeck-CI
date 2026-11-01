@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793567768718,
+  "generatedAt": 1793568194624,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1965",
+      "title": "chore: remove source comments and unused code, translate every missing string",
+      "summary": "Clean-up only. Nothing here is meant to change how the app behaves.",
+      "commit": "0c4df6e9266fd9043ec9f3430e934e1c233079d8",
+      "pr": 1965,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793568108000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1965",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1965-0c4df6e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1965/DroidDeck-PR.1965-0c4df6e.apk",
+          "size": 90961462,
+          "sha256": "e84c4df7b9320dc4908a26616818a3d71efbb0d239cea36acda2481557bd6a54",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1965-0c4df6e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1965/DroidDeck-PR.1965-0c4df6e-pubg.apk",
+          "size": 90961462,
+          "sha256": "1b702aab0cb389c6f45340bfb36b6d3f5dcdbc7de50cda1f643fbdb8ac8d4d5a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1965-0c4df6e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1965/DroidDeck-PR.1965-0c4df6e-antutu.apk",
+          "size": 90961462,
+          "sha256": "3b29b97aa758ee92d3d9d5d334ef187c9f093303b28d84f0443cf2343e23959c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1965-0c4df6e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1965/DroidDeck-PR.1965-0c4df6e-ludashi.apk",
+          "size": 90961462,
+          "sha256": "27797b27cbd9d28d09149f827a02f93fab90bff8b2cee75493502ef3e167c5ab",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1971",
       "title": "feat: desktop session follows the app language",
       "summary": "The desktop session always started with LANG=C.UTF-8 and never installed translations, so Plasma and its apps were English-only regardless of the language chosen in DroidDeck (reported in Discord #development).",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1967/DroidDeck-PR.1967-0b2f393-ludashi.apk",
           "size": 90645747,
           "sha256": "1769198c6d26fb8f01b9692b92d6b23cabb1311f0443fd91c0a3d13d8edccfcf",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1965",
-      "title": "chore: remove source comments and unused code, translate every missing string",
-      "summary": "Clean-up only. Nothing here is meant to change how the app behaves.",
-      "commit": "9b82906b13aea418851bb5fbab21bdf6f53251f9",
-      "pr": 1965,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793558594000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1965",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1965-9b82906.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1965/DroidDeck-PR.1965-9b82906.apk",
-          "size": 90932467,
-          "sha256": "fdc200fd93352d676b2fbefd7358e4086e7f7e9f77364af134a6fe38899d7fab",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1965-9b82906-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1965/DroidDeck-PR.1965-9b82906-pubg.apk",
-          "size": 90932467,
-          "sha256": "cfb594c9324878f16ad2a849a306a1ca9ce76fac80b284632c62a51c085747db",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1965-9b82906-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1965/DroidDeck-PR.1965-9b82906-antutu.apk",
-          "size": 90932467,
-          "sha256": "40c43077d74d9a889fa75ff785a6c014e1f9e4b4072f75c50bec42bb5d8fc9c3",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1965-9b82906-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1965/DroidDeck-PR.1965-9b82906-ludashi.apk",
-          "size": 90932467,
-          "sha256": "52e06cf2bbdc5008fe170c4776f00676f7f0b336c4873bf3510dc62aa6889d2c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
