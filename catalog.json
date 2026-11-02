@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793656991389,
+  "generatedAt": 1793657062963,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3fbd86c",
-    "title": "fix: bottom screen frame graph updates smoothly and no longer looks jagged",
-    "summary": "The bottom screen polled frame times at 10 Hz, so the trace advanced in steps of several frames, and it plotted every sample across a much wider area than the in-game HUD, which made per-frame jitter look like noise.",
-    "commit": "3fbd86c89ddff17df9bbc0980add8b384c2db47d",
+    "tag": "main-8d3616e",
+    "title": "feat(dual-screen): swap screens - game on the bottom screen, panel on top",
+    "summary": "Swap screens for dual-screen handhelds (tested on the Retroid Pocket Duo), on main 3fbd86c8.",
+    "commit": "8d3616eccd9127188453b61cd9d1c44657becf5a",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793648621000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3fbd86c",
+    "publishedAt": 1793656988000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8d3616e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3fbd86c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fbd86c/DroidDeck-main-3fbd86c.apk",
-        "size": 91162433,
-        "sha256": "81bfbdc23e87b5ab2318db351b786eebde4832529ee174887b6642175d188115",
+        "name": "DroidDeck-main-8d3616e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d3616e/DroidDeck-main-8d3616e.apk",
+        "size": 91170681,
+        "sha256": "49c00bf929b9fcb16f9070abba21c438a254b95bdd88f16dade9626f8f4920d4",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3fbd86c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fbd86c/DroidDeck-main-3fbd86c-pubg.apk",
-        "size": 91162433,
-        "sha256": "40b71dde1bcd13c2d5d75a88712002fa277377a24c74bb9f070b9203897706f9",
+        "name": "DroidDeck-main-8d3616e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d3616e/DroidDeck-main-8d3616e-pubg.apk",
+        "size": 91170681,
+        "sha256": "385b39a5a6b972a74176e1fdace5fb75dfa69099ff57f448d7fd3958536d6a81",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3fbd86c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fbd86c/DroidDeck-main-3fbd86c-antutu.apk",
-        "size": 91162433,
-        "sha256": "4bec921be4db26a384c074bd9c97cdc5bbfcc61a1f15b690a262e0397f60125c",
+        "name": "DroidDeck-main-8d3616e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d3616e/DroidDeck-main-8d3616e-antutu.apk",
+        "size": 91170681,
+        "sha256": "317c1585b0378c0e5ad0e92b96c2587bdd57127280933ed42c385e95357cca8d",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3fbd86c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fbd86c/DroidDeck-main-3fbd86c-ludashi.apk",
-        "size": 91162433,
-        "sha256": "f008e6a5c3e47c04e4a3102630dac0d9595dfb42d9751e32120dadb8154cc825",
+        "name": "DroidDeck-main-8d3616e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8d3616e/DroidDeck-main-8d3616e-ludashi.apk",
+        "size": 91170681,
+        "sha256": "f611ea7796a11c5f33f783ce0a992f79b7b6e3cd857f0b49bb398e94474fc0d0",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8d3616eccd9127188453b61cd9d1c44657becf5a",
+      "title": "feat(dual-screen): swap screens - game on the bottom screen, panel on top",
+      "summary": "Swap screens for dual-screen handhelds (tested on the Retroid Pocket Duo), on main 3fbd86c8.",
+      "publishedAt": 1793656988000
+    },
     {
       "commit": "3fbd86c89ddff17df9bbc0980add8b384c2db47d",
       "title": "fix: bottom screen frame graph updates smoothly and no longer looks jagged",
@@ -155,12 +161,6 @@
       "title": "fix(game-env): DOOM (2016) keeps the swapchain image count it asks for",
       "summary": "DOOM (2016) crashes on every launch with \"The engine has crashed!\" (GOG install, Vulkan). With this change it starts and reaches its menus.",
       "publishedAt": 1793585902000
-    },
-    {
-      "commit": "e1d241d723014e5cc3cc0fb126d873cfc3279db0",
-      "title": "feat(dual-screen): bottom-screen HUD, Line strip, strip under every bottom tab, Bottom screen HUD settings",
-      "summary": "Bottom-screen HUD work for dual-screen devices (tested on the Retroid Pocket Duo), squashed to one commit on main da665bb1.",
-      "publishedAt": 1793579955000
     }
   ],
   "tests": [
