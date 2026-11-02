@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793658457838,
+  "generatedAt": 1793659000292,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2020",
+      "title": "fix: download monitor polls off the main thread so slow storage can't ANR the session",
+      "summary": "Moving a game between Steam libraries while the destination is on a busy SD card made the session screen show an ANR dialog, even though the move kept going. The ANR trace shows the main thread blocked in a directory listing inside the download monitor's poll, which lists steamapps for every library.",
+      "commit": "28e8f4a987eb25bc91819d1ffa4b0ef42cb82ee1",
+      "pr": 2020,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793658928000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2020",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2020-28e8f4a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2020/DroidDeck-PR.2020-28e8f4a.apk",
+          "size": 91162433,
+          "sha256": "6d9b77d29a376fe3de8c3de3c3c6b422184b3a48bd27101a2e273135b1791052",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2020-28e8f4a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2020/DroidDeck-PR.2020-28e8f4a-pubg.apk",
+          "size": 91162433,
+          "sha256": "052d74e2fa6124aacf7dcd399f191a63a27c41776d4411d77668b65df59f5a91",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2020-28e8f4a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2020/DroidDeck-PR.2020-28e8f4a-antutu.apk",
+          "size": 91162433,
+          "sha256": "f0465c5887f03c663b1624a3650a5830384825195c9082f32ad93f0241c7cd4b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2020-28e8f4a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2020/DroidDeck-PR.2020-28e8f4a-ludashi.apk",
+          "size": 91162433,
+          "sha256": "28094a6c31179b4ce579565c4ba2704dd138b4b68b93fca15eb691c4e93603e1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2021",
       "title": "fix(runtime): keep the Linux desktop installed across a runtime update",
