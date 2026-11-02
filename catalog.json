@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793621058466,
+  "generatedAt": 1793622168621,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-55da0af",
-    "title": "fix(hud): GPU clock and load without root on Adreno 8xx and hardware-scheduled kernels",
-    "summary": "On phones where Android blocks the GPU's sysfs files for apps, the HUD reads the GPU without root (#1969). That works on the Retroid Pocket Duo (Adreno 722) but not on Adreno 8xx: a OnePlus 13 (Adreno 830, Android 16) showed no GPU clock and only the partial GPU load from Vulkan timing. Reported with two HUD diagnostics files by iamTooShaar on Discord.",
-    "commit": "55da0afd061f5d300d608cb00067de2585d18ca7",
+    "tag": "main-55362d6",
+    "title": "fix: wall scrims overhang the window so no edge pixels stay unshaded",
+    "summary": "The wall fade and the dark sheet overlay now extend a few dp past the window on every side. While a page animates back in (leaving a session), a pixel or two along the far left and top could end up outside the overlay and flash from shaded to full brightness.",
+    "commit": "55362d68efbf5ba6ff8f302b914a1d37d0b73a06",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793615135000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-55da0af",
+    "publishedAt": 1793622085000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-55362d6",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-55da0af.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-55da0af/DroidDeck-main-55da0af.apk",
+        "name": "DroidDeck-main-55362d6.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-55362d6/DroidDeck-main-55362d6.apk",
         "size": 91060033,
-        "sha256": "0771fdb26706bac9259f4dc0c2630a99600a0b2e6c308ce636769a7863757ca6",
+        "sha256": "3bb1132d78de0a6fdd4d07ea5a3ed7354d869a8d359124a83157c67a1d9be186",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-55da0af-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-55da0af/DroidDeck-main-55da0af-pubg.apk",
+        "name": "DroidDeck-main-55362d6-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-55362d6/DroidDeck-main-55362d6-pubg.apk",
         "size": 91060033,
-        "sha256": "533d3aaa36519b4523f43755ecb149e1cdf9d4de2febb2459423b76351249be5",
+        "sha256": "b45dda84aa99a30287d986f66a7dd65c28e8280dec8b363539ed18a4246eec15",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-55da0af-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-55da0af/DroidDeck-main-55da0af-antutu.apk",
+        "name": "DroidDeck-main-55362d6-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-55362d6/DroidDeck-main-55362d6-antutu.apk",
         "size": 91060033,
-        "sha256": "2c5811f9d8132308e446ba47200b48e58f9b4900990350104254973ff762f862",
+        "sha256": "32c36a2d2e87e5d564c3eefab6eb181ee2188517baca70100e7a086ecfba2169",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-55da0af-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-55da0af/DroidDeck-main-55da0af-ludashi.apk",
+        "name": "DroidDeck-main-55362d6-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-55362d6/DroidDeck-main-55362d6-ludashi.apk",
         "size": 91060033,
-        "sha256": "203b14d44883841eb970e0b0834228619bd73643338d96251a1ecd8b26bb936a",
+        "sha256": "a1cf1854d375aaa408eed9027d22d46d2dbe4e5e4e8c572679a32d54f0580d8d",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "55362d68efbf5ba6ff8f302b914a1d37d0b73a06",
+      "title": "fix: wall scrims overhang the window so no edge pixels stay unshaded",
+      "summary": "The wall fade and the dark sheet overlay now extend a few dp past the window on every side. While a page animates back in (leaving a session), a pixel or two along the far left and top could end up outside the overlay and flash from shaded to full brightness.",
+      "publishedAt": 1793622085000
+    },
     {
       "commit": "55da0afd061f5d300d608cb00067de2585d18ca7",
       "title": "fix(hud): GPU clock and load without root on Adreno 8xx and hardware-scheduled kernels",
@@ -155,12 +161,6 @@
       "title": "chore: remove source comments and unused code, translate every missing string",
       "summary": "Clean-up only. Nothing here is meant to change how the app behaves.",
       "publishedAt": 1793569923000
-    },
-    {
-      "commit": "8cb5c2168e8ec4a3f05bc1e075eaaf968570ca69",
-      "title": "feat(hud): GPU load and clock without root where Android blocks kgsl",
-      "summary": "Some phones, like the Retroid Pocket Duo, block apps from reading the GPU numbers, so DroidDeck's HUD showed no GPU % and no GPU clock there. Without root, this PR adds:",
-      "publishedAt": 1793565506000
     }
   ],
   "tests": [
