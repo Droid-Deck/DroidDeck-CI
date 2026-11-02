@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793646426255,
+  "generatedAt": 1793647897282,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-2013",
-      "title": "fix: bottom screen frame graph updates smoothly and no longer looks jagged",
-      "summary": "The bottom screen polled frame times at 10 Hz, so the trace advanced in steps of several frames, and it plotted every sample across a much wider area than the in-game HUD, which made per-frame jitter look like noise.",
-      "commit": "d5c07cfbe0278cf6894583815c0456a94a217ba1",
-      "pr": 2013,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793646336000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2013",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2013-d5c07cf.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2013/DroidDeck-PR.2013-d5c07cf.apk",
-          "size": 91162433,
-          "sha256": "f955b61b00fe20e36b0d3ebdefe566b7e52e5a3078f00348c698808cc0045c06",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2013-d5c07cf-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2013/DroidDeck-PR.2013-d5c07cf-pubg.apk",
-          "size": 91162433,
-          "sha256": "46f913675fd6014e0215e3e2e5a76a947c1239e2c787aa9e22bd4f07f12d42f1",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2013-d5c07cf-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2013/DroidDeck-PR.2013-d5c07cf-antutu.apk",
-          "size": 91162433,
-          "sha256": "3e947210cea62d77f01e902c19b614617da9b60647170429f990e76a47bf7b44",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2013-d5c07cf-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2013/DroidDeck-PR.2013-d5c07cf-ludashi.apk",
-          "size": 91162433,
-          "sha256": "52e1259038aca7ed46a20769fb746a3b92e026bb7a1bda4d38c858ec4fe0fd7c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2006",
       "title": "feat(dual-screen): swap screens - game on the bottom screen, panel on top",
