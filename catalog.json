@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793662767187,
+  "generatedAt": 1793663172992,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -403,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2012/DroidDeck-PR.2012-49e7c54-ludashi.apk",
           "size": 91166809,
           "sha256": "026eaa1cb09424375dacab0597db18c2c8dd21e1243fc37ec528b19a71f4b4ea",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1984",
-      "title": "fix: a stale session's startup failure no longer stops the newer session",
-      "summary": "runSession(gen) runs on a background thread and calls stopSession(...) when startup fails (passwd/group write, missing proot, game environment publish, run mode without a program, guest start failure). stopSession only checked SessionState.running, so if the user quit and started a new session while the old one was still starting, the old session's failure tore down the new session.",
-      "commit": "677312cdf6ab2e8cb69eeda9ef1d22502624f1f3",
-      "pr": 1984,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793576631000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1984",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1984-677312c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1984/DroidDeck-PR.1984-677312c.apk",
-          "size": 91002689,
-          "sha256": "6856d17a063bd0ab43aa36aa5e2e45b45657aefcc1d604caf1db340a0461d1e4",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1984-677312c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1984/DroidDeck-PR.1984-677312c-pubg.apk",
-          "size": 91002689,
-          "sha256": "541fb39e3583be93ab9269c145ed28bace0885676fc2a716636ed81d01527d87",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1984-677312c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1984/DroidDeck-PR.1984-677312c-antutu.apk",
-          "size": 91002689,
-          "sha256": "70216db1f885a3dc79d9a4b0dc1b8ba2daab02062cdf2a75df68561d92d79f3e",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1984-677312c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1984/DroidDeck-PR.1984-677312c-ludashi.apk",
-          "size": 91002689,
-          "sha256": "cdccebcb96210c1426d4fcefb179c277b87bc1d169424b8d9ecdc92449af79d5",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
