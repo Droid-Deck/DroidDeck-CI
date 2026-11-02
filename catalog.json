@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793649097486,
+  "generatedAt": 1793649536928,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2006",
+      "title": "feat(dual-screen): swap screens - game on the bottom screen, panel on top",
+      "summary": "Swap screens for dual-screen handhelds (tested on the Retroid Pocket Duo), squashed to one commit on main 3583643a.",
+      "commit": "37a8fc2f67fd0455ea168666121f585e99fd94d9",
+      "pr": 2006,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793649452000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2006",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2006-37a8fc2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2006/DroidDeck-PR.2006-37a8fc2.apk",
+          "size": 91170681,
+          "sha256": "149fe3d994629fd6a09722d426c31ce98330a4492968449320e9bf0771c40ad7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2006-37a8fc2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2006/DroidDeck-PR.2006-37a8fc2-pubg.apk",
+          "size": 91170681,
+          "sha256": "ef9fe00ca446acbf5964148d58a1361949ab64f35a749dd6e4d69aca6d862716",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2006-37a8fc2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2006/DroidDeck-PR.2006-37a8fc2-antutu.apk",
+          "size": 91170681,
+          "sha256": "5a29734fd39e3a28c36cd7a4de937f836fb35b6b4e5f4b8a2028a8030c96397c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2006-37a8fc2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2006/DroidDeck-PR.2006-37a8fc2-ludashi.apk",
+          "size": 91170681,
+          "sha256": "099fe76ab6ce606723cb1d9b64ce5c63a1c0936ed1522addf8c8b6d68339507d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2016",
       "title": "fix: Project Zomboid runs on G1 and the C1 JIT instead of ZGC",
       "summary": "Project Zomboid's launcher JSON asks for ZGC, which pins the CPU at 100% and heats the device within minutes. Before each Windows launch the wrapper now swaps -XX:+UseZGC for -XX:+UseG1GC and adds -XX:TieredStopAtLevel=1 to vmArgs in the game's own JSON next to the exe. A user on a Snapdragon 8 Elite Gen 5 gets a steady 30 fps this way.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2012/DroidDeck-PR.2012-49e7c54-ludashi.apk",
           "size": 91166809,
           "sha256": "026eaa1cb09424375dacab0597db18c2c8dd21e1243fc37ec528b19a71f4b4ea",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2006",
-      "title": "feat(dual-screen): swap screens - game on the bottom screen, panel on top",
-      "summary": "Swap screens for dual-screen handhelds (tested on the Retroid Pocket Duo), squashed to one commit on main 3583643a.",
-      "commit": "bde96e5b110465ce4b45fb4ccf84b1022d7c9047",
-      "pr": 2006,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793635668000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2006",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2006-bde96e5.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2006/DroidDeck-PR.2006-bde96e5.apk",
-          "size": 91174777,
-          "sha256": "f8037947825f796e6a3c000a2175067e66cf129f156c63514fcdea4e0da65cab",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2006-bde96e5-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2006/DroidDeck-PR.2006-bde96e5-pubg.apk",
-          "size": 91174777,
-          "sha256": "a1d222975be6572540f682570bfffbb45b43cf8dcdb739564cc07de62ce3c0e2",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2006-bde96e5-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2006/DroidDeck-PR.2006-bde96e5-antutu.apk",
-          "size": 91174777,
-          "sha256": "f29989b246365588da474f844e2d25f5ea47ce5a2517ee706b55e2458dd738f4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2006-bde96e5-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2006/DroidDeck-PR.2006-bde96e5-ludashi.apk",
-          "size": 91174777,
-          "sha256": "3750b2d0b61b7f7e2ec1d6772e7e42c09ae9969c02b551040df0eeaffcec51b0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
