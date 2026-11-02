@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793663172992,
+  "generatedAt": 1793663919249,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cdde9d3",
-    "title": "fix: a GOG game whose installer cannot run gets its install registry",
-    "summary": "The Witcher: Enhanced Edition installs from GOG, is registered in Steam, and then witcher.exe exits during startup. Wine's log shows the runtime and audio loading, then the engine tearing down and err:virtual:virtualsetupexception nested exception on signal stack.",
-    "commit": "cdde9d3390defe4ee0c8f8236b9ee7b00d288b78",
+    "tag": "main-0a0bbb6",
+    "title": "fix: a stale session's startup failure no longer stops the newer session",
+    "summary": "runSession(gen) runs on a background thread and calls stopSession(...) when startup fails (passwd/group write, missing proot, game environment publish, run mode without a program, guest start failure). stopSession only checked SessionState.running, so if the user quit and started a new session while the old one was still starting, the old session's failure tore down the new session.",
+    "commit": "0a0bbb68d1ad57b2db9b7809cb464494a1e26368",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793661859000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cdde9d3",
+    "publishedAt": 1793663858000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0a0bbb6",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cdde9d3.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdde9d3/DroidDeck-main-cdde9d3.apk",
+        "name": "DroidDeck-main-0a0bbb6.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a0bbb6/DroidDeck-main-0a0bbb6.apk",
         "size": 91187065,
-        "sha256": "31e1c2d6d83e232349828263e2655136a32e37b7a7e73be2c198b64d3f3d28b4",
+        "sha256": "7eb2c3c2468dc8f045934e084d13f1f8bce5025da362d32cfe24eb0ad5ae08f8",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cdde9d3-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdde9d3/DroidDeck-main-cdde9d3-pubg.apk",
+        "name": "DroidDeck-main-0a0bbb6-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a0bbb6/DroidDeck-main-0a0bbb6-pubg.apk",
         "size": 91187065,
-        "sha256": "4050f9deca066a7daa54f6b0ab9f53de26223e874664a92446b50a2dc149c968",
+        "sha256": "ec32a5dd53767bc5e78e3f5683cc556c392ec51f20dd97ce3cdc779e0cddec5b",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cdde9d3-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdde9d3/DroidDeck-main-cdde9d3-antutu.apk",
+        "name": "DroidDeck-main-0a0bbb6-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a0bbb6/DroidDeck-main-0a0bbb6-antutu.apk",
         "size": 91187065,
-        "sha256": "bce8cce89a60145ac7988384f6560f7b22ad156e0d6d92c0ed9f4f0ed53f424e",
+        "sha256": "09c8fd81d45a7c7752fa359e09750ef56b9da58b7b0c76d4670030211e05397f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cdde9d3-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdde9d3/DroidDeck-main-cdde9d3-ludashi.apk",
+        "name": "DroidDeck-main-0a0bbb6-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a0bbb6/DroidDeck-main-0a0bbb6-ludashi.apk",
         "size": 91187065,
-        "sha256": "b5613360d374d85de8cd2c41366198fc82cd7181efea555bf0695feadca9e001",
+        "sha256": "adc068d3108e9008b7ef38ae7f8cf82e263e6d0a9a4a386750c35d70df2283ae",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "0a0bbb68d1ad57b2db9b7809cb464494a1e26368",
+      "title": "fix: a stale session's startup failure no longer stops the newer session",
+      "summary": "runSession(gen) runs on a background thread and calls stopSession(...) when startup fails (passwd/group write, missing proot, game environment publish, run mode without a program, guest start failure). stopSession only checked SessionState.running, so if the user quit and started a new session while the old one was still starting, the old session's failure tore down the new session.",
+      "publishedAt": 1793663858000
+    },
     {
       "commit": "cdde9d3390defe4ee0c8f8236b9ee7b00d288b78",
       "title": "fix: a GOG game whose installer cannot run gets its install registry",
@@ -155,12 +161,6 @@
       "title": "fix(hud): GPU clock and load without root on Adreno 8xx and hardware-scheduled kernels",
       "summary": "On phones where Android blocks the GPU's sysfs files for apps, the HUD reads the GPU without root (#1969). That works on the Retroid Pocket Duo (Adreno 722) but not on Adreno 8xx: a OnePlus 13 (Adreno 830, Android 16) showed no GPU clock and only the partial GPU load from Vulkan timing. Reported with two HUD diagnostics files by iamTooShaar on Discord.",
       "publishedAt": 1793615135000
-    },
-    {
-      "commit": "313b6a59d2ed57e984b71822356614d6c762c70e",
-      "title": "feat(dual-screen): single-screen mode on the Retroid Pocket Duo and AYN Thor while another window holds the bottom screen",
-      "summary": "On the Retroid Pocket Duo and the AYN Thor, DroidDeck now switches to single-screen mode while something else holds the bottom screen, and back to dual-screen mode when it's free again.",
-      "publishedAt": 1793593805000
     }
   ],
   "tests": [
