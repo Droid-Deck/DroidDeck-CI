@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793654466642,
+  "generatedAt": 1793655390421,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2021",
+      "title": "fix(runtime): keep the Linux desktop installed across a runtime update",
+      "summary": "After every Linux runtime update, the Desktop button went back to \"Install & open desktop\", and opening it downloaded the whole Kubuntu desktop again, even though it had been installed before.",
+      "commit": "58411c5a2c22c3e6f79f01e796e23b53b2f460af",
+      "pr": 2021,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793655298000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2021",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2021-58411c5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2021/DroidDeck-PR.2021-58411c5.apk",
+          "size": 91162433,
+          "sha256": "58e8d1b2d9920a2ab2278abf1b04ef736b95d99ae26e114bd811dad9ad1b885f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2021-58411c5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2021/DroidDeck-PR.2021-58411c5-pubg.apk",
+          "size": 91162433,
+          "sha256": "e08921ccb71aa4b7e0cd84ffb63148e59a6dae2dba6aa088daba9aeb75115fd9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2021-58411c5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2021/DroidDeck-PR.2021-58411c5-antutu.apk",
+          "size": 91162433,
+          "sha256": "6ab07d3a0e588f636f80977ca6b7d1f7d53164ab2d97c128a789f909278825ed",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2021-58411c5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2021/DroidDeck-PR.2021-58411c5-ludashi.apk",
+          "size": 91162433,
+          "sha256": "4ba457116112429253bd977de949200d49b0e3ae33b81c04c150beb36efe3821",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2006",
       "title": "feat(dual-screen): swap screens - game on the bottom screen, panel on top",
