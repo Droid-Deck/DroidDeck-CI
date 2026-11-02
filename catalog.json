@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793659000292,
+  "generatedAt": 1793659269053,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2023",
+      "title": "feat: suggest Steam libraries found on internal storage and cards",
+      "summary": "Settings now lists existing Steam libraries it finds on internal storage and attached cards, each with its game count and an Add button. This makes it easy to share a library with other emulators that keep a Steam-format library on the same device.",
+      "commit": "1bb56abba3387ee34740a172eece3cbcf3cb38b6",
+      "pr": 2023,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793659180000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2023",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2023-1bb56ab.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2023/DroidDeck-PR.2023-1bb56ab.apk",
+          "size": 91182969,
+          "sha256": "61962ddfae6538cdbaf27168dd9cbd3deef98ed29ee2a8845a8f2ad40f4311af",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2023-1bb56ab-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2023/DroidDeck-PR.2023-1bb56ab-pubg.apk",
+          "size": 91182969,
+          "sha256": "12455a5249539c4edfd90d51fcf3ca1a9c0ab0af45e9beadf3c9f21634000d1a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2023-1bb56ab-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2023/DroidDeck-PR.2023-1bb56ab-antutu.apk",
+          "size": 91182969,
+          "sha256": "34a7cbccc871437a3e3ca92f1be76b0aed0d7bc245e671c0dc5f0a9f13201c04",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2023-1bb56ab-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2023/DroidDeck-PR.2023-1bb56ab-ludashi.apk",
+          "size": 91182969,
+          "sha256": "44b636d484ff40ea2db6ab0e893bd6c900a50000850e2631cb7e7c462ef29641",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2020",
       "title": "fix: download monitor polls off the main thread so slow storage can't ANR the session",
