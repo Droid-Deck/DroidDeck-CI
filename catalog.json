@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793648272193,
+  "generatedAt": 1793648693346,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-89a2ae8",
-    "title": "fix: drop the HUD watermark and use the wordmark in headers",
-    "summary": "Drops the large faint D behind the content on the in-game stats panels, the bottom screen monitors and the on-screen HUD.",
-    "commit": "89a2ae87d7f03039f1b15a49fb36cbb813e83278",
+    "tag": "main-3fbd86c",
+    "title": "fix: bottom screen frame graph updates smoothly and no longer looks jagged",
+    "summary": "The bottom screen polled frame times at 10 Hz, so the trace advanced in steps of several frames, and it plotted every sample across a much wider area than the in-game HUD, which made per-frame jitter look like noise.",
+    "commit": "3fbd86c89ddff17df9bbc0980add8b384c2db47d",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793645855000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-89a2ae8",
+    "publishedAt": 1793648621000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3fbd86c",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-89a2ae8.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-89a2ae8/DroidDeck-main-89a2ae8.apk",
+        "name": "DroidDeck-main-3fbd86c.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fbd86c/DroidDeck-main-3fbd86c.apk",
         "size": 91162433,
-        "sha256": "e5a618a1f3d49539b1520160bd51a2dfb90f5352d7eadf1378b8d00b9a383ce4",
+        "sha256": "81bfbdc23e87b5ab2318db351b786eebde4832529ee174887b6642175d188115",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-89a2ae8-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-89a2ae8/DroidDeck-main-89a2ae8-pubg.apk",
+        "name": "DroidDeck-main-3fbd86c-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fbd86c/DroidDeck-main-3fbd86c-pubg.apk",
         "size": 91162433,
-        "sha256": "fb9cfa0adf5c7a65b0096747c2e7f1c9cc4ec1b5619776845137a57e2b332e48",
+        "sha256": "40b71dde1bcd13c2d5d75a88712002fa277377a24c74bb9f070b9203897706f9",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-89a2ae8-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-89a2ae8/DroidDeck-main-89a2ae8-antutu.apk",
+        "name": "DroidDeck-main-3fbd86c-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fbd86c/DroidDeck-main-3fbd86c-antutu.apk",
         "size": 91162433,
-        "sha256": "558778c86c240f03345cd25cd5c360a4e62271b6581f607e802be7bc41659461",
+        "sha256": "4bec921be4db26a384c074bd9c97cdc5bbfcc61a1f15b690a262e0397f60125c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-89a2ae8-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-89a2ae8/DroidDeck-main-89a2ae8-ludashi.apk",
+        "name": "DroidDeck-main-3fbd86c-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3fbd86c/DroidDeck-main-3fbd86c-ludashi.apk",
         "size": 91162433,
-        "sha256": "7e82d1612f7c8da3010108dcdeb00c55a2df101def1053998c2b06e75ced73d6",
+        "sha256": "f008e6a5c3e47c04e4a3102630dac0d9595dfb42d9751e32120dadb8154cc825",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "3fbd86c89ddff17df9bbc0980add8b384c2db47d",
+      "title": "fix: bottom screen frame graph updates smoothly and no longer looks jagged",
+      "summary": "The bottom screen polled frame times at 10 Hz, so the trace advanced in steps of several frames, and it plotted every sample across a much wider area than the in-game HUD, which made per-frame jitter look like noise.",
+      "publishedAt": 1793648621000
+    },
     {
       "commit": "89a2ae87d7f03039f1b15a49fb36cbb813e83278",
       "title": "fix: drop the HUD watermark and use the wordmark in headers",
@@ -155,12 +161,6 @@
       "title": "feat(dual-screen): bottom-screen HUD, Line strip, strip under every bottom tab, Bottom screen HUD settings",
       "summary": "Bottom-screen HUD work for dual-screen devices (tested on the Retroid Pocket Duo), squashed to one commit on main da665bb1.",
       "publishedAt": 1793579955000
-    },
-    {
-      "commit": "6a30a9bb4be22f3136f49ed171df93b2daa8425f",
-      "title": "fix: docked HUD tab FPS number is half its previous size",
-      "summary": "The docked FPS tab was disproportionately large next to the full HUD. The number drops from 20sp to 10sp, the \"fps\" label from 8.5sp to 6sp, and the padding scales with it. The tab still scales with the HUD scale setting. The sizes are now shared constants used by the build, size and drag-preview paths.",
-      "publishedAt": 1793577286000
     }
   ],
   "tests": [
