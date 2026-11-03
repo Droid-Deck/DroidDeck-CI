@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793674693225,
+  "generatedAt": 1793687419250,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2037",
+      "title": "gamescope: EA sign-in stays above the EA launcher's splash",
+      "summary": "With the EA app installed (#2036), Burnout Paradise Remastered opens two windows from two processes. The EA app's Steam launcher (EASteamLauncher.exe) shows the game's \"Authenticating\u2026\" splash as a layered tool window (WSEXLAYERED | WSEXTOOLWINDOW), and the EA app (EADesktop.exe) opens its sign-in and verification window WSEXTOPMOST. gamescope took the splash as the sign-in's overr",
+      "commit": "94c37797ee9364366d19bdb36957e1e3f9378bf3",
+      "pr": 2037,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793687357000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2037",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2037-94c3779.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-94c3779.apk",
+          "size": 93489489,
+          "sha256": "0de683e38b70536e392b291a47318c8c56f966b93c60bcff47c7ab511441de5a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2037-94c3779-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-94c3779-pubg.apk",
+          "size": 93489489,
+          "sha256": "4fd143a87ff8fd00472f9c643864fd76927e7ff59b56b71dc5ff3ab33ba9f963",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2037-94c3779-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-94c3779-antutu.apk",
+          "size": 93489489,
+          "sha256": "a8a8cc19e6b1af26fae7e9e049500cc33dc37dbedb544ab302dee12c948b6922",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2037-94c3779-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-94c3779-ludashi.apk",
+          "size": 93489489,
+          "sha256": "cb9bce790a681aa8cf3f89a2fde70a36b16e4d7011f7799e07647849c8cb812c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2028",
       "title": "feat: Trinkets tab with a Bluetooth controller mode",
