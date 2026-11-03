@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793687419250,
+  "generatedAt": 1793687484070,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2036",
+      "title": "Steam: EA games install the EA app",
+      "summary": "EA games on Steam start through the EA app. Their launch command is steam2ea://launchgame/<appid>, which only the EA app handles, and their install script runs the EA app installer on first launch (EADesktopSetup, Installer\\Origin\\redist\\internal\\EAappInstaller.exe). droiddeck-seed-redists marks every process in a game's install scripts as already run, except Vulkan runtime and Ubisoft C",
+      "commit": "9df1d03ab5ac87bbe3e0764dcc44cb79b2bfdf97",
+      "pr": 2036,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793687386000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2036",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2036-9df1d03.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2036/DroidDeck-PR.2036-9df1d03.apk",
+          "size": 93489489,
+          "sha256": "0b16241ac36df06d4a899e99c8116223ca4c59f238c958e41d1628c9327b3e3a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2036-9df1d03-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2036/DroidDeck-PR.2036-9df1d03-pubg.apk",
+          "size": 93489489,
+          "sha256": "8caeb1281b8c4e05824935735fd357d0bec3c73fd8732651885f880f569dc5e1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2036-9df1d03-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2036/DroidDeck-PR.2036-9df1d03-antutu.apk",
+          "size": 93489489,
+          "sha256": "ebc0ea58c0b4e33a27ec1c33fc25e33dbb9e217cacda4c6df9f6c802eb3c9b10",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2036-9df1d03-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2036/DroidDeck-PR.2036-9df1d03-ludashi.apk",
+          "size": 93489489,
+          "sha256": "cdaff5960ad52a5ffc3566b47a616c43d9fb101c66eb00ddc4ab19eae3ca5bf3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2037",
       "title": "gamescope: EA sign-in stays above the EA launcher's splash",
