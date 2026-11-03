@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793717089592,
+  "generatedAt": 1793718449103,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2048",
+      "title": "Reduce on-screen stick load and honour Low latency off",
+      "summary": "Holding an on-screen stick costs far more than holding an on-screen button, and turning Low latency off changes nothing for on-screen controls. This reduces both. The frame rate drop has not been reproduced on the affected Samsung phones yet, so this should not be merged until it has been tested on one.",
+      "commit": "8a42b2bd409237c64a42ed5ffc977d6460d00e83",
+      "pr": 2048,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793718357000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2048",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2048-8a42b2b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-8a42b2b.apk",
+          "size": 93501777,
+          "sha256": "6fe57c3b7e31b06621e724079b2163a4871287a8b39b271c0f6604acf5ae7796",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2048-8a42b2b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-8a42b2b-pubg.apk",
+          "size": 93501777,
+          "sha256": "c7bdfc5a49e57a0d5b4d454c8b75686311c8b9ad5949517f31af724d7bf21c3b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2048-8a42b2b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-8a42b2b-antutu.apk",
+          "size": 93501777,
+          "sha256": "27a1aca8cc87fa8499775b9a9bcd9f7c938f16f4832c191462b9e61bd962d9dc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2048-8a42b2b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-8a42b2b-ludashi.apk",
+          "size": 93501777,
+          "sha256": "7896e89353aebe510782978b735dd62fd3ba4446a53f37b44d10b9a20581625d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1899",
       "title": "feat: a per-game relative mouse switch for games that confine and warp the cursor",
       "summary": "Some games read the mouse by confining it and warping it back, so in a Steam session the pointer stops at the screen edge and aim is capped by screen size.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-511df58-ludashi.apk",
           "size": 93505873,
           "sha256": "dd3f9442ee55d32f508a5a57fa5d687a501cafddf330ca111316b936d0b18306",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2048",
-      "title": "Reduce on-screen stick load and honour Low latency off",
-      "summary": "Holding an on-screen stick costs far more than holding an on-screen button, and turning Low latency off changes nothing for on-screen controls. This reduces both. The frame rate drop has not been reproduced on the affected Samsung phones yet, so this should not be merged until it has been tested on one.",
-      "commit": "9db5e05ed4c2a5fa776bc4ca3935e7b068dc3671",
-      "pr": 2048,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793716715000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2048",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2048-9db5e05.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-9db5e05.apk",
-          "size": 93501777,
-          "sha256": "96a69d365139ca4d82e654b51961c210135300ef57043bd6c0c750e70bce728a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2048-9db5e05-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-9db5e05-pubg.apk",
-          "size": 93501777,
-          "sha256": "f8a731b0aed6ce2ae9772a3f8c270431394b6443589397a8d84a81c51cc1cc57",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2048-9db5e05-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-9db5e05-antutu.apk",
-          "size": 93501777,
-          "sha256": "66313da71bb0d27abd42c401ad41e76e285e8a9260d1c5c3fe8e643fa5a368d5",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2048-9db5e05-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-9db5e05-ludashi.apk",
-          "size": 93501777,
-          "sha256": "5b9499808cfb64a3249aae75591d97041481ebbcca24356987753380deb816ac",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
