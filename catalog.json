@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793707074382,
+  "generatedAt": 1793708585858,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-2b790a8",
-    "title": "fix(runtime): keep the Linux desktop installed across a runtime update",
-    "summary": "After every Linux runtime update, the Desktop button went back to \"Install & open desktop\", and opening it downloaded the whole Kubuntu desktop again, even though it had been installed before.",
-    "commit": "2b790a8a71024034fe3c2c2c67251d899c77882f",
+    "tag": "main-8eeea5e",
+    "title": "feat: add size, opacity and hidden-key settings for the PC keyboard",
+    "summary": "1. Three new session settings in the drawer's CONTROLLER \u2192 Keyboard group, right under the PC keyboard buttons: Size on screen (25\u201370%, step 5, default 47 = today's height, header included), Opacity (30\u2013100%, default 100, one graphicsLayer alpha over the whole panel so text and borders fade together and touches stay unaffected), and Hidden keys (multi-select of three groups: Es\n2. Row-height clamps widen from 24..44dp to 20..56dp, so small screens can actually shrink and large tablets can actually grow; hidden keys are filtered at render time, empty rows drop, and the row-height divisor follows the visible rows so the panel keeps its requested share.\n3. New PcKeyboardPrefs observable singleton mirrors the three SessionPrefs keys, all registered in SettingsReset. Defaults equal current behavior exactly (47 / 100 / nothing hidden) \u2014 zero visual change for existing users.\n4. PCKEYROWS is untouched: ScreenKeyPicker indexes into it by position, so hiding happens only inside PcKeyboard's render path \u2014 the hidden keys remain bindable as screen keys.\n5. Nine English UI strings; other locales fall back to English until a later l10n round.",
+    "commit": "8eeea5ef5a6437dd6d4b6532cc5ef671a7530a6b",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793673426000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2b790a8",
+    "publishedAt": 1793708488000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8eeea5e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-2b790a8.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b790a8/DroidDeck-main-2b790a8.apk",
-        "size": 93489489,
-        "sha256": "b95ad73fbdce1b753320cbbf48df8ff225bf5f70b4ff17139ec52ee55280a93b",
+        "name": "DroidDeck-main-8eeea5e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8eeea5e/DroidDeck-main-8eeea5e.apk",
+        "size": 93501777,
+        "sha256": "3cdb41c992d480f1bd482c9616fabdd0dc649b103c4beb50dd4fd73eac876e8f",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-2b790a8-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b790a8/DroidDeck-main-2b790a8-pubg.apk",
-        "size": 93489489,
-        "sha256": "adf5dfa49cbaf155980726f4fc92911e5da38d192d07cf752eda64a3b0c24dfc",
+        "name": "DroidDeck-main-8eeea5e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8eeea5e/DroidDeck-main-8eeea5e-pubg.apk",
+        "size": 93501777,
+        "sha256": "0a8167caad9fbf5cd6d4732771348037116ec0c568997366c9d542462af59306",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-2b790a8-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b790a8/DroidDeck-main-2b790a8-antutu.apk",
-        "size": 93489489,
-        "sha256": "1c48387472ea53d2a5b42472034b20683384a7940ad59dbadfa42180119a68a8",
+        "name": "DroidDeck-main-8eeea5e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8eeea5e/DroidDeck-main-8eeea5e-antutu.apk",
+        "size": 93501777,
+        "sha256": "c9e7e69f8d33a5567fbe76fba20f3082bcd205a8d520d0efba1e8928bc6dff27",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-2b790a8-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b790a8/DroidDeck-main-2b790a8-ludashi.apk",
-        "size": 93489489,
-        "sha256": "aab8ffe182bf3e3be3bf2ceb02203583468d615abf8b252e4c1cafc196628776",
+        "name": "DroidDeck-main-8eeea5e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8eeea5e/DroidDeck-main-8eeea5e-ludashi.apk",
+        "size": 93501777,
+        "sha256": "3b3ffc70c1baf2b8029a81d2d964992dc94c1352f29665e05000b6d91e67d4d0",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8eeea5ef5a6437dd6d4b6532cc5ef671a7530a6b",
+      "title": "feat: add size, opacity and hidden-key settings for the PC keyboard",
+      "summary": "1. Three new session settings in the drawer's CONTROLLER \u2192 Keyboard group, right under the PC keyboard buttons: Size on screen (25\u201370%, step 5, default 47 = today's height, header included), Opacity (30\u2013100%, default 100, one graphicsLayer alpha over the whole panel so text and borders fade together and touches stay unaffected), and Hidden keys (multi-select of three groups: Es\n2. Row-height clamp",
+      "publishedAt": 1793708488000
+    },
     {
       "commit": "2b790a8a71024034fe3c2c2c67251d899c77882f",
       "title": "fix(runtime): keep the Linux desktop installed across a runtime update",
@@ -155,12 +161,6 @@
       "title": "fix: drop the HUD watermark and use the wordmark in headers",
       "summary": "Drops the large faint D behind the content on the in-game stats panels, the bottom screen monitors and the on-screen HUD.",
       "publishedAt": 1793645855000
-    },
-    {
-      "commit": "3583643a11a25eedf77e15d33e2685348b1f19c7",
-      "title": "feat: Add the Game Jolt store",
-      "summary": "Adds Game Jolt as a store in the Stores tab, built to behave like the itch.io store: browse, search, game page, build picker, installs, library, collections and updates. It also carries a few shared fixes and itch.io changes the new store needed.",
-      "publishedAt": 1793632969000
     }
   ],
   "tests": [
