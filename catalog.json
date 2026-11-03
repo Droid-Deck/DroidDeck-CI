@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793673176964,
+  "generatedAt": 1793673486085,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4b8f63d",
-    "title": "feat: Mali Vulkan support through MaliBridge",
-    "summary": "Re-landing #1950 as a merge commit so ASEbrahim, maxjivi05 and mr-abccc keep their commits. Same branch head (80da86a) that passed CI there.",
-    "commit": "4b8f63d84df03aae94f61bb770c781663cdfb115",
+    "tag": "main-2b790a8",
+    "title": "fix(runtime): keep the Linux desktop installed across a runtime update",
+    "summary": "After every Linux runtime update, the Desktop button went back to \"Install & open desktop\", and opening it downloaded the whole Kubuntu desktop again, even though it had been installed before.",
+    "commit": "2b790a8a71024034fe3c2c2c67251d899c77882f",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793670329000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4b8f63d",
+    "publishedAt": 1793673426000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2b790a8",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4b8f63d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b8f63d/DroidDeck-main-4b8f63d.apk",
+        "name": "DroidDeck-main-2b790a8.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b790a8/DroidDeck-main-2b790a8.apk",
         "size": 93489489,
-        "sha256": "9092e30fb7b9601159e65b70fb909d9af6375583b4f9354f447c9684e1864c23",
+        "sha256": "b95ad73fbdce1b753320cbbf48df8ff225bf5f70b4ff17139ec52ee55280a93b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4b8f63d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b8f63d/DroidDeck-main-4b8f63d-pubg.apk",
+        "name": "DroidDeck-main-2b790a8-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b790a8/DroidDeck-main-2b790a8-pubg.apk",
         "size": 93489489,
-        "sha256": "695e9637805c4d0869deeec45b67e30d28ececdd680912a741ad3b1b53e6415a",
+        "sha256": "adf5dfa49cbaf155980726f4fc92911e5da38d192d07cf752eda64a3b0c24dfc",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4b8f63d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b8f63d/DroidDeck-main-4b8f63d-antutu.apk",
+        "name": "DroidDeck-main-2b790a8-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b790a8/DroidDeck-main-2b790a8-antutu.apk",
         "size": 93489489,
-        "sha256": "9dbcb1939e8b4079327cb7652a8c3b8b586ef2d5332c3b7b596245ecb1dda73f",
+        "sha256": "1c48387472ea53d2a5b42472034b20683384a7940ad59dbadfa42180119a68a8",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4b8f63d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4b8f63d/DroidDeck-main-4b8f63d-ludashi.apk",
+        "name": "DroidDeck-main-2b790a8-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2b790a8/DroidDeck-main-2b790a8-ludashi.apk",
         "size": 93489489,
-        "sha256": "ae38cab8a3410d6a10d59dfb2c41cbac156b938b2e65eb96b3f6880a54f1c58a",
+        "sha256": "aab8ffe182bf3e3be3bf2ceb02203583468d615abf8b252e4c1cafc196628776",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "2b790a8a71024034fe3c2c2c67251d899c77882f",
+      "title": "fix(runtime): keep the Linux desktop installed across a runtime update",
+      "summary": "After every Linux runtime update, the Desktop button went back to \"Install & open desktop\", and opening it downloaded the whole Kubuntu desktop again, even though it had been installed before.",
+      "publishedAt": 1793673426000
+    },
     {
       "commit": "4b8f63d84df03aae94f61bb770c781663cdfb115",
       "title": "feat: Mali Vulkan support through MaliBridge",
@@ -155,12 +161,6 @@
       "title": "feat: Add the Game Jolt store",
       "summary": "Adds Game Jolt as a store in the Stores tab, built to behave like the itch.io store: browse, search, game page, build picker, installs, library, collections and updates. It also carries a few shared fixes and itch.io changes the new store needed.",
       "publishedAt": 1793632969000
-    },
-    {
-      "commit": "0050b5eb6bafb63990145ca77d27cd3ccbe94f3b",
-      "title": "fix: docked HUD tab FPS number sits between the old and halved sizes",
-      "summary": "The previous change halved the docked FPS tab and it came out a bit small. The number is now 15sp (was 20, then 10), the label 7.25sp and the padding 7 by 5.5sp.",
-      "publishedAt": 1793630339000
     }
   ],
   "tests": [
