@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793663919249,
+  "generatedAt": 1793668657334,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0a0bbb6",
-    "title": "fix: a stale session's startup failure no longer stops the newer session",
-    "summary": "runSession(gen) runs on a background thread and calls stopSession(...) when startup fails (passwd/group write, missing proot, game environment publish, run mode without a program, guest start failure). stopSession only checked SessionState.running, so if the user quit and started a new session while the old one was still starting, the old session's failure tore down the new session.",
-    "commit": "0a0bbb68d1ad57b2db9b7809cb464494a1e26368",
+    "tag": "main-c43a493",
+    "title": "preload: set PRSETCHILDSUBREAPER so double-forked Xwayland is not orphaned to init",
+    "summary": "On some vendor kernels (reported on Meizu 20 / Flyme 12.6, Snapdragon 8 Gen 2) DroidDeck hangs forever on \"Starting display and audio\". session.log ends with two lines and then goes silent:",
+    "commit": "c43a493ad800b63a53971875bfe53ed3ad773e56",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793663858000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0a0bbb6",
+    "publishedAt": 1793668585000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c43a493",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0a0bbb6.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a0bbb6/DroidDeck-main-0a0bbb6.apk",
+        "name": "DroidDeck-main-c43a493.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c43a493/DroidDeck-main-c43a493.apk",
         "size": 91187065,
-        "sha256": "7eb2c3c2468dc8f045934e084d13f1f8bce5025da362d32cfe24eb0ad5ae08f8",
+        "sha256": "90e384f8bc14e7450f91a1d2058044d0f2f9cdf428518ed1ee03d8267b0e0ab4",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0a0bbb6-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a0bbb6/DroidDeck-main-0a0bbb6-pubg.apk",
+        "name": "DroidDeck-main-c43a493-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c43a493/DroidDeck-main-c43a493-pubg.apk",
         "size": 91187065,
-        "sha256": "ec32a5dd53767bc5e78e3f5683cc556c392ec51f20dd97ce3cdc779e0cddec5b",
+        "sha256": "0208cfa1be5071bd8243d08ad49298f7299bbeeb37c33f80c126d91d776ac99d",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0a0bbb6-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a0bbb6/DroidDeck-main-0a0bbb6-antutu.apk",
+        "name": "DroidDeck-main-c43a493-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c43a493/DroidDeck-main-c43a493-antutu.apk",
         "size": 91187065,
-        "sha256": "09c8fd81d45a7c7752fa359e09750ef56b9da58b7b0c76d4670030211e05397f",
+        "sha256": "8b8414211399cff4c93144ab7c5b7fac278b87be67addeafa53fa1f18edfbf39",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0a0bbb6-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0a0bbb6/DroidDeck-main-0a0bbb6-ludashi.apk",
+        "name": "DroidDeck-main-c43a493-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c43a493/DroidDeck-main-c43a493-ludashi.apk",
         "size": 91187065,
-        "sha256": "adc068d3108e9008b7ef38ae7f8cf82e263e6d0a9a4a386750c35d70df2283ae",
+        "sha256": "ee80c247918897b1cba5b9336052b8f617831863437b8535f5e78e7072a8c3f2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c43a493ad800b63a53971875bfe53ed3ad773e56",
+      "title": "preload: set PRSETCHILDSUBREAPER so double-forked Xwayland is not orphaned to init",
+      "summary": "On some vendor kernels (reported on Meizu 20 / Flyme 12.6, Snapdragon 8 Gen 2) DroidDeck hangs forever on \"Starting display and audio\". session.log ends with two lines and then goes silent:",
+      "publishedAt": 1793668585000
+    },
     {
       "commit": "0a0bbb68d1ad57b2db9b7809cb464494a1e26368",
       "title": "fix: a stale session's startup failure no longer stops the newer session",
@@ -155,64 +161,9 @@
       "title": "fix: wall scrims overhang the window so no edge pixels stay unshaded",
       "summary": "The wall fade and the dark sheet overlay now extend a few dp past the window on every side. While a page animates back in (leaving a session), a pixel or two along the far left and top could end up outside the overlay and flash from shaded to full brightness.",
       "publishedAt": 1793622085000
-    },
-    {
-      "commit": "55da0afd061f5d300d608cb00067de2585d18ca7",
-      "title": "fix(hud): GPU clock and load without root on Adreno 8xx and hardware-scheduled kernels",
-      "summary": "On phones where Android blocks the GPU's sysfs files for apps, the HUD reads the GPU without root (#1969). That works on the Retroid Pocket Duo (Adreno 722) but not on Adreno 8xx: a OnePlus 13 (Adreno 830, Android 16) showed no GPU clock and only the partial GPU load from Vulkan timing. Reported with two HUD diagnostics files by iamTooShaar on Discord.",
-      "publishedAt": 1793615135000
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1950",
-      "title": "MaliBridge v0.5.4.2 for DroidDeck (openMali worklog)",
-      "summary": "This branch carries the openMali MaliBridge integration for DroidDeck:",
-      "commit": "34a1cbbead4a2d72e7c981579d685315f996da13",
-      "pr": 1950,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793662692000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1950",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1950-34a1cbb.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1950/DroidDeck-PR.1950-34a1cbb.apk",
-          "size": 93489489,
-          "sha256": "86ca5112ad464a64961a2707699cf7c046db091be843232aedb39915faf95978",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1950-34a1cbb-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1950/DroidDeck-PR.1950-34a1cbb-pubg.apk",
-          "size": 93489489,
-          "sha256": "863012aae74465e18fec1fbc78a5646411dfe8fa9c2ae55289dc05f8c68e3ed6",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1950-34a1cbb-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1950/DroidDeck-PR.1950-34a1cbb-antutu.apk",
-          "size": 93489489,
-          "sha256": "319a6730b95e6e24041cf2ecb5f842d70a4b4b13a98ec7fb598c807fcdf3c87a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1950-34a1cbb-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1950/DroidDeck-PR.1950-34a1cbb-ludashi.apk",
-          "size": 93489489,
-          "sha256": "bd30a216185098dd9d37452c19b6264ce12f5551f538d697299793cb5cb7f81b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2021",
       "title": "fix(runtime): keep the Linux desktop installed across a runtime update",
