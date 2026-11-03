@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793718449103,
+  "generatedAt": 1793718681039,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1899",
+      "title": "feat: a per-game relative mouse switch for games that confine and warp the cursor",
+      "summary": "Some games read the mouse by confining it and warping it back, so in a Steam session the pointer stops at the screen edge and aim is capped by screen size.",
+      "commit": "b4ca19e799283425c8da94756f8b2b5a44063f56",
+      "pr": 1899,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793718596000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1899",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1899-b4ca19e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-b4ca19e.apk",
+          "size": 93505873,
+          "sha256": "b8f76665da5db0a40bf362f655c619eec70738e4b3f532209bcb0ba2882fafb1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1899-b4ca19e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-b4ca19e-pubg.apk",
+          "size": 93505873,
+          "sha256": "e5f803fcd0772c9524edfe8d9c26f625cbaef7671e946f059e98c64e971b18e9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1899-b4ca19e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-b4ca19e-antutu.apk",
+          "size": 93505873,
+          "sha256": "c32386145418b803a4ece7868036a5388f09cadcacc40776706cb993781d69ca",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1899-b4ca19e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-b4ca19e-ludashi.apk",
+          "size": 93505873,
+          "sha256": "c291efac755c9abb77d32ad4f8e88b914d97f9e8e794e84f173276cdd24d7fda",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2048",
       "title": "Reduce on-screen stick load and honour Low latency off",
       "summary": "Holding an on-screen stick costs far more than holding an on-screen button, and turning Low latency off changes nothing for on-screen controls. This reduces both. The frame rate drop has not been reproduced on the affected Samsung phones yet, so this should not be merged until it has been tested on one.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-8a42b2b-ludashi.apk",
           "size": 93501777,
           "sha256": "7896e89353aebe510782978b735dd62fd3ba4446a53f37b44d10b9a20581625d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1899",
-      "title": "feat: a per-game relative mouse switch for games that confine and warp the cursor",
-      "summary": "Some games read the mouse by confining it and warping it back, so in a Steam session the pointer stops at the screen edge and aim is capped by screen size.",
-      "commit": "511df585c65a3f6bad2d99263a27e584ccaf4e21",
-      "pr": 1899,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793717023000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1899",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1899-511df58.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-511df58.apk",
-          "size": 93505873,
-          "sha256": "accfe0d0c62d709f04dbdf28f2198ac6c4cdf316564e7e9031c2aa4565ab2427",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1899-511df58-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-511df58-pubg.apk",
-          "size": 93505873,
-          "sha256": "9883893695acab3bc0307b580adea93d45722ac277898d334a42bbad437dd67f",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1899-511df58-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-511df58-antutu.apk",
-          "size": 93505873,
-          "sha256": "1c1a28e9846d24b5d0b997a41f87d236cd252578e31bc4ddc00289dcf59030a4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1899-511df58-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1899/DroidDeck-PR.1899-511df58-ludashi.apk",
-          "size": 93505873,
-          "sha256": "dd3f9442ee55d32f508a5a57fa5d687a501cafddf330ca111316b936d0b18306",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
