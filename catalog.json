@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793719913148,
+  "generatedAt": 1793721160649,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2050",
+      "title": "fix(quest): answer denied KGSL timestamp reads so Steam starts on Quest 3",
+      "summary": "Steam failed to start on Quest 3 with \\Session guest exited with status 134\\.",
+      "commit": "ccd317384d64bb890736385f3120d667ccc8d729",
+      "pr": 2050,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793721042000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2050",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2050-ccd3173.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2050/DroidDeck-PR.2050-ccd3173.apk",
+          "size": 93501777,
+          "sha256": "3b5ac9f72f72e42a8c17bd31560c2606c96f103fa8cc7cfa8c80d0570a3aa9a1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2050-ccd3173-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2050/DroidDeck-PR.2050-ccd3173-pubg.apk",
+          "size": 93501777,
+          "sha256": "bc82603dc3de3baf725e0891a9cb2e7c479dc8ea092522a4ddc295045a58cd8f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2050-ccd3173-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2050/DroidDeck-PR.2050-ccd3173-antutu.apk",
+          "size": 93501777,
+          "sha256": "df36c37c41750b4a450c476738e061a58ab0f6aa4cd3da538002f4855669220e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2050-ccd3173-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2050/DroidDeck-PR.2050-ccd3173-ludashi.apk",
+          "size": 93501777,
+          "sha256": "c74398020b7929690ba867d429e111788b6db54e3bfb82b8ca557e1c00515080",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1899",
       "title": "feat: a per-game relative mouse switch for games that confine and warp the cursor",
