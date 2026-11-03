@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793741389922,
+  "generatedAt": 1793742086623,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9f6c734",
-    "title": "fix(quest): answer denied KGSL timestamp reads so Steam starts on Quest 3",
-    "summary": "Steam failed to start on Quest 3 with \\Session guest exited with status 134\\.",
-    "commit": "9f6c73442b3ce0eb5f131b99180da469d8c9172c",
+    "tag": "main-f3650d3",
+    "title": "Reduce on-screen stick load and honour Low latency off",
+    "summary": "Holding an on-screen stick costs far more than holding an on-screen button, and turning Low latency off changes nothing for on-screen controls. This reduces both. The frame rate drop has not been reproduced on the affected Samsung phones yet, so this should not be merged until it has been tested on one.",
+    "commit": "f3650d3d379f32a0d33e7a24249ae76023eab8bc",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793730604000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9f6c734",
+    "publishedAt": 1793741902000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f3650d3",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9f6c734.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f6c734/DroidDeck-main-9f6c734.apk",
+        "name": "DroidDeck-main-f3650d3.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f3650d3/DroidDeck-main-f3650d3.apk",
         "size": 93505873,
-        "sha256": "d0adc65c0bb63ad9639b3b0db7406ab8a1cf5ce9abd94f74da425a35493827df",
+        "sha256": "f24f399c5e07ee10a1fc3d76e6a3894cf2fc6d7797e2f226171d4656d3b3dfec",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9f6c734-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f6c734/DroidDeck-main-9f6c734-pubg.apk",
+        "name": "DroidDeck-main-f3650d3-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f3650d3/DroidDeck-main-f3650d3-pubg.apk",
         "size": 93505873,
-        "sha256": "efda6bcf8ac27fc181030808543f100f6c4888e06cc09d4341f0facb3cd129c5",
+        "sha256": "f3ba2799879516cda0d4d4151e4c5de6f88634279bfd874558cc626b2df2d7ca",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9f6c734-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f6c734/DroidDeck-main-9f6c734-antutu.apk",
+        "name": "DroidDeck-main-f3650d3-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f3650d3/DroidDeck-main-f3650d3-antutu.apk",
         "size": 93505873,
-        "sha256": "d6cad05db367b04e97aae5973fc4213f9f6e4e0b95e53dff0817e2d2462a6a47",
+        "sha256": "8cb87cfaad5bc665eec69d2c57c56842f3e49cffd795d7e576e44f37fef4ba59",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9f6c734-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9f6c734/DroidDeck-main-9f6c734-ludashi.apk",
+        "name": "DroidDeck-main-f3650d3-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f3650d3/DroidDeck-main-f3650d3-ludashi.apk",
         "size": 93505873,
-        "sha256": "ffb831af10ffff5da7b3232c82e594001d22b665a5cc2f97dfb17220c23d1f1f",
+        "sha256": "58a969f9458db9135d8af90579e1ea8039a6467b35ef2163cbe6c39d8380ccd2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f3650d3d379f32a0d33e7a24249ae76023eab8bc",
+      "title": "Reduce on-screen stick load and honour Low latency off",
+      "summary": "Holding an on-screen stick costs far more than holding an on-screen button, and turning Low latency off changes nothing for on-screen controls. This reduces both. The frame rate drop has not been reproduced on the affected Samsung phones yet, so this should not be merged until it has been tested on one.",
+      "publishedAt": 1793741902000
+    },
     {
       "commit": "9f6c73442b3ce0eb5f131b99180da469d8c9172c",
       "title": "fix(quest): answer denied KGSL timestamp reads so Steam starts on Quest 3",
@@ -155,12 +161,6 @@
       "title": "fix(battlenet): list World of Warcraft: Forever in the Library",
       "summary": "World of Warcraft: Forever installed through Battle.net never appeared in the Library, while Retail, Classic and StarCraft did.",
       "publishedAt": 1793658047000
-    },
-    {
-      "commit": "8d3616eccd9127188453b61cd9d1c44657becf5a",
-      "title": "feat(dual-screen): swap screens - game on the bottom screen, panel on top",
-      "summary": "Swap screens for dual-screen handhelds (tested on the Retroid Pocket Duo), on main 3fbd86c8.",
-      "publishedAt": 1793656988000
     }
   ],
   "tests": [
