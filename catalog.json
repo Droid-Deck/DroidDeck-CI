@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793711212681,
+  "generatedAt": 1793711278199,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8eeea5e",
-    "title": "feat: add size, opacity and hidden-key settings for the PC keyboard",
-    "summary": "1. Three new session settings in the drawer's CONTROLLER \u2192 Keyboard group, right under the PC keyboard buttons: Size on screen (25\u201370%, step 5, default 47 = today's height, header included), Opacity (30\u2013100%, default 100, one graphicsLayer alpha over the whole panel so text and borders fade together and touches stay unaffected), and Hidden keys (multi-select of three groups: Es\n2. Row-height clamps widen from 24..44dp to 20..56dp, so small screens can actually shrink and large tablets can actually grow; hidden keys are filtered at render time, empty rows drop, and the row-height divisor follows the visible rows so the panel keeps its requested share.\n3. New PcKeyboardPrefs observable singleton mirrors the three SessionPrefs keys, all registered in SettingsReset. Defaults equal current behavior exactly (47 / 100 / nothing hidden) \u2014 zero visual change for existing users.\n4. PCKEYROWS is untouched: ScreenKeyPicker indexes into it by position, so hiding happens only inside PcKeyboard's render path \u2014 the hidden keys remain bindable as screen keys.\n5. Nine English UI strings; other locales fall back to English until a later l10n round.",
-    "commit": "8eeea5ef5a6437dd6d4b6532cc5ef671a7530a6b",
+    "tag": "main-951270b",
+    "title": "gamescope: EA sign-in stays above the EA launcher's splash",
+    "summary": "With the EA app installed (#2036), Burnout Paradise Remastered opens two windows from two processes. The EA app's Steam launcher (EASteamLauncher.exe) shows the game's \"Authenticating\u2026\" splash as a layered tool window (WSEXLAYERED | WSEXTOOLWINDOW), and the EA app (EADesktop.exe) opens its sign-in and verification window WSEXTOPMOST. gamescope took the splash as the sign-in's overr",
+    "commit": "951270bc8f06a5b099f44274b14b8814428d697b",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793708488000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8eeea5e",
+    "publishedAt": 1793711154000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-951270b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8eeea5e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8eeea5e/DroidDeck-main-8eeea5e.apk",
-        "size": 93501777,
-        "sha256": "3cdb41c992d480f1bd482c9616fabdd0dc649b103c4beb50dd4fd73eac876e8f",
+        "name": "DroidDeck-main-951270b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-951270b/DroidDeck-main-951270b.apk",
+        "size": 93497681,
+        "sha256": "06af0996078811dd004944344727ec07dd8ed7917995ac805834fb5de3cbc9ca",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8eeea5e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8eeea5e/DroidDeck-main-8eeea5e-pubg.apk",
-        "size": 93501777,
-        "sha256": "0a8167caad9fbf5cd6d4732771348037116ec0c568997366c9d542462af59306",
+        "name": "DroidDeck-main-951270b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-951270b/DroidDeck-main-951270b-pubg.apk",
+        "size": 93497681,
+        "sha256": "776eea1bca5c94fc11b58524f5544c67cf4435120d5a6f944c52ec11ac9b8e8d",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8eeea5e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8eeea5e/DroidDeck-main-8eeea5e-antutu.apk",
-        "size": 93501777,
-        "sha256": "c9e7e69f8d33a5567fbe76fba20f3082bcd205a8d520d0efba1e8928bc6dff27",
+        "name": "DroidDeck-main-951270b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-951270b/DroidDeck-main-951270b-antutu.apk",
+        "size": 93497681,
+        "sha256": "aaa00778f10142d0c2605e41b0845cd220a60b2c6006dad34d44bf19661c7177",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8eeea5e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8eeea5e/DroidDeck-main-8eeea5e-ludashi.apk",
-        "size": 93501777,
-        "sha256": "3b3ffc70c1baf2b8029a81d2d964992dc94c1352f29665e05000b6d91e67d4d0",
+        "name": "DroidDeck-main-951270b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-951270b/DroidDeck-main-951270b-ludashi.apk",
+        "size": 93497681,
+        "sha256": "df3245b545dd0ef7de00313c57018f5f4f1d73ed19b7f8451733431c5ee90e9e",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "951270bc8f06a5b099f44274b14b8814428d697b",
+      "title": "gamescope: EA sign-in stays above the EA launcher's splash",
+      "summary": "With the EA app installed (#2036), Burnout Paradise Remastered opens two windows from two processes. The EA app's Steam launcher (EASteamLauncher.exe) shows the game's \"Authenticating\u2026\" splash as a layered tool window (WSEXLAYERED | WSEXTOOLWINDOW), and the EA app (EADesktop.exe) opens its sign-in and verification window WSEXTOPMOST. gamescope took the splash as the sign-in's overr",
+      "publishedAt": 1793711154000
+    },
     {
       "commit": "8eeea5ef5a6437dd6d4b6532cc5ef671a7530a6b",
       "title": "feat: add size, opacity and hidden-key settings for the PC keyboard",
@@ -155,12 +161,6 @@
       "title": "fix: bottom screen frame graph updates smoothly and no longer looks jagged",
       "summary": "The bottom screen polled frame times at 10 Hz, so the trace advanced in steps of several frames, and it plotted every sample across a much wider area than the in-game HUD, which made per-frame jitter look like noise.",
       "publishedAt": 1793648621000
-    },
-    {
-      "commit": "89a2ae87d7f03039f1b15a49fb36cbb813e83278",
-      "title": "fix: drop the HUD watermark and use the wordmark in headers",
-      "summary": "Drops the large faint D behind the content on the in-game stats panels, the bottom screen monitors and the on-screen HUD.",
-      "publishedAt": 1793645855000
     }
   ],
   "tests": [
