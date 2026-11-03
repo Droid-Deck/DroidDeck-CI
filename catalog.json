@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793711278199,
+  "generatedAt": 1793716778457,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2048",
+      "title": "Reduce on-screen stick load and honour Low latency off",
+      "summary": "Holding an on-screen stick costs far more than holding an on-screen button, and turning Low latency off changes nothing for on-screen controls. This reduces both. The frame rate drop has not been reproduced on the affected Samsung phones yet, so this should not be merged until it has been tested on one.",
+      "commit": "9db5e05ed4c2a5fa776bc4ca3935e7b068dc3671",
+      "pr": 2048,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793716715000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2048",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2048-9db5e05.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-9db5e05.apk",
+          "size": 93501777,
+          "sha256": "96a69d365139ca4d82e654b51961c210135300ef57043bd6c0c750e70bce728a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2048-9db5e05-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-9db5e05-pubg.apk",
+          "size": 93501777,
+          "sha256": "f8a731b0aed6ce2ae9772a3f8c270431394b6443589397a8d84a81c51cc1cc57",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2048-9db5e05-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-9db5e05-antutu.apk",
+          "size": 93501777,
+          "sha256": "66313da71bb0d27abd42c401ad41e76e285e8a9260d1c5c3fe8e643fa5a368d5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2048-9db5e05-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2048/DroidDeck-PR.2048-9db5e05-ludashi.apk",
+          "size": 93501777,
+          "sha256": "5b9499808cfb64a3249aae75591d97041481ebbcca24356987753380deb816ac",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2028",
       "title": "feat: Trinkets tab with a Bluetooth controller mode",
