@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793688198959,
+  "generatedAt": 1793707074382,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -354,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-2fee620-ludashi.apk",
           "size": 129322533,
           "sha256": "406cf9d6f27ce41aa48995c76e7f24a1c26778edf224f3420bc0a6924e050e67",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2016",
-      "title": "fix: Project Zomboid runs on G1 and the C1 JIT instead of ZGC",
-      "summary": "Project Zomboid's launcher JSON asks for ZGC, which pins the CPU at 100% and heats the device within minutes. Before each Windows launch the wrapper now swaps -XX:+UseZGC for -XX:+UseG1GC and adds -XX:TieredStopAtLevel=1 to vmArgs in the game's own JSON next to the exe. A user on a Snapdragon 8 Elite Gen 5 gets a steady 30 fps this way.",
-      "commit": "d2d5540ff1443604545041897549d46fc108843a",
-      "pr": 2016,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793648989000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2016",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2016-d2d5540.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2016/DroidDeck-PR.2016-d2d5540.apk",
-          "size": 91162433,
-          "sha256": "e2c13b6de0d72f3e958c3f1ca9b1282252053b52ad5454b7f25536180cef7b6b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2016-d2d5540-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2016/DroidDeck-PR.2016-d2d5540-pubg.apk",
-          "size": 91162433,
-          "sha256": "378c646a537f7fd4be332806f84e4bcdbc3cd400f9387ef437c473378135cef8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2016-d2d5540-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2016/DroidDeck-PR.2016-d2d5540-antutu.apk",
-          "size": 91162433,
-          "sha256": "e2aec524b9a54459eb59596ed9d4d92f168b533dd277991a6f0769c6d3fc800f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2016-d2d5540-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2016/DroidDeck-PR.2016-d2d5540-ludashi.apk",
-          "size": 91162433,
-          "sha256": "9d47cc147e8ed87baaa8fbd021680bad8be14fe2d3c372b29c511f243c24cf9e",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
