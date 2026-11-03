@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793687484070,
+  "generatedAt": 1793688198959,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2037",
+      "title": "gamescope: EA sign-in stays above the EA launcher's splash",
+      "summary": "With the EA app installed (#2036), Burnout Paradise Remastered opens two windows from two processes. The EA app's Steam launcher (EASteamLauncher.exe) shows the game's \"Authenticating\u2026\" splash as a layered tool window (WSEXLAYERED | WSEXTOOLWINDOW), and the EA app (EADesktop.exe) opens its sign-in and verification window WSEXTOPMOST. gamescope took the splash as the sign-in's overr",
+      "commit": "8677fef2c09332c7d74360e6f48ed22fc59659fc",
+      "pr": 2037,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793688116000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2037",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2037-8677fef.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-8677fef.apk",
+          "size": 93489489,
+          "sha256": "b9b834e439ab1ff6b8929ad4cf60af40b3d387cee9ca5faf1417cdbd5b6992f6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2037-8677fef-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-8677fef-pubg.apk",
+          "size": 93489489,
+          "sha256": "4d3cafd488f101703f4547afb4f1cb8141520bac3ac6a06b1de01c1cd9f3183e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2037-8677fef-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-8677fef-antutu.apk",
+          "size": 93489489,
+          "sha256": "c7ce161ca1895aeede595d61c4acaad9c53c8566848d2bbb2243f2d60be93d45",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2037-8677fef-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-8677fef-ludashi.apk",
+          "size": 93489489,
+          "sha256": "5aaa4eedc0880906798e2c84dfc29995e385fca1566a331ab54834a2fe9135b1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2036",
       "title": "Steam: EA games install the EA app",
       "summary": "EA games on Steam start through the EA app. Their launch command is steam2ea://launchgame/<appid>, which only the EA app handles, and their install script runs the EA app installer on first launch (EADesktopSetup, Installer\\Origin\\redist\\internal\\EAappInstaller.exe). droiddeck-seed-redists marks every process in a game's install scripts as already run, except Vulkan runtime and Ubisoft C",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2036/DroidDeck-PR.2036-9df1d03-ludashi.apk",
           "size": 93489489,
           "sha256": "cdaff5960ad52a5ffc3566b47a616c43d9fb101c66eb00ddc4ab19eae3ca5bf3",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2037",
-      "title": "gamescope: EA sign-in stays above the EA launcher's splash",
-      "summary": "With the EA app installed (#2036), Burnout Paradise Remastered opens two windows from two processes. The EA app's Steam launcher (EASteamLauncher.exe) shows the game's \"Authenticating\u2026\" splash as a layered tool window (WSEXLAYERED | WSEXTOOLWINDOW), and the EA app (EADesktop.exe) opens its sign-in and verification window WSEXTOPMOST. gamescope took the splash as the sign-in's overr",
-      "commit": "94c37797ee9364366d19bdb36957e1e3f9378bf3",
-      "pr": 2037,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793687357000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2037",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2037-94c3779.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-94c3779.apk",
-          "size": 93489489,
-          "sha256": "0de683e38b70536e392b291a47318c8c56f966b93c60bcff47c7ab511441de5a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2037-94c3779-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-94c3779-pubg.apk",
-          "size": 93489489,
-          "sha256": "4fd143a87ff8fd00472f9c643864fd76927e7ff59b56b71dc5ff3ab33ba9f963",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2037-94c3779-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-94c3779-antutu.apk",
-          "size": 93489489,
-          "sha256": "a8a8cc19e6b1af26fae7e9e049500cc33dc37dbedb544ab302dee12c948b6922",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2037-94c3779-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2037/DroidDeck-PR.2037-94c3779-ludashi.apk",
-          "size": 93489489,
-          "sha256": "cb9bce790a681aa8cf3f89a2fde70a36b16e4d7011f7799e07647849c8cb812c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
