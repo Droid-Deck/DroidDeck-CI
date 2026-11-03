@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793738933213,
+  "generatedAt": 1793739107464,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2054",
+      "title": "fix: find Steam libraries whose installs have no appmanifest",
+      "summary": "Some apps download Steam games with DepotDownloader and never write appmanifest files. Their library is just steamapps/common/<game> with a .downloadcomplete marker and the installed depot manifests, recorded either in .DepotDownloader/depot.config or, in newer layouts, as <depot><gid>.manifest files in .DepotDownloader/completed. The found-libraries scan only counted appmanifest files, so it sa",
+      "commit": "a9f365851e1a6916bb9cde040988961a1a6b1773",
+      "pr": 2054,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793738955000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2054",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2054-a9f3658.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2054/DroidDeck-PR.2054-a9f3658.apk",
+          "size": 93505873,
+          "sha256": "ef062774567936401631f4a8cdf48ebffe933c680863b06b3eb38893098df53d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2054-a9f3658-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2054/DroidDeck-PR.2054-a9f3658-pubg.apk",
+          "size": 93505873,
+          "sha256": "d7cd8bd095f5a63e98b5c536042a157764e3a084391d62086a09c25779c0e22c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2054-a9f3658-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2054/DroidDeck-PR.2054-a9f3658-antutu.apk",
+          "size": 93505873,
+          "sha256": "6c2db4e0f9acdada11b1209c2585bf58928b2962b13ae8eca3f4ca2096b36546",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2054-a9f3658-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2054/DroidDeck-PR.2054-a9f3658-ludashi.apk",
+          "size": 93505873,
+          "sha256": "b9fead88d0fdb5f3842ea6900c2ca4718288761ba6460878173406c20de8ac6f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2053",
       "title": "Make a hardware mouse and keyboard work like a PC",
