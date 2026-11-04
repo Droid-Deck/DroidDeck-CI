@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793817097884,
+  "generatedAt": 1793817369296,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2090",
+      "title": "fix: refresh repaired components and render Ubisoft Connect",
+      "summary": "Refresh and wait for repaired component revisions, preserve offline component controls, and write Ubisoft-only DirectComposition settings through Wine\u2019s registry API, paired with Droid-Deck/DroidDeck-Components#10; 48 Android tests, 152 Linux tests and the release APK build pass.",
+      "commit": "a9981a2d5c1299437f055c4800a27941298471fc",
+      "pr": 2090,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793817284000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2090",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2090-a9981a2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-a9981a2.apk",
+          "size": 93534657,
+          "sha256": "2e6c668398fd28cc2ceeead3f228d8b1bb5ce60133fa377396312199aac0ea94",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2090-a9981a2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-a9981a2-pubg.apk",
+          "size": 93534657,
+          "sha256": "59a0462c8d61a7ff67a36a7ce5ecf8452a500794f60bbbc72632011674066d7a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2090-a9981a2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-a9981a2-antutu.apk",
+          "size": 93534657,
+          "sha256": "7206003504ab8819e0f599770c71dafcd1189228b747ebb6d07482f89d7941bd",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2090-a9981a2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-a9981a2-ludashi.apk",
+          "size": 93534657,
+          "sha256": "3a4ecd47372d40c24469fe64ca5c391f88ebe3f2e5bc7bfb3a7d0b7f54fa4fbd",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2092",
       "title": "fix(battlenet): use the right artwork for each game",
       "summary": "World of Warcraft: Forever showed retail World of Warcraft art and logo, and other Battle.net games showed trailer stills, seasonal promos or low quality images.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2092/DroidDeck-PR.2092-1a58cb7-ludashi.apk",
           "size": 93538753,
           "sha256": "acaa0e62462ebff4901cd83c1ce3c1c380e316ff26e87a75d0d983baac665f6d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2090",
-      "title": "fix: refresh repaired components and render Ubisoft Connect",
-      "summary": "Refresh and wait for repaired component revisions, preserve offline component controls, and write Ubisoft-only DirectComposition settings through Wine\u2019s registry API, paired with Droid-Deck/DroidDeck-Components#10; 47 Android tests, 152 Linux tests and the release APK build pass.",
-      "commit": "520eb70d7fb28439fa5d715af54cda156b1272f8",
-      "pr": 2090,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793816289000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2090",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2090-520eb70.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-520eb70.apk",
-          "size": 93534657,
-          "sha256": "43c8b4aefcbeed105e64832aec691b44bd5b3f9d156c1698b37dc34cc99579f6",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2090-520eb70-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-520eb70-pubg.apk",
-          "size": 93534657,
-          "sha256": "0e8c76e4701867c2e1e4d11a09755a94583ff4be3510d577938eef3a150fb063",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2090-520eb70-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-520eb70-antutu.apk",
-          "size": 93534657,
-          "sha256": "0baaf2baf4efb91344a67a05144d2a4d0072731bfdf62017b2c35b82650d34df",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2090-520eb70-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-520eb70-ludashi.apk",
-          "size": 93534657,
-          "sha256": "22cee30fecc37706951879ffeb39cf0257ad9f9c7dac07647316e46fff25f92f",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
