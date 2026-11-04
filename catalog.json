@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793756784051,
+  "generatedAt": 1793756848968,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2065",
+      "title": "Desktop: programs a Windows installer adds get a menu entry and desktop icon",
+      "summary": "Opening a Windows installer on the desktop runs it with Proton in a prefix of its own. That is droiddeck-proton-run's \"own\" prefix: compatdata/<crc32 of path and name | 0x80000000>, the id Steam would give a shortcut to it. The installer finishes, but nothing outside that prefix points at the program it installed.",
+      "commit": "04ed80e23d370eacf57a63f55d2159608c7cf9b7",
+      "pr": 2065,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793756755000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2065",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2065-04ed80e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-04ed80e.apk",
+          "size": 93510070,
+          "sha256": "3d656034946c916fed569631f9b31b2f38be8d875ca176fa92d4257a6bfe7668",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2065-04ed80e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-04ed80e-pubg.apk",
+          "size": 93510070,
+          "sha256": "74cf297ffbab87ef207e48c4a2be042230b51ea542a4bc9c4fcb63b0fa9d21c4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2065-04ed80e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-04ed80e-antutu.apk",
+          "size": 93510070,
+          "sha256": "5cd21cc8fcbd255c9039d7ca24a9302b5def3bc2aab89c149eb2785fb04789d7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2065-04ed80e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-04ed80e-ludashi.apk",
+          "size": 93510070,
+          "sha256": "94e8393a1aaa9b386c61873ff85855d3dc9b6493d96287bdcea3cdf2a4408c6e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2064",
       "title": "Steam: imported games with no known build update only when launched",
