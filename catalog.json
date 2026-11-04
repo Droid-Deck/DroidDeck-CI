@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793824165233,
+  "generatedAt": 1793825344877,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2100",
+      "title": "fix(storage): Windows installs on a natively mounted card no longer ask for an administrator",
+      "summary": "Updating a Battle.net game on a microSD card can still fail with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841) on 0.6.9, which already has #1791. The report: Retroid Pocket 6, Android 13, World of Warcraft: Forever, with SetNamedSecurityInfo(5) in the agent log.",
+      "commit": "792e6a2cddd3836336c4d49ccaf9326ff461ba83",
+      "pr": 2100,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793825257000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2100",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2100-792e6a2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2100/DroidDeck-PR.2100-792e6a2.apk",
+          "size": 93555137,
+          "sha256": "255306f8d9a941fbe22d9a47f95f707a9c0c4200b96286680639b50d3038db71",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2100-792e6a2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2100/DroidDeck-PR.2100-792e6a2-pubg.apk",
+          "size": 93555137,
+          "sha256": "3653ac6695ca0a1c08721be30359d1601847220bde3da30c626d744d6aca8696",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2100-792e6a2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2100/DroidDeck-PR.2100-792e6a2-antutu.apk",
+          "size": 93555137,
+          "sha256": "feeadc6d813f50807b200808c2bc83cec587bf6f3a5e02f7049659546772c6f1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2100-792e6a2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2100/DroidDeck-PR.2100-792e6a2-ludashi.apk",
+          "size": 93555137,
+          "sha256": "71d1d0461c42360f7baa60648e5836a1e3c6b2f3b32a18ae083080db716e2fbf",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2097",
+      "title": "fix(desktop): Steam's windows can be moved and resized",
+      "summary": "Steam in Desktop could not be moved by its title bar or resized from its corners. Dragging sends no NETWMMOVERESIZE, while KWin moves the window fine when asked, so the gap is in the Steam client.",
+      "commit": "b758000cd6d004a0702148ee0aefca425bb2fbcc",
+      "pr": 2097,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793822003000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2097",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2097-b758000.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-b758000.apk",
+          "size": 93555137,
+          "sha256": "e78dcc1af89f0d026969d5f4b92ed7a9beec5dc9af3b8fa5903a4a0617c6d065",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2097-b758000-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-b758000-pubg.apk",
+          "size": 93555137,
+          "sha256": "701b273b91d2d9d4427c0a6b6bb051282deaa8c5bd831e25a574a4510f8adc6a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2097-b758000-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-b758000-antutu.apk",
+          "size": 93555137,
+          "sha256": "0046d2f619e90a3df6af57999b80b14a68e0f8d2fb72119d54d2bbd522b12060",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2097-b758000-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-b758000-ludashi.apk",
+          "size": 93555137,
+          "sha256": "08b51a33dc460102b765b318ff3817dfceb3a2b7c23ee2feeaccc0532b252449",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2090",
       "title": "fix: refresh repaired components and render Ubisoft Connect",
