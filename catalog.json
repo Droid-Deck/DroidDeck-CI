@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793802136837,
+  "generatedAt": 1793802233890,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-2627411",
-    "title": "ci: avoid redundant gamescope builds",
-    "summary": "Gamescope builds currently run for branch pushes as well as manual dispatches. Updating tools/gamescope/release.env after publishing also starts another compilation.",
-    "commit": "26274114a3f6cc3fd2bb703927b3f29ec8e9c3e6",
+    "tag": "main-d849e6a",
+    "title": "fix: Home screen setting keeps DroidDeck in RedMagic Game Space",
+    "summary": "On RedMagic, turning on \"Use as Home screen\" or \"DroidDeck as Home\" could leave DroidDeck out of Game Space, and it looked permanent even after switching back to another launcher.",
+    "commit": "d849e6ae0a6788ea59f165ec537597bbb90063b1",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793771490000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2627411",
+    "publishedAt": 1793802172000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d849e6a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-2627411.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2627411/DroidDeck-main-2627411.apk",
-        "size": 93514065,
-        "sha256": "c739084484747c74a134783459bc0d1ed20ec35af2c3fb39360abbf146b9fec7",
+        "name": "DroidDeck-main-d849e6a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d849e6a/DroidDeck-main-d849e6a.apk",
+        "size": 93518161,
+        "sha256": "be68c87b0864cd5f98d07215dd8d6c576b6b6598f303646bb3ad69759d540052",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-2627411-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2627411/DroidDeck-main-2627411-pubg.apk",
-        "size": 93514065,
-        "sha256": "b573d3e0616066d3ec0cf3ffeb8ca8f63a359d9ec70c26ab671b75cec0ebc7ea",
+        "name": "DroidDeck-main-d849e6a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d849e6a/DroidDeck-main-d849e6a-pubg.apk",
+        "size": 93518161,
+        "sha256": "49ad4b5ddbe54e63ce1832d168fc0aa3f9ef0daf5510c9dc085b48520c2cae1f",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-2627411-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2627411/DroidDeck-main-2627411-antutu.apk",
-        "size": 93514065,
-        "sha256": "8161a71e9245046c1456b2a32243d34c4d8eaad52c03c89fcec44613c4677a76",
+        "name": "DroidDeck-main-d849e6a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d849e6a/DroidDeck-main-d849e6a-antutu.apk",
+        "size": 93518161,
+        "sha256": "0530b65d48c59b23fb2e7a09192218494d085d7943839da9fb847bb7e468b4d5",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-2627411-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2627411/DroidDeck-main-2627411-ludashi.apk",
-        "size": 93514065,
-        "sha256": "a14e1a9bc0b23081a2c21f8523fa8db2317ace6361b16ee7be88a2bec4d05f50",
+        "name": "DroidDeck-main-d849e6a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d849e6a/DroidDeck-main-d849e6a-ludashi.apk",
+        "size": 93518161,
+        "sha256": "7279704ab4828fe3f94fc4ab494b2e4fabae3174cf01567f77a81164c85d80d4",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d849e6ae0a6788ea59f165ec537597bbb90063b1",
+      "title": "fix: Home screen setting keeps DroidDeck in RedMagic Game Space",
+      "summary": "On RedMagic, turning on \"Use as Home screen\" or \"DroidDeck as Home\" could leave DroidDeck out of Game Space, and it looked permanent even after switching back to another launcher.",
+      "publishedAt": 1793802172000
+    },
     {
       "commit": "26274114a3f6cc3fd2bb703927b3f29ec8e9c3e6",
       "title": "ci: avoid redundant gamescope builds",
@@ -155,12 +161,6 @@
       "title": "preload: set PRSETCHILDSUBREAPER so double-forked Xwayland is not orphaned to init",
       "summary": "On some vendor kernels (reported on Meizu 20 / Flyme 12.6, Snapdragon 8 Gen 2) DroidDeck hangs forever on \"Starting display and audio\". session.log ends with two lines and then goes silent:",
       "publishedAt": 1793668585000
-    },
-    {
-      "commit": "0a0bbb68d1ad57b2db9b7809cb464494a1e26368",
-      "title": "fix: a stale session's startup failure no longer stops the newer session",
-      "summary": "runSession(gen) runs on a background thread and calls stopSession(...) when startup fails (passwd/group write, missing proot, game environment publish, run mode without a program, guest start failure). stopSession only checked SessionState.running, so if the user quit and started a new session while the old one was still starting, the old session's failure tore down the new session.",
-      "publishedAt": 1793663858000
     }
   ],
   "tests": [
