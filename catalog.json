@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793816370240,
+  "generatedAt": 1793816767055,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2053",
+      "title": "Make a hardware mouse and keyboard work like a PC",
+      "summary": "Closes #1991\nCloses #2075\nCloses #1817",
+      "commit": "5e943cb462edb653cec20f2c3a1d20942aa2afa7",
+      "pr": 2053,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793816683000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2053",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2053-5e943cb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2053/DroidDeck-PR.2053-5e943cb.apk",
+          "size": 93538753,
+          "sha256": "40a0db88f79ec9a6878359eece52cdc771f0f6acc547c3c5a0bcf193e4f9b8e3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2053-5e943cb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2053/DroidDeck-PR.2053-5e943cb-pubg.apk",
+          "size": 93538753,
+          "sha256": "8e49737793e9babef5c5e12b9636dd62b6865d134645147ed3fa8ef8e8b8e410",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2053-5e943cb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2053/DroidDeck-PR.2053-5e943cb-antutu.apk",
+          "size": 93538753,
+          "sha256": "3d49b9fd0d494c33cf7294277a0aaea72ad3201798e8b49ba244ee631b8b065b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2053-5e943cb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2053/DroidDeck-PR.2053-5e943cb-ludashi.apk",
+          "size": 93538753,
+          "sha256": "1bf4606b1d8e9b30121f3fd188739ca803236e2d43e1e793278d12ddffe9f433",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2090",
       "title": "fix: refresh repaired components and render Ubisoft Connect",
       "summary": "Refresh and wait for repaired component revisions, preserve offline component controls, and write Ubisoft-only DirectComposition settings through Wine\u2019s registry API, paired with Droid-Deck/DroidDeck-Components#10; 47 Android tests, 152 Linux tests and the release APK build pass.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-520eb70-ludashi.apk",
           "size": 93534657,
           "sha256": "22cee30fecc37706951879ffeb39cf0257ad9f9c7dac07647316e46fff25f92f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2053",
-      "title": "Make a hardware mouse and keyboard work like a PC",
-      "summary": "A hardware mouse and keyboard should behave as they do on a PC. This fixes the main ways they do not. It is ready for testing but should not be merged yet.",
-      "commit": "f1bbcf6ddeb29a468fe328064d49b67251b1ac35",
-      "pr": 2053,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793814923000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2053",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2053-f1bbcf6.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2053/DroidDeck-PR.2053-f1bbcf6.apk",
-          "size": 93538753,
-          "sha256": "ce109ff29f666d2abb181df4271f058307ff5db4bcf199e1687f838e53395b54",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2053-f1bbcf6-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2053/DroidDeck-PR.2053-f1bbcf6-pubg.apk",
-          "size": 93538753,
-          "sha256": "09f9e70b31b369919d1a869787a8c453db2a092fb2139acd21cba30dcc978ef4",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2053-f1bbcf6-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2053/DroidDeck-PR.2053-f1bbcf6-antutu.apk",
-          "size": 93538753,
-          "sha256": "ed45849f5eca1da34d2975beadb517098ef48facd72f926a2d4b1d74a8ef894d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2053-f1bbcf6-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2053/DroidDeck-PR.2053-f1bbcf6-ludashi.apk",
-          "size": 93538753,
-          "sha256": "3b676ba446b492eef8fdd4b28a1aab2b5d1532d01ca76afafd442d9f9ba97ba8",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
