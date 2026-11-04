@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793756237313,
+  "generatedAt": 1793756784051,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2064",
+      "title": "Steam: imported games with no known build update only when launched",
+      "summary": "An added game the account owns on Steam is linked into Steam as DroidDeck-<appid> by droiddeck-steam-games. When the folder has no Steam build on record (no WinNative manifest, no DepotDownloader config), the manifest it writes has no buildid and no installed depots. Steam then marks the game Update Required and checks every file before it updates.",
+      "commit": "d8e8ff38c9d27725aefce4a993a1b0a40eeba5c1",
+      "pr": 2064,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793756693000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2064",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2064-d8e8ff3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2064/DroidDeck-PR.2064-d8e8ff3.apk",
+          "size": 93505873,
+          "sha256": "a80bdbdedf1dde0f77e82c990bb0e025fc594515965e4cf6c2a39e256845b532",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2064-d8e8ff3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2064/DroidDeck-PR.2064-d8e8ff3-pubg.apk",
+          "size": 93505873,
+          "sha256": "e3ca866bbaef7971cfbb8f57175b78edfba86beaed2d8076cfa60571770e0d8c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2064-d8e8ff3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2064/DroidDeck-PR.2064-d8e8ff3-antutu.apk",
+          "size": 93505873,
+          "sha256": "9c310430505a42484699dfe7041424151d646d99d46c165595323943e2b994da",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2064-d8e8ff3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2064/DroidDeck-PR.2064-d8e8ff3-ludashi.apk",
+          "size": 93505873,
+          "sha256": "e37c09b24571db70c839dac9db3eed3cbf6fef46ad95c3db70d511c2948adf88",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2066",
       "title": "Reduce DXVK render-path pacing stalls on Adreno 722",
