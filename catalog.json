@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793820539992,
+  "generatedAt": 1793821161255,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2096",
+      "title": "fix(desktop): download language packs from the release that has them",
+      "summary": "The Desktop stayed in English for every language under the Ubuntu runtime. DesktopLanguage.ensure looked for desktop-kde.i18n.txt next to the runtime's own archive, and the ubuntu-r1-rc4 release has no index or packs, so it returned without installing anything.",
+      "commit": "1e31b68e7f37aa697d48fb38eff902bbc1e2bd97",
+      "pr": 2096,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793821082000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2096",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2096-1e31b68.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-1e31b68.apk",
+          "size": 93555137,
+          "sha256": "6e6ddc64a78f35b6cf5d051785323e41976ad60388fbc30a114bd7d73ab37b75",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2096-1e31b68-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-1e31b68-pubg.apk",
+          "size": 93555137,
+          "sha256": "7eaeb88d152427786392d68f763fe5ec0414a33cf8b0aaf011cbf9cce5de5063",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2096-1e31b68-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-1e31b68-antutu.apk",
+          "size": 93555137,
+          "sha256": "0e9b606a0cb26de82c58a440058e71845bfbe29339b19b8726a2ce363ddc5cbb",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2096-1e31b68-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-1e31b68-ludashi.apk",
+          "size": 93555137,
+          "sha256": "924ce122a7d7f4c1d5c9bf5ddc0e16210e0f52d03a15b808f25e66073221f5b6",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2094",
       "title": "fix(desktop): a game's window follows its own window mode",
