@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793801322978,
+  "generatedAt": 1793802136837,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2084",
+      "title": "feat: consistent bottom screen bar and menu-first navigation in sessions",
+      "summary": "The bottom screen in a session had a different header for every panel and closing a panel left you on the Android launcher with no way back from the bottom screen.",
+      "commit": "02aa1799de5fafdfdb1396b3bbe9a0a8f68decd3",
+      "pr": 2084,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793802044000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2084",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2084-02aa179.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2084/DroidDeck-PR.2084-02aa179.apk",
+          "size": 93518161,
+          "sha256": "3797ce8fe0fbee3afeb174b891c52067a7420f2803182d8fad9f7fc6cdc9e659",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2084-02aa179-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2084/DroidDeck-PR.2084-02aa179-pubg.apk",
+          "size": 93518161,
+          "sha256": "7d4c5f2b787d22fd35b918589d16e5620752b186a1f33d68d83ef88d70e7d630",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2084-02aa179-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2084/DroidDeck-PR.2084-02aa179-antutu.apk",
+          "size": 93518161,
+          "sha256": "1f947b4a0c56516890dd1284a55d888a0873c491dab1613ed435582f3cb7d884",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2084-02aa179-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2084/DroidDeck-PR.2084-02aa179-ludashi.apk",
+          "size": 93518161,
+          "sha256": "5eae2f12f59cd50730ac05928d3d2fee2d49feedd468fef3e46740730b7ad27c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2053",
       "title": "Make a hardware mouse and keyboard work like a PC",
       "summary": "A hardware mouse and keyboard should behave as they do on a PC. This fixes the main ways they do not. It is ready for testing but should not be merged yet.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2053/DroidDeck-PR.2053-ae31c0b-ludashi.apk",
           "size": 93526353,
           "sha256": "fb92b552c57b10379f91009bb08bd53ec162decf73bdf80a3d76ba092efe90b9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2084",
-      "title": "feat: consistent bottom screen bar and menu-first navigation in sessions",
-      "summary": "The bottom screen in a session had a different header for every panel and closing a panel left you on the Android launcher with no way back from the bottom screen.",
-      "commit": "fcbcc6428e6af64f75cc1409114d9764ea9b719a",
-      "pr": 2084,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793799428000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2084",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2084-fcbcc64.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2084/DroidDeck-PR.2084-fcbcc64.apk",
-          "size": 93518161,
-          "sha256": "d8bccece7ef9fcd49b8a5748c12821bae94064b5d69b953994925fc5b2eb856f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2084-fcbcc64-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2084/DroidDeck-PR.2084-fcbcc64-pubg.apk",
-          "size": 93518161,
-          "sha256": "26d2e4198a004552b6a767957ad77e2cc92e031ed6fdf1c6508573b5c9966cf8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2084-fcbcc64-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2084/DroidDeck-PR.2084-fcbcc64-antutu.apk",
-          "size": 93518161,
-          "sha256": "99a210b4bdf5ec97b97d2fb166d1072e3c5978e973c19ac6a8bf7aadad80f94d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2084-fcbcc64-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2084/DroidDeck-PR.2084-fcbcc64-ludashi.apk",
-          "size": 93518161,
-          "sha256": "2e42349bc0e067e9cf6f99c5ab2bf35e192d138815e327de312ec14645737d75",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
