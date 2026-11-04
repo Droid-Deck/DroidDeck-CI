@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793832742549,
+  "generatedAt": 1793833575089,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-d62f017",
-    "title": "Add session log management to setup diagnostics",
-    "summary": "Add per-session log management in Setup diagnostics and remove the duplicate runtime card from Overview.",
-    "commit": "d62f017bcec39d2962277e435c5626ffd97c18c3",
+    "tag": "main-ab92033",
+    "title": "fix(desktop): Steam's own header moves and resizes its windows",
+    "summary": "Steam in Desktop could not be moved by its header or resized from its corners, and its maximize button could maximize but never restore. Dragging sends no NETWMMOVERESIZE, and the client's own IsWindowMaximized stays false, while KWin moves the window fine when asked.",
+    "commit": "ab92033b90f3ce8dc6f99812337ad8e92c8333cb",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793827476000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d62f017",
+    "publishedAt": 1793833496000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ab92033",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-d62f017.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d62f017/DroidDeck-main-d62f017.apk",
+        "name": "DroidDeck-main-ab92033.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ab92033/DroidDeck-main-ab92033.apk",
         "size": 93575617,
-        "sha256": "71ff2281cd6cd6cf7e82137814b5c7b9355c2087fe5507e11acbacf08dc12a8f",
+        "sha256": "7a0640d0bbbd21a7ddd437ab87d74bd2caf05d5cabbfd296295fc78c9e45879e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-d62f017-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d62f017/DroidDeck-main-d62f017-pubg.apk",
+        "name": "DroidDeck-main-ab92033-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ab92033/DroidDeck-main-ab92033-pubg.apk",
         "size": 93575617,
-        "sha256": "46af1a7ab03aec34b17f3aba89bb1a901bc612bb69440d8f0598a0c21860d82d",
+        "sha256": "0076c2b5f431150360ffa920ec5e831115fc6cd97eefa696d6bae285d012969e",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-d62f017-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d62f017/DroidDeck-main-d62f017-antutu.apk",
+        "name": "DroidDeck-main-ab92033-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ab92033/DroidDeck-main-ab92033-antutu.apk",
         "size": 93575617,
-        "sha256": "e228f65dd493699353196e7e5465addc85879593c50703193f645975cfc4585e",
+        "sha256": "f62de789d52c6c7691e98ca56a5dd503cf96d14768218a7e2e76a8c5c78a753e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-d62f017-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d62f017/DroidDeck-main-d62f017-ludashi.apk",
+        "name": "DroidDeck-main-ab92033-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ab92033/DroidDeck-main-ab92033-ludashi.apk",
         "size": 93575617,
-        "sha256": "72c43c1c22cec691fa211f1f036a5863f41f916c61295d2a9040a904387e27ee",
+        "sha256": "d7bbe94f6c21e32fd507854ec8182ec281716c126ebedef67950ff7175125dc0",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "ab92033b90f3ce8dc6f99812337ad8e92c8333cb",
+      "title": "fix(desktop): Steam's own header moves and resizes its windows",
+      "summary": "Steam in Desktop could not be moved by its header or resized from its corners, and its maximize button could maximize but never restore. Dragging sends no NETWMMOVERESIZE, and the client's own IsWindowMaximized stays false, while KWin moves the window fine when asked.",
+      "publishedAt": 1793833496000
+    },
     {
       "commit": "d62f017bcec39d2962277e435c5626ffd97c18c3",
       "title": "Add session log management to setup diagnostics",
@@ -155,12 +161,6 @@
       "title": "perf(steam): batch compatibility mapping updates",
       "summary": "steam-compatibility currently copies and searches the mapping token list for each game it changes. Large default/tool changes, retired DroidDeck-Proton upgrades and x86-64 Proton repointing therefore accumulate quadratic writer work.",
       "publishedAt": 1793762359000
-    },
-    {
-      "commit": "f3650d3d379f32a0d33e7a24249ae76023eab8bc",
-      "title": "Reduce on-screen stick load and honour Low latency off",
-      "summary": "Holding an on-screen stick costs far more than holding an on-screen button, and turning Low latency off changes nothing for on-screen controls. This reduces both. The frame rate drop has not been reproduced on the affected Samsung phones yet, so this should not be merged until it has been tested on one.",
-      "publishedAt": 1793741902000
     }
   ],
   "tests": [
