@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793762073700,
+  "generatedAt": 1793762442288,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f3650d3",
-    "title": "Reduce on-screen stick load and honour Low latency off",
-    "summary": "Holding an on-screen stick costs far more than holding an on-screen button, and turning Low latency off changes nothing for on-screen controls. This reduces both. The frame rate drop has not been reproduced on the affected Samsung phones yet, so this should not be merged until it has been tested on one.",
-    "commit": "f3650d3d379f32a0d33e7a24249ae76023eab8bc",
+    "tag": "main-45fb017",
+    "title": "perf(steam): batch compatibility mapping updates",
+    "summary": "steam-compatibility currently copies and searches the mapping token list for each game it changes. Large default/tool changes, retired DroidDeck-Proton upgrades and x86-64 Proton repointing therefore accumulate quadratic writer work.",
+    "commit": "45fb0174960a5ace3691858e93d759dc1d5bba26",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793741902000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f3650d3",
+    "publishedAt": 1793762359000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-45fb017",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f3650d3.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f3650d3/DroidDeck-main-f3650d3.apk",
-        "size": 93505873,
-        "sha256": "f24f399c5e07ee10a1fc3d76e6a3894cf2fc6d7797e2f226171d4656d3b3dfec",
+        "name": "DroidDeck-main-45fb017.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-45fb017/DroidDeck-main-45fb017.apk",
+        "size": 93514065,
+        "sha256": "b1e713d89af59040fb3e1fb1c32ad3af2045ca5dff187338e33daad095675c62",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f3650d3-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f3650d3/DroidDeck-main-f3650d3-pubg.apk",
-        "size": 93505873,
-        "sha256": "f3ba2799879516cda0d4d4151e4c5de6f88634279bfd874558cc626b2df2d7ca",
+        "name": "DroidDeck-main-45fb017-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-45fb017/DroidDeck-main-45fb017-pubg.apk",
+        "size": 93514065,
+        "sha256": "82542ea1335c3b7ceca349f8736f25981d84fae7be6db805e05358a09a4ba258",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f3650d3-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f3650d3/DroidDeck-main-f3650d3-antutu.apk",
-        "size": 93505873,
-        "sha256": "8cb87cfaad5bc665eec69d2c57c56842f3e49cffd795d7e576e44f37fef4ba59",
+        "name": "DroidDeck-main-45fb017-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-45fb017/DroidDeck-main-45fb017-antutu.apk",
+        "size": 93514065,
+        "sha256": "faa818ac526d04d28c1fca98fc1124ce55f9dca95858eb2c48cc88e0b5b34b35",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f3650d3-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f3650d3/DroidDeck-main-f3650d3-ludashi.apk",
-        "size": 93505873,
-        "sha256": "58a969f9458db9135d8af90579e1ea8039a6467b35ef2163cbe6c39d8380ccd2",
+        "name": "DroidDeck-main-45fb017-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-45fb017/DroidDeck-main-45fb017-ludashi.apk",
+        "size": 93514065,
+        "sha256": "e3d824ac0a82e59af1a4a1fe72737288ece1312335bd37d10bb2e62b334b19a1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "45fb0174960a5ace3691858e93d759dc1d5bba26",
+      "title": "perf(steam): batch compatibility mapping updates",
+      "summary": "steam-compatibility currently copies and searches the mapping token list for each game it changes. Large default/tool changes, retired DroidDeck-Proton upgrades and x86-64 Proton repointing therefore accumulate quadratic writer work.",
+      "publishedAt": 1793762359000
+    },
     {
       "commit": "f3650d3d379f32a0d33e7a24249ae76023eab8bc",
       "title": "Reduce on-screen stick load and honour Low latency off",
@@ -155,12 +161,6 @@
       "title": "fix: a GOG game whose installer cannot run gets its install registry",
       "summary": "The Witcher: Enhanced Edition installs from GOG, is registered in Steam, and then witcher.exe exits during startup. Wine's log shows the runtime and audio loading, then the engine tearing down and err:virtual:virtualsetupexception nested exception on signal stack.",
       "publishedAt": 1793661859000
-    },
-    {
-      "commit": "bc5edb81dbceb1011074f84743007b0118638c50",
-      "title": "fix(battlenet): list World of Warcraft: Forever in the Library",
-      "summary": "World of Warcraft: Forever installed through Battle.net never appeared in the Library, while Retail, Classic and StarCraft did.",
-      "publishedAt": 1793658047000
     }
   ],
   "tests": [
