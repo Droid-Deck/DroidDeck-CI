@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793758153492,
+  "generatedAt": 1793762073700,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2065",
+      "title": "Desktop: programs a Windows installer adds get a menu entry and desktop icon",
+      "summary": "Opening a Windows installer on the desktop runs it with Proton in a prefix of its own. That is droiddeck-proton-run's \"own\" prefix: compatdata/<crc32 of path and name | 0x80000000>, the id Steam would give a shortcut to it. The installer finishes, but nothing outside that prefix points at the program it installed.",
+      "commit": "2b898396fe5dbe7797de834ae03a5b10f2eb6214",
+      "pr": 2065,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793761984000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2065",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2065-2b89839.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-2b89839.apk",
+          "size": 93510070,
+          "sha256": "3332d03cd85572a7c62d258501e391972650650f43cd16cd84cab99497a438e3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2065-2b89839-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-2b89839-pubg.apk",
+          "size": 93510070,
+          "sha256": "9f36dfe355243606237abd54abfa0722ed77a6a7ee891b8280715367f69fa3f7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2065-2b89839-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-2b89839-antutu.apk",
+          "size": 93510070,
+          "sha256": "73df30a77e3c60ef68e0e5d48aace5737a28f5028db28ba36cddc729bd629c66",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2065-2b89839-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-2b89839-ludashi.apk",
+          "size": 93510070,
+          "sha256": "a1902f7755046382ab7510c4aa43603e95643e8ef2032816ac1ac2ebde3b263d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2067",
       "title": "Added games: one scan at a time, and keep what it found across launches",
       "summary": "Every Steam session runs AddedGames.scan before the Linux side starts. The scan walks each game folder for its exe (GameExePicker, depth 5) and reads the exe's version info for its name.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-ac2a2ec-ludashi.apk",
           "size": 93509969,
           "sha256": "3efa28e82eed521ee1d57df67ef397f4e3794af3792a6d66f9aea5c36653a1b8",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2065",
-      "title": "Desktop: programs a Windows installer adds get a menu entry and desktop icon",
-      "summary": "Opening a Windows installer on the desktop runs it with Proton in a prefix of its own. That is droiddeck-proton-run's \"own\" prefix: compatdata/<crc32 of path and name | 0x80000000>, the id Steam would give a shortcut to it. The installer finishes, but nothing outside that prefix points at the program it installed.",
-      "commit": "04ed80e23d370eacf57a63f55d2159608c7cf9b7",
-      "pr": 2065,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793756755000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2065",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2065-04ed80e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-04ed80e.apk",
-          "size": 93510070,
-          "sha256": "3d656034946c916fed569631f9b31b2f38be8d875ca176fa92d4257a6bfe7668",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2065-04ed80e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-04ed80e-pubg.apk",
-          "size": 93510070,
-          "sha256": "74cf297ffbab87ef207e48c4a2be042230b51ea542a4bc9c4fcb63b0fa9d21c4",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2065-04ed80e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-04ed80e-antutu.apk",
-          "size": 93510070,
-          "sha256": "5cd21cc8fcbd255c9039d7ca24a9302b5def3bc2aab89c149eb2785fb04789d7",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2065-04ed80e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2065/DroidDeck-PR.2065-04ed80e-ludashi.apk",
-          "size": 93510070,
-          "sha256": "94e8393a1aaa9b386c61873ff85855d3dc9b6493d96287bdcea3cdf2a4408c6e",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
