@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793822474407,
+  "generatedAt": 1793822704972,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2096",
+      "title": "fix(desktop): download language packs from the release that has them",
+      "summary": "The Desktop stayed in English for every language under the Ubuntu runtime. DesktopLanguage.ensure looked for desktop-kde.i18n.txt next to the runtime's own archive, and the ubuntu-r1-rc4 release has no index or packs, so it returned without installing anything.",
+      "commit": "3c1479a041885c9c8e4565c6849fdbb033b398ae",
+      "pr": 2096,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793822624000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2096",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2096-3c1479a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-3c1479a.apk",
+          "size": 93555137,
+          "sha256": "6d73d3c6fa36d933ea40b768454a45083ea3f3f15425dc7c3d2c2b2e3b717f1f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2096-3c1479a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-3c1479a-pubg.apk",
+          "size": 93555137,
+          "sha256": "2a68fa3ea8f6d7610bb661deaf8575f10e051789480337ae2874c29e77dd6a34",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2096-3c1479a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-3c1479a-antutu.apk",
+          "size": 93555137,
+          "sha256": "bd45a077ae20f29e3f927361765f5213725cd9fd7018ba9236f9c393c35b182e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2096-3c1479a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-3c1479a-ludashi.apk",
+          "size": 93555137,
+          "sha256": "534db2a81bb1a2f907845b312474f4250e992bf4223920f942017c3a2dfe6f75",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2097",
       "title": "fix(desktop): Steam's windows can be moved and resized",
       "summary": "Steam in Desktop could not be moved by its title bar or resized from its corners. Dragging sends no NETWMMOVERESIZE, while KWin moves the window fine when asked, so the gap is in the Steam client.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-b758000-ludashi.apk",
           "size": 93555137,
           "sha256": "08b51a33dc460102b765b318ff3817dfceb3a2b7c23ee2feeaccc0532b252449",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2096",
-      "title": "fix(desktop): download language packs from the release that has them",
-      "summary": "The Desktop stayed in English for every language under the Ubuntu runtime. DesktopLanguage.ensure looked for desktop-kde.i18n.txt next to the runtime's own archive, and the ubuntu-r1-rc4 release has no index or packs, so it returned without installing anything.",
-      "commit": "1e31b68e7f37aa697d48fb38eff902bbc1e2bd97",
-      "pr": 2096,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793821082000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2096",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2096-1e31b68.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-1e31b68.apk",
-          "size": 93555137,
-          "sha256": "6e6ddc64a78f35b6cf5d051785323e41976ad60388fbc30a114bd7d73ab37b75",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2096-1e31b68-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-1e31b68-pubg.apk",
-          "size": 93555137,
-          "sha256": "7eaeb88d152427786392d68f763fe5ec0414a33cf8b0aaf011cbf9cce5de5063",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2096-1e31b68-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-1e31b68-antutu.apk",
-          "size": 93555137,
-          "sha256": "0e9b606a0cb26de82c58a440058e71845bfbe29339b19b8726a2ce363ddc5cbb",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2096-1e31b68-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2096/DroidDeck-PR.2096-1e31b68-ludashi.apk",
-          "size": 93555137,
-          "sha256": "924ce122a7d7f4c1d5c9bf5ddc0e16210e0f52d03a15b808f25e66073221f5b6",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
