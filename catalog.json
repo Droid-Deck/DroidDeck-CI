@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793799760121,
+  "generatedAt": 1793801128078,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2083",
+      "title": "fix: Home screen setting keeps DroidDeck in RedMagic Game Space",
+      "summary": "On RedMagic, turning on \"Use as Home screen\" or \"DroidDeck as Home\" could leave DroidDeck out of Game Space, and it looked permanent even after switching back to another launcher.",
+      "commit": "e64021033202610f3aabbb51c6e214bd80f8a3c5",
+      "pr": 2083,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793801048000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2083",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2083-e640210.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2083/DroidDeck-PR.2083-e640210.apk",
+          "size": 93518161,
+          "sha256": "13eba601a8a49bc2afd061d564d71137b468e18332e1377f41c772a4d4d5480f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2083-e640210-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2083/DroidDeck-PR.2083-e640210-pubg.apk",
+          "size": 93518161,
+          "sha256": "f6c170016fa6f0c973ad3a0c888c28dcd8d4f7407074ae23a621498907285e2d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2083-e640210-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2083/DroidDeck-PR.2083-e640210-antutu.apk",
+          "size": 93518161,
+          "sha256": "d87e4f8642929b548546a5fd43311aa49628ee7c1e9e9a7d08b3b5d7c59f98ad",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2083-e640210-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2083/DroidDeck-PR.2083-e640210-ludashi.apk",
+          "size": 93518161,
+          "sha256": "bbdb010954e658dc2bbdd43f1bdccf514080dfd4aa43990092597d7e56e3c982",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2053",
       "title": "Make a hardware mouse and keyboard work like a PC",
       "summary": "A hardware mouse and keyboard should behave as they do on a PC. This fixes the main ways they do not. It is ready for testing but should not be merged yet.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2084/DroidDeck-PR.2084-fcbcc64-ludashi.apk",
           "size": 93518161,
           "sha256": "2e42349bc0e067e9cf6f99c5ab2bf35e192d138815e327de312ec14645737d75",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2083",
-      "title": "fix: Home screen setting keeps DroidDeck in RedMagic Game Space",
-      "summary": "On RedMagic, turning on \"Use as Home screen\" or \"DroidDeck as Home\" could leave DroidDeck out of Game Space, and it looked permanent even after switching back to another launcher.",
-      "commit": "cccf8d4f9fdb44fcdbc7cb532319921af85ae84e",
-      "pr": 2083,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793798789000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2083",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2083-cccf8d4.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2083/DroidDeck-PR.2083-cccf8d4.apk",
-          "size": 93518161,
-          "sha256": "795b39af52e292f9fd66507696c8a61ab154f6d0e20b20e7a8a872ef4b8d01fd",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2083-cccf8d4-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2083/DroidDeck-PR.2083-cccf8d4-pubg.apk",
-          "size": 93518161,
-          "sha256": "df3eb1221122ffb331821403070410d6745c610380b0fbaf2bf1e59986fb09ca",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2083-cccf8d4-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2083/DroidDeck-PR.2083-cccf8d4-antutu.apk",
-          "size": 93518161,
-          "sha256": "b643762f2656e45d0f81fb57ed17f7afadf6bb82995ac98824c036c7c88e39b8",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2083-cccf8d4-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2083/DroidDeck-PR.2083-cccf8d4-ludashi.apk",
-          "size": 93518161,
-          "sha256": "8124f0bc39f5694b7f018de723f1c610ab2cb322a18242956373e6fb1280509e",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
