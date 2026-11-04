@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793762442288,
+  "generatedAt": 1793771552712,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-45fb017",
-    "title": "perf(steam): batch compatibility mapping updates",
-    "summary": "steam-compatibility currently copies and searches the mapping token list for each game it changes. Large default/tool changes, retired DroidDeck-Proton upgrades and x86-64 Proton repointing therefore accumulate quadratic writer work.",
-    "commit": "45fb0174960a5ace3691858e93d759dc1d5bba26",
+    "tag": "main-2627411",
+    "title": "ci: avoid redundant gamescope builds",
+    "summary": "Gamescope builds currently run for branch pushes as well as manual dispatches. Updating tools/gamescope/release.env after publishing also starts another compilation.",
+    "commit": "26274114a3f6cc3fd2bb703927b3f29ec8e9c3e6",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793762359000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-45fb017",
+    "publishedAt": 1793771490000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2627411",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-45fb017.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-45fb017/DroidDeck-main-45fb017.apk",
+        "name": "DroidDeck-main-2627411.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2627411/DroidDeck-main-2627411.apk",
         "size": 93514065,
-        "sha256": "b1e713d89af59040fb3e1fb1c32ad3af2045ca5dff187338e33daad095675c62",
+        "sha256": "c739084484747c74a134783459bc0d1ed20ec35af2c3fb39360abbf146b9fec7",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-45fb017-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-45fb017/DroidDeck-main-45fb017-pubg.apk",
+        "name": "DroidDeck-main-2627411-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2627411/DroidDeck-main-2627411-pubg.apk",
         "size": 93514065,
-        "sha256": "82542ea1335c3b7ceca349f8736f25981d84fae7be6db805e05358a09a4ba258",
+        "sha256": "b573d3e0616066d3ec0cf3ffeb8ca8f63a359d9ec70c26ab671b75cec0ebc7ea",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-45fb017-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-45fb017/DroidDeck-main-45fb017-antutu.apk",
+        "name": "DroidDeck-main-2627411-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2627411/DroidDeck-main-2627411-antutu.apk",
         "size": 93514065,
-        "sha256": "faa818ac526d04d28c1fca98fc1124ce55f9dca95858eb2c48cc88e0b5b34b35",
+        "sha256": "8161a71e9245046c1456b2a32243d34c4d8eaad52c03c89fcec44613c4677a76",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-45fb017-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-45fb017/DroidDeck-main-45fb017-ludashi.apk",
+        "name": "DroidDeck-main-2627411-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2627411/DroidDeck-main-2627411-ludashi.apk",
         "size": 93514065,
-        "sha256": "e3d824ac0a82e59af1a4a1fe72737288ece1312335bd37d10bb2e62b334b19a1",
+        "sha256": "a14e1a9bc0b23081a2c21f8523fa8db2317ace6361b16ee7be88a2bec4d05f50",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "26274114a3f6cc3fd2bb703927b3f29ec8e9c3e6",
+      "title": "ci: avoid redundant gamescope builds",
+      "summary": "Gamescope builds currently run for branch pushes as well as manual dispatches. Updating tools/gamescope/release.env after publishing also starts another compilation.",
+      "publishedAt": 1793771490000
+    },
     {
       "commit": "45fb0174960a5ace3691858e93d759dc1d5bba26",
       "title": "perf(steam): batch compatibility mapping updates",
@@ -155,12 +161,6 @@
       "title": "fix: a stale session's startup failure no longer stops the newer session",
       "summary": "runSession(gen) runs on a background thread and calls stopSession(...) when startup fails (passwd/group write, missing proot, game environment publish, run mode without a program, guest start failure). stopSession only checked SessionState.running, so if the user quit and started a new session while the old one was still starting, the old session's failure tore down the new session.",
       "publishedAt": 1793663858000
-    },
-    {
-      "commit": "cdde9d3390defe4ee0c8f8236b9ee7b00d288b78",
-      "title": "fix: a GOG game whose installer cannot run gets its install registry",
-      "summary": "The Witcher: Enhanced Edition installs from GOG, is registered in Steam, and then witcher.exe exits during startup. Wine's log shows the runtime and audio loading, then the engine tearing down and err:virtual:virtualsetupexception nested exception on signal stack.",
-      "publishedAt": 1793661859000
     }
   ],
   "tests": [
