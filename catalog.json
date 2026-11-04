@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793830697113,
+  "generatedAt": 1793831008479,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2090",
+      "title": "fix: refresh repaired components and render Ubisoft Connect",
+      "summary": "Refresh and wait for repaired component revisions, preserve offline component controls, and write Ubisoft-only DirectComposition settings through Proton\u2019s Wine registry API, paired with Droid-Deck/DroidDeck-Components#10; 50 Android tests, 153 Python tests and the release APK build pass.",
+      "commit": "d779153dc4da88f1bb4d795502c3f848787f84da",
+      "pr": 2090,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793830930000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2090",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2090-d779153.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-d779153.apk",
+          "size": 93583809,
+          "sha256": "f744cbaccba56a42347e1739bbdd1a35dd8ab1bf4e167b72723909d1cc45aa88",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2090-d779153-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-d779153-pubg.apk",
+          "size": 93583809,
+          "sha256": "4ce9d2b59a27debf417632c07e491c380e5782306ed3c349739b9ffb5514f808",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2090-d779153-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-d779153-antutu.apk",
+          "size": 93583809,
+          "sha256": "18d86e398a365eefbc708708db03219042550bbd2cc760a5d7406972d8a7318b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2090-d779153-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-d779153-ludashi.apk",
+          "size": 93583809,
+          "sha256": "f0e3a5218b3e97e1a28bf3812d9615b9b788b98c15cfc8249a422bfef33feb63",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2097",
       "title": "fix(desktop): Steam's own header moves and resizes its windows",
       "summary": "Steam in Desktop could not be moved by its header or resized from its corners, and its maximize button could maximize but never restore. Dragging sends no NETWMMOVERESIZE, and the client's own IsWindowMaximized stays false, while KWin moves the window fine when asked.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2100/DroidDeck-PR.2100-e05a7a7-ludashi.apk",
           "size": 93555137,
           "sha256": "f322a6ce5e7f84a1843c60273d4dfba80ce9f5c900b46512c5e9ee8953325f06",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2090",
-      "title": "fix: refresh repaired components and render Ubisoft Connect",
-      "summary": "Refresh and wait for repaired component revisions, preserve offline component controls, and write Ubisoft-only DirectComposition settings through Wine\u2019s registry API, paired with Droid-Deck/DroidDeck-Components#10; 48 Android tests, 152 Linux tests and the release APK build pass.",
-      "commit": "a9981a2d5c1299437f055c4800a27941298471fc",
-      "pr": 2090,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793817284000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2090",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2090-a9981a2.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-a9981a2.apk",
-          "size": 93534657,
-          "sha256": "2e6c668398fd28cc2ceeead3f228d8b1bb5ce60133fa377396312199aac0ea94",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2090-a9981a2-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-a9981a2-pubg.apk",
-          "size": 93534657,
-          "sha256": "59a0462c8d61a7ff67a36a7ce5ecf8452a500794f60bbbc72632011674066d7a",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2090-a9981a2-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-a9981a2-antutu.apk",
-          "size": 93534657,
-          "sha256": "7206003504ab8819e0f599770c71dafcd1189228b747ebb6d07482f89d7941bd",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2090-a9981a2-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2090/DroidDeck-PR.2090-a9981a2-ludashi.apk",
-          "size": 93534657,
-          "sha256": "3a4ecd47372d40c24469fe64ca5c391f88ebe3f2e5bc7bfb3a7d0b7f54fa4fbd",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
