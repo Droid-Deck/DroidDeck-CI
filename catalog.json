@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793756848968,
+  "generatedAt": 1793758153492,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2067",
+      "title": "Added games: one scan at a time, and keep what it found across launches",
+      "summary": "Every Steam session runs AddedGames.scan before the Linux side starts. The scan walks each game folder for its exe (GameExePicker, depth 5) and reads the exe's version info for its name.",
+      "commit": "ac2a2ece8827396af388e5c6c9cfb90b09ed7a57",
+      "pr": 2067,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793758066000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2067",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2067-ac2a2ec.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-ac2a2ec.apk",
+          "size": 93509969,
+          "sha256": "4fa806b30a74be285b063004bd6fa4afdbc59104d24b7ea4de250df60fa9edd8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2067-ac2a2ec-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-ac2a2ec-pubg.apk",
+          "size": 93509969,
+          "sha256": "16be9d07b044d202e9b0e7648dee7e2f8076cab44a5fd08ede020e05899d3e81",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2067-ac2a2ec-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-ac2a2ec-antutu.apk",
+          "size": 93509969,
+          "sha256": "8fd157286f77819482fde745b62d66133156206fd5c8b814cd0a20b0cf15e52b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2067-ac2a2ec-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-ac2a2ec-ludashi.apk",
+          "size": 93509969,
+          "sha256": "3efa28e82eed521ee1d57df67ef397f4e3794af3792a6d66f9aea5c36653a1b8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2065",
       "title": "Desktop: programs a Windows installer adds get a menu entry and desktop icon",
