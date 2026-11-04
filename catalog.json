@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793826553936,
+  "generatedAt": 1793826653033,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2097",
+      "title": "fix(desktop): Steam's own header moves and resizes its windows",
+      "summary": "Steam in Desktop could not be moved by its header or resized from its corners, and its maximize button could maximize but never restore. Dragging sends no NETWMMOVERESIZE, and the client's own IsWindowMaximized stays false, while KWin moves the window fine when asked.",
+      "commit": "ee8f931fcf5496d8e1ad7e56c8d550a673e82197",
+      "pr": 2097,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793826595000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2097",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2097-ee8f931.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-ee8f931.apk",
+          "size": 93559233,
+          "sha256": "12038553cc73825ba2aaea6548fb7720819563543b4c7fb9225542313c905923",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2097-ee8f931-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-ee8f931-pubg.apk",
+          "size": 93559233,
+          "sha256": "3d196bf90299a4e174ba1f6213edd034c419aa820845bc18c258001824108693",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2097-ee8f931-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-ee8f931-antutu.apk",
+          "size": 93559233,
+          "sha256": "d21e483eb4e050c9a6ee719a50ed4cd577c2f9488e9c8bff2ffc05a393968fb9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2097-ee8f931-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-ee8f931-ludashi.apk",
+          "size": 93559233,
+          "sha256": "226c3c2360ad76e84171eb6d309ca16df3fd1759437f21ed339380ca6fd1b62f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2100",
       "title": "fix(storage): Windows installs on a natively mounted card no longer ask for an administrator",
       "summary": "Updating a Battle.net game on a microSD card can still fail with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841) on 0.6.9, which already has #1791. The report: Retroid Pocket 6, Android 13, World of Warcraft: Forever, with SetNamedSecurityInfo(5) in the agent log.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2100/DroidDeck-PR.2100-e05a7a7-ludashi.apk",
           "size": 93555137,
           "sha256": "f322a6ce5e7f84a1843c60273d4dfba80ce9f5c900b46512c5e9ee8953325f06",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2097",
-      "title": "fix(desktop): Steam's windows can be moved and resized",
-      "summary": "Steam in Desktop could not be moved by its title bar or resized from its corners. Dragging sends no NETWMMOVERESIZE, while KWin moves the window fine when asked, so the gap is in the Steam client.",
-      "commit": "b758000cd6d004a0702148ee0aefca425bb2fbcc",
-      "pr": 2097,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793822003000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2097",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2097-b758000.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-b758000.apk",
-          "size": 93555137,
-          "sha256": "e78dcc1af89f0d026969d5f4b92ed7a9beec5dc9af3b8fa5903a4a0617c6d065",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2097-b758000-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-b758000-pubg.apk",
-          "size": 93555137,
-          "sha256": "701b273b91d2d9d4427c0a6b6bb051282deaa8c5bd831e25a574a4510f8adc6a",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2097-b758000-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-b758000-antutu.apk",
-          "size": 93555137,
-          "sha256": "0046d2f619e90a3df6af57999b80b14a68e0f8d2fb72119d54d2bbd522b12060",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2097-b758000-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2097/DroidDeck-PR.2097-b758000-ludashi.apk",
-          "size": 93555137,
-          "sha256": "08b51a33dc460102b765b318ff3817dfceb3a2b7c23ee2feeaccc0532b252449",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
