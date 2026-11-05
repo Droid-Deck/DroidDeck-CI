@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793919276327,
+  "generatedAt": 1793919577464,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2139",
+      "title": "fix(input): release held mouse buttons and keys when the session loses focus",
+      "summary": "A mouse button or key held in the guest stayed down when another window took focus before the release, for example the notification shade, a heads-up notification or a system dialog. It also stayed down when pointer capture ended mid-press. The release went to the other window, so the game never saw it. A game that hides the cursor while a button is held kept that state. In World of Warcraft, mous",
+      "commit": "4daf01c7b73daf8365bebffe8688959b2addde33",
+      "pr": 2139,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793919505000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2139",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2139-4daf01c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-4daf01c.apk",
+          "size": 93686563,
+          "sha256": "5c6dfedce3d798f844278c7a248c1440f59fb19fd8a524ab22ca5b1086b9b4f9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2139-4daf01c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-4daf01c-pubg.apk",
+          "size": 93686563,
+          "sha256": "a9b43bda84e90cd6d59f7f9462cf647778be0cf4ab15b01d928545e217bd2faf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2139-4daf01c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-4daf01c-antutu.apk",
+          "size": 93686563,
+          "sha256": "34f9e0348c3c9e1ca8334e18db11a30cc64360d50a427846ec755efe5f5be14e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2139-4daf01c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-4daf01c-ludashi.apk",
+          "size": 93686563,
+          "sha256": "efdd2a9df8464f28a9a4674875217fa15dc55c8d255cc6d952cdbca96d421699",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2147",
       "title": "perf(agent): run diagnostic cleanup off startup thread",
       "summary": "Follow-up to #2131. Run abandoned diagnostic-stage cleanup on a background thread so lock acquisition and deleting stale stages cannot block Application.onCreate across app processes.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-38718f3-ludashi.apk",
           "size": 93719082,
           "sha256": "641ae163449f62a6fcbab0e084540347ba463c3e3c1812c1ab1f638642accbc0",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2139",
-      "title": "fix(input): release held mouse buttons and keys when the session loses focus",
-      "summary": "A mouse button or key held in the guest stayed down when another window took focus before the release, for example the notification shade, a heads-up notification or a system dialog. It also stayed down when pointer capture ended mid-press. The release went to the other window, so the game never saw it. A game that hides the cursor while a button is held kept that state. In World of Warcraft, mous",
-      "commit": "f0f2fbc7a0fbb0fd26d2eab43d5044e268f1bccd",
-      "pr": 2139,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793917773000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2139",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2139-f0f2fbc.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-f0f2fbc.apk",
-          "size": 93678122,
-          "sha256": "62b7eb47f07b3e61a53bcaf3acfe54def060f21e0240d5f0c20308ec0a111193",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2139-f0f2fbc-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-f0f2fbc-pubg.apk",
-          "size": 93678122,
-          "sha256": "9ee52db96e879a4a0a7a38b32d3e7b8f151f519c381448278dc809eba680dc26",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2139-f0f2fbc-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-f0f2fbc-antutu.apk",
-          "size": 93678122,
-          "sha256": "f8e58e0a21305bed84937d7eb560fcf5139cc504bb23f3f1c705136039bef16f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2139-f0f2fbc-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-f0f2fbc-ludashi.apk",
-          "size": 93678122,
-          "sha256": "ae12b37dedf88b91454980d401e2e15526703dd8654aa85c4e267d77271d6635",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
