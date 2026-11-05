@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793847399837,
+  "generatedAt": 1793848406033,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ab92033",
-    "title": "fix(desktop): Steam's own header moves and resizes its windows",
-    "summary": "Steam in Desktop could not be moved by its header or resized from its corners, and its maximize button could maximize but never restore. Dragging sends no NETWMMOVERESIZE, and the client's own IsWindowMaximized stays false, while KWin moves the window fine when asked.",
-    "commit": "ab92033b90f3ce8dc6f99812337ad8e92c8333cb",
+    "tag": "main-516e386",
+    "title": "fix: refresh repaired components and render Ubisoft Connect",
+    "summary": "Refresh and wait for repaired component revisions, preserve offline component controls, and write Ubisoft-only DirectComposition settings through Proton\u2019s Wine registry API, paired with Droid-Deck/DroidDeck-Components#10; 50 Android tests, 153 Python tests and the release APK build pass.",
+    "commit": "516e3862fa104a8646f9bd19530c2e4a7f63ce79",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793833496000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ab92033",
+    "publishedAt": 1793848332000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-516e386",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ab92033.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ab92033/DroidDeck-main-ab92033.apk",
-        "size": 93575617,
-        "sha256": "7a0640d0bbbd21a7ddd437ab87d74bd2caf05d5cabbfd296295fc78c9e45879e",
+        "name": "DroidDeck-main-516e386.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-516e386/DroidDeck-main-516e386.apk",
+        "size": 93587905,
+        "sha256": "79fc023db69798ccd399a7bb63dee7ec50b9ac6afec417f5c221ad551d1a9a18",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ab92033-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ab92033/DroidDeck-main-ab92033-pubg.apk",
-        "size": 93575617,
-        "sha256": "0076c2b5f431150360ffa920ec5e831115fc6cd97eefa696d6bae285d012969e",
+        "name": "DroidDeck-main-516e386-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-516e386/DroidDeck-main-516e386-pubg.apk",
+        "size": 93587905,
+        "sha256": "eb34aa522be8ede81bce961af96a303d3b13c534e8d61474f06049fedbeea55e",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ab92033-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ab92033/DroidDeck-main-ab92033-antutu.apk",
-        "size": 93575617,
-        "sha256": "f62de789d52c6c7691e98ca56a5dd503cf96d14768218a7e2e76a8c5c78a753e",
+        "name": "DroidDeck-main-516e386-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-516e386/DroidDeck-main-516e386-antutu.apk",
+        "size": 93587905,
+        "sha256": "9f87117f7238bf96e56695aafe8e5d1e698b23a63cac23b961e2a02ebffc5d08",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ab92033-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ab92033/DroidDeck-main-ab92033-ludashi.apk",
-        "size": 93575617,
-        "sha256": "d7bbe94f6c21e32fd507854ec8182ec281716c126ebedef67950ff7175125dc0",
+        "name": "DroidDeck-main-516e386-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-516e386/DroidDeck-main-516e386-ludashi.apk",
+        "size": 93587905,
+        "sha256": "52bbf0be8b75eab9f3ee3ba23fee21e319d5d66e34e5f69d12370caca6f2ce8b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "516e3862fa104a8646f9bd19530c2e4a7f63ce79",
+      "title": "fix: refresh repaired components and render Ubisoft Connect",
+      "summary": "Refresh and wait for repaired component revisions, preserve offline component controls, and write Ubisoft-only DirectComposition settings through Proton\u2019s Wine registry API, paired with Droid-Deck/DroidDeck-Components#10; 50 Android tests, 153 Python tests and the release APK build pass.",
+      "publishedAt": 1793848332000
+    },
     {
       "commit": "ab92033b90f3ce8dc6f99812337ad8e92c8333cb",
       "title": "fix(desktop): Steam's own header moves and resizes its windows",
@@ -155,12 +161,6 @@
       "title": "ci: avoid redundant gamescope builds",
       "summary": "Gamescope builds currently run for branch pushes as well as manual dispatches. Updating tools/gamescope/release.env after publishing also starts another compilation.",
       "publishedAt": 1793771490000
-    },
-    {
-      "commit": "45fb0174960a5ace3691858e93d759dc1d5bba26",
-      "title": "perf(steam): batch compatibility mapping updates",
-      "summary": "steam-compatibility currently copies and searches the mapping token list for each game it changes. Large default/tool changes, retired DroidDeck-Proton upgrades and x86-64 Proton repointing therefore accumulate quadratic writer work.",
-      "publishedAt": 1793762359000
     }
   ],
   "tests": [
