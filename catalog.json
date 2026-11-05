@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793890995202,
+  "generatedAt": 1793891785582,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2029",
+      "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
+      "summary": "Brings the rest of the non-Adreno work from test/non-adreno-all onto current main, on top of the MaliBridge update that just landed. The merge keeps the contributors' commits, so authorship stays with them (The412Banner, ASEbrahim and others).",
+      "commit": "5885f826ed0b33e0412dcddb2bd4cc383eda1869",
+      "pr": 2029,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793891721000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2029",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2029-5885f82.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-5885f82.apk",
+          "size": 129453717,
+          "sha256": "3e4030f0034a0ae5bffad7f29a875857cad509b2e7686021bd664f0765201fcd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2029-5885f82-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-5885f82-pubg.apk",
+          "size": 129453717,
+          "sha256": "42569e64f276c1d338dff07cbaef5598b8d0491fc31a0e318cd2921e1ca6dbe3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2029-5885f82-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-5885f82-antutu.apk",
+          "size": 129453717,
+          "sha256": "22df79795d6410c6ff613b09fb5ff5a883fa1f082e2e93cde2a4c03d30a5c37a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2029-5885f82-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-5885f82-ludashi.apk",
+          "size": 129453717,
+          "sha256": "4462fcc935654363a35ab4dd0bc79fc190b9c4d833dd0272b4d33f82b789c738",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1367",
       "title": "fix: upscale game buffers before native-resolution composition",
@@ -550,55 +599,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-2510b5e-ludashi.apk",
           "size": 93567313,
           "sha256": "248436525b5a354af8b7688754a7257399925e176972e0a3db9553a159014f29",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2029",
-      "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
-      "summary": "Brings the rest of the non-Adreno work from test/non-adreno-all onto current main, on top of the MaliBridge update that just landed. The merge keeps the contributors' commits, so authorship stays with them (The412Banner, ASEbrahim and others).",
-      "commit": "2fee6201a209182c0444f4386eb61f6914542513",
-      "pr": 2029,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793674370000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2029",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2029-2fee620.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-2fee620.apk",
-          "size": 129322533,
-          "sha256": "9e4b77d19946651f7f5bba723bb317a8882926dc22789c58da2f765ccd7de823",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2029-2fee620-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-2fee620-pubg.apk",
-          "size": 129322533,
-          "sha256": "2672768c9adf4373d2b96aef113b1c50f8b665a759c79e681781e3d7808d6bee",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2029-2fee620-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-2fee620-antutu.apk",
-          "size": 129322533,
-          "sha256": "464cdad12bfa388608d783abc85a74c0f629b6517d406e518c057aa4cddedcdc",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2029-2fee620-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-2fee620-ludashi.apk",
-          "size": 129322533,
-          "sha256": "406cf9d6f27ce41aa48995c76e7f24a1c26778edf224f3420bc0a6924e050e67",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
