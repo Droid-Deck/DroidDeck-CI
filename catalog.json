@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793892005858,
+  "generatedAt": 1793892326451,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1367",
+      "title": "fix: upscale game buffers before native-resolution composition",
+      "summary": "When a 720p game runs inside a 1080p Steam session, Gamescope can forward its 720p buffer with a 1080p Wayland viewport destination. DroidDeck currently enlarges it with a linear copy before running the effects chain, so FSR/GSR/NIS see equal input and output sizes and skip upscaling.",
+      "commit": "d980578e523212037f89f7632e02f2485a3ed635",
+      "pr": 1367,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793892230000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1367",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1367-d980578.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1367/DroidDeck-PR.1367-d980578.apk",
+          "size": 93632961,
+          "sha256": "aca2bba2b1af2892a8d30d261162afccd1c7711e26d724c3df76f6ea5bf650f3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1367-d980578-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1367/DroidDeck-PR.1367-d980578-pubg.apk",
+          "size": 93632961,
+          "sha256": "6e50dd3ba1c7f8ba81087255e4275656082495b9afad2fdc7f0ef7533bf66785",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1367-d980578-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1367/DroidDeck-PR.1367-d980578-antutu.apk",
+          "size": 93632961,
+          "sha256": "17ae19f5dd8809ff3399815fa6480dc4972709124a943799c10d4f29f17ce2e7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1367-d980578-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1367/DroidDeck-PR.1367-d980578-ludashi.apk",
+          "size": 93632961,
+          "sha256": "a375d2befa05c05e77aa9dbab9320c61d00b9588b93f806fc258a3a2cad54194",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2029",
       "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
       "summary": "Brings the rest of the non-Adreno work from test/non-adreno-all onto current main, on top of the MaliBridge update that just landed. The merge keeps the contributors' commits, so authorship stays with them (The412Banner, ASEbrahim and others).",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-5885f82-ludashi.apk",
           "size": 129453717,
           "sha256": "4462fcc935654363a35ab4dd0bc79fc190b9c4d833dd0272b4d33f82b789c738",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1367",
-      "title": "fix: upscale game buffers before native-resolution composition",
-      "summary": "When a 720p game runs inside a 1080p Steam session, Gamescope can forward its 720p buffer with a 1080p Wayland viewport destination. DroidDeck currently enlarges it with a linear copy before running the effects chain, so FSR/GSR/NIS see equal input and output sizes and skip upscaling.",
-      "commit": "2b9fdde2f49f38f00be74a34cd1163d6847a2d12",
-      "pr": 1367,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793890917000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1367",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1367-2b9fdde.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1367/DroidDeck-PR.1367-2b9fdde.apk",
-          "size": 93632961,
-          "sha256": "60437f0d75c423b4b5f2ae5c8182675386a748536d4e522387f0d18eb73d0c41",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1367-2b9fdde-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1367/DroidDeck-PR.1367-2b9fdde-pubg.apk",
-          "size": 93632961,
-          "sha256": "326a33ddcabec11fd223db222706003fbc60015685bb353c4930d378b6acf663",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1367-2b9fdde-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1367/DroidDeck-PR.1367-2b9fdde-antutu.apk",
-          "size": 93632961,
-          "sha256": "5158acdb008235851d6c1a3951d361eb148473115ed999e817418ebd36f7cb0e",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1367-2b9fdde-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1367/DroidDeck-PR.1367-2b9fdde-ludashi.apk",
-          "size": 93632961,
-          "sha256": "a8dfa2ec9ecaea100cff230e603a80cccea011b9282a649eddd6f4238b7f729c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
