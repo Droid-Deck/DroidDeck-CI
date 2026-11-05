@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793919649831,
+  "generatedAt": 1793919718915,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,48 +165,48 @@
   ],
   "tests": [
     {
-      "tag": "pr-2142",
-      "title": "fix(components): a native-only override falls back to builtin when the prefix has no native DLL",
-      "summary": "Fixes #2041.",
-      "commit": "78e9a9d030900388f990d0761a5428a5676dde20",
-      "pr": 2142,
+      "tag": "pr-1913",
+      "title": "fix: an unplugged game drive falls back to internal storage",
+      "summary": "When the drive chosen for games (USB SSD or SD card) is unplugged, DroidDeck keeps treating it as the place for games:\n\u2022 Installing a Battle.net game to Internal fails at once with \"Game storage is unavailable\", because the installer checks the missing library folder first.\n\u2022 The install picker still lists the missing drive's folder as a target.\n\u2022 With Default storage set to external, store installs stop at the location dialog and the Epic launcher keeps its install folder on the missing drive.",
+      "commit": "39eb0c882b11327223dee0180f729d74a89d0dda",
+      "pr": 1913,
       "version": null,
       "versionCode": 17,
-      "publishedAt": 1793919587000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2142",
+      "publishedAt": 1793919637000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1913",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2142-78e9a9d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2142/DroidDeck-PR.2142-78e9a9d.apk",
+          "name": "DroidDeck-PR.1913-39eb0c8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-39eb0c8.apk",
           "size": 93686563,
-          "sha256": "4d52a49535a06cb067dafebb682eb4bf80f7b59f4d8059df685806dfd8326af9",
+          "sha256": "b541c0bc7b9423857de74d13093becbcf62396fb28fbc4dfb6793204ad76c2d9",
           "packageName": "com.droiddeck.launcher",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.tencent.ig": {
-          "name": "DroidDeck-PR.2142-78e9a9d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2142/DroidDeck-PR.2142-78e9a9d-pubg.apk",
+          "name": "DroidDeck-PR.1913-39eb0c8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-39eb0c8-pubg.apk",
           "size": 93686563,
-          "sha256": "5b378ae12d53f576c883c8b6b6bae77f211888403c821404a556509119e85aa7",
+          "sha256": "17dc0304811eefde12de340344995f350c044bc6148b06438898902e002fc8eb",
           "packageName": "com.tencent.ig",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2142-78e9a9d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2142/DroidDeck-PR.2142-78e9a9d-antutu.apk",
+          "name": "DroidDeck-PR.1913-39eb0c8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-39eb0c8-antutu.apk",
           "size": 93686563,
-          "sha256": "0ee9a665c5d6a9460f7ff1238d1b40a04b48acbff34c09704bdafbd8815a3eba",
+          "sha256": "96eb3cfcc34852c4b20ecbbe9772672b61fb9ece007d66a9c7279da847fcd4c0",
           "packageName": "com.antutu.benchmark.full",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2142-78e9a9d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2142/DroidDeck-PR.2142-78e9a9d-ludashi.apk",
+          "name": "DroidDeck-PR.1913-39eb0c8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-39eb0c8-ludashi.apk",
           "size": 93686563,
-          "sha256": "ac4c9fd24c0e1b60564165ab51fa3b8141a7fed5e6af45a9871f42689974c2dc",
+          "sha256": "41301e66efdeeac5209fd31d33a8619a409b26f3b5d10ec791e00500d9497451",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -746,55 +746,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-17b578b-ludashi.apk",
           "size": 76952738,
           "sha256": "893dd73b51939716c76dcec4db5cdb7694fa49b546d36825e1a8d7ad2b759856",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1913",
-      "title": "fix: an unplugged game drive falls back to internal storage",
-      "summary": "When the drive chosen for games (USB SSD or SD card) is unplugged, DroidDeck keeps treating it as the place for games:\n\u2022 Installing a Battle.net game to Internal fails at once with \"Game storage is unavailable\", because the installer checks the missing library folder first.\n\u2022 The install picker still lists the missing drive's folder as a target.\n\u2022 With Default storage set to external, store installs stop at the location dialog and the Epic launcher keeps its install folder on the missing drive.",
-      "commit": "e43990679f6cea9bce0bdc3cdc951420a19cc460",
-      "pr": 1913,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793486897000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1913",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1913-e439906.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-e439906.apk",
-          "size": 76702782,
-          "sha256": "8e2956e22292af212408a596c7e3da396cdbbadbc02af0951ab284bf2069e856",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1913-e439906-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-e439906-pubg.apk",
-          "size": 76702782,
-          "sha256": "a75e1eca64ab5481285ee86d30de8b2c402028d0a6f0c7ba1af51fca77f2f20c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1913-e439906-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-e439906-antutu.apk",
-          "size": 76702782,
-          "sha256": "9ec0ef56d9363d7279db27622d6835d3182919f4e7e8096e272c2131299cc74d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1913-e439906-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-e439906-ludashi.apk",
-          "size": 76702782,
-          "sha256": "a2f3056c303a281786f916aa0da7fb264a61a65679c03c472bf511c28f7256d0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
