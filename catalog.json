@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793917705306,
+  "generatedAt": 1793917753493,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2138",
+      "title": "perf: reclaim launcher memory earlier under pressure",
+      "summary": "Reclaim launcher memory earlier under system pressure with swap headroom and delayed readback, and add an opt-in userspace compression probe documenting the FIT\u2019s paging constraints.",
+      "commit": "a8484b7ecd1852eb49b418f51cbc25058c151030",
+      "pr": 2138,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793917692000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2138",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2138-a8484b7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-a8484b7.apk",
+          "size": 93678122,
+          "sha256": "c32b29a96ff75a451a732e4577275a7d4778ebde26beeb9547452292517abe38",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2138-a8484b7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-a8484b7-pubg.apk",
+          "size": 93678122,
+          "sha256": "ca718d664fdc893ef19881fb69edd4f658673012beaac29bc1a4e3fe5662f03a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2138-a8484b7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-a8484b7-antutu.apk",
+          "size": 93678122,
+          "sha256": "3132da0ea0db99e88d140c0d0741e1bfcd0fbbd58c3df17ef68f1b390a5c2b52",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2138-a8484b7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-a8484b7-ludashi.apk",
+          "size": 93678122,
+          "sha256": "830a403c283dbe57931a69ad77d8db7bb5be8d5646a0f89e794e305aaee451ae",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2145",
       "title": "fix(input): reach full guest screen with glasses pointer",
       "summary": "Supersedes #2056. The fork branch conflicts with current main after #2133 changed the touch routing. This carries the original pointer-area change onto current main, preserves the original commit author, and keeps #2133's direct-touch route behavior.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-645dd8d-ludashi.apk",
           "size": 93678122,
           "sha256": "62b9830dbe5f314afbb8336e646b7836f54760aa16dadfcea4bb2c1aa52813bf",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2138",
-      "title": "perf: reclaim launcher memory earlier under pressure",
-      "summary": "Reclaim launcher memory earlier under system pressure with swap headroom and delayed readback, and add an opt-in userspace compression probe documenting the FIT\u2019s paging constraints.",
-      "commit": "4467de0cc723a559b88c07adfa934719570dc56a",
-      "pr": 2138,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793916452000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2138",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2138-4467de0.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-4467de0.apk",
-          "size": 93678122,
-          "sha256": "a84f0fcebe17ea21e7a2146bc468d5e0b877d3488dee9519b3c607bda9f65c24",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2138-4467de0-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-4467de0-pubg.apk",
-          "size": 93678122,
-          "sha256": "6ee3e655f67b7ed96632bc34b1fabb563d97ab84261ccc0f74d888a04af4eb8c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2138-4467de0-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-4467de0-antutu.apk",
-          "size": 93678122,
-          "sha256": "037892f283d08212c9809340206e0598ff180d5b51e173be886ebd273535dd71",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2138-4467de0-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-4467de0-ludashi.apk",
-          "size": 93678122,
-          "sha256": "45e23937f1d4bfbf1cb1ec050ece9d921766c6e0ad0903fd8ef35df4b3679705",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
