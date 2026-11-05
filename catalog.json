@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793917116984,
+  "generatedAt": 1793917182167,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2143",
+      "title": "fix(game-env): allow Supergiant mscoree fallback",
+      "summary": "Supersedes #2046. The original fix commit is retained with its author attribution; that fork PR's build workflow is blocked at actionrequired, so this same-repository PR can run the required checks.",
+      "commit": "a0fd1c933e8368ddbd72afab6ef6d3b6b4b3274d",
+      "pr": 2143,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793917110000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2143",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2143-a0fd1c9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2143/DroidDeck-PR.2143-a0fd1c9.apk",
+          "size": 93678122,
+          "sha256": "cd5ccd7ff3b589798a885f1e28348376af8be667be373d708b886f5c68fde528",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2143-a0fd1c9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2143/DroidDeck-PR.2143-a0fd1c9-pubg.apk",
+          "size": 93678122,
+          "sha256": "34352c71bbe62b4822aa908bcdb9c0ce1cc58aaea04fad24c2c578aa3d9154ee",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2143-a0fd1c9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2143/DroidDeck-PR.2143-a0fd1c9-antutu.apk",
+          "size": 93678122,
+          "sha256": "4e0306bbb37dbfd58f492658bf93aaba58fc96ff1ffd18ad30361d6f4a1dd260",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2143-a0fd1c9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2143/DroidDeck-PR.2143-a0fd1c9-ludashi.apk",
+          "size": 93678122,
+          "sha256": "fa54fe27669d31b17cc7673e9d23db305f2c04c0161a2859b6614833621b2273",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2014",
       "title": "fix: apply the VRAM budget through Vulkan without rejecting allocations",
