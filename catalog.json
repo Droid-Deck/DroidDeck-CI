@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793911165768,
+  "generatedAt": 1793911981140,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-ca0689d",
-    "title": "fix(steam): default listed titles with a bundled arm64 Linux build to FEX",
-    "summary": "Refs #1774.",
-    "commit": "ca0689d254270219c1696f7fa00e657865068b4a",
+    "tag": "main-e8ffe11",
+    "title": "fix: detect D3D12 capabilities and remove redundant game workarounds",
+    "summary": "Let VKD3D detect D3D12 capabilities by default and remove redundant Caravan, RoboCop, ReSkate, and Cyberpunk feature-level workarounds while preserving explicit overrides.",
+    "commit": "e8ffe1164f14e501d64f70f98d498bdaf725d76f",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793908523000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-ca0689d",
+    "publishedAt": 1793911918000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e8ffe11",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-ca0689d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ca0689d/DroidDeck-main-ca0689d.apk",
+        "name": "DroidDeck-main-e8ffe11.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8ffe11/DroidDeck-main-e8ffe11.apk",
         "size": 93678122,
-        "sha256": "665d1f1ad57cb425bebac036b3c7a13b562a75a0acc29d47c7b4548e74953844",
+        "sha256": "96a2face6fdd3bae021ba89d381d67ae6bc838ecfd82e7a04926f475194eed34",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-ca0689d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ca0689d/DroidDeck-main-ca0689d-pubg.apk",
+        "name": "DroidDeck-main-e8ffe11-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8ffe11/DroidDeck-main-e8ffe11-pubg.apk",
         "size": 93678122,
-        "sha256": "4126fa82e7a7c6fd9dac1190f5ac80116530f79c6426265bcf959843a651e712",
+        "sha256": "2c72b639f4cd01ff5f67239a339f3ac9ed26fd37f84490b58bb5e0317a876a6d",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-ca0689d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ca0689d/DroidDeck-main-ca0689d-antutu.apk",
+        "name": "DroidDeck-main-e8ffe11-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8ffe11/DroidDeck-main-e8ffe11-antutu.apk",
         "size": 93678122,
-        "sha256": "1bb0f58d56ed1081cf95975c2f71fcb7080340061c4b167bca81c14c50cfa17a",
+        "sha256": "b3f65c4e9cf9f0fd3ea7fe536c43fbefb94fe1fe8a970c8e6735b7ab060ca188",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-ca0689d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-ca0689d/DroidDeck-main-ca0689d-ludashi.apk",
+        "name": "DroidDeck-main-e8ffe11-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8ffe11/DroidDeck-main-e8ffe11-ludashi.apk",
         "size": 93678122,
-        "sha256": "2cba66940e90fbd490b3e521ba63fa6180c0064b9851a8d3ff09f83de2782ec7",
+        "sha256": "fe8c26c2041209902d734d175f9b54d65318c231cb969f17624da1659ea013d4",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e8ffe1164f14e501d64f70f98d498bdaf725d76f",
+      "title": "fix: detect D3D12 capabilities and remove redundant game workarounds",
+      "summary": "Let VKD3D detect D3D12 capabilities by default and remove redundant Caravan, RoboCop, ReSkate, and Cyberpunk feature-level workarounds while preserving explicit overrides.",
+      "publishedAt": 1793911918000
+    },
     {
       "commit": "ca0689d254270219c1696f7fa00e657865068b4a",
       "title": "fix(steam): default listed titles with a bundled arm64 Linux build to FEX",
@@ -155,12 +161,6 @@
       "title": "fix(storage): Windows installs on a natively mounted card no longer ask for an administrator",
       "summary": "Updating a Battle.net game on a microSD card can still fail with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841) on 0.6.9, which already has #1791. The report: Retroid Pocket 6, Android 13, World of Warcraft: Forever, with SetNamedSecurityInfo(5) in the agent log.",
       "publishedAt": 1793858646000
-    },
-    {
-      "commit": "a9d2d09e646d15b320e8aebfebe65ec52345f164",
-      "title": "fix: restore single-screen session menu controls",
-      "summary": "The shared bottom-screen controls added a redundant DroidDeck logo to the single-screen session drawer and removed its controller shortcut hints.",
-      "publishedAt": 1793849256000
     }
   ],
   "tests": [
