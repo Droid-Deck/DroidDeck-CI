@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793904784673,
+  "generatedAt": 1793904994469,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2067",
+      "title": "Added games: one scan at a time, and keep what it found across launches",
+      "summary": "Every Steam session runs AddedGames.scan before the Linux side starts. The scan walks each game folder for its exe (GameExePicker, depth 5) and reads the exe's version info for its name.",
+      "commit": "6a1e071b6558c3f6f3eaa9920436972a2407d5a8",
+      "pr": 2067,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793904911000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2067",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2067-6a1e071.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-6a1e071.apk",
+          "size": 93674026,
+          "sha256": "ef333eddb12ee3c62a8e81b0582ebe3f726ab632776fc18f492046ceb65dc526",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2067-6a1e071-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-6a1e071-pubg.apk",
+          "size": 93674026,
+          "sha256": "eff4def276f56f54fd7b526f4ee5b946f2b38b743aa41bfba6a0560c4a727502",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2067-6a1e071-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-6a1e071-antutu.apk",
+          "size": 93674026,
+          "sha256": "5f9def2569679dcf4776b3fabdc3cf3e7c1203fd8bb9ca8490f87026cefd16ae",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2067-6a1e071-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-6a1e071-ludashi.apk",
+          "size": 93674026,
+          "sha256": "4a3d89b2c4f8b85957577eadcc611d92884065bd58b9fc8d9e3072ef6fe43b32",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2064",
       "title": "Steam: imported games with no known build update only when launched",
       "summary": "An added game the account owns on Steam is linked into Steam as DroidDeck-<appid> by droiddeck-steam-games. When the folder has no Steam build on record (no WinNative manifest, no DepotDownloader config), the manifest it writes has no buildid and no installed depots. Steam then marks the game Update Required and checks every file before it updates.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2064/DroidDeck-PR.2064-8b89f3a-ludashi.apk",
           "size": 93669930,
           "sha256": "0593b12f617d3b5652fbdb431cfa020776b7221bdcf53c2b3ad5ccb1a22bac7e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2067",
-      "title": "Added games: one scan at a time, and keep what it found across launches",
-      "summary": "Every Steam session runs AddedGames.scan before the Linux side starts. The scan walks each game folder for its exe (GameExePicker, depth 5) and reads the exe's version info for its name.",
-      "commit": "21894fe64ebfc01e453e707fdf52ac13a179e5a1",
-      "pr": 2067,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793900955000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2067",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2067-21894fe.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-21894fe.apk",
-          "size": 93632961,
-          "sha256": "960d953751ae8502a6f3361143e65e41a6f2897a4dfe312e6b8c77a9071141a7",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2067-21894fe-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-21894fe-pubg.apk",
-          "size": 93632961,
-          "sha256": "3759ab24759aa12b6c10046c85fa9da6add91c5a0d59cc77b007d3b9fb4bdeb9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2067-21894fe-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-21894fe-antutu.apk",
-          "size": 93632961,
-          "sha256": "d4ab6b66b800790043f96cf404f560013d0bd96f46e172904809ca5c5e2e6d87",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2067-21894fe-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2067/DroidDeck-PR.2067-21894fe-ludashi.apk",
-          "size": 93632961,
-          "sha256": "d9ff052718acf7350ab184d28e00a3cfa7f6987cee9208fc1ee357406bc54c99",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
