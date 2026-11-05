@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793921188883,
+  "generatedAt": 1793921282657,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-1913",
+      "title": "fix: an unplugged game drive falls back to internal storage",
+      "summary": "When the drive chosen for games (USB SSD or SD card) is unplugged, DroidDeck keeps treating it as the place for games:\n\u2022 Installing a Battle.net game to Internal fails at once with \"Game storage is unavailable\", because the installer checks the missing library folder first.\n\u2022 The install picker still lists the missing drive's folder as a target.\n\u2022 With Default storage set to external, store installs stop at the location dialog and the Epic launcher keeps its install folder on the missing drive.",
+      "commit": "7a29950dcdf7ea9270f7ec45b2ad9f5328df23d4",
+      "pr": 1913,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793921213000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1913",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1913-7a29950.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-7a29950.apk",
+          "size": 93690659,
+          "sha256": "865635ca1a9e358dbc3ab6ed69ccc429d729f8938e185be03ee83290f5bc1d13",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1913-7a29950-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-7a29950-pubg.apk",
+          "size": 93690659,
+          "sha256": "5a616269ff7bf09ace29797a124514e8d981a69742dd3fb7356a2727b5215771",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1913-7a29950-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-7a29950-antutu.apk",
+          "size": 93690659,
+          "sha256": "167fbc32def0393450d8a225706f82e9c3667f3117b2b3f6ccba8f3039e60813",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1913-7a29950-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-7a29950-ludashi.apk",
+          "size": 93690659,
+          "sha256": "54e8d76137ece9be1a773cf7df029e7629a024a2849b147ce0bd89b9698c1af5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2147",
       "title": "perf(agent): run diagnostic cleanup off startup thread",
       "summary": "Follow-up to #2131. Run abandoned diagnostic-stage cleanup on a background thread so lock acquisition and deleting stale stages cannot block Application.onCreate across app processes.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-c6c7331-ludashi.apk",
           "size": 93690659,
           "sha256": "46e3bd244a15885d748b228c3e695b8135b0eb58d09d15e0d996884583d40bc1",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2141",
-      "title": "fix(preload): answer NETLINKROUTE queries inside a session",
-      "summary": "Supersedes #2109 because its head is in a read-only fork. Original commit authorship is preserved; this branch adds the peer-descriptor race fix from CodeRabbit. Rebased cleanly onto current main. Validation: 49 focused Linux preload tests passed under WSL.",
-      "commit": "d5ae4b0c80196a468b46ac202c49a332fee65f91",
-      "pr": 2141,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793920088000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2141",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2141-d5ae4b0.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-d5ae4b0.apk",
-          "size": 93727523,
-          "sha256": "e39aaa22e009e9a1295c362bc63a5ce129c5927b547b46c027ca4d5fd9eca4b5",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2141-d5ae4b0-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-d5ae4b0-pubg.apk",
-          "size": 93727523,
-          "sha256": "583ebe617cac846b342209db5eaaa6af41ae95d4b340fe358172714604950bec",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2141-d5ae4b0-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-d5ae4b0-antutu.apk",
-          "size": 93727523,
-          "sha256": "2c90456d6e269a5060e26849010608981ad24c5768448473f3c74c49f9bbf914",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2141-d5ae4b0-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-d5ae4b0-ludashi.apk",
-          "size": 93727523,
-          "sha256": "23752dd48c477b95226058aaf6c1cb6e168a200c124d7e168823b140d7e14307",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -354,104 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2146/DroidDeck-PR.2146-f7f2e08-ludashi.apk",
           "size": 93690760,
           "sha256": "e5d91bc2479e45aa0f9277fbbb74208f5dae4f24ccdc9db27d980471ffaa429a",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1913",
-      "title": "fix: an unplugged game drive falls back to internal storage",
-      "summary": "When the drive chosen for games (USB SSD or SD card) is unplugged, DroidDeck keeps treating it as the place for games:\n\u2022 Installing a Battle.net game to Internal fails at once with \"Game storage is unavailable\", because the installer checks the missing library folder first.\n\u2022 The install picker still lists the missing drive's folder as a target.\n\u2022 With Default storage set to external, store installs stop at the location dialog and the Epic launcher keeps its install folder on the missing drive.",
-      "commit": "39eb0c882b11327223dee0180f729d74a89d0dda",
-      "pr": 1913,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793919637000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1913",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1913-39eb0c8.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-39eb0c8.apk",
-          "size": 93686563,
-          "sha256": "b541c0bc7b9423857de74d13093becbcf62396fb28fbc4dfb6793204ad76c2d9",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1913-39eb0c8-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-39eb0c8-pubg.apk",
-          "size": 93686563,
-          "sha256": "17dc0304811eefde12de340344995f350c044bc6148b06438898902e002fc8eb",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1913-39eb0c8-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-39eb0c8-antutu.apk",
-          "size": 93686563,
-          "sha256": "96eb3cfcc34852c4b20ecbbe9772672b61fb9ece007d66a9c7279da847fcd4c0",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1913-39eb0c8-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1913/DroidDeck-PR.1913-39eb0c8-ludashi.apk",
-          "size": 93686563,
-          "sha256": "41301e66efdeeac5209fd31d33a8619a409b26f3b5d10ec791e00500d9497451",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2139",
-      "title": "fix(input): release held mouse buttons and keys when the session loses focus",
-      "summary": "A mouse button or key held in the guest stayed down when another window took focus before the release, for example the notification shade, a heads-up notification or a system dialog. It also stayed down when pointer capture ended mid-press. The release went to the other window, so the game never saw it. A game that hides the cursor while a button is held kept that state. In World of Warcraft, mous",
-      "commit": "4daf01c7b73daf8365bebffe8688959b2addde33",
-      "pr": 2139,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793919505000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2139",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2139-4daf01c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-4daf01c.apk",
-          "size": 93686563,
-          "sha256": "5c6dfedce3d798f844278c7a248c1440f59fb19fd8a524ab22ca5b1086b9b4f9",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2139-4daf01c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-4daf01c-pubg.apk",
-          "size": 93686563,
-          "sha256": "a9b43bda84e90cd6d59f7f9462cf647778be0cf4ab15b01d928545e217bd2faf",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2139-4daf01c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-4daf01c-antutu.apk",
-          "size": 93686563,
-          "sha256": "34f9e0348c3c9e1ca8334e18db11a30cc64360d50a427846ec755efe5f5be14e",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2139-4daf01c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-4daf01c-ludashi.apk",
-          "size": 93686563,
-          "sha256": "efdd2a9df8464f28a9a4674875217fa15dc55c8d255cc6d952cdbca96d421699",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
