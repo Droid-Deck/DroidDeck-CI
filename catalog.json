@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793887338388,
+  "generatedAt": 1793890765357,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2125",
+      "title": "Fix cropped PiP output after surface resize",
+      "summary": "Resize the compositor output to fit the resized PiP surface while preserving the existing output aspect ratio. This prevents PiP from continuing to render the previous full-size output into the smaller window.",
+      "commit": "0d33b1e4df49f621472305573fd9e2570ab2dbf1",
+      "pr": 2125,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793890695000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2125",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2125-0d33b1e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2125/DroidDeck-PR.2125-0d33b1e.apk",
+          "size": 93632961,
+          "sha256": "d477789c52f2be779f5617b015ab3ca931db9f11503e504e079ac76ea8731743",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2125-0d33b1e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2125/DroidDeck-PR.2125-0d33b1e-pubg.apk",
+          "size": 93632961,
+          "sha256": "d6638ce6378c96be274a29bd81a8beccc1cd1ef29fd22f50a3ac13dff9d77fc2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2125-0d33b1e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2125/DroidDeck-PR.2125-0d33b1e-antutu.apk",
+          "size": 93632961,
+          "sha256": "6a0ea476f8206320efc8a7bec664017d9e641ac6efeb5c6353d4a2fe5450735f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2125-0d33b1e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2125/DroidDeck-PR.2125-0d33b1e-ludashi.apk",
+          "size": 93632961,
+          "sha256": "8724c173269822d4f1caa925ae23825e8d6accac26da6891275d8fbc6ac16fa5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-1367",
       "title": "fix: upscale game buffers before native-resolution composition",
