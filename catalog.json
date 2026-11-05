@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793919970888,
+  "generatedAt": 1793920176772,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2141",
+      "title": "fix(preload): answer NETLINKROUTE queries inside a session",
+      "summary": "Supersedes #2109 because its head is in a read-only fork. Original commit authorship is preserved; this branch adds the peer-descriptor race fix from CodeRabbit. Rebased cleanly onto current main. Validation: 49 focused Linux preload tests passed under WSL.",
+      "commit": "d5ae4b0c80196a468b46ac202c49a332fee65f91",
+      "pr": 2141,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793920088000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2141",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2141-d5ae4b0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-d5ae4b0.apk",
+          "size": 93727523,
+          "sha256": "e39aaa22e009e9a1295c362bc63a5ce129c5927b547b46c027ca4d5fd9eca4b5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2141-d5ae4b0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-d5ae4b0-pubg.apk",
+          "size": 93727523,
+          "sha256": "583ebe617cac846b342209db5eaaa6af41ae95d4b340fe358172714604950bec",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2141-d5ae4b0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-d5ae4b0-antutu.apk",
+          "size": 93727523,
+          "sha256": "2c90456d6e269a5060e26849010608981ad24c5768448473f3c74c49f9bbf914",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2141-d5ae4b0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-d5ae4b0-ludashi.apk",
+          "size": 93727523,
+          "sha256": "23752dd48c477b95226058aaf6c1cb6e168a200c124d7e168823b140d7e14307",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2138",
       "title": "perf: reclaim launcher memory earlier under pressure",
@@ -403,55 +452,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-4043a5d-ludashi.apk",
           "size": 93686563,
           "sha256": "f7fd35d7b544cae9a2122c8ba6f4e1ba162fffd44c633449273e5ba58197d478",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2141",
-      "title": "fix(preload): answer NETLINKROUTE queries inside a session",
-      "summary": "Supersedes #2109 because its head is in a read-only fork. Original commit authorship is preserved; this branch adds the peer-descriptor race fix from CodeRabbit. Rebased cleanly onto current main. Validation: 49 focused Linux preload tests passed under WSL.",
-      "commit": "38718f3f49637051efc666f176a2cafde115210f",
-      "pr": 2141,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793917798000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2141",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2141-38718f3.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-38718f3.apk",
-          "size": 93719082,
-          "sha256": "40bdad0bb40be33b2ff744aba8a083aff6638af4b4b330b3c415fdf9a703ad6d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2141-38718f3-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-38718f3-pubg.apk",
-          "size": 93719082,
-          "sha256": "1ca98558ab13f9a25cd19de2d00dac6b21454ccbdd59736583610710e00f887c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2141-38718f3-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-38718f3-antutu.apk",
-          "size": 93719082,
-          "sha256": "f5ca43728f35b25521fa80c3ce024e95f76f7968210ce06cf029750bb6198163",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2141-38718f3-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2141/DroidDeck-PR.2141-38718f3-ludashi.apk",
-          "size": 93719082,
-          "sha256": "641ae163449f62a6fcbab0e084540347ba463c3e3c1812c1ab1f638642accbc0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
