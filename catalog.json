@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793919577464,
+  "generatedAt": 1793919649831,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2142",
+      "title": "fix(components): a native-only override falls back to builtin when the prefix has no native DLL",
+      "summary": "Fixes #2041.",
+      "commit": "78e9a9d030900388f990d0761a5428a5676dde20",
+      "pr": 2142,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793919587000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2142",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2142-78e9a9d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2142/DroidDeck-PR.2142-78e9a9d.apk",
+          "size": 93686563,
+          "sha256": "4d52a49535a06cb067dafebb682eb4bf80f7b59f4d8059df685806dfd8326af9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2142-78e9a9d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2142/DroidDeck-PR.2142-78e9a9d-pubg.apk",
+          "size": 93686563,
+          "sha256": "5b378ae12d53f576c883c8b6b6bae77f211888403c821404a556509119e85aa7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2142-78e9a9d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2142/DroidDeck-PR.2142-78e9a9d-antutu.apk",
+          "size": 93686563,
+          "sha256": "0ee9a665c5d6a9460f7ff1238d1b40a04b48acbff34c09704bdafbd8815a3eba",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2142-78e9a9d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2142/DroidDeck-PR.2142-78e9a9d-ludashi.apk",
+          "size": 93686563,
+          "sha256": "ac4c9fd24c0e1b60564165ab51fa3b8141a7fed5e6af45a9871f42689974c2dc",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2139",
       "title": "fix(input): release held mouse buttons and keys when the session loses focus",
