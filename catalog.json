@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793917991223,
+  "generatedAt": 1793918680496,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-da851da",
-    "title": "fix(input): taps land where touched while a game holds the pointer",
-    "summary": "Since #2053, while a game holds the pointer, every touch went through the touchpad, even with the touch mode set to Direct. Games that hide the system cursor and draw their own hold the pointer the same way first-person games do, so a tap clicked wherever the cursor already was instead of where the finger touched. In Stardew Valley, tapping New opened Load, and after pressing Back the cursor reste",
-    "commit": "da851dae22475c0e3c4acc63f29f86c9823a12bd",
+    "tag": "main-d64205b",
+    "title": "fix: apply the VRAM budget through Vulkan without rejecting allocations",
+    "summary": "Extend the VRAM setting to Vulkan memory-budget reports for DXVK and D3D12 while preserving real heap capacity and allocation results, removing the hard rejection that caused game crashes in FIT and Discord tests.",
+    "commit": "d64205ba5ba83e3a15865283f2a8f5ed62a89686",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793915172000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-da851da",
+    "publishedAt": 1793918609000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d64205b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-da851da.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da851da/DroidDeck-main-da851da.apk",
-        "size": 93678122,
-        "sha256": "7c51e98b97008337fe85b19f1a60ba7a1f203bee50b6a6bef4eba9822de4e920",
+        "name": "DroidDeck-main-d64205b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d64205b/DroidDeck-main-d64205b.apk",
+        "size": 93686563,
+        "sha256": "f0fe17cef72596f2ab117f5fafbd76a71ec41caedbcde1c99408d36d0743fae6",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-da851da-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da851da/DroidDeck-main-da851da-pubg.apk",
-        "size": 93678122,
-        "sha256": "613a02ac76370643ac171095f5e91c614f5677c2e8a5db9919ad0c3c3f5c2c9b",
+        "name": "DroidDeck-main-d64205b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d64205b/DroidDeck-main-d64205b-pubg.apk",
+        "size": 93686563,
+        "sha256": "cfcc64581846af46a4b08a0d2b7c022c3c2dfc1135f9151139ec8b2eeb73cf71",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-da851da-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da851da/DroidDeck-main-da851da-antutu.apk",
-        "size": 93678122,
-        "sha256": "afabec5da09b56d669cbd0b61497c167b1989102d8d2d4fb62bc9304500cd03a",
+        "name": "DroidDeck-main-d64205b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d64205b/DroidDeck-main-d64205b-antutu.apk",
+        "size": 93686563,
+        "sha256": "ecfd1316720c9a66ec67aeb57ea1ce1d778bf9d9c82367db97ade183d42f39ad",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-da851da-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da851da/DroidDeck-main-da851da-ludashi.apk",
-        "size": 93678122,
-        "sha256": "e124f36dd4c9fab913f1986e8799d1d3c1c74ac9b9a641072ea94fd0959dffa3",
+        "name": "DroidDeck-main-d64205b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d64205b/DroidDeck-main-d64205b-ludashi.apk",
+        "size": 93686563,
+        "sha256": "0bb274866330fd4fec822775476c31e6c328a4658d304cd05844db75d1ba7a9f",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d64205ba5ba83e3a15865283f2a8f5ed62a89686",
+      "title": "fix: apply the VRAM budget through Vulkan without rejecting allocations",
+      "summary": "Extend the VRAM setting to Vulkan memory-budget reports for DXVK and D3D12 while preserving real heap capacity and allocation results, removing the hard rejection that caused game crashes in FIT and Discord tests.",
+      "publishedAt": 1793918609000
+    },
     {
       "commit": "da851dae22475c0e3c4acc63f29f86c9823a12bd",
       "title": "fix(input): taps land where touched while a game holds the pointer",
@@ -155,12 +161,6 @@
       "title": "fix: use Blizzard's China hosts for Battle.net installs and update checks",
       "summary": "\u2022 The driver builds http://cn.patch.battle.net:1119/<product>. That host only 301-redirects to https://cn.version.battlenet.com.cn/<path> today; Blizzard's China client asks cn.patch.battlenet.com.cn:1119 directly.\n\u2022 BattleNetInstall.check() asks https://cn.version.battle.net/v2/products/<product>/versions, which does not answer for China. The China service is cn.version.battlenet.com.cn \u2014 the Age",
       "publishedAt": 1793891913000
-    },
-    {
-      "commit": "4c23092c55a6e446f7a5dc34f2544bbd28858c4f",
-      "title": "fix(components): repaired components reach prefixes that already have them",
-      "summary": "Droid-Deck/DroidDeck-Components#11 added MFC to the Visual C++ 2015-2022 components with a revision bump, but a device that already had them never picked it up:",
-      "publishedAt": 1793887116000
     }
   ],
   "tests": [
