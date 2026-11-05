@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793913231192,
+  "generatedAt": 1793913667090,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2139",
+      "title": "fix(input): release held mouse buttons and keys when the session loses focus",
+      "summary": "A mouse button or key held in the guest stayed down when another window took focus before the release, for example the notification shade, a heads-up notification or a system dialog. It also stayed down when pointer capture ended mid-press. The release went to the other window, so the game never saw it. A game that hides the cursor while a button is held kept that state. In World of Warcraft, mous",
+      "commit": "53e9588035dcbaaa999e16cef418696de985400c",
+      "pr": 2139,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793913578000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2139",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2139-53e9588.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-53e9588.apk",
+          "size": 93678122,
+          "sha256": "5b1b335bcb50ea3e3123ff31e9a524dc979c139ebd8e6077e5c9a7da0abf02de",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2139-53e9588-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-53e9588-pubg.apk",
+          "size": 93678122,
+          "sha256": "44bd045d0cd68c570fd77e064487afe022e48e768b9053ccbec6d75734bd1e98",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2139-53e9588-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-53e9588-antutu.apk",
+          "size": 93678122,
+          "sha256": "cb4fd7772110198bceca034b0ead752af2ec36e8cf020e32cfb61718ae95566a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2139-53e9588-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-53e9588-ludashi.apk",
+          "size": 93678122,
+          "sha256": "a62303e42983f24d0eb633b2447df6a74d60a54e4c8c4a14b35c7a02ba0598e0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2133",
       "title": "fix(input): taps land where touched while a game holds the pointer",
