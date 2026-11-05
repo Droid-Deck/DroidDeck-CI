@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793886274850,
+  "generatedAt": 1793886448741,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-1780",
+      "title": "Controller: configurable radial stick dead zone",
+      "summary": "Adds a configurable circular dead zone for physical controller sticks (0\u201325%, default 12%), preserving fine diagonal movement without the previous cross-shaped snapping.",
+      "commit": "48705975336c03a4c1e921f3307f2bc9415b7322",
+      "pr": 1780,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793886378000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1780",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1780-4870597.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1780/DroidDeck-PR.1780-4870597.apk",
+          "size": 93579713,
+          "sha256": "9a24bf166aeae5f79a8362e38d2ed16d076ff93a7d214f9fb4803e895d43b0ca",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1780-4870597-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1780/DroidDeck-PR.1780-4870597-pubg.apk",
+          "size": 93579713,
+          "sha256": "40057b61c6998ddc7df0517ad8739cf8bf478152515a570b77fe9996b3c95360",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1780-4870597-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1780/DroidDeck-PR.1780-4870597-antutu.apk",
+          "size": 93579713,
+          "sha256": "e82f71f111427546fe6c852f0acaed1214eb7cca677f1ed91694bdc7bd2b0e5a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1780-4870597-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1780/DroidDeck-PR.1780-4870597-ludashi.apk",
+          "size": 93579713,
+          "sha256": "c67013ed34271b250e89801e9d70d27dac20b8926823243c5f3a5a051829e4b0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2065",
       "title": "Desktop: programs a Windows installer adds get a menu entry and desktop icon",
@@ -550,55 +599,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1927/DroidDeck-PR.1927-17b578b-ludashi.apk",
           "size": 76952738,
           "sha256": "893dd73b51939716c76dcec4db5cdb7694fa49b546d36825e1a8d7ad2b759856",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-1780",
-      "title": "Controller: configurable radial stick dead zone (0.6.7)",
-      "summary": "Adds the dead-zone-only part of #581 to official 0.6.7 source, updated through main at 9cc56631 (including release 001ec02). The official version remains 0.6.7 / versionCode 16.",
-      "commit": "e571a57448ccf0106c8ce5edeb7399fe91af297b",
-      "pr": 1780,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793505167000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1780",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1780-e571a57.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1780/DroidDeck-PR.1780-e571a57.apk",
-          "size": 76895394,
-          "sha256": "1f93f624d47946caaa11de9223c6fd22f2e41db8a9d948217d38e1874ba64598",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1780-e571a57-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1780/DroidDeck-PR.1780-e571a57-pubg.apk",
-          "size": 76895394,
-          "sha256": "d5bdad34d6a9301e972de6b9f287910680e3e2e96ca543b4fe9cde7b57347caf",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1780-e571a57-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1780/DroidDeck-PR.1780-e571a57-antutu.apk",
-          "size": 76895394,
-          "sha256": "4c3ccf038316fb617f41a4ca13493b166993b77b0840d570c478456ef4d29ccf",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1780-e571a57-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1780/DroidDeck-PR.1780-e571a57-ludashi.apk",
-          "size": 76895394,
-          "sha256": "eb8a86aaf40a6bbf99416549b4a7af66f449970700716e3c5cbb43e30855b747",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
