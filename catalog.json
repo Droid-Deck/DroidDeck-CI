@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793920176772,
+  "generatedAt": 1793921188883,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2147",
+      "title": "perf(agent): run diagnostic cleanup off startup thread",
+      "summary": "Follow-up to #2131. Run abandoned diagnostic-stage cleanup on a background thread so lock acquisition and deleting stale stages cannot block Application.onCreate across app processes.",
+      "commit": "c6c733122173d426cca4761ff7c4e87310717383",
+      "pr": 2147,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793920838000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2147",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2147-c6c7331.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-c6c7331.apk",
+          "size": 93690659,
+          "sha256": "187481905aa932e01abaad11c6eeaf13731791190017cb4adac5cdfe73462548",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2147-c6c7331-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-c6c7331-pubg.apk",
+          "size": 93690659,
+          "sha256": "f5fba1c07167f38392b8a94d3d81ceadf5d2e308bbeaa03fe4d1d8fb31ce7202",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2147-c6c7331-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-c6c7331-antutu.apk",
+          "size": 93690659,
+          "sha256": "c845affb6fd957329bb3becfe023c50e87b629a416a2f517a3a54ddeee8e3841",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2147-c6c7331-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-c6c7331-ludashi.apk",
+          "size": 93690659,
+          "sha256": "46e3bd244a15885d748b228c3e695b8135b0eb58d09d15e0d996884583d40bc1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2141",
       "title": "fix(preload): answer NETLINKROUTE queries inside a session",
@@ -403,55 +452,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2139/DroidDeck-PR.2139-4daf01c-ludashi.apk",
           "size": 93686563,
           "sha256": "efdd2a9df8464f28a9a4674875217fa15dc55c8d255cc6d952cdbca96d421699",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2147",
-      "title": "perf(agent): run diagnostic cleanup off startup thread",
-      "summary": "Follow-up to #2131. Run abandoned diagnostic-stage cleanup on a background thread so lock acquisition and deleting stale stages cannot block Application.onCreate across app processes.",
-      "commit": "4043a5d082e6f27fa45c91c009a8a525e3c27375",
-      "pr": 2147,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793919199000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2147",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2147-4043a5d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-4043a5d.apk",
-          "size": 93686563,
-          "sha256": "689015990fabd5490c4e5827705e761f15febc6ffeceb73553fb95068aee01b8",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2147-4043a5d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-4043a5d-pubg.apk",
-          "size": 93686563,
-          "sha256": "5279362d877ab2debbe55ea9fdf516313f747ed0698ca28ec0e9e711b21b6b86",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2147-4043a5d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-4043a5d-antutu.apk",
-          "size": 93686563,
-          "sha256": "01e5f5451de7313f6727463481d55f6a2e44ee11cc42792bd449524e384b9e40",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2147-4043a5d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-4043a5d-ludashi.apk",
-          "size": 93686563,
-          "sha256": "f7fd35d7b544cae9a2122c8ba6f4e1ba162fffd44c633449273e5ba58197d478",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
