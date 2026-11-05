@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793915133436,
+  "generatedAt": 1793915259753,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-7a78d2b",
-    "title": "fix(agent): secure and refresh unrooted log exports",
-    "summary": "\u2022 Keep raw diagnostic staging in private cache and give each exported archive a unique request directory.\n\u2022 Remove that request directory after the CLI pull, including failed transfers.\n\u2022 Replace files from the previous extracted snapshot while preserving unrelated destination files.\n\u2022 Document that the old rooted-device fallback is not scrubbed.",
-    "commit": "7a78d2b66b4be8ea1e71e48d5188b594106331f6",
+    "tag": "main-da851da",
+    "title": "fix(input): taps land where touched while a game holds the pointer",
+    "summary": "Since #2053, while a game holds the pointer, every touch went through the touchpad, even with the touch mode set to Direct. Games that hide the system cursor and draw their own hold the pointer the same way first-person games do, so a tap clicked wherever the cursor already was instead of where the finger touched. In Stardew Valley, tapping New opened Load, and after pressing Back the cursor reste",
+    "commit": "da851dae22475c0e3c4acc63f29f86c9823a12bd",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793913084000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7a78d2b",
+    "publishedAt": 1793915172000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-da851da",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-7a78d2b.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7a78d2b/DroidDeck-main-7a78d2b.apk",
+        "name": "DroidDeck-main-da851da.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da851da/DroidDeck-main-da851da.apk",
         "size": 93678122,
-        "sha256": "a01b3609325e8e0d475e6339d7361cc284196790e5e539972554c48c9cbd1781",
+        "sha256": "7c51e98b97008337fe85b19f1a60ba7a1f203bee50b6a6bef4eba9822de4e920",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-7a78d2b-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7a78d2b/DroidDeck-main-7a78d2b-pubg.apk",
+        "name": "DroidDeck-main-da851da-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da851da/DroidDeck-main-da851da-pubg.apk",
         "size": 93678122,
-        "sha256": "5a1fc275371f6b6a3c1cc857bdc45d1ff429b0546c02c97b7b9b0856964139a6",
+        "sha256": "613a02ac76370643ac171095f5e91c614f5677c2e8a5db9919ad0c3c3f5c2c9b",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-7a78d2b-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7a78d2b/DroidDeck-main-7a78d2b-antutu.apk",
+        "name": "DroidDeck-main-da851da-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da851da/DroidDeck-main-da851da-antutu.apk",
         "size": 93678122,
-        "sha256": "243fac5fcadf76fb1ecc408d770a25655f7cefc67aa063bdcc1b848f7104fbff",
+        "sha256": "afabec5da09b56d669cbd0b61497c167b1989102d8d2d4fb62bc9304500cd03a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-7a78d2b-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7a78d2b/DroidDeck-main-7a78d2b-ludashi.apk",
+        "name": "DroidDeck-main-da851da-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da851da/DroidDeck-main-da851da-ludashi.apk",
         "size": 93678122,
-        "sha256": "67e38ac2b2c893f77f86ce19d4025bf0ff593010888041eb66ede0866f5035c2",
+        "sha256": "e124f36dd4c9fab913f1986e8799d1d3c1c74ac9b9a641072ea94fd0959dffa3",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "da851dae22475c0e3c4acc63f29f86c9823a12bd",
+      "title": "fix(input): taps land where touched while a game holds the pointer",
+      "summary": "Since #2053, while a game holds the pointer, every touch went through the touchpad, even with the touch mode set to Direct. Games that hide the system cursor and draw their own hold the pointer the same way first-person games do, so a tap clicked wherever the cursor already was instead of where the finger touched. In Stardew Valley, tapping New opened Load, and after pressing Back the cursor reste",
+      "publishedAt": 1793915172000
+    },
     {
       "commit": "7a78d2b66b4be8ea1e71e48d5188b594106331f6",
       "title": "fix(agent): secure and refresh unrooted log exports",
@@ -155,12 +161,6 @@
       "title": "fix(components): repaired components reach prefixes that already have them",
       "summary": "Droid-Deck/DroidDeck-Components#11 added MFC to the Visual C++ 2015-2022 components with a revision bump, but a device that already had them never picked it up:",
       "publishedAt": 1793887116000
-    },
-    {
-      "commit": "a309428a2aa8f963aa26bc4e2ef8638d296cfced",
-      "title": "feat(battlenet): import World of Warcraft addons from a zip",
-      "summary": "World of Warcraft, Classic and Forever get an Addons tab next to Launch, About and Install in the Library. It imports an addon zip and lists the installed addons. Each has a small trash button that asks for confirmation before deleting that addon's folder, and the button is hidden while a session runs. Other games don't get the tab.",
-      "publishedAt": 1793863119000
     }
   ],
   "tests": [
