@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793906502999,
+  "generatedAt": 1793907585076,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2133",
+      "title": "fix(input): taps land where touched while a game holds the pointer",
+      "summary": "Games that hide the system cursor and draw their own, such as Stardew Valley, hold the pointer the same way first-person games do. Since #2053, every touch on the default touch mode then went through the touchpad, so a tap clicked wherever the cursor already was. In Stardew, tapping New opened Load, and after pressing Back the cursor rested where Exit is on the title screen, so the next tap anywhe",
+      "commit": "eac55ae063e02593b9462dbac26e3ceac0d3f746",
+      "pr": 2133,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793907509000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2133",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2133-eac55ae.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-eac55ae.apk",
+          "size": 93678122,
+          "sha256": "79c4bc46bcea5969ced220d3936d623953b67404c04e4400d7a4d14aadda9908",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2133-eac55ae-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-eac55ae-pubg.apk",
+          "size": 93678122,
+          "sha256": "44ba5ce4acc7ab390c5ace598f69db0f9be595f6a673075227525308abb4941f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2133-eac55ae-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-eac55ae-antutu.apk",
+          "size": 93678122,
+          "sha256": "7fb45a3bf280b93241ced7eeeb67b43a9a36aa6732e01d5110baf188c6c81a36",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2133-eac55ae-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-eac55ae-ludashi.apk",
+          "size": 93678122,
+          "sha256": "2d3b933956cc2baf3f13277c9d0bb39b70099b9c514a30917915bab2a90ced5f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2029",
       "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
