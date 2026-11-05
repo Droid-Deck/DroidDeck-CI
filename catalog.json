@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793910256388,
+  "generatedAt": 1793911165768,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,97 +165,48 @@
   ],
   "tests": [
     {
-      "tag": "pr-2134",
-      "title": "fix: detect D3D12 capabilities and remove redundant game workarounds",
-      "summary": "Let VKD3D detect D3D12 capabilities by default and remove redundant Caravan, RoboCop, ReSkate, and Cyberpunk feature-level workarounds while preserving explicit overrides.",
-      "commit": "64f114c96f2e556f0ded7dcde37e5acbe901beb1",
-      "pr": 2134,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793910197000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2134",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2134-64f114c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2134/DroidDeck-PR.2134-64f114c.apk",
-          "size": 93678122,
-          "sha256": "28ea3c94db467c8a6aeae07d19ddf5b384ab325a04e8a13d52f2f35081a37bf8",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2134-64f114c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2134/DroidDeck-PR.2134-64f114c-pubg.apk",
-          "size": 93678122,
-          "sha256": "1157609f8a0d32369db6cfb0f25eaa7e6bfce956c8dd3adea0b04de6fe7b4026",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2134-64f114c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2134/DroidDeck-PR.2134-64f114c-antutu.apk",
-          "size": 93678122,
-          "sha256": "0fcbbf03f57eb31117fdaf55ca5cdd343abb61c9e87d4decead1751e41d6ef3d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2134-64f114c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2134/DroidDeck-PR.2134-64f114c-ludashi.apk",
-          "size": 93678122,
-          "sha256": "cea85d37edc2e3216b4fd84e621c8cdfcad89e8bf12887a602a21c0a50022821",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-2133",
       "title": "fix(input): taps land where touched while a game holds the pointer",
       "summary": "Games that hide the system cursor and draw their own, such as Stardew Valley, hold the pointer the same way first-person games do. Since #2053, every touch on the default touch mode then went through the touchpad, so a tap clicked wherever the cursor already was. In Stardew, tapping New opened Load, and after pressing Back the cursor rested where Exit is on the title screen, so the next tap anywhe",
-      "commit": "eac55ae063e02593b9462dbac26e3ceac0d3f746",
+      "commit": "da71b0210019d7c295f3453aa0439bbdd37b7d6a",
       "pr": 2133,
       "version": null,
       "versionCode": 17,
-      "publishedAt": 1793907509000,
+      "publishedAt": 1793911103000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2133",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2133-eac55ae.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-eac55ae.apk",
+          "name": "DroidDeck-PR.2133-da71b02.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-da71b02.apk",
           "size": 93678122,
-          "sha256": "79c4bc46bcea5969ced220d3936d623953b67404c04e4400d7a4d14aadda9908",
+          "sha256": "fece7b77c0287da07c275732afcdb3c26389f9d880fb5d476905a421e217df2e",
           "packageName": "com.droiddeck.launcher",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.tencent.ig": {
-          "name": "DroidDeck-PR.2133-eac55ae-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-eac55ae-pubg.apk",
+          "name": "DroidDeck-PR.2133-da71b02-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-da71b02-pubg.apk",
           "size": 93678122,
-          "sha256": "44ba5ce4acc7ab390c5ace598f69db0f9be595f6a673075227525308abb4941f",
+          "sha256": "bcccc8449cca7b2e667b0f8dbc0007f4764e9aefc5a19b5a6a594a144550e2a5",
           "packageName": "com.tencent.ig",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2133-eac55ae-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-eac55ae-antutu.apk",
+          "name": "DroidDeck-PR.2133-da71b02-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-da71b02-antutu.apk",
           "size": 93678122,
-          "sha256": "7fb45a3bf280b93241ced7eeeb67b43a9a36aa6732e01d5110baf188c6c81a36",
+          "sha256": "e2b31ff61ddddd420e569e9474ed4fbe4760ba6e7435bd90c2caf771a24d63fa",
           "packageName": "com.antutu.benchmark.full",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2133-eac55ae-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-eac55ae-ludashi.apk",
+          "name": "DroidDeck-PR.2133-da71b02-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2133/DroidDeck-PR.2133-da71b02-ludashi.apk",
           "size": 93678122,
-          "sha256": "2d3b933956cc2baf3f13277c9d0bb39b70099b9c514a30917915bab2a90ced5f",
+          "sha256": "1b449ff128f06d4b4948ed76a7be847fcdab2cbf145d4913be7575d6de20c733",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
