@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793914258285,
+  "generatedAt": 1793914600077,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2138",
+      "title": "perf: reclaim launcher memory earlier under pressure",
+      "summary": "Reclaim launcher memory earlier under system pressure with swap headroom and delayed readback, and add an opt-in userspace compression probe documenting the FIT\u2019s paging constraints.",
+      "commit": "728deacea3a633ba3955a2d662c8416f4a73a4fc",
+      "pr": 2138,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793914516000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2138",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2138-728deac.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-728deac.apk",
+          "size": 93678122,
+          "sha256": "b65ff2c639d37f94144ad9967924c4a25d19525920e374f386427d410c752f39",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2138-728deac-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-728deac-pubg.apk",
+          "size": 93678122,
+          "sha256": "0b90323422b3f599fd6a70611a3b11714d497ac1774edea93ea950eed27c7456",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2138-728deac-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-728deac-antutu.apk",
+          "size": 93678122,
+          "sha256": "d24d45726018bfdf3676fbfe645da110911736290ad0f87d6f31ae461fc863f3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2138-728deac-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2138/DroidDeck-PR.2138-728deac-ludashi.apk",
+          "size": 93678122,
+          "sha256": "4cd94e950a205f0721ffe6fad007dd2e205cababec5fe8a68b43177f81a77ed4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2139",
       "title": "fix(input): release held mouse buttons and keys when the session loses focus",
