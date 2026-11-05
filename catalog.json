@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793857743988,
+  "generatedAt": 1793858713880,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a9d2d09",
-    "title": "fix: restore single-screen session menu controls",
-    "summary": "The shared bottom-screen controls added a redundant DroidDeck logo to the single-screen session drawer and removed its controller shortcut hints.",
-    "commit": "a9d2d09e646d15b320e8aebfebe65ec52345f164",
+    "tag": "main-b9dbd00",
+    "title": "fix(storage): Windows installs on a natively mounted card no longer ask for an administrator",
+    "summary": "Updating a Battle.net game on a microSD card can still fail with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841) on 0.6.9, which already has #1791. The report: Retroid Pocket 6, Android 13, World of Warcraft: Forever, with SetNamedSecurityInfo(5) in the agent log.",
+    "commit": "b9dbd006beca9f129e1ad655573d66638d832d4e",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793849256000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a9d2d09",
+    "publishedAt": 1793858646000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b9dbd00",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a9d2d09.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a9d2d09/DroidDeck-main-a9d2d09.apk",
+        "name": "DroidDeck-main-b9dbd00.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b9dbd00/DroidDeck-main-b9dbd00.apk",
         "size": 93587905,
-        "sha256": "7ecc0000c9302424f60786afffa28081adb6e8b39d9338ffdc05b9f6c59dc0e9",
+        "sha256": "dd3bd3013cd21ddb5de769dd2b4369170edd263f1cd5eec28906b93a765947be",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a9d2d09-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a9d2d09/DroidDeck-main-a9d2d09-pubg.apk",
+        "name": "DroidDeck-main-b9dbd00-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b9dbd00/DroidDeck-main-b9dbd00-pubg.apk",
         "size": 93587905,
-        "sha256": "b3f272c7b886369a054d8b642fdca302ff62fb2f06f00686f9f6b49c178d3062",
+        "sha256": "51538ee241d67beb6f3f5d9ce8b796d6ff911804a6dd3812bddd0c981061adbb",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a9d2d09-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a9d2d09/DroidDeck-main-a9d2d09-antutu.apk",
+        "name": "DroidDeck-main-b9dbd00-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b9dbd00/DroidDeck-main-b9dbd00-antutu.apk",
         "size": 93587905,
-        "sha256": "e74ada5d878ed1252547a23b8778f751b05db50fa88c7cd88814923c20b23b6f",
+        "sha256": "f8d86239aec2031d5b332177b98c48739b97e401c534b159679b0bd13101711c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a9d2d09-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a9d2d09/DroidDeck-main-a9d2d09-ludashi.apk",
+        "name": "DroidDeck-main-b9dbd00-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b9dbd00/DroidDeck-main-b9dbd00-ludashi.apk",
         "size": 93587905,
-        "sha256": "665c6f8fff0e6132395a8b699e7e5fbda858b57b6a4c1455930bf97217d09d06",
+        "sha256": "5cb20d5d646fd6270e7c7ced346da2d47f4e2039c64328648f348f3f29ff1433",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b9dbd006beca9f129e1ad655573d66638d832d4e",
+      "title": "fix(storage): Windows installs on a natively mounted card no longer ask for an administrator",
+      "summary": "Updating a Battle.net game on a microSD card can still fail with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841) on 0.6.9, which already has #1791. The report: Retroid Pocket 6, Android 13, World of Warcraft: Forever, with SetNamedSecurityInfo(5) in the agent log.",
+      "publishedAt": 1793858646000
+    },
     {
       "commit": "a9d2d09e646d15b320e8aebfebe65ec52345f164",
       "title": "fix: restore single-screen session menu controls",
@@ -155,12 +161,6 @@
       "title": "feat: desktop and scrolling wall live wallpapers",
       "summary": "Adds two live wallpapers that show up in Android's wallpaper picker.",
       "publishedAt": 1793811957000
-    },
-    {
-      "commit": "d849e6ae0a6788ea59f165ec537597bbb90063b1",
-      "title": "fix: Home screen setting keeps DroidDeck in RedMagic Game Space",
-      "summary": "On RedMagic, turning on \"Use as Home screen\" or \"DroidDeck as Home\" could leave DroidDeck out of Game Space, and it looked permanent even after switching back to another launcher.",
-      "publishedAt": 1793802172000
     }
   ],
   "tests": [
