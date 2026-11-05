@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793911981140,
+  "generatedAt": 1793913139583,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e8ffe11",
-    "title": "fix: detect D3D12 capabilities and remove redundant game workarounds",
-    "summary": "Let VKD3D detect D3D12 capabilities by default and remove redundant Caravan, RoboCop, ReSkate, and Cyberpunk feature-level workarounds while preserving explicit overrides.",
-    "commit": "e8ffe1164f14e501d64f70f98d498bdaf725d76f",
+    "tag": "main-7a78d2b",
+    "title": "fix(agent): secure and refresh unrooted log exports",
+    "summary": "\u2022 Keep raw diagnostic staging in private cache and give each exported archive a unique request directory.\n\u2022 Remove that request directory after the CLI pull, including failed transfers.\n\u2022 Replace files from the previous extracted snapshot while preserving unrelated destination files.\n\u2022 Document that the old rooted-device fallback is not scrubbed.",
+    "commit": "7a78d2b66b4be8ea1e71e48d5188b594106331f6",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793911918000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e8ffe11",
+    "publishedAt": 1793913084000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7a78d2b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e8ffe11.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8ffe11/DroidDeck-main-e8ffe11.apk",
+        "name": "DroidDeck-main-7a78d2b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7a78d2b/DroidDeck-main-7a78d2b.apk",
         "size": 93678122,
-        "sha256": "96a2face6fdd3bae021ba89d381d67ae6bc838ecfd82e7a04926f475194eed34",
+        "sha256": "a01b3609325e8e0d475e6339d7361cc284196790e5e539972554c48c9cbd1781",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e8ffe11-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8ffe11/DroidDeck-main-e8ffe11-pubg.apk",
+        "name": "DroidDeck-main-7a78d2b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7a78d2b/DroidDeck-main-7a78d2b-pubg.apk",
         "size": 93678122,
-        "sha256": "2c72b639f4cd01ff5f67239a339f3ac9ed26fd37f84490b58bb5e0317a876a6d",
+        "sha256": "5a1fc275371f6b6a3c1cc857bdc45d1ff429b0546c02c97b7b9b0856964139a6",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e8ffe11-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8ffe11/DroidDeck-main-e8ffe11-antutu.apk",
+        "name": "DroidDeck-main-7a78d2b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7a78d2b/DroidDeck-main-7a78d2b-antutu.apk",
         "size": 93678122,
-        "sha256": "b3f65c4e9cf9f0fd3ea7fe536c43fbefb94fe1fe8a970c8e6735b7ab060ca188",
+        "sha256": "243fac5fcadf76fb1ecc408d770a25655f7cefc67aa063bdcc1b848f7104fbff",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e8ffe11-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e8ffe11/DroidDeck-main-e8ffe11-ludashi.apk",
+        "name": "DroidDeck-main-7a78d2b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7a78d2b/DroidDeck-main-7a78d2b-ludashi.apk",
         "size": 93678122,
-        "sha256": "fe8c26c2041209902d734d175f9b54d65318c231cb969f17624da1659ea013d4",
+        "sha256": "67e38ac2b2c893f77f86ce19d4025bf0ff593010888041eb66ede0866f5035c2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "7a78d2b66b4be8ea1e71e48d5188b594106331f6",
+      "title": "fix(agent): secure and refresh unrooted log exports",
+      "summary": "\u2022 Keep raw diagnostic staging in private cache and give each exported archive a unique request directory.\n\u2022 Remove that request directory after the CLI pull, including failed transfers.\n\u2022 Replace files from the previous extracted snapshot while preserving unrelated destination files.\n\u2022 Document that the old rooted-device fallback is not scrubbed.",
+      "publishedAt": 1793913084000
+    },
     {
       "commit": "e8ffe1164f14e501d64f70f98d498bdaf725d76f",
       "title": "fix: detect D3D12 capabilities and remove redundant game workarounds",
@@ -155,12 +161,6 @@
       "title": "feat(battlenet): import World of Warcraft addons from a zip",
       "summary": "World of Warcraft, Classic and Forever get an Addons tab next to Launch, About and Install in the Library. It imports an addon zip and lists the installed addons. Each has a small trash button that asks for confirmation before deleting that addon's folder, and the button is hidden while a session runs. Other games don't get the tab.",
       "publishedAt": 1793863119000
-    },
-    {
-      "commit": "b9dbd006beca9f129e1ad655573d66638d832d4e",
-      "title": "fix(storage): Windows installs on a natively mounted card no longer ask for an administrator",
-      "summary": "Updating a Battle.net game on a microSD card can still fail with \"Please try again after logging on as an administrator\" (BLZBNTAGT00000841) on 0.6.9, which already has #1791. The report: Retroid Pocket 6, Android 13, World of Warcraft: Forever, with SetNamedSecurityInfo(5) in the agent log.",
-      "publishedAt": 1793858646000
     }
   ],
   "tests": [
