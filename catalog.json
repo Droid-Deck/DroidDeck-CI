@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793891785582,
+  "generatedAt": 1793892005858,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-4c23092",
-    "title": "fix(components): repaired components reach prefixes that already have them",
-    "summary": "Droid-Deck/DroidDeck-Components#11 added MFC to the Visual C++ 2015-2022 components with a revision bump, but a device that already had them never picked it up:",
-    "commit": "4c23092c55a6e446f7a5dc34f2544bbd28858c4f",
+    "tag": "main-a0a7a66",
+    "title": "fix: use Blizzard's China hosts for Battle.net installs and update checks",
+    "summary": "\u2022 The driver builds http://cn.patch.battle.net:1119/<product>. That host only 301-redirects to https://cn.version.battlenet.com.cn/<path> today; Blizzard's China client asks cn.patch.battlenet.com.cn:1119 directly.\n\u2022 BattleNetInstall.check() asks https://cn.version.battle.net/v2/products/<product>/versions, which does not answer for China. The China service is cn.version.battlenet.com.cn \u2014 the Agent in a China prefix logs Checking Network Connection status to https://cn.version.battlenet.com.cn/agent.",
+    "commit": "a0a7a664704a7e6454deec3f20b0dd74199e9a87",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793887116000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4c23092",
+    "publishedAt": 1793891913000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a0a7a66",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-4c23092.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c23092/DroidDeck-main-4c23092.apk",
+        "name": "DroidDeck-main-a0a7a66.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a0a7a66/DroidDeck-main-a0a7a66.apk",
         "size": 93632961,
-        "sha256": "28719c2b0d4519ae835f92f2c5026fb9d3cb50a2bd5c51e16d2df79751815102",
+        "sha256": "562a1fbe2a01e5e4694ad99118a28d2fc511d0f576644ae2a890506d2985bf1e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-4c23092-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c23092/DroidDeck-main-4c23092-pubg.apk",
+        "name": "DroidDeck-main-a0a7a66-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a0a7a66/DroidDeck-main-a0a7a66-pubg.apk",
         "size": 93632961,
-        "sha256": "4f02e9b575da23667df5a784e4e3b241ef9294064dda4f6e190459cc5b623704",
+        "sha256": "18ebf3af846df5c65ba93efdb5cb22ef59a023374341453b0c08b26e40e6b0c1",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-4c23092-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c23092/DroidDeck-main-4c23092-antutu.apk",
+        "name": "DroidDeck-main-a0a7a66-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a0a7a66/DroidDeck-main-a0a7a66-antutu.apk",
         "size": 93632961,
-        "sha256": "768d29f10a752083e4262dcaf646466ecd2104a8d6d934ccb8fe21aee36f1780",
+        "sha256": "96cec52a6fac7ac412995f4144955e2ee3715f5f756945b6fc5786b86fcae928",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-4c23092-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4c23092/DroidDeck-main-4c23092-ludashi.apk",
+        "name": "DroidDeck-main-a0a7a66-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a0a7a66/DroidDeck-main-a0a7a66-ludashi.apk",
         "size": 93632961,
-        "sha256": "404267a50e71b4cdac9bba0b80a63431e8c6dd48e08d0f2620aad033ce3d01cb",
+        "sha256": "19a6d3cfe62355d4b62d3318e6d5e98561a21ed85b601b6c084b3a4c8aa58a74",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a0a7a664704a7e6454deec3f20b0dd74199e9a87",
+      "title": "fix: use Blizzard's China hosts for Battle.net installs and update checks",
+      "summary": "\u2022 The driver builds http://cn.patch.battle.net:1119/<product>. That host only 301-redirects to https://cn.version.battlenet.com.cn/<path> today; Blizzard's China client asks cn.patch.battlenet.com.cn:1119 directly.\n\u2022 BattleNetInstall.check() asks https://cn.version.battle.net/v2/products/<product>/versions, which does not answer for China. The China service is cn.version.battlenet.com.cn \u2014 the Age",
+      "publishedAt": 1793891913000
+    },
     {
       "commit": "4c23092c55a6e446f7a5dc34f2544bbd28858c4f",
       "title": "fix(components): repaired components reach prefixes that already have them",
@@ -155,12 +161,6 @@
       "title": "fix(battlenet): use the right artwork for each game",
       "summary": "World of Warcraft: Forever showed retail World of Warcraft art and logo, and other Battle.net games showed trailer stills, seasonal promos or low quality images.",
       "publishedAt": 1793820460000
-    },
-    {
-      "commit": "5cf69732ef0c5cf45aa5b79bb9fddbdc27048be1",
-      "title": "Make a hardware mouse and keyboard work like a PC",
-      "summary": "Closes #1991\nCloses #2075\nCloses #1817",
-      "publishedAt": 1793818018000
     }
   ],
   "tests": [
@@ -256,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1367/DroidDeck-PR.1367-2b9fdde-ludashi.apk",
           "size": 93632961,
           "sha256": "a8dfa2ec9ecaea100cff230e603a80cccea011b9282a649eddd6f4238b7f729c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2125",
-      "title": "Fix cropped PiP output after surface resize",
-      "summary": "Resize the compositor output to fit the resized PiP surface while preserving the existing output aspect ratio. This prevents PiP from continuing to render the previous full-size output into the smaller window.",
-      "commit": "0d33b1e4df49f621472305573fd9e2570ab2dbf1",
-      "pr": 2125,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793890695000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2125",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2125-0d33b1e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2125/DroidDeck-PR.2125-0d33b1e.apk",
-          "size": 93632961,
-          "sha256": "d477789c52f2be779f5617b015ab3ca931db9f11503e504e079ac76ea8731743",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2125-0d33b1e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2125/DroidDeck-PR.2125-0d33b1e-pubg.apk",
-          "size": 93632961,
-          "sha256": "d6638ce6378c96be274a29bd81a8beccc1cd1ef29fd22f50a3ac13dff9d77fc2",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2125-0d33b1e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2125/DroidDeck-PR.2125-0d33b1e-antutu.apk",
-          "size": 93632961,
-          "sha256": "6a0ea476f8206320efc8a7bec664017d9e641ac6efeb5c6353d4a2fe5450735f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2125-0d33b1e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2125/DroidDeck-PR.2125-0d33b1e-ludashi.apk",
-          "size": 93632961,
-          "sha256": "8724c173269822d4f1caa925ae23825e8d6accac26da6891275d8fbc6ac16fa5",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
