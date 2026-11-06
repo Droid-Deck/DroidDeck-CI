@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794001636619,
+  "generatedAt": 1794002162865,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2191",
+      "title": "fix(hud): skip relayout when size is unchanged and cap graph redraws",
+      "summary": "Possible fix for the Steam UI flicker reported with the flat strip HUD (Honor SM8850, Android 17, 0.6.9): turning the HUD off stopped it, and the compositor logs show clean frame pacing, so the cause is on the Android side.",
+      "commit": "a3c6bdfe8f71f77c087a04a9dd6f2fa185e935bf",
+      "pr": 2191,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794002110000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2191",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2191-a3c6bdf.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-a3c6bdf.apk",
+          "size": 96264141,
+          "sha256": "fd29439f889fdf6bcbe84931ef9ff5d8fe406afbf9bf7026db15bbf11e555f71",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2191-a3c6bdf-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-a3c6bdf-pubg.apk",
+          "size": 96264141,
+          "sha256": "e6a93c479fa3766d27016273518dc909499230e8af2cc724877b6930704a1e79",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2191-a3c6bdf-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-a3c6bdf-antutu.apk",
+          "size": 96264141,
+          "sha256": "270a72d840f3ffb3e64174f2df7ea9733037dd84c56f4b3a57223bab734f276d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2191-a3c6bdf-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-a3c6bdf-ludashi.apk",
+          "size": 96264141,
+          "sha256": "2eaeed197141809282adedb28073dc71eaca4d82b2944fc5bf95bd962dd9c80b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2187",
       "title": "feat: compress idle game memory before low-RAM devices run out",
