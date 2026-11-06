@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794008567157,
+  "generatedAt": 1794009593248,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-250f80f",
-    "title": "fix: stop switching between display modes with the same refresh rate (S26 lag and heat since 0.6.7)",
-    "summary": "On some phones the session window switched display modes about 34 times a second for as long as the session ran. Each switch rebuilt the window surface and re-armed frame generation. That matches the Galaxy S26 Ultra reports of a laggy, hot Steam client and very low FPS in every game since 0.6.7.",
-    "commit": "250f80fbb5a23ddbc36793606b321326f2c555cd",
+    "tag": "main-f33d5b9",
+    "title": "fix(components): auto updates follow DroidDeck-Proton only",
+    "summary": "Auto updates from #2156 swapped DroidDeck-Components nightlies into every installed Proton that ships DXVK, VKD3D-Proton or FEX, including Valve's ARM Proton, GE-Proton and proton-cachyos. Only DroidDeck-Proton should track the nightlies; every other Proton should run the components it was built with. This also fixes two Auto problems reported in the test-builds channel.",
+    "commit": "f33d5b9e09ed27d68137aba4e711f8fca9eb93e9",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794004538000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-250f80f",
+    "publishedAt": 1794009539000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f33d5b9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-250f80f.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-250f80f/DroidDeck-main-250f80f.apk",
-        "size": 96264141,
-        "sha256": "df56b7fb82260a99ed909dad1bcffd282cd2dee12f43451ca8a606bc88b6245b",
+        "name": "DroidDeck-main-f33d5b9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33d5b9/DroidDeck-main-f33d5b9.apk",
+        "size": 96268237,
+        "sha256": "19290ce57b9579c80cb07e391e44f7eb32ab592a4909aa9f290ee8b638117b87",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-250f80f-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-250f80f/DroidDeck-main-250f80f-pubg.apk",
-        "size": 96264141,
-        "sha256": "ff57f0b61152dcffe657026b90ac8b0907347a104e3da01f67ba694dd8590e80",
+        "name": "DroidDeck-main-f33d5b9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33d5b9/DroidDeck-main-f33d5b9-pubg.apk",
+        "size": 96268237,
+        "sha256": "2e18b8c13c2eb56ed4a993b6a05a992dc0cfc63f9abb9b0e7d477f35a4c5f39c",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-250f80f-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-250f80f/DroidDeck-main-250f80f-antutu.apk",
-        "size": 96264141,
-        "sha256": "2276317849ebf13e1224616961023a9c81b4a47585a33b5c4ee9a71bb0a7b541",
+        "name": "DroidDeck-main-f33d5b9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33d5b9/DroidDeck-main-f33d5b9-antutu.apk",
+        "size": 96268237,
+        "sha256": "605dff17f32c515d0f500c36a3889c5157f9408e4f54b8f8f2d9587ce2164673",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-250f80f-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-250f80f/DroidDeck-main-250f80f-ludashi.apk",
-        "size": 96264141,
-        "sha256": "3e0b8cca80060850f93530327917ee9d17905a6e9c6a9fd67457c7b0f1d7b6ff",
+        "name": "DroidDeck-main-f33d5b9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33d5b9/DroidDeck-main-f33d5b9-ludashi.apk",
+        "size": 96268237,
+        "sha256": "e0f9f6e36682005724975ad7390df44b573b0a7002af9b04a15366ae7c163103",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f33d5b9e09ed27d68137aba4e711f8fca9eb93e9",
+      "title": "fix(components): auto updates follow DroidDeck-Proton only",
+      "summary": "Auto updates from #2156 swapped DroidDeck-Components nightlies into every installed Proton that ships DXVK, VKD3D-Proton or FEX, including Valve's ARM Proton, GE-Proton and proton-cachyos. Only DroidDeck-Proton should track the nightlies; every other Proton should run the components it was built with. This also fixes two Auto problems reported in the test-builds channel.",
+      "publishedAt": 1794009539000
+    },
     {
       "commit": "250f80fbb5a23ddbc36793606b321326f2c555cd",
       "title": "fix: stop switching between display modes with the same refresh rate (S26 lag and heat since 0.6.7)",
@@ -155,12 +161,6 @@
       "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
       "summary": "Brings the rest of the non-Adreno work from test/non-adreno-all onto current main, on top of the MaliBridge update that just landed. The merge keeps the contributors' commits, so authorship stays with them (The412Banner, ASEbrahim and others).",
       "publishedAt": 1793935529000
-    },
-    {
-      "commit": "f4e5032b7de4219b2d0a0ac79a3e9970f1a78f99",
-      "title": "fix(fex): skip patches FEX already carries so FEX-2611 builds",
-      "summary": "The x86-64 Steam client's FEX build for the new FEX-2611 release fails (run): 0002-thunkgen-newer-clang.patch no longer applies to ThunkLibs/Generator/gen.cpp.",
-      "publishedAt": 1793933253000
     }
   ],
   "tests": [
