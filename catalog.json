@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793938047755,
+  "generatedAt": 1793938116938,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -143,12 +143,6 @@
       "title": "fix(input): taps land where touched while a game holds the pointer",
       "summary": "Since #2053, while a game holds the pointer, every touch went through the touchpad, even with the touch mode set to Direct. Games that hide the system cursor and draw their own hold the pointer the same way first-person games do, so a tap clicked wherever the cursor already was instead of where the finger touched. In Stardew Valley, tapping New opened Load, and after pressing Back the cursor reste",
       "publishedAt": 1793915172000
-    },
-    {
-      "commit": "7a78d2b66b4be8ea1e71e48d5188b594106331f6",
-      "title": "fix(agent): secure and refresh unrooted log exports",
-      "summary": "\u2022 Keep raw diagnostic staging in private cache and give each exported archive a unique request directory.\n\u2022 Remove that request directory after the CLI pull, including failed transfers.\n\u2022 Replace files from the previous extracted snapshot while preserving unrelated destination files.\n\u2022 Document that the old rooted-device fallback is not scrubbed.",
-      "publishedAt": 1793913084000
     },
     {
       "commit": "e8ffe1164f14e501d64f70f98d498bdaf725d76f",
@@ -1383,6 +1377,55 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-564/DroidDeck-PR.564-db44151-ludashi.apk",
           "size": 61444787,
           "sha256": "54c48a1bc420932907dff9d163694898f19e290166bd1d032af246cf48a9dd4b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-671",
+      "title": "fix(session): prevent overlapping startup and teardown",
+      "summary": "Users reported Steam appearing offline. Logs showed Session Replaced after successful sign-in, while downloads still worked. This PR prevents overlapping local sessions, one possible cause, but does not establish the cause of those reports.",
+      "commit": "a114c4634d48703307ff1ec6ebcfbbd80010c49c",
+      "pr": 671,
+      "version": null,
+      "versionCode": 13,
+      "publishedAt": 1791856628000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-671",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.671-a114c46.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-671/DroidDeck-PR.671-a114c46.apk",
+          "size": 53878418,
+          "sha256": "4119fb56a16fc148275442f41a70b2d5bbe31ca077fa6394bdff33511807ae47",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.671-a114c46-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-671/DroidDeck-PR.671-a114c46-pubg.apk",
+          "size": 53878418,
+          "sha256": "a254c87a74b4042a0fda5911da7357503b8f4fa908add0af532d6c6cd72c4984",
+          "packageName": "com.tencent.ig",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.671-a114c46-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-671/DroidDeck-PR.671-a114c46-antutu.apk",
+          "size": 53878418,
+          "sha256": "53244bc129c38b3dea8943a8238122fe3dd971aa774c45faa436ba561a6461cf",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 13,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.671-a114c46-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-671/DroidDeck-PR.671-a114c46-ludashi.apk",
+          "size": 53878418,
+          "sha256": "1ffb4e8d2f285e6456165be679f8bed430bfac195b65457270912e5d4508aa41",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 13,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
