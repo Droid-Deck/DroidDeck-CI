@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794002291809,
+  "generatedAt": 1794003497098,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -168,45 +168,94 @@
       "tag": "pr-2190",
       "title": "fix(components): auto updates follow DroidDeck-Proton only",
       "summary": "Auto updates from #2156 swapped DroidDeck-Components nightlies into every installed Proton that ships DXVK, VKD3D-Proton or FEX, including Valve's ARM Proton, GE-Proton and proton-cachyos. Only DroidDeck-Proton should track the nightlies; every other Proton should run the components it was built with. This also fixes two Auto problems reported in the test-builds channel.",
-      "commit": "6af8291d4b33ad7bc7de957e77923682e7cfc08c",
+      "commit": "d87dc2325e578fb8e831e0b78b9f7633168667fb",
       "pr": 2190,
       "version": null,
       "versionCode": 17,
-      "publishedAt": 1794002240000,
+      "publishedAt": 1794003402000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2190",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2190-6af8291.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-6af8291.apk",
+          "name": "DroidDeck-PR.2190-d87dc23.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-d87dc23.apk",
           "size": 96268237,
-          "sha256": "4c5af1fcf773e09d371602ded959b023b6fcb8416d02eb6d127697aedd93dba3",
+          "sha256": "7b91fff4fb7044158473096cadacf830cca8f4cd54cedd70e9f79d60ae3a5047",
           "packageName": "com.droiddeck.launcher",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.tencent.ig": {
-          "name": "DroidDeck-PR.2190-6af8291-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-6af8291-pubg.apk",
+          "name": "DroidDeck-PR.2190-d87dc23-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-d87dc23-pubg.apk",
           "size": 96268237,
-          "sha256": "aabdb51c47d4fcd707ecb8627c6dfdcd8f7280decfa6e23f7e2407cf1ff927bd",
+          "sha256": "fd3c8197cb33a956066fc1425d40f1a2055ef6abefc7e35da6de3485083307a5",
           "packageName": "com.tencent.ig",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2190-6af8291-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-6af8291-antutu.apk",
+          "name": "DroidDeck-PR.2190-d87dc23-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-d87dc23-antutu.apk",
           "size": 96268237,
-          "sha256": "7f26993ca226cb5f60fa1911d25413bb12e63e94f7d13c14beb860c51f0d425d",
+          "sha256": "5df4b91ca771a3c85139e86cecea5e9786c9c27f40ee77776a1bbba87fb82fbb",
           "packageName": "com.antutu.benchmark.full",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2190-6af8291-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-6af8291-ludashi.apk",
+          "name": "DroidDeck-PR.2190-d87dc23-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-d87dc23-ludashi.apk",
           "size": 96268237,
-          "sha256": "2be092c5167f0eba9875a36c3f4d3a3f1231e481ec0754af161af93dc8ad7ec7",
+          "sha256": "8b5a97aca454bab50c6c17229aedaf8b76ec846358d72331a21a500beefaa8c0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2187",
+      "title": "feat: compress idle game memory before low-RAM devices run out",
+      "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
+      "commit": "7890a2b731662201e40e9491f15b80879cbb64c1",
+      "pr": 2187,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794003367000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2187",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2187-7890a2b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-7890a2b.apk",
+          "size": 96264141,
+          "sha256": "331078a06bfa1a38d2aac83ce6d3483603ab02f2ebb5a9123174c76dd7b1fe21",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2187-7890a2b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-7890a2b-pubg.apk",
+          "size": 96264141,
+          "sha256": "b6116e850fc49fce5f330954a4c166b6aaabc24945d3a8a5185e230aae9c8458",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2187-7890a2b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-7890a2b-antutu.apk",
+          "size": 96264141,
+          "sha256": "2a5494d0706deeef0fedaa564fb22991c0ab2866c06cd9520065483ccea07b60",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2187-7890a2b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-7890a2b-ludashi.apk",
+          "size": 96264141,
+          "sha256": "540d25004d200f200210821d64a21384302e99780589bc814fbb1926e5627ef2",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-a3c6bdf-ludashi.apk",
           "size": 96264141,
           "sha256": "2eaeed197141809282adedb28073dc71eaca4d82b2944fc5bf95bd962dd9c80b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2187",
-      "title": "feat: compress idle game memory before low-RAM devices run out",
-      "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
-      "commit": "1b8f54cca221ef62ab7eb19639dcc3901630b441",
-      "pr": 2187,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794001561000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2187",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2187-1b8f54c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-1b8f54c.apk",
-          "size": 96264141,
-          "sha256": "63945e3be9df36f6b08508369a5b1274d7fcef567059b9aa8445d33eb1a7c8bc",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2187-1b8f54c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-1b8f54c-pubg.apk",
-          "size": 96264141,
-          "sha256": "27c7247529745c4a2d34668b6469416a4596c97d90c695cc163a7289670196de",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2187-1b8f54c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-1b8f54c-antutu.apk",
-          "size": 96264141,
-          "sha256": "0201ae5c75e45cbbbb872b441432abe9e8a92b2d0c3d77ee78ec733ea609888a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2187-1b8f54c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-1b8f54c-ludashi.apk",
-          "size": 96264141,
-          "sha256": "5a6e95964091527496e60bdacbe634a27502dbb5240ba3def8e7aa60e280c61a",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
