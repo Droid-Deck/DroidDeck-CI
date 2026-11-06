@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793924018832,
+  "generatedAt": 1793927151512,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-2147",
-      "title": "perf(agent): run diagnostic cleanup off startup thread",
-      "summary": "Follow-up to #2131. Run abandoned diagnostic-stage cleanup on a background thread so lock acquisition and deleting stale stages cannot block Application.onCreate across app processes.",
-      "commit": "34324136c1676a45650bc6862aa4d3dffc62293b",
-      "pr": 2147,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793923958000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2147",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2147-3432413.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-3432413.apk",
-          "size": 93735816,
-          "sha256": "9b502b8f8bb854ff7ebaa07e9102216ebbd72d672b2504a8a9ae25d8e393f5c8",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2147-3432413-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-3432413-pubg.apk",
-          "size": 93735816,
-          "sha256": "32138c2a0ae278202c902d6ed39af3dac8bc8f156042593b73a45675936e0135",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2147-3432413-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-3432413-antutu.apk",
-          "size": 93735816,
-          "sha256": "a5840ba69d03adcc5729841102d6fbc6228dfb26e58a5ebf9c32be4b614c83a9",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2147-3432413-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2147/DroidDeck-PR.2147-3432413-ludashi.apk",
-          "size": 93735816,
-          "sha256": "77eb2abe1c88844b7d939ff4acc654b7a061e0e8c01f8f05371f609adb7feabc",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2029",
       "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
