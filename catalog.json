@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793971395915,
+  "generatedAt": 1793973800385,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-1878",
-      "title": "Game environment: Turnip maps CPU-read GPU memory cached",
-      "summary": "On KGSL, Turnip maps the host-visible memory that the CPU reads back uncached. A game that reads it on the CPU crawls: Dungeons & Dragons Online's graphics start-up spent minutes there. With tuoverrideuncachedascachecoherent=true, Turnip maps that memory cached and coherent instead, and the start-up is back to normal.",
-      "commit": "eccfc1367f45fcc7c961e84c1e0b542ca4f60742",
-      "pr": 1878,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793971318000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1878",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.1878-eccfc13.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1878/DroidDeck-PR.1878-eccfc13.apk",
-          "size": 96174029,
-          "sha256": "9f2e228d4b75d47c374bd2a7eb9437e7ce8e21c2d29085b5141320318e98e691",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.1878-eccfc13-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1878/DroidDeck-PR.1878-eccfc13-pubg.apk",
-          "size": 96178125,
-          "sha256": "bdbb0bb40d30df8f772aeef4c86f318db0b1c9c7fec9153e0660d57c62162968",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.1878-eccfc13-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1878/DroidDeck-PR.1878-eccfc13-antutu.apk",
-          "size": 96178125,
-          "sha256": "13e6a397f11d5ac6295d2277edca7500e786adfe9521f6093be40525df55dded",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.1878-eccfc13-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1878/DroidDeck-PR.1878-eccfc13-ludashi.apk",
-          "size": 96178125,
-          "sha256": "2dffcf428e5c836835d380bc541abace49036e7a0ada16997ff2a9b2bfa05ac7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2163",
       "title": "Show Steam launch options on the Launch tab",
