@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793984446729,
+  "generatedAt": 1793985163084,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2173",
+      "title": "fix(input): Click a touch stick only on a fast double tap",
+      "summary": "On-screen sticks pressed L3/R3 whenever a new touch landed on a stick soon after the last one was lifted. Normal play (moving the stick, letting go, touching it again) kept clicking L3 and R3 by accident.",
+      "commit": "0f7f52773604ae5732f502bab7db2ca679fe2d10",
+      "pr": 2173,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793985091000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2173",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2173-0f7f527.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-0f7f527.apk",
+          "size": 96174029,
+          "sha256": "b1727a7ee414251ae8892ccf7c5a6abef3d85bc9ca43f17fd1808c12b350730e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2173-0f7f527-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-0f7f527-pubg.apk",
+          "size": 96174029,
+          "sha256": "ca5fd5862674e4d2030ba9c7ec64e6024af093fac7ee85983ac9c2b254a6a50d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2173-0f7f527-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-0f7f527-antutu.apk",
+          "size": 96174029,
+          "sha256": "1df544ae187b2e2c18eecc371586dfced9890d179b3ca1cdd732bf610dfe4463",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2173-0f7f527-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-0f7f527-ludashi.apk",
+          "size": 96174029,
+          "sha256": "23b5985d4d75b7074dbeb440bd2faa65aafc9410c77ebd41852b127d34dd3182",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2171",
       "title": "feat(wow): voice type and keyboard chat bar for World of Warcraft",
