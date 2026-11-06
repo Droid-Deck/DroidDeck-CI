@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794002234480,
+  "generatedAt": 1794002291809,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2190",
+      "title": "fix(components): auto updates follow DroidDeck-Proton only",
+      "summary": "Auto updates from #2156 swapped DroidDeck-Components nightlies into every installed Proton that ships DXVK, VKD3D-Proton or FEX, including Valve's ARM Proton, GE-Proton and proton-cachyos. Only DroidDeck-Proton should track the nightlies; every other Proton should run the components it was built with. This also fixes two Auto problems reported in the test-builds channel.",
+      "commit": "6af8291d4b33ad7bc7de957e77923682e7cfc08c",
+      "pr": 2190,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794002240000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2190",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2190-6af8291.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-6af8291.apk",
+          "size": 96268237,
+          "sha256": "4c5af1fcf773e09d371602ded959b023b6fcb8416d02eb6d127697aedd93dba3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2190-6af8291-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-6af8291-pubg.apk",
+          "size": 96268237,
+          "sha256": "aabdb51c47d4fcd707ecb8627c6dfdcd8f7280decfa6e23f7e2407cf1ff927bd",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2190-6af8291-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-6af8291-antutu.apk",
+          "size": 96268237,
+          "sha256": "7f26993ca226cb5f60fa1911d25413bb12e63e94f7d13c14beb860c51f0d425d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2190-6af8291-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-6af8291-ludashi.apk",
+          "size": 96268237,
+          "sha256": "2be092c5167f0eba9875a36c3f4d3a3f1231e481ec0754af161af93dc8ad7ec7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2192",
       "title": "fix: stop switching between display modes with the same refresh rate (S26 lag and heat since 0.6.7)",
