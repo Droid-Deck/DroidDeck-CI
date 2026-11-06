@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793987608605,
+  "generatedAt": 1793987717720,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2175",
+      "title": "fix(wow): Clear the game field selection after reading and sending chat",
+      "summary": "After sending from the WoW chat bar, the game's box could stay highlighted. Opening the bar selects the box text to read it into the field. Some boxes, such as search, stay focused after Enter and keep that text selected.",
+      "commit": "5aecd7c235d8de46fcdc9cc037cb9b2576104420",
+      "pr": 2175,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793987656000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2175",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2175-5aecd7c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c.apk",
+          "size": 96198605,
+          "sha256": "47adf97eefae8ef7b469ffba9e7cefb7affdb3bff43b3faedd6dafef598fecf3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2175-5aecd7c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c-pubg.apk",
+          "size": 96198605,
+          "sha256": "1fe8e98fb7c7838cf3d058ef600c588492a2cc86910696594af611ab1f4718ec",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2175-5aecd7c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c-antutu.apk",
+          "size": 96198605,
+          "sha256": "c1c1d7cdffb7f36f43517d9d46848e8f8033a9943ab2bd525c9c763438b5bf05",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2175-5aecd7c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c-ludashi.apk",
+          "size": 96198605,
+          "sha256": "e4d8da4781fc0e816b05f9c7da1de51817337c5711a0725d445659373d808d76",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2173",
       "title": "fix(input): Click a touch stick only on a fast double tap",
       "summary": "On-screen sticks pressed L3/R3 whenever a new touch landed on a stick soon after the last one was lifted. Normal play (moving the stick, letting go, touching it again) kept clicking L3 and R3 by accident.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-bafcf8e-ludashi.apk",
           "size": 96198605,
           "sha256": "959c10dcecc9aa0a8f9db926cf07a8c066ba0b7ffabf5f08ca815a56a9686c06",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2175",
-      "title": "fix(wow): Clear the game field selection after reading and sending chat",
-      "summary": "After sending from the WoW chat bar, the game's box could stay highlighted. Opening the bar selects the box text to read it into the field. Some boxes, such as search, stay focused after Enter and keep that text selected.",
-      "commit": "5aecd7c235d8de46fcdc9cc037cb9b2576104420",
-      "pr": 2175,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793987488000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2175",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2175-5aecd7c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c.apk",
-          "size": 96198605,
-          "sha256": "47adf97eefae8ef7b469ffba9e7cefb7affdb3bff43b3faedd6dafef598fecf3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2175-5aecd7c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c-pubg.apk",
-          "size": 96198605,
-          "sha256": "1fe8e98fb7c7838cf3d058ef600c588492a2cc86910696594af611ab1f4718ec",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2175-5aecd7c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c-antutu.apk",
-          "size": 96198605,
-          "sha256": "c1c1d7cdffb7f36f43517d9d46848e8f8033a9943ab2bd525c9c763438b5bf05",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2175-5aecd7c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c-ludashi.apk",
-          "size": 96198605,
-          "sha256": "e4d8da4781fc0e816b05f9c7da1de51817337c5711a0725d445659373d808d76",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
