@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793988402217,
+  "generatedAt": 1793988778812,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2175",
+      "title": "fix(wow): Clear the game field selection after reading and sending chat",
+      "summary": "After sending from the WoW chat bar, the game's box could stay highlighted. Opening the bar selects the box text to read it into the field. Some boxes, such as search, stay focused after Enter and keep that text selected.",
+      "commit": "8544f0fe41343163f94e56f6415d7d58a2d34b6d",
+      "pr": 2175,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793988719000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2175",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2175-8544f0f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-8544f0f.apk",
+          "size": 96198605,
+          "sha256": "c8214356f500297818a2641f5b792a4bb68dc1cca1b62827522664171d386f7d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2175-8544f0f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-8544f0f-pubg.apk",
+          "size": 96198605,
+          "sha256": "8d439b3e8a2ef85f13d49326add56a296db4476b9ea30f5cfb320fc967cb1ff3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2175-8544f0f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-8544f0f-antutu.apk",
+          "size": 96198605,
+          "sha256": "a46b6924b3ac3779cf587826ffae38d01b7389f8d56192777ce48430ed762ddf",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2175-8544f0f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-8544f0f-ludashi.apk",
+          "size": 96198605,
+          "sha256": "b0e8d9d8f8fdad79e8160cfed8f507cf9bb670f1787b5b4e806351f52afc3574",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2028",
       "title": "feat: Trinkets tab with a Bluetooth controller mode",
       "summary": "Adds a Trinkets tab to the rail. Its first entry turns the device into a Bluetooth gamepad for another PC, phone or handheld.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-b688567-ludashi.apk",
           "size": 96255949,
           "sha256": "eb12321ded6cec607db9d93eb374fa74617d8d5189075772a803a38e0fa2ce29",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2175",
-      "title": "fix(wow): Clear the game field selection after reading and sending chat",
-      "summary": "After sending from the WoW chat bar, the game's box could stay highlighted. Opening the bar selects the box text to read it into the field. Some boxes, such as search, stay focused after Enter and keep that text selected.",
-      "commit": "5aecd7c235d8de46fcdc9cc037cb9b2576104420",
-      "pr": 2175,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793987656000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2175",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2175-5aecd7c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c.apk",
-          "size": 96198605,
-          "sha256": "47adf97eefae8ef7b469ffba9e7cefb7affdb3bff43b3faedd6dafef598fecf3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2175-5aecd7c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c-pubg.apk",
-          "size": 96198605,
-          "sha256": "1fe8e98fb7c7838cf3d058ef600c588492a2cc86910696594af611ab1f4718ec",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2175-5aecd7c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c-antutu.apk",
-          "size": 96198605,
-          "sha256": "c1c1d7cdffb7f36f43517d9d46848e8f8033a9943ab2bd525c9c763438b5bf05",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2175-5aecd7c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2175/DroidDeck-PR.2175-5aecd7c-ludashi.apk",
-          "size": 96198605,
-          "sha256": "e4d8da4781fc0e816b05f9c7da1de51817337c5711a0725d445659373d808d76",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
