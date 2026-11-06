@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793986389209,
+  "generatedAt": 1793986471853,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2173",
+      "title": "fix(input): Click a touch stick only on a fast double tap",
+      "summary": "On-screen sticks pressed L3/R3 whenever a new touch landed on a stick soon after the last one was lifted. Normal play (moving the stick, letting go, touching it again) kept clicking L3 and R3 by accident.",
+      "commit": "ca820385594c3e8d98d8b8bc5d31661cb510ea93",
+      "pr": 2173,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793986370000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2173",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2173-ca82038.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-ca82038.apk",
+          "size": 96174029,
+          "sha256": "b1e91a2a5a813fee01b3b7fd899ab78ef3be806262c6b893b442740db2005abb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2173-ca82038-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-ca82038-pubg.apk",
+          "size": 96174029,
+          "sha256": "b17c94eb788e25319187b1ddfcb5b6b17361dbc4849d7ddfab9b5ab751112f45",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2173-ca82038-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-ca82038-antutu.apk",
+          "size": 96174029,
+          "sha256": "6c3aea32f5024a47687e3f29293c92cfd6707a19578be75a073770861ad8e050",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2173-ca82038-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-ca82038-ludashi.apk",
+          "size": 96174029,
+          "sha256": "78105cce29968e38f7f0d2bc4b86ac81241d65b078117297fed5b361a0da0b13",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2174",
       "title": "fix: PiP scales the full-size output instead of shrinking it",
       "summary": "Entering PiP resized the compositor output to the PiP window's pixel size, so Steam re-laid itself out as a tiny compact UI (no hero banner or news rows, shorter badges). The output now keeps its size and the compositor fits it into the PiP window, so PiP shows the normal UI scaled down. Removes the PipPolicy.outputSize helper added in 7c5bf77f1.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-8d9a3f0-ludashi.apk",
           "size": 96227277,
           "sha256": "f00c9dd0486e978b05f75252be3c476c7682c93858fba93e8c9814c19dab060f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2173",
-      "title": "fix(input): Click a touch stick only on a fast double tap",
-      "summary": "On-screen sticks pressed L3/R3 whenever a new touch landed on a stick soon after the last one was lifted. Normal play (moving the stick, letting go, touching it again) kept clicking L3 and R3 by accident.",
-      "commit": "0f7f52773604ae5732f502bab7db2ca679fe2d10",
-      "pr": 2173,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793985091000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2173",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2173-0f7f527.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-0f7f527.apk",
-          "size": 96174029,
-          "sha256": "b1727a7ee414251ae8892ccf7c5a6abef3d85bc9ca43f17fd1808c12b350730e",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2173-0f7f527-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-0f7f527-pubg.apk",
-          "size": 96174029,
-          "sha256": "ca5fd5862674e4d2030ba9c7ec64e6024af093fac7ee85983ac9c2b254a6a50d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2173-0f7f527-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-0f7f527-antutu.apk",
-          "size": 96174029,
-          "sha256": "1df544ae187b2e2c18eecc371586dfced9890d179b3ca1cdd732bf610dfe4463",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2173-0f7f527-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-0f7f527-ludashi.apk",
-          "size": 96174029,
-          "sha256": "23b5985d4d75b7074dbeb440bd2faa65aafc9410c77ebd41852b127d34dd3182",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
