@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793986552487,
+  "generatedAt": 1793986617042,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2174",
+      "title": "fix: PiP scales the full-size output instead of shrinking it",
+      "summary": "Entering PiP resized the compositor output to the PiP window's pixel size, so Steam re-laid itself out as a tiny compact UI (no hero banner or news rows, shorter badges). The output now keeps its size and the compositor fits it into the PiP window, so PiP shows the normal UI scaled down. Removes the PipPolicy.outputSize helper added in 7c5bf77f1.",
+      "commit": "febb9622376159b71a8d2bcc73f0f6e2ff586abf",
+      "pr": 2174,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793986498000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2174",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2174-febb962.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2174/DroidDeck-PR.2174-febb962.apk",
+          "size": 96169933,
+          "sha256": "e77a6a3c950f8e00532b8fee59d900557857949a576a2f7b3b5f68f3da8e08dc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2174-febb962-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2174/DroidDeck-PR.2174-febb962-pubg.apk",
+          "size": 96169933,
+          "sha256": "ef65153d3b5985ecc7c965a4e63353ac0d5ab08fdc22a7740a06a4ad9c8961e5",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2174-febb962-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2174/DroidDeck-PR.2174-febb962-antutu.apk",
+          "size": 96169933,
+          "sha256": "0d76b8e96781340d6c74653441859cd1e7adf14a5e826e99b6a9af04410ce79f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2174-febb962-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2174/DroidDeck-PR.2174-febb962-ludashi.apk",
+          "size": 96169933,
+          "sha256": "5e4d8f937d92bedab2809cae39afd1eb21fa210e7ee677eb5ea2651c425bf51f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2156",
       "title": "feat(components): Auto updates for FEX, DXVK and VKD3D-Proton",
       "summary": "FEX, DXVK and VKD3D-Proton now have an Auto / Manual choice on the Default Components page, styled and focused like the GPU drivers page. Auto is the default; Manual keeps today's download, import and restore lists.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2173/DroidDeck-PR.2173-ca82038-ludashi.apk",
           "size": 96174029,
           "sha256": "78105cce29968e38f7f0d2bc4b86ac81241d65b078117297fed5b361a0da0b13",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2174",
-      "title": "fix: PiP scales the full-size output instead of shrinking it",
-      "summary": "Entering PiP resized the compositor output to the PiP window's pixel size, so Steam re-laid itself out as a tiny compact UI (no hero banner or news rows, shorter badges). The output now keeps its size and the compositor fits it into the PiP window, so PiP shows the normal UI scaled down. Removes the PipPolicy.outputSize helper added in 7c5bf77f1.",
-      "commit": "febb9622376159b71a8d2bcc73f0f6e2ff586abf",
-      "pr": 2174,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793986301000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2174",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2174-febb962.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2174/DroidDeck-PR.2174-febb962.apk",
-          "size": 96169933,
-          "sha256": "e77a6a3c950f8e00532b8fee59d900557857949a576a2f7b3b5f68f3da8e08dc",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2174-febb962-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2174/DroidDeck-PR.2174-febb962-pubg.apk",
-          "size": 96169933,
-          "sha256": "ef65153d3b5985ecc7c965a4e63353ac0d5ab08fdc22a7740a06a4ad9c8961e5",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2174-febb962-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2174/DroidDeck-PR.2174-febb962-antutu.apk",
-          "size": 96169933,
-          "sha256": "0d76b8e96781340d6c74653441859cd1e7adf14a5e826e99b6a9af04410ce79f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2174-febb962-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2174/DroidDeck-PR.2174-febb962-ludashi.apk",
-          "size": 96169933,
-          "sha256": "5e4d8f937d92bedab2809cae39afd1eb21fa210e7ee677eb5ea2651c425bf51f",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
