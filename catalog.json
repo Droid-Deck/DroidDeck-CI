@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793991033786,
+  "generatedAt": 1793991325084,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6060f22",
-    "title": "feat(wow): voice type and keyboard chat bar for World of Warcraft",
-    "summary": "Adds chat input for World of Warcraft (retail, Classic, Classic Era, Anniversary and Forever). When WoW focuses a text box, DroidDeck opens a chat bar. The bar has an editable text field that you can type into, voice-type into, or correct before sending.",
-    "commit": "6060f2288ff0929cf96f891e9b88582847d4b480",
+    "tag": "main-88acdbc",
+    "title": "ci: publish gamescope builds to DroidDeck-Components and never replace a tag",
+    "summary": "The gamescope build published its release into this repository, which is how main ended up pinning a release here after #2029 while every earlier pin pointed at DroidDeck-Components. It now publishes to DroidDeck-Components with the CI app token, the same way the KDE desktop and Ubuntu runtime builds do, and refuses a tag that already exists.",
+    "commit": "88acdbc3ab494374963bc27d5c4a529e0b34e78b",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793986325000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6060f22",
+    "publishedAt": 1793991251000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-88acdbc",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6060f22.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6060f22/DroidDeck-main-6060f22.apk",
+        "name": "DroidDeck-main-88acdbc.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-88acdbc/DroidDeck-main-88acdbc.apk",
         "size": 96198605,
-        "sha256": "781c0f623073bdd88070c946fc9cc6bfc113fb7954e9521e780bfe311d32c31f",
+        "sha256": "07a51d6c685af224fa2748030759b5af25eaddedb09398c31c8a17fb15ed4535",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6060f22-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6060f22/DroidDeck-main-6060f22-pubg.apk",
+        "name": "DroidDeck-main-88acdbc-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-88acdbc/DroidDeck-main-88acdbc-pubg.apk",
         "size": 96198605,
-        "sha256": "f8e997af3b8f27ed5b2f616dfdda490a16d16b5d9fdf9347d7119c9cc3845986",
+        "sha256": "49aa13c5786bb77c5e1d42bd194097496121e9176ae215951bda9807ec2a3bd9",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6060f22-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6060f22/DroidDeck-main-6060f22-antutu.apk",
+        "name": "DroidDeck-main-88acdbc-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-88acdbc/DroidDeck-main-88acdbc-antutu.apk",
         "size": 96198605,
-        "sha256": "803ab8f8c89cc670323d262463d7621eb4ccfaa8f17b820e148c73341a3fa101",
+        "sha256": "7f5f8e25b32f2dee85977de98c131275010fb1db6e6d5721a6d7ae41ec499151",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6060f22-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6060f22/DroidDeck-main-6060f22-ludashi.apk",
+        "name": "DroidDeck-main-88acdbc-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-88acdbc/DroidDeck-main-88acdbc-ludashi.apk",
         "size": 96198605,
-        "sha256": "5b9ba926f9a4d6c8f3a7b3d67bff9644c69763f3e03bba7a1065017bd00e36f8",
+        "sha256": "be981e26f44be68ec43cf95b66c1b1c7cc67d6a16e3f8fa1939d53d48d10e8b9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "88acdbc3ab494374963bc27d5c4a529e0b34e78b",
+      "title": "ci: publish gamescope builds to DroidDeck-Components and never replace a tag",
+      "summary": "The gamescope build published its release into this repository, which is how main ended up pinning a release here after #2029 while every earlier pin pointed at DroidDeck-Components. It now publishes to DroidDeck-Components with the CI app token, the same way the KDE desktop and Ubuntu runtime builds do, and refuses a tag that already exists.",
+      "publishedAt": 1793991251000
+    },
     {
       "commit": "6060f2288ff0929cf96f891e9b88582847d4b480",
       "title": "feat(wow): voice type and keyboard chat bar for World of Warcraft",
@@ -155,12 +161,6 @@
       "title": "fix: apply the VRAM budget through Vulkan without rejecting allocations",
       "summary": "Extend the VRAM setting to Vulkan memory-budget reports for DXVK and D3D12 while preserving real heap capacity and allocation results, removing the hard rejection that caused game crashes in FIT and Discord tests.",
       "publishedAt": 1793918609000
-    },
-    {
-      "commit": "da851dae22475c0e3c4acc63f29f86c9823a12bd",
-      "title": "fix(input): taps land where touched while a game holds the pointer",
-      "summary": "Since #2053, while a game holds the pointer, every touch went through the touchpad, even with the touch mode set to Direct. Games that hide the system cursor and draw their own hold the pointer the same way first-person games do, so a tap clicked wherever the cursor already was instead of where the finger touched. In Stardew Valley, tapping New opened Load, and after pressing Back the cursor reste",
-      "publishedAt": 1793915172000
     }
   ],
   "tests": [
