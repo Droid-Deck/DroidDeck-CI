@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793933366100,
+  "generatedAt": 1793933441175,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2029",
+      "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
+      "summary": "Brings the rest of the non-Adreno work from test/non-adreno-all onto current main, on top of the MaliBridge update that just landed. The merge keeps the contributors' commits, so authorship stays with them (The412Banner, ASEbrahim and others).",
+      "commit": "ce941be44d97cf3419cc4a61e7ba26c956f6f4b3",
+      "pr": 2029,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793933374000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2029",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2029-ce941be.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-ce941be.apk",
+          "size": 129577052,
+          "sha256": "c1eb7df6f672fcb6495a1ec07e196800f8ef4be56b12120ada7bca297771de8c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2029-ce941be-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-ce941be-pubg.apk",
+          "size": 129577052,
+          "sha256": "972af431e015206ad179d40aa833da4666b485bb175a2b35a6debf9a237c80aa",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2029-ce941be-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-ce941be-antutu.apk",
+          "size": 129577052,
+          "sha256": "7e70ca4b556760a691d629a295cd36afb24262c86b77c43fc56a196cbd9f8f6b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2029-ce941be-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-ce941be-ludashi.apk",
+          "size": 129577052,
+          "sha256": "35fe931437c2cfd258a0dbbc08b6c30a3034972e9f385cb9926a4f42e9476037",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2156",
       "title": "feat(components): Auto updates for FEX, DXVK and VKD3D-Proton",
       "summary": "FEX, DXVK and VKD3D-Proton now have an Auto / Manual choice on the Default Components page, styled and focused like the GPU drivers page. Auto is the default; Manual keeps today's download, import and restore lists.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2151/DroidDeck-PR.2151-d4b8e3c-ludashi.apk",
           "size": 93735816,
           "sha256": "492c276bf0073532b9e5fe10bdb9a3291b29b09ec05e1707eaa2711752ffba9e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2029",
-      "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
-      "summary": "Brings the rest of the non-Adreno work from test/non-adreno-all onto current main, on top of the MaliBridge update that just landed. The merge keeps the contributors' commits, so authorship stays with them (The412Banner, ASEbrahim and others).",
-      "commit": "bc585f1d40562d35986570cd3fb0987e4b7da670",
-      "pr": 2029,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793894325000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2029",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2029-bc585f1.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-bc585f1.apk",
-          "size": 129457813,
-          "sha256": "3a8cf636f07d7fed87de8e1174831e74cdc0f1b8e5a43beb5860bd4e47b3ae0f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2029-bc585f1-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-bc585f1-pubg.apk",
-          "size": 129457813,
-          "sha256": "08174a76f6236b3d21ba27896d2fec61f89cbe3ef959739ff55bd277bd499441",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2029-bc585f1-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-bc585f1-antutu.apk",
-          "size": 129457813,
-          "sha256": "fa19592506f2ac771c5d9dc52d51e24db5eebabc5e6800b8625c85e383070665",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2029-bc585f1-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2029/DroidDeck-PR.2029-bc585f1-ludashi.apk",
-          "size": 129457813,
-          "sha256": "630cb94b5f8d61e3e44f6b337b4ebff29eeab2cfa286501ee3aa47853584afae",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
