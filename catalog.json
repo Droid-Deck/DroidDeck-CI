@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794007483116,
+  "generatedAt": 1794008352398,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2187",
+      "title": "feat: compress idle game memory before low-RAM devices run out",
+      "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
+      "commit": "156227cdfb281d2b9794077ed8b4e3078eb3724c",
+      "pr": 2187,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794008287000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2187",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2187-156227c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-156227c.apk",
+          "size": 96264141,
+          "sha256": "62151c1269444792f3f07b05600b3739f8ae481a4a254b6b49c14b406a7faf82",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2187-156227c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-156227c-pubg.apk",
+          "size": 96264141,
+          "sha256": "69db306f0ab65793f6dd572ba4e686bb1b5a677a937dc444e2da7dccafa83bd6",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2187-156227c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-156227c-antutu.apk",
+          "size": 96264141,
+          "sha256": "ee20b5970c56a3ec89120e7073a18247acda671b68c64a92759430cff2f59692",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2187-156227c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-156227c-ludashi.apk",
+          "size": 96264141,
+          "sha256": "f7e5d95d6aea697044d26be8b550df96e4f063ff635a4469eda837e13f03bad7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2193",
       "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
       "summary": "Fixes the Auto component update problems reported on Discord (\"The new Auto Update Components issues\" thread and the #test-builds report).",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-d87dc23-ludashi.apk",
           "size": 96268237,
           "sha256": "8b5a97aca454bab50c6c17229aedaf8b76ec846358d72331a21a500beefaa8c0",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2187",
-      "title": "feat: compress idle game memory before low-RAM devices run out",
-      "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
-      "commit": "7890a2b731662201e40e9491f15b80879cbb64c1",
-      "pr": 2187,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794003367000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2187",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2187-7890a2b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-7890a2b.apk",
-          "size": 96264141,
-          "sha256": "331078a06bfa1a38d2aac83ce6d3483603ab02f2ebb5a9123174c76dd7b1fe21",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2187-7890a2b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-7890a2b-pubg.apk",
-          "size": 96264141,
-          "sha256": "b6116e850fc49fce5f330954a4c166b6aaabc24945d3a8a5185e230aae9c8458",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2187-7890a2b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-7890a2b-antutu.apk",
-          "size": 96264141,
-          "sha256": "2a5494d0706deeef0fedaa564fb22991c0ab2866c06cd9520065483ccea07b60",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2187-7890a2b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-7890a2b-ludashi.apk",
-          "size": 96264141,
-          "sha256": "540d25004d200f200210821d64a21384302e99780589bc814fbb1926e5627ef2",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
