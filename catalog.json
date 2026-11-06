@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793985163084,
+  "generatedAt": 1793985270960,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2156",
+      "title": "feat(components): Auto updates for FEX, DXVK and VKD3D-Proton",
+      "summary": "FEX, DXVK and VKD3D-Proton now have an Auto / Manual choice on the Default Components page, styled and focused like the GPU drivers page. Auto is the default; Manual keeps today's download, import and restore lists.",
+      "commit": "8d9a3f084a4ce4be6465b69afffc59077a6786a2",
+      "pr": 2156,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793985217000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2156",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2156-8d9a3f0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-8d9a3f0.apk",
+          "size": 96227277,
+          "sha256": "754ea00722dbb68d6a2e8562335b20096eafaff30930e24340d5985cc3ca14cc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2156-8d9a3f0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-8d9a3f0-pubg.apk",
+          "size": 96227277,
+          "sha256": "7e5b97c92ad3844a2ab3d41d066ec2eabda4776e0dea164e084115c96ba31bf1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2156-8d9a3f0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-8d9a3f0-antutu.apk",
+          "size": 96227277,
+          "sha256": "81f9fb5b6f00059c2ba4d4e906e74d23ac093dc34abb1b09ffd3430d6641c3dd",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2156-8d9a3f0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-8d9a3f0-ludashi.apk",
+          "size": 96227277,
+          "sha256": "f00c9dd0486e978b05f75252be3c476c7682c93858fba93e8c9814c19dab060f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2173",
       "title": "fix(input): Click a touch stick only on a fast double tap",
       "summary": "On-screen sticks pressed L3/R3 whenever a new touch landed on a stick soon after the last one was lifted. Normal play (moving the stick, letting go, touching it again) kept clicking L3 and R3 by accident.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2171/DroidDeck-PR.2171-7ad3edb-ludashi.apk",
           "size": 96198605,
           "sha256": "76d427492e62a612bce9cf89c95807af07d8bd0d8cfc772a1e671e3f1c5731fb",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2156",
-      "title": "feat(components): Auto updates for FEX, DXVK and VKD3D-Proton",
-      "summary": "FEX, DXVK and VKD3D-Proton now have an Auto / Manual choice on the Default Components page, styled and focused like the GPU drivers page. Auto is the default; Manual keeps today's download, import and restore lists.",
-      "commit": "db561b238057cadd6a91070e4e56afe80e41f8b4",
-      "pr": 2156,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793984012000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2156",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2156-db561b2.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-db561b2.apk",
-          "size": 96223181,
-          "sha256": "267b749c30bc6047ee44fa72356e4d2e49584fd47ce22a50137aa71ee8472497",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2156-db561b2-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-db561b2-pubg.apk",
-          "size": 96223181,
-          "sha256": "4a81582c319dbe45911f2d3c4cb1ef8807c2f12c7dc41b75717e505fe327d121",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2156-db561b2-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-db561b2-antutu.apk",
-          "size": 96223181,
-          "sha256": "1af36aaafc171730d1d714b9c36973055868deca6c131dd7176f05e3bf037952",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2156-db561b2-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-db561b2-ludashi.apk",
-          "size": 96223181,
-          "sha256": "a286e7cd0d27371db7ebeabd34aee09c565fce143bd1aacefc94501da6a90a74",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
