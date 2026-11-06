@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794001406601,
+  "generatedAt": 1794001636619,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2187",
+      "title": "feat: compress idle game memory before low-RAM devices run out",
+      "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
+      "commit": "1b8f54cca221ef62ab7eb19639dcc3901630b441",
+      "pr": 2187,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794001561000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2187",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2187-1b8f54c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-1b8f54c.apk",
+          "size": 96264141,
+          "sha256": "63945e3be9df36f6b08508369a5b1274d7fcef567059b9aa8445d33eb1a7c8bc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2187-1b8f54c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-1b8f54c-pubg.apk",
+          "size": 96264141,
+          "sha256": "27c7247529745c4a2d34668b6469416a4596c97d90c695cc163a7289670196de",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2187-1b8f54c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-1b8f54c-antutu.apk",
+          "size": 96264141,
+          "sha256": "0201ae5c75e45cbbbb872b441432abe9e8a92b2d0c3d77ee78ec733ea609888a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2187-1b8f54c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-1b8f54c-ludashi.apk",
+          "size": 96264141,
+          "sha256": "5a6e95964091527496e60bdacbe634a27502dbb5240ba3def8e7aa60e280c61a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-1439",
       "title": "Unify controller and screen input profiles for game and desktop sessions",
       "summary": "Desktop sessions need configurable mouse, keyboard and application actions from a controller. On dual-screen devices, a lower-screen trackpad may already handle the pointer, leaving the physical controls available for other assignments. This PR gives physical controllers and local touch controls a shared profile/action model instead of separate configuration paths.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1439/DroidDeck-PR.1439-08526f8-ludashi.apk",
           "size": 96489421,
           "sha256": "7885f79be3fa5da2a1d2a3fc85f82389d30ac53ac6c3a20d21d3f0e85713def6",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2187",
-      "title": "feat: compress idle game memory before low-RAM devices run out",
-      "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
-      "commit": "204dea22e39dd110f81a1b81912179d7cbb0939b",
-      "pr": 2187,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793999784000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2187",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2187-204dea2.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-204dea2.apk",
-          "size": 96264141,
-          "sha256": "909ac0526af147d75fcb8683a74da9045a383fde07cc445ea066d02c4c990ce7",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2187-204dea2-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-204dea2-pubg.apk",
-          "size": 96264141,
-          "sha256": "255c8d279f0cf73f3df13f5f09facb6a86603a6716b2aaa863b1c260711ce879",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2187-204dea2-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-204dea2-antutu.apk",
-          "size": 96264141,
-          "sha256": "e09fce7793d5b29f54c127370a5dc8a7232e922960a6f682d05a586342f8a554",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2187-204dea2-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-204dea2-ludashi.apk",
-          "size": 96264141,
-          "sha256": "fce8167de36e4e372a2d3747928f5fd6133025d6d6791c7f557349b5a04fd61c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
