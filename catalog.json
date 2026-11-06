@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793992406092,
+  "generatedAt": 1793992811389,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2185",
+      "title": "fix(library): Keep one Play request per game and show Starting while it prepares",
+      "summary": "On a game page, Play often looked dead unless the Launch tab was open. This happened with Battle.net games such as World of Warcraft: Forever.",
+      "commit": "8c96239ac810f0f3c19c1dca42cb2f99fe9812b1",
+      "pr": 2185,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793992744000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2185",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2185-8c96239.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2185/DroidDeck-PR.2185-8c96239.apk",
+          "size": 96202701,
+          "sha256": "8f3c1a6f1a8a42fd492315ed2c888fcbd4a97ad48b8f5e1cfa893782f9fdaefa",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2185-8c96239-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2185/DroidDeck-PR.2185-8c96239-pubg.apk",
+          "size": 96202701,
+          "sha256": "fdc2a2477b8905bf08859289701709f7dfb5e28b1b9f0ce1f617d69e0c510133",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2185-8c96239-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2185/DroidDeck-PR.2185-8c96239-antutu.apk",
+          "size": 96202701,
+          "sha256": "d4059a4fa95cd94e78f320682ac3ca0b4f6fbbf048d1845c2a44661d5d6b4a5f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2185-8c96239-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2185/DroidDeck-PR.2185-8c96239-ludashi.apk",
+          "size": 96202701,
+          "sha256": "6a0095f700210e1282b673440e3794a8a413f60fbd3db607cb33e2551520dc8f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2183",
       "title": "chore: pin gamescope to the DroidDeck-Components p22 release",
