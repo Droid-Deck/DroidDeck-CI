@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793937088970,
+  "generatedAt": 1793937584454,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -207,55 +207,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-161c850-ludashi.apk",
           "size": 129630300,
           "sha256": "fe4c061645bd7d16ab86549d39957ddc6a659ad72f5b03894813fbf6ef02ccac",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2157",
-      "title": "feat: the PowerVR runtime is a downloaded add-on pack, not bundled in the APK",
-      "summary": "The PowerVR and Xclipse graphics runtime (libhybris bridge, DXVK, the WSI layer) was bundled in the APK as assets/hybris/runtime.tzst, about 75 MB unpacked. Only PowerVR and Xclipse devices use it, but everyone downloaded it, which is most of why PR test builds grew from about 89 MB to 123 MB.",
-      "commit": "0237cfb6ef92847f9b8794b27e982c900362cb03",
-      "pr": 2157,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793936952000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2157",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2157-0237cfb.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2157/DroidDeck-PR.2157-0237cfb.apk",
-          "size": 96174029,
-          "sha256": "88a83cd7a832fe4b684b46602124aa4b1433168fd025ca321a201008e56ec487",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2157-0237cfb-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2157/DroidDeck-PR.2157-0237cfb-pubg.apk",
-          "size": 96174029,
-          "sha256": "0797ef732a96040c0afceca9abdc697d68230feb3e839f573a4825811aaf4489",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2157-0237cfb-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2157/DroidDeck-PR.2157-0237cfb-antutu.apk",
-          "size": 96174029,
-          "sha256": "3d99f0f1ab5252fae94ab6c65bd07f08a3e2f321e7874b5e842d5e03af3d3a42",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2157-0237cfb-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2157/DroidDeck-PR.2157-0237cfb-ludashi.apk",
-          "size": 96174029,
-          "sha256": "a25c3bbcd8503d92117d6725677096a2a7df96f2cf55e4a022d7b12d2b8d33b3",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -1334,6 +1285,55 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-581/DroidDeck-PR.581-b40aae3-ludashi.apk",
           "size": 105937764,
           "sha256": "06d7337acdf61f952eac64acde445b5357901ba9fed26cfd3c7f60c8d5b4c99a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-1074",
+      "title": "feat: detailed adds startup step times and game logs, and the diagnostics page has a log level",
+      "summary": "The diagnostics page now has a log level under \"Session logs\", shown only while session\nlogs are on. Standard is what ships today. Detailed adds:",
+      "commit": "f7899fc0dfc4cf785e8fbcebcff609ef1606bd69",
+      "pr": 1074,
+      "version": null,
+      "versionCode": 14,
+      "publishedAt": 1792359027000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-1074",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.1074-f7899fc.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1074/DroidDeck-PR.1074-f7899fc.apk",
+          "size": 105933668,
+          "sha256": "0cfe1331d2a5d01147557aad3b90306af4a3b995f7ba75918c9f4962839ec424",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.1074-f7899fc-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1074/DroidDeck-PR.1074-f7899fc-pubg.apk",
+          "size": 105933668,
+          "sha256": "0e8b2be63498dd8ba233cfd173e7c9fae3aa14e9d27eaba3e3c9678790652d32",
+          "packageName": "com.tencent.ig",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.1074-f7899fc-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1074/DroidDeck-PR.1074-f7899fc-antutu.apk",
+          "size": 105933668,
+          "sha256": "43702a24590ee4ac4d604b013e1dabbbf70227047e6e015812431a43f76a1ece",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 14,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.1074-f7899fc-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1074/DroidDeck-PR.1074-f7899fc-ludashi.apk",
+          "size": 105933668,
+          "sha256": "9e852b8af5e611d8a9371135dd8f7bd6a3d00cc0c1a0e3600b799655ddd50c1a",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 14,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
