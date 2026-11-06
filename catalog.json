@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794004406707,
+  "generatedAt": 1794004470147,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2191",
+      "title": "fix(hud): skip relayout when size is unchanged and cap graph redraws",
+      "summary": "Possible fix for the Steam UI flicker reported with the flat strip HUD (Honor SM8850, Android 17, 0.6.9): turning the HUD off stopped it, and the compositor logs show clean frame pacing, so the cause is on the Android side.",
+      "commit": "cbf9cb04d1c4feb5a93bcf8daf665dfe3ccffb1d",
+      "pr": 2191,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794004400000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2191",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2191-cbf9cb0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-cbf9cb0.apk",
+          "size": 96264141,
+          "sha256": "3538ab304165dc82a6aa46c7861a00bdc989f8361e395151fa5a543329280dc3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2191-cbf9cb0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-cbf9cb0-pubg.apk",
+          "size": 96264141,
+          "sha256": "6d71f73d86a05ab8598aeefe87a301f254de3874959d008eca2cf509d294047e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2191-cbf9cb0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-cbf9cb0-antutu.apk",
+          "size": 96264141,
+          "sha256": "f9a9157e4afc35b52d239975f2177b3a539598c8b72debfe0e94164722d1c675",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2191-cbf9cb0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-cbf9cb0-ludashi.apk",
+          "size": 96264141,
+          "sha256": "311a23fb5075e594f30a73ba0753ba3b07ab3a285503b872d6f91ad806c5d72f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2193",
       "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
       "summary": "Fixes the Auto component update problems reported on Discord (\"The new Auto Update Components issues\" thread and the #test-builds report).",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-7890a2b-ludashi.apk",
           "size": 96264141,
           "sha256": "540d25004d200f200210821d64a21384302e99780589bc814fbb1926e5627ef2",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2191",
-      "title": "fix(hud): skip relayout when size is unchanged and cap graph redraws",
-      "summary": "Possible fix for the Steam UI flicker reported with the flat strip HUD (Honor SM8850, Android 17, 0.6.9): turning the HUD off stopped it, and the compositor logs show clean frame pacing, so the cause is on the Android side.",
-      "commit": "a3c6bdfe8f71f77c087a04a9dd6f2fa185e935bf",
-      "pr": 2191,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794002110000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2191",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2191-a3c6bdf.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-a3c6bdf.apk",
-          "size": 96264141,
-          "sha256": "fd29439f889fdf6bcbe84931ef9ff5d8fe406afbf9bf7026db15bbf11e555f71",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2191-a3c6bdf-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-a3c6bdf-pubg.apk",
-          "size": 96264141,
-          "sha256": "e6a93c479fa3766d27016273518dc909499230e8af2cc724877b6930704a1e79",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2191-a3c6bdf-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-a3c6bdf-antutu.apk",
-          "size": 96264141,
-          "sha256": "270a72d840f3ffb3e64174f2df7ea9733037dd84c56f4b3a57223bab734f276d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2191-a3c6bdf-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-a3c6bdf-ludashi.apk",
-          "size": 96264141,
-          "sha256": "2eaeed197141809282adedb28073dc71eaca4d82b2944fc5bf95bd962dd9c80b",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
