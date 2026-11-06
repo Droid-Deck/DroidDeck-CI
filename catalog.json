@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793928157917,
+  "generatedAt": 1793931897106,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2151",
+      "title": "fix(drivers): built-in Auto picks match the published table on Adreno 6xx and 8xx",
+      "summary": "Auto reads its driver table from Drivers-CI auto-drivers.json, and today's update there (\"prefer DD-Turnip in Auto\") puts the newest DD-Turnip first on every Adreno generation. The built-in table the app falls back to when that file can't be fetched (first start offline, a network error, a schema change) still had the older picks, so the same device could get a different Auto driver depending on",
+      "commit": "d4b8e3c8e49d96ef034b623e2323f850d0844b4c",
+      "pr": 2151,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793931834000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2151",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2151-d4b8e3c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2151/DroidDeck-PR.2151-d4b8e3c.apk",
+          "size": 93735816,
+          "sha256": "ea857e045b5ac395c82bae5c96aff91a51a4452cc8b16ebcf00e5c5efc9a647c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2151-d4b8e3c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2151/DroidDeck-PR.2151-d4b8e3c-pubg.apk",
+          "size": 93735816,
+          "sha256": "b7527d585bdd6c0d4b1023da3c2286bc5806de3cf12b44f30b429e9ed5de1f84",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2151-d4b8e3c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2151/DroidDeck-PR.2151-d4b8e3c-antutu.apk",
+          "size": 93735816,
+          "sha256": "83c2067792c3aac58e0b7dbec0738d6b4c2f7c1502c0eda633b8259f3365e725",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2151-d4b8e3c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2151/DroidDeck-PR.2151-d4b8e3c-ludashi.apk",
+          "size": 93735816,
+          "sha256": "492c276bf0073532b9e5fe10bdb9a3291b29b09ec05e1707eaa2711752ffba9e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2029",
       "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
