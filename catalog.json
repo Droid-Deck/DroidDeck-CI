@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794004470147,
+  "generatedAt": 1794004584264,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-542bbf8",
-    "title": "fix(library): Keep one Play request per game and show Starting while it prepares",
-    "summary": "On a game page, Play often looked dead unless the Launch tab was open. This happened with Battle.net games such as World of Warcraft: Forever.",
-    "commit": "542bbf89c34102fbc6f3592b5a3e36829f4ac63e",
+    "tag": "main-250f80f",
+    "title": "fix: stop switching between display modes with the same refresh rate (S26 lag and heat since 0.6.7)",
+    "summary": "On some phones the session window switched display modes about 34 times a second for as long as the session ran. Each switch rebuilt the window surface and re-armed frame generation. That matches the Galaxy S26 Ultra reports of a laggy, hot Steam client and very low FPS in every game since 0.6.7.",
+    "commit": "250f80fbb5a23ddbc36793606b321326f2c555cd",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793998107000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-542bbf8",
+    "publishedAt": 1794004538000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-250f80f",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-542bbf8.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-542bbf8/DroidDeck-main-542bbf8.apk",
+        "name": "DroidDeck-main-250f80f.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-250f80f/DroidDeck-main-250f80f.apk",
         "size": 96264141,
-        "sha256": "a4a4f82607398dbb36ef796b4c29a4237d2f1be0c83946d8b25c356d88f34334",
+        "sha256": "df56b7fb82260a99ed909dad1bcffd282cd2dee12f43451ca8a606bc88b6245b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-542bbf8-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-542bbf8/DroidDeck-main-542bbf8-pubg.apk",
+        "name": "DroidDeck-main-250f80f-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-250f80f/DroidDeck-main-250f80f-pubg.apk",
         "size": 96264141,
-        "sha256": "c7fdb7683d0893133ce451fa9080456ec60ed24343f501da7fc00f8c39fddf8b",
+        "sha256": "ff57f0b61152dcffe657026b90ac8b0907347a104e3da01f67ba694dd8590e80",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-542bbf8-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-542bbf8/DroidDeck-main-542bbf8-antutu.apk",
+        "name": "DroidDeck-main-250f80f-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-250f80f/DroidDeck-main-250f80f-antutu.apk",
         "size": 96264141,
-        "sha256": "9db18832e6bf59a24867a2917539a493ec3d2274b5e396f7c13657a81c0d092a",
+        "sha256": "2276317849ebf13e1224616961023a9c81b4a47585a33b5c4ee9a71bb0a7b541",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-542bbf8-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-542bbf8/DroidDeck-main-542bbf8-ludashi.apk",
+        "name": "DroidDeck-main-250f80f-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-250f80f/DroidDeck-main-250f80f-ludashi.apk",
         "size": 96264141,
-        "sha256": "4cf5cf12f597cbc3959ab4ee8612c3f2d40cec2ecbc1962e8aad4cad8fa4ccd6",
+        "sha256": "3e0b8cca80060850f93530327917ee9d17905a6e9c6a9fd67457c7b0f1d7b6ff",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "250f80fbb5a23ddbc36793606b321326f2c555cd",
+      "title": "fix: stop switching between display modes with the same refresh rate (S26 lag and heat since 0.6.7)",
+      "summary": "On some phones the session window switched display modes about 34 times a second for as long as the session ran. Each switch rebuilt the window surface and re-armed frame generation. That matches the Galaxy S26 Ultra reports of a laggy, hot Steam client and very low FPS in every game since 0.6.7.",
+      "publishedAt": 1794004538000
+    },
     {
       "commit": "542bbf89c34102fbc6f3592b5a3e36829f4ac63e",
       "title": "fix(library): Keep one Play request per game and show Starting while it prepares",
@@ -155,12 +161,6 @@
       "title": "fix(fex): skip patches FEX already carries so FEX-2611 builds",
       "summary": "The x86-64 Steam client's FEX build for the new FEX-2611 release fails (run): 0002-thunkgen-newer-clang.patch no longer applies to ThunkLibs/Generator/gen.cpp.",
       "publishedAt": 1793933253000
-    },
-    {
-      "commit": "c8a76e7ccec3b4ef1f3ac83b7952d04211e4ccd1",
-      "title": "perf(agent): run diagnostic cleanup off startup thread",
-      "summary": "Follow-up to #2131. Run abandoned diagnostic-stage cleanup on a background thread so lock acquisition and deleting stale stages cannot block Application.onCreate across app processes.",
-      "publishedAt": 1793928103000
     }
   ],
   "tests": [
