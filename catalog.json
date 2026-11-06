@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793932526078,
+  "generatedAt": 1793933309638,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c8a76e7",
-    "title": "perf(agent): run diagnostic cleanup off startup thread",
-    "summary": "Follow-up to #2131. Run abandoned diagnostic-stage cleanup on a background thread so lock acquisition and deleting stale stages cannot block Application.onCreate across app processes.",
-    "commit": "c8a76e7ccec3b4ef1f3ac83b7952d04211e4ccd1",
+    "tag": "main-f4e5032",
+    "title": "fix(fex): skip patches FEX already carries so FEX-2611 builds",
+    "summary": "The x86-64 Steam client's FEX build for the new FEX-2611 release fails (run): 0002-thunkgen-newer-clang.patch no longer applies to ThunkLibs/Generator/gen.cpp.",
+    "commit": "f4e5032b7de4219b2d0a0ac79a3e9970f1a78f99",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793928103000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c8a76e7",
+    "publishedAt": 1793933253000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f4e5032",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c8a76e7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c8a76e7/DroidDeck-main-c8a76e7.apk",
+        "name": "DroidDeck-main-f4e5032.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f4e5032/DroidDeck-main-f4e5032.apk",
         "size": 93735816,
-        "sha256": "56349a074b5c5ac32d09e5576eb17cb0748252c62b502ad8f4076d0668fc94b4",
+        "sha256": "9b5a48c0e99f36ec5c4a7aca5a84a99a44599509a5b8fed879690b76cdba1e47",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c8a76e7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c8a76e7/DroidDeck-main-c8a76e7-pubg.apk",
+        "name": "DroidDeck-main-f4e5032-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f4e5032/DroidDeck-main-f4e5032-pubg.apk",
         "size": 93735816,
-        "sha256": "e01a9498b2592cd0a2904f4fc36c3d8fb83ac78dc8965418b5644faba7d63eac",
+        "sha256": "c6b679739f9dacbea3344362c6716e79f331ecbfd8703d19a71b2ba843055e6f",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c8a76e7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c8a76e7/DroidDeck-main-c8a76e7-antutu.apk",
+        "name": "DroidDeck-main-f4e5032-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f4e5032/DroidDeck-main-f4e5032-antutu.apk",
         "size": 93735816,
-        "sha256": "1bd2ab7e185f217034926dd9c7ac024a91635fbccc86db3eb0a1846e7a0b29e2",
+        "sha256": "e9a28c498040c17e54becae2c9198f864e3c5e757d1c0362aedc10b7d050cb4f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c8a76e7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c8a76e7/DroidDeck-main-c8a76e7-ludashi.apk",
+        "name": "DroidDeck-main-f4e5032-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f4e5032/DroidDeck-main-f4e5032-ludashi.apk",
         "size": 93735816,
-        "sha256": "1516451a2084a00e7b8eeb2c6a20f7adece612a10cc08801e08bc2c099bd904d",
+        "sha256": "948c8bbe095959ea93c0f1368e925563ca74236d217dc267667f4a264571afe7",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f4e5032b7de4219b2d0a0ac79a3e9970f1a78f99",
+      "title": "fix(fex): skip patches FEX already carries so FEX-2611 builds",
+      "summary": "The x86-64 Steam client's FEX build for the new FEX-2611 release fails (run): 0002-thunkgen-newer-clang.patch no longer applies to ThunkLibs/Generator/gen.cpp.",
+      "publishedAt": 1793933253000
+    },
     {
       "commit": "c8a76e7ccec3b4ef1f3ac83b7952d04211e4ccd1",
       "title": "perf(agent): run diagnostic cleanup off startup thread",
@@ -155,12 +161,6 @@
       "title": "Session logs: record clocks, thermal status and battery temperature in every session",
       "summary": "Part 1 of #1837: every session's log folder now has the CPU clocks, the frequency caps, the thermal status and the battery temperature over time (and the GPU clock where it can be read), so a shared ZIP shows why the fps fell, not only that it fell.",
       "publishedAt": 1793906425000
-    },
-    {
-      "commit": "b563b8d1eba712ca836c7b5da080fe81e1ae2ee9",
-      "title": "feat(hud): add independent 1% and 0.1% low toggles",
-      "summary": "The slide-out HUD settings now include independent switches for 1% low and 0.1% low beside the existing 0.01% low switch. Both default to enabled, preserving the current display and existing saved settings.",
-      "publishedAt": 1793901285000
     }
   ],
   "tests": [
