@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793931897106,
+  "generatedAt": 1793932246822,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2152",
+      "title": "fix(fex): skip patches FEX already carries so FEX-2611 builds",
+      "summary": "The x86-64 Steam client's FEX build for the new FEX-2611 release fails (run): 0002-thunkgen-newer-clang.patch no longer applies to ThunkLibs/Generator/gen.cpp.",
+      "commit": "76a73b5dad8402719f42e291bbcfee4c5482696c",
+      "pr": 2152,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793932167000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2152",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2152-76a73b5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2152/DroidDeck-PR.2152-76a73b5.apk",
+          "size": 93735816,
+          "sha256": "cd32fd3c8303fd29f178639bb162b6e5eed7a5641b4d7ca3da72d314cf9af5e9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2152-76a73b5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2152/DroidDeck-PR.2152-76a73b5-pubg.apk",
+          "size": 93735816,
+          "sha256": "cbd3cedf9b60d553c217562aa27a429f9f81a0756bb7687c8df0cf4ac4a89473",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2152-76a73b5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2152/DroidDeck-PR.2152-76a73b5-antutu.apk",
+          "size": 93735816,
+          "sha256": "e1efeae113655a1f04e1b01aa816965f61913879ae582f10dacba26b1d2638b1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2152-76a73b5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2152/DroidDeck-PR.2152-76a73b5-ludashi.apk",
+          "size": 93735816,
+          "sha256": "44b5bd92c396e304465efaee6d81c98e639a6748b3e199d605cf6cc03d410a85",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2151",
       "title": "fix(drivers): built-in Auto picks match the published table on Adreno 6xx and 8xx",
