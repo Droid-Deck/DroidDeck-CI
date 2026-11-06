@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794008352398,
+  "generatedAt": 1794008567157,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -256,104 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2193/DroidDeck-PR.2193-2f01963-ludashi.apk",
           "size": 96264141,
           "sha256": "36ee1a0fd9ec9e893811d6fd23d064a9edec7185d9e8436900a254a0f38c44a4",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2191",
-      "title": "fix(hud): skip relayout when size is unchanged and cap graph redraws",
-      "summary": "Possible fix for the Steam UI flicker reported with the flat strip HUD (Honor SM8850, Android 17, 0.6.9): turning the HUD off stopped it, and the compositor logs show clean frame pacing, so the cause is on the Android side.",
-      "commit": "cbf9cb04d1c4feb5a93bcf8daf665dfe3ccffb1d",
-      "pr": 2191,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794004400000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2191",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2191-cbf9cb0.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-cbf9cb0.apk",
-          "size": 96264141,
-          "sha256": "3538ab304165dc82a6aa46c7861a00bdc989f8361e395151fa5a543329280dc3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2191-cbf9cb0-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-cbf9cb0-pubg.apk",
-          "size": 96264141,
-          "sha256": "6d71f73d86a05ab8598aeefe87a301f254de3874959d008eca2cf509d294047e",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2191-cbf9cb0-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-cbf9cb0-antutu.apk",
-          "size": 96264141,
-          "sha256": "f9a9157e4afc35b52d239975f2177b3a539598c8b72debfe0e94164722d1c675",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2191-cbf9cb0-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2191/DroidDeck-PR.2191-cbf9cb0-ludashi.apk",
-          "size": 96264141,
-          "sha256": "311a23fb5075e594f30a73ba0753ba3b07ab3a285503b872d6f91ad806c5d72f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2190",
-      "title": "fix(components): auto updates follow DroidDeck-Proton only",
-      "summary": "Auto updates from #2156 swapped DroidDeck-Components nightlies into every installed Proton that ships DXVK, VKD3D-Proton or FEX, including Valve's ARM Proton, GE-Proton and proton-cachyos. Only DroidDeck-Proton should track the nightlies; every other Proton should run the components it was built with. This also fixes two Auto problems reported in the test-builds channel.",
-      "commit": "d87dc2325e578fb8e831e0b78b9f7633168667fb",
-      "pr": 2190,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794003402000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2190",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2190-d87dc23.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-d87dc23.apk",
-          "size": 96268237,
-          "sha256": "7b91fff4fb7044158473096cadacf830cca8f4cd54cedd70e9f79d60ae3a5047",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2190-d87dc23-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-d87dc23-pubg.apk",
-          "size": 96268237,
-          "sha256": "fd3c8197cb33a956066fc1425d40f1a2055ef6abefc7e35da6de3485083307a5",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2190-d87dc23-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-d87dc23-antutu.apk",
-          "size": 96268237,
-          "sha256": "5df4b91ca771a3c85139e86cecea5e9786c9c27f40ee77776a1bbba87fb82fbb",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2190-d87dc23-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2190/DroidDeck-PR.2190-d87dc23-ludashi.apk",
-          "size": 96268237,
-          "sha256": "8b5a97aca454bab50c6c17229aedaf8b76ec846358d72331a21a500beefaa8c0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
