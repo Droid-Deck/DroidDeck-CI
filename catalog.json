@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793987717720,
+  "generatedAt": 1793987800380,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2156",
+      "title": "feat(components): Auto updates for FEX, DXVK and VKD3D-Proton",
+      "summary": "FEX, DXVK and VKD3D-Proton now have an Auto / Manual choice on the Default Components page, styled and focused like the GPU drivers page. Auto is the default; Manual keeps today's download, import and restore lists.",
+      "commit": "b6885671570fe49a21ebe1d9005887632cf124b0",
+      "pr": 2156,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793987728000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2156",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2156-b688567.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-b688567.apk",
+          "size": 96255949,
+          "sha256": "729f889c2b71ab04a4bb0b348becc901216586b17fc5d31ee4724a31ee110709",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2156-b688567-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-b688567-pubg.apk",
+          "size": 96255949,
+          "sha256": "dcfcfc4c063b6e0644b44059c5f9fba9c660fb62fc2cf9e13bfb1c31f2e331e3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2156-b688567-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-b688567-antutu.apk",
+          "size": 96255949,
+          "sha256": "7596e65fb8a98039eef772bcd79218abf3b2738891643499f0c939a329f4e52e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2156-b688567-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-b688567-ludashi.apk",
+          "size": 96255949,
+          "sha256": "eb12321ded6cec607db9d93eb374fa74617d8d5189075772a803a38e0fa2ce29",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2175",
       "title": "fix(wow): Clear the game field selection after reading and sending chat",
       "summary": "After sending from the WoW chat bar, the game's box could stay highlighted. Opening the bar selects the box text to read it into the field. Some boxes, such as search, stay focused after Enter and keep that text selected.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2174/DroidDeck-PR.2174-febb962-ludashi.apk",
           "size": 96169933,
           "sha256": "5e4d8f937d92bedab2809cae39afd1eb21fa210e7ee677eb5ea2651c425bf51f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2156",
-      "title": "feat(components): Auto updates for FEX, DXVK and VKD3D-Proton",
-      "summary": "FEX, DXVK and VKD3D-Proton now have an Auto / Manual choice on the Default Components page, styled and focused like the GPU drivers page. Auto is the default; Manual keeps today's download, import and restore lists.",
-      "commit": "486d06ae7be576285ef19332f2f751fe0476e4c9",
-      "pr": 2156,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1793986438000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2156",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2156-486d06a.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-486d06a.apk",
-          "size": 96227277,
-          "sha256": "6e82d4df87b282012696cb9cc3a554954ad04271d83885d08aa3664ba86ac406",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2156-486d06a-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-486d06a-pubg.apk",
-          "size": 96227277,
-          "sha256": "ccfeebf20d9555ffcf0e8debda96a14fdaa765fbeaea0a9ae13b13b31045a53c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2156-486d06a-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-486d06a-antutu.apk",
-          "size": 96227277,
-          "sha256": "57f40067abf5fda2f30c921a788110d5d0ebe88c55d6bc532a2bc4f27380c50d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2156-486d06a-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-486d06a-ludashi.apk",
-          "size": 96227277,
-          "sha256": "e66a0982613a9a0753fabbfc5f46bc3a3a536f37d5143303a5816db1af6d3469",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
