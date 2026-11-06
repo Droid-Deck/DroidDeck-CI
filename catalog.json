@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793927151512,
+  "generatedAt": 1793928157917,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cd452e2",
-    "title": "fix: upload GOG cloud saves in Galaxy's gzip + metadata format",
-    "summary": "GOG cloud saves downloaded from the cloud into DroidDeck work, but saves uploaded by DroidDeck make GOG Galaxy on another PC fail with invalid data for every file:",
-    "commit": "cd452e2b608c4dbb9c42c0b7b84c8e7864aa93cd",
+    "tag": "main-c8a76e7",
+    "title": "perf(agent): run diagnostic cleanup off startup thread",
+    "summary": "Follow-up to #2131. Run abandoned diagnostic-stage cleanup on a background thread so lock acquisition and deleting stale stages cannot block Application.onCreate across app processes.",
+    "commit": "c8a76e7ccec3b4ef1f3ac83b7952d04211e4ccd1",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1793923761000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cd452e2",
+    "publishedAt": 1793928103000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c8a76e7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cd452e2.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd452e2/DroidDeck-main-cd452e2.apk",
+        "name": "DroidDeck-main-c8a76e7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c8a76e7/DroidDeck-main-c8a76e7.apk",
         "size": 93735816,
-        "sha256": "48be1cede7251a31341df61a24364312f2b071a4d558718a9de1bd8d84974494",
+        "sha256": "56349a074b5c5ac32d09e5576eb17cb0748252c62b502ad8f4076d0668fc94b4",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cd452e2-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd452e2/DroidDeck-main-cd452e2-pubg.apk",
+        "name": "DroidDeck-main-c8a76e7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c8a76e7/DroidDeck-main-c8a76e7-pubg.apk",
         "size": 93735816,
-        "sha256": "ca6006447fcb65fa8df078ae9303998f3de805df602da46c9550861485e77d94",
+        "sha256": "e01a9498b2592cd0a2904f4fc36c3d8fb83ac78dc8965418b5644faba7d63eac",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cd452e2-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd452e2/DroidDeck-main-cd452e2-antutu.apk",
+        "name": "DroidDeck-main-c8a76e7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c8a76e7/DroidDeck-main-c8a76e7-antutu.apk",
         "size": 93735816,
-        "sha256": "44fdc5ccb8c85ba5c10907c7016737ce1f08eb9ae7fd6b5238da702a1d445a69",
+        "sha256": "1bd2ab7e185f217034926dd9c7ac024a91635fbccc86db3eb0a1846e7a0b29e2",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cd452e2-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd452e2/DroidDeck-main-cd452e2-ludashi.apk",
+        "name": "DroidDeck-main-c8a76e7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c8a76e7/DroidDeck-main-c8a76e7-ludashi.apk",
         "size": 93735816,
-        "sha256": "814610321d730697a38931f9ed776d4238cd1bc493a15ce502b105db740be901",
+        "sha256": "1516451a2084a00e7b8eeb2c6a20f7adece612a10cc08801e08bc2c099bd904d",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c8a76e7ccec3b4ef1f3ac83b7952d04211e4ccd1",
+      "title": "perf(agent): run diagnostic cleanup off startup thread",
+      "summary": "Follow-up to #2131. Run abandoned diagnostic-stage cleanup on a background thread so lock acquisition and deleting stale stages cannot block Application.onCreate across app processes.",
+      "publishedAt": 1793928103000
+    },
     {
       "commit": "cd452e2b608c4dbb9c42c0b7b84c8e7864aa93cd",
       "title": "fix: upload GOG cloud saves in Galaxy's gzip + metadata format",
@@ -155,12 +161,6 @@
       "title": "feat(hud): add independent 1% and 0.1% low toggles",
       "summary": "The slide-out HUD settings now include independent switches for 1% low and 0.1% low beside the existing 0.01% low switch. Both default to enabled, preserving the current display and existing saved settings.",
       "publishedAt": 1793901285000
-    },
-    {
-      "commit": "3d1f0f63b927ea20bd9ea141b9b02802b7f72404",
-      "title": "fix(input): mouse right click no longer acts as Back in REDMAGIC cast mode",
-      "summary": "On a REDMAGIC 10 Pro (NX789J, RedMagicOS 10.0.14, Android 15), casting DroidDeck to a monitor from Game Space (\"cast mode\") turns a mouse right click into Back, so it opens the DroidDeck menu instead of right-clicking in the session. Mirror mode is fine.",
-      "publishedAt": 1793900069000
     }
   ],
   "tests": [
