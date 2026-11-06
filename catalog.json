@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1793935605122,
+  "generatedAt": 1793937021817,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -172,7 +172,7 @@
       "pr": 2156,
       "version": null,
       "versionCode": 17,
-      "publishedAt": 1793933283000,
+      "publishedAt": 1793936974000,
       "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2156",
       "apks": {
         "com.droiddeck.launcher": {
@@ -207,6 +207,55 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2156/DroidDeck-PR.2156-4fbc6fb-ludashi.apk",
           "size": 93801352,
           "sha256": "7cb059dde3b662bf5d3f5b722003c148b9b90433665c148cdf254010d81edf65",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2157",
+      "title": "feat: the PowerVR runtime is a downloaded add-on pack, not bundled in the APK",
+      "summary": "The PowerVR and Xclipse graphics runtime (libhybris bridge, DXVK, the WSI layer) was bundled in the APK as assets/hybris/runtime.tzst, about 75 MB unpacked. Only PowerVR and Xclipse devices use it, but everyone downloaded it, which is most of why PR test builds grew from about 89 MB to 123 MB.",
+      "commit": "0237cfb6ef92847f9b8794b27e982c900362cb03",
+      "pr": 2157,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1793936952000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2157",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2157-0237cfb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2157/DroidDeck-PR.2157-0237cfb.apk",
+          "size": 96174029,
+          "sha256": "88a83cd7a832fe4b684b46602124aa4b1433168fd025ca321a201008e56ec487",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2157-0237cfb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2157/DroidDeck-PR.2157-0237cfb-pubg.apk",
+          "size": 96174029,
+          "sha256": "0797ef732a96040c0afceca9abdc697d68230feb3e839f573a4825811aaf4489",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2157-0237cfb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2157/DroidDeck-PR.2157-0237cfb-antutu.apk",
+          "size": 96174029,
+          "sha256": "3d99f0f1ab5252fae94ab6c65bd07f08a3e2f321e7874b5e842d5e03af3d3a42",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2157-0237cfb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2157/DroidDeck-PR.2157-0237cfb-ludashi.apk",
+          "size": 96174029,
+          "sha256": "a25c3bbcd8503d92117d6725677096a2a7df96f2cf55e4a022d7b12d2b8d33b3",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
