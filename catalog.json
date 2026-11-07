@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794090141203,
+  "generatedAt": 1794093423795,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2241",
+      "title": "test: skip the unscrubbable session log test when file permissions are not enforced",
+      "summary": "SessionLogShareTest.aFileThatCouldNotBeScrubbedLeavesTheFolderUnrecorded depends on a denied write. Root ignores file mode bits, so the test fails on the root self-hosted runner (droiddeck-desktop), as seen in run 42421920730: 3800 tests, 1 failed. #2237 guarded six tests like this one; this is the remaining one.",
+      "commit": "8f0b9ea8ce642a649d96f93028cd735e0a9cf977",
+      "pr": 2241,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794093379000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2241",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2241-8f0b9ea.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2241/DroidDeck-PR.2241-8f0b9ea.apk",
+          "size": 96596029,
+          "sha256": "fc490fe800ef3e542edb650609172da41d6d99cad2dd26592ecbbb8d234dd8b3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2241-8f0b9ea-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2241/DroidDeck-PR.2241-8f0b9ea-pubg.apk",
+          "size": 96596029,
+          "sha256": "c144c4d4e770a9e657a3dce14fae369a8baa57bf3511ad0fa052e88d10860312",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2241-8f0b9ea-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2241/DroidDeck-PR.2241-8f0b9ea-antutu.apk",
+          "size": 96596029,
+          "sha256": "d20408aaa0bf4ddbbd74f58452ee303f8dd5cc800b241446a721722888c48d94",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2241-8f0b9ea-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2241/DroidDeck-PR.2241-8f0b9ea-ludashi.apk",
+          "size": 96596029,
+          "sha256": "92295aef71535253d753fa8960ce727eb901f881f43b35925b805a217afb0b2b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2220",
       "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
