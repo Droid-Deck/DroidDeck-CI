@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794071253626,
+  "generatedAt": 1794071777548,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2217",
+      "title": "fix(script-run): run x86 programs a native script starts through FEX",
+      "summary": "A script app whose folder holds both ARM and x86 programs, such as Europa Universalis IV from GOG, runs its script natively. That part is correct: droiddeck-fex only uses FEX for a whole folder when every program in it is x86. But when the script then runs an x86 program, it fails:",
+      "commit": "557d59ef45eac7a6a373fde840068df709dec662",
+      "pr": 2217,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794071708000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2217",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2217-557d59e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-557d59e.apk",
+          "size": 96497725,
+          "sha256": "2c5e3eb676f8fa7a869f118dd0004743295898d0c733d2395ba639cab9058191",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2217-557d59e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-557d59e-pubg.apk",
+          "size": 96497725,
+          "sha256": "8c03cea7231bee4ea998c5f2a97ab06af538810359b9870ed1e5d16cd02405e8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2217-557d59e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-557d59e-antutu.apk",
+          "size": 96497725,
+          "sha256": "bda434cbbb3529905bf842bdbf0aa03280b20b9bbbc4b1340605dca0e2df9e92",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2217-557d59e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-557d59e-ludashi.apk",
+          "size": 96497725,
+          "sha256": "a1389970ce1a68ede1c24ff43ea4a0ddc381229a654333d3a3ecb769fbd3455e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2219",
       "title": "feat(wow): download addons from WoWInterface and CurseForge",
       "summary": "A Download addons\u2026 window on World of Warcraft's Addons tab. It searches and installs addons from WoWInterface and CurseForge, for whichever WoW client is installed.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-5d8bbb9-ludashi.apk",
           "size": 96555069,
           "sha256": "6768268957eb0c1c18c867bc93f7ae7f47227d1ea8596cdcff6dcbee738d65eb",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2217",
-      "title": "fix(script-run): run x86 programs a native script starts through FEX",
-      "summary": "A script app whose folder holds both ARM and x86 programs, such as Europa Universalis IV from GOG, runs its script natively. That part is correct: droiddeck-fex only uses FEX for a whole folder when every program in it is x86. But when the script then runs an x86 program, it fails:",
-      "commit": "eea003c105e40c2c67b5396cc9eeafd0265972c3",
-      "pr": 2217,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794069143000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2217",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2217-eea003c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-eea003c.apk",
-          "size": 96497725,
-          "sha256": "23ff7183a4170b0e995da77658a3a17f0c6577d5085e0fc938c32974630735a7",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2217-eea003c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-eea003c-pubg.apk",
-          "size": 96497725,
-          "sha256": "3f1da2c6adb5071a50ea24cc2a3ef057b4cd96b9d0dd30d33a2e07eb373bd367",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2217-eea003c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-eea003c-antutu.apk",
-          "size": 96497725,
-          "sha256": "5173e230b8255839144436e49610381a02ce9de570fb2d9baf50f374c1a6f605",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2217-eea003c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-eea003c-ludashi.apk",
-          "size": 96497725,
-          "sha256": "f8020f078d3a5f3906b333fd4acdfe6c983dabc860270d982bc7e80a5d7fd00c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
