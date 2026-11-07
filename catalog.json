@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794059523382,
+  "generatedAt": 1794060953335,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2212",
+      "title": "perf: answer Steam's missing-file checks on SD and USB libraries from the directory cache",
+      "summary": "Installing a Steam game to an SD or USB library is slow on devices where the library is reached through Android's FUSE layer (stock Android; Banner's Brawlhalla on a Konkr Pocket Fit took 28 minutes). Before it creates or commits a file, the Steam client checks whether it already exists under its exact, lower-cased and folded spellings. Every one of those checks is a miss, and on FUSE each miss is",
+      "commit": "852aaa2d7af3c511372ac185ec68d1cad389182b",
+      "pr": 2212,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794060892000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2212",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2212-852aaa2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-852aaa2.apk",
+          "size": 96497725,
+          "sha256": "2e52cdac2abcdf58b21736cf312d1f60909b4c9b250b5a1459e2a32b8e7d1a88",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2212-852aaa2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-852aaa2-pubg.apk",
+          "size": 96497725,
+          "sha256": "d9290dc5b1b20550eeaf6b3e9d248a5bfa87e4f1c84e6875a0bb62224e04ca5e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2212-852aaa2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-852aaa2-antutu.apk",
+          "size": 96497725,
+          "sha256": "2717548b73cf53c0e64efde90cbce2088608ef13357b2119177303432624bd39",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2212-852aaa2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-852aaa2-ludashi.apk",
+          "size": 96497725,
+          "sha256": "a754af2227afd8fe711c892ba6dc7b6e546689514feedccdfb45710d393ffdf7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2204",
       "title": "fix: library scan and download cancel crash on Android 10",
