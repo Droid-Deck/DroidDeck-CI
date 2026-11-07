@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794066254543,
+  "generatedAt": 1794066316979,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2217",
+      "title": "fix(script-run): run x86 programs a native script starts through FEX",
+      "summary": "A script app whose folder holds both ARM and x86 programs, such as Europa Universalis IV from GOG, runs its script natively. That part is correct: droiddeck-fex only uses FEX for a whole folder when every program in it is x86. But when the script then runs an x86 program, it fails:",
+      "commit": "8dca4d053c5a2a46c02a53d8e780206ec16ae2e8",
+      "pr": 2217,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794066262000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2217",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2217-8dca4d0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-8dca4d0.apk",
+          "size": 96497725,
+          "sha256": "671882bd786d53eee83a56094a63f143e4e8f430a3dc2126b489dfc3147a9cd6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2217-8dca4d0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-8dca4d0-pubg.apk",
+          "size": 96497725,
+          "sha256": "5718bf2a6a4ef933117a28f4182a2ef498216fc995a77643a2867c338d174a65",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2217-8dca4d0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-8dca4d0-antutu.apk",
+          "size": 96497725,
+          "sha256": "13177e6eaede93fa524e5ad2bfe6f929cf2eaba643549181f70e66b85fe6dc60",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2217-8dca4d0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-8dca4d0-ludashi.apk",
+          "size": 96497725,
+          "sha256": "a627f9e6c1591e76460b7d06ad8a96c1ec00aa520db403d21e5b984c05178157",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2220",
       "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
       "summary": "In Direct touch, dragging stopped working in games that draw their own cursor (Balatro, Stardew Valley). A drag moves the pointer but never holds a button down; taps still click.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-a9d4689-ludashi.apk",
           "size": 96505917,
           "sha256": "cdf9b566154460d7a05c24397a179eaed72d7fd31ca1311c274ae5cfcabd73c0",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2217",
-      "title": "fix(script-run): run x86 programs a native script starts through FEX",
-      "summary": "A script app whose folder holds both ARM and x86 programs, such as Europa Universalis IV from GOG, runs its script natively. That part is correct: droiddeck-fex only uses FEX for a whole folder when every program in it is x86. But when the script then runs an x86 program, it fails:",
-      "commit": "c8238653e5afcd4455fb09a848670003ba92a0e7",
-      "pr": 2217,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794064793000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2217",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2217-c823865.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-c823865.apk",
-          "size": 96497725,
-          "sha256": "ba8354e13ecbd8dbaaca61ee83a88a8716332f66815f36fdb42ee96c2374256a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2217-c823865-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-c823865-pubg.apk",
-          "size": 96497725,
-          "sha256": "fbb9a61b844cb6f4d303e26bfe00df9c447ce70bc9999aaad7f6e0a6eff0fd0d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2217-c823865-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-c823865-antutu.apk",
-          "size": 96497725,
-          "sha256": "8564f6da900bf0ff982d585774dea949901e8475bab2d42279c1c8cb54f3c5fc",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2217-c823865-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-c823865-ludashi.apk",
-          "size": 96497725,
-          "sha256": "9ca4ed51e727bbd572108e77c61130957e708cf5a4e77efe8056dc361f121fac",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
