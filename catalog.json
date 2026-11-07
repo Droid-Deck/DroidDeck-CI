@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794013414938,
+  "generatedAt": 1794013769174,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2195",
+      "title": "fix(battlenet): stop Battle.net's pages playing videos on the CPU",
+      "summary": "Fixes the Battle.net launcher freezing after it opens, reported in the \"Blizzard Launcher\" thread on Discord (Galaxy Z Fold 8 and Fold7, Preview 250f80f). The Android desktop stays responsive; only Battle.net stops responding.",
+      "commit": "e7002c6e84066d9edbcb613fc3248ab5bc9e0b2a",
+      "pr": 2195,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794013696000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2195",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2195-e7002c6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2195/DroidDeck-PR.2195-e7002c6.apk",
+          "size": 96268237,
+          "sha256": "4b286cd71ed4d356013cfe772957b2ac63d3d35d1062a1d7eb01a568e9e84ce5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2195-e7002c6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2195/DroidDeck-PR.2195-e7002c6-pubg.apk",
+          "size": 96268237,
+          "sha256": "8889b4db7b0c8a73d07ecb0c1e058ae1fb5145480705356de2d1c41fd6f96c8b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2195-e7002c6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2195/DroidDeck-PR.2195-e7002c6-antutu.apk",
+          "size": 96268237,
+          "sha256": "7f7caa38ff8bdbe6c196a703ea9fe0bd84413c2fa881466711dfcc86706ff74a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2195-e7002c6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2195/DroidDeck-PR.2195-e7002c6-ludashi.apk",
+          "size": 96268237,
+          "sha256": "77389a78672dd7e0bb3d041e202a38b486ff4f6003678a948182bd920c164653",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2193",
       "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
