@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794071777548,
+  "generatedAt": 1794072175605,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2219",
+      "title": "feat(wow): download addons from WoWInterface and open CurseForge in the browser",
+      "summary": "A Download addons\u2026 window on World of Warcraft's Addons tab. It searches and installs WoWInterface addons in the app, and opens CurseForge in the user's browser. It works for whichever WoW client is installed.",
+      "commit": "ef0e1c5da05c806d63159df2567a386b89ee12ff",
+      "pr": 2219,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794072111000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2219",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2219-ef0e1c5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-ef0e1c5.apk",
+          "size": 96538685,
+          "sha256": "8ddc1b51d4c6b44dd5f73d897dbdff951a8ded8be4a93d0bbaf0387f765a06ac",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2219-ef0e1c5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-ef0e1c5-pubg.apk",
+          "size": 96538685,
+          "sha256": "219b99abfe9082c0954fb40da640a374bebac08cef1b0c31be74b422a79220e6",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2219-ef0e1c5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-ef0e1c5-antutu.apk",
+          "size": 96538685,
+          "sha256": "e460bd5de78dd0f33c235a73d673527690fd30f5a0a3d8a56d4b6593c0a913d3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2219-ef0e1c5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-ef0e1c5-ludashi.apk",
+          "size": 96538685,
+          "sha256": "7b2a2cfaa43249efc37397a9e0c85173e18eb95c679db35ac905cefe68969695",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2217",
       "title": "fix(script-run): run x86 programs a native script starts through FEX",
       "summary": "A script app whose folder holds both ARM and x86 programs, such as Europa Universalis IV from GOG, runs its script natively. That part is correct: droiddeck-fex only uses FEX for a whole folder when every program in it is x86. But when the script then runs an x86 program, it fails:",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-557d59e-ludashi.apk",
           "size": 96497725,
           "sha256": "a1389970ce1a68ede1c24ff43ea4a0ddc381229a654333d3a3ecb769fbd3455e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2219",
-      "title": "feat(wow): download addons from WoWInterface and CurseForge",
-      "summary": "A Download addons\u2026 window on World of Warcraft's Addons tab. It searches and installs addons from WoWInterface and CurseForge, for whichever WoW client is installed.",
-      "commit": "5d8bbb98fd32ac79a49c8922caba06ab6af08ea1",
-      "pr": 2219,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794070284000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2219",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2219-5d8bbb9.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-5d8bbb9.apk",
-          "size": 96555069,
-          "sha256": "f850978dcf52dd544f59df7d435889f16a518b4ff0d1c261ffd60321aed55522",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2219-5d8bbb9-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-5d8bbb9-pubg.apk",
-          "size": 96555069,
-          "sha256": "c5d2660d739e177b6c9a3d0706ce80c6d2a633e2a0bc75395f65e75901630e43",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2219-5d8bbb9-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-5d8bbb9-antutu.apk",
-          "size": 96555069,
-          "sha256": "86efa4bb171a0b21a25353e4f4254d8231253446361963b74a24f59a0ea0678f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2219-5d8bbb9-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-5d8bbb9-ludashi.apk",
-          "size": 96555069,
-          "sha256": "6768268957eb0c1c18c867bc93f7ae7f47227d1ea8596cdcff6dcbee738d65eb",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
