@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794069190587,
+  "generatedAt": 1794069268095,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-22a675a",
-    "title": "Unify controller and screen input profiles for game and desktop sessions",
-    "summary": "Desktop sessions need configurable mouse, keyboard and application actions from a controller. On dual-screen devices, a lower-screen trackpad may already handle the pointer, leaving the physical controls available for other assignments. This PR gives physical controllers and local touch controls a shared profile/action model instead of separate configuration paths.",
-    "commit": "22a675a664f0c8a1bfd8ecac292b8971a38555f7",
+    "tag": "main-4cb3a89",
+    "title": "fix: library scan and download cancel crash on Android 10",
+    "summary": "Fixes #2200: on a Pico 4 (Android 10) DroidDeck ran once, then crashed on every library scan.",
+    "commit": "4cb3a894837ab00f95cac83b66f5d3db5c7cd78f",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794059466000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-22a675a",
+    "publishedAt": 1794069189000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4cb3a89",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-22a675a.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-22a675a/DroidDeck-main-22a675a.apk",
+        "name": "DroidDeck-main-4cb3a89.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cb3a89/DroidDeck-main-4cb3a89.apk",
         "size": 96497725,
-        "sha256": "75dfd916029943189bc83273fe5f6f51f75a83eec07f2a25ccf0252f2f72145c",
+        "sha256": "5ea468c2dadd841a788bd2d2a6aab95c510c5b5cda61a9c55d0d0b0a26e9d8eb",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-22a675a-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-22a675a/DroidDeck-main-22a675a-pubg.apk",
+        "name": "DroidDeck-main-4cb3a89-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cb3a89/DroidDeck-main-4cb3a89-pubg.apk",
         "size": 96497725,
-        "sha256": "f148399684eb7d6e042af737c825fa4818ccd4f6b8cb275e538452b0af0d35b9",
+        "sha256": "f7f7d2b20b31f002a89a36e60852cb63c1f6988892badb1e455415c0025f438a",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-22a675a-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-22a675a/DroidDeck-main-22a675a-antutu.apk",
+        "name": "DroidDeck-main-4cb3a89-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cb3a89/DroidDeck-main-4cb3a89-antutu.apk",
         "size": 96497725,
-        "sha256": "9a17f0f07c4d2f249d4d7ef147691105c0c8ea230bb70911ecf05653ebe2f82a",
+        "sha256": "d14cc2057202d29c95085c5b4650a70759df24f585e75e7d3afecf732fdafb65",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-22a675a-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-22a675a/DroidDeck-main-22a675a-ludashi.apk",
+        "name": "DroidDeck-main-4cb3a89-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4cb3a89/DroidDeck-main-4cb3a89-ludashi.apk",
         "size": 96497725,
-        "sha256": "71addb18cf345ee0d1f7dc8808eed7d2d375d3f2ffc3c8bd25b4a14978d3828d",
+        "sha256": "a8395244097e17954aacf819e56028973f98d176cef8f6b4c8f8aa2184c58663",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4cb3a894837ab00f95cac83b66f5d3db5c7cd78f",
+      "title": "fix: library scan and download cancel crash on Android 10",
+      "summary": "Fixes #2200: on a Pico 4 (Android 10) DroidDeck ran once, then crashed on every library scan.",
+      "publishedAt": 1794069189000
+    },
     {
       "commit": "22a675a664f0c8a1bfd8ecac292b8971a38555f7",
       "title": "Unify controller and screen input profiles for game and desktop sessions",
@@ -155,12 +161,6 @@
       "title": "chore: pin gamescope to the DroidDeck-Components p22 release",
       "summary": "The pin pointed at a release in this repository after #2029. It now points at gamescope-3.16.29-p22 in DroidDeck-Components, built from main by build-gamescope.yml (run 42272332246) with the same patch set. The release's sha256 matches the downloaded asset. The pr2029 release here is deleted after this merges.",
       "publishedAt": 1793994744000
-    },
-    {
-      "commit": "a81da1e4768918b9aa507e5f8a65f7f937520fc2",
-      "title": "feat(components): Auto updates for FEX, DXVK and VKD3D-Proton",
-      "summary": "FEX, DXVK and VKD3D-Proton now have an Auto / Manual choice on the Default Components page, styled and focused like the GPU drivers page. Auto is the default; Manual keeps today's download, import and restore lists.",
-      "publishedAt": 1793992998000
     }
   ],
   "tests": [
