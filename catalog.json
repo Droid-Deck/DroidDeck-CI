@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794084096530,
+  "generatedAt": 1794084559489,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -214,153 +214,6 @@
       }
     },
     {
-      "tag": "pr-2226",
-      "title": "fix(components): DXVK Auto on Adreno 6xx keeps DroidDeck-Proton on DXVK-gplasync 2.7.1",
-      "summary": "On Adreno 6xx GPUs the DXVK Auto / Manual choice is missing from Components, while FEX and VKD3D-Proton show it. Updating to a newer Preview does not bring it back. Reported on Discord on an Adreno 644 (Galaxy M55s, Android 16).",
-      "commit": "1cee80daf25d625d018459ff5041e4e14e21d78f",
-      "pr": 2226,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794083454000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2226",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2226-1cee80d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-1cee80d.apk",
-          "size": 96559165,
-          "sha256": "f0dca0e20839165c79c6b96808671562508d8b0de348c3c4fcc4debab2907f34",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2226-1cee80d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-1cee80d-pubg.apk",
-          "size": 96559165,
-          "sha256": "9c9365eb6a07860a0b1637339987a2c6941ce0625254a71ce3235dfc23215e03",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2226-1cee80d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-1cee80d-antutu.apk",
-          "size": 96559165,
-          "sha256": "b280d2123209e4a8b3d63c8c2ecf779038fb8193d0a26e13139b61b8c2a34f9e",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2226-1cee80d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-1cee80d-ludashi.apk",
-          "size": 96559165,
-          "sha256": "3de11f2c4d4bf29e731fd3dd15af72cf5341296c6ac2741609c2717f5807da5c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2232",
-      "title": "fix(dual-screen): docked handhelds switch to single-screen mode",
-      "summary": "A Reddit report: people dock a Retroid Pocket Duo or AYN Thor to a TV or monitor. The TV mirrors the main (top) screen.",
-      "commit": "29b179dbcfea63f131bd8985a7129786c9c28605",
-      "pr": 2232,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794083344000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2232",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2232-29b179d.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2232/DroidDeck-PR.2232-29b179d.apk",
-          "size": 96555069,
-          "sha256": "814ac6a5cf2892fb19f4e0f8c8c45b72de539309bf1fb775b9d9fffac96fe494",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2232-29b179d-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2232/DroidDeck-PR.2232-29b179d-pubg.apk",
-          "size": 96555069,
-          "sha256": "492640da872016cdc07a98e558f27942eff385e256279a897ae4a5eb754880dd",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2232-29b179d-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2232/DroidDeck-PR.2232-29b179d-antutu.apk",
-          "size": 96555069,
-          "sha256": "80e82dadb24a3a767af7fe6771c308f375c810ef9c44b65019368b93498c40a5",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2232-29b179d-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2232/DroidDeck-PR.2232-29b179d-ludashi.apk",
-          "size": 96555069,
-          "sha256": "2b4ee66e4b22f7f62b502252c011a38b782b6fd073325bf7d098780249f96d0f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2233",
-      "title": "fix(drivers): a driver repo that fails to answer no longer changes the Auto pick",
-      "summary": "A tester on an Adreno 644 (Galaxy M55) reported that GPU Drivers Auto keeps switching. It was DD-Turnip v0.4.0 one day and Banner's Turnip the next.",
-      "commit": "d0cc953bbdbaedab2774f7f871c330cf8c510447",
-      "pr": 2233,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794082848000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2233",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2233-d0cc953.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-d0cc953.apk",
-          "size": 96636989,
-          "sha256": "a32d83c1d44252c1f5370fa0a55c72db5c23ffea93bb56179829da014b76195c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2233-d0cc953-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-d0cc953-pubg.apk",
-          "size": 96636989,
-          "sha256": "e86446db282ea8f29de7ce8e18f7e670c40a7a9831c9339ce7e2281930b95739",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2233-d0cc953-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-d0cc953-antutu.apk",
-          "size": 96636989,
-          "sha256": "4507943c0259b2d44065269766276f3bec8a1416c854b4944dde28b300370b15",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2233-d0cc953-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-d0cc953-ludashi.apk",
-          "size": 96636989,
-          "sha256": "0832f8cab7eff1efb73b55fcc0b4cf16cc975bd1f8b495f5498cfe74a076231d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-2224",
       "title": "fix(proot): let the fast path fall back when Android 10 refuses statx",
       "summary": "On a Pico 4 (Android 10) Steam setup stopped with \"Session exit 1\". The session log showed mkdir: Already exists from droiddeck-steam-install, which runs mkdir -p on folders that already exist.",
@@ -452,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-f3fbfa7-ludashi.apk",
           "size": 96497725,
           "sha256": "bd7d53b2b42b4d2714ffb79d2958ce51db1bdc759d70b634cb82aacd6b31608c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2205",
-      "title": "fix(input): L2/R2 keys stop overriding analog trigger axes",
-      "summary": "Fixes analog triggers jumping to full while held, reported in the Discord thread \"Gamepad triggers keep jumping to max value of 32767\" (GameSir X2 Pro). With both triggers held, only one worked properly.",
-      "commit": "7d88282bd75cfa2af49b04ae3ee257098e153241",
-      "pr": 2205,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794037123000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2205",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2205-7d88282.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2205/DroidDeck-PR.2205-7d88282.apk",
-          "size": 96272333,
-          "sha256": "83272e838219d85a34717b1b2d0b91fc7872bb6a9fb2ada4f8f9168689786f08",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2205-7d88282-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2205/DroidDeck-PR.2205-7d88282-pubg.apk",
-          "size": 96272333,
-          "sha256": "688b48ecfa0c1f8f0b848f288bfe0a52d86ca65306d78f1c05e3debdd19aa39c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2205-7d88282-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2205/DroidDeck-PR.2205-7d88282-antutu.apk",
-          "size": 96272333,
-          "sha256": "ba3372dd324e53e62fdda64cde28f033d111dd53315691f5e8dfb2b9a2aa72af",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2205-7d88282-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2205/DroidDeck-PR.2205-7d88282-ludashi.apk",
-          "size": 96272333,
-          "sha256": "39bbf939e5e7d2350c5be342f87e605ceffe11848694072e67aa125bde7e23f1",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
