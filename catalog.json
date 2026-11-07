@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794015897242,
+  "generatedAt": 1794016992223,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a552f1e",
-    "title": "fix(hud): isolate strip rendering in a software layer",
-    "summary": "Steam underneath the full-width strip HUD flickers when its frame graph redraws on HONOR BKQ-N49 / Adreno 840. Render the entire undocked strip through a software layer, and restore the normal rendering layer for other layouts and docked tabs. The existing strip graph redraw cap is retained.",
-    "commit": "a552f1e29339b97a4f56e998afb9fc26eeb864f7",
+    "tag": "main-18c7d56",
+    "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
+    "summary": "Fixes the Auto component update problems reported on Discord (\"The new Auto Update Components issues\" thread and the #test-builds report).",
+    "commit": "18c7d56409de4cf3b63b1b09e60e0fe97a633a7d",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794015380000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a552f1e",
+    "publishedAt": 1794016934000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-18c7d56",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a552f1e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a552f1e/DroidDeck-main-a552f1e.apk",
-        "size": 96268237,
-        "sha256": "c4b658ec348326b00eb40b731b2d12e98964206f86f896ec326480d6264094e2",
+        "name": "DroidDeck-main-18c7d56.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-18c7d56/DroidDeck-main-18c7d56.apk",
+        "size": 96272333,
+        "sha256": "9d3907897f443f6fc1d7dfe5abe2c0ed60670c94ee95b0f30c0c7c771cf6cebe",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a552f1e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a552f1e/DroidDeck-main-a552f1e-pubg.apk",
-        "size": 96268237,
-        "sha256": "9415c2433ad718155fa3d2ca7f8ee675eb06a043560a472a5ac79a6191bb4e4f",
+        "name": "DroidDeck-main-18c7d56-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-18c7d56/DroidDeck-main-18c7d56-pubg.apk",
+        "size": 96272333,
+        "sha256": "2ed610519843367a4c05e08b83060e324e625a9d6e757851ff33106af20ee785",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a552f1e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a552f1e/DroidDeck-main-a552f1e-antutu.apk",
-        "size": 96268237,
-        "sha256": "ef90667d64e0e7af94f632f0743718a224f51e441a16ab447f45fe247009a91c",
+        "name": "DroidDeck-main-18c7d56-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-18c7d56/DroidDeck-main-18c7d56-antutu.apk",
+        "size": 96272333,
+        "sha256": "4da0e867a65bc8d449f021412f6e3ab2a9b9d558f4b2eba67ce894dc181f72b4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a552f1e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a552f1e/DroidDeck-main-a552f1e-ludashi.apk",
-        "size": 96268237,
-        "sha256": "928ca72c32eec1519e6cc3ce3fb44cc9bd842e1fda38849f4f06cf1ed56c7c6e",
+        "name": "DroidDeck-main-18c7d56-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-18c7d56/DroidDeck-main-18c7d56-ludashi.apk",
+        "size": 96272333,
+        "sha256": "fccbc49f67a63c9a0464db4c304284f8f896976d6b605bc29bf50eee62f8c26b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "18c7d56409de4cf3b63b1b09e60e0fe97a633a7d",
+      "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
+      "summary": "Fixes the Auto component update problems reported on Discord (\"The new Auto Update Components issues\" thread and the #test-builds report).",
+      "publishedAt": 1794016934000
+    },
     {
       "commit": "a552f1e29339b97a4f56e998afb9fc26eeb864f7",
       "title": "fix(hud): isolate strip rendering in a software layer",
@@ -155,12 +161,6 @@
       "title": "feat(wow): voice type and keyboard chat bar for World of Warcraft",
       "summary": "Adds chat input for World of Warcraft (retail, Classic, Classic Era, Anniversary and Forever). When WoW focuses a text box, DroidDeck opens a chat bar. The bar has an editable text field that you can type into, voice-type into, or correct before sending.",
       "publishedAt": 1793986325000
-    },
-    {
-      "commit": "a1bc8467fd8c4591c5b2aa5c89b7e2215e063786",
-      "title": "Show Steam launch options on the Launch tab",
-      "summary": "Steam games already support editable launch options, but the editor is hidden under More \u2192 Edit art. Move it to the game\u2019s Launch tab, where players can find and paste options without opening the artwork editor.",
-      "publishedAt": 1793980924000
     }
   ],
   "tests": [
