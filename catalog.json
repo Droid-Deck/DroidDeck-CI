@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794081874444,
+  "generatedAt": 1794082263245,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e543411",
-    "title": "fix(input): controller navigation works across the Controller tab and profile menus",
-    "summary": "The unified input pages from #1439 used plain touch-only rows, cards and text buttons, so a controller could not activate them, saw no focus highlight, and lost focus whenever a page swapped.",
-    "commit": "e5434117f250e3ecf5e165a4d56dd81b6a23e479",
+    "tag": "main-041c3b1",
+    "title": "ci: run compile jobs on the org workstation runner when it is idle",
+    "summary": "The two heavy x86 jobs (components, build) now run on the org's self-hosted workstation runner (droiddeck-ws, 24 cores) when it is online and idle, and on ubuntu-24.04 otherwise.",
+    "commit": "041c3b1b5593f736f2687c223169959d336d37bb",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794081249000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e543411",
+    "publishedAt": 1794082200000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-041c3b1",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e543411.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e543411/DroidDeck-main-e543411.apk",
-        "size": 96555069,
-        "sha256": "d5452e3d98371ddf0c60eb8a6e61a02785fe88ffd71af16d438361048ec90c60",
+        "name": "DroidDeck-main-041c3b1.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-041c3b1/DroidDeck-main-041c3b1.apk",
+        "size": 96636989,
+        "sha256": "1f1a1db00e14d68c8dd5eeb5b6bceb7b6dfc47e0cc2f00fd62f5d30cf8d43c7c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e543411-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e543411/DroidDeck-main-e543411-pubg.apk",
-        "size": 96555069,
-        "sha256": "db46107cf66ccf524269b88a5b145ac5f74fe7375113ae2d9dde73792c168a61",
+        "name": "DroidDeck-main-041c3b1-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-041c3b1/DroidDeck-main-041c3b1-pubg.apk",
+        "size": 96636989,
+        "sha256": "032dad09c861e3597996c331372641e88036a2a49948ecf8281ae938fe66f788",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e543411-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e543411/DroidDeck-main-e543411-antutu.apk",
-        "size": 96555069,
-        "sha256": "aee3da76e24af5fd58049555b5a79e77abe39eea981bc3cb463fca219260d2db",
+        "name": "DroidDeck-main-041c3b1-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-041c3b1/DroidDeck-main-041c3b1-antutu.apk",
+        "size": 96636989,
+        "sha256": "94546aa9e3531d48f7c2f3a9500f52e1df3ab8443f82d25c7e455067ce018272",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e543411-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e543411/DroidDeck-main-e543411-ludashi.apk",
-        "size": 96555069,
-        "sha256": "8737a26fb3329f9fe11bb426a073a147305863e0f68d7083f7ee32f66204ea8f",
+        "name": "DroidDeck-main-041c3b1-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-041c3b1/DroidDeck-main-041c3b1-ludashi.apk",
+        "size": 96636989,
+        "sha256": "fd55538947b4875bb4be3709e88224def15a43a575f2b97aae8c674de6c007cc",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "041c3b1b5593f736f2687c223169959d336d37bb",
+      "title": "ci: run compile jobs on the org workstation runner when it is idle",
+      "summary": "The two heavy x86 jobs (components, build) now run on the org's self-hosted workstation runner (droiddeck-ws, 24 cores) when it is online and idle, and on ubuntu-24.04 otherwise.",
+      "publishedAt": 1794082200000
+    },
     {
       "commit": "e5434117f250e3ecf5e165a4d56dd81b6a23e479",
       "title": "fix(input): controller navigation works across the Controller tab and profile menus",
@@ -155,12 +161,6 @@
       "title": "feat: compress idle game memory before low-RAM devices run out",
       "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
       "publishedAt": 1794013360000
-    },
-    {
-      "commit": "f33d5b9e09ed27d68137aba4e711f8fca9eb93e9",
-      "title": "fix(components): auto updates follow DroidDeck-Proton only",
-      "summary": "Auto updates from #2156 swapped DroidDeck-Components nightlies into every installed Proton that ships DXVK, VKD3D-Proton or FEX, including Valve's ARM Proton, GE-Proton and proton-cachyos. Only DroidDeck-Proton should track the nightlies; every other Proton should run the components it was built with. This also fixes two Auto problems reported in the test-builds channel.",
-      "publishedAt": 1794009539000
     }
   ],
   "tests": [
