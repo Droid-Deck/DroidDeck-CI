@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794079427955,
+  "generatedAt": 1794079548299,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2231",
+      "title": "fix(input): controller navigation works across the Controller tab and profile menus",
+      "summary": "The unified input pages from #1439 used plain touch-only rows, cards and text buttons, so a controller could not activate them, saw no focus highlight, and lost focus whenever a page swapped.",
+      "commit": "e216175a8309dc5192783946b8c36aa4f8221bd1",
+      "pr": 2231,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794079482000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2231",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2231-e216175.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2231/DroidDeck-PR.2231-e216175.apk",
+          "size": 96550973,
+          "sha256": "4aa4dde3b579e1ab0b2aa98962e6ef3807c97eb9fef0d459de79fbd1d3a2b42e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2231-e216175-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2231/DroidDeck-PR.2231-e216175-pubg.apk",
+          "size": 96550973,
+          "sha256": "d2478b22504f706211e7f7839e0a41ce952ccbb2ba6a26a611297fa7eaeee10e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2231-e216175-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2231/DroidDeck-PR.2231-e216175-antutu.apk",
+          "size": 96550973,
+          "sha256": "598255f024bb1569646fb503970f9fa53cad0ba450d189245d9482f6d10d32a0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2231-e216175-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2231/DroidDeck-PR.2231-e216175-ludashi.apk",
+          "size": 96550973,
+          "sha256": "d7a68ee8ecf9e07497754f0f8b375312e084fe549a8fa11367c5ce409e34be7e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2229",
       "title": "fix(dual-screen): bring back the trackpad and Deck panels on the second screen",
