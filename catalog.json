@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794080789537,
+  "generatedAt": 1794081308217,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-5446497",
-    "title": "fix: uninstalling a Flatpak app that Flatpak no longer has removes its folder",
-    "summary": "If Flatpak no longer has an app's ref but its folder under app/<id> is still there (for example after an interrupted uninstall), the app stays in the launcher. Uninstalling it reports \"not installed\" and changes nothing, so the app is stuck.",
-    "commit": "54464973012bd84c2301d407cfbb69a0c253d68d",
+    "tag": "main-e543411",
+    "title": "fix(input): controller navigation works across the Controller tab and profile menus",
+    "summary": "The unified input pages from #1439 used plain touch-only rows, cards and text buttons, so a controller could not activate them, saw no focus highlight, and lost focus whenever a page swapped.",
+    "commit": "e5434117f250e3ecf5e165a4d56dd81b6a23e479",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794074642000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5446497",
+    "publishedAt": 1794081249000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e543411",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-5446497.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5446497/DroidDeck-main-5446497.apk",
-        "size": 96510013,
-        "sha256": "2a401ebd2b84c36c1ea661fb93772d1b2a5247cdecae12b2bc1ea2a03ff66327",
+        "name": "DroidDeck-main-e543411.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e543411/DroidDeck-main-e543411.apk",
+        "size": 96555069,
+        "sha256": "d5452e3d98371ddf0c60eb8a6e61a02785fe88ffd71af16d438361048ec90c60",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-5446497-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5446497/DroidDeck-main-5446497-pubg.apk",
-        "size": 96510013,
-        "sha256": "309582b41306815e167ef492951d0e9258df3b9404c7f3ae66b0bc01eef7506a",
+        "name": "DroidDeck-main-e543411-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e543411/DroidDeck-main-e543411-pubg.apk",
+        "size": 96555069,
+        "sha256": "db46107cf66ccf524269b88a5b145ac5f74fe7375113ae2d9dde73792c168a61",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-5446497-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5446497/DroidDeck-main-5446497-antutu.apk",
-        "size": 96510013,
-        "sha256": "d52f222387c325eb459024b6030e915f8a371d0bc500531428721a2b9bbb7e49",
+        "name": "DroidDeck-main-e543411-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e543411/DroidDeck-main-e543411-antutu.apk",
+        "size": 96555069,
+        "sha256": "aee3da76e24af5fd58049555b5a79e77abe39eea981bc3cb463fca219260d2db",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-5446497-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5446497/DroidDeck-main-5446497-ludashi.apk",
-        "size": 96510013,
-        "sha256": "698ad23746818bc9f41b810a5aed031af174cb5314e794d5e64f016e5ead97c3",
+        "name": "DroidDeck-main-e543411-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e543411/DroidDeck-main-e543411-ludashi.apk",
+        "size": 96555069,
+        "sha256": "8737a26fb3329f9fe11bb426a073a147305863e0f68d7083f7ee32f66204ea8f",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e5434117f250e3ecf5e165a4d56dd81b6a23e479",
+      "title": "fix(input): controller navigation works across the Controller tab and profile menus",
+      "summary": "The unified input pages from #1439 used plain touch-only rows, cards and text buttons, so a controller could not activate them, saw no focus highlight, and lost focus whenever a page swapped.",
+      "publishedAt": 1794081249000
+    },
     {
       "commit": "54464973012bd84c2301d407cfbb69a0c253d68d",
       "title": "fix: uninstalling a Flatpak app that Flatpak no longer has removes its folder",
@@ -155,12 +161,6 @@
       "title": "fix(components): auto updates follow DroidDeck-Proton only",
       "summary": "Auto updates from #2156 swapped DroidDeck-Components nightlies into every installed Proton that ships DXVK, VKD3D-Proton or FEX, including Valve's ARM Proton, GE-Proton and proton-cachyos. Only DroidDeck-Proton should track the nightlies; every other Proton should run the components it was built with. This also fixes two Auto problems reported in the test-builds channel.",
       "publishedAt": 1794009539000
-    },
-    {
-      "commit": "250f80fbb5a23ddbc36793606b321326f2c555cd",
-      "title": "fix: stop switching between display modes with the same refresh rate (S26 lag and heat since 0.6.7)",
-      "summary": "On some phones the session window switched display modes about 34 times a second for as long as the session ran. Each switch rebuilt the window surface and re-armed frame generation. That matches the Galaxy S26 Ultra reports of a laggy, hot Steam client and very low FPS in every game since 0.6.7.",
-      "publishedAt": 1794004538000
     }
   ],
   "tests": [
