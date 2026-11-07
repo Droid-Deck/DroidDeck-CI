@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794082453077,
+  "generatedAt": 1794082908503,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2233",
+      "title": "fix(drivers): a driver repo that fails to answer no longer changes the Auto pick",
+      "summary": "A tester on an Adreno 644 (Galaxy M55) reported that GPU Drivers Auto keeps switching. It was DD-Turnip v0.4.0 one day and Banner's Turnip the next.",
+      "commit": "d0cc953bbdbaedab2774f7f871c330cf8c510447",
+      "pr": 2233,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794082848000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2233",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2233-d0cc953.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-d0cc953.apk",
+          "size": 96636989,
+          "sha256": "a32d83c1d44252c1f5370fa0a55c72db5c23ffea93bb56179829da014b76195c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2233-d0cc953-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-d0cc953-pubg.apk",
+          "size": 96636989,
+          "sha256": "e86446db282ea8f29de7ce8e18f7e670c40a7a9831c9339ce7e2281930b95739",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2233-d0cc953-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-d0cc953-antutu.apk",
+          "size": 96636989,
+          "sha256": "4507943c0259b2d44065269766276f3bec8a1416c854b4944dde28b300370b15",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2233-d0cc953-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-d0cc953-ludashi.apk",
+          "size": 96636989,
+          "sha256": "0832f8cab7eff1efb73b55fcc0b4cf16cc975bd1f8b495f5498cfe74a076231d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2212",
       "title": "perf: answer Steam's missing-file checks on SD and USB libraries from the directory cache",
       "summary": "Installing a Steam game to an SD or USB library is slow on devices where the library is reached through Android's FUSE layer (stock Android; Banner's Brawlhalla on a Konkr Pocket Fit took 28 minutes). Before it creates or commits a file, the Steam client checks whether it already exists under its exact, lower-cased and folded spellings. Every one of those checks is a miss, and on FUSE each miss is",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-616fda3-ludashi.apk",
           "size": 96559165,
           "sha256": "a126eeca4b4d688c02ba9d9b2194fc631df9ea219e05f4e7fb1f758e798aed3f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2233",
-      "title": "fix(drivers): a driver repo that fails to answer no longer changes the Auto pick",
-      "summary": "A tester on an Adreno 644 (Galaxy M55) reported that GPU Drivers Auto keeps switching. It was DD-Turnip v0.4.0 one day and Banner's Turnip the next.",
-      "commit": "ceb5bab43897321f007accf3710bfc12e2631e7d",
-      "pr": 2233,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794081664000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2233",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2233-ceb5bab.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-ceb5bab.apk",
-          "size": 96555069,
-          "sha256": "497a1b6cf5bbffe98f4ab9440bf298a4f081f108376b35d3ba55b77a5d790dc8",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2233-ceb5bab-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-ceb5bab-pubg.apk",
-          "size": 96555069,
-          "sha256": "9e1c9f83f76dc85f52ba4e9db4f777bef96fdda3ab1e1b9c19c87cbda028fde8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2233-ceb5bab-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-ceb5bab-antutu.apk",
-          "size": 96555069,
-          "sha256": "4a0b78766321061865cbbef808a7ea16a603a05138e23f8845d8bc2562b794f8",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2233-ceb5bab-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-ceb5bab-ludashi.apk",
-          "size": 96555069,
-          "sha256": "3c65221db1a87e884f30195958127811ee23352d0934fa4727b460ebaae49b91",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
