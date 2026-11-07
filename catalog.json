@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794037184135,
+  "generatedAt": 1794038951493,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2204",
+      "title": "fix: library scan and download cancel crash on Android 10",
+      "summary": "Fixes #2200: on a Pico 4 (Android 10) DroidDeck ran once, then crashed on every library scan.",
+      "commit": "3b5bcae410d63ef78710966f0595baf6dd920c67",
+      "pr": 2204,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794038888000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2204",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2204-3b5bcae.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-3b5bcae.apk",
+          "size": 96272333,
+          "sha256": "8e33b516c32afb1d9bd8ab5dc0ee6596485d15251a3ee86082cc5046704a3981",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2204-3b5bcae-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-3b5bcae-pubg.apk",
+          "size": 96272333,
+          "sha256": "d75831b69aa620dece5c6db6d8a4adfc7c7422052222e13bdd7a1b40d640da2b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2204-3b5bcae-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-3b5bcae-antutu.apk",
+          "size": 96272333,
+          "sha256": "cf2adc7d2e917abd3b83440916d30b67e52a060f8ca5e31330a8960397d2d8e7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2204-3b5bcae-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-3b5bcae-ludashi.apk",
+          "size": 96272333,
+          "sha256": "3d74af8a6ebcfe8c781ef710adb94a388eeb0cbff96fd0ccfecf77c108f084b1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2205",
       "title": "fix(input): L2/R2 keys stop overriding analog trigger axes",
       "summary": "Fixes analog triggers jumping to full while held, reported in the Discord thread \"Gamepad triggers keep jumping to max value of 32767\" (GameSir X2 Pro). With both triggers held, only one worked properly.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2205/DroidDeck-PR.2205-7d88282-ludashi.apk",
           "size": 96272333,
           "sha256": "39bbf939e5e7d2350c5be342f87e605ceffe11848694072e67aa125bde7e23f1",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2204",
-      "title": "fix: library scan and download cancel crash on Android 10",
-      "summary": "Fixes #2200: on a Pico 4 (Android 10) DroidDeck ran once, then crashed on every library scan.",
-      "commit": "48917a33dfb6dde90d1de018a12c1b8194778118",
-      "pr": 2204,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794036939000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2204",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2204-48917a3.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-48917a3.apk",
-          "size": 96272333,
-          "sha256": "29830c39596c589b1e6c18bec4183e59cfcca03224b5f54ec05dda439e698393",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2204-48917a3-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-48917a3-pubg.apk",
-          "size": 96272333,
-          "sha256": "d40fa507405f4c2eca9787708433faed41fe80f76e6f5ce3ee0f87cc56fd87f0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2204-48917a3-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-48917a3-antutu.apk",
-          "size": 96272333,
-          "sha256": "0a7d1308276c2a52e6d0056329fd003adc8083fa4a32e3f2e362f1905e440ef5",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2204-48917a3-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-48917a3-ludashi.apk",
-          "size": 96272333,
-          "sha256": "7d9cb3a54b852c06e58e6d93171546ddcb7780a4b0cc2c1a85a6191452c0e330",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
