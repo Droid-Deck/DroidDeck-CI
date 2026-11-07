@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794095560281,
+  "generatedAt": 1794095866970,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-d29a1a2",
-    "title": "test: skip permission-denial tests when running as root",
-    "summary": "The new self-hosted runners run the unit tests as root, which ignores file mode bits, so six tests that depend on a denied read or write fail there while passing on GitHub-hosted runners (seen on #2236):",
-    "commit": "d29a1a2dc214d9bfa1926c95d514f4f6dacede88",
+    "tag": "main-4948f73",
+    "title": "test: skip the unscrubbable session log test when file permissions are not enforced",
+    "summary": "SessionLogShareTest.aFileThatCouldNotBeScrubbedLeavesTheFolderUnrecorded depends on a denied write. Root ignores file mode bits, so the test fails on the root self-hosted runner (droiddeck-desktop), as seen in run 42421920730: 3800 tests, 1 failed. #2237 guarded six tests like this one; this is the remaining one.",
+    "commit": "4948f73912886bdcdbedb1f8f54c2230a7c75876",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794090084000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d29a1a2",
+    "publishedAt": 1794095812000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-4948f73",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-d29a1a2.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d29a1a2/DroidDeck-main-d29a1a2.apk",
+        "name": "DroidDeck-main-4948f73.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4948f73/DroidDeck-main-4948f73.apk",
         "size": 96510013,
-        "sha256": "69b14e7e85d1b5a717c240e0f036821d8084ee647a84be46688d6fc1fbd0d61d",
+        "sha256": "febb48bfb2017c63602498e22ae3dbabd3e8969e28d7465e7e06a766a9cc1924",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-d29a1a2-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d29a1a2/DroidDeck-main-d29a1a2-pubg.apk",
+        "name": "DroidDeck-main-4948f73-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4948f73/DroidDeck-main-4948f73-pubg.apk",
         "size": 96510013,
-        "sha256": "5c67307aa401cdfdd063cb3ce48d0853299e9dec57bcc124bc13460a82309ae4",
+        "sha256": "e8c9bd90c2c1cb021007bdcf48b29a36a1d6c18f0546bb7b211b35d7fc9b9c28",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-d29a1a2-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d29a1a2/DroidDeck-main-d29a1a2-antutu.apk",
+        "name": "DroidDeck-main-4948f73-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4948f73/DroidDeck-main-4948f73-antutu.apk",
         "size": 96510013,
-        "sha256": "c966aa6018098722126d0bba7a865da0c1d9ab8b559bd693232f53da3ddad575",
+        "sha256": "9d4cda02e4f21b90f48e7fe33f7dbfe21f9d51ca3465eb2bae4c1b2b109f49be",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-d29a1a2-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d29a1a2/DroidDeck-main-d29a1a2-ludashi.apk",
+        "name": "DroidDeck-main-4948f73-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-4948f73/DroidDeck-main-4948f73-ludashi.apk",
         "size": 96510013,
-        "sha256": "ac6912dd40e33b222dcf69e8b670cce8c1b250d576d778cbaec5e896ea18cff5",
+        "sha256": "fd6c4361031aa6061f8138002c3bad92c69e593d11eda958cab05e0101bb2da4",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "4948f73912886bdcdbedb1f8f54c2230a7c75876",
+      "title": "test: skip the unscrubbable session log test when file permissions are not enforced",
+      "summary": "SessionLogShareTest.aFileThatCouldNotBeScrubbedLeavesTheFolderUnrecorded depends on a denied write. Root ignores file mode bits, so the test fails on the root self-hosted runner (droiddeck-desktop), as seen in run 42421920730: 3800 tests, 1 failed. #2237 guarded six tests like this one; this is the remaining one.",
+      "publishedAt": 1794095812000
+    },
     {
       "commit": "d29a1a2dc214d9bfa1926c95d514f4f6dacede88",
       "title": "test: skip permission-denial tests when running as root",
@@ -155,12 +161,6 @@
       "title": "perf: answer chown and bound thermal paths through the proot fast path",
       "summary": "I profiled a fresh 1000xRESIST install (2,216 files) to the Thor's SD card on current main to see what the PRoot fast path still misses. Reserving space is now 78 s (404 s on 2026-10-04), so most of the earlier gaps are closed. Two things were still reaching PRoot:",
       "publishedAt": 1794032748000
-    },
-    {
-      "commit": "18c7d56409de4cf3b63b1b09e60e0fe97a633a7d",
-      "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
-      "summary": "Fixes the Auto component update problems reported on Discord (\"The new Auto Update Components issues\" thread and the #test-builds report).",
-      "publishedAt": 1794016934000
     }
   ],
   "tests": [
