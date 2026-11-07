@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794037013343,
+  "generatedAt": 1794037184135,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2205",
+      "title": "fix(input): L2/R2 keys stop overriding analog trigger axes",
+      "summary": "Fixes analog triggers jumping to full while held, reported in the Discord thread \"Gamepad triggers keep jumping to max value of 32767\" (GameSir X2 Pro). With both triggers held, only one worked properly.",
+      "commit": "7d88282bd75cfa2af49b04ae3ee257098e153241",
+      "pr": 2205,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794037123000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2205",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2205-7d88282.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2205/DroidDeck-PR.2205-7d88282.apk",
+          "size": 96272333,
+          "sha256": "83272e838219d85a34717b1b2d0b91fc7872bb6a9fb2ada4f8f9168689786f08",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2205-7d88282-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2205/DroidDeck-PR.2205-7d88282-pubg.apk",
+          "size": 96272333,
+          "sha256": "688b48ecfa0c1f8f0b848f288bfe0a52d86ca65306d78f1c05e3debdd19aa39c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2205-7d88282-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2205/DroidDeck-PR.2205-7d88282-antutu.apk",
+          "size": 96272333,
+          "sha256": "ba3372dd324e53e62fdda64cde28f033d111dd53315691f5e8dfb2b9a2aa72af",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2205-7d88282-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2205/DroidDeck-PR.2205-7d88282-ludashi.apk",
+          "size": 96272333,
+          "sha256": "39bbf939e5e7d2350c5be342f87e605ceffe11848694072e67aa125bde7e23f1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2204",
       "title": "fix: library scan and download cancel crash on Android 10",
