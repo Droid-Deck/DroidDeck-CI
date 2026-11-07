@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794064208434,
+  "generatedAt": 1794064842577,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2217",
+      "title": "fix(script-run): run x86 programs a native script starts through FEX",
+      "summary": "A script app whose folder holds both ARM and x86 programs, such as Europa Universalis IV from GOG, runs its script natively. That part is correct: droiddeck-fex only uses FEX for a whole folder when every program in it is x86. But when the script then runs an x86 program, it fails:",
+      "commit": "c8238653e5afcd4455fb09a848670003ba92a0e7",
+      "pr": 2217,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794064793000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2217",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2217-c823865.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-c823865.apk",
+          "size": 96497725,
+          "sha256": "ba8354e13ecbd8dbaaca61ee83a88a8716332f66815f36fdb42ee96c2374256a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2217-c823865-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-c823865-pubg.apk",
+          "size": 96497725,
+          "sha256": "fbb9a61b844cb6f4d303e26bfe00df9c447ce70bc9999aaad7f6e0a6eff0fd0d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2217-c823865-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-c823865-antutu.apk",
+          "size": 96497725,
+          "sha256": "8564f6da900bf0ff982d585774dea949901e8475bab2d42279c1c8cb54f3c5fc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2217-c823865-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2217/DroidDeck-PR.2217-c823865-ludashi.apk",
+          "size": 96497725,
+          "sha256": "9ca4ed51e727bbd572108e77c61130957e708cf5a4e77efe8056dc361f121fac",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2212",
       "title": "perf: answer Steam's missing-file checks on SD and USB libraries from the directory cache",
