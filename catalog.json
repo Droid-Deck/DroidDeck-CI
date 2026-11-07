@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794083550046,
+  "generatedAt": 1794083949489,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2212",
+      "title": "perf: answer Steam's missing-file checks on SD and USB libraries from the directory cache",
+      "summary": "Installing a Steam game to an SD or USB library is slow on devices where the library is reached through Android's FUSE layer (stock Android; Banner's Brawlhalla on a Konkr Pocket Fit took 28 minutes). Before it creates or commits a file, the Steam client checks whether it already exists under its exact, lower-cased and folded spellings. Every one of those checks is a miss, and on FUSE each miss is",
+      "commit": "057e8df05f8551539f0b6857a5313922e42c9c3e",
+      "pr": 2212,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794083903000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2212",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2212-057e8df.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-057e8df.apk",
+          "size": 96641085,
+          "sha256": "e0add4a4406e8a6c01081b3debd030f19886ed7e203473990c11f130a46bb442",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2212-057e8df-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-057e8df-pubg.apk",
+          "size": 96641085,
+          "sha256": "fe0cf4e839fdbc027e37012ea8078b8c146c84bea1963ebacf4d6a06ca990731",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2212-057e8df-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-057e8df-antutu.apk",
+          "size": 96641085,
+          "sha256": "1e6bac2473c62aabf7ac3c29098383fafa8cee8621af460dd5cfe73bc6868d49",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2212-057e8df-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-057e8df-ludashi.apk",
+          "size": 96641085,
+          "sha256": "5aea8bb83a504f27de31dc79559ab1d9e4b06e4265a41011da8c7b42b4c6ce99",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2226",
       "title": "fix(components): DXVK Auto on Adreno 6xx keeps DroidDeck-Proton on DXVK-gplasync 2.7.1",
@@ -354,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-d0cc953-ludashi.apk",
           "size": 96636989,
           "sha256": "0832f8cab7eff1efb73b55fcc0b4cf16cc975bd1f8b495f5498cfe74a076231d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2212",
-      "title": "perf: answer Steam's missing-file checks on SD and USB libraries from the directory cache",
-      "summary": "Installing a Steam game to an SD or USB library is slow on devices where the library is reached through Android's FUSE layer (stock Android; Banner's Brawlhalla on a Konkr Pocket Fit took 28 minutes). Before it creates or commits a file, the Steam client checks whether it already exists under its exact, lower-cased and folded spellings. Every one of those checks is a miss, and on FUSE each miss is",
-      "commit": "89268631c23bc0bac1b59d62e2dcde50e678b93b",
-      "pr": 2212,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794082379000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2212",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2212-8926863.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-8926863.apk",
-          "size": 96555069,
-          "sha256": "6293c3a3193a6afa750e8909c77b0b0abfdba2f245f84fff5d163c476e53bc3e",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2212-8926863-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-8926863-pubg.apk",
-          "size": 96555069,
-          "sha256": "9f7b0d036b918904dfb3e891bccb065a6b2188281c3f243092adcc9eec93b5c8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2212-8926863-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-8926863-antutu.apk",
-          "size": 96555069,
-          "sha256": "0a998167f4c13b6cf0c796550032a805ad38118623675ed2e6322a5180d81ada",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2212-8926863-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-8926863-ludashi.apk",
-          "size": 96555069,
-          "sha256": "93f1b77c9c9c60f26364232cc4dd20b5899d93272072c0437ca7cb4083751152",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
