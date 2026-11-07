@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794010525995,
+  "generatedAt": 1794012027778,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2193",
+      "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
+      "summary": "Fixes the Auto component update problems reported on Discord (\"The new Auto Update Components issues\" thread and the #test-builds report).",
+      "commit": "cb354e78a9aad8fa7ea6f2cd763e09d828af6783",
+      "pr": 2193,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794011956000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2193",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2193-cb354e7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2193/DroidDeck-PR.2193-cb354e7.apk",
+          "size": 96268237,
+          "sha256": "1d11345349fa929481e925d9effc923746da8fa287376faed516580abe8d18bc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2193-cb354e7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2193/DroidDeck-PR.2193-cb354e7-pubg.apk",
+          "size": 96268237,
+          "sha256": "d0981ccfbed5db1bd0e979b131aa95b07086e24766910a03154602c82225efae",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2193-cb354e7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2193/DroidDeck-PR.2193-cb354e7-antutu.apk",
+          "size": 96268237,
+          "sha256": "7eaa0fe6b963996396a2a9bdf4943c14b01de53d1f63b506ea951814ca860fc9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2193-cb354e7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2193/DroidDeck-PR.2193-cb354e7-ludashi.apk",
+          "size": 96268237,
+          "sha256": "d764241f7fee63475aead751a9713cc4122a07c993a4af097fd3663e7dc6b7d0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2187",
       "title": "feat: compress idle game memory before low-RAM devices run out",
       "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2187/DroidDeck-PR.2187-a0960be-ludashi.apk",
           "size": 96268237,
           "sha256": "4472449172f174be6ad97c346c5d77f025382ed375fe3397bb1453345e676836",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2193",
-      "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
-      "summary": "Fixes the Auto component update problems reported on Discord (\"The new Auto Update Components issues\" thread and the #test-builds report).",
-      "commit": "2f019638db9b6eb365a2116ba4873219ef13bd99",
-      "pr": 2193,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794007420000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2193",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2193-2f01963.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2193/DroidDeck-PR.2193-2f01963.apk",
-          "size": 96264141,
-          "sha256": "e4a1eb8439d3930ee6001455c2a6da9acda647d1a23413c6e402e91127f8c87e",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2193-2f01963-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2193/DroidDeck-PR.2193-2f01963-pubg.apk",
-          "size": 96264141,
-          "sha256": "2d7bbdaea78f47eeb79d336fd696ec1dfef53ba47c1e85d00b3d1b4d6ac9b785",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2193-2f01963-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2193/DroidDeck-PR.2193-2f01963-antutu.apk",
-          "size": 96264141,
-          "sha256": "c2f2cda4793b69b21c87dfc7a3132883353466160b21fb90ad5ed4fd2aff972a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2193-2f01963-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2193/DroidDeck-PR.2193-2f01963-ludashi.apk",
-          "size": 96264141,
-          "sha256": "36ee1a0fd9ec9e893811d6fd23d064a9edec7185d9e8436900a254a0f38c44a4",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
