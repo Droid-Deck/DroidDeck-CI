@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794088461386,
+  "generatedAt": 1794090141203,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-8fa30b9",
-    "title": "fix(input): restore the controls, panels and settings #1439 removed",
-    "summary": "Restores the on-screen controls, second-screen panels and settings that #1439 (\"Unify controller and screen input profiles\", 22a675a66) removed or broke. Each item was checked against the code before #1439 (22a675a66^) and put back to match it. The fixes go through the unified input profiles instead of reviving the old views.",
-    "commit": "8fa30b99f91a38ecc6f61e9d28fddacd8adcc682",
+    "tag": "main-d29a1a2",
+    "title": "test: skip permission-denial tests when running as root",
+    "summary": "The new self-hosted runners run the unit tests as root, which ignores file mode bits, so six tests that depend on a denied read or write fail there while passing on GitHub-hosted runners (seen on #2236):",
+    "commit": "d29a1a2dc214d9bfa1926c95d514f4f6dacede88",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794088395000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8fa30b9",
+    "publishedAt": 1794090084000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d29a1a2",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-8fa30b9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8fa30b9/DroidDeck-main-8fa30b9.apk",
+        "name": "DroidDeck-main-d29a1a2.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d29a1a2/DroidDeck-main-d29a1a2.apk",
         "size": 96510013,
-        "sha256": "b043c820e49810f8959efa020a8875f04919374d3aff4a005ea0cd84a933d0d6",
+        "sha256": "69b14e7e85d1b5a717c240e0f036821d8084ee647a84be46688d6fc1fbd0d61d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-8fa30b9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8fa30b9/DroidDeck-main-8fa30b9-pubg.apk",
+        "name": "DroidDeck-main-d29a1a2-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d29a1a2/DroidDeck-main-d29a1a2-pubg.apk",
         "size": 96510013,
-        "sha256": "dd0360107f1593bf2a114ce42e715cccd720223297c44ed440f5db7c91f8d163",
+        "sha256": "5c67307aa401cdfdd063cb3ce48d0853299e9dec57bcc124bc13460a82309ae4",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-8fa30b9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8fa30b9/DroidDeck-main-8fa30b9-antutu.apk",
+        "name": "DroidDeck-main-d29a1a2-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d29a1a2/DroidDeck-main-d29a1a2-antutu.apk",
         "size": 96510013,
-        "sha256": "184156318010fd06a77a347ac1f28efc47ba45bec72d09171cd955c74ccdae64",
+        "sha256": "c966aa6018098722126d0bba7a865da0c1d9ab8b559bd693232f53da3ddad575",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-8fa30b9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8fa30b9/DroidDeck-main-8fa30b9-ludashi.apk",
+        "name": "DroidDeck-main-d29a1a2-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d29a1a2/DroidDeck-main-d29a1a2-ludashi.apk",
         "size": 96510013,
-        "sha256": "47b5d3a265ff59ce17c140d811259ca1cc29dee4acf5cf3b8ec8df78049107c8",
+        "sha256": "ac6912dd40e33b222dcf69e8b670cce8c1b250d576d778cbaec5e896ea18cff5",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d29a1a2dc214d9bfa1926c95d514f4f6dacede88",
+      "title": "test: skip permission-denial tests when running as root",
+      "summary": "The new self-hosted runners run the unit tests as root, which ignores file mode bits, so six tests that depend on a denied read or write fail there while passing on GitHub-hosted runners (seen on #2236):",
+      "publishedAt": 1794090084000
+    },
     {
       "commit": "8fa30b99f91a38ecc6f61e9d28fddacd8adcc682",
       "title": "fix(input): restore the controls, panels and settings #1439 removed",
@@ -155,12 +161,6 @@
       "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
       "summary": "Fixes the Auto component update problems reported on Discord (\"The new Auto Update Components issues\" thread and the #test-builds report).",
       "publishedAt": 1794016934000
-    },
-    {
-      "commit": "a552f1e29339b97a4f56e998afb9fc26eeb864f7",
-      "title": "fix(hud): isolate strip rendering in a software layer",
-      "summary": "Steam underneath the full-width strip HUD flickers when its frame graph redraws on HONOR BKQ-N49 / Adreno 840. Render the entire undocked strip through a software layer, and restore the normal rendering layer for other layouts and docked tabs. The existing strip graph redraw cap is retained.",
-      "publishedAt": 1794015380000
     }
   ],
   "tests": [
