@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794060953335,
+  "generatedAt": 1794063786009,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2215",
+      "title": "fix(input): classic on-screen gamepad look, quick hide toggle and adaptive sticks switch",
+      "summary": "\u2022 Buttons became large rounded boxes labelled \"D-pad up\", \"View / Select\" and so on.\n\u2022 The keyboard button became a wide \"Keyboard\" pill.\n\u2022 The bottom-left \u2212/+ show/hide toggle was gone.\n\u2022 The Adaptive sticks setting had no effect once a layout was migrated.",
+      "commit": "c58a0ab854e28f5a8e1d0b458feaf56bfaffab0e",
+      "pr": 2215,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794063723000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2215",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2215-c58a0ab.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-c58a0ab.apk",
+          "size": 96505917,
+          "sha256": "36e58dbe850af42f2fa3e2d2ecbc78a9c5fd8cfd31d439e23d78f787e2739e82",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2215-c58a0ab-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-c58a0ab-pubg.apk",
+          "size": 96505917,
+          "sha256": "4c8b52a0e14852c59f12a1ddc76ac8d1a8dd31b801be51259ebddf3364022d8b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2215-c58a0ab-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-c58a0ab-antutu.apk",
+          "size": 96505917,
+          "sha256": "8c3c40a4a384c64d2b54778578c27935f591ff3f737063e98889353c2da19ced",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2215-c58a0ab-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-c58a0ab-ludashi.apk",
+          "size": 96505917,
+          "sha256": "171564c42137140f9bb9cd68f4decec85c0bc91fe7ea5e363409b83ce4e0e94e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2212",
       "title": "perf: answer Steam's missing-file checks on SD and USB libraries from the directory cache",
