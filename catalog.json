@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794032788282,
+  "generatedAt": 1794037013343,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2204",
+      "title": "fix: library scan and download cancel crash on Android 10",
+      "summary": "Fixes #2200: on a Pico 4 (Android 10) DroidDeck ran once, then crashed on every library scan.",
+      "commit": "48917a33dfb6dde90d1de018a12c1b8194778118",
+      "pr": 2204,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794036939000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2204",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2204-48917a3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-48917a3.apk",
+          "size": 96272333,
+          "sha256": "29830c39596c589b1e6c18bec4183e59cfcca03224b5f54ec05dda439e698393",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2204-48917a3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-48917a3-pubg.apk",
+          "size": 96272333,
+          "sha256": "d40fa507405f4c2eca9787708433faed41fe80f76e6f5ce3ee0f87cc56fd87f0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2204-48917a3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-48917a3-antutu.apk",
+          "size": 96272333,
+          "sha256": "0a7d1308276c2a52e6d0056329fd003adc8083fa4a32e3f2e362f1905e440ef5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2204-48917a3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2204/DroidDeck-PR.2204-48917a3-ludashi.apk",
+          "size": 96272333,
+          "sha256": "7d9cb3a54b852c06e58e6d93171546ddcb7780a4b0cc2c1a85a6191452c0e330",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2197",
       "title": "fix: refresh the session loading tips",
