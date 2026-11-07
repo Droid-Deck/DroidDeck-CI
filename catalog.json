@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794017524796,
+  "generatedAt": 1794032788282,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-18c7d56",
-    "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
-    "summary": "Fixes the Auto component update problems reported on Discord (\"The new Auto Update Components issues\" thread and the #test-builds report).",
-    "commit": "18c7d56409de4cf3b63b1b09e60e0fe97a633a7d",
+    "tag": "main-aba5503",
+    "title": "perf: answer chown and bound thermal paths through the proot fast path",
+    "summary": "I profiled a fresh 1000xRESIST install (2,216 files) to the Thor's SD card on current main to see what the PRoot fast path still misses. Reserving space is now 78 s (404 s on 2026-10-04), so most of the earlier gaps are closed. Two things were still reaching PRoot:",
+    "commit": "aba55031c331cd0991c3d36788fb903a3ca30e78",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794016934000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-18c7d56",
+    "publishedAt": 1794032748000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-aba5503",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-18c7d56.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-18c7d56/DroidDeck-main-18c7d56.apk",
+        "name": "DroidDeck-main-aba5503.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aba5503/DroidDeck-main-aba5503.apk",
         "size": 96272333,
-        "sha256": "9d3907897f443f6fc1d7dfe5abe2c0ed60670c94ee95b0f30c0c7c771cf6cebe",
+        "sha256": "b4f9fe391c34d2b7d8d02d7d3bc56ffd6b193caba9cf30fa70cdf3b0411228f0",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-18c7d56-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-18c7d56/DroidDeck-main-18c7d56-pubg.apk",
+        "name": "DroidDeck-main-aba5503-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aba5503/DroidDeck-main-aba5503-pubg.apk",
         "size": 96272333,
-        "sha256": "2ed610519843367a4c05e08b83060e324e625a9d6e757851ff33106af20ee785",
+        "sha256": "fe293f835a4a85e334d59c1268f4ed62376cd6c00a8c2a29d64bb86e57a57e76",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-18c7d56-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-18c7d56/DroidDeck-main-18c7d56-antutu.apk",
+        "name": "DroidDeck-main-aba5503-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aba5503/DroidDeck-main-aba5503-antutu.apk",
         "size": 96272333,
-        "sha256": "4da0e867a65bc8d449f021412f6e3ab2a9b9d558f4b2eba67ce894dc181f72b4",
+        "sha256": "f93593a5445dff55c5c47ccf177cb8eb9d91ee67d4d52c28a60927d18920a95c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-18c7d56-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-18c7d56/DroidDeck-main-18c7d56-ludashi.apk",
+        "name": "DroidDeck-main-aba5503-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aba5503/DroidDeck-main-aba5503-ludashi.apk",
         "size": 96272333,
-        "sha256": "fccbc49f67a63c9a0464db4c304284f8f896976d6b605bc29bf50eee62f8c26b",
+        "sha256": "a667117697fce09300cd992b0c013c2c88f8d05458723f212ad7c823e28d6756",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "aba55031c331cd0991c3d36788fb903a3ca30e78",
+      "title": "perf: answer chown and bound thermal paths through the proot fast path",
+      "summary": "I profiled a fresh 1000xRESIST install (2,216 files) to the Thor's SD card on current main to see what the PRoot fast path still misses. Reserving space is now 78 s (404 s on 2026-10-04), so most of the earlier gaps are closed. Two things were still reaching PRoot:",
+      "publishedAt": 1794032748000
+    },
     {
       "commit": "18c7d56409de4cf3b63b1b09e60e0fe97a633a7d",
       "title": "fix: Auto components update only DroidDeck-Proton and delete old builds",
@@ -155,12 +161,6 @@
       "title": "ci: publish gamescope builds to DroidDeck-Components and never replace a tag",
       "summary": "The gamescope build published its release into this repository, which is how main ended up pinning a release here after #2029 while every earlier pin pointed at DroidDeck-Components. It now publishes to DroidDeck-Components with the CI app token, the same way the KDE desktop and Ubuntu runtime builds do, and refuses a tag that already exists.",
       "publishedAt": 1793991251000
-    },
-    {
-      "commit": "6060f2288ff0929cf96f891e9b88582847d4b480",
-      "title": "feat(wow): voice type and keyboard chat bar for World of Warcraft",
-      "summary": "Adds chat input for World of Warcraft (retail, Classic, Classic Era, Anniversary and Forever). When WoW focuses a text box, DroidDeck opens a chat bar. The bar has an editable text field that you can type into, voice-type into, or correct before sending.",
-      "publishedAt": 1793986325000
     }
   ],
   "tests": [
