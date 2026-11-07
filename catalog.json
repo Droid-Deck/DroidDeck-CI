@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794079629633,
+  "generatedAt": 1794080193291,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2233",
+      "title": "fix(drivers): a driver repo that fails to answer no longer changes the Auto pick",
+      "summary": "A tester on an Adreno 644 (Galaxy M55) reported that GPU Drivers Auto keeps switching. It was DD-Turnip v0.4.0 one day and Banner's Turnip the next.",
+      "commit": "09afe1b75dbc0d16f46bf47327f3b042d6a733e7",
+      "pr": 2233,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794080127000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2233",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2233-09afe1b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-09afe1b.apk",
+          "size": 96546877,
+          "sha256": "0612dc1bbc5d997eb070f66036d80bb985bddf9cf4c24e9ea612d4c696775e43",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2233-09afe1b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-09afe1b-pubg.apk",
+          "size": 96546877,
+          "sha256": "3399efb1faf36c3f58ba01486fa2249590da11e0745943374192d4313bd74e0b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2233-09afe1b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-09afe1b-antutu.apk",
+          "size": 96546877,
+          "sha256": "0f06289e8e39d935d39c693deaadfdd3392557ae5cb70947e2d7a499e833bc47",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2233-09afe1b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2233/DroidDeck-PR.2233-09afe1b-ludashi.apk",
+          "size": 96546877,
+          "sha256": "c4529d1866d6892c99e6faadf5e0eb17a2aef1a21d3770a17901995b9f7d8f73",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2232",
       "title": "fix(dual-screen): docked handhelds switch to single-screen mode",
