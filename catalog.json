@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794073687957,
+  "generatedAt": 1794073747354,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2224",
+      "title": "fix(proot): let the fast path fall back when Android 10 refuses statx",
+      "summary": "On a Pico 4 (Android 10) Steam setup stopped with \"Session exit 1\". The session log showed mkdir: Already exists from droiddeck-steam-install, which runs mkdir -p on folders that already exist.",
+      "commit": "9ac42ccb625576f958a359ca04f26f726f22f496",
+      "pr": 2224,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794073686000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2224",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2224-9ac42cc.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2224/DroidDeck-PR.2224-9ac42cc.apk",
+          "size": 96501821,
+          "sha256": "5204427b5110c391c85638c55e61ba964533af2b1bcd14c1f8e6985bbbc27b97",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2224-9ac42cc-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2224/DroidDeck-PR.2224-9ac42cc-pubg.apk",
+          "size": 96501821,
+          "sha256": "5dc7286820c19fc751493d8ed106536d9987efe220a6e427ec6c46d5cd04f0d8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2224-9ac42cc-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2224/DroidDeck-PR.2224-9ac42cc-antutu.apk",
+          "size": 96501821,
+          "sha256": "bd3f5817719f59e70145a2b17a97318010e2d1a4690fd7397707c284e8471b49",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2224-9ac42cc-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2224/DroidDeck-PR.2224-9ac42cc-ludashi.apk",
+          "size": 96501821,
+          "sha256": "62d12feb67a1eaabe01434ddaf678428348009185291df8ba142fb2762625380",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2219",
       "title": "feat(wow): download addons from WoWInterface and open CurseForge in the browser",
