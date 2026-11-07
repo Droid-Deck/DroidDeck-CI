@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794012656902,
+  "generatedAt": 1794013414938,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f33d5b9",
-    "title": "fix(components): auto updates follow DroidDeck-Proton only",
-    "summary": "Auto updates from #2156 swapped DroidDeck-Components nightlies into every installed Proton that ships DXVK, VKD3D-Proton or FEX, including Valve's ARM Proton, GE-Proton and proton-cachyos. Only DroidDeck-Proton should track the nightlies; every other Proton should run the components it was built with. This also fixes two Auto problems reported in the test-builds channel.",
-    "commit": "f33d5b9e09ed27d68137aba4e711f8fca9eb93e9",
+    "tag": "main-066834d",
+    "title": "feat: compress idle game memory before low-RAM devices run out",
+    "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
+    "commit": "066834d17dddc36cef7b489589e80bd8dc797deb",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794009539000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f33d5b9",
+    "publishedAt": 1794013360000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-066834d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f33d5b9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33d5b9/DroidDeck-main-f33d5b9.apk",
+        "name": "DroidDeck-main-066834d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-066834d/DroidDeck-main-066834d.apk",
         "size": 96268237,
-        "sha256": "19290ce57b9579c80cb07e391e44f7eb32ab592a4909aa9f290ee8b638117b87",
+        "sha256": "552915601de8b321e2f58bcae55b3c4949b10f0efed21771b2a81f928eb26939",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f33d5b9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33d5b9/DroidDeck-main-f33d5b9-pubg.apk",
+        "name": "DroidDeck-main-066834d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-066834d/DroidDeck-main-066834d-pubg.apk",
         "size": 96268237,
-        "sha256": "2e18b8c13c2eb56ed4a993b6a05a992dc0cfc63f9abb9b0e7d477f35a4c5f39c",
+        "sha256": "af615af5b26d301101ee8a94ed187420205c8786efea76f30029d53d47da43cb",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f33d5b9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33d5b9/DroidDeck-main-f33d5b9-antutu.apk",
+        "name": "DroidDeck-main-066834d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-066834d/DroidDeck-main-066834d-antutu.apk",
         "size": 96268237,
-        "sha256": "605dff17f32c515d0f500c36a3889c5157f9408e4f54b8f8f2d9587ce2164673",
+        "sha256": "8f3a12f616b7e5ccc82ba80a2289599dec113ccfc43099a085b71ec1ab719ef7",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f33d5b9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33d5b9/DroidDeck-main-f33d5b9-ludashi.apk",
+        "name": "DroidDeck-main-066834d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-066834d/DroidDeck-main-066834d-ludashi.apk",
         "size": 96268237,
-        "sha256": "e0f9f6e36682005724975ad7390df44b573b0a7002af9b04a15366ae7c163103",
+        "sha256": "fc019889ef089008d15764d943025ca5e2ae32cbcf9d15c0f37224905f22dfaa",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "066834d17dddc36cef7b489589e80bd8dc797deb",
+      "title": "feat: compress idle game memory before low-RAM devices run out",
+      "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
+      "publishedAt": 1794013360000
+    },
     {
       "commit": "f33d5b9e09ed27d68137aba4e711f8fca9eb93e9",
       "title": "fix(components): auto updates follow DroidDeck-Proton only",
@@ -155,12 +161,6 @@
       "title": "fix: Auto picks the upstream RADV pair on Xclipse 950 and 960",
       "summary": "On a Galaxy S26+ (Xclipse 960), Auto picked nad:radv-xclipse, which is built from a v1.6.0-RC that predates 950/960 support. It ends in CS rejected (-22), a GPU hang, a kernel panic and a reboot. The tester confirmed the RADV-Xclipse-upstream pair (v1.8.0) runs the 960 with no panic, in Steam Big Picture and Disco Elysium.",
       "publishedAt": 1793939090000
-    },
-    {
-      "commit": "3733c5090248e0e64f10fbe6decf9cfdf5b88d05",
-      "title": "feat: non-Adreno graphics stack (Venus, open driver pairs, gamescope patches)",
-      "summary": "Brings the rest of the non-Adreno work from test/non-adreno-all onto current main, on top of the MaliBridge update that just landed. The merge keeps the contributors' commits, so authorship stays with them (The412Banner, ASEbrahim and others).",
-      "publishedAt": 1793935529000
     }
   ],
   "tests": [
