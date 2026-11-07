@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794068245750,
+  "generatedAt": 1794069101720,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2223",
+      "title": "fix(proton-run): follow a removed DroidDeck-Proton build to the newest one",
+      "summary": "Since the Preview builds of 11-07, World of Warcraft started from Battle.net in DroidDeck often never comes up. Battle.net closes (that part is by design), and then the game hangs on the DroidDeck logo. The same install works through Steam. It was reported on Discord by several users with components on Auto, across a OnePlus 13, an AYN Thor, a Retroid Pocket 6 and an Odin 3 Max.",
+      "commit": "ad593537000b920d2f6120c3bd8fa711bdb05b2f",
+      "pr": 2223,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794069052000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2223",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2223-ad59353.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2223/DroidDeck-PR.2223-ad59353.apk",
+          "size": 96497725,
+          "sha256": "72db9024bcbcd4f584a3039857fd991808dcc5586b1e26f71ddc62618dc25b80",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2223-ad59353-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2223/DroidDeck-PR.2223-ad59353-pubg.apk",
+          "size": 96497725,
+          "sha256": "c5a6a083fec77c7ab5c4b6a2199e2e9b1f2e91ac59f5c1afb9597453c45d2d17",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2223-ad59353-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2223/DroidDeck-PR.2223-ad59353-antutu.apk",
+          "size": 96497725,
+          "sha256": "b895024c6158910b03ccfafa86dea405297f6fc4973d5172e79da8bb907b6aa3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2223-ad59353-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2223/DroidDeck-PR.2223-ad59353-ludashi.apk",
+          "size": 96497725,
+          "sha256": "c215fd06dd3a06123a351c3877b24262d0e34617d45262bfc2d736beac85e09f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2221",
       "title": "fix(input): restore the neutral look of the bottom-screen controls",
