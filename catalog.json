@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794081732341,
+  "generatedAt": 1794081874444,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2226",
+      "title": "fix(components): DXVK Auto on Adreno 6xx keeps DroidDeck-Proton on DXVK-gplasync 2.7.1",
+      "summary": "On Adreno 6xx GPUs the DXVK Auto / Manual choice is missing from Components, while FEX and VKD3D-Proton show it. Updating to a newer Preview does not bring it back. Reported on Discord on an Adreno 644 (Galaxy M55s, Android 16).",
+      "commit": "616fda31e0f6da12f4061ccbf893b2723fb21581",
+      "pr": 2226,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794081817000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2226",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2226-616fda3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-616fda3.apk",
+          "size": 96559165,
+          "sha256": "d6db8f7fe6904f6e1426a9f8a64552bea3064cad78a64b8be7e834c044ca63ea",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2226-616fda3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-616fda3-pubg.apk",
+          "size": 96559165,
+          "sha256": "4c8fef293b1638c2fe76df107d1899cf01ddb56e535a0a349a53ab0d16aa925d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2226-616fda3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-616fda3-antutu.apk",
+          "size": 96559165,
+          "sha256": "dce7d8223dca68df3a88d69a433b20ebdbd6b48b16a295b24629d04e81ecdd48",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2226-616fda3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-616fda3-ludashi.apk",
+          "size": 96559165,
+          "sha256": "a126eeca4b4d688c02ba9d9b2194fc631df9ea219e05f4e7fb1f758e798aed3f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2233",
       "title": "fix(drivers): a driver repo that fails to answer no longer changes the Auto pick",
       "summary": "A tester on an Adreno 644 (Galaxy M55) reported that GPU Drivers Auto keeps switching. It was DD-Turnip v0.4.0 one day and Banner's Turnip the next.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2212/DroidDeck-PR.2212-a0deec4-ludashi.apk",
           "size": 96510013,
           "sha256": "46d33bafe98266e8c7b2e19ccfc165103cbe383b3efa0cd17b5c00c79299abf8",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2226",
-      "title": "fix(components): DXVK Auto on Adreno 6xx keeps DroidDeck-Proton on DXVK-gplasync 2.7.1",
-      "summary": "On Adreno 6xx GPUs the DXVK Auto / Manual choice is missing from Components, while FEX and VKD3D-Proton show it. Updating to a newer Preview does not bring it back. Reported on Discord on an Adreno 644 (Galaxy M55s, Android 16).",
-      "commit": "288b634325859a2e4331748d2962ed14935f73f3",
-      "pr": 2226,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794074400000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2226",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2226-288b634.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-288b634.apk",
-          "size": 96501821,
-          "sha256": "3a5409504b5644a92bac9446b56ba2c949719505e14ddd8e8d5111e7f717678c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2226-288b634-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-288b634-pubg.apk",
-          "size": 96501821,
-          "sha256": "d8edcdefb3785316175136b3a07163ff04d3d6ea31507cf5bb81fed636ad3d66",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2226-288b634-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-288b634-antutu.apk",
-          "size": 96501821,
-          "sha256": "bae69d64a655b539627715dbf668797fcb207878ce4e62f9917e45540798eb0b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2226-288b634-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2226/DroidDeck-PR.2226-288b634-ludashi.apk",
-          "size": 96501821,
-          "sha256": "5fed7eabed972dcbdfeb1f5dd415f8e066344d5e59135040ef7db04787ea4103",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
