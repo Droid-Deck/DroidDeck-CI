@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794013769174,
+  "generatedAt": 1794015439369,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-066834d",
-    "title": "feat: compress idle game memory before low-RAM devices run out",
-    "summary": "On devices with 12 GB of RAM or less, the session monitor now compresses the game session's idle memory into zRAM when memory runs out, so loading spikes no longer get the whole session killed by Android's low-memory killer.",
-    "commit": "066834d17dddc36cef7b489589e80bd8dc797deb",
+    "tag": "main-a552f1e",
+    "title": "fix(hud): isolate strip rendering in a software layer",
+    "summary": "Steam underneath the full-width strip HUD flickers when its frame graph redraws on HONOR BKQ-N49 / Adreno 840. Render the entire undocked strip through a software layer, and restore the normal rendering layer for other layouts and docked tabs. The existing strip graph redraw cap is retained.",
+    "commit": "a552f1e29339b97a4f56e998afb9fc26eeb864f7",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794013360000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-066834d",
+    "publishedAt": 1794015380000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a552f1e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-066834d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-066834d/DroidDeck-main-066834d.apk",
+        "name": "DroidDeck-main-a552f1e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a552f1e/DroidDeck-main-a552f1e.apk",
         "size": 96268237,
-        "sha256": "552915601de8b321e2f58bcae55b3c4949b10f0efed21771b2a81f928eb26939",
+        "sha256": "c4b658ec348326b00eb40b731b2d12e98964206f86f896ec326480d6264094e2",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-066834d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-066834d/DroidDeck-main-066834d-pubg.apk",
+        "name": "DroidDeck-main-a552f1e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a552f1e/DroidDeck-main-a552f1e-pubg.apk",
         "size": 96268237,
-        "sha256": "af615af5b26d301101ee8a94ed187420205c8786efea76f30029d53d47da43cb",
+        "sha256": "9415c2433ad718155fa3d2ca7f8ee675eb06a043560a472a5ac79a6191bb4e4f",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-066834d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-066834d/DroidDeck-main-066834d-antutu.apk",
+        "name": "DroidDeck-main-a552f1e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a552f1e/DroidDeck-main-a552f1e-antutu.apk",
         "size": 96268237,
-        "sha256": "8f3a12f616b7e5ccc82ba80a2289599dec113ccfc43099a085b71ec1ab719ef7",
+        "sha256": "ef90667d64e0e7af94f632f0743718a224f51e441a16ab447f45fe247009a91c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-066834d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-066834d/DroidDeck-main-066834d-ludashi.apk",
+        "name": "DroidDeck-main-a552f1e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a552f1e/DroidDeck-main-a552f1e-ludashi.apk",
         "size": 96268237,
-        "sha256": "fc019889ef089008d15764d943025ca5e2ae32cbcf9d15c0f37224905f22dfaa",
+        "sha256": "928ca72c32eec1519e6cc3ce3fb44cc9bd842e1fda38849f4f06cf1ed56c7c6e",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a552f1e29339b97a4f56e998afb9fc26eeb864f7",
+      "title": "fix(hud): isolate strip rendering in a software layer",
+      "summary": "Steam underneath the full-width strip HUD flickers when its frame graph redraws on HONOR BKQ-N49 / Adreno 840. Render the entire undocked strip through a software layer, and restore the normal rendering layer for other layouts and docked tabs. The existing strip graph redraw cap is retained.",
+      "publishedAt": 1794015380000
+    },
     {
       "commit": "066834d17dddc36cef7b489589e80bd8dc797deb",
       "title": "feat: compress idle game memory before low-RAM devices run out",
@@ -155,12 +161,6 @@
       "title": "Show Steam launch options on the Launch tab",
       "summary": "Steam games already support editable launch options, but the editor is hidden under More \u2192 Edit art. Move it to the game\u2019s Launch tab, where players can find and paste options without opening the artwork editor.",
       "publishedAt": 1793980924000
-    },
-    {
-      "commit": "bf693d7f7125c8af797893910a1ebabd8112d378",
-      "title": "fix: Auto picks the upstream RADV pair on Xclipse 950 and 960",
-      "summary": "On a Galaxy S26+ (Xclipse 960), Auto picked nad:radv-xclipse, which is built from a v1.6.0-RC that predates 950/960 support. It ends in CS rejected (-22), a GPU hang, a kernel panic and a reboot. The tester confirmed the RADV-Xclipse-upstream pair (v1.8.0) runs the 960 with no panic, in Steam Big Picture and Disco Elysium.",
-      "publishedAt": 1793939090000
     }
   ],
   "tests": [
