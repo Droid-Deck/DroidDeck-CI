@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794081308217,
+  "generatedAt": 1794081676265,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-2234",
-      "title": "ci: run compile jobs on the org workstation runner when it is idle",
-      "summary": "The two heavy x86 jobs (components, build) now run on the org's self-hosted workstation runner (droiddeck-ws, 24 cores) when it is online and idle, and on ubuntu-24.04 otherwise.",
-      "commit": "cfbf0405d565ab430a64be0625bcd430bb84dadb",
-      "pr": 2234,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794080725000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2234",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2234-cfbf040.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2234/DroidDeck-PR.2234-cfbf040.apk",
-          "size": 96632893,
-          "sha256": "d0c70e6f2dc6aa7cdb77b944df0717f427411d51d8d1be2ee08384fd557b7fba",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2234-cfbf040-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2234/DroidDeck-PR.2234-cfbf040-pubg.apk",
-          "size": 96632893,
-          "sha256": "a241e2f740969dca21e344609330e3d6a30cbba948cb9596aecedb7cf0b61328",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2234-cfbf040-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2234/DroidDeck-PR.2234-cfbf040-antutu.apk",
-          "size": 96632893,
-          "sha256": "24f4adb9906f76a10b35d3922d2f3d75381a8f5a5030c4784eccace1e0c17e03",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2234-cfbf040-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2234/DroidDeck-PR.2234-cfbf040-ludashi.apk",
-          "size": 96632893,
-          "sha256": "7c29e89533f6b886df169dd1d285927b840575026976b277962374ac49baff45",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2233",
       "title": "fix(drivers): a driver repo that fails to answer no longer changes the Auto pick",
