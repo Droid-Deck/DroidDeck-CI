@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794067406682,
+  "generatedAt": 1794067468566,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2215",
+      "title": "fix(input): classic on-screen gamepad look, quick hide toggle and adaptive sticks switch",
+      "summary": "\u2022 Buttons became large rounded boxes labelled \"D-pad up\", \"View / Select\" and so on.\n\u2022 The keyboard button became a wide \"Keyboard\" pill.\n\u2022 The bottom-left \u2212/+ show/hide toggle was gone.\n\u2022 The Adaptive sticks setting had no effect once a layout was migrated.\n\u2022 The overlay keyboard button opened the second-screen keyboard, so on single-screen devices it did nothing visible.",
+      "commit": "a62b9c838f0f96e88fb7f268d6be54e70a563fdd",
+      "pr": 2215,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794067374000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2215",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2215-a62b9c8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-a62b9c8.apk",
+          "size": 96505917,
+          "sha256": "dc42314357992f23913b230e21b456971176eb45de17c8f7bdbc915353b4dabd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2215-a62b9c8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-a62b9c8-pubg.apk",
+          "size": 96505917,
+          "sha256": "009a332cd9b00d8e93d236f435d04731d2c0dcce05b430f49f143f03abbb9d67",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2215-a62b9c8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-a62b9c8-antutu.apk",
+          "size": 96505917,
+          "sha256": "c25fd00a599b82c6f4de7f1b3f1e574ec2cb4916dfe6a18ec98493fae60415e3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2215-a62b9c8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-a62b9c8-ludashi.apk",
+          "size": 96505917,
+          "sha256": "e88f7eb7255b0abdfdd2a1253eca09e786b813b62a1890ce6c23a07382c8f487",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2217",
       "title": "fix(script-run): run x86 programs a native script starts through FEX",
       "summary": "A script app whose folder holds both ARM and x86 programs, such as Europa Universalis IV from GOG, runs its script natively. That part is correct: droiddeck-fex only uses FEX for a whole folder when every program in it is x86. But when the script then runs an x86 program, it fails:",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2219/DroidDeck-PR.2219-90385b0-ludashi.apk",
           "size": 96555069,
           "sha256": "ed03b61cf96e9425a84846ccf7d88899f01f9117601672625cc0c0d76178d4f7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2215",
-      "title": "fix(input): classic on-screen gamepad look, quick hide toggle and adaptive sticks switch",
-      "summary": "\u2022 Buttons became large rounded boxes labelled \"D-pad up\", \"View / Select\" and so on.\n\u2022 The keyboard button became a wide \"Keyboard\" pill.\n\u2022 The bottom-left \u2212/+ show/hide toggle was gone.\n\u2022 The Adaptive sticks setting had no effect once a layout was migrated.",
-      "commit": "a9d4689d82894fd54f89d546d6e5af71091fd56e",
-      "pr": 2215,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794065385000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2215",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2215-a9d4689.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-a9d4689.apk",
-          "size": 96505917,
-          "sha256": "10ce6232da35276619e1d5cd477981b69e21dcac621497f6e48058a5d244140f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2215-a9d4689-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-a9d4689-pubg.apk",
-          "size": 96505917,
-          "sha256": "de9ffa70f2020edd57a917627c57a31ff7380c16d11670559aee80aa8588f2f9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2215-a9d4689-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-a9d4689-antutu.apk",
-          "size": 96505917,
-          "sha256": "6b4b29fa05d460f8c2a0e8ea97f4e5f1842925c8a3e13639e718d2ca0e552852",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2215-a9d4689-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2215/DroidDeck-PR.2215-a9d4689-ludashi.apk",
-          "size": 96505917,
-          "sha256": "cdf9b566154460d7a05c24397a179eaed72d7fd31ca1311c274ae5cfcabd73c0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
