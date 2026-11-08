@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794106542181,
+  "generatedAt": 1794106877274,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-2ade269",
-    "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
-    "summary": "In Direct touch, dragging stopped working in games that draw their own cursor (Balatro, Stardew Valley). A drag moves the pointer but never holds a button down; taps still click.",
-    "commit": "2ade269be3f0a57bae86c23745df51c373664bd7",
+    "tag": "main-914b358",
+    "title": "fix(drivers): leaving a driver bundle no longer keeps its runtime half, and the Auto display picks the latest pair",
+    "summary": "Picking either half of an Android + Linux driver bundle selects both drivers. Picking another display driver afterwards (for example \"Auto - picked by GPU\" to go back to DroidDeck's drivers) changed only the display, so every later session still loaded the bundle's Linux driver. If that Linux half doesn't work, sessions keep failing after the user has \"switched back\", and Components shows nothing",
+    "commit": "914b3588e1ec1fe300838c2ceca65f343717a2e0",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794105556000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-2ade269",
+    "publishedAt": 1794106821000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-914b358",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-2ade269.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2ade269/DroidDeck-main-2ade269.apk",
-        "size": 96608317,
-        "sha256": "5a9924253f9b71c4b0bca25d91a28ed8ed54867e01781c794d01bc4ce2b7d330",
+        "name": "DroidDeck-main-914b358.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-914b358/DroidDeck-main-914b358.apk",
+        "size": 96526397,
+        "sha256": "0f385d2862890a6689afbf0a144f865cba8b314403677d0791df6d725cbb1664",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-2ade269-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2ade269/DroidDeck-main-2ade269-pubg.apk",
-        "size": 96608317,
-        "sha256": "048032e095903c7e4b446f52ab321cebe91dfa1c8e43d9ab49dcbd616b73ea6a",
+        "name": "DroidDeck-main-914b358-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-914b358/DroidDeck-main-914b358-pubg.apk",
+        "size": 96526397,
+        "sha256": "e9655cab3ee540af9c4c3039f0502eab10bdbca08c548b371f8beb12a7bf5d93",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-2ade269-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2ade269/DroidDeck-main-2ade269-antutu.apk",
-        "size": 96608317,
-        "sha256": "589c5520e077fcf06c4e5dd54f5abffdb99322900869cfaac60adeed89b43d3a",
+        "name": "DroidDeck-main-914b358-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-914b358/DroidDeck-main-914b358-antutu.apk",
+        "size": 96526397,
+        "sha256": "5d479f5dcd43d6ecdaa8a5078857363a798aa8f6a19487f0a232a6504061940a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-2ade269-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-2ade269/DroidDeck-main-2ade269-ludashi.apk",
-        "size": 96608317,
-        "sha256": "f0b03ad7b2f23c1757528d3f08484558993861b1267c887d05a039fee2faa7eb",
+        "name": "DroidDeck-main-914b358-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-914b358/DroidDeck-main-914b358-ludashi.apk",
+        "size": 96526397,
+        "sha256": "29388c461803346f7107fa323904d3860f40edb2f07c497cfc618608c5409d03",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "914b3588e1ec1fe300838c2ceca65f343717a2e0",
+      "title": "fix(drivers): leaving a driver bundle no longer keeps its runtime half, and the Auto display picks the latest pair",
+      "summary": "Picking either half of an Android + Linux driver bundle selects both drivers. Picking another display driver afterwards (for example \"Auto - picked by GPU\" to go back to DroidDeck's drivers) changed only the display, so every later session still loaded the bundle's Linux driver. If that Linux half doesn't work, sessions keep failing after the user has \"switched back\", and Components shows nothing",
+      "publishedAt": 1794106821000
+    },
     {
       "commit": "2ade269be3f0a57bae86c23745df51c373664bd7",
       "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
@@ -155,12 +161,6 @@
       "title": "ci: run compile jobs on the org workstation runner when it is idle",
       "summary": "The two heavy x86 jobs (components, build) now run on the org's self-hosted workstation runner (droiddeck-ws, 24 cores) when it is online and idle, and on ubuntu-24.04 otherwise.",
       "publishedAt": 1794082200000
-    },
-    {
-      "commit": "e5434117f250e3ecf5e165a4d56dd81b6a23e479",
-      "title": "fix(input): controller navigation works across the Controller tab and profile menus",
-      "summary": "The unified input pages from #1439 used plain touch-only rows, cards and text buttons, so a controller could not activate them, saw no focus highlight, and lost focus whenever a page swapped.",
-      "publishedAt": 1794081249000
     }
   ],
   "tests": [
