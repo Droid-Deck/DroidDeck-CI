@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794145746300,
+  "generatedAt": 1794145817266,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2277",
+      "title": "ci: a finished build reports on pull requests from forks",
+      "summary": "On pull requests from forks, the \"Build APK\" status stays at pending \u2014 Source validated; awaiting APK compilation even after the build succeeds. #2274 and #2276 (heads on maxjivi05/DroidDeck) both have successful \"building pr\" runs, but their status never turned green.",
+      "commit": "f3b159e332fb37bcb1c2f1be2c4395d2c395c82b",
+      "pr": 2277,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794145753000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2277",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2277-f3b159e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2277/DroidDeck-PR.2277-f3b159e.apk",
+          "size": 96620605,
+          "sha256": "c9e4c645ffb727ee147c1d49e173ce7a020a6a8da64697484e260b04422b1771",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2277-f3b159e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2277/DroidDeck-PR.2277-f3b159e-pubg.apk",
+          "size": 96620605,
+          "sha256": "e38a302856e9dd8dcd46b16da4dab170a06b1cf7f70e212ee1218409b6aa8655",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2277-f3b159e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2277/DroidDeck-PR.2277-f3b159e-antutu.apk",
+          "size": 96620605,
+          "sha256": "ec46e4a790052dd3b642cbafe9a902e978ca2825494476f48eb0c2aa61fb0564",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2277-f3b159e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2277/DroidDeck-PR.2277-f3b159e-ludashi.apk",
+          "size": 96620605,
+          "sha256": "0e28e6bd3dd991bf5e24e7f4bf22f1fa422052767eb145b50aa1701a7ddf969b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2259",
       "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
