@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794179499673,
+  "generatedAt": 1794180285529,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2296",
+      "title": "fix(gog): owned games the listing leaves out stay owned, and search reaches GOG's catalog",
+      "summary": "Since 0.6.0 some owned GOG games are missing from the GOG library and the GOG tab, and they come back after reinstalling 0.5.0. Logging out and in changes nothing. Reported with one of three games from the same series, owned on the same account.",
+      "commit": "652e1db83e985c684181abbd2957ef1f8260020f",
+      "pr": 2296,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794180233000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2296",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2296-652e1db.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2296/DroidDeck-PR.2296-652e1db.apk",
+          "size": 96620703,
+          "sha256": "8b57f85732715ee1c4af87061fc80e484eec6355250b4207590b4e5b06070b07",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2296-652e1db-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2296/DroidDeck-PR.2296-652e1db-pubg.apk",
+          "size": 96620703,
+          "sha256": "17e5ea46f29da9ea6d526ec2e152996dc07557d6fefc098d621e2cb6d47512bc",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2296-652e1db-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2296/DroidDeck-PR.2296-652e1db-antutu.apk",
+          "size": 96620703,
+          "sha256": "90439c54384986281d6a5f4596597b4597b5c3bdb0c3880c03491227d8ddbdea",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2296-652e1db-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2296/DroidDeck-PR.2296-652e1db-ludashi.apk",
+          "size": 96620703,
+          "sha256": "dade2c975628aa12b7b564014d8650c2af348b77c63d18626fea695e303fa65b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2306",
       "title": "feat(quest): show the child-process command with SideQuest steps on Quest",
