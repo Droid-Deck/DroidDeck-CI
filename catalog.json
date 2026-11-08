@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794101907004,
+  "generatedAt": 1794102433671,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2255",
+      "title": "fix(drivers): leaving a driver bundle's display half also drops its runtime half",
+      "summary": "Picking either half of an Android + Linux driver bundle selects both drivers. Picking another display driver afterwards (for example \"Auto - picked by GPU\" to go back to DroidDeck's drivers) changed only the display, so every later session still loaded the bundle's Linux driver. If that Linux half doesn't work, sessions keep failing after the user has \"switched back\", and Components shows nothing",
+      "commit": "5cd7e89518c815bad5249ef7613bf1fc8cdbdbdb",
+      "pr": 2255,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794102373000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2255",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2255-5cd7e89.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2255/DroidDeck-PR.2255-5cd7e89.apk",
+          "size": 96518205,
+          "sha256": "3689392ca8f84ee4f17b717deedfd8600c5ce09297e5acbefc9932c63672c669",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2255-5cd7e89-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2255/DroidDeck-PR.2255-5cd7e89-pubg.apk",
+          "size": 96518205,
+          "sha256": "d10a5431efa3e94e200634188c9cb4e4cd9646ab30464dfa8a38e0916284053f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2255-5cd7e89-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2255/DroidDeck-PR.2255-5cd7e89-antutu.apk",
+          "size": 96518205,
+          "sha256": "24d5b1164375a76263da35040d3246af27f27c6d55a1e9747cbc15f81f9c4af5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2255-5cd7e89-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2255/DroidDeck-PR.2255-5cd7e89-ludashi.apk",
+          "size": 96518205,
+          "sha256": "6d466de1771549f13d236753c0b27317f35f6d685a9633a021e4d729dc991f0d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2252",
       "title": "fix(steam): restore the client branch file when the desktop client deletes it",
