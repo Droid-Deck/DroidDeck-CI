@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794160079338,
+  "generatedAt": 1794160552593,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2293",
+      "title": "fix(venus): DXVK runs on Mali GPUs without dual-source blending",
+      "summary": "On Mali GPUs whose Vulkan driver lacks dualSrcBlend (seen on a Mali-G68 through Venus), DXVK finds no usable GPU and D3D11 apps crash at start:",
+      "commit": "91037b20e97de9071da2aa4e60894e983602e74e",
+      "pr": 2293,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794160488000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2293",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2293-91037b2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2293/DroidDeck-PR.2293-91037b2.apk",
+          "size": 96620703,
+          "sha256": "18edd5a1b141609e5a2623cd10d81fd46463f9e520af87ba3b6e7e5f28f8ef21",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2293-91037b2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2293/DroidDeck-PR.2293-91037b2-pubg.apk",
+          "size": 96620703,
+          "sha256": "b77bb79e72db8f8c7029a70d63093f2c6da0bd5405cdd9dd6a5bbe941cee58e4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2293-91037b2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2293/DroidDeck-PR.2293-91037b2-antutu.apk",
+          "size": 96620703,
+          "sha256": "6d6760ca5bbb3f741e51a70cb1d39eab3ec8872bf75487637f2c2af1857e402c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2293-91037b2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2293/DroidDeck-PR.2293-91037b2-ludashi.apk",
+          "size": 96620703,
+          "sha256": "a5a391db8752e19be4d6d7a16d5182989509c89cdd25f1d5b014232d59be4848",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2289",
       "title": "fix: run Final Fantasy VII Rebirth at D3D12 feature level 122",
