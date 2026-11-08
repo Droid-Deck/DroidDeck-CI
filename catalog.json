@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794116471496,
+  "generatedAt": 1794116588061,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-e4a4775",
-    "title": "fix(input): taps outside the PC keyboard reach the game while it is open",
-    "summary": "While the PC keyboard from the session menu was open, DroidDeck dropped every tap on the session, including on the part of the game still visible above the keyboard. A user typing a login into the EA app with the PC keyboard couldn't then tap \"Send code\" above it: nothing responded until the keyboard was hidden. Their log shows the touch route BLOCKED for the whole time the keyboard was open.",
-    "commit": "e4a4775be53082cb4c259a8ed24022cd70703afd",
+    "tag": "main-15baa29",
+    "title": "fix(storage): a Second library folder that is there is used even when its volume state isn't mounted",
+    "summary": "On a Samsung Galaxy S25 (Android 17), a Second library on the SD card (/mnt/mediarw/B2BD-BCFC/STEAM GAMES) works on 0.6.9 but drops to internal storage on Preview. The folder's PC games and its Steam library disappear.",
+    "commit": "15baa296bb0b90904fb0ec56775833313f15883a",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794112515000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e4a4775",
+    "publishedAt": 1794116524000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-15baa29",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-e4a4775.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a4775/DroidDeck-main-e4a4775.apk",
+        "name": "DroidDeck-main-15baa29.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-15baa29/DroidDeck-main-15baa29.apk",
         "size": 96612413,
-        "sha256": "90d1d6beb14c9ef157ffc39fd0eda923d75c35bebbcb9f9938c4df6a7feac709",
+        "sha256": "de4618eb3cd488740422717a805602f4daa76264d3c8156fdfc74fadd47f6560",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-e4a4775-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a4775/DroidDeck-main-e4a4775-pubg.apk",
+        "name": "DroidDeck-main-15baa29-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-15baa29/DroidDeck-main-15baa29-pubg.apk",
         "size": 96612413,
-        "sha256": "a84448ef94dcaf6740340af667f84075e6afeb53576be69953aafd0c5023ae73",
+        "sha256": "e7b32e5dbe1c706f1793b25e116d4a73dc57a2d9201c7d79155d257d1016e459",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-e4a4775-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a4775/DroidDeck-main-e4a4775-antutu.apk",
+        "name": "DroidDeck-main-15baa29-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-15baa29/DroidDeck-main-15baa29-antutu.apk",
         "size": 96612413,
-        "sha256": "369979d2469463489b6ea1af2f7e5ca287127f264c1ddd542aca9a6c917b9f45",
+        "sha256": "edc4d4831f435c11eb762b5d9aaf8199591a3d6a2df846ad29e3de9a1fd7a8d9",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-e4a4775-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a4775/DroidDeck-main-e4a4775-ludashi.apk",
+        "name": "DroidDeck-main-15baa29-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-15baa29/DroidDeck-main-15baa29-ludashi.apk",
         "size": 96612413,
-        "sha256": "e98963cf378bcae17f12f124b68eb03065483652eb84a099f7a8f2353605a7fb",
+        "sha256": "8935b633db1cc154f621cd6798927a42a9d4263a0953cd3e86e4859ce0ebba46",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "15baa296bb0b90904fb0ec56775833313f15883a",
+      "title": "fix(storage): a Second library folder that is there is used even when its volume state isn't mounted",
+      "summary": "On a Samsung Galaxy S25 (Android 17), a Second library on the SD card (/mnt/mediarw/B2BD-BCFC/STEAM GAMES) works on 0.6.9 but drops to internal storage on Preview. The folder's PC games and its Steam library disappear.",
+      "publishedAt": 1794116524000
+    },
     {
       "commit": "e4a4775be53082cb4c259a8ed24022cd70703afd",
       "title": "fix(input): taps outside the PC keyboard reach the game while it is open",
@@ -155,12 +161,6 @@
       "title": "test: skip permission-denial tests when running as root",
       "summary": "The new self-hosted runners run the unit tests as root, which ignores file mode bits, so six tests that depend on a denied read or write fail there while passing on GitHub-hosted runners (seen on #2236):",
       "publishedAt": 1794090084000
-    },
-    {
-      "commit": "8fa30b99f91a38ecc6f61e9d28fddacd8adcc682",
-      "title": "fix(input): restore the controls, panels and settings #1439 removed",
-      "summary": "Restores the on-screen controls, second-screen panels and settings that #1439 (\"Unify controller and screen input profiles\", 22a675a66) removed or broke. Each item was checked against the code before #1439 (22a675a66^) and put back to match it. The fixes go through the unified input profiles instead of reviving the old views.",
-      "publishedAt": 1794088395000
     }
   ],
   "tests": [
