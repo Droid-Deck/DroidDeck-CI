@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794119392097,
+  "generatedAt": 1794119685934,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2266",
+      "title": "fix(proton): an installed DroidDeck-Proton replaces a Proton Experimental default nobody picked, and added shortcuts follow it",
+      "summary": "Users with DroidDeck-Proton installed are left on Proton Experimental (ARM64) as Steam's default compatibility tool without ever picking it. Battle.net and other added games follow that default, and World of Warcraft: Forever doesn't run on Proton Experimental. Session logs from two users (Galaxy S25 and a Battle.net/WoW report) show:",
+      "commit": "ef7370533060e2dbcbf7849ee52f27996c6b27d6",
+      "pr": 2266,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794119641000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2266",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2266-ef73705.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2266/DroidDeck-PR.2266-ef73705.apk",
+          "size": 96526397,
+          "sha256": "0d7d09745ce91138ed38b1936532c80ee968475a2c808a9b3cd5f3bebc8b3027",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2266-ef73705-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2266/DroidDeck-PR.2266-ef73705-pubg.apk",
+          "size": 96526397,
+          "sha256": "ca55445af90dac24ea881576d7bacd7802f03d26e14bc8fa22ae15d1cc9ac108",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2266-ef73705-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2266/DroidDeck-PR.2266-ef73705-antutu.apk",
+          "size": 96526397,
+          "sha256": "aeee31e1604e9725957ad02696d02995590ce5b87af2850e28996cbec122066f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2266-ef73705-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2266/DroidDeck-PR.2266-ef73705-ludashi.apk",
+          "size": 96526397,
+          "sha256": "67f676081b6d5a90597b505caa4466d5cfa08ec2ae9317551aaf56cb557f4ea5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2265",
       "title": "feat: add community on-screen controls",
