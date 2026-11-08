@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794119685934,
+  "generatedAt": 1794120232595,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2259",
+      "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
+      "summary": "Adds EA as a store. Games sign in, sync, download, update and launch without the EA app in the prefix.",
+      "commit": "e7d11a5feb9d9f41e11a6cd725350be38244b936",
+      "pr": 2259,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794120168000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2259",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2259-e7d11a5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-e7d11a5.apk",
+          "size": 96727634,
+          "sha256": "cc11932b5fe4fc716f80d0f87bb87d115ad41f5483db2ca2a9cafb99f86c6f66",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2259-e7d11a5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-e7d11a5-pubg.apk",
+          "size": 96727634,
+          "sha256": "3ad7ee6c3a96e4ecdd30121e9b70b295349b12f86a3b41f8baf5b010a5f9b496",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2259-e7d11a5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-e7d11a5-antutu.apk",
+          "size": 96727634,
+          "sha256": "3c41764976df639293e95783b2cfbfe41b8ac1a516da5993d96b7612023a8489",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2259-e7d11a5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-e7d11a5-ludashi.apk",
+          "size": 96727634,
+          "sha256": "5c22b39f5543427fb0c1849e8d68b83af2e6d8c3733da957c69485b1d0bb1175",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2266",
       "title": "fix(proton): an installed DroidDeck-Proton replaces a Proton Experimental default nobody picked, and added shortcuts follow it",
       "summary": "Users with DroidDeck-Proton installed are left on Proton Experimental (ARM64) as Steam's default compatibility tool without ever picking it. Battle.net and other added games follow that default, and World of Warcraft: Forever doesn't run on Proton Experimental. Session logs from two users (Galaxy S25 and a Battle.net/WoW report) show:",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-0ff1beb-ludashi.apk",
           "size": 96698721,
           "sha256": "7534ff09888eb9835ed1ce6ba0fa6740ea68472e87d8429601a54334882c525e",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2259",
-      "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
-      "summary": "Adds EA as a store. Games sign in, sync, download, update and launch without the EA app in the prefix.",
-      "commit": "4f6a1fcd174a64e4fa4a72cddd21a92eb425f00f",
-      "pr": 2259,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794119174000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2259",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2259-4f6a1fc.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-4f6a1fc.apk",
-          "size": 96727634,
-          "sha256": "9fea8e4e6af29df34d4f72bb85b60e8fd1ddd5d4f42f935654c3d8865c787770",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2259-4f6a1fc-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-4f6a1fc-pubg.apk",
-          "size": 96727634,
-          "sha256": "25fae44323d69d87a38e4de248d685d8387d1fa548aac148c3211589ae11fb24",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2259-4f6a1fc-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-4f6a1fc-antutu.apk",
-          "size": 96727634,
-          "sha256": "658bff0cab8a65f3994f940fc56edf97f05bb562f66ef2fd266c15c746d468aa",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2259-4f6a1fc-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-4f6a1fc-ludashi.apk",
-          "size": 96727634,
-          "sha256": "e18ba908428fd3a568f54fc1ce30b15a5c08f05721f55ea65af2fbd60c904362",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
