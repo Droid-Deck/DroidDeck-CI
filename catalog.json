@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794098468813,
+  "generatedAt": 1794098989317,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-10cfc6c",
-    "title": "feat: let users turn off the low-storage warning",
-    "summary": "Pressing Play Steam with under 10 GB free shows the \"Only X GB free\" dialog every time. This adds a \"Warn when storage is low\" toggle in the launcher Settings, next to Animations, and a \"Don't warn me about this again\" switch on the dialog itself. Both flip the same setting. When it is off, Steam starts straight away with no dialog.",
-    "commit": "10cfc6c6b228e8f88c0b3cdd82e7582cf402152b",
+    "tag": "main-5b2f7a9",
+    "title": "fix(storage): a Second library on a raw /mnt/mediarw path is used again",
+    "summary": "A Second library saved as a raw volume path (/mnt/mediarw/<volume>/...) is treated as unplugged on Preview, so sessions run with internal storage only and none of that library's games show up. Stable is fine. Reported on a Samsung S25 with /mnt/mediarw/B2BD-BCFC/STEAM GAMES; their Preview log has game storage: internal only, their Stable log mounts the folder at /mnt/droiddeck-sd.",
+    "commit": "5b2f7a9a6d9fd5cc966719c11e9c20e9dc6f34fa",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794097608000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-10cfc6c",
+    "publishedAt": 1794098931000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-5b2f7a9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-10cfc6c.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-10cfc6c/DroidDeck-main-10cfc6c.apk",
+        "name": "DroidDeck-main-5b2f7a9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5b2f7a9/DroidDeck-main-5b2f7a9.apk",
         "size": 96518205,
-        "sha256": "01b4bdc9595e3b861b68961d4a2a428b62c75112dd87f6af5193d7581d8626b6",
+        "sha256": "0d5979cb42966eb12a684037c61a2be37f5942578d0972c825adacc7752e3e3d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-10cfc6c-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-10cfc6c/DroidDeck-main-10cfc6c-pubg.apk",
+        "name": "DroidDeck-main-5b2f7a9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5b2f7a9/DroidDeck-main-5b2f7a9-pubg.apk",
         "size": 96518205,
-        "sha256": "7f93f1cc7622e4c55e45ee111e4e7925a76cd4a791876f4064e0bd3cb7558d1b",
+        "sha256": "ea5d8f44c84db973a8fe432f71b92c0a4e34464e30aaf7372052ec18691dd45e",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-10cfc6c-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-10cfc6c/DroidDeck-main-10cfc6c-antutu.apk",
+        "name": "DroidDeck-main-5b2f7a9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5b2f7a9/DroidDeck-main-5b2f7a9-antutu.apk",
         "size": 96518205,
-        "sha256": "1b301b5218b4a94a5089567c7ed3da87941f0dfc4608a4a0fbabc0ae7734665e",
+        "sha256": "bc67e998e90a19776fc120e4e51fd6ebe2a752e0fbb324db37c296617abaa75f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-10cfc6c-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-10cfc6c/DroidDeck-main-10cfc6c-ludashi.apk",
+        "name": "DroidDeck-main-5b2f7a9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-5b2f7a9/DroidDeck-main-5b2f7a9-ludashi.apk",
         "size": 96518205,
-        "sha256": "9f09b09706a39d787928841c0ab4489f42f54d48aec515430ee737ad111afd12",
+        "sha256": "b768c7cc5c599e1cf5b58d9720233b7bd163b55ce0ba2828b57b4da8b9bec1b6",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "5b2f7a9a6d9fd5cc966719c11e9c20e9dc6f34fa",
+      "title": "fix(storage): a Second library on a raw /mnt/mediarw path is used again",
+      "summary": "A Second library saved as a raw volume path (/mnt/mediarw/<volume>/...) is treated as unplugged on Preview, so sessions run with internal storage only and none of that library's games show up. Stable is fine. Reported on a Samsung S25 with /mnt/mediarw/B2BD-BCFC/STEAM GAMES; their Preview log has game storage: internal only, their Stable log mounts the folder at /mnt/droiddeck-sd.",
+      "publishedAt": 1794098931000
+    },
     {
       "commit": "10cfc6c6b228e8f88c0b3cdd82e7582cf402152b",
       "title": "feat: let users turn off the low-storage warning",
@@ -155,12 +161,6 @@
       "title": "fix: library scan and download cancel crash on Android 10",
       "summary": "Fixes #2200: on a Pico 4 (Android 10) DroidDeck ran once, then crashed on every library scan.",
       "publishedAt": 1794069189000
-    },
-    {
-      "commit": "22a675a664f0c8a1bfd8ecac292b8971a38555f7",
-      "title": "Unify controller and screen input profiles for game and desktop sessions",
-      "summary": "Desktop sessions need configurable mouse, keyboard and application actions from a controller. On dual-screen devices, a lower-screen trackpad may already handle the pointer, leaving the physical controls available for other assignments. This PR gives physical controllers and local touch controls a shared profile/action model instead of separate configuration paths.",
-      "publishedAt": 1794059466000
     }
   ],
   "tests": [
