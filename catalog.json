@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794096960158,
+  "generatedAt": 1794097116100,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2246",
+      "title": "ci: run approved fork PR compile jobs on the disposable fork runner",
+      "summary": "Approved fork PRs can now compile on a self-hosted runner instead of always using GitHub-hosted runners.",
+      "commit": "899f89cddba7df5f2151f14e8758c32042c0ddfc",
+      "pr": 2246,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794097071000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2246",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2246-899f89c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-899f89c.apk",
+          "size": 96510013,
+          "sha256": "35225115a967fb08a6b157fdf1b288abfe4f3e44aeff2c539c375cb2dbf5dc7a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2246-899f89c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-899f89c-pubg.apk",
+          "size": 96510013,
+          "sha256": "476549313cb296463b2bbdbf6c69f936afd13515c5a1e3edb6d1242e0447d80d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2246-899f89c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-899f89c-antutu.apk",
+          "size": 96510013,
+          "sha256": "b4efbc8e465cb172cbf28ad9f2df7ef3ba72e311524ad1da748fbe10d99f3eef",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2246-899f89c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-899f89c-ludashi.apk",
+          "size": 96510013,
+          "sha256": "a82157664f721eb088a4fd7eded2ce172f0dfe1617163c973438346900c99ed5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2245",
+      "title": "fix(storage): a Second library on a raw /mnt/mediarw path is used again",
+      "summary": "A Second library saved as a raw volume path (/mnt/mediarw/<volume>/...) is treated as unplugged on Preview, so sessions run with internal storage only and none of that library's games show up. Stable is fine. Reported on a Samsung S25 with /mnt/mediarw/B2BD-BCFC/STEAM GAMES; their Preview log has game storage: internal only, their Stable log mounts the folder at /mnt/droiddeck-sd.",
+      "commit": "50be2f7d1023dcc871b2d3a40f082eaac9ec0d16",
+      "pr": 2245,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794097054000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2245",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2245-50be2f7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2245/DroidDeck-PR.2245-50be2f7.apk",
+          "size": 96510013,
+          "sha256": "a000b6dc63ef58edd0c305b55348239eb102d2b9a49548df70a5b731d4130d90",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2245-50be2f7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2245/DroidDeck-PR.2245-50be2f7-pubg.apk",
+          "size": 96510013,
+          "sha256": "74919c4877ccd1f611da8adae21de47ec348ea88e37a2d40753eaa2badd398a0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2245-50be2f7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2245/DroidDeck-PR.2245-50be2f7-antutu.apk",
+          "size": 96510013,
+          "sha256": "1a96fa69a6d2c8d5763865c94e827cc9cd6ff299d4626ecbbec7668bb535c54a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2245-50be2f7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2245/DroidDeck-PR.2245-50be2f7-ludashi.apk",
+          "size": 96510013,
+          "sha256": "2b7c38dea0429793391111166e07885eb16f91208bceb06f4f0e7d53485e7b8e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2220",
       "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
