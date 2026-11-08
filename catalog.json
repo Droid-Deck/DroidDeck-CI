@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794121015778,
+  "generatedAt": 1794121185082,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2265",
+      "title": "feat: add community on-screen controls",
+      "summary": "Adds Community controls to controller settings with source selection, searchable packs and previews, local ZIP import/export, and per-game screen profiles.",
+      "commit": "a0cd5b0cad686e4207d4ff576b811bb689a99d24",
+      "pr": 2265,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794121139000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2265",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2265-a0cd5b0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-a0cd5b0.apk",
+          "size": 96702817,
+          "sha256": "e2f005cebd1c6ed4555d49bb1acba7037a2761ee3d13ee128ce73f6c877496b1",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2265-a0cd5b0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-a0cd5b0-pubg.apk",
+          "size": 96702817,
+          "sha256": "42862558709ea22b6399ff00630579ff89f21709a5ffa8ef380ebe07533ff9db",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2265-a0cd5b0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-a0cd5b0-antutu.apk",
+          "size": 96702817,
+          "sha256": "0da5cf4efa2372c6bc7712f84fc8742c99c0b454417b8936c5d3edfce4a5ccea",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2265-a0cd5b0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-a0cd5b0-ludashi.apk",
+          "size": 96702817,
+          "sha256": "6bd64db31958f92f54cacf31c603197bf164d57b64d21d12e24f7696a88914d0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2266",
       "title": "fix(proton): an installed DroidDeck-Proton replaces a Proton Experimental default nobody picked, and added shortcuts follow it",
       "summary": "Users with DroidDeck-Proton installed are left on Proton Experimental (ARM64) as Steam's default compatibility tool without ever picking it. Battle.net and other added games follow that default, and World of Warcraft: Forever doesn't run on Proton Experimental. Session logs from two users (Galaxy S25 and a Battle.net/WoW report) show:",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2266/DroidDeck-PR.2266-48a07ea-ludashi.apk",
           "size": 96526397,
           "sha256": "31e826f4f231a6f5062d10364cddc229c42a5baad18845d865aed643e15eb5c6",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2265",
-      "title": "feat: add community on-screen controls",
-      "summary": "Adds Community controls to controller settings with source selection, searchable packs and previews, local ZIP import/export, and per-game screen profiles.",
-      "commit": "97c6229e851f6e1686ac0c47471a8396f4aeb5a4",
-      "pr": 2265,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794120314000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2265",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2265-97c6229.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-97c6229.apk",
-          "size": 96698721,
-          "sha256": "0110ebbf61b557b1e075c67985cefc719754e984bed00c2e2ef40fd1725a689d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2265-97c6229-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-97c6229-pubg.apk",
-          "size": 96698721,
-          "sha256": "5450e029556717629c6abe91fec120fa198e36ea394d51719cba0c97a1a516dc",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2265-97c6229-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-97c6229-antutu.apk",
-          "size": 96698721,
-          "sha256": "c59b1f5d6c2f563ed905c902a2d5198b89e312622264189d47f6c6c188b163f8",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2265-97c6229-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-97c6229-ludashi.apk",
-          "size": 96698721,
-          "sha256": "a12660db3c1d342ac9b0a74eab96e641dec1111d0d9a4b15309bb018cdb94bb8",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
