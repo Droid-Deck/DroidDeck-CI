@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794101480413,
+  "generatedAt": 1794101907004,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2252",
+      "title": "fix(steam): restore the client branch file when the desktop client deletes it",
+      "summary": "After opening the Steam client in Desktop mode, Steam offers the same client update on every start. Installing it does not help: after the restart it offers it again.",
+      "commit": "4cd34a155e7df001bc72571f2399a8c3f66ce11b",
+      "pr": 2252,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794101848000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2252",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2252-4cd34a1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2252/DroidDeck-PR.2252-4cd34a1.apk",
+          "size": 96518205,
+          "sha256": "ace00b669abbc110a7d997700dff581bbf6ee7abbdb5536b7afbc678a21e62a6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2252-4cd34a1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2252/DroidDeck-PR.2252-4cd34a1-pubg.apk",
+          "size": 96518205,
+          "sha256": "8ac3255ed800d2fc97c942eb930c3d7aa6db6837720b5fb547d372c3682463f9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2252-4cd34a1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2252/DroidDeck-PR.2252-4cd34a1-antutu.apk",
+          "size": 96518205,
+          "sha256": "36f7a1092dc9e1d94e0a5113ad0c1e0cae3cab1fcbbaeef30561c8f18b981eca",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2252-4cd34a1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2252/DroidDeck-PR.2252-4cd34a1-ludashi.apk",
+          "size": 96518205,
+          "sha256": "e9011708a8fbdbdfd780a8c0a4388e914fd331e1ca3e38f4295239108299638d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2220",
       "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
