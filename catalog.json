@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794159254474,
+  "generatedAt": 1794160079338,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2289",
+      "title": "fix: run Final Fantasy VII Rebirth at D3D12 feature level 122",
+      "summary": "\u2022 Adds a per-game fix that sets VKD3DFEATURELEVEL=122 for Final Fantasy VII Rebirth (launcher and shipping exe).\n\u2022 122 used to be the global default, with other games getting overrides to match the device-reported level. The default now follows the hardware report, which makes Rebirth fail its DX12 compatibility check on an Odin 3 Ultra.\n\u2022 A per-game environment setting still overrides the fix.",
+      "commit": "66cf094fc29c987ef3c57725262d07f4d8ef7fd7",
+      "pr": 2289,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794160022000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2289",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2289-66cf094.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2289/DroidDeck-PR.2289-66cf094.apk",
+          "size": 96620703,
+          "sha256": "4ede518e889eb26c9fe587565d9ec02eedbc709e5044489ae9059de3e75a4ec7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2289-66cf094-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2289/DroidDeck-PR.2289-66cf094-pubg.apk",
+          "size": 96620703,
+          "sha256": "3bea46abb244b29b69df3a0947d82472db53ab4f59921ed16c910dd80a87e3f9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2289-66cf094-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2289/DroidDeck-PR.2289-66cf094-antutu.apk",
+          "size": 96620703,
+          "sha256": "1b9b2bb2b9d2822edd9e7db222e01faff0764ad42e057873edd151ba745b0050",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2289-66cf094-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2289/DroidDeck-PR.2289-66cf094-ludashi.apk",
+          "size": 96620703,
+          "sha256": "fb48b597dd290b42cb1fd1a1e6a5d67246119cac2539f690f68a64ab68959b10",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2291",
       "title": "fix(input): digital trigger keys work again on pads that also list analog axes",
       "summary": "Since 0.7.0, triggers set to Digital on handhelds such as the AYN Thor stopped responding. Analog mode still worked.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2291/DroidDeck-PR.2291-9c5cbc8-ludashi.apk",
           "size": 96620703,
           "sha256": "2997fc3f4adf4fda61c4f41fe4edc6047c43f77096b8bcd9694cf19b57fa6456",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2289",
-      "title": "fix: run Final Fantasy VII Rebirth at D3D12 feature level 122",
-      "summary": "\u2022 Adds a per-game fix that sets VKD3DFEATURELEVEL=122 for Final Fantasy VII Rebirth (launcher and shipping exe).\n\u2022 122 used to be the global default, with other games getting overrides to match the device-reported level. The default now follows the hardware report, which makes Rebirth fail its DX12 compatibility check on an Odin 3 Ultra.\n\u2022 A per-game environment setting still overrides the fix.",
-      "commit": "d08a5e6a7313c38438cc4b62e036513a3876c7e9",
-      "pr": 2289,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794157842000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2289",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2289-d08a5e6.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2289/DroidDeck-PR.2289-d08a5e6.apk",
-          "size": 96620703,
-          "sha256": "12aa90a1784f3e9d564e0752b5784bdfa49f8f255931143dca2eee4fabd59992",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2289-d08a5e6-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2289/DroidDeck-PR.2289-d08a5e6-pubg.apk",
-          "size": 96620703,
-          "sha256": "27684da5158ca17861942a350b68dc5e31a744cb8e5229bf5fcfda6febcbbdb7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2289-d08a5e6-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2289/DroidDeck-PR.2289-d08a5e6-antutu.apk",
-          "size": 96620703,
-          "sha256": "cc148904a50cce068a288f1cf3928197238a0f1f110ed311b872cd27f63b1b12",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2289-d08a5e6-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2289/DroidDeck-PR.2289-d08a5e6-ludashi.apk",
-          "size": 96620703,
-          "sha256": "d412c5deb81bbd8522b53839daa2af39f4383f2b4ae869cfbb1c3bfee52a17a3",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
