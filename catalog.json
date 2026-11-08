@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794175400486,
+  "generatedAt": 1794175637770,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2300",
+      "title": "feat: fuck proot and proots mama",
+      "summary": "An opt-in native userland that runs the Linux side (session script, gamescope, Steam, Proton/FEX games) directly on Android with no proot and no ptrace. Setting: Performance > \"Run without proot (experimental)\". Default off; the proot path is untouched.",
+      "commit": "7fa7e7f05d9fca5585afcec833ab787f34ac746f",
+      "pr": 2300,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794175569000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2300",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2300-7fa7e7f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-7fa7e7f.apk",
+          "size": 96715082,
+          "sha256": "dc89595df0852309a4d3109036355c26bc23729155ea07538c0227a3818b0096",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2300-7fa7e7f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-7fa7e7f-pubg.apk",
+          "size": 96715082,
+          "sha256": "8ab0173c99babc3f71a845009583ec644638ad00a7a3e3fca11b0721b90b97e3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2300-7fa7e7f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-7fa7e7f-antutu.apk",
+          "size": 96715082,
+          "sha256": "522926bac636da3bf4d6f6b4e2712cbb4d658c6b9c5f9ca655129eaea5c33096",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2300-7fa7e7f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-7fa7e7f-ludashi.apk",
+          "size": 96715082,
+          "sha256": "667fdce5ef0e4914331f45e0756db5cd3a9957c631f37b95c42bbffdebcadcd0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2302",
       "title": "fix(input): show the panel tabs under the controls-below-the-game bar",
       "summary": "When the session runs the Deck pad, the \"Controls below the game\" panel has tabs (Gamepad, Grips, Left pad, Right pad, Both) to pick what it shows, and it starts on Both trackpads. The bar holding those tabs was added to the column at a fixed one-row height, so the tab row under it was clipped away. Users were stuck on the trackpads with no way back to the gamepad, which looks like the on-screen g",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2302/DroidDeck-PR.2302-b7642da-ludashi.apk",
           "size": 96538876,
           "sha256": "8f495fc001d693dc86824d0ddd74f6cf4fefd8341723aff3da2f7967bee1b637",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2300",
-      "title": "feat: fuck proot and proots mama",
-      "summary": "An opt-in native userland that runs the Linux side (session script, gamescope, Steam, Proton/FEX games) directly on Android with no proot and no ptrace. Setting: Performance > \"Run without proot (experimental)\". Default off; the proot path is untouched.",
-      "commit": "74f7bfd99fbeeae3936dac0b7763cbdb4773d942",
-      "pr": 2300,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794170382000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2300",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2300-74f7bfd.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-74f7bfd.apk",
-          "size": 96715082,
-          "sha256": "c8fda99f60f3f3d15b0e7070015af4e34a79e18a9f09479f853745bd59c18d2b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2300-74f7bfd-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-74f7bfd-pubg.apk",
-          "size": 96715082,
-          "sha256": "688ea4706bddd7674d2f4ef02e190e15e8adbdb00e160358edb1834f92293621",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2300-74f7bfd-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-74f7bfd-antutu.apk",
-          "size": 96715082,
-          "sha256": "fa0f4896babd45a89c1d1e9017138bdfe2592b17b7908a117d2206c04b5d6062",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2300-74f7bfd-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-74f7bfd-ludashi.apk",
-          "size": 96715082,
-          "sha256": "9a92774a6869a0bf507f99d590b9d3d02bef92c90013f4123d20e30e313a6457",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
