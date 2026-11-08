@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794106877274,
+  "generatedAt": 1794107286742,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2257",
+      "title": "fix(input): taps outside the PC keyboard reach the game while it is open",
+      "summary": "While the PC keyboard from the session menu was open, DroidDeck dropped every tap on the session, including on the part of the game still visible above the keyboard. A user typing a login into the EA app with the PC keyboard couldn't then tap \"Send code\" above it: nothing responded until the keyboard was hidden. Their log shows the touch route BLOCKED for the whole time the keyboard was open.",
+      "commit": "f7dcdc5dc8aae53c9ae4344c9280d8505eb9efc0",
+      "pr": 2257,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794107226000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2257",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2257-f7dcdc5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2257/DroidDeck-PR.2257-f7dcdc5.apk",
+          "size": 96608317,
+          "sha256": "6586dc601ca21513acaaa7e448d598583cfc39c5c945ebfaa8aaae6a1c562628",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2257-f7dcdc5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2257/DroidDeck-PR.2257-f7dcdc5-pubg.apk",
+          "size": 96608317,
+          "sha256": "e4fd2ba312c3b3b385cb484102c56f98fc934ddf7478f26d0744e070bd051e36",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2257-f7dcdc5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2257/DroidDeck-PR.2257-f7dcdc5-antutu.apk",
+          "size": 96608317,
+          "sha256": "a9b238e00f25413b4823514f19f7906c8a5080cdf49ba7eda64e47c6179296ac",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2257-f7dcdc5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2257/DroidDeck-PR.2257-f7dcdc5-ludashi.apk",
+          "size": 96608317,
+          "sha256": "7191d50ba88f58b515bd76c31e2bd11de6d176614fb0c0746272d76eecf0a0ff",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2256",
       "title": "fix(library): added and Battle.net games sort by when they were played and installed",
       "summary": "Sorting the Library by Recently played or Recently installed puts World of Warcraft, and every other added game, at the bottom of All, whatever was played or installed last (reported on Discord). Title and size sorting work.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2256/DroidDeck-PR.2256-916b2db-ludashi.apk",
           "size": 96608317,
           "sha256": "fb421e79fb84d97785c445924a25ff2c871e8216371e158653bc8ebc678b27b5",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2257",
-      "title": "fix(input): taps outside the PC keyboard reach the game while it is open",
-      "summary": "While the PC keyboard from the session menu was open, DroidDeck dropped every tap on the session, including on the part of the game still visible above the keyboard. A user typing a login into the EA app with the PC keyboard couldn't then tap \"Send code\" above it: nothing responded until the keyboard was hidden. Their log shows the touch route BLOCKED for the whole time the keyboard was open.",
-      "commit": "382224aaa75f69ee5041c8103780bf79ea414747",
-      "pr": 2257,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794106420000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2257",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2257-382224a.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2257/DroidDeck-PR.2257-382224a.apk",
-          "size": 96608317,
-          "sha256": "2313be0d7b08e08e5031c04dca293a8279b6e2a9e556c61bc30f76a1d1d44cad",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2257-382224a-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2257/DroidDeck-PR.2257-382224a-pubg.apk",
-          "size": 96608317,
-          "sha256": "26e42a8f9403ad562fd02805885233a8b422df8f3363bb28e5549fdbe77430f9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2257-382224a-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2257/DroidDeck-PR.2257-382224a-antutu.apk",
-          "size": 96608317,
-          "sha256": "79806e040250ca6ae0d7a2a02a928579aa2553222f8d5459ed52b97dd2c6c0e1",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2257-382224a-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2257/DroidDeck-PR.2257-382224a-ludashi.apk",
-          "size": 96608317,
-          "sha256": "f032fcfaf03be5c349efcf7f26d89dd5081ef12f50bde5f2965b45c396bb24a6",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
