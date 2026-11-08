@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794170448461,
+  "generatedAt": 1794173274542,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2302",
+      "title": "fix(input): show the panel tabs under the controls-below-the-game bar",
+      "summary": "When the session runs the Deck pad, the \"Controls below the game\" panel has tabs (Gamepad, Grips, Left pad, Right pad, Both) to pick what it shows, and it starts on Both trackpads. The bar holding those tabs was added to the column at a fixed one-row height, so the tab row under it was clipped away. Users were stuck on the trackpads with no way back to the gamepad, which looks like the on-screen g",
+      "commit": "b7642da5515a45fd7b0acb90ff4389615f66c936",
+      "pr": 2302,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794173206000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2302",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2302-b7642da.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2302/DroidDeck-PR.2302-b7642da.apk",
+          "size": 96538876,
+          "sha256": "823227a03ad12a987eebd376f00c8735fedfae9513ed51f1f296bc7ef2331bc9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2302-b7642da-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2302/DroidDeck-PR.2302-b7642da-pubg.apk",
+          "size": 96538876,
+          "sha256": "8c7d8014b3fbed549fed92d60e7b8f1f4b2ef865da74a3262879d7ef21c44ec9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2302-b7642da-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2302/DroidDeck-PR.2302-b7642da-antutu.apk",
+          "size": 96538876,
+          "sha256": "cee6d4c527e25ec9debedfc702a0fba88ef2ad52af9075d5d844416de21ba87a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2302-b7642da-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2302/DroidDeck-PR.2302-b7642da-ludashi.apk",
+          "size": 96538876,
+          "sha256": "8f495fc001d693dc86824d0ddd74f6cf4fefd8341723aff3da2f7967bee1b637",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
