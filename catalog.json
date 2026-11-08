@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794098311113,
+  "generatedAt": 1794098428507,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2220",
+      "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
+      "summary": "In Direct touch, dragging stopped working in games that draw their own cursor (Balatro, Stardew Valley). A drag moves the pointer but never holds a button down; taps still click.",
+      "commit": "8e13c60ea921afded154d7b69fe1db7b108c1ea5",
+      "pr": 2220,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794098369000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2220",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2220-8e13c60.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-8e13c60.apk",
+          "size": 96600125,
+          "sha256": "a920b0aecd943df2a09d8edec204be3fdea690e290c43464b391a380a6e81695",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2220-8e13c60-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-8e13c60-pubg.apk",
+          "size": 96600125,
+          "sha256": "156e8d3c7c317c947532313d844cff94f6c4922a7d8b27f463f33fb95a07be41",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2220-8e13c60-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-8e13c60-antutu.apk",
+          "size": 96600125,
+          "sha256": "3c53f93567bf907f5dc2b16b91663d3dc6fc92ba27a3531fb7a2ca643433a240",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2220-8e13c60-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-8e13c60-ludashi.apk",
+          "size": 96600125,
+          "sha256": "bfb97a53c83f5636080153c1b4cb61e89cd1683e871398834166597c17e2d3dc",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2247",
       "title": "fix: keep the bottom-screen menu and layout editor open when the screen turns off",
       "summary": "Turning the screen off closed everything open in a session: the DroidDeck menu, the input settings page and the layout editor. On a dual screen handheld that meant a layout being edited on the bottom screen vanished on every sleep, and the bottom screen came back showing the default Dashboard panel.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-899f89c-ludashi.apk",
           "size": 96510013,
           "sha256": "a82157664f721eb088a4fd7eded2ce172f0dfe1617163c973438346900c99ed5",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2220",
-      "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
-      "summary": "In Direct touch, dragging stopped working in games that draw their own cursor (Balatro, Stardew Valley). A drag moves the pointer but never holds a button down; taps still click.",
-      "commit": "316355a609a0030cb2042d42083c533c3d1f380e",
-      "pr": 2220,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794096916000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2220",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2220-316355a.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-316355a.apk",
-          "size": 96591933,
-          "sha256": "a58a7a7b95dfd9c363eb310689702318284d4edce173c5c5e0889f7e69bf9f1a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2220-316355a-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-316355a-pubg.apk",
-          "size": 96591933,
-          "sha256": "3255d7fe30a7b47c46ef7b5bf393f37f6cf7a5ae5c336610412eba8128039714",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2220-316355a-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-316355a-antutu.apk",
-          "size": 96591933,
-          "sha256": "0b0a782adb53fb2f6c887a12c7b0cb2c204a71d38678ef03804a9169cb34ec90",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2220-316355a-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-316355a-ludashi.apk",
-          "size": 96591933,
-          "sha256": "8d007c93f439d3f017b9231bfd3d8b0234095463e179512a3646ede8101d5f3c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
