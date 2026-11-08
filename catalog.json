@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794102600552,
+  "generatedAt": 1794103009304,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-2220",
+      "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
+      "summary": "In Direct touch, dragging stopped working in games that draw their own cursor (Balatro, Stardew Valley). A drag moves the pointer but never holds a button down; taps still click.",
+      "commit": "ac6eaf5ffd93e266aa790f0355dbb740d53b64b9",
+      "pr": 2220,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794102953000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2220",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2220-ac6eaf5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-ac6eaf5.apk",
+          "size": 96600125,
+          "sha256": "023adba03f0535da03d47234c87d015216a71e68d4b90df571a3167416582cad",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2220-ac6eaf5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-ac6eaf5-pubg.apk",
+          "size": 96600125,
+          "sha256": "41f9a95f0d4065e5a2ccbb528ccc68f72374265741d199b5d10656f927bd590c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2220-ac6eaf5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-ac6eaf5-antutu.apk",
+          "size": 96600125,
+          "sha256": "bb0955c03b224275b006203b7dc2725ea09445033f838d15290d07af0b194f1f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2220-ac6eaf5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-ac6eaf5-ludashi.apk",
+          "size": 96600125,
+          "sha256": "a7548b0a6890fd133f6d8e1385e3f45d85ea888f5d137e1565e9c6f8649dec83",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2256",
+      "title": "fix(library): added and Battle.net games sort by when they were played and installed",
+      "summary": "Sorting the Library by Recently played or Recently installed puts World of Warcraft, and every other added game, at the bottom of All, whatever was played or installed last (reported on Discord). Title and size sorting work.",
+      "commit": "107d8898ef46d2cdd87a56f6974b1bb9582327e5",
+      "pr": 2256,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794102944000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2256",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2256-107d889.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2256/DroidDeck-PR.2256-107d889.apk",
+          "size": 96604221,
+          "sha256": "5f16d508b3d4146680e1d85c36bfc5b0351d1f5f4d5e78f47232f8b94eed32de",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2256-107d889-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2256/DroidDeck-PR.2256-107d889-pubg.apk",
+          "size": 96604221,
+          "sha256": "b9188052cb8626b133897e1c76dfe74f224f23380c99f15fd603c45bfdc0de72",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2256-107d889-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2256/DroidDeck-PR.2256-107d889-antutu.apk",
+          "size": 96604221,
+          "sha256": "71ca26a64f6c6845c25d37e28df1484fc3697238936c11247d047dd6b19caa56",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2256-107d889-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2256/DroidDeck-PR.2256-107d889-ludashi.apk",
+          "size": 96604221,
+          "sha256": "17d8272afe89da232deaf7a51a4ce4f52e95a78596d4da41105a207c2ef216e4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2254",
       "title": "fix(storage): Clean up keeps Proton EasyAntiCheat and BattlEye runtimes",
       "summary": "Clean up listed \\\"Proton EasyAntiCheat Runtime\\\" and \\\"Proton BattlEye Runtime\\\" as unused x86 Protons because their install folders start with \\Proton \\. Steam fetches these runtimes for any game that ships anti-cheat files, even when the launch option skips anti-cheat (e.g. Halo MCC). With the runtime removed, the game's install and launch stall at \\\"Downloading Content 0%\\\": Steam reuses the",
@@ -305,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2252/DroidDeck-PR.2252-4cd34a1-ludashi.apk",
           "size": 96518205,
           "sha256": "e9011708a8fbdbdfd780a8c0a4388e914fd331e1ca3e38f4295239108299638d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2220",
-      "title": "fix(gamescope): direct-touch drags work again in games that confine a hidden cursor",
-      "summary": "In Direct touch, dragging stopped working in games that draw their own cursor (Balatro, Stardew Valley). A drag moves the pointer but never holds a button down; taps still click.",
-      "commit": "c7a78447cf5a338c673e00472b9fc427aa47d482",
-      "pr": 2220,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794101434000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2220",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2220-c7a7844.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-c7a7844.apk",
-          "size": 96518205,
-          "sha256": "e27fe58d9e629b8ba651f43502a917ba38eaee7d35365dc99b45b06c337d4481",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2220-c7a7844-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-c7a7844-pubg.apk",
-          "size": 96518205,
-          "sha256": "c94f915f7d45bb725f7344b8b058ca602d65d29b96522c1a6ed6899a916460b3",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2220-c7a7844-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-c7a7844-antutu.apk",
-          "size": 96518205,
-          "sha256": "e2bf7913118027095df742480233cac3dc08728808f5b366e95e2e37c2c55b8e",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2220-c7a7844-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-c7a7844-ludashi.apk",
-          "size": 96518205,
-          "sha256": "d5a8dc5af2bc95fda9814422c3e3e516862a84714a000c35ee64ade7ad56bf69",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
