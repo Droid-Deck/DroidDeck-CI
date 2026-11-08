@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794151063551,
+  "generatedAt": 1794151188916,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2279",
+      "title": "fix(proot): lay out ARM64 programs like the kernel so large reservations fit",
+      "summary": "Fixes Linux emulators that run guest code natively hanging forever on launch.",
+      "commit": "74a9dad849e51acd9c46dd4c40ae2ae51013d48d",
+      "pr": 2279,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794151111000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2279",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2279-74a9dad.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2279/DroidDeck-PR.2279-74a9dad.apk",
+          "size": 96616607,
+          "sha256": "e874bad8783efea17a76ae4f3ab8a0b15bf6a03b57154dd47acdb75563bead1f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2279-74a9dad-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2279/DroidDeck-PR.2279-74a9dad-pubg.apk",
+          "size": 96616607,
+          "sha256": "8a359517ec16ba62eeaccfdf069652f408acca10deb3cb11794b6bf9983552d7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2279-74a9dad-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2279/DroidDeck-PR.2279-74a9dad-antutu.apk",
+          "size": 96616607,
+          "sha256": "19a90b3f9b829da994f33c11cd1482a161acb2b1f25d675b5964a0458d09f34f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2279-74a9dad-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2279/DroidDeck-PR.2279-74a9dad-ludashi.apk",
+          "size": 96616607,
+          "sha256": "52344e0af8d32e1e573ea917e00414226737513ddc29e279dce5160f43cdd660",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2280",
       "title": "fix(gamescope): taps reach dialogs and windows away from the screen origin",
