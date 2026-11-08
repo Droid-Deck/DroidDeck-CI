@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794098005492,
+  "generatedAt": 1794098311113,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2247",
+      "title": "fix: keep the bottom-screen menu and layout editor open when the screen turns off",
+      "summary": "Turning the screen off closed everything open in a session: the DroidDeck menu, the input settings page and the layout editor. On a dual screen handheld that meant a layout being edited on the bottom screen vanished on every sleep, and the bottom screen came back showing the default Dashboard panel.",
+      "commit": "9f3a99671aa8b0c517602aa5b63bc15f40635b2d",
+      "pr": 2247,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794098249000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2247",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2247-9f3a996.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2247/DroidDeck-PR.2247-9f3a996.apk",
+          "size": 96604221,
+          "sha256": "565006332f95b5e085e20fe660cae5592a657ef13ef5dfb09d09f7599a50cde9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2247-9f3a996-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2247/DroidDeck-PR.2247-9f3a996-pubg.apk",
+          "size": 96604221,
+          "sha256": "fbfa804a7aeb5710cb6bd671b990669af9237bdc59587e32e173d95004f83cf0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2247-9f3a996-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2247/DroidDeck-PR.2247-9f3a996-antutu.apk",
+          "size": 96604221,
+          "sha256": "b3473e3a27362cde12c3d70b793973b572631650f091eeee6d256a2840cb58d5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2247-9f3a996-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2247/DroidDeck-PR.2247-9f3a996-ludashi.apk",
+          "size": 96604221,
+          "sha256": "062baffb24316e0dad4cf26f896a402db8fc6bc063d8285a4e6b23ef1baa60bf",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2246",
       "title": "ci: run approved fork PR compile jobs on the disposable fork runner",
