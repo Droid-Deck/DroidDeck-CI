@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794158120533,
+  "generatedAt": 1794158436582,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2291",
+      "title": "fix(input): digital trigger keys work again on pads that also list analog axes",
+      "summary": "Since 0.7.0, triggers set to Digital on handhelds such as the AYN Thor stopped responding. Analog mode still worked.",
+      "commit": "9c5cbc8eda7443697e7c76d0549257cc4db639f8",
+      "pr": 2291,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794158383000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2291",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2291-9c5cbc8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2291/DroidDeck-PR.2291-9c5cbc8.apk",
+          "size": 96620703,
+          "sha256": "787d9d140c89bc579d3bfb6c4af5bc9bc469d25dcf9e754a86f72537ac491993",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2291-9c5cbc8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2291/DroidDeck-PR.2291-9c5cbc8-pubg.apk",
+          "size": 96620703,
+          "sha256": "a60cc2b5ff5d612859189cf773bcf35138066e9bd71322a305d606bdc6f3f69c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2291-9c5cbc8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2291/DroidDeck-PR.2291-9c5cbc8-antutu.apk",
+          "size": 96620703,
+          "sha256": "cc9bfa1e326cacaf24a61cc66f5d906058a1bb996f5539bcf12a40aa49c03ddc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2291-9c5cbc8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2291/DroidDeck-PR.2291-9c5cbc8-ludashi.apk",
+          "size": 96620703,
+          "sha256": "2997fc3f4adf4fda61c4f41fe4edc6047c43f77096b8bcd9694cf19b57fa6456",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2289",
       "title": "fix: run Final Fantasy VII Rebirth at D3D12 feature level 122",
