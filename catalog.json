@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794173274542,
+  "generatedAt": 1794173622130,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2303",
+      "title": "fix(session): give Steam a session bus so launches stop hanging at the install script",
+      "summary": "Since 0.7.0 Steam games can get stuck on launch at \"Processing install script\" (also seen as a download that never finishes finalizing), and some games leave a black screen with \"Abort game\" after you quit.",
+      "commit": "fe91bb5e5fd37dae2fbe8433cd1b5bc3f6fd2e01",
+      "pr": 2303,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794173544000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2303",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2303-fe91bb5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2303/DroidDeck-PR.2303-fe91bb5.apk",
+          "size": 96620796,
+          "sha256": "21e017f7083f26ce0816be8ec2af09a7839105f021e42b3ac75e612fdd5c22bc",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2303-fe91bb5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2303/DroidDeck-PR.2303-fe91bb5-pubg.apk",
+          "size": 96620796,
+          "sha256": "a297a16f01fb7fe5e890f41ceced21c00da744c1e4aacc056c43c3d0b89a1dab",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2303-fe91bb5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2303/DroidDeck-PR.2303-fe91bb5-antutu.apk",
+          "size": 96620796,
+          "sha256": "98e64634e9db964ad190cd3503237bd4a0bef22c03aa8488c3a94cd425085367",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2303-fe91bb5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2303/DroidDeck-PR.2303-fe91bb5-ludashi.apk",
+          "size": 96620796,
+          "sha256": "2df63a207a29705f4bc3e2e7c01e7932d2100b3a9e8fa12b6a8a99a51f78184a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2302",
       "title": "fix(input): show the panel tabs under the controls-below-the-game bar",
