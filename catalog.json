@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794155916962,
+  "generatedAt": 1794156028596,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2284",
+      "title": "fix(proton): a Proton picked for a game in Steam is kept",
+      "summary": "Picking Proton Experimental for a game in Steam's Properties > Compatibility was switched back to DroidDeck-Proton 11-12.3 at the next sync.",
+      "commit": "4d8c24da8d783a40e4a77651d8bf1fe7b5d08908",
+      "pr": 2284,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794155956000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2284",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2284-4d8c24d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2284/DroidDeck-PR.2284-4d8c24d.apk",
+          "size": 96530591,
+          "sha256": "b860a0df2848fddcbf52dca0973615245878b8be5c7bf8cc57316de28e82fbb4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2284-4d8c24d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2284/DroidDeck-PR.2284-4d8c24d-pubg.apk",
+          "size": 96530591,
+          "sha256": "f90de329c3080ec248a1191942df05d0c5ea9ebccb9d15aa258677293499e2a6",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2284-4d8c24d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2284/DroidDeck-PR.2284-4d8c24d-antutu.apk",
+          "size": 96530591,
+          "sha256": "5f2d927bfa92363825ffc32db538ce784733f176651498df1f97f144ea4759f0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2284-4d8c24d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2284/DroidDeck-PR.2284-4d8c24d-ludashi.apk",
+          "size": 96530591,
+          "sha256": "4377fa241d7eca3d1be463a83b82bc6452fadef300c8c4c8032dc9eb1a24008a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2246",
       "title": "ci: run approved fork PR compile jobs on the disposable fork runner",
