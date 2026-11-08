@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794182238471,
+  "generatedAt": 1794182361552,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-a7c10e3",
-    "title": "fix(session): give Steam a session bus so launches stop hanging at the install script",
-    "summary": "Since 0.7.0 Steam games can get stuck on launch at \"Processing install script\" (also seen as a download that never finishes finalizing), and some games leave a black screen with \"Abort game\" after you quit.",
-    "commit": "a7c10e3f5164632fd352850ec4ccac40280dc9a3",
+    "tag": "main-6b11058",
+    "title": "fix(gog): install scripts' support files reach the prefix",
+    "summary": "A GOG game installed through DroidDeck started as its base game instead of the edition that was installed: the mod's files were on disk, but its plugin list and INI files never reached the prefix.",
+    "commit": "6b110581ac167b1476d945db6b38327c63cd399e",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794175339000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a7c10e3",
+    "publishedAt": 1794182282000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6b11058",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-a7c10e3.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7c10e3/DroidDeck-main-a7c10e3.apk",
-        "size": 96620796,
-        "sha256": "71849b5d575fb59a6394493a0b24812f2a476abaa70d0586b8a1f96dd2e3e37e",
+        "name": "DroidDeck-main-6b11058.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6b11058/DroidDeck-main-6b11058.apk",
+        "size": 96624892,
+        "sha256": "968c31c6895ac3057f12b9bc6f079e2d629e1842dbd2e861ea8592b1dd34a012",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-a7c10e3-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7c10e3/DroidDeck-main-a7c10e3-pubg.apk",
-        "size": 96620796,
-        "sha256": "eb66cf77c39d53686b4902606ab04e8f3966776af88e89d3f07a9b91b1130968",
+        "name": "DroidDeck-main-6b11058-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6b11058/DroidDeck-main-6b11058-pubg.apk",
+        "size": 96624892,
+        "sha256": "8a51c9948734054ea59ace1a36c8b874e9888fddb6ef8ca8939ef5460b8af42b",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-a7c10e3-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7c10e3/DroidDeck-main-a7c10e3-antutu.apk",
-        "size": 96620796,
-        "sha256": "bfc03c58dba6c608f98b4497af0ccaa73fa69762ae53ccd716e3bcdcbc079403",
+        "name": "DroidDeck-main-6b11058-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6b11058/DroidDeck-main-6b11058-antutu.apk",
+        "size": 96624892,
+        "sha256": "2015da12095dbc94370df4747fc4003950ea019021e0e60f88290cc0d427ebe2",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-a7c10e3-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7c10e3/DroidDeck-main-a7c10e3-ludashi.apk",
-        "size": 96620796,
-        "sha256": "f893bcc0c6ed537f13a4edb241e7938c78271d5b27e58a2a990813392463c27a",
+        "name": "DroidDeck-main-6b11058-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6b11058/DroidDeck-main-6b11058-ludashi.apk",
+        "size": 96624892,
+        "sha256": "867ef01425549b391c16e39cf9c8b55f3fe4f5b55ea10a9a3cc5f3483bc30daa",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6b110581ac167b1476d945db6b38327c63cd399e",
+      "title": "fix(gog): install scripts' support files reach the prefix",
+      "summary": "A GOG game installed through DroidDeck started as its base game instead of the edition that was installed: the mod's files were on disk, but its plugin list and INI files never reached the prefix.",
+      "publishedAt": 1794182282000
+    },
     {
       "commit": "a7c10e3f5164632fd352850ec4ccac40280dc9a3",
       "title": "fix(session): give Steam a session bus so launches stop hanging at the install script",
@@ -155,12 +161,6 @@
       "title": "fix(session): give the runtime a machine ID so D-Bus programs such as melonDS start",
       "summary": "melonDS from the desktop menu closes at once. Inside gamescope its log ends with:",
       "publishedAt": 1794146708000
-    },
-    {
-      "commit": "45e39b7aaf9b6216afb9f63a1cd8eccb18eaad53",
-      "title": "fix(desktop): catalog AppImages such as RPCS3 start from the desktop menu again",
-      "summary": "RPCS3 from the desktop menu (Applications or right-click \u2192 Open in windowed mode, which users need to install the PS3 firmware) closes at once with nothing on screen. The desktop log shows:",
-      "publishedAt": 1794145692000
     }
   ],
   "tests": [
