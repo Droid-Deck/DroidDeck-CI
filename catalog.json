@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794112112853,
+  "generatedAt": 1794112615051,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-914b358",
-    "title": "fix(drivers): leaving a driver bundle no longer keeps its runtime half, and the Auto display picks the latest pair",
-    "summary": "Picking either half of an Android + Linux driver bundle selects both drivers. Picking another display driver afterwards (for example \"Auto - picked by GPU\" to go back to DroidDeck's drivers) changed only the display, so every later session still loaded the bundle's Linux driver. If that Linux half doesn't work, sessions keep failing after the user has \"switched back\", and Components shows nothing",
-    "commit": "914b3588e1ec1fe300838c2ceca65f343717a2e0",
+    "tag": "main-e4a4775",
+    "title": "fix(input): taps outside the PC keyboard reach the game while it is open",
+    "summary": "While the PC keyboard from the session menu was open, DroidDeck dropped every tap on the session, including on the part of the game still visible above the keyboard. A user typing a login into the EA app with the PC keyboard couldn't then tap \"Send code\" above it: nothing responded until the keyboard was hidden. Their log shows the touch route BLOCKED for the whole time the keyboard was open.",
+    "commit": "e4a4775be53082cb4c259a8ed24022cd70703afd",
     "pr": 0,
     "version": null,
     "versionCode": 17,
-    "publishedAt": 1794106821000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-914b358",
+    "publishedAt": 1794112515000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e4a4775",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-914b358.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-914b358/DroidDeck-main-914b358.apk",
-        "size": 96526397,
-        "sha256": "0f385d2862890a6689afbf0a144f865cba8b314403677d0791df6d725cbb1664",
+        "name": "DroidDeck-main-e4a4775.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a4775/DroidDeck-main-e4a4775.apk",
+        "size": 96612413,
+        "sha256": "90d1d6beb14c9ef157ffc39fd0eda923d75c35bebbcb9f9938c4df6a7feac709",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-914b358-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-914b358/DroidDeck-main-914b358-pubg.apk",
-        "size": 96526397,
-        "sha256": "e9655cab3ee540af9c4c3039f0502eab10bdbca08c548b371f8beb12a7bf5d93",
+        "name": "DroidDeck-main-e4a4775-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a4775/DroidDeck-main-e4a4775-pubg.apk",
+        "size": 96612413,
+        "sha256": "a84448ef94dcaf6740340af667f84075e6afeb53576be69953aafd0c5023ae73",
         "packageName": "com.tencent.ig",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-914b358-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-914b358/DroidDeck-main-914b358-antutu.apk",
-        "size": 96526397,
-        "sha256": "5d479f5dcd43d6ecdaa8a5078857363a798aa8f6a19487f0a232a6504061940a",
+        "name": "DroidDeck-main-e4a4775-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a4775/DroidDeck-main-e4a4775-antutu.apk",
+        "size": 96612413,
+        "sha256": "369979d2469463489b6ea1af2f7e5ca287127f264c1ddd542aca9a6c917b9f45",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-914b358-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-914b358/DroidDeck-main-914b358-ludashi.apk",
-        "size": 96526397,
-        "sha256": "29388c461803346f7107fa323904d3860f40edb2f07c497cfc618608c5409d03",
+        "name": "DroidDeck-main-e4a4775-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4a4775/DroidDeck-main-e4a4775-ludashi.apk",
+        "size": 96612413,
+        "sha256": "e98963cf378bcae17f12f124b68eb03065483652eb84a099f7a8f2353605a7fb",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 17,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e4a4775be53082cb4c259a8ed24022cd70703afd",
+      "title": "fix(input): taps outside the PC keyboard reach the game while it is open",
+      "summary": "While the PC keyboard from the session menu was open, DroidDeck dropped every tap on the session, including on the part of the game still visible above the keyboard. A user typing a login into the EA app with the PC keyboard couldn't then tap \"Send code\" above it: nothing responded until the keyboard was hidden. Their log shows the touch route BLOCKED for the whole time the keyboard was open.",
+      "publishedAt": 1794112515000
+    },
     {
       "commit": "914b3588e1ec1fe300838c2ceca65f343717a2e0",
       "title": "fix(drivers): leaving a driver bundle no longer keeps its runtime half, and the Auto display picks the latest pair",
@@ -155,12 +161,6 @@
       "title": "fix(input): restore the controls, panels and settings #1439 removed",
       "summary": "Restores the on-screen controls, second-screen panels and settings that #1439 (\"Unify controller and screen input profiles\", 22a675a66) removed or broke. Each item was checked against the code before #1439 (22a675a66^) and put back to match it. The fixes go through the unified input profiles instead of reviving the old views.",
       "publishedAt": 1794088395000
-    },
-    {
-      "commit": "041c3b1b5593f736f2687c223169959d336d37bb",
-      "title": "ci: run compile jobs on the org workstation runner when it is idle",
-      "summary": "The two heavy x86 jobs (components, build) now run on the org's self-hosted workstation runner (droiddeck-ws, 24 cores) when it is online and idle, and on ubuntu-24.04 otherwise.",
-      "publishedAt": 1794082200000
     }
   ],
   "tests": [
