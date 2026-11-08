@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794098989317,
+  "generatedAt": 1794099732359,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2246",
+      "title": "ci: run approved fork PR compile jobs on the disposable fork runner",
+      "summary": "Approved fork PRs can now compile on a self-hosted runner instead of always using GitHub-hosted runners.",
+      "commit": "bc5bca98eb5e79be8cd1ddf39f4e9ff788e23ed9",
+      "pr": 2246,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794099672000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2246",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2246-bc5bca9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-bc5bca9.apk",
+          "size": 96604221,
+          "sha256": "64e603b5aae2822da7bdd9ef31a8e61415cf0c6ab5a06ec83dcf87816f9c051c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2246-bc5bca9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-bc5bca9-pubg.apk",
+          "size": 96604221,
+          "sha256": "1bc2dd992eb81fee92a75bc2fb472ad98cf7542706bc8d6162b7de723ce88812",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2246-bc5bca9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-bc5bca9-antutu.apk",
+          "size": 96604221,
+          "sha256": "1dc6e1740ec295f2c4708a32ef75da674c86bba7803434c7b03c467f5dfac22c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2246-bc5bca9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-bc5bca9-ludashi.apk",
+          "size": 96604221,
+          "sha256": "7d9f728772b51b68b4b390739c772580ad2fc32fb2e31aa27090ce4ef404c7eb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2247",
       "title": "fix: keep the bottom-screen menu and layout editor open when the screen turns off",
       "summary": "Turning the screen off closed everything open in a session: the DroidDeck menu, the input settings page and the layout editor. On a dual screen handheld that meant a layout being edited on the bottom screen vanished on every sleep, and the bottom screen came back showing the default Dashboard panel.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2220/DroidDeck-PR.2220-8e13c60-ludashi.apk",
           "size": 96600125,
           "sha256": "bfb97a53c83f5636080153c1b4cb61e89cd1683e871398834166597c17e2d3dc",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2246",
-      "title": "ci: run approved fork PR compile jobs on the disposable fork runner",
-      "summary": "Approved fork PRs can now compile on a self-hosted runner instead of always using GitHub-hosted runners.",
-      "commit": "899f89cddba7df5f2151f14e8758c32042c0ddfc",
-      "pr": 2246,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794097071000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2246",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2246-899f89c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-899f89c.apk",
-          "size": 96510013,
-          "sha256": "35225115a967fb08a6b157fdf1b288abfe4f3e44aeff2c539c375cb2dbf5dc7a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2246-899f89c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-899f89c-pubg.apk",
-          "size": 96510013,
-          "sha256": "476549313cb296463b2bbdbf6c69f936afd13515c5a1e3edb6d1242e0447d80d",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2246-899f89c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-899f89c-antutu.apk",
-          "size": 96510013,
-          "sha256": "b4efbc8e465cb172cbf28ad9f2df7ef3ba72e311524ad1da748fbe10d99f3eef",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2246-899f89c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-899f89c-ludashi.apk",
-          "size": 96510013,
-          "sha256": "a82157664f721eb088a4fd7eded2ce172f0dfe1617163c973438346900c99ed5",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
