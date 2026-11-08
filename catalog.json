@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794166349440,
+  "generatedAt": 1794167383915,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3bb279f",
-    "title": "fix(appimage): emulators and other AppImage programs get the game GPU setting",
-    "summary": "Emulators and other AppImage programs ran with the session's TUDEBUG=sysmem, so Turnip rendered every pass through system memory instead of tile memory.",
-    "commit": "3bb279f635d5379b9259b59f2bfdef6cef26c0f8",
+    "tag": "main-1760f00",
+    "title": "fix(desktop): Flatpak and Snap apps get the game GPU setting",
+    "summary": "The session sets TUDEBUG=sysmem for the Steam client and Chromium-based apps. Games get their own value through DROIDDECKGAMETUDEBUG, and since #2288 so do AppImage programs. Flatpak and Snap apps still inherited the session's sysmem, so emulators and other programs installed that way rendered through system memory on Adreno, which is slower in heavy scenes.",
+    "commit": "1760f008ae7a9238fca81ec15e99dd70dcacaa2e",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794159198000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3bb279f",
+    "publishedAt": 1794167327000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1760f00",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3bb279f.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3bb279f/DroidDeck-main-3bb279f.apk",
-        "size": 96620703,
-        "sha256": "ac636c7b07a7dbc11bcd125cfa02acaa11e213d26e5d8a50045d30cc51892320",
+        "name": "DroidDeck-main-1760f00.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1760f00/DroidDeck-main-1760f00.apk",
+        "size": 96620796,
+        "sha256": "19da0b0c3e9c4e9c8ad73ee383d6730ec1e4fa18cca7aceb0464d9d870a6164e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3bb279f-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3bb279f/DroidDeck-main-3bb279f-pubg.apk",
-        "size": 96620703,
-        "sha256": "6c52ab23831700d350e402adc47170a57fb68d1882cd8378b0e54c07a9e47d51",
+        "name": "DroidDeck-main-1760f00-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1760f00/DroidDeck-main-1760f00-pubg.apk",
+        "size": 96620796,
+        "sha256": "fe48b3780f9c13bee9164925354c8b2d3622c69d485cee48dc69a02fb5ce1ee0",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3bb279f-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3bb279f/DroidDeck-main-3bb279f-antutu.apk",
-        "size": 96620703,
-        "sha256": "8ad41eb8fb8477f997f7947a350925cb5b5c9daaba22c7cc4a9d58204dd53bc9",
+        "name": "DroidDeck-main-1760f00-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1760f00/DroidDeck-main-1760f00-antutu.apk",
+        "size": 96620796,
+        "sha256": "7bac924073c84044ff06a64dd361ab682281e2ddaba347889db54372d3a0e910",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3bb279f-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3bb279f/DroidDeck-main-3bb279f-ludashi.apk",
-        "size": 96620703,
-        "sha256": "00183be0f31490bed51fd77cc305df6a47d69a6fe9e764b69a7ac761169d949b",
+        "name": "DroidDeck-main-1760f00-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1760f00/DroidDeck-main-1760f00-ludashi.apk",
+        "size": 96620796,
+        "sha256": "3f8f209bdaabbbb83a745e9879954ddf270b4c834b612e58af9e3603689db3d1",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1760f008ae7a9238fca81ec15e99dd70dcacaa2e",
+      "title": "fix(desktop): Flatpak and Snap apps get the game GPU setting",
+      "summary": "The session sets TUDEBUG=sysmem for the Steam client and Chromium-based apps. Games get their own value through DROIDDECKGAMETUDEBUG, and since #2288 so do AppImage programs. Flatpak and Snap apps still inherited the session's sysmem, so emulators and other programs installed that way rendered through system memory on Adreno, which is slower in heavy scenes.",
+      "publishedAt": 1794167327000
+    },
     {
       "commit": "3bb279f635d5379b9259b59f2bfdef6cef26c0f8",
       "title": "fix(appimage): emulators and other AppImage programs get the game GPU setting",
@@ -155,12 +161,6 @@
       "title": "fix(desktop): a GitHub link to one AppImage installs and updates that variant",
       "summary": "Adding an app from GitHub with a link to one release asset installed a different AppImage. For example, the link .../Eglantine/releases/download/build-129/eglantine-<commit>-linux-aarch64.AppImage installed ...-linux-aarch64-pgo.AppImage.",
       "publishedAt": 1794143766000
-    },
-    {
-      "commit": "2beeb715fd8405b06441cbc574e05d243889f0e2",
-      "title": "fix(runtime): an update that brings a new PRoot pack no longer asks to install the runtime again",
-      "summary": "After updating to a Preview, the app asked to install a Linux runtime that was already installed (RedMagic NX809J, ubuntu-r1-rc4). Install showed no progress. Leaving the app and coming back a few seconds later showed the runtime installed and working again.",
-      "publishedAt": 1794138036000
     }
   ],
   "tests": [
