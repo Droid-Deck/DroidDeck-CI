@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794138081464,
+  "generatedAt": 1794138890332,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2273",
+      "title": "fix(desktop): a GitHub link to one AppImage installs and updates that variant",
+      "summary": "Adding an app from GitHub with a link to one release asset installed a different AppImage. For example, the link .../Eglantine/releases/download/build-129/eglantine-<commit>-linux-aarch64.AppImage installed ...-linux-aarch64-pgo.AppImage.",
+      "commit": "8c5c6b8959172fd802c49e63201d283972d9b7f3",
+      "pr": 2273,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794138819000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2273",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2273-8c5c6b8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2273/DroidDeck-PR.2273-8c5c6b8.apk",
+          "size": 96616509,
+          "sha256": "d49db16cd5b2c755aa86a2d3e6c99843337776ccf34909f2313cca11b5a6ba24",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2273-8c5c6b8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2273/DroidDeck-PR.2273-8c5c6b8-pubg.apk",
+          "size": 96616509,
+          "sha256": "0e3bccefc252fe6dfd59612f70886e7f2a8c4dbc4d5cf538e1546022edf7e353",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2273-8c5c6b8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2273/DroidDeck-PR.2273-8c5c6b8-antutu.apk",
+          "size": 96616509,
+          "sha256": "a557bc0b3b0f4ab457a4e2b4b2a1a3fb77b2a1972ecbc02f13770e6db67eeef5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2273-8c5c6b8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2273/DroidDeck-PR.2273-8c5c6b8-ludashi.apk",
+          "size": 96616509,
+          "sha256": "adb7a2deb47a1d3e123f5c84dedfc126e690b4fbf363a937117875d962037ad6",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2259",
       "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
