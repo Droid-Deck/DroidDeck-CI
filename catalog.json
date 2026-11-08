@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794151188916,
+  "generatedAt": 1794152703692,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,97 +165,48 @@
   ],
   "tests": [
     {
-      "tag": "pr-2279",
-      "title": "fix(proot): lay out ARM64 programs like the kernel so large reservations fit",
-      "summary": "Fixes Linux emulators that run guest code natively hanging forever on launch.",
-      "commit": "74a9dad849e51acd9c46dd4c40ae2ae51013d48d",
-      "pr": 2279,
+      "tag": "pr-2281",
+      "title": "fix(epic): install the Epic Games Launcher from its Linux .deb",
+      "summary": "Epic stopped publishing the Linux AppImage: EpicGamesLauncher-x8664.AppImage now answers 404 appdirecturlnotfound (30003), so Install in Epic's profile strip fails for everyone. Epic ships the launcher as EpicGamesLauncher-x8664.deb (0.113.0) instead.",
+      "commit": "7309e2f63d4173bc86bda429f88771b99853e7d2",
+      "pr": 2281,
       "version": null,
       "versionCode": 18,
-      "publishedAt": 1794151111000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2279",
+      "publishedAt": 1794152654000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2281",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2279-74a9dad.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2279/DroidDeck-PR.2279-74a9dad.apk",
-          "size": 96616607,
-          "sha256": "e874bad8783efea17a76ae4f3ab8a0b15bf6a03b57154dd47acdb75563bead1f",
+          "name": "DroidDeck-PR.2281-7309e2f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-7309e2f.apk",
+          "size": 96624799,
+          "sha256": "7ae56a89f2abd2e14cdd1357e85427ea842579a8e542b1f0c7811a200a8fa9de",
           "packageName": "com.droiddeck.launcher",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.tencent.ig": {
-          "name": "DroidDeck-PR.2279-74a9dad-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2279/DroidDeck-PR.2279-74a9dad-pubg.apk",
-          "size": 96616607,
-          "sha256": "8a359517ec16ba62eeaccfdf069652f408acca10deb3cb11794b6bf9983552d7",
+          "name": "DroidDeck-PR.2281-7309e2f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-7309e2f-pubg.apk",
+          "size": 96624799,
+          "sha256": "a93182c3cee59e66da02a537b1c79951b684574e8cc8b63e6b62df2538623e1b",
           "packageName": "com.tencent.ig",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2279-74a9dad-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2279/DroidDeck-PR.2279-74a9dad-antutu.apk",
-          "size": 96616607,
-          "sha256": "19a90b3f9b829da994f33c11cd1482a161acb2b1f25d675b5964a0458d09f34f",
+          "name": "DroidDeck-PR.2281-7309e2f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-7309e2f-antutu.apk",
+          "size": 96624799,
+          "sha256": "32cca0b5ee0981dbcf96f3164e239f3ceda79c12dca14244a0229b8c5ed5db1d",
           "packageName": "com.antutu.benchmark.full",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2279-74a9dad-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2279/DroidDeck-PR.2279-74a9dad-ludashi.apk",
-          "size": 96616607,
-          "sha256": "52344e0af8d32e1e573ea917e00414226737513ddc29e279dce5160f43cdd660",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2280",
-      "title": "fix(gamescope): taps reach dialogs and windows away from the screen origin",
-      "summary": "Fixes taps doing nothing on a program's pop-up dialog (and in windows that don't sit at the X screen's top-left corner), so the question could only be answered with a physical keyboard.",
-      "commit": "8ffc9b1eac33e192459c5a585bc2a685cf54fdbc",
-      "pr": 2280,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794151015000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2280",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2280-8ffc9b1.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2280/DroidDeck-PR.2280-8ffc9b1.apk",
-          "size": 96620703,
-          "sha256": "21adea6dfa27e6ef7b19340702c0586a1c75f55427089abc3f9b60656ca90698",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2280-8ffc9b1-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2280/DroidDeck-PR.2280-8ffc9b1-pubg.apk",
-          "size": 96620703,
-          "sha256": "1a7567903624ba1f68690b19f591ec439762846534d8f36b2c1cefc89aac1ef9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2280-8ffc9b1-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2280/DroidDeck-PR.2280-8ffc9b1-antutu.apk",
-          "size": 96620703,
-          "sha256": "afad7de68846979754e2f97a75a800e07b98d452db832a8ac7963bd0e0cb98d5",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2280-8ffc9b1-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2280/DroidDeck-PR.2280-8ffc9b1-ludashi.apk",
-          "size": 96620703,
-          "sha256": "3a4a7b2b8a32e502122b661459d45db2de46f985c870396f5490e9a4ca71cb1e",
+          "name": "DroidDeck-PR.2281-7309e2f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-7309e2f-ludashi.apk",
+          "size": 96624799,
+          "sha256": "c8e3ed7a4b1fa0a02574ced8af5d420371cd134f85ae7a39ec549d7ac4fb5278",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
