@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794136137365,
+  "generatedAt": 1794136867362,
   "stable": {
     "tag": "0.6.9",
     "title": "DroidDeck 0.6.9",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2270",
+      "title": "fix(runtime): an update that brings a new PRoot pack no longer asks to install the runtime again",
+      "summary": "After updating to a Preview, the app asked to install a Linux runtime that was already installed (RedMagic NX809J, ubuntu-r1-rc4). Install showed no progress. Leaving the app and coming back a few seconds later showed the runtime installed and working again.",
+      "commit": "b413ddfc8e4e0e2eb48ca016e6d5a2cccc1d00ab",
+      "pr": 2270,
+      "version": null,
+      "versionCode": 17,
+      "publishedAt": 1794136802000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2270",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2270-b413ddf.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2270/DroidDeck-PR.2270-b413ddf.apk",
+          "size": 96612413,
+          "sha256": "87e427712e505656bbb0001d107396f167db058c0c2448cbd9d6daed28520cb7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2270-b413ddf-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2270/DroidDeck-PR.2270-b413ddf-pubg.apk",
+          "size": 96612413,
+          "sha256": "15e8d943ea36b861aec4d7a99e73ae15ba8a96a022388d800c608b223c354b4c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2270-b413ddf-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2270/DroidDeck-PR.2270-b413ddf-antutu.apk",
+          "size": 96612413,
+          "sha256": "9cdf5cb4d1e41e12b9697027e5a50f458bafeb96fef2841c44eb83896da79c9c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2270-b413ddf-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2270/DroidDeck-PR.2270-b413ddf-ludashi.apk",
+          "size": 96612413,
+          "sha256": "5b13c10297f7b2d02539a9c8261d30cfd3262aba9cb0b112603cc437a78ff3b2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 17,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2259",
       "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
