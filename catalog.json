@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794174853712,
+  "generatedAt": 1794175400486,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-1760f00",
-    "title": "fix(desktop): Flatpak and Snap apps get the game GPU setting",
-    "summary": "The session sets TUDEBUG=sysmem for the Steam client and Chromium-based apps. Games get their own value through DROIDDECKGAMETUDEBUG, and since #2288 so do AppImage programs. Flatpak and Snap apps still inherited the session's sysmem, so emulators and other programs installed that way rendered through system memory on Adreno, which is slower in heavy scenes.",
-    "commit": "1760f008ae7a9238fca81ec15e99dd70dcacaa2e",
+    "tag": "main-a7c10e3",
+    "title": "fix(session): give Steam a session bus so launches stop hanging at the install script",
+    "summary": "Since 0.7.0 Steam games can get stuck on launch at \"Processing install script\" (also seen as a download that never finishes finalizing), and some games leave a black screen with \"Abort game\" after you quit.",
+    "commit": "a7c10e3f5164632fd352850ec4ccac40280dc9a3",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794167327000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1760f00",
+    "publishedAt": 1794175339000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a7c10e3",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-1760f00.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1760f00/DroidDeck-main-1760f00.apk",
+        "name": "DroidDeck-main-a7c10e3.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7c10e3/DroidDeck-main-a7c10e3.apk",
         "size": 96620796,
-        "sha256": "19da0b0c3e9c4e9c8ad73ee383d6730ec1e4fa18cca7aceb0464d9d870a6164e",
+        "sha256": "71849b5d575fb59a6394493a0b24812f2a476abaa70d0586b8a1f96dd2e3e37e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-1760f00-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1760f00/DroidDeck-main-1760f00-pubg.apk",
+        "name": "DroidDeck-main-a7c10e3-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7c10e3/DroidDeck-main-a7c10e3-pubg.apk",
         "size": 96620796,
-        "sha256": "fe48b3780f9c13bee9164925354c8b2d3622c69d485cee48dc69a02fb5ce1ee0",
+        "sha256": "eb66cf77c39d53686b4902606ab04e8f3966776af88e89d3f07a9b91b1130968",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-1760f00-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1760f00/DroidDeck-main-1760f00-antutu.apk",
+        "name": "DroidDeck-main-a7c10e3-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7c10e3/DroidDeck-main-a7c10e3-antutu.apk",
         "size": 96620796,
-        "sha256": "7bac924073c84044ff06a64dd361ab682281e2ddaba347889db54372d3a0e910",
+        "sha256": "bfc03c58dba6c608f98b4497af0ccaa73fa69762ae53ccd716e3bcdcbc079403",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-1760f00-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1760f00/DroidDeck-main-1760f00-ludashi.apk",
+        "name": "DroidDeck-main-a7c10e3-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a7c10e3/DroidDeck-main-a7c10e3-ludashi.apk",
         "size": 96620796,
-        "sha256": "3f8f209bdaabbbb83a745e9879954ddf270b4c834b612e58af9e3603689db3d1",
+        "sha256": "f893bcc0c6ed537f13a4edb241e7938c78271d5b27e58a2a990813392463c27a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a7c10e3f5164632fd352850ec4ccac40280dc9a3",
+      "title": "fix(session): give Steam a session bus so launches stop hanging at the install script",
+      "summary": "Since 0.7.0 Steam games can get stuck on launch at \"Processing install script\" (also seen as a download that never finishes finalizing), and some games leave a black screen with \"Abort game\" after you quit.",
+      "publishedAt": 1794175339000
+    },
     {
       "commit": "1760f008ae7a9238fca81ec15e99dd70dcacaa2e",
       "title": "fix(desktop): Flatpak and Snap apps get the game GPU setting",
@@ -155,12 +161,6 @@
       "title": "fix(desktop): catalog AppImages such as RPCS3 start from the desktop menu again",
       "summary": "RPCS3 from the desktop menu (Applications or right-click \u2192 Open in windowed mode, which users need to install the PS3 firmware) closes at once with nothing on screen. The desktop log shows:",
       "publishedAt": 1794145692000
-    },
-    {
-      "commit": "bc99cacd0219f0a5353b1eed1bc1d95f1e25ec3c",
-      "title": "fix(desktop): a GitHub link to one AppImage installs and updates that variant",
-      "summary": "Adding an app from GitHub with a link to one release asset installed a different AppImage. For example, the link .../Eglantine/releases/download/build-129/eglantine-<commit>-linux-aarch64.AppImage installed ...-linux-aarch64-pgo.AppImage.",
-      "publishedAt": 1794143766000
     }
   ],
   "tests": [
