@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794153293559,
+  "generatedAt": 1794155303991,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2246",
+      "title": "ci: run approved fork PR compile jobs on the disposable fork runner",
+      "summary": "Approved fork PRs can now compile on a self-hosted runner instead of always using GitHub-hosted runners.",
+      "commit": "c4476bb1ca24d7d8372758fb897d4a1bd93720df",
+      "pr": 2246,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794155245000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2246",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2246-c4476bb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-c4476bb.apk",
+          "size": 96620703,
+          "sha256": "670c2257a16667c7cf792fec8268e5bf919387b4a79a86fea9c608276bdab1d5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2246-c4476bb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-c4476bb-pubg.apk",
+          "size": 96620703,
+          "sha256": "059dba542d44cd7da1ba06aac391bc71dcf2a5d7b23237e4478536ca6dfb862d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2246-c4476bb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-c4476bb-antutu.apk",
+          "size": 96620703,
+          "sha256": "0ca93462e98ad70a82051dbdfad1d03690a2ee4ce8cf5d5c39788a190c931f09",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2246-c4476bb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-c4476bb-ludashi.apk",
+          "size": 96620703,
+          "sha256": "82411dcd17cb26ee06b56fdaf23d5793630a30978ce0133bf1cf9b3fd9c8ff88",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2281",
       "title": "fix(epic): install the Epic Games Launcher from its Linux .deb",
@@ -354,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2254/DroidDeck-PR.2254-396d921-ludashi.apk",
           "size": 96518205,
           "sha256": "0fce5bad3b779bfddc1c99cbd1b2aee61c3f47d23de644483705c73446df676d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2246",
-      "title": "ci: run approved fork PR compile jobs on the disposable fork runner",
-      "summary": "Approved fork PRs can now compile on a self-hosted runner instead of always using GitHub-hosted runners.",
-      "commit": "bc5bca98eb5e79be8cd1ddf39f4e9ff788e23ed9",
-      "pr": 2246,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794099672000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2246",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2246-bc5bca9.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-bc5bca9.apk",
-          "size": 96604221,
-          "sha256": "64e603b5aae2822da7bdd9ef31a8e61415cf0c6ab5a06ec83dcf87816f9c051c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2246-bc5bca9-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-bc5bca9-pubg.apk",
-          "size": 96604221,
-          "sha256": "1bc2dd992eb81fee92a75bc2fb472ad98cf7542706bc8d6162b7de723ce88812",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2246-bc5bca9-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-bc5bca9-antutu.apk",
-          "size": 96604221,
-          "sha256": "1dc6e1740ec295f2c4708a32ef75da674c86bba7803434c7b03c467f5dfac22c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2246-bc5bca9-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2246/DroidDeck-PR.2246-bc5bca9-ludashi.apk",
-          "size": 96604221,
-          "sha256": "7d9f728772b51b68b4b390739c772580ad2fc32fb2e31aa27090ce4ef404c7eb",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
