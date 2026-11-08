@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794149502090,
+  "generatedAt": 1794151063551,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2280",
+      "title": "fix(gamescope): taps reach dialogs and windows away from the screen origin",
+      "summary": "Fixes taps doing nothing on a program's pop-up dialog (and in windows that don't sit at the X screen's top-left corner), so the question could only be answered with a physical keyboard.",
+      "commit": "8ffc9b1eac33e192459c5a585bc2a685cf54fdbc",
+      "pr": 2280,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794151015000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2280",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2280-8ffc9b1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2280/DroidDeck-PR.2280-8ffc9b1.apk",
+          "size": 96620703,
+          "sha256": "21adea6dfa27e6ef7b19340702c0586a1c75f55427089abc3f9b60656ca90698",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2280-8ffc9b1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2280/DroidDeck-PR.2280-8ffc9b1-pubg.apk",
+          "size": 96620703,
+          "sha256": "1a7567903624ba1f68690b19f591ec439762846534d8f36b2c1cefc89aac1ef9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2280-8ffc9b1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2280/DroidDeck-PR.2280-8ffc9b1-antutu.apk",
+          "size": 96620703,
+          "sha256": "afad7de68846979754e2f97a75a800e07b98d452db832a8ac7963bd0e0cb98d5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2280-8ffc9b1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2280/DroidDeck-PR.2280-8ffc9b1-ludashi.apk",
+          "size": 96620703,
+          "sha256": "3a4a7b2b8a32e502122b661459d45db2de46f985c870396f5490e9a4ca71cb1e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2259",
       "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
