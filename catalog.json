@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794199914082,
+  "generatedAt": 1794200377647,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2321",
+      "title": "fix(ctl): reach the agent bridge by broadcast when the shell has no content command",
+      "summary": "Some Android builds, the Retroid Pocket Duo's among them, ship a shell without the content command. On those builds every droiddeckctl call fails at once with /system/bin/sh: content: inaccessible or not found, so state, guest, logs and the rest are unusable.",
+      "commit": "592ff59f718dbd7726ac097152b558ff885db3ff",
+      "pr": 2321,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794200311000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2321",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2321-592ff59.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2321/DroidDeck-PR.2321-592ff59.apk",
+          "size": 96628988,
+          "sha256": "92c4d0955784de6cdb2e22a4d576d7d1f95a22532d77ead9c2fd55d9bb8749e8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2321-592ff59-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2321/DroidDeck-PR.2321-592ff59-pubg.apk",
+          "size": 96628988,
+          "sha256": "fa33a6901fd17de9fc93d9ece82bc06277dc2b293c6201bad5bf3566b0153622",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2321-592ff59-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2321/DroidDeck-PR.2321-592ff59-antutu.apk",
+          "size": 96628988,
+          "sha256": "2e6e7e29f933e4aca304f6dbf5130d1b5b07facb6844ef45497623f9e6b752c9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2321-592ff59-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2321/DroidDeck-PR.2321-592ff59-ludashi.apk",
+          "size": 96628988,
+          "sha256": "228b8e3c76a4736a870b22d38bfe3f2ab932b22ce1d2a9881092308397c6365f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
