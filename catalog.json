@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794228497880,
+  "generatedAt": 1794230825809,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2305",
+      "title": "fix(input): Auto relative mouse stays off for direct touch without a mouse",
+      "summary": "\"Relative mouse: Auto\" sends gamescopectl relativemouse 0, which leaves the decision to gamescope's own rule: once a game hides the system cursor and confines the pointer, gamescope turns host pointer motion into relative movement. With direct touch and no hardware mouse, each tap then arrives as a small delta instead of a jump to the touched spot, so the pointer cannot be moved or dragged in g",
+      "commit": "5e99b581e5dde7bcdf040dd016cf1b2457f42d4a",
+      "pr": 2305,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794230755000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2305",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2305-5e99b58.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2305/DroidDeck-PR.2305-5e99b58.apk",
+          "size": 96538876,
+          "sha256": "c48cc3d4fade013487dcdde47b29251bdf883563089f8e8fe77522ef6e83ff2d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2305-5e99b58-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2305/DroidDeck-PR.2305-5e99b58-pubg.apk",
+          "size": 96538876,
+          "sha256": "a9a01ed8292bd8d52c1a3f9e470ca2db03c78fd59bd07aa7b669feac65b0ecd8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2305-5e99b58-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2305/DroidDeck-PR.2305-5e99b58-antutu.apk",
+          "size": 96538876,
+          "sha256": "61211b242692551b8f117ff6ede7407e4d5b111c764a6a5d93677ceb3debe5fa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2305-5e99b58-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2305/DroidDeck-PR.2305-5e99b58-ludashi.apk",
+          "size": 96538876,
+          "sha256": "fd23d0d3557c7ef57d75f3b2b5152a12e459de99c29bdc42df1145bce5abacd7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2333",
       "title": "fix(input): detect which axis pair is the right stick",
