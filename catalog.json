@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794233182109,
+  "generatedAt": 1794238528672,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2339",
+      "title": "fix(input): the controls editor shows the layout the game uses",
+      "summary": "In 0.7.0 the on-screen controls editor drew the layout squashed and overlapping: triggers in one row, face buttons and d-pad stretched into overlapping pills, small sticks. The same layout was fine in the game, so it could not really be edited. Reported on a 20:9 phone (2608x1200). The editor drew the stored element coordinates directly, while the game places them through OnScreenLayout.elements(",
+      "commit": "ae2796bb17cb4c30e2e74cd40ac939b275020ce2",
+      "pr": 2339,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794238446000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2339",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2339-ae2796b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2339/DroidDeck-PR.2339-ae2796b.apk",
+          "size": 96637180,
+          "sha256": "34189411447b74c66aa3b0d11e5b7abc86ec63632f1885114f5d7c7da41e5578",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2339-ae2796b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2339/DroidDeck-PR.2339-ae2796b-pubg.apk",
+          "size": 96637180,
+          "sha256": "a5d8962fd535db3a8b320ca8276cf2ed45152d3ec22ba291058089acabfe75df",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2339-ae2796b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2339/DroidDeck-PR.2339-ae2796b-antutu.apk",
+          "size": 96637180,
+          "sha256": "749c337f086ef8f466efa183aa74ce103df642dc360176827f6344d5579e019e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2339-ae2796b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2339/DroidDeck-PR.2339-ae2796b-ludashi.apk",
+          "size": 96637180,
+          "sha256": "ec67c9614e54fb2894833cd704e80c3d5de8c4a86ab79991b6b7c77b3d8828e9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2335",
       "title": "fix(zram): page game memory out on an idle worker thread, not the signalled game thread",
