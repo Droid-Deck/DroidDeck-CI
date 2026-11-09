@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794230825809,
+  "generatedAt": 1794230898975,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2334",
+      "title": "fix(steam-x64): skip empty runtime library folders when linking",
+      "summary": "Setting up the x86-64 Steam client could stop with ln: failed to create symbolic link '.../steamrt-libs/.so': Already exists and \"the Steam client could not be set up (status 1)\". The loop that links Valve's runtime libraries walks files/lib and files/usr/lib of every steamrt3cplatform version. When a folder holds no .so files the glob stays literal, so a dangling .so link is cr",
+      "commit": "787e2508fb681767438bb280891fd232826edd77",
+      "pr": 2334,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794230809000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2334",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2334-787e250.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2334/DroidDeck-PR.2334-787e250.apk",
+          "size": 96628988,
+          "sha256": "d684a9e03c475f23fb9775dd568ae86553425729df87b2a97deb6c24f8852ac6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2334-787e250-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2334/DroidDeck-PR.2334-787e250-pubg.apk",
+          "size": 96628988,
+          "sha256": "c6fc559181f5c37c9d34782b2a4f42af9ed82cfe4a89ac0e70868e37f7df9bcc",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2334-787e250-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2334/DroidDeck-PR.2334-787e250-antutu.apk",
+          "size": 96628988,
+          "sha256": "ca8bbf06bbb49264206bae1d6641fd5673145f843623853c499770efd8db9b8a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2334-787e250-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2334/DroidDeck-PR.2334-787e250-ludashi.apk",
+          "size": 96628988,
+          "sha256": "2fbc1903b83a3ce2494c164ee62cf7c41fed6707e64dfd98b86e496d839539d0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2305",
       "title": "fix(input): Auto relative mouse stays off for direct touch without a mouse",
