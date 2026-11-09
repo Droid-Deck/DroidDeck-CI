@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794255205846,
+  "generatedAt": 1794255866386,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2347",
+      "title": "fix(zram): back off ineffective idle compression",
+      "summary": "On low-RAM devices the session compresses idle game memory whenever MemAvailable is under the tier headroom, at most every 30 seconds. A shared log from a 6.9 GB phone showed four passes in about a minute: each took about 5 s and caused a stutter, resident memory fell from 1.8 GB to 0.5 GB, but available memory stayed around 1.2 GB. The passes kept repeating without freeing useful headroom, beca",
+      "commit": "98d7aa87a9684f9c1981c6c50391e7118ce9ed3a",
+      "pr": 2347,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794255786000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2347",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2347-98d7aa8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-98d7aa8.apk",
+          "size": 96628988,
+          "sha256": "6224b01c6e2b082234b13962895e7aaaab6790c8490d45909d315619da33fdfd",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2347-98d7aa8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-98d7aa8-pubg.apk",
+          "size": 96628988,
+          "sha256": "5282bc1f382026d255eacdaf0fe948873ab2cef65fc9a90cb42a8c50598fff77",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2347-98d7aa8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-98d7aa8-antutu.apk",
+          "size": 96628988,
+          "sha256": "745d9ff1d2a684a2611b55a55827dca11218996c667ab4e0ae778848e9630f01",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2347-98d7aa8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-98d7aa8-ludashi.apk",
+          "size": 96628988,
+          "sha256": "c53651eec9de0bfe56d22f30d905045c7ffcc6c07835e16a557cb3283f4415b5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
