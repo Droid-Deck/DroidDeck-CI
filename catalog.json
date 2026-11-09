@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794257608463,
+  "generatedAt": 1794257705020,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2362",
+      "title": "fix(session): wait for Steam readiness before launch",
+      "summary": "A game launched straight from DroidDeck could stall at Steam's launch screen. Steam logged LaunchApp waiting for user response to ShowInterstitials and never went further. The launch was handed to Steam on the first focus of Big Picture, before Steam's UI was ready to answer the launch's interstitial step. When that happened, the watchdog re-sent the same rungameid, which does nothing for an a",
+      "commit": "9b16e1c9efbfb025fc8684213dd1451a045d06d4",
+      "pr": 2362,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794257553000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2362",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2362-9b16e1c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2362/DroidDeck-PR.2362-9b16e1c.apk",
+          "size": 96596220,
+          "sha256": "31bdbfdd0d392d94b7785bb3568c986e7a7198fb16feb7bff035810889237515",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2362-9b16e1c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2362/DroidDeck-PR.2362-9b16e1c-pubg.apk",
+          "size": 96596220,
+          "sha256": "8877f3067d55422241f6ecedcfaeb916fdf3246f1c208ca2e3e89f84fe28a93b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2362-9b16e1c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2362/DroidDeck-PR.2362-9b16e1c-antutu.apk",
+          "size": 96596220,
+          "sha256": "0757188ed6761a6fa5869e10dc81f2cce7d954140ca507de769e0b16575a8f07",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2362-9b16e1c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2362/DroidDeck-PR.2362-9b16e1c-ludashi.apk",
+          "size": 96596220,
+          "sha256": "e12484e87454977026a9db4affb31934c08d8d1ad1be11bba9ca089f9631346a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2363",
       "title": "fix(ctl): long agent calls over the broadcast bridge no longer make Android report DroidDeck as not responding",
