@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794259547093,
+  "generatedAt": 1794260015969,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2367",
+      "title": "fix(gog): installs no longer hang on Finishing for large games",
+      "summary": "After a GOG download finishes, the install stays on \"Finishing\u2026\" for a very long time on games with thousands of files (reported for Darkest Dungeon, 8196 files, and KOTOR). The download log ends with success=true and nothing follows.",
+      "commit": "606c5cbda18f3398e9d95779561eab40fd40c950",
+      "pr": 2367,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794259935000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2367",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2367-606c5cb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-606c5cb.apk",
+          "size": 96596220,
+          "sha256": "7063e1b35a3991d0db745e4405ab637e8a60dda30d509cd883771fb0c74e8e90",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2367-606c5cb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-606c5cb-pubg.apk",
+          "size": 96596220,
+          "sha256": "6dfe4d132e99714ebc06fd77d1dbbd0e89b3831f123fcf8470ef7a4625cd86d2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2367-606c5cb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-606c5cb-antutu.apk",
+          "size": 96596220,
+          "sha256": "15ddbf706be2f3bcfeeefb9726e5d2c738983871692fb5c85c8abcccaa43ffbb",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2367-606c5cb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-606c5cb-ludashi.apk",
+          "size": 96596220,
+          "sha256": "40d5b09242039639056a07bbe09e237a64ac5047ebedadba7c75a74fe69d416b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2318",
       "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
