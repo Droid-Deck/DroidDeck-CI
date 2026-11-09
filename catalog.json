@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794230898975,
+  "generatedAt": 1794233182109,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2335",
+      "title": "fix(zram): page game memory out on an idle worker thread, not the signalled game thread",
+      "summary": "On 11-12 GB devices games still froze for 5-10 s with every core busy, about every 30 s while free memory stayed under ~1 GB. The low-memory page-out (#2187, with #2312's read-back backoff) was working as designed, but tools/linuxfs/preload/zram.c ran the whole page-out inside its SIGURG handler. That handler runs on whichever thread receives the signal, often a game thread (render or main), a",
+      "commit": "2af607fe2f0dacbae1cfed0137ee60c3bf05af08",
+      "pr": 2335,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794233113000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2335",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2335-2af607f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2af607f.apk",
+          "size": 96628988,
+          "sha256": "62089816fa2ccb1b518e5dde58463b4b557c63b321d2d453faa76e5c309904a4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2335-2af607f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2af607f-pubg.apk",
+          "size": 96628988,
+          "sha256": "2421eac6b4476d8c59e5ce025ca7c7759a7ec4432b345570c8a67958ab3f770b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2335-2af607f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2af607f-antutu.apk",
+          "size": 96628988,
+          "sha256": "c79a3ed88cb9e6c80512122b7aa809465c5a70720b9cc85af8598524f9476e89",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2335-2af607f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2af607f-ludashi.apk",
+          "size": 96628988,
+          "sha256": "57abad9fe3f4844b01738f2dfd2c4d4a9b82084a431089625f6262acd88e9a73",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2336",
+      "title": "fix(steam-x64): new store shortcuts get a compatibility tool",
+      "summary": "With the x86-64 Steam client, store games (Amazon, GOG, Epic) and user-added Windows programs started and closed within a second. Steam ran the shortcut's .droiddeck-launch.bat directly, with no compatibility tool. The session log showed droiddeck-steam-shortcuts: compat mapping skipped ('<appid>').",
+      "commit": "92c439206037112910ca538f82fdf0387db2bba7",
+      "pr": 2336,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794233094000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2336",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2336-92c4392.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2336/DroidDeck-PR.2336-92c4392.apk",
+          "size": 96538876,
+          "sha256": "c632c38f289f8fd2f6877fdd38ad57a18e296df4923618aee37ce0f6ecfb8f8f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2336-92c4392-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2336/DroidDeck-PR.2336-92c4392-pubg.apk",
+          "size": 96538876,
+          "sha256": "ccae8ef647f0cec3c6c6852a5f822ab57b0c734d64ebe3096f5321e8848176c0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2336-92c4392-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2336/DroidDeck-PR.2336-92c4392-antutu.apk",
+          "size": 96538876,
+          "sha256": "3ecb5cbc0c99ce826507bdf7e2acf5889308325f9263ba09091b68efbe1e7a1f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2336-92c4392-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2336/DroidDeck-PR.2336-92c4392-ludashi.apk",
+          "size": 96538876,
+          "sha256": "da1d141e1cc358f2c8618c4c38de5ed9b803ab35c4396faee6d708365fd2216a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2334",
       "title": "fix(steam-x64): skip empty runtime library folders when linking",
