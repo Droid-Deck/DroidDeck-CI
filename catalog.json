@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794189676564,
+  "generatedAt": 1794190120132,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2313",
+      "title": "fix(steam): Linux-only tools keep their native platform",
+      "summary": "Games that need the Proton EasyAntiCheat Runtime (app 1826330) never start: Steam stops the dependency install with Failed installing AppID 1826330 (Invalid platform) and the launch waits at DownloadingDepots 0%.",
+      "commit": "52926646fb88a5ddb2ef8a61a2ba55b2d43d60d3",
+      "pr": 2313,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794190042000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2313",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2313-5292664.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2313/DroidDeck-PR.2313-5292664.apk",
+          "size": 96624892,
+          "sha256": "2ce4bf1c17f1bc92cda6df3ec02115df1fbd2bc33ac09e759e15e2c7f9a013cb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2313-5292664-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2313/DroidDeck-PR.2313-5292664-pubg.apk",
+          "size": 96624892,
+          "sha256": "a78dc5b80278e1d11c8a72a9facf164903ef12656030f4a4a9501934ffbf1717",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2313-5292664-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2313/DroidDeck-PR.2313-5292664-antutu.apk",
+          "size": 96624892,
+          "sha256": "8f4761e5b48a7483d0af178dac575b104e4026ee047d0e9205c7a1331e1b2c48",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2313-5292664-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2313/DroidDeck-PR.2313-5292664-ludashi.apk",
+          "size": 96624892,
+          "sha256": "ab357ac4b668c68feea3d576a3f8c782baf2d41a6f29d904efd75da3cd7c2019",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
