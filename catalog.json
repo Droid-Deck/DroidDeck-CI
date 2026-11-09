@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794256710115,
+  "generatedAt": 1794256832608,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2359",
+      "title": "fix(session): no endless loading screen after a game exits back to Steam",
+      "summary": "After a game exits cleanly back to Steam (return-after-game), the screen could stay black with only \"Menu\" and \"B force shutdown\" showing, which is the session loading overlay. SessionActivity.onSessionEnded() used any pending SessionState.relaunch intent on a clean exit and called recreate(). The intent could be stale: one left over from an earlier relaunch request that never stopped the se",
+      "commit": "1b8297423174f724645325e41f609996fb23d7d1",
+      "pr": 2359,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794256755000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2359",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2359-1b82974.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2359/DroidDeck-PR.2359-1b82974.apk",
+          "size": 96596220,
+          "sha256": "cf54537ced5028869efec4d1619d6ea1cac2f62c883e809aaa4ecbb96d709360",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2359-1b82974-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2359/DroidDeck-PR.2359-1b82974-pubg.apk",
+          "size": 96596220,
+          "sha256": "984f45958215820c69436275033dbbe3f4a1c0fde73d0397bae0fb68d04182a8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2359-1b82974-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2359/DroidDeck-PR.2359-1b82974-antutu.apk",
+          "size": 96596220,
+          "sha256": "2216d5fafa959105378aa6bbeaef83facff21534670c37ab5a149507d8c32cdc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2359-1b82974-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2359/DroidDeck-PR.2359-1b82974-ludashi.apk",
+          "size": 96596220,
+          "sha256": "18359790bb4abea5e1940982f822d9a36ebf02421d0074a474d0fd6cf6525a15",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2360",
       "title": "fix(native): a guest's own seccomp filter gets its SIGSYS, so Firefox tabs stop crashing",
