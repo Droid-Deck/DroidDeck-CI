@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794210366688,
+  "generatedAt": 1794213848383,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2327",
+      "title": "fix: seed redist markers into new prefixes before install scripts",
+      "summary": "When a game's first launch runs Steam's install-script evaluator, the game's Proton prefix does not exist yet. droiddeck-seed-redists only writes the redist HasRunKey markers into prefixes that already exist, so the evaluator found none and ran the bundled installers. A 32-bit .NET 3.5 installer that cannot start then leaves Steam on \"Running install script\" forever.",
+      "commit": "f8dfa6aa3c1702bd3448d57c0d10ff4ea78c0da5",
+      "pr": 2327,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794213750000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2327",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2327-f8dfa6a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2327/DroidDeck-PR.2327-f8dfa6a.apk",
+          "size": 96628988,
+          "sha256": "d2b6801b909aeeadedb7cf63bd662b6a4879831715408e432d6206f3c3dd6b6f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2327-f8dfa6a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2327/DroidDeck-PR.2327-f8dfa6a-pubg.apk",
+          "size": 96628988,
+          "sha256": "e428a8a74ef3a16583471ef9fc0d9ccf3be47a015f70299e5c32f92418b1fba4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2327-f8dfa6a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2327/DroidDeck-PR.2327-f8dfa6a-antutu.apk",
+          "size": 96628988,
+          "sha256": "b8582649529e0ec295f392f1345a0fb620a46fa3619e9d3e41c0ca17086f9afa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2327-f8dfa6a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2327/DroidDeck-PR.2327-f8dfa6a-ludashi.apk",
+          "size": 96628988,
+          "sha256": "73c52e22cfd01c67790b9d4ed87cdc693201833eca2fc3eb4fd917c0d61f9430",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2325",
       "title": "fix(ctl): a full disk no longer crashes the app when an agent call cannot write its answer",
