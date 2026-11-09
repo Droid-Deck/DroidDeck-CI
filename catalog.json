@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794238528672,
+  "generatedAt": 1794243685570,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2345",
+      "title": "fix(hud): steady frame graph on the bottom screen dashboard",
+      "summary": "The frame-time graph on the bottom screen's In-game stats card reshaped itself on every redraw: spikes jumped around, changed height and appeared or vanished between redraws, even for frames already on screen.",
+      "commit": "bc9203eb79f402a73d4ba01b3a56d42340e8bb7e",
+      "pr": 2345,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794243576000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2345",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2345-bc9203e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2345/DroidDeck-PR.2345-bc9203e.apk",
+          "size": 96628988,
+          "sha256": "c0837032342c5b525747acde9325ffc3dee6476100bec2b499a9a84155f8219d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2345-bc9203e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2345/DroidDeck-PR.2345-bc9203e-pubg.apk",
+          "size": 96628988,
+          "sha256": "6ad638df9e8216acff01ed27e2219b48608516125ef10dc0184791bfefc96013",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2345-bc9203e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2345/DroidDeck-PR.2345-bc9203e-antutu.apk",
+          "size": 96628988,
+          "sha256": "9109a2458f5aea192961fcc3a5d4a7d36203ecca039bdbcfc2c3d530666e94f9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2345-bc9203e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2345/DroidDeck-PR.2345-bc9203e-ludashi.apk",
+          "size": 96628988,
+          "sha256": "65d1ba3a498c9c77ca326772a827fbb2b708f4252a8e4fd11b2e799ed333e4df",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2339",
       "title": "fix(input): the controls editor shows the layout the game uses",
