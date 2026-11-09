@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794192882724,
+  "generatedAt": 1794192940326,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2312",
+      "title": "fix(session): stop re-compressing game memory every 30 s when the game reads it straight back",
+      "summary": "On devices with 13 GB of RAM or less, the low-memory page-out compresses idle game memory into zRAM when memory runs low. When available memory was below half the headroom (\"nearly out of memory\"), it skipped the read-back check that normally backs off when the game reads most of the last page-out straight back. A game that was actively using that memory then had it pushed out and read back every",
+      "commit": "21569926b9cec4c15c41c687041fde232bd92d0b",
+      "pr": 2312,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794192861000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2312",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2312-2156992.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2312/DroidDeck-PR.2312-2156992.apk",
+          "size": 96624892,
+          "sha256": "1e5429b0e1980fccef72d85252c63f1485041e57b5ddf32a2df86ebd045ff25b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2312-2156992-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2312/DroidDeck-PR.2312-2156992-pubg.apk",
+          "size": 96624892,
+          "sha256": "c58676788818fddf48149336a171048c55ae8f40aa9debb4545010e427c44324",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2312-2156992-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2312/DroidDeck-PR.2312-2156992-antutu.apk",
+          "size": 96624892,
+          "sha256": "cae3abc360d05e631d946fd492558fae9e4a2a158f6ac91e488e529ecfa8ffb2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2312-2156992-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2312/DroidDeck-PR.2312-2156992-ludashi.apk",
+          "size": 96624892,
+          "sha256": "3c0c99d92f148e4974cda699e048dce9c79daab0a7142cc8dd4f6c711143c54c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
       "summary": "An opt-in native userland that runs the Linux side (session script, gamescope, Steam, Proton/FEX games) directly on Android with no proot and no ptrace. Setting: Performance > \"Run without proot (experimental)\". Default off; the proot path is untouched.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2313/DroidDeck-PR.2313-5292664-ludashi.apk",
           "size": 96624892,
           "sha256": "ab357ac4b668c68feea3d576a3f8c782baf2d41a6f29d904efd75da3cd7c2019",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2312",
-      "title": "fix(session): stop re-compressing game memory every 30 s when the game reads it straight back",
-      "summary": "On devices with 13 GB of RAM or less, the low-memory page-out compresses idle game memory into zRAM when memory runs low. When available memory was below half the headroom (\"nearly out of memory\"), it skipped the read-back check that normally backs off when the game reads most of the last page-out straight back. A game that was actively using that memory then had it pushed out and read back every",
-      "commit": "41fdbf4936a97c203cf92619a9e0940049f35263",
-      "pr": 2312,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794188068000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2312",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2312-41fdbf4.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2312/DroidDeck-PR.2312-41fdbf4.apk",
-          "size": 96624892,
-          "sha256": "3355d299c79217bb996290679c56201b960e273a221de273318ec091d35b9a05",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2312-41fdbf4-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2312/DroidDeck-PR.2312-41fdbf4-pubg.apk",
-          "size": 96624892,
-          "sha256": "3c0d9b0de19232ffea148e1779226d79305b08b2b57fc8f77bcd87d85f1895d0",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2312-41fdbf4-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2312/DroidDeck-PR.2312-41fdbf4-antutu.apk",
-          "size": 96624892,
-          "sha256": "2f1ed4da42b03e72ecde84e7514322498c371de22f7f5c96a8c169cc7f777f8a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2312-41fdbf4-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2312/DroidDeck-PR.2312-41fdbf4-ludashi.apk",
-          "size": 96624892,
-          "sha256": "53bc801bde379ad9cd564f0d9464fed1e4968a08b492c4525509340e6ae06dda",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
