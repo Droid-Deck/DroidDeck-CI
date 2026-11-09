@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794260691591,
+  "generatedAt": 1794261389911,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-75a0230",
-    "title": "fix(input): Auto relative mouse stays off for direct touch without a mouse",
-    "summary": "\"Relative mouse: Auto\" sends gamescopectl relativemouse 0, which leaves the decision to gamescope's own rule: once a game hides the system cursor and confines the pointer, gamescope turns host pointer motion into relative movement. With direct touch and no hardware mouse, each tap then arrives as a small delta instead of a jump to the touched spot, so the pointer cannot be moved or dragged in g",
-    "commit": "75a0230304d8f40478ef7b05095e109d504bcf4d",
+    "tag": "main-1b19837",
+    "title": "fix(native): a guest's own seccomp filter gets its SIGSYS, so Firefox tabs stop crashing",
+    "summary": "Firefox in the desktop session opened a window, but every tab's content process died on signal 11 (headless --screenshot produced nothing; the desktop showed a crash loop).",
+    "commit": "1b19837fc6e2e652e9506f1b92e0c78ceaaeb7d6",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794255079000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-75a0230",
+    "publishedAt": 1794261281000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1b19837",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-75a0230.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75a0230/DroidDeck-main-75a0230.apk",
-        "size": 96596220,
-        "sha256": "733ef8309f4a6c023066ec5d01587601dbe98d91854d57f2e9848570696fc8d6",
+        "name": "DroidDeck-main-1b19837.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b19837/DroidDeck-main-1b19837.apk",
+        "size": 96600316,
+        "sha256": "9d5474e37085745eafc78ad6ce5a3d36e97633036d6a29b3aa38c8e5fab3bb4c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-75a0230-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75a0230/DroidDeck-main-75a0230-pubg.apk",
-        "size": 96596220,
-        "sha256": "779637e4be7a27c5703be39ba6a83f96d502891a09460698e725e4fb78a5d272",
+        "name": "DroidDeck-main-1b19837-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b19837/DroidDeck-main-1b19837-pubg.apk",
+        "size": 96600316,
+        "sha256": "3fe8e5beec8c846bd97da9beed25d4d324b3fbda1f402c4c835a8406be5779a4",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-75a0230-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75a0230/DroidDeck-main-75a0230-antutu.apk",
-        "size": 96596220,
-        "sha256": "f73e3afc65f0fa30fc764bd2f1cc153f8af91dec247672abbff5e64fb623eeee",
+        "name": "DroidDeck-main-1b19837-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b19837/DroidDeck-main-1b19837-antutu.apk",
+        "size": 96600316,
+        "sha256": "a091fe843c0b7ee9e0f7396774d7de6d35d085e590e0a1ad0181e2d2b9f576be",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-75a0230-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75a0230/DroidDeck-main-75a0230-ludashi.apk",
-        "size": 96596220,
-        "sha256": "465a57a161c7d2c32ae033cf482c356b4785fea2e002d1f177130a2285e461d9",
+        "name": "DroidDeck-main-1b19837-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b19837/DroidDeck-main-1b19837-ludashi.apk",
+        "size": 96600316,
+        "sha256": "6347f239937c447e80077e8d2392c3a886a5ede0660fa909a8b0f7b1a2176d7b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1b19837fc6e2e652e9506f1b92e0c78ceaaeb7d6",
+      "title": "fix(native): a guest's own seccomp filter gets its SIGSYS, so Firefox tabs stop crashing",
+      "summary": "Firefox in the desktop session opened a window, but every tab's content process died on signal 11 (headless --screenshot produced nothing; the desktop showed a crash loop).",
+      "publishedAt": 1794261281000
+    },
     {
       "commit": "75a0230304d8f40478ef7b05095e109d504bcf4d",
       "title": "fix(input): Auto relative mouse stays off for direct touch without a mouse",
@@ -155,12 +161,6 @@
       "title": "fix(gog): owned games the listing leaves out stay owned, and search reaches GOG's catalog",
       "summary": "Since 0.6.0 some owned GOG games are missing from the GOG library and the GOG tab, and they come back after reinstalling 0.5.0. Logging out and in changes nothing. Reported with one of three games from the same series, owned on the same account.",
       "publishedAt": 1794185154000
-    },
-    {
-      "commit": "6b110581ac167b1476d945db6b38327c63cd399e",
-      "title": "fix(gog): install scripts' support files reach the prefix",
-      "summary": "A GOG game installed through DroidDeck started as its base game instead of the edition that was installed: the mod's files were on disk, but its plugin list and INI files never reached the prefix.",
-      "publishedAt": 1794182282000
     }
   ],
   "tests": [
