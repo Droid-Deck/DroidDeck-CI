@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794262306085,
+  "generatedAt": 1794262809097,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-1b19837",
-    "title": "fix(native): a guest's own seccomp filter gets its SIGSYS, so Firefox tabs stop crashing",
-    "summary": "Firefox in the desktop session opened a window, but every tab's content process died on signal 11 (headless --screenshot produced nothing; the desktop showed a crash loop).",
-    "commit": "1b19837fc6e2e652e9506f1b92e0c78ceaaeb7d6",
+    "tag": "main-836340f",
+    "title": "fix(session): no endless loading screen after a game exits back to Steam",
+    "summary": "After a game exits cleanly back to Steam (return-after-game), the screen could stay black with only \"Menu\" and \"B force shutdown\" showing, which is the session loading overlay. SessionActivity.onSessionEnded() used any pending SessionState.relaunch intent on a clean exit and called recreate(). The intent could be stale: one left over from an earlier relaunch request that never stopped the se",
+    "commit": "836340f3a297af05a1b478e05177e22f2a545e09",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794261281000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1b19837",
+    "publishedAt": 1794262696000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-836340f",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-1b19837.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b19837/DroidDeck-main-1b19837.apk",
-        "size": 96600316,
-        "sha256": "9d5474e37085745eafc78ad6ce5a3d36e97633036d6a29b3aa38c8e5fab3bb4c",
+        "name": "DroidDeck-main-836340f.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-836340f/DroidDeck-main-836340f.apk",
+        "size": 96596220,
+        "sha256": "5a0b4ff0ae2bb2b35d74d461dbb8bba57f3b4a16ab8d8166585636ebd2ab9108",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-1b19837-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b19837/DroidDeck-main-1b19837-pubg.apk",
-        "size": 96600316,
-        "sha256": "3fe8e5beec8c846bd97da9beed25d4d324b3fbda1f402c4c835a8406be5779a4",
+        "name": "DroidDeck-main-836340f-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-836340f/DroidDeck-main-836340f-pubg.apk",
+        "size": 96596220,
+        "sha256": "522f33d6fe68b92586f7615d95f94c98bc069472e1578fe627f9d320aace1676",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-1b19837-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b19837/DroidDeck-main-1b19837-antutu.apk",
-        "size": 96600316,
-        "sha256": "a091fe843c0b7ee9e0f7396774d7de6d35d085e590e0a1ad0181e2d2b9f576be",
+        "name": "DroidDeck-main-836340f-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-836340f/DroidDeck-main-836340f-antutu.apk",
+        "size": 96596220,
+        "sha256": "fd58a015fc933adc64c9de2d5535d7922fa23c4ff2062fc31b332e46a8c3ad56",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-1b19837-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1b19837/DroidDeck-main-1b19837-ludashi.apk",
-        "size": 96600316,
-        "sha256": "6347f239937c447e80077e8d2392c3a886a5ede0660fa909a8b0f7b1a2176d7b",
+        "name": "DroidDeck-main-836340f-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-836340f/DroidDeck-main-836340f-ludashi.apk",
+        "size": 96596220,
+        "sha256": "f1d33269c792db622480197e351fae92dbac934621da8746398a63059028b629",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "836340f3a297af05a1b478e05177e22f2a545e09",
+      "title": "fix(session): no endless loading screen after a game exits back to Steam",
+      "summary": "After a game exits cleanly back to Steam (return-after-game), the screen could stay black with only \"Menu\" and \"B force shutdown\" showing, which is the session loading overlay. SessionActivity.onSessionEnded() used any pending SessionState.relaunch intent on a clean exit and called recreate(). The intent could be stale: one left over from an earlier relaunch request that never stopped the se",
+      "publishedAt": 1794262696000
+    },
     {
       "commit": "1b19837fc6e2e652e9506f1b92e0c78ceaaeb7d6",
       "title": "fix(native): a guest's own seccomp filter gets its SIGSYS, so Firefox tabs stop crashing",
@@ -155,12 +161,6 @@
       "title": "fix(ci): post new Discord notice for each PR build",
       "summary": "Post a fresh signed test-build notice for each new PR commit, retire the previous notice, and include the latest commit subject.",
       "publishedAt": 1794191292000
-    },
-    {
-      "commit": "5e438e9248e46be8ab2e5de2af7cbb3b0ecc5a0a",
-      "title": "fix(gog): owned games the listing leaves out stay owned, and search reaches GOG's catalog",
-      "summary": "Since 0.6.0 some owned GOG games are missing from the GOG library and the GOG tab, and they come back after reinstalling 0.5.0. Logging out and in changes nothing. Reported with one of three games from the same series, owned on the same account.",
-      "publishedAt": 1794185154000
     }
   ],
   "tests": [
