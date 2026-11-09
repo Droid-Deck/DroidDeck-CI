@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794260015969,
+  "generatedAt": 1794260456171,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2369",
+      "title": "fix(input): a controller that disconnects mid-event no longer closes the app",
+      "summary": "DroidDeck can close during a session with NullPointerException in PadBridge.noteDevice when a controller disconnects while one of its key events is being handled. KeyEvent.getDevice() looks the device up again on every call, so the first lookup (to pick the player slot) finds the controller and a later one in the same event returns null.",
+      "commit": "ce082942ac5a89ea707fdc023fb2331db957b9e3",
+      "pr": 2369,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794260351000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2369",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2369-ce08294.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-ce08294.apk",
+          "size": 96596220,
+          "sha256": "cf71591f58b64cd89ab8cff782569403bfd6b379af473150e055d2adf323f4a2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2369-ce08294-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-ce08294-pubg.apk",
+          "size": 96596220,
+          "sha256": "d78828d5d5fcb79f0febef389258347bcc9dc0f7405fb9015d6a518a40596ce7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2369-ce08294-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-ce08294-antutu.apk",
+          "size": 96596220,
+          "sha256": "a7d9b789d617b5038c7f76799064d8dcea57f3a2c66542b6c8b7b4afc072bae4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2369-ce08294-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-ce08294-ludashi.apk",
+          "size": 96596220,
+          "sha256": "cea9cb071784151643fd049ec20497e2281f64a81cbfbfdcd2e429e0b5c4c601",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2367",
       "title": "fix(gog): installs no longer hang on Finishing for large games",
