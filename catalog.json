@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794200985729,
+  "generatedAt": 1794207852755,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2323",
+      "title": "fix(input): system Back only turns into a right-click with an external mouse",
+      "summary": "On some handhelds the system Back button opens the guest's right-click menu instead of the side menu. Android injects Back with no device and without the virtual-hard-key flag, and the injected-Back rule treated it as a mouse right-click whenever any mouse-capable input device existed, including built-in ones.",
+      "commit": "f44cffdcc295d6dc165edce2ac85b7b83685d200",
+      "pr": 2323,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794207789000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2323",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2323-f44cffd.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2323/DroidDeck-PR.2323-f44cffd.apk",
+          "size": 96628988,
+          "sha256": "6ed54310c83dcb9e232c16b6834ee0f7019f728a6d6a2744b33848b9ef95be87",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2323-f44cffd-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2323/DroidDeck-PR.2323-f44cffd-pubg.apk",
+          "size": 96628988,
+          "sha256": "319f999fcc88b6e2a96a09b1543fbf33b3d43c096b2a6a8c39cd2e538dc8ae6e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2323-f44cffd-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2323/DroidDeck-PR.2323-f44cffd-antutu.apk",
+          "size": 96628988,
+          "sha256": "de4a138947aa3fbfae23826259b870e0838665788ce7888d1bff855906f5ede9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2323-f44cffd-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2323/DroidDeck-PR.2323-f44cffd-ludashi.apk",
+          "size": 96628988,
+          "sha256": "a2926b7506a7816519a67530b192ee489df9cb24077270296cdb4e73e28aabeb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
