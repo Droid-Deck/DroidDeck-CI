@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794188140448,
+  "generatedAt": 1794188969422,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2259",
+      "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
+      "summary": "Adds EA as a store. Games sign in, sync, download, update and launch without the EA app in the prefix.",
+      "commit": "c3ddc3f69c3ddffc8713539652ab6da17ac14862",
+      "pr": 2259,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794188889000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2259",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2259-c3ddc3f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-c3ddc3f.apk",
+          "size": 96736017,
+          "sha256": "6626bdde4922529a50074922373e824db35bf84de72bda45656a20ce90857eb8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2259-c3ddc3f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-c3ddc3f-pubg.apk",
+          "size": 96736017,
+          "sha256": "a3b4bc7e27d9da8cc4deb0aa7f2b65d176d5b11a5dd7ee23920f21c9a1965a75",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2259-c3ddc3f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-c3ddc3f-antutu.apk",
+          "size": 96736017,
+          "sha256": "b14913fb8ba5875b88ebd0576908545cba733d45f23e32e50d3a81bd80776be9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2259-c3ddc3f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-c3ddc3f-ludashi.apk",
+          "size": 96736017,
+          "sha256": "596e0b19ccfc7049d399ac4c6a659c87172c5836295f01fdbc2f73770b605b55",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2312",
       "title": "fix(session): stop re-compressing game memory every 30 s when the game reads it straight back",
       "summary": "On devices with 13 GB of RAM or less, the low-memory page-out compresses idle game memory into zRAM when memory runs low. When available memory was below half the headroom (\"nearly out of memory\"), it skipped the read-back check that normally backs off when the game reads most of the last page-out straight back. A game that was actively using that memory then had it pushed out and read back every",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2309/DroidDeck-PR.2309-0db9865-ludashi.apk",
           "size": 96637282,
           "sha256": "ba93fa87eaf0ff4a174f17ee9c248fd8c349a0ee56fbe0c006e1af442a938d33",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2259",
-      "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
-      "summary": "Adds EA as a store. Games sign in, sync, download, update and launch without the EA app in the prefix.",
-      "commit": "8bdff5763b75ac1236457b62752c54734584a838",
-      "pr": 2259,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794180404000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2259",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2259-8bdff57.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-8bdff57.apk",
-          "size": 96736017,
-          "sha256": "2e82f80514cfd1a615bc6fe891edd1ca37da17d213014a333fb352f78eb9d97c",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2259-8bdff57-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-8bdff57-pubg.apk",
-          "size": 96736017,
-          "sha256": "c4bbbdcf32543b8fb357f136b9484741f39b22d0d39f8c7d30eb1e02fede0dbe",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2259-8bdff57-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-8bdff57-antutu.apk",
-          "size": 96736017,
-          "sha256": "00a3c02b490344c7e62713a6df4694a19b4d733f6851ab49156cae2a72680447",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2259-8bdff57-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-8bdff57-ludashi.apk",
-          "size": 96736017,
-          "sha256": "d5ab3dafba093a62d6e3c2603da514e6503889c50539fb801d1e3f5a625b09df",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
