@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794256374728,
+  "generatedAt": 1794256710115,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2360",
+      "title": "fix(native): a guest's own seccomp filter gets its SIGSYS, so Firefox tabs stop crashing",
+      "summary": "Firefox in the desktop session opened a window, but every tab's content process died on signal 11 (headless --screenshot produced nothing; the desktop showed a crash loop).",
+      "commit": "e22b62d3172b1d5ce61621a7a41384b3e3823c81",
+      "pr": 2360,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794256611000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2360",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2360-e22b62d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2360/DroidDeck-PR.2360-e22b62d.apk",
+          "size": 96600316,
+          "sha256": "23b9e446fb32a7c69ccda8fe86baf098774ebcbec17126703265cf64f94f5eda",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2360-e22b62d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2360/DroidDeck-PR.2360-e22b62d-pubg.apk",
+          "size": 96600316,
+          "sha256": "aab92394c9eb7b4ca692223342d626fc56ef28f0729aafda9c59888a6d802b65",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2360-e22b62d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2360/DroidDeck-PR.2360-e22b62d-antutu.apk",
+          "size": 96600316,
+          "sha256": "bacfcd1f2256b666d568f183aa9e82bb61cc9af169f7068e624496fb630137c8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2360-e22b62d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2360/DroidDeck-PR.2360-e22b62d-ludashi.apk",
+          "size": 96600316,
+          "sha256": "77fd6a3ae4f2655981cee548debd3084d77236f8b7ac7b0109ddee22844bf188",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
