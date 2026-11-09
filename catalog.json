@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794257367155,
+  "generatedAt": 1794257608463,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2363",
+      "title": "fix(ctl): long agent calls over the broadcast bridge no longer make Android report DroidDeck as not responding",
+      "summary": "On shells without a content command (the Retroid Pocket Duo), droiddeckctl reaches the agent bridge by broadcasting AGENTCALL (Droid-Deck/DroidDeck#2321). AgentCallReceiver held that broadcast open with goAsync() until the call finished, so any call that ran longer than the broadcast timeout made Android raise \"DroidDeck isn't responding\": 60 s for a background broadcast from am broadc",
+      "commit": "46c1c4932d2ddb6a014318afbb48fad6a603d7d7",
+      "pr": 2363,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794257509000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2363",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2363-46c1c49.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2363/DroidDeck-PR.2363-46c1c49.apk",
+          "size": 96600316,
+          "sha256": "8feafc22f7566684d3603291559f55163572253a94e985d2fdcb5fbcc46211fb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2363-46c1c49-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2363/DroidDeck-PR.2363-46c1c49-pubg.apk",
+          "size": 96600316,
+          "sha256": "1c7efaf9a59b0be3aacbefe30348499c5d35134e0a0cb51b08b78828317674b1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2363-46c1c49-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2363/DroidDeck-PR.2363-46c1c49-antutu.apk",
+          "size": 96600316,
+          "sha256": "a95cab14bf6c9e1c5ab884cdcb5939e96a9c414f7c6bd9918f9f59f31c96843f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2363-46c1c49-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2363/DroidDeck-PR.2363-46c1c49-ludashi.apk",
+          "size": 96600316,
+          "sha256": "354e53a93f6f47085e0627ea7d61b58d7a4ad561dccda88f799c945b5f985596",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
