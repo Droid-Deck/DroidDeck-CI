@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794263988684,
+  "generatedAt": 1794264799008,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2376",
+      "title": "feat(agent): an Agent tab, a session drawer page, and a bubble over the game",
+      "summary": "Talk to an agent from DroidDeck itself, with or without a game running. Claude Code from the Linux userland runs headless (claude -p with stream-json in and out), outside any session, and DroidDeck shows the conversation natively.",
+      "commit": "233aeff3165eb23bca15a3b869661ae2bc0cae19",
+      "pr": 2376,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794264697000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2376",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2376-233aeff.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-233aeff.apk",
+          "size": 96538876,
+          "sha256": "23d67dfb2c0cb4bcb32344c65a29e30de7c66ec47df1a9cc580166ad57431180",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2376-233aeff-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-233aeff-pubg.apk",
+          "size": 96538876,
+          "sha256": "f0876222e17b6760d2b54746d185c6502a924e60ab4e1a4ac3596fb164ef476d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2376-233aeff-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-233aeff-antutu.apk",
+          "size": 96538876,
+          "sha256": "8a8628e2d57356885c05591d60cd24c036284c625d6f21d44d9abc76a85ac8d1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2376-233aeff-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-233aeff-ludashi.apk",
+          "size": 96538876,
+          "sha256": "f4c40990da091af6797e899e033d4d46f18b6e2715927d6beee96efb28c2fd34",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2375",
       "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
