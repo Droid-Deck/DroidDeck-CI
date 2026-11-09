@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794256832608,
+  "generatedAt": 1794257000723,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2361",
+      "title": "fix(input): fakeinput no longer aborts programs whose allocator calls a hooked function at startup",
+      "summary": "Two fixes found while running Claude Code inside the guest on a Retroid Pocket Duo.",
+      "commit": "871e3110b8b95ce3db6ac1e8e5ca07b23752745b",
+      "pr": 2361,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794256904000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2361",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2361-871e311.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2361/DroidDeck-PR.2361-871e311.apk",
+          "size": 96510204,
+          "sha256": "ae72aa16fa75d40a55d70df0bda27a6d0a7be9e37a540f61d8e912aa3711e1e9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2361-871e311-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2361/DroidDeck-PR.2361-871e311-pubg.apk",
+          "size": 96510204,
+          "sha256": "de9ec3368fa030c6970743a2faf97d09c2146b29551546f1342dac7691655659",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2361-871e311-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2361/DroidDeck-PR.2361-871e311-antutu.apk",
+          "size": 96510204,
+          "sha256": "0d82aaff1ae28640acd5b39a782d05b42af7245112bf1576a48c5b60c8ff8b19",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2361-871e311-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2361/DroidDeck-PR.2361-871e311-ludashi.apk",
+          "size": 96510204,
+          "sha256": "e5b08f2bb83792894338741a08a323d07c52f0f87cb6d497219dc0cfedd1ddac",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2359",
       "title": "fix(session): no endless loading screen after a game exits back to Steam",
