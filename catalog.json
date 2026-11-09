@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794266717577,
+  "generatedAt": 1794266925420,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2377",
+      "title": "perf(proot): faster SD card installs and uninstalls on FUSE-backed libraries",
+      "summary": "Installing, verifying and uninstalling games on an SD card served through Android's MediaProvider FUSE is very slow. The FUSE daemon re-resolves every path component on every operation (its entry cache timeout is effectively zero), and the proot fast path passed full absolute host paths for every lstat, open, rename and unlink. A Steam file 11 folders deep paid for 11+ lookups per call.",
+      "commit": "ad24943155b2ac51fe624387dd909d6a8eb06a0f",
+      "pr": 2377,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794266826000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2377",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2377-ad24943.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2377/DroidDeck-PR.2377-ad24943.apk",
+          "size": 96518396,
+          "sha256": "a9b5046161e122675a28e2cb3af2e19add7369149ddd118cac2ce16d9172dd58",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2377-ad24943-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2377/DroidDeck-PR.2377-ad24943-pubg.apk",
+          "size": 96518396,
+          "sha256": "771043ec298ba0b4578507ebf49a3c014ecd40fab9d4ce950fe39b25ff5c6704",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2377-ad24943-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2377/DroidDeck-PR.2377-ad24943-antutu.apk",
+          "size": 96518396,
+          "sha256": "29c8defd8bb45f2afab2b6297c5c77b4338851567c7e1b6a03640787f0fa96a9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2377-ad24943-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2377/DroidDeck-PR.2377-ad24943-ludashi.apk",
+          "size": 96518396,
+          "sha256": "fa7e9fbc0c5e0f3a739bfd871fac0100b85979aae4430d595784f09f2351bedf",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2376",
       "title": "feat(agent): an Agent tab, a session drawer page, and a bubble over the game",
