@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794252457003,
+  "generatedAt": 1794253368222,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,202 @@
   ],
   "tests": [
     {
+      "tag": "pr-2335",
+      "title": "fix(zram): page game memory out on an idle worker thread, not the signalled game thread",
+      "summary": "On 11-12 GB devices games still froze for 5-10 s with every core busy, about every 30 s while free memory stayed under ~1 GB. The low-memory page-out (#2187, with #2312's read-back backoff) was working as designed, but tools/linuxfs/preload/zram.c ran the whole page-out inside its SIGURG handler. That handler runs on whichever thread receives the signal, often a game thread (render or main), a",
+      "commit": "2419acc89d931f6743886904012d635d603b0230",
+      "pr": 2335,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794253288000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2335",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2335-2419acc.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2419acc.apk",
+          "size": 96628988,
+          "sha256": "bf54957e7db325b688ff590341e3fa696d476755e3d3038fec86b6246fcfa60b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2335-2419acc-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2419acc-pubg.apk",
+          "size": 96628988,
+          "sha256": "93b4af6cae82ddf24015679f4a124db2349ad825aa023949ecd9fe215cfb4ace",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2335-2419acc-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2419acc-antutu.apk",
+          "size": 96628988,
+          "sha256": "71924969c4b0f9632672d042b031a1ed2f970156fc43c3496a258a0995d247fb",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2335-2419acc-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2419acc-ludashi.apk",
+          "size": 96628988,
+          "sha256": "a5837f8a14ae95ef7c476d81b13713d34f0d7b0c6333943f605f856b3d5b71a8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2346",
+      "title": "feat(performance): switch to turn off idle game memory compression",
+      "summary": "The Performance switch for Steam compression did not control the separate low-memory session reclaim path. On supported low-RAM devices, blsessionpressure could still compress idle game processes when available memory was low.",
+      "commit": "d32edab2dadfa848a579e4d9b12e1edf06eb1d89",
+      "pr": 2346,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794253277000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2346",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2346-d32edab.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-d32edab.apk",
+          "size": 96633084,
+          "sha256": "63f68d974977d3d49141d4c43ed6f7bff2643ea77c9c4e935a93715c60b49ed3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2346-d32edab-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-d32edab-pubg.apk",
+          "size": 96633084,
+          "sha256": "c3ed55075b7f6d5294762170637a39737524f37d30dbe4cae4ecb318ce36b814",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2346-d32edab-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-d32edab-antutu.apk",
+          "size": 96633084,
+          "sha256": "bacc2038314b830ae669c225018c67eab96c8f229ce24bb85262733c561d8ac4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2346-d32edab-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-d32edab-ludashi.apk",
+          "size": 96633084,
+          "sha256": "80230a9c3ed860d8c05f9e178f43a4c2f4c8d3fde1b66093c0436614c6d6c6f3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2333",
+      "title": "fix(input): detect which axis pair is the right stick",
+      "summary": "Some controllers report their right stick on RX/RY instead of Z/RZ. PadBridge and PadMouse always read Z/RZ unless the pad matches one of the two wired layouts, so on those controllers the right stick never reaches the game or the pointer.",
+      "commit": "6333439cbf3bbcdaaf7467ef194fa616b78bd97e",
+      "pr": 2333,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794253267000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2333",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2333-6333439.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2333/DroidDeck-PR.2333-6333439.apk",
+          "size": 96628988,
+          "sha256": "24b6bd37ef620b8e36be631def85172afe0f38b429daa130f0579ed23ce01a8d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2333-6333439-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2333/DroidDeck-PR.2333-6333439-pubg.apk",
+          "size": 96628988,
+          "sha256": "2ea97a93b242d87112b3f06eb3d22fdbccdbf40d5b68c42fa31478347b0b4c03",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2333-6333439-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2333/DroidDeck-PR.2333-6333439-antutu.apk",
+          "size": 96628988,
+          "sha256": "ce317d225603a4eff96ba422608f7162f54f39a09469db1ca48876a2723a729d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2333-6333439-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2333/DroidDeck-PR.2333-6333439-ludashi.apk",
+          "size": 96628988,
+          "sha256": "99b19e6189af3aba71e1c69780de080e9312c7bf933dc4d6dd78dfedbf8e636c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2338",
+      "title": "perf(turnip): system-memory rendering for games and apps by default",
+      "summary": "The \"Turnip: sysmem rendering\" setting (on by default) only reached the Steam client. Games got DROIDDECKGAMETUDEBUG empty unless the runtime driver was the 710-720 build, so droiddeck-game-env removed TUDEBUG and Turnip chose tile (GMEM) or system-memory rendering per pass. #1188 set up that split.",
+      "commit": "d10e2f4d62a7aabe987f003338d56f496390ada6",
+      "pr": 2338,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794253262000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2338",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2338-d10e2f4.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2338/DroidDeck-PR.2338-d10e2f4.apk",
+          "size": 96624892,
+          "sha256": "e1b89d158060109ded7a82106ec287d2b1936b02d0af77160bb88e9a2e54d469",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2338-d10e2f4-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2338/DroidDeck-PR.2338-d10e2f4-pubg.apk",
+          "size": 96624892,
+          "sha256": "82474c3ebb52775638a0950f576df0bdb9ba93047118667916a2c37ab98e52d3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2338-d10e2f4-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2338/DroidDeck-PR.2338-d10e2f4-antutu.apk",
+          "size": 96624892,
+          "sha256": "4176c6796934c8493403fc7876e230a0932bf871de3570272683737085e3679a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2338-d10e2f4-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2338/DroidDeck-PR.2338-d10e2f4-ludashi.apk",
+          "size": 96624892,
+          "sha256": "8bdcccc5fb189c4b8ef761bf68e3d938e976d7d48b4a97d3bfebc92daa50509d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2322",
       "title": "feat(ubisoft): Ubisoft Connect store with native sign-in, library, downloads and launch",
       "summary": "Adds Ubisoft Connect as a store. Sign-in, the owned library, downloads and launching all run inside DroidDeck, with no Ubisoft Connect client. Ubisoft's own DRM DLLs are used unmodified, and the launch session carries a real ticket from Ubisoft's ownership service.",
@@ -256,55 +452,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2339/DroidDeck-PR.2339-ae2796b-ludashi.apk",
           "size": 96637180,
           "sha256": "ec67c9614e54fb2894833cd704e80c3d5de8c4a86ab79991b6b7c77b3d8828e9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2335",
-      "title": "fix(zram): page game memory out on an idle worker thread, not the signalled game thread",
-      "summary": "On 11-12 GB devices games still froze for 5-10 s with every core busy, about every 30 s while free memory stayed under ~1 GB. The low-memory page-out (#2187, with #2312's read-back backoff) was working as designed, but tools/linuxfs/preload/zram.c ran the whole page-out inside its SIGURG handler. That handler runs on whichever thread receives the signal, often a game thread (render or main), a",
-      "commit": "2af607fe2f0dacbae1cfed0137ee60c3bf05af08",
-      "pr": 2335,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794233113000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2335",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2335-2af607f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2af607f.apk",
-          "size": 96628988,
-          "sha256": "62089816fa2ccb1b518e5dde58463b4b557c63b321d2d453faa76e5c309904a4",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2335-2af607f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2af607f-pubg.apk",
-          "size": 96628988,
-          "sha256": "2421eac6b4476d8c59e5ce025ca7c7759a7ec4432b345570c8a67958ab3f770b",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2335-2af607f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2af607f-antutu.apk",
-          "size": 96628988,
-          "sha256": "c79a3ed88cb9e6c80512122b7aa809465c5a70720b9cc85af8598524f9476e89",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2335-2af607f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2af607f-ludashi.apk",
-          "size": 96628988,
-          "sha256": "57abad9fe3f4844b01738f2dfd2c4d4a9b82084a431089625f6262acd88e9a73",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -452,55 +599,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2305/DroidDeck-PR.2305-5e99b58-ludashi.apk",
           "size": 96538876,
           "sha256": "fd23d0d3557c7ef57d75f3b2b5152a12e459de99c29bdc42df1145bce5abacd7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2333",
-      "title": "fix(input): detect which axis pair is the right stick",
-      "summary": "Some controllers report their right stick on RX/RY instead of Z/RZ. PadBridge and PadMouse always read Z/RZ unless the pad matches one of the two wired layouts, so on those controllers the right stick never reaches the game or the pointer.",
-      "commit": "cd10df0a6b92211255a7d2ea6abd52fc39d33320",
-      "pr": 2333,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794228428000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2333",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2333-cd10df0.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2333/DroidDeck-PR.2333-cd10df0.apk",
-          "size": 96628988,
-          "sha256": "cb823288ab701a126522f27c92c62631efdf2f36e247bea72bbade89a18b12a3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2333-cd10df0-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2333/DroidDeck-PR.2333-cd10df0-pubg.apk",
-          "size": 96628988,
-          "sha256": "9f8bdcb81eb63d240d386437bab6c94930b30e1166e1a39f701c05dd72f9950c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2333-cd10df0-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2333/DroidDeck-PR.2333-cd10df0-antutu.apk",
-          "size": 96628988,
-          "sha256": "f9bed11488fab9bcb8a5e5d0c64581d82fb2a4e97ac4814746cf0cde5301731f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2333-cd10df0-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2333/DroidDeck-PR.2333-cd10df0-ludashi.apk",
-          "size": 96628988,
-          "sha256": "af790a2833fe101b103ceef37bcb65270beb7e5bc4ed053a43f95d1afba90e50",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
