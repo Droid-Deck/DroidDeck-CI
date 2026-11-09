@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794200508223,
+  "generatedAt": 1794200985729,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-29823bb",
-    "title": "fix(steam): Linux-only tools keep their native platform",
-    "summary": "Games that need the Proton EasyAntiCheat Runtime (app 1826330) never start: Steam stops the dependency install with Failed installing AppID 1826330 (Invalid platform) and the launch waits at DownloadingDepots 0%.",
-    "commit": "29823bb1bf4c8ee7b99fecb7e2d892dd177b007d",
+    "tag": "main-88d6b70",
+    "title": "fix(ctl): reach the agent bridge by broadcast when the shell has no content command",
+    "summary": "Some Android builds, the Retroid Pocket Duo's among them, ship a shell without the content command. On those builds every droiddeckctl call fails at once with /system/bin/sh: content: inaccessible or not found, so state, guest, logs and the rest are unusable.",
+    "commit": "88d6b70881a9e53eee53ac5ee4d38ba711304788",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794195218000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-29823bb",
+    "publishedAt": 1794200923000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-88d6b70",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-29823bb.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-29823bb/DroidDeck-main-29823bb.apk",
-        "size": 96624892,
-        "sha256": "b7a6771cfae81c25263e731d66bbdaf7cdb0e8a1c9a1af98219318c0ac3bfe38",
+        "name": "DroidDeck-main-88d6b70.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-88d6b70/DroidDeck-main-88d6b70.apk",
+        "size": 96628988,
+        "sha256": "a9ea86930022e528e129a7f75728bccc0d09e691cb1a62a7ded4982b97a56ca3",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-29823bb-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-29823bb/DroidDeck-main-29823bb-pubg.apk",
-        "size": 96624892,
-        "sha256": "9662db8ba3bec7b005e0b1c8e548b4f49745561b11ea4b243fe0d301f4f6f224",
+        "name": "DroidDeck-main-88d6b70-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-88d6b70/DroidDeck-main-88d6b70-pubg.apk",
+        "size": 96628988,
+        "sha256": "e0b9069984802785c72418dbc92227096b363019c22efb2ba55e528c8617efc8",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-29823bb-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-29823bb/DroidDeck-main-29823bb-antutu.apk",
-        "size": 96624892,
-        "sha256": "efeff0d38428a6d0c6baf69ec8d082fe1a7fb6bbe1747c393de9d399bfef1a2f",
+        "name": "DroidDeck-main-88d6b70-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-88d6b70/DroidDeck-main-88d6b70-antutu.apk",
+        "size": 96628988,
+        "sha256": "81f71467dbfdf9134a97434d5368099304f9be160306935fd080117c996624e4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-29823bb-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-29823bb/DroidDeck-main-29823bb-ludashi.apk",
-        "size": 96624892,
-        "sha256": "c22b649697d3bd25572fc3189fd9a1c637aa829d30847bfb12b84ff248c54d87",
+        "name": "DroidDeck-main-88d6b70-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-88d6b70/DroidDeck-main-88d6b70-ludashi.apk",
+        "size": 96628988,
+        "sha256": "81648b87801c168d3141d20826354c6754cc15f8253fe471f92c38c18983a0ec",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "88d6b70881a9e53eee53ac5ee4d38ba711304788",
+      "title": "fix(ctl): reach the agent bridge by broadcast when the shell has no content command",
+      "summary": "Some Android builds, the Retroid Pocket Duo's among them, ship a shell without the content command. On those builds every droiddeckctl call fails at once with /system/bin/sh: content: inaccessible or not found, so state, guest, logs and the rest are unusable.",
+      "publishedAt": 1794200923000
+    },
     {
       "commit": "29823bb1bf4c8ee7b99fecb7e2d892dd177b007d",
       "title": "fix(steam): Linux-only tools keep their native platform",
@@ -155,12 +161,6 @@
       "title": "fix(proton): a Proton picked for a game in Steam is kept",
       "summary": "Picking Proton Experimental for a game in Steam's Properties > Compatibility was switched back to DroidDeck-Proton 11-12.3 at the next sync.",
       "publishedAt": 1794158053000
-    },
-    {
-      "commit": "a4f26799ab34cdec702ec7869ccb132eadc41bfa",
-      "title": "fix(mesa): Zink on PowerVR shows colour again instead of grayscale",
-      "summary": "On PowerVR (Pixel 10 Pro / Pro XL), Steam's interface and games are shown in grayscale since the move to the Ubuntu 26.04 runtime.",
-      "publishedAt": 1794157092000
     }
   ],
   "tests": [
