@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794246485103,
+  "generatedAt": 1794247117443,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-b837611",
-    "title": "fix(ctl): a full disk no longer crashes the app when an agent call cannot write its answer",
-    "summary": "The broadcast fallback from #2321 writes each answer to Android/data/<package>/files/agent-calls/. When that write failed, the exception escaped the receiver's thread and took the whole app down. On the Retroid Pocket Duo, with the disk full during a large download, this ended a running session:",
-    "commit": "b837611efe543336bc3848b4a73e1ac98be3c293",
+    "tag": "main-7c89c14",
+    "title": "fix(dual-screen): drop the Dashboard notifications page and its notification listener",
+    "summary": "Removes the bottom-screen Dashboard's Notifications page and the NotificationListenerService behind it.",
+    "commit": "7c89c14a84e1fa2a6d3ff0a1ce149a8c671cce4a",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794246321000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b837611",
+    "publishedAt": 1794247030000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7c89c14",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-b837611.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b837611/DroidDeck-main-b837611.apk",
-        "size": 96628988,
-        "sha256": "1430ae64c3f655de1ad30d8aea8def962d31f422779bf53e71877573e1e2f3a7",
+        "name": "DroidDeck-main-7c89c14.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c89c14/DroidDeck-main-7c89c14.apk",
+        "size": 96596220,
+        "sha256": "b0a2fe8aee9b4aefcd22634f4954b7c7cc201cb5adedd74e9b7d882cd8ea4d8c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-b837611-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b837611/DroidDeck-main-b837611-pubg.apk",
-        "size": 96628988,
-        "sha256": "31a98cdae1975179ed6e5ccc6277a1e5ad94e60beffe557603ef9b258d6bc474",
+        "name": "DroidDeck-main-7c89c14-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c89c14/DroidDeck-main-7c89c14-pubg.apk",
+        "size": 96596220,
+        "sha256": "cf6feccfb648b57cca58170f288f443052a13b902cc4ab024b3eefa6351644a4",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-b837611-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b837611/DroidDeck-main-b837611-antutu.apk",
-        "size": 96628988,
-        "sha256": "5ae71cbdb7cb7d451a1ff3a5cacdb25bcafccc6180edca2081be7addf86b5d99",
+        "name": "DroidDeck-main-7c89c14-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c89c14/DroidDeck-main-7c89c14-antutu.apk",
+        "size": 96596220,
+        "sha256": "ee658bd38f74cd2226cf0beeff5d59b2c867edc94895736af6a5cd8ca4685c6f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-b837611-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b837611/DroidDeck-main-b837611-ludashi.apk",
-        "size": 96628988,
-        "sha256": "9c4981ed9a7ea7515dbea130755b1147f4dad4cdca4f1385d48a4be4f49d63c9",
+        "name": "DroidDeck-main-7c89c14-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c89c14/DroidDeck-main-7c89c14-ludashi.apk",
+        "size": 96596220,
+        "sha256": "6f063d82cbfaa7e57ce0892889f4c9ceab20f8ebf868e824865683812cb09cda",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "7c89c14a84e1fa2a6d3ff0a1ce149a8c671cce4a",
+      "title": "fix(dual-screen): drop the Dashboard notifications page and its notification listener",
+      "summary": "Removes the bottom-screen Dashboard's Notifications page and the NotificationListenerService behind it.",
+      "publishedAt": 1794247030000
+    },
     {
       "commit": "b837611efe543336bc3848b4a73e1ac98be3c293",
       "title": "fix(ctl): a full disk no longer crashes the app when an agent call cannot write its answer",
@@ -155,64 +161,9 @@
       "title": "fix(session): give Steam a session bus so launches stop hanging at the install script",
       "summary": "Since 0.7.0 Steam games can get stuck on launch at \"Processing install script\" (also seen as a download that never finishes finalizing), and some games leave a black screen with \"Abort game\" after you quit.",
       "publishedAt": 1794175339000
-    },
-    {
-      "commit": "1760f008ae7a9238fca81ec15e99dd70dcacaa2e",
-      "title": "fix(desktop): Flatpak and Snap apps get the game GPU setting",
-      "summary": "The session sets TUDEBUG=sysmem for the Steam client and Chromium-based apps. Games get their own value through DROIDDECKGAMETUDEBUG, and since #2288 so do AppImage programs. Flatpak and Snap apps still inherited the session's sysmem, so emulators and other programs installed that way rendered through system memory on Adreno, which is slower in heavy scenes.",
-      "publishedAt": 1794167327000
     }
   ],
   "tests": [
-    {
-      "tag": "pr-2342",
-      "title": "fix(dual-screen): drop the Dashboard notifications page and its notification listener",
-      "summary": "Removes the bottom-screen Dashboard's Notifications page and the NotificationListenerService behind it.",
-      "commit": "e4f8e28bae8b81a77489f0f071da1874608b422e",
-      "pr": 2342,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794246396000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2342",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2342-e4f8e28.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2342/DroidDeck-PR.2342-e4f8e28.apk",
-          "size": 96596220,
-          "sha256": "0917ca84ea3ac2b52cbe11cdac86a5a2e3af58823add0fb917825f5139e9a6ba",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2342-e4f8e28-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2342/DroidDeck-PR.2342-e4f8e28-pubg.apk",
-          "size": 96596220,
-          "sha256": "dba4ec7573d1655316fe6fd360c9092cef10a54ca28cec4d6225ad9dcd54af68",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2342-e4f8e28-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2342/DroidDeck-PR.2342-e4f8e28-antutu.apk",
-          "size": 96596220,
-          "sha256": "1d106906dec140d1ea0f83d25f7aeba2a24a93df78a5f2b64ef5325ab2497379",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2342-e4f8e28-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2342/DroidDeck-PR.2342-e4f8e28-ludashi.apk",
-          "size": 96596220,
-          "sha256": "0fadfe88febf26be646d50bd614f901daacedb63c3aa798331f43a9917ccd0d6",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2339",
       "title": "fix(input): the controls editor shows the layout the game uses",
