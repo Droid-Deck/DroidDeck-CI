@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794259396704,
+  "generatedAt": 1794259547093,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2318",
+      "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
+      "summary": "A Windows installer run in an ARM64 prefix (for example the Visual C++ redistributables Steam's install-script evaluator starts) can replace a Wine builtin in system32 with an x64 copy. Every ARM64 process then fails with c000007b while loading ucrtbase.dll, wineboot.exe cannot start (c0000135), and the game exits within seconds. The prefix stays broken on every later launch.",
+      "commit": "170a3a8c945144b4e4de4251c8ceba68b2021aad",
+      "pr": 2318,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794259448000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2318",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2318-170a3a8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-170a3a8.apk",
+          "size": 96596220,
+          "sha256": "376bd49facccf8304f024d84ea8415869defabc8c8efe28134e845b2a9c8caf5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2318-170a3a8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-170a3a8-pubg.apk",
+          "size": 96596220,
+          "sha256": "4fac727ae68d551bb2ed4aa2a07691df29524a3007a39d539745dfadfe07524a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2318-170a3a8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-170a3a8-antutu.apk",
+          "size": 96596220,
+          "sha256": "6d559537ded2d28bf4e28a2fa89578effdc8a3613ac6dfe5aef32becd2bfe2fc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2318-170a3a8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-170a3a8-ludashi.apk",
+          "size": 96596220,
+          "sha256": "124d4e0b4ded1db408ff95fda2354b6c2e4dc1afdc5983333135592a019a1ded",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
@@ -1089,55 +1138,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2317/DroidDeck-PR.2317-582b08e-ludashi.apk",
           "size": 96538876,
           "sha256": "0c17719a4cc7ceecbc205c658ca2a6875fc3608c252d598ba394e16bdc215741",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2318",
-      "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
-      "summary": "A Windows installer run in an ARM64 prefix (for example the Visual C++ redistributables Steam's install-script evaluator starts) can replace a Wine builtin in system32 with an x64 copy. Every ARM64 process then fails with c000007b while loading ucrtbase.dll, wineboot.exe cannot start (c0000135), and the game exits within seconds. The prefix stays broken on every later launch.",
-      "commit": "8a73ba778534c75264d5e84ca43b3515218e3c72",
-      "pr": 2318,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794194545000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2318",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2318-8a73ba7.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-8a73ba7.apk",
-          "size": 96538876,
-          "sha256": "92b705ba98445c15ed8b42b52d4123faac14fc198bec6824d4e1474292a5c715",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2318-8a73ba7-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-8a73ba7-pubg.apk",
-          "size": 96538876,
-          "sha256": "740479950ca333cdbf822dc5f455bd129691854bc8184f6295c3b45388c18c61",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2318-8a73ba7-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-8a73ba7-antutu.apk",
-          "size": 96538876,
-          "sha256": "cd314e51c27a73c7168ae60876ed2bea4c575886008f914472dfc8c7497db5e4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2318-8a73ba7-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-8a73ba7-ludashi.apk",
-          "size": 96538876,
-          "sha256": "299d20827f35ac5eeb328ad778fc5833470010dbd962e9517cf880112c4ae2d3",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
