@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794245731784,
+  "generatedAt": 1794246410209,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-96a1246",
-    "title": "fix(session): stop re-compressing game memory every 30 s when the game reads it straight back",
-    "summary": "On devices with 13 GB of RAM or less, the low-memory page-out compresses idle game memory into zRAM when memory runs low. When available memory was below half the headroom (\"nearly out of memory\"), it skipped the read-back check that normally backs off when the game reads most of the last page-out straight back. A game that was actively using that memory then had it pushed out and read back every",
-    "commit": "96a12465e01f50b88a617f72b4fadacc34f7938f",
+    "tag": "main-b837611",
+    "title": "fix(ctl): a full disk no longer crashes the app when an agent call cannot write its answer",
+    "summary": "The broadcast fallback from #2321 writes each answer to Android/data/<package>/files/agent-calls/. When that write failed, the exception escaped the receiver's thread and took the whole app down. On the Retroid Pocket Duo, with the disk full during a large download, this ended a running session:",
+    "commit": "b837611efe543336bc3848b4a73e1ac98be3c293",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794208691000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-96a1246",
+    "publishedAt": 1794246321000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b837611",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-96a1246.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-96a1246/DroidDeck-main-96a1246.apk",
-        "size": 96624892,
-        "sha256": "b85940f9610c8a57125703cd47e5ab2303580c5005d1f067eb4377cb5d8ee321",
+        "name": "DroidDeck-main-b837611.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b837611/DroidDeck-main-b837611.apk",
+        "size": 96628988,
+        "sha256": "1430ae64c3f655de1ad30d8aea8def962d31f422779bf53e71877573e1e2f3a7",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-96a1246-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-96a1246/DroidDeck-main-96a1246-pubg.apk",
-        "size": 96624892,
-        "sha256": "4bad73c20d4d09848a98ca928fd9b9b86792589eedfb00aa47d281c2747ae41f",
+        "name": "DroidDeck-main-b837611-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b837611/DroidDeck-main-b837611-pubg.apk",
+        "size": 96628988,
+        "sha256": "31a98cdae1975179ed6e5ccc6277a1e5ad94e60beffe557603ef9b258d6bc474",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-96a1246-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-96a1246/DroidDeck-main-96a1246-antutu.apk",
-        "size": 96624892,
-        "sha256": "8a1768da2e7f94d7a9437821d8f9f4a8d7a27bce5ea6454fbfadfd89f970b55e",
+        "name": "DroidDeck-main-b837611-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b837611/DroidDeck-main-b837611-antutu.apk",
+        "size": 96628988,
+        "sha256": "5ae71cbdb7cb7d451a1ff3a5cacdb25bcafccc6180edca2081be7addf86b5d99",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-96a1246-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-96a1246/DroidDeck-main-96a1246-ludashi.apk",
-        "size": 96624892,
-        "sha256": "5400417d015480416a5c99d3aaf197082378708ce8b8d2c05d99664c1731895f",
+        "name": "DroidDeck-main-b837611-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b837611/DroidDeck-main-b837611-ludashi.apk",
+        "size": 96628988,
+        "sha256": "9c4981ed9a7ea7515dbea130755b1147f4dad4cdca4f1385d48a4be4f49d63c9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b837611efe543336bc3848b4a73e1ac98be3c293",
+      "title": "fix(ctl): a full disk no longer crashes the app when an agent call cannot write its answer",
+      "summary": "The broadcast fallback from #2321 writes each answer to Android/data/<package>/files/agent-calls/. When that write failed, the exception escaped the receiver's thread and took the whole app down. On the Retroid Pocket Duo, with the disk full during a large download, this ended a running session:",
+      "publishedAt": 1794246321000
+    },
     {
       "commit": "96a12465e01f50b88a617f72b4fadacc34f7938f",
       "title": "fix(session): stop re-compressing game memory every 30 s when the game reads it straight back",
@@ -155,12 +161,6 @@
       "title": "fix(desktop): Flatpak and Snap apps get the game GPU setting",
       "summary": "The session sets TUDEBUG=sysmem for the Steam client and Chromium-based apps. Games get their own value through DROIDDECKGAMETUDEBUG, and since #2288 so do AppImage programs. Flatpak and Snap apps still inherited the session's sysmem, so emulators and other programs installed that way rendered through system memory on Adreno, which is slower in heavy scenes.",
       "publishedAt": 1794167327000
-    },
-    {
-      "commit": "3bb279f635d5379b9259b59f2bfdef6cef26c0f8",
-      "title": "fix(appimage): emulators and other AppImage programs get the game GPU setting",
-      "summary": "Emulators and other AppImage programs ran with the session's TUDEBUG=sysmem, so Turnip rendered every pass through system memory instead of tile memory.",
-      "publishedAt": 1794159198000
     }
   ],
   "tests": [
