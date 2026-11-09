@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794194331456,
+  "generatedAt": 1794194615612,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2318",
+      "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
+      "summary": "A Windows installer run in an ARM64 prefix (for example the Visual C++ redistributables Steam's install-script evaluator starts) can replace a Wine builtin in system32 with an x64 copy. Every ARM64 process then fails with c000007b while loading ucrtbase.dll, wineboot.exe cannot start (c0000135), and the game exits within seconds. The prefix stays broken on every later launch.",
+      "commit": "8a73ba778534c75264d5e84ca43b3515218e3c72",
+      "pr": 2318,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794194545000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2318",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2318-8a73ba7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-8a73ba7.apk",
+          "size": 96538876,
+          "sha256": "92b705ba98445c15ed8b42b52d4123faac14fc198bec6824d4e1474292a5c715",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2318-8a73ba7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-8a73ba7-pubg.apk",
+          "size": 96538876,
+          "sha256": "740479950ca333cdbf822dc5f455bd129691854bc8184f6295c3b45388c18c61",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2318-8a73ba7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-8a73ba7-antutu.apk",
+          "size": 96538876,
+          "sha256": "cd314e51c27a73c7168ae60876ed2bea4c575886008f914472dfc8c7497db5e4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2318-8a73ba7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-8a73ba7-ludashi.apk",
+          "size": 96538876,
+          "sha256": "299d20827f35ac5eeb328ad778fc5833470010dbd962e9517cf880112c4ae2d3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2259",
       "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
       "summary": "Adds EA as a store. Games sign in, sync, download, update and launch without the EA app in the prefix.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-b835ecb-ludashi.apk",
           "size": 96710986,
           "sha256": "b48e3d994d9d372bca7b7dd44312f75cc14663933a92a26d6990e332486aa13b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2313",
-      "title": "fix(steam): Linux-only tools keep their native platform",
-      "summary": "Games that need the Proton EasyAntiCheat Runtime (app 1826330) never start: Steam stops the dependency install with Failed installing AppID 1826330 (Invalid platform) and the launch waits at DownloadingDepots 0%.",
-      "commit": "52926646fb88a5ddb2ef8a61a2ba55b2d43d60d3",
-      "pr": 2313,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794190042000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2313",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2313-5292664.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2313/DroidDeck-PR.2313-5292664.apk",
-          "size": 96624892,
-          "sha256": "2ce4bf1c17f1bc92cda6df3ec02115df1fbd2bc33ac09e759e15e2c7f9a013cb",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2313-5292664-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2313/DroidDeck-PR.2313-5292664-pubg.apk",
-          "size": 96624892,
-          "sha256": "a78dc5b80278e1d11c8a72a9facf164903ef12656030f4a4a9501934ffbf1717",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2313-5292664-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2313/DroidDeck-PR.2313-5292664-antutu.apk",
-          "size": 96624892,
-          "sha256": "8f4761e5b48a7483d0af178dac575b104e4026ee047d0e9205c7a1331e1b2c48",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2313-5292664-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2313/DroidDeck-PR.2313-5292664-ludashi.apk",
-          "size": 96624892,
-          "sha256": "ab357ac4b668c68feea3d576a3f8c782baf2d41a6f29d904efd75da3cd7c2019",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
