@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794267786800,
+  "generatedAt": 1794267953862,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-836340f",
-    "title": "fix(session): no endless loading screen after a game exits back to Steam",
-    "summary": "After a game exits cleanly back to Steam (return-after-game), the screen could stay black with only \"Menu\" and \"B force shutdown\" showing, which is the session loading overlay. SessionActivity.onSessionEnded() used any pending SessionState.relaunch intent on a clean exit and called recreate(). The intent could be stale: one left over from an earlier relaunch request that never stopped the se",
-    "commit": "836340f3a297af05a1b478e05177e22f2a545e09",
+    "tag": "main-6bcd431",
+    "title": "fix(session): wait for Steam readiness before launch",
+    "summary": "A game launched straight from DroidDeck could stall at Steam's launch screen. Steam logged LaunchApp waiting for user response to ShowInterstitials and never went further. The launch was handed to Steam on the first focus of Big Picture, before Steam's UI was ready to answer the launch's interstitial step. When that happened, the watchdog re-sent the same rungameid, which does nothing for an a",
+    "commit": "6bcd431ca6e05f74c028d4d5aacfbcc3e5ee3267",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794262696000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-836340f",
+    "publishedAt": 1794267828000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6bcd431",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-836340f.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-836340f/DroidDeck-main-836340f.apk",
-        "size": 96596220,
-        "sha256": "5a0b4ff0ae2bb2b35d74d461dbb8bba57f3b4a16ab8d8166585636ebd2ab9108",
+        "name": "DroidDeck-main-6bcd431.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bcd431/DroidDeck-main-6bcd431.apk",
+        "size": 96510204,
+        "sha256": "2c8e3435bcbf21133b80319c808a2c100c0d36a1f8f672423822517a3e8eb7ae",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-836340f-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-836340f/DroidDeck-main-836340f-pubg.apk",
-        "size": 96596220,
-        "sha256": "522f33d6fe68b92586f7615d95f94c98bc069472e1578fe627f9d320aace1676",
+        "name": "DroidDeck-main-6bcd431-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bcd431/DroidDeck-main-6bcd431-pubg.apk",
+        "size": 96510204,
+        "sha256": "fd15c0dd33d2471c385bee7c77300858d42360d060444d59e7b86dd3cf699a20",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-836340f-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-836340f/DroidDeck-main-836340f-antutu.apk",
-        "size": 96596220,
-        "sha256": "fd58a015fc933adc64c9de2d5535d7922fa23c4ff2062fc31b332e46a8c3ad56",
+        "name": "DroidDeck-main-6bcd431-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bcd431/DroidDeck-main-6bcd431-antutu.apk",
+        "size": 96510204,
+        "sha256": "b6a5e21c5ff93e1ad901692950a5c2dc335e47a2245c2254c2d3c43def8388da",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-836340f-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-836340f/DroidDeck-main-836340f-ludashi.apk",
-        "size": 96596220,
-        "sha256": "f1d33269c792db622480197e351fae92dbac934621da8746398a63059028b629",
+        "name": "DroidDeck-main-6bcd431-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6bcd431/DroidDeck-main-6bcd431-ludashi.apk",
+        "size": 96510204,
+        "sha256": "0cb6b3529bf2f895ceffa14a541d1c24d21a43360b9731c9e4cf9de75aa16090",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6bcd431ca6e05f74c028d4d5aacfbcc3e5ee3267",
+      "title": "fix(session): wait for Steam readiness before launch",
+      "summary": "A game launched straight from DroidDeck could stall at Steam's launch screen. Steam logged LaunchApp waiting for user response to ShowInterstitials and never went further. The launch was handed to Steam on the first focus of Big Picture, before Steam's UI was ready to answer the launch's interstitial step. When that happened, the watchdog re-sent the same rungameid, which does nothing for an a",
+      "publishedAt": 1794267828000
+    },
     {
       "commit": "836340f3a297af05a1b478e05177e22f2a545e09",
       "title": "fix(session): no endless loading screen after a game exits back to Steam",
@@ -155,12 +161,6 @@
       "title": "fix(gpu): skip system Vulkan pruning when the runtime pack is absent",
       "summary": "Ending a session on a device without the optional graphics runtime pack logged IOException: PowerVR graphics runtime is not installed from SystemVulkanDriver.pruneUnused, because pruning resolved the runtime directory, which throws when the pack is absent.",
       "publishedAt": 1794194174000
-    },
-    {
-      "commit": "bf95a40e3edce12eb00d439a8ea2b43e71e0feeb",
-      "title": "fix(ci): post new Discord notice for each PR build",
-      "summary": "Post a fresh signed test-build notice for each new PR commit, retire the previous notice, and include the latest commit subject.",
-      "publishedAt": 1794191292000
     }
   ],
   "tests": [
