@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794194615612,
+  "generatedAt": 1794194974010,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2317",
+      "title": "feat(steam): adopt game folders found in added libraries",
+      "summary": "A shared library copied from another client (for example game folders on an SD card) only shows its games in Steam once each game has an appmanifest<id>.acf. Users had to press Install on every game and pick that library before Steam adopted the files.",
+      "commit": "582b08e40bf978f4e650b639a7d03d0573c30742",
+      "pr": 2317,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794194887000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2317",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2317-582b08e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2317/DroidDeck-PR.2317-582b08e.apk",
+          "size": 96538876,
+          "sha256": "e735414b067945eb33470cd0bf455e1805934ed0b580a04f578dc3476ce92f81",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2317-582b08e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2317/DroidDeck-PR.2317-582b08e-pubg.apk",
+          "size": 96538876,
+          "sha256": "5f89f7cd15f00dffeebd8b43fe51754c2141958906afac5da45334be9b15a823",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2317-582b08e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2317/DroidDeck-PR.2317-582b08e-antutu.apk",
+          "size": 96538876,
+          "sha256": "132863fca6d2868b4f7dcf4ca714be7ff63c66ac285011f8bc40e64450865cd6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2317-582b08e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2317/DroidDeck-PR.2317-582b08e-ludashi.apk",
+          "size": 96538876,
+          "sha256": "0c17719a4cc7ceecbc205c658ca2a6875fc3608c252d598ba394e16bdc215741",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2318",
       "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
