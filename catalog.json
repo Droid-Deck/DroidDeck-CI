@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794262809097,
+  "generatedAt": 1794262910226,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-2300",
+      "title": "feat: fuck proot and proots mama",
+      "summary": "An opt-in native userland that runs the Linux side (session script, gamescope, Steam, Proton/FEX games, the Plasma desktop, the Terminal tab, the bottom-screen desktop, Flatpak sandboxes, store installers and the root helpers) directly on Android with no proot and no ptrace. Setting: Performance > \"Run without proot (experimental)\". Default off; the proot path is untouched. While it is on,",
+      "commit": "da30812c318d2355db2d48eb3cdf0b0be4729121",
+      "pr": 2300,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794262789000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2300",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2300-da30812.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-da30812.apk",
+          "size": 96719178,
+          "sha256": "5d650d97b639c5040c72b5c5ec37feb6acdb57f9b5123129974bc6a959c40db9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2300-da30812-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-da30812-pubg.apk",
+          "size": 96719178,
+          "sha256": "0444d46dcf01ec2e3460722be8b7eb23ba4900a9c9097bd79e4c9c723ade7c1e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2300-da30812-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-da30812-antutu.apk",
+          "size": 96719178,
+          "sha256": "02a29912e3b9655848790c4e6b8dacdf55cbec0578348334a0b137364b438e02",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2300-da30812-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-da30812-ludashi.apk",
+          "size": 96719178,
+          "sha256": "2af90c8019c400063ac80b4e43583266f23a214b4d6d4e0a41c9b3c4e201639e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2367",
+      "title": "fix(gog): installs no longer hang on Finishing for large games",
+      "summary": "After a GOG download finishes, the install stays on \"Finishing\u2026\" for a very long time on games with thousands of files (reported for Darkest Dungeon, 8196 files, and KOTOR). The download log ends with success=true and nothing follows.",
+      "commit": "e6c946c520fc36346f41a156e6a6b94dc407d6ef",
+      "pr": 2367,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794262753000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2367",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2367-e6c946c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-e6c946c.apk",
+          "size": 96600316,
+          "sha256": "e50144fc012bf4f70b570ba65af25a57453353559c708e81b23f6eabca1a4029",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2367-e6c946c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-e6c946c-pubg.apk",
+          "size": 96600316,
+          "sha256": "5aca29550c707645a5cddeeb965fb7c1c222c2f02926d241e86e5fae39aee56e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2367-e6c946c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-e6c946c-antutu.apk",
+          "size": 96600316,
+          "sha256": "403408f0514d008f988fa234659baecd2b032d7378913fd719fd1a19538a78df",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2367-e6c946c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-e6c946c-ludashi.apk",
+          "size": 96600316,
+          "sha256": "e487c2c68a3b9d675ee9c0142f8f4af879cb370aba1ca4db873351eb36442f86",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2372",
       "title": "fix(game-env): the VRAM cap also applies to D3D9 games",
       "summary": "The Performance menu's VRAM cap is passed to DXVK only as dxgi.maxDeviceMemory. DXVK's D3D9 frontend does not read the DXGI setting, so D3D9 games are still told the full Vulkan heap (about 8.7 GB on a 12 GB phone) through GetAvailableTextureMem, and can fill memory until Android closes the session.",
@@ -263,55 +361,6 @@
       }
     },
     {
-      "tag": "pr-2367",
-      "title": "fix(gog): installs no longer hang on Finishing for large games",
-      "summary": "After a GOG download finishes, the install stays on \"Finishing\u2026\" for a very long time on games with thousands of files (reported for Darkest Dungeon, 8196 files, and KOTOR). The download log ends with success=true and nothing follows.",
-      "commit": "606c5cbda18f3398e9d95779561eab40fd40c950",
-      "pr": 2367,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794259935000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2367",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2367-606c5cb.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-606c5cb.apk",
-          "size": 96596220,
-          "sha256": "7063e1b35a3991d0db745e4405ab637e8a60dda30d509cd883771fb0c74e8e90",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2367-606c5cb-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-606c5cb-pubg.apk",
-          "size": 96596220,
-          "sha256": "6dfe4d132e99714ebc06fd77d1dbbd0e89b3831f123fcf8470ef7a4625cd86d2",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2367-606c5cb-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-606c5cb-antutu.apk",
-          "size": 96596220,
-          "sha256": "15ddbf706be2f3bcfeeefb9726e5d2c738983871692fb5c85c8abcccaa43ffbb",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2367-606c5cb-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2367/DroidDeck-PR.2367-606c5cb-ludashi.apk",
-          "size": 96596220,
-          "sha256": "40d5b09242039639056a07bbe09e237a64ac5047ebedadba7c75a74fe69d416b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-2318",
       "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
       "summary": "A Windows installer run in an ARM64 prefix (for example the Visual C++ redistributables Steam's install-script evaluator starts) can replace a Wine builtin in system32 with an x64 copy. Every ARM64 process then fails with c000007b while loading ucrtbase.dll, wineboot.exe cannot start (c0000135), and the game exits within seconds. The prefix stays broken on every later launch.",
@@ -354,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-170a3a8-ludashi.apk",
           "size": 96596220,
           "sha256": "124d4e0b4ded1db408ff95fda2354b6c2e4dc1afdc5983333135592a019a1ded",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2300",
-      "title": "feat: fuck proot and proots mama",
-      "summary": "An opt-in native userland that runs the Linux side (session script, gamescope, Steam, Proton/FEX games, the Plasma desktop, the Terminal tab, the bottom-screen desktop, Flatpak sandboxes, store installers and the root helpers) directly on Android with no proot and no ptrace. Setting: Performance > \"Run without proot (experimental)\". Default off; the proot path is untouched. While it is on,",
-      "commit": "ae0ab9eabecfc68f232f321510568e0cb23a7930",
-      "pr": 2300,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794259272000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2300",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2300-ae0ab9e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-ae0ab9e.apk",
-          "size": 96715082,
-          "sha256": "1a634c47561e26e70cd27dc77ba2566abe21f72b159059479d555adad2e28d8f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2300-ae0ab9e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-ae0ab9e-pubg.apk",
-          "size": 96715082,
-          "sha256": "e58f45b842d5c6ef195762b73cddef537933345658562b27ed75f1d3507b4cb3",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2300-ae0ab9e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-ae0ab9e-antutu.apk",
-          "size": 96715082,
-          "sha256": "6626506975909be97895194c92535086d8cefaae096bbb5db4fb00ac52dcbc94",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2300-ae0ab9e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-ae0ab9e-ludashi.apk",
-          "size": 96715082,
-          "sha256": "5721d89a035418e52746693d0f3fc64d91ed275f937a2739af356fe68c0a9afc",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
