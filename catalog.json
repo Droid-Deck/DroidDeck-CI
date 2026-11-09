@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794192940326,
+  "generatedAt": 1794194226390,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-bf95a40",
-    "title": "fix(ci): post new Discord notice for each PR build",
-    "summary": "Post a fresh signed test-build notice for each new PR commit, retire the previous notice, and include the latest commit subject.",
-    "commit": "bf95a40e3edce12eb00d439a8ea2b43e71e0feeb",
+    "tag": "main-92a7124",
+    "title": "fix(gpu): skip system Vulkan pruning when the runtime pack is absent",
+    "summary": "Ending a session on a device without the optional graphics runtime pack logged IOException: PowerVR graphics runtime is not installed from SystemVulkanDriver.pruneUnused, because pruning resolved the runtime directory, which throws when the pack is absent.",
+    "commit": "92a71245890943e822367cba98d336725098725f",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794191292000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bf95a40",
+    "publishedAt": 1794194174000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-92a7124",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-bf95a40.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf95a40/DroidDeck-main-bf95a40.apk",
+        "name": "DroidDeck-main-92a7124.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92a7124/DroidDeck-main-92a7124.apk",
         "size": 96624892,
-        "sha256": "cd99b8e8c8bc8f92eded5db7f0fdfcb80e5427e947977c393322614d7d9e8d0e",
+        "sha256": "35234b3c498b016bb3c0db14d2907a99b751696a9d0ecd538074cffb5f5776b9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-bf95a40-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf95a40/DroidDeck-main-bf95a40-pubg.apk",
+        "name": "DroidDeck-main-92a7124-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92a7124/DroidDeck-main-92a7124-pubg.apk",
         "size": 96624892,
-        "sha256": "43ab407f3db6e927d915a4ad2d682d3e3825be8614e3e2bbd494f7ad26fe09d0",
+        "sha256": "330a4a907cd4ece8b9527ef574a209b2dfd20394077ee94888157ea0d8e13ce1",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-bf95a40-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf95a40/DroidDeck-main-bf95a40-antutu.apk",
+        "name": "DroidDeck-main-92a7124-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92a7124/DroidDeck-main-92a7124-antutu.apk",
         "size": 96624892,
-        "sha256": "9a84a29be3f9914a65dec2abdd56a9603126cff7b20114fc47155cff6dec665f",
+        "sha256": "565baaa44f83b2d0f6090c4d4b1c85a212c1591821a5845b6f69f8875660e99c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-bf95a40-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bf95a40/DroidDeck-main-bf95a40-ludashi.apk",
+        "name": "DroidDeck-main-92a7124-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92a7124/DroidDeck-main-92a7124-ludashi.apk",
         "size": 96624892,
-        "sha256": "43003a6ee2eefd3b19d99f1b21460f75e8d46195142f7028ece689a2558560f3",
+        "sha256": "3baeffad32cf4d08bb42bd8ebbaec7cf9ada1b0a4b3900b240a5913bace316c6",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "92a71245890943e822367cba98d336725098725f",
+      "title": "fix(gpu): skip system Vulkan pruning when the runtime pack is absent",
+      "summary": "Ending a session on a device without the optional graphics runtime pack logged IOException: PowerVR graphics runtime is not installed from SystemVulkanDriver.pruneUnused, because pruning resolved the runtime directory, which throws when the pack is absent.",
+      "publishedAt": 1794194174000
+    },
     {
       "commit": "bf95a40e3edce12eb00d439a8ea2b43e71e0feeb",
       "title": "fix(ci): post new Discord notice for each PR build",
@@ -155,12 +161,6 @@
       "title": "fix(gamescope): taps reach dialogs and windows away from the screen origin",
       "summary": "Fixes taps doing nothing on a program's pop-up dialog (and in windows that don't sit at the X screen's top-left corner), so the question could only be answered with a physical keyboard.",
       "publishedAt": 1794153250000
-    },
-    {
-      "commit": "2bd7df5e1ad3aed25a5c9ddede1120a7c2f0b104",
-      "title": "chore: bump version to 0.7.0 (18)",
-      "summary": "Bumps versionName to 0.7.0 and versionCode to 18 for the 0.7.0 release.",
-      "publishedAt": 1794149074000
     }
   ],
   "tests": [
