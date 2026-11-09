@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794255116212,
+  "generatedAt": 1794255205846,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-7c89c14",
-    "title": "fix(dual-screen): drop the Dashboard notifications page and its notification listener",
-    "summary": "Removes the bottom-screen Dashboard's Notifications page and the NotificationListenerService behind it.",
-    "commit": "7c89c14a84e1fa2a6d3ff0a1ce149a8c671cce4a",
+    "tag": "main-75a0230",
+    "title": "fix(input): Auto relative mouse stays off for direct touch without a mouse",
+    "summary": "\"Relative mouse: Auto\" sends gamescopectl relativemouse 0, which leaves the decision to gamescope's own rule: once a game hides the system cursor and confines the pointer, gamescope turns host pointer motion into relative movement. With direct touch and no hardware mouse, each tap then arrives as a small delta instead of a jump to the touched spot, so the pointer cannot be moved or dragged in g",
+    "commit": "75a0230304d8f40478ef7b05095e109d504bcf4d",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794247030000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7c89c14",
+    "publishedAt": 1794255079000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-75a0230",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-7c89c14.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c89c14/DroidDeck-main-7c89c14.apk",
+        "name": "DroidDeck-main-75a0230.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75a0230/DroidDeck-main-75a0230.apk",
         "size": 96596220,
-        "sha256": "b0a2fe8aee9b4aefcd22634f4954b7c7cc201cb5adedd74e9b7d882cd8ea4d8c",
+        "sha256": "733ef8309f4a6c023066ec5d01587601dbe98d91854d57f2e9848570696fc8d6",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-7c89c14-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c89c14/DroidDeck-main-7c89c14-pubg.apk",
+        "name": "DroidDeck-main-75a0230-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75a0230/DroidDeck-main-75a0230-pubg.apk",
         "size": 96596220,
-        "sha256": "cf6feccfb648b57cca58170f288f443052a13b902cc4ab024b3eefa6351644a4",
+        "sha256": "779637e4be7a27c5703be39ba6a83f96d502891a09460698e725e4fb78a5d272",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-7c89c14-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c89c14/DroidDeck-main-7c89c14-antutu.apk",
+        "name": "DroidDeck-main-75a0230-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75a0230/DroidDeck-main-75a0230-antutu.apk",
         "size": 96596220,
-        "sha256": "ee658bd38f74cd2226cf0beeff5d59b2c867edc94895736af6a5cd8ca4685c6f",
+        "sha256": "f73e3afc65f0fa30fc764bd2f1cc153f8af91dec247672abbff5e64fb623eeee",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-7c89c14-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7c89c14/DroidDeck-main-7c89c14-ludashi.apk",
+        "name": "DroidDeck-main-75a0230-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-75a0230/DroidDeck-main-75a0230-ludashi.apk",
         "size": 96596220,
-        "sha256": "6f063d82cbfaa7e57ce0892889f4c9ceab20f8ebf868e824865683812cb09cda",
+        "sha256": "465a57a161c7d2c32ae033cf482c356b4785fea2e002d1f177130a2285e461d9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "75a0230304d8f40478ef7b05095e109d504bcf4d",
+      "title": "fix(input): Auto relative mouse stays off for direct touch without a mouse",
+      "summary": "\"Relative mouse: Auto\" sends gamescopectl relativemouse 0, which leaves the decision to gamescope's own rule: once a game hides the system cursor and confines the pointer, gamescope turns host pointer motion into relative movement. With direct touch and no hardware mouse, each tap then arrives as a small delta instead of a jump to the touched spot, so the pointer cannot be moved or dragged in g",
+      "publishedAt": 1794255079000
+    },
     {
       "commit": "7c89c14a84e1fa2a6d3ff0a1ce149a8c671cce4a",
       "title": "fix(dual-screen): drop the Dashboard notifications page and its notification listener",
@@ -155,12 +161,6 @@
       "title": "fix(gog): install scripts' support files reach the prefix",
       "summary": "A GOG game installed through DroidDeck started as its base game instead of the edition that was installed: the mod's files were on disk, but its plugin list and INI files never reached the prefix.",
       "publishedAt": 1794182282000
-    },
-    {
-      "commit": "a7c10e3f5164632fd352850ec4ccac40280dc9a3",
-      "title": "fix(session): give Steam a session bus so launches stop hanging at the install script",
-      "summary": "Since 0.7.0 Steam games can get stuck on launch at \"Processing install script\" (also seen as a download that never finishes finalizing), and some games leave a black screen with \"Abort game\" after you quit.",
-      "publishedAt": 1794175339000
     }
   ],
   "tests": [
