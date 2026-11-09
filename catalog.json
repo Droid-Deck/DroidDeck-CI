@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794194974010,
+  "generatedAt": 1794195269344,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-92a7124",
-    "title": "fix(gpu): skip system Vulkan pruning when the runtime pack is absent",
-    "summary": "Ending a session on a device without the optional graphics runtime pack logged IOException: PowerVR graphics runtime is not installed from SystemVulkanDriver.pruneUnused, because pruning resolved the runtime directory, which throws when the pack is absent.",
-    "commit": "92a71245890943e822367cba98d336725098725f",
+    "tag": "main-29823bb",
+    "title": "fix(steam): Linux-only tools keep their native platform",
+    "summary": "Games that need the Proton EasyAntiCheat Runtime (app 1826330) never start: Steam stops the dependency install with Failed installing AppID 1826330 (Invalid platform) and the launch waits at DownloadingDepots 0%.",
+    "commit": "29823bb1bf4c8ee7b99fecb7e2d892dd177b007d",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794194174000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-92a7124",
+    "publishedAt": 1794195218000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-29823bb",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-92a7124.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92a7124/DroidDeck-main-92a7124.apk",
+        "name": "DroidDeck-main-29823bb.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-29823bb/DroidDeck-main-29823bb.apk",
         "size": 96624892,
-        "sha256": "35234b3c498b016bb3c0db14d2907a99b751696a9d0ecd538074cffb5f5776b9",
+        "sha256": "b7a6771cfae81c25263e731d66bbdaf7cdb0e8a1c9a1af98219318c0ac3bfe38",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-92a7124-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92a7124/DroidDeck-main-92a7124-pubg.apk",
+        "name": "DroidDeck-main-29823bb-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-29823bb/DroidDeck-main-29823bb-pubg.apk",
         "size": 96624892,
-        "sha256": "330a4a907cd4ece8b9527ef574a209b2dfd20394077ee94888157ea0d8e13ce1",
+        "sha256": "9662db8ba3bec7b005e0b1c8e548b4f49745561b11ea4b243fe0d301f4f6f224",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-92a7124-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92a7124/DroidDeck-main-92a7124-antutu.apk",
+        "name": "DroidDeck-main-29823bb-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-29823bb/DroidDeck-main-29823bb-antutu.apk",
         "size": 96624892,
-        "sha256": "565baaa44f83b2d0f6090c4d4b1c85a212c1591821a5845b6f69f8875660e99c",
+        "sha256": "efeff0d38428a6d0c6baf69ec8d082fe1a7fb6bbe1747c393de9d399bfef1a2f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-92a7124-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-92a7124/DroidDeck-main-92a7124-ludashi.apk",
+        "name": "DroidDeck-main-29823bb-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-29823bb/DroidDeck-main-29823bb-ludashi.apk",
         "size": 96624892,
-        "sha256": "3baeffad32cf4d08bb42bd8ebbaec7cf9ada1b0a4b3900b240a5913bace316c6",
+        "sha256": "c22b649697d3bd25572fc3189fd9a1c637aa829d30847bfb12b84ff248c54d87",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "29823bb1bf4c8ee7b99fecb7e2d892dd177b007d",
+      "title": "fix(steam): Linux-only tools keep their native platform",
+      "summary": "Games that need the Proton EasyAntiCheat Runtime (app 1826330) never start: Steam stops the dependency install with Failed installing AppID 1826330 (Invalid platform) and the launch waits at DownloadingDepots 0%.",
+      "publishedAt": 1794195218000
+    },
     {
       "commit": "92a71245890943e822367cba98d336725098725f",
       "title": "fix(gpu): skip system Vulkan pruning when the runtime pack is absent",
@@ -155,12 +161,6 @@
       "title": "fix(mesa): Zink on PowerVR shows colour again instead of grayscale",
       "summary": "On PowerVR (Pixel 10 Pro / Pro XL), Steam's interface and games are shown in grayscale since the move to the Ubuntu 26.04 runtime.",
       "publishedAt": 1794157092000
-    },
-    {
-      "commit": "2e70b8ed73f434daaacb351d9f43d61c0de083a6",
-      "title": "fix(gamescope): taps reach dialogs and windows away from the screen origin",
-      "summary": "Fixes taps doing nothing on a program's pop-up dialog (and in windows that don't sit at the X screen's top-left corner), so the question could only be answered with a physical keyboard.",
-      "publishedAt": 1794153250000
     }
   ],
   "tests": [
