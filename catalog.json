@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794261389911,
+  "generatedAt": 1794261477060,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2372",
+      "title": "fix(game-env): the VRAM cap also applies to D3D9 games",
+      "summary": "The Performance menu's VRAM cap is passed to DXVK only as dxgi.maxDeviceMemory. DXVK's D3D9 frontend does not read the DXGI setting, so D3D9 games are still told the full Vulkan heap (about 8.7 GB on a 12 GB phone) through GetAvailableTextureMem, and can fill memory until Android closes the session.",
+      "commit": "04123072cd3d31c1064aa20a58b8c77eb5ffb40b",
+      "pr": 2372,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794261395000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2372",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2372-0412307.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2372/DroidDeck-PR.2372-0412307.apk",
+          "size": 96596220,
+          "sha256": "a1e29774158a311ca885466838c1abbbe336b6d0949736091eae54ed595681ba",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2372-0412307-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2372/DroidDeck-PR.2372-0412307-pubg.apk",
+          "size": 96596220,
+          "sha256": "5735152883e6e3fe9d9976c7ffb00eed6eacb43a3fa9cd917d40ffa01a98b926",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2372-0412307-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2372/DroidDeck-PR.2372-0412307-antutu.apk",
+          "size": 96596220,
+          "sha256": "533fcb2b0c31ff781bdb7264568d5f0434d0733979db071bc75e0d25997651b9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2372-0412307-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2372/DroidDeck-PR.2372-0412307-ludashi.apk",
+          "size": 96596220,
+          "sha256": "89d0e124e88befa9404e3bf3e71d5ee7c4bd50aeeb60bba4726fa04ba8f41d5b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2369",
       "title": "fix(input): a controller that disconnects mid-event no longer closes the app",
