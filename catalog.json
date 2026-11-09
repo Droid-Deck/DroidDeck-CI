@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794190120132,
+  "generatedAt": 1794190280751,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2259",
+      "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
+      "summary": "Adds EA as a store. Games sign in, sync, download, update and launch without the EA app in the prefix.",
+      "commit": "d27144c13d27341444f274006c103a093d40bcd3",
+      "pr": 2259,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794190223000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2259",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2259-d27144c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-d27144c.apk",
+          "size": 96740113,
+          "sha256": "8c18df03f244828acca03dce7b302371f3f79cfcf26bd0f90f262300096b2464",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2259-d27144c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-d27144c-pubg.apk",
+          "size": 96740113,
+          "sha256": "027f9deefe2445b7738dbef1ee0b9d80e8c119bc65332c85bd04b692c974310d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2259-d27144c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-d27144c-antutu.apk",
+          "size": 96740113,
+          "sha256": "9966807fd99c78e3d1e99fb988628d95caa3e7992d3d57aaee311c19bc44b82f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2259-d27144c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-d27144c-ludashi.apk",
+          "size": 96740113,
+          "sha256": "b352347f92b95bde1dc88fda8e9996f3a4e5fdacd3a42ccc2d8d3d7cd082737b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2313",
       "title": "fix(steam): Linux-only tools keep their native platform",
       "summary": "Games that need the Proton EasyAntiCheat Runtime (app 1826330) never start: Steam stops the dependency install with Failed installing AppID 1826330 (Invalid platform) and the launch waits at DownloadingDepots 0%.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-f2adff9-ludashi.apk",
           "size": 96629066,
           "sha256": "ee9963419bc99d52f8c1562cf0a45f7992e309815c8a34bd470e7d2d82927d3c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2259",
-      "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
-      "summary": "Adds EA as a store. Games sign in, sync, download, update and launch without the EA app in the prefix.",
-      "commit": "c3ddc3f69c3ddffc8713539652ab6da17ac14862",
-      "pr": 2259,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794188889000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2259",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2259-c3ddc3f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-c3ddc3f.apk",
-          "size": 96736017,
-          "sha256": "6626bdde4922529a50074922373e824db35bf84de72bda45656a20ce90857eb8",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2259-c3ddc3f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-c3ddc3f-pubg.apk",
-          "size": 96736017,
-          "sha256": "a3b4bc7e27d9da8cc4deb0aa7f2b65d176d5b11a5dd7ee23920f21c9a1965a75",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2259-c3ddc3f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-c3ddc3f-antutu.apk",
-          "size": 96736017,
-          "sha256": "b14913fb8ba5875b88ebd0576908545cba733d45f23e32e50d3a81bd80776be9",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2259-c3ddc3f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2259/DroidDeck-PR.2259-c3ddc3f-ludashi.apk",
-          "size": 96736017,
-          "sha256": "596e0b19ccfc7049d399ac4c6a659c87172c5836295f01fdbc2f73770b605b55",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
