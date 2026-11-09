@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794258276564,
+  "generatedAt": 1794259025620,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2366",
+      "title": "fix(dual-screen): the bottom-screen terminal keeps its shell when another app covers that screen",
+      "summary": "Opening any app on the bottom screen dismisses SecondScreenPresentation, and its dismiss listener closed the terminal panel, killing its shell and everything started from it. A sign-in opened in Android's browser on that screen (Claude Code's OAuth, gh auth login) killed the program waiting for the browser's localhost redirect, so the browser got \"connection refused\".",
+      "commit": "3b35bd7b669c0f2827a5ff919b02129be31bd82f",
+      "pr": 2366,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794258921000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2366",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2366-3b35bd7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2366/DroidDeck-PR.2366-3b35bd7.apk",
+          "size": 96596220,
+          "sha256": "c5489e86b5a321f9c529df5292ea29a97e4cee5ffaf854b86b2ab4af28a0c305",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2366-3b35bd7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2366/DroidDeck-PR.2366-3b35bd7-pubg.apk",
+          "size": 96596220,
+          "sha256": "8e6909d024211ae9758d2e9dbc05f556fbe3dfa6a3bf9b874184110e7df51604",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2366-3b35bd7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2366/DroidDeck-PR.2366-3b35bd7-antutu.apk",
+          "size": 96596220,
+          "sha256": "bfc03161aa637749d20e2edc64c9fbd68c2533d02e0ebd246a83182ee82ceaaa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2366-3b35bd7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2366/DroidDeck-PR.2366-3b35bd7-ludashi.apk",
+          "size": 96596220,
+          "sha256": "633cbb47856ba094eff2968f124034e53db59ebe19c4a6faa83ab751e79b8e19",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2361",
       "title": "fix(input): fakeinput no longer aborts programs whose allocator calls a hooked function at startup",
