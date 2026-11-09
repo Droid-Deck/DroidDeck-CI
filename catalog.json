@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794266925420,
+  "generatedAt": 1794266991539,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2300",
+      "title": "feat: fuck proot and proots mama",
+      "summary": "An opt-in native userland that runs the Linux side (session script, gamescope, Steam, Proton/FEX games, the Plasma desktop, the Terminal tab, the bottom-screen desktop, Flatpak sandboxes, store installers and the root helpers) directly on Android with no proot and no ptrace. Setting: Performance > \"Run without proot (experimental)\". Default off; the proot path is untouched. While it is on,",
+      "commit": "426c24bafa52b3f52cfd38f980932bcf858803e0",
+      "pr": 2300,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794266918000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2300",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2300-426c24b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-426c24b.apk",
+          "size": 96719178,
+          "sha256": "40f28e4c123d008607392abb4c0c8bfb1f8260d3814028fe6ff3370e835dda35",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2300-426c24b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-426c24b-pubg.apk",
+          "size": 96719178,
+          "sha256": "a580038168db66dcf7eec37cf08dde111f433ac1d1eca0abbbe699421da3f4d1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2300-426c24b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-426c24b-antutu.apk",
+          "size": 96719178,
+          "sha256": "b2aa67f98d9bcdf9c8afcf7ff6dd74fd42d19ea829ef57350f341a49fdc16376",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2300-426c24b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-426c24b-ludashi.apk",
+          "size": 96719178,
+          "sha256": "b7414bd3524f58f3f7e95e36fbc0ce3000c4f921c789a9b878b21ff7002761a4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2377",
       "title": "perf(proot): faster SD card installs and uninstalls on FUSE-backed libraries",
       "summary": "Installing, verifying and uninstalling games on an SD card served through Android's MediaProvider FUSE is very slow. The FUSE daemon re-resolves every path component on every operation (its entry cache timeout is effectively zero), and the proot fast path passed full absolute host paths for every lstat, open, rename and unlink. A Steam file 11 folders deep paid for 11+ lookups per call.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-774abb7-ludashi.apk",
           "size": 96608508,
           "sha256": "2650f06d5a861f9aa908e97c87a5e197fa39e94ceb308b4506bb0d5e027d5729",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2300",
-      "title": "feat: fuck proot and proots mama",
-      "summary": "An opt-in native userland that runs the Linux side (session script, gamescope, Steam, Proton/FEX games, the Plasma desktop, the Terminal tab, the bottom-screen desktop, Flatpak sandboxes, store installers and the root helpers) directly on Android with no proot and no ptrace. Setting: Performance > \"Run without proot (experimental)\". Default off; the proot path is untouched. While it is on,",
-      "commit": "27e45c744dbfc2a341e8142cb869fcf178a52b7c",
-      "pr": 2300,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794263781000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2300",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2300-27e45c7.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-27e45c7.apk",
-          "size": 96719178,
-          "sha256": "bfed938f33d066d725269bc95ded5da1c6cb40b301783925f367c43efa2aaa49",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2300-27e45c7-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-27e45c7-pubg.apk",
-          "size": 96719178,
-          "sha256": "3adf58040ad765c4bab0626eeadfed727e19d037976494eee5e48c9c55d61a06",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2300-27e45c7-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-27e45c7-antutu.apk",
-          "size": 96719178,
-          "sha256": "6f9fbd6c550283257b2a3737c38866c7505f91c56cff54545a6e91d51d945d67",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2300-27e45c7-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2300/DroidDeck-PR.2300-27e45c7-ludashi.apk",
-          "size": 96719178,
-          "sha256": "1cbf742f35052b2011cc327461a7e6e6d65d3ece2f4e72ce18031e9a52d4d902",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
