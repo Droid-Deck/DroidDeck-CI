@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794243685570,
+  "generatedAt": 1794245731784,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-2345",
-      "title": "fix(hud): steady frame graph on the bottom screen dashboard",
-      "summary": "The frame-time graph on the bottom screen's In-game stats card reshaped itself on every redraw: spikes jumped around, changed height and appeared or vanished between redraws, even for frames already on screen.",
-      "commit": "bc9203eb79f402a73d4ba01b3a56d42340e8bb7e",
-      "pr": 2345,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794243576000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2345",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2345-bc9203e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2345/DroidDeck-PR.2345-bc9203e.apk",
-          "size": 96628988,
-          "sha256": "c0837032342c5b525747acde9325ffc3dee6476100bec2b499a9a84155f8219d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2345-bc9203e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2345/DroidDeck-PR.2345-bc9203e-pubg.apk",
-          "size": 96628988,
-          "sha256": "6ad638df9e8216acff01ed27e2219b48608516125ef10dc0184791bfefc96013",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2345-bc9203e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2345/DroidDeck-PR.2345-bc9203e-antutu.apk",
-          "size": 96628988,
-          "sha256": "9109a2458f5aea192961fcc3a5d4a7d36203ecca039bdbcfc2c3d530666e94f9",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2345-bc9203e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2345/DroidDeck-PR.2345-bc9203e-ludashi.apk",
-          "size": 96628988,
-          "sha256": "65d1ba3a498c9c77ca326772a827fbb2b708f4252a8e4fd11b2e799ed333e4df",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2339",
       "title": "fix(input): the controls editor shows the layout the game uses",
@@ -501,55 +452,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2333/DroidDeck-PR.2333-cd10df0-ludashi.apk",
           "size": 96628988,
           "sha256": "af790a2833fe101b103ceef37bcb65270beb7e5bc4ed053a43f95d1afba90e50",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2325",
-      "title": "fix(ctl): a full disk no longer crashes the app when an agent call cannot write its answer",
-      "summary": "The broadcast fallback from #2321 writes each answer to Android/data/<package>/files/agent-calls/. When that write failed, the exception escaped the receiver's thread and took the whole app down. On the Retroid Pocket Duo, with the disk full during a large download, this ended a running session:",
-      "commit": "98428c2e3a8c0479fc6d601e7f07e34b0e965021",
-      "pr": 2325,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794210290000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2325",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2325-98428c2.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2325/DroidDeck-PR.2325-98428c2.apk",
-          "size": 96628988,
-          "sha256": "0976bc13ce683d6cafb7b834a8f48facdb1c6e2b6e2a0965f35f69bbc94a89b2",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2325-98428c2-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2325/DroidDeck-PR.2325-98428c2-pubg.apk",
-          "size": 96628988,
-          "sha256": "ca49ff1ab9858d8e8808a8434b88ad893019706b4865871163a92e7578cc340a",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2325-98428c2-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2325/DroidDeck-PR.2325-98428c2-antutu.apk",
-          "size": 96628988,
-          "sha256": "4ce7974560255e6672bca3729539c9b6340330cd33962e998ddc5e65c5ed8f19",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2325-98428c2-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2325/DroidDeck-PR.2325-98428c2-ludashi.apk",
-          "size": 96628988,
-          "sha256": "185bf28d5c4edb299fd749606652509b54dcbee9b398c1fa35d97b8a93b0f1bd",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
