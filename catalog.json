@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794343586102,
+  "generatedAt": 1794344462473,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2436",
+      "title": "fix: ship the Ubisoft launcher service as an add-on pack, scan only the standard APK on main",
+      "summary": "droiddeck-upc.exe (new in #2322) is the only new PE in the main APK and the likely source of the new Bkav and Elastic ML flags on main. It now ships as the ubisoft add-on pack: built by tools/packs/build.sh, published by publish-packs, fetched when a Ubisoft account is signed in, and staged into the guest rootfs by SessionFiles from the installed pack. The APK no longer contains it.",
+      "commit": "7c9132b9ecb066966520ebc0eeed105fed80e22a",
+      "pr": 2436,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794344342000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2436",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2436-7c9132b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2436/DroidDeck-PR.2436-7c9132b.apk",
+          "size": 96965567,
+          "sha256": "bfb41c0ebc133222dc3212303205fda91adab3f16acedfb1e20f6adf990258a5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2436-7c9132b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2436/DroidDeck-PR.2436-7c9132b-pubg.apk",
+          "size": 96965567,
+          "sha256": "60cb8c4950ac2fbdf3bb888360b376a5c37a49fa4dce72c4dee028cbab34cdf9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2436-7c9132b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2436/DroidDeck-PR.2436-7c9132b-antutu.apk",
+          "size": 96965567,
+          "sha256": "76e58b35b51ecbf7c136928a7c17e02a628457b908146fcb1446ebdd0b247a45",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2436-7c9132b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2436/DroidDeck-PR.2436-7c9132b-ludashi.apk",
+          "size": 96965567,
+          "sha256": "d61504ae95f060fba5106c838a672c589cb91f86137f727f4081e5da069151ed",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2309",
       "title": "feat: emulate LSE atomics so the Steam client starts on ARMv8.0 CPUs",
