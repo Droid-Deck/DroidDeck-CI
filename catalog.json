@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794342166527,
+  "generatedAt": 1794342502288,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2309",
+      "title": "feat: emulate LSE atomics so the Steam client starts on ARMv8.0 CPUs",
+      "summary": "Valve's arm64 Steam client builds after April 15 2026 use ARMv8.1 LSE atomics (ldaddal, casal, swp), so the client dies with SIGILL and a black screen on ARMv8.0 CPUs: Cortex-A53/A57/A72/A73, e.g. the Snapdragon 685 in #380. Valve has not answered ValveSoftware/steam-for-linux#13288. Pinning an old client doesn't stick because it self-updates.",
+      "commit": "e87eebfaec6de856d9902de574d308b7b8162e7a",
+      "pr": 2309,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794342388000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2309",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2309-e87eebf.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2309/DroidDeck-PR.2309-e87eebf.apk",
+          "size": 97166483,
+          "sha256": "5aefd9c57e0fdc42d8d51a92ddf3127c1386a958130257eae429a0ac1f641bac",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2309-e87eebf-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2309/DroidDeck-PR.2309-e87eebf-pubg.apk",
+          "size": 97166483,
+          "sha256": "e460df4a790f804969c32d347ef6fa7761b9879c41f324262037b51181c9243a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2309-e87eebf-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2309/DroidDeck-PR.2309-e87eebf-antutu.apk",
+          "size": 97166483,
+          "sha256": "ec0bdccfe997c93ad2bbcb80adb45f3ebbbecaa2ae75d98315680c98edbbb2f9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2309-e87eebf-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2309/DroidDeck-PR.2309-e87eebf-ludashi.apk",
+          "size": 97166483,
+          "sha256": "0297c2faaee7acf8a0bea703dec32e0fd75746719251b358a7efb59584b0175d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2430",
       "title": "fix(components): install the real ARM64 Visual C++ runtime instead of registry entries",
@@ -1432,55 +1481,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2317/DroidDeck-PR.2317-582b08e-ludashi.apk",
           "size": 96538876,
           "sha256": "0c17719a4cc7ceecbc205c658ca2a6875fc3608c252d598ba394e16bdc215741",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2309",
-      "title": "feat: emulate LSE atomics so the Steam client starts on ARMv8.0 CPUs",
-      "summary": "Valve's arm64 Steam client builds after April 15 2026 use ARMv8.1 LSE atomics (ldaddal, casal, swp), so the client dies with SIGILL and a black screen on ARMv8.0 CPUs: Cortex-A53/A57/A72/A73, e.g. the Snapdragon 685 in #380. Valve has not answered ValveSoftware/steam-for-linux#13288. Pinning an old client doesn't stick because it self-updates.",
-      "commit": "0db9865045f63656842d8e5534bdbf9f04327b9f",
-      "pr": 2309,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794184599000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2309",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2309-0db9865.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2309/DroidDeck-PR.2309-0db9865.apk",
-          "size": 96637282,
-          "sha256": "8aa6727b067dfcd29def43088bb3a3673ab3df923bb60aa22a5985c397ae0c24",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2309-0db9865-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2309/DroidDeck-PR.2309-0db9865-pubg.apk",
-          "size": 96637282,
-          "sha256": "78aa9827ce8ae1674004ea1f648e5defe844ccd533e5a28f3c5be9aadebcec12",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2309-0db9865-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2309/DroidDeck-PR.2309-0db9865-antutu.apk",
-          "size": 96637282,
-          "sha256": "63fa1de4ae2bce3463d092921877f3cfc0a6ca5825590ebb9dbe688a0b946d93",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2309-0db9865-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2309/DroidDeck-PR.2309-0db9865-ludashi.apk",
-          "size": 96637282,
-          "sha256": "ba93fa87eaf0ff4a174f17ee9c248fd8c349a0ee56fbe0c006e1af442a938d33",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
