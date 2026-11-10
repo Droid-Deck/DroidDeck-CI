@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794287301424,
+  "generatedAt": 1794289986666,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2375",
+      "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
+      "summary": "An on-device agent (or a person) can now change DroidDeck, build it on the handheld, and run it over the installed release without reinstalling or re-signing. Testers keep their games, sign-ins and settings, and nobody needs the release key. docs/lab-builds.md describes it.",
+      "commit": "2e34213b28d9b9e5ab3a7f5769b2d03c803adaaf",
+      "pr": 2375,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794289875000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2375",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2375-2e34213.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-2e34213.apk",
+          "size": 96620796,
+          "sha256": "f24a9dd6c91a3e7e0f26e6b58915108c4861c98b89dc40de2515e8d88b331bfe",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2375-2e34213-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-2e34213-pubg.apk",
+          "size": 96620796,
+          "sha256": "38e6e001892e1d1319c12841f1bfbd9a7ec0251c44f92d51d1bbd250a42dd9ac",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2375-2e34213-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-2e34213-antutu.apk",
+          "size": 96620796,
+          "sha256": "146b595ceef650ddb7e5f48146ad4af5dbde323f415ffe9b37befb1540698e1f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2375-2e34213-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-2e34213-ludashi.apk",
+          "size": 96620796,
+          "sha256": "42e5bf0c8d470d4d158c423cfd348c4e1fe6d55060d7498e76d57b0c9da6151b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2300",
       "title": "feat: fuck proot and proots mama",
       "summary": "An opt-in native userland that runs the Linux side (session script, gamescope, Steam, Proton/FEX games, the Plasma desktop, the Terminal tab, the bottom-screen desktop, Flatpak sandboxes, store installers and the root helpers) directly on Android with no proot and no ptrace. Setting: Performance > \"Run without proot (experimental)\". Default off; the proot path is untouched. While it is on,",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2297/DroidDeck-PR.2297-c1a095a-ludashi.apk",
           "size": 96518396,
           "sha256": "3e23fc9db3e15064d338c51ba0c9e5b7bd4a037c3a146aa448ed1db137ed494f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2375",
-      "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
-      "summary": "An on-device agent (or a person) can now change DroidDeck, build it on the handheld, and run it over the installed release without reinstalling or re-signing. Testers keep their games, sign-ins and settings, and nobody needs the release key. docs/lab-builds.md describes it.",
-      "commit": "22133623367acda91028169a7755c78564dec78c",
-      "pr": 2375,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794279488000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2375",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2375-2213362.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-2213362.apk",
-          "size": 96624892,
-          "sha256": "af84c8bb4f3a5554d908d96104f056efa311e0875b756dd0e0ab7ca8c7bcb84b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2375-2213362-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-2213362-pubg.apk",
-          "size": 96624892,
-          "sha256": "c35d55c075e2fe5683be36dc39fb562568e96820778bb5bbdbc2d240813f2fe8",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2375-2213362-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-2213362-antutu.apk",
-          "size": 96624892,
-          "sha256": "bfb9a04abc3dcc0ab5f920ac621b8afcdd01e6741d22121bbbf7b327803dca2c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2375-2213362-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-2213362-ludashi.apk",
-          "size": 96624892,
-          "sha256": "f02e4856c5e76d273c0be335d0e7fc65a6159182c9e70d27f8e9e20aa6e4f20b",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
