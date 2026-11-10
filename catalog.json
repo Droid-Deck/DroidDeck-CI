@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794345180615,
+  "generatedAt": 1794345775332,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-3c96df4",
-    "title": "feat(ubisoft): Ubisoft Connect store with native sign-in, library, downloads and launch",
-    "summary": "Adds Ubisoft Connect as a store. Sign-in, the owned library, downloads and launching all run inside DroidDeck, with no Ubisoft Connect client. Ubisoft's own DRM DLLs are used unmodified, and the launch session carries a real ticket from Ubisoft's ownership service.",
-    "commit": "3c96df4ab1d85a2776ccbcf6048ed1c6aa3066c8",
+    "tag": "main-055e2ec",
+    "title": "Fix Electron Node mode sandbox injection",
+    "summary": "Fixes #2417 by skipping Chromium flag injection when the child environment enables Electron Node mode and carrying the child environment through exec and spawn wrappers.",
+    "commit": "055e2ec78fc2cc9f6215e1ed25906ff9ee7a281e",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794342049000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-3c96df4",
+    "publishedAt": 1794345655000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-055e2ec",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-3c96df4.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c96df4/DroidDeck-main-3c96df4.apk",
+        "name": "DroidDeck-main-055e2ec.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-055e2ec/DroidDeck-main-055e2ec.apk",
         "size": 97154093,
-        "sha256": "202008af39311300ca61e86fd786bbf9f8a4eb1b8f5352f80e77edfee527c3bb",
+        "sha256": "d4c9be3d123e043300221a57401d2db7b9108580b25692f3106e601a7f14a5c6",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-3c96df4-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c96df4/DroidDeck-main-3c96df4-pubg.apk",
+        "name": "DroidDeck-main-055e2ec-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-055e2ec/DroidDeck-main-055e2ec-pubg.apk",
         "size": 97154093,
-        "sha256": "8692d340267b7709de1bd7bbb076d41b112cc2e6ee74e8e02030ce46170dcbd0",
+        "sha256": "001005e2da70d211f427c8c7977644be93decabaf4473c25c28c8f8b57344ad7",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-3c96df4-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c96df4/DroidDeck-main-3c96df4-antutu.apk",
+        "name": "DroidDeck-main-055e2ec-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-055e2ec/DroidDeck-main-055e2ec-antutu.apk",
         "size": 97154093,
-        "sha256": "812cdd65e3146cac4032ef87147827bbda309552cd1e8e6f84e996cae93ef405",
+        "sha256": "e935250f36918b1cfbb06aec42658e7d397208dce542ac8b9691bc7172053ecf",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-3c96df4-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-3c96df4/DroidDeck-main-3c96df4-ludashi.apk",
+        "name": "DroidDeck-main-055e2ec-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-055e2ec/DroidDeck-main-055e2ec-ludashi.apk",
         "size": 97154093,
-        "sha256": "7d64b71f1bd0bd27ae4413200f0e340f1ac2321f1e69f334f88296b60c30601f",
+        "sha256": "0b0888369330f09f3d51bf0b98f9194de4fc83bc4dc0561ba0328eeb62ff6b64",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "055e2ec78fc2cc9f6215e1ed25906ff9ee7a281e",
+      "title": "Fix Electron Node mode sandbox injection",
+      "summary": "Fixes #2417 by skipping Chromium flag injection when the child environment enables Electron Node mode and carrying the child environment through exec and spawn wrappers.",
+      "publishedAt": 1794345655000
+    },
     {
       "commit": "3c96df4ab1d85a2776ccbcf6048ed1c6aa3066c8",
       "title": "feat(ubisoft): Ubisoft Connect store with native sign-in, library, downloads and launch",
@@ -155,12 +161,6 @@
       "title": "fix(gog): install owned DLC",
       "summary": "GOG installs skipped every depot whose product ID was not the base game, so DLC the user owns was never downloaded. The gen2 installer also fetched a single download link for the base product, while GOG issues links per product.",
       "publishedAt": 1794287232000
-    },
-    {
-      "commit": "17936530aa6fa9bd08670fbdf1850d7170776608",
-      "title": "feat(display): add left and right picture alignment",
-      "summary": "\u2022 Add left and right game picture alignment options, with translated labels across all existing locales.\n\u2022 Fix the controller pointer area so it follows the positioned game picture, including left/right alignment.\n\u2022 Fix direct-touch bounds with glasses output by mapping picture bounds to phone-view coordinates before touch rejection and clamping.",
-      "publishedAt": 1794286310000
     }
   ],
   "tests": [
@@ -2314,55 +2314,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-1740/DroidDeck-PR.1740-ef1221c-ludashi.apk",
           "size": 75259877,
           "sha256": "1e8a33cda962720bc8a676cd604eeb3d9699de561df55ae93fad849ad8cf4cb9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-953",
-      "title": "fix: keep 6+2 Oryon cores, Fold SoC names, and 120 Hz display mode across fold changes",
-      "summary": "Keep all 8 cores in programcores() on 6+2 Oryon SoCs (SM8750-AC / SM8850-AC), strip Samsung -AC/-AB SoC model suffixes in SocNames (alongside the canoe / Adreno 840 platform entries and a hex gpuchipid guard), and pin preferredDisplayModeId across fold/unfold configuration changes in PerfMode and SessionActivity.",
-      "commit": "354ff3b4cc84a512d91909ecac2c44ffa379fe56",
-      "pr": 953,
-      "version": null,
-      "versionCode": 15,
-      "publishedAt": 1793136475000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-953",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.953-354ff3b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-953/DroidDeck-PR.953-354ff3b.apk",
-          "size": 74993371,
-          "sha256": "b5584bd44beb93cd1ef4a52f01351bc53bc43a15608a58b1a32bfaa5ed790ff2",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.953-354ff3b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-953/DroidDeck-PR.953-354ff3b-pubg.apk",
-          "size": 74993371,
-          "sha256": "ba6c03ef690dc3912fdd7cacee10b3e35fdbe90446f59bd4c32c306e16f8c050",
-          "packageName": "com.tencent.ig",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.953-354ff3b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-953/DroidDeck-PR.953-354ff3b-antutu.apk",
-          "size": 74993371,
-          "sha256": "57adc263efeffca35560e0f95b932c50e149c5e479c6ea651874b17df5dc2969",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 15,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.953-354ff3b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-953/DroidDeck-PR.953-354ff3b-ludashi.apk",
-          "size": 74993371,
-          "sha256": "55b12d62d90705c2d4c4f1c499f3e115c6df726598e943bec519af8d03a0e90b",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 15,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
