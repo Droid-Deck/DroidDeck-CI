@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794327545739,
+  "generatedAt": 1794328072606,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cdff94e",
-    "title": "chore: bump version to 0.7.1 (19)",
-    "summary": "Bumps versionName to 0.7.1 and versionCode to 19 for the 0.7.1 release.",
-    "commit": "cdff94e72c45da50af43bbceff28effaf0179caf",
+    "tag": "main-40242fa",
+    "title": "ci: scan signed main and release APKs on VirusTotal",
+    "summary": "After signing, main builds and releases upload each signed APK to VirusTotal and write a per-file table of detections to the run summary. A flagged file raises a warning annotation with the engines and their verdicts.",
+    "commit": "40242fa0825cbb1a85d2ad0b58fe75b8c9217b5e",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794313909000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cdff94e",
+    "publishedAt": 1794327921000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-40242fa",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cdff94e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdff94e/DroidDeck-main-cdff94e.apk",
+        "name": "DroidDeck-main-40242fa.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-40242fa/DroidDeck-main-40242fa.apk",
         "size": 96604504,
-        "sha256": "179ab8b4dc8f9223b70a1e4287c55a090b36ee376242186a60211100158462f1",
+        "sha256": "0c8c80e6e925afe3efaa8c328392781c0aea7c729f488b7cf908b961029bc968",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cdff94e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdff94e/DroidDeck-main-cdff94e-pubg.apk",
+        "name": "DroidDeck-main-40242fa-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-40242fa/DroidDeck-main-40242fa-pubg.apk",
         "size": 96604504,
-        "sha256": "7ef9b3840811e85f958600e48690fe419d5946c3081210da2736d4d912f78792",
+        "sha256": "4814b8b962b5566c70e9f47aa9cbcf544c70bc6c7f179eb1b654e3f04e6af2b0",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cdff94e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdff94e/DroidDeck-main-cdff94e-antutu.apk",
+        "name": "DroidDeck-main-40242fa-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-40242fa/DroidDeck-main-40242fa-antutu.apk",
         "size": 96604504,
-        "sha256": "3a5ebfb28075901129fa25b80d8d8227476c01ead78c4a714593de7ef37cef01",
+        "sha256": "af5f5877583da0dea0990ceae40c21f98292dfb38e7877f0eeaa2123ba086877",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cdff94e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cdff94e/DroidDeck-main-cdff94e-ludashi.apk",
+        "name": "DroidDeck-main-40242fa-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-40242fa/DroidDeck-main-40242fa-ludashi.apk",
         "size": 96604504,
-        "sha256": "5bab78c243080cd02d6ff40e1aa5f48136b71de7b41fa6949144ea9c95a1c8b8",
+        "sha256": "9bc917e2c0a718725417661dcaf04a879ea0d1a1a68112a2f00e3c645aeb9150",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "40242fa0825cbb1a85d2ad0b58fe75b8c9217b5e",
+      "title": "ci: scan signed main and release APKs on VirusTotal",
+      "summary": "After signing, main builds and releases upload each signed APK to VirusTotal and write a per-file table of detections to the run summary. A flagged file raises a warning annotation with the engines and their verdicts.",
+      "publishedAt": 1794327921000
+    },
     {
       "commit": "cdff94e72c45da50af43bbceff28effaf0179caf",
       "title": "chore: bump version to 0.7.1 (19)",
@@ -155,12 +161,6 @@
       "title": "fix(session): no endless loading screen after a game exits back to Steam",
       "summary": "After a game exits cleanly back to Steam (return-after-game), the screen could stay black with only \"Menu\" and \"B force shutdown\" showing, which is the session loading overlay. SessionActivity.onSessionEnded() used any pending SessionState.relaunch intent on a clean exit and called recreate(). The intent could be stale: one left over from an earlier relaunch request that never stopped the se",
       "publishedAt": 1794262696000
-    },
-    {
-      "commit": "1b19837fc6e2e652e9506f1b92e0c78ceaaeb7d6",
-      "title": "fix(native): a guest's own seccomp filter gets its SIGSYS, so Firefox tabs stop crashing",
-      "summary": "Firefox in the desktop session opened a window, but every tab's content process died on signal 11 (headless --screenshot produced nothing; the desktop showed a crash loop).",
-      "publishedAt": 1794261281000
     }
   ],
   "tests": [
