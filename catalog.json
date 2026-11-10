@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794313111777,
+  "generatedAt": 1794313266747,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-13c8edb",
-    "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
-    "summary": "A Windows installer can put an x64 ucrtbase.dll into an ARM64 prefix. Wine then fails to load it with c000007b, and later launches can keep failing because component restoration puts the DLL back.",
-    "commit": "13c8edb3d58ad8d10ed111982e07d07fba3f2f53",
+    "tag": "main-634cb39",
+    "title": "fix(proton-run): register the wrapper for an installed Valve Proton depot",
+    "summary": "Steam's Valve Proton ARM64 depots in steamapps/common contain toolmanifest.vdf and depot files, but are not compatibility-tool registrations. Scanning them directly misses real installs and would bypass DroidDeck's wrapper. The wrapper was only registered during Steam startup, so launching a store app before opening Steam reported that no Proton was installed.",
+    "commit": "634cb390c9ee6df97578359634bb9facf8bcaf43",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794310549000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-13c8edb",
+    "publishedAt": 1794313162000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-634cb39",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-13c8edb.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13c8edb/DroidDeck-main-13c8edb.apk",
+        "name": "DroidDeck-main-634cb39.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-634cb39/DroidDeck-main-634cb39.apk",
         "size": 96604504,
-        "sha256": "85026979b40d70265b0d212469aaed24a14202e413642b65ebeada95ff972fc2",
+        "sha256": "fe110a99d1b242e567bdd47b313ad7d2064e5a18340bec1360324cfc587c249e",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-13c8edb-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13c8edb/DroidDeck-main-13c8edb-pubg.apk",
+        "name": "DroidDeck-main-634cb39-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-634cb39/DroidDeck-main-634cb39-pubg.apk",
         "size": 96604504,
-        "sha256": "85857d2e2ecfe4f09f7f074b83dd9f6b8bc5ecfd3abece6d74cfa26ef74a702b",
+        "sha256": "164f2bab29e9848a5e4ddd4dff38f555efc760abe74c1cbb7297d0e7b72385b6",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-13c8edb-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13c8edb/DroidDeck-main-13c8edb-antutu.apk",
+        "name": "DroidDeck-main-634cb39-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-634cb39/DroidDeck-main-634cb39-antutu.apk",
         "size": 96604504,
-        "sha256": "f1c3c31934149f86be78b83121bcdb65aee53a812f3db677f0adaf113a402a9b",
+        "sha256": "a5dbfab58c03be6dc760f62be0d31e26824fda5290a85ce08e370ca2139b86cc",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-13c8edb-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13c8edb/DroidDeck-main-13c8edb-ludashi.apk",
+        "name": "DroidDeck-main-634cb39-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-634cb39/DroidDeck-main-634cb39-ludashi.apk",
         "size": 96604504,
-        "sha256": "06e978e4f939474258b68c8bac38151b166cd8572c9b51a6e3659d1cbf0d5e27",
+        "sha256": "b6b1587653a7f88b426c9b81179764fd2558e4f1fb6f145f42619bacce3225ba",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "634cb390c9ee6df97578359634bb9facf8bcaf43",
+      "title": "fix(proton-run): register the wrapper for an installed Valve Proton depot",
+      "summary": "Steam's Valve Proton ARM64 depots in steamapps/common contain toolmanifest.vdf and depot files, but are not compatibility-tool registrations. Scanning them directly misses real installs and would bypass DroidDeck's wrapper. The wrapper was only registered during Steam startup, so launching a store app before opening Steam reported that no Proton was installed.",
+      "publishedAt": 1794313162000
+    },
     {
       "commit": "13c8edb3d58ad8d10ed111982e07d07fba3f2f53",
       "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
@@ -155,12 +161,6 @@
       "title": "fix(input): Auto relative mouse stays off for direct touch without a mouse",
       "summary": "\"Relative mouse: Auto\" sends gamescopectl relativemouse 0, which leaves the decision to gamescope's own rule: once a game hides the system cursor and confines the pointer, gamescope turns host pointer motion into relative movement. With direct touch and no hardware mouse, each tap then arrives as a small delta instead of a jump to the touched spot, so the pointer cannot be moved or dragged in g",
       "publishedAt": 1794255079000
-    },
-    {
-      "commit": "7c89c14a84e1fa2a6d3ff0a1ce149a8c671cce4a",
-      "title": "fix(dual-screen): drop the Dashboard notifications page and its notification listener",
-      "summary": "Removes the bottom-screen Dashboard's Notifications page and the NotificationListenerService behind it.",
-      "publishedAt": 1794247030000
     }
   ],
   "tests": [
