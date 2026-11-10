@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794350095858,
+  "generatedAt": 1794353328592,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2443",
+      "title": "chore(ci): trust contributor for test builds",
+      "summary": "KeegantheVeganat0r is missing from the trusted test-build list, so their pull requests are not eligible for automatic signing through that list.",
+      "commit": "55f57bd88563c47a06f480a6903f4b23767c9061",
+      "pr": 2443,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794353234000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2443",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2443-55f57bd.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2443/DroidDeck-PR.2443-55f57bd.apk",
+          "size": 96965567,
+          "sha256": "9d0518beb247bc74be898640c9ce7fd83b94b41fa71540a7289760d31549147a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2443-55f57bd-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2443/DroidDeck-PR.2443-55f57bd-pubg.apk",
+          "size": 96965567,
+          "sha256": "7ced3fab89843dfd9e47e1327445e8dbb911acb6aa82e4e9626321cf9cfe60a1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2443-55f57bd-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2443/DroidDeck-PR.2443-55f57bd-antutu.apk",
+          "size": 96965567,
+          "sha256": "890c1ea2ca7f2d00980ea273dd772c37951cd4637f5b5fc60081fb34f81d8713",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2443-55f57bd-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2443/DroidDeck-PR.2443-55f57bd-ludashi.apk",
+          "size": 96965567,
+          "sha256": "b700a0765c9a3717e4f1c50ce1ba467c3269d514eb8d75d7ddb39f938805f1a1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2442",
       "title": "fix(game-env): keep the x64 Visual C++ runtime in ARM64 prefixes",
