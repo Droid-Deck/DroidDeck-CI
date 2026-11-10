@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794346556253,
+  "generatedAt": 1794347069939,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-055e2ec",
-    "title": "Fix Electron Node mode sandbox injection",
-    "summary": "Fixes #2417 by skipping Chromium flag injection when the child environment enables Electron Node mode and carrying the child environment through exec and spawn wrappers.",
-    "commit": "055e2ec78fc2cc9f6215e1ed25906ff9ee7a281e",
+    "tag": "main-dd9363e",
+    "title": "fix: ship the Ubisoft launcher service as an add-on pack, scan only the standard APK on main",
+    "summary": "droiddeck-upc.exe (new in #2322) is the only new PE in the main APK and the likely source of the new Bkav and Elastic ML flags on main. It now ships as the ubisoft add-on pack: built by tools/packs/build.sh, published by publish-packs, fetched when a Ubisoft account is signed in, and staged into the guest rootfs by SessionFiles from the installed pack. The APK no longer contains it.",
+    "commit": "dd9363e5f2bb90bfb6840f348718ea2a501d9f20",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794345655000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-055e2ec",
+    "publishedAt": 1794346965000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-dd9363e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-055e2ec.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-055e2ec/DroidDeck-main-055e2ec.apk",
-        "size": 97154093,
-        "sha256": "d4c9be3d123e043300221a57401d2db7b9108580b25692f3106e601a7f14a5c6",
+        "name": "DroidDeck-main-dd9363e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd9363e/DroidDeck-main-dd9363e.apk",
+        "size": 96965567,
+        "sha256": "63860a1caad579c6124a2351bb7cf60c5f1a138d9aa4591a8b2b67d23602d54d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-055e2ec-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-055e2ec/DroidDeck-main-055e2ec-pubg.apk",
-        "size": 97154093,
-        "sha256": "001005e2da70d211f427c8c7977644be93decabaf4473c25c28c8f8b57344ad7",
+        "name": "DroidDeck-main-dd9363e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd9363e/DroidDeck-main-dd9363e-pubg.apk",
+        "size": 96965567,
+        "sha256": "300be0769e2c0123da4d1f4e4ecc46aa6e875bf81e7426dbc599a1f6cb1c2313",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-055e2ec-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-055e2ec/DroidDeck-main-055e2ec-antutu.apk",
-        "size": 97154093,
-        "sha256": "e935250f36918b1cfbb06aec42658e7d397208dce542ac8b9691bc7172053ecf",
+        "name": "DroidDeck-main-dd9363e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd9363e/DroidDeck-main-dd9363e-antutu.apk",
+        "size": 96965567,
+        "sha256": "2049b2165cea7ef1d738931d5dab9da6d3fb4fe65ea5fba9e99b84e5bf42f326",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-055e2ec-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-055e2ec/DroidDeck-main-055e2ec-ludashi.apk",
-        "size": 97154093,
-        "sha256": "0b0888369330f09f3d51bf0b98f9194de4fc83bc4dc0561ba0328eeb62ff6b64",
+        "name": "DroidDeck-main-dd9363e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd9363e/DroidDeck-main-dd9363e-ludashi.apk",
+        "size": 96965567,
+        "sha256": "994a9676a55e0c379e4f620f96ca6106e4f0e5d5853aee58763612aca0b3b9da",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "dd9363e5f2bb90bfb6840f348718ea2a501d9f20",
+      "title": "fix: ship the Ubisoft launcher service as an add-on pack, scan only the standard APK on main",
+      "summary": "droiddeck-upc.exe (new in #2322) is the only new PE in the main APK and the likely source of the new Bkav and Elastic ML flags on main. It now ships as the ubisoft add-on pack: built by tools/packs/build.sh, published by publish-packs, fetched when a Ubisoft account is signed in, and staged into the guest rootfs by SessionFiles from the installed pack. The APK no longer contains it.",
+      "publishedAt": 1794346965000
+    },
     {
       "commit": "055e2ec78fc2cc9f6215e1ed25906ff9ee7a281e",
       "title": "Fix Electron Node mode sandbox injection",
@@ -155,12 +161,6 @@
       "title": "fix(flatpak): stop inheriting host Zink overrides",
       "summary": "Flatpak apps inherited the session's forced Zink and Vulkan ICD variables. The Flatpak runtime could not open a Vulkan device through that ICD on KGSL, so Mesa failed to create a DRI2 screen and the app had audio without a window. The session-wide variables are set in app/src/main/java/com/droiddeck/launcher/session/SessionService.kt:884-891, while BwrapSpawner.gpu() skips its sandbox GPU setu",
       "publishedAt": 1794297921000
-    },
-    {
-      "commit": "621fd8d43eac7ec89b0ff625cbbe09acdc1f6c7f",
-      "title": "fix(gog): install owned DLC",
-      "summary": "GOG installs skipped every depot whose product ID was not the base game, so DLC the user owns was never downloaded. The gen2 installer also fetched a single download link for the base product, while GOG issues links per product.",
-      "publishedAt": 1794287232000
     }
   ],
   "tests": [
