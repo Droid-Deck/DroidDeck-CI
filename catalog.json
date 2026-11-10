@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794309949730,
+  "generatedAt": 1794310650546,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-1ec2b69",
-    "title": "fix(flatpak): stop inheriting host Zink overrides",
-    "summary": "Flatpak apps inherited the session's forced Zink and Vulkan ICD variables. The Flatpak runtime could not open a Vulkan device through that ICD on KGSL, so Mesa failed to create a DRI2 screen and the app had audio without a window. The session-wide variables are set in app/src/main/java/com/droiddeck/launcher/session/SessionService.kt:884-891, while BwrapSpawner.gpu() skips its sandbox GPU setu",
-    "commit": "1ec2b696b75bfa401c61cb72850c3464fbf57d31",
+    "tag": "main-13c8edb",
+    "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
+    "summary": "A Windows installer can put an x64 ucrtbase.dll into an ARM64 prefix. Wine then fails to load it with c000007b, and later launches can keep failing because component restoration puts the DLL back.",
+    "commit": "13c8edb3d58ad8d10ed111982e07d07fba3f2f53",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794297921000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1ec2b69",
+    "publishedAt": 1794310549000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-13c8edb",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-1ec2b69.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1ec2b69/DroidDeck-main-1ec2b69.apk",
-        "size": 96600316,
-        "sha256": "42010368f4910ba016859290c066cc600723e2f780ca24be4f27b7fb58a99135",
+        "name": "DroidDeck-main-13c8edb.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13c8edb/DroidDeck-main-13c8edb.apk",
+        "size": 96604504,
+        "sha256": "85026979b40d70265b0d212469aaed24a14202e413642b65ebeada95ff972fc2",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-1ec2b69-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1ec2b69/DroidDeck-main-1ec2b69-pubg.apk",
-        "size": 96600316,
-        "sha256": "8cd094f188da5b6439882f2df14c0ce436b941ab948a90626443dd4d1ddcbde7",
+        "name": "DroidDeck-main-13c8edb-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13c8edb/DroidDeck-main-13c8edb-pubg.apk",
+        "size": 96604504,
+        "sha256": "85857d2e2ecfe4f09f7f074b83dd9f6b8bc5ecfd3abece6d74cfa26ef74a702b",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-1ec2b69-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1ec2b69/DroidDeck-main-1ec2b69-antutu.apk",
-        "size": 96600316,
-        "sha256": "07c1d89a95dbd0abc76a00b30a731f74c56a79590da4d9c2b298e548000ea397",
+        "name": "DroidDeck-main-13c8edb-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13c8edb/DroidDeck-main-13c8edb-antutu.apk",
+        "size": 96604504,
+        "sha256": "f1c3c31934149f86be78b83121bcdb65aee53a812f3db677f0adaf113a402a9b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-1ec2b69-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1ec2b69/DroidDeck-main-1ec2b69-ludashi.apk",
-        "size": 96600316,
-        "sha256": "c94178545be5a9b834dc16b69ad97015144a757383bbe3cd7865291e0e798e8e",
+        "name": "DroidDeck-main-13c8edb-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-13c8edb/DroidDeck-main-13c8edb-ludashi.apk",
+        "size": 96604504,
+        "sha256": "06e978e4f939474258b68c8bac38151b166cd8572c9b51a6e3659d1cbf0d5e27",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "13c8edb3d58ad8d10ed111982e07d07fba3f2f53",
+      "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
+      "summary": "A Windows installer can put an x64 ucrtbase.dll into an ARM64 prefix. Wine then fails to load it with c000007b, and later launches can keep failing because component restoration puts the DLL back.",
+      "publishedAt": 1794310549000
+    },
     {
       "commit": "1ec2b696b75bfa401c61cb72850c3464fbf57d31",
       "title": "fix(flatpak): stop inheriting host Zink overrides",
@@ -155,12 +161,6 @@
       "title": "fix(dual-screen): drop the Dashboard notifications page and its notification listener",
       "summary": "Removes the bottom-screen Dashboard's Notifications page and the NotificationListenerService behind it.",
       "publishedAt": 1794247030000
-    },
-    {
-      "commit": "b837611efe543336bc3848b4a73e1ac98be3c293",
-      "title": "fix(ctl): a full disk no longer crashes the app when an agent call cannot write its answer",
-      "summary": "The broadcast fallback from #2321 writes each answer to Android/data/<package>/files/agent-calls/. When that write failed, the exception escaped the receiver's thread and took the whole app down. On the Retroid Pocket Duo, with the disk full during a large download, this ended a running session:",
-      "publishedAt": 1794246321000
     }
   ],
   "tests": [
