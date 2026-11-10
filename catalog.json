@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794289986666,
+  "generatedAt": 1794298029743,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-621fd8d",
-    "title": "fix(gog): install owned DLC",
-    "summary": "GOG installs skipped every depot whose product ID was not the base game, so DLC the user owns was never downloaded. The gen2 installer also fetched a single download link for the base product, while GOG issues links per product.",
-    "commit": "621fd8d43eac7ec89b0ff625cbbe09acdc1f6c7f",
+    "tag": "main-1ec2b69",
+    "title": "fix(flatpak): stop inheriting host Zink overrides",
+    "summary": "Flatpak apps inherited the session's forced Zink and Vulkan ICD variables. The Flatpak runtime could not open a Vulkan device through that ICD on KGSL, so Mesa failed to create a DRI2 screen and the app had audio without a window. The session-wide variables are set in app/src/main/java/com/droiddeck/launcher/session/SessionService.kt:884-891, while BwrapSpawner.gpu() skips its sandbox GPU setu",
+    "commit": "1ec2b696b75bfa401c61cb72850c3464fbf57d31",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794287232000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-621fd8d",
+    "publishedAt": 1794297921000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1ec2b69",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-621fd8d.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-621fd8d/DroidDeck-main-621fd8d.apk",
-        "size": 96596220,
-        "sha256": "2c5ef0b42bc4470c5797511ff2fac0e1c707b2c1758e96fad6586ffe51c6e208",
+        "name": "DroidDeck-main-1ec2b69.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1ec2b69/DroidDeck-main-1ec2b69.apk",
+        "size": 96600316,
+        "sha256": "42010368f4910ba016859290c066cc600723e2f780ca24be4f27b7fb58a99135",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-621fd8d-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-621fd8d/DroidDeck-main-621fd8d-pubg.apk",
-        "size": 96596220,
-        "sha256": "89282728c644423f4e039fff6306ff030b99eaa59f1441b6603c9aedea924bf5",
+        "name": "DroidDeck-main-1ec2b69-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1ec2b69/DroidDeck-main-1ec2b69-pubg.apk",
+        "size": 96600316,
+        "sha256": "8cd094f188da5b6439882f2df14c0ce436b941ab948a90626443dd4d1ddcbde7",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-621fd8d-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-621fd8d/DroidDeck-main-621fd8d-antutu.apk",
-        "size": 96596220,
-        "sha256": "24b8b7dc84e6729cb11fba7a03b9420e645a1ea688cd0d40cfef374709f18da3",
+        "name": "DroidDeck-main-1ec2b69-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1ec2b69/DroidDeck-main-1ec2b69-antutu.apk",
+        "size": 96600316,
+        "sha256": "07c1d89a95dbd0abc76a00b30a731f74c56a79590da4d9c2b298e548000ea397",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-621fd8d-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-621fd8d/DroidDeck-main-621fd8d-ludashi.apk",
-        "size": 96596220,
-        "sha256": "b2f1063ebedf1b88011526b95d723a1b497c71bbf6a47e763b34cf1239354251",
+        "name": "DroidDeck-main-1ec2b69-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1ec2b69/DroidDeck-main-1ec2b69-ludashi.apk",
+        "size": 96600316,
+        "sha256": "c94178545be5a9b834dc16b69ad97015144a757383bbe3cd7865291e0e798e8e",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1ec2b696b75bfa401c61cb72850c3464fbf57d31",
+      "title": "fix(flatpak): stop inheriting host Zink overrides",
+      "summary": "Flatpak apps inherited the session's forced Zink and Vulkan ICD variables. The Flatpak runtime could not open a Vulkan device through that ICD on KGSL, so Mesa failed to create a DRI2 screen and the app had audio without a window. The session-wide variables are set in app/src/main/java/com/droiddeck/launcher/session/SessionService.kt:884-891, while BwrapSpawner.gpu() skips its sandbox GPU setu",
+      "publishedAt": 1794297921000
+    },
     {
       "commit": "621fd8d43eac7ec89b0ff625cbbe09acdc1f6c7f",
       "title": "fix(gog): install owned DLC",
@@ -155,12 +161,6 @@
       "title": "fix(ctl): a full disk no longer crashes the app when an agent call cannot write its answer",
       "summary": "The broadcast fallback from #2321 writes each answer to Android/data/<package>/files/agent-calls/. When that write failed, the exception escaped the receiver's thread and took the whole app down. On the Retroid Pocket Duo, with the disk full during a large download, this ended a running session:",
       "publishedAt": 1794246321000
-    },
-    {
-      "commit": "96a12465e01f50b88a617f72b4fadacc34f7938f",
-      "title": "fix(session): stop re-compressing game memory every 30 s when the game reads it straight back",
-      "summary": "On devices with 13 GB of RAM or less, the low-memory page-out compresses idle game memory into zRAM when memory runs low. When available memory was below half the headroom (\"nearly out of memory\"), it skipped the read-back check that normally backs off when the game reads most of the last page-out straight back. A game that was actively using that memory then had it pushed out and read back every",
-      "publishedAt": 1794208691000
     }
   ],
   "tests": [
