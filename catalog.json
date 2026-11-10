@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794314227490,
+  "generatedAt": 1794314687019,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2281",
+      "title": "fix(epic): install the Epic Games Launcher from its Linux .deb",
+      "summary": "Epic stopped publishing the Linux AppImage: EpicGamesLauncher-x8664.AppImage now answers 404 appdirecturlnotfound (30003), so Install in Epic's profile strip fails for everyone. Epic ships the launcher as EpicGamesLauncher-x8664.deb (0.113.0) instead.",
+      "commit": "bb1996c7159ada6c7e6f1c23c2148a4f2fbc39a0",
+      "pr": 2281,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794314565000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2281",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2281-bb1996c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-bb1996c.apk",
+          "size": 96608600,
+          "sha256": "26f22d0e46f230056eeb1a9a1dd029674fb39de319decacd3b9297d71f8d992e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2281-bb1996c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-bb1996c-pubg.apk",
+          "size": 96608600,
+          "sha256": "7a83be65b4785d5a2a9f7c4dcb3824451ab235b32ab8455b4f0ff001bd4b9094",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2281-bb1996c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-bb1996c-antutu.apk",
+          "size": 96608600,
+          "sha256": "bba646d02e3f78094fd5c0598b13ae7bb66e7c4afd0a03c76f7fb98445d8bb14",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2281-bb1996c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-bb1996c-ludashi.apk",
+          "size": 96608600,
+          "sha256": "d53a5d78e9d7813cbc364ae9710b398c5ed8ac31b0212949aacec55fb29507c3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2377",
       "title": "perf(proot): faster SD card installs and uninstalls on FUSE-backed libraries",
@@ -1530,55 +1579,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2291/DroidDeck-PR.2291-9c5cbc8-ludashi.apk",
           "size": 96620703,
           "sha256": "2997fc3f4adf4fda61c4f41fe4edc6047c43f77096b8bcd9694cf19b57fa6456",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2281",
-      "title": "fix(epic): install the Epic Games Launcher from its Linux .deb",
-      "summary": "Epic stopped publishing the Linux AppImage: EpicGamesLauncher-x8664.AppImage now answers 404 appdirecturlnotfound (30003), so Install in Epic's profile strip fails for everyone. Epic ships the launcher as EpicGamesLauncher-x8664.deb (0.113.0) instead.",
-      "commit": "7309e2f63d4173bc86bda429f88771b99853e7d2",
-      "pr": 2281,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794152654000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2281",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2281-7309e2f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-7309e2f.apk",
-          "size": 96624799,
-          "sha256": "7ae56a89f2abd2e14cdd1357e85427ea842579a8e542b1f0c7811a200a8fa9de",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2281-7309e2f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-7309e2f-pubg.apk",
-          "size": 96624799,
-          "sha256": "a93182c3cee59e66da02a537b1c79951b684574e8cc8b63e6b62df2538623e1b",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2281-7309e2f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-7309e2f-antutu.apk",
-          "size": 96624799,
-          "sha256": "32cca0b5ee0981dbcf96f3164e239f3ceda79c12dca14244a0229b8c5ed5db1d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2281-7309e2f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2281/DroidDeck-PR.2281-7309e2f-ludashi.apk",
-          "size": 96624799,
-          "sha256": "c8e3ed7a4b1fa0a02574ced8af5d420371cd134f85ae7a39ec549d7ac4fb5278",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
