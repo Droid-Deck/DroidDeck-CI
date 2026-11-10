@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794354693808,
+  "generatedAt": 1794354855583,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2429",
+      "title": "fix(hud): keep floating HUD widths stable as readings change",
+      "summary": "Numeric readings changing digit count could change the width of floating performance HUDs and resize their outline, especially in Mega mode.",
+      "commit": "4af440e6f846a0af62ffee1bc0b2f32efc714189",
+      "pr": 2429,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794354727000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2429",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2429-4af440e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-4af440e.apk",
+          "size": 96883647,
+          "sha256": "9235d10c543c7b7f5eda4e85ccfb7e6a7c746e4a259c22812fb1b6996de07aed",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2429-4af440e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-4af440e-pubg.apk",
+          "size": 96883647,
+          "sha256": "86b389be96c3fffab12e1c71c7c7143fe60e9e4eec37a041bcf6803090eeb7c8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2429-4af440e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-4af440e-antutu.apk",
+          "size": 96883647,
+          "sha256": "192a0d076f6f24a13e39a22fbe4c32814ca2d6891c4f70f711b0d127b57c25c0",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2429-4af440e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-4af440e-ludashi.apk",
+          "size": 96883647,
+          "sha256": "9635aa6a2d0434ede0a2c4b4b0d7451eeb59d205e431f2fdd37c9178c90a8f8c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2442",
       "title": "fix(game-env): keep the x64 Visual C++ runtime in ARM64 prefixes",
