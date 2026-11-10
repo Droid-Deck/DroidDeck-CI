@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794341370598,
+  "generatedAt": 1794341900800,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2430",
+      "title": "fix(components): install the real ARM64 Visual C++ runtime instead of registry entries",
+      "summary": "Enabling the Visual C++ 2015-2022 ARM64 component only wrote VC\\Runtimes\\arm64 registry values (WinComponents.builtInArm64Runtime). No runtime binaries were supplied, so an ARM64 program that needs them still hit the missing-runtime dialog (#2412). The package engine also dropped every ARM64 MSI (SKIPPLATFORMS in droiddeck-msi-install), so pointing the component at the real redistributabl",
+      "commit": "4f6d7618cb7d9eaecf9e7004d8cc2bfe2f14e395",
+      "pr": 2430,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794341762000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2430",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2430-4f6d761.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2430/DroidDeck-PR.2430-4f6d761.apk",
+          "size": 96604504,
+          "sha256": "b2af1118b22d2b13b01a0954f819a21aabfe7fe843ac8660fe895bfdb66865c4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2430-4f6d761-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2430/DroidDeck-PR.2430-4f6d761-pubg.apk",
+          "size": 96604504,
+          "sha256": "544f857cc07dc672578ba842e11c59111cc4f66057eef2d1b100f45cc5add7c4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2430-4f6d761-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2430/DroidDeck-PR.2430-4f6d761-antutu.apk",
+          "size": 96604504,
+          "sha256": "d2293583f7831a635920d275644ce55c7ce78aae0c9d7b9f7f0a7f8db2033ef1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2430-4f6d761-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2430/DroidDeck-PR.2430-4f6d761-ludashi.apk",
+          "size": 96604504,
+          "sha256": "b664897dbe1b00e93a331e4916cf6cc21c2028bda03d22ca68143e0bd46aaa75",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2426",
       "title": "fix(fex): supply current Wayland libraries in the shared runtime",
