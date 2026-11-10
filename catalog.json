@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794337536057,
+  "generatedAt": 1794338287523,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -151,12 +151,6 @@
       "publishedAt": 1794286310000
     },
     {
-      "commit": "ae3e9509f45721f23e8af5897d299644cd2a89c6",
-      "title": "Feat: Add new theme color for launcher: Scarlet snow",
-      "summary": "A new color to the launcher. ( first white theme! )",
-      "publishedAt": 1794274786000
-    },
-    {
       "commit": "6bcd431ca6e05f74c028d4d5aacfbcc3e5ee3267",
       "title": "fix(session): wait for Steam readiness before launch",
       "summary": "A game launched straight from DroidDeck could stall at Steam's launch screen. Steam logged LaunchApp waiting for user response to ShowInterstitials and never went further. The launch was handed to Steam on the first focus of Big Picture, before Steam's UI was ready to answer the launch's interstitial step. When that happened, the watchdog re-sent the same rungameid, which does nothing for an a",
@@ -164,6 +158,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2426",
+      "title": "fix(fex): supply current Wayland libraries in the shared runtime",
+      "summary": "Imported x8664 AppImages can bundle GTK built against a newer Wayland ABI than Sniper provides. The support report at https://discord.com/channels/1552707793247539220/1556195514322780160/1569785897027764254 has a desktop launch log whose entry log line 280 reports undefined symbol: wlproxymarshalflags. Forcing X11 does not supply that missing symbol.",
+      "commit": "e61090515ac517f2c4afd6ea0ac32af70c1954c9",
+      "pr": 2426,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794338164000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2426",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2426-e610905.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-e610905.apk",
+          "size": 96604504,
+          "sha256": "a7102076ba610c7c5166991a5679c05a03e972358977ecd78c8d73dbd54e3323",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2426-e610905-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-e610905-pubg.apk",
+          "size": 96604504,
+          "sha256": "2a68b7504926f4f6c20f40a5d2114fe5a961de2d2e4d354a4abfde9027ec88e0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2426-e610905-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-e610905-antutu.apk",
+          "size": 96604504,
+          "sha256": "c36074390bbcbdf38b359f991e7855a947a07615f69d7180ec0a9670452cacb4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2426-e610905-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-e610905-ludashi.apk",
+          "size": 96604504,
+          "sha256": "1e71ffc3c6a07400dcb091009e50705af74a68412ff05cf54762b3a83159b02a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2418",
       "title": "Fix Electron Node mode sandbox injection",
