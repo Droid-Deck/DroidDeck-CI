@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794322062896,
+  "generatedAt": 1794327180991,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2418",
+      "title": "Fix Electron Node mode sandbox injection",
+      "summary": "Fixes #2417 by skipping Chromium flag injection when the child environment enables Electron Node mode and carrying the child environment through exec and spawn wrappers.",
+      "commit": "0e9a43476f988f372f3ac5c78516c4b415d20042",
+      "pr": 2418,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794327059000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2418",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2418-0e9a434.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2418/DroidDeck-PR.2418-0e9a434.apk",
+          "size": 96604504,
+          "sha256": "8de4d35186c0f4f1d93aa4a68c0d55efc0e9cd4997ceb863b2172e530b5b9927",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2418-0e9a434-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2418/DroidDeck-PR.2418-0e9a434-pubg.apk",
+          "size": 96604504,
+          "sha256": "3fc8a17004104989367e0f79710eeaf459013fbe849d3e0daae68bc1783b2a87",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2418-0e9a434-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2418/DroidDeck-PR.2418-0e9a434-antutu.apk",
+          "size": 96604504,
+          "sha256": "e03d0f7a2389f3f839045aecfd83036e14309cd3ef9b165d27b7087096a77e1e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2418-0e9a434-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2418/DroidDeck-PR.2418-0e9a434-ludashi.apk",
+          "size": 96604504,
+          "sha256": "79c6e2b9f1c1aa501da853a91eb91469d86db9127ab32e4f5c8032e5813bb521",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2408",
       "title": "ci: scan signed main and release APKs on VirusTotal",
