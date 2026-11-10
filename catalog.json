@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794286382789,
+  "generatedAt": 1794287301424,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-1793653",
-    "title": "feat(display): add left and right picture alignment",
-    "summary": "\u2022 Add left and right game picture alignment options, with translated labels across all existing locales.\n\u2022 Fix the controller pointer area so it follows the positioned game picture, including left/right alignment.\n\u2022 Fix direct-touch bounds with glasses output by mapping picture bounds to phone-view coordinates before touch rejection and clamping.",
-    "commit": "17936530aa6fa9bd08670fbdf1850d7170776608",
+    "tag": "main-621fd8d",
+    "title": "fix(gog): install owned DLC",
+    "summary": "GOG installs skipped every depot whose product ID was not the base game, so DLC the user owns was never downloaded. The gen2 installer also fetched a single download link for the base product, while GOG issues links per product.",
+    "commit": "621fd8d43eac7ec89b0ff625cbbe09acdc1f6c7f",
     "pr": 0,
     "version": null,
     "versionCode": 18,
-    "publishedAt": 1794286310000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1793653",
+    "publishedAt": 1794287232000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-621fd8d",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-1793653.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1793653/DroidDeck-main-1793653.apk",
-        "size": 96600316,
-        "sha256": "f3076198460131d63435b028a111eaec49642464072237b1fccbd403647653e6",
+        "name": "DroidDeck-main-621fd8d.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-621fd8d/DroidDeck-main-621fd8d.apk",
+        "size": 96596220,
+        "sha256": "2c5ef0b42bc4470c5797511ff2fac0e1c707b2c1758e96fad6586ffe51c6e208",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-1793653-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1793653/DroidDeck-main-1793653-pubg.apk",
-        "size": 96600316,
-        "sha256": "a34e9f757eb892634ebc66fffdb5cbed312589ca2b85150f14d5b0e9667dfe95",
+        "name": "DroidDeck-main-621fd8d-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-621fd8d/DroidDeck-main-621fd8d-pubg.apk",
+        "size": 96596220,
+        "sha256": "89282728c644423f4e039fff6306ff030b99eaa59f1441b6603c9aedea924bf5",
         "packageName": "com.tencent.ig",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-1793653-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1793653/DroidDeck-main-1793653-antutu.apk",
-        "size": 96600316,
-        "sha256": "71d22c4861ac78572e1dab96ff4ada73535ed4a895df775021ba2c4d95c02136",
+        "name": "DroidDeck-main-621fd8d-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-621fd8d/DroidDeck-main-621fd8d-antutu.apk",
+        "size": 96596220,
+        "sha256": "24b8b7dc84e6729cb11fba7a03b9420e645a1ea688cd0d40cfef374709f18da3",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-1793653-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1793653/DroidDeck-main-1793653-ludashi.apk",
-        "size": 96600316,
-        "sha256": "1f906c5490e3b82d3e9e0b8842ec71fa180089d09ca7c1f684d20f52a8a19b25",
+        "name": "DroidDeck-main-621fd8d-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-621fd8d/DroidDeck-main-621fd8d-ludashi.apk",
+        "size": 96596220,
+        "sha256": "b2f1063ebedf1b88011526b95d723a1b497c71bbf6a47e763b34cf1239354251",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 18,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "621fd8d43eac7ec89b0ff625cbbe09acdc1f6c7f",
+      "title": "fix(gog): install owned DLC",
+      "summary": "GOG installs skipped every depot whose product ID was not the base game, so DLC the user owns was never downloaded. The gen2 installer also fetched a single download link for the base product, while GOG issues links per product.",
+      "publishedAt": 1794287232000
+    },
     {
       "commit": "17936530aa6fa9bd08670fbdf1850d7170776608",
       "title": "feat(display): add left and right picture alignment",
@@ -155,12 +161,6 @@
       "title": "fix(session): stop re-compressing game memory every 30 s when the game reads it straight back",
       "summary": "On devices with 13 GB of RAM or less, the low-memory page-out compresses idle game memory into zRAM when memory runs low. When available memory was below half the headroom (\"nearly out of memory\"), it skipped the read-back check that normally backs off when the game reads most of the last page-out straight back. A game that was actively using that memory then had it pushed out and read back every",
       "publishedAt": 1794208691000
-    },
-    {
-      "commit": "88d6b70881a9e53eee53ac5ee4d38ba711304788",
-      "title": "fix(ctl): reach the agent bridge by broadcast when the shell has no content command",
-      "summary": "Some Android builds, the Retroid Pocket Duo's among them, ship a shell without the content command. On those builds every droiddeckctl call fails at once with /system/bin/sh: content: inaccessible or not found, so state, guest, logs and the rest are unusable.",
-      "publishedAt": 1794200923000
     }
   ],
   "tests": [
