@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794354049620,
+  "generatedAt": 1794354693808,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-dd9363e",
-    "title": "fix: ship the Ubisoft launcher service as an add-on pack, scan only the standard APK on main",
-    "summary": "droiddeck-upc.exe (new in #2322) is the only new PE in the main APK and the likely source of the new Bkav and Elastic ML flags on main. It now ships as the ubisoft add-on pack: built by tools/packs/build.sh, published by publish-packs, fetched when a Ubisoft account is signed in, and staged into the guest rootfs by SessionFiles from the installed pack. The APK no longer contains it.",
-    "commit": "dd9363e5f2bb90bfb6840f348718ea2a501d9f20",
+    "tag": "main-e4b2526",
+    "title": "chore(ci): trust contributor for test builds",
+    "summary": "KeegantheVeganat0r is missing from the trusted test-build list, so their pull requests are not eligible for automatic signing through that list.",
+    "commit": "e4b2526d2c3f8cc424f612125df1d3a38183ad52",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794346965000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-dd9363e",
+    "publishedAt": 1794354591000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-e4b2526",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-dd9363e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd9363e/DroidDeck-main-dd9363e.apk",
+        "name": "DroidDeck-main-e4b2526.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4b2526/DroidDeck-main-e4b2526.apk",
         "size": 96965567,
-        "sha256": "63860a1caad579c6124a2351bb7cf60c5f1a138d9aa4591a8b2b67d23602d54d",
+        "sha256": "c2144817680659e98d0c3898c7995dd25c7b445581097358b970dca02c054ad4",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-dd9363e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd9363e/DroidDeck-main-dd9363e-pubg.apk",
+        "name": "DroidDeck-main-e4b2526-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4b2526/DroidDeck-main-e4b2526-pubg.apk",
         "size": 96965567,
-        "sha256": "300be0769e2c0123da4d1f4e4ecc46aa6e875bf81e7426dbc599a1f6cb1c2313",
+        "sha256": "be2b1dd066946ae6c12606f538470c90d18d4cebfecfdd81b5632be362008967",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-dd9363e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd9363e/DroidDeck-main-dd9363e-antutu.apk",
+        "name": "DroidDeck-main-e4b2526-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4b2526/DroidDeck-main-e4b2526-antutu.apk",
         "size": 96965567,
-        "sha256": "2049b2165cea7ef1d738931d5dab9da6d3fb4fe65ea5fba9e99b84e5bf42f326",
+        "sha256": "4d4b0d112d342798b1eba33df9eb20d98755346cf42916fdfb1dda8dd2c903a7",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-dd9363e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-dd9363e/DroidDeck-main-dd9363e-ludashi.apk",
+        "name": "DroidDeck-main-e4b2526-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-e4b2526/DroidDeck-main-e4b2526-ludashi.apk",
         "size": 96965567,
-        "sha256": "994a9676a55e0c379e4f620f96ca6106e4f0e5d5853aee58763612aca0b3b9da",
+        "sha256": "abfbe35188c246025fa11b135b36a6fdb88e72fd25fea10bee9785ef695c5fe2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e4b2526d2c3f8cc424f612125df1d3a38183ad52",
+      "title": "chore(ci): trust contributor for test builds",
+      "summary": "KeegantheVeganat0r is missing from the trusted test-build list, so their pull requests are not eligible for automatic signing through that list.",
+      "publishedAt": 1794354591000
+    },
     {
       "commit": "dd9363e5f2bb90bfb6840f348718ea2a501d9f20",
       "title": "fix: ship the Ubisoft launcher service as an add-on pack, scan only the standard APK on main",
@@ -155,12 +161,6 @@
       "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
       "summary": "A Windows installer can put an x64 ucrtbase.dll into an ARM64 prefix. Wine then fails to load it with c000007b, and later launches can keep failing because component restoration puts the DLL back.",
       "publishedAt": 1794310549000
-    },
-    {
-      "commit": "1ec2b696b75bfa401c61cb72850c3464fbf57d31",
-      "title": "fix(flatpak): stop inheriting host Zink overrides",
-      "summary": "Flatpak apps inherited the session's forced Zink and Vulkan ICD variables. The Flatpak runtime could not open a Vulkan device through that ICD on KGSL, so Mesa failed to create a DRI2 screen and the app had audio without a window. The session-wide variables are set in app/src/main/java/com/droiddeck/launcher/session/SessionService.kt:884-891, while BwrapSpawner.gpu() skips its sandbox GPU setu",
-      "publishedAt": 1794297921000
     }
   ],
   "tests": [
