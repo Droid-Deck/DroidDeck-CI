@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794320508439,
+  "generatedAt": 1794321409270,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2408",
+      "title": "ci: scan signed main and release APKs on VirusTotal",
+      "summary": "After signing, main builds and releases upload each signed APK to VirusTotal and write a per-file table of detections to the run summary. A flagged file raises a warning annotation with the engines and their verdicts.",
+      "commit": "afab184398ebaea5d08599fc82ea2d2d4bce2b90",
+      "pr": 2408,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794321260000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2408",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2408-afab184.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2408/DroidDeck-PR.2408-afab184.apk",
+          "size": 96604504,
+          "sha256": "d631d82c8d7e3821605df8fb97507df3bbea593929ba036fada887f04c2f238e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2408-afab184-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2408/DroidDeck-PR.2408-afab184-pubg.apk",
+          "size": 96604504,
+          "sha256": "8e344bc7038446904ce4aaff331b546c9f8c7c9a720913b407daf851121d2548",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2408-afab184-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2408/DroidDeck-PR.2408-afab184-antutu.apk",
+          "size": 96604504,
+          "sha256": "8b98a24513f34fda07a55e69e4fd0dd44b289327fccd658effcbdf407e13e76c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2408-afab184-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2408/DroidDeck-PR.2408-afab184-ludashi.apk",
+          "size": 96604504,
+          "sha256": "2eb5787fc1b2388b812924fd0193aa24794ac87915fccc94045fe6abe392fa5c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2407",
       "title": "Add per-game Steam Input overrides",
