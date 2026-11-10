@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794305230699,
+  "generatedAt": 1794307403077,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2382",
+      "title": "fix(memory): reclaim idle session memory under pressure",
+      "summary": "Issue #945 exposed a RAM-size gate that disabled idle session reclaim above 13 GiB. MemAvailable alone also overstated headroom during rapid GPU and system-reserved memory growth.",
+      "commit": "c81451ce777386073f77a8165de48a1491b365b8",
+      "pr": 2382,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794307326000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2382",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2382-c81451c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-c81451c.apk",
+          "size": 96600316,
+          "sha256": "824b063e3dec30afdc48c33bfd62667624f5c87fa0ca82708f42c7fbdd483bdf",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2382-c81451c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-c81451c-pubg.apk",
+          "size": 96600316,
+          "sha256": "ec774137657814cb9699c586a9f09c7d80c92a780c9f6497c41f80d8792fa05d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2382-c81451c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-c81451c-antutu.apk",
+          "size": 96604412,
+          "sha256": "f0bd02059c0e3381dcc3cf33ec9fe7af5277a3fd42d2f7a21cbd0b59f2f106dd",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2382-c81451c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-c81451c-ludashi.apk",
+          "size": 96600316,
+          "sha256": "1ab3fb2774f1929233d836f0a5cec57443595b2cfc254273f6939f37e38f9b71",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2318",
       "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
