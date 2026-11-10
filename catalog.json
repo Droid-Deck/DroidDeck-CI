@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794329880789,
+  "generatedAt": 1794330490666,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-40242fa",
-    "title": "ci: scan signed main and release APKs on VirusTotal",
-    "summary": "After signing, main builds and releases upload each signed APK to VirusTotal and write a per-file table of detections to the run summary. A flagged file raises a warning annotation with the engines and their verdicts.",
-    "commit": "40242fa0825cbb1a85d2ad0b58fe75b8c9217b5e",
+    "tag": "main-9bf638a",
+    "title": "fix(input): system Back only turns into a right-click with an external mouse",
+    "summary": "On some handhelds the system Back button opens the guest's right-click menu instead of the side menu. Android injects Back with no device and without the virtual-hard-key flag, and the injected-Back rule treated it as a mouse right-click whenever any mouse-capable input device existed, including built-in ones.",
+    "commit": "9bf638a3c4131ee569eac305c4f4ec28198cd0e2",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794327921000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-40242fa",
+    "publishedAt": 1794330366000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9bf638a",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-40242fa.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-40242fa/DroidDeck-main-40242fa.apk",
+        "name": "DroidDeck-main-9bf638a.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9bf638a/DroidDeck-main-9bf638a.apk",
         "size": 96604504,
-        "sha256": "0c8c80e6e925afe3efaa8c328392781c0aea7c729f488b7cf908b961029bc968",
+        "sha256": "ed3471b059ea0e7aa8239ce016f7410f0c7d76b97cff2bfa4236dcd2f98c93e5",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-40242fa-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-40242fa/DroidDeck-main-40242fa-pubg.apk",
+        "name": "DroidDeck-main-9bf638a-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9bf638a/DroidDeck-main-9bf638a-pubg.apk",
         "size": 96604504,
-        "sha256": "4814b8b962b5566c70e9f47aa9cbcf544c70bc6c7f179eb1b654e3f04e6af2b0",
+        "sha256": "774b876939529960f1cfe1b2540534e6d5983f894db96ff1f89a5548f46a26da",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-40242fa-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-40242fa/DroidDeck-main-40242fa-antutu.apk",
+        "name": "DroidDeck-main-9bf638a-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9bf638a/DroidDeck-main-9bf638a-antutu.apk",
         "size": 96604504,
-        "sha256": "af5f5877583da0dea0990ceae40c21f98292dfb38e7877f0eeaa2123ba086877",
+        "sha256": "729af1177378d674bb521b11fe7311a43e7f995c2104d9be7fdbfb31b2e2ab6f",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-40242fa-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-40242fa/DroidDeck-main-40242fa-ludashi.apk",
+        "name": "DroidDeck-main-9bf638a-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9bf638a/DroidDeck-main-9bf638a-ludashi.apk",
         "size": 96604504,
-        "sha256": "9bc917e2c0a718725417661dcaf04a879ea0d1a1a68112a2f00e3c645aeb9150",
+        "sha256": "6470405e0e01fb68a4fcdfe0e6a196f2ce07c9ba64a4df2d4cdd9e834e8ff138",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9bf638a3c4131ee569eac305c4f4ec28198cd0e2",
+      "title": "fix(input): system Back only turns into a right-click with an external mouse",
+      "summary": "On some handhelds the system Back button opens the guest's right-click menu instead of the side menu. Android injects Back with no device and without the virtual-hard-key flag, and the injected-Back rule treated it as a mouse right-click whenever any mouse-capable input device existed, including built-in ones.",
+      "publishedAt": 1794330366000
+    },
     {
       "commit": "40242fa0825cbb1a85d2ad0b58fe75b8c9217b5e",
       "title": "ci: scan signed main and release APKs on VirusTotal",
@@ -155,12 +161,6 @@
       "title": "fix(session): wait for Steam readiness before launch",
       "summary": "A game launched straight from DroidDeck could stall at Steam's launch screen. Steam logged LaunchApp waiting for user response to ShowInterstitials and never went further. The launch was handed to Steam on the first focus of Big Picture, before Steam's UI was ready to answer the launch's interstitial step. When that happened, the watchdog re-sent the same rungameid, which does nothing for an a",
       "publishedAt": 1794267828000
-    },
-    {
-      "commit": "836340f3a297af05a1b478e05177e22f2a545e09",
-      "title": "fix(session): no endless loading screen after a game exits back to Steam",
-      "summary": "After a game exits cleanly back to Steam (return-after-game), the screen could stay black with only \"Menu\" and \"B force shutdown\" showing, which is the session loading overlay. SessionActivity.onSessionEnded() used any pending SessionState.relaunch intent on a clean exit and called recreate(). The intent could be stale: one left over from an earlier relaunch request that never stopped the se",
-      "publishedAt": 1794262696000
     }
   ],
   "tests": [
