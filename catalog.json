@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794268285691,
+  "generatedAt": 1794269882943,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2375",
+      "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
+      "summary": "An on-device agent (or a person) can now change DroidDeck, build it on the handheld, and run it over the installed release without reinstalling or re-signing. Testers keep their games, sign-ins and settings, and nobody needs the release key. docs/lab-builds.md describes it.",
+      "commit": "914c659f4abdaec9fd3ae11f2f7db98ffd04059c",
+      "pr": 2375,
+      "version": null,
+      "versionCode": 18,
+      "publishedAt": 1794269804000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2375",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2375-914c659.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-914c659.apk",
+          "size": 96600316,
+          "sha256": "b2f4b785db181ada02b7179dad7b68be7d7b4faee2e2f49455cbbf805c0ac361",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2375-914c659-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-914c659-pubg.apk",
+          "size": 96600316,
+          "sha256": "bb8b566aff7e674b7af5c47c4424270f9877feabc8cd85f382ca34d2b44e36b3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2375-914c659-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-914c659-antutu.apk",
+          "size": 96600316,
+          "sha256": "44cae49889120bfae636c940c5f6b2545c1d7e632673a350f9a23e5841017e55",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2375-914c659-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-914c659-ludashi.apk",
+          "size": 96600316,
+          "sha256": "808edc37a418a3cde4f2b74c95f29ba063957bc639ace669f4ffe3190d16b73e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 18,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2377",
       "title": "perf(proot): faster SD card installs and uninstalls on FUSE-backed libraries",
       "summary": "Installing, verifying and uninstalling games on an SD card served through Android's MediaProvider FUSE is very slow. The FUSE daemon re-resolves every path component on every operation (its entry cache timeout is effectively zero), and the proot fast path passed full absolute host paths for every lstat, open, rename and unlink. A Steam file 11 folders deep paid for 11+ lookups per call.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-bd30d4c-ludashi.apk",
           "size": 96661897,
           "sha256": "c00069538c33ca1db16dd54f23d7107fcde9e061de8156c0146f5bf7e2134de7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2375",
-      "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
-      "summary": "An on-device agent (or a person) can now change DroidDeck, build it on the handheld, and run it over the installed release without reinstalling or re-signing. Testers keep their games, sign-ins and settings, and nobody needs the release key. docs/lab-builds.md describes it.",
-      "commit": "a17855325456d5b3b3595d2ccbf9669178eb4f9b",
-      "pr": 2375,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794267466000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2375",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2375-a178553.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-a178553.apk",
-          "size": 96518396,
-          "sha256": "1cf67042d576107be7ee4a9f678b95142b0977e091d501012efbe1cd55a4c945",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2375-a178553-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-a178553-pubg.apk",
-          "size": 96518396,
-          "sha256": "5563c11d231bf77a0fc5ad3a98ac83e27b4ca8e65af24d6ad9da0fc35652e8c2",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2375-a178553-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-a178553-antutu.apk",
-          "size": 96518396,
-          "sha256": "361eb2eea86c8ccd7c7b548ca9d2c12e786eb74f096e800363f7664e6e4fcfd7",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2375-a178553-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2375/DroidDeck-PR.2375-a178553-ludashi.apk",
-          "size": 96518396,
-          "sha256": "e7c4e56412cdf23bf20097e2a1ed53f04d8bd2295ada7b1430c9f9f4cc44f4ab",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
