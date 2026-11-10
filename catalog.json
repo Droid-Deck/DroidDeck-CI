@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794309566383,
+  "generatedAt": 1794309949730,
   "stable": {
     "tag": "0.7.0",
     "title": "DroidDeck 0.7.0",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-2318",
-      "title": "fix(game-env): repair foreign-architecture system DLLs in ARM64 prefixes",
-      "summary": "A Windows installer can put an x64 ucrtbase.dll into an ARM64 prefix. Wine then fails to load it with c000007b, and later launches can keep failing because component restoration puts the DLL back.",
-      "commit": "1f3306718ddf3b817f22131cf7ed6e16ca91fcb7",
-      "pr": 2318,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794309481000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2318",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2318-1f33067.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-1f33067.apk",
-          "size": 96604504,
-          "sha256": "51a8926cf59f150da3b23cceb33d960dc1849bb01964d247d1f99646baadc554",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2318-1f33067-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-1f33067-pubg.apk",
-          "size": 96604504,
-          "sha256": "443fef3ae4255f9428212f271af65eda7b0c985b16644a1c734bf8870db72d3f",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2318-1f33067-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-1f33067-antutu.apk",
-          "size": 96604504,
-          "sha256": "96552709222cafbde58f828999e6098226a1bba13a99d364bdbdd91c3decec95",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2318-1f33067-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2318/DroidDeck-PR.2318-1f33067-ludashi.apk",
-          "size": 96604504,
-          "sha256": "aaa987e50180869c56a53f6eaa3ff73d08b6f76a123037f625da3cc8c95c7c38",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2382",
       "title": "fix(memory): reclaim idle session memory under pressure",
