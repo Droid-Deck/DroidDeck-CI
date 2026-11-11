@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794406516541,
+  "generatedAt": 1794409922159,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2463",
+      "title": "fix(steam): share the Steam app's prefix with shortcuts of the same install",
+      "summary": "A game installed through the Steam client had its cloud saves downloaded into compatdata/<appid>, but launching the same install folder as an added game ran it as a shortcut with its own compatdata/<shortcut id> prefix, so the saves were not there. The report's session log shows the ownership probe failed because the Steam pipe was unavailable, so the importer kept the folder as a shortcut.",
+      "commit": "7728daf88fa2abfa1855425cfcad737c404afd58",
+      "pr": 2463,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794409812000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2463",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2463-7728daf.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-7728daf.apk",
+          "size": 96879551,
+          "sha256": "cba91e664704dd47c05edc79a94c17af75b66c809a50e2c37d9e89160a2362c3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2463-7728daf-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-7728daf-pubg.apk",
+          "size": 96879551,
+          "sha256": "358b37174c4c31ff8b982e90640f633385cbfd5641455f88dec309c39c3e96de",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2463-7728daf-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-7728daf-antutu.apk",
+          "size": 96879551,
+          "sha256": "2da134cbecb0b88bad2e15d3823673e598796acb9dd6c658d33e95c70a24dc42",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2463-7728daf-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-7728daf-ludashi.apk",
+          "size": 96879551,
+          "sha256": "df692b37192dbf78e1133ec516c24ccef4f2d12159ad1355eda5885787606afa",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2406",
       "title": "fix(graphics): make Auto-owned Mali fallback state explicit",
