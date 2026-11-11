@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794433317638,
+  "generatedAt": 1794436299115,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2494",
+      "title": "fix(lab): target the active app package and repair build setup",
+      "summary": "Lab builds always targeted com.droiddeck.launcher, so an Agent session in another package (such as com.tencent.ig) queried the wrong control provider and staged and restarted the wrong app. Infer the target from DDAGENTINBOX, allow an explicit DROIDDECKPACKAGE override, and use the same package for the control provider, Lab storage, compilation and restart. Reuse the Agent inbox for bui",
+      "commit": "aece25902b897c5a4c76d91311b9a1cf51d688ff",
+      "pr": 2494,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794436156000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2494",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2494-aece259.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2494/DroidDeck-PR.2494-aece259.apk",
+          "size": 97281178,
+          "sha256": "bdf7c2c7a682b02015d1f90fc8d9a0255d3fe335bfe96cce0dad760054df3576",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2494-aece259-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2494/DroidDeck-PR.2494-aece259-pubg.apk",
+          "size": 97281178,
+          "sha256": "0f46d79fd9b30872e6ce5395cc5be31184a1727c2a111f5a7486e998b22596cb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2494-aece259-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2494/DroidDeck-PR.2494-aece259-antutu.apk",
+          "size": 97281178,
+          "sha256": "ac02a8e3bf9f49b56149cb50726bec5a88a16d3cfd400cee93cb3b8f709ede7c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2494-aece259-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2494/DroidDeck-PR.2494-aece259-ludashi.apk",
+          "size": 97281178,
+          "sha256": "74aa3f43fd2d43fe5eca5b97d127c20cbe147ed773c31471db8dbd442d4b42c4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2354",
       "title": "fix(components): keep Mono away from framework GAC",
