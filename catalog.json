@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794399764871,
+  "generatedAt": 1794400443375,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2382",
+      "title": "fix(memory): reclaim idle session memory under pressure",
+      "summary": "Issue #945 exposed a RAM-size gate that disabled idle session reclaim above 13 GiB. MemAvailable alone also overstated headroom during rapid GPU and system-reserved memory growth.",
+      "commit": "06f0734143fd1443bf3411530e61242794651838",
+      "pr": 2382,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794400351000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2382",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2382-06f0734.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-06f0734.apk",
+          "size": 96518488,
+          "sha256": "a7d3e909f6a335ac4b8fd3399706f61168a4ffc22e17457022c26b4db993bedb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2382-06f0734-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-06f0734-pubg.apk",
+          "size": 96518488,
+          "sha256": "0ba4f37382f693f151f9902fe3cdbf68464669226547e861a7165d190a311f6f",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2382-06f0734-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-06f0734-antutu.apk",
+          "size": 96518488,
+          "sha256": "8ed0dd4fe5f1dfcf05bc965678a303bf4be99c96bb8937b049d4ed91ca69df88",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2382-06f0734-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-06f0734-ludashi.apk",
+          "size": 96518488,
+          "sha256": "14e23885c1df7a3138217ee4f8f59d7d2ec3248e5ee1c291ca32aa17b47accec",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2450",
       "title": "fix(ubisoft): R2 games get a session matching the subsystems they ask for",
@@ -697,55 +746,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2377/DroidDeck-PR.2377-7f8141c-ludashi.apk",
           "size": 96604504,
           "sha256": "ddc35e13e6d397c607988756d66a6be3b285618a6b67e72af01ec1f02f09976c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2382",
-      "title": "fix(memory): reclaim idle session memory under pressure",
-      "summary": "Issue #945 exposed a RAM-size gate that disabled idle session reclaim above 13 GiB. MemAvailable alone also overstated headroom during rapid GPU and system-reserved memory growth.",
-      "commit": "651e61f476357c6730cd71ebd7d206ebed488eed",
-      "pr": 2382,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794308667000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2382",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2382-651e61f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-651e61f.apk",
-          "size": 96604412,
-          "sha256": "937f1143f1edfcc74cc48caf477114c3505825fdbbe75f4fc9ee21abef381afe",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2382-651e61f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-651e61f-pubg.apk",
-          "size": 96604412,
-          "sha256": "e6fde2ec369243639b41b7867a57c1bd3e9dd0c084ab867a7d88617cef5721d3",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2382-651e61f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-651e61f-antutu.apk",
-          "size": 96604412,
-          "sha256": "bb5822ad171317b1aba8c68b701302dac57c5fc512ac074a237e98211e2a4117",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2382-651e61f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-651e61f-ludashi.apk",
-          "size": 96604412,
-          "sha256": "aa54bda4d42e855fb0110afacfcb4790fe0213284a280bfce2b05999f3022c3e",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
