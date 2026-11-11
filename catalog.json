@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794410351215,
+  "generatedAt": 1794410485912,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2422",
+      "title": "fix(gamescope): retry a failed nested swapchain rebuild and log why it failed",
+      "summary": "On a Pixel 10 Pro (PowerVR D-Series DXT-48-1536 MC1, system driver through libhybris, 0.7.1), a Steam session ended about 14 s after start, just as Big Picture took focus:",
+      "commit": "ab4116d42541ea4309c41c5d4bc5485165dae6d8",
+      "pr": 2422,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794410320000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2422",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2422-ab4116d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2422/DroidDeck-PR.2422-ab4116d.apk",
+          "size": 96604504,
+          "sha256": "6d04addcab7e993bc8974dfebd625fc9944f0a2db6f8576aef06e85169c1f49d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2422-ab4116d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2422/DroidDeck-PR.2422-ab4116d-pubg.apk",
+          "size": 96604504,
+          "sha256": "5d0f1ab276d6945916bcc82af6c7d5c0871cc943a7dacc8a2eab535af4d8b90e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2422-ab4116d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2422/DroidDeck-PR.2422-ab4116d-antutu.apk",
+          "size": 96604504,
+          "sha256": "afe0d7f408fd8f6a372a838a45aa360e6c34c026e33344e49a7b0752e1033aa1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2422-ab4116d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2422/DroidDeck-PR.2422-ab4116d-ludashi.apk",
+          "size": 96604504,
+          "sha256": "6bb252005dbe5da2b5dbbbe25d739d894ff1d02d4d7b158118c0d57540baef12",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2430",
       "title": "fix(components): install the real ARM64 Visual C++ runtime instead of registry entries",
