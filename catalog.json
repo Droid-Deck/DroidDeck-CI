@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794419823079,
+  "generatedAt": 1794419915762,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-c265b66",
-    "title": "fix(agent): start sessions from their own task so repeat starts aren't swallowed",
-    "summary": "After the first agent start following an install, droiddeckctl start stopped working: the app stayed on the launcher and droiddeckctl reported ACTIVITYSTARTFAILED (\"no new session appeared\") or hung.",
-    "commit": "c265b66e80d69688e001bdeba404a7e422a31e52",
+    "tag": "main-61031e3",
+    "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
+    "summary": "An on-device agent (or a person) can now change DroidDeck, build it on the handheld, and run it over the installed release without reinstalling or re-signing. Testers keep their games, sign-ins and settings, and nobody needs the release key. docs/lab-builds.md describes it.",
+    "commit": "61031e3c4b76f98261cf97ef526e6df68d512d90",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794413796000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c265b66",
+    "publishedAt": 1794419732000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-61031e3",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-c265b66.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c265b66/DroidDeck-main-c265b66.apk",
-        "size": 97088525,
-        "sha256": "03acb8408b5856a1f9a81705117d8057dc3a3501c739bb6575a4fd092575e0ff",
+        "name": "DroidDeck-main-61031e3.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61031e3/DroidDeck-main-61031e3.apk",
+        "size": 97121293,
+        "sha256": "c867d3554086d1322ee96692446f26ce4d17015f7effcf3f51407013d0fe8a5b",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-c265b66-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c265b66/DroidDeck-main-c265b66-pubg.apk",
-        "size": 97088525,
-        "sha256": "f61c3077e2669cbccee34f02e558e11f99aae0d63be175bf409ce29e9051cb9c",
+        "name": "DroidDeck-main-61031e3-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61031e3/DroidDeck-main-61031e3-pubg.apk",
+        "size": 97121293,
+        "sha256": "db88788024343e68ff459343240d20ce14f3fb4bb139d862c621a588890e77f7",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-c265b66-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c265b66/DroidDeck-main-c265b66-antutu.apk",
-        "size": 97088525,
-        "sha256": "91b9291653f708062d82adcadb515c2a112a4a9323219500945d96ecdb2a232f",
+        "name": "DroidDeck-main-61031e3-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61031e3/DroidDeck-main-61031e3-antutu.apk",
+        "size": 97121293,
+        "sha256": "d087cd6f13dba1962cf1951c244a66b6fb09119dc5e52779fc4d695a06ac22bf",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-c265b66-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c265b66/DroidDeck-main-c265b66-ludashi.apk",
-        "size": 97088525,
-        "sha256": "ec41ea703c01b13088a8bdb27ca23a65a6624e4f527d3059873f50cf8ce40e5e",
+        "name": "DroidDeck-main-61031e3-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61031e3/DroidDeck-main-61031e3-ludashi.apk",
+        "size": 97121293,
+        "sha256": "c5a0f827f5704d514c72eeeff61c515401d9c568fe06b5adcabf57fa504deeb3",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "61031e3c4b76f98261cf97ef526e6df68d512d90",
+      "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
+      "summary": "An on-device agent (or a person) can now change DroidDeck, build it on the handheld, and run it over the installed release without reinstalling or re-signing. Testers keep their games, sign-ins and settings, and nobody needs the release key. docs/lab-builds.md describes it.",
+      "publishedAt": 1794419732000
+    },
     {
       "commit": "c265b66e80d69688e001bdeba404a7e422a31e52",
       "title": "fix(agent): start sessions from their own task so repeat starts aren't swallowed",
@@ -155,12 +161,6 @@
       "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
       "summary": "Adds EA as a store. Games sign in, sync, download, update and launch without the EA app in the prefix.",
       "publishedAt": 1794341262000
-    },
-    {
-      "commit": "9bf638a3c4131ee569eac305c4f4ec28198cd0e2",
-      "title": "fix(input): system Back only turns into a right-click with an external mouse",
-      "summary": "On some handhelds the system Back button opens the guest's right-click menu instead of the side menu. Android injects Back with no device and without the virtual-hard-key flag, and the injected-Back rule treated it as a mouse right-click whenever any mouse-capable input device existed, including built-in ones.",
-      "publishedAt": 1794330366000
     }
   ],
   "tests": [
