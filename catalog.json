@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794419915762,
+  "generatedAt": 1794421481849,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2465",
+      "title": "fix(input): screen taps move the pointer without clicking while an on-screen mouse button is shown",
+      "summary": "When an on-screen control bound to a mouse button (left, right or middle) was on screen, tapping the game picture still clicked. Players who place their own click buttons want the screen to move the pointer and the button to do the clicking. Direct touch sent every tap to the guest as a touch, which the guest treats as a click. Touchpad mode turned taps, double taps, holds and two-finger taps into",
+      "commit": "5aaa29a62cfdb12bff3ab021ada601bb30ba90fa",
+      "pr": 2465,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794421351000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2465",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2465-5aaa29a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2465/DroidDeck-PR.2465-5aaa29a.apk",
+          "size": 97121293,
+          "sha256": "02c6ef81ac8e53beccf418ba233db7173b25f54a51108a749b3a8870d20bae44",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2465-5aaa29a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2465/DroidDeck-PR.2465-5aaa29a-pubg.apk",
+          "size": 97121293,
+          "sha256": "154d9fef521c2555577d9816e2ce68f001bfe82b94e4591667e7996b8f222e2e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2465-5aaa29a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2465/DroidDeck-PR.2465-5aaa29a-antutu.apk",
+          "size": 97121293,
+          "sha256": "a31a9715e76700cc8b898ccef516194fff11cf1a46a74c6ec778f8d9a495a7f2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2465-5aaa29a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2465/DroidDeck-PR.2465-5aaa29a-ludashi.apk",
+          "size": 97121293,
+          "sha256": "64b7c16cd159c46d386e4644c7385766df0fdbbee19449923ab0fab6f50a7228",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2376",
       "title": "feat(agent): an Agent tab, a session drawer page, and a bubble over the game",
