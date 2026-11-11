@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794406050358,
+  "generatedAt": 1794406166191,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2406",
+      "title": "fix(graphics): make Auto-owned Mali fallback state explicit",
+      "summary": "Auto treated the default Mali bridge state as user-owned state. When a matched non-Adreno pair was already installed, Auto could leave the bridge enabled and the session used it instead of the selected runtime pair. The report is Discord log 1569562430973943871; no matching GitHub issue was found.",
+      "commit": "216b04ac77470795f4b93fc7e381347ea903c4f4",
+      "pr": 2406,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794405980000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2406",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2406-216b04a.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2406/DroidDeck-PR.2406-216b04a.apk",
+          "size": 96604504,
+          "sha256": "e63e5bbf5ab2cac8b5c03ded1e2166095a3cf0fa71d3de39b13c93ec9858143b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2406-216b04a-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2406/DroidDeck-PR.2406-216b04a-pubg.apk",
+          "size": 96604504,
+          "sha256": "4b7fd836d7c1613ccf1f69e2e6a8f19f5224564873fdf023077db90c48a4d0cf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2406-216b04a-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2406/DroidDeck-PR.2406-216b04a-antutu.apk",
+          "size": 96604504,
+          "sha256": "2a3355456c962a5ab16a4b3f7e061f2a70578e29fe55943d5af582bb9b7f87aa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2406-216b04a-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2406/DroidDeck-PR.2406-216b04a-ludashi.apk",
+          "size": 96604504,
+          "sha256": "4f23145832344577aa3d8aae59b5c7715161fa071e0e1fa7da700930e5984471",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2426",
       "title": "fix(fex): supply current Wayland libraries in the shared runtime",
