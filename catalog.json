@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794410090364,
+  "generatedAt": 1794410196257,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2432",
+      "title": "fix(steam): offer a Games folder as a Steam library when it is not already one",
+      "summary": "A Discord report says GameNative's library was not found after an update and adding its folder was refused as already in or under a library (message 1569748644469415988). Reinstalling restored it. The device, build, and exact folder path are unknown, so the reported cause is unconfirmed.",
+      "commit": "f8a59ec41df95c495aa19d46893d9338f999a68f",
+      "pr": 2432,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794410097000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2432",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2432-f8a59ec.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-f8a59ec.apk",
+          "size": 96965567,
+          "sha256": "1fec08eeddd0cd9794328c00f00b20460789debd7ed8b85cbcde1d7aa7090354",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2432-f8a59ec-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-f8a59ec-pubg.apk",
+          "size": 96965567,
+          "sha256": "26852d0befc6764d16798e9f7de07e12492c19ef4cc840a7194f3c15c1cb4ad7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2432-f8a59ec-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-f8a59ec-antutu.apk",
+          "size": 96965567,
+          "sha256": "236f380269054dd145e5d747efc52403c2a2e70de2ff033359cfff010fc8bdf1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2432-f8a59ec-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-f8a59ec-ludashi.apk",
+          "size": 96965567,
+          "sha256": "d88e032312e2b397b82f40122e2d85d116b2b207794be6d4e8c7cd3d1d0aaec6",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2438",
+      "title": "feat(stores): show the pre-install size in store game details",
+      "summary": "EA game details can show no pre-install size on the status line or Install button. CatalogItem.sizeBytes remains 0 until a size lookup runs, and the detail page did not request one.",
+      "commit": "60199691d303926b48ef321ec15eb3e3a1a9c339",
+      "pr": 2438,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794410033000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2438",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2438-6019969.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-6019969.apk",
+          "size": 96969663,
+          "sha256": "7573975922749afdbf0401eb78e5b20765aaa11db406343f4f770a3e4ed977c6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2438-6019969-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-6019969-pubg.apk",
+          "size": 96969663,
+          "sha256": "d091df70e5dc6bc026e53041b4f57672f21519715422d8783336f827c9858188",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2438-6019969-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-6019969-antutu.apk",
+          "size": 96969663,
+          "sha256": "91fec50b2441a48640e0db6e8ef76492187064b6d0ceb661a28f36f2175ccd54",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2438-6019969-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-6019969-ludashi.apk",
+          "size": 96969663,
+          "sha256": "0c4e46119812408b5bd9ff04f99611779fc18bd22181fee14e30559569bba4d0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2440",
       "title": "fix(ea): retry rejected EA licence token requests",
