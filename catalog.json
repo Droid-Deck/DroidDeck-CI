@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794424154515,
+  "generatedAt": 1794424304615,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2463",
+      "title": "fix(steam): share the Steam app's prefix with shortcuts of the same install",
+      "summary": "A game installed through the Steam client had its cloud saves downloaded into compatdata/<appid>, but launching the same install folder as an added game ran it as a shortcut with its own compatdata/<shortcut id> prefix, so the saves were not there. The report's session log shows the ownership probe failed because the Steam pipe was unavailable, so the importer kept the folder as a shortcut.",
+      "commit": "9e8925ef465151723f4c2ab7d762171a19fb02bb",
+      "pr": 2463,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794424099000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2463",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2463-9e8925e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-9e8925e.apk",
+          "size": 97113101,
+          "sha256": "42b5d24a1c978da2831d7aaf0571ce417e9488edac913ec785a68801fbb0c1ec",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2463-9e8925e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-9e8925e-pubg.apk",
+          "size": 97113101,
+          "sha256": "9e9ef2c4c60ead81f602e40fcec6a3734216d85da058af3072a3172a622e9905",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2463-9e8925e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-9e8925e-antutu.apk",
+          "size": 97113101,
+          "sha256": "9486f79869889f6db955675d566e95992252148c1368357586c0cc57cf427298",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2463-9e8925e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-9e8925e-ludashi.apk",
+          "size": 97113101,
+          "sha256": "81c50e750085a698b770bdc83645f6e581c7faf09cd9f708c7709042b921bf81",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2432",
       "title": "fix(steam): offer a Games folder as a Steam library when it is not already one",
@@ -403,55 +452,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2337/DroidDeck-PR.2337-b83d159-ludashi.apk",
           "size": 97121293,
           "sha256": "f542aa42161e1773055b9233e6a710ce6d7bdbbd22dc966559e679edfa50ebcf",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2376",
-      "title": "feat(agent): an Agent tab, a session drawer page, and a bubble over the game",
-      "summary": "Adds an agent to DroidDeck: a coding agent CLI from the Linux userland, run headless one process per turn, which can debug games with droiddeckctl and make Lab builds of DroidDeck on the device. Builds on Droid-Deck/DroidDeck#2375 (Lab builds, merged).",
-      "commit": "fe7b6f76ae30462144e0b08a7833cefedf2b4d0e",
-      "pr": 2376,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794423018000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2376",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2376-fe7b6f7.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-fe7b6f7.apk",
-          "size": 97277082,
-          "sha256": "a9b8a9877c40a3d6be0dfca4c9e8d8b8c2e81d66ab06c045f44e487f6dc5e38f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2376-fe7b6f7-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-fe7b6f7-pubg.apk",
-          "size": 97277082,
-          "sha256": "559b5a77208164ffe153b6f0089c965a63218566755227431ea09fbdaacc9ab7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2376-fe7b6f7-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-fe7b6f7-antutu.apk",
-          "size": 97277082,
-          "sha256": "8aa83133088c18f53e52b66e7645dc4dd913faceacb1445a979feed3e634e24d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2376-fe7b6f7-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-fe7b6f7-ludashi.apk",
-          "size": 97277082,
-          "sha256": "91cf8324f7c332644674312cf625da30e1e7bc2406a538726e2ddc2a17ccf3b6",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -1138,55 +1138,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2440/DroidDeck-PR.2440-f24d251-ludashi.apk",
           "size": 96965567,
           "sha256": "12057d3e72d250fe2374592a3c52f1dd2fda8bbe34eb387628a143d26d6a8993",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2463",
-      "title": "fix(steam): share the Steam app's prefix with shortcuts of the same install",
-      "summary": "A game installed through the Steam client had its cloud saves downloaded into compatdata/<appid>, but launching the same install folder as an added game ran it as a shortcut with its own compatdata/<shortcut id> prefix, so the saves were not there. The report's session log shows the ownership probe failed because the Steam pipe was unavailable, so the importer kept the folder as a shortcut.",
-      "commit": "7728daf88fa2abfa1855425cfcad737c404afd58",
-      "pr": 2463,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794409812000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2463",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2463-7728daf.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-7728daf.apk",
-          "size": 96879551,
-          "sha256": "cba91e664704dd47c05edc79a94c17af75b66c809a50e2c37d9e89160a2362c3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2463-7728daf-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-7728daf-pubg.apk",
-          "size": 96879551,
-          "sha256": "358b37174c4c31ff8b982e90640f633385cbfd5641455f88dec309c39c3e96de",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2463-7728daf-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-7728daf-antutu.apk",
-          "size": 96879551,
-          "sha256": "2da134cbecb0b88bad2e15d3823673e598796acb9dd6c658d33e95c70a24dc42",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2463-7728daf-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2463/DroidDeck-PR.2463-7728daf-ludashi.apk",
-          "size": 96879551,
-          "sha256": "df692b37192dbf78e1133ec516c24ccef4f2d12159ad1355eda5885787606afa",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
