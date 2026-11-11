@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794425206991,
+  "generatedAt": 1794425355211,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2462",
+      "title": "feat(boot-movie): add a Shuffle switch backed by Steam's startup movie shuffle setting",
+      "summary": "Settings > Boot movie > Installed only lets one movie be picked. Steam can shuffle its startup movies (client setting startupmovieshuffle, read by its UI in steamui/sp.js), but DroidDeck offered no way to turn that on, so the same movie played every start.",
+      "commit": "fa14eaa81c1efb383ffdfcbc6f706096b85858cc",
+      "pr": 2462,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794425224000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2462",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2462-fa14eaa.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2462/DroidDeck-PR.2462-fa14eaa.apk",
+          "size": 97039373,
+          "sha256": "86eb14748ac7f9121af95cba33cba5d99967f7fc4c76b6dc54ac03cf753450f4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2462-fa14eaa-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2462/DroidDeck-PR.2462-fa14eaa-pubg.apk",
+          "size": 97039373,
+          "sha256": "ca78b50c2e7ebc98f6b53b3226d756ee728bacd20b4993b98ebe43d28d0c485b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2462-fa14eaa-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2462/DroidDeck-PR.2462-fa14eaa-antutu.apk",
+          "size": 97039373,
+          "sha256": "0ec2af088eb50c53fd9325d82830015ed4171fa6ac59391d0addb46ffc3873b2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2462-fa14eaa-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2462/DroidDeck-PR.2462-fa14eaa-ludashi.apk",
+          "size": 97039373,
+          "sha256": "1e31885006c9c55b20ffba6a880d73354ef158e108f03e97a041fd412260dc00",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2028",
       "title": "feat: Trinkets tab with a Bluetooth controller mode",
