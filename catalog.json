@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794427548687,
+  "generatedAt": 1794427672018,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-61031e3",
-    "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
-    "summary": "An on-device agent (or a person) can now change DroidDeck, build it on the handheld, and run it over the installed release without reinstalling or re-signing. Testers keep their games, sign-ins and settings, and nobody needs the release key. docs/lab-builds.md describes it.",
-    "commit": "61031e3c4b76f98261cf97ef526e6df68d512d90",
+    "tag": "main-9d99232",
+    "title": "feat(agent): the agent's commits and pull requests carry no Claude credit by default",
+    "summary": "Commits and pull requests the on-device agent makes are the user's own, so by default they carry no \"Co-Authored-By: Claude\" line and no \"Generated with Claude Code\" note.",
+    "commit": "9d99232f9909de53ae1ecc557e67d70144c155e3",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794419732000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-61031e3",
+    "publishedAt": 1794427547000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9d99232",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-61031e3.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61031e3/DroidDeck-main-61031e3.apk",
-        "size": 97121293,
-        "sha256": "c867d3554086d1322ee96692446f26ce4d17015f7effcf3f51407013d0fe8a5b",
+        "name": "DroidDeck-main-9d99232.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d99232/DroidDeck-main-9d99232.apk",
+        "size": 97195162,
+        "sha256": "18632c14c203fdee06b3ddcab45f01a59faf4d5ec39bd972d382cb01cd683c92",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-61031e3-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61031e3/DroidDeck-main-61031e3-pubg.apk",
-        "size": 97121293,
-        "sha256": "db88788024343e68ff459343240d20ce14f3fb4bb139d862c621a588890e77f7",
+        "name": "DroidDeck-main-9d99232-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d99232/DroidDeck-main-9d99232-pubg.apk",
+        "size": 97195162,
+        "sha256": "03883b10e7f2ca8875d1e561abd59a912023e1a7ee2bc5bbabc8b6f3ff9d56ee",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-61031e3-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61031e3/DroidDeck-main-61031e3-antutu.apk",
-        "size": 97121293,
-        "sha256": "d087cd6f13dba1962cf1951c244a66b6fb09119dc5e52779fc4d695a06ac22bf",
+        "name": "DroidDeck-main-9d99232-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d99232/DroidDeck-main-9d99232-antutu.apk",
+        "size": 97195162,
+        "sha256": "260b21299c25f90108af5006cec61f2be49bd40265c7d1e00d4e78014259e83e",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-61031e3-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-61031e3/DroidDeck-main-61031e3-ludashi.apk",
-        "size": 97121293,
-        "sha256": "c5a0f827f5704d514c72eeeff61c515401d9c568fe06b5adcabf57fa504deeb3",
+        "name": "DroidDeck-main-9d99232-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d99232/DroidDeck-main-9d99232-ludashi.apk",
+        "size": 97195162,
+        "sha256": "303f924682d9cac0bd1c447f663bb4e88ceaa094b300fbfc5d67234a5cb06719",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "9d99232f9909de53ae1ecc557e67d70144c155e3",
+      "title": "feat(agent): the agent's commits and pull requests carry no Claude credit by default",
+      "summary": "Commits and pull requests the on-device agent makes are the user's own, so by default they carry no \"Co-Authored-By: Claude\" line and no \"Generated with Claude Code\" note.",
+      "publishedAt": 1794427547000
+    },
     {
       "commit": "61031e3c4b76f98261cf97ef526e6df68d512d90",
       "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
@@ -155,15 +161,58 @@
       "title": "feat(ubisoft): Ubisoft Connect store with native sign-in, library, downloads and launch",
       "summary": "Adds Ubisoft Connect as a store. Sign-in, the owned library, downloads and launching all run inside DroidDeck, with no Ubisoft Connect client. Ubisoft's own DRM DLLs are used unmodified, and the launch session carries a real ticket from Ubisoft's ownership service.",
       "publishedAt": 1794342049000
-    },
-    {
-      "commit": "d8ed02f2cf38ecfa6aebed976281be37bd36f1fc",
-      "title": "feat: EA store with sign-in, library, native downloads, updates and launch without the EA app",
-      "summary": "Adds EA as a store. Games sign in, sync, download, update and launch without the EA app in the prefix.",
-      "publishedAt": 1794341262000
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2251",
+      "title": "ci: run Python and native regression tests on the workstation runner when idle",
+      "summary": "Experiment: routes the Python and native regression tests job through the same idle-runner picker as components and compile, to measure the time saved against the extra load on the workstation runners.",
+      "commit": "4eda6abf92785be424d16f8e6798dafecfad9d7c",
+      "pr": 2251,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794427449000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2251",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2251-4eda6ab.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2251/DroidDeck-PR.2251-4eda6ab.apk",
+          "size": 97277082,
+          "sha256": "79746ae1f6520fcd547961cb3e0476818bcd192c165092143312ff0753aaf2b6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2251-4eda6ab-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2251/DroidDeck-PR.2251-4eda6ab-pubg.apk",
+          "size": 97277082,
+          "sha256": "2bd8c72a394daeb83628d095100a111a0dd5af3a8597bae673d06fc86174dd62",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2251-4eda6ab-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2251/DroidDeck-PR.2251-4eda6ab-antutu.apk",
+          "size": 97277082,
+          "sha256": "881376d856dbaf4f182b2bce9de160ee7bb530315afb332c47c5d13b9403baf7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2251-4eda6ab-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2251/DroidDeck-PR.2251-4eda6ab-ludashi.apk",
+          "size": 97277082,
+          "sha256": "df378623074b44c21ae87b1e870280ee930be28b1be8f8f2e677e9be94f97dc3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2438",
       "title": "feat(stores): show the pre-install size in store game details",
