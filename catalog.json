@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794400443375,
+  "generatedAt": 1794400636558,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2356",
+      "title": "fix(graphics): fall back from unsupported auto display drivers",
+      "summary": "Auto used the bundled turnip25.1.0 display driver for Adreno 710/720/722 because TurnipDriver.chooseByModel grouped every model from 700 to 799 together. On those chips that driver enumerates no Vulkan physical device. The compositor logged present: no physical devices / DDPRESENTFAULT, so the session drew frames that never reached the screen (Steam stuck on its first frame).",
+      "commit": "9d2d8aa9933a3cede5cfee34e86159b7aa6abdda",
+      "pr": 2356,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794400519000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2356",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2356-9d2d8aa.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2356/DroidDeck-PR.2356-9d2d8aa.apk",
+          "size": 96604504,
+          "sha256": "6c82a491cbb99ddcef2f5ce5c6cbf160c57c840a800d47f56e616d3baaf910ef",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2356-9d2d8aa-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2356/DroidDeck-PR.2356-9d2d8aa-pubg.apk",
+          "size": 96604504,
+          "sha256": "e76ebc37f3cead8ed3cfbbafe52a707261be3a17c4fc343e13f022d4c416b122",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2356-9d2d8aa-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2356/DroidDeck-PR.2356-9d2d8aa-antutu.apk",
+          "size": 96604504,
+          "sha256": "2e0d3a648cc5119748d55501f78cc3fe1a18fee7d6f9f876b39630b2212a248b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2356-9d2d8aa-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2356/DroidDeck-PR.2356-9d2d8aa-ludashi.apk",
+          "size": 96604504,
+          "sha256": "d85bad6b38eb329b61a526059bae2eefb019849bed65525ebaa78b67d9b2a5ea",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2382",
       "title": "fix(memory): reclaim idle session memory under pressure",
