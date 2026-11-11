@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794436299115,
+  "generatedAt": 1794436826931,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2379",
+      "title": "fix: games on an SD card install faster and Battle.net stops marking them unplayable",
+      "summary": "Two separate faults hit games kept on an SD card.",
+      "commit": "a08944d154af66c45c73ae1acb44d11827565f97",
+      "pr": 2379,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794436698000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2379",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2379-a08944d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-a08944d.apk",
+          "size": 97195162,
+          "sha256": "f1f6d27144c28db21d913aed4484764274350ce79609880e09cf8c01b82ed11e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2379-a08944d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-a08944d-pubg.apk",
+          "size": 97195162,
+          "sha256": "64866669afc2c70e8afcc872212d020caaa3528f30e89d4ba41de12f1e0de8fa",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2379-a08944d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-a08944d-antutu.apk",
+          "size": 97195162,
+          "sha256": "8097e0e63d39182f2047be1974f0ce9897c7cf7f62ff3b2e64e6400f4b8e4818",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2379-a08944d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-a08944d-ludashi.apk",
+          "size": 97195162,
+          "sha256": "b670afcd7e7e290735dde673100a1cdbe542b950e04c7f0901d56aa5a37aae81",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2494",
       "title": "fix(lab): target the active app package and repair build setup",
       "summary": "Lab builds always targeted com.droiddeck.launcher, so an Agent session in another package (such as com.tencent.ig) queried the wrong control provider and staged and restarted the wrong app. Infer the target from DDAGENTINBOX, allow an explicit DROIDDECKPACKAGE override, and use the same package for the control provider, Lab storage, compilation and restart. Reuse the Agent inbox for bui",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2486/DroidDeck-PR.2486-18da143-ludashi.apk",
           "size": 97277082,
           "sha256": "38b45a5a2db9f17d1df4e1e9de68951f6e78e93bbc1a84c536cfce35579e1170",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2379",
-      "title": "fix: games on an SD card install faster and Battle.net stops marking them unplayable",
-      "summary": "Two separate faults hit games kept on an SD card.",
-      "commit": "a7a4e97d9aa42cb23e5c0953171f4f243e936e6e",
-      "pr": 2379,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794432177000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2379",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2379-a7a4e97.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-a7a4e97.apk",
-          "size": 97191066,
-          "sha256": "519214b3b4d1d9933bc390bdfda38fe195686210912dabd7c9d16cbbd5ad63e0",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2379-a7a4e97-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-a7a4e97-pubg.apk",
-          "size": 97191066,
-          "sha256": "4a47300c31f04ae22a36fa3a2f1d20ab5b36fc614d3a358587351558d3bc6c89",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2379-a7a4e97-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-a7a4e97-antutu.apk",
-          "size": 97191066,
-          "sha256": "4d0e36990ac52154d878ff940bdb618170ff0ccac7277fd80e14778cb29bef9a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2379-a7a4e97-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-a7a4e97-ludashi.apk",
-          "size": 97191066,
-          "sha256": "feaf090b28a8bb35bf37bc5df84f4fff82cdab56fd91b6d2a7455570cfe564d2",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
