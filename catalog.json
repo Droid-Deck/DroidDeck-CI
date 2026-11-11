@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794424017187,
+  "generatedAt": 1794424154515,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2432",
+      "title": "fix(steam): offer a Games folder as a Steam library when it is not already one",
+      "summary": "A Discord report says GameNative's library was not found after an update and adding its folder was refused as already in or under a library (message 1569748644469415988). Reinstalling restored it. The device, build, and exact folder path are unknown, so the reported cause is unconfirmed.",
+      "commit": "1d43b73c053052967bfd006c915a8df6c811e2f2",
+      "pr": 2432,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794424019000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2432",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2432-1d43b73.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-1d43b73.apk",
+          "size": 97035277,
+          "sha256": "6bb8147b46295a3667ed9c123662fd5e89f016f9de18230db80534fceab43f05",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2432-1d43b73-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-1d43b73-pubg.apk",
+          "size": 97035277,
+          "sha256": "4922fb3a3214c274c58a9642d60c44c28dbe331d09c98d721984482ef4e75578",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2432-1d43b73-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-1d43b73-antutu.apk",
+          "size": 97035277,
+          "sha256": "d432cee107fb00cd19eba56226677628268b5be38a63c9a2a1f6bc9bfe9bf33e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2432-1d43b73-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-1d43b73-ludashi.apk",
+          "size": 97035277,
+          "sha256": "b355bf23c94b905ca96ad5c424cc60e82aa91df145125b3b6a7c306025902c07",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2441",
       "title": "fix(venus): drop LIBGLKOPPERDISABLE without calling the guarded unsetenv",
@@ -991,55 +1040,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2430/DroidDeck-PR.2430-e59e2c0-ludashi.apk",
           "size": 97158189,
           "sha256": "ecf2817fcdd93a6f141715ee6069d4b24a2a1734dbe83c2f9cdadd6e02bd30de",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2432",
-      "title": "fix(steam): offer a Games folder as a Steam library when it is not already one",
-      "summary": "A Discord report says GameNative's library was not found after an update and adding its folder was refused as already in or under a library (message 1569748644469415988). Reinstalling restored it. The device, build, and exact folder path are unknown, so the reported cause is unconfirmed.",
-      "commit": "f8a59ec41df95c495aa19d46893d9338f999a68f",
-      "pr": 2432,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794410097000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2432",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2432-f8a59ec.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-f8a59ec.apk",
-          "size": 96965567,
-          "sha256": "1fec08eeddd0cd9794328c00f00b20460789debd7ed8b85cbcde1d7aa7090354",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2432-f8a59ec-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-f8a59ec-pubg.apk",
-          "size": 96965567,
-          "sha256": "26852d0befc6764d16798e9f7de07e12492c19ef4cc840a7194f3c15c1cb4ad7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2432-f8a59ec-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-f8a59ec-antutu.apk",
-          "size": 96965567,
-          "sha256": "236f380269054dd145e5d747efc52403c2a2e70de2ff033359cfff010fc8bdf1",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2432-f8a59ec-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2432/DroidDeck-PR.2432-f8a59ec-ludashi.apk",
-          "size": 96965567,
-          "sha256": "d88e032312e2b397b82f40122e2d85d116b2b207794be6d4e8c7cd3d1d0aaec6",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
