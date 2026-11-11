@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794411378058,
+  "generatedAt": 1794412795581,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2468",
+      "title": "fix(agent): start sessions from their own task so repeat starts aren't swallowed",
+      "summary": "After the first agent start following an install, droiddeckctl start stopped working: the app stayed on the launcher and droiddeckctl reported ACTIVITYSTARTFAILED (\"no new session appeared\") or hung.",
+      "commit": "9666ecb0ecdcbcd3449beaf14fd5df36d63aa187",
+      "pr": 2468,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794412689000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2468",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2468-9666ecb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2468/DroidDeck-PR.2468-9666ecb.apk",
+          "size": 97088525,
+          "sha256": "ab597ff61fcfb436533330fca85e55f30f142b65c5f8d00d7252d18cc70c10b3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2468-9666ecb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2468/DroidDeck-PR.2468-9666ecb-pubg.apk",
+          "size": 97088525,
+          "sha256": "637a8cbce15cd77f0cdce0689bfe751f37f2d294349b08257263a0533eec5180",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2468-9666ecb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2468/DroidDeck-PR.2468-9666ecb-antutu.apk",
+          "size": 97088525,
+          "sha256": "dac2ac8264a99811d2e9ed6746cf15b9ea2164d2829978ed2eeef64e0d71ec7c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2468-9666ecb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2468/DroidDeck-PR.2468-9666ecb-ludashi.apk",
+          "size": 97088525,
+          "sha256": "d647a1914c16020c5c8d26ac0fa28b7f37a8ef7979654fce39084fd2f5b6bb68",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2444",
       "title": "feat(stores): editable launch options for EA store games",
