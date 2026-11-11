@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794423189266,
+  "generatedAt": 1794423613251,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2337",
+      "title": "fix(drivers): Auto gives Xclipse GPUs the old RADV pair only where that build supports them",
+      "summary": "On a Galaxy A56 (Xclipse 540), Auto picked the older \"RADV \u00b7 Samsung Xclipse\" pair. Steam was black and ran at about 1 fps. RADV identified the GPU as \"AMD Radeon Graphics (RADV VANGOGH)\", then logged radv/amdgpu: The CS has been rejected (-22) and VKERRORDEVICELOST.",
+      "commit": "b83d159fc92681c0c49c3ff6ac78d2f3de682ac1",
+      "pr": 2337,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794423482000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2337",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2337-b83d159.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2337/DroidDeck-PR.2337-b83d159.apk",
+          "size": 97121293,
+          "sha256": "dd2178e9f63c288e316547ca409fd272c747ed73c2b9b5929fb27a867986506f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2337-b83d159-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2337/DroidDeck-PR.2337-b83d159-pubg.apk",
+          "size": 97121293,
+          "sha256": "5b175ecbb590fb1fd444841d0a6533d75d56bec49032355d83e1d271f38d2895",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2337-b83d159-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2337/DroidDeck-PR.2337-b83d159-antutu.apk",
+          "size": 97121293,
+          "sha256": "eb84d2968ab94b2af824ecabe40f7f52ada536746de5e4811b1924864c276a1e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2337-b83d159-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2337/DroidDeck-PR.2337-b83d159-ludashi.apk",
+          "size": 97121293,
+          "sha256": "f542aa42161e1773055b9233e6a710ce6d7bdbbd22dc966559e679edfa50ebcf",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2376",
       "title": "feat(agent): an Agent tab, a session drawer page, and a bubble over the game",
@@ -1089,55 +1138,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-a3d1154-ludashi.apk",
           "size": 96883647,
           "sha256": "3e41082ab5de7e6d0200ddb82fb1461f97c9652b52af648964280b1976511faa",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2337",
-      "title": "fix(drivers): Auto gives Xclipse GPUs the old RADV pair only where that build supports them",
-      "summary": "On a Galaxy A56 (Xclipse 540), Auto picked the older \"RADV \u00b7 Samsung Xclipse\" pair. Steam was black and ran at about 1 fps. RADV identified the GPU as \"AMD Radeon Graphics (RADV VANGOGH)\", then logged radv/amdgpu: The CS has been rejected (-22) and VKERRORDEVICELOST.",
-      "commit": "e6cc21bc158263d6fb7028a67e942af38b6177be",
-      "pr": 2337,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794405644000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2337",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2337-e6cc21b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2337/DroidDeck-PR.2337-e6cc21b.apk",
-          "size": 96969663,
-          "sha256": "e4193af3dcd336a723e141e227a4474ccac79f73516a4b72683519f534ae595d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2337-e6cc21b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2337/DroidDeck-PR.2337-e6cc21b-pubg.apk",
-          "size": 96969663,
-          "sha256": "860db3580345a237e86f9a000a06190b6b8071f254e76c68a7635725d952a47f",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2337-e6cc21b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2337/DroidDeck-PR.2337-e6cc21b-antutu.apk",
-          "size": 96969663,
-          "sha256": "50fcaa658ca0730d932f6365c9387fdc9d73284dcbdf0e815780072c3987ede6",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2337-e6cc21b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2337/DroidDeck-PR.2337-e6cc21b-ludashi.apk",
-          "size": 96969663,
-          "sha256": "27bc93c843bed44aab2686800c93b5d3a2430c3129e2f03d678fa7b833814b1d",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
