@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794403486238,
+  "generatedAt": 1794403606302,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2389",
+      "title": "feat: Add Soundtracks tab and music player",
+      "summary": "Steam soundtracks no longer show up in the Library tab. They get their own Soundtracks tab with a built-in music player that keeps playing when DroidDeck is closed.",
+      "commit": "86d86f94c4bc3f848f1c31a97adaee0f9c1aafba",
+      "pr": 2389,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794403426000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2389",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2389-86d86f9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-86d86f9.apk",
+          "size": 98498900,
+          "sha256": "7eb8252095a522da7f8832985e8c64a186a7046519306672ea18e5e193791a32",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2389-86d86f9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-86d86f9-pubg.apk",
+          "size": 98498900,
+          "sha256": "4e283229459efe4d9096ec34b5a497efaee862607e6366cfd2d459f9d9afeb1e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2389-86d86f9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-86d86f9-antutu.apk",
+          "size": 98498900,
+          "sha256": "4e5b4e704eea122c478503fd4ed7c8f17492d53410bdde081f578630090ffce7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2389-86d86f9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-86d86f9-ludashi.apk",
+          "size": 98498900,
+          "sha256": "31cf61032f8294d591ba3f0e8ef76c486a5a428ff699d517efc217ecae56cf4d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2350",
       "title": "fix(dual-screen): allow game swap to external second screens",
       "summary": "The in-game \"Game screen\" choice and the docked swap button were only offered when the second screen is built in (DualScreen.builtIn). A clip-on dual-screen add-on reports as an external display, so the game could not be moved to it.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2396/DroidDeck-PR.2396-a8e1847-ludashi.apk",
           "size": 96965567,
           "sha256": "212875f6c2af5f4f0d403d97a942cfd771ad1ff97bc03b54c7f26690d369fb82",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2389",
-      "title": "feat: Add Soundtracks tab and music player",
-      "summary": "Steam soundtracks no longer show up in the Library tab. They get their own Soundtracks tab with a built-in music player that keeps playing when DroidDeck is closed.",
-      "commit": "ad4aa6b822a980b1da61615bde5cf8eeafae8496",
-      "pr": 2389,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794401097000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2389",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2389-ad4aa6b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-ad4aa6b.apk",
-          "size": 98584916,
-          "sha256": "2c10802e0a65699974d70778cff661aaa62083045132b59c2222758a1b83d73a",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2389-ad4aa6b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-ad4aa6b-pubg.apk",
-          "size": 98584916,
-          "sha256": "1bf22b3d4a7bab99c71d6403c1d9fc29a1788710925601ef1c8468a5d3dc5946",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2389-ad4aa6b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-ad4aa6b-antutu.apk",
-          "size": 98584916,
-          "sha256": "a5faf35cb88e504ca3c61aba63e010e99c6548fe8a0a4e4d09c177a43b252f30",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2389-ad4aa6b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-ad4aa6b-ludashi.apk",
-          "size": 98584916,
-          "sha256": "6ce5ae9703f67df82ceccd77427aacf3a9d3bb77b2a8f8f145492d8cdc8887d2",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
