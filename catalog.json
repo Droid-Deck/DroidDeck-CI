@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794400719691,
+  "generatedAt": 1794400826028,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2346",
+      "title": "feat(performance): switch to turn off idle game memory compression",
+      "summary": "The Performance switch for Steam compression did not control the separate low-memory session reclaim path. On supported low-RAM devices, blsessionpressure could still compress idle game processes when available memory was low.",
+      "commit": "0204dffe60d839428cb7caef5632b9f6bb7e2e94",
+      "pr": 2346,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794400667000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2346",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2346-0204dff.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-0204dff.apk",
+          "size": 96973759,
+          "sha256": "bc28aa58e3df543516f61c0fc7ae2a528c9b2af6352d77899ea0ac5f88c5e220",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2346-0204dff-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-0204dff-pubg.apk",
+          "size": 96973759,
+          "sha256": "9fa798ace952de2a1a2c2a50f86a293a2826c3d38ce28e325bece390dd820124",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2346-0204dff-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-0204dff-antutu.apk",
+          "size": 96973759,
+          "sha256": "08c106ab9b4a72d4dd13efea3bb6739ccc700a01329e78146e743b2a63aacfe7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2346-0204dff-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-0204dff-ludashi.apk",
+          "size": 96973759,
+          "sha256": "0b89d9fd750d4b00ecff9cac84280dbd52ff9140f5e974ffe1376a5eacdce5e1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2354",
       "title": "fix(components): keep Mono away from framework GAC",
@@ -1334,55 +1383,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2419acc-ludashi.apk",
           "size": 96628988,
           "sha256": "a5837f8a14ae95ef7c476d81b13713d34f0d7b0c6333943f605f856b3d5b71a8",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2346",
-      "title": "feat(performance): switch to turn off idle game memory compression",
-      "summary": "The Performance switch for Steam compression did not control the separate low-memory session reclaim path. On supported low-RAM devices, blsessionpressure could still compress idle game processes when available memory was low.",
-      "commit": "d32edab2dadfa848a579e4d9b12e1edf06eb1d89",
-      "pr": 2346,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794253277000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2346",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2346-d32edab.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-d32edab.apk",
-          "size": 96633084,
-          "sha256": "63f68d974977d3d49141d4c43ed6f7bff2643ea77c9c4e935a93715c60b49ed3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2346-d32edab-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-d32edab-pubg.apk",
-          "size": 96633084,
-          "sha256": "c3ed55075b7f6d5294762170637a39737524f37d30dbe4cae4ecb318ce36b814",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2346-d32edab-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-d32edab-antutu.apk",
-          "size": 96633084,
-          "sha256": "bacc2038314b830ae669c225018c67eab96c8f229ce24bb85262733c561d8ac4",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2346-d32edab-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-d32edab-ludashi.apk",
-          "size": 96633084,
-          "sha256": "80230a9c3ed860d8c05f9e178f43a4c2f4c8d3fde1b66093c0436614c6d6c6f3",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
