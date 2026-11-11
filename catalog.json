@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794427387434,
+  "generatedAt": 1794427548687,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2438",
+      "title": "feat(stores): show the pre-install size in store game details",
+      "summary": "EA game details can show no pre-install size on the status line or Install button. CatalogItem.sizeBytes remains 0 until a size lookup runs, and the detail page did not request one.",
+      "commit": "57c37aa6e8873a42a76954e83c0a7a29259424a0",
+      "pr": 2438,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794427322000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2438",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2438-57c37aa.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-57c37aa.apk",
+          "size": 97035277,
+          "sha256": "ff24de82ffe1d8a0f8f1117b4735a9366bc4cd5e14bc342c27c37b32e113c722",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2438-57c37aa-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-57c37aa-pubg.apk",
+          "size": 97035277,
+          "sha256": "79d5e68f21187ebe6d5640695b8c716339a64a67bcf076c8b60e798c24aae217",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2438-57c37aa-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-57c37aa-antutu.apk",
+          "size": 97035277,
+          "sha256": "d2a402df0f628a3a4a43e0f55d876089253b47c2510a32dd6710eebb3c9496a2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2438-57c37aa-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-57c37aa-ludashi.apk",
+          "size": 97035277,
+          "sha256": "b59b63ecb2e52dc4e607e33091366b552f750c4c308b8c71fe88f872bed04232",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2446",
       "title": "fix(desktop): serve PipeWire in Desktop mode so screen capture works",
@@ -1236,55 +1285,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2430/DroidDeck-PR.2430-e59e2c0-ludashi.apk",
           "size": 97158189,
           "sha256": "ecf2817fcdd93a6f141715ee6069d4b24a2a1734dbe83c2f9cdadd6e02bd30de",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2438",
-      "title": "feat(stores): show the pre-install size in store game details",
-      "summary": "EA game details can show no pre-install size on the status line or Install button. CatalogItem.sizeBytes remains 0 until a size lookup runs, and the detail page did not request one.",
-      "commit": "60199691d303926b48ef321ec15eb3e3a1a9c339",
-      "pr": 2438,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794410033000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2438",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2438-6019969.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-6019969.apk",
-          "size": 96969663,
-          "sha256": "7573975922749afdbf0401eb78e5b20765aaa11db406343f4f770a3e4ed977c6",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2438-6019969-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-6019969-pubg.apk",
-          "size": 96969663,
-          "sha256": "d091df70e5dc6bc026e53041b4f57672f21519715422d8783336f827c9858188",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2438-6019969-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-6019969-antutu.apk",
-          "size": 96969663,
-          "sha256": "91fec50b2441a48640e0db6e8ef76492187064b6d0ceb661a28f36f2175ccd54",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2438-6019969-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2438/DroidDeck-PR.2438-6019969-ludashi.apk",
-          "size": 96969663,
-          "sha256": "0c4e46119812408b5bd9ff04f99611779fc18bd22181fee14e30559569bba4d0",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
