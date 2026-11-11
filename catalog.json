@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794401501638,
+  "generatedAt": 1794401611475,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2393",
+      "title": "fix(session): preserve guest monotonic time after long pauses",
+      "summary": "The pause clock compensation was limited to plasmashell, although session guests load the same preload. A long background pause therefore exposed the full CLOCKMONOTONIC gap to guest processes. The report log shows SIGCONT at 15:31:57.381, 2065 MB left in zRAM at 15:31:57.447, and the game window closing at 15:32:01.216. The zRAM pass also ran at 15:32:00.528, so memory pressure remains an op",
+      "commit": "e0cbb1c4f85ffdeb990b33c6a9ff5d05faabb8a2",
+      "pr": 2393,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794401459000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2393",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2393-e0cbb1c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2393/DroidDeck-PR.2393-e0cbb1c.apk",
+          "size": 96969663,
+          "sha256": "88c35a7b8560cca1ad07a9dd1518eaa5f5da76ce76230801f29609699d058679",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2393-e0cbb1c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2393/DroidDeck-PR.2393-e0cbb1c-pubg.apk",
+          "size": 96969663,
+          "sha256": "f87bbf4924107a63d1ae7cbe8bcc7a5294aedfa2a73669ab2f2bc386765d0fc3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2393-e0cbb1c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2393/DroidDeck-PR.2393-e0cbb1c-antutu.apk",
+          "size": 96969663,
+          "sha256": "b659c1ebf1899e312b18e8f924dd2982a1e76d3ec007b55c0c22afccdbdb17b8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2393-e0cbb1c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2393/DroidDeck-PR.2393-e0cbb1c-ludashi.apk",
+          "size": 96969663,
+          "sha256": "47fe2284e9270603fd3b651f3fc7023f0ebeb58c822b67d0214f18de40c0fcb4",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2396",
+      "title": "fix(audio): restart host after stalled wake recovery",
+      "summary": "After a long device sleep, the resumed AAudio stream could fail to start. Reopening the stream repeatedly succeeded at the API level, but the callback never ran, leaving the audio host in an endless two-second reopen loop.",
+      "commit": "a8e18472543d1c61ba1155144301dcc573aa0610",
+      "pr": 2396,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794401438000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2396",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2396-a8e1847.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2396/DroidDeck-PR.2396-a8e1847.apk",
+          "size": 96965567,
+          "sha256": "659f6ce6dd5c23567e5489ad251ef3fec3da89b930d812e7cbc7a4b89e447a4c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2396-a8e1847-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2396/DroidDeck-PR.2396-a8e1847-pubg.apk",
+          "size": 96965567,
+          "sha256": "f900a2516db6402d2829586bae9cf093d52b4cb27898732aeb38333ac3199f24",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2396-a8e1847-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2396/DroidDeck-PR.2396-a8e1847-antutu.apk",
+          "size": 96965567,
+          "sha256": "5db40ce4ed2a3889a5cfd1a5c2b6cb0eb6cbec126153ea36f041fa2a80a6ef77",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2396-a8e1847-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2396/DroidDeck-PR.2396-a8e1847-ludashi.apk",
+          "size": 96965567,
+          "sha256": "212875f6c2af5f4f0d403d97a942cfd771ad1ff97bc03b54c7f26690d369fb82",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2389",
       "title": "feat: Add Soundtracks tab and music player",
