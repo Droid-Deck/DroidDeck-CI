@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794400636558,
+  "generatedAt": 1794400719691,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2354",
+      "title": "fix(components): keep Mono away from framework GAC",
+      "summary": "The .NET 4.8 component leaves Wine's builtin mscoree active, so Wine Mono starts while the installed framework GAC remains searchable. Dust then loads Mono mscorlib and native C:\\windows\\Microsoft.NET\\assembly\\GACMSIL\\System.dll together, and Transistor fails during .NET initialization. Evidence: tools/linuxfs/overlay/usr/local/bin/droiddeck-wincomponents:64-67, /home/max/.local/share/dr",
+      "commit": "66f59dc9d0f9bb2ebafaaa9cc0606c50fa35b470",
+      "pr": 2354,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794400574000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2354",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2354-66f59dc.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2354/DroidDeck-PR.2354-66f59dc.apk",
+          "size": 96514392,
+          "sha256": "6c588e175ae2346f7120489ea1b36bb9ac4063fe4fb67ad212040d03ec8fa2e2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2354-66f59dc-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2354/DroidDeck-PR.2354-66f59dc-pubg.apk",
+          "size": 96514392,
+          "sha256": "4d4d1dd163ef995c727d6520954df8e639e8c3f5a11b11b2eb8a38b14eb94c81",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2354-66f59dc-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2354/DroidDeck-PR.2354-66f59dc-antutu.apk",
+          "size": 96514392,
+          "sha256": "a16d77bac0cc27fdfad783fe5fa359c53ce1721dbfc7f3fa8a8dc30e6b0e827c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2354-66f59dc-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2354/DroidDeck-PR.2354-66f59dc-ludashi.apk",
+          "size": 96514392,
+          "sha256": "0ca44c956ded2ac54ecdf59411c3aa557800371abb9ac4b514c8bf8eefb684ce",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2356",
       "title": "fix(graphics): fall back from unsupported auto display drivers",
