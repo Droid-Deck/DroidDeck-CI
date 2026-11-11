@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794422874021,
+  "generatedAt": 1794423082330,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2335",
+      "title": "fix(zram): page game memory out on a worker thread, not the signalled game thread",
+      "summary": "On 11-12 GB devices games still froze for 5-10 s with every core busy, about every 30 s while free memory stayed under ~1 GB. The low-memory page-out (#2187, with #2312's read-back backoff) was working as designed, but tools/linuxfs/preload/zram.c ran the whole page-out inside its SIGURG handler. That handler runs on whichever thread receives the signal, often a game thread (render or main), a",
+      "commit": "2b430d09e7dfbf3c485bd8de5d7de279d2315444",
+      "pr": 2335,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794422958000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2335",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2335-2b430d0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2b430d0.apk",
+          "size": 97035277,
+          "sha256": "3f6e1e7af625599a95138f329beed26b1bbb17622de318baa440db3d0c799bc0",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2335-2b430d0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2b430d0-pubg.apk",
+          "size": 97035277,
+          "sha256": "f998d7772c620a288c8dbc44d91e80d6a6385b2d0ef8b725930b102cc94fc2cb",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2335-2b430d0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2b430d0-antutu.apk",
+          "size": 97035277,
+          "sha256": "20c518ff4cc2965820a862d03e8a844ff28d06baab74ac3109f503d870490817",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2335-2b430d0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2b430d0-ludashi.apk",
+          "size": 97035277,
+          "sha256": "75d875acb0e1943217eee05c560eb6bfc97563cc5a3897eee60b99062e85c583",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2425",
+      "title": "fix(framegen): translate game and default setting scopes",
+      "summary": "The two frame-generation scope labels in #2297 exist only in English, so other languages fall back to English.",
+      "commit": "8891d8fe0f9b87ceb8e41caf69ff7f5ebbb43ac2",
+      "pr": 2425,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794422941000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2425",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2425-8891d8f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2425/DroidDeck-PR.2425-8891d8f.apk",
+          "size": 97125389,
+          "sha256": "383d03fba6e04d9d4ae76e762da577b82cfc0599f60348e37d3f2d7530c84821",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2425-8891d8f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2425/DroidDeck-PR.2425-8891d8f-pubg.apk",
+          "size": 97125389,
+          "sha256": "b0a258cb23ffdf35e711438e5423d73809ee75340590b7d954c831016f3dc602",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2425-8891d8f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2425/DroidDeck-PR.2425-8891d8f-antutu.apk",
+          "size": 97125389,
+          "sha256": "7632189efe077bb4ff7050cb5185ade1746ec36dbb1a72aefc3596a8e08dcef7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2425-8891d8f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2425/DroidDeck-PR.2425-8891d8f-ludashi.apk",
+          "size": 97125389,
+          "sha256": "bcb62c4d687a3090b5e82c4dde41579ab131242aac2d129c8f3b646d729a8f7f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2389",
       "title": "feat: Add Soundtracks tab and music player",
@@ -1390,55 +1488,6 @@
       }
     },
     {
-      "tag": "pr-2425",
-      "title": "fix(framegen): translate game and default setting scopes",
-      "summary": "The two frame-generation scope labels in #2297 exist only in English, so other languages fall back to English.",
-      "commit": "02c495f86c522d5521aa59435d8217577dd6b810",
-      "pr": 2425,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794336461000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2425",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2425-02c495f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2425/DroidDeck-PR.2425-02c495f.apk",
-          "size": 96530776,
-          "sha256": "010d2f7810519cc7669c313c09dbbd73a71ec174ac4a68c7c179bdd00baf9fd4",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2425-02c495f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2425/DroidDeck-PR.2425-02c495f-pubg.apk",
-          "size": 96530776,
-          "sha256": "e27d8704adfe018d361bc0bdb0e2bdde3e663091d4c1674600ae61a020a5df11",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2425-02c495f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2425/DroidDeck-PR.2425-02c495f-antutu.apk",
-          "size": 96530776,
-          "sha256": "34d5d9ee8cad01cc28c668c68c77ea0b4a0ae0dd539c19d554e3779db6331092",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2425-02c495f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2425/DroidDeck-PR.2425-02c495f-ludashi.apk",
-          "size": 96530776,
-          "sha256": "8498202243e0ebcebe865f5832d5b5cb0ce20f5078e13a93c884f4a66b231f74",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
       "tag": "pr-2407",
       "title": "Add per-game Steam Input overrides",
       "summary": "Add per-game Steam Input controls for Steam's default, enabled, and disabled modes to address #693.",
@@ -1775,55 +1824,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-98d7aa8-ludashi.apk",
           "size": 96628988,
           "sha256": "c53651eec9de0bfe56d22f30d905045c7ffcc6c07835e16a557cb3283f4415b5",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2335",
-      "title": "fix(zram): page game memory out on an idle worker thread, not the signalled game thread",
-      "summary": "On 11-12 GB devices games still froze for 5-10 s with every core busy, about every 30 s while free memory stayed under ~1 GB. The low-memory page-out (#2187, with #2312's read-back backoff) was working as designed, but tools/linuxfs/preload/zram.c ran the whole page-out inside its SIGURG handler. That handler runs on whichever thread receives the signal, often a game thread (render or main), a",
-      "commit": "2419acc89d931f6743886904012d635d603b0230",
-      "pr": 2335,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794253288000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2335",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2335-2419acc.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2419acc.apk",
-          "size": 96628988,
-          "sha256": "bf54957e7db325b688ff590341e3fa696d476755e3d3038fec86b6246fcfa60b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2335-2419acc-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2419acc-pubg.apk",
-          "size": 96628988,
-          "sha256": "93b4af6cae82ddf24015679f4a124db2349ad825aa023949ecd9fe215cfb4ace",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2335-2419acc-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2419acc-antutu.apk",
-          "size": 96628988,
-          "sha256": "71924969c4b0f9632672d042b031a1ed2f970156fc43c3496a258a0995d247fb",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2335-2419acc-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2335/DroidDeck-PR.2335-2419acc-ludashi.apk",
-          "size": 96628988,
-          "sha256": "a5837f8a14ae95ef7c476d81b13713d34f0d7b0c6333943f605f856b3d5b71a8",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
