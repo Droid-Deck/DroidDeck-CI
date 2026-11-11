@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794436950150,
+  "generatedAt": 1794437557358,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-7d5aae7",
-    "title": "fix(ci): fetch the Venus component without spending the API quota",
-    "summary": "Builds of main stopped reaching the signing-main environment. The step \"Fetch the Mali (Venus) component\" downloads a public release asset through the GitHub API with the workflow token. That token is limited to 1,000 API requests an hour for the whole repository, and on a busy day the validation and PR signing workflows use it up, so the fetch fails with HTTP 403: API rate limit exceeded for",
-    "commit": "7d5aae724ce25290e58bd27cb6fd0d5487dc48a0",
+    "tag": "main-1d247d2",
+    "title": "fix(decky): run Decky's unprivileged role as root in the guest",
+    "summary": "Decky Loader exits at startup with KeyError: getpwnam(): name not found: 'deck' because the guest has no deck user, so the plugin menu never appears in Steam.",
+    "commit": "1d247d212bf6e1cd8cb4520b7b7f4ffc1e620510",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794433155000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7d5aae7",
+    "publishedAt": 1794437433000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1d247d2",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-7d5aae7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d5aae7/DroidDeck-main-7d5aae7.apk",
-        "size": 97277082,
-        "sha256": "795cad7ac842b2f82cb57027d5e4bcaac3aa7566eb034df0eec24acb7b03d5b6",
+        "name": "DroidDeck-main-1d247d2.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1d247d2/DroidDeck-main-1d247d2.apk",
+        "size": 97281178,
+        "sha256": "11e17ca18967c327f9370500ca368af76869f7462c4c51c2b383332df49f3552",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-7d5aae7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d5aae7/DroidDeck-main-7d5aae7-pubg.apk",
-        "size": 97277082,
-        "sha256": "a8d19d77d31d016a6e377f3bbd54d4b6e5c37a7b6192e065f13f47684e9cf39d",
+        "name": "DroidDeck-main-1d247d2-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1d247d2/DroidDeck-main-1d247d2-pubg.apk",
+        "size": 97281178,
+        "sha256": "e4e62322c5ec7ae01d37aed9f4b1317eb1d748c6bee1f2ce35f18b8ce35baebf",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-7d5aae7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d5aae7/DroidDeck-main-7d5aae7-antutu.apk",
-        "size": 97277082,
-        "sha256": "6e599c64cb42788940852be67858daeefa150a13256dca49fa1abe4123d94bdf",
+        "name": "DroidDeck-main-1d247d2-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1d247d2/DroidDeck-main-1d247d2-antutu.apk",
+        "size": 97281178,
+        "sha256": "960e5fca0561356ef1dd41edd004a59e803f05e19a21919e4d16b6948809f7d1",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-7d5aae7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7d5aae7/DroidDeck-main-7d5aae7-ludashi.apk",
-        "size": 97277082,
-        "sha256": "6dbcc86d63b68bde6fd1e87f2b762977dc58084a5537be695631eff746a5b19a",
+        "name": "DroidDeck-main-1d247d2-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1d247d2/DroidDeck-main-1d247d2-ludashi.apk",
+        "size": 97281178,
+        "sha256": "885572ada16ebab23cf22904d156dc2968e0e19ed51b8dc379b18dee13d762b9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1d247d212bf6e1cd8cb4520b7b7f4ffc1e620510",
+      "title": "fix(decky): run Decky's unprivileged role as root in the guest",
+      "summary": "Decky Loader exits at startup with KeyError: getpwnam(): name not found: 'deck' because the guest has no deck user, so the plugin menu never appears in Steam.",
+      "publishedAt": 1794437433000
+    },
     {
       "commit": "7d5aae724ce25290e58bd27cb6fd0d5487dc48a0",
       "title": "fix(ci): fetch the Venus component without spending the API quota",
@@ -155,12 +161,6 @@
       "title": "chore(ci): trust contributor for test builds",
       "summary": "KeegantheVeganat0r is missing from the trusted test-build list, so their pull requests are not eligible for automatic signing through that list.",
       "publishedAt": 1794354591000
-    },
-    {
-      "commit": "dd9363e5f2bb90bfb6840f348718ea2a501d9f20",
-      "title": "fix: ship the Ubisoft launcher service as an add-on pack, scan only the standard APK on main",
-      "summary": "droiddeck-upc.exe (new in #2322) is the only new PE in the main APK and the likely source of the new Bkav and Elastic ML flags on main. It now ships as the ubisoft add-on pack: built by tools/packs/build.sh, published by publish-packs, fetched when a Ubisoft account is signed in, and staged into the guest rootfs by SessionFiles from the installed pack. The APK no longer contains it.",
-      "publishedAt": 1794346965000
     }
   ],
   "tests": [
