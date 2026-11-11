@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794423740355,
+  "generatedAt": 1794424017187,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2441",
+      "title": "fix(venus): drop LIBGLKOPPERDISABLE without calling the guarded unsetenv",
+      "summary": "The report for the Mali-G1-Ultra Venus route shows the session setting LIBGLKOPPERDISABLE=true for steamwebhelper, followed by a rejected unsetenv for that variable. Venus uses Kopper for the UI's Vulkan-backed GL path. If the environment guard rejects this unset, the variable remains set and can block that path. The other refused WSI setenv calls are outside this change; their effect is",
+      "commit": "1132afd5df1e4d91d1d2426f0dd94a18a5100520",
+      "pr": 2441,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794423934000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2441",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2441-1132afd.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2441/DroidDeck-PR.2441-1132afd.apk",
+          "size": 97035277,
+          "sha256": "e113230d78383057c8e5e3efa75c67f9321dd492cb3ecb644c8a1a2c69306611",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2441-1132afd-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2441/DroidDeck-PR.2441-1132afd-pubg.apk",
+          "size": 97035277,
+          "sha256": "91232a40f1640608a03948e23a745b1948830fbe2fffdc78ec4ecbcbc1501023",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2441-1132afd-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2441/DroidDeck-PR.2441-1132afd-antutu.apk",
+          "size": 97035277,
+          "sha256": "79e8cb7309175c5e3bc7afb57d73acf8287e85676e987a5c2890155abaaafd00",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2441-1132afd-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2441/DroidDeck-PR.2441-1132afd-ludashi.apk",
+          "size": 97035277,
+          "sha256": "1cada00b9e603594684e2dd7df4c009b29a9102e86ce3df29300c42e65ddc5f1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2448",
+      "title": "fix(session): keep the zram swap reserve when paging a session out on suspend",
+      "summary": "A tester on a 16 GB handheld (14.9 GB reported) reports every game resuming briefly after sleep before Android closes the app for memory. The attached session shows the suspend page-out filling the device swap: before the page-out, swap was 2035/4095 MB; after, 3983/4095 MB, with 63 session processes paged out. Because the 4 GB zram was then almost full, Android had no swap left for its own proces",
+      "commit": "304dcd58493e5eec7136c9033ace288e7c473cbb",
+      "pr": 2448,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794423915000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2448",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2448-304dcd5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2448/DroidDeck-PR.2448-304dcd5.apk",
+          "size": 97035277,
+          "sha256": "1e2dca537ffc299ef49eda3ed4ae4965c50c8df0a384e7f782e79c27828aa660",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2448-304dcd5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2448/DroidDeck-PR.2448-304dcd5-pubg.apk",
+          "size": 97035277,
+          "sha256": "41b9831d680c9fb682b96732c881b598a072ffe983c18828f78634f38fc67753",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2448-304dcd5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2448/DroidDeck-PR.2448-304dcd5-antutu.apk",
+          "size": 97035277,
+          "sha256": "6a7578efb2ee155f794c7bf2a75c4b776279394df6f10208b56bd0767dab2678",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2448-304dcd5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2448/DroidDeck-PR.2448-304dcd5-ludashi.apk",
+          "size": 97035277,
+          "sha256": "cafaa27d61f9a7fd54e31c36f1e9f136ea87c6ec24b5e9aa25aa7d6fe393c679",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2481",
       "title": "fix(decky): run Decky's unprivileged role as root in the guest",
