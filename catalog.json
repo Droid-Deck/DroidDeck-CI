@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794399610476,
+  "generatedAt": 1794399764871,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2450",
+      "title": "fix(ubisoft): R2 games get a session matching the subsystems they ask for",
+      "summary": "Ubisoft store games that use the R2 API (upcr2loader64.dll + uplayr264.dll) close before their menu. Prince of Persia: The Lost Crown (6145) on an AYANEO Pocket FIT Elite shows the pattern on every launch:\n\u2022 droiddeck-upc grants the start.\n\u2022 Denuvo activation goes through.\n\u2022 The game announces itself and gets its session.\n\u2022 Two seconds later it exits with an access violation reading 0x68 in uplayr264.dll+0xaca2.",
+      "commit": "46d12f39bfdf6d8b6535b0cfa73d52388c2c9847",
+      "pr": 2450,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794399676000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2450",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2450-46d12f3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2450/DroidDeck-PR.2450-46d12f3.apk",
+          "size": 96883647,
+          "sha256": "0d73ea6ffd4d2d9075c1d640a40056949ed4688af9535b445fac5cf09c72761b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2450-46d12f3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2450/DroidDeck-PR.2450-46d12f3-pubg.apk",
+          "size": 96883647,
+          "sha256": "89c21d1240abfdbe203719492683ef4e08705222371774ee6db2ab3ba3d2b0a2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2450-46d12f3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2450/DroidDeck-PR.2450-46d12f3-antutu.apk",
+          "size": 96883647,
+          "sha256": "8da8db4166eafc44454d6b688f59024f5bfb2ec7cdc9022c6371ab138efe422c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2450-46d12f3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2450/DroidDeck-PR.2450-46d12f3-ludashi.apk",
+          "size": 96883647,
+          "sha256": "8d8bacf1beaf2152ead6e2084561bd409884f2f30071dc7bfa531a2fad765207",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2460",
       "title": "fix(ubisoft): answer Orbit, login and process-only check-ins",
