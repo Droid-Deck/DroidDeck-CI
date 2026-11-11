@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794423082330,
+  "generatedAt": 1794423189266,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2376",
+      "title": "feat(agent): an Agent tab, a session drawer page, and a bubble over the game",
+      "summary": "Adds an agent to DroidDeck: a coding agent CLI from the Linux userland, run headless one process per turn, which can debug games with droiddeckctl and make Lab builds of DroidDeck on the device. Builds on Droid-Deck/DroidDeck#2375 (Lab builds, merged).",
+      "commit": "fe7b6f76ae30462144e0b08a7833cefedf2b4d0e",
+      "pr": 2376,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794423018000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2376",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2376-fe7b6f7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-fe7b6f7.apk",
+          "size": 97277082,
+          "sha256": "a9b8a9877c40a3d6be0dfca4c9e8d8b8c2e81d66ab06c045f44e487f6dc5e38f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2376-fe7b6f7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-fe7b6f7-pubg.apk",
+          "size": 97277082,
+          "sha256": "559b5a77208164ffe153b6f0089c965a63218566755227431ea09fbdaacc9ab7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2376-fe7b6f7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-fe7b6f7-antutu.apk",
+          "size": 97277082,
+          "sha256": "8aa83133088c18f53e52b66e7645dc4dd913faceacb1445a979feed3e634e24d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2376-fe7b6f7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-fe7b6f7-ludashi.apk",
+          "size": 97277082,
+          "sha256": "91cf8324f7c332644674312cf625da30e1e7bc2406a538726e2ddc2a17ccf3b6",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2429",
+      "title": "fix(hud): keep floating HUD widths stable as readings change",
+      "summary": "Numeric readings changing digit count could change the width of floating performance HUDs and resize their outline, especially in Mega mode.",
+      "commit": "63d6c90aab112351b6d2e0dab9dbcdc6c58c8b74",
+      "pr": 2429,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794423002000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2429",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2429-63d6c90.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-63d6c90.apk",
+          "size": 97039373,
+          "sha256": "4ae148c20fa14b17537428574d791d20ed1d8c263757ae26d67b88decf9c2d58",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2429-63d6c90-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-63d6c90-pubg.apk",
+          "size": 97039373,
+          "sha256": "5bb2a47012755d06b235dc4c88855a7c1db3b0b5e10f131e4cf719893e7666d0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2429-63d6c90-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-63d6c90-antutu.apk",
+          "size": 97039373,
+          "sha256": "565b9245e35607a1b98873ba5695228a84c250ed1ac55ee0e2512501b4b14503",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2429-63d6c90-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-63d6c90-ludashi.apk",
+          "size": 97039373,
+          "sha256": "d01d8eb619f61e398e412b8ccdf2cf2c01747256e57a22cafcf1b0f4ab8b72aa",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2335",
       "title": "fix(zram): page game memory out on a worker thread, not the signalled game thread",
@@ -501,55 +599,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2465/DroidDeck-PR.2465-5aaa29a-ludashi.apk",
           "size": 97121293,
           "sha256": "64b7c16cd159c46d386e4644c7385766df0fdbbee19449923ab0fab6f50a7228",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2376",
-      "title": "feat(agent): an Agent tab, a session drawer page, and a bubble over the game",
-      "summary": "Adds an agent to DroidDeck: a coding agent CLI from the Linux userland, run headless one process per turn, which can debug games with droiddeckctl and make Lab builds of DroidDeck on the device. Builds on Droid-Deck/DroidDeck#2375 (Lab builds, merged).",
-      "commit": "f76e5a132440303d8e445272a95b6be903bff24b",
-      "pr": 2376,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794419701000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2376",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2376-f76e5a1.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-f76e5a1.apk",
-          "size": 97272986,
-          "sha256": "b9af4cf6c707c6ffff221734b2853c645c6d0d30366f4e0f2bbcdb0ea7d96861",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2376-f76e5a1-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-f76e5a1-pubg.apk",
-          "size": 97272986,
-          "sha256": "9e2bf75237a71a09139c1549b9f27ee09e3b0591d25ac67a8b2ae76848fcd9fb",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2376-f76e5a1-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-f76e5a1-antutu.apk",
-          "size": 97272986,
-          "sha256": "40643702b58702ac297bf722d038e79b6d858136cb8b7d113377e5c58f781482",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2376-f76e5a1-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2376/DroidDeck-PR.2376-f76e5a1-ludashi.apk",
-          "size": 97272986,
-          "sha256": "5716bb05f91415a55a6ed41a99b3d31dd617596ef81fc4f9aa217c0cc697e018",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -1383,55 +1432,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2382/DroidDeck-PR.2382-06f0734-ludashi.apk",
           "size": 96518488,
           "sha256": "14e23885c1df7a3138217ee4f8f59d7d2ec3248e5ee1c291ca32aa17b47accec",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2429",
-      "title": "fix(hud): keep floating HUD widths stable as readings change",
-      "summary": "Numeric readings changing digit count could change the width of floating performance HUDs and resize their outline, especially in Mega mode.",
-      "commit": "284b269c9c4a4d43cf9711e55509830496850bc2",
-      "pr": 2429,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794365299000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2429",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2429-284b269.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-284b269.apk",
-          "size": 96883647,
-          "sha256": "236154afe5a4576a5a919c447e36e2a0e92736c1790f3565baaeadc7c819cfb7",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2429-284b269-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-284b269-pubg.apk",
-          "size": 96883647,
-          "sha256": "490a55d3abe8eadabc01755b8163c048bb24d1f93ac606b1ef444582850a671c",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2429-284b269-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-284b269-antutu.apk",
-          "size": 96883647,
-          "sha256": "042dd6691ac300e831c3391fc163d6867b553b57c3bbc8c21298bd2bf7ecdca7",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2429-284b269-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2429/DroidDeck-PR.2429-284b269-ludashi.apk",
-          "size": 96883647,
-          "sha256": "c9b1ab35e1b58be7db6c8ddf63d8bd8e7717616942ec5ec23fedd6f4b5971be6",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
