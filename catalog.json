@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794431281143,
+  "generatedAt": 1794431653526,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-9d99232",
-    "title": "feat(agent): the agent's commits and pull requests carry no Claude credit by default",
-    "summary": "Commits and pull requests the on-device agent makes are the user's own, so by default they carry no \"Co-Authored-By: Claude\" line and no \"Generated with Claude Code\" note.",
-    "commit": "9d99232f9909de53ae1ecc557e67d70144c155e3",
+    "tag": "main-263e964",
+    "title": "fix(agent): setup repairs a half-installed userland before installing the CLI",
+    "summary": "Agent setup's Install step ran apt-get install straight away. After an interrupted apt run, or after installing or removing the desktop (which rewrites /var/lib/dpkg/status and can leave perl and perl-base at different versions), every Retry failed with E: Unmet dependencies until someone ran apt --fix-broken install by hand.",
+    "commit": "263e96469f754ae2b0386bf63b618768b2834a79",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794427547000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-9d99232",
+    "publishedAt": 1794431545000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-263e964",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-9d99232.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d99232/DroidDeck-main-9d99232.apk",
-        "size": 97195162,
-        "sha256": "18632c14c203fdee06b3ddcab45f01a59faf4d5ec39bd972d382cb01cd683c92",
+        "name": "DroidDeck-main-263e964.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-263e964/DroidDeck-main-263e964.apk",
+        "size": 97277082,
+        "sha256": "f40a2e881327618c24711c4268881251cf0e1cd5f7f8d8888778874596b45faf",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-9d99232-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d99232/DroidDeck-main-9d99232-pubg.apk",
-        "size": 97195162,
-        "sha256": "03883b10e7f2ca8875d1e561abd59a912023e1a7ee2bc5bbabc8b6f3ff9d56ee",
+        "name": "DroidDeck-main-263e964-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-263e964/DroidDeck-main-263e964-pubg.apk",
+        "size": 97277082,
+        "sha256": "6226f29564f3ee2e8bfdde0ec3a345f1ca53a81e80f93a1ec941016eb3b58dd7",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-9d99232-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d99232/DroidDeck-main-9d99232-antutu.apk",
-        "size": 97195162,
-        "sha256": "260b21299c25f90108af5006cec61f2be49bd40265c7d1e00d4e78014259e83e",
+        "name": "DroidDeck-main-263e964-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-263e964/DroidDeck-main-263e964-antutu.apk",
+        "size": 97277082,
+        "sha256": "9c91ee333afb157c88fc118ea90958c4d584e562c85a76a903142a9fd9fb7b10",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-9d99232-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-9d99232/DroidDeck-main-9d99232-ludashi.apk",
-        "size": 97195162,
-        "sha256": "303f924682d9cac0bd1c447f663bb4e88ceaa094b300fbfc5d67234a5cb06719",
+        "name": "DroidDeck-main-263e964-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-263e964/DroidDeck-main-263e964-ludashi.apk",
+        "size": 97277082,
+        "sha256": "2cfcc9b9fc3228905e8e16517c46db72638cf3b7dde9691440a766e8ec8cf122",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "263e96469f754ae2b0386bf63b618768b2834a79",
+      "title": "fix(agent): setup repairs a half-installed userland before installing the CLI",
+      "summary": "Agent setup's Install step ran apt-get install straight away. After an interrupted apt run, or after installing or removing the desktop (which rewrites /var/lib/dpkg/status and can leave perl and perl-base at different versions), every Retry failed with E: Unmet dependencies until someone ran apt --fix-broken install by hand.",
+      "publishedAt": 1794431545000
+    },
     {
       "commit": "9d99232f9909de53ae1ecc557e67d70144c155e3",
       "title": "feat(agent): the agent's commits and pull requests carry no Claude credit by default",
@@ -155,12 +161,6 @@
       "title": "Fix Electron Node mode sandbox injection",
       "summary": "Fixes #2417 by skipping Chromium flag injection when the child environment enables Electron Node mode and carrying the child environment through exec and spawn wrappers.",
       "publishedAt": 1794345655000
-    },
-    {
-      "commit": "3c96df4ab1d85a2776ccbcf6048ed1c6aa3066c8",
-      "title": "feat(ubisoft): Ubisoft Connect store with native sign-in, library, downloads and launch",
-      "summary": "Adds Ubisoft Connect as a store. Sign-in, the owned library, downloads and launching all run inside DroidDeck, with no Ubisoft Connect client. Ubisoft's own DRM DLLs are used unmodified, and the launch session carries a real ticket from Ubisoft's ownership service.",
-      "publishedAt": 1794342049000
     }
   ],
   "tests": [
