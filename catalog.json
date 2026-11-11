@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794402162076,
+  "generatedAt": 1794403486238,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2350",
+      "title": "fix(dual-screen): allow game swap to external second screens",
+      "summary": "The in-game \"Game screen\" choice and the docked swap button were only offered when the second screen is built in (DualScreen.builtIn). A clip-on dual-screen add-on reports as an external display, so the game could not be moved to it.",
+      "commit": "0a481d8859a6bfe2b850281b7ced70cc77f66303",
+      "pr": 2350,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794403370000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2350",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2350-0a481d8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2350/DroidDeck-PR.2350-0a481d8.apk",
+          "size": 96883647,
+          "sha256": "223fbe0f4dc73aa221f79b67c9a74c4f0a45eed9b5b699e8dff26f710ec583a3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2350-0a481d8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2350/DroidDeck-PR.2350-0a481d8-pubg.apk",
+          "size": 96883647,
+          "sha256": "3a9d8a767bdae60b1cf986820c3dc54e1e48ac6d273fca536bb7e6d8152f638d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2350-0a481d8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2350/DroidDeck-PR.2350-0a481d8-antutu.apk",
+          "size": 96883647,
+          "sha256": "9828ca7b21fbc8edc5f19415ed6878cbe7b7fe3e94db842f933f07fedc94f7aa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2350-0a481d8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2350/DroidDeck-PR.2350-0a481d8-ludashi.apk",
+          "size": 96883647,
+          "sha256": "bb1ebc77d483e987dd05f2dfb0f4f6214828b263a1383661b7ee5c72b7f7a3a1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2393",
       "title": "fix(session): preserve guest monotonic time after long pauses",
