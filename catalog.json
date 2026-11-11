@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794410485912,
+  "generatedAt": 1794410746989,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2444",
+      "title": "feat(stores): editable launch options for EA store games",
+      "summary": "Games installed from the EA Store had no way to take launch arguments. The Launch tab only offered launch options for Steam and plain added games, the listing dropped any saved value for store games, and the generated EA launcher ignored arguments passed by the Steam shortcut. Some titles need an executable flag to start or run correctly.",
+      "commit": "e29f4902f8cf0eb69dce8a0b4cba64ee7a85d370",
+      "pr": 2444,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794410515000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2444",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2444-e29f490.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2444/DroidDeck-PR.2444-e29f490.apk",
+          "size": 96969663,
+          "sha256": "985ff0274eb1cfec1bd8e78b3a28118962789156efbea2da2884284674fa0170",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2444-e29f490-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2444/DroidDeck-PR.2444-e29f490-pubg.apk",
+          "size": 96969663,
+          "sha256": "cf988df80ed4d512ce980384e96bf21ab76b5a2dbc553e2dc886bd3edaa013ae",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2444-e29f490-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2444/DroidDeck-PR.2444-e29f490-antutu.apk",
+          "size": 96969663,
+          "sha256": "1f39bf39a3f480b40278189add5a36ba67a508ab377fa7c421ed590651566bb8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2444-e29f490-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2444/DroidDeck-PR.2444-e29f490-ludashi.apk",
+          "size": 96969663,
+          "sha256": "de5c7d8e20ed60310bf9baa9450cbf05ad95fed59b859934f2111bc8c5cd54f0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2422",
       "title": "fix(gamescope): retry a failed nested swapchain rebuild and log why it failed",
