@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794432317248,
+  "generatedAt": 1794432917046,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2486",
+      "title": "fix(desktop): run a store game's exe through its launcher so the EA environment and Origin process are set up",
+      "summary": "Starting an installed EA game from the desktop session by opening its exe runs the exe directly. The launcher script DroidDeck writes for store games is skipped, so the EA session environment file is never applied and the Origin stand-in process is never started. The game then reports that Origin is not installed. The launch hook still ran (droiddeck-store-launch: ea ... licence=v2 1000659:ok),",
+      "commit": "18da1435072396ba835579e247de8136d7d24356",
+      "pr": 2486,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794432706000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2486",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2486-18da143.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2486/DroidDeck-PR.2486-18da143.apk",
+          "size": 97277082,
+          "sha256": "e93a5f24569ea255c68fa3f932f6e8f8f01276d6066375b11a15c1d2f845ed62",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2486-18da143-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2486/DroidDeck-PR.2486-18da143-pubg.apk",
+          "size": 97277082,
+          "sha256": "d748aaf8b081577aab4a228398a139605c5e081b7924b6b33a4b1abbb1b14a32",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2486-18da143-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2486/DroidDeck-PR.2486-18da143-antutu.apk",
+          "size": 97277082,
+          "sha256": "fd0a33a04d6ec66e9f7f24d8f77d04f37a51e111fe7f8dcf1cbfdcacab3941eb",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2486-18da143-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2486/DroidDeck-PR.2486-18da143-ludashi.apk",
+          "size": 97277082,
+          "sha256": "38b45a5a2db9f17d1df4e1e9de68951f6e78e93bbc1a84c536cfce35579e1170",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2379",
       "title": "fix: games on an SD card install faster and Battle.net stops marking them unplayable",
