@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794512888504,
+  "generatedAt": 1794513281687,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2536",
+      "title": "feat(agent): DeeDee, a floating pet that opens the agent's chat; chat-head flings for the pet and HUD",
+      "summary": "DeeDee, the agent's pet, floats over any app (Chrome, games, the launcher) like a Messenger chat head and shows what the agent is doing.",
+      "commit": "ec9243fc2cf079b4ad4a100f0306ddf26759b5f7",
+      "pr": 2536,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794513150000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2536",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2536-ec9243f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2536/DroidDeck-PR.2536-ec9243f.apk",
+          "size": 97573008,
+          "sha256": "427f0f233b98fc7f3e17309d7953cc6ec4b68d8d91b37ef690851d18a44d2e23",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2536-ec9243f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2536/DroidDeck-PR.2536-ec9243f-pubg.apk",
+          "size": 97573008,
+          "sha256": "20832c2ff00e583b19ba8ff425d92e167cc9b62e5d6d59db4c2d0207e8be141b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2536-ec9243f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2536/DroidDeck-PR.2536-ec9243f-antutu.apk",
+          "size": 97573008,
+          "sha256": "c4209e0dfe293fd8b763972fb72993a0ec18862d2e45411c65246435a41869de",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2536-ec9243f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2536/DroidDeck-PR.2536-ec9243f-ludashi.apk",
+          "size": 97573008,
+          "sha256": "454d2f9e4959129e1ac2bfae2eff7501b1c595d5e1dcc6df599404e3277ba7c7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2533",
       "title": "Stop walking SD card libraries on every session start and game launch",
       "summary": "Games on a microSD card took minutes to start. Two pieces of our own code walked game folders on the card when they did not need to; the card itself was not the limit.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-a934289-ludashi.apk",
           "size": 97503376,
           "sha256": "e09b95d56a4d30e02e902cb86e2866b3bbdad4afbfbdb2d29b6f8075a130030b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2536",
-      "title": "feat(agent): DeeDee, a floating pet that opens the agent's chat; chat-head flings for the pet and HUD",
-      "summary": "DeeDee, the agent's pet, floats over any app (Chrome, games, the launcher) like a Messenger chat head and shows what the agent is doing.",
-      "commit": "f680339b8c96cf028620ddf293e8ea664b9abb8c",
-      "pr": 2536,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794512407000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2536",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2536-f680339.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2536/DroidDeck-PR.2536-f680339.apk",
-          "size": 97556624,
-          "sha256": "60e6028cda7095b24cd0036899b638398c50974d9afdc3f4cb5eddc38274e81e",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2536-f680339-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2536/DroidDeck-PR.2536-f680339-pubg.apk",
-          "size": 97556624,
-          "sha256": "831af684ac9724e80b41689e73f920fd38083e0eb29305868f14f1177dfb1748",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2536-f680339-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2536/DroidDeck-PR.2536-f680339-antutu.apk",
-          "size": 97556624,
-          "sha256": "27910ad8b7f9c6f37ca72b3efe9ef9aafb1c569d718891cf57f204faf31bc5c7",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2536-f680339-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2536/DroidDeck-PR.2536-f680339-ludashi.apk",
-          "size": 97556624,
-          "sha256": "51b5d52c669bc0dceffa73d647a9f20ac13334669826b572e227caeff5371e88",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
