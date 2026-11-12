@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794493497130,
+  "generatedAt": 1794495104845,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2197",
+      "title": "fix: refresh the session loading tips",
+      "summary": "Rewrites the tips shown while a Steam or desktop session loads. The old ones said the controller defaults to an Xbox 360 pad and that leaving the app pauses by default, neither of which is true now. New tips cover the controller types, held Back for Quick Access, background behavior modes, frame limit, low latency, game profiles, mic and suspend, HUD docking, dual-screen bottom screen and swap, ex",
+      "commit": "27aec1391090387eb901ca199dbcb88dc4445e3f",
+      "pr": 2197,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794495001000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2197",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2197-27aec13.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2197/DroidDeck-PR.2197-27aec13.apk",
+          "size": 97461782,
+          "sha256": "5defccb2065057e0d86d3bd1fb26d6f8aed8810c82f6a6085b988cc0f6928b51",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2197-27aec13-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2197/DroidDeck-PR.2197-27aec13-pubg.apk",
+          "size": 97461782,
+          "sha256": "0e712d377776c0244f9489c9ab1945966472c9c48096c02000d511ee722c3350",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2197-27aec13-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2197/DroidDeck-PR.2197-27aec13-antutu.apk",
+          "size": 97461782,
+          "sha256": "fc99fbeace61c7774af2b863382d4c7b957b508fd94cf670e648d8d8dcfba333",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2197-27aec13-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2197/DroidDeck-PR.2197-27aec13-ludashi.apk",
+          "size": 97461782,
+          "sha256": "040307e1cf0beb7d40ae5de64a51833b847b9b99de25152b823388f86f409ddc",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2501",
       "title": "fix(gamescope): release Vulkan resources before exit",
@@ -2216,55 +2265,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2265/DroidDeck-PR.2265-a0cd5b0-ludashi.apk",
           "size": 96702817,
           "sha256": "6bd64db31958f92f54cacf31c603197bf164d57b64d21d12e24f7696a88914d0",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2197",
-      "title": "fix: refresh the session loading tips",
-      "summary": "Rewrites the tips shown while a Steam or desktop session loads. The old ones said the controller defaults to an Xbox 360 pad and that leaving the app pauses by default, neither of which is true now. New tips cover the controller types, held Back for Quick Access, background behavior modes, frame limit, low latency, game profiles, mic and suspend, HUD docking, dual-screen bottom screen and swap, ex",
-      "commit": "1dabc20e92ab1f0df7639085cbd805fb32c0cfa9",
-      "pr": 2197,
-      "version": null,
-      "versionCode": 17,
-      "publishedAt": 1794017480000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2197",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2197-1dabc20.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2197/DroidDeck-PR.2197-1dabc20.apk",
-          "size": 96243661,
-          "sha256": "2ec83f8b6acb60c9f7e458a4b19a03576829d28262cb97a2e366db1e4e2af310",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2197-1dabc20-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2197/DroidDeck-PR.2197-1dabc20-pubg.apk",
-          "size": 96243661,
-          "sha256": "16acb03581c4e5731a630365e06c9fbbcc656d2f372878dff34cd88ba2093ce4",
-          "packageName": "com.tencent.ig",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2197-1dabc20-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2197/DroidDeck-PR.2197-1dabc20-antutu.apk",
-          "size": 96243661,
-          "sha256": "852603bf23b69764dd2f8bf3acbb55d5cb797b58fd3e97da019f90b1c913458f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 17,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2197-1dabc20-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2197/DroidDeck-PR.2197-1dabc20-ludashi.apk",
-          "size": 96243661,
-          "sha256": "be586ee6422ef060c7395966bb454ce67dd8675484b5a1b73d03530df19e8766",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 17,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
