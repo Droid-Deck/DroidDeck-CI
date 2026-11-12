@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794447394828,
+  "generatedAt": 1794447493876,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2421",
+      "title": "fix(epic): hand Epic's terms step to the browser instead of looping the sign-in",
+      "summary": "Epic sign-in keeps restarting for accounts with a pending terms step (a new account created at sign-in, or updated terms). Epic's redirect page then returns errors.com.epicgames.oauth.correctiveactionrequired with correctiveAction PRIVACYPOLICYACCEPTANCE or EULAACCEPTANCE instead of an authorization code (reporter screenshots in the Discord bug thread). EpicLogin.finish finds no cod",
+      "commit": "f4fca4f38ad62fd619a35547fe20aabb847d4e63",
+      "pr": 2421,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794447398000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2421",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2421-f4fca4f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2421/DroidDeck-PR.2421-f4fca4f.apk",
+          "size": 97199258,
+          "sha256": "3b39e8edf1adcc62d00bb4a06b0d421376bfbca0ca515d1427071346699d0940",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2421-f4fca4f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2421/DroidDeck-PR.2421-f4fca4f-pubg.apk",
+          "size": 97199258,
+          "sha256": "48dda7792cb4b721959bce3a5e7a4fb0279a556f543a548e41f49c9a3e550c50",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2421-f4fca4f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2421/DroidDeck-PR.2421-f4fca4f-antutu.apk",
+          "size": 97199258,
+          "sha256": "21cf8e8ecb5c8e169a0db946871ba7fd0aa09459926b01615dec005256e21e01",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2421-f4fca4f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2421/DroidDeck-PR.2421-f4fca4f-ludashi.apk",
+          "size": 97199258,
+          "sha256": "3bc99465c7c7378152ef0a3c474d695346f6095ccae185f329467957e63e0dee",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2473",
       "title": "Feat:Add per-game frame generation profiles",
