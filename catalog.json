@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794520033574,
+  "generatedAt": 1794524066301,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2537",
+      "title": "feat(stores): add Rockstar store and classic GTA launches",
+      "summary": "Adds Rockstar Games sign-in, the owned library, catalog and verified downloads, plus authenticated launches for the original GTA III, Vice City and San Andreas releases.",
+      "commit": "dce3dc7a4496160416f79a51713500e1505e336a",
+      "pr": 2537,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794523928000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2537",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2537-dce3dc7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2537/DroidDeck-PR.2537-dce3dc7.apk",
+          "size": 98118002,
+          "sha256": "156c6b6f28166b38e070a693cabd9cc28217fa337f9206f598a9fdd270d83b7c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2537-dce3dc7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2537/DroidDeck-PR.2537-dce3dc7-pubg.apk",
+          "size": 98118002,
+          "sha256": "70f8c8f4db7ded0a7f7f1edd58155d3074c23453af18f6b7a9873a4cd12c2c70",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2537-dce3dc7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2537/DroidDeck-PR.2537-dce3dc7-antutu.apk",
+          "size": 98118002,
+          "sha256": "70cb459d66e71ad7453a46535ff54beeeecf686f66ba8e276f7f19cad08a8ff4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2537-dce3dc7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2537/DroidDeck-PR.2537-dce3dc7-ludashi.apk",
+          "size": 98118002,
+          "sha256": "de467237f6d665bccb241ac0a6ea4f59e9876239638c66d144e7682ef846dd2b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2426",
       "title": "fix(fex): supply current Wayland libraries in the shared runtime",
       "summary": "Imported x8664 AppImages can bundle GTK and web view libraries built against newer Wayland and FreeType ABIs than Sniper provides. The support report at https://discord.com/channels/1552707793247539220/1556195514322780160/1569785897027764254 has a desktop launch log whose entry log line 280 reports undefined symbol: wlproxymarshalflags. With the first test build (e610905) that error was gone",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-dfe88dd-ludashi.apk",
           "size": 97573008,
           "sha256": "cd8bd660ffff84eb8ebc94f14be8c678399220b4044184a06783b19d68fdf3c7",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2537",
-      "title": "feat(stores): Rockstar Games store with native sign-in, library, catalog and downloads",
-      "summary": "Adds Rockstar Games as a store, replacing the parts of the Rockstar Games Launcher a store needs without running it.",
-      "commit": "c1cc631fa796c985abee33e99421d5bf0675de66",
-      "pr": 2537,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794516257000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2537",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2537-c1cc631.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2537/DroidDeck-PR.2537-c1cc631.apk",
-          "size": 97605776,
-          "sha256": "b627dcaa517385f96f580d279fb40caae4aea3a02f123d333b031e100f3b6ee3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2537-c1cc631-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2537/DroidDeck-PR.2537-c1cc631-pubg.apk",
-          "size": 97605776,
-          "sha256": "f5248119e0a03673e2474c13118a9a5006fbe9233de3d1b5f4ae9452eed6dbdb",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2537-c1cc631-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2537/DroidDeck-PR.2537-c1cc631-antutu.apk",
-          "size": 97605776,
-          "sha256": "f879078f87bfb75eef6bf15e9ce974ff2b05dc86694ac3bdd3e7440cea8d07e3",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2537-c1cc631-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2537/DroidDeck-PR.2537-c1cc631-ludashi.apk",
-          "size": 97605776,
-          "sha256": "5b6b12a906946aa062651df85efb3252584f798b8c8f832cc72385539ca2b41d",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
