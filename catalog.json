@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794506963135,
+  "generatedAt": 1794507960069,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2533",
+      "title": "Stop walking SD card libraries on every session start and game launch",
+      "summary": "Games on a microSD card took minutes to start. Two pieces of our own code walked game folders on the card when they did not need to; the card itself was not the limit.",
+      "commit": "700cf950892f15b35e4c537ede07d8918e81054d",
+      "pr": 2533,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794507825000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2533",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2533-700cf95.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-700cf95.apk",
+          "size": 97412790,
+          "sha256": "f893c317d20114bba9cd70765e4ae0ff169e159946ee50cfd85532eb7da0844b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2533-700cf95-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-700cf95-pubg.apk",
+          "size": 97412790,
+          "sha256": "1097c43600443b9e818e722022d73fb4e651bda49f9f4d5fd8c5733476557220",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2533-700cf95-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-700cf95-antutu.apk",
+          "size": 97412790,
+          "sha256": "4a790b03812b047f421d74f89cd528dd43d7fe13ab2432a801c3d5597a4d1e53",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2533-700cf95-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-700cf95-ludashi.apk",
+          "size": 97412790,
+          "sha256": "03bc3e198159690f0be9da2d92b7420d9d26a3ca248e7167c2c116be1393cc53",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2528",
       "title": "fix(gamescope): overlapping touches no longer leave the emulated click held",
