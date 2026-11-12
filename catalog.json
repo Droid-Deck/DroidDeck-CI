@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794442976522,
+  "generatedAt": 1794443231698,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2503",
+      "title": "fix(agent): the agent survives Steam session starts, stops and restarts",
+      "summary": "Whenever a session started or stopped, including when the agent itself ran droiddeckctl start, stop or a Steam restart, the app killed the agent's own turn:",
+      "commit": "5a315e93841400835e7d92c68d8dd77bc5b14212",
+      "pr": 2503,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794443129000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2503",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2503-5a315e9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2503/DroidDeck-PR.2503-5a315e9.apk",
+          "size": 97318422,
+          "sha256": "8d25ceda859f4cc2eb0010b8bfb8976005028a46901ad2e4a51860cf80cf2ce2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2503-5a315e9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2503/DroidDeck-PR.2503-5a315e9-pubg.apk",
+          "size": 97318422,
+          "sha256": "9b68441ab07e04b61e774d913283a955b49274b210464a59fd8d5eaf64dcc5b8",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2503-5a315e9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2503/DroidDeck-PR.2503-5a315e9-antutu.apk",
+          "size": 97318422,
+          "sha256": "6af841c1b8ee535d9532ad44ccc07f4cc96f141219960e49239e33207af04e4a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2503-5a315e9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2503/DroidDeck-PR.2503-5a315e9-ludashi.apk",
+          "size": 97318422,
+          "sha256": "6f19c5854725753d634e10523a79bd8a535ded03f74bfb3437018f99ff5f8b94",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2488",
       "title": "feat: add diagnostics toggle for build watermark",
