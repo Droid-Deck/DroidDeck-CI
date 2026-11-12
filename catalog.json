@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794461085317,
+  "generatedAt": 1794464818160,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -1383,55 +1383,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-d91b26b-ludashi.apk",
           "size": 96965567,
           "sha256": "ea7c0fdc14beaecc82e43593743681907386984b22e965292c8569d8433a1eda",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2393",
-      "title": "fix(session): preserve guest monotonic time after long pauses",
-      "summary": "The pause clock compensation was limited to plasmashell, although session guests load the same preload. A long background pause therefore exposed the full CLOCKMONOTONIC gap to guest processes. The report log shows SIGCONT at 15:31:57.381, 2065 MB left in zRAM at 15:31:57.447, and the game window closing at 15:32:01.216. The zRAM pass also ran at 15:32:00.528, so memory pressure remains an op",
-      "commit": "e0cbb1c4f85ffdeb990b33c6a9ff5d05faabb8a2",
-      "pr": 2393,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794401459000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2393",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2393-e0cbb1c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2393/DroidDeck-PR.2393-e0cbb1c.apk",
-          "size": 96969663,
-          "sha256": "88c35a7b8560cca1ad07a9dd1518eaa5f5da76ce76230801f29609699d058679",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2393-e0cbb1c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2393/DroidDeck-PR.2393-e0cbb1c-pubg.apk",
-          "size": 96969663,
-          "sha256": "f87bbf4924107a63d1ae7cbe8bcc7a5294aedfa2a73669ab2f2bc386765d0fc3",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2393-e0cbb1c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2393/DroidDeck-PR.2393-e0cbb1c-antutu.apk",
-          "size": 96969663,
-          "sha256": "b659c1ebf1899e312b18e8f924dd2982a1e76d3ec007b55c0c22afccdbdb17b8",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2393-e0cbb1c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2393/DroidDeck-PR.2393-e0cbb1c-ludashi.apk",
-          "size": 96969663,
-          "sha256": "47fe2284e9270603fd3b651f3fc7023f0ebeb58c822b67d0214f18de40c0fcb4",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
