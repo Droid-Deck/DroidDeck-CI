@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794501698830,
+  "generatedAt": 1794502260820,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-514f796",
-    "title": "Fix Agent composer keyboard spacing and scrolling",
-    "summary": "Opening the keyboard in the Agent tab could pan the screen and obscure the message box. Resize the launcher for the keyboard and apply IME insets around the Agent layout so the composer stays visible.",
-    "commit": "514f7964286dedb48082baf65dfff2f84da638ee",
+    "tag": "main-08a8de9",
+    "title": "Fix Agent keyboard panning and collapsed landscape input",
+    "summary": "The Agent composer can move far above the keyboard when Android pans the window in addition to Compose applying IME spacing. In landscape, status panels can also consume the remaining height and leave the composer with no visible text area.",
+    "commit": "08a8de9bc4e2c94578cef0aa5bdf14073360cef3",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794500222000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-514f796",
+    "publishedAt": 1794502098000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-08a8de9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-514f796.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-514f796/DroidDeck-main-514f796.apk",
+        "name": "DroidDeck-main-08a8de9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-08a8de9/DroidDeck-main-08a8de9.apk",
         "size": 97347094,
-        "sha256": "0b30e350a7beb078196be8ae7cb00ba06782397c154112d8e941149247ac9c95",
+        "sha256": "59bec56963ea363db2346571f2c30c729eb4d27fa72b42a8c7ae21d73b712761",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-514f796-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-514f796/DroidDeck-main-514f796-pubg.apk",
+        "name": "DroidDeck-main-08a8de9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-08a8de9/DroidDeck-main-08a8de9-pubg.apk",
         "size": 97347094,
-        "sha256": "e19dbff7f8b101e6c5c215fedd7969d5e3a67151d68e7967d430ebb851e31a0f",
+        "sha256": "45876c53df9a7369daee85a4d701ecdc9863b951b1a5a80bc20fa5e9d5938d39",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-514f796-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-514f796/DroidDeck-main-514f796-antutu.apk",
+        "name": "DroidDeck-main-08a8de9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-08a8de9/DroidDeck-main-08a8de9-antutu.apk",
         "size": 97347094,
-        "sha256": "dde2c292a9b9d1d3f5cecbd22fb3f26d2f0c448d439913fcf9df232f0da08b3d",
+        "sha256": "3d8f822f0d0834105d20d47011ec302f8338e1780211a9ab4e37200763f6c289",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-514f796-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-514f796/DroidDeck-main-514f796-ludashi.apk",
+        "name": "DroidDeck-main-08a8de9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-08a8de9/DroidDeck-main-08a8de9-ludashi.apk",
         "size": 97347094,
-        "sha256": "2494dcf3470fc1fe042c4ef5d9efeb275f6d752ed4d07ba6d811172cff7a4d61",
+        "sha256": "696259efee09b92675d0986494167112037369f9b3918b3a9487a9cc7bcea7d6",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "08a8de9bc4e2c94578cef0aa5bdf14073360cef3",
+      "title": "Fix Agent keyboard panning and collapsed landscape input",
+      "summary": "The Agent composer can move far above the keyboard when Android pans the window in addition to Compose applying IME spacing. In landscape, status panels can also consume the remaining height and leave the composer with no visible text area.",
+      "publishedAt": 1794502098000
+    },
     {
       "commit": "514f7964286dedb48082baf65dfff2f84da638ee",
       "title": "Fix Agent composer keyboard spacing and scrolling",
@@ -155,12 +161,6 @@
       "title": "fix(agent): the agent survives Steam session starts, stops and restarts",
       "summary": "Whenever a session started or stopped, including when the agent itself ran droiddeckctl start, stop or a Steam restart, the app killed the agent's own turn:",
       "publishedAt": 1794459365000
-    },
-    {
-      "commit": "7da27d4ff4a5d9b006ae9febcd565b45a9eca617",
-      "title": "feat: add build watermark toggle for Lab, test, and local builds",
-      "summary": "\u2022 Add a Build label watermark toggle at the bottom of the Updates tab.\n\u2022 Control both test-build and Lab-build watermarks, including the Lab label shown over an installed release build.\n\u2022 Keep the watermark enabled by default. Users can hide or restore it immediately, and their choice persists across restarts.\n\u2022 Include translated setting text for all 32 non-English locale variants, alongside Engl",
-      "publishedAt": 1794454694000
     }
   ],
   "tests": [
