@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794487243691,
+  "generatedAt": 1794487747447,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-da5a361",
-    "title": "feat(ui): option to hide the Agent tab",
-    "summary": "Adds an Agent tab toggle to Setup \u2192 Launcher (shown only when the agent is available, on by default).",
-    "commit": "da5a36151b7f82a394049409a75efc4888077f43",
+    "tag": "main-a8237e8",
+    "title": "fix(memory): reclaim idle session memory under pressure",
+    "summary": "Issue #945 exposed a RAM-size gate that disabled idle session reclaim above 13 GiB. MemAvailable alone also overstated headroom during rapid GPU and system-reserved memory growth.",
+    "commit": "a8237e89277706b3b9256a0bbe338e5f0acc18d0",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794468100000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-da5a361",
+    "publishedAt": 1794487662000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-a8237e8",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-da5a361.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da5a361/DroidDeck-main-da5a361.apk",
+        "name": "DroidDeck-main-a8237e8.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a8237e8/DroidDeck-main-a8237e8.apk",
         "size": 97338902,
-        "sha256": "2653735fedfc55352b0e63fc9c744c20fe81ca7b4e957e9a71fe48a41372ff56",
+        "sha256": "ed0d0b4ed1e6d5a4067839e0800cdac96d052584729a924584081a58edfbe36a",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-da5a361-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da5a361/DroidDeck-main-da5a361-pubg.apk",
+        "name": "DroidDeck-main-a8237e8-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a8237e8/DroidDeck-main-a8237e8-pubg.apk",
         "size": 97338902,
-        "sha256": "85ee2230f59aba13e67b35ed2de7564b251cb75a25d192d9b33f44f517d0f156",
+        "sha256": "17771db2b29b9b2e704efc673fcc5bfecaa2c6045dfc8665eba47a33e525bfb0",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-da5a361-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da5a361/DroidDeck-main-da5a361-antutu.apk",
+        "name": "DroidDeck-main-a8237e8-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a8237e8/DroidDeck-main-a8237e8-antutu.apk",
         "size": 97338902,
-        "sha256": "f3861ec54a29dfc6c05346cbf240500a45e57cac68e23fafb09b5cee2ee03c27",
+        "sha256": "165d8ae2cdce560351a9bf87ebaf8db9c4ab8bc7b8c2cb34aa923d71c45d898c",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-da5a361-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-da5a361/DroidDeck-main-da5a361-ludashi.apk",
+        "name": "DroidDeck-main-a8237e8-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-a8237e8/DroidDeck-main-a8237e8-ludashi.apk",
         "size": 97338902,
-        "sha256": "ebdc8a263833699017debc481a40ffdc0932a5b2efbf55e0cda4733f1b5518a5",
+        "sha256": "d9ee0f1646cbb4c789012cafc0c03d8192510a87d77fd491599aa2ef9f54b409",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "a8237e89277706b3b9256a0bbe338e5f0acc18d0",
+      "title": "fix(memory): reclaim idle session memory under pressure",
+      "summary": "Issue #945 exposed a RAM-size gate that disabled idle session reclaim above 13 GiB. MemAvailable alone also overstated headroom during rapid GPU and system-reserved memory growth.",
+      "publishedAt": 1794487662000
+    },
     {
       "commit": "da5a36151b7f82a394049409a75efc4888077f43",
       "title": "feat(ui): option to hide the Agent tab",
@@ -155,12 +161,6 @@
       "title": "fix: games on an SD card install faster and Battle.net can read the card's volume",
       "summary": "Two separate faults hit games kept on an SD card.",
       "publishedAt": 1794442838000
-    },
-    {
-      "commit": "1d247d212bf6e1cd8cb4520b7b7f4ffc1e620510",
-      "title": "fix(decky): run Decky's unprivileged role as root in the guest",
-      "summary": "Decky Loader exits at startup with KeyError: getpwnam(): name not found: 'deck' because the guest has no deck user, so the plugin menu never appears in Steam.",
-      "publishedAt": 1794437433000
     }
   ],
   "tests": [
