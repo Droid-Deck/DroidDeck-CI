@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794459696089,
+  "generatedAt": 1794459895171,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-2512",
-      "title": "fix(lab): reuse installed add-on packs so the Agent can restart",
-      "summary": "A Lab build can restore the Agent chat but fail to launch Codex when the checkout pins a different proot pack from the one installed on the device. The saved failure was Cannot run program .../addons/proot/<source-pin>/libproot.so: error=2, No such file or directory.",
-      "commit": "32f55dcba95e15ff2145a49193350f14e508a3e9",
-      "pr": 2512,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794459613000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2512",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2512-32f55dc.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2512/DroidDeck-PR.2512-32f55dc.apk",
-          "size": 97305754,
-          "sha256": "eb1c604b7dcdbfa45a8f527fccdb8c76ebcda51fe41ef31f296e43fd836b92f9",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2512-32f55dc-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2512/DroidDeck-PR.2512-32f55dc-pubg.apk",
-          "size": 97305754,
-          "sha256": "7d8a59a3daab91ba27a8e3dfa6086d97cbec1702998c1a57939a22850e5c24d2",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2512-32f55dc-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2512/DroidDeck-PR.2512-32f55dc-antutu.apk",
-          "size": 97305754,
-          "sha256": "7e8d48f9c7348d321b201d2a12515d0b9d9b04e1980e6c73f4206777ff56b187",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2512-32f55dc-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2512/DroidDeck-PR.2512-32f55dc-ludashi.apk",
-          "size": 97305754,
-          "sha256": "d737f9739a13d217de0f5adf47508400ebd3be4269d8a5f3ffa6bd75fff1c671",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2509",
       "title": "fix(proot): a call the filesystem does not implement no longer switches the fast path off",
