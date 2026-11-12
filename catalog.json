@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794518108600,
+  "generatedAt": 1794520033574,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2426",
+      "title": "fix(fex): supply current Wayland libraries in the shared runtime",
+      "summary": "Imported x8664 AppImages can bundle GTK and web view libraries built against newer Wayland and FreeType ABIs than Sniper provides. The support report at https://discord.com/channels/1552707793247539220/1556195514322780160/1569785897027764254 has a desktop launch log whose entry log line 280 reports undefined symbol: wlproxymarshalflags. With the first test build (e610905) that error was gone",
+      "commit": "22e9d0f2366b88d9fef7346b20b5d96615068d3a",
+      "pr": 2426,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794519900000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2426",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2426-22e9d0f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-22e9d0f.apk",
+          "size": 97482896,
+          "sha256": "cc5f5ce163bbb5c357239153a3927741e0bb17117d3687c8aba8fd8e5c0f0eb2",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2426-22e9d0f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-22e9d0f-pubg.apk",
+          "size": 97482896,
+          "sha256": "d8851bdc93b9ca15b24edfe4757d318988e3f6e8235f69813a2fc9c1aa94824b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2426-22e9d0f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-22e9d0f-antutu.apk",
+          "size": 97482896,
+          "sha256": "49c663e00c3030d25ecf9d347a52f98267ed90f911120f2b9a93010e3f06ec1a",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2426-22e9d0f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-22e9d0f-ludashi.apk",
+          "size": 97482896,
+          "sha256": "19f95d3d25ba3d0dd118ed730971987f1db6d95d0dde0caa436d1e7bfa93c9f1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2346",
       "title": "feat(performance): switch to turn off idle game memory compression",
@@ -1579,55 +1628,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2430/DroidDeck-PR.2430-e59e2c0-ludashi.apk",
           "size": 97158189,
           "sha256": "ecf2817fcdd93a6f141715ee6069d4b24a2a1734dbe83c2f9cdadd6e02bd30de",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2426",
-      "title": "fix(fex): supply current Wayland libraries in the shared runtime",
-      "summary": "Imported x8664 AppImages can bundle GTK built against a newer Wayland ABI than Sniper provides. The support report at https://discord.com/channels/1552707793247539220/1556195514322780160/1569785897027764254 has a desktop launch log whose entry log line 280 reports undefined symbol: wlproxymarshalflags. Forcing X11 does not supply that missing symbol.",
-      "commit": "d91b26bfab746544324d5baf75d5c8bffd52f9a8",
-      "pr": 2426,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794405923000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2426",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2426-d91b26b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-d91b26b.apk",
-          "size": 96965567,
-          "sha256": "919b7c628b87ec5938a1e6efb6c34cc5ebefafa525efb1f231568e7ac8e490d9",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2426-d91b26b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-d91b26b-pubg.apk",
-          "size": 96965567,
-          "sha256": "42017c2e1ebabde68b20da417237ce11195f187e54e2f53c9c64a1251f860a49",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2426-d91b26b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-d91b26b-antutu.apk",
-          "size": 96965567,
-          "sha256": "4c0253254905665b0c94ffa188814814e53047d6f6eee7db38d308db3f894852",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2426-d91b26b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-d91b26b-ludashi.apk",
-          "size": 96965567,
-          "sha256": "ea7c0fdc14beaecc82e43593743681907386984b22e965292c8569d8433a1eda",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
