@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794516519455,
+  "generatedAt": 1794516683888,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2533",
+      "title": "Stop walking SD card libraries on every session start and game launch",
+      "summary": "Games on a microSD card took minutes to start. Two pieces of our own code walked game folders on the card when they did not need to; the card itself was not the limit.",
+      "commit": "41240ae2fd17ddecb2e0c9334b5e71832f424823",
+      "pr": 2533,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794516576000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2533",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2533-41240ae.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-41240ae.apk",
+          "size": 97573008,
+          "sha256": "8d63b2b879e96be56d3741ad43e24b2ee7f35b136955f2bd68cc58927da63bd4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2533-41240ae-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-41240ae-pubg.apk",
+          "size": 97573008,
+          "sha256": "90d525395272225b76c60b0250eee1b1824549696badb0235ffa6f5100a9dd55",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2533-41240ae-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-41240ae-antutu.apk",
+          "size": 97573008,
+          "sha256": "ce4e3c462c6385f02c3f1fe2beb787839649b155a74c2b393d5b82d9cd23434e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2533-41240ae-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-41240ae-ludashi.apk",
+          "size": 97573008,
+          "sha256": "10ae05437a19e56e2a876b5ad8de60b6492f15223296bf5ef2e291053635c7ba",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2472",
       "title": "Feat: Add per game screens effects",
       "summary": "Improves per-game screen effects profile selection, letting you choose per game.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2537/DroidDeck-PR.2537-c1cc631-ludashi.apk",
           "size": 97605776,
           "sha256": "5b6b12a906946aa062651df85efb3252584f798b8c8f832cc72385539ca2b41d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2533",
-      "title": "Stop walking SD card libraries on every session start and game launch",
-      "summary": "Games on a microSD card took minutes to start. Two pieces of our own code walked game folders on the card when they did not need to; the card itself was not the limit.",
-      "commit": "a9342899313ce710ba9c3dba48c18c9a6f2c2977",
-      "pr": 2533,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794512660000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2533",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2533-a934289.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-a934289.apk",
-          "size": 97503376,
-          "sha256": "ce300c0741aebfd07482c2fc73367f38605987ae8969b137d1273863e776b69d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2533-a934289-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-a934289-pubg.apk",
-          "size": 97503376,
-          "sha256": "f7c1c9513e58690acb752dcf83ef20e8dcc679a2b69dc96470958c45b7cc8f1a",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2533-a934289-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-a934289-antutu.apk",
-          "size": 97503376,
-          "sha256": "bd866409ba59d73eace0c4ed58dd7dc6093f77ff80e1c0854dfc676da5a4a9d9",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2533-a934289-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-a934289-ludashi.apk",
-          "size": 97503376,
-          "sha256": "e09b95d56a4d30e02e902cb86e2866b3bbdad4afbfbdb2d29b6f8075a130030b",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
