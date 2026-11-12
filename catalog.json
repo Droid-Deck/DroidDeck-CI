@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794454796074,
+  "generatedAt": 1794456891589,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2509",
+      "title": "fix(proot): a call the filesystem does not implement no longer switches the fast path off",
+      "summary": "Reserving space, verifying and installing on a storage card are far slower than the card itself.",
+      "commit": "26c740219032ec26385728a7d94f13ea462b6d9b",
+      "pr": 2509,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794456751000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2509",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2509-26c7402.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2509/DroidDeck-PR.2509-26c7402.apk",
+          "size": 97301658,
+          "sha256": "b489a77a30ee0b695df9912714c1375337307fd02dde8a174d4bbfdc619077a6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2509-26c7402-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2509/DroidDeck-PR.2509-26c7402-pubg.apk",
+          "size": 97301658,
+          "sha256": "92236fd98d11e6f34d4c294cb1976e0421644e7609c9aeb517ddad16b180307e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2509-26c7402-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2509/DroidDeck-PR.2509-26c7402-antutu.apk",
+          "size": 97301658,
+          "sha256": "641133747bd006dec7e2610807dfd50c03578414b18e9e4972cb847669d21c58",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2509-26c7402-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2509/DroidDeck-PR.2509-26c7402-ludashi.apk",
+          "size": 97301658,
+          "sha256": "7d85d88d7ccfee203ef3c06b82dda7c04e29a05d61ff813efb143fd0bcae54ef",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2421",
       "title": "fix(epic): hand Epic's terms step to the browser instead of looping the sign-in",
