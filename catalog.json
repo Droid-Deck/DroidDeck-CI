@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794516683888,
+  "generatedAt": 1794517586294,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,48 +165,48 @@
   ],
   "tests": [
     {
-      "tag": "pr-2533",
-      "title": "Stop walking SD card libraries on every session start and game launch",
-      "summary": "Games on a microSD card took minutes to start. Two pieces of our own code walked game folders on the card when they did not need to; the card itself was not the limit.",
-      "commit": "41240ae2fd17ddecb2e0c9334b5e71832f424823",
-      "pr": 2533,
+      "tag": "pr-2346",
+      "title": "feat(performance): switch to turn off idle game memory compression",
+      "summary": "The Performance switch for Steam compression did not control the separate low-memory session reclaim path. On supported low-RAM devices, blsessionpressure could still compress idle game processes when available memory was low.",
+      "commit": "14c14340657ead8b3a6923392f807a8bf55c0c14",
+      "pr": 2346,
       "version": null,
       "versionCode": 19,
-      "publishedAt": 1794516576000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2533",
+      "publishedAt": 1794517417000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2346",
       "apks": {
         "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2533-41240ae.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-41240ae.apk",
-          "size": 97573008,
-          "sha256": "8d63b2b879e96be56d3741ad43e24b2ee7f35b136955f2bd68cc58927da63bd4",
+          "name": "DroidDeck-PR.2346-14c1434.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-14c1434.apk",
+          "size": 97577104,
+          "sha256": "ae950faafbbe4690a720caafb311e5dfbcee45f14d2fc04f1e7fa71b7a984cb1",
           "packageName": "com.droiddeck.launcher",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.tencent.ig": {
-          "name": "DroidDeck-PR.2533-41240ae-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-41240ae-pubg.apk",
-          "size": 97573008,
-          "sha256": "90d525395272225b76c60b0250eee1b1824549696badb0235ffa6f5100a9dd55",
+          "name": "DroidDeck-PR.2346-14c1434-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-14c1434-pubg.apk",
+          "size": 97577104,
+          "sha256": "c894c863e47079e6243025ca2ca04b7cebb2280db3f79578e8bd066af02dcf81",
           "packageName": "com.tencent.ig",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2533-41240ae-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-41240ae-antutu.apk",
-          "size": 97573008,
-          "sha256": "ce4e3c462c6385f02c3f1fe2beb787839649b155a74c2b393d5b82d9cd23434e",
+          "name": "DroidDeck-PR.2346-14c1434-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-14c1434-antutu.apk",
+          "size": 97577104,
+          "sha256": "7145a4420aae04166dc2c8460f0d1fed397da2f1189b740097f1c68ffc9a5688",
           "packageName": "com.antutu.benchmark.full",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         },
         "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2533-41240ae-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2533/DroidDeck-PR.2533-41240ae-ludashi.apk",
-          "size": 97573008,
-          "sha256": "10ae05437a19e56e2a876b5ad8de60b6492f15223296bf5ef2e291053635c7ba",
+          "name": "DroidDeck-PR.2346-14c1434-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-14c1434-ludashi.apk",
+          "size": 97577104,
+          "sha256": "a2976f4086b6d0080cc3e6d5e6302b06c533f766624919fac228d55a8c771667",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -1677,55 +1677,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2396/DroidDeck-PR.2396-a8e1847-ludashi.apk",
           "size": 96965567,
           "sha256": "212875f6c2af5f4f0d403d97a942cfd771ad1ff97bc03b54c7f26690d369fb82",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2346",
-      "title": "feat(performance): switch to turn off idle game memory compression",
-      "summary": "The Performance switch for Steam compression did not control the separate low-memory session reclaim path. On supported low-RAM devices, blsessionpressure could still compress idle game processes when available memory was low.",
-      "commit": "0204dffe60d839428cb7caef5632b9f6bb7e2e94",
-      "pr": 2346,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794400667000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2346",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2346-0204dff.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-0204dff.apk",
-          "size": 96973759,
-          "sha256": "bc28aa58e3df543516f61c0fc7ae2a528c9b2af6352d77899ea0ac5f88c5e220",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2346-0204dff-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-0204dff-pubg.apk",
-          "size": 96973759,
-          "sha256": "9fa798ace952de2a1a2c2a50f86a293a2826c3d38ce28e325bece390dd820124",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2346-0204dff-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-0204dff-antutu.apk",
-          "size": 96973759,
-          "sha256": "08c106ab9b4a72d4dd13efea3bb6739ccc700a01329e78146e743b2a63aacfe7",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2346-0204dff-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2346/DroidDeck-PR.2346-0204dff-ludashi.apk",
-          "size": 96973759,
-          "sha256": "0b89d9fd750d4b00ecff9cac84280dbd52ff9140f5e974ffe1376a5eacdce5e1",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
