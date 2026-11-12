@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794446860084,
+  "generatedAt": 1794447394828,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,104 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2473",
+      "title": "Feat:Add per-game frame generation profiles",
+      "summary": "Add per game frame generation profiles, so you can choose what game and what configuration.",
+      "commit": "83ff8722be2c04d0e917fe2c089496b6a1be75ef",
+      "pr": 2473,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794447283000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2473",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2473-83ff872.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2473/DroidDeck-PR.2473-83ff872.apk",
+          "size": 97293466,
+          "sha256": "c15431f9d64a103fa259c515b9731a338edee5bce8be01bf85b1dae6bb9633af",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2473-83ff872-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2473/DroidDeck-PR.2473-83ff872-pubg.apk",
+          "size": 97293466,
+          "sha256": "f20e6527e51efa73f1cf98528d62dc1495711b66f32f24fa8843f62a4a68e66a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2473-83ff872-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2473/DroidDeck-PR.2473-83ff872-antutu.apk",
+          "size": 97293466,
+          "sha256": "0a209f33f8b910a06c5e940d39ba524d0a3a625b41a26de4696e1af056eda323",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2473-83ff872-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2473/DroidDeck-PR.2473-83ff872-ludashi.apk",
+          "size": 97293466,
+          "sha256": "3885203682e22c03ec442397ec659bcad43d909225c8949a462996c64575cdfd",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2504",
+      "title": "fix: permissions set by Windows programs are kept on SD cards",
+      "summary": "Follow-up to #2379. A Windows program can check the permissions of its install folder and repair them when they are not what it expects. Wine's server keeps a file's security descriptor in the user.wine.sd extended attribute. A volume that cannot hold extended attributes (an SD card served through Android's storage layer, FAT, exFAT) answers ENOTSUP, so every descriptor a program sets there is",
+      "commit": "ca558ca39dfcf7376fc6dd7a40b6de5835eb1d98",
+      "pr": 2504,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794447282000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2504",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2504-ca558ca.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2504/DroidDeck-PR.2504-ca558ca.apk",
+          "size": 97289370,
+          "sha256": "2135fd6ca70e45abf247db7b6e2a43411624270451a900a994affb4a5004c82a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2504-ca558ca-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2504/DroidDeck-PR.2504-ca558ca-pubg.apk",
+          "size": 97289370,
+          "sha256": "d29b2473ab9959890aab2918f24b0d405e3778aff76c2de4cf68097e01ac6ec0",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2504-ca558ca-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2504/DroidDeck-PR.2504-ca558ca-antutu.apk",
+          "size": 97289370,
+          "sha256": "bc94377742d3d56a91ce35557ec4eb51d167fe4d42566a2ecd18b4889531b9c7",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2504-ca558ca-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2504/DroidDeck-PR.2504-ca558ca-ludashi.apk",
+          "size": 97289370,
+          "sha256": "82404e9ddfed13363acfc1b49386d40a96d562de316322a734b2c6d8fe93e395",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2452",
       "title": "fix(ui): show dialogs on the second-screen menu without a separate platform window",
@@ -452,55 +550,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2486/DroidDeck-PR.2486-18da143-ludashi.apk",
           "size": 97277082,
           "sha256": "38b45a5a2db9f17d1df4e1e9de68951f6e78e93bbc1a84c536cfce35579e1170",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2473",
-      "title": "Feat:Add per-game frame generation profiles",
-      "summary": "Add per game frame generation profiles, so you can choose what game and what configuration.",
-      "commit": "aa87226a9bb3f5570c8fc55f2aaf3e15d4f70f89",
-      "pr": 2473,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794431144000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2473",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2473-aa87226.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2473/DroidDeck-PR.2473-aa87226.apk",
-          "size": 97043469,
-          "sha256": "e5737866480bc8d5789cc63d0e4893a9bd0e701021b0681852017c31614fc9a7",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2473-aa87226-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2473/DroidDeck-PR.2473-aa87226-pubg.apk",
-          "size": 97043469,
-          "sha256": "61af4e4077d1c66c62e0324e19b6ea77976db5c0e273dfc38721ca9e0dd25341",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2473-aa87226-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2473/DroidDeck-PR.2473-aa87226-antutu.apk",
-          "size": 97043469,
-          "sha256": "1b522cef581d6debad7022326586cc1a7671f35ad44a8c379bc3da234ced8c31",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2473-aa87226-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2473/DroidDeck-PR.2473-aa87226-ludashi.apk",
-          "size": 97043469,
-          "sha256": "ebdb62f72857887bd067c93c4a49f98ba94b63c760f06d44c3f89354bdbd929a",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
