@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794454259489,
+  "generatedAt": 1794454796074,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-02a5be6",
-    "title": "fix(input): a controller that disconnects mid-event no longer closes the app",
-    "summary": "DroidDeck can close during a session with NullPointerException in PadBridge.noteDevice when a controller disconnects while one of its key events is being handled. KeyEvent.getDevice() looks the device up again on every call, so the first lookup (to pick the player slot) finds the controller and a later one in the same event returns null.",
-    "commit": "02a5be62da4dc1af8f5e18f49dc14c0185126f04",
+    "tag": "main-7da27d4",
+    "title": "feat: add build watermark toggle for Lab, test, and local builds",
+    "summary": "\u2022 Add a Build label watermark toggle at the bottom of the Updates tab.\n\u2022 Control both test-build and Lab-build watermarks, including the Lab label shown over an installed release build.\n\u2022 Keep the watermark enabled by default. Users can hide or restore it immediately, and their choice persists across restarts.\n\u2022 Include translated setting text for all 32 non-English locale variants, alongside English.",
+    "commit": "7da27d4ff4a5d9b006ae9febcd565b45a9eca617",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794452962000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-02a5be6",
+    "publishedAt": 1794454694000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-7da27d4",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-02a5be6.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-02a5be6/DroidDeck-main-02a5be6.apk",
-        "size": 97293466,
-        "sha256": "de4c7e70cbc78e18f2978334eac85e9e453e58a52fbe12da4cff40daa7d8f87d",
+        "name": "DroidDeck-main-7da27d4.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7da27d4/DroidDeck-main-7da27d4.apk",
+        "size": 97301658,
+        "sha256": "f7b81ce572bde2b772bff5f98c6f622f911913606589bb8e3b499e69d70b1ef2",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-02a5be6-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-02a5be6/DroidDeck-main-02a5be6-pubg.apk",
-        "size": 97293466,
-        "sha256": "7098148a767f3c2b1debb074b07b5998042caa3a8024b053069080cb74940bf6",
+        "name": "DroidDeck-main-7da27d4-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7da27d4/DroidDeck-main-7da27d4-pubg.apk",
+        "size": 97301658,
+        "sha256": "aa8ba7ed472c12a4b9ac069a0271dc6e9ded45a92b3845670e90bbc509dfce38",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-02a5be6-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-02a5be6/DroidDeck-main-02a5be6-antutu.apk",
-        "size": 97293466,
-        "sha256": "8c29c8048aae3fe7ca4069b40d5ec084a178318fd6a35668b47123f4e4d87849",
+        "name": "DroidDeck-main-7da27d4-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7da27d4/DroidDeck-main-7da27d4-antutu.apk",
+        "size": 97301658,
+        "sha256": "cce8e8808a31888d30c017a633cc3ceff6987393e85f3e7b4aa7c5ba082a4cea",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-02a5be6-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-02a5be6/DroidDeck-main-02a5be6-ludashi.apk",
-        "size": 97293466,
-        "sha256": "5689f2e0e1ea06880de52b414e668186c0112af8b5c6747e10dc4e2406f459bc",
+        "name": "DroidDeck-main-7da27d4-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-7da27d4/DroidDeck-main-7da27d4-ludashi.apk",
+        "size": 97301658,
+        "sha256": "3bdbf51b5039cb895612a1c6d4123a3b65b0557c732643069c00abab400e1f72",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "7da27d4ff4a5d9b006ae9febcd565b45a9eca617",
+      "title": "feat: add build watermark toggle for Lab, test, and local builds",
+      "summary": "\u2022 Add a Build label watermark toggle at the bottom of the Updates tab.\n\u2022 Control both test-build and Lab-build watermarks, including the Lab label shown over an installed release build.\n\u2022 Keep the watermark enabled by default. Users can hide or restore it immediately, and their choice persists across restarts.\n\u2022 Include translated setting text for all 32 non-English locale variants, alongside Engl",
+      "publishedAt": 1794454694000
+    },
     {
       "commit": "02a5be62da4dc1af8f5e18f49dc14c0185126f04",
       "title": "fix(input): a controller that disconnects mid-event no longer closes the app",
@@ -155,12 +161,6 @@
       "title": "fix(agent): start sessions from their own task so repeat starts aren't swallowed",
       "summary": "After the first agent start following an install, droiddeckctl start stopped working: the app stayed on the launcher and droiddeckctl reported ACTIVITYSTARTFAILED (\"no new session appeared\") or hung.",
       "publishedAt": 1794413796000
-    },
-    {
-      "commit": "b1a410ccd2ca3baf89f2d3edd938ccdad063866a",
-      "title": "fix(ubisoft): answer Orbit, login and process-only check-ins",
-      "summary": "Far Cry 3 Blood Dragon (Ubisoft 205) never gets past a black screen. On a RedMagic with release 0.7.1:\n\u2022 droiddeck-upc grants the start.\n\u2022 The game opens orbitipcpipe, sends one request and waits there forever.",
-      "publishedAt": 1794402058000
     }
   ],
   "tests": [
