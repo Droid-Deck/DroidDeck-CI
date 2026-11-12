@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794439293040,
+  "generatedAt": 1794442353047,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -207,55 +207,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2488/DroidDeck-PR.2488-6eaf357-ludashi.apk",
           "size": 97289370,
           "sha256": "c8c4fecc1d2e900d9d84d24b530ee2e47a1cd22f230bd83be1d3420b853120eb",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2379",
-      "title": "fix: games on an SD card install faster and Battle.net stops marking them unplayable",
-      "summary": "Two separate faults hit games kept on an SD card.",
-      "commit": "eacab521025a0a2e688882a990965f33a2ae47e6",
-      "pr": 2379,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794438457000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2379",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2379-eacab52.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-eacab52.apk",
-          "size": 97285274,
-          "sha256": "6b16fbb2f539fe96dd1638405d0f19d1b76b151f665fc9e552fda98ee06b093e",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2379-eacab52-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-eacab52-pubg.apk",
-          "size": 97285274,
-          "sha256": "9f7db0e0141dba30b49b77c3e6c4edcff7de0ebf2ce50956f82eb8cc183dd1ee",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2379-eacab52-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-eacab52-antutu.apk",
-          "size": 97285274,
-          "sha256": "3bb634635dbcf7fa6411b1fffb97ab08ba117caa40209110ac596383d6e0418d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2379-eacab52-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2379/DroidDeck-PR.2379-eacab52-ludashi.apk",
-          "size": 97285274,
-          "sha256": "8b91355859c1f5baddd32a6fc427ec5b4c09210c826fbdb2278058f9d2604499",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -2120,55 +2071,6 @@
           "sha256": "a4cbf764692b536c28df0ab71e5fc9510a63bf32b9c34d92db1ed23fdbd83d3f",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2377",
-      "title": "perf(proot): faster SD card installs and uninstalls on FUSE-backed libraries",
-      "summary": "Installing, verifying and uninstalling games on an SD card served through Android's MediaProvider FUSE is very slow. The FUSE daemon re-resolves every path component on every operation (its entry cache timeout is effectively zero), and the proot fast path passed full absolute host paths for every lstat, open, rename and unlink. A Steam file 11 folders deep paid for 11+ lookups per call.",
-      "commit": "7f8141cb884e0ef3b50e841414cf9d57e198b9a6",
-      "pr": 2377,
-      "version": null,
-      "versionCode": 18,
-      "publishedAt": 1794313026000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2377",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2377-7f8141c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2377/DroidDeck-PR.2377-7f8141c.apk",
-          "size": 96604504,
-          "sha256": "81cd72e6e63b38f338fb7511e92a382be644aca43edfa371a462bc5105c54afa",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2377-7f8141c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2377/DroidDeck-PR.2377-7f8141c-pubg.apk",
-          "size": 96604504,
-          "sha256": "7d7a1683cceb83ca67b8b08ab537ea116ff635f6f06ebfc5e5a2726e0d62c452",
-          "packageName": "com.tencent.ig",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2377-7f8141c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2377/DroidDeck-PR.2377-7f8141c-antutu.apk",
-          "size": 96604504,
-          "sha256": "9db34b8c6076e3b7e8e251808db211e318d49bafcee03e4ad2cfdd27e40f8f76",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 18,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2377-7f8141c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2377/DroidDeck-PR.2377-7f8141c-ludashi.apk",
-          "size": 96604504,
-          "sha256": "ddc35e13e6d397c607988756d66a6be3b285618a6b67e72af01ec1f02f09976c",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 18,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
         }
       }
