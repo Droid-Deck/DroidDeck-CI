@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794449381524,
+  "generatedAt": 1794449950890,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2369",
+      "title": "fix(input): a controller that disconnects mid-event no longer closes the app",
+      "summary": "DroidDeck can close during a session with NullPointerException in PadBridge.noteDevice when a controller disconnects while one of its key events is being handled. KeyEvent.getDevice() looks the device up again on every call, so the first lookup (to pick the player slot) finds the controller and a later one in the same event returns null.",
+      "commit": "e724d33ee8bded6a3af51c4754e3a05702d04285",
+      "pr": 2369,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794449863000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2369",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2369-e724d33.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-e724d33.apk",
+          "size": 97203354,
+          "sha256": "0a00fec0b8e12fc140002f9ae24fc54e7eac1bf6c99073af5b11cae5db96386a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2369-e724d33-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-e724d33-pubg.apk",
+          "size": 97203354,
+          "sha256": "3f4b2e90ec38fbbe8716f05a9071e07f1ce85a461461c0245e0701a1dbf08fac",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2369-e724d33-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-e724d33-antutu.apk",
+          "size": 97203354,
+          "sha256": "1c381a8f519d4f9baa99ea126a5c5af160494c9995bf4ff7dff5a4b086877530",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2369-e724d33-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-e724d33-ludashi.apk",
+          "size": 97203354,
+          "sha256": "786e025f7e678b74877986f0f35997e900e4f3dd238b66b9b9b32a49a59d3c71",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2421",
       "title": "fix(epic): hand Epic's terms step to the browser instead of looping the sign-in",
@@ -1481,55 +1530,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2426/DroidDeck-PR.2426-d91b26b-ludashi.apk",
           "size": 96965567,
           "sha256": "ea7c0fdc14beaecc82e43593743681907386984b22e965292c8569d8433a1eda",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2369",
-      "title": "fix(input): a controller that disconnects mid-event no longer closes the app",
-      "summary": "DroidDeck can close during a session with NullPointerException in PadBridge.noteDevice when a controller disconnects while one of its key events is being handled. KeyEvent.getDevice() looks the device up again on every call, so the first lookup (to pick the player slot) finds the controller and a later one in the same event returns null.",
-      "commit": "a3d1154113a74053596cea59cfe8c8c3f5f68080",
-      "pr": 2369,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794405918000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2369",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2369-a3d1154.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-a3d1154.apk",
-          "size": 96883647,
-          "sha256": "413c323cacc841b3c2e404d268b4b4ff15f069a26e1b83f0b2340f6ca0c3f9b2",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2369-a3d1154-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-a3d1154-pubg.apk",
-          "size": 96883647,
-          "sha256": "858b7f7b6fe1bd629ab04edb7ef6549214731b3c18191a35e39b208a4d01f2d9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2369-a3d1154-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-a3d1154-antutu.apk",
-          "size": 96883647,
-          "sha256": "3736f80cb6705eeb06734943cf15897c5802e086027bb2739f06fa3457974f48",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2369-a3d1154-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2369/DroidDeck-PR.2369-a3d1154-ludashi.apk",
-          "size": 96883647,
-          "sha256": "3e41082ab5de7e6d0200ddb82fb1461f97c9652b52af648964280b1976511faa",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
