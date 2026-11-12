@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794464818160,
+  "generatedAt": 1794465496831,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-cd05c96",
-    "title": "fix(proot): a call the filesystem does not implement no longer switches the fast path off",
-    "summary": "Reserving space, verifying and installing on a storage card are far slower than the card itself.",
-    "commit": "cd05c96d103210820f0c6891c9b690f50611d94b",
+    "tag": "main-01bfe85",
+    "title": "fix(session): preserve guest monotonic time after long pauses",
+    "summary": "The pause clock compensation was limited to plasmashell, although session guests load the same preload. A long background pause therefore exposed the full CLOCKMONOTONIC gap to guest processes. The report log shows SIGCONT at 15:31:57.381, 2065 MB left in zRAM at 15:31:57.447, and the game window closing at 15:32:01.216. The zRAM pass also ran at 15:32:00.528, so memory pressure remains an op",
+    "commit": "01bfe8519ef75eed6fc5b988424604a01cb23650",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794460981000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-cd05c96",
+    "publishedAt": 1794465391000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-01bfe85",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-cd05c96.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd05c96/DroidDeck-main-cd05c96.apk",
+        "name": "DroidDeck-main-01bfe85.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-01bfe85/DroidDeck-main-01bfe85.apk",
         "size": 97334806,
-        "sha256": "283f6c9ec3197b54bd58a8ed9180b0e77689ff88addd6bf709c38c5c2029bdb1",
+        "sha256": "7dc954a26adaff8ea379a8f023a01e2aef5af9cb1cb548730d33858d96e26a74",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-cd05c96-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd05c96/DroidDeck-main-cd05c96-pubg.apk",
+        "name": "DroidDeck-main-01bfe85-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-01bfe85/DroidDeck-main-01bfe85-pubg.apk",
         "size": 97334806,
-        "sha256": "6cd46d78c7e28fce946cceaa363b3031724b10ccb17ad8196053e2697c331ca5",
+        "sha256": "61b6724ce0b48d22ab8e9a9181d80017309039cd8b0a9cf4238672d6a04fe195",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-cd05c96-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd05c96/DroidDeck-main-cd05c96-antutu.apk",
+        "name": "DroidDeck-main-01bfe85-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-01bfe85/DroidDeck-main-01bfe85-antutu.apk",
         "size": 97334806,
-        "sha256": "d6f32889bd1472b06242542a9bca8dbee0b15e592bfadf6d624cd22186cc63a4",
+        "sha256": "78f64ac4a606ca54683ad7831cea75ef1a83cfe54aad0362912c219d929b4bd3",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-cd05c96-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-cd05c96/DroidDeck-main-cd05c96-ludashi.apk",
+        "name": "DroidDeck-main-01bfe85-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-01bfe85/DroidDeck-main-01bfe85-ludashi.apk",
         "size": 97334806,
-        "sha256": "dca679442478705d75b9c1644724244df9b6e834acb46ed5a4a702e9effa1cdb",
+        "sha256": "547dffee51693f74b094c764959cdb6f7dd178ac5bf90539571040b68fee8197",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "01bfe8519ef75eed6fc5b988424604a01cb23650",
+      "title": "fix(session): preserve guest monotonic time after long pauses",
+      "summary": "The pause clock compensation was limited to plasmashell, although session guests load the same preload. A long background pause therefore exposed the full CLOCKMONOTONIC gap to guest processes. The report log shows SIGCONT at 15:31:57.381, 2065 MB left in zRAM at 15:31:57.447, and the game window closing at 15:32:01.216. The zRAM pass also ran at 15:32:00.528, so memory pressure remains an op",
+      "publishedAt": 1794465391000
+    },
     {
       "commit": "cd05c96d103210820f0c6891c9b690f50611d94b",
       "title": "fix(proot): a call the filesystem does not implement no longer switches the fast path off",
@@ -155,12 +161,6 @@
       "title": "fix(ci): fetch the Venus component without spending the API quota",
       "summary": "Builds of main stopped reaching the signing-main environment. The step \"Fetch the Mali (Venus) component\" downloads a public release asset through the GitHub API with the workflow token. That token is limited to 1,000 API requests an hour for the whole repository, and on a busy day the validation and PR signing workflows use it up, so the fetch fails with HTTP 403: API rate limit exceeded for",
       "publishedAt": 1794433155000
-    },
-    {
-      "commit": "263e96469f754ae2b0386bf63b618768b2834a79",
-      "title": "fix(agent): setup repairs a half-installed userland before installing the CLI",
-      "summary": "Agent setup's Install step ran apt-get install straight away. After an interrupted apt run, or after installing or removing the desktop (which rewrites /var/lib/dpkg/status and can leave perl and perl-base at different versions), every Retry failed with E: Unmet dependencies until someone ran apt --fix-broken install by hand.",
-      "publishedAt": 1794431545000
     }
   ],
   "tests": [
