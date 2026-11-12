@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794491931728,
+  "generatedAt": 1794493268450,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2501",
+      "title": "fix(gamescope): release Vulkan resources before exit",
+      "summary": "Gamescope faults with SIGSEGV after its primary child exits in the Desktop window path. Logs show the same shutdown sequence for unrelated Windows programs on Adreno 735 and Adreno 840 devices. The Desktop-mode report is from Xiaomi / Adreno 735 (DroidDeck 0.7.1). Gamescope issue #2516 is a separate Linux/NVIDIA report of a crash at exit; i",
+      "commit": "1903d7c2494136b7a099eb699bd0c3e47815a9d2",
+      "pr": 2501,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794493115000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2501",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2501-1903d7c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2501/DroidDeck-PR.2501-1903d7c.apk",
+          "size": 97285274,
+          "sha256": "334094c760405c04b01730232a95d4dcb964c70031dc2db1726730072aad3b39",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2501-1903d7c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2501/DroidDeck-PR.2501-1903d7c-pubg.apk",
+          "size": 97285274,
+          "sha256": "d0940a775c3b9a150bfd6ff538dcd02b20ff4242369bb879167504af66190796",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2501-1903d7c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2501/DroidDeck-PR.2501-1903d7c-antutu.apk",
+          "size": 97285274,
+          "sha256": "ce3d0e1c48572a1a5368d978a0d9d49c7d8abd111d399e5a8d885d09c1715327",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2501-1903d7c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2501/DroidDeck-PR.2501-1903d7c-ludashi.apk",
+          "size": 97285274,
+          "sha256": "128fb878465d8ecb88021d26a0279aac88ca0751a1859e47d0a60fce9b852bac",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2389",
       "title": "feat: Add Soundtracks tab and music player",
