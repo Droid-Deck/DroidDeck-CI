@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794443231698,
+  "generatedAt": 1794446860084,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2452",
+      "title": "fix(ui): show dialogs on the second-screen menu without a separate platform window",
+      "summary": "Opening Game environment from the menu docked on the second screen crashed the app on Android 13 (AYN Thor, 0.7.1): IllegalArgumentException: Window type mismatch. Window Context's window type is 2037, while LayoutParams' type is set to 2 in Dialog.show (crash.log lines 5-38 and 39-72 of the reporter's bundle). The second-screen menu is composed inside a Presentation (SecondScreenPresentati",
+      "commit": "d33c2c62abd888a0bf19e2a8f11806507bdbfe5f",
+      "pr": 2452,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794446751000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2452",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2452-d33c2c6.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2452/DroidDeck-PR.2452-d33c2c6.apk",
+          "size": 97289370,
+          "sha256": "6526c9c4f433ec8f4f3336666505bd88313a3f3e8a732c584efb659c61f56a25",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2452-d33c2c6-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2452/DroidDeck-PR.2452-d33c2c6-pubg.apk",
+          "size": 97289370,
+          "sha256": "94c354b5408060906357bca42a9d2b561dad88e055d9e2fccf64da9bbb9d9adf",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2452-d33c2c6-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2452/DroidDeck-PR.2452-d33c2c6-antutu.apk",
+          "size": 97289370,
+          "sha256": "013580f7407aa37e3f146c972dc43b7ab29301a9a9b96b0f8e8b16e482b8c4dc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2452-d33c2c6-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2452/DroidDeck-PR.2452-d33c2c6-ludashi.apk",
+          "size": 97289370,
+          "sha256": "e6268e89ff658797a19f8965961606349e5bc63eee8873484035bd0867d79d2e",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2503",
       "title": "fix(agent): the agent survives Steam session starts, stops and restarts",
