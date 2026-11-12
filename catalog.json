@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794452369830,
+  "generatedAt": 1794453095431,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-956f172",
-    "title": "fix(storage): Clean up keeps Proton EasyAntiCheat and BattlEye runtimes",
-    "summary": "Clean up listed \\\"Proton EasyAntiCheat Runtime\\\" and \\\"Proton BattlEye Runtime\\\" as unused x86 Protons because their install folders start with \\Proton \\. Steam fetches these runtimes for any game that ships anti-cheat files, even when the launch option skips anti-cheat (e.g. Halo MCC). With the runtime removed, the game's install and launch stall at \\\"Downloading Content 0%\\\": Steam reuses the",
-    "commit": "956f17239b2ad6ea1a37ee6c0edbda9f8c84d27e",
+    "tag": "main-02a5be6",
+    "title": "fix(input): a controller that disconnects mid-event no longer closes the app",
+    "summary": "DroidDeck can close during a session with NullPointerException in PadBridge.noteDevice when a controller disconnects while one of its key events is being handled. KeyEvent.getDevice() looks the device up again on every call, so the first lookup (to pick the player slot) finds the controller and a later one in the same event returns null.",
+    "commit": "02a5be62da4dc1af8f5e18f49dc14c0185126f04",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794449260000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-956f172",
+    "publishedAt": 1794452962000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-02a5be6",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-956f172.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-956f172/DroidDeck-main-956f172.apk",
+        "name": "DroidDeck-main-02a5be6.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-02a5be6/DroidDeck-main-02a5be6.apk",
         "size": 97293466,
-        "sha256": "2cb7b4d95d3b728ca8f04d21299f0c7b2e3e44f74580dcdc5c980a3a43cc0504",
+        "sha256": "de4c7e70cbc78e18f2978334eac85e9e453e58a52fbe12da4cff40daa7d8f87d",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-956f172-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-956f172/DroidDeck-main-956f172-pubg.apk",
+        "name": "DroidDeck-main-02a5be6-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-02a5be6/DroidDeck-main-02a5be6-pubg.apk",
         "size": 97293466,
-        "sha256": "07ef95afd7d83177c5da29947ab3ab9a554ba41132ed5d2e4117dfdeb375029f",
+        "sha256": "7098148a767f3c2b1debb074b07b5998042caa3a8024b053069080cb74940bf6",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-956f172-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-956f172/DroidDeck-main-956f172-antutu.apk",
+        "name": "DroidDeck-main-02a5be6-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-02a5be6/DroidDeck-main-02a5be6-antutu.apk",
         "size": 97293466,
-        "sha256": "0e8939eaa15f48e44cf743d6fedd7e00cec9446436a79253ebda7ccf380de6d8",
+        "sha256": "8c29c8048aae3fe7ca4069b40d5ec084a178318fd6a35668b47123f4e4d87849",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-956f172-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-956f172/DroidDeck-main-956f172-ludashi.apk",
+        "name": "DroidDeck-main-02a5be6-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-02a5be6/DroidDeck-main-02a5be6-ludashi.apk",
         "size": 97293466,
-        "sha256": "ef8896239a8d5da539a81ae471039e80cfc49fe78606df172273f988252de708",
+        "sha256": "5689f2e0e1ea06880de52b414e668186c0112af8b5c6747e10dc4e2406f459bc",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "02a5be62da4dc1af8f5e18f49dc14c0185126f04",
+      "title": "fix(input): a controller that disconnects mid-event no longer closes the app",
+      "summary": "DroidDeck can close during a session with NullPointerException in PadBridge.noteDevice when a controller disconnects while one of its key events is being handled. KeyEvent.getDevice() looks the device up again on every call, so the first lookup (to pick the player slot) finds the controller and a later one in the same event returns null.",
+      "publishedAt": 1794452962000
+    },
     {
       "commit": "956f17239b2ad6ea1a37ee6c0edbda9f8c84d27e",
       "title": "fix(storage): Clean up keeps Proton EasyAntiCheat and BattlEye runtimes",
@@ -155,12 +161,6 @@
       "title": "fix(ubisoft): answer Orbit, login and process-only check-ins",
       "summary": "Far Cry 3 Blood Dragon (Ubisoft 205) never gets past a black screen. On a RedMagic with release 0.7.1:\n\u2022 droiddeck-upc grants the start.\n\u2022 The game opens orbitipcpipe, sends one request and waits there forever.",
       "publishedAt": 1794402058000
-    },
-    {
-      "commit": "2aeff3bd9be4ad2b989ccdd49d17fff4403fb0a2",
-      "title": "chore: CodeRabbit reviews draft PRs",
-      "summary": "Sets reviews.autoreview.drafts to true.",
-      "publishedAt": 1794362834000
     }
   ],
   "tests": [
