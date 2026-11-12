@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794459895171,
+  "generatedAt": 1794460436118,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-1882520",
-    "title": "fix(agent): the agent survives Steam session starts, stops and restarts",
-    "summary": "Whenever a session started or stopped, including when the agent itself ran droiddeckctl start, stop or a Steam restart, the app killed the agent's own turn:",
-    "commit": "1882520cac2f8c6d862959334ed4b1f7a12def0e",
+    "tag": "main-b303423",
+    "title": "fix(lab): reuse installed add-on packs so the Agent can restart",
+    "summary": "A Lab build can restore the Agent chat but fail to launch Codex when the checkout pins a different proot pack from the one installed on the device. The saved failure was Cannot run program .../addons/proot/<source-pin>/libproot.so: error=2, No such file or directory.",
+    "commit": "b303423001ec49f9894f97cd4763e5536e5a494b",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794459365000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-1882520",
+    "publishedAt": 1794460315000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b303423",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-1882520.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1882520/DroidDeck-main-1882520.apk",
-        "size": 97334806,
-        "sha256": "63e7fcd130c0ed6ddf8f499cbd7cc858016f7d470fd04d65f6eac01e03f1b8f5",
+        "name": "DroidDeck-main-b303423.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b303423/DroidDeck-main-b303423.apk",
+        "size": 97338902,
+        "sha256": "75a12b771753cf6e21ded4cf7ea5ebd7958243bfa2e6cbd54ed9359fb52b7d34",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-1882520-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1882520/DroidDeck-main-1882520-pubg.apk",
-        "size": 97334806,
-        "sha256": "0f6d4bd5f26c2a54cb50a5b9d9bf0760257f3039a8262d6f08b83259e9a6b61a",
+        "name": "DroidDeck-main-b303423-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b303423/DroidDeck-main-b303423-pubg.apk",
+        "size": 97338902,
+        "sha256": "b61e35e31572cc2a497dfdcef461d76a46b3c3161cc6ed1f6edf3e93993daec5",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-1882520-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1882520/DroidDeck-main-1882520-antutu.apk",
-        "size": 97334806,
-        "sha256": "67932a39e118b6210b38ecb30e9aa76820844cc912cb5f845f82a6e26356b63b",
+        "name": "DroidDeck-main-b303423-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b303423/DroidDeck-main-b303423-antutu.apk",
+        "size": 97338902,
+        "sha256": "13726bf6b162c9ed1901a30004eb196ecd5ba7f690053e199c210f3f461593e6",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-1882520-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-1882520/DroidDeck-main-1882520-ludashi.apk",
-        "size": 97334806,
-        "sha256": "9ccb148674e90fa78b04e2493b43dd36541d06848c6bd849f42e162381357c09",
+        "name": "DroidDeck-main-b303423-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b303423/DroidDeck-main-b303423-ludashi.apk",
+        "size": 97338902,
+        "sha256": "b67e2bf7b12832c713be393c829fc0b5d8acbc65b26636487001d517ef468fe2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b303423001ec49f9894f97cd4763e5536e5a494b",
+      "title": "fix(lab): reuse installed add-on packs so the Agent can restart",
+      "summary": "A Lab build can restore the Agent chat but fail to launch Codex when the checkout pins a different proot pack from the one installed on the device. The saved failure was Cannot run program .../addons/proot/<source-pin>/libproot.so: error=2, No such file or directory.",
+      "publishedAt": 1794460315000
+    },
     {
       "commit": "1882520cac2f8c6d862959334ed4b1f7a12def0e",
       "title": "fix(agent): the agent survives Steam session starts, stops and restarts",
@@ -155,12 +161,6 @@
       "title": "feat(agent): the agent's commits and pull requests carry no Claude credit by default",
       "summary": "Commits and pull requests the on-device agent makes are the user's own, so by default they carry no \"Co-Authored-By: Claude\" line and no \"Generated with Claude Code\" note.",
       "publishedAt": 1794427547000
-    },
-    {
-      "commit": "61031e3c4b76f98261cf97ef526e6df68d512d90",
-      "title": "feat(lab): build and run Lab builds of DroidDeck on the device itself",
-      "summary": "An on-device agent (or a person) can now change DroidDeck, build it on the handheld, and run it over the installed release without reinstalling or re-signing. Testers keep their games, sign-ins and settings, and nobody needs the release key. docs/lab-builds.md describes it.",
-      "publishedAt": 1794419732000
     }
   ],
   "tests": [
