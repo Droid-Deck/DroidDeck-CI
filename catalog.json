@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794505194930,
+  "generatedAt": 1794506543836,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2528",
+      "title": "fix(gamescope): overlapping touches no longer leave the emulated click held",
+      "summary": "In a Steam session, touch on the game can stop working after a while: taps still arrive but nothing reacts, or the game behaves as if the left button is held down. Reported on a Samsung Galaxy Tab S9 (SM-X710, Adreno 740, 0.7.1) and a Xiaomi 2107113SG (Adreno 660, main cdff94e, touch mode 1).",
+      "commit": "f35eee28a898c3f1f0bb070bfad3044453818795",
+      "pr": 2528,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794506398000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2528",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2528-f35eee2.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2528/DroidDeck-PR.2528-f35eee2.apk",
+          "size": 97412790,
+          "sha256": "a0697c565c569b5edf4c624318c12cd740891f022b7ab1a45745b034fe27837f",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2528-f35eee2-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2528/DroidDeck-PR.2528-f35eee2-pubg.apk",
+          "size": 97412790,
+          "sha256": "e2cb5fb0b9456c0d973feddca8e36489be310b121057892ab698faae79f25690",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2528-f35eee2-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2528/DroidDeck-PR.2528-f35eee2-antutu.apk",
+          "size": 97412790,
+          "sha256": "dcbc80f0030d4c96e1e32e69ebd855cdc4b778d67a4fb2ec70700a8169b3340f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2528-f35eee2-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2528/DroidDeck-PR.2528-f35eee2-ludashi.apk",
+          "size": 97412790,
+          "sha256": "cb8d338c69b044f5d388387c489353ddc17943c0d0fa0388af51d8784d575b3b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2522",
       "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
