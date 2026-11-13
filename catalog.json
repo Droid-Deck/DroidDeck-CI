@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794588516678,
+  "generatedAt": 1794588783175,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2522",
+      "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
+      "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory.",
+      "commit": "4cbee62ea80e349c1afab865aecac4454d78c846",
+      "pr": 2522,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794588615000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2522",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2522-4cbee62.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-4cbee62.apk",
+          "size": 100081509,
+          "sha256": "0adc1f2412fd8e5913866cb88edc28e476e75a4d364dd0b09ae7796d6ad75fa3",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2522-4cbee62-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-4cbee62-pubg.apk",
+          "size": 100081509,
+          "sha256": "79ca9df8326250a947e67b78bc6d53af24cdb7b87aa72f28243f0ab20b9750a1",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2522-4cbee62-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-4cbee62-antutu.apk",
+          "size": 100081509,
+          "sha256": "1cfa9baca9c78a06790793f38894e2bcf960bb36a81e01fb3edac3182bc663ff",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2522-4cbee62-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-4cbee62-ludashi.apk",
+          "size": 100081509,
+          "sha256": "d47543a5acd91f2a1b29e840bebd1c57e10ba43495a44579c9615557f1317a8a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2565",
       "title": "feat(storage): name, select and remove every prefix and store game",
@@ -550,55 +599,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2528/DroidDeck-PR.2528-f35eee2-ludashi.apk",
           "size": 97412790,
           "sha256": "cb8d338c69b044f5d388387c489353ddc17943c0d0fa0388af51d8784d575b3b",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2522",
-      "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
-      "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory.",
-      "commit": "c0db09ec72d068ec11d87994c96019e849dfddcf",
-      "pr": 2522,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794495272000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2522",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2522-c0db09e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-c0db09e.apk",
-          "size": 97256982,
-          "sha256": "090848982b73c3f917c190f0b80c32b846a3b5e859076e8df0bfdb1de728973f",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2522-c0db09e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-c0db09e-pubg.apk",
-          "size": 97256982,
-          "sha256": "7cd41b80125c8618169ba72a2662eeaa3f81fce4167bf46842bd45a7d8fdc930",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2522-c0db09e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-c0db09e-antutu.apk",
-          "size": 97256982,
-          "sha256": "4013b9b04c4e4320fb28fc6fec70f2b1fd4254732b921d89ca7c25b2c7ea2562",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2522-c0db09e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-c0db09e-ludashi.apk",
-          "size": 97256982,
-          "sha256": "0b4d2fb02701d88fce16fb5c427adc6d26b921094d8e682c605a0bfc9b991068",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
