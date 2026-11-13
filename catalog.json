@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794528987131,
+  "generatedAt": 1794530854572,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2546",
+      "title": "Render Agent Markdown and open web links in an external browser",
+      "summary": "Agent replies currently use a small formatting parser that leaves Markdown links as plain text. A reply such as PR #2540 cannot be tapped to open the pull request.",
+      "commit": "fbe487fa09d5aab1aaf7aa07799cfe9c17e7bfc3",
+      "pr": 2546,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794530746000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2546",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2546-fbe487f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2546/DroidDeck-PR.2546-fbe487f.apk",
+          "size": 97675502,
+          "sha256": "ed5b794b9ead2f7a9efdbb90579f50d6229fd93bca9d115c0784e01c724f3628",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2546-fbe487f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2546/DroidDeck-PR.2546-fbe487f-pubg.apk",
+          "size": 97675502,
+          "sha256": "267d0ccb73c26acfee591f9344fc1285f55dfecf5674d7655518ff93dd2671bd",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2546-fbe487f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2546/DroidDeck-PR.2546-fbe487f-antutu.apk",
+          "size": 97675502,
+          "sha256": "c318498f5b95d953d8a3f88c70a0cd7c94acf9cfb6b9013adfebe68eb82c17f4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2546-fbe487f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2546/DroidDeck-PR.2546-fbe487f-ludashi.apk",
+          "size": 97675502,
+          "sha256": "702780a9fc2c1d1d9d51649e65f54c23c1d3f210716eaaf56c5ce2941762ae9c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2537",
       "title": "feat(stores): add Rockstar store and classic GTA launches",
