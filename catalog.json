@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794538676951,
+  "generatedAt": 1794538774380,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2472",
+      "title": "Feat: Add per game screens effects",
+      "summary": "Improves per-game screen effects profile selection, letting you choose per game.",
+      "commit": "acdddc87ed3499a8748a38b9bfc2a89296ff8dd0",
+      "pr": 2472,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794538670000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2472",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2472-acdddc8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-acdddc8.apk",
+          "size": 98273744,
+          "sha256": "75c8aa7823bf449f09d8e9b0244b248c872b5f3e94afe09189164d39c2828a2d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2472-acdddc8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-acdddc8-pubg.apk",
+          "size": 98273744,
+          "sha256": "0ae0de8bd668ad38d1e8365bebf7085de54637e4e2b1fc11f7b2e4532c6aa031",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2472-acdddc8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-acdddc8-antutu.apk",
+          "size": 98273744,
+          "sha256": "60eca0d48b30b1f6ba8fd4e1a8e3ac7d450ba55207cf7f513f3ecff7eddef449",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2472-acdddc8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-acdddc8-ludashi.apk",
+          "size": 98273744,
+          "sha256": "9cd1ef77ae8a78d923aaccad4c00c4414c4909470499e228ac6f51c0be842a53",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2551",
       "title": "Preserve HUD frame history across source changes",
       "summary": "Keep the FPS graph and frame statistics continuous when the HUD switches from the compositor fallback back to Gamescope's frame feed. Ignore already-seen frame timestamps and rebase the first fresh sample, so the source handoff does not clear the graph or double-count frames.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-a1a7463-ludashi.apk",
           "size": 98249168,
           "sha256": "58e10b5242e030bbeddd186952d9e4d40e8ff4817454b1d1be684530816040ce",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2472",
-      "title": "Feat: Add per game screens effects",
-      "summary": "Improves per-game screen effects profile selection, letting you choose per game.",
-      "commit": "c51002e9d2c9d93ce66e9fc8c8bdf30132c4b733",
-      "pr": 2472,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794533090000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2472",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2472-c51002e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-c51002e.apk",
-          "size": 97601680,
-          "sha256": "a8acd6665e8df99936c8c2661e63860da9bf57265e8ff64d980fc46a94c21a8d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2472-c51002e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-c51002e-pubg.apk",
-          "size": 97601680,
-          "sha256": "b455095c75e15c97785d9f84f810c807acb1c4c57e63d6e162a1ccd9c9f5c765",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2472-c51002e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-c51002e-antutu.apk",
-          "size": 97601680,
-          "sha256": "c2988faacf4100686f6fde8221feeeec57fb969a1333a4d02ee806717020d24c",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2472-c51002e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-c51002e-ludashi.apk",
-          "size": 97601680,
-          "sha256": "7cd89ac9a1fddcdcfdabb06e25a39e020a0a301a25a55f6e915439e92289298e",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
