@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794594732436,
+  "generatedAt": 1794596217775,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2522",
+      "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
+      "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory.",
+      "commit": "ec51f1119098a18c1b19ca167b5abb490c20293e",
+      "pr": 2522,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794596105000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2522",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2522-ec51f11.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ec51f11.apk",
+          "size": 100081509,
+          "sha256": "522e25ef3fe6b5bfe8f3204c9062bfa3719ac7e78eea24c0c58cb2f9913bd9b7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2522-ec51f11-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ec51f11-pubg.apk",
+          "size": 100081509,
+          "sha256": "be915b7dc9a60652796d7f4101655ba14b6d6e8e4ee2f587cc230f26589104f6",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2522-ec51f11-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ec51f11-antutu.apk",
+          "size": 100081509,
+          "sha256": "efcdf8da4609dfa5fb316d532ff7176166e6f87710346a188d53ff77f7023d6d",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2522-ec51f11-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ec51f11-ludashi.apk",
+          "size": 100081509,
+          "sha256": "6017b956d0056d12a0a7395e8c9a7caa36becdb8c76ffc94c4cd7a24d8095806",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2028",
       "title": "feat: Trinkets tab with a Bluetooth controller mode",
       "summary": "Adds a Trinkets tab to the rail. Its first entry turns the device into a Bluetooth gamepad for another PC, phone or handheld.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2562/DroidDeck-PR.2562-830f32d-ludashi.apk",
           "size": 100097893,
           "sha256": "da33c3aec9d46bf3f05e15c4625326b74bc7f1c070824ffd66c13f5ded1383da",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2522",
-      "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
-      "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory.",
-      "commit": "4cbee62ea80e349c1afab865aecac4454d78c846",
-      "pr": 2522,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794588615000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2522",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2522-4cbee62.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-4cbee62.apk",
-          "size": 100081509,
-          "sha256": "0adc1f2412fd8e5913866cb88edc28e476e75a4d364dd0b09ae7796d6ad75fa3",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2522-4cbee62-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-4cbee62-pubg.apk",
-          "size": 100081509,
-          "sha256": "79ca9df8326250a947e67b78bc6d53af24cdb7b87aa72f28243f0ab20b9750a1",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2522-4cbee62-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-4cbee62-antutu.apk",
-          "size": 100081509,
-          "sha256": "1cfa9baca9c78a06790793f38894e2bcf960bb36a81e01fb3edac3182bc663ff",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2522-4cbee62-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-4cbee62-ludashi.apk",
-          "size": 100081509,
-          "sha256": "d47543a5acd91f2a1b29e840bebd1c57e10ba43495a44579c9615557f1317a8a",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
