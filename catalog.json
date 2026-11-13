@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794573188733,
+  "generatedAt": 1794573545043,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2559",
+      "title": "fix(session): picture in picture keeps the DroidDeck front end behind the game",
+      "summary": "With DroidDeck as the Home app, the PiP button in the session drawer left Recents (\"No recent items\") behind the game window, and Home pulled the game back to full screen, so the front end couldn't be reached while the game was windowed.",
+      "commit": "14f53b864f419a00e52f70bed0f30b070cbc06b6",
+      "pr": 2559,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794573449000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2559",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2559-14f53b8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2559/DroidDeck-PR.2559-14f53b8.apk",
+          "size": 98294224,
+          "sha256": "98f9ef04911d3244228b643274b7b91f096a87abdfc94dcfad8097e2b6d736c7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2559-14f53b8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2559/DroidDeck-PR.2559-14f53b8-pubg.apk",
+          "size": 98294224,
+          "sha256": "6d9c1b46218751e002266c2ce08e3edbc510ae3998a0c94ece7bea6001faf24d",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2559-14f53b8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2559/DroidDeck-PR.2559-14f53b8-antutu.apk",
+          "size": 98294224,
+          "sha256": "95866f86ef17ce6360cd36b4277b7717da4788eeac93a7c50633a5431b5237dd",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2559-14f53b8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2559/DroidDeck-PR.2559-14f53b8-ludashi.apk",
+          "size": 98294224,
+          "sha256": "84b743054d69640ec612346353d4f7f481c495a6f78a1b615e7508bb532cd2a1",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2389",
       "title": "feat: Add Soundtracks tab and music player",
