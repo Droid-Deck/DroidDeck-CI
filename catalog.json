@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794610156535,
+  "generatedAt": 1794610355372,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2584",
+      "title": "docs(phantom): how Android counts guest processes and why detaching cannot escape it",
+      "summary": "Android counts the processes an app forks as phantom processes and kills them under pressure.\nA Wine, FEX or Steam session forks dozens of them, so the limit decides whether a session\nsurvives. The question behind this change was whether the guest can avoid being counted at\nall, for example by reparenting it with a double fork or setsid, or by moving it into a\nseparate Android :process service.",
+      "commit": "24c59d45c188d655223b7728a4c224fdc5481d07",
+      "pr": 2584,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794610257000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2584",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2584-24c59d4.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-24c59d4.apk",
+          "size": 100175801,
+          "sha256": "ca23000bc9c3667c8a1ea5700a498e701f0ca9983aca05302c3e7b819e05d191",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2584-24c59d4-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-24c59d4-pubg.apk",
+          "size": 100175801,
+          "sha256": "bf40f361eaea17be53b461fea2070668bfcb1934abd8aff74997220dff138e2c",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2584-24c59d4-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-24c59d4-antutu.apk",
+          "size": 100175801,
+          "sha256": "a10b19d204bb2ebd80f66de25d2c582f010564a36eb1f87ccb1298ba47f07f19",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2584-24c59d4-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-24c59d4-ludashi.apk",
+          "size": 100175801,
+          "sha256": "f360e709a996a563c0f5ef3ab67c6bdac0ab0db745a082f3d4b78bd83b23a5f9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2586",
       "title": "Start a launcher-run game without scanning its folder and keep Play on Starting until it launches",
@@ -354,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ae3164f-ludashi.apk",
           "size": 100085605,
           "sha256": "411d26d59e12e5187cad08475b3e83cbfe2865cf72245ad230ddd155aef66134",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2584",
-      "title": "docs(phantom): how Android counts guest processes and why detaching cannot escape it",
-      "summary": "Android counts the processes an app forks as phantom processes and kills them under pressure.\nA Wine, FEX or Steam session forks dozens of them, so the limit decides whether a session\nsurvives. The question behind this change was whether the guest can avoid being counted at\nall, for example by reparenting it with a double fork or setsid, or by moving it into a\nseparate Android :process service.",
-      "commit": "c1c6abe7538fd59dff2c6257c4709ea2071dfb7e",
-      "pr": 2584,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794606519000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2584",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2584-c1c6abe.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-c1c6abe.apk",
-          "size": 100093881,
-          "sha256": "040cf7d5e075f986e2f8ac8f41739420f355b6383965b01d6ffa245cb81690e1",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2584-c1c6abe-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-c1c6abe-pubg.apk",
-          "size": 100093881,
-          "sha256": "c6cf2e2b5d0c76cacc3461dbe6dd7e1c3bb0f434d5e4dbfc590d80af4b9a9995",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2584-c1c6abe-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-c1c6abe-antutu.apk",
-          "size": 100093881,
-          "sha256": "7c61c3f51683dbafff5db04be21e9742958fc77fc9994a65fa7ba5441cec6759",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2584-c1c6abe-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-c1c6abe-ludashi.apk",
-          "size": 100093881,
-          "sha256": "0e1e3cfd9c30fa5bcc336e1e13724716d1cc1233396456a4c96793eb6c10f02f",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
