@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794586705154,
+  "generatedAt": 1794586888740,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2568",
+      "title": "Fix Agent controls in the session drawer",
+      "summary": "The compact Agent bar's usage ring is hard to reach in the session drawer, especially the pet control. Replace it with a controls button that opens the editor without opening the keyboard. In the session drawer, the editor opens compact with its controls closed; the controls remain inline beside the close button when expanded. The main Agent entry point keeps its existing JVM signature so this Lab",
+      "commit": "9b9479dcf6ea7edcf020105485a0906b3ccec128",
+      "pr": 2568,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794586781000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2568",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2568-9b9479d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2568/DroidDeck-PR.2568-9b9479d.apk",
+          "size": 100081509,
+          "sha256": "bcb124ab2af0307442d58e9158d4a35c51e7e2eb38e3f74606691e6d03912404",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2568-9b9479d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2568/DroidDeck-PR.2568-9b9479d-pubg.apk",
+          "size": 100081509,
+          "sha256": "7db4dd54737dc0f9218591910d66d05f9e2e44a10ddc204cd203daa7ab4c66bc",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2568-9b9479d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2568/DroidDeck-PR.2568-9b9479d-antutu.apk",
+          "size": 100081509,
+          "sha256": "85c76472f17638dd5dde9689467e3dc7144d07ca16a2acbf4d7c2b3fff4656a3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2568-9b9479d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2568/DroidDeck-PR.2568-9b9479d-ludashi.apk",
+          "size": 100081509,
+          "sha256": "533a88e8e91d942bd65b632ca840ee3c597d6592ab8c08d231e9a77f24fa3aa5",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2569",
       "title": "feat(ui): reorder tabs, shelve them in More or hide them",
