@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794608774356,
+  "generatedAt": 1794608982669,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2586",
+      "title": "Start a launcher-run game without scanning its folder and keep Play on Starting until it launches",
+      "summary": "Pressing Play on a game that a store launcher starts could sit for 12 to 24 seconds with the button back on \"Play\" before anything happened, so it looked like the press had failed.",
+      "commit": "4e43207a82e99616087895d490e5fc42db5c6203",
+      "pr": 2586,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794608890000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2586",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2586-4e43207.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-4e43207.apk",
+          "size": 100175801,
+          "sha256": "6defe271d07f59ee2a74d1c267e981cabca497a5965501281e38036ebe39e27b",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2586-4e43207-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-4e43207-pubg.apk",
+          "size": 100175801,
+          "sha256": "2e101fa80d181d2cc7eae3b82efcdd95a07d58992113dffbac3aeded92c23f20",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2586-4e43207-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-4e43207-antutu.apk",
+          "size": 100175801,
+          "sha256": "7a52acff1d1c68ad732a1923252b4aaa871cd97cd172b85cd57af886075606bf",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2586-4e43207-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-4e43207-ludashi.apk",
+          "size": 100175801,
+          "sha256": "741fa1300488e5082016594026200283a91587cbc37f9f89225f50ccefa6ebc6",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2522",
       "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
