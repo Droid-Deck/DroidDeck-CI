@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794611689726,
+  "generatedAt": 1794612043894,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-bc929c0",
-    "title": "fix(input): save Steam touch layout without existing config",
-    "summary": "Editing a Steam touch layout failed with \"Could not save the touch layout\" when the selected app had no controllermobiletouch config on disk. SteamTouchConfig.load returned a config with no text, and saveLayouts rejected it.",
-    "commit": "bc929c08b2f327c4399c90d9fc407988e3c3bcfd",
+    "tag": "main-6d1a0d9",
+    "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
+    "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory, then Steam's runprocess fails with error 2 (file not found).",
+    "commit": "6d1a0d9fd0bd2234b2677c33a7072eaa89ef2be3",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794609437000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bc929c0",
+    "publishedAt": 1794611951000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6d1a0d9",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-bc929c0.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc929c0/DroidDeck-main-bc929c0.apk",
+        "name": "DroidDeck-main-6d1a0d9.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d1a0d9/DroidDeck-main-6d1a0d9.apk",
         "size": 100175801,
-        "sha256": "c7146b616167d1f0fe1b7f1cb210eafa4ed5648d210e476d5d3c298d4ce6d398",
+        "sha256": "648acd8e88faf5028a61fde82ffcb809129284a593a2a55da02f18e5ad6fbee9",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-bc929c0-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc929c0/DroidDeck-main-bc929c0-pubg.apk",
+        "name": "DroidDeck-main-6d1a0d9-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d1a0d9/DroidDeck-main-6d1a0d9-pubg.apk",
         "size": 100175801,
-        "sha256": "dbd704bcbecb2f98fd74314dddf23a275f328b79759a37fbe07958933541bc16",
+        "sha256": "976413940c8dd2bfb2fd8965be6c929248725e27ad8b10e52a3c6dff3b735811",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-bc929c0-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc929c0/DroidDeck-main-bc929c0-antutu.apk",
+        "name": "DroidDeck-main-6d1a0d9-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d1a0d9/DroidDeck-main-6d1a0d9-antutu.apk",
         "size": 100175801,
-        "sha256": "7e91f3fd33132dfb572d30e172802f774259254d6b3944f58aa4cfa6f8907a7a",
+        "sha256": "e878a72211bcfd01191d59abdbf81b03a56a7cd77a048f178015ab1b2782602b",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-bc929c0-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc929c0/DroidDeck-main-bc929c0-ludashi.apk",
+        "name": "DroidDeck-main-6d1a0d9-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d1a0d9/DroidDeck-main-6d1a0d9-ludashi.apk",
         "size": 100175801,
-        "sha256": "9712e822d8d83171a3d45e49228fd2d66e6353b4a8af31246e48c8ac0d39b759",
+        "sha256": "3a65ca7b6c894344721fd59e352e624395fc39bd25f7362aa07baccd733b1ec9",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6d1a0d9fd0bd2234b2677c33a7072eaa89ef2be3",
+      "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
+      "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory, then Steam's runprocess fails with error 2 (file not found).",
+      "publishedAt": 1794611951000
+    },
     {
       "commit": "bc929c08b2f327c4399c90d9fc407988e3c3bcfd",
       "title": "fix(input): save Steam touch layout without existing config",
@@ -155,12 +161,6 @@
       "title": "feat: Add Soundtracks tab and music player",
       "summary": "Adds a Music tab under Library with a built-in player, an Android media session, playback options, Favorites and collections.",
       "publishedAt": 1794578507000
-    },
-    {
-      "commit": "d058bab64fface8d35d2ee174e94e911496a0fd4",
-      "title": "fix(session): picture in picture keeps the DroidDeck front end behind the game",
-      "summary": "With DroidDeck as the Home app, the PiP button in the session drawer left Recents (\"No recent items\") behind the game window, and Home pulled the game back to full screen, so the front end couldn't be reached while the game was windowed.",
-      "publishedAt": 1794574259000
     }
   ],
   "tests": [
