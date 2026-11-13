@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794594237514,
+  "generatedAt": 1794594732436,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-58af2e1",
-    "title": "feat(storage): name, select and remove every prefix and store game",
-    "summary": "Storage manager left large amounts of data with no way to manage it. A user reported 34.9 GB under \"Kept\" with no games installed, and the only fix was the desktop.",
-    "commit": "58af2e136b31db2a916620c147485611b1798613",
+    "tag": "main-8a37e71",
+    "title": "fix(agent): the agent's tools reach the running app's package and live adb port",
+    "summary": "Reported on Discord: on a build installed under a variant package, droiddeckctl failed out of the box in the agent until the agent overrode two values by hand.",
+    "commit": "8a37e71e108526a705c10bf756a2b8dae1cd8c70",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794591817000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-58af2e1",
+    "publishedAt": 1794594640000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-8a37e71",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-58af2e1.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58af2e1/DroidDeck-main-58af2e1.apk",
-        "size": 100081509,
-        "sha256": "7dc501b036712a2b055e4692ee4d992668e26adcd6bde5234d71f4b4d41674e8",
+        "name": "DroidDeck-main-8a37e71.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8a37e71/DroidDeck-main-8a37e71.apk",
+        "size": 100089701,
+        "sha256": "58947c77a8f3103dd893e6e35feff014bef0a7b9801340db707a21d63fadb194",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-58af2e1-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58af2e1/DroidDeck-main-58af2e1-pubg.apk",
-        "size": 100081509,
-        "sha256": "c0cee445576bc9dacbabb881d93ce0b5be0d2979c1ff140390c7966eb2c12be7",
+        "name": "DroidDeck-main-8a37e71-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8a37e71/DroidDeck-main-8a37e71-pubg.apk",
+        "size": 100089701,
+        "sha256": "d8bb821601e72c75a3ccb567029836fc2f0b8deefe22a4ac05f1e1f8db896179",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-58af2e1-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58af2e1/DroidDeck-main-58af2e1-antutu.apk",
-        "size": 100081509,
-        "sha256": "b1c066a2326f52dce61da4695198943782d60a6632ad04216c04ec0b52fba311",
+        "name": "DroidDeck-main-8a37e71-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8a37e71/DroidDeck-main-8a37e71-antutu.apk",
+        "size": 100089701,
+        "sha256": "0196888d1e46e6ae09dae5d4aba424388e64e8b50aa4c5417e85588f282f0932",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-58af2e1-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-58af2e1/DroidDeck-main-58af2e1-ludashi.apk",
-        "size": 100081509,
-        "sha256": "6afbcfe870c123be3fe73b56a6dbf6855639368dbc80d9f429072402785201ea",
+        "name": "DroidDeck-main-8a37e71-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-8a37e71/DroidDeck-main-8a37e71-ludashi.apk",
+        "size": 100089701,
+        "sha256": "db076e16f12a3bcb6d9b46d879ded24f096557abd291adb4275f9021c17ff45b",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8a37e71e108526a705c10bf756a2b8dae1cd8c70",
+      "title": "fix(agent): the agent's tools reach the running app's package and live adb port",
+      "summary": "Reported on Discord: on a build installed under a variant package, droiddeckctl failed out of the box in the agent until the agent overrode two values by hand.",
+      "publishedAt": 1794594640000
+    },
     {
       "commit": "58af2e136b31db2a916620c147485611b1798613",
       "title": "feat(storage): name, select and remove every prefix and store game",
@@ -155,15 +161,58 @@
       "title": "feat(library): pick the game resolution for games started without Steam",
       "summary": "Games set to Start without Steam always ran at the full panel resolution. Steam lets you pick a game's resolution; this brings the same to no-Steam launches.",
       "publishedAt": 1794542097000
-    },
-    {
-      "commit": "827ab2d4856305f81a26e767d62e280f52c844e7",
-      "title": "fix(hud): FPS and clocks read right after sleep and wake",
-      "summary": "After the device sleeps with a session running, the HUD showed FPS 0 / 1000 ms, AVG fell to 0 and \"elapsed\" stuck near a minute, while games and Steam were drawing at full rate.",
-      "publishedAt": 1794540576000
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2028",
+      "title": "feat: Trinkets tab with a Bluetooth controller mode",
+      "summary": "Adds a Trinkets tab to the rail. Its first entry turns the device into a Bluetooth gamepad for another PC, phone or handheld.",
+      "commit": "d1687059543947718cd0734ef954f13eacc05cd3",
+      "pr": 2028,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794594661000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2028",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2028-d168705.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-d168705.apk",
+          "size": 100241253,
+          "sha256": "2ce088b15bd2b3bc4d2cd48b639cbb28683e64590ab68522e11c1cf481a035fb",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2028-d168705-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-d168705-pubg.apk",
+          "size": 100241253,
+          "sha256": "f5666be614bf3dd7ebf805eeb7f8ec7dbca9c794394d1d88c83b61e440bab009",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2028-d168705-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-d168705-antutu.apk",
+          "size": 100241253,
+          "sha256": "1af11adb03f5bfe25a4a64861f41936ec7ad8470b0b6da5790ee6524659710aa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2028-d168705-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-d168705-ludashi.apk",
+          "size": 100241253,
+          "sha256": "d243d2996bf28e6396434b6cda6871ca02293403c6e60917bd58359c0188c7c2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2572",
       "title": "perf(session): keep a game that holds its pace off the fastest cores",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2562/DroidDeck-PR.2562-830f32d-ludashi.apk",
           "size": 100097893,
           "sha256": "da33c3aec9d46bf3f05e15c4625326b74bc7f1c070824ffd66c13f5ded1383da",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2028",
-      "title": "feat: Trinkets tab with a Bluetooth controller mode",
-      "summary": "Adds a Trinkets tab to the rail. Its first entry turns the device into a Bluetooth gamepad for another PC, phone or handheld.",
-      "commit": "8ba8b12e7864e423f01868782fa8f01a60cb8622",
-      "pr": 2028,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794590396000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2028",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2028-8ba8b12.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-8ba8b12.apk",
-          "size": 100081509,
-          "sha256": "43c0e59530812ebfcb50e8ee3deb21d249c81722b49cad206e6fd33353b67102",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2028-8ba8b12-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-8ba8b12-pubg.apk",
-          "size": 100081509,
-          "sha256": "ba21daa9cbc0d6994e5ac8581f8209c4a96d9c863eeccee86b8857de09254097",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2028-8ba8b12-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-8ba8b12-antutu.apk",
-          "size": 100081509,
-          "sha256": "65e908cc8b01662ea472b43a38d1c947968d7254bb5363ee6ebd50d818a2255e",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2028-8ba8b12-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-8ba8b12-ludashi.apk",
-          "size": 100081509,
-          "sha256": "bf1aea61d1e0a5fa128b6a9e8eb38f284ee73ef5316f25f1391b66b37a30ebdd",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
