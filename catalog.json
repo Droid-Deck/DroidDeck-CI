@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794538538289,
+  "generatedAt": 1794538676951,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2551",
+      "title": "Preserve HUD frame history across source changes",
+      "summary": "Keep the FPS graph and frame statistics continuous when the HUD switches from the compositor fallback back to Gamescope's frame feed. Ignore already-seen frame timestamps and rebase the first fresh sample, so the source handoff does not clear the graph or double-count frames.",
+      "commit": "24af194f453ed2a20fbea7de023d0ef68518110d",
+      "pr": 2551,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794538574000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2551",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2551-24af194.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2551/DroidDeck-PR.2551-24af194.apk",
+          "size": 98163152,
+          "sha256": "2b695940aae1ba5fce8ad1f2a412b4587b1bc5489eea91a4be6a2195c3aa06df",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2551-24af194-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2551/DroidDeck-PR.2551-24af194-pubg.apk",
+          "size": 98163152,
+          "sha256": "112494a3fa0538c82d7617c97338abec29143f31d6bc1b506039649fae31b520",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2551-24af194-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2551/DroidDeck-PR.2551-24af194-antutu.apk",
+          "size": 98163152,
+          "sha256": "bfba1dc17039ce49282b806f6c8820f787f7e63f333a3cc81c23eac9b3586739",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2551-24af194-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2551/DroidDeck-PR.2551-24af194-ludashi.apk",
+          "size": 98163152,
+          "sha256": "c35bca55c91ca25f78025d56acd7466ddc9b9803249b2b639c60949334f25315",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2547",
       "title": "fix(rockstar): remove the three-title launch restriction",
