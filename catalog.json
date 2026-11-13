@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794588783175,
+  "generatedAt": 1794588891766,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2565",
+      "title": "feat(storage): name, select and remove every prefix and store game",
+      "summary": "Storage manager left large amounts of data with no way to manage it. A user reported 34.9 GB under \"Kept\" with no games installed, and the only fix was the desktop.",
+      "commit": "7a2cfb9969506cfaf60cc8b82dd0212fabac5bea",
+      "pr": 2565,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794588769000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2565",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2565-7a2cfb9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-7a2cfb9.apk",
+          "size": 100151141,
+          "sha256": "ae43ab563da6a8853bed5fec9de209add0cebca3d981da8d5660473630c8ff06",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2565-7a2cfb9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-7a2cfb9-pubg.apk",
+          "size": 100151141,
+          "sha256": "4f8c051ef11075789dc0db600fa656ec720759ae15f1b9fe1d081f37a98f0528",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2565-7a2cfb9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-7a2cfb9-antutu.apk",
+          "size": 100151141,
+          "sha256": "a590cd494d806496999807af2cdcdfd3ddfdb62f25ba57d950ee99a270e10599",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2565-7a2cfb9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-7a2cfb9-ludashi.apk",
+          "size": 100151141,
+          "sha256": "aa891cc7bb86535c66a8e16e41f71c30c9187b1194b5edbcd6fbbcf602d24f26",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2522",
       "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
       "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-4cbee62-ludashi.apk",
           "size": 100081509,
           "sha256": "d47543a5acd91f2a1b29e840bebd1c57e10ba43495a44579c9615557f1317a8a",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2565",
-      "title": "feat(storage): name, select and remove every prefix and store game",
-      "summary": "Storage manager left large amounts of data with no way to manage it. A user reported 34.9 GB under \"Kept\" with no games installed, and the only fix was the desktop.",
-      "commit": "c530f48b900645738e3fc13757b32cafec5dc295",
-      "pr": 2565,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794587424000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2565",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2565-c530f48.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-c530f48.apk",
-          "size": 100138853,
-          "sha256": "33327defc7d6aa732d9276bab54276991ba81da66e96a1b6af2e8aad368f08dd",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2565-c530f48-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-c530f48-pubg.apk",
-          "size": 100138853,
-          "sha256": "7c56bc51266bb04d813e029ecd3e5dd9cd7325bb75fa43af212560c3590d2bf1",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2565-c530f48-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-c530f48-antutu.apk",
-          "size": 100138853,
-          "sha256": "419428ef7f0d78f9efb4b1886bea2c44e4fe961b2cf368a5fa0872d93eb4e7ce",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2565-c530f48-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-c530f48-ludashi.apk",
-          "size": 100138853,
-          "sha256": "2bbc267b2ed52038cfe3dfcf7fd8f18806575abb6a13f8e20ee444c7cdd45663",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
