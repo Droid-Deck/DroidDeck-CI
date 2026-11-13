@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794549369008,
+  "generatedAt": 1794549499521,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-2553",
-      "title": "fix(proot): fchdir takes the open directory's path instead of walking it again",
-      "summary": "Programs on a memory card started much slower than the same files on internal storage. A profile of the tracer across one start showed where the time went: fchdir took 8.4 s of the 8.8 s the tracer spent in total, about 3 ms per call over 2,582 calls. Wine lists a directory by opening it, calling fchdir into it and fchdir back, so every directory listing paid twice.",
-      "commit": "a7212ae859bec962f2e16e41b67320e1f62576df",
-      "pr": 2553,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794549252000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2553",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2553-a7212ae.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2553/DroidDeck-PR.2553-a7212ae.apk",
-          "size": 98261456,
-          "sha256": "4648b429d091fa21b7f6edd9cc2d678c7ece967fb4ac619517bcaf15a7dde098",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2553-a7212ae-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2553/DroidDeck-PR.2553-a7212ae-pubg.apk",
-          "size": 98261456,
-          "sha256": "46819bfbbabe7e96b704d36c2b49d5b22d1af8075e8c2b5d60fc63dabfa0bc59",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2553-a7212ae-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2553/DroidDeck-PR.2553-a7212ae-antutu.apk",
-          "size": 98261456,
-          "sha256": "84ff639426d19ea9d740483bca9fbc8dbcecedda99f1b4d7308e6ffbee2f565a",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2553-a7212ae-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2553/DroidDeck-PR.2553-a7212ae-ludashi.apk",
-          "size": 98261456,
-          "sha256": "0f9fd86501f1bf9be690ea14613289ae8e6cef7f2e52cd853a51e492f9201e42",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2547",
       "title": "feat(rockstar): broaden launcher protocol compatibility",
