@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794569064096,
+  "generatedAt": 1794569424602,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f33181e",
-    "title": "fix(proot): fchdir takes the open directory's path instead of walking it again",
-    "summary": "Programs on a memory card started much slower than the same files on internal storage. A profile of the tracer across one start showed where the time went: fchdir took 8.4 s of the 8.8 s the tracer spent in total, about 3 ms per call over 2,582 calls. Wine lists a directory by opening it, calling fchdir into it and fchdir back, so every directory listing paid twice.",
-    "commit": "f33181e430ac3009c29c918428fec6769cfcf07a",
+    "tag": "main-83de0e7",
+    "title": "feat(rockstar): broaden launcher protocol compatibility",
+    "summary": "Removes the three-title launch restriction introduced in #2537 and adds a metadata-driven launch path for other Rockstar titles. Installed games retain Play and Steam shortcut registration. Games without a detected launcher protocol can attempt their normal executable; detected protocols require server-authorized launch data.",
+    "commit": "83de0e7f8c42df885c8fbcdd97629ab9957739ea",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794550003000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f33181e",
+    "publishedAt": 1794569314000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-83de0e7",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f33181e.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33181e/DroidDeck-main-f33181e.apk",
-        "size": 98261456,
-        "sha256": "270c303ebf23656846427993d427b163bc867b1db7a8a3a14cd112b9140c7e40",
+        "name": "DroidDeck-main-83de0e7.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83de0e7/DroidDeck-main-83de0e7.apk",
+        "size": 98294224,
+        "sha256": "c68d29a12b202fe6bd91417abc154405e3e860895c2a69e27720cb53073f5125",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f33181e-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33181e/DroidDeck-main-f33181e-pubg.apk",
-        "size": 98261456,
-        "sha256": "ec65dd36ab88d71df10bfd3a3fe609b52dc6ffb1fb5a58c72a76da46a0be3dfe",
+        "name": "DroidDeck-main-83de0e7-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83de0e7/DroidDeck-main-83de0e7-pubg.apk",
+        "size": 98294224,
+        "sha256": "e1d53deba7a4ed53ccf0c98354cf58acb67b7101e2e6be59e28704bcfc10296a",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f33181e-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33181e/DroidDeck-main-f33181e-antutu.apk",
-        "size": 98261456,
-        "sha256": "becc26952910a4f9dc2c94cb9a36d3a4e705ec7dede5287c903aa90897bfe2cc",
+        "name": "DroidDeck-main-83de0e7-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83de0e7/DroidDeck-main-83de0e7-antutu.apk",
+        "size": 98294224,
+        "sha256": "ff0af4caf4b75797134d446eaf3f49567e10c18d4c0fb3ac8725c45bd32604b6",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f33181e-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33181e/DroidDeck-main-f33181e-ludashi.apk",
-        "size": 98261456,
-        "sha256": "2c2be65a7658f168eb28bd24d5589fde90097b0e300ce74f7f15de507fb44ec2",
+        "name": "DroidDeck-main-83de0e7-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83de0e7/DroidDeck-main-83de0e7-ludashi.apk",
+        "size": 98294224,
+        "sha256": "29a1d5580fd2826fbc00f3d71795409e3536388b5e7e368cf4a3a844efe4f366",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "83de0e7f8c42df885c8fbcdd97629ab9957739ea",
+      "title": "feat(rockstar): broaden launcher protocol compatibility",
+      "summary": "Removes the three-title launch restriction introduced in #2537 and adds a metadata-driven launch path for other Rockstar titles. Installed games retain Play and Steam shortcut registration. Games without a detected launcher protocol can attempt their normal executable; detected protocols require server-authorized launch data.",
+      "publishedAt": 1794569314000
+    },
     {
       "commit": "f33181e430ac3009c29c918428fec6769cfcf07a",
       "title": "fix(proot): fchdir takes the open directory's path instead of walking it again",
@@ -155,12 +161,6 @@
       "title": "Feat:Add per-game frame generation profiles",
       "summary": "Add per game frame generation profiles and default profile, so you can choose what game and what configuration you want. ( 2x, 3x Lossless, no frame gen, everything! )\nOf course it appears in the library in droid deck, and in the side menu in steam. In the side menu it automatically changes based on the game, so you can edit in real time.\nIf you don't choose any configuration it will be default.",
       "publishedAt": 1794512752000
-    },
-    {
-      "commit": "b1b6ab79317e6d752f3539863a214b1ca8cc65d8",
-      "title": "feat(apps): add icon packs, per-app icons and an Appearance panel",
-      "summary": "Adds icon pack support to the Apps page, with per-app icon choices and a new Appearance panel.",
-      "publishedAt": 1794506817000
     }
   ],
   "tests": [
