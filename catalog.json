@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794593842687,
+  "generatedAt": 1794594237514,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2572",
+      "title": "perf(session): keep a game that holds its pace off the fastest cores",
+      "summary": "A game that busy-waits for vsync looks like a full core of demand to the scheduler, so its main thread migrates to the fastest core and stays there even when it only needs a fraction of it. On an AYANEO Pocket FIT Elite (8 Elite), Sonic Mania's main menu kept its main thread on cpu7 (4.32 GHz, prime) at 60 fps and drew over 11 W.",
+      "commit": "1a99b6e1d0fdb488c0c08b469e82443401c21464",
+      "pr": 2572,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794594115000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2572",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2572-1a99b6e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-1a99b6e.apk",
+          "size": 100167620,
+          "sha256": "06c59d061b6c6baf1609ac0e7b17b34039e8243f951b1eb79c60d599fc34bf52",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2572-1a99b6e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-1a99b6e-pubg.apk",
+          "size": 100167620,
+          "sha256": "58c7850255d5585d435440bfcfcc259b48fbbe9b342820c02f21aaddfc3bc098",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2572-1a99b6e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-1a99b6e-antutu.apk",
+          "size": 100167620,
+          "sha256": "e8e1c5a748000085f2820eaf80d3b8d7b60c6824845650acdca8d35eebb0470b",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2572-1a99b6e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-1a99b6e-ludashi.apk",
+          "size": 100167620,
+          "sha256": "722cbbbe3bca6d88e036d2451964685f5b726dcb01d9bf60f9482aea8f482196",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2562",
       "title": "fix(session): games keep OpenGL error checks when the client skips them",
