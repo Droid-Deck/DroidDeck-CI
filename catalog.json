@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794539416327,
+  "generatedAt": 1794540015659,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2547",
+      "title": "feat(rockstar): broaden launcher protocol compatibility",
+      "summary": "Removes the three-title launch restriction introduced in #2537 and adds a metadata-driven launch path for other Rockstar titles. Installed games retain Play and Steam shortcut registration. Games without a detected launcher protocol can attempt their normal executable; detected protocols require server-authorized launch data.",
+      "commit": "be9bdc88fcef2ee8858fccb8080a715843360750",
+      "pr": 2547,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794539913000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2547",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2547-be9bdc8.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-be9bdc8.apk",
+          "size": 98273744,
+          "sha256": "be433f93b1c1e95a9e64325b3495ba5c5e3f186d704472bb8463c92e4c299c17",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2547-be9bdc8-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-be9bdc8-pubg.apk",
+          "size": 98273744,
+          "sha256": "0da78baf21e933c116a2c70f808128aa19c2c97545e4745636cccb03b4711619",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2547-be9bdc8-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-be9bdc8-antutu.apk",
+          "size": 98273744,
+          "sha256": "8b4d02e1122d005a07d68de7193b9775fb9a7c29cffe7708cefe4b0d1372382e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2547-be9bdc8-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-be9bdc8-ludashi.apk",
+          "size": 98273744,
+          "sha256": "ce8c94ab4638a1623ef718b9c005916798bf4f0f405bacaf990c247b1e3848b7",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2548",
       "title": "Fix agent pet overlay permission and GitHub setup",
       "summary": "\u2022 Request Android's overlay permission when the agent pet is enabled without it.\n\u2022 Show GitHub's device code in Agent setup and its notification, then open the approval page without typing the code.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2548/DroidDeck-PR.2548-cf2f7fc-ludashi.apk",
           "size": 98163152,
           "sha256": "2c6ea38f04641b5ab4ff4dbd07e57ca1a752f7933835b69082e1f7f4a3bd3d6f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2547",
-      "title": "feat(rockstar): broaden launcher protocol compatibility",
-      "summary": "Removes the three-title launch restriction introduced in #2537 and adds a metadata-driven launch path for other Rockstar titles. Installed games retain Play and Steam shortcut registration. Games without a detected launcher protocol can attempt their normal executable; detected protocols require server-authorized launch data.",
-      "commit": "ac2143b8ae8403741e779583bdf1ffb9c7b8a683",
-      "pr": 2547,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794539091000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2547",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2547-ac2143b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-ac2143b.apk",
-          "size": 98273744,
-          "sha256": "d8d51a0542236368c86d1e7f8bc9f444b57c576949757394ed0b5429c6a7795d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2547-ac2143b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-ac2143b-pubg.apk",
-          "size": 98273744,
-          "sha256": "75a29856949ce8ed867413083c3d949aafd6de1bc8f4c07f3721f9ed49eb8de9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2547-ac2143b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-ac2143b-antutu.apk",
-          "size": 98273744,
-          "sha256": "5a62d4fac4875aa83a8d7a82f473aaed266b747b7cf4921f8ef1648ceee5a637",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2547-ac2143b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-ac2143b-ludashi.apk",
-          "size": 98273744,
-          "sha256": "c90d5bdaa0085495edd08b185e5adce37a27440296fa28606635551ae987811a",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
