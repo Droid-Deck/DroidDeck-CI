@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794578639589,
+  "generatedAt": 1794579336370,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2472",
+      "title": "Feat: Add per game screens effects",
+      "summary": "Improves per-game screen effects profile selection, letting you choose per game.",
+      "commit": "da8a12200211c805a7fba87f1800da37665a9dc2",
+      "pr": 2472,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794579246000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2472",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2472-da8a122.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-da8a122.apk",
+          "size": 98318800,
+          "sha256": "ed5981e116749f954cc4ff5024018d73102f84f7e54027025740530ac378893d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2472-da8a122-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-da8a122-pubg.apk",
+          "size": 98318800,
+          "sha256": "c8f76d44188cf9a7515823d3318344d04cdf5fc5b31a63e9ea64a2fcdb68e29a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2472-da8a122-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-da8a122-antutu.apk",
+          "size": 98318800,
+          "sha256": "b54dad1884b0d599e6f8649d7e9aafc16d248f7e9bc9fff7e8ce96cb63ebee72",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2472-da8a122-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-da8a122-ludashi.apk",
+          "size": 98318800,
+          "sha256": "84c2afee213295a293265a25909b005950b85317a34afd125fbc152eeda19c9c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2560",
       "title": "fix(dircache): Steam no longer deadlocks when a library below calls back in",
       "summary": "With Performance > \"Run without proot (experimental)\" on, the Steam client hangs about a second after login. On a RedMagic 11 Pro running 83de0e7f8:\n\u2022 Steam logs CSteamEngine::BMainLoop appears to have stalled > 15 seconds.\n\u2022 droiddeck-steam-compat loses the client.\n\u2022 About 3 minutes later Steam aborts with fatal stalled cross-thread pipe, and the session ends with GUESTEXIT 1.",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2549/DroidDeck-PR.2549-7156aaa-ludashi.apk",
           "size": 98261456,
           "sha256": "8969364d5270905980124e064fe50270f2ac6c6a903bf9799285ec50d29ed5b5",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2472",
-      "title": "Feat: Add per game screens effects",
-      "summary": "Improves per-game screen effects profile selection, letting you choose per game.",
-      "commit": "acdddc87ed3499a8748a38b9bfc2a89296ff8dd0",
-      "pr": 2472,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794538670000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2472",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2472-acdddc8.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-acdddc8.apk",
-          "size": 98273744,
-          "sha256": "75c8aa7823bf449f09d8e9b0244b248c872b5f3e94afe09189164d39c2828a2d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2472-acdddc8-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-acdddc8-pubg.apk",
-          "size": 98273744,
-          "sha256": "0ae0de8bd668ad38d1e8365bebf7085de54637e4e2b1fc11f7b2e4532c6aa031",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2472-acdddc8-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-acdddc8-antutu.apk",
-          "size": 98273744,
-          "sha256": "60eca0d48b30b1f6ba8fd4e1a8e3ac7d450ba55207cf7f513f3ecff7eddef449",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2472-acdddc8-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-acdddc8-ludashi.apk",
-          "size": 98273744,
-          "sha256": "9cd1ef77ae8a78d923aaccad4c00c4414c4909470499e228ac6f51c0be842a53",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
