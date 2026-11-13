@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794596808045,
+  "generatedAt": 1794597918990,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2577",
+      "title": "Add skip boot movie toggle",
+      "summary": "\u2022 Add a Skip boot movie toggle in Setup > Boot Movie > Sound.\n\u2022 When enabled, stage a bundled 0.1-second black VP8 WebM for Steam startup; when disabled, keep using the selected movie and its existing settings.\n\u2022 Apply the toggle on the next session start and include its state in the boot movie diagnostic report.",
+      "commit": "ae886ef94dc3769658620a912b0a3f3c14d2ed84",
+      "pr": 2577,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794597802000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2577",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2577-ae886ef.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2577/DroidDeck-PR.2577-ae886ef.apk",
+          "size": 100175801,
+          "sha256": "fdf34272edff7d4dde510203a7b1f11863ac02e13bb6c8b121c76b69d1864b60",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2577-ae886ef-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2577/DroidDeck-PR.2577-ae886ef-pubg.apk",
+          "size": 100175801,
+          "sha256": "4fbf763b3401141e534e36889b7388b72abb7573ba61ec826a4be9a598460486",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2577-ae886ef-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2577/DroidDeck-PR.2577-ae886ef-antutu.apk",
+          "size": 100175801,
+          "sha256": "93305264179d51508cc5b987cc9d33583d44254ae32d2a0731662de479142649",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2577-ae886ef-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2577/DroidDeck-PR.2577-ae886ef-ludashi.apk",
+          "size": 100175801,
+          "sha256": "9c0d9d109d04d6ec24f7216851cd3478f80aa3326b8fe64f8c05a0ab755efe01",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2572",
       "title": "perf(session): keep a game that holds a steady pace off the fastest cores",
