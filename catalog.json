@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794549499521,
+  "generatedAt": 1794550132325,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-bb05e20",
-    "title": "feat(library): pick the game resolution for games started without Steam",
-    "summary": "Games set to Start without Steam always ran at the full panel resolution. Steam lets you pick a game's resolution; this brings the same to no-Steam launches.",
-    "commit": "bb05e20d1b72ea288d45270fbebb7774f383cc3c",
+    "tag": "main-f33181e",
+    "title": "fix(proot): fchdir takes the open directory's path instead of walking it again",
+    "summary": "Programs on a memory card started much slower than the same files on internal storage. A profile of the tracer across one start showed where the time went: fchdir took 8.4 s of the 8.8 s the tracer spent in total, about 3 ms per call over 2,582 calls. Wine lists a directory by opening it, calling fchdir into it and fchdir back, so every directory listing paid twice.",
+    "commit": "f33181e430ac3009c29c918428fec6769cfcf07a",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794542097000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bb05e20",
+    "publishedAt": 1794550003000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f33181e",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-bb05e20.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bb05e20/DroidDeck-main-bb05e20.apk",
+        "name": "DroidDeck-main-f33181e.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33181e/DroidDeck-main-f33181e.apk",
         "size": 98261456,
-        "sha256": "82c479305c20d34358cebccc54d7d8361b953bfc631f108ccfecbf71be4d8c1f",
+        "sha256": "270c303ebf23656846427993d427b163bc867b1db7a8a3a14cd112b9140c7e40",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-bb05e20-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bb05e20/DroidDeck-main-bb05e20-pubg.apk",
+        "name": "DroidDeck-main-f33181e-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33181e/DroidDeck-main-f33181e-pubg.apk",
         "size": 98261456,
-        "sha256": "6953e3dd00b2a0d887928eb1f4bded4a9d605ec0bc464fce9b364b4a44f2daee",
+        "sha256": "ec65dd36ab88d71df10bfd3a3fe609b52dc6ffb1fb5a58c72a76da46a0be3dfe",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-bb05e20-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bb05e20/DroidDeck-main-bb05e20-antutu.apk",
+        "name": "DroidDeck-main-f33181e-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33181e/DroidDeck-main-f33181e-antutu.apk",
         "size": 98261456,
-        "sha256": "905b270b5fecc6e59bf00bf18791c0d2c27ca16586bffc714a14e3060f427593",
+        "sha256": "becc26952910a4f9dc2c94cb9a36d3a4e705ec7dede5287c903aa90897bfe2cc",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-bb05e20-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bb05e20/DroidDeck-main-bb05e20-ludashi.apk",
+        "name": "DroidDeck-main-f33181e-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f33181e/DroidDeck-main-f33181e-ludashi.apk",
         "size": 98261456,
-        "sha256": "1754b56cbf7e25d9378ad392df4e15735706654ae0ffa4c5128fa31aa7ff8863",
+        "sha256": "2c2be65a7658f168eb28bd24d5589fde90097b0e300ce74f7f15de507fb44ec2",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f33181e430ac3009c29c918428fec6769cfcf07a",
+      "title": "fix(proot): fchdir takes the open directory's path instead of walking it again",
+      "summary": "Programs on a memory card started much slower than the same files on internal storage. A profile of the tracer across one start showed where the time went: fchdir took 8.4 s of the 8.8 s the tracer spent in total, about 3 ms per call over 2,582 calls. Wine lists a directory by opening it, calling fchdir into it and fchdir back, so every directory listing paid twice.",
+      "publishedAt": 1794550003000
+    },
     {
       "commit": "bb05e20d1b72ea288d45270fbebb7774f383cc3c",
       "title": "feat(library): pick the game resolution for games started without Steam",
@@ -155,12 +161,6 @@
       "title": "feat(apps): add icon packs, per-app icons and an Appearance panel",
       "summary": "Adds icon pack support to the Apps page, with per-app icon choices and a new Appearance panel.",
       "publishedAt": 1794506817000
-    },
-    {
-      "commit": "dacfee64abfa275a0f72c7693c6946cc1a2db910",
-      "title": "feat(agent): compact composer, plan go or revise, usage limits, diffs and send now",
-      "summary": "The Agent tab gives the conversation its height back and adds what the CLIs show that it lacked.",
-      "publishedAt": 1794505060000
     }
   ],
   "tests": [
