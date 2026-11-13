@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794568877113,
+  "generatedAt": 1794569064096,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2389",
+      "title": "feat: Add Soundtracks tab and music player",
+      "summary": "Adds a Music tab under Library with a built-in player, an Android media session, playback options, Favorites and collections.",
+      "commit": "36da1caabc80b15e6fe2b38cd97156c16b159bed",
+      "pr": 2389,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794568956000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2389",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2389-36da1ca.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-36da1ca.apk",
+          "size": 100048741,
+          "sha256": "fd392284dba9c0bb2d39bff13d2eab485206ad6fe3613b45c572a93779c97b6a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2389-36da1ca-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-36da1ca-pubg.apk",
+          "size": 100048741,
+          "sha256": "bdde6712dbbc11b785dd7994fa19030b89cd77040290735d440efd2324caef06",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2389-36da1ca-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-36da1ca-antutu.apk",
+          "size": 100048741,
+          "sha256": "894adde727fd09f46fc68020c36010673b2333f330c7b889b3bac1969a7ff5b5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2389-36da1ca-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-36da1ca-ludashi.apk",
+          "size": 100048741,
+          "sha256": "16681db74a798f2bf9f3970b30d560dd4f029de026fa4b29feed6919c7a18d6c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2539",
       "title": "fix(agent): run the setup package install as fake root",
       "summary": "The Agent tab's Install step fails with dpkg: error: requested operation requires superuser privilege (reported on an AYN Odin2 Portal and a RedMagic Astra 2 with a Preview that includes #2490). The step runs dpkg --configure -a; apt-get ... through AgentHost.guest, which starts proot via LinuxRuntime.command. That always calls prootPrefix(..., fakeRoot = false), which passes -i <app ui",
@@ -305,55 +354,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2549/DroidDeck-PR.2549-7156aaa-ludashi.apk",
           "size": 98261456,
           "sha256": "8969364d5270905980124e064fe50270f2ac6c6a903bf9799285ec50d29ed5b5",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2389",
-      "title": "feat: Add Soundtracks tab and music player",
-      "summary": "Adds a Music tab under Library with a built-in player, an Android media session, playback options, Favorites and collections.",
-      "commit": "2c642acaaee300b4975bd59078d1ac17dfdad337",
-      "pr": 2389,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794554095000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2389",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2389-2c642ac.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-2c642ac.apk",
-          "size": 100048741,
-          "sha256": "5d192e273d8f24057ca67ca71e93411283ae6c9f8fd3c171cf1ee12fd495af68",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2389-2c642ac-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-2c642ac-pubg.apk",
-          "size": 100048741,
-          "sha256": "a269f322aeca647e61df2bcacc156be31b3bcdf9b57ad2336fa3940af9e9bdad",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2389-2c642ac-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-2c642ac-antutu.apk",
-          "size": 100048741,
-          "sha256": "0b22bca63f3a8c519759da720610a53e4c673928cf8199eef2515ed30314f123",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2389-2c642ac-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-2c642ac-ludashi.apk",
-          "size": 100048741,
-          "sha256": "b897746e3e919c886c04911cd4cb19e7a970866b1398e9921806caa287e5a809",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
