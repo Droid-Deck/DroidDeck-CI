@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794596419943,
+  "generatedAt": 1794596808045,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2572",
+      "title": "perf(session): keep a game that holds a steady pace off the fastest cores",
+      "summary": "A game that busy-waits for its own frame cap looks like a full core of demand to the scheduler, so its main thread migrates to the fastest core and stays there even when it only needs a fraction of it. On an AYANEO Pocket FIT Elite (8 Elite), Sonic Mania's main menu kept its main thread on cpu7 (4.32 GHz, prime) at 60 fps and drew over 11 W.",
+      "commit": "d03deab1eda29f552ca3673efdee91e5255cc2b9",
+      "pr": 2572,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794596695000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2572",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2572-d03deab.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-d03deab.apk",
+          "size": 100184004,
+          "sha256": "6fd90be25ce7461e03456fb97bfd8f708e86a46fb244e2e74ba07a132accf53e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2572-d03deab-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-d03deab-pubg.apk",
+          "size": 100184004,
+          "sha256": "09b8fe337ae0aae197c1ae8138546c1da70160b9ea63479844920f4e3ccb28a7",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2572-d03deab-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-d03deab-antutu.apk",
+          "size": 100184004,
+          "sha256": "604c7802b30ddc1d537896e3c7ddb7a82dfbbad14f6644e45a7dc472ff65aeb3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2572-d03deab-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-d03deab-ludashi.apk",
+          "size": 100184004,
+          "sha256": "9bd5798a8f8956f161bf0e18e5a535f74cadd5161c39df1e32eb5f98c5f2a647",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2522",
       "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
       "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-d168705-ludashi.apk",
           "size": 100241253,
           "sha256": "d243d2996bf28e6396434b6cda6871ca02293403c6e60917bd58359c0188c7c2",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2572",
-      "title": "perf(session): keep a game that holds its pace off the fastest cores",
-      "summary": "A game that busy-waits for vsync looks like a full core of demand to the scheduler, so its main thread migrates to the fastest core and stays there even when it only needs a fraction of it. On an AYANEO Pocket FIT Elite (8 Elite), Sonic Mania's main menu kept its main thread on cpu7 (4.32 GHz, prime) at 60 fps and drew over 11 W.",
-      "commit": "1a99b6e1d0fdb488c0c08b469e82443401c21464",
-      "pr": 2572,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794594115000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2572",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2572-1a99b6e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-1a99b6e.apk",
-          "size": 100167620,
-          "sha256": "06c59d061b6c6baf1609ac0e7b17b34039e8243f951b1eb79c60d599fc34bf52",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2572-1a99b6e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-1a99b6e-pubg.apk",
-          "size": 100167620,
-          "sha256": "58c7850255d5585d435440bfcfcc259b48fbbe9b342820c02f21aaddfc3bc098",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2572-1a99b6e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-1a99b6e-antutu.apk",
-          "size": 100167620,
-          "sha256": "e8e1c5a748000085f2820eaf80d3b8d7b60c6824845650acdca8d35eebb0470b",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2572-1a99b6e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-1a99b6e-ludashi.apk",
-          "size": 100167620,
-          "sha256": "722cbbbe3bca6d88e036d2451964685f5b726dcb01d9bf60f9482aea8f482196",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
