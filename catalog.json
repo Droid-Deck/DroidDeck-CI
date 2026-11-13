@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794587700498,
+  "generatedAt": 1794588335503,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,55 +164,6 @@
     }
   ],
   "tests": [
-    {
-      "tag": "pr-2569",
-      "title": "feat(ui): reorder tabs, shelve them in More or hide them",
-      "summary": "Users in Discord asked to hide tabs they don't use (stores other than Steam, Agent) and showed the bottom bar overflowing on phones. This replaces the one-off show/hide toggles with one tab layout.",
-      "commit": "2da5439d071878341936624c730f55a4c94d7ff1",
-      "pr": 2569,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794587468000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2569",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2569-2da5439.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2569/DroidDeck-PR.2569-2da5439.apk",
-          "size": 100093797,
-          "sha256": "829216d96a115a75279556c0e5fbf425162387bab1b856766e2d52118c4dd4db",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2569-2da5439-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2569/DroidDeck-PR.2569-2da5439-pubg.apk",
-          "size": 100093797,
-          "sha256": "73d45ac496482d02f0cd00c1a136a8ae85616154f6c500406ef4d70a56995938",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2569-2da5439-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2569/DroidDeck-PR.2569-2da5439-antutu.apk",
-          "size": 100093797,
-          "sha256": "2addd5e024535a56cc588570e12e3c676974b1caaa1e41a76038166379f0ccea",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2569-2da5439-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2569/DroidDeck-PR.2569-2da5439-ludashi.apk",
-          "size": 100093797,
-          "sha256": "48d2160382cc199dd3ff0246aeab875cfdcb0c5d77f1bb7b2c6c9c120330eb2d",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
     {
       "tag": "pr-2565",
       "title": "feat(storage): name, select and remove every prefix and store game",
@@ -1579,6 +1530,55 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2465/DroidDeck-PR.2465-5aaa29a-ludashi.apk",
           "size": 97121293,
           "sha256": "64b7c16cd159c46d386e4644c7385766df0fdbbee19449923ab0fab6f50a7228",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2350",
+      "title": "fix(dual-screen): allow game swap to external second screens",
+      "summary": "The in-game \"Game screen\" choice and the docked swap button were only offered when the second screen is built in (DualScreen.builtIn). A clip-on dual-screen add-on reports as an external display, so the game could not be moved to it.",
+      "commit": "85e0cbbace4c2ac7dd4e8c27b57f314d2bdb95e1",
+      "pr": 2350,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794418620000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2350",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2350-85e0cbb.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2350/DroidDeck-PR.2350-85e0cbb.apk",
+          "size": 97006605,
+          "sha256": "3de1797ccc468e1e2b106d9b823d7f0efc0f686af1868493884ad9c48456a6a6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2350-85e0cbb-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2350/DroidDeck-PR.2350-85e0cbb-pubg.apk",
+          "size": 97006605,
+          "sha256": "c530aa57481a95b683de9a66e019fa98d3dce61b03c79da03ffeeea995777f2b",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2350-85e0cbb-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2350/DroidDeck-PR.2350-85e0cbb-antutu.apk",
+          "size": 97006605,
+          "sha256": "205f8d5eef9ff576fc1154819897d5201b15a4aa145cc33a7819beb545f2fd53",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2350-85e0cbb-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2350/DroidDeck-PR.2350-85e0cbb-ludashi.apk",
+          "size": 97006605,
+          "sha256": "f59c967a7ffc32cc75be0e286eff6563ba7a344e17e2fd86f084376c40c6d6de",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
