@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794610355372,
+  "generatedAt": 1794610909463,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2586",
+      "title": "Start a launcher-run game without scanning its folder and keep Play on Starting until it launches",
+      "summary": "Pressing Play on a game that a store launcher starts could sit for 12 to 24 seconds with the button back on \"Play\" before anything happened, so it looked like the press had failed.",
+      "commit": "19d41d13bf39e40bbc8e142144fe405489676ead",
+      "pr": 2586,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794610799000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2586",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2586-19d41d1.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-19d41d1.apk",
+          "size": 100175801,
+          "sha256": "73b9bd922ec75b344bc3a18bac57d4631d75b6829ddb1c494b5f92bf0b433c1a",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2586-19d41d1-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-19d41d1-pubg.apk",
+          "size": 100175801,
+          "sha256": "14d6e4fdd04bb1d1b495db1765bcfa20d176d64c07b0733940b3f71f30b350a3",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2586-19d41d1-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-19d41d1-antutu.apk",
+          "size": 100175801,
+          "sha256": "2d309c601e55732127550ca8fce1fed7f017ea5cfd30000d8e7840f8545f97c5",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2586-19d41d1-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-19d41d1-ludashi.apk",
+          "size": 100175801,
+          "sha256": "8abbbbe67ec5f311a5cd843f12cffd1cf712a08be520ce1a891a351993d81c8f",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2584",
       "title": "docs(phantom): how Android counts guest processes and why detaching cannot escape it",
       "summary": "Android counts the processes an app forks as phantom processes and kills them under pressure.\nA Wine, FEX or Steam session forks dozens of them, so the limit decides whether a session\nsurvives. The question behind this change was whether the guest can avoid being counted at\nall, for example by reparenting it with a double fork or setsid, or by moving it into a\nseparate Android :process service.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-24c59d4-ludashi.apk",
           "size": 100175801,
           "sha256": "f360e709a996a563c0f5ef3ab67c6bdac0ab0db745a082f3d4b78bd83b23a5f9",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2586",
-      "title": "Start a launcher-run game without scanning its folder and keep Play on Starting until it launches",
-      "summary": "Pressing Play on a game that a store launcher starts could sit for 12 to 24 seconds with the button back on \"Play\" before anything happened, so it looked like the press had failed.",
-      "commit": "210c64faa403cc6a91cd7541c5fe56b27e0a7e6c",
-      "pr": 2586,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794610033000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2586",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2586-210c64f.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-210c64f.apk",
-          "size": 100175801,
-          "sha256": "d5f06a977567c13d2de2f12cc82b0272e7cfab5c8b872098d511d57a70d942b2",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2586-210c64f-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-210c64f-pubg.apk",
-          "size": 100175801,
-          "sha256": "0fb6e718a610d16d120f9f2be2e998fdf380c5fe027764fb1d15b100e6a53987",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2586-210c64f-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-210c64f-antutu.apk",
-          "size": 100175801,
-          "sha256": "09c2528a7d4ffb692b963532c470937bb0f72ce5e20eb832880b0c0d2fcb9add",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2586-210c64f-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2586/DroidDeck-PR.2586-210c64f-ludashi.apk",
-          "size": 100175801,
-          "sha256": "26e7cd40fbf703b9307f6679257edf2bc4576e2846d5fe549cf8467aaf6d7f67",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
