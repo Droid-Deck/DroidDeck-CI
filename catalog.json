@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794609589016,
+  "generatedAt": 1794609678384,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-2581",
+      "title": "fix(gpu): retry Xclipse auto when the recommended pair cannot be checked",
+      "summary": "On Samsung Xclipse devices, Auto reports a recommended RADV pair but can fall back to the system display driver when the pair is not downloaded. When the non-Adreno driver list cannot be read, the Auto path treated the recommended pair as unavailable and forced the PowerVR system route, so a temporary check failure left Auto on the system driver instead of retrying once the pair list could be fetc",
+      "commit": "d31ad1c27978d951eb95474dff3eec00dead459f",
+      "pr": 2581,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794609586000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2581",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2581-d31ad1c.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2581/DroidDeck-PR.2581-d31ad1c.apk",
+          "size": 100175801,
+          "sha256": "554a76ca17daa0b5b1a32b1187a393d19a5c7db202ea26dd4d454f022b70054e",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2581-d31ad1c-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2581/DroidDeck-PR.2581-d31ad1c-pubg.apk",
+          "size": 100175801,
+          "sha256": "7fa9457ef79bda78e715ff299be46292d4b4189d3d07b68d8cb482fabe55a3a4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2581-d31ad1c-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2581/DroidDeck-PR.2581-d31ad1c-antutu.apk",
+          "size": 100175801,
+          "sha256": "c1babf045e119bd2610b03e72585c8811dd7d0bd67f5a893c9a5d34ef05a13d9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2581-d31ad1c-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2581/DroidDeck-PR.2581-d31ad1c-ludashi.apk",
+          "size": 100175801,
+          "sha256": "3cfd184dce23f3b531a86012e43652cf6db810849d501ad34bc8b3b962c9bcd8",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2573",
+      "title": "feat(hud): add battery runtime estimate to DD overlay ( hud )",
+      "summary": "\u2022 Adds an estimated battery runtime metric to the DroidDeck HUD, with an independent setting to show or hide it.",
+      "commit": "642f5ac8306f794dff7f94f0a59dd5eb0834e16d",
+      "pr": 2573,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794609541000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2573",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2573-642f5ac.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2573/DroidDeck-PR.2573-642f5ac.apk",
+          "size": 100097977,
+          "sha256": "c4f16325d3fc5927a11505c146478bcfff33c99c8d1a637feb0c78a353550e88",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2573-642f5ac-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2573/DroidDeck-PR.2573-642f5ac-pubg.apk",
+          "size": 100097977,
+          "sha256": "d98865ed929e641ed032012b50d7bfe0ed738e7994dd85fa31bd4a46fa179143",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2573-642f5ac-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2573/DroidDeck-PR.2573-642f5ac-antutu.apk",
+          "size": 100097977,
+          "sha256": "141b2cb4943d0e09aec2b89ed36dddb9a6a3cbd62fad48c7b6fd2c42ec6c0ade",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2573-642f5ac-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2573/DroidDeck-PR.2573-642f5ac-ludashi.apk",
+          "size": 100097977,
+          "sha256": "252e1f72a0dac57a2f3f21a011a58d3513ecf445751c70f14d682ea12b42b7c0",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2586",
       "title": "Start a launcher-run game without scanning its folder and keep Play on Starting until it launches",
       "summary": "Pressing Play on a game that a store launcher starts could sit for 12 to 24 seconds with the button back on \"Play\" before anything happened, so it looked like the press had failed.",
@@ -305,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2584/DroidDeck-PR.2584-c1c6abe-ludashi.apk",
           "size": 100093881,
           "sha256": "0e1e3cfd9c30fa5bcc336e1e13724716d1cc1233396456a4c96793eb6c10f02f",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2573",
-      "title": "feat(hud): add battery runtime estimate to DD overlay ( hud )",
-      "summary": "\u2022 Adds an estimated battery runtime metric to the DroidDeck HUD, with an independent setting to show or hide it.",
-      "commit": "914718b5a075140718a3711d2ef26b4058fe3afe",
-      "pr": 2573,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794606514000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2573",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2573-914718b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2573/DroidDeck-PR.2573-914718b.apk",
-          "size": 100175717,
-          "sha256": "b7208dd6d4152e191399bfc59931e705192861554b9fe68015e29c2cc6ebce4d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2573-914718b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2573/DroidDeck-PR.2573-914718b-pubg.apk",
-          "size": 100179813,
-          "sha256": "9c146777b891f6fe1666db11a01cdf3f4047dce371e0ab703156c78eb94c26ed",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2573-914718b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2573/DroidDeck-PR.2573-914718b-antutu.apk",
-          "size": 100179813,
-          "sha256": "a8163b8611f1eacd9801a943fbeb084ca41e95667a3e1695805930fd848627bb",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2573-914718b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2573/DroidDeck-PR.2573-914718b-ludashi.apk",
-          "size": 100179813,
-          "sha256": "965d05980d4b093d4f176b988367719123f454a344e14b075a9803fc82a3682c",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
