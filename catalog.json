@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794589938000,
+  "generatedAt": 1794590289086,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-392562b",
-    "title": "fix(session): the Steam UI on the Mali bridge stops flickering",
-    "summary": "On the Mali bridge, Steam's own web helper layout (stock) makes the Deck UI footer and overlays flicker. This happens even with gamescope compositing every frame.",
-    "commit": "392562bfaeedadef785718cee8154fdd91c7e9e6",
+    "tag": "main-69b612b",
+    "title": "Fix Agent controls in the session drawer",
+    "summary": "The compact Agent bar's usage ring is hard to reach in the session drawer, especially the pet control. Replace it with a controls button that opens the editor without opening the keyboard. In the session drawer, the editor opens compact with its controls closed; the controls remain inline beside the close button when expanded. The main Agent entry point keeps its existing JVM signature so this Lab",
+    "commit": "69b612be1f6aa3741ec49022f46dee8b7423da6c",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794589347000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-392562b",
+    "publishedAt": 1794590164000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-69b612b",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-392562b.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-392562b/DroidDeck-main-392562b.apk",
-        "size": 100093797,
-        "sha256": "78297799f8e775b5ff00b7313eeceb6a0bb8edcf233f2801af0408e803f76e97",
+        "name": "DroidDeck-main-69b612b.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-69b612b/DroidDeck-main-69b612b.apk",
+        "size": 100097893,
+        "sha256": "a7949fc89ec9e1f517c4313d2a614b4a68c71c6a3c0e3aa4ac88d4089c421384",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-392562b-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-392562b/DroidDeck-main-392562b-pubg.apk",
-        "size": 100093797,
-        "sha256": "cfb893f9e40ef6af04705410f1bb8c68bbbe1f9804013015d555b602d47b615e",
+        "name": "DroidDeck-main-69b612b-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-69b612b/DroidDeck-main-69b612b-pubg.apk",
+        "size": 100097893,
+        "sha256": "30a6fdab1d68a6fdd84e2b677cafc38af6c77c087f4eca1c6fd3836db4f7df84",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-392562b-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-392562b/DroidDeck-main-392562b-antutu.apk",
-        "size": 100093797,
-        "sha256": "7d91f5123892ea5502c31bd073d4ceac76b7849a42664ff8d9099f38c6571e78",
+        "name": "DroidDeck-main-69b612b-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-69b612b/DroidDeck-main-69b612b-antutu.apk",
+        "size": 100097893,
+        "sha256": "64bb3d9d12311081f52568e3515eed33b9dbd048b947aa7cb4160b8427564ec0",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-392562b-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-392562b/DroidDeck-main-392562b-ludashi.apk",
-        "size": 100093797,
-        "sha256": "b16834777aa50244e0a39decc42911915eaf46872256122dd0284cfa1b246e1b",
+        "name": "DroidDeck-main-69b612b-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-69b612b/DroidDeck-main-69b612b-ludashi.apk",
+        "size": 100097893,
+        "sha256": "b2ea1e6704e3feba3b1f62057e57e685bc161dfc3bb12f9b31c594417c871d83",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "69b612be1f6aa3741ec49022f46dee8b7423da6c",
+      "title": "Fix Agent controls in the session drawer",
+      "summary": "The compact Agent bar's usage ring is hard to reach in the session drawer, especially the pet control. Replace it with a controls button that opens the editor without opening the keyboard. In the session drawer, the editor opens compact with its controls closed; the controls remain inline beside the close button when expanded. The main Agent entry point keeps its existing JVM signature so this Lab",
+      "publishedAt": 1794590164000
+    },
     {
       "commit": "392562bfaeedadef785718cee8154fdd91c7e9e6",
       "title": "fix(session): the Steam UI on the Mali bridge stops flickering",
@@ -155,12 +161,6 @@
       "title": "feat(ui): agent features start off and live in Setup > Developer",
       "summary": "\u2022 The Agent tab is off by default (Debugging tools and the Agent pet already were). Anyone who never changed the switch no longer sees the tab until they turn it on.\n\u2022 Setup > Diagnostics is now Developer, in English and all 33 translations.\n\u2022 The Agent tab and Agent pet switches moved from the Launcher tab to Developer, under Debugging tools.\n\u2022 The Debugging tools refusal (app and droiddeckctl), ",
       "publishedAt": 1794538438000
-    },
-    {
-      "commit": "b841b232b42defcf40ae6d527e3c9c463c3f1a08",
-      "title": "feat(stores): add Rockstar store and classic GTA launches",
-      "summary": "Adds Rockstar Games sign-in, the owned library, catalog and verified downloads, plus authenticated launches for the original GTA III, Vice City and San Andreas releases.",
-      "publishedAt": 1794533643000
     }
   ],
   "tests": [
