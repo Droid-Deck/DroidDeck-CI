@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794608982669,
+  "generatedAt": 1794609589016,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-0b8a3f1",
-    "title": "Add skip boot movie toggle",
-    "summary": "\u2022 Add a Skip boot movie toggle in Setup > Boot Movie > Sound.\n\u2022 When enabled, stage a bundled 0.1-second black VP8 WebM for Steam startup; when disabled, keep using the selected movie and its existing settings.\n\u2022 Apply the toggle on the next session start and include its state in the boot movie diagnostic report.",
-    "commit": "0b8a3f1ee81fa928cf6c62f38cf0bcd3f7908d4f",
+    "tag": "main-bc929c0",
+    "title": "fix(input): save Steam touch layout without existing config",
+    "summary": "Editing a Steam touch layout failed with \"Could not save the touch layout\" when the selected app had no controllermobiletouch config on disk. SteamTouchConfig.load returned a config with no text, and saveLayouts rejected it.",
+    "commit": "bc929c08b2f327c4399c90d9fc407988e3c3bcfd",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794605534000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-0b8a3f1",
+    "publishedAt": 1794609437000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-bc929c0",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-0b8a3f1.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8a3f1/DroidDeck-main-0b8a3f1.apk",
+        "name": "DroidDeck-main-bc929c0.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc929c0/DroidDeck-main-bc929c0.apk",
         "size": 100175801,
-        "sha256": "bab9fda93c9a3a87c4fe175d73e3333229bd6a23597835f3a5dc210537ccc785",
+        "sha256": "c7146b616167d1f0fe1b7f1cb210eafa4ed5648d210e476d5d3c298d4ce6d398",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-0b8a3f1-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8a3f1/DroidDeck-main-0b8a3f1-pubg.apk",
+        "name": "DroidDeck-main-bc929c0-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc929c0/DroidDeck-main-bc929c0-pubg.apk",
         "size": 100175801,
-        "sha256": "4202f16043f820f8f976ebdec881360020b3c4bb2b090dcee2d54f00a8ca271e",
+        "sha256": "dbd704bcbecb2f98fd74314dddf23a275f328b79759a37fbe07958933541bc16",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-0b8a3f1-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8a3f1/DroidDeck-main-0b8a3f1-antutu.apk",
+        "name": "DroidDeck-main-bc929c0-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc929c0/DroidDeck-main-bc929c0-antutu.apk",
         "size": 100175801,
-        "sha256": "a25eef3e17a5347d23614f104811ebc4a51b6f089464d1ec11b2b6c390093523",
+        "sha256": "7e91f3fd33132dfb572d30e172802f774259254d6b3944f58aa4cfa6f8907a7a",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-0b8a3f1-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-0b8a3f1/DroidDeck-main-0b8a3f1-ludashi.apk",
+        "name": "DroidDeck-main-bc929c0-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-bc929c0/DroidDeck-main-bc929c0-ludashi.apk",
         "size": 100175801,
-        "sha256": "29ce636442023afbefdcf20b8418879f3fecd135e5fad66f7ba868f3bad1d922",
+        "sha256": "9712e822d8d83171a3d45e49228fd2d66e6353b4a8af31246e48c8ac0d39b759",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bc929c08b2f327c4399c90d9fc407988e3c3bcfd",
+      "title": "fix(input): save Steam touch layout without existing config",
+      "summary": "Editing a Steam touch layout failed with \"Could not save the touch layout\" when the selected app had no controllermobiletouch config on disk. SteamTouchConfig.load returned a config with no text, and saveLayouts rejected it.",
+      "publishedAt": 1794609437000
+    },
     {
       "commit": "0b8a3f1ee81fa928cf6c62f38cf0bcd3f7908d4f",
       "title": "Add skip boot movie toggle",
@@ -155,12 +161,6 @@
       "title": "fix(session): picture in picture keeps the DroidDeck front end behind the game",
       "summary": "With DroidDeck as the Home app, the PiP button in the session drawer left Recents (\"No recent items\") behind the game window, and Home pulled the game back to full screen, so the front end couldn't be reached while the game was windowed.",
       "publishedAt": 1794574259000
-    },
-    {
-      "commit": "83de0e7f8c42df885c8fbcdd97629ab9957739ea",
-      "title": "feat(rockstar): broaden launcher protocol compatibility",
-      "summary": "Removes the three-title launch restriction introduced in #2537 and adds a metadata-driven launch path for other Rockstar titles. Installed games retain Play and Steam shortcut registration. Games without a detected launcher protocol can attempt their normal executable; detected protocols require server-authorized launch data.",
-      "publishedAt": 1794569314000
     }
   ],
   "tests": [
