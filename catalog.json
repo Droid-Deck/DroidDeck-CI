@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794606623081,
+  "generatedAt": 1794607037954,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2522",
+      "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
+      "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory, then Steam's runprocess fails with error 2 (file not found).",
+      "commit": "ae3164ff9412467dff9d004a169032b8e68b1bed",
+      "pr": 2522,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794606944000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2522",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2522-ae3164f.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ae3164f.apk",
+          "size": 100085605,
+          "sha256": "e1af2e3840faaa6afc8199435de6080bfe5ca72659e7fab762e8d5b32ec0c2ce",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2522-ae3164f-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ae3164f-pubg.apk",
+          "size": 100085605,
+          "sha256": "1e3f15fdf7dff186e59048816d17d4d10deb7d7751181f0a2cf8b27d93272672",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2522-ae3164f-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ae3164f-antutu.apk",
+          "size": 100085605,
+          "sha256": "f3c201c92200ccec506af6d02317a4c4efd6d9490fdd78aec0a220568485833e",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2522-ae3164f-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ae3164f-ludashi.apk",
+          "size": 100085605,
+          "sha256": "411d26d59e12e5187cad08475b3e83cbfe2865cf72245ad230ddd155aef66134",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2584",
       "title": "docs(phantom): how Android counts guest processes and why detaching cannot escape it",
@@ -403,55 +452,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-d03deab-ludashi.apk",
           "size": 100184004,
           "sha256": "9bd5798a8f8956f161bf0e18e5a535f74cadd5161c39df1e32eb5f98c5f2a647",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2522",
-      "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
-      "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory.",
-      "commit": "ec51f1119098a18c1b19ca167b5abb490c20293e",
-      "pr": 2522,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794596321000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2522",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2522-ec51f11.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ec51f11.apk",
-          "size": 100081509,
-          "sha256": "522e25ef3fe6b5bfe8f3204c9062bfa3719ac7e78eea24c0c58cb2f9913bd9b7",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2522-ec51f11-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ec51f11-pubg.apk",
-          "size": 100081509,
-          "sha256": "be915b7dc9a60652796d7f4101655ba14b6d6e8e4ee2f587cc230f26589104f6",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2522-ec51f11-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ec51f11-antutu.apk",
-          "size": 100081509,
-          "sha256": "efcdf8da4609dfa5fb316d532ff7176166e6f87710346a188d53ff77f7023d6d",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2522-ec51f11-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2522/DroidDeck-PR.2522-ec51f11-ludashi.apk",
-          "size": 100081509,
-          "sha256": "6017b956d0056d12a0a7395e8c9a7caa36becdb8c76ffc94c4cd7a24d8095806",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
