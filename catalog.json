@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794575604236,
+  "generatedAt": 1794577827934,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -256,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2389/DroidDeck-PR.2389-d6814bc-ludashi.apk",
           "size": 100077413,
           "sha256": "69192a9108b10dba0d09ac949a51dd4b2b8019ce5da2098135782afeb77eab99",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2539",
-      "title": "fix(agent): run the setup package install as fake root",
-      "summary": "The Agent tab's Install step fails with dpkg: error: requested operation requires superuser privilege (reported on an AYN Odin2 Portal and a RedMagic Astra 2 with a Preview that includes #2490). The step runs dpkg --configure -a; apt-get ... through AgentHost.guest, which starts proot via LinuxRuntime.command. That always calls prootPrefix(..., fakeRoot = false), which passes -i <app ui",
-      "commit": "c23f7ccdd4f104b70e8a0ec407871d88c7297672",
-      "pr": 2539,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794568774000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2539",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2539-c23f7cc.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2539/DroidDeck-PR.2539-c23f7cc.apk",
-          "size": 98261456,
-          "sha256": "7fc98eb4bae18ffc1e26110c14a919f9a975bb724717e2dd98ca9509da70ad4b",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2539-c23f7cc-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2539/DroidDeck-PR.2539-c23f7cc-pubg.apk",
-          "size": 98261456,
-          "sha256": "2a333374b3f7084f9fac577bc30f661438ef3b9ffc10aac2a88efc7b4f5097d3",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2539-c23f7cc-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2539/DroidDeck-PR.2539-c23f7cc-antutu.apk",
-          "size": 98261456,
-          "sha256": "4bb75ec9cd25d636ea409abc01b34f38068ffb9f855b69515022f6f04ece31b8",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2539-c23f7cc-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2539/DroidDeck-PR.2539-c23f7cc-ludashi.apk",
-          "size": 98261456,
-          "sha256": "9c23ac1156bff5fa5c437792430c35d075e4daba3ca30977c923c26f95ae5b42",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
