@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794538774380,
+  "generatedAt": 1794539195794,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2547",
+      "title": "feat(rockstar): broaden launcher protocol compatibility",
+      "summary": "Removes the three-title launch restriction introduced in #2537 and adds a metadata-driven launch path for other Rockstar titles. Installed games retain Play and Steam shortcut registration. Games without a detected launcher protocol can attempt their normal executable; detected protocols require server-authorized launch data.",
+      "commit": "ac2143b8ae8403741e779583bdf1ffb9c7b8a683",
+      "pr": 2547,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794539091000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2547",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2547-ac2143b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-ac2143b.apk",
+          "size": 98273744,
+          "sha256": "d8d51a0542236368c86d1e7f8bc9f444b57c576949757394ed0b5429c6a7795d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2547-ac2143b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-ac2143b-pubg.apk",
+          "size": 98273744,
+          "sha256": "75a29856949ce8ed867413083c3d949aafd6de1bc8f4c07f3721f9ed49eb8de9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2547-ac2143b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-ac2143b-antutu.apk",
+          "size": 98273744,
+          "sha256": "5a62d4fac4875aa83a8d7a82f473aaed266b747b7cf4921f8ef1648ceee5a637",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2547-ac2143b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-ac2143b-ludashi.apk",
+          "size": 98273744,
+          "sha256": "c90d5bdaa0085495edd08b185e5adce37a27440296fa28606635551ae987811a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2472",
       "title": "Feat: Add per game screens effects",
       "summary": "Improves per-game screen effects profile selection, letting you choose per game.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2551/DroidDeck-PR.2551-24af194-ludashi.apk",
           "size": 98163152,
           "sha256": "c35bca55c91ca25f78025d56acd7466ddc9b9803249b2b639c60949334f25315",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2547",
-      "title": "fix(rockstar): remove the three-title launch restriction",
-      "summary": "Removes the three-title launch restriction introduced in #2537. Installed Rockstar titles retain Play in game details and Downloads and can register Steam shortcuts regardless of whether their launch protocol has been tested.",
-      "commit": "a1a7463766da8029eee7ca4c3736a8ce5e438e8e",
-      "pr": 2547,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794534134000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2547",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2547-a1a7463.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-a1a7463.apk",
-          "size": 98249168,
-          "sha256": "b2a637b9be0d5bf9a6173cef5e7335ace408327c7a9a84245b3bc242281b0002",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2547-a1a7463-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-a1a7463-pubg.apk",
-          "size": 98249168,
-          "sha256": "4639073a7ec37557bbd44305269070e51ad55cfbc44b1753899d98bf5a0122a4",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2547-a1a7463-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-a1a7463-antutu.apk",
-          "size": 98249168,
-          "sha256": "d484b4d9d6ddc3ced1538bdd2791424e77c2f3e522d58b9b0123b1a72ce150c7",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2547-a1a7463-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2547/DroidDeck-PR.2547-a1a7463-ludashi.apk",
-          "size": 98249168,
-          "sha256": "58e10b5242e030bbeddd186952d9e4d40e8ff4817454b1d1be684530816040ce",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
