@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794573717155,
+  "generatedAt": 1794574408443,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-83de0e7",
-    "title": "feat(rockstar): broaden launcher protocol compatibility",
-    "summary": "Removes the three-title launch restriction introduced in #2537 and adds a metadata-driven launch path for other Rockstar titles. Installed games retain Play and Steam shortcut registration. Games without a detected launcher protocol can attempt their normal executable; detected protocols require server-authorized launch data.",
-    "commit": "83de0e7f8c42df885c8fbcdd97629ab9957739ea",
+    "tag": "main-d058bab",
+    "title": "fix(session): picture in picture keeps the DroidDeck front end behind the game",
+    "summary": "With DroidDeck as the Home app, the PiP button in the session drawer left Recents (\"No recent items\") behind the game window, and Home pulled the game back to full screen, so the front end couldn't be reached while the game was windowed.",
+    "commit": "d058bab64fface8d35d2ee174e94e911496a0fd4",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794569314000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-83de0e7",
+    "publishedAt": 1794574259000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-d058bab",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-83de0e7.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83de0e7/DroidDeck-main-83de0e7.apk",
-        "size": 98294224,
-        "sha256": "c68d29a12b202fe6bd91417abc154405e3e860895c2a69e27720cb53073f5125",
+        "name": "DroidDeck-main-d058bab.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d058bab/DroidDeck-main-d058bab.apk",
+        "size": 98290128,
+        "sha256": "fb1650bb2664df56a08330d5d1731f2906ed65965eab13af3429465b39016dc1",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-83de0e7-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83de0e7/DroidDeck-main-83de0e7-pubg.apk",
-        "size": 98294224,
-        "sha256": "e1d53deba7a4ed53ccf0c98354cf58acb67b7101e2e6be59e28704bcfc10296a",
+        "name": "DroidDeck-main-d058bab-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d058bab/DroidDeck-main-d058bab-pubg.apk",
+        "size": 98290128,
+        "sha256": "ded30a77d76f398849e8a806c262d263d01938d405b470ecbc2a3df3cf6de79c",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-83de0e7-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83de0e7/DroidDeck-main-83de0e7-antutu.apk",
-        "size": 98294224,
-        "sha256": "ff0af4caf4b75797134d446eaf3f49567e10c18d4c0fb3ac8725c45bd32604b6",
+        "name": "DroidDeck-main-d058bab-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d058bab/DroidDeck-main-d058bab-antutu.apk",
+        "size": 98290128,
+        "sha256": "35d93b60b90e65aeb8e8d8fc12d09ea9a0fb4349023021c2972d81278852f7c4",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-83de0e7-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-83de0e7/DroidDeck-main-83de0e7-ludashi.apk",
-        "size": 98294224,
-        "sha256": "29a1d5580fd2826fbc00f3d71795409e3536388b5e7e368cf4a3a844efe4f366",
+        "name": "DroidDeck-main-d058bab-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-d058bab/DroidDeck-main-d058bab-ludashi.apk",
+        "size": 98290128,
+        "sha256": "c366a1f4dfb394317b32d1356a2d85022d49d3173eeb317bc978e8962f37b388",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d058bab64fface8d35d2ee174e94e911496a0fd4",
+      "title": "fix(session): picture in picture keeps the DroidDeck front end behind the game",
+      "summary": "With DroidDeck as the Home app, the PiP button in the session drawer left Recents (\"No recent items\") behind the game window, and Home pulled the game back to full screen, so the front end couldn't be reached while the game was windowed.",
+      "publishedAt": 1794574259000
+    },
     {
       "commit": "83de0e7f8c42df885c8fbcdd97629ab9957739ea",
       "title": "feat(rockstar): broaden launcher protocol compatibility",
@@ -155,12 +161,6 @@
       "title": "feat(agent): DeeDee, a floating pet that opens the agent's chat; chat-head flings for the pet and HUD",
       "summary": "DeeDee, the agent's pet, floats over any app (Chrome, games, the launcher) like a Messenger chat head and shows what the agent is doing.",
       "publishedAt": 1794514701000
-    },
-    {
-      "commit": "b52ce7e4c5095c565056d3e39226b931998f317c",
-      "title": "Feat:Add per-game frame generation profiles",
-      "summary": "Add per game frame generation profiles and default profile, so you can choose what game and what configuration you want. ( 2x, 3x Lossless, no frame gen, everything! )\nOf course it appears in the library in droid deck, and in the side menu in steam. In the side menu it automatically changes based on the game, so you can edit in real time.\nIf you don't choose any configuration it will be default.",
-      "publishedAt": 1794512752000
     }
   ],
   "tests": [
