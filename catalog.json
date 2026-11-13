@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794527766680,
+  "generatedAt": 1794528131401,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2539",
+      "title": "fix(agent): run the setup package install as fake root",
+      "summary": "The Agent tab's Install step fails with dpkg: error: requested operation requires superuser privilege (reported on an AYN Odin2 Portal and a RedMagic Astra 2 with a Preview that includes #2490). The step runs dpkg --configure -a; apt-get ... through AgentHost.guest, which starts proot via LinuxRuntime.command. That always calls prootPrefix(..., fakeRoot = false), which passes -i <app ui",
+      "commit": "08837a75212fc3c7efdbcc91178481406798ee91",
+      "pr": 2539,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794527999000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2539",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2539-08837a7.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2539/DroidDeck-PR.2539-08837a7.apk",
+          "size": 97486992,
+          "sha256": "7efb52ee165f7bcf3e8f4ba56ef06f714dc780248ebe81345d7bd79082264201",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2539-08837a7-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2539/DroidDeck-PR.2539-08837a7-pubg.apk",
+          "size": 97486992,
+          "sha256": "1681b197231387b02bad7f0af31bf059afa0774a0673c6c25d534eecfab5da39",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2539-08837a7-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2539/DroidDeck-PR.2539-08837a7-antutu.apk",
+          "size": 97486992,
+          "sha256": "3ae7e8999a4ff04194d8174c96b4668c763fd18e475adba350a7ef067fe3bae1",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2539-08837a7-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2539/DroidDeck-PR.2539-08837a7-ludashi.apk",
+          "size": 97486992,
+          "sha256": "ea2d91149d1ba6ff71601453a3d99c24b97738ecdd1f6cf79060e7a0b88570a2",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2472",
       "title": "Feat: Add per game screens effects",
