@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794591212140,
+  "generatedAt": 1794591327291,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2562",
+      "title": "fix(session): games keep OpenGL error checks when the client skips them",
+      "summary": "An OpenGL game started from Steam goes black after a level while its music keeps playing (OnePlus Pad 2, Adreno 750, Zink on Turnip). In both of the reporter's logs the game's render thread (PhyreEngineRenderThread, thread 01ac) faults on a NULL read (c0000005, address 0x60) inside Mesa during a GL call with GLARRAYBUFFER / GLSTREAMDRAW in its registers, straight after Wine's wow64 gl",
+      "commit": "830f32df069f8e317b05d950428f58de972e9e2d",
+      "pr": 2562,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794591099000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2562",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2562-830f32d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2562/DroidDeck-PR.2562-830f32d.apk",
+          "size": 100097893,
+          "sha256": "91c39e9a22ac63fefe0e5c43fcd9586ffa881572313e0f4607b64c73f91ed3c7",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2562-830f32d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2562/DroidDeck-PR.2562-830f32d-pubg.apk",
+          "size": 100097893,
+          "sha256": "2d950c9974a957e3ac88e761b281314635e63430c9b5e0230f680cbc87ae0c26",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2562-830f32d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2562/DroidDeck-PR.2562-830f32d-antutu.apk",
+          "size": 100097893,
+          "sha256": "3f40744afcff110a77ac5f71e5582d1e1415fdf701396a72deeb8c08d2848bde",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2562-830f32d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2562/DroidDeck-PR.2562-830f32d-ludashi.apk",
+          "size": 100097893,
+          "sha256": "da33c3aec9d46bf3f05e15c4625326b74bc7f1c070824ffd66c13f5ded1383da",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2571",
       "title": "fix(agent): the agent's tools reach the running app's package and live adb port",
       "summary": "Reported on Discord: on a build installed under a variant package, droiddeckctl failed out of the box in the agent until the agent overrode two values by hand.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2028/DroidDeck-PR.2028-8ba8b12-ludashi.apk",
           "size": 100081509,
           "sha256": "bf1aea61d1e0a5fa128b6a9e8eb38f284ee73ef5316f25f1391b66b37a30ebdd",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2565",
-      "title": "feat(storage): name, select and remove every prefix and store game",
-      "summary": "Storage manager left large amounts of data with no way to manage it. A user reported 34.9 GB under \"Kept\" with no games installed, and the only fix was the desktop.",
-      "commit": "25bb873f33405a7031ef578a289bc98304c3962e",
-      "pr": 2565,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794589811000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2565",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2565-25bb873.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-25bb873.apk",
-          "size": 100077413,
-          "sha256": "6d3b63dbb8dd8b6cbe3c4784b40f319e2fed44c6e9a0723a37799c6d576bc0a9",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2565-25bb873-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-25bb873-pubg.apk",
-          "size": 100077413,
-          "sha256": "6d703c64695decbe0410853e0e2c1106956ce4c5b3258bd3e9db08a0417dfb1e",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2565-25bb873-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-25bb873-antutu.apk",
-          "size": 100077413,
-          "sha256": "71288ead754c9d76466ca77c68428aba6677a77762abddf3bf3a14b802a00d13",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2565-25bb873-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2565/DroidDeck-PR.2565-25bb873-ludashi.apk",
-          "size": 100077413,
-          "sha256": "b2eb2de7db3707f8fb105bc2860a2bf18edde52f227385d50d877726e97076e8",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
