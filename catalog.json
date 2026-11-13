@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794597918990,
+  "generatedAt": 1794598971395,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2579",
+      "title": "Make hiding Home launcher from Recents optional",
+      "summary": "\u2022 Add a Hide launcher from Recents while idle setting under Setup > Device when DroidDeck's Home screen is enabled.\n\u2022 Default it off so the launcher stays in Recents unless the user opts in.\n\u2022 When enabled, hide the launcher task only when DroidDeck is the default Home app and no session is running. Active session behavior remains unchanged.",
+      "commit": "7dbd81e335eba6adbea747a4960df0d007257fd6",
+      "pr": 2579,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794598856000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2579",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2579-7dbd81e.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2579/DroidDeck-PR.2579-7dbd81e.apk",
+          "size": 100171621,
+          "sha256": "e1d08248673cf180070fb191657bf93d0c6442d2de083b590c8ec03e457014d5",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2579-7dbd81e-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2579/DroidDeck-PR.2579-7dbd81e-pubg.apk",
+          "size": 100171621,
+          "sha256": "785366aaacec2d3d5fe067828ed18959c0fd9efa0a71a9025f515fc9d74f31aa",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2579-7dbd81e-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2579/DroidDeck-PR.2579-7dbd81e-antutu.apk",
+          "size": 100171621,
+          "sha256": "fb53e9246e9d9c31feb8d629daa13c65942caf444937c642532f5a5802d3a355",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2579-7dbd81e-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2579/DroidDeck-PR.2579-7dbd81e-ludashi.apk",
+          "size": 100171621,
+          "sha256": "5e51b7f3e0e9c173d71396974008cb2fd76b37f8e8b6cab3f8debeea483bf3ff",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2577",
       "title": "Add skip boot movie toggle",
