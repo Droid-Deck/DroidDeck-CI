@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794614411267,
+  "generatedAt": 1794615364946,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2588",
+      "title": "fix(drivers): never load a KGSL-only display driver on a GPU without KGSL, and report the drivers actually in use",
+      "summary": "On a Mali-G68 phone (SM-S176V) in Mix and match, the display driver was set to an imported Turnip build (MesaTurnipv27.0.0-20261102-8G2-OneUI) and the runtime driver to the default. The session report and the device card then said the display ran on that Turnip build and the games on \"the runtime's own Turnip\", but the same log shows Mali (Venus) in use (VKICDFILENAMES=.../venus/virtioicd.",
+      "commit": "6072870c8434f34d8c4fe4994a9cfa707dd8c1e5",
+      "pr": 2588,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794615237000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2588",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2588-6072870.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2588/DroidDeck-PR.2588-6072870.apk",
+          "size": 100093881,
+          "sha256": "eaa2c69db0f13df87a8ca26c7d02b98fd2c69919f7f6350ba0d35a19f73253b9",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2588-6072870-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2588/DroidDeck-PR.2588-6072870-pubg.apk",
+          "size": 100093881,
+          "sha256": "d471054c2c81738dd91bc7f3fb16dda66f97e91188ac31b573ffb6335834375a",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2588-6072870-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2588/DroidDeck-PR.2588-6072870-antutu.apk",
+          "size": 100093881,
+          "sha256": "53d40d480ec54404a50086dbf58153fa0373c7ffd22a766c129ef1c898a3dcfa",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2588-6072870-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2588/DroidDeck-PR.2588-6072870-ludashi.apk",
+          "size": 100093881,
+          "sha256": "d20e6ee6ca74010d885c5cb917729bb9d615d49c09f072c9121da373c97aea7b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2584",
       "title": "docs(phantom): how Android counts guest processes and why detaching cannot escape it",
