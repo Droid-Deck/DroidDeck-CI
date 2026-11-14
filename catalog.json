@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794637843842,
+  "generatedAt": 1794648940974,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2600",
+      "title": "fix(session): read the compressed client back when it is in front of a running game",
+      "summary": "A tester on a Lenovo TB324ZC (Adreno 840, 0.7.1) aborted a game stuck on a black screen. Steam came back with an empty library and menus, and menu items appeared one by one as the cursor moved over them.",
+      "commit": "5304db3c73691e2a9bd4caa2c0a55911b4174507",
+      "pr": 2600,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794648822000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2600",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2600-5304db3.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2600/DroidDeck-PR.2600-5304db3.apk",
+          "size": 100200472,
+          "sha256": "f6a45754d4626c4a78d5e0fa64ea4c102d93776fdd1d54cd4463077bebbd0c68",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2600-5304db3-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2600/DroidDeck-PR.2600-5304db3-pubg.apk",
+          "size": 100200472,
+          "sha256": "93c725da07dd0cf7cc63210f0ac2569db77d3ad3e6547ff67f395cb36f8cc7c5",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2600-5304db3-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2600/DroidDeck-PR.2600-5304db3-antutu.apk",
+          "size": 100200472,
+          "sha256": "9bd952cf7251bff33cdeff7289c208e8ba2d2ea04c030a9305d1c40407b28dbc",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2600-5304db3-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2600/DroidDeck-PR.2600-5304db3-ludashi.apk",
+          "size": 100200472,
+          "sha256": "8269aa6a13f7518f7b9cffd35604fd5a1bcfc33dcb749ccc28faee168f91777a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2590",
       "title": "fix(rockstar): serve launcher pipes named by the executables beside a protected game",
