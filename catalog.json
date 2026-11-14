@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794669577487,
+  "generatedAt": 1794670159662,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2454",
+      "title": "feat(hud): every reading gets its own switch and a row order",
+      "summary": "The HUD settings screen listed every metric as one long run of switches, in a fixed order, and which readings a size could show was decided inside that size's own build function. Changing a size meant editing its layout code, and there was no way to put the reading you care about at the top.",
+      "commit": "3d49f2daae11360196c350177b2724e69dc34c90",
+      "pr": 2454,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794670044000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2454",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2454-3d49f2d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2454/DroidDeck-PR.2454-3d49f2d.apk",
+          "size": 101167128,
+          "sha256": "1b4e50f94aea07712c12d0b896a134c1de7ca36c11aa111982d50deca0964016",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2454-3d49f2d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2454/DroidDeck-PR.2454-3d49f2d-pubg.apk",
+          "size": 101167128,
+          "sha256": "c8370cf387141f02aa4c6fae20051cb8870418d905f09f22dccb36b764497e15",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2454-3d49f2d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2454/DroidDeck-PR.2454-3d49f2d-antutu.apk",
+          "size": 101167128,
+          "sha256": "5d22895a085fd1b6a6232e034146b575ae28a454f15633061da754210d9ca9c3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2454-3d49f2d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2454/DroidDeck-PR.2454-3d49f2d-ludashi.apk",
+          "size": 101167128,
+          "sha256": "749b87b36c0bbc4ee3a4e650ebc8bf6285c01fe46c09d1725fd470c2df5954ea",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2601",
       "title": "fix(fex): GL thunk passes X errors to the program instead of exiting",
