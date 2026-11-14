@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794654716470,
+  "generatedAt": 1794662023143,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2596",
+      "title": "fix(stores): log why a GOG cloud sync failed and stage uploads in the cache folder",
+      "summary": "On an AYANEO Pocket FIT (0.7.1), every GOG cloud upload fails for every game with only\nresult=failed files=0 bytes=0 reason=IOException, while downloads keep working (90 files,\n266 MB, at the same time). The sync logs only the exception's class name, so the failing step,\nthe HTTP status and the file are lost. Nothing in the cloud code changed between the last good\nupload and the first failure.",
+      "commit": "100d3855e7153bbe61f54c29704eb252b1e69687",
+      "pr": 2596,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794661925000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2596",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2596-100d385.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-100d385.apk",
+          "size": 101134360,
+          "sha256": "eb534f8f2b042ae39a6ba8c6035f105da7cd0ab82c3282d1429f23bd99c23454",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2596-100d385-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-100d385-pubg.apk",
+          "size": 101134360,
+          "sha256": "e7c93373abe06c523fee1a965e2cae5f23599bbbc9f4b416b4447858f34f0634",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2596-100d385-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-100d385-antutu.apk",
+          "size": 101134360,
+          "sha256": "a307cc7c8ec86f6155eb2193f992ef8300e849a578686e11b367b401d0fbdfc6",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2596-100d385-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-100d385-ludashi.apk",
+          "size": 101134360,
+          "sha256": "ac7bae4b483b1f5b0207de3c93eaabbf5b1a43b2622e2412161c042f70d13d1c",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2602",
       "title": "fix(battlenet): a download that stops moving ends with Retry, and a killed update comes back as an update",
@@ -599,55 +648,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-234dd12-ludashi.apk",
           "size": 100196376,
           "sha256": "09b8743d4dd763e4e16461e964a4ced1b55bf9f5270c0ebf8df106acf5903212",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2596",
-      "title": "fix(stores): log why a GOG cloud sync failed and stage uploads in the cache folder",
-      "summary": "On an AYANEO Pocket FIT (0.7.1), every GOG cloud upload fails for every game with only\nresult=failed files=0 bytes=0 reason=IOException, while downloads keep working (90 files,\n266 MB, at the same time). The sync logs only the exception's class name, so the failing step,\nthe HTTP status and the file are lost. Nothing in the cloud code changed between the last good\nupload and the first failure.",
-      "commit": "3108bc9703e8dbd98b63bc74097d2ff23ab63db3",
-      "pr": 2596,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794622548000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2596",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2596-3108bc9.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-3108bc9.apk",
-          "size": 100196376,
-          "sha256": "ae0d589042b845bb943dc2bbf12d3fb4afc2180eed5b3505d3071e3a473f8d7d",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2596-3108bc9-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-3108bc9-pubg.apk",
-          "size": 100196376,
-          "sha256": "a2438cb03784dd0222221c7e768aa7ec5fdd11092e8c65b263676c641eaf37f9",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2596-3108bc9-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-3108bc9-antutu.apk",
-          "size": 100196376,
-          "sha256": "dde06086b3ff7ee18e3316598309a245bcc578479857aecfacff0352b93e1443",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2596-3108bc9-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-3108bc9-ludashi.apk",
-          "size": 100196376,
-          "sha256": "181e38cdc0ac884950649d8c89ed0bd7c6d0e9959d406f386887d8bf7ea7bdd9",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
