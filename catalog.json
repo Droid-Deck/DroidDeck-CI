@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794689969169,
+  "generatedAt": 1794691060155,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2624",
+      "title": "feat(updates): install any kept Preview build, link builds to their PR and commit, flag stale test builds",
+      "summary": "Discord shows the Updates tab is how most testers get builds, and the same problems keep coming up:\n\u2022 people can't get back to an earlier Preview build;\n\u2022 PR test builds made before a versionCode bump won't install;\n\u2022 people test an older revision of a PR without knowing it;\n\u2022 nobody can tell which PR, commit or author a build came from.",
+      "commit": "a88bf07208d0ad5409b6656e769335941838b4e7",
+      "pr": 2624,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794690965000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2624",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2624-a88bf07.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-a88bf07.apk",
+          "size": 101244952,
+          "sha256": "4e4116d2e6094d31c2c4069553a3ea223f4219a9443305edfc9b6d10e721bc33",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2624-a88bf07-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-a88bf07-pubg.apk",
+          "size": 101244952,
+          "sha256": "79970ae8e0ec3ab84b66fc34ad0ab97822176ad7fb834523c74cc571117bc3ab",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2624-a88bf07-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-a88bf07-antutu.apk",
+          "size": 101244952,
+          "sha256": "c91435ba1f226e04dbe2556d522316f02883ab229b47e53e11053977a8da951f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2624-a88bf07-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-a88bf07-ludashi.apk",
+          "size": 101244952,
+          "sha256": "6d01a7d860c345133ce1c8211c35eb68ecdc9d7c8918d9173d0976d0d9fe7c60",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2626",
       "title": "feat(agent): Agent tab refinements: one-state composer, no snapping, notifications, choices, subagents, dictation, game frame, copy, History search",
       "summary": "A set of Agent tab refinements, collected in one PR. #2629\u2013#2633 were folded in here.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2626/DroidDeck-PR.2626-7b06d3e-ludashi.apk",
           "size": 101130264,
           "sha256": "7c8a3b3b81770b2927c794f728564fa178e28a15e298f2be7f31fa907e78e335",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2624",
-      "title": "feat(updates): install any kept Preview build, link builds to their PR and commit, flag stale test builds",
-      "summary": "Discord shows the Updates tab is how most testers get builds, and the same problems keep coming up:\n\u2022 people can't get back to an earlier Preview build;\n\u2022 PR test builds made before a versionCode bump won't install;\n\u2022 people test an older revision of a PR without knowing it;\n\u2022 nobody can tell which PR, commit or author a build came from.",
-      "commit": "fd47c8ce5b88a77cc35c9f90929c02fd0e852519",
-      "pr": 2624,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794687434000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2624",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2624-fd47c8c.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-fd47c8c.apk",
-          "size": 101244952,
-          "sha256": "5aef5f77d485df432b71e8515a4a146eb7e6df28029235eea8920bef9e2788c7",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2624-fd47c8c-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-fd47c8c-pubg.apk",
-          "size": 101244952,
-          "sha256": "14f6fcf21e5dfb73d707e42ef6fb365bb1e0f54c68529969a2bc8f319084b259",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2624-fd47c8c-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-fd47c8c-antutu.apk",
-          "size": 101244952,
-          "sha256": "dc288d9aa7316573cf5edd23d3670dc407b3bb39b25bab91c0f79a5209b03bfb",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2624-fd47c8c-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-fd47c8c-ludashi.apk",
-          "size": 101244952,
-          "sha256": "93e133f0a9c13b29ee4d4914a1f3318789fd045bd2a1dca556f88cf52883a0b2",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
