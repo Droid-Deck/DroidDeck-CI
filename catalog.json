@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794688912971,
+  "generatedAt": 1794689417826,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-aa3a599",
-    "title": "fix(runtime): record why a runtime install failed in the session events",
-    "summary": "When the Linux runtime install fails at session start, the session ends with RUNTIMEINSTALLFAILED and the generic \"The Linux runtime did not install\" message. events.jsonl (the file Share logs sends) records only runtime.installing followed by session.failed. The failing step (proot pack, DirectAudio pack, runtime archive, checksum, unpack, swap) and the network error were written only t",
-    "commit": "aa3a599ec6893d366f4185b7ec5061874b13b7fd",
+    "tag": "main-c847659",
+    "title": "feat(setup): arrange tabs in one list with drag handles, a More line and a shown switch",
+    "summary": "Setup \u2192 Launcher \u2192 Tabs gave every tab two arrow buttons and a Shown / In More / Hidden chip. Moving a tab four places took eight presses, and putting it in More meant opening a menu.",
+    "commit": "c847659789e6f8ae7f28a795a8be449a636b4c27",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794686742000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-aa3a599",
+    "publishedAt": 1794689327000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-c847659",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-aa3a599.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa3a599/DroidDeck-main-aa3a599.apk",
-        "size": 101175320,
-        "sha256": "de6dc93883e488a190e787afdba809aa0cb3b3a2dfd95de6a7e78b439b41db80",
+        "name": "DroidDeck-main-c847659.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c847659/DroidDeck-main-c847659.apk",
+        "size": 101171224,
+        "sha256": "58abb51f07b266c6bdf4c4d7d1c48b5038d5ee59dec421e4cee969831ba01e2c",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-aa3a599-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa3a599/DroidDeck-main-aa3a599-pubg.apk",
-        "size": 101175320,
-        "sha256": "41d27635b0a42020c2b16dabb675cbafe2aaa1b55664cee749312e793e752f7f",
+        "name": "DroidDeck-main-c847659-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c847659/DroidDeck-main-c847659-pubg.apk",
+        "size": 101171224,
+        "sha256": "a78e56abbd3f0625aa83cb41fc40ec4ad4dd1cf1630ca85740e009fd6b62f7a6",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-aa3a599-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa3a599/DroidDeck-main-aa3a599-antutu.apk",
-        "size": 101175320,
-        "sha256": "4f9a1c98040ebfd8453e4cbd4ac3aef900466c9273f368bb85c887682ec9dcad",
+        "name": "DroidDeck-main-c847659-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c847659/DroidDeck-main-c847659-antutu.apk",
+        "size": 101171224,
+        "sha256": "3d5f42f1d5f6f9897ed5900d76e4c73dd04ec8013d3e67778894837c11bfa8f5",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-aa3a599-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-aa3a599/DroidDeck-main-aa3a599-ludashi.apk",
-        "size": 101175320,
-        "sha256": "fa652592c8c7f601f5269ab60272bd5d8d8e856e8dc92e9237b836ceb6ce299e",
+        "name": "DroidDeck-main-c847659-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-c847659/DroidDeck-main-c847659-ludashi.apk",
+        "size": 101171224,
+        "sha256": "bf25b52418722ada874e0e875c6096b5e86f0a16a4f117dc7967a7183033db14",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c847659789e6f8ae7f28a795a8be449a636b4c27",
+      "title": "feat(setup): arrange tabs in one list with drag handles, a More line and a shown switch",
+      "summary": "Setup \u2192 Launcher \u2192 Tabs gave every tab two arrow buttons and a Shown / In More / Hidden chip. Moving a tab four places took eight presses, and putting it in More meant opening a menu.",
+      "publishedAt": 1794689327000
+    },
     {
       "commit": "aa3a599ec6893d366f4185b7ec5061874b13b7fd",
       "title": "fix(runtime): record why a runtime install failed in the session events",
@@ -155,12 +161,6 @@
       "title": "Start a launcher-run game without scanning its folder and keep Play on Starting until it launches",
       "summary": "Pressing Play on a game that a store launcher starts could sit for 12 to 24 seconds with the button back on \"Play\" before anything happened, so it looked like the press had failed.",
       "publishedAt": 1794614324000
-    },
-    {
-      "commit": "6d1a0d9fd0bd2234b2677c33a7072eaa89ef2be3",
-      "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
-      "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory, then Steam's runprocess fails with error 2 (file not found).",
-      "publishedAt": 1794611951000
     }
   ],
   "tests": [
