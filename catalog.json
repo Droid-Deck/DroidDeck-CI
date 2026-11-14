@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794621569520,
+  "generatedAt": 1794622271399,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-f6d1794",
-    "title": "perf(session): keep a game that holds a steady pace off the fastest cores",
-    "summary": "A game that busy-waits for its own frame cap looks like a full core of demand to the scheduler, so its main thread migrates to the fastest core and stays there even when it only needs a fraction of it. On an AYANEO Pocket FIT Elite (8 Elite), Sonic Mania's main menu kept its main thread on cpu7 (4.32 GHz, prime) at 60 fps and drew over 11 W.",
-    "commit": "f6d1794624722e53792b8c9069f6887da31fac66",
+    "tag": "main-30d1032",
+    "title": "fix(session): games keep OpenGL error checks when the client skips them",
+    "summary": "An OpenGL game started from Steam goes black after a level while its music keeps playing (OnePlus Pad 2, Adreno 750, Zink on Turnip). In both of the reporter's logs the game's render thread (PhyreEngineRenderThread, thread 01ac) faults on a NULL read (c0000005, address 0x60) inside Mesa during a GL call with GLARRAYBUFFER / GLSTREAMDRAW in its registers, straight after Wine's wow64 gl",
+    "commit": "30d103280bc38ec31e0675e6dfa57d0f1b0d612d",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794620428000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-f6d1794",
+    "publishedAt": 1794622140000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-30d1032",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-f6d1794.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f6d1794/DroidDeck-main-f6d1794.apk",
+        "name": "DroidDeck-main-30d1032.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-30d1032/DroidDeck-main-30d1032.apk",
         "size": 100192280,
-        "sha256": "2887752fad2f6fa720e314e79aa47984b92a5db2c29f978112f688770ebac70e",
+        "sha256": "ec73a756c745021874d5c4571a037e4df445071b3204f3c34374e076d36b6cfa",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-f6d1794-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f6d1794/DroidDeck-main-f6d1794-pubg.apk",
+        "name": "DroidDeck-main-30d1032-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-30d1032/DroidDeck-main-30d1032-pubg.apk",
         "size": 100192280,
-        "sha256": "38a56931b8e4bc6e4d553d6fcae31241a10f02f704149b2091f93da8a89b95ec",
+        "sha256": "497f4b1642450465b5cca94e833802cac03ede999c9a275ed53e4956e237fe20",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-f6d1794-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f6d1794/DroidDeck-main-f6d1794-antutu.apk",
+        "name": "DroidDeck-main-30d1032-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-30d1032/DroidDeck-main-30d1032-antutu.apk",
         "size": 100192280,
-        "sha256": "8b27d0e70b2f050a887294fd2b08ceba3d96328223e376aeb38c62d54f849c1e",
+        "sha256": "ce2c370780567a6684198083642dfd5a274034b81df3b70738f8951dbea17acb",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-f6d1794-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-f6d1794/DroidDeck-main-f6d1794-ludashi.apk",
+        "name": "DroidDeck-main-30d1032-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-30d1032/DroidDeck-main-30d1032-ludashi.apk",
         "size": 100192280,
-        "sha256": "65fc988066d4b4ae1e4fe44d5c0039e7e63896370f89206f50e59a01f077d8a8",
+        "sha256": "8e0fc999b5daef2fd2e37338c531b6c573879819e8057d3fa9b3c5f730e6f06a",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "30d103280bc38ec31e0675e6dfa57d0f1b0d612d",
+      "title": "fix(session): games keep OpenGL error checks when the client skips them",
+      "summary": "An OpenGL game started from Steam goes black after a level while its music keeps playing (OnePlus Pad 2, Adreno 750, Zink on Turnip). In both of the reporter's logs the game's render thread (PhyreEngineRenderThread, thread 01ac) faults on a NULL read (c0000005, address 0x60) inside Mesa during a GL call with GLARRAYBUFFER / GLSTREAMDRAW in its registers, straight after Wine's wow64 gl",
+      "publishedAt": 1794622140000
+    },
     {
       "commit": "f6d1794624722e53792b8c9069f6887da31fac66",
       "title": "perf(session): keep a game that holds a steady pace off the fastest cores",
@@ -155,12 +161,6 @@
       "title": "Fix Agent controls in the session drawer",
       "summary": "The compact Agent bar's usage ring is hard to reach in the session drawer, especially the pet control. Replace it with a controls button that opens the editor without opening the keyboard. In the session drawer, the editor opens compact with its controls closed; the controls remain inline beside the close button when expanded. The main Agent entry point keeps its existing JVM signature so this Lab",
       "publishedAt": 1794590164000
-    },
-    {
-      "commit": "392562bfaeedadef785718cee8154fdd91c7e9e6",
-      "title": "fix(session): the Steam UI on the Mali bridge stops flickering",
-      "summary": "On the Mali bridge, Steam's own web helper layout (stock) makes the Deck UI footer and overlays flicker. This happens even with gamescope compositing every frame.",
-      "publishedAt": 1794589347000
     }
   ],
   "tests": [
