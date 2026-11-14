@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794637230755,
+  "generatedAt": 1794637366464,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2590",
+      "title": "fix(rockstar): serve launcher pipes named by the executables beside a protected game",
+      "summary": "A Rockstar store game whose main executable is protected starts, then quits with its own \"Please run ... using Rockstar Games Launcher\" dialog. Reported with GTA V Legacy on a nubia NX809J (0.7.1, main-bc929c0): the store preparation reports ready, the launcher service starts the game, the game creates its window and exits.",
+      "commit": "45aae2ded80227a48ed3319e0160df6c27cc80a6",
+      "pr": 2590,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794637276000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2590",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2590-45aae2d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-45aae2d.apk",
+          "size": 100229144,
+          "sha256": "cd1221dc90f800a68961130fe568c870585790771bea71773e35d685fb3e4407",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2590-45aae2d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-45aae2d-pubg.apk",
+          "size": 100229144,
+          "sha256": "344b124d4f360ee247f28a2fb22b64c51f70ac5c867503aee4220ab6cd24210e",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2590-45aae2d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-45aae2d-antutu.apk",
+          "size": 100229144,
+          "sha256": "39829e2f55acf23af2a444f5891d53eb979d3c0b2e851baf6fd5c55d68956214",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2590-45aae2d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-45aae2d-ludashi.apk",
+          "size": 100229144,
+          "sha256": "9fe9197a8a2dfe9dd9b7250c7e687b9291f75ecabbf3eacecc1bf3fb1c0bb923",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2591",
       "title": "fix(runtime): record why a runtime install failed in the session events",
@@ -452,55 +501,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2598/DroidDeck-PR.2598-11a1e30-ludashi.apk",
           "size": 100200472,
           "sha256": "a454857e6d843435ac5964a30496b44d454481c3e4ccb64878a4ab4047d773eb",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2590",
-      "title": "fix(rockstar): serve launcher pipes named by the executables beside a protected game",
-      "summary": "A Rockstar store game whose main executable is protected starts, then quits with its own \"Please run ... using Rockstar Games Launcher\" dialog. Reported with GTA V Legacy on a nubia NX809J (0.7.1, main-bc929c0): the store preparation reports ready, the launcher service starts the game, the game creates its window and exits.",
-      "commit": "a51441b36558e026d0bc843cdf0c5d7ce3a4c3b3",
-      "pr": 2590,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794623152000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2590",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2590-a51441b.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-a51441b.apk",
-          "size": 100220952,
-          "sha256": "8a79c6b0cb3986ac1d6edd7425160f7344b3221e2f8ef3742f17d7bfd000b468",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2590-a51441b-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-a51441b-pubg.apk",
-          "size": 100220952,
-          "sha256": "c53b4a117f243dd89e1df8a51768a995a3b0d0a6af555e95f7098adb7f937121",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2590-a51441b-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-a51441b-antutu.apk",
-          "size": 100220952,
-          "sha256": "fab5f196d4b4119e0347bcc1b8ca2cc8f7b607a34e32e6bfd78ff782efdd0737",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2590-a51441b-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-a51441b-ludashi.apk",
-          "size": 100220952,
-          "sha256": "1841a4682462054489e5f86f303be3d4243ad48b79015de06ad29e50fcbca3ed",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
