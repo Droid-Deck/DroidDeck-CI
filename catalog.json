@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794615364946,
+  "generatedAt": 1794615680876,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2590",
+      "title": "fix(rockstar): serve launcher pipes named by the executables beside a protected game",
+      "summary": "A Rockstar store game whose main executable is protected starts, then quits with its own \"Please run ... using Rockstar Games Launcher\" dialog. Reported with GTA V Legacy on a nubia NX809J (0.7.1, main-bc929c0): the store preparation reports ready, the launcher service starts the game, the game creates its window and exits.",
+      "commit": "b609b83c83de03df83bdbf2f65af1b6a467b0e35",
+      "pr": 2590,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794615584000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2590",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2590-b609b83.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-b609b83.apk",
+          "size": 100204473,
+          "sha256": "dcc4d1fe76f6954ea85e08040b7c106a9d6fc624cc2b109d81c324a10de240c8",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2590-b609b83-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-b609b83-pubg.apk",
+          "size": 100204473,
+          "sha256": "b800927dec1f1ac823af4ad439376c27dea7a9de7a4be8e6a54202e46768c864",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2590-b609b83-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-b609b83-antutu.apk",
+          "size": 100204473,
+          "sha256": "9fecd9b94cba50e65f7a33697fbc8ffd32723a611cc6daf10c9527ea75d731f9",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2590-b609b83-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2590/DroidDeck-PR.2590-b609b83-ludashi.apk",
+          "size": 100204473,
+          "sha256": "3183baa301ac8fbc920f2018ff6cefc797e6769f9a9b87fe8cb1f9077cf376c3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2588",
       "title": "fix(drivers): never load a KGSL-only display driver on a GPU without KGSL, and report the drivers actually in use",
