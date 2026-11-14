@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794624864498,
+  "generatedAt": 1794628574663,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2598",
+      "title": "fix(xbox): send delegation-compact device tickets to licensing in the licensing wire form",
+      "summary": "Game Pass downloads and launches fail with \"Microsoft content licensing rejected sign-in (HTTP 401)\" while sign-in and the library keep working. Signing in again does not help. Reporters' stores logs show downloads working on 2026-11-10 and NEXUSCONTENTLICENSEDIAGNOSTICV1 content-http 401 on every attempt from 2026-11-11 on, with no Xbox change in the app between 0.7.0 and 0.7.1.",
+      "commit": "11a1e30a976c5b0cacf6d748eb17e21245877db6",
+      "pr": 2598,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794628420000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2598",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2598-11a1e30.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2598/DroidDeck-PR.2598-11a1e30.apk",
+          "size": 100200472,
+          "sha256": "0eafa49994aa3daff3962df011f2cf86db92bc43c9bd9ec92ef55df56233a088",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2598-11a1e30-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2598/DroidDeck-PR.2598-11a1e30-pubg.apk",
+          "size": 100200472,
+          "sha256": "fab38a2c1f4f558a3aad0605ae083fa12c9287c473e9ad691adbf93ac8387bbe",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2598-11a1e30-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2598/DroidDeck-PR.2598-11a1e30-antutu.apk",
+          "size": 100200472,
+          "sha256": "434c0b0727a758cb1ffe2ca63be5d061894243b4c3ab461b4ba2bc4b4b9f5e66",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2598-11a1e30-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2598/DroidDeck-PR.2598-11a1e30-ludashi.apk",
+          "size": 100200472,
+          "sha256": "a454857e6d843435ac5964a30496b44d454481c3e4ccb64878a4ab4047d773eb",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2591",
       "title": "fix(runtime): record why a runtime install failed in the session events",
