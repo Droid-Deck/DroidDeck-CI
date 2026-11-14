@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794686028782,
+  "generatedAt": 1794686562094,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2624",
+      "title": "feat(updates): install any kept Preview build, link builds to their PR and commit, flag stale test builds",
+      "summary": "Discord shows the Updates tab is how most testers get builds, and the same problems keep coming up:\n\u2022 people can't get back to an earlier Preview build;\n\u2022 PR test builds made before a versionCode bump won't install;\n\u2022 people test an older revision of a PR without knowing it;\n\u2022 nobody can tell which PR, commit or author a build came from.",
+      "commit": "0df625dd995e6fa58032713d29dc5f16df3def88",
+      "pr": 2624,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794686448000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2624",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2624-0df625d.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-0df625d.apk",
+          "size": 101240856,
+          "sha256": "0a9fd164813525e75576ae9d00a46ced3179afc35eb95c58869b2efc9219242c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2624-0df625d-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-0df625d-pubg.apk",
+          "size": 101240856,
+          "sha256": "921b987f527ffc49c063650ac06ea4a63f8bde9a3a5642d3bf1ce8d9bf2bc4f4",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2624-0df625d-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-0df625d-antutu.apk",
+          "size": 101240856,
+          "sha256": "c99b3331109cf999213560351fc23e1a4c494a365b19d9b2faa3f0903575bf9f",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2624-0df625d-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2624/DroidDeck-PR.2624-0df625d-ludashi.apk",
+          "size": 101240856,
+          "sha256": "f116d526d49962f10d4f429ab1f6b8bdddb8c80c93f9a994591d722aaf88726b",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2601",
       "title": "fix(fex): GL thunk passes X errors to the program instead of exiting",
