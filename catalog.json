@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794634453104,
+  "generatedAt": 1794634541332,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2591",
+      "title": "fix(runtime): record why a runtime install failed in the session events",
+      "summary": "When the Linux runtime install fails at session start, the session ends with RUNTIMEINSTALLFAILED and the generic \"The Linux runtime did not install\" message. events.jsonl (the file Share logs sends) records only runtime.installing followed by session.failed. The failing step (proot pack, DirectAudio pack, runtime archive, checksum, unpack, swap) and the network error were written only t",
+      "commit": "42b2652f1fc7f29b033832d3d23b182aab9a824e",
+      "pr": 2591,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794634428000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2591",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2591-42b2652.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2591/DroidDeck-PR.2591-42b2652.apk",
+          "size": 100200472,
+          "sha256": "5ed90690551e299cdade65ec6b0f839a0a85894e9795f136fbbdd443fde2020c",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2591-42b2652-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2591/DroidDeck-PR.2591-42b2652-pubg.apk",
+          "size": 100200472,
+          "sha256": "4233eee5b15dccc012be3e7fc76f2b2cc2240cbc4dccef0bcbd0b53794c36d32",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2591-42b2652-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2591/DroidDeck-PR.2591-42b2652-antutu.apk",
+          "size": 100200472,
+          "sha256": "f8f80dc33168a93083a6a381c78e8bafba097343f9ac1098d9d07c896752d5a2",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2591-42b2652-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2591/DroidDeck-PR.2591-42b2652-ludashi.apk",
+          "size": 100200472,
+          "sha256": "29e637434d11186daeae97f362af01d73b26fda19869579f8d03fe682c9f0033",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2556",
       "title": "l10n: translate the missing strings and add the input library in every locale",
@@ -354,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-3212c63-ludashi.apk",
           "size": 100229144,
           "sha256": "67be0eae08f098c041471f34bc62cb68143cc05b72b289d099bcf9fa8bf355fe",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2591",
-      "title": "fix(runtime): record why a runtime install failed in the session events",
-      "summary": "When the Linux runtime install fails at session start, the session ends with RUNTIMEINSTALLFAILED and the generic \"The Linux runtime did not install\" message. events.jsonl (the file Share logs sends) records only runtime.installing followed by session.failed. The failing step (proot pack, DirectAudio pack, runtime archive, checksum, unpack, swap) and the network error were written only t",
-      "commit": "6a94f282e9f04b12bcf63d346f7331a1c5568512",
-      "pr": 2591,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794628858000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2591",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2591-6a94f28.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2591/DroidDeck-PR.2591-6a94f28.apk",
-          "size": 100114456,
-          "sha256": "c0c6df79f5e4c66efd1bd2fef104dab4efdcda7ca663f1eb1fdc3e8bce4964ed",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2591-6a94f28-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2591/DroidDeck-PR.2591-6a94f28-pubg.apk",
-          "size": 100114456,
-          "sha256": "9be67107ae5b789b84d033cb2b4b964e570ef57d034bb86de0ae28a8fde2f135",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2591-6a94f28-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2591/DroidDeck-PR.2591-6a94f28-antutu.apk",
-          "size": 100114456,
-          "sha256": "08a1cc31a348bbc4623ebf9ab452da45bf9d8d6e5079a97168854af57166a136",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2591-6a94f28-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2591/DroidDeck-PR.2591-6a94f28-ludashi.apk",
-          "size": 100114456,
-          "sha256": "efa40c26e6384e19a2c86ad0d869591008eae43d642778f23fdafb2a28192fcf",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
