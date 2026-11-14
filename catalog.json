@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794670159662,
+  "generatedAt": 1794670998545,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2615",
+      "title": "fix(session): keep the session awake while a browser hand-off is pending",
+      "summary": "When a program in the session opens a link in the Android browser, the session view goes to the background and auto or manual suspend freezes the session within about two seconds. Programs that wait for the browser to call back to a local listener (external sign-in flows such as Google sign-in in a store client) were frozen before the callback arrived, so the sign-in never completed, and under man",
+      "commit": "5a787139c2e6ffc157acfd38aa029384dbebcb52",
+      "pr": 2615,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794670846000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2615",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2615-5a78713.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2615/DroidDeck-PR.2615-5a78713.apk",
+          "size": 101130264,
+          "sha256": "6022f804238dff08df8c7b3378489574d6ee3e03673452688e7712f8e440aaa6",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2615-5a78713-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2615/DroidDeck-PR.2615-5a78713-pubg.apk",
+          "size": 101130264,
+          "sha256": "77b61f482cfe435354aaf88392573c6b3a156dea634ced0c1bdb47ee02d0b4c2",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2615-5a78713-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2615/DroidDeck-PR.2615-5a78713-antutu.apk",
+          "size": 101130264,
+          "sha256": "ecdcd640c6865f7f80c5f08f160cbffa27c1136fe4edc653dd75ec49fb95b478",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2615-5a78713-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2615/DroidDeck-PR.2615-5a78713-ludashi.apk",
+          "size": 101130264,
+          "sha256": "1f4d501bef7ef31f6cf8179a5051b4aa2ff596f80ab06b1e1599f8fcc4007952",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2454",
       "title": "feat(hud): every reading gets its own switch and a row order",
