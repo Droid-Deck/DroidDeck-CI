@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794613740168,
+  "generatedAt": 1794614411267,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -53,48 +53,48 @@
     }
   },
   "preview": {
-    "tag": "main-6d1a0d9",
-    "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
-    "summary": "With \"Run without Proot\", Windows games installed on a game storage library quit a few seconds after launch. Wine logs could not open working directory L\"Z:\\\\mnt\\\\droiddeck-sd\\\\<game>\\\\\", starting in the Windows directory, then Steam's runprocess fails with error 2 (file not found).",
-    "commit": "6d1a0d9fd0bd2234b2677c33a7072eaa89ef2be3",
+    "tag": "main-b3ebd54",
+    "title": "Start a launcher-run game without scanning its folder and keep Play on Starting until it launches",
+    "summary": "Pressing Play on a game that a store launcher starts could sit for 12 to 24 seconds with the button back on \"Play\" before anything happened, so it looked like the press had failed.",
+    "commit": "b3ebd54d87f255d77fa81aace6db58eb3b9f881c",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794611951000,
-    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-6d1a0d9",
+    "publishedAt": 1794614324000,
+    "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/main-b3ebd54",
     "apks": {
       "com.droiddeck.launcher": {
-        "name": "DroidDeck-main-6d1a0d9.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d1a0d9/DroidDeck-main-6d1a0d9.apk",
+        "name": "DroidDeck-main-b3ebd54.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3ebd54/DroidDeck-main-b3ebd54.apk",
         "size": 100175801,
-        "sha256": "648acd8e88faf5028a61fde82ffcb809129284a593a2a55da02f18e5ad6fbee9",
+        "sha256": "978a8c4968dca2b1d49bb579ce42bacd85d320eb9c4fc56f80af09952a2f4c55",
         "packageName": "com.droiddeck.launcher",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.tencent.ig": {
-        "name": "DroidDeck-main-6d1a0d9-pubg.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d1a0d9/DroidDeck-main-6d1a0d9-pubg.apk",
+        "name": "DroidDeck-main-b3ebd54-pubg.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3ebd54/DroidDeck-main-b3ebd54-pubg.apk",
         "size": 100175801,
-        "sha256": "976413940c8dd2bfb2fd8965be6c929248725e27ad8b10e52a3c6dff3b735811",
+        "sha256": "fcd9260426c67ad55535aeaa58799fc503a7768b71e301b5571bf175d7e7b99d",
         "packageName": "com.tencent.ig",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.antutu.benchmark.full": {
-        "name": "DroidDeck-main-6d1a0d9-antutu.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d1a0d9/DroidDeck-main-6d1a0d9-antutu.apk",
+        "name": "DroidDeck-main-b3ebd54-antutu.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3ebd54/DroidDeck-main-b3ebd54-antutu.apk",
         "size": 100175801,
-        "sha256": "e878a72211bcfd01191d59abdbf81b03a56a7cd77a048f178015ab1b2782602b",
+        "sha256": "5e6cb8f0aff2006998b6eb4c3b737d6af19dae173dd94d632d3415e23e384cb7",
         "packageName": "com.antutu.benchmark.full",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
       },
       "com.ludashi.benchmark": {
-        "name": "DroidDeck-main-6d1a0d9-ludashi.apk",
-        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-6d1a0d9/DroidDeck-main-6d1a0d9-ludashi.apk",
+        "name": "DroidDeck-main-b3ebd54-ludashi.apk",
+        "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/main-b3ebd54/DroidDeck-main-b3ebd54-ludashi.apk",
         "size": 100175801,
-        "sha256": "3a65ca7b6c894344721fd59e352e624395fc39bd25f7362aa07baccd733b1ec9",
+        "sha256": "f3fe57cc2816c4469853ffef9fe68c925f7888a9e72986d5fba05227de4d8a23",
         "packageName": "com.ludashi.benchmark",
         "versionCode": 19,
         "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
@@ -102,6 +102,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b3ebd54d87f255d77fa81aace6db58eb3b9f881c",
+      "title": "Start a launcher-run game without scanning its folder and keep Play on Starting until it launches",
+      "summary": "Pressing Play on a game that a store launcher starts could sit for 12 to 24 seconds with the button back on \"Play\" before anything happened, so it looked like the press had failed.",
+      "publishedAt": 1794614324000
+    },
     {
       "commit": "6d1a0d9fd0bd2234b2677c33a7072eaa89ef2be3",
       "title": "fix(native): drive links stored as rootfs paths reach the game library mount",
@@ -155,12 +161,6 @@
       "title": "fix(dircache): Steam no longer deadlocks when a library below calls back in",
       "summary": "With Performance > \"Run without proot (experimental)\" on, the Steam client hangs about a second after login. On a RedMagic 11 Pro running 83de0e7f8:\n\u2022 Steam logs CSteamEngine::BMainLoop appears to have stalled > 15 seconds.\n\u2022 droiddeck-steam-compat loses the client.\n\u2022 About 3 minutes later Steam aborts with fatal stalled cross-thread pipe, and the session ends with GUESTEXIT 1.",
       "publishedAt": 1794584941000
-    },
-    {
-      "commit": "d33f4b4896cdd51cebe539dcde0b5a400b7cf8b2",
-      "title": "feat: Add Soundtracks tab and music player",
-      "summary": "Adds a Music tab under Library with a built-in player, an Android media session, playback options, Favorites and collections.",
-      "publishedAt": 1794578507000
     }
   ],
   "tests": [
