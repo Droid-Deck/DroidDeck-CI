@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794628574663,
+  "generatedAt": 1794628656076,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2597",
+      "title": "fix(desktop): let gamescope find its reaper when /usr/games is not on PATH",
+      "summary": "In Desktop mode, Windows games started from Steam as non-Steam shortcuts close about a second after Play. Steam logs the compatibility tool as exiting with code 0, and nothing appears on screen. Launching the same game from the normal Steam session works.",
+      "commit": "9467107cdced0f49c9f7b2f76bfc50f73fa0d0ce",
+      "pr": 2597,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794628567000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2597",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2597-9467107.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2597/DroidDeck-PR.2597-9467107.apk",
+          "size": 100196376,
+          "sha256": "c37bf4f584ad32103533f5bd4c8c7f0870a676340d0bf05c8a862b71efa8c747",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2597-9467107-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2597/DroidDeck-PR.2597-9467107-pubg.apk",
+          "size": 100196376,
+          "sha256": "0511eb0aa9812aac880b329e2a8d6c2922c31e54aa6c3b00d77f7df0488599fa",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2597-9467107-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2597/DroidDeck-PR.2597-9467107-antutu.apk",
+          "size": 100196376,
+          "sha256": "4778c54c1ad127dcb1d6d895223a7b4e4e99d2e822dd8d78b3d269dab449b0c4",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2597-9467107-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2597/DroidDeck-PR.2597-9467107-ludashi.apk",
+          "size": 100196376,
+          "sha256": "55d22d7b01e73edb7fdc96085393f186bf1d7338645c0ea8ae5d347b998c55f3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2598",
       "title": "fix(xbox): send delegation-compact device tickets to licensing in the licensing wire form",
       "summary": "Game Pass downloads and launches fail with \"Microsoft content licensing rejected sign-in (HTTP 401)\" while sign-in and the library keep working. Signing in again does not help. Reporters' stores logs show downloads working on 2026-11-10 and NEXUSCONTENTLICENSEDIAGNOSTICV1 content-http 401 on every attempt from 2026-11-11 on, with no Xbox change in the app between 0.7.0 and 0.7.1.",
@@ -256,55 +305,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2591/DroidDeck-PR.2591-be7fa06-ludashi.apk",
           "size": 100196376,
           "sha256": "9aa7b6c59b6af29ee06e27b7d79f8c5bd8ec258070c4946cf950ba40457eb1cb",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2597",
-      "title": "fix(desktop): let gamescope find its reaper when /usr/games is not on PATH",
-      "summary": "In Desktop mode, Windows games started from Steam as non-Steam shortcuts close about a second after Play. Steam logs the compatibility tool as exiting with code 0, and nothing appears on screen. Launching the same game from the normal Steam session works.",
-      "commit": "91e60d4c985d1d649607e0bae7c89d74be3f1aff",
-      "pr": 2597,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794624655000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2597",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2597-91e60d4.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2597/DroidDeck-PR.2597-91e60d4.apk",
-          "size": 100106264,
-          "sha256": "2e8d1ae428d829eae8f761b80350e5087b32ca3b7f31e2b19d0cbd245350f585",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2597-91e60d4-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2597/DroidDeck-PR.2597-91e60d4-pubg.apk",
-          "size": 100106264,
-          "sha256": "b05a78332bbfb2a58f7dad000e951bf69a1a8392c57dbc04ef0f13d79186ed93",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2597-91e60d4-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2597/DroidDeck-PR.2597-91e60d4-antutu.apk",
-          "size": 100106264,
-          "sha256": "64d10b5ee9eecdb43e33c246cf43bf6b889bdaa4caf9128cb054a8cd2a1f43ff",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2597-91e60d4-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2597/DroidDeck-PR.2597-91e60d4-ludashi.apk",
-          "size": 100106264,
-          "sha256": "aa88669a0f69a6224e86a573ac9c6626c45cda1c954fccc8e8b580af87707aeb",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
