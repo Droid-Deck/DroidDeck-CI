@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794619643690,
+  "generatedAt": 1794620274472,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2593",
+      "title": "fix(logs): app.log keeps the driver loader lines from the start of the session",
+      "summary": "When the compositor asks for a Turnip display driver and the phone's own driver answers instead, wayland.log says \"the requested driver did not load ... see the adrenotools lines\", but those lines are never in the shared logs. In a reporter's Android 10 session (Redmi K30S Ultra, Adreno 650), wayland.log records the fallback at 06:09:04.938 while app.log's first line is at 06:09:05.563.",
+      "commit": "7d542333723e96c1fd8b5746b458db88a87b5102",
+      "pr": 2593,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794620150000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2593",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2593-7d54233.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2593/DroidDeck-PR.2593-7d54233.apk",
+          "size": 100093881,
+          "sha256": "375e9c5755ecf1720a11c64a1d3c4157e61da53c936ba06137a98131f6638ac4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2593-7d54233-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2593/DroidDeck-PR.2593-7d54233-pubg.apk",
+          "size": 100093881,
+          "sha256": "f0ea0f3df803546066052b8a2952c8fcb41c60ad7bea69d371e8c58d329e73b6",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2593-7d54233-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2593/DroidDeck-PR.2593-7d54233-antutu.apk",
+          "size": 100093881,
+          "sha256": "ecd7661216f7c861dc6f6a372011ef9afc9586e65f0121d2ae4ee546e430ac7c",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2593-7d54233-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2593/DroidDeck-PR.2593-7d54233-ludashi.apk",
+          "size": 100093881,
+          "sha256": "dc1feaf4002ec6d28a84829bec62aa6dde9daadb3d30d2800b6e427375ab043a",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2594",
       "title": "fix(preload): Windows games run from noexec shared storage under every Proton",
