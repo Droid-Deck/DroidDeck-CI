@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794662023143,
+  "generatedAt": 1794662637524,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2601",
+      "title": "fix(fex): GL thunk passes X errors to the program instead of exiting",
+      "summary": "The x86-64 Steam client exits with rc=1 on Mali devices that use Venus (reported on Mali-G52 / RK3576 and Mali-G925 / MT6991, both with the x86-64 client). The Steam log ends with:",
+      "commit": "506d421cf5ca25b16e52425f0f8c4d222b2964f9",
+      "pr": 2601,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794662526000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2601",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2601-506d421.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2601/DroidDeck-PR.2601-506d421.apk",
+          "size": 101130264,
+          "sha256": "8059ff744d69549f53d020666cb11035feda3b4b7ac7b6fd21641a60d2b02b13",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2601-506d421-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2601/DroidDeck-PR.2601-506d421-pubg.apk",
+          "size": 101130264,
+          "sha256": "de56eb170fff41532a84c66466ebdb3afd238f266f9bcfb0939ed9d1cf94fe10",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2601-506d421-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2601/DroidDeck-PR.2601-506d421-antutu.apk",
+          "size": 101130264,
+          "sha256": "4500422ca47e743d81247d059fe4268d8b50bf47726d817c5ec1242bcee492e8",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2601-506d421-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2601/DroidDeck-PR.2601-506d421-ludashi.apk",
+          "size": 101130264,
+          "sha256": "f4b3fa2409007faa3e66fdfa1aa0295ceec6359796cedf91c090773256bc9882",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2596",
       "title": "fix(stores): log why a GOG cloud sync failed and stage uploads in the cache folder",
