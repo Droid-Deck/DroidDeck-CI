@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794619360927,
+  "generatedAt": 1794619643690,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2594",
+      "title": "fix(preload): Windows games run from noexec shared storage under every Proton",
+      "summary": "A Windows game installed to a custom folder on Android shared storage (for example Games/EA under internal storage, seen in the guest as /mnt/droiddeck-sd/Games/EA) crashes right after launch, while the same game in the default Games/Stores location works. Reported on a REDMAGIC Astra II (0.7.1) with two EA games, running Valve's Proton Experimental ARM64.",
+      "commit": "f8ba0e5dae3adda67dd1c6fd97868c343800ceda",
+      "pr": 2594,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794619560000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2594",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2594-f8ba0e5.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-f8ba0e5.apk",
+          "size": 100093881,
+          "sha256": "8975bb30f643d6f165b5f3803dccc035e07b7382bff16dba30c0af300d213830",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2594-f8ba0e5-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-f8ba0e5-pubg.apk",
+          "size": 100093881,
+          "sha256": "e748185575ac18062e42d17acdde36382eea0251078053a18721b7001fec4e54",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2594-f8ba0e5-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-f8ba0e5-antutu.apk",
+          "size": 100093881,
+          "sha256": "259eaf3b1d32cc0ceaf9d420ec4975b2451fe2f16b0244b935f142dcd331e788",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2594-f8ba0e5-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-f8ba0e5-ludashi.apk",
+          "size": 100093881,
+          "sha256": "d52fc65a4c05dbda755cf282f7e6353633687559a72c9c06dfb17e4ae89bfcaa",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2592",
       "title": "fix(preload): 32-bit x86 programs get correct large-file stat, open, write and lock results",
@@ -501,55 +550,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2573/DroidDeck-PR.2573-642f5ac-ludashi.apk",
           "size": 100097977,
           "sha256": "252e1f72a0dac57a2f3f21a011a58d3513ecf445751c70f14d682ea12b42b7c0",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2572",
-      "title": "perf(session): keep a game that holds a steady pace off the fastest cores",
-      "summary": "A game that busy-waits for its own frame cap looks like a full core of demand to the scheduler, so its main thread migrates to the fastest core and stays there even when it only needs a fraction of it. On an AYANEO Pocket FIT Elite (8 Elite), Sonic Mania's main menu kept its main thread on cpu7 (4.32 GHz, prime) at 60 fps and drew over 11 W.",
-      "commit": "d03deab1eda29f552ca3673efdee91e5255cc2b9",
-      "pr": 2572,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794596695000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2572",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2572-d03deab.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-d03deab.apk",
-          "size": 100184004,
-          "sha256": "6fd90be25ce7461e03456fb97bfd8f708e86a46fb244e2e74ba07a132accf53e",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2572-d03deab-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-d03deab-pubg.apk",
-          "size": 100184004,
-          "sha256": "09b8fe337ae0aae197c1ae8138546c1da70160b9ea63479844920f4e3ccb28a7",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2572-d03deab-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-d03deab-antutu.apk",
-          "size": 100184004,
-          "sha256": "604c7802b30ddc1d537896e3c7ddb7a82dfbbad14f6644e45a7dc472ff65aeb3",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2572-d03deab-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2572/DroidDeck-PR.2572-d03deab-ludashi.apk",
-          "size": 100184004,
-          "sha256": "9bd5798a8f8956f161bf0e18e5a535f74cadd5161c39df1e32eb5f98c5f2a647",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
