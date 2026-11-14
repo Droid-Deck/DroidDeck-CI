@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794631163828,
+  "generatedAt": 1794632380095,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,55 @@
   ],
   "tests": [
     {
+      "tag": "pr-2347",
+      "title": "fix(zram): back off ineffective idle compression",
+      "summary": "On low-RAM devices the session compresses idle game memory whenever MemAvailable is under the tier headroom, at most every 30 seconds. A shared log from a 6.9 GB phone showed four passes in about a minute: each took about 5 s and caused a stutter, resident memory fell from 1.8 GB to 0.5 GB, but available memory stayed around 1.2 GB. The passes kept repeating without freeing useful headroom, beca",
+      "commit": "01a462b2dcb687ef23e31516ca9598968c4bc054",
+      "pr": 2347,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794632245000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2347",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2347-01a462b.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-01a462b.apk",
+          "size": 100200472,
+          "sha256": "869bb65d0144524ee6ce6822c0d6232c3cf4a80574c2efb6803b7eb2db55fd85",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2347-01a462b-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-01a462b-pubg.apk",
+          "size": 100200472,
+          "sha256": "fc2c0b1361e87611c0d9e2fedf89b81a0377bb361056ee5741b025757ca21e84",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2347-01a462b-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-01a462b-antutu.apk",
+          "size": 100200472,
+          "sha256": "3ec6c86e1a9bdbd1069a735dfbbe5c699d4438ac7d61558010ae729097ff4828",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2347-01a462b-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-01a462b-ludashi.apk",
+          "size": 100200472,
+          "sha256": "9e24a94bfc85abe61eb23431135ece348e6256b77f0ccb97151462d00493f6e3",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2472",
       "title": "Feat: Add per game screens effects",
       "summary": "Improves per-game screen effects profile selection, letting you choose per game.",
@@ -207,55 +256,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2472/DroidDeck-PR.2472-3212c63-ludashi.apk",
           "size": 100229144,
           "sha256": "67be0eae08f098c041471f34bc62cb68143cc05b72b289d099bcf9fa8bf355fe",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2347",
-      "title": "fix(zram): back off ineffective idle compression",
-      "summary": "On low-RAM devices the session compresses idle game memory whenever MemAvailable is under the tier headroom, at most every 30 seconds. A shared log from a 6.9 GB phone showed four passes in about a minute: each took about 5 s and caused a stutter, resident memory fell from 1.8 GB to 0.5 GB, but available memory stayed around 1.2 GB. The passes kept repeating without freeing useful headroom, beca",
-      "commit": "c8f815e497e87dd8b20c80a88552ed7c1b6c3b50",
-      "pr": 2347,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794629772000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2347",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2347-c8f815e.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-c8f815e.apk",
-          "size": 100200472,
-          "sha256": "713ed3b7e3f2abafacb45da15ad3b73f863387bae845299f06bef7d11cfbbff6",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2347-c8f815e-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-c8f815e-pubg.apk",
-          "size": 100200472,
-          "sha256": "fa9ae1124e445ad3b0aeb3d0b15397972a32101fa34e1abda4318f65f7306bb3",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2347-c8f815e-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-c8f815e-antutu.apk",
-          "size": 100200472,
-          "sha256": "e93ce0fce5a3c3e97f16a3d315fae76a1ba9d7c77f2bce679b4d45b9ef4cbb8f",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2347-c8f815e-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2347/DroidDeck-PR.2347-c8f815e-ludashi.apk",
-          "size": 100200472,
-          "sha256": "916e8795aeae1b5470eed37f0d304fd1feb8892402277750650f141190ff9137",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
