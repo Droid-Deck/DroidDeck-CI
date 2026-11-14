@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794617536214,
+  "generatedAt": 1794617623650,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -164,6 +164,55 @@
     }
   ],
   "tests": [
+    {
+      "tag": "pr-2592",
+      "title": "fix(preload): 32-bit x86 programs get correct large-file stat, open, write and lock results",
+      "summary": "Left 4 Dead 2 (native Linux, 32-bit) on the x86-64 Steam client aborts about a second after it starts, every time:",
+      "commit": "4c6cdd02b11a715c2db8fe4028b72307ef981a6d",
+      "pr": 2592,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794617505000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2592",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2592-4c6cdd0.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2592/DroidDeck-PR.2592-4c6cdd0.apk",
+          "size": 100093881,
+          "sha256": "4a1fe83255be27ce07d2fc770f23f341f37756d3c3d40ed9d5ad16864d19f894",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2592-4c6cdd0-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2592/DroidDeck-PR.2592-4c6cdd0-pubg.apk",
+          "size": 100093881,
+          "sha256": "ba23125db2be686ce0c9aff5d1c8e100f5ea81100a48181193cc538c83132a44",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2592-4c6cdd0-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2592/DroidDeck-PR.2592-4c6cdd0-antutu.apk",
+          "size": 100093881,
+          "sha256": "916581a4ba00703cf47d432dede3a2bbd052634ab4b58aad35884beea95197be",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2592-4c6cdd0-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2592/DroidDeck-PR.2592-4c6cdd0-ludashi.apk",
+          "size": 100093881,
+          "sha256": "6f94c2bd5ab3676b8ca8cca2f8008b69ebef96a460f94a5bf83b91603174f40d",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
     {
       "tag": "pr-2591",
       "title": "fix(runtime): record why a runtime install failed in the session events",
