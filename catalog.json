@@ -2,7 +2,7 @@
   "schema": 1,
   "sourceRepo": "Droid-Deck/DroidDeck",
   "ciRepo": "Droid-Deck/DroidDeck-CI",
-  "generatedAt": 1794622271399,
+  "generatedAt": 1794622636341,
   "stable": {
     "tag": "0.7.1",
     "title": "DroidDeck 0.7.1",
@@ -165,6 +165,104 @@
   ],
   "tests": [
     {
+      "tag": "pr-2594",
+      "title": "fix(preload): Windows games run from noexec shared storage under every Proton",
+      "summary": "A Windows game installed to a custom folder on Android shared storage (for example Games/EA under internal storage, seen in the guest as /mnt/droiddeck-sd/Games/EA) crashes right after launch, while the same game in the default Games/Stores location works. Reported on a REDMAGIC Astra II (0.7.1) with two EA games, running Valve's Proton Experimental ARM64.",
+      "commit": "234dd1267459578df31228f65a7b4196c77aca1c",
+      "pr": 2594,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794622557000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2594",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2594-234dd12.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-234dd12.apk",
+          "size": 100196376,
+          "sha256": "2ac2b93507b1820e2cc66246d2d5d260087d8c68223f7b87ddef31fdb47b53f4",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2594-234dd12-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-234dd12-pubg.apk",
+          "size": 100196376,
+          "sha256": "478ab15e04e24f2d8e10b08f9f792bb043cd87f63fbd68e30af524a5825d0511",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2594-234dd12-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-234dd12-antutu.apk",
+          "size": 100196376,
+          "sha256": "8f4304a34c06c85ed1e1a54f048c7fc61818ff33c41714e72da1ef0b037f18d3",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2594-234dd12-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-234dd12-ludashi.apk",
+          "size": 100196376,
+          "sha256": "09b8743d4dd763e4e16461e964a4ced1b55bf9f5270c0ebf8df106acf5903212",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
+      "tag": "pr-2596",
+      "title": "fix(stores): log why a GOG cloud sync failed and stage uploads in the cache folder",
+      "summary": "On an AYANEO Pocket FIT (0.7.1), every GOG cloud upload fails for every game with only\nresult=failed files=0 bytes=0 reason=IOException, while downloads keep working (90 files,\n266 MB, at the same time). The sync logs only the exception's class name, so the failing step,\nthe HTTP status and the file are lost. Nothing in the cloud code changed between the last good\nupload and the first failure.",
+      "commit": "3108bc9703e8dbd98b63bc74097d2ff23ab63db3",
+      "pr": 2596,
+      "version": null,
+      "versionCode": 19,
+      "publishedAt": 1794622548000,
+      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2596",
+      "apks": {
+        "com.droiddeck.launcher": {
+          "name": "DroidDeck-PR.2596-3108bc9.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-3108bc9.apk",
+          "size": 100196376,
+          "sha256": "ae0d589042b845bb943dc2bbf12d3fb4afc2180eed5b3505d3071e3a473f8d7d",
+          "packageName": "com.droiddeck.launcher",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.tencent.ig": {
+          "name": "DroidDeck-PR.2596-3108bc9-pubg.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-3108bc9-pubg.apk",
+          "size": 100196376,
+          "sha256": "a2438cb03784dd0222221c7e768aa7ec5fdd11092e8c65b263676c641eaf37f9",
+          "packageName": "com.tencent.ig",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.antutu.benchmark.full": {
+          "name": "DroidDeck-PR.2596-3108bc9-antutu.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-3108bc9-antutu.apk",
+          "size": 100196376,
+          "sha256": "dde06086b3ff7ee18e3316598309a245bcc578479857aecfacff0352b93e1443",
+          "packageName": "com.antutu.benchmark.full",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        },
+        "com.ludashi.benchmark": {
+          "name": "DroidDeck-PR.2596-3108bc9-ludashi.apk",
+          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2596/DroidDeck-PR.2596-3108bc9-ludashi.apk",
+          "size": 100196376,
+          "sha256": "181e38cdc0ac884950649d8c89ed0bd7c6d0e9959d406f386887d8bf7ea7bdd9",
+          "packageName": "com.ludashi.benchmark",
+          "versionCode": 19,
+          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
+        }
+      }
+    },
+    {
       "tag": "pr-2591",
       "title": "fix(runtime): record why a runtime install failed in the session events",
       "summary": "When the Linux runtime install fails at session start, the session ends with RUNTIMEINSTALLFAILED and the generic \"The Linux runtime did not install\" message. events.jsonl (the file Share logs sends) records only runtime.installing followed by session.failed. The failing step (proot pack, DirectAudio pack, runtime archive, checksum, unpack, swap) and the network error were written only t",
@@ -305,55 +403,6 @@
           "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2593/DroidDeck-PR.2593-7d54233-ludashi.apk",
           "size": 100093881,
           "sha256": "dc1feaf4002ec6d28a84829bec62aa6dde9daadb3d30d2800b6e427375ab043a",
-          "packageName": "com.ludashi.benchmark",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        }
-      }
-    },
-    {
-      "tag": "pr-2594",
-      "title": "fix(preload): Windows games run from noexec shared storage under every Proton",
-      "summary": "A Windows game installed to a custom folder on Android shared storage (for example Games/EA under internal storage, seen in the guest as /mnt/droiddeck-sd/Games/EA) crashes right after launch, while the same game in the default Games/Stores location works. Reported on a REDMAGIC Astra II (0.7.1) with two EA games, running Valve's Proton Experimental ARM64.",
-      "commit": "f8ba0e5dae3adda67dd1c6fd97868c343800ceda",
-      "pr": 2594,
-      "version": null,
-      "versionCode": 19,
-      "publishedAt": 1794619560000,
-      "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/tag/pr-2594",
-      "apks": {
-        "com.droiddeck.launcher": {
-          "name": "DroidDeck-PR.2594-f8ba0e5.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-f8ba0e5.apk",
-          "size": 100093881,
-          "sha256": "8975bb30f643d6f165b5f3803dccc035e07b7382bff16dba30c0af300d213830",
-          "packageName": "com.droiddeck.launcher",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.tencent.ig": {
-          "name": "DroidDeck-PR.2594-f8ba0e5-pubg.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-f8ba0e5-pubg.apk",
-          "size": 100093881,
-          "sha256": "e748185575ac18062e42d17acdde36382eea0251078053a18721b7001fec4e54",
-          "packageName": "com.tencent.ig",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.antutu.benchmark.full": {
-          "name": "DroidDeck-PR.2594-f8ba0e5-antutu.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-f8ba0e5-antutu.apk",
-          "size": 100093881,
-          "sha256": "259eaf3b1d32cc0ceaf9d420ec4975b2451fe2f16b0244b935f142dcd331e788",
-          "packageName": "com.antutu.benchmark.full",
-          "versionCode": 19,
-          "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
-        },
-        "com.ludashi.benchmark": {
-          "name": "DroidDeck-PR.2594-f8ba0e5-ludashi.apk",
-          "url": "https://github.com/Droid-Deck/DroidDeck-CI/releases/download/pr-2594/DroidDeck-PR.2594-f8ba0e5-ludashi.apk",
-          "size": 100093881,
-          "sha256": "d52fc65a4c05dbda755cf282f7e6353633687559a72c9c06dfb17e4ae89bfcaa",
           "packageName": "com.ludashi.benchmark",
           "versionCode": 19,
           "signerSha256": "b241ea7d77822d39b89d3227e06f3ecf62adec6cbfd38ad06196787991b5d3f0"
